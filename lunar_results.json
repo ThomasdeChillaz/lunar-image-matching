@@ -1,0 +1,3846 @@
+[
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 24.20743687382041,
+    "rmse_px": 24.20743687382041,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 14.723756999956095,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -15.0
+      ],
+      [
+        0.0,
+        1.0,
+        -19.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 24.20743687382041,
+    "rmse_px": 24.20743687382041,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 13.955293999970309,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -15.0
+      ],
+      [
+        0.0,
+        1.0,
+        -19.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 23.975932747188082,
+    "rmse_px": 23.97724364284765,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 138.34835899979225,
+    "support": 43,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.0013640881711445,
+        0.0004306122444437541,
+        -15.002868869197256
+      ],
+      [
+        -0.0004306122444437541,
+        1.0013640881711445,
+        -19.263278687045634
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 23.984734130149874,
+    "rmse_px": 23.986076425775007,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 364.675092001562,
+    "support": 129,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.000916828928322,
+        0.0016286664418394146,
+        -15.384160020744117
+      ],
+      [
+        -0.0016286664418394146,
+        1.000916828928322,
+        -18.722728204465806
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 24.11032619934427,
+    "rmse_px": 24.11309776320107,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5847.135857000467,
+    "support": 303,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.0003414856314128,
+        0.0019904953981912383,
+        -15.32508175230368
+      ],
+      [
+        -0.0019904953981912383,
+        1.0003414856314128,
+        -18.66436676792746
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_01",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 24.083320568648496,
+    "rmse_px": 24.08402072429348,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5151.166167001065,
+    "support": 268,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.7135449733750647,
+    "transform": [
+      [
+        1.0002372767961485,
+        0.001961327555897106,
+        -15.344453735114813
+      ],
+      [
+        -0.001961327555897106,
+        1.0002372767961485,
+        -18.569718850026792
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 12.238625999088981,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 12.499016000219854,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.002769328193550824,
+    "rmse_px": 0.0029398184918300583,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 134.692190998976,
+    "support": 313,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999971849208398,
+        -8.384239769420226e-06,
+        12.000729093005699
+      ],
+      [
+        8.384239769420226e-06,
+        0.9999971849208398,
+        -8.002820744772508
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.008294611496716044,
+    "rmse_px": 0.008719543460661037,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 287.3821550001594,
+    "support": 1371,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999798259576773,
+        5.4709596641926085e-06,
+        12.002829474217526
+      ],
+      [
+        -5.4709596641926085e-06,
+        0.9999798259576773,
+        -7.986034907879501
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.03642923046049521,
+    "rmse_px": 0.04068267732693938,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5263.315624000825,
+    "support": 435,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9998216530814227,
+        -1.863389271500091e-05,
+        12.03531540635396
+      ],
+      [
+        1.863389271500091e-05,
+        0.9998216530814227,
+        -7.940646845807298
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_translation",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.015320412780925068,
+    "rmse_px": 0.016562481893510363,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5437.747055999353,
+    "support": 420,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999625517426466,
+        -5.262251697218829e-05,
+        12.011596991386474
+      ],
+      [
+        5.262251697218829e-05,
+        0.9999625517426466,
+        -7.997718313605687
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 11.84668699897884,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 14.540864000082365,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.18192664013688312,
+    "rmse_px": 0.19129051236633413,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 127.35577700004796,
+    "support": 8,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9995564209077951,
+        0.00014816385535295902,
+        11.904387082972606
+      ],
+      [
+        -0.00014816385535295902,
+        0.9995564209077951,
+        -7.897816221471822
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.07717509369547451,
+    "rmse_px": 0.08622875114507007,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 225.934103000327,
+    "support": 289,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9995984006090354,
+        -6.040105887803371e-05,
+        12.072061322928779
+      ],
+      [
+        6.040105887803371e-05,
+        0.9995984006090354,
+        -7.939079448584748
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.08458436844018458,
+    "rmse_px": 0.0933772113481461,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5257.506492000175,
+    "support": 307,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9995907600814525,
+        1.3816682664557788e-05,
+        12.041587055100903
+      ],
+      [
+        -1.3816682664557788e-05,
+        0.9995907600814525,
+        -7.881236577886025
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_dark_gamma",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.08798136157444017,
+    "rmse_px": 0.09403123315030748,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5227.089290001459,
+    "support": 287,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.999671749385185,
+        6.367031923913485e-05,
+        11.993514735346135
+      ],
+      [
+        -6.367031923913485e-05,
+        0.999671749385185,
+        -7.890997271668827
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 37.40940356542133,
+    "rmse_px": 40.263442413485045,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 12.357912000879878,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        11.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 37.12598208807457,
+    "rmse_px": 39.94377765803679,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 16.91201899848238,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        10.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.09907572432477964,
+    "rmse_px": 0.10002037631990814,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 108.25660099908418,
+    "support": 37,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.978208818737268,
+        0.2077949513653444,
+        -39.59412282299943
+      ],
+      [
+        -0.2077949513653444,
+        0.978208818737268,
+        52.72957504435135
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.08740465644314374,
+    "rmse_px": 0.08736149746811954,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 234.0404850001505,
+    "support": 447,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9780348431596065,
+        0.20790594602737336,
+        -39.56891103238245
+      ],
+      [
+        -0.20790594602737336,
+        0.9780348431596065,
+        52.79179185983907
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.14341722610288338,
+    "rmse_px": 0.157959548207034,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5188.616522000302,
+    "support": 271,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9785806729889414,
+        0.20846295101459225,
+        -39.870522214013114
+      ],
+      [
+        -0.20846295101459225,
+        0.9785806729889414,
+        52.73062291247762
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_control_rotation_stress",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.08551504171879788,
+    "rmse_px": 0.0958133327436248,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5214.7502829993755,
+    "support": 253,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9785790420544235,
+        0.20787855697268703,
+        -39.615814145771004
+      ],
+      [
+        -0.20787855697268703,
+        0.9785790420544235,
+        52.64468551961697
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.110770276274835,
+    "rmse_px": 18.110770276274835,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 9.832829999140813,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -2.0
+      ],
+      [
+        0.0,
+        1.0,
+        18.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.110770276274835,
+    "rmse_px": 18.110770276274835,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 11.905334000402945,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -2.0
+      ],
+      [
+        0.0,
+        1.0,
+        18.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 149.80029500111414,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 381.38061499921605,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.355398690426437,
+    "rmse_px": 18.361264681375307,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5510.153971999898,
+    "support": 189,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": [
+      [
+        1.0051559451159748,
+        0.0020753990999417254,
+        -3.1707464539248633
+      ],
+      [
+        -0.0020753990999417254,
+        1.0051559451159748,
+        17.5376522693218
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_02",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.290864222101973,
+    "rmse_px": 18.29744880741506,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5008.583095001086,
+    "support": 174,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 19.752699714625834,
+    "transform": [
+      [
+        1.0040772112301422,
+        0.0021120499051326264,
+        -2.8933088054910985
+      ],
+      [
+        -0.0021120499051326264,
+        1.0040772112301422,
+        17.75232354209662
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.384776310850235,
+    "rmse_px": 18.384776310850235,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 10.739015999206458,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -17.0
+      ],
+      [
+        0.0,
+        1.0,
+        -7.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 18.384776310850235,
+    "rmse_px": 18.384776310850235,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 17.28193700000702,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -17.0
+      ],
+      [
+        0.0,
+        1.0,
+        -7.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 195.1937909998378,
+    "support": 1,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 332.0193819999986,
+    "support": 4,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4768.842152001525,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_03",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4841.09839499979,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 33.20477050241992,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 149.89329538041386,
+    "rmse_px": 149.89329538041386,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 14.96889900045062,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -128.0
+      ],
+      [
+        0.0,
+        1.0,
+        78.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 70.03570517957252,
+    "rmse_px": 70.03570517957252,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 15.282221998859313,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        69.0
+      ],
+      [
+        0.0,
+        1.0,
+        -12.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 226.80055599994375,
+    "support": 1,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 382.145985000534,
+    "support": 4,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": null
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 3.8806576012465146,
+    "rmse_px": 4.018980556228886,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 4873.687463999886,
+    "support": 7,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": [
+      [
+        1.0055254879740527,
+        0.00618393544479404,
+        -5.8035872687129935
+      ],
+      [
+        -0.00618393544479404,
+        1.0055254879740527,
+        2.3724057755808143
+      ]
+    ]
+  },
+  {
+    "pair_id": "S1_04",
+    "region_id": "S1",
+    "split": "train",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 38.91595409849885,
+    "rmse_px": 41.3748864453136,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 4846.449661001316,
+    "support": 7,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 41.110763327007845,
+    "transform": [
+      [
+        0.9037961413624175,
+        -0.12136362719996785,
+        57.856883656230536
+      ],
+      [
+        0.12136362719996785,
+        0.9037961413624175,
+        23.657883595750334
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.0,
+    "rmse_px": 5.0,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 15.745638998851064,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0,
+        3.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.0,
+    "rmse_px": 5.0,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 19.034453998756362,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0,
+        3.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 98.75151300002472,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 96.44146299979184,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.300103541364489,
+    "rmse_px": 5.298196878300701,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5020.884654000838,
+    "support": 130,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": [
+      [
+        0.9990928694749839,
+        -0.0010738224420759664,
+        4.712800037840094
+      ],
+      [
+        0.0010738224420759664,
+        0.9990928694749839,
+        3.1301380660383904
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_01",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.4043506344121734,
+    "rmse_px": 5.414529608211005,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5304.2522730011115,
+    "support": 113,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 20.253812176977835,
+    "transform": [
+      [
+        1.0015282010772948,
+        -0.0026371002069011575,
+        4.639284205213125
+      ],
+      [
+        0.0026371002069011575,
+        1.0015282010772948,
+        2.144137918631455
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 17.134988000179874,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 18.225062000055914,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 94.39447800104972,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.011067568693522626,
+    "rmse_px": 0.011345038643653533,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 134.00791099957132,
+    "support": 207,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.999943364017438,
+        2.5563551878211393e-05,
+        12.007074767663475
+      ],
+      [
+        -2.5563551878211393e-05,
+        0.999943364017438,
+        -7.980527279240087
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.008136665328869867,
+    "rmse_px": 0.008460943572729931,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5308.761441001479,
+    "support": 422,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0000230935685905,
+        -9.062118314059107e-06,
+        11.990839619530881
+      ],
+      [
+        9.062118314059107e-06,
+        1.0000230935685905,
+        -8.00352821393246
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_translation",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.016785451341474876,
+    "rmse_px": 0.018008838575716002,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5283.225496999876,
+    "support": 424,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0000299777994217,
+        -6.543430334804282e-05,
+        12.002695141252754
+      ],
+      [
+        6.543430334804282e-05,
+        1.0000299777994217,
+        -8.012031068772815
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 18.40389800054254,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 20.27420199920016,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 108.68321999987529,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 122.89397799941071,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 1.017941592021279,
+    "rmse_px": 1.104715653490121,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5450.8973840002,
+    "support": 73,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0019208376582467,
+        0.005191307798775117,
+        10.104041381725862
+      ],
+      [
+        -0.005191307798775117,
+        1.0019208376582467,
+        -6.808905620710804
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_dark_gamma",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 1.0293547213113632,
+    "rmse_px": 1.1735470477936294,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5017.077214999517,
+    "support": 69,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9983334132655508,
+        -0.004377761002773003,
+        14.199995405511627
+      ],
+      [
+        0.004377761002773003,
+        0.9983334132655508,
+        -8.358372920441946
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 37.40366325237704,
+    "rmse_px": 37.804965379775076,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 13.237932000265573,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        7.0
+      ],
+      [
+        0.0,
+        1.0,
+        -5.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 36.16171213436026,
+    "rmse_px": 37.93362024746077,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 13.757392000115942,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        8.0
+      ],
+      [
+        0.0,
+        1.0,
+        -6.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 89.34022700123023,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 121.0283239997807,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.5091876922457637,
+    "rmse_px": 0.5396124267692674,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5329.399665000892,
+    "support": 129,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9765633817711221,
+        0.20771663876845506,
+        -39.56224631763231
+      ],
+      [
+        -0.20771663876845506,
+        0.9765633817711221,
+        52.96866748712072
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_control_rotation_stress",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.2308472004069015,
+    "rmse_px": 0.25682841673656914,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5368.287245999454,
+    "support": 130,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.978187776100014,
+        0.20690278638767182,
+        -39.298178204286536
+      ],
+      [
+        -0.20690278638767182,
+        0.978187776100014,
+        52.272615113774904
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 12.046584999552579,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 18.429364999974496,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 146.85927000027732,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 206.1177300001873,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 8.691760335238797,
+    "rmse_px": 8.683718729991323,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5249.8082219990465,
+    "support": 83,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": [
+      [
+        1.0003457890160077,
+        -0.004323847794880247,
+        2.304326189936751
+      ],
+      [
+        0.004323847794880247,
+        1.0003457890160077,
+        7.420914723612886
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_02",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 8.974272507538155,
+    "rmse_px": 8.985012041460614,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5390.300359000321,
+    "support": 93,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 40.063126223048556,
+    "transform": [
+      [
+        1.0036011936450309,
+        -0.0032509796952873366,
+        0.4591597566346466
+      ],
+      [
+        0.0032509796952873366,
+        1.0036011936450309,
+        7.280277346062973
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.242640687119285,
+    "rmse_px": 4.242640687119285,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 19.082922999587026,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0,
+        3.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.242640687119285,
+    "rmse_px": 4.242640687119285,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 25.320011000076192,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0,
+        3.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 121.1934740003926,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 182.72675099979097,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 5348.712093998984,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_03",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 5251.258392001546,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 55.17683474144788,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 109.38464243210744,
+    "rmse_px": 109.38464243210744,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 21.42068700050004,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -106.0
+      ],
+      [
+        0.0,
+        1.0,
+        -27.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 23.634948998733307,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_features",
+    "runtime_ms": 218.4907770006248,
+    "support": 0,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 181.3199389998772,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4983.312084999852,
+    "support": 5,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": null
+  },
+  {
+    "pair_id": "S2_04",
+    "region_id": "S2",
+    "split": "dev",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4896.255193998513,
+    "support": 5,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 77.51721669700774,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.0990195135927845,
+    "rmse_px": 5.0990195135927845,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 15.143168999202317,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        -5.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 5.0990195135927845,
+    "rmse_px": 5.0990195135927845,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 21.716057000958244,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        -5.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.8042894768167805,
+    "rmse_px": 4.804882227041351,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 327.86581499931344,
+    "support": 336,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        0.999694160980634,
+        0.0006540784516221641,
+        1.0270855810267854
+      ],
+      [
+        -0.0006540784516221641,
+        0.999694160980634,
+        -4.442517204170405
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.799306355633995,
+    "rmse_px": 4.799398125240388,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 327.5734870003362,
+    "support": 373,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        0.9998201799234263,
+        0.0005218436333774496,
+        1.0042834478831013
+      ],
+      [
+        -0.0005218436333774496,
+        0.9998201799234263,
+        -4.505344988763048
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.831625756775265,
+    "rmse_px": 4.832031561154375,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5150.586289000785,
+    "support": 350,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        0.9996558247341667,
+        0.00039380737760407505,
+        1.0826800688991447
+      ],
+      [
+        -0.00039380737760407505,
+        0.9996558247341667,
+        -4.528337853854866
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_01",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.873206889989925,
+    "rmse_px": 4.874178148671551,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5093.55252900059,
+    "support": 339,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.0150605944791522,
+    "transform": [
+      [
+        0.9995556080012399,
+        0.00043328773272533204,
+        1.1297793744494309
+      ],
+      [
+        -0.00043328773272533204,
+        0.9995556080012399,
+        -4.53007470677429
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 14.730606999364682,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 25.062002998311073,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0017472655199387045,
+    "rmse_px": 0.001951132321462926,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 340.1852229999349,
+    "support": 1823,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999915343114727,
+        -3.140348535842564e-06,
+        12.00176544236468
+      ],
+      [
+        3.140348535842564e-06,
+        0.9999915343114727,
+        -7.998952562190509
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.00402176725743957,
+    "rmse_px": 0.004432420508848425,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 342.9796290001832,
+    "support": 1728,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999785766433824,
+        5.195538263833099e-06,
+        12.003252043142153
+      ],
+      [
+        -5.195538263833099e-06,
+        0.9999785766433824,
+        -7.995360988222595
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.008068237255914362,
+    "rmse_px": 0.008263103911732598,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 4998.683330999484,
+    "support": 475,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999838623892101,
+        -1.5993384863434268e-05,
+        12.008139890468232
+      ],
+      [
+        1.5993384863434268e-05,
+        0.9999838623892101,
+        -7.9928298536491615
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_translation",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "translation",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.010576651026066175,
+    "rmse_px": 0.011347523714794541,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 4996.86261900024,
+    "support": 473,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0000168906569817,
+        -5.7018490949790196e-05,
+        12.007070821738496
+      ],
+      [
+        5.7018490949790196e-05,
+        1.0000168906569817,
+        -8.019864681035052
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 13.264129000162939,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0,
+    "rmse_px": 0.0,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 18.007214999670396,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        12.0
+      ],
+      [
+        0.0,
+        1.0,
+        -8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.03446580099852252,
+    "rmse_px": 0.03566853587101323,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 326.8730939998932,
+    "support": 1088,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.999921543067757,
+        3.6293197667184724e-05,
+        11.990099455020086
+      ],
+      [
+        -3.6293197667184724e-05,
+        0.999921543067757,
+        -7.997415116637741
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.020858231901107634,
+    "rmse_px": 0.02159638724034902,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 317.4980029998551,
+    "support": 1268,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9999566088446131,
+        4.38923953294026e-05,
+        11.995642845427662
+      ],
+      [
+        -4.38923953294026e-05,
+        0.9999566088446131,
+        -7.996987340903825
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.08837729933859212,
+    "rmse_px": 0.08902008272447527,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5024.333321000086,
+    "support": 396,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.000013879199899,
+        9.751977672042226e-05,
+        11.947462247882052
+      ],
+      [
+        -9.751977672042226e-05,
+        1.000013879199899,
+        -8.063208461858883
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_dark_gamma",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "dark_gamma",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.06397075659329837,
+    "rmse_px": 0.06532586724278312,
+    "scored_points": 196,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5005.914233999647,
+    "support": 408,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9998115039274345,
+        2.4588869496207438e-05,
+        12.007200101328223
+      ],
+      [
+        -2.4588869496207438e-05,
+        0.9998115039274345,
+        -7.993937949353119
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 38.2764901772418,
+    "rmse_px": 42.154565360051485,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 16.810679999252898,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -10.0
+      ],
+      [
+        0.0,
+        1.0,
+        8.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "out_of_model_rotation",
+    "estimated": true,
+    "error_px": 37.44591898769609,
+    "rmse_px": 38.39565160480476,
+    "scored_points": 193,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 17.139872999905492,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        1.0,
+        5.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.07182776136380677,
+    "rmse_px": 0.07192031423710209,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 332.42439399873547,
+    "support": 1268,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9780938130922079,
+        0.20791789892642223,
+        -39.58087483832133
+      ],
+      [
+        -0.20791789892642223,
+        0.9780938130922079,
+        52.76569316189178
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.06758003892889583,
+    "rmse_px": 0.06771603349371577,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 370.43476899998495,
+    "support": 1290,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9781332932703839,
+        0.20794786184349504,
+        -39.59070971058232
+      ],
+      [
+        -0.20794786184349504,
+        0.9781332932703839,
+        52.76491558874626
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.05368120478308292,
+    "rmse_px": 0.05837447747723047,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5046.70489000091,
+    "support": 356,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.977899668488998,
+        0.20780450373160983,
+        -39.43898521669502
+      ],
+      [
+        -0.20780450373160983,
+        0.977899668488998,
+        52.7684756850822
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_control_rotation_stress",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_image_synthetic_transform",
+    "case": "rotation_stress",
+    "error_kind": "known_transform_error",
+    "reference_uncertainty_px": 0,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 0.0892604934436737,
+    "rmse_px": 0.09304802303743373,
+    "scored_points": 193,
+    "within_primary_threshold": true,
+    "reason": "",
+    "runtime_ms": 5012.5634469986835,
+    "support": 354,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": null,
+    "transform": [
+      [
+        0.9779599097665569,
+        0.2076555775219035,
+        -39.429431443051904
+      ],
+      [
+        -0.2076555775219035,
+        0.9779599097665569,
+        52.762481307101524
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.123105625617661,
+    "rmse_px": 4.123105625617661,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 15.695841999331606,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        -4.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.123105625617661,
+    "rmse_px": 4.123105625617661,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 17.36129799974151,
+    "support": 65536,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": [
+      [
+        1.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        -4.0
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 292.5674660000368,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 371.7444769990834,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.726229846946137,
+    "rmse_px": 4.722434662421657,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 4903.9819490008085,
+    "support": 96,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": [
+      [
+        0.9981242100956923,
+        -0.001025818511685512,
+        -1.8173691134411896
+      ],
+      [
+        0.001025818511685512,
+        0.9981242100956923,
+        -3.77473844825924
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_02",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 4.921591110027233,
+    "rmse_px": 4.921885674720671,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 4821.9989919998625,
+    "support": 95,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 1.9473221616499217,
+    "transform": [
+      [
+        0.9983361247513654,
+        0.0010775326268768854,
+        -2.238537258860003
+      ],
+      [
+        -0.0010775326268768854,
+        0.9983361247513654,
+        -3.6354648644478433
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 21.4045079992502,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 20.558546000756905,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "insufficient_matches",
+    "runtime_ms": 384.9691960003838,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 425.2484970002115,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4865.927603999808,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_03",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 4833.202075000372,
+    "support": 3,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 2.6869245954338794,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 19.860480000716052,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "ncc",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "low_correlation",
+    "runtime_ms": 19.613971000580932,
+    "support": 0,
+    "support_type": "template_pixels",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 242.5004880005872,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "sift",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": false,
+    "error_px": null,
+    "rmse_px": null,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "geometry_failed",
+    "runtime_ms": 252.39460299962957,
+    "support": 2,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": null
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "none",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 271.8758123663441,
+    "rmse_px": 281.6764649821111,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 4989.166579000084,
+    "support": 10,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": [
+      [
+        0.1777429971327245,
+        0.05605357694536854,
+        283.8958040243986
+      ],
+      [
+        -0.05605357694536854,
+        0.1777429971327245,
+        426.97696604972157
+      ]
+    ]
+  },
+  {
+    "pair_id": "S3_04",
+    "region_id": "S3",
+    "split": "test",
+    "dataset_kind": "real_repeat_observation",
+    "case": "repeat",
+    "error_kind": "map_reference_disagreement",
+    "reference_uncertainty_px": null,
+    "method": "disk_lightglue",
+    "preprocessing": "clahe",
+    "applicability": "in_model",
+    "estimated": true,
+    "error_px": 265.73234545831804,
+    "rmse_px": 278.5467912051809,
+    "scored_points": 196,
+    "within_primary_threshold": false,
+    "reason": "",
+    "runtime_ms": 5402.052850000473,
+    "support": 9,
+    "support_type": "geometric_inliers",
+    "incidence_difference_deg": 4.683411578992576,
+    "transform": [
+      [
+        0.3485650736770566,
+        -0.05049581415464462,
+        239.10654598251523
+      ],
+      [
+        0.05049581415464462,
+        0.3485650736770566,
+        385.8657193166723
+      ]
+    ]
+  }
+]

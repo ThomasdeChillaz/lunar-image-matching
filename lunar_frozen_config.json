@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "seed": 20261025,
+  "image_size": 512,
+  "methods": [
+    "ncc",
+    "sift",
+    "disk_lightglue"
+  ],
+  "preprocessing": [
+    "none",
+    "clahe"
+  ],
+  "max_keypoints": 512,
+  "device": "cpu",
+  "thresholds_px": [
+    2,
+    3,
+    5,
+    10
+  ],
+  "primary_threshold_px": 3,
+  "repeats": 1,
+  "controls": [
+    {
+      "name": "translation",
+      "dx": 12,
+      "dy": -8,
+      "angle": 0,
+      "gain": 1,
+      "gamma": 1,
+      "noise": 0
+    },
+    {
+      "name": "dark_gamma",
+      "dx": 12,
+      "dy": -8,
+      "angle": 0,
+      "gain": 0.6,
+      "gamma": 1.6,
+      "noise": 0.01
+    },
+    {
+      "name": "rotation_stress",
+      "dx": 8,
+      "dy": -6,
+      "angle": 12,
+      "gain": 0.7,
+      "gamma": 1.3,
+      "noise": 0.01
+    }
+  ],
+  "selection_policy": "No parameter search. Fixed upstream/default settings; S1 reserved, S2 dev, S3 held-out. Report map reference and exact-transform controls separately.",
+  "reference_policy": "Map-grid disagreement is provisional and must not be called ground-truth navigation accuracy. Independent checkpoints are used only when explicitly imported."
+}

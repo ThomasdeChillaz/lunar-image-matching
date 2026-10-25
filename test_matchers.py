@@ -28,3 +28,9 @@ def test_blank_is_explicit_failure(matcher):
     result = matcher(blank, blank)
     assert result.matrix is None
     assert result.reason
+
+
+def test_invalid_mask_does_not_create_fake_match():
+    image=texture(42);mask=np.zeros_like(image,bool)
+    assert ncc(image,image,mask,mask).matrix is None
+    assert sift(image,image,mask,mask).matrix is None

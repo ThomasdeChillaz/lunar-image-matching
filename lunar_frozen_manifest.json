@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "dataset": "CNSFM research subset",
+  "source_revision": "94cebaaa7fd3e070f8040620975554c3067651ef",
+  "citation": "Li et al., Robust Feature Matching of Multi-Illumination Lunar Orbiter Images Based on Crater Neighborhood Structure, Remote Sensing 17(13), 2302 (2025), https://doi.org/10.3390/rs17132302",
+  "selection": "First, quartiles and last observation in source incidence-sorted spreadsheets; 5 images/region and 4 anchored pairs/region. No matcher-based selection.",
+  "split_policy": "Entire published scenes assigned S1 train, S2 dev, S3 test; pretrained models are not fine-tuned. No source observation crosses a split.",
+  "assets": [
+    {
+      "asset_id": "M1389516184RE",
+      "product_id": "M1389516184RE",
+      "region_id": "S1",
+      "path": "data/raw/S1/M1389516184RE.tif",
+      "sha256": "39efb96d11c218e5776073b8b580e7f6e9786f9146d464fc60bf46fab64e927f",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S1/M1389516184RE.tif",
+      "acquired_utc": "2021-10-22 04:28:36.868",
+      "pixel_scale_m": 1.0015777946681,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",44.1214],PARAMETER[\"central_meridian\",-19.5117],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -505.79678630738647,
+        1071924.6126544126,
+        492.77627497670915,
+        1072924.1872934913
+      ],
+      "shape": [
+        998,
+        997
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 43.42434262371572,
+      "emission_deg": 1.17,
+      "phase_deg": 43.24,
+      "north_azimuth_deg": 173.5970506701368,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1328449896RE",
+      "product_id": "M1328449896RE",
+      "region_id": "S1",
+      "path": "data/raw/S1/M1328449896RE.tif",
+      "sha256": "36d01e5aebd171ae6841fcc260c4657c0a9ebb00d1128c62919470ec7b7ff20d",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S1/M1328449896RE.tif",
+      "acquired_utc": "2019-11-15 09:37:09.306",
+      "pixel_scale_m": 1.0730191372075,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",44.1214],PARAMETER[\"central_meridian\",-19.5117],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -506.46503276193744,
+        1071924.6576875257,
+        492.51578397824505,
+        1072923.638504266
+      ],
+      "shape": [
+        931,
+        931
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 46.13788759709078,
+      "emission_deg": 1.18,
+      "phase_deg": 45.62,
+      "north_azimuth_deg": 206.7869866873427,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1259058367LE",
+      "product_id": "M1259058367LE",
+      "region_id": "S1",
+      "path": "data/raw/S1/M1259058367LE.tif",
+      "sha256": "c7908a296dee30570b9e99b3b26778909bd2278b25d2044df9f3d9b2855ada4b",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S1/M1259058367LE.tif",
+      "acquired_utc": "2017-09-03 06:11:39.820",
+      "pixel_scale_m": 1.1300839118756998,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",44.1214],PARAMETER[\"central_meridian\",-19.5117],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -506.27759252031603,
+        1071925.2734348879,
+        492.71658557780256,
+        1072924.267612986
+      ],
+      "shape": [
+        884,
+        884
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 63.17704233834155,
+      "emission_deg": 1.75,
+      "phase_deg": 64.69,
+      "north_azimuth_deg": 118.5758742106653,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1142582775RE",
+      "product_id": "M1142582775RE",
+      "region_id": "S1",
+      "path": "data/raw/S1/M1142582775RE.tif",
+      "sha256": "e7e28241a0fe069e96c70c059cb9d83c1638d0a4739377c8c6217db33e12b116",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S1/M1142582775RE.tif",
+      "acquired_utc": "2013-12-25 03:51:48.697",
+      "pixel_scale_m": 1.4978075549415997,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",44.1214],PARAMETER[\"central_meridian\",-19.5117],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -506.25895357025644,
+        1071925.448192151,
+        492.7786855757906,
+        1072922.988023742
+      ],
+      "shape": [
+        666,
+        667
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 76.62911312613564,
+      "emission_deg": 2.13,
+      "phase_deg": 74.66,
+      "north_azimuth_deg": 258.6064613490558,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1276733320LE",
+      "product_id": "M1276733320LE",
+      "region_id": "S1",
+      "path": "data/raw/S1/M1276733320LE.tif",
+      "sha256": "0110a58af770d891c84be91f0ad8946e849f3e183117585f5eeff9b8bb0b40e1",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S1/M1276733320LE.tif",
+      "acquired_utc": "2018-03-26 19:54:13.121",
+      "pixel_scale_m": 1.1214956260514002,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",44.1214],PARAMETER[\"central_meridian\",-19.5117],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -505.7945273491795,
+        1071924.3978843105,
+        493.4580754626181,
+        1072923.6504871221
+      ],
+      "shape": [
+        891,
+        891
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 84.53510595072356,
+      "emission_deg": 1.75,
+      "phase_deg": 86.25,
+      "north_azimuth_deg": 97.0550400297629,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1134046721RE",
+      "product_id": "M1134046721RE",
+      "region_id": "S2",
+      "path": "data/raw/S2/M1134046721RE.tif",
+      "sha256": "7743b826f8d78777add361719c1f33cdda1fe9e4d0c115e7294fc4237da7549d",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S2/M1134046721RE.tif",
+      "acquired_utc": "2013-09-17 08:44:14.269",
+      "pixel_scale_m": 0.99779899868355,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",0.67416],PARAMETER[\"central_meridian\",23.47314],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -503.88849433519545,
+        19942.010787689243,
+        494.9083033470381,
+        20941.80538437016
+      ],
+      "shape": [
+        1002,
+        1001
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 7.412362364452974,
+      "emission_deg": 1.18,
+      "phase_deg": 6.12,
+      "north_azimuth_deg": 103.6605500842727,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M122054682RE",
+      "product_id": "M122054682RE",
+      "region_id": "S2",
+      "path": "data/raw/S2/M122054682RE.tif",
+      "sha256": "a144a96e9af04641dc51c133f75a90836eb517d1ffc0a5f622757026401c8e6d",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S2/M122054682RE.tif",
+      "acquired_utc": "2010-03-01 03:50:15.616",
+      "pixel_scale_m": 0.43476891696222003,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",0.67416],PARAMETER[\"central_meridian\",23.47314],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -503.89717475923396,
+        19941.980683222668,
+        495.63656533690994,
+        20941.51442331881
+      ],
+      "shape": [
+        2299,
+        2299
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 27.66617454143081,
+      "emission_deg": 8.96,
+      "phase_deg": 36.64,
+      "north_azimuth_deg": 271.3194561766161,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1129340193RE",
+      "product_id": "M1129340193RE",
+      "region_id": "S2",
+      "path": "data/raw/S2/M1129340193RE.tif",
+      "sha256": "ed35ec40d562278e5aa2a2bd54ac941bfc9dc0c93787d028455367723c6533da",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S2/M1129340193RE.tif",
+      "acquired_utc": "2013-07-24 21:22:06.081",
+      "pixel_scale_m": 1.0239154808343,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",0.67416],PARAMETER[\"central_meridian\",23.47314],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -503.7664165705064,
+        19942.801820209526,
+        495.57509272377047,
+        20941.11941402297
+      ],
+      "shape": [
+        975,
+        976
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 47.47548858750153,
+      "emission_deg": 14.26,
+      "phase_deg": 33.27,
+      "north_azimuth_deg": 267.336033137641,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M150361817RE",
+      "product_id": "M150361817RE",
+      "region_id": "S2",
+      "path": "data/raw/S2/M150361817RE.tif",
+      "sha256": "2a2d5c59cfa29ef333851d0971c2e024454141d21e7ea83916541d2a4af39084",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S2/M150361817RE.tif",
+      "acquired_utc": "2011-01-22 18:55:49.626",
+      "pixel_scale_m": 0.4085620930940099,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",0.67416],PARAMETER[\"central_meridian\",23.47314],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -504.16562287797046,
+        19941.915763918692,
+        495.58581892307177,
+        20941.667205719736
+      ],
+      "shape": [
+        2447,
+        2447
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 62.58919710590085,
+      "emission_deg": 9.41,
+      "phase_deg": 72.02,
+      "north_azimuth_deg": 270.5392723471159,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M1277607697LE",
+      "product_id": "M1277607697LE",
+      "region_id": "S2",
+      "path": "data/raw/S2/M1277607697LE.tif",
+      "sha256": "9ba83557a07c91db6acb8b4368b70fe6fd8bbd438c5ab754a9032fa988d07932",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S2/M1277607697LE.tif",
+      "acquired_utc": "2018-04-05 22:47:10.048",
+      "pixel_scale_m": 0.8845536687230099,
+      "crs_wkt": "PROJCS[\"Mercator MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",0.67416],PARAMETER[\"central_meridian\",23.47314],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -504.1955911721036,
+        19942.262461359885,
+        495.35005448489756,
+        20941.80810701689
+      ],
+      "shape": [
+        1130,
+        1130
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 84.92957906146071,
+      "emission_deg": 1.72,
+      "phase_deg": 86.68,
+      "north_azimuth_deg": 268.5082437341583,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M108374740RE",
+      "product_id": "M108374740RE",
+      "region_id": "S3",
+      "path": "data/raw/S3/M108374740RE.tif",
+      "sha256": "34d04df52a65530fe8d8c02d32bfa37c7d42f557cdadf0c24d6eb0ccc800b60a",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S3/M108374740RE.tif",
+      "acquired_utc": "2009-09-23 19:51:13.396",
+      "pixel_scale_m": 0.61962324231055,
+      "crs_wkt": "PROJCS[\"PolarStereographic MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-88.80638],PARAMETER[\"central_meridian\",123.77827],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -499.41633330232287,
+        35703.930468418315,
+        499.41633330228376,
+        36703.38275826524
+      ],
+      "shape": [
+        1613,
+        1612
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 87.41773339103266,
+      "emission_deg": 1.13,
+      "phase_deg": 88.55,
+      "north_azimuth_deg": 358.6489725472707,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M146535043RE",
+      "product_id": "M146535043RE",
+      "region_id": "S3",
+      "path": "data/raw/S3/M146535043RE.tif",
+      "sha256": "2b577197efc7fd5e2c8d67390e3972326ed7930ea37d2b8c8c9ec3698f985be0",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S3/M146535043RE.tif",
+      "acquired_utc": "2010-12-09 11:56:15.887",
+      "pixel_scale_m": 0.87132938504098,
+      "crs_wkt": "PROJCS[\"PolarStereographic MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-88.80638],PARAMETER[\"central_meridian\",123.77827],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -499.2717376284618,
+        35703.5928814391,
+        499.27173762850134,
+        36703.0076860811
+      ],
+      "shape": [
+        1147,
+        1146
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 88.43279398551181,
+      "emission_deg": 1.15,
+      "phase_deg": 87.53,
+      "north_azimuth_deg": 15.4430706322177,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M103776992LE",
+      "product_id": "M103776992LE",
+      "region_id": "S3",
+      "path": "data/raw/S3/M103776992LE.tif",
+      "sha256": "59e39a13971812eb9dd1f9f5e54047e22b69d177b5c4d8c98ce900bba6d828bd",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S3/M103776992LE.tif",
+      "acquired_utc": "2009-08-01 14:42:04.978",
+      "pixel_scale_m": 0.60307125518065,
+      "crs_wkt": "PROJCS[\"PolarStereographic MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-88.80638],PARAMETER[\"central_meridian\",123.77827],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -499.9460705447723,
+        35703.62752045973,
+        499.94607054474534,
+        36702.916590294066
+      ],
+      "shape": [
+        1657,
+        1658
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 89.36505555268258,
+      "emission_deg": 1.68,
+      "phase_deg": 91.08,
+      "north_azimuth_deg": 288.3922931257703,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M165539130RE",
+      "product_id": "M165539130RE",
+      "region_id": "S3",
+      "path": "data/raw/S3/M165539130RE.tif",
+      "sha256": "e6461307134f369c59bf18686fe01eeb4b21f40dfd17b4de994b21a14bddefd1",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S3/M165539130RE.tif",
+      "acquired_utc": "2011-07-17 10:51:03.855",
+      "pixel_scale_m": 0.87341800243723,
+      "crs_wkt": "PROJCS[\"PolarStereographic MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-88.80638],PARAMETER[\"central_meridian\",123.77827],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -499.59509739408486,
+        35703.581103628916,
+        499.59509739410623,
+        36702.77129841711
+      ],
+      "shape": [
+        1144,
+        1144
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 90.10465798646653,
+      "emission_deg": 1.14,
+      "phase_deg": 88.54,
+      "north_azimuth_deg": 214.6123656812566,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    },
+    {
+      "asset_id": "M156026240RE",
+      "product_id": "M156026240RE",
+      "region_id": "S3",
+      "path": "data/raw/S3/M156026240RE.tif",
+      "sha256": "7020296d1a795dc0d77258669e70c25edb7b9aa2d4b5dff376532ec0159aca74",
+      "source_url": "https://raw.githubusercontent.com/Bin501/CNSFM/94cebaaa7fd3e070f8040620975554c3067651ef/Dataset/S3/M156026240RE.tif",
+      "acquired_utc": "2011-03-29 08:22:53.875",
+      "pixel_scale_m": 0.93167678239504,
+      "crs_wkt": "PROJCS[\"PolarStereographic MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-88.80638],PARAMETER[\"central_meridian\",123.77827],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "bounds_m": [
+        -499.37875536370257,
+        35703.71765494265,
+        499.37875536378033,
+        36703.40684245253
+      ],
+      "shape": [
+        1073,
+        1072
+      ],
+      "nodata": 255.0,
+      "incidence_deg": 92.10114497002523,
+      "emission_deg": 1.15,
+      "phase_deg": 91.17,
+      "north_azimuth_deg": 119.1557045117392,
+      "solar_azimuth_deg": null,
+      "source_processing": "Authors' map-projected 1000m lunar image crops; local DEM/orthorectification uncertainty not supplied",
+      "use_conditions": "Public research release; no dataset-specific license supplied. Download originals from upstream; no source rasters redistributed here."
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "S1_01",
+      "region_id": "S1",
+      "split": "train",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1389516184RE",
+      "query": "M1328449896RE",
+      "common_bounds_m": [
+        -505.7945273491795,
+        1071925.448192151,
+        492.51578397824505,
+        1072922.988023742
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S1_02",
+      "region_id": "S1",
+      "split": "train",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1389516184RE",
+      "query": "M1259058367LE",
+      "common_bounds_m": [
+        -505.7945273491795,
+        1071925.448192151,
+        492.51578397824505,
+        1072922.988023742
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S1_03",
+      "region_id": "S1",
+      "split": "train",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1389516184RE",
+      "query": "M1142582775RE",
+      "common_bounds_m": [
+        -505.7945273491795,
+        1071925.448192151,
+        492.51578397824505,
+        1072922.988023742
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S1_04",
+      "region_id": "S1",
+      "split": "train",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1389516184RE",
+      "query": "M1276733320LE",
+      "common_bounds_m": [
+        -505.7945273491795,
+        1071925.448192151,
+        492.51578397824505,
+        1072922.988023742
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S2_01",
+      "region_id": "S2",
+      "split": "dev",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1134046721RE",
+      "query": "M122054682RE",
+      "common_bounds_m": [
+        -503.7664165705064,
+        19942.801820209526,
+        494.9083033470381,
+        20941.11941402297
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S2_02",
+      "region_id": "S2",
+      "split": "dev",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1134046721RE",
+      "query": "M1129340193RE",
+      "common_bounds_m": [
+        -503.7664165705064,
+        19942.801820209526,
+        494.9083033470381,
+        20941.11941402297
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S2_03",
+      "region_id": "S2",
+      "split": "dev",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1134046721RE",
+      "query": "M150361817RE",
+      "common_bounds_m": [
+        -503.7664165705064,
+        19942.801820209526,
+        494.9083033470381,
+        20941.11941402297
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S2_04",
+      "region_id": "S2",
+      "split": "dev",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M1134046721RE",
+      "query": "M1277607697LE",
+      "common_bounds_m": [
+        -503.7664165705064,
+        19942.801820209526,
+        494.9083033470381,
+        20941.11941402297
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S3_01",
+      "region_id": "S3",
+      "split": "test",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M108374740RE",
+      "query": "M146535043RE",
+      "common_bounds_m": [
+        -499.2717376284618,
+        35703.930468418315,
+        499.27173762850134,
+        36702.77129841711
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S3_02",
+      "region_id": "S3",
+      "split": "test",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M108374740RE",
+      "query": "M103776992LE",
+      "common_bounds_m": [
+        -499.2717376284618,
+        35703.930468418315,
+        499.27173762850134,
+        36702.77129841711
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S3_03",
+      "region_id": "S3",
+      "split": "test",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M108374740RE",
+      "query": "M165539130RE",
+      "common_bounds_m": [
+        -499.2717376284618,
+        35703.930468418315,
+        499.27173762850134,
+        36702.77129841711
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied."
+    },
+    {
+      "pair_id": "S3_04",
+      "region_id": "S3",
+      "split": "test",
+      "dataset_kind": "real_repeat_observation",
+      "reference": "M108374740RE",
+      "query": "M156026240RE",
+      "common_bounds_m": [
+        -499.2717376284618,
+        35703.930468418315,
+        499.27173762850134,
+        36702.77129841711
+      ],
+      "reference_type": "map_grid",
+      "reference_uncertainty_px": null,
+      "checkpoints": [],
+      "audit_status": "visual_overlap_checked_map_reference_only",
+      "audit_notes": "Visual inspection confirms common terrain and changing shadow/contrast; no independent subpixel reference supplied. Very little common sunlit area; retain as difficult failure case."
+    }
+  ]
+}

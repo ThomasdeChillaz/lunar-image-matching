@@ -1,0 +1,42 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.7.1-x86_64-i386-64bit",
+  "numpy": "1.26.4",
+  "opencv": "4.10.0",
+  "source_sha256": {
+    "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+    "evaluate.py": "738f6616e1974910a20d0394571ea91013c887b3e0ded0a4254e160e373b3a80",
+    "experiment_report.py": "51cec5f5264fca16e19b890448cff55524150fa26e79cac26c385b4921e0fa57",
+    "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+    "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+    "learned.py": "8e3da0ec403a7bacdc18c4f11134e861a88358a1e4353856f791f445d1390739",
+    "synthetic.py": "6de5947e09bb333b35ee9667671b1970770accb8e29db6626062895b0a06302a",
+    "fetch_models.py": "54e3d494754ed530a37674c180af48c83cc553db42b7e7d76cc24f99e51c050d"
+  },
+  "git_revision": "2bba12482e81e34590c9c3f12990918c13730dcf",
+  "manifest_sha256": "f453688906dd029928a782495aa780980ada73eea03f75b73b8c9871a897755e",
+  "config_sha256": "0c4cfe25ea5c4b1de8db77db272b31fcd48e06e226542bd2a5f20df98719d2d4",
+  "device": "cpu",
+  "opencv_threads": 1,
+  "learned_initialization_ms": 191.317994000201,
+  "timing": "Warmed CPU/device inference including preprocessing, feature extraction, matching and geometry; excludes I/O, download and learned model loading. One repeat: descriptive, not a precise speed benchmark.",
+  "reference_warning": "Map-grid error is reference disagreement with unquantified map uncertainty.",
+  "torch": "2.2.2",
+  "model_lock": {
+    "lightglue_revision": "eb42fee2d71449efb0aa5c10549752b5d75384d8",
+    "disk_revision": "8dc6d4d65b47210f629e21ad1fbfb56944b11696",
+    "choice": "DISK depth features + LightGlue. Both upstream projects use Apache-2.0; avoids the distinct restrictive SuperPoint license.",
+    "weights": [
+      {
+        "filename": "depth-save.pth",
+        "url": "https://raw.githubusercontent.com/cvlab-epfl/disk/8dc6d4d65b47210f629e21ad1fbfb56944b11696/depth-save.pth",
+        "sha256": "9c2ee4ded238892dfa51569941372601e35e4a74aa6f84ea80053d2ab1c07abe"
+      },
+      {
+        "filename": "disk_lightglue_v0-1_arxiv.pth",
+        "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/disk_lightglue.pth",
+        "sha256": "b5b21d47ea24f2c5e501aec9c91b9716e4c8c3429a4dc1e615c133c4c9378335"
+      }
+    ]
+  }
+}
