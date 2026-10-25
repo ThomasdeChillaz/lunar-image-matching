@@ -1,0 +1,18 @@
+{
+  "source_sha256": {
+    "benchmark.py": "13efc76fe6a3b632f20d9ab62dd13295887d73c922c2d2ffeec25543200bb8f9",
+    "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+    "synthetic.py": "6de5947e09bb333b35ee9667671b1970770accb8e29db6626062895b0a06302a",
+    "matchers.py": "d4580328ff0a62c1457dc20da9e19714195f58239077dfe9b699ef528b35ea2b",
+    "reporting.py": "fdde0adee4b39fea55d681a71f900f355bec3b2cac899a3610b3cd2e03e90e11"
+  },
+  "python": "3.12.14",
+  "platform": "macOS-26.7.1-x86_64-i386-64bit",
+  "numpy": "2.5.4",
+  "opencv": "4.14.0",
+  "git_revision": null,
+  "opencv_threads": 1,
+  "image_sha256": null,
+  "timing": "CPU wall time including preprocessing and detector initialization; no accelerator",
+  "limitation": "Controlled perturbations only; no physical shadow model or real-repeat validation."
+}

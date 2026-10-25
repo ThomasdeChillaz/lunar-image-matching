@@ -11,12 +11,16 @@ Python 3.10 or newer:
 ```sh
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-lock.txt
 python -m pytest -q
 python benchmark.py --config smoke.json --output runs/smoke
 ```
 
 The command writes per-pair results, a summary, configuration/environment metadata, three plots and a gallery. It refuses to overwrite an existing run. Transforms map reference `(x,y)` coordinates to query `(x,y)` coordinates. Error is median endpoint error on valid evaluation points, in pixels. Failures count against success rates and are not silently discarded.
+
+## Verified starter result
+
+The procedural smoke run covers 25 pairs and 4 method/preprocessing combinations (100 evaluations). All 16 tests pass. See [SMOKE_REPORT.md](SMOKE_REPORT.md) for scope and measured results. This is an implementation check, not a lunar research result.
 
 ## Research path
 

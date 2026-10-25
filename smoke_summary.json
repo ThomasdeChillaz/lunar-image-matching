@@ -1,0 +1,182 @@
+[
+  {
+    "method": "ncc",
+    "case": "bright_noise",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 1.7153570006485097
+  },
+  {
+    "method": "ncc",
+    "case": "dark_gamma",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 2.146075001292047
+  },
+  {
+    "method": "ncc",
+    "case": "identity",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 2.007643000979442
+  },
+  {
+    "method": "ncc",
+    "case": "rotation_stress",
+    "pairs": 5,
+    "success_rate": 0.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 18.901728095324522,
+    "median_runtime_ms": 1.8189959992014337
+  },
+  {
+    "method": "ncc",
+    "case": "translation",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 1.5180900008999743
+  },
+  {
+    "method": "ncc+clahe",
+    "case": "bright_noise",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 2.3894839996501105
+  },
+  {
+    "method": "ncc+clahe",
+    "case": "dark_gamma",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 1.9763819982472342
+  },
+  {
+    "method": "ncc+clahe",
+    "case": "identity",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 2.5366600002598716
+  },
+  {
+    "method": "ncc+clahe",
+    "case": "rotation_stress",
+    "pairs": 5,
+    "success_rate": 0.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 18.901728095324522,
+    "median_runtime_ms": 2.2998860004008748
+  },
+  {
+    "method": "ncc+clahe",
+    "case": "translation",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 2.189583001381834
+  },
+  {
+    "method": "sift",
+    "case": "bright_noise",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.02911823357422213,
+    "median_runtime_ms": 78.77696700052184
+  },
+  {
+    "method": "sift",
+    "case": "dark_gamma",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.028851256224582764,
+    "median_runtime_ms": 49.31173499971919
+  },
+  {
+    "method": "sift",
+    "case": "identity",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 76.30697199965653
+  },
+  {
+    "method": "sift",
+    "case": "rotation_stress",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0805040192842933,
+    "median_runtime_ms": 56.931314000394195
+  },
+  {
+    "method": "sift",
+    "case": "translation",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0020625997598465074,
+    "median_runtime_ms": 68.63942299969494
+  },
+  {
+    "method": "sift+clahe",
+    "case": "bright_noise",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.03478802811578219,
+    "median_runtime_ms": 138.44335099929594
+  },
+  {
+    "method": "sift+clahe",
+    "case": "dark_gamma",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.016297969489574838,
+    "median_runtime_ms": 128.02777900105866
+  },
+  {
+    "method": "sift+clahe",
+    "case": "identity",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0,
+    "median_runtime_ms": 162.44438399917271
+  },
+  {
+    "method": "sift+clahe",
+    "case": "rotation_stress",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.06544715723903195,
+    "median_runtime_ms": 189.72129999929166
+  },
+  {
+    "method": "sift+clahe",
+    "case": "translation",
+    "pairs": 5,
+    "success_rate": 1.0,
+    "failed_registrations": 0,
+    "median_error_registered_px": 0.0035877907247303924,
+    "median_runtime_ms": 150.66994900007558
+  }
+]
