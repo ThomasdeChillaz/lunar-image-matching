@@ -1,0 +1,9 @@
+{
+  "lightglue_revision": "eb42fee2d71449efb0aa5c10549752b5d75384d8",
+  "disk_revision": "8dc6d4d65b47210f629e21ad1fbfb56944b11696",
+  "choice": "DISK depth features + LightGlue. Both upstream projects use Apache-2.0; avoids the distinct restrictive SuperPoint license.",
+  "weights": [
+    {"filename":"depth-save.pth","url":"https://raw.githubusercontent.com/cvlab-epfl/disk/8dc6d4d65b47210f629e21ad1fbfb56944b11696/depth-save.pth","sha256":"9c2ee4ded238892dfa51569941372601e35e4a74aa6f84ea80053d2ab1c07abe"},
+    {"filename":"disk_lightglue_v0-1_arxiv.pth","url":"https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/disk_lightglue.pth","sha256":"b5b21d47ea24f2c5e501aec9c91b9716e4c8c3429a4dc1e615c133c4c9378335"}
+  ]
+}
