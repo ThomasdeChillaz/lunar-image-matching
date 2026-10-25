@@ -5,7 +5,7 @@ Build a scientifically honest, reproducible benchmark of lunar image matching ac
 
 ## Workflow for every milestone
 1. Read README, this file, MILESTONES and STATUS. Inspect existing work before editing.
-2. Implement the next incomplete milestone only after its dependencies pass.
+2. Implement the next incomplete milestone after its software dependencies pass. If an external dataset lacks independent reference accuracy, proceed with explicitly provisional map-reference diagnostics and keep scientific-validation acceptance open; never invent checkpoint accuracy.
 3. Run relevant numerical tests and a small end-to-end experiment. Record exact commands, dataset/version, configuration, seed, environment, outcomes and limitations.
 4. Update STATUS with evidence. Distinguish implemented, executed and scientifically validated.
 5. Commit with `M<number>: <concrete result>` and push to the existing default branch for this new solo project. Never force-push or rewrite history. Never commit credentials, personal emails, virtual environments, downloaded source rasters or model weights.
