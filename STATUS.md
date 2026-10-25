@@ -1,8 +1,8 @@
 # Status
 
-- M0: complete — repository documents and execution contract prepared.
-- M1: in progress — implementation and numerical validation.
-- M2: pending.
-- M3–M6: pending; no real lunar validation or learned-model results claimed.
+- M0: complete — repository, AI execution plan, milestones and data protocol.
+- M1: complete — seeded inputs, known transforms and common-support endpoint metrics. Five numerical tests passed.
+- M2: in progress — classical matching and benchmark/report validation.
+- M3–M6: pending. No real lunar validation or learned-model result claimed.
 
-No scientific result is available yet.
+Validation: `python -m pytest test_geometry.py -q` — 5 passed.
