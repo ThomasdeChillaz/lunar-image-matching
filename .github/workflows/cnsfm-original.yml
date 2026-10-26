@@ -1,0 +1,46 @@
+name: Original CNSFM on Windows
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Probe two images per scene before full 321-pair execution
+        type: choice
+        default: probe
+        options: [probe, full]
+permissions:
+  contents: read
+jobs:
+  original:
+    runs-on: windows-2022
+    timeout-minutes: 160
+    strategy:
+      fail-fast: false
+      matrix:
+        region: [S1, S2, S3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retrieve exact author release
+        shell: pwsh
+        run: |
+          git clone https://github.com/Bin501/CNSFM.git upstream-cnsfm
+          git -C upstream-cnsfm checkout 94cebaaa7fd3e070f8040620975554c3067651ef
+      - name: Execute original binary with original crater detections
+        shell: pwsh
+        env:
+          CNSFM_SCOPE: ${{ inputs.scope }}
+          CNSFM_REGION: ${{ matrix.region }}
+        run: |
+          $probeArgument = @()
+          if ($env:CNSFM_SCOPE -eq 'probe') { $probeArgument = @('--probe') }
+          python run_cnsfm.py --source upstream-cnsfm --region $env:CNSFM_REGION --output "runs/cnsfm-$env:CNSFM_REGION" @probeArgument
+      - name: Preserve logs, binary hashes and original outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cnsfm-${{ matrix.region }}-${{ inputs.scope }}
+          path: runs/cnsfm-${{ matrix.region }}/
