@@ -6,6 +6,8 @@ A reproducible research project comparing classical and pretrained learned image
 
 The project includes checksummed data acquisition, masked geospatial loading, NCC and SIFT baselines, pinned DISK + LightGlue inference, frozen region splits, quantitative evaluation, plots, an interactive offline viewer, a two-page PDF report, and an independent-checkpoint review tool.
 
+**Current scope (29 October 2026):** no human landmark review is required or planned. Accuracy comparisons use known transforms and physically rendered changing-light pairs. Real repeat observations support fit rates, consistency and provisional map-agreement diagnostics only; real navigation accuracy and real-data correctness calibration are unverified. Review tools remain optional for a future validation study.
+
 **Scientific status:** repeat-observation measurements use the publisher's map coordinates. Their accuracy is unknown. These are map-reference diagnostics; independent checkpoint validation remains open. Exact-transform controls provide a separate correctness check. See [STATUS.md](STATUS.md) and [DATASET_CARD.md](DATASET_CARD.md). No NASA/JPL affiliation or endorsement is implied.
 
 **Research extension:** [measured report](reports/EXTENSION_REPORT.md). The full 321-pair real-image benchmark and original CNSFM common-grid comparison have executed, alongside 1,152 physical-render evaluations and 108 method measurements on 27 new real repeat pairs across five Tycho areas. A small lunar descriptor adapter improved held-out synthetic registration from 93/128 to 98/128 pairs; its development-selected rejection policy still accepted three incorrect held-out alignments. Independent real reference review, real-data rejection calibration and verified real-image improvements remain open.
@@ -55,9 +57,9 @@ Then visit `http://127.0.0.1:8000/lunar_demo.html`. For a new run, open `runs/re
 
 ![Held-out reference agreement](lunar_agreement.png)
 
-## Independent checkpoint review
+## Optional independent checkpoint review
 
-The updated [source-bound review packet](reports/landmark_review.html) supports zoom, named landmarks, separate reference/query uncertainty and unscorable cases. Human review is required; it contains no suggested coordinates. Generate a fresh packet and import a completed review:
+The updated [source-bound review packet](reports/landmark_review.html) supports zoom, named landmarks, separate reference/query uncertainty and unscorable cases. This optional validation route requires human-selected landmarks; it contains no suggested coordinates. It is not required for the current project scope. Generate a fresh packet and import a completed review:
 
 ```sh
 python landmark_review.py --output runs/manual-review.html
