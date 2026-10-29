@@ -4,7 +4,7 @@ A reproducible research project comparing classical and pretrained learned image
 
 **Question:** How do matching methods behave when illumination changes on the same lunar terrain?
 
-**Active research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [first measured results](reports/RESEARCH_ITERATION_1.md). LoFTR now covers the exact same 576 rendered pairs (271 correct). Structural self-similarity is promising on development translation cases (262/288 versus NCC 179/288); rotation/scale remain weak. Expanded training and fresh geographic evaluation are in progress. These are not state-of-the-art or verified real-navigation claims.
+**Active research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [latest measured results](reports/RESEARCH_ITERATION_2.md). The image-selected hybrid succeeds on 975/1,152 development pairs (84.64%), versus pretrained LoFTR 704/1,152 (61.11%), with translation, rotation, scale and combined motion reported separately. A confidence cascade retains 857 correct fits with zero observed wrong acceptances in development. Both geographic reserves remain untouched, and stronger-baseline/refinement comparisons continue. These are development findings, not state-of-the-art or verified real-navigation claims. The [first iteration](reports/RESEARCH_ITERATION_1.md) preserves the original fixed-translation and structural-screen results.
 
 The project includes checksummed data acquisition, masked geospatial loading, NCC and SIFT baselines, pinned DISK + LightGlue inference, frozen region splits, quantitative evaluation, plots, an interactive offline viewer, a two-page PDF report, and an independent-checkpoint review tool.
 
