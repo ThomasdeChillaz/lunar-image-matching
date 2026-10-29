@@ -41,18 +41,26 @@
     "crosslighting_audit.json": "f6f2eb3bde0652079df855da9e4bece8f4db362f5488b5ea391de0ba416ca750"
   },
   "scientific_acceptance": {
-    "independent_references": "Pending actual human JSON; user volunteered to review the blank 12-pair packet. No generated references accepted.",
+    "independent_references": "Not obtained. User declined all human review on 29 October 2026. Optional future validation, outside current automated benchmark scope; no generated references accepted.",
     "expanded_baseline": "Executed original Windows CNSFM on exact shared 512px arrays; native tiled detector pipeline and paper percentages not reproduced. Added five real Tycho areas; no global lunar-generalization claim.",
-    "rejection": "Original dev-selected policies transported unchanged to all Sun pairs. Frozen learned policy retains 5 correct fits and accepts 7 incorrect; its translation limit excludes the exact imposed displacement. No test-based replacement selected. Real-data calibration awaits independent development labels.",
+    "rejection": "Original dev-selected policies transported unchanged to all Sun pairs. Frozen learned policy retains 5 correct fits and accepts 7 incorrect; its translation limit excludes the exact imposed displacement. No test-based replacement selected. Any future real-data correctness calibration would require independent development labels and is outside current scope.",
     "illumination": "Source solar metadata, raw non-dark-support sensitivity and a completed fixed-geometry follow-up over 576 Sun pairs (13.52\u2013155.64 degrees, 161 pairs at least 90 degrees) evaluated. Intensity support remains a proxy, not geometric shadow truth; independent alignment is still required for true real-image common support.",
     "adaptation": "Original training unchanged. Adapter 323/576 vs frozen 303/576 in exploratory fixed-geometry physical follow-up; NCC 344/576. Real polar returned fits remain 99/231 vs158/231; no verified real gain."
   },
   "objective_achieved": false,
-  "remaining_dependency": "Completed independent human landmark review, uncertainty-aware scoring, and real-development gate calibration when sufficient labels exist.",
+  "remaining_dependency": "Original full real-accuracy objective would require independent reference measurements and real-development correctness calibration; these are outside current scope, not a pending user action.",
   "derived_analysis_sha256": {
     "physical_lighting_analysis.json": "f1b855565141b48784c10dfc2a2d18871b8e69ed8c3e87e345ece4a770a22523",
     "paired_uncertainty.json": "73e2048b78c4b8d62d1a6d15831eea6fa245f806afb0711b1ccc158ae4f6974e",
     "crosslighting_summary.json": "309030740f1f8712aeb8297e60f84c169769467807427997fb937e0b91dd1485"
   },
-  "uncertainty_correction": "Overlapping footprints OR shared acquisitions form bootstrap components: one overlapping test pair reduces 16 acquisitions to 15 components. Original anchor gain interval revised to -2.50,+10.42 percentage points; all saved inference outcomes unchanged."
+  "uncertainty_correction": "Overlapping footprints OR shared acquisitions form bootstrap components: one overlapping test pair reduces 16 acquisitions to 15 components. Original anchor gain interval revised to -2.50,+10.42 percentage points; all saved inference outcomes unchanged.",
+  "current_scope": {
+    "amended_on": "2026-10-29",
+    "human_review_required": false,
+    "awaiting_user_review": false,
+    "accuracy_evidence": "Known-geometry procedural controls and physical changing-light renders.",
+    "real_image_evidence": "Fit rates, cycle consistency, supporting-point coverage and provisional map agreement; correctness and navigation accuracy remain unverified.",
+    "original_objective_achieved": false
+  }
 }

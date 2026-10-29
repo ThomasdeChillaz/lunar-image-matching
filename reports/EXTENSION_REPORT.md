@@ -119,7 +119,7 @@ The authors’ pinned Windows executable completed all 642 executions: 321 pairs
 
 The released YOLOv9 crater checkpoint produced 2,213 predictions on all 42 identical masked 512px inputs. Whole-image redetection differs from the authors’ native tiled detector pipeline. The paper reports native-input success rates of 100%, 100% and 72.3% for S1/S2/S3, using more than three correct matches as success. Our shared six-inlier geometry criterion, resolution and provisional map scoring differ; neither the published percentages nor our returned-fit rates establish a directly comparable accuracy ranking. No paper-percentage reproduction is claimed.
 
-The blank, source-bound [landmark review packet](landmark_review.html) requires human input. It supports 10–20 distributed landmarks, per-image uncertainty, explicit unscorable cases and optional independent second review. No generated or matcher-derived coordinates have been imported as independent references. Real-data rejection calibration, verified registration accuracy and verified real-image adaptation improvement remain open.
+The blank, source-bound [landmark review packet](landmark_review.html) is an optional future validation tool. The user declined human review on 29 October 2026; no annotation is required or awaited for the current automated benchmark. It supports 10–20 distributed landmarks, per-image uncertainty, explicit unscorable cases and optional independent second review. No generated or matcher-derived coordinates have been imported as independent references. Real-data rejection calibration, verified registration accuracy and verified real-image adaptation improvement remain open.
 
 ## Additional real regions and adapter transfer
 
