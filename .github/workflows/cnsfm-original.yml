@@ -3,20 +3,38 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: Probe two images per scene before full 321-pair execution
+        description: Original/native probe, common-grid probe, full common-grid comparison, or native full run
         type: choice
         default: probe
-        options: [probe, full]
+        options: [probe, common_probe, full, native_full]
 permissions:
   contents: read
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.value }}
+    steps:
+      - id: matrix
+        env:
+          CNSFM_SCOPE: ${{ inputs.scope }}
+        run: |
+          python - <<'PY'
+          import json, os
+          scope = os.environ['CNSFM_SCOPE']
+          shards = {'S1': 2, 'S2': 2, 'S3': 16} if scope == 'native_full' else ({'S1': 1, 'S2': 1, 'S3': 8} if scope == 'full' else {'S1': 1, 'S2': 1, 'S3': 1})
+          matrix = {'include': [{'region': r, 'shard': i, 'count': count} for r, count in shards.items() for i in range(count)]}
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write('value=' + json.dumps(matrix) + '\n')
+          PY
   original:
+    needs: prepare
     runs-on: windows-2022
     timeout-minutes: 160
     strategy:
       fail-fast: false
-      matrix:
-        region: [S1, S2, S3]
+      max-parallel: 20
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,17 +48,40 @@ jobs:
           git clone https://github.com/Bin501/CNSFM.git upstream-cnsfm
           git -C upstream-cnsfm checkout 94cebaaa7fd3e070f8040620975554c3067651ef
       - name: Execute original binary with original crater detections
+        if: inputs.scope == 'probe' || inputs.scope == 'native_full'
         shell: pwsh
         env:
           CNSFM_SCOPE: ${{ inputs.scope }}
           CNSFM_REGION: ${{ matrix.region }}
+          CNSFM_SHARD: ${{ matrix.shard }}
+          CNSFM_COUNT: ${{ matrix.count }}
         run: |
-          $probeArgument = @()
-          if ($env:CNSFM_SCOPE -eq 'probe') { $probeArgument = @('--probe') }
-          python run_cnsfm.py --source upstream-cnsfm --region $env:CNSFM_REGION --output "runs/cnsfm-$env:CNSFM_REGION" @probeArgument
+          $output = "runs/cnsfm-$env:CNSFM_REGION-$env:CNSFM_SHARD"
+          if ($env:CNSFM_SCOPE -eq 'probe') {
+            python run_cnsfm.py --source upstream-cnsfm --region $env:CNSFM_REGION --output $output --probe
+          } else {
+            python run_cnsfm_sharded.py --source upstream-cnsfm --region $env:CNSFM_REGION --output $output --shard-index $env:CNSFM_SHARD --shard-count $env:CNSFM_COUNT --bidirectional
+          }
+      - name: Prepare identical 512px inputs and independently rerun matching both ways
+        if: inputs.scope == 'common_probe' || inputs.scope == 'full'
+        shell: pwsh
+        env:
+          CNSFM_SCOPE: ${{ inputs.scope }}
+          CNSFM_REGION: ${{ matrix.region }}
+          CNSFM_SHARD: ${{ matrix.shard }}
+          CNSFM_COUNT: ${{ matrix.count }}
+        run: |
+          pip install numpy==1.26.4 opencv-python==4.10.0.84 rasterio==1.4.4
+          python prepare_cnsfm_common.py --output data/cnsfm/common512 --fetch
+          $output = "runs/cnsfm-$env:CNSFM_REGION-$env:CNSFM_SHARD"
+          if ($env:CNSFM_SCOPE -eq 'common_probe') {
+            python run_cnsfm.py --source upstream-cnsfm --dataset-root data/cnsfm/common512/Dataset --region $env:CNSFM_REGION --output $output --probe
+          } else {
+            python run_cnsfm_sharded.py --source upstream-cnsfm --dataset-root data/cnsfm/common512/Dataset --region $env:CNSFM_REGION --output $output --shard-index $env:CNSFM_SHARD --shard-count $env:CNSFM_COUNT --bidirectional
+          }
       - name: Preserve logs, binary hashes and original outputs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: cnsfm-${{ matrix.region }}-${{ inputs.scope }}
-          path: runs/cnsfm-${{ matrix.region }}/
+          name: cnsfm-${{ matrix.region }}-${{ matrix.shard }}-${{ inputs.scope }}
+          path: runs/cnsfm-${{ matrix.region }}-${{ matrix.shard }}/
