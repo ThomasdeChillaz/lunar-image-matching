@@ -1,0 +1,11 @@
+{
+  "groups": 16,
+  "grouping": "Source acquisition; eight illumination pairs per tile",
+  "delta": 0.0390625,
+  "percentile_interval_95": [
+    -0.0234375,
+    0.109375
+  ],
+  "bootstrap_repetitions": 5000,
+  "warning": "Exploratory small-sample interval within one Tycho geographic holdout; not evidence of global or real-image generalization."
+}
