@@ -4,6 +4,8 @@ A reproducible research project comparing classical and pretrained learned image
 
 **Question:** How do matching methods behave when illumination changes on the same lunar terrain?
 
+**Active research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [first measured results](reports/RESEARCH_ITERATION_1.md). LoFTR now covers the exact same 576 rendered pairs (271 correct). Structural self-similarity is promising on development translation cases (262/288 versus NCC 179/288); rotation/scale remain weak. Expanded training and fresh geographic evaluation are in progress. These are not state-of-the-art or verified real-navigation claims.
+
 The project includes checksummed data acquisition, masked geospatial loading, NCC and SIFT baselines, pinned DISK + LightGlue inference, frozen region splits, quantitative evaluation, plots, an interactive offline viewer, a two-page PDF report, and an independent-checkpoint review tool.
 
 **Current scope (29 October 2026):** no human landmark review is required or planned. Accuracy comparisons use known transforms and physically rendered changing-light pairs. Real repeat observations support fit rates, consistency and provisional map-agreement diagnostics only; real navigation accuracy and real-data correctness calibration are unverified. Review tools remain optional for a future validation study.

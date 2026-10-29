@@ -1,5 +1,11 @@
 # Third-party sources
 
+## LoFTR and structural research hypotheses
+
+LoFTR inference uses Kornia 0.7.4 (Apache-2.0), already pinned in requirements-lock.txt. The original LoFTR project is Apache-2.0: https://github.com/zju3dv/LoFTR . Outdoor weights come from the Kornia-maintained Hugging Face repository, revision `0fb3b456cf176746709c38fa9cf80695a1c82dac`, whose model card declares MIT: https://huggingface.co/kornia/loftr . Weight SHA256 and every LoFTR implementation source hash are recorded in `loftr_model_lock.json`. Weights remain outside Git. This is the MegaDepth-trained model, not JPL's lunar-trained LoFTR.
+
+`structural_matchers.py` is original 2D experimental code inspired by local self-similarity in Heinrich et al., *MIND*, Medical Image Analysis 2012, https://doi.org/10.1016/j.media.2012.05.008 , and structural/radiometric invariance in Li et al., *RIFT*, TIP 2020, https://ljy-rs.github.io/web/Files/TIP2020.pdf . It does not copy their code or claim full method reproduction. The expanded physical subset retains the original MoonAnything CC BY 4.0 attribution and source provenance below.
+
 ## Learned model
 LightGlue source is pinned to `eb42fee2d71449efb0aa5c10549752b5d75384d8` in requirements-learned.txt. Its inference code and pretrained LightGlue weights are Apache-2.0: https://github.com/cvg/LightGlue/blob/eb42fee2d71449efb0aa5c10549752b5d75384d8/LICENSE . Citation: Lindenberger, Sarlin and Pollefeys, *LightGlue: Local Feature Matching at Light Speed*, ICCV 2023, https://arxiv.org/abs/2306.13643 .
 

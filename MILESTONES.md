@@ -1,5 +1,13 @@
 # Milestones
 
+## Active research iteration milestones
+
+- M12: pinned LoFTR on identical original Sun pairs, complete outcomes and pixel/metric audit. Executed.
+- M13: expanded training and source/terrain-disjoint fresh geographic reserves. Dataset frozen; expanded training completed; fresh evaluation not yet executed.
+- M14: explicit translation/rotation/scale/combined experiments and literature-inspired development hypotheses. Initial structural screen executed; geometry-search and learned development comparisons running.
+- M15: development-only rejection and model selection, frozen before reserve evaluation. Initial empirical policies saved; final candidate selection and fresh validation pending.
+- M16: substantial advantage against relevant current baselines on a common protocol, with uncertainty, failures, negatives and reproducibility. Not established; do not infer completion from development gains.
+
 ## Scope amendment — 29 October 2026
 
 The user has declined all human landmark review. The original scientific acceptance criteria below are retained as historical criteria for verified real-image accuracy, not as blockers for the current automated benchmark. Current deliverables use known-geometry procedural and physical-render accuracy, and clearly labelled unverified real-image diagnostics. Human annotation, real-development correctness calibration and independently verified real-image transfer are optional future validation, outside current scope. No pending user annotation is required.

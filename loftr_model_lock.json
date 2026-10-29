@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "implementation": "kornia.feature.LoFTR",
+  "kornia_version": "0.7.4",
+  "implementation_tree_sha256": "779ae5a76e7da764e566c78a2dd8aa5409c78666963e7f543ba0dacd78765735",
+  "implementation_files_sha256": {
+    "__init__.py": "b3c154efcd88986681f78e9850de25d5bf75090f25e5f9cc04e71f5c067bf8c7",
+    "backbone/__init__.py": "5e2ecff5ea31c42449c825edb65051101bce57dfa641d8f0c102005e8e7b77db",
+    "backbone/resnet_fpn.py": "acd1a365a1b8b938d4f287395cc0191b55dfedd6809b5114ae1a6612b8b73659",
+    "loftr.py": "38817954655cdc7b07db12bd9e79eb9fecf84c11bbe99b1972427ac8b8916eec",
+    "loftr_module/__init__.py": "9341e09546550b57e2f7a901a9a0122102e7ecf599fb9ad508704ce2974d7c5b",
+    "loftr_module/fine_preprocess.py": "93328a079ba9f6c638e7e440ab7b987e1c520c396bc179dbcdd6fc8a2eb2a086",
+    "loftr_module/linear_attention.py": "c9e3d60a2e040fd0d15c4fd4f55fc08fb642ec5c97109615b576dae4f8a17556",
+    "loftr_module/transformer.py": "8dc651a9db53681d7b4ce9e4285658f6c1a8ef4e167c03f2b5db3bcac77a2392",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/coarse_matching.py": "2e3227f6f74e18ac40d974877e5d4e1894fce4594b26710bba7835c54c598eea",
+    "utils/fine_matching.py": "bca34aa1cbdf30ec17808ab7a9dd2744a7440bcdd8d1473b57aadc1443f226a4",
+    "utils/geometry.py": "64e6d6899ed7b0abe8a8902ee103f0e563a5cab56ff0a1ba7c84786ea7b75ba9",
+    "utils/position_encoding.py": "5ab441c4399c367b5f8de850b39fa5c776fc4e807cf97d6830f0724dae63c668",
+    "utils/supervision.py": "2f44034293e3c84155e0894b675c19cccdf60b13e3e036c9000c160d95c42259"
+  },
+  "pretrained": "outdoor",
+  "training_dataset": "MegaDepth",
+  "weight_path": "data/models/loftr_outdoor.ckpt",
+  "weight_url": "https://huggingface.co/kornia/loftr/resolve/0fb3b456cf176746709c38fa9cf80695a1c82dac/loftr_outdoor.ckpt",
+  "weight_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+  "weight_host_revision": "0fb3b456cf176746709c38fa9cf80695a1c82dac",
+  "implementation_license": "Apache-2.0",
+  "weight_host_declared_license": "MIT (Kornia Hugging Face model card)",
+  "config": "Unmodified Kornia 0.7.4 default outdoor configuration; no resizing, default confidence threshold .2. Shared six-inlier partial-affine RANSAC, 3px, applied after mask filtering."
+}

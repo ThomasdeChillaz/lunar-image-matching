@@ -1,5 +1,9 @@
 # Status
 
+## Active research iteration — 29 October 2026
+
+The new objective is tracked in [RESEARCH_ITERATIONS.md](RESEARCH_ITERATIONS.md); it is not complete. LoFTR has executed all 576 original Sun pairs (271 correct), with exact common pixels and independently reconstructed error audit. First structural development screening completed 4,896 outcomes across separate translation/rotation/scale/combined families and negatives; self-similarity reaches 262/288 development translation successes versus NCC 179/288, but geometry stress remains weak. Development-only diagnostic rejection policies are saved, with no fresh-test claim. A separate metadata-selected manifest contains 384 train, 64 dev and two untouched 32-patch geographic reserves, excluding earlier evaluated acquisitions/buffered footprints from reserves. Expanded bounded all-light adaptation completed on 11,727 training pairs; checkpoint 800 selected on development descriptor loss. Structural similarity search plus LoFTR/DISK baselines, and the expanded adapter, are now running separate registration development comparisons. No reserve outcomes exist. All regions are within Tycho. There are only 2 train, 2 dev, 4 reserve-A and 8 reserve-B footprint/acquisition components; patch counts are not independent evidence. Current validation: 81 tests passed including actual LoFTR and DISK/LightGlue inference; fresh procedural smoke produced 20 summaries. No new real-accuracy or state-of-the-art superiority is claimed.
+
 ## Implemented and executed
 - **M0–M2:** original benchmark contract, deterministic procedural checks and classical baselines.
 - **M3 software:** checksummed acquisition of 15 real LROC NAC observations, 12 repeat pairs, 3 geographically separate scenes; native nodata masks; shared-map-grid loading; split/provenance validation; offline checkpoint review and validated import. All 12 pairs were visually inspected. Fresh downloads verified all source hashes.
