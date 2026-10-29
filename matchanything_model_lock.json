@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "source_repository": "LittleFrog/MatchAnything",
+  "source_revision": "6a7bcb589ec8da3a9e861e799122beaa5eba2193",
+  "source_prefix": "imcui/third_party/MatchAnything/",
+  "source_files": {
+    "LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "bytes": 11358
+    },
+    "README.md": {
+      "sha256": "e80ef90240e80c9713cea21568ebcc2d2a3b549e2d1b3b9dce4c55a7d3a30ed5",
+      "git_blob_sha1": "ceb1c2a3152cbf3c8d7e42190e54040efa38d23d",
+      "bytes": 3292
+    },
+    "configs/models/eloftr_model.py": {
+      "sha256": "cf662464b10a3f710cc2d3d744f2ad61b06a37bc255346b745239433ac69d8b0",
+      "git_blob_sha1": "abbc030bb4181ea1d33d06f90797880ae03a18da",
+      "bytes": 3068
+    },
+    "src/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0
+    },
+    "src/config/default.py": {
+      "sha256": "9c7d1bd0309ced20269eb3aaf6ba30eb914469434828154c92367765364de70d",
+      "git_blob_sha1": "0b43845bfec84071b29b96012bf5401a889327ed",
+      "bytes": 13561
+    },
+    "src/datasets/common_data_pair.py": {
+      "sha256": "d828f1914efc7e1845d53d47af8d2cdfb24d8b984800ec14b16c75bab98b9c6e",
+      "git_blob_sha1": "f1bbe780301904484cc05e402210db4c9adc6aa7",
+      "bytes": 10945
+    },
+    "src/lightning/lightning_loftr.py": {
+      "sha256": "fd89d082e33413eb6415a5c31e8346c0c096c8d96154ddd6cad593609da45353",
+      "git_blob_sha1": "91a5132809b88d14d8f02ddf7012c5abba8c46ec",
+      "bytes": 16263
+    },
+    "src/loftr/__init__.py": {
+      "sha256": "ddc96fd0f1f4f8de2bf3c05b6c7d627db1c1ade03fe73dff9982e04d5cfbc090",
+      "git_blob_sha1": "82e7da71337eb772257c9a2b6c96b41a562aadea",
+      "bytes": 24
+    },
+    "src/loftr/backbone/__init__.py": {
+      "sha256": "adc00f5502db71196324916130b63583af76e7e3ba365e85ef27aed1199844da",
+      "git_blob_sha1": "d0eb682da64b684eeddcc5ea576b6e89137dd40b",
+      "bytes": 3666
+    },
+    "src/loftr/backbone/repvgg.py": {
+      "sha256": "98c7d7c68796fecd2f3e0251cae646623048beb7b8ea2531bbc9634d00e37a0c",
+      "git_blob_sha1": "873a934dc0094fc742076c10efbaafcc78c283a7",
+      "bytes": 15891
+    },
+    "src/loftr/backbone/resnet_fpn.py": {
+      "sha256": "4aea9dba9cd0da6e31c2bd5f4a4648bd93b9bf7b22398f5c3a453971232fbdc4",
+      "git_blob_sha1": "3596d7bd7f827197476e3f6ffaa1770a6913a3f8",
+      "bytes": 41888
+    },
+    "src/loftr/backbone/s2dnet.py": {
+      "sha256": "d9ad33e660fc6e9c354256673512353547d6331054c8af1d80c090f86563e21a",
+      "git_blob_sha1": "2e4c2eb8a61a5193405ea86b7e67c11a19fa94f7",
+      "bytes": 4382
+    },
+    "src/loftr/loftr.py": {
+      "sha256": "4129711f405c9dc8eb8c1706da37ff17d87401b628d1049ca7e62ac273e91faa",
+      "git_blob_sha1": "53b7d4a86ec175b483ead096ff9db1ae5802fa63",
+      "bytes": 14890
+    },
+    "src/loftr/loftr_module/__init__.py": {
+      "sha256": "f5a71f8e833f59258c2bc3585bad609ecab1f31566e17999c4825d5ae7a76891",
+      "git_blob_sha1": "ca51db4f50a0c4f3dcd795e74b83e633ab2e990a",
+      "bytes": 93
+    },
+    "src/loftr/loftr_module/fine_preprocess.py": {
+      "sha256": "345d7e70df285f234c88ea6dcd968891598a0dd7fcb6269cc532ac6623d13587",
+      "git_blob_sha1": "019c0199e7be5c7fe65669420a98003c51c8bed2",
+      "bytes": 19419
+    },
+    "src/loftr/loftr_module/linear_attention.py": {
+      "sha256": "f042a2eff05a8085e0d50407afd90aefb9337662f7e101798e55422ea316f1de",
+      "git_blob_sha1": "1d7f08fcd77195dab126a59d2e832e72bc31012a",
+      "bytes": 9093
+    },
+    "src/loftr/loftr_module/transformer.py": {
+      "sha256": "41202f3402cfd055772bdb9b24c8ce66f31541f16aaf2819b08f8f0a92093845",
+      "git_blob_sha1": "1ee8ce85912ad44539c27836ddd20f676912df5b",
+      "bytes": 87466
+    },
+    "src/loftr/loftr_module/transformer_utils.py": {
+      "sha256": "bdbe24ca1e2c131ed11640b25784a8098cbfe559bec84508aee674f43b68970a",
+      "git_blob_sha1": "25c261c973e8eeb6803ba6d21b5eb86992c3d857",
+      "bytes": 3058
+    },
+    "src/loftr/utils/coarse_matching.py": {
+      "sha256": "e60d61fdeec5a5a8b3ced9f2b60c831b30097041cb7bd187a497497048d331f0",
+      "git_blob_sha1": "cd8dfca8227423ed699ea736e23b516bed68c19d",
+      "bytes": 10586
+    },
+    "src/loftr/utils/fine_matching.py": {
+      "sha256": "64a99b4815965c246b48af6e9fd0ed46beeb0fc682ab5945b63a55f86cf36718",
+      "git_blob_sha1": "7be172a9bf9d45e3cbcf33a4926abddfca877629",
+      "bytes": 27589
+    },
+    "src/loftr/utils/geometry.py": {
+      "sha256": "3d7fb3d8e7fe51bc09215167cd443c1eb66f10b61771e5229c9462ac2b7560a7",
+      "git_blob_sha1": "47de76bd8d8928b123bc7357349b1e7ae4ee90ac",
+      "bytes": 14821
+    },
+    "src/loftr/utils/position_encoding.py": {
+      "sha256": "f9497500cadf1017cc2f3dc6ad761b40ca44f00fe74cbf2f17c4fb759974a8ba",
+      "git_blob_sha1": "e4a4b4780943617588cb193efb51a261ebc17cda",
+      "bytes": 7217
+    },
+    "src/loftr/utils/supervision.py": {
+      "sha256": "78fe91b140281f7a2952fa664068f6bba1ec951a04fdacc56bb13ecfe173af07",
+      "git_blob_sha1": "f57caa3a4b1498e31b5daca0289dd9381489f2b9",
+      "bytes": 26568
+    },
+    "src/optimizers/__init__.py": {
+      "sha256": "e34d9c2dc4f2a0f918bcf140574069107837e1496e16cc5333ff5e17c8f18769",
+      "git_blob_sha1": "2c946086518db86e6775774eca36d67188c8b657",
+      "bytes": 2175
+    },
+    "src/utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0
+    },
+    "src/utils/augment.py": {
+      "sha256": "5976e7bd96b7453914a74ab484a3a9c5405b29d489f36df2ae5ec0c24d15a1dd",
+      "git_blob_sha1": "d7c5d3e11b6fe083aaeff7555bb7ce3a4bfb755d",
+      "bytes": 1578
+    },
+    "src/utils/colmap.py": {
+      "sha256": "ca1a75b16eafdf36465786b6a55518908021f8e56de3d8f74566a2a54a3692ca",
+      "git_blob_sha1": "deefe92a3a8e132e3d5d51b8eaf08b1050e22aac",
+      "bytes": 22640
+    },
+    "src/utils/colmap/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0
+    },
+    "src/utils/colmap/database.py": {
+      "sha256": "951dec107a5a5f2cadcd511c573515847736abb48cf6bf819e05229a2f32e1bf",
+      "git_blob_sha1": "81a9c47bad6c522597dfaaf2a85ae0d252b5ab10",
+      "bytes": 15209
+    },
+    "src/utils/colmap/eval_helper.py": {
+      "sha256": "6619b0462824182eb88c5cec0a5cce49c9875318e8fd41bebe4088d1ed8847f0",
+      "git_blob_sha1": "2335a1abbc6321f7e3a4b40123d8386d4900a9d2",
+      "bytes": 7717
+    },
+    "src/utils/colmap/read_write_model.py": {
+      "sha256": "3e4cb9ee8c4360723b75fbf2e32151f48cb2c8d0685fe0c7531218e372257e90",
+      "git_blob_sha1": "eeb03c3bee0f1d6ffd5285835c83920e11de5b51",
+      "bytes": 21674
+    },
+    "src/utils/comm.py": {
+      "sha256": "4ee104b9eb1b1f6dea8e6665625f5842b33ea70d54198db894c9dc6fb9e56866",
+      "git_blob_sha1": "26ec9517cc47e224430106d8ae9aa99a3fe49167",
+      "bytes": 7776
+    },
+    "src/utils/dataloader.py": {
+      "sha256": "bda1eefa7683f51d27c8b0b7991af1f046bd93d388b0a04aaf8a7770584edae0",
+      "git_blob_sha1": "6da37b880a290c2bb3ebb028d0c8dab592acc5c1",
+      "bytes": 876
+    },
+    "src/utils/dataset.py": {
+      "sha256": "78730e6d79d34bfa3fe1ca27fce591072c3c1ec7b5fa08d61e767d818fb1543b",
+      "git_blob_sha1": "73a0a96db5ef2c08c99394a25e2db306bdb47b6a",
+      "bytes": 18071
+    },
+    "src/utils/easydict.py": {
+      "sha256": "3f346df25b143f30bb10c27d89c5007763b8a98cdb0daf7a120ca74fb9cbbc84",
+      "git_blob_sha1": "e4af7a343311581cd56b486fa4d1cd0f60d1ad86",
+      "bytes": 3136
+    },
+    "src/utils/geometry.py": {
+      "sha256": "e1f459c5675684c872bc57a126e828e0b7472bb48fc0694eb08d1f30a772dcd4",
+      "git_blob_sha1": "d6470ca309655e4e81f58bfe515a428b6e8b3623",
+      "bytes": 14632
+    },
+    "src/utils/homography_utils.py": {
+      "sha256": "64b9eca0b064bfc1fe2e562df46b08f8aa3c00d7393005a5677ef091fbe3b067",
+      "git_blob_sha1": "5d6ac5adb97c9963c216a97761cca9dfccacd91f",
+      "bytes": 12903
+    },
+    "src/utils/metrics.py": {
+      "sha256": "59519b0ff39e5d0c78993f41209f9ec9aa8d0ec285bcb3ab8b2e06253dd9a39e",
+      "git_blob_sha1": "32703f64de82aa45996011195a59b5f493a82bf1",
+      "bytes": 16660
+    },
+    "src/utils/misc.py": {
+      "sha256": "2688958809456fbfea2262b803c77f23ec23c105ea6e4b58d9c812433daed3ca",
+      "git_blob_sha1": "9c8db04666519753ea2df43903ab6c47ec00a9a1",
+      "bytes": 3512
+    },
+    "src/utils/plotting.py": {
+      "sha256": "1b7bfd924d127348dbc8e2f531b524d3772d511e0c13c1e64f56796e5f44f0fe",
+      "git_blob_sha1": "87d39733f57a09e4db61b61e53f82ad80e4a839b",
+      "bytes": 9280
+    },
+    "src/utils/profiler.py": {
+      "sha256": "1fc9d10ff12b3caff480f06194ad5789eb4b2d3d83ced861d62763ab60addbad",
+      "git_blob_sha1": "6d21ed79fb506ef09c75483355402c48a195aaa9",
+      "bytes": 1199
+    },
+    "src/utils/ray_utils.py": {
+      "sha256": "aed1ac71b45bbd58ea162efee0ad7a1a2108399e013f251256f1f1024cb14f19",
+      "git_blob_sha1": "9d6c7bf3172f4d53513338b1b615efcfded1c4c9",
+      "bytes": 3809
+    },
+    "src/utils/sample_homo.py": {
+      "sha256": "c356e422d79499c910c1ebaf94c510f045515a9ffbf0dccdd91c8055dde34ef7",
+      "git_blob_sha1": "d4fdac234e1058b5a1106a98b5c3f77426af4b91",
+      "bytes": 2030
+    },
+    "src/utils/utils.py": {
+      "sha256": "1a3953eecfd7f16eeb65a80759e5da7248b05dfc26c64b0a01dc8222f0ea0ea2",
+      "git_blob_sha1": "6f2f3d6f96fbb800d290c83a174f93ead187dcf3",
+      "bytes": 21578
+    }
+  },
+  "source_directory": "data/models/matchanything-release-src",
+  "source_license": "Apache-2.0, author release LICENSE",
+  "original_weight_path": "data/models/matchanything_eloftr.ckpt",
+  "original_weight_sha256": "b394fd368488e5e3136906daac825fadd3dd5376755dcdf5cb6ede0de20f6e7e",
+  "safe_weight_path": "data/models/matchanything_eloftr.safetensors",
+  "safe_weight_sha256": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+  "weight_archive_path": "data/models/matchanything_weights.zip",
+  "weight_archive_drive_id": "12L3g9-w8rR9K2L4rYaGaDJ7NqX1D713d",
+  "weight_archive_sha256": "b9e9508b5f41aff86e5ae52bb59da43134838c0de529cff0fe2f8c150f9e10e0",
+  "torch_version": "2.2.2",
+  "kornia_version": "0.7.4",
+  "optional_dependencies": {
+    "einops": "0.8.1",
+    "loguru": "0.7.3",
+    "yacs": "0.1.8",
+    "joblib": "1.4.2",
+    "pytorch-lightning": "2.2.5",
+    "torchmetrics": "0.11.4",
+    "lightning-utilities": "0.11.9",
+    "setuptools": "75.8.0",
+    "PyYAML": "6.0.2",
+    "safetensors": "0.6.2",
+    "gdown": "5.2.0",
+    "beautifulsoup4": "4.13.4",
+    "soupsieve": "2.7"
+  },
+  "weight_conversion": "Restricted weights_only=True extraction of all447 state tensors into safetensors; no callback allowlist required.",
+  "inference": "Actual author LoFTR core/defaults and eloftr_model.py assignments; NPE [832,832,128*factor,128*factor], author confidence .1, no reparameterization matching released matchanything_eloftr wrapper. Shared native mask filtering and partial-affine geometry.",
+  "resize_ablation": "Native128 or2x/4x bilinear internally, native pixel-center backconversion; fixed128px native profile. Explicit benchmark variants; not task-specific paper protocol reproduction."
+}

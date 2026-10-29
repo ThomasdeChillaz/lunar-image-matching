@@ -1,0 +1,15 @@
+# Install into a separate --target directory alongside requirements-lock.txt.
+# No changes to the validated core environment are necessary.
+einops==0.8.1
+loguru==0.7.3
+yacs==0.1.8
+joblib==1.4.2
+pytorch-lightning==2.2.5
+torchmetrics==0.11.4
+lightning-utilities==0.11.9
+setuptools==75.8.0
+PyYAML==6.0.2
+safetensors==0.6.2
+gdown==5.2.0
+beautifulsoup4==4.13.4
+soupsieve==2.7

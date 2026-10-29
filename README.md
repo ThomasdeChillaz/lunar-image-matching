@@ -175,6 +175,8 @@ The optional YOLOv9 integration retains GPL-3.0 terms. Its generated crater coor
 
 ## Repository guide
 
+The latest [development research report](reports/RESEARCH_ITERATION_2.md) records separate translation/rotation/scale/combined results, the image-selected hybrid and conditional confidence fallback. All methods use common native pixels and exact rendered geometry; the 975/1,152 hybrid successes and 857 strict retained-correct cascade results are development findings, not fresh-test or state-of-the-art claims. Both geographic reserves remain untouched. The report includes measured figures, full outcome capsules, source snapshots, licenses and audit/reproduction commands. Regenerate figures from the extracted completed runs with `python report_research_development.py`.
+
 [AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Original code is MIT licensed except the explicitly marked optional GPL-3.0 detector integration; third-party data and weights retain their own terms.
 
 References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](https://github.com/Bin501/CNSFM), [LightGlue](https://arxiv.org/abs/2306.13643), [DISK](https://arxiv.org/abs/2006.13566), [Adnan Ansar's public research](https://www-robotics.jpl.nasa.gov/who-we-are/people/adnan_ansar/).
