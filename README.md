@@ -8,7 +8,9 @@ The project includes checksummed data acquisition, masked geospatial loading, NC
 
 **Scientific status:** repeat-observation measurements use the publisher's map coordinates. Their accuracy is unknown. These are map-reference diagnostics; independent checkpoint validation remains open. Exact-transform controls provide a separate correctness check. See [STATUS.md](STATUS.md) and [DATASET_CARD.md](DATASET_CARD.md). No NASA/JPL affiliation or endorsement is implied.
 
-**Research extension:** [measured report](reports/EXTENSION_REPORT.md). The full 321-pair real-image experiment has executed (1,926 evaluations), alongside 1,152 physical-render evaluations on geographically separated Tycho patches. A small lunar descriptor adapter improved held-out synthetic registration from 93/128 to 98/128 pairs; its development-selected rejection policy still accepted three incorrect held-out alignments. Independent real reference review, common-grid CNSFM comparison and verified real-image transfer remain open.
+**Research extension:** [measured report](reports/EXTENSION_REPORT.md). The full 321-pair real-image benchmark and original CNSFM common-grid comparison have executed, alongside 1,152 physical-render evaluations and 108 method measurements on 27 new real repeat pairs across five Tycho areas. A small lunar descriptor adapter improved held-out synthetic registration from 93/128 to 98/128 pairs; its development-selected rejection policy still accepted three incorrect held-out alignments. Independent real reference review, real-data rejection calibration and verified real-image improvements remain open.
+
+The adapter does **not** currently establish a real-image improvement: on polar S3 it returns 99/231 alignments versus 158/231 for the frozen matcher. The frozen matcher remains the default; the adapter is experimental. Map disagreement among returned fits cannot establish true accuracy.
 
 ## Install and run
 
@@ -62,6 +64,15 @@ python landmark_review.py --output runs/manual-review.html
 python import_review.py review.json --output reviewed_manifest.json
 ```
 
+After importing actual human review, convert only its corresponding pairs to the expanded grids using identical source image hashes and known map affines, then score saved predictions:
+
+```bash
+python rebase_review.py reviewed_manifest.json --output reviewed_expanded_manifest.json
+python score_independent.py --reviewed-manifest reviewed_expanded_manifest.json --runs runs/expanded-confidence-v1 runs/cnsfm-common512-v1 runs/cnsfm-real-transfer-v1 --output runs/independent-new
+```
+
+The conversion adds an explicit conservative interpolation allowance and retains second-review uncertainty. It never uses a matcher's estimated transform. Only reviewed pairs gain independent scores; incomplete pairs remain unknown. Development labels select policies before held-out checkpoint errors are computed; insufficient labels produce an explicit unavailable policy.
+
 Add `--second-review review-b.json` when an independent second reviewer is available. Keep a second review blind to the first reviewer’s coordinates. The importer retains disagreement and raises the uncertainty estimate. Re-evaluate on the reviewed manifest; software validation alone does not establish human expertise or navigation accuracy.
 
 The original simpler interface remains available:
@@ -106,6 +117,18 @@ python evaluate_moon.py --manifest moon_rebuilt_manifest.json --adapter runs/ada
 python verify_extension.py --extended-run runs/expanded-new --physical-run runs/physical-new --output runs/extension-audit-new.json
 ```
 
+To reproduce the real appearance subset and frozen adapter transfer (an additional 4.68 GB source archive):
+
+```bash
+python fetch_moonanything.py --members render.zip
+python tycho_dataset.py --output tycho_rebuilt_manifest.json
+python evaluate_transfer.py --dataset tycho --manifest tycho_rebuilt_manifest.json --output runs/tycho-transfer-new
+python evaluate_transfer.py --dataset cnsfm --manifest expanded_solar_manifest.json --output runs/cnsfm-transfer-new
+python verify_transfer.py runs/tycho-transfer-new --output runs/tycho-transfer-audit.json
+```
+
+The committed `tycho_real_manifest.json` freezes selection before outcomes. The new 128px common grids use shared metadata intersections of original 128px real orthocrops; their errors are not directly comparable to the 512px scene errors or independently known physical render errors. No additional model fitting uses real test observations. After downloading the ten full Windows artifacts into separate directories under one execution root, audit and score all original CNSFM outputs with `python score_cnsfm.py --executions PATH --output runs/cnsfm-common-new`.
+
 MoonAnything acquisition downloads the metadata and physical Hapke render subarchives (about 0.9 GB), not the outer 11 GB ZIP. Byte-range retries and persistent hash-checked range caches support interrupted transfers. The real-appearance `render.zip` is an additional optional 4.7 GB download for expanding real repeat-observation regions. All downloaded archives, selected source rasters and caches remain outside Git. The report publishes measurement tables and a small trained descriptor projection.
 
 The physical protocol uses 48 training, 16 development and 16 test patches from distinct acquisitions in separated Tycho longitude bands. Its 128px rendered supervision stays separate from real 512px map-reference measurements. All-zero physical renders remain explicit evaluation cases. The detector/backbone and LightGlue are frozen during descriptor adaptation. Threshold selection uses independently labelled development outcomes; provisional map disagreement is never a correctness label.
@@ -127,6 +150,6 @@ The optional YOLOv9 integration retains GPL-3.0 terms. Its generated crater coor
 
 ## Repository guide
 
-[AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Code is MIT licensed; third-party data and weights retain their own terms.
+[AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Original code is MIT licensed except the explicitly marked optional GPL-3.0 detector integration; third-party data and weights retain their own terms.
 
 References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](https://github.com/Bin501/CNSFM), [LightGlue](https://arxiv.org/abs/2306.13643), [DISK](https://arxiv.org/abs/2006.13566), [Adnan Ansar's public research](https://www-robotics.jpl.nasa.gov/who-we-are/people/adnan_ansar/).

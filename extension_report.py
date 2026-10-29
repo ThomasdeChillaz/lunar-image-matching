@@ -52,7 +52,7 @@ def paired_interval(rows, manifest, repetitions=5000):
         warning='Exploratory small-sample interval within one Tycho geographic holdout; not evidence of global or real-image generalization.')
 
 
-def render(extended, physical, output):
+def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None):
     extended, physical, output = Path(extended), Path(physical), Path(output)
     output.mkdir(parents=True, exist_ok=True)
     real = json.loads((extended/'results.json').read_text())
@@ -67,6 +67,27 @@ def render(extended, physical, output):
     (output/'paired_uncertainty.json').write_text(json.dumps(interval, indent=2))
     write_csv(real, output/'expanded_results.csv', exclude=['reference_points', 'query_points'])
     write_csv(rows, output/'physical_results.csv')
+    additional, extra_sources = {}, {}
+    for name, folder in [('cnsfm', cnsfm), ('tycho', tycho), ('real_adapter', transfer)]:
+        if folder is None:
+            continue
+        folder = Path(folder)
+        complete = json.loads((folder/'COMPLETE.json').read_text())
+        if sha256(folder/'results.json') != complete['results_sha256']:
+            raise ValueError('Additional experiment completion hash mismatch')
+        measurements = json.loads((folder/'results.json').read_text())
+        additional[name] = measurements
+        extra_sources[name] = sha256(folder/'results.json')
+        write_csv(measurements, output/(name+'_results.csv'), exclude=['reference_points', 'query_points'])
+        if name != 'tycho':
+            # Copy only illumination metadata from the identical base pair.
+            # Adapter measurements retain their original saved geometry.
+            lookup = {r['pair_id']:r for r in real}
+            for row in measurements:
+                for key in ['solar_azimuth_difference_deg', 'reference_solar_elevation_deg', 'query_solar_elevation_deg']:
+                    row[key] = lookup[row['pair_id']][key]
+                row['solar_separation_deg'] = sun_separation(row)
+            real += measurements
     shutil.copyfile(physical/'frozen_adapter.json', output/'lunar_adapter.json')
     shutil.copyfile(physical/'frozen_policies.json', output/'frozen_policies.json')
     shutil.copyfile(physical/'summary.json', output/'physical_summary.json')
@@ -100,7 +121,7 @@ def render(extended, physical, output):
     fig, axes = plt.subplots(1, 3, figsize=(12, 3.8), sharey=True)
     bins = np.arange(0, 181, 30)
     for ax, region in zip(axes, ['S1', 'S2', 'S3']):
-        for method in ['ncc', 'sift', 'disk_lightglue']:
+        for method in ['ncc', 'sift', 'disk_lightglue', *(['cnsfm'] if cnsfm else []), *(['disk_lightglue_lunar'] if transfer else [])]:
             subset = [r for r in real if r['region_id'] == region and r['method'] == method and r['preprocessing'] == 'none']
             x, rates = [], []
             for low, high in zip(bins[:-1], bins[1:]):
@@ -122,7 +143,7 @@ def render(extended, physical, output):
     fig.suptitle('Same terrain and camera, different physical illumination; fixed display mapping', fontsize=10)
     fig.tight_layout(); fig.savefig(output/'physical_lighting_gallery.png', dpi=170); plt.close(fig)
     lines = ['# Lunar research extension: measured results', '',
-        'The expanded benchmark and physical-render adaptation experiment have executed. Independent real-image reference validation and real-image adaptation transfer remain open. The original pilot is preserved.', '',
+        'The expanded benchmark, physical-render adaptation and the additional experiments listed below have executed. Independent real-image reference validation and verified real-image adaptation gains remain open. The original pilot is preserved.', '',
         '## Physical lighting and adaptation', '',
         f"MoonAnything Hapke renders: 48 training patches/acquisitions, 16 development patches/acquisitions, 16 held-out patches/acquisitions. Geographic longitude bands have wide gaps and source acquisitions do not cross splits. This is within-Tycho geographic transfer. Each evaluation patch has eight lighting/known-warp pairs and one disjoint-terrain negative. Native resolution is 128px. All-zero renders stay in evaluation; uninformative descriptors are excluded from training.", '',
         f"A 128×128 linear descriptor projection ({128*128:,} trainable parameters) was fitted on {adapter['training_pairs']} physical training pairs. DISK detection/backbone and LightGlue stayed frozen. Checkpoint {adapter['selected_step']} was selected using {adapter['development_pairs']} development descriptor pairs; test outcomes were not used for selection.", '',
@@ -144,15 +165,34 @@ def render(extended, physical, output):
         'Source-map co-registration uncertainty is unknown. The following primary, no-CLAHE results describe provisional map disagreement, not true registration accuracy:', '',
         '| Scene | Method | Returned / pairs | Median map disagreement among returned (px) |', '|---|---|---:|---:|']
     for region in ['S1', 'S2', 'S3']:
-        for method in ['ncc', 'sift', 'disk_lightglue']:
+        for method in ['ncc', 'sift', 'disk_lightglue', *(['cnsfm'] if cnsfm else []), *(['disk_lightglue_lunar'] if transfer else [])]:
             selected = [r for r in real if r['region_id'] == region and r['method'] == method and r['preprocessing'] == 'none']
             errors = [r['error_px'] for r in selected if r['error_px'] is not None]
             median = f'{np.median(errors):.2f}' if errors else 'unscorable'
             lines.append(f"| {region} | {LABELS[method]} | {sum(r['estimated'] for r in selected)}/{len(selected)} | {median} |")
     lines += ['', 'All pairs within a scene share observations and terrain, so pair-wise confidence intervals would exaggerate independent evidence. S3 was inspected in the pilot; new results there are exploratory. Real bright-overlap measurements are explicitly intensity-threshold proxies on the provisional map grid. They will be recomputed using independently reviewed alignment when available.', '',
         '![Real illumination diagnostics](real_illumination.png)', '', '## Original CNSFM and open acceptance', '',
-        'The authors’ pinned Windows executable completed a native-input probe in all three regions. Output coordinates were audited against the published detector files, including the executable’s window-local ID convention. The released YOLOv9 crater checkpoint was separately run on all 42 identical masked 512px inputs. Common-grid CNSFM execution, shared-geometry scoring and the final comparison remain open until the Windows run is verified. Whole-image redetection at the common resolution differs from the authors’ native tiled detector pipeline; no paper-percentage reproduction is claimed.', '',
-        'The blank, source-bound [landmark review packet](landmark_review.html) requires human input. It supports 10–20 distributed landmarks, per-image uncertainty, explicit unscorable cases and optional independent second review. No generated or matcher-derived coordinates have been imported as independent references. Real-data rejection calibration, verified registration accuracy and real-image adaptation transfer remain open.', '',
+        ('The authors’ pinned Windows executable completed all 642 executions: 321 pairs independently matched forward and reverse. All ten shards, ordered source inputs, exact pixel/mask hashes, crater IDs and original output hashes were audited before applying the same one-to-one filtering and partial-affine RANSAC (3px, six inliers) as the other feature methods. Execution failures cannot disappear from denominators. See [Windows artifact hashes](cnsfm_windows_artifacts.json) and [common-protocol audit](cnsfm_common_audit.json).' if cnsfm else 'The authors’ pinned Windows executable completed a native-input probe in all three regions. Common-grid execution and scoring remain open.'), '',
+        'The released YOLOv9 crater checkpoint produced 2,213 predictions on all 42 identical masked 512px inputs. Whole-image redetection differs from the authors’ native tiled detector pipeline. The paper reports native-input success rates of 100%, 100% and 72.3% for S1/S2/S3, using more than three correct matches as success. Our shared six-inlier geometry criterion, resolution and provisional map scoring differ; neither the published percentages nor our returned-fit rates establish a directly comparable accuracy ranking. No paper-percentage reproduction is claimed.', '',
+        'The blank, source-bound [landmark review packet](landmark_review.html) requires human input. It supports 10–20 distributed landmarks, per-image uncertainty, explicit unscorable cases and optional independent second review. No generated or matcher-derived coordinates have been imported as independent references. Real-data rejection calibration, verified registration accuracy and verified real-image adaptation improvement remain open.', '']
+    if tycho:
+        values = additional['tycho']
+        lines += ['## Additional real regions and adapter transfer', '',
+            'A checksummed 4.68 GB appearance archive supplied real orthorectified LRO crops, distinct from the Hapke renders. Metadata-only selection froze 54 images from 32 source acquisitions and 27 repeat pairs in five separated Tycho boxes (11 dev, 16 test). No acquisition occurs in the physical train/dev/test sample; no selected real footprint overlaps physical training or development terrain. Real dev/test source groups and footprints are separated. The selection used overlap and Sun-angle strata before matcher outcomes, with available stratum counts retained rather than filled with favorable matches.', '',
+            'Each 128px common grid covers the metadata intersection of two original 128px appearance crops. This resampling and geolocation are provisional. These five areas add real terrain beyond the original three CNSFM scenes, but they do not represent five globally independent lunar regions. Physical test terrain may overlap; this transfer experiment is exploratory. The adapter and physical rejection policies were frozen before real outcomes. Transporting a policy is not real-data calibration.', '',
+            '| Real split | Method | Returned / pairs | Median map disagreement among returned (128-grid px) | Accepted by transported physical policy |',
+            '|---|---|---:|---:|---:|']
+        for split in ['dev', 'test']:
+            for method in ['sift', 'disk_lightglue', 'disk_lightglue_clahe', 'disk_lightglue_lunar']:
+                selected = [r for r in values if r['split'] == split and r['method'] == method]
+                errors = [r['error_px'] for r in selected if r['error_px'] is not None]
+                median = f'{np.median(errors):.2f}' if errors else '—'
+                lines.append(f"| {split} | {LABELS[method]} | {sum(r['estimated'] for r in selected)}/{len(selected)} | {median} | {sum(r.get('accepted_by_transported_physical_policy', False) for r in selected)} |")
+        lines += ['', 'Results vary by area and do not establish consistent real-image improvement. A lower median among returned fits can also hide failures. Neither acceptance nor map agreement proves a correct registration. Independent landmarks are required to resolve this. See [real Tycho measurements](tycho_results.csv) and [input/geometry audit](tycho_transfer_audit.json).', '']
+    if transfer:
+        lines += ['The same frozen adapter was also evaluated on all 321 original CNSFM pairs at the common 512px resolution. Its measurements appear in the scene table above and [real adapter measurements](real_adapter_results.csv); see the [real adapter audit](cnsfm_transfer_audit.json). No physical 128px policy was silently rescaled to 512px. Human annotations from the pilot can be converted through known map-grid affines to score the corresponding pair subset; matcher-estimated transforms never supply that conversion.', '',
+            '**The current adapter is not supported as a real-image improvement.** On polar S3 it returns only 99/231 fits versus 158/231 for the frozen matcher, a loss of 59 returned alignments. A lower map-disagreement median among its surviving fits cannot offset that missing coverage or establish better accuracy. Keep the frozen matcher as the default; retain the adapter as an experimental result. Future adaptation should be tested across image scales and constrained against descriptor collapse using development data, with a fresh geographic holdout for any subsequent claim.', '']
+    lines += [
         '## Reproducibility and provenance', '',
         'See [measurement audit](extension_audit.json), [per-evaluation real diagnostics](expanded_results.csv), [physical measurements](physical_results.csv), [adapter](lunar_adapter.json), [frozen policies](frozen_policies.json) and [paired uncertainty](paired_uncertainty.json). Original complete run JSON remains under the fresh run directories; published CSV omits bulky feature-coordinate arrays. Inference sources, input hashes, model locks and metric recomputation were audited. Cached learned extraction timings are descriptive and are not a fair cross-hardware speed comparison.', '',
         'Physical data: Grethen et al., [MoonAnything](https://arxiv.org/html/2604.00682v1), [Zenodo 18415119](https://zenodo.org/records/18415119), CC BY 4.0. Real imagery: [CNSFM research release](https://github.com/Bin501/CNSFM), [Li et al. 2025](https://doi.org/10.3390/rs17132302). No NASA/JPL affiliation or navigation certification is implied.', '',
@@ -160,6 +200,7 @@ def render(extended, physical, output):
     (output/'EXTENSION_REPORT.md').write_text('\n'.join(lines)+'\n')
     (output/'report_provenance.json').write_text(json.dumps(dict(renderer_sha256=sha256(__file__),
         extended_result_sha256=sha256(extended/'results.json'), physical_result_sha256=sha256(physical/'results.json'),
+        additional_result_sha256=extra_sources,
         report_sha256=sha256(output/'EXTENSION_REPORT.md')), indent=2))
     print(output/'EXTENSION_REPORT.md')
 
@@ -169,5 +210,8 @@ if __name__ == '__main__':
     p.add_argument('--extended-run', default='runs/expanded-confidence-v1')
     p.add_argument('--physical-run', default='runs/physical-adaptation-v1')
     p.add_argument('--output', default='reports')
+    p.add_argument('--cnsfm-run')
+    p.add_argument('--tycho-run')
+    p.add_argument('--transfer-run')
     args = p.parse_args()
-    render(args.extended_run, args.physical_run, args.output)
+    render(args.extended_run, args.physical_run, args.output, args.cnsfm_run, args.tycho_run, args.transfer_run)

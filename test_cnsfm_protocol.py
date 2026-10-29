@@ -1,9 +1,11 @@
 import numpy as np
 import pytest
+import json
 from rasterio.transform import from_origin
 from cnsfm_outputs import read_craters, read_matches, native_to_common
 from prepare_cnsfm_common import crater_text
 from run_cnsfm_sharded import partition
+from score_cnsfm import audit_shards
 
 
 def test_shards_cover_every_original_pair_once_without_overlap():
@@ -35,3 +37,31 @@ def test_generated_crater_file_preserves_prediction_coordinates():
     detections = [dict(x=20.25, y=30.5, width=8., height=9., score=.9, detection_id=1)]
     table = read_craters(crater_text(detections))
     assert np.allclose(table[0], [20.25, 30.5])
+
+
+def test_scoring_rejects_missing_failed_and_repeated_executions(tmp_path):
+    manifest = dict(pairs=[dict(pair_id='pair', reference='a', query='b', region_id='S1')])
+    with pytest.raises(ValueError, match='cover all'):
+        audit_shards(tmp_path, manifest)
+    folder = tmp_path/'S1'
+    folder.mkdir()
+    plan = dict(region='S1', bidirectional=True, planned_pairs=[dict(index=0, reference='a', query='b')])
+    (folder/'shard_plan.json').write_text(json.dumps(plan))
+    (folder/'COMPLETE.json').write_text(json.dumps(dict(pairs=1, executions=2)))
+    outcomes = []
+    for direction, products in [('forward', ['a', 'b']), ('reverse', ['b', 'a'])]:
+        execution = folder/('pair_000_'+direction)
+        execution.mkdir()
+        (execution/'provenance.json').write_text(json.dumps(dict(products=products)))
+        outcomes.append(dict(index=0, reference='a', query='b', direction=direction, status='executed'))
+    (folder/'outcomes.json').write_text(json.dumps(outcomes))
+    executions, _ = audit_shards(tmp_path, manifest)
+    assert set(executions) == {('pair', True), ('pair', False)}
+    outcomes[1]['status'] = 'execution_error'
+    (folder/'outcomes.json').write_text(json.dumps(outcomes))
+    with pytest.raises(ValueError, match='failed CNSFM'):
+        audit_shards(tmp_path, manifest)
+    outcomes[1] = outcomes[0]
+    (folder/'outcomes.json').write_text(json.dumps(outcomes))
+    with pytest.raises(ValueError, match='duplicated'):
+        audit_shards(tmp_path, manifest)

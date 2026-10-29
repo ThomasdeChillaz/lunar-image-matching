@@ -1,0 +1,1747 @@
+{
+  "schema_version": 1,
+  "dataset": "Real LRO orthorectified LunarPhoto repeat-observation subset",
+  "source_doi": "10.5281/zenodo.18415119",
+  "license": "CC BY 4.0",
+  "physical_manifest_sha256": "816ddb71d824e0e757ba072f3263f8bf481fae9a7db23308a52b415b1b30286e",
+  "archive_sha256": {
+    "metadata": "05af6a66a79e3f800e18ed3bbcf5014ee0d34c48b0fee9c810a9661cde9e72f9",
+    "render": "4b7c3fe8dddea934a76d3498d7c021d4f21909b290c5165be04ce4e1698274a2"
+  },
+  "seed": 20261029,
+  "image_size": 128,
+  "regions": [
+    [
+      "Tycho_dev_north",
+      "dev",
+      [
+        349.1,
+        -42.4,
+        349.4,
+        -42.1
+      ]
+    ],
+    [
+      "Tycho_dev_south",
+      "dev",
+      [
+        349.1,
+        -44.5,
+        349.4,
+        -44.2
+      ]
+    ],
+    [
+      "Tycho_test_north",
+      "test",
+      [
+        350.1,
+        -42.4,
+        350.4,
+        -42.1
+      ]
+    ],
+    [
+      "Tycho_test_mid",
+      "test",
+      [
+        350.1,
+        -43.4,
+        350.4,
+        -43.1
+      ]
+    ],
+    [
+      "Tycho_test_south",
+      "test",
+      [
+        350.1,
+        -44.5,
+        350.4,
+        -44.2
+      ]
+    ]
+  ],
+  "selection": "Fixed five geographic boxes; metadata overlap >=60%; two deterministic hash-ordered pairs per available Sun-separation stratum (0-30,30-60,60+ degrees). No image/matcher outcomes used. Nonoverlapping selected shared footprints within each box.",
+  "independence": "No physical train/dev/test source acquisitions; no physical train/dev terrain; source groups and content disjoint between real dev/test. All new real areas are within Tycho. Existing physical test terrain may overlap; this real transfer evaluation is exploratory.",
+  "geometry": "North-up orthorectified 128px appearance crops (rot90=0), remapped from metadata corner bounds to a 128px shared intersection. Metadata-to-pixel alignment is provisional; no independent real correctness labels.",
+  "photometry": "Fixed round(255*I/F) clipped [0,255]; real observed appearance, distinct from Hapke render archive.",
+  "assets": [
+    {
+      "tile_id": "M1223754131RC_Y8_02639_15758",
+      "observation_group": "M1223754131",
+      "bounds_lonlat_deg": [
+        349.2681657468658,
+        -42.146473736777374,
+        349.2970098787129,
+        -42.12537847418098
+      ],
+      "metadata_member": "metadata/metadata_M1223754131RC_Y8_02639_15758.json",
+      "metadata_sha256": "417008e9e9b6e790b0c319cfbb6a389fb8409a1d069493c9e87f058ed3efd456",
+      "product_id": "M1223754131RE",
+      "acquired_utc": "2016-07-21 15:27:43.607",
+      "solar_azimuth_deg": 338.26654062601574,
+      "solar_elevation_deg": 46.92115397594411,
+      "source_subsolar_latitude_deg": -1.12,
+      "source_subsolar_longitude_deg": 334.63,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1223754131RC_Y8_02639_15758.tif",
+      "source_member": "render/render_M1223754131RC_Y8_02639_15758.tif",
+      "sha256": "39ba4103cc71c6ad573328cf150b0f52a7156eb4756f4ecc23b774e1a53c070b"
+    },
+    {
+      "tile_id": "M1254333774LC_Y8_04896_14498",
+      "observation_group": "M1254333774",
+      "bounds_lonlat_deg": [
+        349.25972387597375,
+        -42.1438444460579,
+        349.2885646719466,
+        -42.12275162316553
+      ],
+      "metadata_member": "metadata/metadata_M1254333774LC_Y8_04896_14498.json",
+      "metadata_sha256": "07145f6e9f7da38f1a58c4f46c3eda098e825ac5ba8b0662214e2b9e42c786e6",
+      "product_id": "M1254333774LE",
+      "acquired_utc": "2017-07-10 13:48:26.773",
+      "solar_azimuth_deg": 346.4749402004773,
+      "solar_elevation_deg": 48.0590964318335,
+      "source_subsolar_latitude_deg": -0.98,
+      "source_subsolar_longitude_deg": 340.28,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1254333774LC_Y8_04896_14498.tif",
+      "source_member": "render/render_M1254333774LC_Y8_04896_14498.tif",
+      "sha256": "ab16d13bf9e96ccc26773a031f5f19605056a941047d67c1ac76ba0af5ac96ea"
+    },
+    {
+      "tile_id": "M142334392RC_Y8_03110_21596",
+      "observation_group": "M142334392",
+      "bounds_lonlat_deg": [
+        349.28994842059853,
+        -42.246222785101004,
+        349.3188239729727,
+        -42.22510454298584
+      ],
+      "metadata_member": "metadata/metadata_M142334392RC_Y8_03110_21596.json",
+      "metadata_sha256": "ec34d57d3949defc310916b4fa7d2ee25d5c1b9bde3543d0a72154ea91d9e4cd",
+      "product_id": "M142334392RE",
+      "acquired_utc": "2010-10-21 21:05:24.656",
+      "solar_azimuth_deg": 31.36898083862527,
+      "solar_elevation_deg": 44.84673836668042,
+      "source_subsolar_latitude_deg": -1.48,
+      "source_subsolar_longitude_deg": 10.97,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M142334392RC_Y8_03110_21596.tif",
+      "source_member": "render/render_M142334392RC_Y8_03110_21596.tif",
+      "sha256": "47cf6f6af38fbe992803a4cd4636826ce7205f27a2452269fe263706ea377588"
+    },
+    {
+      "tile_id": "M1435210401RC_Y8_04338_17459",
+      "observation_group": "M1435210401",
+      "bounds_lonlat_deg": [
+        349.28865931555345,
+        -42.24886683129693,
+        349.31753962743295,
+        -42.22774510829992
+      ],
+      "metadata_member": "metadata/metadata_M1435210401RC_Y8_04338_17459.json",
+      "metadata_sha256": "37abf1a3297852f84e3109e5afb1f4fb780496f082009e527760947069b97130",
+      "product_id": "M1435210401RE",
+      "acquired_utc": "2023-04-04 01:18:53.544",
+      "solar_azimuth_deg": 43.14779666436056,
+      "solar_elevation_deg": 39.490911838026186,
+      "source_subsolar_latitude_deg": -0.61,
+      "source_subsolar_longitude_deg": 21.16,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1435210401RC_Y8_04338_17459.tif",
+      "source_member": "render/render_M1435210401RC_Y8_04338_17459.tif",
+      "sha256": "0e1babdb991563b5d7e913fcbd3904da805033d3b5f8201e43032fd8f686d190"
+    },
+    {
+      "tile_id": "M170634588LC_Y8_01443_17007",
+      "observation_group": "M170634588",
+      "bounds_lonlat_deg": [
+        349.17910294464673,
+        -42.16376736314941,
+        349.2079427751189,
+        -42.14267524637954
+      ],
+      "metadata_member": "metadata/metadata_M170634588LC_Y8_01443_17007.json",
+      "metadata_sha256": "ec0ac7bc641b92f25db204dafe3250d16d75e771042b0127eadc49d58be47bc8",
+      "product_id": "M170634588LE",
+      "acquired_utc": "2011-09-14 10:15:20.432",
+      "solar_azimuth_deg": 343.14414172714953,
+      "solar_elevation_deg": 48.22071287322793,
+      "source_subsolar_latitude_deg": -1.59,
+      "source_subsolar_longitude_deg": 338.05,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M170634588LC_Y8_01443_17007.tif",
+      "source_member": "render/render_M170634588LC_Y8_01443_17007.tif",
+      "sha256": "ae5dbf41ddb2bace402129bc1c3080fcb0bd9a96781197555d094fb02460577a"
+    },
+    {
+      "tile_id": "M190665211LC_Y8_03830_13771",
+      "observation_group": "M190665211",
+      "bounds_lonlat_deg": [
+        349.17054054995594,
+        -42.16657365002127,
+        349.1994038359803,
+        -42.14546437894645
+      ],
+      "metadata_member": "metadata/metadata_M190665211LC_Y8_03830_13771.json",
+      "metadata_sha256": "8abe2afcad81897a730c868991f4a9f75e9c519e937cf17b5aaf433e9c41dd50",
+      "product_id": "M190665211LE",
+      "acquired_utc": "2012-05-03 06:19:03.294",
+      "solar_azimuth_deg": 56.48290566887993,
+      "solar_elevation_deg": 30.578294536594036,
+      "source_subsolar_latitude_deg": 0.63,
+      "source_subsolar_longitude_deg": 35.06,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M190665211LC_Y8_03830_13771.tif",
+      "source_member": "render/render_M190665211LC_Y8_03830_13771.tif",
+      "sha256": "58ebeaf1682a736985cfc0cd3164c53038837447c69de8b25093b92a6e923039"
+    },
+    {
+      "tile_id": "M142334392RC_Y8_02298_25180",
+      "observation_group": "M142334392",
+      "bounds_lonlat_deg": [
+        349.2698739783658,
+        -42.311023966385875,
+        349.29874953074,
+        -42.28990572427071
+      ],
+      "metadata_member": "metadata/metadata_M142334392RC_Y8_02298_25180.json",
+      "metadata_sha256": "bf92ebb459c3e2c922528653d03f33a5e2b30cab58473341a56b5cfa6b9251a3",
+      "product_id": "M142334392RE",
+      "acquired_utc": "2010-10-21 21:05:24.656",
+      "solar_azimuth_deg": 31.36157407251264,
+      "solar_elevation_deg": 44.783674793051986,
+      "source_subsolar_latitude_deg": -1.48,
+      "source_subsolar_longitude_deg": 10.97,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M142334392RC_Y8_02298_25180.tif",
+      "source_member": "render/render_M142334392RC_Y8_02298_25180.tif",
+      "sha256": "0973b5725a9dec96e1869a8fc021fad4a80e8777df73bac5c243c2f33e1c579b"
+    },
+    {
+      "tile_id": "M170634588RC_Y8_01246_25490",
+      "observation_group": "M170634588",
+      "bounds_lonlat_deg": [
+        349.27220627014714,
+        -42.316553782675165,
+        349.30104610061926,
+        -42.295461665905286
+      ],
+      "metadata_member": "metadata/metadata_M170634588RC_Y8_01246_25490.json",
+      "metadata_sha256": "4d7a9244a9e3c8d80cdc4fdc6aed2b1082e3a80dac9706c3d7013ab2fc5539dc",
+      "product_id": "M170634588RE",
+      "acquired_utc": "2011-09-14 10:15:20.432",
+      "solar_azimuth_deg": 343.0575182185143,
+      "solar_elevation_deg": 48.05448436316086,
+      "source_subsolar_latitude_deg": -1.59,
+      "source_subsolar_longitude_deg": 338.05,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M170634588RC_Y8_01246_25490.tif",
+      "source_member": "render/render_M170634588RC_Y8_01246_25490.tif",
+      "sha256": "95722e7ccd0bec1d544436e14820060a5456491d08d39f59ba276cb6f54b2ee0"
+    },
+    {
+      "tile_id": "M1356531561LC_Y8_01994_20517",
+      "observation_group": "M1356531561",
+      "bounds_lonlat_deg": [
+        349.30214570997185,
+        -42.36798740969408,
+        349.3309763864947,
+        -42.346901987698935
+      ],
+      "metadata_member": "metadata/metadata_M1356531561LC_Y8_01994_20517.json",
+      "metadata_sha256": "ef98d7ea95f6c2ffdd4d93ddd761eb6d198290856a86e861ebea86faf36fd982",
+      "product_id": "M1356531561LE",
+      "acquired_utc": "2020-10-05 10:04:53.135",
+      "solar_azimuth_deg": 319.80888787644864,
+      "solar_elevation_deg": 38.261789061403995,
+      "source_subsolar_latitude_deg": 1.49,
+      "source_subsolar_longitude_deg": 318.86,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1356531561LC_Y8_01994_20517.tif",
+      "source_member": "render/render_M1356531561LC_Y8_01994_20517.tif",
+      "sha256": "b79655f4e7334f973506ffb95cc39bfe2408ac18391386a1ec1abaf0fc7e3bb3"
+    },
+    {
+      "tile_id": "M1435203383RC_Y8_03182_23025",
+      "observation_group": "M1435203383",
+      "bounds_lonlat_deg": [
+        349.3006817217602,
+        -42.37362421762107,
+        349.32955069834065,
+        -42.352510784737014
+      ],
+      "metadata_member": "metadata/metadata_M1435203383RC_Y8_03182_23025.json",
+      "metadata_sha256": "6aad23f8f957dcce8c79b7edace66eacb5a9f293d5f5f8bb2684c7d91e5ad166",
+      "product_id": "M1435203383RE",
+      "acquired_utc": "2023-04-03 23:21:55.585",
+      "solar_azimuth_deg": 44.16255012295905,
+      "solar_elevation_deg": 38.90131270318092,
+      "source_subsolar_latitude_deg": -0.61,
+      "source_subsolar_longitude_deg": 22.15,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1435203383RC_Y8_03182_23025.tif",
+      "source_member": "render/render_M1435203383RC_Y8_03182_23025.tif",
+      "sha256": "de00040f2d5eda21429a227fb91a625930036f6079242d819035b84875f0f649"
+    },
+    {
+      "tile_id": "M1356531561LC_Y8_02904_21278",
+      "observation_group": "M1356531561",
+      "bounds_lonlat_deg": [
+        349.33323091807114,
+        -42.3869992653082,
+        349.36206159459397,
+        -42.365913843313045
+      ],
+      "metadata_member": "metadata/metadata_M1356531561LC_Y8_02904_21278.json",
+      "metadata_sha256": "ff45a80b984807b2244d9f961c330324994bf2e95d000dd98fa792a39b986cb4",
+      "product_id": "M1356531561LE",
+      "acquired_utc": "2020-10-05 10:04:53.135",
+      "solar_azimuth_deg": 319.7837869953777,
+      "solar_elevation_deg": 38.23244323789301,
+      "source_subsolar_latitude_deg": 1.49,
+      "source_subsolar_longitude_deg": 318.86,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1356531561LC_Y8_02904_21278.tif",
+      "source_member": "render/render_M1356531561LC_Y8_02904_21278.tif",
+      "sha256": "6fec19b8c614e05f93edffff301c2bf0129597c00715f0b25b5635202a4fef97"
+    },
+    {
+      "tile_id": "M1435203383RC_Y8_04222_23891",
+      "observation_group": "M1435203383",
+      "bounds_lonlat_deg": [
+        349.33268996871504,
+        -42.39311700320486,
+        349.3615589452955,
+        -42.37200357032081
+      ],
+      "metadata_member": "metadata/metadata_M1435203383RC_Y8_04222_23891.json",
+      "metadata_sha256": "8b5d0507028c79f07cde37701c492e1028e64d2f9a00f37d670317bf225913f0",
+      "product_id": "M1435203383RE",
+      "acquired_utc": "2023-04-03 23:21:55.585",
+      "solar_azimuth_deg": 44.116329115563275,
+      "solar_elevation_deg": 38.90379162784458,
+      "source_subsolar_latitude_deg": -0.61,
+      "source_subsolar_longitude_deg": 22.15,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1435203383RC_Y8_04222_23891.tif",
+      "source_member": "render/render_M1435203383RC_Y8_04222_23891.tif",
+      "sha256": "1ba6c006d95b56e77726b4af55c75ef3515868c4a556ff4c82bfff1158eec676"
+    },
+    {
+      "tile_id": "M1134275004RC_Y8_03243_30996",
+      "observation_group": "M1134275004",
+      "bounds_lonlat_deg": [
+        349.34012804557307,
+        -44.354639075257175,
+        349.3690110991102,
+        -44.333515347138736
+      ],
+      "metadata_member": "metadata/metadata_M1134275004RC_Y8_03243_30996.json",
+      "metadata_sha256": "4a15685ba19d1b2aa2d49cafa2197ae28df0b83171fa0c7af669f415fb0ce3dd",
+      "product_id": "M1134275004RE",
+      "acquired_utc": "2013-09-20 00:08:56.719",
+      "solar_azimuth_deg": 13.234009380526626,
+      "solar_elevation_deg": 45.91885181924883,
+      "source_subsolar_latitude_deg": -1.02,
+      "source_subsolar_longitude_deg": 358.52,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1134275004RC_Y8_03243_30996.tif",
+      "source_member": "render/render_M1134275004RC_Y8_03243_30996.tif",
+      "sha256": "1437767017de3071254a2c238883c2413a8b79420fcb32d578b04e28d6d3a4ba"
+    },
+    {
+      "tile_id": "M1180171291RC_Y8_03049_26150",
+      "observation_group": "M1180171291",
+      "bounds_lonlat_deg": [
+        349.3386128360437,
+        -44.361352892440465,
+        349.3674617582388,
+        -44.34025412640534
+      ],
+      "metadata_member": "metadata/metadata_M1180171291RC_Y8_03049_26150.json",
+      "metadata_sha256": "74a81fe3eb0e35848cbb5a1bef550970a08b2d0d00f7824f8c1b4fe915c85707",
+      "product_id": "M1180171291RE",
+      "acquired_utc": "2015-03-05 05:07:03.690",
+      "solar_azimuth_deg": 23.035660337464932,
+      "solar_elevation_deg": 42.50936439565232,
+      "source_subsolar_latitude_deg": 0.73,
+      "source_subsolar_longitude_deg": 6.12,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1180171291RC_Y8_03049_26150.tif",
+      "source_member": "render/render_M1180171291RC_Y8_03049_26150.tif",
+      "sha256": "bb753bba2cd149dcfa104cf8a91ffbda44abf12c6ff21940106a62c5f57a2306"
+    },
+    {
+      "tile_id": "M1180171291RC_Y8_03889_22994",
+      "observation_group": "M1180171291",
+      "bounds_lonlat_deg": [
+        349.36602583903453,
+        -44.286027433609206,
+        349.39487476122963,
+        -44.26492866757409
+      ],
+      "metadata_member": "metadata/metadata_M1180171291RC_Y8_03889_22994.json",
+      "metadata_sha256": "0331083114fa2933f8a71bed22514f79b7abd59064f4fb7646119703981d3d93",
+      "product_id": "M1180171291RE",
+      "acquired_utc": "2015-03-05 05:07:03.690",
+      "solar_azimuth_deg": 23.026990855408023,
+      "solar_elevation_deg": 42.58635976441004,
+      "source_subsolar_latitude_deg": 0.73,
+      "source_subsolar_longitude_deg": 6.12,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1180171291RC_Y8_03889_22994.tif",
+      "source_member": "render/render_M1180171291RC_Y8_03889_22994.tif",
+      "sha256": "92cddb5097441744e5223c1ecf9d87cae967812b70024bed8d219e58c67bb9fb"
+    },
+    {
+      "tile_id": "M188306254LC_Y8_03400_29299",
+      "observation_group": "M188306254",
+      "bounds_lonlat_deg": [
+        349.36228453161726,
+        -44.29231179004331,
+        349.3911532279085,
+        -44.27119856214979
+      ],
+      "metadata_member": "metadata/metadata_M188306254LC_Y8_03400_29299.json",
+      "metadata_sha256": "904afbadfcd55649956c37ab077ffe2a33529228a8d9620ab6fd08fd09548835",
+      "product_id": "M188306254LE",
+      "acquired_utc": "2012-04-05 23:03:06.181",
+      "solar_azimuth_deg": 25.528576050967036,
+      "solar_elevation_deg": 41.50548253871892,
+      "source_subsolar_latitude_deg": 1.21,
+      "source_subsolar_longitude_deg": 8.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M188306254LC_Y8_03400_29299.tif",
+      "source_member": "render/render_M188306254LC_Y8_03400_29299.tif",
+      "sha256": "10f2286d465448da463c8e911dcdbda0a5dd0cefa6e06da7085e88ad88980d96"
+    },
+    {
+      "tile_id": "M1402365225RC_Y8_04232_02234",
+      "observation_group": "M1402365225",
+      "bounds_lonlat_deg": [
+        349.3411929760374,
+        -44.49119639816571,
+        349.3700606877993,
+        -44.47008389031136
+      ],
+      "metadata_member": "metadata/metadata_M1402365225RC_Y8_04232_02234.json",
+      "metadata_sha256": "2a58f63dbdc0ea2b948155be06713da6d9f366adae8f9e62c7e56a48f1edfeee",
+      "product_id": "M1402365225RE",
+      "acquired_utc": "2022-03-19 21:39:17.911",
+      "solar_azimuth_deg": 340.25274703176325,
+      "solar_elevation_deg": 45.12297699309712,
+      "source_subsolar_latitude_deg": -1.3,
+      "source_subsolar_longitude_deg": 335.56,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1402365225RC_Y8_04232_02234.tif",
+      "source_member": "render/render_M1402365225RC_Y8_04232_02234.tif",
+      "sha256": "3afd2cbdb1e2e2c2220f67d80f72042df096432050bf2607840220cc56336d70"
+    },
+    {
+      "tile_id": "M188306254LC_Y8_02491_38258",
+      "observation_group": "M188306254",
+      "bounds_lonlat_deg": [
+        349.3347197785409,
+        -44.49100234539836,
+        349.36358847483206,
+        -44.46988911750484
+      ],
+      "metadata_member": "metadata/metadata_M188306254LC_Y8_02491_38258.json",
+      "metadata_sha256": "6fb94855454187c0485cebef479c73743e1e7747371ed56850a953397443a82d",
+      "product_id": "M188306254LE",
+      "acquired_utc": "2012-04-05 23:03:06.181",
+      "solar_azimuth_deg": 25.488071343784803,
+      "solar_elevation_deg": 41.31767582831203,
+      "source_subsolar_latitude_deg": 1.21,
+      "source_subsolar_longitude_deg": 8.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M188306254LC_Y8_02491_38258.tif",
+      "source_member": "render/render_M188306254LC_Y8_02491_38258.tif",
+      "sha256": "f68a91584ecdca4a1ee5a4f1f5811b997baffaf0fd4bb3fe09a7e9748ea95a3c"
+    },
+    {
+      "tile_id": "M1402365225RC_Y8_01282_01703",
+      "observation_group": "M1402365225",
+      "bounds_lonlat_deg": [
+        349.2370857025684,
+        -44.47749133499864,
+        349.2659534143303,
+        -44.4563788271443
+      ],
+      "metadata_member": "metadata/metadata_M1402365225RC_Y8_01282_01703.json",
+      "metadata_sha256": "35d1178af32426757f10ffed675ea9b7ec52a58bfbfe78a04d7eea458d98b4b4",
+      "product_id": "M1402365225RE",
+      "acquired_utc": "2022-03-19 21:39:17.911",
+      "solar_azimuth_deg": 340.39134191870255,
+      "solar_elevation_deg": 45.16089688669196,
+      "source_subsolar_latitude_deg": -1.3,
+      "source_subsolar_longitude_deg": 335.56,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1402365225RC_Y8_01282_01703.tif",
+      "source_member": "render/render_M1402365225RC_Y8_01282_01703.tif",
+      "sha256": "faa22166748b3eb7e3eb150c28e1f122e8b8b270f07d4cac6633d78fadcdfb9a"
+    },
+    {
+      "tile_id": "M188306254RC_Y8_03705_37849",
+      "observation_group": "M188306254",
+      "bounds_lonlat_deg": [
+        349.23556001970906,
+        -44.48339958346581,
+        349.26442871600034,
+        -44.46228635557229
+      ],
+      "metadata_member": "metadata/metadata_M188306254RC_Y8_03705_37849.json",
+      "metadata_sha256": "81541ef87c12b88a908ca24c66073420d1bd571dbc7de9759b4f080cd8a5a3e4",
+      "product_id": "M188306254RE",
+      "acquired_utc": "2012-04-05 23:03:06.181",
+      "solar_azimuth_deg": 25.616516938477247,
+      "solar_elevation_deg": 41.294016287538525,
+      "source_subsolar_latitude_deg": 1.21,
+      "source_subsolar_longitude_deg": 8.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M188306254RC_Y8_03705_37849.tif",
+      "source_member": "render/render_M188306254RC_Y8_03705_37849.tif",
+      "sha256": "3971146410d10c61b1aff74a0451932229052b2629387651330924de390b77bd"
+    },
+    {
+      "tile_id": "M1400019067RC_Y8_02509_05070",
+      "observation_group": "M1400019067",
+      "bounds_lonlat_deg": [
+        349.19526243185516,
+        -44.49538724088686,
+        349.22412024232005,
+        -44.47428197438273
+      ],
+      "metadata_member": "metadata/metadata_M1400019067RC_Y8_02509_05070.json",
+      "metadata_sha256": "e7efb33c743ad6a26766a905d712a995f99d362ee98ebfe77a2c6eb567b38300",
+      "product_id": "M1400019067RE",
+      "acquired_utc": "2022-02-20 17:56:39.563",
+      "solar_azimuth_deg": 305.8884665554854,
+      "solar_elevation_deg": 32.71800980365846,
+      "source_subsolar_latitude_deg": -1.54,
+      "source_subsolar_longitude_deg": 306.22,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1400019067RC_Y8_02509_05070.tif",
+      "source_member": "render/render_M1400019067RC_Y8_02509_05070.tif",
+      "sha256": "e4376bec22e52a0138d9cbfef88aed76fa2b2be0f5dacebfa56fd7afab9da2e2"
+    },
+    {
+      "tile_id": "M188306254RC_Y8_02284_38241",
+      "observation_group": "M188306254",
+      "bounds_lonlat_deg": [
+        349.19246924509787,
+        -44.49209326553961,
+        349.2213379413891,
+        -44.47098003764609
+      ],
+      "metadata_member": "metadata/metadata_M188306254RC_Y8_02284_38241.json",
+      "metadata_sha256": "aa01a7411eb0f578a2d5607548672675dffe96d81551ef8604bb34f0dbe63ab7",
+      "product_id": "M188306254RE",
+      "acquired_utc": "2012-04-05 23:03:06.181",
+      "solar_azimuth_deg": 25.667741261257937,
+      "solar_elevation_deg": 41.27287328161895,
+      "source_subsolar_latitude_deg": 1.21,
+      "source_subsolar_longitude_deg": 8.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M188306254RC_Y8_02284_38241.tif",
+      "source_member": "render/render_M188306254RC_Y8_02284_38241.tif",
+      "sha256": "8c81b1637a567c961e42985bb29b82e579b244633c7c07f473194f5c4dc87589"
+    },
+    {
+      "tile_id": "M1256682867LC_Y8_02444_20797",
+      "observation_group": "M1256682867",
+      "bounds_lonlat_deg": [
+        350.3661244799928,
+        -42.287979794351365,
+        350.39499425090634,
+        -42.26686578052887
+      ],
+      "metadata_member": "metadata/metadata_M1256682867LC_Y8_02444_20797.json",
+      "metadata_sha256": "e3d30e04467a96f1d861e0b2beea1d8e4bad9fa23dbf54fc4fc8918fb1533d87",
+      "product_id": "M1256682867LE",
+      "acquired_utc": "2017-08-06 18:19:59.818",
+      "solar_azimuth_deg": 25.33016993001421,
+      "solar_elevation_deg": 45.15765778624661,
+      "source_subsolar_latitude_deg": -0.31,
+      "source_subsolar_longitude_deg": 7.94,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1256682867LC_Y8_02444_20797.tif",
+      "source_member": "render/render_M1256682867LC_Y8_02444_20797.tif",
+      "sha256": "d5a818816a5dd2551a6d3230fcd5d0b48fde9a98549e070921253b04a461afe6"
+    },
+    {
+      "tile_id": "M1389394747RC_Y8_01351_13765",
+      "observation_group": "M1389394747",
+      "bounds_lonlat_deg": [
+        350.36094605023595,
+        -42.28899049898944,
+        350.38980281538807,
+        -42.26788599697867
+      ],
+      "metadata_member": "metadata/metadata_M1389394747RC_Y8_01351_13765.json",
+      "metadata_sha256": "3f5c821eb7564a43af721fb2f9b6a210cc704890812bc1b4416df707bb97753c",
+      "product_id": "M1389394747RE",
+      "acquired_utc": "2021-10-20 18:44:39.397",
+      "solar_azimuth_deg": 16.666357879340925,
+      "solar_elevation_deg": 45.564299882011504,
+      "source_subsolar_latitude_deg": 0.91,
+      "source_subsolar_longitude_deg": 1.96,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1389394747RC_Y8_01351_13765.tif",
+      "source_member": "render/render_M1389394747RC_Y8_01351_13765.tif",
+      "sha256": "fcf014934e6424fac9c5017379495e45b5ed3b81da32aa301305666eab15af75"
+    },
+    {
+      "tile_id": "M111654581RC_Y8_02473_10419",
+      "observation_group": "M111654581",
+      "bounds_lonlat_deg": [
+        350.2609677975986,
+        -42.29634877637567,
+        350.2898326863577,
+        -42.27523833313487
+      ],
+      "metadata_member": "metadata/metadata_M111654581RC_Y8_02473_10419.json",
+      "metadata_sha256": "0f738e6d92679d941c9d75b3819c2737ee4eb6d38e77ee8a5c2ee98bfe45b29e",
+      "product_id": "M111654581RE",
+      "acquired_utc": "2009-10-31 18:55:13.072",
+      "solar_azimuth_deg": 41.153250003043816,
+      "solar_elevation_deg": 41.372875970544904,
+      "source_subsolar_latitude_deg": -1.53,
+      "source_subsolar_longitude_deg": 19.88,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M111654581RC_Y8_02473_10419.tif",
+      "source_member": "render/render_M111654581RC_Y8_02473_10419.tif",
+      "sha256": "da867af6ea1887cdce88000fc391af1e3d432aa4991e06a028b9e2f6423de6be"
+    },
+    {
+      "tile_id": "M1256682867RC_Y8_03605_21178",
+      "observation_group": "M1256682867",
+      "bounds_lonlat_deg": [
+        350.2686960254025,
+        -42.29583277919256,
+        350.29756579631606,
+        -42.27471876537006
+      ],
+      "metadata_member": "metadata/metadata_M1256682867RC_Y8_03605_21178.json",
+      "metadata_sha256": "f41f31a45f23f4d02bd026b37acf58895694f9127cca3a66462f3d58d8fadcd5",
+      "product_id": "M1256682867RE",
+      "acquired_utc": "2017-08-06 18:19:59.818",
+      "solar_azimuth_deg": 25.45776685634032,
+      "solar_elevation_deg": 45.11965170524671,
+      "source_subsolar_latitude_deg": -0.31,
+      "source_subsolar_longitude_deg": 7.94,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1256682867RC_Y8_03605_21178.tif",
+      "source_member": "render/render_M1256682867RC_Y8_03605_21178.tif",
+      "sha256": "7d5ba2c46078cf327bbf64b9e32e5ca6f1d75cdefeecee84092056b43a4c7219"
+    },
+    {
+      "tile_id": "M1346003876LC_Y8_02212_13739",
+      "observation_group": "M1346003876",
+      "bounds_lonlat_deg": [
+        350.31260647324746,
+        -42.16433316783076,
+        350.3414449121938,
+        -42.14324206875845
+      ],
+      "metadata_member": "metadata/metadata_M1346003876LC_Y8_02212_13739.json",
+      "metadata_sha256": "9644e71ac591a73c600db2a2a2aee521f5208c8f30286f3ba453024789c4d7ca",
+      "product_id": "M1346003876LE",
+      "acquired_utc": "2020-06-05 13:43:28.567",
+      "solar_azimuth_deg": 24.150612806593973,
+      "solar_elevation_deg": 45.60465092554591,
+      "source_subsolar_latitude_deg": -0.36,
+      "source_subsolar_longitude_deg": 6.96,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1346003876LC_Y8_02212_13739.tif",
+      "source_member": "render/render_M1346003876LC_Y8_02212_13739.tif",
+      "sha256": "534cac692bc5841c0d65ec89078018882a247a59527d09fd7d0906eff59d25ec"
+    },
+    {
+      "tile_id": "M1443348733RC_Y8_01174_09445",
+      "observation_group": "M1443348733",
+      "bounds_lonlat_deg": [
+        350.3223763919847,
+        -42.163430709474454,
+        350.35119170833485,
+        -42.14235652119838
+      ],
+      "metadata_member": "metadata/metadata_M1443348733RC_Y8_01174_09445.json",
+      "metadata_sha256": "d4a736b86f0d73dc022a60f7a92dac9f307dc1c3e7c5deae5dd819c9c13eaa54",
+      "product_id": "M1443348733RE",
+      "acquired_utc": "2023-07-07 05:57:45.617",
+      "solar_azimuth_deg": 310.42645795684945,
+      "solar_elevation_deg": 33.83505558111546,
+      "source_subsolar_latitude_deg": 1.47,
+      "source_subsolar_longitude_deg": 311.1,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1443348733RC_Y8_01174_09445.tif",
+      "source_member": "render/render_M1443348733RC_Y8_01174_09445.tif",
+      "sha256": "3da54ca66645b52d2aca2ffb0182bdd39d114ea43e8b94d046e460123c0fe938"
+    },
+    {
+      "tile_id": "M1131915272LC_Y8_02054_03188",
+      "observation_group": "M1131915272",
+      "bounds_lonlat_deg": [
+        350.35183777815564,
+        -42.385219863309956,
+        350.3806724174158,
+        -42.36413154315221
+      ],
+      "metadata_member": "metadata/metadata_M1131915272LC_Y8_02054_03188.json",
+      "metadata_sha256": "e7d2cb47e3a85aaf163d81697a2d7d9ade398fc49e7dc3dab63e964681c6bf77",
+      "product_id": "M1131915272LE",
+      "acquired_utc": "2013-08-23 16:40:04.374",
+      "solar_azimuth_deg": 333.0187362114389,
+      "solar_elevation_deg": 45.8562000869155,
+      "source_subsolar_latitude_deg": -1.44,
+      "source_subsolar_longitude_deg": 331.94,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1131915272LC_Y8_02054_03188.tif",
+      "source_member": "render/render_M1131915272LC_Y8_02054_03188.tif",
+      "sha256": "a95b75e74d0b0848f3e0ca10f7ba2abbd09c0ca63e3e96b90c95402938b99ff0"
+    },
+    {
+      "tile_id": "M1346003876LC_Y8_03546_23548",
+      "observation_group": "M1346003876",
+      "bounds_lonlat_deg": [
+        350.3536197755443,
+        -42.384890300880066,
+        350.3824582144906,
+        -42.36379920180776
+      ],
+      "metadata_member": "metadata/metadata_M1346003876LC_Y8_03546_23548.json",
+      "metadata_sha256": "e1d95b78cba21adb544f5aee6044003b1a1f1b1b4d4b29f7b07acdfc6240bd4d",
+      "product_id": "M1346003876LE",
+      "acquired_utc": "2020-06-05 13:43:28.567",
+      "solar_azimuth_deg": 24.003224000887318,
+      "solar_elevation_deg": 45.415664911773774,
+      "source_subsolar_latitude_deg": -0.36,
+      "source_subsolar_longitude_deg": 6.96,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1346003876LC_Y8_03546_23548.tif",
+      "source_member": "render/render_M1346003876LC_Y8_03546_23548.tif",
+      "sha256": "28f1258d92dd9672fb0329629d49244c22f47291e1687536a17454009dfe0bcf"
+    },
+    {
+      "tile_id": "M1443348733LC_Y8_03548_14196",
+      "observation_group": "M1443348733",
+      "bounds_lonlat_deg": [
+        350.2246764872709,
+        -42.31854318763679,
+        350.25349180362116,
+        -42.29746899936072
+      ],
+      "metadata_member": "metadata/metadata_M1443348733LC_Y8_03548_14196.json",
+      "metadata_sha256": "06f7e3a68d96e6cda10ad11880ff8d40f32efcf9bb6e2c3354f749e274782254",
+      "product_id": "M1443348733LE",
+      "acquired_utc": "2023-07-07 05:57:45.617",
+      "solar_azimuth_deg": 310.6025779912048,
+      "solar_elevation_deg": 33.78928530883306,
+      "source_subsolar_latitude_deg": 1.47,
+      "source_subsolar_longitude_deg": 311.1,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1443348733LC_Y8_03548_14196.tif",
+      "source_member": "render/render_M1443348733LC_Y8_03548_14196.tif",
+      "sha256": "0600913e1b1fa40ad2e9af28895df498b28bef43e9e39b7087e5424c5f23684c"
+    },
+    {
+      "tile_id": "M190658064LC_Y8_03981_21125",
+      "observation_group": "M190658064",
+      "bounds_lonlat_deg": [
+        350.23101707873514,
+        -42.32329262287213,
+        350.2598525493936,
+        -42.302203694668115
+      ],
+      "metadata_member": "metadata/metadata_M190658064LC_Y8_03981_21125.json",
+      "metadata_sha256": "29a51649652b101febe55b9709d64ef3325b8106907b19e05a76cf354c51a2c4",
+      "product_id": "M190658064LE",
+      "acquired_utc": "2012-05-03 04:19:56.035",
+      "solar_azimuth_deg": 56.35971957450083,
+      "solar_elevation_deg": 30.522738270802442,
+      "source_subsolar_latitude_deg": 0.63,
+      "source_subsolar_longitude_deg": 36.07,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M190658064LC_Y8_03981_21125.tif",
+      "source_member": "render/render_M190658064LC_Y8_03981_21125.tif",
+      "sha256": "cd1e027a7244eaa559c05e716f83dc2e892cd77703312f1a59ed976ea2aefcaa"
+    },
+    {
+      "tile_id": "M1443348733LC_Y8_01705_10892",
+      "observation_group": "M1443348733",
+      "bounds_lonlat_deg": [
+        350.1424680847423,
+        -42.21075817515357,
+        350.1712834010925,
+        -42.1896839868775
+      ],
+      "metadata_member": "metadata/metadata_M1443348733LC_Y8_01705_10892.json",
+      "metadata_sha256": "ce033903c039d477970e7701d266f8b2fdb47fd0774726d243ffea6ac2c3299b",
+      "product_id": "M1443348733LE",
+      "acquired_utc": "2023-07-07 05:57:45.617",
+      "solar_azimuth_deg": 310.6295507969523,
+      "solar_elevation_deg": 33.90564113154245,
+      "source_subsolar_latitude_deg": 1.47,
+      "source_subsolar_longitude_deg": 311.1,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1443348733LC_Y8_01705_10892.tif",
+      "source_member": "render/render_M1443348733LC_Y8_01705_10892.tif",
+      "sha256": "e301d1585e1541b7402bd7a6a4c93834a1f51d601708fa9acc720cb8a6d17e45"
+    },
+    {
+      "tile_id": "M190658064LC_Y8_01118_16195",
+      "observation_group": "M190658064",
+      "bounds_lonlat_deg": [
+        350.14429864124014,
+        -42.21408210181564,
+        350.1731341118986,
+        -42.192993173611626
+      ],
+      "metadata_member": "metadata/metadata_M190658064LC_Y8_01118_16195.json",
+      "metadata_sha256": "6c350fd1213de6a8f407ddb3b1448cb2558b827717ce5d7d94f5cf89df3f0221",
+      "product_id": "M190658064LE",
+      "acquired_utc": "2012-05-03 04:19:56.035",
+      "solar_azimuth_deg": 56.492618554304826,
+      "solar_elevation_deg": 30.529657887280976,
+      "source_subsolar_latitude_deg": 0.63,
+      "source_subsolar_longitude_deg": 36.07,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M190658064LC_Y8_01118_16195.tif",
+      "source_member": "render/render_M190658064LC_Y8_01118_16195.tif",
+      "sha256": "fa9efd388b1d17a0bf755f860a8a113002b48d132def3716b35a3602571cbc10"
+    },
+    {
+      "tile_id": "M1131915272LC_Y8_02300_51736",
+      "observation_group": "M1131915272",
+      "bounds_lonlat_deg": [
+        350.35841785353415,
+        -43.334937643475335,
+        350.38725249279423,
+        -43.31384932331759
+      ],
+      "metadata_member": "metadata/metadata_M1131915272LC_Y8_02300_51736.json",
+      "metadata_sha256": "b5e2069cfab4b6942c69e0340bb6f29b5037c8e98affda0ae39a903b71fb64da",
+      "product_id": "M1131915272LE",
+      "acquired_utc": "2013-08-23 16:40:04.374",
+      "solar_azimuth_deg": 333.4441270310496,
+      "solar_elevation_deg": 45.00607808069181,
+      "source_subsolar_latitude_deg": -1.44,
+      "source_subsolar_longitude_deg": 331.94,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1131915272LC_Y8_02300_51736.tif",
+      "source_member": "render/render_M1131915272LC_Y8_02300_51736.tif",
+      "sha256": "7bd1bdf399da5ca67a252150922195d0dbc6de0bfceae16d8541cc1f48d53472"
+    },
+    {
+      "tile_id": "M1206053657RC_Y8_04917_25939",
+      "observation_group": "M1206053657",
+      "bounds_lonlat_deg": [
+        350.34875521034536,
+        -43.336263145526665,
+        350.37759166210617,
+        -43.31517349978981
+      ],
+      "metadata_member": "metadata/metadata_M1206053657RC_Y8_04917_25939.json",
+      "metadata_sha256": "626c86b09d17392990c4fd561c73701a691865a7d2287c7a3115e9b38151afa7",
+      "product_id": "M1206053657RE",
+      "acquired_utc": "2015-12-29 18:39:49.307",
+      "solar_azimuth_deg": 312.4581211419492,
+      "solar_elevation_deg": 33.78988921352103,
+      "source_subsolar_latitude_deg": 1.52,
+      "source_subsolar_longitude_deg": 312.53,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1206053657RC_Y8_04917_25939.tif",
+      "source_member": "render/render_M1206053657RC_Y8_04917_25939.tif",
+      "sha256": "4f4166dc5df4db141720c867729b1f713d35cd2a4e736a4e3c936c869dbece35"
+    },
+    {
+      "tile_id": "M1251970596RC_Y8_04854_31825",
+      "observation_group": "M1251970596",
+      "bounds_lonlat_deg": [
+        350.10790065388244,
+        -43.27415703292218,
+        350.1367475375779,
+        -43.253059757751345
+      ],
+      "metadata_member": "metadata/metadata_M1251970596RC_Y8_04854_31825.json",
+      "metadata_sha256": "1aa1cc8af1d9f9c1f1c23b48ace7608a733aa270c2e24c3a0278457c98da362c",
+      "product_id": "M1251970596RE",
+      "acquired_utc": "2017-06-13 05:22:08.796",
+      "solar_azimuth_deg": 312.9165477660721,
+      "solar_elevation_deg": 37.57656697201636,
+      "source_subsolar_latitude_deg": -1.43,
+      "source_subsolar_longitude_deg": 314.63,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1251970596RC_Y8_04854_31825.tif",
+      "source_member": "render/render_M1251970596RC_Y8_04854_31825.tif",
+      "sha256": "0dcc839ff6ef302f54d4979ff565c4a3045e4dc5601238a11d2a5403a4006a9d"
+    },
+    {
+      "tile_id": "M1445693687RC_Y8_06720_15209",
+      "observation_group": "M1445693687",
+      "bounds_lonlat_deg": [
+        350.11275713379445,
+        -43.27410004654438,
+        350.14157495047226,
+        -43.253024029644514
+      ],
+      "metadata_member": "metadata/metadata_M1445693687RC_Y8_06720_15209.json",
+      "metadata_sha256": "9e1c5aa37e858d62638f3355a46827bba17f12f7dbd9785681bdefae5be113ad",
+      "product_id": "M1445693687RE",
+      "acquired_utc": "2023-08-03 09:20:19.355",
+      "solar_azimuth_deg": 344.89690438174324,
+      "solar_elevation_deg": 44.21281560149414,
+      "source_subsolar_latitude_deg": 1.49,
+      "source_subsolar_longitude_deg": 339.36,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1445693687RC_Y8_06720_15209.tif",
+      "source_member": "render/render_M1445693687RC_Y8_06720_15209.tif",
+      "sha256": "fb580e4093768e8c99efd792a60b03cce1e340453d5dad76315d463667a1eb4c"
+    },
+    {
+      "tile_id": "M1118936109RC_Y8_04975_10838",
+      "observation_group": "M1118936109",
+      "bounds_lonlat_deg": [
+        350.30486226063255,
+        -43.18691279627022,
+        350.3337196755542,
+        -43.165807819048105
+      ],
+      "metadata_member": "metadata/metadata_M1118936109RC_Y8_04975_10838.json",
+      "metadata_sha256": "7b3a8f06c5c87eea757f495d5dfcad8c8e543b6e299a5677c02a1b4bfdaf15a6",
+      "product_id": "M1118936109RE",
+      "acquired_utc": "2013-03-26 11:20:41.877",
+      "solar_azimuth_deg": 22.446967442914175,
+      "solar_elevation_deg": 43.432812587163,
+      "source_subsolar_latitude_deg": 1.09,
+      "source_subsolar_longitude_deg": 6.42,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1118936109RC_Y8_04975_10838.tif",
+      "source_member": "render/render_M1118936109RC_Y8_04975_10838.tif",
+      "sha256": "7b7bef5dd9f4122d66454cb2c1b3386c1916e34fe68b618539dc90842641ec04"
+    },
+    {
+      "tile_id": "M1371845778RC_Y8_06531_47458",
+      "observation_group": "M1371845778",
+      "bounds_lonlat_deg": [
+        350.30205633681703,
+        -43.187147269134265,
+        350.33090319490043,
+        -43.16605001269487
+      ],
+      "metadata_member": "metadata/metadata_M1371845778RC_Y8_06531_47458.json",
+      "metadata_sha256": "da720b82d759b37c9c15ee4d773ab4d8a94e554ccf6a273cb66cd32d886a5865",
+      "product_id": "M1371845778RE",
+      "acquired_utc": "2021-03-31 16:01:50.646",
+      "solar_azimuth_deg": 320.78962299149913,
+      "solar_elevation_deg": 41.0820230365942,
+      "source_subsolar_latitude_deg": -1.36,
+      "source_subsolar_longitude_deg": 321.85,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1371845778RC_Y8_06531_47458.tif",
+      "source_member": "render/render_M1371845778RC_Y8_06531_47458.tif",
+      "sha256": "1cd38e62f615b1f554cbbd7856fa0650ce871c073883454f791bf2de0441ef5d"
+    },
+    {
+      "tile_id": "M1118936109RC_Y8_04681_08560",
+      "observation_group": "M1118936109",
+      "bounds_lonlat_deg": [
+        350.29665715426216,
+        -43.140416531171596,
+        350.32551456918384,
+        -43.11931155394947
+      ],
+      "metadata_member": "metadata/metadata_M1118936109RC_Y8_04681_08560.json",
+      "metadata_sha256": "5dc1ddb330e05fccf118c10ad7862370cbbc6e24f34f35448d1b1d904e1a27b6",
+      "product_id": "M1118936109RE",
+      "acquired_utc": "2013-03-26 11:20:41.877",
+      "solar_azimuth_deg": 22.47464999176852,
+      "solar_elevation_deg": 43.47349479088785,
+      "source_subsolar_latitude_deg": 1.09,
+      "source_subsolar_longitude_deg": 6.42,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1118936109RC_Y8_04681_08560.tif",
+      "source_member": "render/render_M1118936109RC_Y8_04681_08560.tif",
+      "sha256": "9b0c4b387399ed481df85cca7386ea1f20f5b31914af3583b9b7a4ee0013956e"
+    },
+    {
+      "tile_id": "M1206053657RC_Y8_02935_15115",
+      "observation_group": "M1206053657",
+      "bounds_lonlat_deg": [
+        350.2992284795048,
+        -43.13845177164817,
+        350.32806493126566,
+        -43.11736212591131
+      ],
+      "metadata_member": "metadata/metadata_M1206053657RC_Y8_02935_15115.json",
+      "metadata_sha256": "0d1f3d499084344779271cb9d586664e3a7507bdb5627e605b914cf5ffe3cbeb",
+      "product_id": "M1206053657RE",
+      "acquired_utc": "2015-12-29 18:39:49.307",
+      "solar_azimuth_deg": 312.41039178531287,
+      "solar_elevation_deg": 33.94999581129547,
+      "source_subsolar_latitude_deg": 1.52,
+      "source_subsolar_longitude_deg": 312.53,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1206053657RC_Y8_02935_15115.tif",
+      "source_member": "render/render_M1206053657RC_Y8_02935_15115.tif",
+      "sha256": "b1a838c06042c6492f50084e001b7d14921ed4ba7a4c8e7eded3869ed656c890"
+    },
+    {
+      "tile_id": "M1400012040LC_Y8_02186_06305",
+      "observation_group": "M1400012040",
+      "bounds_lonlat_deg": [
+        350.1011323166505,
+        -44.46300584917753,
+        350.1299669057688,
+        -44.44191756569119
+      ],
+      "metadata_member": "metadata/metadata_M1400012040LC_Y8_02186_06305.json",
+      "metadata_sha256": "9ead4b5bb9a1a4d1560238eef5f14f444022341e7decef7790de66164833f004",
+      "product_id": "M1400012040LE",
+      "acquired_utc": "2022-02-20 15:59:32.193",
+      "solar_azimuth_deg": 305.9532057378644,
+      "solar_elevation_deg": 32.7856291724754,
+      "source_subsolar_latitude_deg": -1.54,
+      "source_subsolar_longitude_deg": 307.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1400012040LC_Y8_02186_06305.tif",
+      "source_member": "render/render_M1400012040LC_Y8_02186_06305.tif",
+      "sha256": "dcd8be5d7e04ae98e43ec9a04c9d890f944886d13d554d22cd7c3038a678033d"
+    },
+    {
+      "tile_id": "M1430517306RC_Y8_04320_34147",
+      "observation_group": "M1430517306",
+      "bounds_lonlat_deg": [
+        350.1010141282521,
+        -44.465156270391425,
+        350.12988699605455,
+        -44.4440399916477
+      ],
+      "metadata_member": "metadata/metadata_M1430517306RC_Y8_04320_34147.json",
+      "metadata_sha256": "5a94fbb86e39fe43a5a37f27e28d62ed1755d23b383c77a91526dc875feb3fcb",
+      "product_id": "M1430517306RE",
+      "acquired_utc": "2023-02-08 17:40:38.377",
+      "solar_azimuth_deg": 322.6066395264711,
+      "solar_elevation_deg": 40.71909141252685,
+      "source_subsolar_latitude_deg": -1.55,
+      "source_subsolar_longitude_deg": 322.7,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1430517306RC_Y8_04320_34147.tif",
+      "source_member": "render/render_M1430517306RC_Y8_04320_34147.tif",
+      "sha256": "82e559dc77ee6cb7df26f28e66622798e848993798bdd5a74bb8c1a5cfceac9f"
+    },
+    {
+      "tile_id": "M106935800LC_Y8_01185_11493",
+      "observation_group": "M106935800",
+      "bounds_lonlat_deg": [
+        350.3698730355163,
+        -44.49986469095703,
+        350.39871806414465,
+        -44.47876877249644
+      ],
+      "metadata_member": "metadata/metadata_M106935800LC_Y8_01185_11493.json",
+      "metadata_sha256": "f45170edaaf211136cb84ac98cf33a1910de5c1c77b73a131621d479b0c520cb",
+      "product_id": "M106935800LE",
+      "acquired_utc": "2009-09-07 04:08:52.125",
+      "solar_azimuth_deg": 326.2976427218611,
+      "solar_elevation_deg": 41.49162769057018,
+      "source_subsolar_latitude_deg": -1.13,
+      "source_subsolar_longitude_deg": 325.82,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M106935800LC_Y8_01185_11493.tif",
+      "source_member": "render/render_M106935800LC_Y8_01185_11493.tif",
+      "sha256": "70ca18ff5433a041ef30e82702b6cbf33f0dd0f5d2bdb45ab645d61e52e97764"
+    },
+    {
+      "tile_id": "M1162534224RC_Y8_05182_32759",
+      "observation_group": "M1162534224",
+      "bounds_lonlat_deg": [
+        350.36670128229775,
+        -44.49952717764445,
+        350.3955887698693,
+        -44.47840020667855
+      ],
+      "metadata_member": "metadata/metadata_M1162534224RC_Y8_05182_32759.json",
+      "metadata_sha256": "1e8684bfbb0937abf2e042715f69cacca7d15f40b7fd75c00300518de66f3e31",
+      "product_id": "M1162534224RE",
+      "acquired_utc": "2014-08-13 01:55:56.323",
+      "solar_azimuth_deg": 334.01416914314433,
+      "solar_elevation_deg": 43.86124728533007,
+      "source_subsolar_latitude_deg": -1.33,
+      "source_subsolar_longitude_deg": 331.96,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1162534224RC_Y8_05182_32759.tif",
+      "source_member": "render/render_M1162534224RC_Y8_05182_32759.tif",
+      "sha256": "c4d1f69d8ab03579901be097b489650c55bf51cbf26f26966faf3638dedda2d2"
+    },
+    {
+      "tile_id": "M1162534224RC_Y8_02426_28848",
+      "observation_group": "M1162534224",
+      "bounds_lonlat_deg": [
+        350.28644531884305,
+        -44.41623324271738,
+        350.3153328064145,
+        -44.39510627175147
+      ],
+      "metadata_member": "metadata/metadata_M1162534224RC_Y8_02426_28848.json",
+      "metadata_sha256": "208e602e3ebc6b92f001e36d6b26a46b881f4d02397764d2b11c8c1c808fb4f7",
+      "product_id": "M1162534224RE",
+      "acquired_utc": "2014-08-13 01:55:56.323",
+      "solar_azimuth_deg": 334.084875125664,
+      "solar_elevation_deg": 43.96121454733839,
+      "source_subsolar_latitude_deg": -1.33,
+      "source_subsolar_longitude_deg": 331.96,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1162534224RC_Y8_02426_28848.tif",
+      "source_member": "render/render_M1162534224RC_Y8_02426_28848.tif",
+      "sha256": "a68ea06bdcb265f40c5ff2de1a37f63791e025c5ce1dba7cd8914502bf68a468"
+    },
+    {
+      "tile_id": "M1287250114RC_Y8_04323_18131",
+      "observation_group": "M1287250114",
+      "bounds_lonlat_deg": [
+        350.27750484311275,
+        -44.41572889655745,
+        350.3063758212178,
+        -44.394613999850975
+      ],
+      "metadata_member": "metadata/metadata_M1287250114RC_Y8_04323_18131.json",
+      "metadata_sha256": "e83c6a4fb77aba01bad612656d16bc2e58f13baa73c876ec786f362c49aa0ea8",
+      "product_id": "M1287250114RE",
+      "acquired_utc": "2018-07-26 13:14:06.198",
+      "solar_azimuth_deg": 33.76230596064879,
+      "solar_elevation_deg": 40.40065540059143,
+      "source_subsolar_latitude_deg": -0.07,
+      "source_subsolar_longitude_deg": 15.33,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1287250114RC_Y8_04323_18131.tif",
+      "source_member": "render/render_M1287250114RC_Y8_04323_18131.tif",
+      "sha256": "f6130e7d4c6734dfac0577a13dce016d7d2b184c55c8ce7163f9156f52b6e480"
+    },
+    {
+      "tile_id": "M1162541343RC_Y8_04231_23889",
+      "observation_group": "M1162541343",
+      "bounds_lonlat_deg": [
+        350.3539715940509,
+        -44.30630402486963,
+        350.38281838449706,
+        -44.28520681789706
+      ],
+      "metadata_member": "metadata/metadata_M1162541343RC_Y8_04231_23889.json",
+      "metadata_sha256": "f0c61c08bfea48185b78d9d4ac2a0dc444c239f2bc9e93b9bf57a58a4da8797a",
+      "product_id": "M1162541343RE",
+      "acquired_utc": "2014-08-13 03:54:35.427",
+      "solar_azimuth_deg": 332.6230186609397,
+      "solar_elevation_deg": 43.713895430317784,
+      "source_subsolar_latitude_deg": -1.33,
+      "source_subsolar_longitude_deg": 330.95,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1162541343RC_Y8_04231_23889.tif",
+      "source_member": "render/render_M1162541343RC_Y8_04231_23889.tif",
+      "sha256": "c2d3a43a33721dd9708761dab5d48f12f729c7c2bf87818742993bf57e99e69e"
+    },
+    {
+      "tile_id": "M1180164187RC_Y8_01570_00571",
+      "observation_group": "M1180164187",
+      "bounds_lonlat_deg": [
+        350.3547468306513,
+        -44.30722676204517,
+        350.3836298494679,
+        -44.28610305931969
+      ],
+      "metadata_member": "metadata/metadata_M1180164187RC_Y8_01570_00571.json",
+      "metadata_sha256": "5f42a46dd14f6714f5e814b1758d7bd1cc07f81c73fe3dd4f609663ce6024496",
+      "product_id": "M1180164187RE",
+      "acquired_utc": "2015-03-05 03:08:39.743",
+      "solar_azimuth_deg": 23.034055748654822,
+      "solar_elevation_deg": 42.563707536663,
+      "source_subsolar_latitude_deg": 0.73,
+      "source_subsolar_longitude_deg": 7.12,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1180164187RC_Y8_01570_00571.tif",
+      "source_member": "render/render_M1180164187RC_Y8_01570_00571.tif",
+      "sha256": "8bbfcbbc39790ff0d8eaac5b3b3faa82af80a13823b8c15ba42635b0f5674e45"
+    },
+    {
+      "tile_id": "M1287250114RC_Y8_01988_15535",
+      "observation_group": "M1287250114",
+      "bounds_lonlat_deg": [
+        350.21928918346237,
+        -44.3683936013502,
+        350.24816016156734,
+        -44.34727870464373
+      ],
+      "metadata_member": "metadata/metadata_M1287250114RC_Y8_01988_15535.json",
+      "metadata_sha256": "67cfecf6e10bf467bfe3961acf9035911d9882a3a8523fad1352d79ee5c65fd6",
+      "product_id": "M1287250114RE",
+      "acquired_utc": "2018-07-26 13:14:06.198",
+      "solar_azimuth_deg": 33.8548778319844,
+      "solar_elevation_deg": 40.416835566742336,
+      "source_subsolar_latitude_deg": -0.07,
+      "source_subsolar_longitude_deg": 15.33,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1287250114RC_Y8_01988_15535.tif",
+      "source_member": "render/render_M1287250114RC_Y8_01988_15535.tif",
+      "sha256": "5eb382f440fe060d5d91502db4b8a7eb38be84f26a5843d80cbc4c9dc4043b01"
+    },
+    {
+      "tile_id": "M1400012040RC_Y8_00809_03163",
+      "observation_group": "M1400012040",
+      "bounds_lonlat_deg": [
+        350.2173003601784,
+        -44.36513980382305,
+        350.24613494929673,
+        -44.34405152033671
+      ],
+      "metadata_member": "metadata/metadata_M1400012040RC_Y8_00809_03163.json",
+      "metadata_sha256": "def2cd6cc36976a61891806fed980389bd11a65457ff335709691f20f2f489ba",
+      "product_id": "M1400012040RE",
+      "acquired_utc": "2022-02-20 15:59:32.193",
+      "solar_azimuth_deg": 305.7895339970539,
+      "solar_elevation_deg": 32.77572264814662,
+      "source_subsolar_latitude_deg": -1.54,
+      "source_subsolar_longitude_deg": 307.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1400012040RC_Y8_00809_03163.tif",
+      "source_member": "render/render_M1400012040RC_Y8_00809_03163.tif",
+      "sha256": "8da4dda6d8310952e2c1c063dd63b308cf4610ffc0e8529be9f4a514d087613c"
+    },
+    {
+      "tile_id": "M1287250114RC_Y8_05377_22161",
+      "observation_group": "M1287250114",
+      "bounds_lonlat_deg": [
+        350.30378291817556,
+        -44.489211654525555,
+        350.33265389628053,
+        -44.46809675781909
+      ],
+      "metadata_member": "metadata/metadata_M1287250114RC_Y8_05377_22161.json",
+      "metadata_sha256": "bf4f60beb3b16db9dc88db7a588b06d723040ab51c282c88b28f549be3058115",
+      "product_id": "M1287250114RE",
+      "acquired_utc": "2018-07-26 13:14:06.198",
+      "solar_azimuth_deg": 33.6959430513724,
+      "solar_elevation_deg": 40.349959496793346,
+      "source_subsolar_latitude_deg": -0.07,
+      "source_subsolar_longitude_deg": 15.33,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1287250114RC_Y8_05377_22161.tif",
+      "source_member": "render/render_M1287250114RC_Y8_05377_22161.tif",
+      "sha256": "93e7d703f10fa85102c1c1fa8a1b223c7ef0d6f49a09dd4c793639553e119115"
+    },
+    {
+      "tile_id": "M1400012040RC_Y8_03260_07973",
+      "observation_group": "M1400012040",
+      "bounds_lonlat_deg": [
+        350.30369837720644,
+        -44.489143035570336,
+        350.3325329663248,
+        -44.468054752083994
+      ],
+      "metadata_member": "metadata/metadata_M1400012040RC_Y8_03260_07973.json",
+      "metadata_sha256": "4f64caf4d82ee566a3cfeb5870cfd26159baf8a82937109bda8b60cf59532661",
+      "product_id": "M1400012040RE",
+      "acquired_utc": "2022-02-20 15:59:32.193",
+      "solar_azimuth_deg": 305.7705097591531,
+      "solar_elevation_deg": 32.65315651145975,
+      "source_subsolar_latitude_deg": -1.54,
+      "source_subsolar_longitude_deg": 307.21,
+      "rot90": 0,
+      "path": "data/moonanything/real_selected/M1400012040RC_Y8_03260_07973.tif",
+      "source_member": "render/render_M1400012040RC_Y8_03260_07973.tif",
+      "sha256": "31202a56992251efe58802afbef6de6eef9f0e7c61988ca38ab6638d5c11e2fc"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "Tycho_dev_north_01",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M1223754131RC_Y8_02639_15758",
+      "query": "M1254333774LC_Y8_04896_14498",
+      "bounds_lonlat_deg": [
+        349.2681657468658,
+        -42.1438444460579,
+        349.2885646719466,
+        -42.12537847418098
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 5.659150213461372,
+      "overlap_fraction_smaller_source": 0.619209348409761,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_dev_north_02",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M142334392RC_Y8_03110_21596",
+      "query": "M1435210401RC_Y8_04338_17459",
+      "bounds_lonlat_deg": [
+        349.28994842059853,
+        -42.246222785101004,
+        349.31753962743295,
+        -42.22774510829992
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 10.226742491780957,
+      "overlap_fraction_smaller_source": 0.8360456621418645,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_dev_north_03",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M170634588LC_Y8_01443_17007",
+      "query": "M190665211LC_Y8_03830_13771",
+      "bounds_lonlat_deg": [
+        349.17910294464673,
+        -42.16376736314941,
+        349.1994038359803,
+        -42.14546437894645
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 57.056044584701816,
+      "overlap_fraction_smaller_source": 0.6108353202152869,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_dev_north_04",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M142334392RC_Y8_02298_25180",
+      "query": "M170634588RC_Y8_01246_25490",
+      "bounds_lonlat_deg": [
+        349.27220627014714,
+        -42.311023966385875,
+        349.29874953074,
+        -42.295461665905286
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 32.91033880015244,
+      "overlap_fraction_smaller_source": 0.6790710204247917,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_dev_north_05",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M1356531561LC_Y8_01994_20517",
+      "query": "M1435203383RC_Y8_03182_23025",
+      "bounds_lonlat_deg": [
+        349.30214570997185,
+        -42.36798740969408,
+        349.32955069834065,
+        -42.352510784737014
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 63.320382190114195,
+      "overlap_fraction_smaller_source": 0.697700043378632,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_dev_north_06",
+      "region_id": "Tycho_dev_north",
+      "split": "dev",
+      "reference": "M1356531561LC_Y8_02904_21278",
+      "query": "M1435203383RC_Y8_04222_23891",
+      "bounds_lonlat_deg": [
+        349.33323091807114,
+        -42.3869992653082,
+        349.3615589452955,
+        -42.37200357032081
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 63.319443059225875,
+      "overlap_fraction_smaller_source": 0.6987885798402429,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_dev_south_01",
+      "region_id": "Tycho_dev_south",
+      "split": "dev",
+      "reference": "M1134275004RC_Y8_03243_30996",
+      "query": "M1180171291RC_Y8_03049_26150",
+      "bounds_lonlat_deg": [
+        349.34012804557307,
+        -44.354639075257175,
+        349.3674617582388,
+        -44.34025412640534
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 7.801530109076721,
+      "overlap_fraction_smaller_source": 0.6459818235552405,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_dev_south_02",
+      "region_id": "Tycho_dev_south",
+      "split": "dev",
+      "reference": "M1180171291RC_Y8_03889_22994",
+      "query": "M188306254LC_Y8_03400_29299",
+      "bounds_lonlat_deg": [
+        349.36602583903453,
+        -44.286027433609206,
+        349.3911532279085,
+        -44.27119856214979
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 2.1491252013716604,
+      "overlap_fraction_smaller_source": 0.6121654473653746,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_dev_south_03",
+      "region_id": "Tycho_dev_south",
+      "split": "dev",
+      "reference": "M1402365225RC_Y8_04232_02234",
+      "query": "M188306254LC_Y8_02491_38258",
+      "bounds_lonlat_deg": [
+        349.3411929760374,
+        -44.49100234539836,
+        349.36358847483206,
+        -44.47008389031136
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 32.75014742292608,
+      "overlap_fraction_smaller_source": 0.7686668680978523,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_dev_south_04",
+      "region_id": "Tycho_dev_south",
+      "split": "dev",
+      "reference": "M1402365225RC_Y8_01282_01703",
+      "query": "M188306254RC_Y8_03705_37849",
+      "bounds_lonlat_deg": [
+        349.2370857025684,
+        -44.47749133499864,
+        349.26442871600034,
+        -44.46228635557229
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 32.74568879277613,
+      "overlap_fraction_smaller_source": 0.6821502273209061,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_dev_south_05",
+      "region_id": "Tycho_dev_south",
+      "split": "dev",
+      "reference": "M1400019067RC_Y8_02509_05070",
+      "query": "M188306254RC_Y8_02284_38241",
+      "bounds_lonlat_deg": [
+        349.19526243185516,
+        -44.49209326553961,
+        349.2213379413891,
+        -44.47428197438273
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 62.04725058438338,
+      "overlap_fraction_smaller_source": 0.7625599451084276,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_test_north_01",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M1256682867LC_Y8_02444_20797",
+      "query": "M1389394747RC_Y8_01351_13765",
+      "bounds_lonlat_deg": [
+        350.3661244799928,
+        -42.287979794351365,
+        350.38980281538807,
+        -42.26788599697867
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 6.098103842209245,
+      "overlap_fraction_smaller_source": 0.7812507234798167,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_north_02",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M111654581RC_Y8_02473_10419",
+      "query": "M1256682867RC_Y8_03605_21178",
+      "bounds_lonlat_deg": [
+        350.2686960254025,
+        -42.29583277919256,
+        350.2898326863577,
+        -42.27523833313487
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 12.008042859855177,
+      "overlap_fraction_smaller_source": 0.7143634992417318,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_north_03",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M1346003876LC_Y8_02212_13739",
+      "query": "M1443348733RC_Y8_01174_09445",
+      "bounds_lonlat_deg": [
+        350.3223763919847,
+        -42.163430709474454,
+        350.3414449121938,
+        -42.14324206875845
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 55.894427361953774,
+      "overlap_fraction_smaller_source": 0.6339424341913767,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_north_04",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M1131915272LC_Y8_02054_03188",
+      "query": "M1346003876LC_Y8_03546_23548",
+      "bounds_lonlat_deg": [
+        350.3536197755443,
+        -42.384890300880066,
+        350.3806724174158,
+        -42.36413154315221
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 35.02987645368027,
+      "overlap_fraction_smaller_source": 0.9235375005944327,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_north_05",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M1443348733LC_Y8_03548_14196",
+      "query": "M190658064LC_Y8_03981_21125",
+      "bounds_lonlat_deg": [
+        350.23101707873514,
+        -42.31854318763679,
+        350.25349180362116,
+        -42.302203694668115
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 84.94934764693633,
+      "overlap_fraction_smaller_source": 0.6047260989932726,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_test_north_06",
+      "region_id": "Tycho_test_north",
+      "split": "test",
+      "reference": "M1443348733LC_Y8_01705_10892",
+      "query": "M190658064LC_Y8_01118_16195",
+      "bounds_lonlat_deg": [
+        350.14429864124014,
+        -42.21075817515357,
+        350.1712834010925,
+        -42.192993173611626
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 84.95386947677765,
+      "overlap_fraction_smaller_source": 0.7894226072222231,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_test_mid_01",
+      "region_id": "Tycho_test_mid",
+      "split": "test",
+      "reference": "M1131915272LC_Y8_02300_51736",
+      "query": "M1206053657RC_Y8_04917_25939",
+      "bounds_lonlat_deg": [
+        350.35841785353415,
+        -43.334937643475335,
+        350.37759166210617,
+        -43.31517349978981
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 19.62288546001527,
+      "overlap_fraction_smaller_source": 0.6232034959316105,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_mid_02",
+      "region_id": "Tycho_test_mid",
+      "split": "test",
+      "reference": "M1251970596RC_Y8_04854_31825",
+      "query": "M1445693687RC_Y8_06720_15209",
+      "bounds_lonlat_deg": [
+        350.11275713379445,
+        -43.27410004654438,
+        350.1367475375779,
+        -43.253059757751345
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 24.89431028025301,
+      "overlap_fraction_smaller_source": 0.8310738967418642,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_mid_03",
+      "region_id": "Tycho_test_mid",
+      "split": "test",
+      "reference": "M1118936109RC_Y8_04975_10838",
+      "query": "M1371845778RC_Y8_06531_47458",
+      "bounds_lonlat_deg": [
+        350.30486226063255,
+        -43.18691279627022,
+        350.33090319490043,
+        -43.16605001269487
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 44.630911331007866,
+      "overlap_fraction_smaller_source": 0.8926974914556056,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_mid_04",
+      "region_id": "Tycho_test_mid",
+      "split": "test",
+      "reference": "M1118936109RC_Y8_04681_08560",
+      "query": "M1206053657RC_Y8_02935_15115",
+      "bounds_lonlat_deg": [
+        350.2992284795048,
+        -43.13845177164817,
+        350.32551456918384,
+        -43.11931155394947
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 53.879014326003926,
+      "overlap_fraction_smaller_source": 0.8272975783638564,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_south_01",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M1400012040LC_Y8_02186_06305",
+      "query": "M1430517306RC_Y8_04320_34147",
+      "bounds_lonlat_deg": [
+        350.1011323166505,
+        -44.46300584917753,
+        350.12988699605455,
+        -44.4440399916477
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 15.484468855309167,
+      "overlap_fraction_smaller_source": 0.896862809462144,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_south_02",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M106935800LC_Y8_01185_11493",
+      "query": "M1162534224RC_Y8_05182_32759",
+      "bounds_lonlat_deg": [
+        350.3698730355163,
+        -44.49952717764445,
+        350.3955887698693,
+        -44.47876877249644
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 6.14499401947226,
+      "overlap_fraction_smaller_source": 0.8772502532339015,
+      "solar_stratum": 0
+    },
+    {
+      "pair_id": "Tycho_test_south_03",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M1162534224RC_Y8_02426_28848",
+      "query": "M1287250114RC_Y8_04323_18131",
+      "bounds_lonlat_deg": [
+        350.28644531884305,
+        -44.41572889655745,
+        350.3063758212178,
+        -44.39510627175147
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 43.39294712235203,
+      "overlap_fraction_smaller_source": 0.6742356745906313,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_south_04",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M1162541343RC_Y8_04231_23889",
+      "query": "M1180164187RC_Y8_01570_00571",
+      "bounds_lonlat_deg": [
+        350.3547468306513,
+        -44.30630402486963,
+        350.38281838449706,
+        -44.28610305931969
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 36.22540465212797,
+      "overlap_fraction_smaller_source": 0.9317858642268234,
+      "solar_stratum": 1
+    },
+    {
+      "pair_id": "Tycho_test_south_05",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M1287250114RC_Y8_01988_15535",
+      "query": "M1400012040RC_Y8_00809_03163",
+      "bounds_lonlat_deg": [
+        350.21928918346237,
+        -44.36513980382305,
+        350.24613494929673,
+        -44.34727870464373
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 68.12437638152704,
+      "overlap_fraction_smaller_source": 0.7885495374908481,
+      "solar_stratum": 2
+    },
+    {
+      "pair_id": "Tycho_test_south_06",
+      "region_id": "Tycho_test_south",
+      "split": "test",
+      "reference": "M1287250114RC_Y8_05377_22161",
+      "query": "M1400012040RC_Y8_03260_07973",
+      "bounds_lonlat_deg": [
+        350.30378291817556,
+        -44.489143035570336,
+        350.3325329663248,
+        -44.46809675781909
+      ],
+      "reference_type": "provisional_map",
+      "reference_uncertainty_px": null,
+      "solar_separation_deg": 68.12619935591019,
+      "overlap_fraction_smaller_source": 0.9950820118655959,
+      "solar_stratum": 2
+    }
+  ]
+}
