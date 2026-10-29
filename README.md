@@ -140,6 +140,20 @@ MoonAnything acquisition downloads the metadata and physical Hapke render subarc
 
 The physical protocol uses 48 training, 16 development and 16 test patches from distinct acquisitions in separated Tycho longitude bands. Its 128px rendered supervision stays separate from real 512px map-reference measurements. All-zero physical renders remain explicit evaluation cases. The detector/backbone and LightGlue are frozen during descriptor adaptation. Threshold selection uses independently labelled development outcomes; provisional map disagreement is never a correctness label.
 
+The original highest-Sun anchor protocol covers only 21–78° of held-out Sun separation and couples light index to rotation. The report now shows correctness versus full Sun-direction change and raw shared non-dark terrain, including failures and support-threshold sensitivity. These are descriptive strata, not isolated causal effects or geometric shadow labels. Recompute them from the saved results with `python physical_lighting_analysis.py --run runs/physical-adaptation-v1 --output reports`.
+
+The all-Sun-pair follow-up holds geometry constant and retains the original model and development policies:
+
+```bash
+python evaluate_crosslighting.py --output runs/crosslighting-new
+python verify_crosslighting.py runs/crosslighting-new --output runs/crosslighting-audit.json
+python report_crosslighting.py --run runs/crosslighting-new --audit runs/crosslighting-audit.json --output reports
+```
+
+This includes NCC as an applicable translation baseline, SIFT and the unchanged learned variants. Every pair of the nine lighting renders is included. Previously inspected geographic test terrain is explicitly exploratory; no new tuning uses the follow-up outcomes. Resume an interrupted run only with `--resume` and identical frozen inputs/source.
+
+The [completed fixed-geometry report](reports/CROSS_LIGHTING_REPORT.md) covers 576 pairs and 2,880 method evaluations, including Sun separations above 90°. NCC is correct on 344/576 pairs, frozen learned matching on 303/576 and the adapter on 323/576. The original learned rejection policy performs poorly on this design (five correct fits retained, seven incorrect fits accepted); it remains experimental. Its translation limit is below the known imposed displacement. These results do not overturn the lack of independently verified real-image improvement. Physical uncertainty intervals now group overlapping footprints and shared acquisitions, rather than treating every acquisition as independent terrain.
+
 The original CNSFM Windows probe is verified in all three scenes. The [Windows workflow](.github/workflows/cnsfm-original.yml) supports a native probe, a common-grid probe, a full common-grid comparison, and an optional full native-resolution run. Common-grid inputs are verified byte-for-byte against the detector’s image/mask arrays, and forward/reverse matching are independent executions. Shared RANSAC scoring requires six inliers; that differs from the paper’s success definition. The original binary and model weights are retrieved separately from the pinned author repository.
 
 To regenerate the optional crater predictions, install [requirements-detector.txt](requirements-detector.txt) in a separate environment and obtain the documented source revisions:

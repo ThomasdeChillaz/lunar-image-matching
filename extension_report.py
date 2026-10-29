@@ -1,6 +1,5 @@
 """Render measured extension results without rerunning or changing inference."""
 import argparse
-from collections import defaultdict
 import csv
 from datetime import datetime, timezone
 import json
@@ -12,6 +11,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from dataset import sha256
 from moon_dataset import load_image
+from physical_lighting_analysis import render as render_lighting
+from uncertainty_groups import paired_registration_interval
+from report_crosslighting import render as render_crosslighting
 
 LABELS = {'ncc':'NCC', 'sift':'SIFT', 'disk_lightglue':'DISK + LightGlue',
     'disk_lightglue_clahe':'DISK + LightGlue + CLAHE', 'disk_lightglue_lunar':'Lunar descriptor adapter', 'cnsfm':'Original CNSFM / common grid'}
@@ -33,26 +35,10 @@ def sun_separation(row):
 
 
 def paired_interval(rows, manifest, repetitions=5000):
-    tiles = {t['tile_id']:t for t in manifest['tiles']}
-    grouped = defaultdict(lambda:[0, 0, 0])
-    for row in rows:
-        if row['split'] != 'test' or row['dataset_kind'] != 'physical_render' or row['method'] not in ('disk_lightglue', 'disk_lightglue_lunar'):
-            continue
-        group = grouped[tiles[row['tile_id']]['observation_group']]
-        group[0 if row['method'] == 'disk_lightglue' else 1] += int(row['correct'])
-        if row['method'] == 'disk_lightglue':
-            group[2] += 1
-    values = np.asarray(list(grouped.values()))
-    rng = np.random.default_rng(20261029)
-    samples = values[rng.integers(0, len(values), size=(repetitions, len(values)))].sum(axis=1)
-    deltas = (samples[:, 1]-samples[:, 0])/samples[:, 2]
-    return dict(groups=len(values), grouping='Source acquisition; eight illumination pairs per tile',
-        delta=float((values[:, 1].sum()-values[:, 0].sum())/values[:, 2].sum()),
-        percentile_interval_95=np.percentile(deltas, [2.5, 97.5]).tolist(), bootstrap_repetitions=repetitions,
-        warning='Exploratory small-sample interval within one Tycho geographic holdout; not evidence of global or real-image generalization.')
+    return paired_registration_interval(rows,manifest,repetitions)
 
 
-def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None):
+def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None, crosslighting=None):
     extended, physical, output = Path(extended), Path(physical), Path(output)
     output.mkdir(parents=True, exist_ok=True)
     real = json.loads((extended/'results.json').read_text())
@@ -61,6 +47,8 @@ def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None):
     manifest = json.loads((physical/'frozen_manifest.json').read_text())
     adapter = json.loads((physical/'frozen_adapter.json').read_text())
     policies = json.loads((physical/'frozen_policies.json').read_text())
+    lighting = render_lighting(physical, output)
+    crossed = render_crosslighting(crosslighting,output/'crosslighting_audit.json',output) if crosslighting else None
     for row in real:
         row['solar_separation_deg'] = sun_separation(row)
     interval = paired_interval(rows, manifest)
@@ -152,8 +140,38 @@ def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None):
     for row in test:
         lines.append(f"| {LABELS[row['method']]} | {row['correct']} | {row['median_error_estimated_px']:.2f} | {row['p95_error_estimated_px']:.2f} | {row['negative_pairs_returning_alignment']} |")
     lo, hi = interval['percentile_interval_95']
-    lines += ['', f"The adapter gains {interval['delta']*100:.2f} percentage points over the frozen learned matcher. An exploratory source-acquisition-clustered bootstrap interval is [{lo*100:.2f}, {hi*100:.2f}] percentage points ({interval['groups']} groups). This small synthetic experiment does not establish statistical superiority across lunar regions or transfer to real imagery. SIFT uses its original default preset on low-contrast 128px inputs; no SIFT tuning is claimed.", '',
-        '![Physical held-out success](physical_success.png)', '', '## Rejection trade-off', '',
+    lines += ['', f"The adapter gains {interval['delta']*100:.2f} percentage points over the frozen learned matcher. An exploratory bootstrap interval is [{lo*100:.2f}, {hi*100:.2f}] percentage points ({interval['groups']} components across {interval['source_acquisitions']} source acquisitions). Overlapping declared terrain footprints and shared acquisitions are joined before resampling; an earlier source-only grouping did not account for one overlapping pair. This small synthetic experiment does not establish statistical superiority across lunar regions or transfer to real imagery. SIFT uses its original default preset on low-contrast 128px inputs; no SIFT tuning is claimed.", '',
+        '![Physical held-out success](physical_success.png)', '', '## Physical illumination and shared terrain support', '',
+        'The following analysis recomputes 3D Sun-direction separation from the physical render metadata and joint non-dark support from the exact raw render bytes. Every failed fit stays in its bin denominator. Bin edges are fixed round intervals for this descriptive analysis after test inspection; no model or rejection threshold is retuned. The same source acquisition contributes multiple lighting cases, so pair counts are not independent sample sizes. The frozen experiment also couples light index to rotation; these strata do not isolate a causal illumination effect.', '',
+        '| Held-out condition | Pairs | Acquisitions | Frozen correct | Adapter correct |', '|---|---:|---:|---:|---:|']
+    primary = [g for g in lighting['grouped'] if g['split'] == 'test' and
+        (g['metric'] == 'solar_separation_deg' or g['intensity_threshold'] == .01)]
+    for group in [g for g in primary if g['method'] == 'disk_lightglue' and g['pairs']]:
+        adapted_group = next(g for g in primary if g['method'] == 'disk_lightglue_lunar' and g['metric'] == group['metric'] and g['bin_index'] == group['bin_index'])
+        scale = 1 if group['metric'] == 'solar_separation_deg' else 100
+        label = 'Sun separation' if scale == 1 else 'Non-dark support'
+        unit = '°' if scale == 1 else '%'
+        lines.append(f"| {label} {group['lower']*scale:g}–{group['upper']*scale:g}{unit} | {group['pairs']} | {group['source_acquisitions']} | {group['correct']}/{group['pairs']} | {adapted_group['correct']}/{group['pairs']} |")
+    coverage = lighting['design_coverage']['test']
+    lines += ['', f"The held-out physical Sun separations span only {coverage['anchor_min_deg']:.2f}–{coverage['anchor_max_deg']:.2f}°. No cases test 90° or larger Sun separations. The training anchor design likewise stays below {lighting['design_coverage']['train']['anchor_max_deg']:.2f}° before co-visible feature filtering. This is a coverage limitation, not evidence that the model generalizes to opposite lighting.", '',
+        'Shared non-dark support means both raw renders exceed I/F=.01 at the same valid terrain pixel before the known warp. It is an intensity proxy, not a geometric Sun-visibility or shadow mask. A case without jointly valid terrain would remain unknown rather than be labelled dark. Most cases have high shared support; sparse low-support bins cannot establish robust shadow invariance.', '',
+        '![Physical illumination strata](physical_lighting_strata.png)', '',
+        '| Raw I/F threshold | Cases with <25% shared support | Acquisitions | Frozen correct | Adapter correct |', '|---|---:|---:|---:|---:|']
+    for row in lighting['sensitivity']:
+        lines.append(f"| {row['intensity_threshold']:g} | {row['pairs']} | {row['source_acquisitions']} | {row['correct_by_method']['disk_lightglue']}/{row['pairs']} | {row['correct_by_method']['disk_lightglue_lunar']}/{row['pairs']} |")
+    lines += ['', 'The support-threshold sensitivity changes membership of a descriptive subset, not any saved matching outcome. Known non-overlap negatives remain in the rejection analysis below; they have no shared terrain or physical Sun-pair reference and are excluded from these positive-case strata. See [all strata and denominators](physical_lighting_strata.csv) and [input hashes, pair metadata and design coverage](physical_lighting_analysis.json).', '']
+    if crossed:
+        lines += ['## Every Sun pair with fixed geometry', '',
+            f"A completed follow-up evaluates every one of the {crossed['pairs']} physical Sun pairs with the same known translation (6,-4) and zero rotation throughout ({crossed['evaluations']:,} method evaluations). This removes the earlier coupling between light index and rotation. It includes {crossed['above_90_pairs']} pairs at Sun separations of 90° or more. The existing models and original development policies stay unchanged. NCC is included within its translation model, alongside SIFT and the frozen learned variants.", '',
+            'The design was frozen before the new outcomes, but the terrain was inspected previously: this is an exploratory controlled follow-up, not a fresh geographic holdout. No model or threshold is selected from the new results.', '',
+            '| Method | Correct / pairs | Returned / pairs |', '|---|---:|---:|']
+        for row in crossed['methods']:
+            lines.append(f"| {LABELS.get(row['method'],row['method'])} | {row['correct']}/{row['pairs']} | {row['returned']}/{row['pairs']} |")
+        learned_gate = next(r['transported_rejection'] for r in crossed['methods'] if r['method'] == 'disk_lightglue')
+        lines += ['', f"The unchanged frozen learned rejection policy retains only {learned_gate['accepted_correct']} of {learned_gate['correct']} correct fits and accepts {learned_gate['accepted_incorrect']} incorrect fits in this follow-up. Its selected translation bound is smaller than the exact known displacement. The old policy is therefore not a reliable quality filter for this design; it remains experimental. No replacement is selected from these test outcomes.", '']
+        lines += ['', '![Every physical Sun pair at fixed geometry](crosslighting_strata.png)', '',
+            'See the [fixed-geometry report](CROSS_LIGHTING_REPORT.md) for per-Sun-bin counts, transported-policy errors, grouped uncertainty and an audit that reconstructs the exact translation by slicing the source pixels. These physical results do not establish independent real-image accuracy.', '']
+    lines += ['## Rejection trade-off', '',
         'Each method’s policy was selected from development outcomes with zero accepted incorrect development outcomes. Policies were saved before test evaluation. That development constraint did not generalize perfectly:', '',
         '| Method | Correct fits retained | Incorrect fits accepted | Disjoint-terrain fits accepted / 16 |', '|---|---:|---:|---:|']
     for method, kinds in summary['heldout_rejection'].items():
@@ -201,6 +219,9 @@ def render(extended, physical, output, cnsfm=None, tycho=None, transfer=None):
     (output/'report_provenance.json').write_text(json.dumps(dict(renderer_sha256=sha256(__file__),
         extended_result_sha256=sha256(extended/'results.json'), physical_result_sha256=sha256(physical/'results.json'),
         additional_result_sha256=extra_sources,
+        physical_lighting_analysis_sha256=sha256(output/'physical_lighting_analysis.json'),
+        crosslighting_results_sha256=sha256(Path(crosslighting)/'results.json') if crosslighting else None,
+        uncertainty_group_source_sha256=sha256(Path(__file__).with_name('uncertainty_groups.py')),
         report_sha256=sha256(output/'EXTENSION_REPORT.md')), indent=2))
     print(output/'EXTENSION_REPORT.md')
 
@@ -213,5 +234,6 @@ if __name__ == '__main__':
     p.add_argument('--cnsfm-run')
     p.add_argument('--tycho-run')
     p.add_argument('--transfer-run')
+    p.add_argument('--crosslighting-run')
     args = p.parse_args()
-    render(args.extended_run, args.physical_run, args.output, args.cnsfm_run, args.tycho_run, args.transfer_run)
+    render(args.extended_run, args.physical_run, args.output, args.cnsfm_run, args.tycho_run, args.transfer_run, args.crosslighting_run)
