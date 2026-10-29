@@ -1,0 +1,165 @@
+{
+  "measurements": [
+    {
+      "region_id": "Tycho_dev_north",
+      "method": "disk_lightglue",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 9.049224091877157,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_dev_north",
+      "method": "disk_lightglue_clahe",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 13.117916184425937,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_dev_north",
+      "method": "disk_lightglue_lunar",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 8.306954132696326,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_dev_north",
+      "method": "sift",
+      "pairs": 6,
+      "returned": 0,
+      "median_map_disagreement_returned_px": null,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_dev_south",
+      "method": "disk_lightglue",
+      "pairs": 5,
+      "returned": 5,
+      "median_map_disagreement_returned_px": 2.140353076678026,
+      "accepted_by_transported_physical_policy": 1
+    },
+    {
+      "region_id": "Tycho_dev_south",
+      "method": "disk_lightglue_clahe",
+      "pairs": 5,
+      "returned": 5,
+      "median_map_disagreement_returned_px": 2.584858922343255,
+      "accepted_by_transported_physical_policy": 3
+    },
+    {
+      "region_id": "Tycho_dev_south",
+      "method": "disk_lightglue_lunar",
+      "pairs": 5,
+      "returned": 5,
+      "median_map_disagreement_returned_px": 2.7387324417788603,
+      "accepted_by_transported_physical_policy": 1
+    },
+    {
+      "region_id": "Tycho_dev_south",
+      "method": "sift",
+      "pairs": 5,
+      "returned": 0,
+      "median_map_disagreement_returned_px": null,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_mid",
+      "method": "disk_lightglue",
+      "pairs": 4,
+      "returned": 4,
+      "median_map_disagreement_returned_px": 10.835665353514438,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_mid",
+      "method": "disk_lightglue_clahe",
+      "pairs": 4,
+      "returned": 4,
+      "median_map_disagreement_returned_px": 10.892071489817454,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_mid",
+      "method": "disk_lightglue_lunar",
+      "pairs": 4,
+      "returned": 3,
+      "median_map_disagreement_returned_px": 10.170120075572207,
+      "accepted_by_transported_physical_policy": 1
+    },
+    {
+      "region_id": "Tycho_test_mid",
+      "method": "sift",
+      "pairs": 4,
+      "returned": 0,
+      "median_map_disagreement_returned_px": null,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_north",
+      "method": "disk_lightglue",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 5.504979327030005,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_north",
+      "method": "disk_lightglue_clahe",
+      "pairs": 6,
+      "returned": 5,
+      "median_map_disagreement_returned_px": 6.34793374464031,
+      "accepted_by_transported_physical_policy": 4
+    },
+    {
+      "region_id": "Tycho_test_north",
+      "method": "disk_lightglue_lunar",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 5.717040892196811,
+      "accepted_by_transported_physical_policy": 1
+    },
+    {
+      "region_id": "Tycho_test_north",
+      "method": "sift",
+      "pairs": 6,
+      "returned": 0,
+      "median_map_disagreement_returned_px": null,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_south",
+      "method": "disk_lightglue",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 3.9823163118737517,
+      "accepted_by_transported_physical_policy": 0
+    },
+    {
+      "region_id": "Tycho_test_south",
+      "method": "disk_lightglue_clahe",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 3.4566349536895187,
+      "accepted_by_transported_physical_policy": 1
+    },
+    {
+      "region_id": "Tycho_test_south",
+      "method": "disk_lightglue_lunar",
+      "pairs": 6,
+      "returned": 6,
+      "median_map_disagreement_returned_px": 3.248243377369895,
+      "accepted_by_transported_physical_policy": 2
+    },
+    {
+      "region_id": "Tycho_test_south",
+      "method": "sift",
+      "pairs": 6,
+      "returned": 0,
+      "median_map_disagreement_returned_px": null,
+      "accepted_by_transported_physical_policy": 0
+    }
+  ],
+  "warning": "Returned or accepted alignments are not independently verified correct alignments. Unknown real map-reference uncertainty; additional human landmarks required."
+}

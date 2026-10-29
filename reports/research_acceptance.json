@@ -1,0 +1,47 @@
+{
+  "checked_utc": "2026-10-29T19:39:15.962974+00:00",
+  "software_validation": {
+    "tests_passed": 56,
+    "pretrained_inference_included": true,
+    "controlled_smoke": "runs/extension-smoke-03: 20 method/case summaries; controlled software check only"
+  },
+  "executed_experiments": {
+    "expanded_real": {
+      "evaluations": 1926,
+      "results_sha256": "5ba14c75db5629ed70d99243a0b48657ccfabe6f3563740f4ff1d339c45c091d"
+    },
+    "physical": {
+      "evaluations": 1152,
+      "results_sha256": "602cdc050a4a7630b193e13e6d74cb780349229475120c7b7efeac91bbd974dd"
+    },
+    "original_cnsfm": {
+      "evaluations": 321,
+      "results_sha256": "024f35323b5448e416c3020f61ad3a6be8ffd2aea6339ed953aaea31894f59df"
+    },
+    "real_adapter": {
+      "evaluations": 321,
+      "results_sha256": "316b2c64da696032e1effc93db3b385d7d0144929293fcbdbdf9b62a0c383f00"
+    },
+    "new_real_tycho": {
+      "evaluations": 108,
+      "results_sha256": "3827536b8ed735ec92a9521193def9e5413e0f92b2c7e4982185565457e04fc9"
+    }
+  },
+  "total_method_evaluations": 3828,
+  "audit_sha256": {
+    "extension_audit.json": "c0c7d95660dea1add5d721d378f5d0fc3cadf8e657b9a7bd069dee94ee8f8608",
+    "cnsfm_common_audit.json": "c80c2e16b457d21eb0f927d77030762d363a4886f66f6861e845a02d7bde1760",
+    "tycho_transfer_audit.json": "1ac13a839f343145f083ef147d718f8759941abb2dad6022e245f1898a38fb6d",
+    "cnsfm_transfer_audit.json": "4685ae7409a3f09c3650dd7ed96e7197813013056565b7972c3391a274cb8535",
+    "cnsfm_windows_artifacts.json": "c5b9f2c28ca35a22411c5b293f4bdfb48d56c00c9ae93f03327ab3b4d25861d8"
+  },
+  "scientific_acceptance": {
+    "independent_references": "Pending actual human JSON; user volunteered to review the blank 12-pair packet. No generated references accepted.",
+    "expanded_baseline": "Executed original Windows CNSFM on exact shared 512px arrays; native tiled detector pipeline and paper percentages not reproduced. Added five real Tycho areas; no global lunar-generalization claim.",
+    "rejection": "Rendered dev-selected policies measured on held-out data, including incorrect acceptances. Real-data calibration awaits independently labelled development outcomes.",
+    "illumination": "42 source-solar metadata records, physical changing-Sun controls and real intensity proxies measured. Independent alignment is required before claiming true common illuminated area.",
+    "adaptation": "Physical training and real transfer executed. Synthetic gain does not establish real improvement; polar returned fits fell from 158/231 to 99/231. Frozen model remains default."
+  },
+  "objective_achieved": false,
+  "remaining_dependency": "Completed independent human landmark review, uncertainty-aware scoring, and real-development gate calibration when sufficient labels exist."
+}
