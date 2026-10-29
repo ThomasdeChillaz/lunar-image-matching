@@ -77,9 +77,13 @@ Relevant primary sources:
 
 Published terrestrial pose AUC, lunar correspondence precision and this benchmark's pair success are different metrics. Strong development gains over off-the-shelf LoFTR or the limited EfficientLoFTR probe do not establish superiority over current lunar-specialist or dense matchers.
 
-## Further hypothesis already running
+## Completed local-refinement probe
 
-Local four-parameter similarity refinement maximizes image-only structural agreement around the selected transform. Structural features are recomputed after warping grayscale pixels; rotating directional descriptor channels would not be equivalent. Its new support mask excludes the full seven-pixel orientation-feature neighborhood; v1 measurements are preserved unchanged. A brightness-inverted, perturbed known-transform test passes. A two-patch development experiment is running; no registration improvement from refinement is claimed yet.
+Local four-parameter similarity refinement maximizes image-only structural agreement around the selected transform. Structural features are recomputed after warping grayscale pixels; rotating directional descriptor channels would not be equivalent. Its new support mask excludes the full seven-pixel orientation-feature neighborhood; v1 measurements are preserved unchanged. A brightness-inverted, perturbed known-transform test passes.
+
+The two-patch probe completed: the same-support-mask unrefined control is correct on 242/288 positives; refinement reaches 246/288 (84.03%→85.42%, +1.39 points), with four gained correct cases and no lost correct cases. Translation/rotation/scale/combined counts are 66/60/65/55 of 72, versus 66/59/64/53 before refinement. Both variants still return nine fits on 18 non-overlap negatives. Median endpoint error on the same returned positive cases decreases from .491 to .447px. This is a modest development gain; it does not solve rejection or demonstrate geographic generalization.
+
+All 612 outcomes passed [native-input and geometry audit](refinement_dev_probe_audit.json). The [probe summary](refinement_probe_summary.json), [complete measurement capsule](refinement_probe_v1.zip) and [checksum](refinement_probe_v1.sha256) preserve the separate control/refinement experiment. Extract this additional capsule into `runs/` and audit with `python verify_research_dev.py runs/refinement-dev-probe-v1 --output runs/refinement-recheck.json`. Full eight-patch stronger-baseline experiments remain active.
 
 ## Evidence and reproduction
 
@@ -102,4 +106,4 @@ python verify_derived_dev.py runs/cascade-dev-v1 --output runs/cascade-recheck.j
 python verify_derived_dev.py runs/predictor-quality-dev-v1 --output runs/predictor-quality-recheck.json
 ```
 
-Next: complete/refute the refinement and stronger-baseline hypotheses; freeze the final model, confidence rule, source/model bytes and comparison plan before opening reserve A. Preserve reserve B for a later independent iteration. Real-image navigation accuracy remains unverified and no human review is required or awaited.
+Next: complete the stronger-baseline comparisons and test their complementarity with the structural methods; assess whether the modest refinement gain merits its cost. Freeze the final model, confidence rule, source/model bytes and comparison plan before opening reserve A. Preserve reserve B for a later independent iteration. Real-image navigation accuracy remains unverified and no human review is required or awaited.
