@@ -1,0 +1,1539 @@
+{
+  "schema_version": 1,
+  "scope": "Completed development experiments; no geographic reserve evaluated.",
+  "geometry_summary": [
+    {
+      "geometry_family": "combined",
+      "method": "self_similarity_search",
+      "cases": 288,
+      "returned": 131,
+      "correct": 131,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "combined",
+      "method": "loftr_outdoor",
+      "cases": 288,
+      "returned": 203,
+      "correct": 165,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "combined",
+      "method": "disk_lightglue",
+      "cases": 288,
+      "returned": 225,
+      "correct": 142,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "self_similarity_search",
+      "cases": 72,
+      "returned": 0,
+      "correct": 0,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "loftr_outdoor",
+      "cases": 72,
+      "returned": 0,
+      "correct": 0,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "disk_lightglue",
+      "cases": 72,
+      "returned": 19,
+      "correct": 0,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "self_similarity_search",
+      "cases": 288,
+      "returned": 200,
+      "correct": 200,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "loftr_outdoor",
+      "cases": 288,
+      "returned": 209,
+      "correct": 178,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "disk_lightglue",
+      "cases": 288,
+      "returned": 244,
+      "correct": 156,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "scale",
+      "method": "self_similarity_search",
+      "cases": 288,
+      "returned": 231,
+      "correct": 231,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "scale",
+      "method": "loftr_outdoor",
+      "cases": 288,
+      "returned": 213,
+      "correct": 180,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "scale",
+      "method": "disk_lightglue",
+      "cases": 288,
+      "returned": 231,
+      "correct": 160,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "translation",
+      "method": "self_similarity_search",
+      "cases": 288,
+      "returned": 262,
+      "correct": 262,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "translation",
+      "method": "loftr_outdoor",
+      "cases": 288,
+      "returned": 232,
+      "correct": 181,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "translation",
+      "method": "disk_lightglue",
+      "cases": 288,
+      "returned": 245,
+      "correct": 166,
+      "status": "Development only; negatives have no correct alignment."
+    }
+  ],
+  "adapter_summary": [
+    {
+      "geometry_family": "combined",
+      "method": "research_adapter",
+      "cases": 288,
+      "returned": 173,
+      "correct": 126,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "research_adapter",
+      "cases": 72,
+      "returned": 8,
+      "correct": 0,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "research_adapter",
+      "cases": 288,
+      "returned": 202,
+      "correct": 150,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "scale",
+      "method": "research_adapter",
+      "cases": 288,
+      "returned": 207,
+      "correct": 165,
+      "status": "Development only; negatives have no correct alignment."
+    },
+    {
+      "geometry_family": "translation",
+      "method": "research_adapter",
+      "cases": 288,
+      "returned": 226,
+      "correct": 175,
+      "status": "Development only; negatives have no correct alignment."
+    }
+  ],
+  "blend_summary": [
+    {
+      "geometry_family": "combined",
+      "method": "blend_global",
+      "cases": 288,
+      "returned": 271,
+      "correct": 211
+    },
+    {
+      "geometry_family": "combined",
+      "method": "blend_balanced",
+      "cases": 288,
+      "returned": 271,
+      "correct": 210
+    },
+    {
+      "geometry_family": "combined",
+      "method": "blend_consensus",
+      "cases": 288,
+      "returned": 271,
+      "correct": 210
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "blend_global",
+      "cases": 72,
+      "returned": 40,
+      "correct": 0
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "blend_balanced",
+      "cases": 72,
+      "returned": 40,
+      "correct": 0
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "blend_consensus",
+      "cases": 72,
+      "returned": 40,
+      "correct": 0
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "blend_global",
+      "cases": 288,
+      "returned": 279,
+      "correct": 240
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "blend_balanced",
+      "cases": 288,
+      "returned": 279,
+      "correct": 240
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "blend_consensus",
+      "cases": 288,
+      "returned": 279,
+      "correct": 240
+    },
+    {
+      "geometry_family": "scale",
+      "method": "blend_global",
+      "cases": 288,
+      "returned": 283,
+      "correct": 253
+    },
+    {
+      "geometry_family": "scale",
+      "method": "blend_balanced",
+      "cases": 288,
+      "returned": 283,
+      "correct": 253
+    },
+    {
+      "geometry_family": "scale",
+      "method": "blend_consensus",
+      "cases": 288,
+      "returned": 283,
+      "correct": 253
+    },
+    {
+      "geometry_family": "translation",
+      "method": "blend_global",
+      "cases": 288,
+      "returned": 285,
+      "correct": 271
+    },
+    {
+      "geometry_family": "translation",
+      "method": "blend_balanced",
+      "cases": 288,
+      "returned": 285,
+      "correct": 271
+    },
+    {
+      "geometry_family": "translation",
+      "method": "blend_consensus",
+      "cases": 288,
+      "returned": 285,
+      "correct": 271
+    }
+  ],
+  "cascade_summary": [
+    {
+      "method": "cascade_0.0",
+      "geometry_family": "combined",
+      "cases": 288,
+      "returned": 153,
+      "correct": 153
+    },
+    {
+      "method": "cascade_0.01",
+      "geometry_family": "combined",
+      "cases": 288,
+      "returned": 184,
+      "correct": 183
+    },
+    {
+      "method": "cascade_0.0",
+      "geometry_family": "nonoverlap_negative",
+      "cases": 72,
+      "returned": 0,
+      "correct": 0
+    },
+    {
+      "method": "cascade_0.01",
+      "geometry_family": "nonoverlap_negative",
+      "cases": 72,
+      "returned": 0,
+      "correct": 0
+    },
+    {
+      "method": "cascade_0.0",
+      "geometry_family": "rotation",
+      "cases": 288,
+      "returned": 212,
+      "correct": 212
+    },
+    {
+      "method": "cascade_0.01",
+      "geometry_family": "rotation",
+      "cases": 288,
+      "returned": 232,
+      "correct": 230
+    },
+    {
+      "method": "cascade_0.0",
+      "geometry_family": "scale",
+      "cases": 288,
+      "returned": 232,
+      "correct": 232
+    },
+    {
+      "method": "cascade_0.01",
+      "geometry_family": "scale",
+      "cases": 288,
+      "returned": 242,
+      "correct": 241
+    },
+    {
+      "method": "cascade_0.0",
+      "geometry_family": "translation",
+      "cases": 288,
+      "returned": 260,
+      "correct": 260
+    },
+    {
+      "method": "cascade_0.01",
+      "geometry_family": "translation",
+      "cases": 288,
+      "returned": 262,
+      "correct": 262
+    }
+  ],
+  "same_two_patch_comparison": [
+    {
+      "method": "disk_lightglue",
+      "positive_cases": 288,
+      "correct": 137,
+      "negative_cases": 18,
+      "negative_fits": 4
+    },
+    {
+      "method": "loftr_outdoor",
+      "positive_cases": 288,
+      "correct": 162,
+      "negative_cases": 18,
+      "negative_fits": 0
+    },
+    {
+      "method": "self_similarity_search",
+      "positive_cases": 288,
+      "correct": 213,
+      "negative_cases": 18,
+      "negative_fits": 0
+    },
+    {
+      "method": "blend_balanced",
+      "positive_cases": 288,
+      "correct": 242,
+      "negative_cases": 18,
+      "negative_fits": 9
+    },
+    {
+      "method": "blend_consensus",
+      "positive_cases": 288,
+      "correct": 242,
+      "negative_cases": 18,
+      "negative_fits": 9
+    },
+    {
+      "method": "blend_global",
+      "positive_cases": 288,
+      "correct": 242,
+      "negative_cases": 18,
+      "negative_fits": 9
+    },
+    {
+      "method": "efficient_loftr_2x",
+      "positive_cases": 288,
+      "correct": 182,
+      "negative_cases": 18,
+      "negative_fits": 4
+    },
+    {
+      "method": "efficient_loftr_native",
+      "positive_cases": 288,
+      "correct": 142,
+      "negative_cases": 18,
+      "negative_fits": 0
+    }
+  ],
+  "cascade_policies": {
+    "cascade_0.0": {
+      "policy": {
+        "primary": {
+          "min_global": 0.4,
+          "min_patch": -1.0,
+          "min_lit": 0.0,
+          "min_support": 0.2,
+          "min_agreement": 0.0,
+          "max_cycle": 4.0
+        },
+        "fallback": {
+          "min_global": -0.5,
+          "min_patch": -1.0,
+          "min_lit": 0.0,
+          "min_support": 0.2,
+          "min_agreement": 0.0,
+          "max_cycle": 8.0
+        }
+      },
+      "accepted_correct": 857,
+      "accepted_incorrect": 0,
+      "accepted_nonoverlap": 0,
+      "primary_count": 641,
+      "fallback_count": 216,
+      "residual_development_cases": 583,
+      "empirical_budget": 0.0
+    },
+    "cascade_0.01": {
+      "policy": {
+        "primary": {
+          "min_global": 0.2,
+          "min_patch": -1.0,
+          "min_lit": 0.0,
+          "min_support": 0.2,
+          "min_agreement": 0.0,
+          "max_cycle": 8.0
+        },
+        "fallback": {
+          "min_global": -0.5,
+          "min_patch": -1.0,
+          "min_lit": 0.0,
+          "min_support": 0.2,
+          "min_agreement": 0.0,
+          "max_cycle": 8.0
+        }
+      },
+      "accepted_correct": 916,
+      "accepted_incorrect": 4,
+      "accepted_nonoverlap": 0,
+      "primary_count": 911,
+      "fallback_count": 9,
+      "residual_development_cases": 313,
+      "empirical_budget": 0.01
+    }
+  },
+  "predictor_quality_policies": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "policies": {
+      "disk_lightglue": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.4,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 624,
+              "returned": 964,
+              "accepted_correct": 436,
+              "rejected_correct": 188,
+              "accepted_incorrect": 0,
+              "accepted_total": 436,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.4,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 624,
+              "returned": 964,
+              "accepted_correct": 436,
+              "rejected_correct": 188,
+              "accepted_incorrect": 0,
+              "accepted_total": 436,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 624,
+              "returned": 964,
+              "accepted_correct": 582,
+              "rejected_correct": 42,
+              "accepted_incorrect": 25,
+              "accepted_total": 607,
+              "accepted_error_fraction": 0.04118616144975288,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "loftr_outdoor": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 1.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 704,
+              "returned": 857,
+              "accepted_correct": 460,
+              "rejected_correct": 244,
+              "accepted_incorrect": 0,
+              "accepted_total": 460,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.2,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 704,
+              "returned": 857,
+              "accepted_correct": 614,
+              "rejected_correct": 90,
+              "accepted_incorrect": 6,
+              "accepted_total": 620,
+              "accepted_error_fraction": 0.00967741935483871,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.25,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 704,
+              "returned": 857,
+              "accepted_correct": 654,
+              "rejected_correct": 50,
+              "accepted_incorrect": 32,
+              "accepted_total": 686,
+              "accepted_error_fraction": 0.04664723032069971,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "ncc": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": 0.2,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.75,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 242,
+              "returned": 721,
+              "accepted_correct": 214,
+              "rejected_correct": 28,
+              "accepted_incorrect": 0,
+              "accepted_total": 214,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.75,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 242,
+              "returned": 721,
+              "accepted_correct": 217,
+              "rejected_correct": 25,
+              "accepted_incorrect": 1,
+              "accepted_total": 218,
+              "accepted_error_fraction": 0.0045871559633027525,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.75,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 242,
+              "returned": 721,
+              "accepted_correct": 227,
+              "rejected_correct": 15,
+              "accepted_incorrect": 7,
+              "accepted_total": 234,
+              "accepted_error_fraction": 0.029914529914529916,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "orientation_ncc": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.4,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 295,
+              "returned": 303,
+              "accepted_correct": 200,
+              "rejected_correct": 95,
+              "accepted_incorrect": 0,
+              "accepted_total": 200,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": 0.2,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 295,
+              "returned": 303,
+              "accepted_correct": 283,
+              "rejected_correct": 12,
+              "accepted_incorrect": 2,
+              "accepted_total": 285,
+              "accepted_error_fraction": 0.007017543859649123,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 295,
+              "returned": 303,
+              "accepted_correct": 288,
+              "rejected_correct": 7,
+              "accepted_incorrect": 7,
+              "accepted_total": 295,
+              "accepted_error_fraction": 0.023728813559322035,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "research_adapter": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.4,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 616,
+              "returned": 816,
+              "accepted_correct": 434,
+              "rejected_correct": 182,
+              "accepted_incorrect": 0,
+              "accepted_total": 434,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.4,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 616,
+              "returned": 816,
+              "accepted_correct": 434,
+              "rejected_correct": 182,
+              "accepted_incorrect": 0,
+              "accepted_total": 434,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 616,
+              "returned": 816,
+              "accepted_correct": 580,
+              "rejected_correct": 36,
+              "accepted_incorrect": 29,
+              "accepted_total": 609,
+              "accepted_error_fraction": 0.047619047619047616,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "self_similarity_ncc": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": 0.2,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 373,
+              "returned": 425,
+              "accepted_correct": 343,
+              "rejected_correct": 30,
+              "accepted_incorrect": 0,
+              "accepted_total": 343,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 373,
+              "returned": 425,
+              "accepted_correct": 353,
+              "rejected_correct": 20,
+              "accepted_incorrect": 3,
+              "accepted_total": 356,
+              "accepted_error_fraction": 0.008426966292134831,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 373,
+              "returned": 425,
+              "accepted_correct": 353,
+              "rejected_correct": 20,
+              "accepted_incorrect": 3,
+              "accepted_total": 356,
+              "accepted_error_fraction": 0.008426966292134831,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "self_similarity_search": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 824,
+              "returned": 824,
+              "accepted_correct": 786,
+              "rejected_correct": 38,
+              "accepted_incorrect": 0,
+              "accepted_total": 786,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 824,
+              "returned": 824,
+              "accepted_correct": 786,
+              "rejected_correct": 38,
+              "accepted_incorrect": 0,
+              "accepted_total": 786,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 824,
+              "returned": 824,
+              "accepted_correct": 786,
+              "rejected_correct": 38,
+              "accepted_incorrect": 0,
+              "accepted_total": 786,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "sift": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 84,
+              "returned": 86,
+              "accepted_correct": 75,
+              "rejected_correct": 9,
+              "accepted_incorrect": 0,
+              "accepted_total": 75,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 84,
+              "returned": 86,
+              "accepted_correct": 75,
+              "rejected_correct": 9,
+              "accepted_incorrect": 0,
+              "accepted_total": 75,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": -0.5,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 2.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 84,
+              "returned": 86,
+              "accepted_correct": 75,
+              "rejected_correct": 9,
+              "accepted_incorrect": 0,
+              "accepted_total": 75,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      }
+    },
+    "grid": {
+      "min_global": [
+        -0.5,
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_patch": [
+        -1.0,
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_lit": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5
+      ],
+      "min_support": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_agreement": [
+        0.0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "max_cycle": [
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ]
+    },
+    "empirical_budgets": [
+      0.0,
+      0.01,
+      0.05
+    ],
+    "zero_nonoverlap_acceptance_required_on_development": true,
+    "independent_development_components": 2,
+    "development_component_members": [
+      [
+        "M1118943218RC_Y8_01975_43459",
+        "M1118943218RC_Y8_03895_35290",
+        "M1144856403RC_Y8_04392_49270",
+        "M1164896525LC_Y8_03262_40894",
+        "M1164896525LC_Y8_03362_40203",
+        "M1164896525RC_Y8_04057_37011",
+        "M1164896525RC_Y8_04481_45556",
+        "M1164896525RC_Y8_05027_45117",
+        "M1164896525RC_Y8_05442_46160",
+        "M1164903641LC_Y8_02940_43622",
+        "M1164903641RC_Y8_04072_40900",
+        "M1164903641RC_Y8_04423_38453",
+        "M1164903641RC_Y8_04426_41135",
+        "M1164903641RC_Y8_04912_46418",
+        "M1164903641RC_Y8_05752_41872"
+      ],
+      [
+        "M1121300852LC_Y8_05257_23400",
+        "M1121300852LC_Y8_05391_06292",
+        "M1121300852LC_Y8_05417_07217",
+        "M1271923723RC_Y8_01084_25217",
+        "M1271923723RC_Y8_01820_13990",
+        "M1271923723RC_Y8_02443_09158",
+        "M1271923723RC_Y8_02489_13877",
+        "M1271923723RC_Y8_02612_09556",
+        "M1271923723RC_Y8_03011_26983",
+        "M1271930754RC_Y8_02562_30909",
+        "M1271930754RC_Y8_02633_29403",
+        "M1271930754RC_Y8_03114_26112",
+        "M1271930754RC_Y8_04143_25915",
+        "M1271930754RC_Y8_04887_34163",
+        "M1271930754RC_Y8_05267_13530",
+        "M1287257121LC_Y8_02465_21155",
+        "M1287257121LC_Y8_04227_42786",
+        "M1287257121LC_Y8_04609_42030",
+        "M1287257121RC_Y8_04281_15571",
+        "M1287257121RC_Y8_06899_41157",
+        "M1297792011LC_Y8_03183_21429",
+        "M1297792011LC_Y8_03254_38485",
+        "M1297792011LC_Y8_03822_22130",
+        "M1297792011LC_Y8_03930_43404",
+        "M1297792011LC_Y8_04151_38503",
+        "M1297792011LC_Y8_04315_27851",
+        "M1358875484RC_Y8_05443_29611",
+        "M1358875484RC_Y8_05604_22833",
+        "M1358875484RC_Y8_06047_06065",
+        "M1358875484RC_Y8_06070_10975",
+        "M1358875484RC_Y8_06916_08210",
+        "M1358875484RC_Y8_07140_07141",
+        "M1358889571RC_Y8_06226_06061",
+        "M1358889571RC_Y8_06230_21858",
+        "M1358889571RC_Y8_06906_25985",
+        "M1358889571RC_Y8_07572_08187",
+        "M1358889571RC_Y8_07714_13099",
+        "M1358889571RC_Y8_08546_12257",
+        "M1463341437LC_Y8_01450_06361",
+        "M1463341437RC_Y8_02981_19207",
+        "M1463341437RC_Y8_03405_11693",
+        "M1463341437RC_Y8_04734_06452",
+        "M1463341437RC_Y8_04993_08226",
+        "M1463341437RC_Y8_06222_19194",
+        "M188306254RC_Y8_02105_31367",
+        "M188306254RC_Y8_02288_30853",
+        "M188306254RC_Y8_02545_29284",
+        "M188306254RC_Y8_02602_06175",
+        "M188306254RC_Y8_03381_30088"
+      ]
+    ],
+    "overlapping_development_footprint_pairs": 52,
+    "selection": "Maximize retained correct development alignments at each declared empirical accepted-error budget, with zero accepted development non-overlap pairs. First declared candidate wins remaining ties.",
+    "inference_evidence": [
+      "image-only structural correlation",
+      "local patch correlation",
+      "joint non-dark support proxy",
+      "common valid-pixel support",
+      "independent predictor-family agreement",
+      "separately selected reverse-cycle error"
+    ],
+    "excluded_inference_inputs": [
+      "correctness",
+      "ground-truth motion",
+      "reference errors",
+      "template-probe residuals",
+      "maximum displacement"
+    ],
+    "warning": "Development selection is not a held-out error bound or safety guarantee. The small number of geographic components limits confidence. Freeze final model/policy before fresh evaluation."
+  },
+  "blend_quality_policies": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "policies": {
+      "blend_balanced": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.4,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 639,
+              "rejected_correct": 335,
+              "accepted_incorrect": 0,
+              "accepted_total": 639,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 905,
+              "rejected_correct": 69,
+              "accepted_incorrect": 5,
+              "accepted_total": 910,
+              "accepted_error_fraction": 0.005494505494505495,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 905,
+              "rejected_correct": 69,
+              "accepted_incorrect": 5,
+              "accepted_total": 910,
+              "accepted_error_fraction": 0.005494505494505495,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "blend_consensus": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.4,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 639,
+              "rejected_correct": 335,
+              "accepted_incorrect": 0,
+              "accepted_total": 639,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 905,
+              "rejected_correct": 69,
+              "accepted_incorrect": 5,
+              "accepted_total": 910,
+              "accepted_error_fraction": 0.005494505494505495,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 974,
+              "returned": 1158,
+              "accepted_correct": 905,
+              "rejected_correct": 69,
+              "accepted_incorrect": 5,
+              "accepted_total": 910,
+              "accepted_error_fraction": 0.005494505494505495,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      },
+      "blend_global": {
+        "grid_candidates_evaluated": 14400,
+        "empirical_accepted_error_budgets": {
+          "0.0": {
+            "policy": {
+              "min_global": 0.4,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 4.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 975,
+              "returned": 1158,
+              "accepted_correct": 641,
+              "rejected_correct": 334,
+              "accepted_incorrect": 0,
+              "accepted_total": 641,
+              "accepted_error_fraction": 0.0,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.01": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 975,
+              "returned": 1158,
+              "accepted_correct": 907,
+              "rejected_correct": 68,
+              "accepted_incorrect": 4,
+              "accepted_total": 911,
+              "accepted_error_fraction": 0.0043907793633369925,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          },
+          "0.05": {
+            "policy": {
+              "min_global": 0.2,
+              "min_patch": -1.0,
+              "min_lit": 0.0,
+              "min_support": 0.2,
+              "min_agreement": 0.0,
+              "max_cycle": 8.0
+            },
+            "development_counts": {
+              "cases": 1224,
+              "correct_available": 975,
+              "returned": 1158,
+              "accepted_correct": 907,
+              "rejected_correct": 68,
+              "accepted_incorrect": 4,
+              "accepted_total": 911,
+              "accepted_error_fraction": 0.0043907793633369925,
+              "negative_cases": 72,
+              "accepted_nonoverlap": 0
+            }
+          }
+        }
+      }
+    },
+    "grid": {
+      "min_global": [
+        -0.5,
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_patch": [
+        -1.0,
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_lit": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5
+      ],
+      "min_support": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "min_agreement": [
+        0.0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "max_cycle": [
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ]
+    },
+    "empirical_budgets": [
+      0.0,
+      0.01,
+      0.05
+    ],
+    "zero_nonoverlap_acceptance_required_on_development": true,
+    "independent_development_components": 2,
+    "development_component_members": [
+      [
+        "M1118943218RC_Y8_01975_43459",
+        "M1118943218RC_Y8_03895_35290",
+        "M1144856403RC_Y8_04392_49270",
+        "M1164896525LC_Y8_03262_40894",
+        "M1164896525LC_Y8_03362_40203",
+        "M1164896525RC_Y8_04057_37011",
+        "M1164896525RC_Y8_04481_45556",
+        "M1164896525RC_Y8_05027_45117",
+        "M1164896525RC_Y8_05442_46160",
+        "M1164903641LC_Y8_02940_43622",
+        "M1164903641RC_Y8_04072_40900",
+        "M1164903641RC_Y8_04423_38453",
+        "M1164903641RC_Y8_04426_41135",
+        "M1164903641RC_Y8_04912_46418",
+        "M1164903641RC_Y8_05752_41872"
+      ],
+      [
+        "M1121300852LC_Y8_05257_23400",
+        "M1121300852LC_Y8_05391_06292",
+        "M1121300852LC_Y8_05417_07217",
+        "M1271923723RC_Y8_01084_25217",
+        "M1271923723RC_Y8_01820_13990",
+        "M1271923723RC_Y8_02443_09158",
+        "M1271923723RC_Y8_02489_13877",
+        "M1271923723RC_Y8_02612_09556",
+        "M1271923723RC_Y8_03011_26983",
+        "M1271930754RC_Y8_02562_30909",
+        "M1271930754RC_Y8_02633_29403",
+        "M1271930754RC_Y8_03114_26112",
+        "M1271930754RC_Y8_04143_25915",
+        "M1271930754RC_Y8_04887_34163",
+        "M1271930754RC_Y8_05267_13530",
+        "M1287257121LC_Y8_02465_21155",
+        "M1287257121LC_Y8_04227_42786",
+        "M1287257121LC_Y8_04609_42030",
+        "M1287257121RC_Y8_04281_15571",
+        "M1287257121RC_Y8_06899_41157",
+        "M1297792011LC_Y8_03183_21429",
+        "M1297792011LC_Y8_03254_38485",
+        "M1297792011LC_Y8_03822_22130",
+        "M1297792011LC_Y8_03930_43404",
+        "M1297792011LC_Y8_04151_38503",
+        "M1297792011LC_Y8_04315_27851",
+        "M1358875484RC_Y8_05443_29611",
+        "M1358875484RC_Y8_05604_22833",
+        "M1358875484RC_Y8_06047_06065",
+        "M1358875484RC_Y8_06070_10975",
+        "M1358875484RC_Y8_06916_08210",
+        "M1358875484RC_Y8_07140_07141",
+        "M1358889571RC_Y8_06226_06061",
+        "M1358889571RC_Y8_06230_21858",
+        "M1358889571RC_Y8_06906_25985",
+        "M1358889571RC_Y8_07572_08187",
+        "M1358889571RC_Y8_07714_13099",
+        "M1358889571RC_Y8_08546_12257",
+        "M1463341437LC_Y8_01450_06361",
+        "M1463341437RC_Y8_02981_19207",
+        "M1463341437RC_Y8_03405_11693",
+        "M1463341437RC_Y8_04734_06452",
+        "M1463341437RC_Y8_04993_08226",
+        "M1463341437RC_Y8_06222_19194",
+        "M188306254RC_Y8_02105_31367",
+        "M188306254RC_Y8_02288_30853",
+        "M188306254RC_Y8_02545_29284",
+        "M188306254RC_Y8_02602_06175",
+        "M188306254RC_Y8_03381_30088"
+      ]
+    ],
+    "overlapping_development_footprint_pairs": 52,
+    "selection": "Maximize retained correct development alignments at each declared empirical accepted-error budget, with zero accepted development non-overlap pairs. First declared candidate wins remaining ties.",
+    "inference_evidence": [
+      "image-only structural correlation",
+      "local patch correlation",
+      "joint non-dark support proxy",
+      "common valid-pixel support",
+      "independent predictor-family agreement",
+      "separately selected reverse-cycle error"
+    ],
+    "excluded_inference_inputs": [
+      "correctness",
+      "ground-truth motion",
+      "reference errors",
+      "template-probe residuals",
+      "maximum displacement"
+    ],
+    "warning": "Development selection is not a held-out error bound or safety guarantee. The small number of geographic components limits confidence. Freeze final model/policy before fresh evaluation.",
+    "frozen_utc": "2026-10-29T23:04:49.095185+00:00",
+    "development_results_sha256": "57deb68331d0431a7c3cea100f7d79ae058b16c3dbed57f41a637f5cb22bf6d8",
+    "development_inputs_sha256": "9b370ebd32edbb6a149db0bd3ac2806a9ad5d10a9162cc953d4c52b22854bccf",
+    "gate_source_sha256": "388917316eb5dc1a036748b38beed21d26be94c6f52d0de0411d3b3967d3dcf4",
+    "declared_before_fresh_geographic_evaluation": true
+  },
+  "test_validation": "95 passed with actual DISK/LoFTR/EfficientLoFTR/MatchAnything inference and cascade/refinement tests.",
+  "software_smoke_summaries": 20
+}

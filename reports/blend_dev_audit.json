@@ -1,0 +1,19 @@
+{
+  "rows": 3672,
+  "cases": 1224,
+  "split": "dev",
+  "loaded_reserve_images": 0,
+  "source_ref": null,
+  "source_snapshot_sha256": "569026fa6c8e4a6263c33352e72ab708ef4f840d5997defca24606bc6e49d4da",
+  "results_sha256": "57deb68331d0431a7c3cea100f7d79ae058b16c3dbed57f41a637f5cb22bf6d8",
+  "frozen_inputs_sha256": "9b370ebd32edbb6a149db0bd3ac2806a9ad5d10a9162cc953d4c52b22854bccf",
+  "exact_input_reconstruction": true,
+  "analytic_similarity_geometry": true,
+  "failure_and_negative_coverage": true,
+  "warning": "Development screening only, not a fresh held-out comparison.",
+  "image_only_choices_replayed": 3672,
+  "all_planned_predictors_bound": true,
+  "separate_reverse_selection_replayed": true,
+  "truth_fields_excluded_from_selector": true,
+  "upstream_completion_sha256": "5c38401d004af34b5f224e862a42dc4a4c2034980046b48d7872cd0c5e464861"
+}
