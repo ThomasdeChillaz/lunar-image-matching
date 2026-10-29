@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "seed": 20261026,
+  "methods": ["ncc", "sift", "disk_lightglue"],
+  "preprocessing": ["none", "clahe"],
+  "device": "cpu",
+  "correctness_threshold_px": 3,
+  "protocol": "All 321 pairs; bidirectional diagnostics; no gate tuned against map-reference disagreement. S3 is exploratory after pilot inspection."
+}
