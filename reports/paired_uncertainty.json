@@ -1,11 +1,68 @@
 {
-  "groups": 16,
-  "grouping": "Source acquisition; eight illumination pairs per tile",
+  "groups": 15,
+  "source_acquisitions": 16,
+  "tiles": 16,
+  "grouping": "Connected components of overlapping declared footprints OR shared source acquisition; repeated lighting cases remain in one component.",
+  "group_members": [
+    [
+      "M1103632150RC_Y8_01811_22146"
+    ],
+    [
+      "M1103639294RC_Y8_04116_22649"
+    ],
+    [
+      "M1105989493LC_Y8_02301_18917"
+    ],
+    [
+      "M1167249574RC_Y8_02558_27132"
+    ],
+    [
+      "M1206060691RC_Y8_03448_37634"
+    ],
+    [
+      "M1210765611RC_Y8_03425_23944"
+    ],
+    [
+      "M1228452294RC_Y8_04071_43789"
+    ],
+    [
+      "M1236654435LC_Y8_04769_16401"
+    ],
+    [
+      "M1241352315LC_Y8_04906_04226"
+    ],
+    [
+      "M124639586LC_Y8_01715_01342"
+    ],
+    [
+      "M1251977632RC_Y8_06282_42971"
+    ],
+    [
+      "M1302487972LC_Y8_08287_01499",
+      "M1313107969RC_Y8_00950_02647"
+    ],
+    [
+      "M1348351161RC_Y8_03752_02607"
+    ],
+    [
+      "M1374191267RC_Y8_08028_46194"
+    ],
+    [
+      "M144688460RC_Y8_01009_14581"
+    ]
+  ],
+  "overlapping_footprint_pairs": [
+    [
+      "M1302487972LC_Y8_08287_01499",
+      "M1313107969RC_Y8_00950_02647"
+    ]
+  ],
   "delta": 0.0390625,
   "percentile_interval_95": [
-    -0.0234375,
-    0.109375
+    -0.025,
+    0.10416666666666667
   ],
   "bootstrap_repetitions": 5000,
-  "warning": "Exploratory small-sample interval within one Tycho geographic holdout; not evidence of global or real-image generalization."
+  "seed": 20261029,
+  "warning": "Exploratory small-sample interval within previously inspected Tycho terrain; disconnected footprints need not be globally independent. Not evidence of global or real-image superiority."
 }

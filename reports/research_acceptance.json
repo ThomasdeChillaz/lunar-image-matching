@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-10-29T19:39:15.962974+00:00",
+  "checked_utc": "2026-10-29T20:27:20.118784+00:00",
   "software_validation": {
-    "tests_passed": 56,
+    "tests_passed": 67,
     "pretrained_inference_included": true,
-    "controlled_smoke": "runs/extension-smoke-03: 20 method/case summaries; controlled software check only"
+    "controlled_smoke": "runs/extension-smoke-05: 20 method/case summaries; controlled software check only"
   },
   "executed_experiments": {
     "expanded_real": {
@@ -25,23 +25,34 @@
     "new_real_tycho": {
       "evaluations": 108,
       "results_sha256": "3827536b8ed735ec92a9521193def9e5413e0f92b2c7e4982185565457e04fc9"
+    },
+    "physical_crosslighting": {
+      "evaluations": 2880,
+      "results_sha256": "800b98dea1c71d4c6f04a67d132eb63559d69dd3e45397cfeef194b621f57bcd"
     }
   },
-  "total_method_evaluations": 3828,
+  "total_method_evaluations": 6708,
   "audit_sha256": {
     "extension_audit.json": "c0c7d95660dea1add5d721d378f5d0fc3cadf8e657b9a7bd069dee94ee8f8608",
     "cnsfm_common_audit.json": "c80c2e16b457d21eb0f927d77030762d363a4886f66f6861e845a02d7bde1760",
     "tycho_transfer_audit.json": "1ac13a839f343145f083ef147d718f8759941abb2dad6022e245f1898a38fb6d",
     "cnsfm_transfer_audit.json": "4685ae7409a3f09c3650dd7ed96e7197813013056565b7972c3391a274cb8535",
-    "cnsfm_windows_artifacts.json": "c5b9f2c28ca35a22411c5b293f4bdfb48d56c00c9ae93f03327ab3b4d25861d8"
+    "cnsfm_windows_artifacts.json": "c5b9f2c28ca35a22411c5b293f4bdfb48d56c00c9ae93f03327ab3b4d25861d8",
+    "crosslighting_audit.json": "f6f2eb3bde0652079df855da9e4bece8f4db362f5488b5ea391de0ba416ca750"
   },
   "scientific_acceptance": {
     "independent_references": "Pending actual human JSON; user volunteered to review the blank 12-pair packet. No generated references accepted.",
     "expanded_baseline": "Executed original Windows CNSFM on exact shared 512px arrays; native tiled detector pipeline and paper percentages not reproduced. Added five real Tycho areas; no global lunar-generalization claim.",
-    "rejection": "Rendered dev-selected policies measured on held-out data, including incorrect acceptances. Real-data calibration awaits independently labelled development outcomes.",
-    "illumination": "42 source-solar metadata records, physical changing-Sun controls and real intensity proxies measured. Independent alignment is required before claiming true common illuminated area.",
-    "adaptation": "Physical training and real transfer executed. Synthetic gain does not establish real improvement; polar returned fits fell from 158/231 to 99/231. Frozen model remains default."
+    "rejection": "Original dev-selected policies transported unchanged to all Sun pairs. Frozen learned policy retains 5 correct fits and accepts 7 incorrect; its translation limit excludes the exact imposed displacement. No test-based replacement selected. Real-data calibration awaits independent development labels.",
+    "illumination": "Source solar metadata, raw non-dark-support sensitivity and a completed fixed-geometry follow-up over 576 Sun pairs (13.52\u2013155.64 degrees, 161 pairs at least 90 degrees) evaluated. Intensity support remains a proxy, not geometric shadow truth; independent alignment is still required for true real-image common support.",
+    "adaptation": "Original training unchanged. Adapter 323/576 vs frozen 303/576 in exploratory fixed-geometry physical follow-up; NCC 344/576. Real polar returned fits remain 99/231 vs158/231; no verified real gain."
   },
   "objective_achieved": false,
-  "remaining_dependency": "Completed independent human landmark review, uncertainty-aware scoring, and real-development gate calibration when sufficient labels exist."
+  "remaining_dependency": "Completed independent human landmark review, uncertainty-aware scoring, and real-development gate calibration when sufficient labels exist.",
+  "derived_analysis_sha256": {
+    "physical_lighting_analysis.json": "f1b855565141b48784c10dfc2a2d18871b8e69ed8c3e87e345ece4a770a22523",
+    "paired_uncertainty.json": "73e2048b78c4b8d62d1a6d15831eea6fa245f806afb0711b1ccc158ae4f6974e",
+    "crosslighting_summary.json": "309030740f1f8712aeb8297e60f84c169769467807427997fb937e0b91dd1485"
+  },
+  "uncertainty_correction": "Overlapping footprints OR shared acquisitions form bootstrap components: one overlapping test pair reduces 16 acquisitions to 15 components. Original anchor gain interval revised to -2.50,+10.42 percentage points; all saved inference outcomes unchanged."
 }

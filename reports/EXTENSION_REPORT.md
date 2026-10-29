@@ -15,9 +15,60 @@ A 128×128 linear descriptor projection (16,384 trainable parameters) was fitted
 | Lunar descriptor adapter | 98 | 0.97 | 4.09 | 4 |
 | SIFT | 1 | 0.37 | 0.37 | 0 |
 
-The adapter gains 3.91 percentage points over the frozen learned matcher. An exploratory source-acquisition-clustered bootstrap interval is [-2.34, 10.94] percentage points (16 groups). This small synthetic experiment does not establish statistical superiority across lunar regions or transfer to real imagery. SIFT uses its original default preset on low-contrast 128px inputs; no SIFT tuning is claimed.
+The adapter gains 3.91 percentage points over the frozen learned matcher. An exploratory bootstrap interval is [-2.50, 10.42] percentage points (15 components across 16 source acquisitions). Overlapping declared terrain footprints and shared acquisitions are joined before resampling; an earlier source-only grouping did not account for one overlapping pair. This small synthetic experiment does not establish statistical superiority across lunar regions or transfer to real imagery. SIFT uses its original default preset on low-contrast 128px inputs; no SIFT tuning is claimed.
 
 ![Physical held-out success](physical_success.png)
+
+## Physical illumination and shared terrain support
+
+The following analysis recomputes 3D Sun-direction separation from the physical render metadata and joint non-dark support from the exact raw render bytes. Every failed fit stays in its bin denominator. Bin edges are fixed round intervals for this descriptive analysis after test inspection; no model or rejection threshold is retuned. The same source acquisition contributes multiple lighting cases, so pair counts are not independent sample sizes. The frozen experiment also couples light index to rotation; these strata do not isolate a causal illumination effect.
+
+| Held-out condition | Pairs | Acquisitions | Frozen correct | Adapter correct |
+|---|---:|---:|---:|---:|
+| Sun separation 0–30° | 32 | 16 | 32/32 | 32/32 |
+| Sun separation 30–60° | 58 | 16 | 45/58 | 48/58 |
+| Sun separation 60–90° | 38 | 16 | 16/38 | 18/38 |
+| Non-dark support 0–5% | 4 | 4 | 0/4 | 0/4 |
+| Non-dark support 5–25% | 2 | 2 | 0/2 | 1/2 |
+| Non-dark support 25–50% | 2 | 2 | 1/2 | 1/2 |
+| Non-dark support 50–75% | 7 | 7 | 4/7 | 2/7 |
+| Non-dark support 75–100% | 113 | 16 | 88/113 | 94/113 |
+
+The held-out physical Sun separations span only 21.09–77.94°. No cases test 90° or larger Sun separations. The training anchor design likewise stays below 80.72° before co-visible feature filtering. This is a coverage limitation, not evidence that the model generalizes to opposite lighting.
+
+Shared non-dark support means both raw renders exceed I/F=.01 at the same valid terrain pixel before the known warp. It is an intensity proxy, not a geometric Sun-visibility or shadow mask. A case without jointly valid terrain would remain unknown rather than be labelled dark. Most cases have high shared support; sparse low-support bins cannot establish robust shadow invariance.
+
+![Physical illumination strata](physical_lighting_strata.png)
+
+| Raw I/F threshold | Cases with <25% shared support | Acquisitions | Frozen correct | Adapter correct |
+|---|---:|---:|---:|---:|
+| 0 | 6 | 6 | 0/6 | 1/6 |
+| 0.005 | 6 | 6 | 0/6 | 1/6 |
+| 0.01 | 6 | 6 | 0/6 | 1/6 |
+| 0.02 | 7 | 6 | 1/7 | 2/7 |
+
+The support-threshold sensitivity changes membership of a descriptive subset, not any saved matching outcome. Known non-overlap negatives remain in the rejection analysis below; they have no shared terrain or physical Sun-pair reference and are excluded from these positive-case strata. See [all strata and denominators](physical_lighting_strata.csv) and [input hashes, pair metadata and design coverage](physical_lighting_analysis.json).
+
+## Every Sun pair with fixed geometry
+
+A completed follow-up evaluates every one of the 576 physical Sun pairs with the same known translation (6,-4) and zero rotation throughout (2,880 method evaluations). This removes the earlier coupling between light index and rotation. It includes 161 pairs at Sun separations of 90° or more. The existing models and original development policies stay unchanged. NCC is included within its translation model, alongside SIFT and the frozen learned variants.
+
+The design was frozen before the new outcomes, but the terrain was inspected previously: this is an exploratory controlled follow-up, not a fresh geographic holdout. No model or threshold is selected from the new results.
+
+| Method | Correct / pairs | Returned / pairs |
+|---|---:|---:|
+| NCC | 344/576 | 455/576 |
+| SIFT | 27/576 | 27/576 |
+| DISK + LightGlue | 303/576 | 447/576 |
+| DISK + LightGlue + CLAHE | 305/576 | 473/576 |
+| Lunar descriptor adapter | 323/576 | 457/576 |
+
+The unchanged frozen learned rejection policy retains only 5 of 303 correct fits and accepts 7 incorrect fits in this follow-up. Its selected translation bound is smaller than the exact known displacement. The old policy is therefore not a reliable quality filter for this design; it remains experimental. No replacement is selected from these test outcomes.
+
+
+![Every physical Sun pair at fixed geometry](crosslighting_strata.png)
+
+See the [fixed-geometry report](CROSS_LIGHTING_REPORT.md) for per-Sun-bin counts, transported-policy errors, grouped uncertainty and an audit that reconstructs the exact translation by slicing the source pixels. These physical results do not establish independent real-image accuracy.
 
 ## Rejection trade-off
 
@@ -99,4 +150,4 @@ See [measurement audit](extension_audit.json), [per-evaluation real diagnostics]
 
 Physical data: Grethen et al., [MoonAnything](https://arxiv.org/html/2604.00682v1), [Zenodo 18415119](https://zenodo.org/records/18415119), CC BY 4.0. Real imagery: [CNSFM research release](https://github.com/Bin501/CNSFM), [Li et al. 2025](https://doi.org/10.3390/rs17132302). No NASA/JPL affiliation or navigation certification is implied.
 
-Generated from saved measurements at 2026-10-29T11:32:22.572009+00:00.
+Generated from saved measurements at 2026-10-29T20:25:46.787527+00:00.

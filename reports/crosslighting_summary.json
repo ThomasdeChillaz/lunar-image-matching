@@ -1,0 +1,870 @@
+{
+  "methods": [
+    {
+      "method": "ncc",
+      "pairs": 576,
+      "returned": 455,
+      "correct": 344,
+      "median_error_returned_px": 1.0,
+      "dark_input_pairs": 24,
+      "policy_unavailable": "No original physical development policy for this method; no test-based threshold fitted."
+    },
+    {
+      "method": "sift",
+      "pairs": 576,
+      "returned": 27,
+      "correct": 27,
+      "median_error_returned_px": 0.2851080066509835,
+      "dark_input_pairs": 24,
+      "transported_rejection": {
+        "labelled": 576,
+        "unknown_labels": 0,
+        "correct": 27,
+        "incorrect": 549,
+        "accepted_correct": 14,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5185185185185185,
+        "incorrect_acceptance_rate": 0.0
+      }
+    },
+    {
+      "method": "disk_lightglue",
+      "pairs": 576,
+      "returned": 447,
+      "correct": 303,
+      "median_error_returned_px": 1.0053486053572038,
+      "dark_input_pairs": 24,
+      "transported_rejection": {
+        "labelled": 576,
+        "unknown_labels": 0,
+        "correct": 303,
+        "incorrect": 273,
+        "accepted_correct": 5,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.0165016501650165,
+        "incorrect_acceptance_rate": 0.02564102564102564
+      }
+    },
+    {
+      "method": "disk_lightglue_clahe",
+      "pairs": 576,
+      "returned": 473,
+      "correct": 305,
+      "median_error_returned_px": 1.1557061811453628,
+      "dark_input_pairs": 24,
+      "transported_rejection": {
+        "labelled": 576,
+        "unknown_labels": 0,
+        "correct": 305,
+        "incorrect": 271,
+        "accepted_correct": 249,
+        "accepted_incorrect": 37,
+        "correct_retention": 0.8163934426229508,
+        "incorrect_acceptance_rate": 0.13653136531365315
+      }
+    },
+    {
+      "method": "disk_lightglue_lunar",
+      "pairs": 576,
+      "returned": 457,
+      "correct": 323,
+      "median_error_returned_px": 0.9779956763768396,
+      "dark_input_pairs": 24,
+      "transported_rejection": {
+        "labelled": 576,
+        "unknown_labels": 0,
+        "correct": 323,
+        "incorrect": 253,
+        "accepted_correct": 242,
+        "accepted_incorrect": 25,
+        "correct_retention": 0.7492260061919505,
+        "incorrect_acceptance_rate": 0.09881422924901186
+      }
+    }
+  ],
+  "paired_interval": {
+    "groups": 15,
+    "source_acquisitions": 16,
+    "tiles": 16,
+    "grouping": "Connected components of overlapping declared footprints OR shared source acquisition; repeated lighting cases remain in one component.",
+    "group_members": [
+      [
+        "M1103632150RC_Y8_01811_22146"
+      ],
+      [
+        "M1103639294RC_Y8_04116_22649"
+      ],
+      [
+        "M1105989493LC_Y8_02301_18917"
+      ],
+      [
+        "M1167249574RC_Y8_02558_27132"
+      ],
+      [
+        "M1206060691RC_Y8_03448_37634"
+      ],
+      [
+        "M1210765611RC_Y8_03425_23944"
+      ],
+      [
+        "M1228452294RC_Y8_04071_43789"
+      ],
+      [
+        "M1236654435LC_Y8_04769_16401"
+      ],
+      [
+        "M1241352315LC_Y8_04906_04226"
+      ],
+      [
+        "M124639586LC_Y8_01715_01342"
+      ],
+      [
+        "M1251977632RC_Y8_06282_42971"
+      ],
+      [
+        "M1302487972LC_Y8_08287_01499",
+        "M1313107969RC_Y8_00950_02647"
+      ],
+      [
+        "M1348351161RC_Y8_03752_02607"
+      ],
+      [
+        "M1374191267RC_Y8_08028_46194"
+      ],
+      [
+        "M144688460RC_Y8_01009_14581"
+      ]
+    ],
+    "overlapping_footprint_pairs": [
+      [
+        "M1302487972LC_Y8_08287_01499",
+        "M1313107969RC_Y8_00950_02647"
+      ]
+    ],
+    "delta": 0.034722222222222224,
+    "percentile_interval_95": [
+      0.014814814814814815,
+      0.05228758169934641
+    ],
+    "bootstrap_repetitions": 5000,
+    "seed": 20261029,
+    "warning": "Exploratory small-sample interval within previously inspected Tycho terrain; disconnected footprints need not be globally independent. Not evidence of global or real-image superiority."
+  },
+  "strata": [
+    {
+      "metric": "solar_separation_deg",
+      "lower": 0.0,
+      "upper": 30.0,
+      "bin_index": 0,
+      "method": "ncc",
+      "pairs": 135,
+      "source_acquisitions": 16,
+      "correct": 130,
+      "returned": 131,
+      "no_fit": 4,
+      "success_rate": 0.9629629629629629
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 0.0,
+      "upper": 30.0,
+      "bin_index": 0,
+      "method": "sift",
+      "pairs": 135,
+      "source_acquisitions": 16,
+      "correct": 27,
+      "returned": 27,
+      "no_fit": 108,
+      "success_rate": 0.2
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 0.0,
+      "upper": 30.0,
+      "bin_index": 0,
+      "method": "disk_lightglue",
+      "pairs": 135,
+      "source_acquisitions": 16,
+      "correct": 130,
+      "returned": 130,
+      "no_fit": 5,
+      "success_rate": 0.9629629629629629
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 0.0,
+      "upper": 30.0,
+      "bin_index": 0,
+      "method": "disk_lightglue_clahe",
+      "pairs": 135,
+      "source_acquisitions": 16,
+      "correct": 130,
+      "returned": 130,
+      "no_fit": 5,
+      "success_rate": 0.9629629629629629
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 0.0,
+      "upper": 30.0,
+      "bin_index": 0,
+      "method": "disk_lightglue_lunar",
+      "pairs": 135,
+      "source_acquisitions": 16,
+      "correct": 130,
+      "returned": 130,
+      "no_fit": 5,
+      "success_rate": 0.9629629629629629
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 30.0,
+      "upper": 60.0,
+      "bin_index": 1,
+      "method": "ncc",
+      "pairs": 163,
+      "source_acquisitions": 16,
+      "correct": 141,
+      "returned": 150,
+      "no_fit": 13,
+      "success_rate": 0.8650306748466258
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 30.0,
+      "upper": 60.0,
+      "bin_index": 1,
+      "method": "sift",
+      "pairs": 163,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 163,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 30.0,
+      "upper": 60.0,
+      "bin_index": 1,
+      "method": "disk_lightglue",
+      "pairs": 163,
+      "source_acquisitions": 16,
+      "correct": 133,
+      "returned": 151,
+      "no_fit": 12,
+      "success_rate": 0.8159509202453987
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 30.0,
+      "upper": 60.0,
+      "bin_index": 1,
+      "method": "disk_lightglue_clahe",
+      "pairs": 163,
+      "source_acquisitions": 16,
+      "correct": 131,
+      "returned": 147,
+      "no_fit": 16,
+      "success_rate": 0.803680981595092
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 30.0,
+      "upper": 60.0,
+      "bin_index": 1,
+      "method": "disk_lightglue_lunar",
+      "pairs": 163,
+      "source_acquisitions": 16,
+      "correct": 135,
+      "returned": 148,
+      "no_fit": 15,
+      "success_rate": 0.8282208588957055
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 60.0,
+      "upper": 90.0,
+      "bin_index": 2,
+      "method": "ncc",
+      "pairs": 117,
+      "source_acquisitions": 16,
+      "correct": 59,
+      "returned": 98,
+      "no_fit": 19,
+      "success_rate": 0.5042735042735043
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 60.0,
+      "upper": 90.0,
+      "bin_index": 2,
+      "method": "sift",
+      "pairs": 117,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 117,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 60.0,
+      "upper": 90.0,
+      "bin_index": 2,
+      "method": "disk_lightglue",
+      "pairs": 117,
+      "source_acquisitions": 16,
+      "correct": 37,
+      "returned": 87,
+      "no_fit": 30,
+      "success_rate": 0.3162393162393162
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 60.0,
+      "upper": 90.0,
+      "bin_index": 2,
+      "method": "disk_lightglue_clahe",
+      "pairs": 117,
+      "source_acquisitions": 16,
+      "correct": 40,
+      "returned": 95,
+      "no_fit": 22,
+      "success_rate": 0.3418803418803419
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 60.0,
+      "upper": 90.0,
+      "bin_index": 2,
+      "method": "disk_lightglue_lunar",
+      "pairs": 117,
+      "source_acquisitions": 16,
+      "correct": 48,
+      "returned": 93,
+      "no_fit": 24,
+      "success_rate": 0.41025641025641024
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 90.0,
+      "upper": 120.0,
+      "bin_index": 3,
+      "method": "ncc",
+      "pairs": 104,
+      "source_acquisitions": 16,
+      "correct": 13,
+      "returned": 57,
+      "no_fit": 47,
+      "success_rate": 0.125
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 90.0,
+      "upper": 120.0,
+      "bin_index": 3,
+      "method": "sift",
+      "pairs": 104,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 104,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 90.0,
+      "upper": 120.0,
+      "bin_index": 3,
+      "method": "disk_lightglue",
+      "pairs": 104,
+      "source_acquisitions": 16,
+      "correct": 3,
+      "returned": 60,
+      "no_fit": 44,
+      "success_rate": 0.028846153846153848
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 90.0,
+      "upper": 120.0,
+      "bin_index": 3,
+      "method": "disk_lightglue_clahe",
+      "pairs": 104,
+      "source_acquisitions": 16,
+      "correct": 4,
+      "returned": 71,
+      "no_fit": 33,
+      "success_rate": 0.038461538461538464
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 90.0,
+      "upper": 120.0,
+      "bin_index": 3,
+      "method": "disk_lightglue_lunar",
+      "pairs": 104,
+      "source_acquisitions": 16,
+      "correct": 9,
+      "returned": 66,
+      "no_fit": 38,
+      "success_rate": 0.08653846153846154
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 120.0,
+      "upper": 150.0,
+      "bin_index": 4,
+      "method": "ncc",
+      "pairs": 54,
+      "source_acquisitions": 16,
+      "correct": 1,
+      "returned": 19,
+      "no_fit": 35,
+      "success_rate": 0.018518518518518517
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 120.0,
+      "upper": 150.0,
+      "bin_index": 4,
+      "method": "sift",
+      "pairs": 54,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 54,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 120.0,
+      "upper": 150.0,
+      "bin_index": 4,
+      "method": "disk_lightglue",
+      "pairs": 54,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 19,
+      "no_fit": 35,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 120.0,
+      "upper": 150.0,
+      "bin_index": 4,
+      "method": "disk_lightglue_clahe",
+      "pairs": 54,
+      "source_acquisitions": 16,
+      "correct": 0,
+      "returned": 30,
+      "no_fit": 24,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 120.0,
+      "upper": 150.0,
+      "bin_index": 4,
+      "method": "disk_lightglue_lunar",
+      "pairs": 54,
+      "source_acquisitions": 16,
+      "correct": 1,
+      "returned": 20,
+      "no_fit": 34,
+      "success_rate": 0.018518518518518517
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 150.0,
+      "upper": 180.0,
+      "bin_index": 5,
+      "method": "ncc",
+      "pairs": 3,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 3,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 150.0,
+      "upper": 180.0,
+      "bin_index": 5,
+      "method": "sift",
+      "pairs": 3,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 3,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 150.0,
+      "upper": 180.0,
+      "bin_index": 5,
+      "method": "disk_lightglue",
+      "pairs": 3,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 3,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 150.0,
+      "upper": 180.0,
+      "bin_index": 5,
+      "method": "disk_lightglue_clahe",
+      "pairs": 3,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 3,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "solar_separation_deg",
+      "lower": 150.0,
+      "upper": 180.0,
+      "bin_index": 5,
+      "method": "disk_lightglue_lunar",
+      "pairs": 3,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 3,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.0,
+      "upper": 0.05,
+      "bin_index": 0,
+      "method": "ncc",
+      "pairs": 34,
+      "source_acquisitions": 5,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 34,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.0,
+      "upper": 0.05,
+      "bin_index": 0,
+      "method": "sift",
+      "pairs": 34,
+      "source_acquisitions": 5,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 34,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.0,
+      "upper": 0.05,
+      "bin_index": 0,
+      "method": "disk_lightglue",
+      "pairs": 34,
+      "source_acquisitions": 5,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 34,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.0,
+      "upper": 0.05,
+      "bin_index": 0,
+      "method": "disk_lightglue_clahe",
+      "pairs": 34,
+      "source_acquisitions": 5,
+      "correct": 0,
+      "returned": 1,
+      "no_fit": 33,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.0,
+      "upper": 0.05,
+      "bin_index": 0,
+      "method": "disk_lightglue_lunar",
+      "pairs": 34,
+      "source_acquisitions": 5,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 34,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.05,
+      "upper": 0.25,
+      "bin_index": 1,
+      "method": "ncc",
+      "pairs": 15,
+      "source_acquisitions": 3,
+      "correct": 4,
+      "returned": 12,
+      "no_fit": 3,
+      "success_rate": 0.26666666666666666
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.05,
+      "upper": 0.25,
+      "bin_index": 1,
+      "method": "sift",
+      "pairs": 15,
+      "source_acquisitions": 3,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 15,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.05,
+      "upper": 0.25,
+      "bin_index": 1,
+      "method": "disk_lightglue",
+      "pairs": 15,
+      "source_acquisitions": 3,
+      "correct": 3,
+      "returned": 8,
+      "no_fit": 7,
+      "success_rate": 0.2
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.05,
+      "upper": 0.25,
+      "bin_index": 1,
+      "method": "disk_lightglue_clahe",
+      "pairs": 15,
+      "source_acquisitions": 3,
+      "correct": 2,
+      "returned": 8,
+      "no_fit": 7,
+      "success_rate": 0.13333333333333333
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.05,
+      "upper": 0.25,
+      "bin_index": 1,
+      "method": "disk_lightglue_lunar",
+      "pairs": 15,
+      "source_acquisitions": 3,
+      "correct": 3,
+      "returned": 7,
+      "no_fit": 8,
+      "success_rate": 0.2
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.25,
+      "upper": 0.5,
+      "bin_index": 2,
+      "method": "ncc",
+      "pairs": 16,
+      "source_acquisitions": 4,
+      "correct": 5,
+      "returned": 12,
+      "no_fit": 4,
+      "success_rate": 0.3125
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.25,
+      "upper": 0.5,
+      "bin_index": 2,
+      "method": "sift",
+      "pairs": 16,
+      "source_acquisitions": 4,
+      "correct": 0,
+      "returned": 0,
+      "no_fit": 16,
+      "success_rate": 0.0
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.25,
+      "upper": 0.5,
+      "bin_index": 2,
+      "method": "disk_lightglue",
+      "pairs": 16,
+      "source_acquisitions": 4,
+      "correct": 5,
+      "returned": 13,
+      "no_fit": 3,
+      "success_rate": 0.3125
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.25,
+      "upper": 0.5,
+      "bin_index": 2,
+      "method": "disk_lightglue_clahe",
+      "pairs": 16,
+      "source_acquisitions": 4,
+      "correct": 6,
+      "returned": 15,
+      "no_fit": 1,
+      "success_rate": 0.375
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.25,
+      "upper": 0.5,
+      "bin_index": 2,
+      "method": "disk_lightglue_lunar",
+      "pairs": 16,
+      "source_acquisitions": 4,
+      "correct": 6,
+      "returned": 12,
+      "no_fit": 4,
+      "success_rate": 0.375
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.5,
+      "upper": 0.75,
+      "bin_index": 3,
+      "method": "ncc",
+      "pairs": 54,
+      "source_acquisitions": 9,
+      "correct": 28,
+      "returned": 36,
+      "no_fit": 18,
+      "success_rate": 0.5185185185185185
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.5,
+      "upper": 0.75,
+      "bin_index": 3,
+      "method": "sift",
+      "pairs": 54,
+      "source_acquisitions": 9,
+      "correct": 1,
+      "returned": 1,
+      "no_fit": 53,
+      "success_rate": 0.018518518518518517
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.5,
+      "upper": 0.75,
+      "bin_index": 3,
+      "method": "disk_lightglue",
+      "pairs": 54,
+      "source_acquisitions": 9,
+      "correct": 24,
+      "returned": 37,
+      "no_fit": 17,
+      "success_rate": 0.4444444444444444
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.5,
+      "upper": 0.75,
+      "bin_index": 3,
+      "method": "disk_lightglue_clahe",
+      "pairs": 54,
+      "source_acquisitions": 9,
+      "correct": 22,
+      "returned": 36,
+      "no_fit": 18,
+      "success_rate": 0.4074074074074074
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.5,
+      "upper": 0.75,
+      "bin_index": 3,
+      "method": "disk_lightglue_lunar",
+      "pairs": 54,
+      "source_acquisitions": 9,
+      "correct": 24,
+      "returned": 35,
+      "no_fit": 19,
+      "success_rate": 0.4444444444444444
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.75,
+      "upper": 1.0,
+      "bin_index": 4,
+      "method": "ncc",
+      "pairs": 457,
+      "source_acquisitions": 16,
+      "correct": 307,
+      "returned": 395,
+      "no_fit": 62,
+      "success_rate": 0.6717724288840262
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.75,
+      "upper": 1.0,
+      "bin_index": 4,
+      "method": "sift",
+      "pairs": 457,
+      "source_acquisitions": 16,
+      "correct": 26,
+      "returned": 26,
+      "no_fit": 431,
+      "success_rate": 0.05689277899343545
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.75,
+      "upper": 1.0,
+      "bin_index": 4,
+      "method": "disk_lightglue",
+      "pairs": 457,
+      "source_acquisitions": 16,
+      "correct": 271,
+      "returned": 389,
+      "no_fit": 68,
+      "success_rate": 0.5929978118161926
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.75,
+      "upper": 1.0,
+      "bin_index": 4,
+      "method": "disk_lightglue_clahe",
+      "pairs": 457,
+      "source_acquisitions": 16,
+      "correct": 275,
+      "returned": 413,
+      "no_fit": 44,
+      "success_rate": 0.6017505470459519
+    },
+    {
+      "metric": "shared_nondark_fraction",
+      "lower": 0.75,
+      "upper": 1.0,
+      "bin_index": 4,
+      "method": "disk_lightglue_lunar",
+      "pairs": 457,
+      "source_acquisitions": 16,
+      "correct": 290,
+      "returned": 403,
+      "no_fit": 54,
+      "success_rate": 0.6345733041575492
+    }
+  ]
+}
