@@ -23,14 +23,20 @@ def digest(path):
     return result.hexdigest()
 
 
-def run(source, output, region, probe=False, prepare_only=False):
+def run(source, output, region, probe=False, prepare_only=False, products=None, data_source=None):
     source, output = Path(source).resolve(), Path(output).resolve()
     revision = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
     if revision != REVISION:
         raise ValueError('CNSFM checkout differs from pinned revision')
-    folder = source/'Dataset'/region
+    data_root = Path(data_source).resolve() if data_source else source/'Dataset'
+    folder = data_root/region
     images = [folder/Path(line.strip().replace('\\', '/')).name for line in (folder/'list_images.txt').read_text().splitlines() if line.strip()]
-    if probe:
+    if products:
+        selected = {p.stem:p for p in images}
+        if len(products) != 2 or products[0] == products[1] or any(p not in selected for p in products):
+            raise ValueError('Two distinct published products required')
+        images = [selected[p] for p in products]
+    elif probe:
         images = images[:2]
     for image in images:
         if not image.is_file() or not image.with_suffix('.craters').is_file():
@@ -43,10 +49,24 @@ def run(source, output, region, probe=False, prepare_only=False):
     executable = source/'CNSFM/CNSFM.exe'
     binaries = [executable, *sorted(executable.parent.glob('*.dll'))]
     metadata = dict(source_revision=revision, platform=platform.platform(), region=region, probe=probe,
-        input_sha256={str(p.relative_to(source)):digest(p) for im in images for p in (im, im.with_suffix('.craters'))},
+        products=[p.stem for p in images],
+        input_variant='common_512_redetected' if data_source else 'authors_native',
+        input_sha256={str(p.relative_to(data_root)):digest(p) for im in images for p in (im, im.with_suffix('.craters'))},
         binaries_sha256={p.name:digest(p) for p in binaries},
+        crater_text_lf_sha256={im.stem:hashlib.sha256(im.with_suffix('.craters').read_bytes().replace(b'\r\n', b'\n')).hexdigest() for im in images},
         coordinate_system='Native published GeoTIFF pixel coordinates; no 512px resampling before original executable',
         status='prepared', warning='Raw original outputs require audited parsing and common-grid conversion before comparison.')
+    if data_source:
+        metadata['coordinate_system'] = 'Exact shared 512px image grid; redetected crater predictions; pixel-center coordinates'
+        stage = json.loads((data_root.parent/'provenance.json').read_text())
+        selected = [a for a in stage['assets'] if a['product_id'] in {p.stem for p in images}]
+        if stage['variant'] != 'common_512_redetected' or len(selected) != len(images):
+            raise ValueError('Missing exact common-grid preparation evidence')
+        for item in selected:
+            path = folder/(item['product_id']+'.tif')
+            if digest(path) != item['tif_sha256'] or digest(path.with_suffix('.craters')) != item['craters_sha256']:
+                raise ValueError('Common-grid inputs changed after preparation')
+        metadata['common_grid_provenance'] = {k:v for k,v in stage.items() if k != 'assets'} | dict(assets=selected)
     (output/'provenance.json').write_text(json.dumps(metadata, indent=2))
     if prepare_only:
         return metadata
@@ -77,5 +97,7 @@ if __name__ == '__main__':
     p.add_argument('--region', choices=['S1', 'S2', 'S3'], required=True)
     p.add_argument('--probe', action='store_true')
     p.add_argument('--prepare-only', action='store_true')
+    p.add_argument('--products', nargs=2)
+    p.add_argument('--dataset-root')
     args = p.parse_args()
-    print(json.dumps(run(args.source, args.output, args.region, args.probe, args.prepare_only), indent=2))
+    print(json.dumps(run(args.source, args.output, args.region, args.probe, args.prepare_only, args.products, args.dataset_root), indent=2))

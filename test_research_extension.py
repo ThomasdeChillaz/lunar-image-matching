@@ -92,8 +92,28 @@ def test_range_reader_validates_server_response_and_handles_cross_block_reads(mo
         response.headers = {}
         return response
     monkeypatch.setattr('urllib.request.urlopen', invalid)
-    with pytest.raises(OSError, match='honor'):
+    with pytest.raises(ValueError, match='honor'):
         HTTPRangeReader('https://example.org/data.zip', len(content)).read(1)
+
+
+def test_disk_range_cache_returns_only_requested_bytes_and_survives_new_reader(monkeypatch, tmp_path):
+    content = b'abcdefghijklmnopqrstuvwxyz'
+    class Response(io.BytesIO):
+        status = 206
+    calls = []
+    def fetch(request, timeout):
+        first, last = map(int, request.headers['Range'].split('=')[1].split('-'))
+        calls.append((first, last))
+        response = Response(content[first:last+1])
+        response.headers = {'Content-Range':f'bytes {first}-{last}/{len(content)}'}
+        return response
+    monkeypatch.setattr('urllib.request.urlopen', fetch)
+    reader = HTTPRangeReader('https://example.org/data.zip', len(content), block_size=8, cache_dir=tmp_path)
+    reader.seek(3)
+    assert reader.read(2) == b'de'
+    other = HTTPRangeReader('https://example.org/data.zip', len(content), block_size=8, cache_dir=tmp_path)
+    assert other.read(3) == b'abc'
+    assert len(calls) == 1
 
 
 def test_expanded_manifest_has_all_321_geographically_separated_pairs():

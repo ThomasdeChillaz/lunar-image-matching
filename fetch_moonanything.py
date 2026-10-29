@@ -24,7 +24,8 @@ def fetch(output, members):
         record = json.load(response)
     (output/'zenodo_record.json').write_text(json.dumps(record, indent=2))
     file = next(f for f in record['files'] if f['key'] == 'LunarPhoto.zip')
-    reader = HTTPRangeReader(file['links']['self'], file['size'], block_size=16*1024*1024)
+    reader = HTTPRangeReader(file['links']['self'], file['size'], block_size=16*1024*1024,
+        cache_dir=output/'.range-cache')
     archive = zipfile.ZipFile(reader)
     logs = []
     for member in members:
@@ -40,6 +41,11 @@ def fetch(output, members):
         if destination.exists():
             raise FileExistsError(destination)
         temporary = destination.with_suffix(destination.suffix+'.part')
+        if temporary.exists():
+            preserved = temporary.with_suffix('.interrupted-'+str(temporary.stat().st_size))
+            if preserved.exists():
+                raise FileExistsError(preserved)
+            temporary.replace(preserved)
         with archive.open(info) as source, temporary.open('wb') as target:
             shutil.copyfileobj(source, target, length=1024*1024)
         digest = sha256(temporary)

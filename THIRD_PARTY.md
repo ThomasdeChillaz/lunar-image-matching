@@ -12,3 +12,9 @@ CNSFM research subset: source revision and source image metadata in lunar_manife
 
 ## Software
 NumPy (BSD), OpenCV (Apache-2.0), Matplotlib (PSF-based), PyTorch/torchvision (BSD), Rasterio (BSD), Pillow (HPND), pytest (MIT), ReportLab (BSD), Requests (Apache-2.0). See the installed distributions for exact notices; no licenses are replaced by this project's license.
+# Research extension additions
+
+- **MoonAnything / LunarPhoto**, Grethen et al. (2026), [Zenodo record 18415119](https://zenodo.org/records/18415119), CC BY 4.0. The experiment uses the authors’ physical Hapke lighting renders and original metadata. ZIP-member CRC32, selected bytes and SHA256 are retained; the complete outer archive MD5 is not claimed. Original archives/rasters are downloaded separately and excluded from Git. Cite the authors and dataset when sharing figures or adapted results.
+- **Original CNSFM executable and crater checkpoint**, [Bin501/CNSFM](https://github.com/Bin501/CNSFM), revision `94cebaaa7fd3e070f8040620975554c3067651ef`. Downloaded separately; neither the Windows executable/DLLs nor pretrained detector weights are redistributed in this repository. The release supplies no explicit software/model-specific license. Native execution is recorded as original-author software; common-grid redetection is a documented preprocessing variant.
+- **YOLOv9 optional detector source**, [WongKinYiu/yolov9](https://github.com/WongKinYiu/yolov9), revision `5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff`, GPL-3.0. The optional `cnsfm_detector.py` integration is marked GPL-3.0-only; upstream source stays external. Other original project files retain their existing notices. The author crater-checkpoint SHA256 is `498a647d5c80d7a5a9c4f151c264c98f762db3a0f1574ff05f5ae8041bbfd860`.
+

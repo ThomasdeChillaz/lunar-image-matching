@@ -10,7 +10,8 @@ This extends the pilot; it does not replace the original M3/M5 scientific gates.
 
 ## Current execution
 
-- Extended bidirectional evaluation: `runs/expanded-confidence-v1` (append-only per-evaluation JSONL; the final completion marker is written only after all rows).
+- Extended bidirectional evaluation: `runs/expanded-confidence-v1` completed all 1,926 measurements. Saved geometry and source hashes have been independently recomputed by `verify_extension.py`; map-reference uncertainty remains unresolved.
 - Physical source sample: Zenodo record 18415119; `metadata.zip` and `multilighting_hapke_rendering.zip` retrieved through exact byte ranges from the outer ZIP, verified by decompression CRC32 and saved SHA256. No full-archive MD5 claim.
-- Original CNSFM probe: `run_cnsfm.py` and `.github/workflows/cnsfm-original.yml`; Windows execution and output audit remain open.
+- Original CNSFM: native Windows probes executed in all three scenes; output IDs and pixel-center conversion audited. Original author weights produced 2,213 crater detections on the same 42 common-grid images. Common-grid Windows execution and full comparison remain open.
+- Physical adaptation: 80 acquisition-separated Tycho patches frozen before outcomes; 300-step descriptor projection selected on development data. Held-out correct fits were 98/128 versus 93/128 frozen, with an acquisition-clustered 95% interval for the gain of −2.34 to +10.94 percentage points. The adapter policy accepted three incorrect held-out fits. See `reports/EXTENSION_REPORT.md` for denominators, failures and limitations.
 - Human reference review, real-data gate calibration, CNSFM comparison and real-data adaptation transfer remain open. Tooling and queued/running work do not satisfy their scientific acceptance criteria.

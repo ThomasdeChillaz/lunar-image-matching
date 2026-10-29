@@ -1,0 +1,13 @@
+# Optional original crater-detector integration, in a separate environment.
+# YOLOv9 source is GPL-3.0 and must be retrieved at the documented revision.
+-r requirements-lock.txt
+IPython==8.28.0
+GitPython==3.1.43
+PyYAML==6.0.2
+pandas==2.2.3
+scipy==1.13.1
+seaborn==0.13.2
+psutil==6.0.0
+tqdm==4.66.5
+thop==0.1.1.post2209072238
+setuptools==75.1.0
