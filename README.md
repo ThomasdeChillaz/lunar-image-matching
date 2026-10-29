@@ -127,7 +127,14 @@ python evaluate_transfer.py --dataset cnsfm --manifest expanded_solar_manifest.j
 python verify_transfer.py runs/tycho-transfer-new --output runs/tycho-transfer-audit.json
 ```
 
-The committed `tycho_real_manifest.json` freezes selection before outcomes. The new 128px common grids use shared metadata intersections of original 128px real orthocrops; their errors are not directly comparable to the 512px scene errors or independently known physical render errors. No additional model fitting uses real test observations. After downloading the ten full Windows artifacts into separate directories under one execution root, audit and score all original CNSFM outputs with `python score_cnsfm.py --executions PATH --output runs/cnsfm-common-new`.
+The committed `tycho_real_manifest.json` freezes selection before outcomes. The new 128px common grids use shared metadata intersections of original 128px real orthocrops; their errors are not directly comparable to the 512px scene errors or independently known physical render errors. No additional model fitting uses real test observations. After downloading the ten full Windows artifacts into separate directories under one execution root, prepare the exact common-grid inputs locally and audit every original output:
+
+```bash
+python prepare_cnsfm_common.py --output data/cnsfm/common512 --fetch
+python score_cnsfm.py --executions PATH --output runs/cnsfm-common-new
+```
+
+The staging command verifies pixels and masks against the committed detector predictions and refuses to overwrite an existing staging folder. Use the matching original manifest and predictions when auditing the published artifacts.
 
 MoonAnything acquisition downloads the metadata and physical Hapke render subarchives (about 0.9 GB), not the outer 11 GB ZIP. Byte-range retries and persistent hash-checked range caches support interrupted transfers. The real-appearance `render.zip` is an additional optional 4.7 GB download for expanding real repeat-observation regions. All downloaded archives, selected source rasters and caches remain outside Git. The report publishes measurement tables and a small trained descriptor projection.
 
