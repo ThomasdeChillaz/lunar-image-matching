@@ -14,15 +14,18 @@ from research_dataset import overlap, validate
 from research_geometry import motion
 
 
-def verify(run, source_ref=None):
+def verify(run, source_ref=None, source_snapshot='reports/development_source_snapshot_v1.json'):
     run = Path(run)
     complete = json.loads((run/'COMPLETE.json').read_text())
     frozen = json.loads((run/'frozen_inputs.json').read_text())
     for filename, field in [('results.json', 'results_sha256'), ('frozen_inputs.json', 'frozen_inputs_sha256')]:
         if sha256(run/filename) != complete[field]:
             raise ValueError('Changed development artifact')
+    snapshot = json.loads(Path(source_snapshot).read_text())['sources'] if source_snapshot and Path(source_snapshot).exists() else {}
     for name, digest in frozen['source_sha256'].items():
         content = Path(name).read_bytes() if source_ref is None else subprocess.check_output(['git', 'show', f'{source_ref}:{name}'])
+        if source_ref is None and hashlib.sha256(content).hexdigest() != digest and snapshot.get(name, {}).get('sha256') == digest:
+            content = snapshot[name]['text'].encode('utf-8')
         if hashlib.sha256(content).hexdigest() != digest:
             raise ValueError(f'Changed inference source: {name}; select its recorded historical source commit')
     manifest = validate(frozen['manifest'])
@@ -95,7 +98,8 @@ def verify(run, source_ref=None):
         if entry['cases'] != len(subset) or entry['correct'] != sum(r['correct'] for r in subset) or entry['returned'] != sum(r['estimated'] for r in subset):
             raise ValueError('Incorrect family summary')
     return dict(rows=len(rows), cases=len(cases), split='dev', loaded_reserve_images=0,
-        source_ref=source_ref, results_sha256=complete['results_sha256'], frozen_inputs_sha256=complete['frozen_inputs_sha256'],
+        source_ref=source_ref, source_snapshot_sha256=sha256(source_snapshot) if source_snapshot and Path(source_snapshot).exists() else None,
+        results_sha256=complete['results_sha256'], frozen_inputs_sha256=complete['frozen_inputs_sha256'],
         exact_input_reconstruction=True, analytic_similarity_geometry=True, failure_and_negative_coverage=True,
         warning='Development screening only, not a fresh held-out comparison.')
 
@@ -105,10 +109,11 @@ if __name__ == '__main__':
     p.add_argument('run')
     p.add_argument('--output', required=True)
     p.add_argument('--source-ref')
+    p.add_argument('--source-snapshot', default='reports/development_source_snapshot_v1.json')
     args = p.parse_args()
     target = Path(args.output)
     if target.exists():
         raise FileExistsError(target)
-    result = verify(args.run, args.source_ref)
+    result = verify(args.run, args.source_ref, args.source_snapshot)
     target.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result))

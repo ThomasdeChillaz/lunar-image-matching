@@ -12,7 +12,7 @@ from landmark_review import fingerprint
 from research_dataset import validate
 
 
-def verify(run, source_ref):
+def verify(run, source_ref=None):
     import torch
     torch.set_num_threads(1)
     run = Path(run)
@@ -26,7 +26,7 @@ def verify(run, source_ref):
     adapter = json.loads((run/'adapter.json').read_text())
     manifest = validate(json.loads((run/'frozen_manifest.json').read_text()))
     for name, digest in config['source_sha256'].items():
-        content = subprocess.check_output(['git', 'show', f'{source_ref}:{name}'])
+        content = Path(name).read_bytes() if source_ref is None else subprocess.check_output(['git', 'show', f'{source_ref}:{name}'])
         if hashlib.sha256(content).hexdigest() != digest:
             raise ValueError('Historical training source differs')
     if config['manifest_sha256'] != fingerprint(manifest) or adapter['manifest_sha256'] != fingerprint(manifest):
@@ -85,7 +85,7 @@ def verify(run, source_ref):
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('run')
-    p.add_argument('--source-ref', required=True)
+    p.add_argument('--source-ref')
     p.add_argument('--output', required=True)
     args = p.parse_args()
     target = Path(args.output)
