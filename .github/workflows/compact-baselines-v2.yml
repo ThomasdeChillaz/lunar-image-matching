@@ -1,13 +1,15 @@
 name: Compact v2 blind baseline comparison
 on:
-  push:
-    paths: ['.github/workflows/compact-baselines-v2.yml']
   workflow_dispatch:
     inputs:
       stage:
         type: choice
         options: [development, test]
         default: development
+      jobs:
+        description: Optional JSON list of method/shard objects; blank runs all40
+        type: string
+        default: ''
 permissions:
   contents: read
 jobs:
@@ -18,8 +20,7 @@ jobs:
       fail-fast: false
       max-parallel: 16
       matrix:
-        method: [loma_b, loma_r, romav2, roma, matchanything]
-        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+        include: ${{ fromJSON(inputs.jobs || '[{"method":"loma_b","shard":0},{"method":"loma_b","shard":1},{"method":"loma_b","shard":2},{"method":"loma_b","shard":3},{"method":"loma_b","shard":4},{"method":"loma_b","shard":5},{"method":"loma_b","shard":6},{"method":"loma_b","shard":7},{"method":"loma_r","shard":0},{"method":"loma_r","shard":1},{"method":"loma_r","shard":2},{"method":"loma_r","shard":3},{"method":"loma_r","shard":4},{"method":"loma_r","shard":5},{"method":"loma_r","shard":6},{"method":"loma_r","shard":7},{"method":"romav2","shard":0},{"method":"romav2","shard":1},{"method":"romav2","shard":2},{"method":"romav2","shard":3},{"method":"romav2","shard":4},{"method":"romav2","shard":5},{"method":"romav2","shard":6},{"method":"romav2","shard":7},{"method":"roma","shard":0},{"method":"roma","shard":1},{"method":"roma","shard":2},{"method":"roma","shard":3},{"method":"roma","shard":4},{"method":"roma","shard":5},{"method":"roma","shard":6},{"method":"roma","shard":7},{"method":"matchanything","shard":0},{"method":"matchanything","shard":1},{"method":"matchanything","shard":2},{"method":"matchanything","shard":3},{"method":"matchanything","shard":4},{"method":"matchanything","shard":5},{"method":"matchanything","shard":6},{"method":"matchanything","shard":7}]') }}
     env:
       OMP_NUM_THREADS: '2'
       MKL_NUM_THREADS: '2'
@@ -62,6 +63,10 @@ jobs:
               from matchanything_matcher import prepare
               prepare()
           PY
+      - name: Acquire exact modern weights with bounded network retries
+        if: matrix.method == 'loma_b' || matrix.method == 'loma_r' || matrix.method == 'romav2'
+        timeout-minutes: 20
+        run: python -u baseline_weights_v2.py --method "$METHOD" --output runs/acquisition.json
       - name: Verify input package and infer without correctness labels
         run: |
           python - <<'PY'
