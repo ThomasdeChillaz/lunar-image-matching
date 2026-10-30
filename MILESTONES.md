@@ -3,9 +3,9 @@
 ## Active research iteration milestones
 
 - M12: pinned LoFTR on identical original Sun pairs, complete outcomes and pixel/metric audit. Executed.
-- M13: expanded training and source/terrain-disjoint fresh geographic reserves. Dataset frozen; expanded training completed; fresh evaluation not yet executed.
-- M14: explicit translation/rotation/scale/combined experiments and literature-inspired development hypotheses. Structural search, expanded adapter, hybrid, local-refinement probe and trained structural CNN/motion-training ablation completed and audited on development. CNN 1,072/1,152 correct but 69/72 raw non-overlap fits. Full stronger-baseline, dense and controlled trained-CNN-combination experiments remain running.
-- M15: development-only rejection and model selection, frozen before reserve evaluation. Image-evidence grids and conditional fallback policies executed and audited; final method/policy selection and fresh validation pending.
+- M13: expanded training and source/terrain-disjoint geographic reserves. Dataset/training completed; all64 reserve patches in12 footprint/acquisition components are now consumed by the preregistered standalone experiment. See iteration5 for terminal/audit results. Cross-crater known-warps use real photos from three earlier scenes and remain distinct from fresh physical-render transfer.
+- M14: explicit translation/rotation/scale/combined experiments and literature-inspired development hypotheses. Development experiments completed: standalone CNN1,072/1,152; original RoMa1,032; tested MatchAnything4×995; baseline ensemble1,083; ensemble+CNN1,103. Full13-predictor ensemble fresh evaluation is not established. NASA real-sensor/laser-reference diagnostics expose a relighting rejection failure.
+- M15: strict standalone development rejection and checkpoint bound publicly before reserve access, with9,216 positives/1,728 negatives and enforced public rejection. Source/model/checksum bindings, coverage and gate audits required for final results. No retrospective reserve calibration. The full ensemble has a separate development-only public export; its fresh validation remains pending.
 - M16: substantial advantage against relevant current baselines on a common protocol, with uncertainty, failures, negatives and reproducibility. Not established; do not infer completion from development gains.
 
 ## Scope amendment — 29 October 2026

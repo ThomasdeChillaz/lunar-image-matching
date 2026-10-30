@@ -1,6 +1,18 @@
 # Status
 
-## Active research iteration — 30 October 2026
+## Validation hardening — 30 October 2026
+
+The [reserve protocol](reports/reserve_protocol_v1.json) was published at commit `b7f2e0fe24be08dac5c0e1201e9451b6a625d59f` before either reserve was opened. SHA256: `6394d81f9714f4ef18a0eae61df761ef4b38d9c0d03e680399a1400cdbeeec20`. It binds the selected standalone CNN, strict standalone development gate, source/model bytes,64 patches,12 footprint/acquisition components,9,216 positive cases,1,728 negative cases and all four geometric families. No threshold fitting or model selection occurs on reserves. Both reserves are consumed; final evaluation/audit results are recorded in [iteration5](reports/RESEARCH_ITERATION_5.md). The full13-predictor ensemble is not part of this primary reserve protocol and remains development-only.
+
+The deployment CLI now returns no public transform when the gate rejects. A procedural actual-model CLI control recovered the exact(8,-4) shift; a different-real-scene control returned `null`, with raw proposals hidden. A separate ensemble export enforces its existing frozen development rule, retaining1,069 public outputs and no transform on its rejected proposals; that export is not fresh validation.
+
+Zero-shot real-photo controls completed on42 acquisitions in the three earlier CNSFM scenes: raw CNN336/336 exact-warps correct; gated334/336,0/84 different-scene acceptances; SIFT303/336,0/84 negatives. Every input/error and the actual reverse-inference gate replay passed audit. The321 real repeat-observation cases retain unknown accuracy labels;13/45 S1,19/45 S2 and45/231 S3 are accepted, but these counts cannot establish correctness.
+
+An external-reference experiment downloaded selected original NASA Ames POLAR sensor images, per-terrain calibration and laser clouds for four laboratory terrains. All24 cases/72method outcomes completed. The strict gate rejects all8 fixed-camera relighting pairs, although4 raw fits agree within3px with nominal fixed-camera geometry. Nominal laser-reference inlier agreement and its sampling/visibility/unknown calibration uncertainty are recorded separately. This is an important negative transfer result, not lunar orbital accuracy validation.
+
+The sections below retain historical development records. Statements that reserves were untouched or experiments were running describe the earlier stage, not the current status above.
+
+## Development iteration record — before reserve evaluation
 
 The [fourth iteration](reports/RESEARCH_ITERATION_4.md) trains an original 28,272-parameter dense structural descriptor on 384 training patches and 12,344 eligible physical-light pairs. Completed common development matching: initial 334/1,152 correct, no-motion training 994, motion-augmented training **1,072 (93.06%)**; all 4,896 outcomes and both full training input caches passed audits. Raw non-overlap fits are 69/72. Audited standalone image-evidence filtering retains **981 correct/3 wrong** at the declared ≤1% development budget, or 549/zero at the strict setting; both reject all 72 negatives. These are development-fitted policies, not held-out guarantees. The stronger-model-with/without-CNN pool comparison continues. Original RoMa passed its actual pretrained CPU proof (.04926px error), and the complete 32-shard blind development run is executing. **108 tests** and a fresh 20-summary smoke pass. Both reserves remain untouched; current-SOTA superiority and real navigation accuracy remain unverified.
 

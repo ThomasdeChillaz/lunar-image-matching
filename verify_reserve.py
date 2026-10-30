@@ -17,9 +17,10 @@ from structural_refinement import AlignmentObjective
 def verify(run):
     run = Path(run)
     protocol = run/'frozen_protocol.json'
+    protocol_digest = sha256(protocol)
     doc = validate_freeze(protocol)
     terminal = json.loads((run/'COMPLETE.json').read_text())
-    if terminal['protocol_sha256'] != sha256(protocol) or terminal['results_sha256'] != sha256(run/'results.json') or terminal['summary_sha256'] != sha256(run/'summary.json'):
+    if terminal['protocol_sha256'] != protocol_digest or terminal['results_sha256'] != sha256(run/'results.json') or terminal['summary_sha256'] != sha256(run/'summary.json'):
         raise ValueError('Completed reserve bytes changed')
     rows = json.loads((run/'results.json').read_text())
     cases = {c['pair_id']:c for c in doc['cases']}
@@ -28,9 +29,10 @@ def verify(run):
         raise ValueError('Incomplete/duplicate reserve outcomes')
     tiles = {t['tile_id']:t for t in doc['manifest']['tiles'] if t['split'].startswith('reserve_')}
     images, current_pair, saved = {}, None, None
+    quality_cache={}
     for row in rows:
         case = cases[row['pair_id']]
-        if any(row[k]!=v for k,v in case.items()) or row['freeze_sha256']!=sha256(protocol):
+        if any(row[k]!=v for k,v in case.items()) or row['freeze_sha256']!=protocol_digest:
             raise ValueError('Changed reserve case/freeze binding')
         if current_pair!=row['pair_id']:
             a,b,ma,mb,points,targets = inputs(case,tiles,images)
@@ -61,7 +63,10 @@ def verify(run):
             raise ValueError('Wrong fit availability')
         if row['method']!='sift':
             raw, reverse = row['raw_transform'],row['reverse_transform']
-            q = AlignmentObjective(a,b,ma,mb).quality(raw)
+            quality_key=(row['pair_id'],None if raw is None else np.asarray(raw).tobytes())
+            if quality_key not in quality_cache:
+                quality_cache[quality_key]=AlignmentObjective(a,b,ma,mb).quality(raw)
+            q=quality_cache[quality_key]
             quality = {} if q is None else dict(q,agreement_fraction=0.,agreeing_other_families=[])
             evidence = row['gate_evidence']
             if quality!=evidence['selection_quality'] or evidence['estimated']!=(raw is not None):
@@ -82,7 +87,7 @@ def verify(run):
     return dict(rows=len(rows),cases=len(cases),native_input_reconstruction=True,
         analytic_geometry_recomputed=True,frozen_gate_replayed=True,public_rejection_enforced=True,
         calibration_or_model_selection_on_reserves=False,components=len(doc['components']),
-        results_sha256=terminal['results_sha256'],freeze_sha256=sha256(protocol),
+        results_sha256=terminal['results_sha256'],freeze_sha256=protocol_digest,auditor_source_sha256=sha256(__file__),
         warning='Known-geometry within-Tycho experiment; does not verify real repeat-observation navigation accuracy.')
 
 

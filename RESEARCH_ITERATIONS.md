@@ -6,6 +6,14 @@ Add LoFTR to the exact rendered benchmark; expand training terrain; test fresh g
 
 Human annotation remains outside scope. Known render geometry supplies accuracy labels. Real orbital observations supply unverified diagnostics only. Original pilot inputs, results and method sources remain frozen.
 
+## Current validation stage — 30 October 2026
+
+The full development controls below have now completed: original RoMa1,032/1,152; tested MatchAnything4×995; modern4 pool1,067; expanded12 pool1,083; modern4+CNN1,101; expanded12+CNN1,103. The corresponding terminal checksums, input pixels and saved errors were audited. Entries marked running/prepared below retain their historical hypothesis-stage wording; these completed outcomes supersede those statuses.
+
+The standalone selected CNN and its strict development gate were publicly preregistered before reserve access in `reports/reserve_protocol_v1.json` at GitHub commit `b7f2e0fe24be08dac5c0e1201e9451b6a625d59f`. This primary experiment covers all64 reserve patches,12 footprint/acquisition components,9,216 positive cases and1,728 disjoint negatives. Both reserves are now consumed. Selection and calibration cannot return to them, even if the target fails. Full ensemble fresh validation is not included in this primary protocol.
+
+Independent of that within-Tycho physical-render experiment, known-warps of42 real orbital acquisitions cover three earlier source scenes without real-data fitting. Real repeat observations remain unverified diagnostics. Four externally laser-referenced NASA laboratory terrains provide actual sensor/illumination transfer diagnostics; unknown calibration uncertainty stays unknown and the strict gate's relighting failures are preserved. See the [current validation report](reports/RESEARCH_ITERATION_5.md).
+
 ## Data contract, frozen before new model outcomes
 
 `research_manifest_v1.json` selects 384 train and 64 development patches from the existing checksummed physical-render archive, plus two untouched reserves of 32 patches each. All nine Sun positions are retained. Selection uses metadata, fixed longitude bands, deterministic ordering and acquisition round-robin; it never uses matcher outcomes or image appearance. Entire acquisitions stay in one split. Cross-split footprints and a .03-degree buffer are checked. Reserve acquisitions and buffered footprints also exclude every previously evaluated physical and real Tycho sample.

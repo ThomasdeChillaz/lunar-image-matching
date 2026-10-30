@@ -4,7 +4,9 @@ A reproducible research project comparing classical and pretrained learned image
 
 **Question:** How do matching methods behave when illumination changes on the same lunar terrain?
 
-**Active research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [latest measured results](reports/RESEARCH_ITERATION_4.md). An original trained dense structural descriptor succeeds on **1,072/1,152 development pairs (93.06%)**, versus its initial weights 334, a no-motion-training control 994, the earlier image-selected hybrid 975 and pretrained LoFTR 704. It also returns **69/72 false non-overlap fits**, so confidence rejection remains essential. Training inputs and all 4,896 initial/trained ablation outcomes passed audits. Stronger-model combinations and the original-RoMa dense comparison are executing. Both geographic reserves remain untouched. These are development findings, not state-of-the-art or verified real-navigation claims. The [second iteration](reports/RESEARCH_ITERATION_2.md) preserves the earlier hybrid/cascade findings, and the [first iteration](reports/RESEARCH_ITERATION_1.md) preserves the fixed-translation results.
+**Active research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [validation hardening report](reports/RESEARCH_ITERATION_5.md). The development comparison completed: our standalone CNN **1,072/1,152 (93.06%)**, original RoMa **1,032 (89.58%)**, tested MatchAnything–ELoFTR4× **995 (86.37%)**, the baseline ensemble **1,083**, and the ensemble plus our CNN **1,103 (95.75%)**. These are development findings with different training/compute budgets, not current-SOTA conclusions. The [preregistered reserve protocol](reports/reserve_protocol_v1.json) fixes the standalone model, strict gate and all10,944 cases across12 footprint/acquisition groups before reserve access. Both reserves are now consumed by that evaluation and must never be reused as fresh data. The13-predictor ensemble remains development-only. Earlier reports preserve negative results and historical protocols.
+
+**Rejection is part of the output:** `match_terrain.py` returns `transform: null` when its frozen rule rejects a proposal. Ungated proposals are hidden unless explicitly requested. Real-photo controls retained334/336 correct known-warps and rejected84/84 different-scene pairs without real-data calibration. However, the NASA laboratory relighting test exposed a transfer failure: the strict rule rejected all8 fixed-camera pairs, including4 nominally correct raw fits. These distinct experiments do not establish orbital navigation accuracy.
 
 The project includes checksummed data acquisition, masked geospatial loading, NCC and SIFT baselines, pinned DISK + LightGlue inference, frozen region splits, quantitative evaluation, plots, an interactive offline viewer, a two-page PDF report, and an independent-checkpoint review tool.
 
@@ -46,6 +48,16 @@ python evaluate.py --split test --output runs/held-out
 Use `python reproduce.py --offline --output runs/offline` after assets and weights are cached. Missing or corrupt files produce explicit errors; learned matching never silently falls back to a classical method.
 
 ## Inspect results
+
+The read-only [current validation report](reports/validation_hardening.html) distinguishes fresh physical-render evaluation, known warps of real orbital photos, repeat-observation diagnostics, and external laser-reference laboratory measurements. It requires no landmark review.
+
+For the standalone gated matcher, first extract the published training capsule so `runs/contrastive-terrain-train-v1` exists, then run from this repository:
+
+```sh
+python match_terrain.py --reference reference128.png --query query128.png --reference-mask reference_valid.png --query-mask query_valid.png --output runs/my-alignment.json
+```
+
+Images and optional validity masks must be128×128 single-channel uint8. The frozen sources and checkpoint are verified before inference. A rejected result contains no usable transform; `--include-proposal` is an explicitly ungated research diagnostic. This rule has empirical evaluation results, not a deployment safety guarantee.
 
 The published pilot artifacts use the `lunar_` prefix: [report](lunar_REPORT.md), [PDF](lunar_REPORT.pdf), [per-pair measurements](lunar_results.csv), [summary](lunar_summary.json), and [environment/source hashes](lunar_environment.json).
 
@@ -175,7 +187,7 @@ The optional YOLOv9 integration retains GPL-3.0 terms. Its generated crater coor
 
 ## Repository guide
 
-The latest [development research report](reports/RESEARCH_ITERATION_2.md) records separate translation/rotation/scale/combined results, the image-selected hybrid and conditional confidence fallback. All methods use common native pixels and exact rendered geometry; the 975/1,152 hybrid successes and 857 strict retained-correct cascade results are development findings, not fresh-test or state-of-the-art claims. Both geographic reserves remain untouched. The report includes measured figures, full outcome capsules, source snapshots, licenses and audit/reproduction commands. Regenerate figures from the extracted completed runs with `python report_research_development.py`.
+The earlier [development research report](reports/RESEARCH_ITERATION_2.md) records separate translation/rotation/scale/combined results, the image-selected hybrid and conditional confidence fallback. Its975/1,152 hybrid successes and857 strict retained-correct cascade results remain development findings. The newer reserve experiment consumes both frozen reserves; none may be described as untouched for a future iteration. Reports include measured figures, full outcome capsules, source snapshots, licenses and audit/reproduction commands. Regenerate the earlier development figures with `python report_research_development.py`.
 
 [AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Original code is MIT licensed except the explicitly marked optional GPL-3.0 detector integration; third-party data and weights retain their own terms.
 
