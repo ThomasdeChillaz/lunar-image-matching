@@ -141,6 +141,7 @@ def score(manifest_path,executions,output):
             p=p[ma[ia[:,1],ia[:,0]]&mb[ib[:,1],ib[:,0]]]
             error=endpoint_error(row['transform'],truth,p)
         out.append(dict(case,**{k:v for k,v in row.items() if k not in case},error_px=error,
+            error_native_px=None if error is None else float(error*4.),native_pixels_per_benchmark_pixel=4.,
             correct=error is not None and error<=3 and not case['negative']))
     for method in {r['method'] for r in out}:
         for split in {r['split'] for r in out if r['method']==method}:

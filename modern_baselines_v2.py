@@ -79,6 +79,9 @@ class ModernMatcher:
             weights={p.name: sha256(p) for p in sorted(cache.glob('*')) if p.is_file()},
             settings={k: getattr(self.model, k) for k in ('H_lr','W_lr','H_hr','W_hr','bidirectional')
                       if hasattr(self.model, k)})
+        lock=json.loads(Path('reports/compact_baseline_lock_v2.json').read_text())['modern'][method]
+        for name,digest in lock['weights'].items():
+            if self.provenance['weights'].get(name)!=digest:raise ValueError('Pretrained author weight differs from frozen baseline lock: '+name)
 
     def sync(self):
         if self.device == 'mps':

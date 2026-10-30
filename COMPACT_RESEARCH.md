@@ -32,7 +32,10 @@ four model-selection, four calibration, and remaining components for training.
 Fail explicitly if the actual sample cannot support this contract.
 
 EXR values are ray distances, not optical-axis depth. Camera+depth geometry gives
-simulation references; all image predictions are scored at native128px. Three-
+simulation references. Inference and internal scoring use128px derived images;
+errors are also converted to the original512px source renders. The fixed3px
+benchmark tolerance is12 original source pixels, not3 source pixels. POLAR uses
+a1216px crop resized to128px, so its nominal3px tolerance is28.5 sensor pixels. Three-
 dimensional matching uses depth visibility and camera projection separately from
 partial-affine registration. The inspected camera NPZs contain no Sun angles:
 report source lighting-pair IDs rather than inventing angular separations.

@@ -63,6 +63,8 @@ def acquire(output='reports/compact_sensor_protocol_v2.json',root='data/polar/tr
 
 def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=None,source=None,
         device='cpu',dependency_dir=None):
+    import torch,cv2
+    torch.set_num_threads(2);cv2.setNumThreads(1)
     from compact_research import validate_freeze
     doc=validate_freeze(terrain_protocol,publication_commit)
     sensor=json.loads(Path(sensor_protocol).read_text())
@@ -84,6 +86,8 @@ def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=
         identity=np.array([[1.,0,0],[0,1.,0]])
         error=endpoint_error(found.matrix,identity,evaluation_points(a.shape,identity))
         rows.append(dict(case,method=method,features=features.tolist(),nominal_error_px=error,
+            nominal_error_native_px=None if error is None else float(error*1216/128),
+            native_pixels_per_benchmark_pixel=1216/128,
             nominal_within3px=error is not None and error<=3,accepted=accepted,
             deployed_transform=found.matrix.tolist() if accepted else None,
             original_frozen_accepted=original,bidirectional_ms=ms,
@@ -93,6 +97,8 @@ def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=
         raw_nominal_within3px=sum(r['nominal_within3px'] for r in rows),
         accepted_nominal_within3px=sum(r['accepted'] and r['nominal_within3px'] for r in rows),
         accepted_nominal_outside3px=sum(r['accepted'] and not r['nominal_within3px'] for r in rows),
+        original_gate_accepted_nominal_within3px=sum(bool(r['original_frozen_accepted']) and r['nominal_within3px'] for r in rows),
+        original_gate_accepted_nominal_outside3px=sum(bool(r['original_frozen_accepted']) and not r['nominal_within3px'] for r in rows),
         verified_navigation_accuracy=None))
     return rows
 

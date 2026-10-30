@@ -24,6 +24,9 @@ from matchers import sift
 SOURCES=['compact_research.py','compact_lunar.py','compact_confidence.py','train_compact_v2.py',
          'lunargeo_dataset.py','lunar_geometry_v2.py','modern_baselines_v2.py','matchers.py','geometry.py',
          'compact_sensor_transfer.py','baseline_infer_v2.py','raw_correspondences_v2.py']
+SOURCES+=['contrastive_terrain.py','confidence.py','structural_refinement.py','research_quality_gate.py',
+          'roma_matcher.py','matchanything_matcher.py','eloftr_matcher.py','loftr_matcher.py',
+          'polar_reference.py','dataset.py','synthetic.py','verify_compact_3d.py']
 FAMILIES=('translation','rotation','scale','combined')
 
 
@@ -212,6 +215,10 @@ def evaluate(manifest_path,output,method,model=None,split='model_selection',sour
                 query_points=None if found.query_points is None else found.query_points.tolist(),
                 support=found.support,reason=found.reason,bidirectional_ms=ms,original_frozen_accepted=original_accepted,
                 input_sha256={k:hashlib.sha256(v.tobytes()).hexdigest() for k,v in dict(reference=a,query=b,reference_mask=ma,query_mask=mb).items()})
+            native_scale=np.array(tiles[case['tile_id']]['source_size'][::-1])/np.array(a.shape[::-1])
+            if not np.allclose(native_scale,native_scale[0]):raise ValueError('Scalar pixel errors require isotropic source resizing')
+            row.update(error_native_px=None if error is None else float(error*native_scale[0]),
+                native_pixels_per_benchmark_pixel=float(native_scale[0]))
             if split=='test':
                 row['accepted']=accepts(policy,{'features':row['features']})
                 row['deployed_transform']=row['transform'] if row['accepted'] else None
@@ -300,12 +307,20 @@ def stereo_evaluate(manifest_path,output,method,model=None,split='model_selectio
         ranges=data['depth_a'][safe[:,1],safe[:,0]]
         reference_valid &= np.isfinite(ranges)&(ranges>0)
         map_points=world_points(native[reference_valid],ranges[reference_valid],ka,pa_world)
+        cv2.setRNGSeed(20261030)
         pose=estimate_pose(map_points,(np.asarray(pb)[reference_valid]+.5)*factor-.5,kb) if len(map_points)>=6 else None
         stats=None if pose is None else pose_error(pose,pb_world)
+        finite_depth=data['depth_a'][np.isfinite(data['depth_a'])&(data['depth_a']>0)]
+        reference_range=float(np.median(finite_depth)) if len(finite_depth) else None
         row=dict(case,method=method,point_source=point_source,returned_matches=len(pa),
             reference_scorable_matches=int(valid.sum()),correct_correspondences=int((errors<=3).sum()),
             median_correspondence_error_px=None if not len(errors) else float(np.median(errors)),
+            median_correspondence_error_native_px=None if not len(errors) else float(np.median(errors)*factor[0]),
+            native_pixels_per_benchmark_pixel=float(factor[0]),
             pose_error=stats,pose_estimated=pose is not None,inference_ms=elapsed,
+            estimated_cam2world=None if pose is None else pose.tolist(),reference_median_range_m=reference_range,
+            pose_within_secondary_threshold=bool(stats is not None and reference_range is not None and
+                stats['rotation_deg']<=2 and stats['translation_m']<=.01*reference_range),
             reference_points=np.asarray(pa).tolist(),query_points=np.asarray(pb).tolist(),
             scorable_mask=valid.tolist(),reference_target_points=expected.tolist(),
             warning='Rendered geometry. Correspondence coverage differs; raw and partial-affine-filtered frontends must not be pooled as identical3D protocols.')
@@ -314,7 +329,8 @@ def stereo_evaluate(manifest_path,output,method,model=None,split='model_selectio
     write_new(output/'results.json',rows)
     write_new(output/'summary.json',dict(method=method,split=split,cases=len(rows),poses_estimated=sum(r['pose_estimated'] for r in rows),
         returned_matches=sum(r['returned_matches'] for r in rows),scorable_matches=sum(r['reference_scorable_matches'] for r in rows),
-        correct_correspondences=sum(r['correct_correspondences'] for r in rows)))
+        correct_correspondences=sum(r['correct_correspondences'] for r in rows),
+        poses_within_secondary_threshold=sum(r['pose_within_secondary_threshold'] for r in rows)))
     write_new(output/'COMPLETE.json',dict(results_sha256=sha256(output/'results.json'),frozen_inputs_sha256=sha256(output/'frozen_inputs.json')))
     return rows
 
@@ -325,11 +341,20 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
         manifest_path=str(manifest_path),manifest_sha256=sha256(manifest_path),
         models={str(p):sha256(Path(p)/'selected.pt') for p in models},
         policies={str(p):sha256(p) for p in policies},source_sha256={p:sha256(p) for p in SOURCES},
+        comparison_assets={p:sha256(p) for p in ['runs/contrastive-terrain-train-v1/selected.pt',
+            'runs/contrastive-terrain-train-v1/training.json','runs/contrastive-terrain-train-v1/COMPLETE.json',
+            'reports/reserve_protocol_v1.json','reports/compact_baseline_lock_v2.json',
+            'reports/compact_selection_v2.json','roma_model_lock.json','matchanything_model_lock.json']},
         policy_index={(json.loads(Path(p).read_text())['model'] or json.loads(Path(p).read_text())['method']):str(p) for p in policies},
         cases=case_plan(manifest,'test'),stereo_cases=stereo_plan(manifest,'test'),
         common_cases=common_plan(manifest,'test'),sensor_protocol=str(sensor_protocol),sensor_protocol_sha256=sha256(sensor_protocol),
         success_targets=dict(correct_acceptance_gain_pp=10.,max_accepted_error=.01,max_negative_acceptance=.01,
             competitive_accuracy_tolerance_pp=3.,cpu_speedup=5.),
+        secondary_3d_metric=dict(rotation_deg_max=2.,translation_max_fraction_reference_ray_range=.01,
+            note='Declared simulated pose diagnostic, not a spacecraft requirement or verified navigation accuracy.'),
+        pixel_units=dict(benchmark_size=[128,128],render_source_size=[512,512],
+            registration_threshold_benchmark_px=3.,registration_threshold_native_px=12.,
+            note='128px inference benchmark; error_px is benchmark pixels, error_native_px maps to original512px renders. POLAR1216px crop has9.5 native pixels per benchmark pixel.'),
         seeds=[20261030,20261031,20261032],
         scope='South-pole physical renders; all final results consumed once. Sensor reference uncertainty remains separate.',
         negative_dependency='Negative pairs reuse both terrain endpoints; report component dependence, not independent-binomial certainty.')
@@ -342,7 +367,7 @@ def validate_freeze(path,commit):
     public=f'https://raw.githubusercontent.com/ThomasdeChillaz/lunar-image-matching/{commit}/{path.as_posix()}'
     with urllib.request.urlopen(public,timeout=45) as response:published=response.read()
     if hashlib.sha256(published).hexdigest()!=sha256(path):raise ValueError('Public preregistration bytes differ')
-    for name,digest in {**doc['source_sha256'],**doc['policies'],doc['manifest_path']:doc['manifest_sha256']}.items():
+    for name,digest in {**doc['source_sha256'],**doc['policies'],**doc.get('comparison_assets',{}),doc['manifest_path']:doc['manifest_sha256']}.items():
         if sha256(name)!=digest:raise ValueError('Frozen input/source/policy changed: '+name)
     for name,digest in doc['models'].items():
         if sha256(Path(name)/'selected.pt')!=digest:raise ValueError('Frozen checkpoint changed')
@@ -374,6 +399,11 @@ def audit(run,output):
         if (error is None)!=(row['error_px'] is None) or (error is not None and not np.isclose(error,row['error_px'],atol=1e-6)):
             raise ValueError('Independent analytic endpoint replay differs')
         if row['correct']!=bool(error is not None and error<=3 and not row['negative']):raise ValueError('Correctness differs')
+        if 'error_native_px' in row:
+            scale=np.array(tiles[case['tile_id']]['source_size'][::-1])/np.array(a.shape[::-1])
+            native_error=None if error is None else error*scale[0]
+            if (native_error is None)!=(row['error_native_px'] is None) or (native_error is not None and not np.isclose(native_error,row['error_native_px'])):
+                raise ValueError('Native source pixel conversion differs')
     result=dict(passed=True,rows=len(rows),source_arrays_replayed=True,independent_analytic_error=True,
                 results_sha256=complete['results_sha256'])
     write_new(output,result);return result
