@@ -10,9 +10,9 @@ Acquired all three LunarGeo south-pole archives. The selected dataset contains28
 
 All four2000-step ablations completed. Development raw successes: expanded93/96, reliability92/96, hard negatives89/96, multiscale87/96. The declared rule selected the28,272-parameter expanded control. All three predefined seeds20261030/31/32 completed; every saved development alignment and confidence decision passed exact numerical replay. Each seed retains12/12 correct calibration positives with0/12 nonoverlap accepted; that small sample gives no1% deployment guarantee.
 
-Actual author/common pretrained controls pass for LoMa-B, LoMa-R and RoMa v2 on free Linux CPU. The initial blind comparison retained18 completed workers; unbounded official-weight header stalls required cancellation/recovery of22 unfinished workers. Exact weights/settings remain fixed. Candidate checkpoints and data are published in the compact-v2-rc1 prerelease. No final-test or fresh POLAR inference has yet run.
+Historical author/common translation controls passed for LoMa-B, LoMa-R and RoMa v2 on free Linux CPU. A later audit caught an author-edge versus integer-center conversion offset; these remain coordinate-v1 diagnostics. All affected development cases and controls are being rerun with the corrected conversion before final freezing. Original RoMa/MatchAnything are unaffected. The initial blind comparison retained18 completed workers; unbounded official-weight header stalls required cancellation/recovery of22 unfinished workers. Exact weights/settings remain fixed. Candidate checkpoints and data are published in the compact-v2-rc1 prerelease. No final-test or fresh POLAR inference has yet run.
 
-Validation:126 tests passed/4 optional skipped, plus a fresh20-summary procedural smoke. Final baseline calibration, public test freeze, evaluation, brief/demo/outreach draft and final release remain pending. Do not present old development ensemble results as the new candidate result.
+Validation:127 tests passed/4 optional skipped, plus a fresh20-summary procedural smoke. Final baseline calibration, public test freeze, evaluation, brief/demo/outreach draft and final release remain pending. Do not present old development ensemble results as the new candidate result.
 
 ## Validation hardening — 30 October 2026
 

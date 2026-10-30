@@ -14,6 +14,23 @@ from lunargeo_dataset import write_new
 import numpy as np
 
 
+def verify_aggregate(rows,accepted,reported):
+    positive=sum(not r['negative'] for r in rows);negative=len(rows)-positive
+    good=sum(bool(a) and r['correct'] and not r['negative'] for r,a in zip(rows,accepted))
+    wrong=sum(bool(a) and not(r['correct'] and not r['negative']) for r,a in zip(rows,accepted))
+    false_nonoverlap=sum(bool(a) and r['negative'] for r,a in zip(rows,accepted))
+    raw=sum(r['correct'] and not r['negative'] for r in rows)
+    expected=dict(positives=positive,negatives=negative,correct_accepted=good,wrong_accepted=wrong,
+        negative_accepted=false_nonoverlap,correct_acceptance=good/max(positive,1),
+        accepted_error=wrong/(good+wrong) if good+wrong else None,
+        negative_acceptance=false_nonoverlap/max(negative,1),raw_correct=raw,raw_success=raw/max(positive,1))
+    for name,value in expected.items():
+        other=reported[name]
+        if (value is None)!=(other is None) or (value is not None and not np.isclose(value,other,atol=1e-12)):
+            raise ValueError('Independent aggregate differs: '+name)
+    return expected
+
+
 def install_capsule(path,expected):
     if sha256(path)!=expected:raise ValueError('Experiment capsule checksum differs')
     with zipfile.ZipFile(path) as archive:
@@ -90,9 +107,33 @@ def replay(output,index_path='reports/compact_run_index_v2.json'):
             accepted=accepts(policy,{'features':row['features']})
             if accepted!=row['accepted'] or (row['deployed_transform'] is None)!=(not accepted):
                 raise ValueError('Sensor frozen rejection behavior differs')
+            if error is not None and not np.isclose(error*1216/128,row['nominal_error_native_px']):
+                raise ValueError('Sensor native-pixel conversion differs')
         completed.append(dict(track='nominal_sensor',run=run,rows=len(rows)))
+    aggregate_checks=0
+    if index.get('results_report'):
+        report=json.loads(Path(index['results_report']).read_text())
+        all_rows={}
+        for label,item in index['aggregate_full'].items():
+            rows=json.loads(Path(item['run'],'results.json').read_text())
+            policy=json.loads(Path(protocol['policy_index'][item['policy_key']]).read_text())
+            accepted=[bool(r['original_frozen_accepted']) if item.get('original_gate') else accepts(policy,{'features':r['features']}) for r in rows]
+            verify_aggregate(rows,accepted,report['full'][label]);aggregate_checks+=1
+            all_rows[label]=(rows,accepted)
+        common_ids={c['pair_id'] for c in protocol['common_cases']}
+        for label,item in index['aggregate_common'].items():
+            rows=json.loads(Path(item['run'],'results.json').read_text())
+            rows=[r for r in rows if r['pair_id'] in common_ids]
+            if {r['pair_id'] for r in rows}!=common_ids:raise ValueError('Aggregate common case coverage differs')
+            policy=json.loads(Path(protocol['policy_index'][item['policy_key']]).read_text())
+            verify_aggregate(rows,[accepts(policy,{'features':r['features']}) for r in rows],report['common'][label])
+            aggregate_checks+=1
+        primary=report['full']['compact-20261030'];original=report['full']['original-frozen']
+        gain=100*(primary['correct_accepted']-original['correct_accepted'])/primary['positives']
+        if not np.isclose(gain,report['paired_gain']['gain_pp']):raise ValueError('Aggregate paired gain differs')
     result=dict(passed=True,protocol_sha256=sha256(index['protocol']),runs=completed,
         confidence_policies_replayed=len(index['confidence']),new_model_inference=False,
+        independently_verified_aggregate_tables=aggregate_checks,
         verified_real_navigation_accuracy=None)
     write_new(output,result);return result
 

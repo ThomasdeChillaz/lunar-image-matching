@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import platform
 import resource
@@ -57,18 +58,31 @@ def infer(package,output,method,source=None,shard=0,shards=1,control_model=None)
     output=Path(output)
     if output.exists():raise FileExistsError(output)
     output.mkdir(parents=True)
+    hardware=dict(machine=platform.machine(),processor=platform.processor(),logical_cpus=os.cpu_count())
+    if Path('/proc/cpuinfo').exists():
+        hardware['cpu_models']=sorted({line.split(':',1)[1].strip() for line in Path('/proc/cpuinfo').read_text().splitlines() if line.startswith('model name')})
+    write_new(output/'STARTED.json',dict(method=method,hardware=hardware,cpu_threads=torch.get_num_threads(),
+        package_sha256=sha256(package),source_sha256=sha256(__file__)))
     with zipfile.ZipFile(package) as archive:
         doc=json.loads(archive.read('inputs.json'))
         cases=doc['cases'][shard::shards]
-        matcher=matcher_for(method,source=source,device='cpu')
+        print('Loading exact pinned model',method,flush=True)
+        initialized=perf_counter();matcher=matcher_for(method,source=source,device='cpu')
+        initialization_ms=(perf_counter()-initialized)*1000
+        print('Model ready',method,round(initialization_ms),'ms',flush=True)
         torch.set_num_threads(2)
         from synthetic import texture
         warm=texture(20261030,128);matcher(warm,warm)
+        print('Warmup complete',method,flush=True)
         truth=np.array([[1.,0,8.],[0,1.,-4.]])
         shifted=cv2.warpAffine(warm,truth,(128,128))
         control=matcher(warm,shifted)
         control_error=endpoint_error(control.matrix,truth,evaluation_points(warm.shape,truth))
         if control_error is None or control_error>3:raise ValueError('Actual pretrained known-transform control failed')
+        blank=matcher(np.zeros_like(warm),np.zeros_like(warm))
+        invalid=matcher(warm,shifted,np.zeros_like(warm,bool),np.zeros_like(warm,bool))
+        if blank.matrix is not None or invalid.matrix is not None:raise ValueError('Blank/invalid-input controls failed')
+        print('Known-transform control passed',method,control_error,flush=True)
         control=None
         if control_model:
             from compact_lunar import CompactMatcher
@@ -76,12 +90,14 @@ def infer(package,output,method,source=None,shard=0,shards=1,control_model=None)
             control(warm,warm)
         rows=[];control_rows=[]
         for number,case in enumerate(cases):
+            print(method,'starting blind case',number+1,'/',len(cases),flush=True)
             content=archive.read(case['member'])
             if hashlib.sha256(content).hexdigest()!=case['sha256']:raise ValueError('Native input package changed')
             with np.load(io.BytesIO(content),allow_pickle=False) as z:
                 a,b,ma,mb=[z[n] for n in ('reference','query','reference_mask','query_mask')]
             start=perf_counter();cv2.setRNGSeed(20261030);forward=matcher(a,b,ma,mb)
             extra=dict(getattr(matcher,'last_evidence',{}))
+            raw_a,raw_b=getattr(matcher,'all_points',(None,None))
             cv2.setRNGSeed(20261030);reverse=matcher(b,a,mb,ma)
             features=evidence_vector(forward,a.shape,extra,reverse)
             rows.append(dict(pair_id=case['pair_id'],split=case['split'],component=case['component'],
@@ -89,6 +105,8 @@ def infer(package,output,method,source=None,shard=0,shards=1,control_model=None)
                 reverse_transform=None if reverse.matrix is None else reverse.matrix.tolist(),
                 reference_points=None if forward.reference_points is None else forward.reference_points.tolist(),
                 query_points=None if forward.query_points is None else forward.query_points.tolist(),
+                raw_reference_points=None if raw_a is None else np.asarray(raw_a).tolist(),
+                raw_query_points=None if raw_b is None else np.asarray(raw_b).tolist(),
                 support=forward.support,reason=forward.reason,features=features.tolist(),
                 bidirectional_ms=(perf_counter()-start)*1000,input_sha256=case['input_sha256']))
             if control is not None:
@@ -108,12 +126,14 @@ def infer(package,output,method,source=None,shard=0,shards=1,control_model=None)
             package_sha256=sha256(package),source_sha256=sha256(__file__),shard=shard,shards=shards,
             method_provenance=getattr(matcher,'provenance',None),torch=torch.__version__,cpu_threads=torch.get_num_threads(),
             software_control_endpoint_px=control_error,platform=platform.platform(),
+            software_invalid_controls_passed=True,
+            hardware=hardware,initialization_ms=initialization_ms,
             peak_rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
             peak_rss_unit='bytes' if platform.system()=='Darwin' else 'KiB'))
     return rows
 
 
-def score(manifest_path,executions,output):
+def score(manifest_path,executions,output,allow_partial=False):
     from compact_research import common_plan,controlled_inputs,validate_manifest
     manifest=validate_manifest(json.loads(Path(manifest_path).read_text()),True)
     output=Path(output)
@@ -146,20 +166,28 @@ def score(manifest_path,executions,output):
         out.append(dict(case,**{k:v for k,v in row.items() if k not in case},error_px=error,
             error_native_px=None if error is None else float(error*native_scale[0]),native_pixels_per_benchmark_pixel=float(native_scale[0]),
             correct=error is not None and error<=3 and not case['negative']))
+    completion=[]
     for method in {r['method'] for r in out}:
         for split in {r['split'] for r in out if r['method']==method}:
             selected=[r for r in out if r['method']==method and r['split']==split]
             order={c['pair_id']:i for i,c in enumerate(common_plan(manifest,split))}
             selected.sort(key=lambda r:order[r['pair_id']])
-            if {r['pair_id'] for r in selected}!={c['pair_id'] for c in common_plan(manifest,split)}:
+            expected=common_plan(manifest,split)
+            observed={r['pair_id'] for r in selected}
+            complete=observed=={c['pair_id'] for c in expected}
+            if not complete and not allow_partial:
                 raise ValueError('Incomplete common baseline case coverage')
             folder=output/method/split;folder.mkdir(parents=True)
             write_new(folder/'results.json',selected)
             write_new(folder/'frozen_inputs.json',dict(manifest_path=str(manifest_path),manifest_sha256=sha256(manifest_path),
-                method=method,model=None,split=split,cases=common_plan(manifest,split),origins=origins))
-            write_new(folder/'COMPLETE.json',dict(results_sha256=sha256(folder/'results.json'),frozen_inputs_sha256=sha256(folder/'frozen_inputs.json')))
+                method=method,model=None,split=split,cases=[c for c in expected if c['pair_id'] in observed],
+                expected_cases=expected,complete_common_cases=complete,origins=origins))
+            marker='COMPLETE.json' if complete else 'PARTIAL.json'
+            write_new(folder/marker,dict(results_sha256=sha256(folder/'results.json'),frozen_inputs_sha256=sha256(folder/'frozen_inputs.json'),
+                observed_cases=len(selected),expected_cases=len(expected),complete_common_cases=complete))
+            completion.append(dict(method=method,split=split,complete=complete,observed=len(selected),expected=len(expected)))
     write_new(output/'audit.json',dict(passed=True,blind_predictions=len(out),native_pixels_verified=True,
-        results_case_coverage_verified=True,origins=origins))
+        results_case_coverage_verified=True,all_method_splits_complete=all(c['complete'] for c in completion),completion=completion,origins=origins))
     return out
 
 
@@ -172,6 +200,7 @@ if __name__=='__main__':
     b.add_argument('--source');b.add_argument('--shard',type=int,default=0);b.add_argument('--shards',type=int,default=1)
     b.add_argument('--control-model')
     c=sub.add_parser('score');c.add_argument('--manifest',required=True);c.add_argument('--executions',required=True);c.add_argument('--output',required=True)
+    c.add_argument('--allow-partial',action='store_true',help='Preserve incomplete compute-limited diagnostics with PARTIAL markers, never as complete comparisons')
     args=vars(p.parse_args());action=args.pop('action')
     if action=='pack':args['manifest_path']=args.pop('manifest');pack(**args)
     elif action=='score':args['manifest_path']=args.pop('manifest');score(**args)

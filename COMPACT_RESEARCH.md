@@ -136,3 +136,26 @@ independence. This explicit shortfall note was recorded **after training and
 before final inference**; do not call it a pretraining preregistration. The
 actual grouping and common-renderer dependence were already recorded in the
 dataset inventory. See reports/compact_data_limitations_v2.json.
+
+Point targets and uncertainty support are reported separately. Paired positive
+accuracy intervals use2,000 spatial-component bootstrap resamples with fixed
+seed20261030. A gain interval spanning zero remains inconclusive. For the speed
+tradeoff, also compute a same-job accuracy interval from the paired compact
+controls: the point target is descriptive unless its lower accuracy bound is
+at least minus3 percentage points. These remain exploratory grouped intervals,
+not guaranteed independent components or deployment-risk certification.
+
+## Native-coordinate audit amendment, before final inference
+
+The author LoMa and RoMa-v2 APIs return edge coordinates: W*(normalized+1)/2.
+Convert to our integer-centered source pixels using `author_pixel/scale -0.5`.
+The earlier extra internal+0.5 offset was incorrect. Pure translations can hide
+this common-origin error; a rotation/scale control now checks exact centers at
+128/504/512 resolutions. Preserve old affected outputs as coordinate-v1 diagnostics;
+rerun LoMa-B/R and RoMa-v2 development comparisons and recalibrate their rules
+before final freezing. Original RoMa, MatchAnything, SIFT and our CNN are unaffected.
+No new final-test or fresh POLAR inference had run when this correction was made.
+
+The free-CPU modern comparison covers the controlled common subset. The secondary
+raw3D/pose track includes compact, original CNN and SIFT; no modern3D ranking is
+claimed. Raw3D correspondence coverage is reported separately from pose success.

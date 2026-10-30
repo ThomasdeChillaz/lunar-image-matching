@@ -194,6 +194,10 @@ def evaluate(manifest_path,output,method,model=None,split='model_selection',sour
     frozen=dict(manifest_path=str(manifest_path),manifest_sha256=sha256(manifest_path),method=method,
         model=None if model is None else str(model),split=split,cases=cases,device=device,common_subset=common,
         source_sha256={p:sha256(p) for p in SOURCES},started_utc=datetime.now(timezone.utc).isoformat())
+    if split=='test':
+        # Preserve the exact public rule as part of this run's own provenance.
+        frozen.update(protocol_path=str(protocol),protocol_sha256=sha256(protocol),publication_commit=publication_commit,
+            policy_path=doc['policy_index'][key],policy_sha256=sha256(doc['policy_index'][key]))
     write_new(output/'frozen_inputs.json',frozen)
     if split=='test':
         marker=Path(protocol).with_suffix('.test-started.json')
@@ -353,12 +357,17 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
             'runs/contrastive-terrain-train-v1/training.json','runs/contrastive-terrain-train-v1/COMPLETE.json',
             'reports/reserve_protocol_v1.json','reports/compact_baseline_lock_v2.json',
             'reports/compact_selection_v2.json','reports/compact_data_limitations_v2.json',
+            'reports/compact_coordinate_audit_v2.json',
             'roma_model_lock.json','matchanything_model_lock.json']},
         policy_index={(json.loads(Path(p).read_text())['model'] or json.loads(Path(p).read_text())['method']):str(p) for p in policies},
         cases=case_plan(manifest,'test'),stereo_cases=stereo_plan(manifest,'test'),
+        stereo_methods=['compact','original','sift'],
+        modern_3d_status='Not run within the free CPU budget; modern comparison is the declared controlled common subset, not a modern3D ranking.',
         common_cases=common_plan(manifest,'test'),sensor_protocol=str(sensor_protocol),sensor_protocol_sha256=sha256(sensor_protocol),
         success_targets=dict(correct_acceptance_gain_pp=10.,max_accepted_error=.01,max_negative_acceptance=.01,
-            competitive_accuracy_tolerance_pp=3.,cpu_speedup=5.),
+            competitive_accuracy_tolerance_pp=3.,cpu_speedup=5.,
+            uncertainty='Exploratory paired spatial-component bootstrap,2000 resamples,seed20261030; shared terrain/renderer/unknown trajectory dependence remains.',
+            interpretation='Point targets and grouped support are separate. A gain interval spanning zero is inconclusive; a speed/noninferiority claim needs its paired lower accuracy bound at least minus3points.'),
         secondary_3d_metric=dict(rotation_deg_max=2.,translation_max_fraction_reference_ray_range=.01,
             note='Declared simulated pose diagnostic, not a spacecraft requirement or verified navigation accuracy.'),
         pixel_units=dict(benchmark_size=[128,128],render_source_size=[512,512],
@@ -394,6 +403,11 @@ def audit(run,output):
     if sha256(frozen['manifest_path'])!=frozen['manifest_sha256']:raise ValueError('Dataset changed')
     tiles={t['tile_id']:t for t in manifest['tiles']};cache={}
     rows=json.loads((run/'results.json').read_text())
+    policy=None
+    if frozen.get('protocol_path'):
+        if sha256(frozen['protocol_path'])!=frozen['protocol_sha256'] or sha256(frozen['policy_path'])!=frozen['policy_sha256']:
+            raise ValueError('Final public protocol or decision rule differs')
+        policy=json.loads(Path(frozen['policy_path']).read_text())
     if len(rows)!=len(frozen['cases']) or len({r['pair_id'] for r in rows})!=len(rows):raise ValueError('Incomplete/repeated outcomes')
     for row,case in zip(rows,frozen['cases']):
         if row['pair_id']!=case['pair_id']:raise ValueError('Case order differs')
@@ -411,6 +425,27 @@ def audit(run,output):
         if (error is None)!=(row['error_px'] is None) or (error is not None and not np.isclose(error,row['error_px'],atol=1e-6)):
             raise ValueError('Independent analytic endpoint replay differs')
         if row['correct']!=bool(error is not None and error<=3 and not row['negative']):raise ValueError('Correctness differs')
+        if policy is not None:
+            accepted=accepts(policy,{'features':row['features']})
+            if row['accepted']!=accepted or row['deployed_transform']!=(row['transform'] if accepted else None):
+                raise ValueError('Frozen confidence or public null-transform replay differs')
+            if accepted and row['transform'] is None:raise ValueError('Missing raw fit cannot be accepted')
+        if row['method']=='original':
+            from matchers import Match
+            from confidence import diagnostics
+            from structural_refinement import AlignmentObjective
+            from research_quality_gate import accepts as original_accepts
+            forward=Match(matrix=None if row['transform'] is None else np.array(row['transform']),
+                reference_points=None if row['reference_points'] is None else np.array(row['reference_points']),
+                query_points=None if row['query_points'] is None else np.array(row['query_points']),support=row['support'])
+            reverse=Match(matrix=None if row['reverse_transform'] is None else np.array(row['reverse_transform']))
+            quality=AlignmentObjective(a,b,ma,mb).quality(forward.matrix)
+            evidence=dict(estimated=forward.matrix is not None,
+                selection_quality={} if quality is None else dict(quality,agreement_fraction=0.,agreeing_other_families=[]),
+                **diagnostics(forward,reverse,a.shape))
+            original_policy=json.loads(Path('reports/reserve_protocol_v1.json').read_text())['policy']
+            if original_accepts(evidence,original_policy)!=row['original_frozen_accepted']:
+                raise ValueError('Original frozen-gate replay differs')
         if 'error_native_px' in row:
             scale=np.array(tiles[case['tile_id']]['source_size'][::-1])/np.array(a.shape[::-1])
             native_error=None if error is None else error*scale[0]

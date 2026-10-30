@@ -44,8 +44,14 @@ def validate_pixels(image, mask):
 
 
 def native_points(points, source_shape, internal_shape):
+    """Author edge coordinates -> OpenCV integer-centered source pixels.
+
+    Both pinned author APIs return W*(normalized_x+1)/2: the first pixel center
+    is0.5, not0. Subtract the source half-pixel AFTER inverse scaling. Adding
+    another internal half-pixel would bias rotation/scale and depth geometry.
+    """
     scale = np.array(internal_shape[::-1])/np.array(source_shape[::-1])
-    return (np.asarray(points, float)+.5)/scale-.5
+    return np.asarray(points, float)/scale-.5
 
 
 class ModernMatcher:
@@ -76,6 +82,7 @@ class ModernMatcher:
         self.provenance.update(method=method, profile=profile, device=device,
             torch=torch.__version__, opencv=cv2.__version__,
             common_input_size=None if profile=='author' else (512 if method=='romav2' else 504),
+            coordinate_convention='Author edge coordinates / resize scale -0.5 = native integer pixel centers',
             weights={p.name: sha256(p) for p in sorted(cache.glob('*')) if p.is_file()},
             settings={k: getattr(self.model, k) for k in ('H_lr','W_lr','H_hr','W_hr','bidirectional')
                       if hasattr(self.model, k)})

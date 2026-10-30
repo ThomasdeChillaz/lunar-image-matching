@@ -15,7 +15,7 @@ import numpy as np
 from compact_confidence import accepts,counts,scores
 from dataset import sha256
 
-NAMES={'loma_b':'LoMa-B','loma_r':'LoMa-R','romav2':'RoMa v2 (fast512)',
+NAMES={'loma_b':'LoMa-B (504)','loma_r':'LoMa-R (504)','romav2':'RoMa v2 (fast512)',
        'roma':'Original RoMa','matchanything':'MatchAnything4x','sift':'SIFT','original':'Original CNN, new confidence'}
 
 
@@ -109,13 +109,16 @@ def same_host_timing(executions,manifest,policy,checkpoint_sha):
                 p=p[ma[ia[:,1],ia[:,0]]&mb[ib[:,1],ib[:,0]]]
                 error=endpoint_error(control['transform'],truth,p)
             results.setdefault(method,[]).append(dict(pair_id=row['pair_id'],
+                component=case['component'],
                 negative=case['negative'],correct=error is not None and error<=3 and not case['negative'],
                 accepted=accepts(policy,{'features':control['features']}),
                 baseline_ms=row['bidirectional_ms'],compact_ms=control['same_host_bidirectional_ms'],
                 ratio=row['bidirectional_ms']/max(control['same_host_bidirectional_ms'],1e-9)))
-    if any({r['pair_id'] for r in rows}!=set(cases) or len(rows)!=len(cases) for rows in results.values()):
-        raise ValueError('Same-host timing controls need all declared common cases exactly once')
-    return {method:dict(cases=len(rows),compact_same_host_quality=metrics(rows),median_baseline_ms=float(np.median([r['baseline_ms'] for r in rows])),
+    if any(len({r['pair_id'] for r in rows})!=len(rows) for rows in results.values()):
+        raise ValueError('Repeated same-host timing cases')
+    return {method:dict(cases=len(rows),expected_cases=len(cases),complete_common_cases={r['pair_id'] for r in rows}==set(cases),compact_same_host_quality=metrics(rows),
+        compact_same_host_cases=[{k:r[k] for k in ('pair_id','component','negative','correct','accepted')} for r in rows],
+        median_baseline_ms=float(np.median([r['baseline_ms'] for r in rows])),
         median_compact_ms=float(np.median([r['compact_ms'] for r in rows])),
         median_paired_speedup=float(np.median([r['ratio'] for r in rows]))) for method,rows in results.items()}
 
@@ -230,7 +233,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         strongest=max(eligible,key=lambda m:metrics(common[m])['correct_acceptance'])
         candidate=metrics(common['compact']);baseline=metrics(common[strongest])
         delta=100*(candidate['correct_acceptance']-baseline['correct_acceptance'])
-        cpu=timing.get(strongest,{}).get('median_paired_speedup')
+        cpu=timing.get(strongest,{}).get('median_paired_speedup') if timing.get(strongest,{}).get('complete_common_cases') else None
         same_host=timing.get(strongest,{}).get('compact_same_host_quality')
         speed_case=bool(same_host is not None and same_host['accepted_error'] is not None and
             same_host['accepted_error']<=.01 and same_host['negative_acceptance']<=.01 and
@@ -240,6 +243,13 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
             paired_cpu_speedup=cpu,compact_same_host_quality=same_host,point_target_met=bool(budget and (delta>0 or speed_case)),
             uncertainty=paired_interval(common['compact'],common[strongest]),
             warning='Small common benchmark; no universal SOTA conclusion. A gain interval spanning zero is inconclusive.')
+        own_interval=competitive['uncertainty']['exploratory_component_bootstrap95_pp']
+        speed_interval=None
+        if timing.get(strongest,{}).get('complete_common_cases'):
+            speed_interval=paired_interval(timing[strongest]['compact_same_host_cases'],common[strongest])
+        competitive['same_host_accuracy_uncertainty']=speed_interval
+        competitive['exploratory_support']=bool(budget and ((delta>0 and own_interval[0]>0) or
+            (speed_case and speed_interval is not None and speed_interval['exploratory_component_bootstrap95_pp'][0]>=-3)))
     targets['competitive_value']=None if competitive is None else competitive['point_target_met']
     sensors={}
     for method in ('compact','original','sift'):
@@ -261,6 +271,16 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
     for method in ('compact','original','sift'):
         path=Path('runs')/('compact-v2-'+method+'-3d-test')/'summary.json'
         if path.exists():geometry[method]=read(path)
+    completion={}
+    for method in ('loma_b','loma_r','romav2','roma','matchanything'):
+        path=Path(modern_directory)/method/'test'
+        if method in common:completion[method]=dict(complete=True,observed=72,planned=72)
+        elif (path/'PARTIAL.json').exists():
+            rows=read(path/'results.json')
+            completion[method]=dict(complete=False,observed=len(rows),planned=72,
+                known_positive_cases=sum(not r['negative'] for r in rows),raw_correct=sum(r['correct'] for r in rows),
+                warning='Compute-limited subset, excluded from the complete common comparison.')
+        else:completion[method]=dict(complete=False,observed=0,planned=72,warning='Final comparison unavailable; see recorded acquisition/execution failures.')
     manifest=read(protocol['manifest_path'])
     tiles={t['tile_id']:t for t in manifest['tiles']}
     from compact_research import controlled_inputs
@@ -280,7 +300,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
     strata={category:{label:metrics(rows) for label,rows in groups.items()} for category,groups in stratified.items()}
     evidence=dict(schema_version=2,created_utc=datetime.now(timezone.utc).isoformat(),selected=selected,
         protocol_sha256=sha256(protocol_path),dataset=read(protocol['manifest_path'])['components_by_split'],
-        full=full_stats,common={method:metrics(rows) for method,rows in common.items()},
+        full=full_stats,baseline_completion=completion,common={method:metrics(rows) for method,rows in common.items()},
         paired_gain=comparison,targets=targets,competitive_comparison=competitive,
         paired_common_comparisons={m:paired_interval(common['compact'],rows) for m,rows in common.items() if m!='compact'},
         same_host_cpu=timing,baseline_resources=resource_table,sensor_nominal=sensors,
@@ -311,14 +331,14 @@ def make_markdown(e):
     lines=['# Compact lunar matching: frozen south-pole study','',
         '**Question:** Can a compact illumination-aware matcher retain more correct alignments while rejecting incorrect outputs?',
         '',f"Selected configuration: **{e['selected']['selected_variant']}**; primary seed20261030, with both other predefined seeds reported.",
-        '', '## Full frozen render evaluation','',
+        '', 'Inference uses128px derived images. A correct render alignment has median error at most3 input pixels, equivalent to12 original512px source pixels. This is a coarse-registration criterion.','', '## Full frozen render evaluation','',
         '| Method | Correctly accepted positives | Incorrect accepted outputs | Accepted nonoverlap |',
         '|---|---:|---:|---:|']
     for key,label in [('original-frozen','Original CNN, frozen gate'),('original','Original CNN, new confidence'),
                       ('compact-20261030','Compact v2, seed20261030'),('compact-20261031','Compact v2, seed20261031'),
                       ('compact-20261032','Compact v2, seed20261032'),('sift','SIFT')]:
         r=e['full'][key];lines.append(f"| {label} | {r['correct_accepted']}/{r['positives']} ({100*r['correct_acceptance']:.2f}%) | {r['wrong_accepted']} | {r['negative_accepted']}/{r['negatives']} |")
-    lines+=['',f"Primary-minus-original-frozen gain: **{gain['gain_pp']:+.2f} percentage points**; exploratory spatial-component bootstrap95% interval **{ci[0]:+.2f} to {ci[1]:+.2f}**. Twelve components share a terrain model/rendering pipeline; they are not guaranteed independent.",
+    lines+=['',f"Raw primary success: {p['raw_correct']}/{p['positives']}. Frozen confidence retains {p['correct_accepted']} correct alignments and accepts {p['wrong_accepted']} incorrect outputs, including {p['negative_accepted']}/{p['negatives']} nonoverlap pairs.",'',f"Primary-minus-original-frozen gain: **{gain['gain_pp']:+.2f} percentage points**; exploratory spatial-component bootstrap95% interval **{ci[0]:+.2f} to {ci[1]:+.2f}**. Twelve components share a terrain model/rendering pipeline; they are not guaranteed independent.",
         '',f"Predeclared10-point improvement/error-budget target met: **{e['targets']['model_improvement']}**. Positive grouped evidence: **{e['targets']['positive_grouped_evidence']}**.",
         '', '## Identical common-input comparison','',
         'All rows use the same36 positive and36 nonoverlap cases. Method-specific internal resolution and lunar training differ; this is not a reproduction of any paper benchmark.','',
@@ -330,8 +350,11 @@ def make_markdown(e):
     for method,r in e['same_host_cpu'].items():
         memory=e['baseline_resources'].get(method,{}).get('peak_process_mib_range')
         memory_text='unavailable' if memory is None else f'{memory[0]:.0f}--{memory[1]:.0f}'
-        lines.append(f"| {NAMES.get(method,method)} | {r['median_baseline_ms']:.1f} | {r['median_compact_ms']:.1f} | {r['median_paired_speedup']:.1f}x | {memory_text} |")
+        label=NAMES.get(method,method)+(f" ({r['cases']}/{r['expected_cases']} cases)" if not r['complete_common_cases'] else '')
+        lines.append(f"| {label} | {r['median_baseline_ms']:.1f} | {r['median_compact_ms']:.1f} | {r['median_paired_speedup']:.1f}x | {memory_text} |")
     lines+=['','Memory is process high-water RSS including loading and warmup, not weight size. Each speedup uses the baseline and compact model on identical cases in the same CPU job. The JSON also reports the compact model accuracy measured in those jobs.']
+    for method,r in e['baseline_completion'].items():
+        if not r['complete']:lines.append(f"- {NAMES[method]}: only {r['observed']}/{r['planned']} final cases completed; excluded from the complete comparison. Partial outcomes remain in the capsule.")
     lines+=['', '## Development ablations','',
         'One fixed seed per cumulative experiment; 96 positive development cases. These outcomes selected the configuration and are not final-test evidence.','',
         '| Configuration | Raw correct positives | Trainable parameters |','|---|---:|---:|']
@@ -366,7 +389,7 @@ def make_markdown(e):
 
 def write_html(e,markdown,folder):
     rows=''.join(f"<tr><td>{html.escape(NAMES.get(m,'Compact v2'))}</td><td>{r['correct_accepted']}/{r['positives']}</td><td>{r['wrong_accepted']}</td><td>{r['negative_accepted']}/{r['negatives']}</td></tr>" for m,r in e['common'].items())
-    text='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compact lunar matcher - frozen study</title><style>body{font:17px/1.6 system-ui;background:#f2f4f7;color:#17283a;margin:auto;max-width:1000px;padding:35px}section{background:white;padding:24px;margin:20px 0;border-radius:14px}h1{font-size:34px}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}small{color:#536475}</style><h1>Compact lunar matching</h1><p>Frozen south-pole render study. Real navigation accuracy remains unverified.</p><section><h2>Same inputs, measured outcomes</h2><table><tr><th>Method</th><th>Correct accepted positives</th><th>Incorrect accepted</th><th>Nonoverlap accepted</th></tr>'+rows+'</table><small>36 positives and36 negatives across12 spatial components. Original frozen-gate results and all three seeds are in the full report.</small></section>'
+    text='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compact lunar matcher - frozen study</title><style>body{font:17px/1.6 system-ui;background:#f2f4f7;color:#17283a;margin:auto;max-width:1000px;padding:35px}section{background:white;padding:24px;margin:20px 0;border-radius:14px}h1{font-size:34px}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}small{color:#536475}</style><h1>Compact lunar matching</h1><p>Frozen south-pole render study. Images use128px derived grids; the render criterion is12 original512px source pixels. Real navigation accuracy remains unverified.</p><section><h2>Same inputs, measured outcomes</h2><table><tr><th>Method</th><th>Correct accepted positives</th><th>Incorrect accepted</th><th>Nonoverlap accepted</th></tr>'+rows+'</table><small>36 positives and36 negatives across12 spatial components. Original frozen-gate results and all three seeds are in the full report.</small></section>'
     text+='''<section><h2>Three examples, including a failure</h2><div id="cases"></div><p id="case-caption"></p><div style="position:relative;width:min(100%,480px);aspect-ratio:1;background:#000"><img id="reference" alt="Reference terrain" style="position:absolute;width:100%;height:100%"><img id="query" alt="Query terrain" style="position:absolute;width:100%;height:100%;opacity:.5"></div><label>Query opacity <input id="opacity" type="range" min="0" max="100" value="50"></label><p><small>Simulated terrain with known reference geometry. Accepted output is used for the overlay; rejected examples remain unaligned. No landmark review is needed.</small></p></section>'''
     demo=json.dumps(e['gallery']).replace('<','\\u003c')
     text+='<script>const examples='+demo+''';const reference=document.getElementById('reference'),query=document.getElementById('query');function show(i){const r=examples[i];reference.src=r.reference_png;query.src=r.query_png;document.getElementById('case-caption').textContent=r.label+'. '+(r.query_aligned?'Query aligned using the accepted model output.':'No transform returned; query shown unaligned.')+(r.error_native_px===null?'':' Raw source-image error: '+r.error_native_px.toFixed(1)+' pixels.');}examples.forEach((r,i)=>{const button=document.createElement('button');button.textContent=r.label;button.style.margin='4px';button.onclick=()=>show(i);document.getElementById('cases').appendChild(button);});document.getElementById('opacity').oninput=e=>query.style.opacity=e.target.value/100;if(examples.length)show(0);</script>'''
@@ -390,7 +413,7 @@ def write_pdf(e,folder):
     p('Compact lunar image matching','Title')
     p('Frozen south-pole render study | Independent project; no NASA/JPL affiliation')
     p('<b>Question.</b> Can a small illumination-aware matcher accept more correct alignments while rejecting incorrect matches, with a useful CPU tradeoff against larger models?')
-    p(f"<b>Design.</b> 28 spatial components:8 training,4 model selection,4 confidence calibration and12 final test across three polar sectors. Configuration: {e['selected']['selected_variant']}. Primary seed20261030; all three predefined seeds retained. Reference geometry comes from simulated depth and cameras.")
+    p(f"<b>Design.</b> 28 spatial components:8 training,4 model selection,4 confidence calibration and12 final test across three polar sectors. Configuration: {e['selected']['selected_variant']}. Primary seed20261030; all three predefined seeds retained. Reference geometry comes from simulated depth and cameras. Render correctness uses3 input pixels, equivalent to12 original512px source pixels.")
     ablation='; '.join(f"{r['variant']}: {r['correct']}/96" for r in e['selected']['candidates'])
     p('<b>Ablations.</b> Development raw correct positives: '+ablation+'. The selected architecture has28,272 parameters. Added complexity did not improve this development criterion. Training used18 polar geometries/54 lighting images.')
     rows=[['Full frozen render test','Correct accepted','Wrong accepted','Negative accepted']]
@@ -418,6 +441,19 @@ def write_pdf(e,folder):
         canvas.drawString(42,24,'Independent lunar matching study | reproducible results, failures retained')
         canvas.drawRightString(553,24,str(doc.page))
     SimpleDocTemplate(str(folder/'compact_brief_v2.pdf'),pagesize=(595,842),rightMargin=42,leftMargin=42,topMargin=35,bottomMargin=37).build(story,onFirstPage=footer,onLaterPages=footer)
+
+
+def outreach_text(e):
+    p=e['full']['compact-20261030'];old=e['full']['original-frozen'];g=e['paired_gain']
+    low,high=g['exploratory_component_bootstrap95_pp']
+    limitation=('The predeclared empirical improvement/error-budget target was met.' if e['targets']['model_improvement'] else 'The predeclared improvement/error-budget target was not met; the report retains that negative finding.')
+    if low<=0<=high:limitation+=' The gain remains inconclusive under grouped uncertainty.'
+    return ("Subject: Compact lunar matching: reproducible south-pole study\n\nDear Dr. Ansar,\n\n"
+        "I built an independent study of compact image matching under changing lunar illumination, motivated by your team's terrain-relative navigation work.\n\n"
+        f"The selected model has28,272 parameters. On384 controlled positive pairs from12 held-out selected footprint groups, it correctly accepted{p['correct_accepted']}, versus{old['correct_accepted']} for the original frozen gate. It accepted{p['wrong_accepted']} incorrect outputs, including{p['negative_accepted']}/288 nonoverlap pairs. The paired gain is{g['gain_pp']:+.2f} points (exploratory grouped95% interval{low:+.2f} to{high:+.2f}). {limitation}\n\n"
+        "The package includes modern pretrained comparisons, all three training seeds, ablations, depth-based diagnostics and failures. The evidence is simulated; unknown trajectory dependence and laboratory reference uncertainty limit the claim. Real orbital navigation accuracy remains unverified.\n\n"
+        "Repository and research brief: https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2\n\n"
+        "Would this benchmark or further work on confidence calibration be relevant to research in your team?\n\nThank you,\nThomas de Chillaz\n")
 
 
 if __name__=='__main__':

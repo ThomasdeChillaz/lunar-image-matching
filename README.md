@@ -1,5 +1,8 @@
 # Lunar image matching
 
+Active compact study: [protocol](COMPACT_RESEARCH.md), [reproduction](COMPACT_REPRODUCTION.md), and [candidate checkpoints/data](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2-rc1). Four compact ablations and three selected-configuration seeds are trained. Corrected-coordinate modern comparisons are running before final test freezing. Final outcomes are not yet measured; earlier Tycho results below remain historical. Spatial footprint separation does not establish unknown trajectory independence.
+
+
 A reproducible research project comparing classical and pretrained learned image matching on real lunar repeat observations and controlled image warps.
 
 **Question:** How do matching methods behave when illumination changes on the same lunar terrain?
