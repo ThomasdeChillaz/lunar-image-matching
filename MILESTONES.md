@@ -4,7 +4,7 @@
 
 - M12: pinned LoFTR on identical original Sun pairs, complete outcomes and pixel/metric audit. Executed.
 - M13: expanded training and source/terrain-disjoint fresh geographic reserves. Dataset frozen; expanded training completed; fresh evaluation not yet executed.
-- M14: explicit translation/rotation/scale/combined experiments and literature-inspired development hypotheses. Structural search, expanded adapter, eight-predictor image-selected hybrid and two-patch local-refinement probe completed and audited on development. Full eight-patch stronger-baseline experiments remain running.
+- M14: explicit translation/rotation/scale/combined experiments and literature-inspired development hypotheses. Structural search, expanded adapter, hybrid, local-refinement probe and trained structural CNN/motion-training ablation completed and audited on development. CNN 1,072/1,152 correct but 69/72 raw non-overlap fits. Full stronger-baseline, dense and controlled trained-CNN-combination experiments remain running.
 - M15: development-only rejection and model selection, frozen before reserve evaluation. Image-evidence grids and conditional fallback policies executed and audited; final method/policy selection and fresh validation pending.
 - M16: substantial advantage against relevant current baselines on a common protocol, with uncertainty, failures, negatives and reproducibility. Not established; do not infer completion from development gains.
 
