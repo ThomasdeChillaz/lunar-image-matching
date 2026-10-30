@@ -129,6 +129,8 @@ class ModernMatcher:
 
     def __call__(self, a, b, ma=None, mb=None):
         pa, pb = self.points(a, b, ma, mb)
+        self.last_evidence=dict(raw_matches=len(pa))
+        self.all_points=(pa,pb)
         return fit_geometry(pa, pb)
 
 

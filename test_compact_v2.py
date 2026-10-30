@@ -133,3 +133,32 @@ def test_all_compact_training_objectives_are_finite_with_occlusions():
         assert torch.isfinite(loss)
         loss.backward()
         assert model.matchability.weight.grad is not None
+
+
+def test_sift_evidence_adapter_preserves_original_geometry():
+    import cv2
+    from matchers import sift
+    from raw_correspondences_v2 import EvidenceMatcher
+    from synthetic import texture
+    a=texture(23,128)
+    b=cv2.warpAffine(a,np.array([[1.,0,8.],[0,1.,-4.]]),(128,128))
+    cv2.setRNGSeed(20261030);old=sift(a,b)
+    wrapper=EvidenceMatcher(sift,'sift')
+    cv2.setRNGSeed(20261030);new=wrapper(a,b)
+    assert old.matrix is not None
+    np.testing.assert_array_equal(old.matrix,new.matrix)
+    np.testing.assert_array_equal(old.reference_points,new.reference_points)
+    assert wrapper.last_evidence['raw_matches']>=new.support
+
+
+def test_3d_adapter_never_filters_matches_with_a_planar_model(monkeypatch):
+    import cv2,matchers
+    from raw_correspondences_v2 import EvidenceMatcher,raw_points
+    from synthetic import texture
+    def forbidden(*args):raise AssertionError('3D extraction called planar fitting')
+    monkeypatch.setattr(matchers,'fit_geometry',forbidden)
+    a=texture(23,128);mask=np.ones(a.shape,bool)
+    wrapped=EvidenceMatcher(matchers.sift,'sift')
+    p,q=raw_points(wrapped,'sift',a,a,mask,mask)
+    assert len(p)>=6
+    np.testing.assert_allclose(p,q,atol=1e-6)

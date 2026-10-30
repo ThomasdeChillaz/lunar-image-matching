@@ -113,17 +113,22 @@ def matcher_for(method,model=None,source=None,device='cpu',dependency_dir=None):
     if method=='compact':
         from compact_lunar import CompactMatcher
         return CompactMatcher(model,device)
-    if method=='sift':return sift
+    if method=='sift':
+        from raw_correspondences_v2 import EvidenceMatcher
+        return EvidenceMatcher(sift,'sift')
     if method=='original':
         from contrastive_terrain import ContrastiveTerrainMatcher
-        return ContrastiveTerrainMatcher('runs/contrastive-terrain-train-v1',device=device)
+        from raw_correspondences_v2 import EvidenceMatcher
+        return EvidenceMatcher(ContrastiveTerrainMatcher('runs/contrastive-terrain-train-v1',device=device),'original')
     if method=='matchanything':
         from matchanything_matcher import MatchAnythingMatcher
-        return MatchAnythingMatcher(dependency_dir=dependency_dir,device=device,factor=4)
+        from raw_correspondences_v2 import EvidenceMatcher
+        return EvidenceMatcher(MatchAnythingMatcher(dependency_dir=dependency_dir,device=device,factor=4),'matchanything')
     if method=='roma':
         from roma_matcher import RoMaMatcher
+        from raw_correspondences_v2 import EvidenceMatcher
         if device!='cpu':raise ValueError('Pinned original RoMa integration is CPU only')
-        return RoMaMatcher()
+        return EvidenceMatcher(RoMaMatcher(),'roma')
     if method in ('loma_b','loma_r','romav2'):
         from modern_baselines_v2 import ModernMatcher
         return ModernMatcher(method,source,'common',device)

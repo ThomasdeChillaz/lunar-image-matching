@@ -50,7 +50,7 @@ def pack(manifest_path,output,splits=('model_selection','calibration'),protocol=
     return doc
 
 
-def infer(package,output,method,source=None,shard=0,shards=1):
+def infer(package,output,method,source=None,shard=0,shards=1,control_model=None):
     from compact_research import matcher_for
     import torch
     torch.set_num_threads(2);cv2.setNumThreads(1)
@@ -69,15 +69,21 @@ def infer(package,output,method,source=None,shard=0,shards=1):
         control=matcher(warm,shifted)
         control_error=endpoint_error(control.matrix,truth,evaluation_points(warm.shape,truth))
         if control_error is None or control_error>3:raise ValueError('Actual pretrained known-transform control failed')
-        rows=[]
+        control=None
+        if control_model:
+            from compact_lunar import CompactMatcher
+            control=CompactMatcher(control_model)
+            control(warm,warm)
+        rows=[];control_rows=[]
         for number,case in enumerate(cases):
             content=archive.read(case['member'])
             if hashlib.sha256(content).hexdigest()!=case['sha256']:raise ValueError('Native input package changed')
             with np.load(io.BytesIO(content),allow_pickle=False) as z:
                 a,b,ma,mb=[z[n] for n in ('reference','query','reference_mask','query_mask')]
             start=perf_counter();cv2.setRNGSeed(20261030);forward=matcher(a,b,ma,mb)
+            extra=dict(getattr(matcher,'last_evidence',{}))
             cv2.setRNGSeed(20261030);reverse=matcher(b,a,mb,ma)
-            features=evidence_vector(forward,a.shape,reverse=reverse)
+            features=evidence_vector(forward,a.shape,extra,reverse)
             rows.append(dict(pair_id=case['pair_id'],split=case['split'],component=case['component'],
                 method=method,transform=None if forward.matrix is None else forward.matrix.tolist(),
                 reverse_transform=None if reverse.matrix is None else reverse.matrix.tolist(),
@@ -85,8 +91,18 @@ def infer(package,output,method,source=None,shard=0,shards=1):
                 query_points=None if forward.query_points is None else forward.query_points.tolist(),
                 support=forward.support,reason=forward.reason,features=features.tolist(),
                 bidirectional_ms=(perf_counter()-start)*1000,input_sha256=case['input_sha256']))
+            if control is not None:
+                cv2.setRNGSeed(20261030);started=perf_counter();cf=control(a,b,ma,mb)
+                extra=dict(control.last_evidence)
+                cv2.setRNGSeed(20261030);cr=control(b,a,mb,ma)
+                features=evidence_vector(cf,a.shape,extra,cr)
+                control_rows.append(dict(pair_id=case['pair_id'],model=control_model,
+                    checkpoint_sha256=sha256(Path(control_model)/'selected.pt'),
+                    transform=None if cf.matrix is None else cf.matrix.tolist(),features=features.tolist(),
+                    same_host_bidirectional_ms=(perf_counter()-started)*1000))
             print(method,'blind',number+1,'/',len(cases),flush=True)
         write_new(output/'predictions.json',rows)
+        if control_rows:write_new(output/'timing_control.json',control_rows)
         write_new(output/'COMPLETE.json',dict(predictions_sha256=sha256(output/'predictions.json'),
             package_sha256=sha256(package),source_sha256=sha256(__file__),shard=shard,shards=shards,
             method_provenance=getattr(matcher,'provenance',None),torch=torch.__version__,cpu_threads=torch.get_num_threads(),
@@ -129,6 +145,8 @@ def score(manifest_path,executions,output):
     for method in {r['method'] for r in out}:
         for split in {r['split'] for r in out if r['method']==method}:
             selected=[r for r in out if r['method']==method and r['split']==split]
+            order={c['pair_id']:i for i,c in enumerate(common_plan(manifest,split))}
+            selected.sort(key=lambda r:order[r['pair_id']])
             if {r['pair_id'] for r in selected}!={c['pair_id'] for c in common_plan(manifest,split)}:
                 raise ValueError('Incomplete common baseline case coverage')
             folder=output/method/split;folder.mkdir(parents=True)
@@ -148,6 +166,7 @@ if __name__=='__main__':
     a.add_argument('--protocol');a.add_argument('--publication-commit')
     b=sub.add_parser('infer');b.add_argument('--package',required=True);b.add_argument('--output',required=True);b.add_argument('--method',required=True)
     b.add_argument('--source');b.add_argument('--shard',type=int,default=0);b.add_argument('--shards',type=int,default=1)
+    b.add_argument('--control-model')
     c=sub.add_parser('score');c.add_argument('--manifest',required=True);c.add_argument('--executions',required=True);c.add_argument('--output',required=True)
     args=vars(p.parse_args());action=args.pop('action')
     if action=='pack':args['manifest_path']=args.pop('manifest');pack(**args)

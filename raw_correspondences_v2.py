@@ -3,7 +3,26 @@ import cv2
 import numpy as np
 
 
+class EvidenceMatcher:
+    """Same raw estimator with available evidence exposed before robust fitting."""
+    def __init__(self,base,method):
+        self.base,self.method=base,method
+        self.device=getattr(base,'device','cpu')
+        self.last_evidence={}
+
+    def __call__(self,a,b,ma=None,mb=None):
+        from matchers import fit_geometry
+        ma=np.ones(a.shape,bool) if ma is None else ma
+        mb=np.ones(b.shape,bool) if mb is None else mb
+        pa,pb=raw_points(self.base,self.method,a,b,ma,mb)
+        self.last_evidence=dict(getattr(self.base,'last_evidence',{}),raw_matches=len(pa))
+        self.all_points=(pa,pb)
+        if self.method=='roma':cv2.setRNGSeed(20261029)
+        return fit_geometry(pa,pb)
+
+
 def raw_points(matcher,method,a,b,ma,mb):
+    if isinstance(matcher,EvidenceMatcher):matcher=matcher.base
     empty=lambda:(np.empty((0,2),np.float32),np.empty((0,2),np.float32))
     if not ma.any() or not mb.any() or min(a[ma].std(),b[mb].std())<1:return empty()
     if hasattr(matcher,'points'):return matcher.points(a,b,ma,mb)
@@ -34,6 +53,9 @@ def raw_points(matcher,method,a,b,ma,mb):
             similarity=da@db.T;score,index=similarity.max(1);reverse=similarity.argmax(0)
             ia=torch.where((reverse[index]==torch.arange(len(pa),device=matcher.device))&(score>=.5))[0]
             ia=ia[torch.argsort(score[ia],descending=True)[:512]]
+            second=similarity.topk(2,dim=1).values[:,1]
+            matcher.last_evidence=dict(raw_matches=len(ia),potential_matches=len(pa),matchability=.5,
+                descriptor_margin=float((score[ia]-second[ia]).median()) if len(ia) else 0.)
             return pa[ia.cpu().numpy()],pb[index[ia].cpu().numpy()]
     if method=='matchanything':
         from eloftr_matcher import native_pixel_centers
