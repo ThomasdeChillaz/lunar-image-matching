@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "source_url": "https://github.com/Parskatt/RoMa.git",
+  "source_revision": "77f8d68803526dcddfd9b7a46bc76125bdc25f15",
+  "source_directory": "data/models/roma-upstream",
+  "source_sha256": {
+    "romatch/__init__.py": "6c02c6a719caa08da5a3c0797774bf3aa1c3d6f78c2ca503cb74c655aa711f3b",
+    "romatch/benchmarks/__init__.py": "6bec076fceebde46dc36b4a05ab425573472c435ded7d44bd0d2f0ee35412485",
+    "romatch/benchmarks/hpatches_sequences_homog_benchmark.py": "ef67ad6673ca59cb8481964c1ee3b5417ee672c34498228976986a0d56019391",
+    "romatch/benchmarks/megadepth_dense_benchmark.py": "5bc73cf403ec5fb9473d5ccf8a322e19b06ded8657978bea8073652f3192bdd1",
+    "romatch/benchmarks/megadepth_pose_estimation_benchmark.py": "6d449c7beb9ae7b9348af9477c4fc6f5aea03e95fd9bf15ece19bb7db4cca515",
+    "romatch/benchmarks/megadepth_pose_estimation_benchmark_poselib.py": "d0525fe7d976dd1f242cffe44ed4387f8974d81597a2acdd08942607320526d1",
+    "romatch/benchmarks/scannet_benchmark.py": "9927228b8a38debfb1308748ae96959b021f794bb6cc1fbff80d03fc9f2a13f2",
+    "romatch/checkpointing/__init__.py": "13ce93f10299ad819d1449aa923e13704a43dc4bd5c0bc0e50b9e520a7e0fb79",
+    "romatch/checkpointing/checkpoint.py": "44df73f52ffdb11ca0efe8f54d556e69ef58c0c27213d82708472fecf7a5ba8b",
+    "romatch/datasets/__init__.py": "3155882357827dc1e94249d447b678e2dab0a4a70706e0c5ee116fa85122271a",
+    "romatch/datasets/megadepth.py": "2c2d93965335d0d5e8faa248d7ea839332de7b6eaddf58989c08aed1f265e325",
+    "romatch/datasets/scannet.py": "ae6b6203ea2bd9940b0ae756fe94cb8daa27ec9822cb8348904bbd5a098283f3",
+    "romatch/losses/__init__.py": "cf8213e9f45c263026697770346d50c4b70319ad83187006cbcaea8cdb09b332",
+    "romatch/losses/robust_loss.py": "4c7f8097e1a0b53a4c603350f30e537aa31d1befb5830468d56bd6b63080a4af",
+    "romatch/losses/robust_loss_tiny_roma.py": "08172e5883b73efb1bd1376e6a1f588ad9c39c16cbc732eae5d3930c857aeb7d",
+    "romatch/models/__init__.py": "0641a484dd03c6fd4b99fff0e92360aa8492cad8c5510727b69f2fbdfc66b226",
+    "romatch/models/encoders.py": "567d87dfe8e4118f2b96a504e32ab421f5c734523c3842ba50aa12acf7c30149",
+    "romatch/models/matcher.py": "acefa44a0d983be14542239b4dd43d939f1fcdd5b1c0a222dc2b964b9ffb8973",
+    "romatch/models/model_zoo/__init__.py": "be696bc2559a367fccdaaf724e61f755c09c32a2fea7e9cd3af5af40d446477a",
+    "romatch/models/model_zoo/roma_models.py": "952a417cbe4bf0a510afb011280751e19710f6736c28a0f39776d0b2841169a8",
+    "romatch/models/tiny.py": "068a111a23bd84bdfa3a40252c1c4684bcca4158243b62d34c97b299d8130af6",
+    "romatch/models/transformer/__init__.py": "e5c20e82ef55281e6d7dcf0269ed403ae25ef882b2c807a1da133caa5da14508",
+    "romatch/models/transformer/dinov2.py": "0b835699807843d883167dd44723150bcbe08973ecb1f2a9d9817a1d962883ed",
+    "romatch/models/transformer/layers/__init__.py": "6dbf9db5fd20e694d01c7c6f4bb2709890b65d17d03f666df0fddc1c77a7af28",
+    "romatch/models/transformer/layers/attention.py": "bb25a4d4f5246d68b0435d6eda1d8034562119491320e0ff3ff702734657328e",
+    "romatch/models/transformer/layers/block.py": "d00e51ef630494ca141357c7acbd57c35e4dd6fd9e0a9e3ed52d0191363d4af4",
+    "romatch/models/transformer/layers/dino_head.py": "1a8dfb966458a85ba4807604a0842ed22e3ee69e0c20cebcdac99559cbd838a0",
+    "romatch/models/transformer/layers/drop_path.py": "949100aac4d9c19c9d65319dbd362886c5d46a72d7586ba4fd500e9f1d51570c",
+    "romatch/models/transformer/layers/layer_scale.py": "356817b5d1390737128cbcc03a5333fd3060b73beae478772282ccb851d0ef85",
+    "romatch/models/transformer/layers/mlp.py": "c18c5b3f021408597a473bb710070ec3fb3b39f5a2e42e88ae83ced425a608b5",
+    "romatch/models/transformer/layers/patch_embed.py": "b3f82e19926c9cfb63f10136aca5e8a723bde1ad62dae1d04f90d405f9439baf",
+    "romatch/models/transformer/layers/swiglu_ffn.py": "df81d9901240214edc1831ce1b77558dcd6227b29a2f000fc5f546df55d2d09a",
+    "romatch/train/__init__.py": "2344cce523fdf5eac0f644a800b29af59f76cdd4ea6ca8990a7d94b3b15bf94c",
+    "romatch/train/train.py": "93a3eee58c76c16ba52151950507e0ed052ac69e084742d42d5115aa59507791",
+    "romatch/utils/__init__.py": "503f77ab2b761e3c2e3e20d16db47557cadfb8bf303add0b2435f766cfcb096b",
+    "romatch/utils/kde.py": "d904f813141c42d2a123f21bfcb85bee03d34ef2a3c9d07fe7667b828cce1a6f",
+    "romatch/utils/local_correlation.py": "96fae5665a555b52316d3720e7b78c7bf33f5364901420e5bf7ba713e92a0fd2",
+    "romatch/utils/transforms.py": "14bb142c7806b556fb2ee529161fafa2b99b1b9c9ae9db5955ce05521525678d",
+    "romatch/utils/utils.py": "1166c0b5d942e41a13692d5b6b7fea98f1333c25bc758a27613f161d03863dc9",
+    "LICENSE": "6f02ad61c3fd4509343d619b55501354bcebfd67ad5460c853d02c7ab46ff4bd",
+    "pyproject.toml": "acf0805907fd62c387d2ef0ed5ce376d3534fa00b82c5ae627a5a554bd766ce7",
+    "README.md": "1e7d8adf67d27aef36d4cb5af52080f170c8707bcc3a4ce6aeefde1e1e9f7249"
+  },
+  "weights": {
+    "roma": {
+      "path": "data/models/roma_outdoor.pth",
+      "url": "https://github.com/Parskatt/storage/releases/download/roma/roma_outdoor.pth",
+      "bytes": 445647516,
+      "sha256": "c7a45c80d41ad788a63c641d1b686d7cb3f297f40097c6f4e75039889e5cc8ba"
+    },
+    "dinov2": {
+      "path": "data/models/dinov2_vitl14_pretrain.pth",
+      "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth",
+      "bytes": 1217586395,
+      "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428"
+    }
+  },
+  "runtime_versions": {
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "numpy": "1.26.4",
+    "opencv-python": "4.10.0.84",
+    "Pillow": "12.0.0",
+    "einops": "0.8.1",
+    "loguru": "0.7.3"
+  },
+  "source_license": "MIT; DINOv2 code and pretrained weights Apache-2.0 per official facebookresearch/dinov2 README. No DINOv3 or VGGT-Omega materials used.",
+  "inference": {
+    "device": "cpu",
+    "coarse_resolution": [
+      560,
+      560
+    ],
+    "upsample_resolution": [
+      864,
+      864
+    ],
+    "symmetric": true,
+    "upsample_preds": true,
+    "custom_cuda_correlation": false,
+    "compile": false,
+    "amp_dtype": "float32",
+    "density_arithmetic": "Author KDE implementation with its half=False option, scoped during balanced sampling; no vendor source edits. Declared CPU numeric profile."
+  },
+  "sampling": {
+    "count": 5000,
+    "seed": 20261029,
+    "mode": "author threshold_balanced default",
+    "coordinates": "Author normalized edge grids converted to integer native centers with subtraction of .5; native masks and common partial-affine geometry."
+  },
+  "warning": "A real pretrained known-transform Linux forward must pass before lunar evaluation. CPU runtime and numeric profile are explicit, not paper GPU performance reproduction."
+}

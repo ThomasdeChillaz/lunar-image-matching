@@ -1,0 +1,9 @@
+# Separate Linux CPU environment; do not install in the validated local core.
+# Install torch/torchvision from the official CPU wheel index first.
+torch==2.8.0
+torchvision==0.23.0
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow==12.0.0
+einops==0.8.1
+loguru==0.7.3
