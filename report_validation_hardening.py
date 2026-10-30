@@ -18,6 +18,15 @@ def load(path):
     return json.loads(Path(path).read_text())
 
 
+def polish(text,units=True):
+    text=re.sub(r'\b(all|in|of|at|on|least|provide|retains|accepts|rejects|suite|core|fresh|full|original|with|across|published|within|iteration|bootstrap|sub|treating|aligns|has|covers|and|The)(?=\d)',r'\1 ',text)
+    text=text.replace('30October2026','30 October 2026').replace('May2017','May 2017')
+    text=text.replace('Chang’e3','Chang’e 3').replace('Apollo11','Apollo 11')
+    if units:
+        text=re.sub(r'(\d)(px|mm|UTC)\b',r'\1 \2',text)
+    return text
+
+
 def generate(output,logs):
     output,logs=Path(output),Path(logs)
     reserve=Path('runs/reserve-frozen-v1')
@@ -137,7 +146,8 @@ def generate(output,logs):
         'python real_sensor_controls.py run --protocol reports/real_sensor_protocol_v1.json --output runs/real-sensor-reproduction',
         'python polar_reference.py run --protocol reports/polar_reference_protocol_v1.json --output runs/polar-reference-reproduction','```','',
         f'Validation: research suite{test_records["research"]["passed"]} passed/{test_records["research"]["skipped"]} skipped; minimal core{test_records["minimal_core"]["passed"]} passed/{test_records["minimal_core"]["skipped"]} skipped; fresh20-summary procedural smoke. The selected CNN ran actual software, CLI and real-data experiments; optional unexecuted matcher tests are not counted as pretrained validation.','']
-    (output/'RESEARCH_ITERATION_5.md').write_text('\n'.join(lines))
+    lines+=['[Execution environment](validation_environment_v1.json), [ensemble development capsule](ensemble_development_v1.zip), and [public ensemble export audit](ensemble_public_export_audit.json) supplement the complete standalone-validation capsule. The ensemble capsule preserves original development outputs; it is not a fresh-test result.','']
+    (output/'RESEARCH_ITERATION_5.md').write_text(polish('\n'.join(lines)))
     payload=dict(reserve=rs,real_sensor=real_summary,polar=ps,checks=validation)
     (output/'validation_hardening.json').write_text(json.dumps(payload,indent=2)+'\n')
     table=''.join(f'<tr><td>{html.escape(label)}</td><td>{rs["overall"][m]["correct"]:,}/{rs["overall"][m]["positive_cases"]:,}</td><td>{rs["overall"][m]["positive_wrong"]:,}</td><td>{rs["overall"][m]["negative_accepted"]:,}/{rs["overall"][m]["negative_cases"]:,}</td></tr>' for m,label in zip(methods,labels))
@@ -152,7 +162,7 @@ def generate(output,logs):
 <h2>Real physical relighting exposes a weakness</h2><p class="failure">On four NASA laboratory terrains, raw CNN nominally aligns4/8 fixed-camera relighting pairs within3px, but the strict gate retains0/8. This transfer failure remains visible. External laser-reference diagnostics are included with unknown calibration uncertainty.</p>
 <h2>What remains unverified</h2><p>Real orbital navigation accuracy, broad polar/cross-crater illumination transfer, and fresh performance of the full ensemble remain unverified. Both original reserves are consumed; future changes require new untouched evaluation data.</p>
 <p><a href="RESEARCH_ITERATION_5.md">Full measured report and reproduction commands</a> · <a href="validation_hardening.json">Measurements and checks</a> · <a href="reserve_protocol_v1.json">Published frozen protocol</a> · <a href="validation_hardening_v1.zip">Complete measurement capsule</a></p></main></html>'''
-    (output/'validation_hardening.html').write_text(body)
+    (output/'validation_hardening.html').write_text(polish(body,units=False))
     sources=set(doc['source_sha256'])|set(load(real/'frozen_protocol.json')['source_sha256'])|set(load(polar/'frozen_protocol.json')['source_sha256'])
     sources|={p.name for p in Path('.').glob('test_*') if p.is_file() and any(s in p.name for s in ('reserve','real_sensor','polar','deploy_gate'))}
     sources|={'verify_reserve.py','verify_real_sensor.py','verify_polar_reference.py','fetch_polar_reference.py','match_terrain.py','deploy_gate.py','report_validation_hardening.py'}
@@ -162,7 +172,8 @@ def generate(output,logs):
     members += list(Path('runs/ensemble-public-export-v1').glob('*.json'))
     members += list(Path('runs/deployment-cli-controls-v1').glob('*.json'))
     members += [output/p for p in ['reserve_protocol_v1.json','real_sensor_protocol_v1.json','polar_reference_protocol_v1.json',
-        'RESEARCH_ITERATION_5.md','validation_hardening.json','validation_hardening_checks.json','validation_source_snapshot_v1.json']]
+        'RESEARCH_ITERATION_5.md','validation_hardening.json','validation_hardening_checks.json','validation_source_snapshot_v1.json',
+        'validation_environment_v1.json','ensemble_public_export_audit.json']]
     manifest={str(p):dict(sha256=sha256(p),bytes=p.stat().st_size) for p in sorted(set(members))}
     capsule=output/'validation_hardening_v1.zip'
     with zipfile.ZipFile(capsule,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
