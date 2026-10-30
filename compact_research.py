@@ -23,7 +23,7 @@ from matchers import sift
 
 SOURCES=['compact_research.py','compact_lunar.py','compact_confidence.py','train_compact_v2.py',
          'lunargeo_dataset.py','lunar_geometry_v2.py','modern_baselines_v2.py','matchers.py','geometry.py',
-         'compact_sensor_transfer.py','baseline_infer_v2.py']
+         'compact_sensor_transfer.py','baseline_infer_v2.py','raw_correspondences_v2.py']
 FAMILIES=('translation','rotation','scale','combined')
 
 
@@ -155,7 +155,7 @@ def predict(matcher,a,b,ma,mb,method):
 
 
 def evaluate(manifest_path,output,method,model=None,split='model_selection',source=None,device='cpu',
-             dependency_dir=None,protocol=None,publication_commit=None,limit=None):
+             dependency_dir=None,protocol=None,publication_commit=None,limit=None,common=False):
     import torch
     torch.set_num_threads(2);cv2.setNumThreads(1)
     manifest=validate_manifest(json.loads(Path(manifest_path).read_text()))
@@ -170,6 +170,7 @@ def evaluate(manifest_path,output,method,model=None,split='model_selection',sour
         expected_model=doc['models'].get(str(model)) if model else None
         if model and (expected_model is None or sha256(Path(model)/'selected.pt')!=expected_model):raise ValueError('Unfrozen model')
     cases=case_plan(manifest,split)
+    if common:cases=common_plan(manifest,split)
     if limit is not None:
         if split=='test':raise ValueError('Final test subsets must be declared in the public protocol')
         cases=cases[:limit]
@@ -177,7 +178,7 @@ def evaluate(manifest_path,output,method,model=None,split='model_selection',sour
     if output.exists():raise FileExistsError(output)
     output.mkdir(parents=True)
     frozen=dict(manifest_path=str(manifest_path),manifest_sha256=sha256(manifest_path),method=method,
-        model=None if model is None else str(model),split=split,cases=cases,device=device,
+        model=None if model is None else str(model),split=split,cases=cases,device=device,common_subset=common,
         source_sha256={p:sha256(p) for p in SOURCES},started_utc=datetime.now(timezone.utc).isoformat())
     write_new(output/'frozen_inputs.json',frozen)
     if split=='test':
@@ -275,13 +276,8 @@ def stereo_evaluate(manifest_path,output,method,model=None,split='model_selectio
         a,b=data['stereo_images'][ia],data['stereo_images'][ib]
         ma,mb=data['stereo_masks'][ia],data['stereo_masks'][ib]
         start=perf_counter()
-        if hasattr(matcher,'points'):
-            pa,pb=matcher.points(a,b,ma,mb);point_source='raw_before_geometry'
-        else:
-            found=matcher(a,b,ma,mb)
-            pa=found.reference_points if found.reference_points is not None else np.empty((0,2))
-            pb=found.query_points if found.query_points is not None else np.empty((0,2))
-            point_source='partial_affine_inliers_only'
+        from raw_correspondences_v2 import raw_points
+        pa,pb=raw_points(matcher,method,a,b,ma,mb);point_source='raw_before_geometry'
         if getattr(matcher,'device','cpu')=='mps':torch.mps.synchronize()
         elapsed=(perf_counter()-start)*1000
         ka,pa_world=np.array(t['cameras'][0]['intrinsics']),np.array(t['cameras'][0]['cam2world'])
@@ -384,6 +380,7 @@ if __name__=='__main__':
     e.add_argument('--method',required=True);e.add_argument('--model');e.add_argument('--split',choices=['model_selection','calibration','test'],default='model_selection')
     e.add_argument('--source');e.add_argument('--device',choices=['cpu','mps'],default='cpu');e.add_argument('--dependency-dir')
     e.add_argument('--protocol');e.add_argument('--publication-commit');e.add_argument('--limit',type=int)
+    e.add_argument('--common',action='store_true')
     s=sub.add_parser('stereo')
     s.add_argument('--manifest',required=True);s.add_argument('--output',required=True);s.add_argument('--method',required=True)
     s.add_argument('--model');s.add_argument('--source');s.add_argument('--device',choices=['cpu','mps'],default='cpu')

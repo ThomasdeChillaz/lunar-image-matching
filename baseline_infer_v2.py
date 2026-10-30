@@ -4,6 +4,8 @@ import hashlib
 import io
 import json
 from pathlib import Path
+import platform
+import resource
 from time import perf_counter
 import zipfile
 
@@ -17,9 +19,14 @@ from lunargeo_dataset import write_new
 from matchers import fit_geometry,Match
 
 
-def pack(manifest_path,output,splits=('model_selection','calibration')):
+def pack(manifest_path,output,splits=('model_selection','calibration'),protocol=None,publication_commit=None):
     from compact_research import common_plan,controlled_inputs,validate_manifest
     manifest=validate_manifest(json.loads(Path(manifest_path).read_text()))
+    if 'test' in splits:
+        from compact_research import validate_freeze
+        if protocol is None or publication_commit is None:raise ValueError('Final baseline pixels require public model/policy freeze')
+        frozen=validate_freeze(protocol,publication_commit)
+        if sha256(manifest_path)!=frozen['manifest_sha256']:raise ValueError('Baseline test dataset differs from freeze')
     output=Path(output)
     if output.exists():raise FileExistsError(output)
     tiles={t['tile_id']:t for t in manifest['tiles']};cache={};entries=[]
@@ -36,6 +43,8 @@ def pack(manifest_path,output,splits=('model_selection','calibration')):
             source_sha256=sha256(__file__),license='CC BY4.0 derived MoonAnything pixels; original code MIT',
             attribution='C. Grethen,Y. Shi,S. Gasparini,G. Morin; MoonAnything DOI10.5281/zenodo.18415119. Derived grayscale128px, masks and controlled geometry.',
             protocol='No correctness labels or ground-truth transforms in this inference package.')
+        if 'test' in splits:
+            doc.update(publication_commit=publication_commit,protocol_sha256=sha256(protocol),protocol_path=str(protocol))
         archive.writestr('inputs.json',json.dumps(doc,indent=2))
     print('Packed',len(entries),'cases',output,sha256(output),flush=True)
     return doc
@@ -52,8 +61,14 @@ def infer(package,output,method,source=None,shard=0,shards=1):
         doc=json.loads(archive.read('inputs.json'))
         cases=doc['cases'][shard::shards]
         matcher=matcher_for(method,source=source,device='cpu')
+        torch.set_num_threads(2)
         from synthetic import texture
         warm=texture(20261030,128);matcher(warm,warm)
+        truth=np.array([[1.,0,8.],[0,1.,-4.]])
+        shifted=cv2.warpAffine(warm,truth,(128,128))
+        control=matcher(warm,shifted)
+        control_error=endpoint_error(control.matrix,truth,evaluation_points(warm.shape,truth))
+        if control_error is None or control_error>3:raise ValueError('Actual pretrained known-transform control failed')
         rows=[]
         for number,case in enumerate(cases):
             content=archive.read(case['member'])
@@ -74,7 +89,10 @@ def infer(package,output,method,source=None,shard=0,shards=1):
         write_new(output/'predictions.json',rows)
         write_new(output/'COMPLETE.json',dict(predictions_sha256=sha256(output/'predictions.json'),
             package_sha256=sha256(package),source_sha256=sha256(__file__),shard=shard,shards=shards,
-            method_provenance=getattr(matcher,'provenance',None),torch=torch.__version__))
+            method_provenance=getattr(matcher,'provenance',None),torch=torch.__version__,cpu_threads=torch.get_num_threads(),
+            software_control_endpoint_px=control_error,platform=platform.platform(),
+            peak_rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+            peak_rss_unit='bytes' if platform.system()=='Darwin' else 'KiB'))
     return rows
 
 
@@ -127,6 +145,7 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='action',required=True)
     a=sub.add_parser('pack');a.add_argument('--manifest',required=True);a.add_argument('--output',required=True)
     a.add_argument('--splits',nargs='+',default=['model_selection','calibration'])
+    a.add_argument('--protocol');a.add_argument('--publication-commit')
     b=sub.add_parser('infer');b.add_argument('--package',required=True);b.add_argument('--output',required=True);b.add_argument('--method',required=True)
     b.add_argument('--source');b.add_argument('--shard',type=int,default=0);b.add_argument('--shards',type=int,default=1)
     c=sub.add_parser('score');c.add_argument('--manifest',required=True);c.add_argument('--executions',required=True);c.add_argument('--output',required=True)

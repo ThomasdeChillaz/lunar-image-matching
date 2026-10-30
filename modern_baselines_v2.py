@@ -75,6 +75,7 @@ class ModernMatcher:
         cache = Path(torch.hub.get_dir())/'checkpoints'
         self.provenance.update(method=method, profile=profile, device=device,
             torch=torch.__version__, opencv=cv2.__version__,
+            common_input_size=None if profile=='author' else (512 if method=='romav2' else 504),
             weights={p.name: sha256(p) for p in sorted(cache.glob('*')) if p.is_file()},
             settings={k: getattr(self.model, k) for k in ('H_lr','W_lr','H_hr','W_hr','bidirectional')
                       if hasattr(self.model, k)})
@@ -84,6 +85,7 @@ class ModernMatcher:
             self.torch.mps.synchronize()
 
     def points(self, a, b, ma=None, mb=None):
+        self.torch.manual_seed(20261030)
         ma = np.ones(a.shape, bool) if ma is None else np.asarray(ma, bool)
         mb = np.ones(b.shape, bool) if mb is None else np.asarray(mb, bool)
         if not validate_pixels(a, ma) or not validate_pixels(b, mb):

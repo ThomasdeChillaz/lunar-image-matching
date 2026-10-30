@@ -51,6 +51,8 @@ def correspondences(depth_a, depth_b, k_a, pose_a, k_b, pose_b, points=None, str
         yy, xx = np.mgrid[0:da.shape[0]:stride, 0:da.shape[1]:stride]
         points = np.column_stack([xx.ravel(), yy.ravel()])
     points = np.asarray(points, float)
+    if points.shape==(0,2):
+        return points.copy(),points.copy(),np.empty((0,3)),np.zeros(0,bool)
     ia = np.rint(points).astype(int)
     inside = ((ia >= 0) & (ia < np.array(da.shape[::-1]))).all(1)
     idx = ia.clip(0, np.array(da.shape[::-1])-1)

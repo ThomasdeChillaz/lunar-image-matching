@@ -29,6 +29,8 @@ def test_depth_visibility_rejects_occlusion_without_query_match_coordinates():
     np.testing.assert_array_equal(valid,[True,False])
     np.testing.assert_allclose(a,b,atol=1e-5)
     assert len(world)==1
+    empty=correspondences(plane,occluded,k,np.eye(4),k,np.eye(4),points=np.empty((0,2)))
+    assert empty[0].shape==(0,2) and empty[2].shape==(0,3) and len(empty[3])==0
 
 
 def test_intrinsic_resize_uses_pixel_centers():
