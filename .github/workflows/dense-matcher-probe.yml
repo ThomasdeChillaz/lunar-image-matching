@@ -1,0 +1,81 @@
+name: Dense matcher pretrained validation
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Known-transform proof only, or proof followed by full blind development inference
+        type: choice
+        default: probe
+        options: [probe, full]
+permissions:
+  contents: read
+jobs:
+  roma:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    env:
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the separate supported CPU runtime
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0 torchvision==0.23.0
+          python -m pip install -r requirements-roma-linux.txt
+          python -m pip check
+      - name: Retrieve and verify exact public author source and weights
+        run: python roma_matcher.py --prepare
+      - name: Execute actual pretrained known-transform and failure controls
+        run: python -u probe_roma.py --output runs/roma-pretrained-probe
+      - name: Preserve software proof without model weights
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: roma-pretrained-probe
+          path: runs/roma-pretrained-probe/
+          if-no-files-found: warn
+          retention-days: 7
+  development:
+    needs: roma
+    if: inputs.scope == 'full'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 160
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the separate supported CPU runtime
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0 torchvision==0.23.0
+          python -m pip install -r requirements-roma-linux.txt
+          python -m pip check
+      - name: Retrieve and verify pinned author source and weights
+        run: python roma_matcher.py --prepare
+      - name: Infer blind development predictions on exact native pixels
+        env:
+          DENSE_SHARD: ${{ matrix.shard }}
+        run: python -u infer_dense_shard.py --output runs/roma-development-shard-${DENSE_SHARD} --shard-index ${DENSE_SHARD} --shard-count 8
+      - name: Preserve predictions and complete provenance without weights
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: roma-development-shard-${{ matrix.shard }}
+          path: runs/roma-development-shard-${{ matrix.shard }}/
+          if-no-files-found: warn
+          retention-days: 7
