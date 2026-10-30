@@ -6,6 +6,7 @@ from datetime import datetime,timezone
 import hashlib
 import itertools
 import json
+import platform
 from pathlib import Path
 import resource
 from time import perf_counter
@@ -27,6 +28,8 @@ SOURCES=['compact_research.py','compact_lunar.py','compact_confidence.py','train
 SOURCES+=['contrastive_terrain.py','confidence.py','structural_refinement.py','research_quality_gate.py',
           'roma_matcher.py','matchanything_matcher.py','eloftr_matcher.py','loftr_matcher.py',
           'polar_reference.py','dataset.py','synthetic.py','verify_compact_3d.py']
+SOURCES+=['replay_compact_v2.py']
+SOURCES+=['baseline_weights_v2.py','.github/workflows/compact-baselines-v2.yml']
 FAMILIES=('translation','rotation','scale','combined')
 
 
@@ -227,7 +230,9 @@ def evaluate(manifest_path,output,method,model=None,split='model_selection',sour
     write_new(output/'results.json',rows)
     summary=dict(method=method,split=split,cases=len(rows),raw=counts(rows,[r['transform'] is not None for r in rows]),
         median_bidirectional_ms=float(np.median([r['bidirectional_ms'] for r in rows])),
-        peak_rss_platform_units=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+        peak_rss_platform_units=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        peak_rss_unit='bytes' if platform.system()=='Darwin' else 'KiB',
+        cpu_threads=torch.get_num_threads(),platform=platform.platform(),torch=torch.__version__)
     write_new(output/'summary.json',summary)
     write_new(output/'COMPLETE.json',dict(results_sha256=sha256(output/'results.json'),frozen_inputs_sha256=sha256(output/'frozen_inputs.json')))
     return summary
@@ -355,6 +360,9 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
         pixel_units=dict(benchmark_size=[128,128],render_source_size=[512,512],
             registration_threshold_benchmark_px=3.,registration_threshold_native_px=12.,
             note='128px inference benchmark; error_px is benchmark pixels, error_native_px maps to original512px renders. POLAR1216px crop has9.5 native pixels per benchmark pixel.'),
+        descriptive_strata=dict(mode=True,component=True,polar_longitude_sector_width_deg=120,
+            shared_brightness_proxy=dict(threshold_uint8=8,bins=[.25,.75],
+                note='Fraction of mutually valid pixels bright in both images; not a Sun-angle or causal difficulty label.')),
         seeds=[20261030,20261031,20261032],
         scope='South-pole physical renders; all final results consumed once. Sensor reference uncertainty remains separate.',
         negative_dependency='Negative pairs reuse both terrain endpoints; report component dependence, not independent-binomial certainty.')

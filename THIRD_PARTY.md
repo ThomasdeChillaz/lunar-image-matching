@@ -40,3 +40,27 @@ Original [RoMa](https://github.com/Parskatt/RoMa), pinned revision and relevant 
 # NASA Ames POLAR reference experiment
 
 Selected original sensor photographs, laser XYZ scans and per-terrain calibration are downloaded from the [NASA Ames POLAR Stereo Dataset](https://ti.arc.nasa.gov/dataset/IRG_PolarDB/); see its [documentation](https://ti.arc.nasa.gov/dataset/IRG_PolarDB/PolarDB_Readme.pdf). Cite Uland Wong, Ara Nefian, Larry Edwards, Xavier Buoyssounouse, P. Michael Furlong, Matt Deans and Terry Fong, NASA Ames Research Center, May 2017. Downloads remain outside Git in `data/polar/`; source pages, archive headers, original member CRC32 and SHA256 are preserved. No source photos or laser clouds are redistributed in the measurement capsule. The experiment uses laboratory analogues, not images acquired on the Moon. Sub2 mm laser accuracy must not be misrepresented as an uncertainty bound on camera calibration or navigation.
+
+## Compact south-pole study (iteration 6)
+
+MoonAnything LunarGeo SouthPole nadir/oblique/dynamicgood source data are from
+DOI10.5281/zenodo.18415119, by C.Grethen,Y.Shi,S.Gasparini,G.Morin.
+The acquired Zenodo record declares CC BY4.0. Derived128px grayscale images,
+validity masks, selected original ray-depth maps and camera metadata preserve
+attribution, transformation notices and source hashes. The public sample and
+our metadata-limited sample are not the complete paper dataset.
+NASA Ames POLAR photographs retain NASA Ames Intelligent Robotics Group
+attribution and remain nominal laboratory diagnostics with unknown reference
+accuracy. Source URLs/member names and hashes are in the sensor protocol.
+
+LoMa author source is pinned at415caedde23a9ed479172ed174fe4ff7b4514d4b;
+source MIT and matcher components Apache-2.0, with inherited DeDoDe/DINOv2
+notices. LoMa-B and rotation-trained LoMa-R use their separate released weights.
+RoMa v2 source is pinned at95c9968145c8906b7b59383258e9f73b02853d89;
+source MIT except inherited DINOv3 custom-license components. These third-party
+weights are acquired from official author locations and are not repackaged.
+See reports/compact_baseline_lock_v2.json for exact weight hashes and settings,
+and reports/compact_pretrained_controls_v2.json for completed author/common
+profile controls. Earlier RoMa and MatchAnything locks remain in force.
+Our own compact and original CNN checkpoints are MIT research artifacts,
+distributed as release assets rather than committed weight blobs.

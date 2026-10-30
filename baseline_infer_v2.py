@@ -104,6 +104,7 @@ def infer(package,output,method,source=None,shard=0,shards=1,control_model=None)
         write_new(output/'predictions.json',rows)
         if control_rows:write_new(output/'timing_control.json',control_rows)
         write_new(output/'COMPLETE.json',dict(predictions_sha256=sha256(output/'predictions.json'),
+            timing_control_sha256=sha256(output/'timing_control.json') if control_rows else None,
             package_sha256=sha256(package),source_sha256=sha256(__file__),shard=shard,shards=shards,
             method_provenance=getattr(matcher,'provenance',None),torch=torch.__version__,cpu_threads=torch.get_num_threads(),
             software_control_endpoint_px=control_error,platform=platform.platform(),
@@ -140,8 +141,10 @@ def score(manifest_path,executions,output):
             ia=np.rint(p).astype(int);ib=np.rint(q).astype(int).clip(0,127)
             p=p[ma[ia[:,1],ia[:,0]]&mb[ib[:,1],ib[:,0]]]
             error=endpoint_error(row['transform'],truth,p)
+        native_scale=np.array(tiles[case['tile_id']]['source_size'][::-1])/np.array(a.shape[::-1])
+        if not np.allclose(native_scale,native_scale[0]):raise ValueError('Scalar error conversion needs isotropic source resizing')
         out.append(dict(case,**{k:v for k,v in row.items() if k not in case},error_px=error,
-            error_native_px=None if error is None else float(error*4.),native_pixels_per_benchmark_pixel=4.,
+            error_native_px=None if error is None else float(error*native_scale[0]),native_pixels_per_benchmark_pixel=float(native_scale[0]),
             correct=error is not None and error<=3 and not case['negative']))
     for method in {r['method'] for r in out}:
         for split in {r['split'] for r in out if r['method']==method}:

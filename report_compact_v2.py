@@ -1,5 +1,6 @@
 """Render completed measurements without selecting new checkpoints or thresholds."""
 import argparse
+import base64
 from datetime import datetime,timezone
 import html
 import json
@@ -82,9 +83,15 @@ def modern_data(protocol,directory):
     return result
 
 
-def same_host_timing(executions):
+def same_host_timing(executions,manifest,policy,checkpoint_sha):
+    from compact_research import common_plan,controlled_inputs
+    from geometry import endpoint_error,evaluation_points,transform
     results={}
+    cases={c['pair_id']:c for c in common_plan(manifest,'test')}
+    tiles={t['tile_id']:t for t in manifest['tiles']};cache={}
     for path in Path(executions).rglob('timing_control.json'):
+        completion=read(path.with_name('COMPLETE.json'))
+        if sha256(path)!=completion['timing_control_sha256']:raise ValueError('Same-host control bytes differ')
         baseline=read(path.with_name('predictions.json'))
         lookup={r['pair_id']:r for r in read(path)}
         if not baseline:continue
@@ -92,10 +99,23 @@ def same_host_timing(executions):
         for row in baseline:
             if row['pair_id'] not in lookup:raise ValueError('CPU timing control case missing')
             control=lookup[row['pair_id']]
+            if control['checkpoint_sha256']!=checkpoint_sha:raise ValueError('Timing control checkpoint differs')
+            case=cases[row['pair_id']]
+            a,b,ma,mb,truth=controlled_inputs(case,tiles,cache)
+            error=None
+            if truth is not None:
+                p=evaluation_points(a.shape,truth);q=transform(p,truth)
+                ia=np.rint(p).astype(int);ib=np.rint(q).astype(int).clip(0,127)
+                p=p[ma[ia[:,1],ia[:,0]]&mb[ib[:,1],ib[:,0]]]
+                error=endpoint_error(control['transform'],truth,p)
             results.setdefault(method,[]).append(dict(pair_id=row['pair_id'],
+                negative=case['negative'],correct=error is not None and error<=3 and not case['negative'],
+                accepted=accepts(policy,{'features':control['features']}),
                 baseline_ms=row['bidirectional_ms'],compact_ms=control['same_host_bidirectional_ms'],
                 ratio=row['bidirectional_ms']/max(control['same_host_bidirectional_ms'],1e-9)))
-    return {method:dict(cases=len(rows),median_baseline_ms=float(np.median([r['baseline_ms'] for r in rows])),
+    if any({r['pair_id'] for r in rows}!=set(cases) or len(rows)!=len(cases) for rows in results.values()):
+        raise ValueError('Same-host timing controls need all declared common cases exactly once')
+    return {method:dict(cases=len(rows),compact_same_host_quality=metrics(rows),median_baseline_ms=float(np.median([r['baseline_ms'] for r in rows])),
         median_compact_ms=float(np.median([r['compact_ms'] for r in rows])),
         median_paired_speedup=float(np.median([r['ratio'] for r in rows]))) for method,rows in results.items()}
 
@@ -122,14 +142,14 @@ def plots(series,common,policies,timing,folder):
         for threshold in np.unique(prediction[prediction>=0])[::-1]:
             stat=counts(rows,prediction>=threshold)
             if stat['correct_accepted']+stat['wrong_accepted']:
-                curve.append((100*stat['correct_acceptance'],100*stat['accepted_error']))
+                curve.append((100*(stat['correct_accepted']+stat['wrong_accepted'])/len(rows),100*stat['accepted_error']))
         if curve:
             xx,yy=np.array(curve).T;ax.plot(xx,yy,label=NAMES.get(method,'Compact v2'),linewidth=1.3)
         stat=metrics(rows)
-        if stat['accepted_error'] is not None:ax.scatter(100*stat['correct_acceptance'],100*stat['accepted_error'],s=24)
+        if stat['accepted_error'] is not None:ax.scatter(100*(stat['correct_accepted']+stat['wrong_accepted'])/len(rows),100*stat['accepted_error'],s=24)
     ax.axhline(1,color='#b55d43',ls='--',lw=1)
     ax.set_yscale('symlog',linthresh=1)
-    ax.set(xlim=(0,105),ylim=(0,100),xlabel='Correctly accepted positives (%)',ylabel='Incorrect accepted outputs (%; nonlinear scale)')
+    ax.set(xlim=(0,105),ylim=(0,100),xlabel='Coverage: accepted outputs / all pairs (%)',ylabel='Incorrect accepted outputs (%; nonlinear scale)')
     ax.set_yticks([0,1,5,20,100]);ax.set_yticklabels(['0','1','5','20','100'])
     ax.legend(frameon=False,fontsize=8,ncol=2);fig.tight_layout();fig.savefig(folder/'compact_risk_coverage_v2.png');plt.close(fig)
 
@@ -140,7 +160,7 @@ def plots(series,common,policies,timing,folder):
         quality=100*metrics(common[method])['correct_acceptance']
         ax.scatter(stat['median_baseline_ms'],quality,s=45)
         ax.annotate(NAMES.get(method,method),(stat['median_baseline_ms'],quality),xytext=(3,5),textcoords='offset points',fontsize=8)
-        compact_quality=100*metrics(common['compact'])['correct_acceptance']
+        compact_quality=100*stat['compact_same_host_quality']['correct_acceptance']
         ax.scatter(stat['median_compact_ms'],compact_quality,marker='x',color='#137f83',s=45)
         plotted=True
     if not plotted:
@@ -151,6 +171,7 @@ def plots(series,common,policies,timing,folder):
 
 
 def gallery(rows,manifest,folder):
+    import cv2
     from compact_research import controlled_inputs
     tiles={t['tile_id']:t for t in manifest['tiles']};cache={}
     choices=[('Accepted correct',next((r for r in rows if r['accepted'] and r['correct']),None)),
@@ -165,7 +186,16 @@ def gallery(rows,manifest,folder):
         a,b,*_=controlled_inputs(row,tiles,cache)
         axes[index,0].imshow(a,cmap='gray',vmin=0,vmax=255);axes[index,0].set_title(label+' / reference',fontsize=9)
         axes[index,1].imshow(b,cmap='gray',vmin=0,vmax=255);axes[index,1].set_title('Query',fontsize=9)
-        records.append(dict(label=label,pair_id=row['pair_id'],accepted=row['accepted'],correct=row['correct'],error_px=row['error_px']))
+        displayed=b
+        if row['accepted'] and row['transform'] is not None:
+            displayed=cv2.warpAffine(b,cv2.invertAffineTransform(np.array(row['transform'])),a.shape[::-1])
+        def encoded(im):
+            ok,blob=cv2.imencode('.png',im)
+            if not ok:raise ValueError('Demo image encoding failed')
+            return 'data:image/png;base64,'+base64.b64encode(blob).decode()
+        records.append(dict(label=label,pair_id=row['pair_id'],accepted=row['accepted'],correct=row['correct'],
+            error_px=row['error_px'],error_native_px=row['error_native_px'],
+            reference_png=encoded(a),query_png=encoded(displayed),query_aligned=bool(row['accepted'])))
     fig.tight_layout();fig.savefig(folder/'compact_failure_gallery_v2.png');plt.close(fig)
     return records
 
@@ -185,7 +215,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
     for method in common:
         if method not in policies:policies[method]=read(protocol['policy_index'][method])
     if any({r['pair_id'] for r in rows}!=common_ids for rows in common.values()):raise ValueError('Comparison case IDs differ')
-    timing=same_host_timing(timing_directory)
+    timing=same_host_timing(timing_directory,read(protocol['manifest_path']),policies['compact'],protocol['models'][primary_model])
     plots(series,common,policies,timing,folder)
     comparison=paired_interval(series['compact-20261030'],series['original-frozen'])
     primary=full_stats['compact-20261030']
@@ -201,9 +231,13 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         candidate=metrics(common['compact']);baseline=metrics(common[strongest])
         delta=100*(candidate['correct_acceptance']-baseline['correct_acceptance'])
         cpu=timing.get(strongest,{}).get('median_paired_speedup')
+        same_host=timing.get(strongest,{}).get('compact_same_host_quality')
+        speed_case=bool(same_host is not None and same_host['accepted_error'] is not None and
+            same_host['accepted_error']<=.01 and same_host['negative_acceptance']<=.01 and
+            same_host['correct_acceptance']>=baseline['correct_acceptance']-.03 and cpu is not None and cpu>=5)
         budget=candidate['accepted_error'] is not None and candidate['accepted_error']<=.01 and candidate['negative_acceptance']<=.01
         competitive=dict(strongest_completed_at_comparable_error=strongest,gain_pp=delta,
-            paired_cpu_speedup=cpu,point_target_met=bool(budget and (delta>0 or (delta>=-3 and cpu is not None and cpu>=5))),
+            paired_cpu_speedup=cpu,compact_same_host_quality=same_host,point_target_met=bool(budget and (delta>0 or speed_case)),
             uncertainty=paired_interval(common['compact'],common[strongest]),
             warning='Small common benchmark; no universal SOTA conclusion. A gain interval spanning zero is inconclusive.')
     targets['competitive_value']=None if competitive is None else competitive['point_target_met']
@@ -211,23 +245,57 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
     for method in ('compact','original','sift'):
         path=Path('runs')/('compact-v2-'+method+'-sensor')/'summary.json'
         if path.exists():sensors[method]=read(path)
+    resources={}
+    for path in Path(timing_directory).rglob('COMPLETE.json'):
+        d=read(path)
+        predictions=path.with_name('predictions.json')
+        if not predictions.exists():continue
+        rows=read(predictions)
+        if not rows:continue
+        method=rows[0]['method']
+        mib=d['peak_rss']/(1024**2 if d['peak_rss_unit']=='bytes' else 1024)
+        resources.setdefault(method,[]).append(mib)
+    resource_table={m:dict(peak_process_mib_range=[min(v),max(v)],
+        scope='Process high-water RSS including model loading, warmup and the tiny compact timing control; not isolated weight memory.') for m,v in resources.items()}
     geometry={}
     for method in ('compact','original','sift'):
         path=Path('runs')/('compact-v2-'+method+'-3d-test')/'summary.json'
         if path.exists():geometry[method]=read(path)
+    manifest=read(protocol['manifest_path'])
+    tiles={t['tile_id']:t for t in manifest['tiles']}
+    from compact_research import controlled_inputs
+    cache={};stratified={}
+    for row in series['compact-20261030']:
+        if row['negative']:continue
+        tile=tiles[row['tile_id']]
+        center=np.mean(np.array(tile['world_bounds']),axis=0)
+        longitude=float(np.degrees(np.arctan2(center[1],center[0])))
+        sector=min(int((longitude+180)//120),2)
+        a,b,ma,mb,_=controlled_inputs(row,tiles,cache)
+        support=ma&mb
+        fraction=float(((a>8)&(b>8)&support).sum()/max(support.sum(),1))
+        difficulty='low shared bright support (<25%)' if fraction<.25 else ('medium shared bright support (25-75%)' if fraction<.75 else 'high shared bright support (>=75%)')
+        for category,label in [('mode',tile['mode']),('polar_longitude_sector',str(sector)),('shared_brightness_proxy',difficulty),('component',row['component'])]:
+            stratified.setdefault(category,{}).setdefault(label,[]).append(row)
+    strata={category:{label:metrics(rows) for label,rows in groups.items()} for category,groups in stratified.items()}
     evidence=dict(schema_version=2,created_utc=datetime.now(timezone.utc).isoformat(),selected=selected,
         protocol_sha256=sha256(protocol_path),dataset=read(protocol['manifest_path'])['components_by_split'],
         full=full_stats,common={method:metrics(rows) for method,rows in common.items()},
-        paired_gain=comparison,targets=targets,competitive_comparison=competitive,same_host_cpu=timing,sensor_nominal=sensors,
-        three_dimensional=geometry,
+        paired_gain=comparison,targets=targets,competitive_comparison=competitive,
+        paired_common_comparisons={m:paired_interval(common['compact'],rows) for m,rows in common.items() if m!='compact'},
+        same_host_cpu=timing,baseline_resources=resource_table,sensor_nominal=sensors,
+        three_dimensional=geometry,descriptive_strata=strata,
         global_sota_established=False,verified_real_navigation_accuracy=None,
         gallery=gallery(series['compact-20261030'],read(protocol['manifest_path']),folder),
         caveats=['Physical renders, not acquired lunar navigation ground truth.',
+            'Inference128px; render tolerance3 benchmark pixels =12 original512px source pixels. POLAR nominal tolerance =28.5 original sensor pixels.',
+            'Training uses18 polar geometries/54 lighting images; geographic expansion is not a claim of a larger image count.',
+            'Shared-brightness strata are descriptive image-support proxies, not physical illumination angles or causal effects.',
             'Common modern comparison has36 positives and36 negatives across12 spatial components.',
             'Confidence calibration has only12 positives and12 negatives across4 components; no1percent risk guarantee.',
             'Negative pairs reuse both component endpoints. Shared terrain model and renderer create further dependence.',
             'Sun-angle metadata absent; lighting-observation IDs cannot be interpreted as fixed angular changes.',
-            'Risk-coverage curves are descriptive test curves; operating points were fixed on calibration data.'])
+            'Risk-coverage curves are descriptive test curves; operating points were fixed on calibration data. Coverage includes every positive and negative pair; risk is undefined when no output is accepted.'])
     (folder/'compact_results_v2.json').write_text(json.dumps(evidence,indent=2,allow_nan=False)+'\n')
     markdown=make_markdown(evidence)
     (folder/'RESEARCH_ITERATION_6.md').write_text(markdown)
@@ -256,6 +324,22 @@ def make_markdown(e):
         '|---|---:|---:|---:|---:|']
     for method,r in e['common'].items():
         lines.append(f"| {NAMES.get(method,'Compact v2')} | {r['raw_correct']}/{r['positives']} | {r['correct_accepted']}/{r['positives']} | {r['wrong_accepted']} | {r['negative_accepted']}/{r['negatives']} |")
+    lines+=['','| CPU method | Median bidirectional latency (ms) | Paired compact latency (ms) | Median paired speedup | Peak process MiB range |','|---|---:|---:|---:|---:|']
+    for method,r in e['same_host_cpu'].items():
+        memory=e['baseline_resources'].get(method,{}).get('peak_process_mib_range')
+        memory_text='unavailable' if memory is None else f'{memory[0]:.0f}--{memory[1]:.0f}'
+        lines.append(f"| {NAMES.get(method,method)} | {r['median_baseline_ms']:.1f} | {r['median_compact_ms']:.1f} | {r['median_paired_speedup']:.1f}x | {memory_text} |")
+    lines+=['','Memory is process high-water RSS including loading and warmup, not weight size. Each speedup uses the baseline and compact model on identical cases in the same CPU job. The JSON also reports the compact model accuracy measured in those jobs.']
+    lines+=['', '## Development ablations','',
+        'One fixed seed per cumulative experiment; 96 positive development cases. These outcomes selected the configuration and are not final-test evidence.','',
+        '| Configuration | Raw correct positives | Trainable parameters |','|---|---:|---:|']
+    for row in e['selected']['candidates']:
+        lines.append(f"| {row['variant']} | {row['correct']}/96 | {row['parameters']:,} |")
+    lines+=['','## Descriptive final strata','',
+        'Primary model only. Longitude sectors and image-brightness support are descriptive; shared terrain/rendering dependence remains.','',
+        '| Stratum | Group | Correct accepted positives |','|---|---|---:|']
+    for category,groups in e['descriptive_strata'].items():
+        for label,r in groups.items():lines.append(f"| {category} | {label} | {r['correct_accepted']}/{r['positives']} |")
     lines+=['','![Lighting observations](compact_lighting_v2.png)','',
         '![Descriptive risk and coverage](compact_risk_coverage_v2.png)','',
         '![Same-job CPU accuracy and runtime](compact_accuracy_runtime_v2.png)','',
@@ -263,11 +347,14 @@ def make_markdown(e):
         '', '## Three-dimensional matching','',
         'Raw correspondences are extracted before any planar fitting. Pose uses reference-map depth and predicted query pixels; query reference depth participates only in correspondence scoring, never in pose estimation. The secondary simulated pose threshold is2 degrees and1% of reference ray range.','']
     for method,r in e['three_dimensional'].items():
-        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r.get('poses_within_secondary_threshold',0)}/{r['cases']} poses meet the secondary criterion; {r['poses_estimated']}/{r['cases']} poses estimated. Match coverage: {r['correct_correspondences']}/{r['scorable_matches']} reference-scorable raw matches within3px, out of {r['returned_matches']} returned matches. These different correspondence coverages are not a method ranking.")
+        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r.get('poses_within_secondary_threshold',0)}/{r['cases']} poses meet the secondary criterion; {r['poses_estimated']}/{r['cases']} poses estimated. Match coverage: {r['correct_correspondences']}/{r['scorable_matches']} reference-scorable raw matches within3 benchmark pixels (12 original render pixels), out of {r['returned_matches']} returned matches. These different correspondence coverages are not a method ranking.")
     lines+=['', '## Sensor transfer and failures','',
         'NASA POLAR uses new lighting configurations of previously inspected laboratory terrains. Nominal fixed-camera agreement has unknown drift/calibration uncertainty. It is not verified lunar navigation accuracy.','']
     for method,r in e['sensor_nominal'].items():
-        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r['accepted_nominal_within3px']}/{r['cases']} accepted within nominal3px; {r['accepted_nominal_outside3px']} accepted outside the nominal criterion.")
+        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r['accepted_nominal_within3px']}/{r['cases']} accepted within nominal3 benchmark pixels (28.5 sensor pixels); {r['accepted_nominal_outside3px']} accepted outside the nominal criterion.")
+    if 'original' in e['sensor_nominal']:
+        r=e['sensor_nominal']['original']
+        lines.append(f"- Original frozen rejection rule on these same new configurations: {r.get('original_gate_accepted_nominal_within3px',0)}/{r['cases']} nominally correct acceptances; {r.get('original_gate_accepted_nominal_outside3px',0)} outside criterion.")
     lines+=['','![Success, rejection and failure examples](compact_failure_gallery_v2.png)','', '## Limits','']
     lines+=['- '+text for text in e['caveats']]
     lines+=['','No current-global-SOTA, NASA/JPL affiliation or flight-readiness claim is made. Earlier development and Tycho reserve results remain separate.',
@@ -278,6 +365,9 @@ def make_markdown(e):
 def write_html(e,markdown,folder):
     rows=''.join(f"<tr><td>{html.escape(NAMES.get(m,'Compact v2'))}</td><td>{r['correct_accepted']}/{r['positives']}</td><td>{r['wrong_accepted']}</td><td>{r['negative_accepted']}/{r['negatives']}</td></tr>" for m,r in e['common'].items())
     text='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compact lunar matcher - frozen study</title><style>body{font:17px/1.6 system-ui;background:#f2f4f7;color:#17283a;margin:auto;max-width:1000px;padding:35px}section{background:white;padding:24px;margin:20px 0;border-radius:14px}h1{font-size:34px}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}small{color:#536475}</style><h1>Compact lunar matching</h1><p>Frozen south-pole render study. Real navigation accuracy remains unverified.</p><section><h2>Same inputs, measured outcomes</h2><table><tr><th>Method</th><th>Correct accepted positives</th><th>Incorrect accepted</th><th>Nonoverlap accepted</th></tr>'+rows+'</table><small>36 positives and36 negatives across12 spatial components. Original frozen-gate results and all three seeds are in the full report.</small></section>'
+    text+='''<section><h2>Three examples, including a failure</h2><div id="cases"></div><p id="case-caption"></p><div style="position:relative;width:min(100%,480px);aspect-ratio:1;background:#000"><img id="reference" alt="Reference terrain" style="position:absolute;width:100%;height:100%"><img id="query" alt="Query terrain" style="position:absolute;width:100%;height:100%;opacity:.5"></div><label>Query opacity <input id="opacity" type="range" min="0" max="100" value="50"></label><p><small>Simulated terrain with known reference geometry. Accepted output is used for the overlay; rejected examples remain unaligned. No landmark review is needed.</small></p></section>'''
+    demo=json.dumps(e['gallery']).replace('<','\\u003c')
+    text+='<script>const examples='+demo+''';const reference=document.getElementById('reference'),query=document.getElementById('query');function show(i){const r=examples[i];reference.src=r.reference_png;query.src=r.query_png;document.getElementById('case-caption').textContent=r.label+'. '+(r.query_aligned?'Query aligned using the accepted model output.':'No transform returned; query shown unaligned.')+(r.error_native_px===null?'':' Raw source-image error: '+r.error_native_px.toFixed(1)+' pixels.');}examples.forEach((r,i)=>{const button=document.createElement('button');button.textContent=r.label;button.style.margin='4px';button.onclick=()=>show(i);document.getElementById('cases').appendChild(button);});document.getElementById('opacity').oninput=e=>query.style.opacity=e.target.value/100;if(examples.length)show(0);</script>'''
     for title,image in [('Lighting observations','compact_lighting_v2.png'),('Error versus coverage','compact_risk_coverage_v2.png'),('CPU tradeoff','compact_accuracy_runtime_v2.png'),('Success, rejection and remaining failure','compact_failure_gallery_v2.png')]:
         text+=f'<section><h2>{title}</h2><img src="{image}" alt="{title}"></section>'
     text+='<section><h2>Limits</h2><ul>'+''.join('<li>'+html.escape(c)+'</li>' for c in e['caveats'])+'</ul><a href="compact_brief_v2.pdf">Two-page research brief</a> | <a href="RESEARCH_ITERATION_6.md">Full report</a> | <a href="compact_results_v2.json">Measured results</a></section></html>'
@@ -293,28 +383,32 @@ def write_pdf(e,folder):
     def p(text,style='BodyText'):story.append(Paragraph(text,styles[style]));story.append(Spacer(1,7))
     def table(rows):
         t=Table(rows,hAlign='LEFT',colWidths=[205,100,90,90])
-        t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#17364b')),('TEXTCOLOR',(0,0),(-1,0),colors.white),('FONTSIZE',(0,0),(-1,-1),8),('BOTTOMPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),6),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.HexColor('#eef3f6'),colors.white])]))
+        t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#17364b')),('TEXTCOLOR',(0,0),(-1,0),colors.white),('FONTSIZE',(0,0),(-1,-1),8),('BOTTOMPADDING',(0,0),(-1,-1),4),('TOPPADDING',(0,0),(-1,-1),4),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.HexColor('#eef3f6'),colors.white])]))
         story.append(t);story.append(Spacer(1,10))
     p('Compact lunar image matching','Title')
     p('Frozen south-pole render study | Independent project; no NASA/JPL affiliation')
     p('<b>Question.</b> Can a small illumination-aware matcher accept more correct alignments while rejecting incorrect matches, with a useful CPU tradeoff against larger models?')
     p(f"<b>Design.</b> 28 spatial components:8 training,4 model selection,4 confidence calibration and12 final test across three polar sectors. Configuration: {e['selected']['selected_variant']}. Primary seed20261030; all three predefined seeds retained. Reference geometry comes from simulated depth and cameras.")
+    ablation='; '.join(f"{r['variant']}: {r['correct']}/96" for r in e['selected']['candidates'])
+    p('<b>Ablations.</b> Development raw correct positives: '+ablation+'. The selected architecture has28,272 parameters. Added complexity did not improve this development criterion. Training used18 polar geometries/54 lighting images.')
     rows=[['Full frozen render test','Correct accepted','Wrong accepted','Negative accepted']]
     for key,label in [('original-frozen','Original CNN / frozen gate'),('original','Original CNN / new confidence'),('compact-20261030','Compact v2 / primary'),('compact-20261031','Compact v2 / seed20261031'),('compact-20261032','Compact v2 / seed20261032')]:
         r=e['full'][key];rows.append([label,f"{r['correct_accepted']}/{r['positives']}",str(r['wrong_accepted']),f"{r['negative_accepted']}/{r['negatives']}"])
     table(rows)
     gain=e['paired_gain'];ci=gain['exploratory_component_bootstrap95_pp']
     p(f"<b>Measured gain.</b> {gain['gain_pp']:+.2f} percentage points versus the original frozen gate; exploratory grouped95% interval {ci[0]:+.2f} to {ci[1]:+.2f}. Predeclared10-point/error-budget target met: {e['targets']['model_improvement']}. Shared terrain/rendering dependence limits interpretation.")
-    story.append(Image(str(folder/'compact_accuracy_runtime_v2.png'),width=480,height=220))
+    story.append(Image(str(folder/'compact_accuracy_runtime_v2.png'),width=480,height=200))
     p('Runtime comparisons use paired same-job CPU controls only. Common modern comparisons contain36 positives and36 negatives; these are not published-paper benchmark percentages.')
     story.append(PageBreak())
     p('Comparison, transfer and limits','Heading1')
     rows=[['Identical common test','Raw correct','Correct accepted','Wrong accepted']]
     for method,r in e['common'].items():rows.append([NAMES.get(method,'Compact v2'),f"{r['raw_correct']}/36",f"{r['correct_accepted']}/36",str(r['wrong_accepted'])])
     table(rows)
-    story.append(Image(str(folder/'compact_lighting_v2.png'),width=480,height=195))
-    story.append(Image(str(folder/'compact_risk_coverage_v2.png'),width=480,height=195))
-    p('<b>Sensor transfer.</b> New NASA POLAR laboratory lighting configurations are scored against nominal fixed-camera identity. Reference drift/calibration uncertainty remains unknown. Real orbital navigation accuracy is unverified.')
+    story.append(Image(str(folder/'compact_lighting_v2.png'),width=480,height=150))
+    story.append(Image(str(folder/'compact_risk_coverage_v2.png'),width=480,height=150))
+    sensor=e['sensor_nominal'].get('compact',{})
+    p(f"<b>Sensor transfer.</b> Compact: {sensor.get('accepted_nominal_within3px','unavailable')}/40 nominally correct acceptances, {sensor.get('accepted_nominal_outside3px','unavailable')} outside criterion. New NASA POLAR lighting configurations reuse inspected rocks/rig; reference drift uncertainty is unknown. Orbital navigation accuracy remains unverified.")
+    p('<b>Units.</b> Inference128px. The3px render tolerance equals12 original512px pixels; POLAR nominal3px equals28.5 sensor pixels. These are coarse-registration diagnostics.')
     p('<b>Limits.</b> Calibration has only12 positives and12 negatives across4 components; an observed1% error budget is not a deployment guarantee. Negative pairs reuse both endpoints. Sun-angle metadata is absent. Risk curves are descriptive; operating points were fixed before test. No global state-of-the-art or flight-readiness claim.')
     p('Sources: MoonAnything DOI10.5281/zenodo.18415119; LoMa (ECCV2026); RoMa v2, arXiv2511.15706; NASA Ames POLAR. Repository contains case-level results, audits, licenses and reproduction commands.')
     def footer(canvas,doc):

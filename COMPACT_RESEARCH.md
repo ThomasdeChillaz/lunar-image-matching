@@ -39,6 +39,10 @@ a1216px crop resized to128px, so its nominal3px tolerance is28.5 sensor pixels. 
 dimensional matching uses depth visibility and camera projection separately from
 partial-affine registration. The inspected camera NPZs contain no Sun angles:
 report source lighting-pair IDs rather than inventing angular separations.
+Report descriptive primary-model strata by component, source mode,120-degree
+longitude sector and shared bright support. For that appearance proxy, use the
+fraction of mutually valid pixels exceeding8/255 in both images, with fixed
+bins below25%,25--75% and at least75%. This is not an illumination-angle label.
 
 ## Experiments and selection
 

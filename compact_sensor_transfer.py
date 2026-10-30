@@ -77,6 +77,11 @@ def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=
     output=Path(output)
     if output.exists():raise FileExistsError(output)
     output.mkdir(parents=True);rows=[]
+    write_new(output/'frozen_inputs.json',dict(sensor_protocol=sensor_protocol,
+        sensor_protocol_sha256=sha256(sensor_protocol),terrain_protocol=terrain_protocol,
+        terrain_protocol_sha256=sha256(terrain_protocol),publication_commit=publication_commit,
+        method=method,model=model,policy_sha256=sha256(doc['policy_index'][key]),
+        source_sha256=sha256(__file__)))
     from synthetic import texture
     warm=texture(20261030,128);matcher(warm,warm)
     for case in sensor['cases']:
@@ -88,6 +93,7 @@ def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=
         rows.append(dict(case,method=method,features=features.tolist(),nominal_error_px=error,
             nominal_error_native_px=None if error is None else float(error*1216/128),
             native_pixels_per_benchmark_pixel=1216/128,
+            raw_transform=None if found.matrix is None else found.matrix.tolist(),
             nominal_within3px=error is not None and error<=3,accepted=accepted,
             deployed_transform=found.matrix.tolist() if accepted else None,
             original_frozen_accepted=original,bidirectional_ms=ms,
@@ -100,6 +106,8 @@ def run(sensor_protocol,terrain_protocol,publication_commit,output,method,model=
         original_gate_accepted_nominal_within3px=sum(bool(r['original_frozen_accepted']) and r['nominal_within3px'] for r in rows),
         original_gate_accepted_nominal_outside3px=sum(bool(r['original_frozen_accepted']) and not r['nominal_within3px'] for r in rows),
         verified_navigation_accuracy=None))
+    write_new(output/'COMPLETE.json',dict(results_sha256=sha256(output/'results.json'),
+        summary_sha256=sha256(output/'summary.json'),frozen_inputs_sha256=sha256(output/'frozen_inputs.json')))
     return rows
 
 
