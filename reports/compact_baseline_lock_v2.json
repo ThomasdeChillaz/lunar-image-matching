@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "modern": {
+    "loma_b": {
+      "url": "https://github.com/davnords/loma",
+      "revision": "415caedde23a9ed479172ed174fe4ff7b4514d4b",
+      "license": "MIT; matcher Apache-2.0",
+      "weights": {
+        "dad.pth": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+        "dinov2_vitl14_pretrain.pth": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+        "loma_B.pt": "3a38824391e22b33bb3e10377c7736243fd8a2fbf1561446e7e133e497c35758"
+      },
+      "common_input_size": 504,
+      "settings": {},
+      "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
+      "preset": "LoMaB()",
+      "preset_source_sha256": "6cb643fafc5bd18952abf5c1767873ecc39a09aa06102f455b0c20183ecc014e",
+      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R."
+    },
+    "loma_r": {
+      "url": "https://github.com/davnords/loma",
+      "revision": "415caedde23a9ed479172ed174fe4ff7b4514d4b",
+      "license": "MIT; matcher Apache-2.0",
+      "weights": {
+        "dad.pth": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+        "dinov2_vitl14_pretrain.pth": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+        "loma_R.pth": "ade1379fb52143da65c36730f24b69eaa49618bb277890c6d2a0fb1630d33d67"
+      },
+      "common_input_size": 504,
+      "settings": {},
+      "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
+      "preset": "LoMaR()",
+      "preset_source_sha256": "6cb643fafc5bd18952abf5c1767873ecc39a09aa06102f455b0c20183ecc014e",
+      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R."
+    },
+    "romav2": {
+      "url": "https://github.com/Parskatt/RoMaV2",
+      "revision": "95c9968145c8906b7b59383258e9f73b02853d89",
+      "license": "MIT except DINOv3 custom license; inspect upstream notices",
+      "weights": {
+        "romav2.0.1.pt": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7"
+      },
+      "common_input_size": 512,
+      "settings": {
+        "H_lr": 512,
+        "W_lr": 512,
+        "H_hr": null,
+        "W_hr": null,
+        "bidirectional": false
+      },
+      "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
+      "common_profile": "Author fast512 settings;2000 sampled correspondences; common partial-affine fit; each direction independently inferred."
+    }
+  },
+  "legacy_locks": [
+    "roma_model_lock.json",
+    "matchanything_model_lock.json"
+  ],
+  "no_replacement_weights": true
+}
