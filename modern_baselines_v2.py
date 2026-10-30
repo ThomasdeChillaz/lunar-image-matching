@@ -88,13 +88,15 @@ class ModernMatcher:
         mb = np.ones(b.shape, bool) if mb is None else np.asarray(mb, bool)
         if not validate_pixels(a, ma) or not validate_pixels(b, mb):
             return np.empty((0, 2)), np.empty((0, 2))
-        # No extra information is introduced by the common 512px input profile.
+        # No extra source information is introduced. LoMa needs dimensions
+        # divisible by both8 and14;504 is the closest compatible size to512.
         aa, bb = [cv2.cvtColor(np.where(m, im, 0), cv2.COLOR_GRAY2RGB)
                   for im, m in ((a, ma), (b, mb))]
         internal_a, internal_b = a.shape, b.shape
         if self.profile == 'common':
-            internal_a = internal_b = (512, 512)
-            aa, bb = [cv2.resize(im, (512, 512), interpolation=cv2.INTER_LINEAR) for im in (aa, bb)]
+            size=512 if self.method=='romav2' else 504
+            internal_a = internal_b = (size,size)
+            aa, bb = [cv2.resize(im,(size,size),interpolation=cv2.INTER_LINEAR) for im in (aa,bb)]
         with self.torch.inference_mode():
             if self.method == 'romav2':
                 preds = self.model.match(aa, bb)

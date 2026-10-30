@@ -1,5 +1,15 @@
 # Milestones
 
+## Compact research execution - iteration 6
+
+- C1: actual LunarGeo archive/camera/depth audit and four spatial partitions. In progress; metadata regrouping replaces an invalid consecutive-filename assumption.
+- C2: pinned LoMa-B/R and RoMa-v2 controls, native common-input comparisons and same-host CPU timing. Author-profile LoMa controls executed on Linux; reduced-size correction and full comparison pending.
+- C3: four compact ablations, selected configuration and three fixed seeds. Implemented training/inference; execution depends on the completed leakage audit.
+- C4: separate confidence fitting/calibration, public freeze, full compact test and common modern comparison. Implemented; no new final-test outcomes exist yet.
+- C5: fresh laboratory lighting diagnostics, audited artifacts, two-page brief, figures, demo and tagged release. Forty source-bound cases acquired; final inference/report pending.
+
+The accepted protocol is [COMPACT_RESEARCH.md](COMPACT_RESEARCH.md). No current-SOTA, target-achievement or real-navigation claim is implied by software completion.
+
 ## Active research iteration milestones
 
 - M12: pinned LoFTR on identical original Sun pairs, complete outcomes and pixel/metric audit. Executed.

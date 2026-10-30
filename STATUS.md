@@ -1,5 +1,15 @@
 # Status
 
+## Compact research implementation - iteration 6, 30 October 2026
+
+The user authorized the [compact research protocol](COMPACT_RESEARCH.md): new south-pole data, current baseline comparisons, four small-model ablations, separate confidence calibration, frozen testing and a research package. No paid compute or human review is required.
+
+Implemented new source acquisition/geometry grouping, ray-depth reprojection/visibility/PnP, a28,305-parameter matchability model, two-scale/refinement and difficult-negative experiments, truth-free confidence, frozen-test guards, blind common-input baseline inference and explicit compact-v2 CLI selection. The existing v1 CLI remains the default and all earlier measurements are preserved.
+
+Executed so far:122 tests passed/4 optional skipped and a fresh20-summary procedural smoke. The finalized nadir archive audit finds4,498 complete three-light geometries; a64-geometry metadata sample yields43 footprint components before cross-mode joining. All three source archives must be audited together before model fitting. Forty additional NASA POLAR lighting cases are acquired and source-bound, without model inference or fitting. Published author-profile LoMa-B/R CPU controls pass; the initial512px common profile fails the author's14px patch constraint and is corrected to504px in a separate attempt. Local MPS LoMa-R is explicitly blocked by unsupported bfloat16; local RoMa-v2 requires newer PyTorch than this Intel Mac can install. Supported free Linux execution continues.
+
+Training, final evaluation, scientific targets, modern lunar accuracy, the final report and release are not yet complete. Do not present the old95.75% development ensemble as this new model's result.
+
 ## Validation hardening — 30 October 2026
 
 The [reserve protocol](reports/reserve_protocol_v1.json) was published at commit `b7f2e0fe24be08dac5c0e1201e9451b6a625d59f` before either reserve was opened. SHA256: `6394d81f9714f4ef18a0eae61df761ef4b38d9c0d03e680399a1400cdbeeec20`. It binds the selected standalone CNN, strict standalone development gate, source/model bytes,64 patches,12 footprint/acquisition components,9,216 positive cases,1,728 negative cases and all four geometric families. No threshold fitting or model selection occurs on reserves. Both reserves are consumed; final evaluation/audit results are recorded in [iteration 5](reports/RESEARCH_ITERATION_5.md). The full 13-predictor ensemble is not part of this primary reserve protocol and remains development-only.

@@ -1,6 +1,10 @@
 # AI coding-agent execution brief
 
 ## Objective
+
+The currently authorized extension is [COMPACT_RESEARCH.md](COMPACT_RESEARCH.md).
+Execute its C1-C5 milestones, preserve every earlier outcome, and distinguish
+implemented software from executed measurements and achieved research targets.
 Build a scientifically honest, reproducible benchmark of lunar image matching across illumination and geometric conditions. Deliver runnable code, tested metrics, provenance, frozen geographically separated evaluation, plots and a short report. Do not optimize for attractive numbers.
 
 ## Workflow for every milestone

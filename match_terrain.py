@@ -58,6 +58,47 @@ def run(reference,query,protocol,output,reference_mask=None,query_mask=None,incl
     print(json.dumps(result))
 
 
+def run_v2(reference,query,protocol,output,model_dir,reference_mask=None,query_mask=None,
+           include_proposal=False,correspondence_output=None):
+    from compact_lunar import CompactMatcher
+    from compact_confidence import accepts
+    from compact_research import predict
+    from dataset import sha256
+    output=Path(output)
+    if output.exists():raise FileExistsError(output)
+    if correspondence_output and Path(correspondence_output).exists():raise FileExistsError(correspondence_output)
+    doc=json.loads(Path(protocol).read_text())
+    for path,digest in {**doc['source_sha256'],**doc['policies']}.items():
+        if sha256(path)!=digest:raise ValueError('Frozen compact source/policy changed')
+    if model_dir not in doc['models'] or sha256(Path(model_dir)/'selected.pt')!=doc['models'][model_dir]:
+        raise ValueError('Model is not bound by this compact protocol')
+    policy=json.loads(Path(doc['policy_index'][model_dir]).read_text())
+    a,ma=read_image(reference,reference_mask);b,mb=read_image(query,query_mask)
+    matcher=CompactMatcher(model_dir)
+    from synthetic import texture
+    warm=texture(20261030,128);matcher(warm,warm)
+    found,reverse,features,points,ms,_=predict(matcher,a,b,ma,mb,'compact')
+    accepted=accepts(policy,{'features':features.tolist()})
+    result=dict(model_version='compact-v2',accepted=accepted,
+        transform=found.matrix.tolist() if accepted else None,
+        reason='accepted_by_frozen_confidence' if accepted else 'frozen_confidence_rejected',
+        protocol_sha256=sha256(protocol),checkpoint_sha256=doc['models'][model_dir],
+        transform_convention='Reference integer-centered x,y pixels to query x,y pixels.',
+        bidirectional_with_gate_ms=ms,warning='Empirical confidence, not certified navigation accuracy')
+    if include_proposal:
+        result['ungated_research_proposal']=dict(transform=None if found.matrix is None else found.matrix.tolist(),
+            warning='Rejected raw proposals are not accepted alignments')
+    output.parent.mkdir(parents=True,exist_ok=True)
+    output.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    if correspondence_output:
+        path=Path(correspondence_output);path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_text(json.dumps(dict(accepted=accepted,reference_points=np.asarray(points[0]).tolist() if accepted else [],
+            query_points=np.asarray(points[1]).tolist() if accepted else [],
+            coordinate_convention='Native128px x,y centers; reference to query',
+            warning='These are predictions, never independent reference correspondences'),indent=2)+'\n')
+    print(json.dumps(result));return result
+
+
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--reference',required=True)
@@ -67,5 +108,14 @@ if __name__=='__main__':
     p.add_argument('--protocol',default='reports/reserve_protocol_v1.json')
     p.add_argument('--output',required=True)
     p.add_argument('--include-proposal',action='store_true')
+    p.add_argument('--model-version',choices=['v1','compact-v2'],default='v1')
+    p.add_argument('--model-dir')
+    p.add_argument('--correspondence-output')
     args=p.parse_args()
-    run(args.reference,args.query,args.protocol,args.output,args.reference_mask,args.query_mask,args.include_proposal)
+    if args.model_version=='v1':
+        if args.model_dir or args.correspondence_output:p.error('Compact model/correspondence options require --model-version compact-v2')
+        run(args.reference,args.query,args.protocol,args.output,args.reference_mask,args.query_mask,args.include_proposal)
+    else:
+        if not args.model_dir:p.error('--model-dir is required for compact-v2')
+        run_v2(args.reference,args.query,args.protocol,args.output,args.model_dir,args.reference_mask,args.query_mask,
+               args.include_proposal,args.correspondence_output)
