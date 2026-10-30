@@ -1,0 +1,31 @@
+{
+  "rows": 72,
+  "cases": 24,
+  "scope": "Four laboratory analogue terrains, real sensors and physical illumination; zero training or threshold selection. Not photographs taken on the Moon and not a reproduced dense-stereo benchmark.",
+  "reference": "Published Faro XYZ and unique per-terrain stereo/CAM_LIDAR calibration; nominal fixed-camera pixel identity for relighting. Never matcher-derived reference points.",
+  "uncertainty": "NASA describes sub2mm laser accuracy. Calibration covariance, cross-light rig drift and per-point pixel uncertainty are not supplied. Laser nearest-reference tolerance and visibility filtering are explicit. Report nominal reference agreement, not uncertainty-certified navigation accuracy.",
+  "terrain_raw": {
+    "cases": 24,
+    "fits": 24,
+    "laser_scorable_inlier_matches": 186,
+    "nominal_inlier_matches_within3px": 116,
+    "fixed_camera_cases": 8,
+    "fixed_camera_nominal_success": 4
+  },
+  "terrain_deployed": {
+    "cases": 24,
+    "fits": 4,
+    "laser_scorable_inlier_matches": 27,
+    "nominal_inlier_matches_within3px": 22,
+    "fixed_camera_cases": 8,
+    "fixed_camera_nominal_success": 0
+  },
+  "sift": {
+    "cases": 24,
+    "fits": 8,
+    "laser_scorable_inlier_matches": 42,
+    "nominal_inlier_matches_within3px": 42,
+    "fixed_camera_cases": 8,
+    "fixed_camera_nominal_success": 0
+  }
+}

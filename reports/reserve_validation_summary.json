@@ -1,0 +1,661 @@
+{
+  "overall": {
+    "terrain_raw": {
+      "positive_cases": 9216,
+      "correct": 8414,
+      "correct_rate": 0.9129774305555556,
+      "positive_wrong": 306,
+      "rejected_or_failed_positive": 496,
+      "negative_cases": 1728,
+      "negative_accepted": 1625,
+      "incorrect_accepted": 1931,
+      "accepted_error_fraction": 0.18666022232962784,
+      "positive_rate_cluster_percentile_95": [
+        0.8628804125816993,
+        0.9499421296296297
+      ]
+    },
+    "terrain_deployed": {
+      "positive_cases": 9216,
+      "correct": 4603,
+      "correct_rate": 0.4994574652777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 4613,
+      "negative_cases": 1728,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0,
+      "positive_rate_cluster_percentile_95": [
+        0.4512040317139001,
+        0.5376851241675916
+      ]
+    },
+    "sift": {
+      "positive_cases": 9216,
+      "correct": 502,
+      "correct_rate": 0.05447048611111111,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 8714,
+      "negative_cases": 1728,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0,
+      "positive_rate_cluster_percentile_95": [
+        0.023490777483833037,
+        0.08717257553606235
+      ]
+    }
+  },
+  "by_group": {
+    "terrain_raw:0": {
+      "positive_cases": 1008,
+      "correct": 938,
+      "correct_rate": 0.9305555555555556,
+      "positive_wrong": 40,
+      "rejected_or_failed_positive": 30,
+      "negative_cases": 189,
+      "negative_accepted": 184,
+      "incorrect_accepted": 224,
+      "accepted_error_fraction": 0.1927710843373494
+    },
+    "terrain_raw:1": {
+      "positive_cases": 576,
+      "correct": 544,
+      "correct_rate": 0.9444444444444444,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 32,
+      "negative_cases": 108,
+      "negative_accepted": 103,
+      "incorrect_accepted": 103,
+      "accepted_error_fraction": 0.15919629057187018
+    },
+    "terrain_raw:2": {
+      "positive_cases": 144,
+      "correct": 140,
+      "correct_rate": 0.9722222222222222,
+      "positive_wrong": 4,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 27,
+      "negative_accepted": 26,
+      "incorrect_accepted": 30,
+      "accepted_error_fraction": 0.17647058823529413
+    },
+    "terrain_raw:3": {
+      "positive_cases": 1440,
+      "correct": 1129,
+      "correct_rate": 0.7840277777777778,
+      "positive_wrong": 139,
+      "rejected_or_failed_positive": 172,
+      "negative_cases": 270,
+      "negative_accepted": 245,
+      "incorrect_accepted": 384,
+      "accepted_error_fraction": 0.25380039656311965
+    },
+    "terrain_raw:4": {
+      "positive_cases": 1440,
+      "correct": 1371,
+      "correct_rate": 0.9520833333333333,
+      "positive_wrong": 20,
+      "rejected_or_failed_positive": 49,
+      "negative_cases": 270,
+      "negative_accepted": 255,
+      "incorrect_accepted": 275,
+      "accepted_error_fraction": 0.16707168894289187
+    },
+    "terrain_raw:5": {
+      "positive_cases": 1440,
+      "correct": 1306,
+      "correct_rate": 0.9069444444444444,
+      "positive_wrong": 19,
+      "rejected_or_failed_positive": 115,
+      "negative_cases": 270,
+      "negative_accepted": 254,
+      "incorrect_accepted": 273,
+      "accepted_error_fraction": 0.17289423685877137
+    },
+    "terrain_raw:6": {
+      "positive_cases": 288,
+      "correct": 288,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 54,
+      "negative_accepted": 54,
+      "incorrect_accepted": 54,
+      "accepted_error_fraction": 0.15789473684210525
+    },
+    "terrain_raw:7": {
+      "positive_cases": 1872,
+      "correct": 1779,
+      "correct_rate": 0.9503205128205128,
+      "positive_wrong": 60,
+      "rejected_or_failed_positive": 33,
+      "negative_cases": 351,
+      "negative_accepted": 331,
+      "incorrect_accepted": 391,
+      "accepted_error_fraction": 0.18018433179723503
+    },
+    "terrain_raw:8": {
+      "positive_cases": 288,
+      "correct": 224,
+      "correct_rate": 0.7777777777777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 64,
+      "negative_cases": 54,
+      "negative_accepted": 44,
+      "incorrect_accepted": 44,
+      "accepted_error_fraction": 0.16417910447761194
+    },
+    "terrain_raw:9": {
+      "positive_cases": 288,
+      "correct": 267,
+      "correct_rate": 0.9270833333333334,
+      "positive_wrong": 20,
+      "rejected_or_failed_positive": 1,
+      "negative_cases": 54,
+      "negative_accepted": 51,
+      "incorrect_accepted": 71,
+      "accepted_error_fraction": 0.21005917159763313
+    },
+    "terrain_raw:10": {
+      "positive_cases": 288,
+      "correct": 285,
+      "correct_rate": 0.9895833333333334,
+      "positive_wrong": 3,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 54,
+      "negative_accepted": 52,
+      "incorrect_accepted": 55,
+      "accepted_error_fraction": 0.16176470588235295
+    },
+    "terrain_raw:11": {
+      "positive_cases": 144,
+      "correct": 143,
+      "correct_rate": 0.9930555555555556,
+      "positive_wrong": 1,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 27,
+      "negative_accepted": 26,
+      "incorrect_accepted": 27,
+      "accepted_error_fraction": 0.1588235294117647
+    },
+    "terrain_raw:reserve_a": {
+      "positive_cases": 4608,
+      "correct": 4373,
+      "correct_rate": 0.9490017361111112,
+      "positive_wrong": 123,
+      "rejected_or_failed_positive": 112,
+      "negative_cases": 864,
+      "negative_accepted": 822,
+      "incorrect_accepted": 945,
+      "accepted_error_fraction": 0.17769838285069575
+    },
+    "terrain_raw:reserve_b": {
+      "positive_cases": 4608,
+      "correct": 4041,
+      "correct_rate": 0.876953125,
+      "positive_wrong": 183,
+      "rejected_or_failed_positive": 384,
+      "negative_cases": 864,
+      "negative_accepted": 803,
+      "incorrect_accepted": 986,
+      "accepted_error_fraction": 0.19614083946687885
+    },
+    "terrain_deployed:0": {
+      "positive_cases": 1008,
+      "correct": 573,
+      "correct_rate": 0.5684523809523809,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 435,
+      "negative_cases": 189,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:1": {
+      "positive_cases": 576,
+      "correct": 245,
+      "correct_rate": 0.4253472222222222,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 331,
+      "negative_cases": 108,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:2": {
+      "positive_cases": 144,
+      "correct": 43,
+      "correct_rate": 0.2986111111111111,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 101,
+      "negative_cases": 27,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:3": {
+      "positive_cases": 1440,
+      "correct": 578,
+      "correct_rate": 0.4013888888888889,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 862,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:4": {
+      "positive_cases": 1440,
+      "correct": 733,
+      "correct_rate": 0.5090277777777777,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 707,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:5": {
+      "positive_cases": 1440,
+      "correct": 793,
+      "correct_rate": 0.5506944444444445,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 647,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:6": {
+      "positive_cases": 288,
+      "correct": 155,
+      "correct_rate": 0.5381944444444444,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 133,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:7": {
+      "positive_cases": 1872,
+      "correct": 965,
+      "correct_rate": 0.5154914529914529,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 907,
+      "negative_cases": 351,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:8": {
+      "positive_cases": 288,
+      "correct": 98,
+      "correct_rate": 0.3402777777777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 190,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:9": {
+      "positive_cases": 288,
+      "correct": 161,
+      "correct_rate": 0.5590277777777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 127,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:10": {
+      "positive_cases": 288,
+      "correct": 148,
+      "correct_rate": 0.5138888888888888,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 140,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:11": {
+      "positive_cases": 144,
+      "correct": 111,
+      "correct_rate": 0.7708333333333334,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 33,
+      "negative_cases": 27,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:reserve_a": {
+      "positive_cases": 4608,
+      "correct": 2419,
+      "correct_rate": 0.5249565972222222,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2189,
+      "negative_cases": 864,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:reserve_b": {
+      "positive_cases": 4608,
+      "correct": 2184,
+      "correct_rate": 0.4739583333333333,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2424,
+      "negative_cases": 864,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:0": {
+      "positive_cases": 1008,
+      "correct": 37,
+      "correct_rate": 0.03670634920634921,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 971,
+      "negative_cases": 189,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:1": {
+      "positive_cases": 576,
+      "correct": 33,
+      "correct_rate": 0.057291666666666664,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 543,
+      "negative_cases": 108,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:2": {
+      "positive_cases": 144,
+      "correct": 9,
+      "correct_rate": 0.0625,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 135,
+      "negative_cases": 27,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:3": {
+      "positive_cases": 1440,
+      "correct": 160,
+      "correct_rate": 0.1111111111111111,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1280,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:4": {
+      "positive_cases": 1440,
+      "correct": 46,
+      "correct_rate": 0.03194444444444444,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1394,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:5": {
+      "positive_cases": 1440,
+      "correct": 157,
+      "correct_rate": 0.10902777777777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1283,
+      "negative_cases": 270,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:6": {
+      "positive_cases": 288,
+      "correct": 0,
+      "correct_rate": 0.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 288,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": null
+    },
+    "sift:7": {
+      "positive_cases": 1872,
+      "correct": 8,
+      "correct_rate": 0.004273504273504274,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1864,
+      "negative_cases": 351,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:8": {
+      "positive_cases": 288,
+      "correct": 21,
+      "correct_rate": 0.07291666666666667,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 267,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:9": {
+      "positive_cases": 288,
+      "correct": 1,
+      "correct_rate": 0.003472222222222222,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 287,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:10": {
+      "positive_cases": 288,
+      "correct": 18,
+      "correct_rate": 0.0625,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 270,
+      "negative_cases": 54,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:11": {
+      "positive_cases": 144,
+      "correct": 12,
+      "correct_rate": 0.08333333333333333,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 132,
+      "negative_cases": 27,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:reserve_a": {
+      "positive_cases": 4608,
+      "correct": 109,
+      "correct_rate": 0.023654513888888888,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 4499,
+      "negative_cases": 864,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:reserve_b": {
+      "positive_cases": 4608,
+      "correct": 393,
+      "correct_rate": 0.08528645833333333,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 4215,
+      "negative_cases": 864,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    }
+  },
+  "by_geometry": {
+    "terrain_raw:translation": {
+      "positive_cases": 2304,
+      "correct": 2105,
+      "correct_rate": 0.9136284722222222,
+      "positive_wrong": 80,
+      "rejected_or_failed_positive": 119,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 80,
+      "accepted_error_fraction": 0.036613272311212815
+    },
+    "terrain_raw:rotation": {
+      "positive_cases": 2304,
+      "correct": 2108,
+      "correct_rate": 0.9149305555555556,
+      "positive_wrong": 71,
+      "rejected_or_failed_positive": 125,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 71,
+      "accepted_error_fraction": 0.03258375401560349
+    },
+    "terrain_raw:scale": {
+      "positive_cases": 2304,
+      "correct": 2109,
+      "correct_rate": 0.9153645833333334,
+      "positive_wrong": 72,
+      "rejected_or_failed_positive": 123,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 72,
+      "accepted_error_fraction": 0.033012379642365884
+    },
+    "terrain_raw:combined": {
+      "positive_cases": 2304,
+      "correct": 2092,
+      "correct_rate": 0.9079861111111112,
+      "positive_wrong": 83,
+      "rejected_or_failed_positive": 129,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 83,
+      "accepted_error_fraction": 0.03816091954022988
+    },
+    "terrain_deployed:translation": {
+      "positive_cases": 2304,
+      "correct": 829,
+      "correct_rate": 0.3598090277777778,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1475,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:rotation": {
+      "positive_cases": 2304,
+      "correct": 1293,
+      "correct_rate": 0.5611979166666666,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1011,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:scale": {
+      "positive_cases": 2304,
+      "correct": 1227,
+      "correct_rate": 0.5325520833333334,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1077,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:combined": {
+      "positive_cases": 2304,
+      "correct": 1254,
+      "correct_rate": 0.5442708333333334,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1050,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:translation": {
+      "positive_cases": 2304,
+      "correct": 133,
+      "correct_rate": 0.05772569444444445,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2171,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:rotation": {
+      "positive_cases": 2304,
+      "correct": 140,
+      "correct_rate": 0.06076388888888889,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2164,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:scale": {
+      "positive_cases": 2304,
+      "correct": 118,
+      "correct_rate": 0.051215277777777776,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2186,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:combined": {
+      "positive_cases": 2304,
+      "correct": 111,
+      "correct_rate": 0.048177083333333336,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2193,
+      "negative_cases": 0,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    }
+  },
+  "components": 12,
+  "tiles": 64,
+  "predeclared_targets_met": true,
+  "empirical_target": {
+    "accepted_error_fraction_max": 0.01,
+    "nonoverlap_false_acceptance_max": 0.01,
+    "positive_correct_acceptance_min": 0.4,
+    "minimum_components": 12
+  },
+  "calibration_on_reserves": false,
+  "model_selection_on_reserves": false,
+  "uncertainty_warning": "Report components and per-component outcomes. Cluster bootstrap positive rates by footprint/acquisition component; negative pairs reuse both components, so no independent-pair confidence bound.",
+  "geography": "Both reserves are within Tycho, four plus eight footprint/acquisition components. No cross-crater or polar generalization claim.",
+  "real_accuracy": "No independently verified repeat-observation navigation labels are available. Real-photo known-warp controls must remain a separate experiment."
+}

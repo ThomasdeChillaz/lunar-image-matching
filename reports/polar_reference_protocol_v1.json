@@ -1,0 +1,585 @@
+{
+  "frozen_utc": "2026-10-30T08:40:36.889215+00:00",
+  "root": "data/polar",
+  "cases": [
+    {
+      "pair_id": "Terrain01_L30_L180",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamL_249923897_1024.png",
+      "query": "data/polar/Terrain01/CamL_249672326_1024.png",
+      "reference_camera": "L",
+      "query_camera": "L",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain01_R30_R180",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamR_249923897_1024.png",
+      "query": "data/polar/Terrain01/CamR_249672326_1024.png",
+      "reference_camera": "R",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain01_L30_R30",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamL_249923897_1024.png",
+      "query": "data/polar/Terrain01/CamR_249923897_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain01_L180_R180",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamL_249672326_1024.png",
+      "query": "data/polar/Terrain01/CamR_249672326_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain01_L30_R180",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamL_249923897_1024.png",
+      "query": "data/polar/Terrain01/CamR_249672326_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain01_L180_R30",
+      "terrain": "Terrain01",
+      "reference": "data/polar/Terrain01/CamL_249672326_1024.png",
+      "query": "data/polar/Terrain01/CamR_249923897_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain06_L30_L180",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamL_265353766_1024.png",
+      "query": "data/polar/Terrain06/CamL_265118797_1024.png",
+      "reference_camera": "L",
+      "query_camera": "L",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain06_R30_R180",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamR_265353766_1024.png",
+      "query": "data/polar/Terrain06/CamR_265118797_1024.png",
+      "reference_camera": "R",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain06_L30_R30",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamL_265353766_1024.png",
+      "query": "data/polar/Terrain06/CamR_265353766_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain06_L180_R180",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamL_265118797_1024.png",
+      "query": "data/polar/Terrain06/CamR_265118797_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain06_L30_R180",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamL_265353766_1024.png",
+      "query": "data/polar/Terrain06/CamR_265118797_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain06_L180_R30",
+      "terrain": "Terrain06",
+      "reference": "data/polar/Terrain06/CamL_265118797_1024.png",
+      "query": "data/polar/Terrain06/CamR_265353766_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain11_L30_L180",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamL_281484826_1024.png",
+      "query": "data/polar/Terrain11/CamL_281274739_1024.png",
+      "reference_camera": "L",
+      "query_camera": "L",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain11_R30_R180",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamR_281484826_1024.png",
+      "query": "data/polar/Terrain11/CamR_281274739_1024.png",
+      "reference_camera": "R",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain11_L30_R30",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamL_281484826_1024.png",
+      "query": "data/polar/Terrain11/CamR_281484826_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain11_L180_R180",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamL_281274739_1024.png",
+      "query": "data/polar/Terrain11/CamR_281274739_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain11_L30_R180",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamL_281484826_1024.png",
+      "query": "data/polar/Terrain11/CamR_281274739_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain11_L180_R30",
+      "terrain": "Terrain11",
+      "reference": "data/polar/Terrain11/CamL_281274739_1024.png",
+      "query": "data/polar/Terrain11/CamR_281484826_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain12_L30_L180",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamL_284546538_1024.png",
+      "query": "data/polar/Terrain12/CamL_284325635_1024.png",
+      "reference_camera": "L",
+      "query_camera": "L",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain12_R30_R180",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamR_284546538_1024.png",
+      "query": "data/polar/Terrain12/CamR_284325635_1024.png",
+      "reference_camera": "R",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "fixed_camera_relighting"
+    },
+    {
+      "pair_id": "Terrain12_L30_R30",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamL_284546538_1024.png",
+      "query": "data/polar/Terrain12/CamR_284546538_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain12_L180_R180",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamL_284325635_1024.png",
+      "query": "data/polar/Terrain12/CamR_284325635_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain12_L30_R180",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamL_284546538_1024.png",
+      "query": "data/polar/Terrain12/CamR_284325635_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 30,
+      "query_sun_deg": 180,
+      "kind": "stereo_laser_reference"
+    },
+    {
+      "pair_id": "Terrain12_L180_R30",
+      "terrain": "Terrain12",
+      "reference": "data/polar/Terrain12/CamL_284325635_1024.png",
+      "query": "data/polar/Terrain12/CamR_284546538_1024.png",
+      "reference_camera": "L",
+      "query_camera": "R",
+      "reference_sun_deg": 180,
+      "query_sun_deg": 30,
+      "kind": "stereo_laser_reference"
+    }
+  ],
+  "provenance": [
+    {
+      "dataset": "NASA Ames POLAR Stereo Dataset",
+      "source_page": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/",
+      "archive_url": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/PolarDB_download/Terrain01_LargeOnly.zip",
+      "archive_size": 748321473,
+      "archive_headers": {
+        "ETag": "\"2c9a7ac1-54f0ac03c5540\"",
+        "Last-Modified": "Mon, 08 May 2017 22:27:57 GMT",
+        "Accept-Ranges": "bytes"
+      },
+      "terrain": "Terrain01",
+      "members": [
+        {
+          "source_member": "Terrain01_LargeOnly/GroundTruth_ascii/PosA.xyz",
+          "local_name": "PosA.xyz",
+          "bytes": 235118325,
+          "sha256": "5633a39089ef6348138401d12e4ecf528ee5f2c90e20ca3ac871bc6bb1b52727",
+          "zip_crc32": 2089282692,
+          "compressed_bytes": 44664775
+        },
+        {
+          "source_member": "Terrain01_LargeOnly/PosA_1500_Loff/Sun_180/CamL_249672326_1024.png",
+          "local_name": "CamL_249672326_1024.png",
+          "bytes": 2778643,
+          "sha256": "9fb714faba7a3827b2b4813d9af95f0737d0d161d113a23b741328e636720585",
+          "zip_crc32": 3326191820,
+          "compressed_bytes": 2775321
+        },
+        {
+          "source_member": "Terrain01_LargeOnly/PosA_1500_Loff/Sun_180/CamR_249672326_1024.png",
+          "local_name": "CamR_249672326_1024.png",
+          "bytes": 2786776,
+          "sha256": "492b0e1f02c82d6113c98fdc556e542d478848c20a32a4994bdde81a24e047fe",
+          "zip_crc32": 463564815,
+          "compressed_bytes": 2783832
+        },
+        {
+          "source_member": "Terrain01_LargeOnly/PosA_1500_Loff/Sun_30/CamL_249923897_1024.png",
+          "local_name": "CamL_249923897_1024.png",
+          "bytes": 2762828,
+          "sha256": "66e2c26d4f927e55f397ebd7ae76d97fdafe1212b317edd293f20c00a553a148",
+          "zip_crc32": 1761802167,
+          "compressed_bytes": 2758164
+        },
+        {
+          "source_member": "Terrain01_LargeOnly/PosA_1500_Loff/Sun_30/CamR_249923897_1024.png",
+          "local_name": "CamR_249923897_1024.png",
+          "bytes": 2746441,
+          "sha256": "200e71c13e786b95b2be7b51d6fbf816bfed095d9a3865e86e3bac8b23cc7a33",
+          "zip_crc32": 4162437743,
+          "compressed_bytes": 2742124
+        },
+        {
+          "source_member": "Terrain01_LargeOnly/stereo.calibration",
+          "local_name": "stereo.calibration",
+          "bytes": 627,
+          "sha256": "80f8e33e438a8d0da1b2262923af61e6d76d1e017a7ed5a3d4ccf2cab8a25246",
+          "zip_crc32": 1244595973,
+          "compressed_bytes": 315
+        }
+      ],
+      "selection": "Terrains01,06,11,12; camera PosA at1500mm, rover lights off, Sun30 and180, both cameras at1024ms. Metadata-only fixed selection, no image-quality or matcher screening.",
+      "verification": "Exact HTTP ranges, original ZIP member CRC32, saved SHA256; whole outer archive not downloaded or independently checksummed.",
+      "reference": "External laser XYZ and stereo/camera-to-laser calibration. Measurement and calibration uncertainties must be distinguished. This is laboratory analogue data, not lunar orbital navigation."
+    },
+    {
+      "dataset": "NASA Ames POLAR Stereo Dataset",
+      "source_page": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/",
+      "archive_url": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/PolarDB_download/Terrain06_Smooth.zip",
+      "archive_size": 947219814,
+      "archive_headers": {
+        "ETag": "\"38756d66-54f0b18cee4c0\"",
+        "Last-Modified": "Mon, 08 May 2017 22:52:43 GMT",
+        "Accept-Ranges": "bytes"
+      },
+      "terrain": "Terrain06",
+      "members": [
+        {
+          "source_member": "Terrain06_Smooth/GroundTruth_ascii/PosA.xyz",
+          "local_name": "PosA.xyz",
+          "bytes": 226985528,
+          "sha256": "747f3f5e6977f81fc7aa7b0eee4dccd5b7397e3af428fe68eb0803491fbae273",
+          "zip_crc32": 326759058,
+          "compressed_bytes": 42998323
+        },
+        {
+          "source_member": "Terrain06_Smooth/PosA_1500_Loff/Sun_180/CamL_265118797_1024.png",
+          "local_name": "CamL_265118797_1024.png",
+          "bytes": 2737433,
+          "sha256": "84c61eb95f754fdbcdcab3ad2e401582b275e92fffb4ce5afe22368315dad629",
+          "zip_crc32": 2980763746,
+          "compressed_bytes": 2733849
+        },
+        {
+          "source_member": "Terrain06_Smooth/PosA_1500_Loff/Sun_180/CamR_265118797_1024.png",
+          "local_name": "CamR_265118797_1024.png",
+          "bytes": 2734581,
+          "sha256": "69e21ed19b9a3aca4387825dd17a94552b3ee4aaa3df7fcba90db0a945d05ed8",
+          "zip_crc32": 3266883641,
+          "compressed_bytes": 2731008
+        },
+        {
+          "source_member": "Terrain06_Smooth/PosA_1500_Loff/Sun_30/CamL_265353766_1024.png",
+          "local_name": "CamL_265353766_1024.png",
+          "bytes": 2792493,
+          "sha256": "e365d42a7fcd79f03328419dfa311b28733f5919d118c025357d8f3143cc64d3",
+          "zip_crc32": 2160690196,
+          "compressed_bytes": 2787595
+        },
+        {
+          "source_member": "Terrain06_Smooth/PosA_1500_Loff/Sun_30/CamR_265353766_1024.png",
+          "local_name": "CamR_265353766_1024.png",
+          "bytes": 2744719,
+          "sha256": "98835715f48de3828009ec2bcb195c1b9dd4398ced51d8e3364c6cf1f77e8e90",
+          "zip_crc32": 1569783142,
+          "compressed_bytes": 2739866
+        },
+        {
+          "source_member": "Terrain06_Smooth/stereo.calibration",
+          "local_name": "stereo.calibration",
+          "bytes": 620,
+          "sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae",
+          "zip_crc32": 1541475215,
+          "compressed_bytes": 309
+        }
+      ],
+      "selection": "Terrains01,06,11,12; camera PosA at1500mm, rover lights off, Sun30 and180, both cameras at1024ms. Metadata-only fixed selection, no image-quality or matcher screening.",
+      "verification": "Exact HTTP ranges, original ZIP member CRC32, saved SHA256; whole outer archive not downloaded or independently checksummed.",
+      "reference": "External laser XYZ and stereo/camera-to-laser calibration. Measurement and calibration uncertainties must be distinguished. This is laboratory analogue data, not lunar orbital navigation."
+    },
+    {
+      "dataset": "NASA Ames POLAR Stereo Dataset",
+      "source_page": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/",
+      "archive_url": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/PolarDB_download/Terrain11_FreshCrater.zip",
+      "archive_size": 927427278,
+      "archive_headers": {
+        "ETag": "\"37476ace-60e9d3b8cc700\"",
+        "Last-Modified": "Wed, 10 Jan 2024 20:25:32 GMT",
+        "Accept-Ranges": "bytes"
+      },
+      "terrain": "Terrain11",
+      "members": [
+        {
+          "source_member": "Terrain11_FreshCrater/GroundTruth_ascii/PosA.xyz",
+          "local_name": "PosA.xyz",
+          "bytes": 206965353,
+          "sha256": "833c2f39ea7512a2437beb745e25e197bae4ae06a98424266dac2c42f0f89e12",
+          "zip_crc32": 1125918736,
+          "compressed_bytes": 41292156
+        },
+        {
+          "source_member": "Terrain11_FreshCrater/PosA_1500_Loff/Sun_180/CamL_281274739_1024.png",
+          "local_name": "CamL_281274739_1024.png",
+          "bytes": 2644855,
+          "sha256": "accf877643ea79f163245487b22b5520a93852a97a37e31d88d7a91c1ab18617",
+          "zip_crc32": 2970784485,
+          "compressed_bytes": 2637132
+        },
+        {
+          "source_member": "Terrain11_FreshCrater/PosA_1500_Loff/Sun_180/CamR_281274739_1024.png",
+          "local_name": "CamR_281274739_1024.png",
+          "bytes": 2642227,
+          "sha256": "777ab63b0e2f2fc51f683b3a9b5080d35437e3c34df93d25db53e7fddc33979d",
+          "zip_crc32": 2776939349,
+          "compressed_bytes": 2636647
+        },
+        {
+          "source_member": "Terrain11_FreshCrater/PosA_1500_Loff/Sun_30/CamL_281484826_1024.png",
+          "local_name": "CamL_281484826_1024.png",
+          "bytes": 2395299,
+          "sha256": "5fdabd863f84cf1631f04ce8877da542a309a5d2530581b2367ab60e5c0cfb36",
+          "zip_crc32": 127595315,
+          "compressed_bytes": 2389846
+        },
+        {
+          "source_member": "Terrain11_FreshCrater/PosA_1500_Loff/Sun_30/CamR_281484826_1024.png",
+          "local_name": "CamR_281484826_1024.png",
+          "bytes": 2346484,
+          "sha256": "d07b026a51d69454a31ae8f5c1a03fd0fe25c7f0a3e9249cd8e43eb85bb7aec6",
+          "zip_crc32": 1546584668,
+          "compressed_bytes": 2341162
+        },
+        {
+          "source_member": "Terrain11_FreshCrater/stereo.calibration",
+          "local_name": "stereo.calibration",
+          "bytes": 620,
+          "sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae",
+          "zip_crc32": 1541475215,
+          "compressed_bytes": 309
+        }
+      ],
+      "selection": "Terrains01,06,11,12; camera PosA at1500mm, rover lights off, Sun30 and180, both cameras at1024ms. Metadata-only fixed selection, no image-quality or matcher screening.",
+      "verification": "Exact HTTP ranges, original ZIP member CRC32, saved SHA256; whole outer archive not downloaded or independently checksummed.",
+      "reference": "External laser XYZ and stereo/camera-to-laser calibration. Measurement and calibration uncertainties must be distinguished. This is laboratory analogue data, not lunar orbital navigation."
+    },
+    {
+      "dataset": "NASA Ames POLAR Stereo Dataset",
+      "source_page": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/",
+      "archive_url": "https://ti.arc.nasa.gov/dataset/IRG_PolarDB/PolarDB_download/Terrain12_OldCrater.zip",
+      "archive_size": 940739400,
+      "archive_headers": {
+        "ETag": "\"38128b48-54f0b50a86100\"",
+        "Last-Modified": "Mon, 08 May 2017 23:08:20 GMT",
+        "Accept-Ranges": "bytes"
+      },
+      "terrain": "Terrain12",
+      "members": [
+        {
+          "source_member": "Terrain12_OldCrater/GroundTruth_ascii/PosA.xyz",
+          "local_name": "PosA.xyz",
+          "bytes": 227698956,
+          "sha256": "6991a6885870f84a5893d3997f7c2be8ed39f5e32be04699e3736d6c499ea179",
+          "zip_crc32": 2086854928,
+          "compressed_bytes": 45141148
+        },
+        {
+          "source_member": "Terrain12_OldCrater/PosA_1500_Loff/Sun_180/CamL_284325635_1024.png",
+          "local_name": "CamL_284325635_1024.png",
+          "bytes": 2846345,
+          "sha256": "4eec6ee5163609e4e0eb50f4d60f2403cfde9f190555e2672d0db3fc38e2450a",
+          "zip_crc32": 1725328331,
+          "compressed_bytes": 2840719
+        },
+        {
+          "source_member": "Terrain12_OldCrater/PosA_1500_Loff/Sun_180/CamR_284325635_1024.png",
+          "local_name": "CamR_284325635_1024.png",
+          "bytes": 2834488,
+          "sha256": "e3744a9a634e6d3ffa9ec759bd5a405801600d4cd6542fc87fdb8a48243f7090",
+          "zip_crc32": 3025259040,
+          "compressed_bytes": 2829450
+        },
+        {
+          "source_member": "Terrain12_OldCrater/PosA_1500_Loff/Sun_30/CamL_284546538_1024.png",
+          "local_name": "CamL_284546538_1024.png",
+          "bytes": 2338180,
+          "sha256": "e4e168cba95e93c0b89b29f1995d70a3df2537cc588afccafb1339133f9d5cd3",
+          "zip_crc32": 624002440,
+          "compressed_bytes": 2334301
+        },
+        {
+          "source_member": "Terrain12_OldCrater/PosA_1500_Loff/Sun_30/CamR_284546538_1024.png",
+          "local_name": "CamR_284546538_1024.png",
+          "bytes": 2229199,
+          "sha256": "ccd349bd0c119cf27b7a5d104dde4b1d73de9d72ae4aa361efca75202d7850f1",
+          "zip_crc32": 916314894,
+          "compressed_bytes": 2225824
+        },
+        {
+          "source_member": "Terrain12_OldCrater/stereo.calibration",
+          "local_name": "stereo.calibration",
+          "bytes": 620,
+          "sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae",
+          "zip_crc32": 1541475215,
+          "compressed_bytes": 309
+        }
+      ],
+      "selection": "Terrains01,06,11,12; camera PosA at1500mm, rover lights off, Sun30 and180, both cameras at1024ms. Metadata-only fixed selection, no image-quality or matcher screening.",
+      "verification": "Exact HTTP ranges, original ZIP member CRC32, saved SHA256; whole outer archive not downloaded or independently checksummed.",
+      "reference": "External laser XYZ and stereo/camera-to-laser calibration. Measurement and calibration uncertainties must be distinguished. This is laboratory analogue data, not lunar orbital navigation."
+    }
+  ],
+  "terrain_protocol_path": "reports/reserve_protocol_v1.json",
+  "terrain_protocol_sha256": "6394d81f9714f4ef18a0eae61df761ef4b38d9c0d03e680399a1400cdbeeec20",
+  "source_files_sha256": {
+    "data/polar/Terrain01/PosA.xyz": "5633a39089ef6348138401d12e4ecf528ee5f2c90e20ca3ac871bc6bb1b52727",
+    "data/polar/Terrain01/CamL_249672326_1024.png": "9fb714faba7a3827b2b4813d9af95f0737d0d161d113a23b741328e636720585",
+    "data/polar/Terrain01/CamR_249672326_1024.png": "492b0e1f02c82d6113c98fdc556e542d478848c20a32a4994bdde81a24e047fe",
+    "data/polar/Terrain01/CamL_249923897_1024.png": "66e2c26d4f927e55f397ebd7ae76d97fdafe1212b317edd293f20c00a553a148",
+    "data/polar/Terrain01/CamR_249923897_1024.png": "200e71c13e786b95b2be7b51d6fbf816bfed095d9a3865e86e3bac8b23cc7a33",
+    "data/polar/Terrain01/stereo.calibration": "80f8e33e438a8d0da1b2262923af61e6d76d1e017a7ed5a3d4ccf2cab8a25246",
+    "data/polar/Terrain06/PosA.xyz": "747f3f5e6977f81fc7aa7b0eee4dccd5b7397e3af428fe68eb0803491fbae273",
+    "data/polar/Terrain06/CamL_265118797_1024.png": "84c61eb95f754fdbcdcab3ad2e401582b275e92fffb4ce5afe22368315dad629",
+    "data/polar/Terrain06/CamR_265118797_1024.png": "69e21ed19b9a3aca4387825dd17a94552b3ee4aaa3df7fcba90db0a945d05ed8",
+    "data/polar/Terrain06/CamL_265353766_1024.png": "e365d42a7fcd79f03328419dfa311b28733f5919d118c025357d8f3143cc64d3",
+    "data/polar/Terrain06/CamR_265353766_1024.png": "98835715f48de3828009ec2bcb195c1b9dd4398ced51d8e3364c6cf1f77e8e90",
+    "data/polar/Terrain06/stereo.calibration": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae",
+    "data/polar/Terrain11/PosA.xyz": "833c2f39ea7512a2437beb745e25e197bae4ae06a98424266dac2c42f0f89e12",
+    "data/polar/Terrain11/CamL_281274739_1024.png": "accf877643ea79f163245487b22b5520a93852a97a37e31d88d7a91c1ab18617",
+    "data/polar/Terrain11/CamR_281274739_1024.png": "777ab63b0e2f2fc51f683b3a9b5080d35437e3c34df93d25db53e7fddc33979d",
+    "data/polar/Terrain11/CamL_281484826_1024.png": "5fdabd863f84cf1631f04ce8877da542a309a5d2530581b2367ab60e5c0cfb36",
+    "data/polar/Terrain11/CamR_281484826_1024.png": "d07b026a51d69454a31ae8f5c1a03fd0fe25c7f0a3e9249cd8e43eb85bb7aec6",
+    "data/polar/Terrain11/stereo.calibration": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae",
+    "data/polar/Terrain12/PosA.xyz": "6991a6885870f84a5893d3997f7c2be8ed39f5e32be04699e3736d6c499ea179",
+    "data/polar/Terrain12/CamL_284325635_1024.png": "4eec6ee5163609e4e0eb50f4d60f2403cfde9f190555e2672d0db3fc38e2450a",
+    "data/polar/Terrain12/CamR_284325635_1024.png": "e3744a9a634e6d3ffa9ec759bd5a405801600d4cd6542fc87fdb8a48243f7090",
+    "data/polar/Terrain12/CamL_284546538_1024.png": "e4e168cba95e93c0b89b29f1995d70a3df2537cc588afccafb1339133f9d5cd3",
+    "data/polar/Terrain12/CamR_284546538_1024.png": "ccd349bd0c119cf27b7a5d104dde4b1d73de9d72ae4aa361efca75202d7850f1",
+    "data/polar/Terrain12/stereo.calibration": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae"
+  },
+  "source_sha256": {
+    "polar_reference.py": "c4dc2a313777b235e5a793241b069b1cd68b9f009edce786c2a7fba755fca6c7",
+    "reserve_evaluation.py": "d428b5e36f313722cfd4c8ccef870856638ccad88a34b41665334943fb28b651",
+    "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+    "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+    "research_quality_gate.py": "388917316eb5dc1a036748b38beed21d26be94c6f52d0de0411d3b3967d3dcf4",
+    "structural_refinement.py": "374170477c5a655073e2b48223a119f0f31440221508dd7a29234a8b0e2db892",
+    "confidence.py": "b8057a464dd563d89439c9d7b7eb0493b400928c919a296e90faf4dad867171d"
+  },
+  "policy": {
+    "min_global": 0.4,
+    "min_patch": -1.0,
+    "min_lit": 0.0,
+    "min_support": 0.2,
+    "min_agreement": 0.0,
+    "max_cycle": 8.0
+  },
+  "training": "runs/contrastive-terrain-train-v1",
+  "laser_row_stride": 8,
+  "reference_assignment_radius_px": 0.35,
+  "visibility_depth_tolerance_m": 0.01,
+  "preprocessing": "Center1216-square sensor crop, fixed12bit->8bit mapping and INTER_AREA128; same for every light and method. No contrast fitting.",
+  "reference": "Published Faro XYZ and unique per-terrain stereo/CAM_LIDAR calibration; nominal fixed-camera pixel identity for relighting. Never matcher-derived reference points.",
+  "uncertainty": "NASA describes sub2mm laser accuracy. Calibration covariance, cross-light rig drift and per-point pixel uncertainty are not supplied. Laser nearest-reference tolerance and visibility filtering are explicit. Report nominal reference agreement, not uncertainty-certified navigation accuracy.",
+  "scope": "Four laboratory analogue terrains, real sensors and physical illumination; zero training or threshold selection. Not photographs taken on the Moon and not a reproduced dense-stereo benchmark."
+}

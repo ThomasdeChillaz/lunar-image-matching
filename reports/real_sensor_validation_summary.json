@@ -1,0 +1,160 @@
+{
+  "by_region": {
+    "terrain_raw:S1": {
+      "positive_cases": 80,
+      "correct": 80,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 20,
+      "negative_accepted": 20,
+      "incorrect_accepted": 20,
+      "accepted_error_fraction": 0.2
+    },
+    "terrain_raw:S2": {
+      "positive_cases": 80,
+      "correct": 80,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 20,
+      "negative_accepted": 20,
+      "incorrect_accepted": 20,
+      "accepted_error_fraction": 0.2
+    },
+    "terrain_raw:S3": {
+      "positive_cases": 176,
+      "correct": 176,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 44,
+      "negative_accepted": 43,
+      "incorrect_accepted": 43,
+      "accepted_error_fraction": 0.1963470319634703
+    },
+    "terrain_deployed:S1": {
+      "positive_cases": 80,
+      "correct": 79,
+      "correct_rate": 0.9875,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1,
+      "negative_cases": 20,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:S2": {
+      "positive_cases": 80,
+      "correct": 79,
+      "correct_rate": 0.9875,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 1,
+      "negative_cases": 20,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "terrain_deployed:S3": {
+      "positive_cases": 176,
+      "correct": 176,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 44,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:S1": {
+      "positive_cases": 80,
+      "correct": 80,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 20,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:S2": {
+      "positive_cases": 80,
+      "correct": 47,
+      "correct_rate": 0.5875,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 33,
+      "negative_cases": 20,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift:S3": {
+      "positive_cases": 176,
+      "correct": 176,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 44,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    }
+  },
+  "by_method": {
+    "terrain_raw": {
+      "positive_cases": 336,
+      "correct": 336,
+      "correct_rate": 1.0,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 0,
+      "negative_cases": 84,
+      "negative_accepted": 83,
+      "incorrect_accepted": 83,
+      "accepted_error_fraction": 0.19809069212410502
+    },
+    "terrain_deployed": {
+      "positive_cases": 336,
+      "correct": 334,
+      "correct_rate": 0.9940476190476191,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 2,
+      "negative_cases": 84,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    },
+    "sift": {
+      "positive_cases": 336,
+      "correct": 303,
+      "correct_rate": 0.9017857142857143,
+      "positive_wrong": 0,
+      "rejected_or_failed_positive": 33,
+      "negative_cases": 84,
+      "negative_accepted": 0,
+      "incorrect_accepted": 0,
+      "accepted_error_fraction": 0.0
+    }
+  },
+  "repeat_diagnostics": {
+    "S1": {
+      "cases": 45,
+      "raw_fits": 45,
+      "gate_accepted": 13,
+      "independent_accuracy": "unavailable"
+    },
+    "S2": {
+      "cases": 45,
+      "raw_fits": 45,
+      "gate_accepted": 19,
+      "independent_accuracy": "unavailable"
+    },
+    "S3": {
+      "cases": 231,
+      "raw_fits": 229,
+      "gate_accepted": 45,
+      "independent_accuracy": "unavailable"
+    }
+  },
+  "scope": "Frozen Tycho-trained model; zero fitting on these pixels. S1/S2/S3 are three previously inspected source scenes, not 42 independent terrains or an untouched new geographic reserve.",
+  "accuracy_boundary": "Exact geometry is known only for warps of a single real photo. Repeat-observation map disagreement and cycles are unverified diagnostics. No independently verified orbital navigation accuracy or metric accuracy."
+}
