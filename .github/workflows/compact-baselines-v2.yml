@@ -1,0 +1,106 @@
+name: Compact v2 blind baseline comparison
+on:
+  push:
+    paths: ['.github/workflows/compact-baselines-v2.yml']
+  workflow_dispatch:
+    inputs:
+      stage:
+        type: choice
+        options: [development, test]
+        default: development
+permissions:
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        method: [loma_b, loma_r, romav2, roma, matchanything]
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      TORCH_HOME: ${{ github.workspace }}/data/models/modern-v2-cache
+      METHOD: ${{ matrix.method }}
+      SHARD: ${{ matrix.shard }}
+      STAGE: ${{ inputs.stage || 'development' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install separate supported CPU runtime
+        run: |
+          if [ "$METHOD" = matchanything ]; then
+            python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.2.2 torchvision==0.17.2
+            python -m pip install numpy==1.26.4 opencv-python==4.10.0.84 pillow==12.0.0
+          else
+            python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0 torchvision==0.23.0
+            python -m pip install -r requirements-roma-linux.txt
+          fi
+          python -m pip install -r requirements-eloftr.txt
+          python -m pip install rasterio==1.4.4 kornia==0.7.4 rich==14.2.0 tyro==0.9.35 tqdm==4.67.1
+      - name: Acquire exact author source and weights
+        run: |
+          python - <<'PY'
+          import os,subprocess
+          from modern_baselines_v2 import SOURCES
+          method=os.environ['METHOD']
+          if method in ('loma_b','loma_r','romav2'):
+              spec=SOURCES['romav2' if method=='romav2' else 'loma']
+              subprocess.run(['git','clone',spec['url'],'upstream'],check=True)
+              subprocess.run(['git','-C','upstream','checkout',spec['revision']],check=True)
+          elif method=='roma':
+              from roma_matcher import prepare
+              prepare()
+          else:
+              from matchanything_matcher import prepare
+              prepare()
+          PY
+      - name: Verify input package and infer without correctness labels
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from dataset import sha256
+          from baseline_infer_v2 import infer
+          stage=os.environ['STAGE']
+          stem='compact_dev_inputs_v2' if stage=='development' else 'compact_test_inputs_v2'
+          path=Path('reports')/(stem+'.zip')
+          assert sha256(path)==(Path('reports')/(stem+'.sha256')).read_text().split()[0]
+          control=None
+          if stage=='test':
+              import urllib.request,zipfile,io,json
+              url='https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/compact-v2-rc1/compact-v2-models.zip'
+              content=urllib.request.urlopen(url,timeout=120).read()
+              import hashlib
+              assert hashlib.sha256(content).hexdigest()==Path('reports/compact_model_assets_v2.sha256').read_text().split()[0]
+              with zipfile.ZipFile(io.BytesIO(content)) as z:
+                  assert z.testzip() is None
+                  for name in z.namelist():
+                      p=Path(name)
+                      assert not p.is_absolute() and '..' not in p.parts and p.parts[0]=='runs'
+                  z.extractall('.')
+              variant=json.loads(Path('reports/compact_selection_v2.json').read_text())['selected_variant']
+              control='runs/compact-v2-'+variant+'-20261030'
+          kwargs=dict(source='upstream',shard=int(os.environ['SHARD']),shards=8)
+          if control is not None:kwargs['control_model']=control
+          infer(path,'runs/blind',os.environ['METHOD'],**kwargs)
+          PY
+      - name: Capture exact environment
+        if: always()
+        run: |
+          mkdir -p runs
+          python -m pip freeze > runs/runtime.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: compact-v2-${{ env.STAGE }}-${{ matrix.method }}-${{ matrix.shard }}
+          path: runs/
+          retention-days: 30
+          if-no-files-found: warn

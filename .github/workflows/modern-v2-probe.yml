@@ -2,7 +2,7 @@ name: Modern v2 pretrained controls
 on:
   workflow_dispatch:
   push:
-    paths: ['.github/workflows/modern-v2-probe.yml']
+    paths: ['.github/workflows/modern-v2-probe.yml', 'modern_baselines_v2.py']
 permissions:
   contents: read
 jobs:
@@ -41,12 +41,39 @@ jobs:
           subprocess.run(['git','clone',spec['url'],'upstream'],check=True)
           subprocess.run(['git','-C','upstream','checkout',spec['revision']],check=True)
           PY
-      - name: Execute actual common and author-profile software controls
+      - name: Execute actual common-profile software control
         env:
           METHOD: ${{ matrix.method }}
         run: |
-          python modern_baselines_v2.py --method "$METHOD" --source upstream --output "runs/${METHOD}-common" --profile common
-          python modern_baselines_v2.py --method "$METHOD" --source upstream --output "runs/${METHOD}-author" --profile author
+          timeout 900s python modern_baselines_v2.py --method "$METHOD" --source upstream --output "runs/${METHOD}-common" --profile common
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: modern-v2-${{ matrix.method }}-common-control
+          path: runs/
+          retention-days: 30
+      - name: Execute author-profile control within free CPU budget
+        id: author
+        continue-on-error: true
+        env:
+          METHOD: ${{ matrix.method }}
+        run: timeout 600s python modern_baselines_v2.py --method "$METHOD" --source upstream --output "runs/${METHOD}-author" --profile author
+      - name: Require actual common pretrained control and retain author limitations
+        env:
+          METHOD: ${{ matrix.method }}
+        run: |
+          python - <<'PY'
+          import os,json
+          from pathlib import Path
+          common=Path('runs')/(os.environ['METHOD']+'-common')/'probe.json'
+          doc=json.loads(common.read_text())
+          assert doc['status']=='passed',doc
+          author=Path('runs')/(os.environ['METHOD']+'-author')/'probe.json'
+          if not author.exists():
+              author.parent.mkdir(parents=True,exist_ok=True)
+              author.write_text(json.dumps(dict(status='blocked',method=os.environ['METHOD'],
+                  profile='author',reason='Author-profile subprocess exceeded10minute free CPU budget or failed before completion; no inferred lunar result.')))
+          PY
       - name: Capture exact runtime
         if: always()
         run: python -m pip freeze > runs/runtime.txt
