@@ -49,7 +49,10 @@ jobs:
       fail-fast: false
       max-parallel: 8
       matrix:
-        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+        # Measured full-profile CPU control: 79.3 seconds/forward.
+        # <=39 cases x two independent directions per shard leaves margin.
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+                16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
     env:
       OMP_NUM_THREADS: '4'
       MKL_NUM_THREADS: '4'
@@ -70,7 +73,7 @@ jobs:
       - name: Infer blind development predictions on exact native pixels
         env:
           DENSE_SHARD: ${{ matrix.shard }}
-        run: python -u infer_dense_shard.py --output runs/roma-development-shard-${DENSE_SHARD} --shard-index ${DENSE_SHARD} --shard-count 8
+        run: python -u infer_dense_shard.py --output runs/roma-development-shard-${DENSE_SHARD} --shard-index ${DENSE_SHARD} --shard-count 32
       - name: Preserve predictions and complete provenance without weights
         if: always()
         uses: actions/upload-artifact@v4
