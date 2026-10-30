@@ -4,11 +4,15 @@
 
 The user authorized the [compact research protocol](COMPACT_RESEARCH.md): new south-pole data, current baseline comparisons, four small-model ablations, separate confidence calibration, frozen testing and a research package. No paid compute or human review is required.
 
-Implemented new source acquisition/geometry grouping, ray-depth reprojection/visibility/PnP, a28,305-parameter matchability model, two-scale/refinement and difficult-negative experiments, truth-free confidence, frozen-test guards, blind common-input baseline inference and explicit compact-v2 CLI selection. The existing v1 CLI remains the default and all earlier measurements are preserved.
+Implemented acquisition/actual-camera regrouping, full-depth footprint grouping, ray-depth visibility/PnP, four compact training variants, independent reverse evidence, separate confidence fitting/calibration, frozen-test guards, blind baselines, explicit compact-v2 CLI and saved-metric replay. The original default and all earlier measurements remain intact.
 
-Executed so far:122 tests passed/4 optional skipped and a fresh20-summary procedural smoke. The finalized nadir archive audit finds4,498 complete three-light geometries; a64-geometry metadata sample yields43 footprint components before cross-mode joining. All three source archives must be audited together before model fitting. Forty additional NASA POLAR lighting cases are acquired and source-bound, without model inference or fitting. Published author-profile LoMa-B/R CPU controls pass; the initial512px common profile fails the author's14px patch constraint and is corrected to504px in a separate attempt. Local MPS LoMa-R is explicitly blocked by unsupported bfloat16; local RoMa-v2 requires newer PyTorch than this Intel Mac can install. Supported free Linux execution continues.
+Acquired all three LunarGeo south-pole archives. The selected dataset contains28 spatial components:8 training,4 selection,4 calibration,12 final across three polar sectors. There are18 training geometries/54 lighting images. Explicit trajectory IDs and Sun angles are absent; spatial separation does not establish trajectory independence. The explicit trajectory limitation was documented after training and before final inference.
 
-Training, final evaluation, scientific targets, modern lunar accuracy, the final report and release are not yet complete. Do not present the old95.75% development ensemble as this new model's result.
+All four2000-step ablations completed. Development raw successes: expanded93/96, reliability92/96, hard negatives89/96, multiscale87/96. The declared rule selected the28,272-parameter expanded control. All three predefined seeds20261030/31/32 completed; every saved development alignment and confidence decision passed exact numerical replay. Each seed retains12/12 correct calibration positives with0/12 nonoverlap accepted; that small sample gives no1% deployment guarantee.
+
+Actual author/common pretrained controls pass for LoMa-B, LoMa-R and RoMa v2 on free Linux CPU. The initial blind comparison retained18 completed workers; unbounded official-weight header stalls required cancellation/recovery of22 unfinished workers. Exact weights/settings remain fixed. Candidate checkpoints and data are published in the compact-v2-rc1 prerelease. No final-test or fresh POLAR inference has yet run.
+
+Validation:126 tests passed/4 optional skipped, plus a fresh20-summary procedural smoke. Final baseline calibration, public test freeze, evaluation, brief/demo/outreach draft and final release remain pending. Do not present old development ensemble results as the new candidate result.
 
 ## Validation hardening — 30 October 2026
 

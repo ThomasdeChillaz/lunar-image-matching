@@ -19,6 +19,19 @@ def test_ray_range_is_not_z_depth_and_camera_roundtrip():
     assert front.all()
 
 
+def test_two_depth_cache_requires_identical_depths_across_all_lighting_variants():
+    from compact_research import validate_manifest
+    tiles=[]
+    for i,split in enumerate(['train','model_selection','calibration']+['test']*12):
+        tiles.append(dict(tile_id=str(i),component=str(i),split=split,
+            source_hashes=[dict(camera=f'{i}-camera-{j%2}',depth=f'{i}-depth-{j%2}') for j in range(6)]))
+    manifest=dict(tiles=tiles)
+    assert validate_manifest(manifest) is manifest
+    tiles[0]['source_hashes'][4]['depth']='different-depth-under-another-light'
+    with pytest.raises(ValueError,match='identical source depths'):
+        validate_manifest(manifest)
+
+
 def test_depth_visibility_rejects_occlusion_without_query_match_coordinates():
     k=np.array([[30.,0,16],[0,30,16],[0,0,1]])
     yy,xx=np.mgrid[:32,:32]
@@ -162,3 +175,31 @@ def test_3d_adapter_never_filters_matches_with_a_planar_model(monkeypatch):
     p,q=raw_points(wrapped,'sift',a,a,mask,mask)
     assert len(p)>=6
     np.testing.assert_allclose(p,q,atol=1e-6)
+
+
+def test_official_weight_acquisition_retries_timeout_and_rejects_changed_cache(tmp_path,monkeypatch):
+    torch=pytest.importorskip('torch')
+    import hashlib,io,json,socket
+    import baseline_weights_v2 as acquire
+    monkeypatch.chdir(tmp_path)
+    (tmp_path/'reports').mkdir()
+    blob=b'isolated-test-asset';digest=hashlib.sha256(blob).hexdigest()
+    (tmp_path/'reports/compact_baseline_lock_v2.json').write_text(json.dumps(
+        {'modern':{'loma_b':{'weights':{'dad.pth':digest}}}}))
+    monkeypatch.setattr(torch.hub,'get_dir',lambda:str(tmp_path/'cache'))
+    previous_timeout=socket.getdefaulttimeout();calls=[]
+    def download(url,timeout):
+        calls.append((url,timeout))
+        if len(calls)==1:raise TimeoutError('simulated stalled header')
+        return io.BytesIO(blob)
+    monkeypatch.setattr(acquire.urllib.request,'urlopen',download)
+    try:
+        acquire.acquire('loma_b',tmp_path/'attempts.json')
+        assert len(calls)==2 and calls[1][0].endswith('?download=1')
+        assert [r['status'] for r in json.loads((tmp_path/'attempts.json').read_text())['attempts']]==['failed','verified']
+        path=tmp_path/'cache/checkpoints/dad.pth';assert path.read_bytes()==blob
+        path.write_bytes(b'changed')
+        with pytest.raises(ValueError,match='Existing official weight differs'):
+            acquire.acquire('loma_b',tmp_path/'changed-attempts.json')
+        assert len(calls)==2
+    finally:socket.setdefaulttimeout(previous_timeout)

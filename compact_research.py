@@ -29,7 +29,7 @@ SOURCES+=['contrastive_terrain.py','confidence.py','structural_refinement.py','r
           'roma_matcher.py','matchanything_matcher.py','eloftr_matcher.py','loftr_matcher.py',
           'polar_reference.py','dataset.py','synthetic.py','verify_compact_3d.py']
 SOURCES+=['replay_compact_v2.py']
-SOURCES+=['baseline_weights_v2.py','.github/workflows/compact-baselines-v2.yml']
+SOURCES+=['baseline_weights_v2.py','.github/workflows/compact-baselines-v2.yml','match_terrain.py']
 FAMILIES=('translation','rotation','scale','combined')
 
 
@@ -41,6 +41,9 @@ def validate_manifest(manifest,check_files=False):
             raise ValueError('Unexpected split or repeated terrain ID')
         ids.add(tile['tile_id'])
         if seen.setdefault(tile['component'],split)!=split:raise ValueError('Terrain component crosses splits')
+        sources=tile['source_hashes']
+        if len(sources)!=6 or any(len({sources[i]['depth'] for i in range(camera,6,2)})!=1 for camera in (0,1)):
+            raise ValueError('Two-depth cache requires identical source depths across lighting variants')
         for source in tile['source_hashes']:
             if hash_splits.setdefault(source['camera'],split)!=split:raise ValueError('Source camera leakage')
         if check_files and sha256(tile['cache'])!=tile['cache_sha256']:raise ValueError('Cached input differs')
@@ -349,7 +352,8 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
         comparison_assets={p:sha256(p) for p in ['runs/contrastive-terrain-train-v1/selected.pt',
             'runs/contrastive-terrain-train-v1/training.json','runs/contrastive-terrain-train-v1/COMPLETE.json',
             'reports/reserve_protocol_v1.json','reports/compact_baseline_lock_v2.json',
-            'reports/compact_selection_v2.json','roma_model_lock.json','matchanything_model_lock.json']},
+            'reports/compact_selection_v2.json','reports/compact_data_limitations_v2.json',
+            'roma_model_lock.json','matchanything_model_lock.json']},
         policy_index={(json.loads(Path(p).read_text())['model'] or json.loads(Path(p).read_text())['method']):str(p) for p in policies},
         cases=case_plan(manifest,'test'),stereo_cases=stereo_plan(manifest,'test'),
         common_cases=common_plan(manifest,'test'),sensor_protocol=str(sensor_protocol),sensor_protocol_sha256=sha256(sensor_protocol),

@@ -270,7 +270,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         tile=tiles[row['tile_id']]
         center=np.mean(np.array(tile['world_bounds']),axis=0)
         longitude=float(np.degrees(np.arctan2(center[1],center[0])))
-        sector=min(int((longitude+180)//120),2)
+        sector=min(int(((longitude+360)%360)//120),2)
         a,b,ma,mb,_=controlled_inputs(row,tiles,cache)
         support=ma&mb
         fraction=float(((a>8)&(b>8)&support).sum()/max(support.sum(),1))
@@ -288,6 +288,8 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         global_sota_established=False,verified_real_navigation_accuracy=None,
         gallery=gallery(series['compact-20261030'],read(protocol['manifest_path']),folder),
         caveats=['Physical renders, not acquired lunar navigation ground truth.',
+            'Earlier real orbital repeat-image diagnostics remain in iteration5. Their correctness is unverified; they were not used to fit this candidate or confidence.',
+            'Explicit trajectory identifiers are absent. Splits group selected footprints/shared poses; trajectory-held-out independence is unverified. This shortfall was documented after training and before final inference.',
             'Inference128px; render tolerance3 benchmark pixels =12 original512px source pixels. POLAR nominal tolerance =28.5 original sensor pixels.',
             'Training uses18 polar geometries/54 lighting images; geographic expansion is not a claim of a larger image count.',
             'Shared-brightness strata are descriptive image-support proxies, not physical illumination angles or causal effects.',

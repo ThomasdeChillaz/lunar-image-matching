@@ -60,6 +60,8 @@ def run(reference,query,protocol,output,reference_mask=None,query_mask=None,incl
 
 def run_v2(reference,query,protocol,output,model_dir,reference_mask=None,query_mask=None,
            include_proposal=False,correspondence_output=None):
+    import torch
+    torch.set_num_threads(2);cv2.setNumThreads(1)
     from compact_lunar import CompactMatcher
     from compact_confidence import accepts
     from compact_research import predict

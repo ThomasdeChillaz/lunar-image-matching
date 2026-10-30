@@ -111,3 +111,28 @@ Publish software and measured progress per milestone; release source, checkpoint
 assets, audited outcomes, three plots, a two-page brief and a failure-inclusive
 demo after evaluation. Prepare outreach text without sending it. Never mark
 scientific targets passed merely because all software is implemented.
+
+## Compute acquisition record
+
+The initial blind development workflow completed18/40 workers before cancellation
+at31m17s: several remaining workers were stalled for over25minutes awaiting
+headers from the official DINOv2 host, before lunar inference. Preserve those18
+completed shards. Restart only the22 unfinished method/shard combinations using
+60-second socket timeouts, three checksum-verified attempts per author asset and
+a five-minute download wall budget. The URL query used on the second attempt
+addresses the same official asset, verified against identical SHA256 bytes.
+No model, weights or numerical settings change. Record partial/failed acquisition
+separately from matching errors; the whole worker budget remains60minutes.
+
+## Trajectory metadata limitation
+
+The inspected camera files expose intrinsics and camera-to-world poses, but no
+explicit trajectory IDs. Nadir/oblique/dynamicgood are acquisition modes, not
+verified independent trajectory identities. Selected full-depth footprints,
+shared poses and lighting variants are grouped; distant views of a common
+unknown trajectory may still cross spatial partitions. Consequently the study
+can test selected spatial-footprint generalization, not trajectory-held-out
+independence. This explicit shortfall note was recorded **after training and
+before final inference**; do not call it a pretraining preregistration. The
+actual grouping and common-renderer dependence were already recorded in the
+dataset inventory. See reports/compact_data_limitations_v2.json.
