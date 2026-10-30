@@ -1,5 +1,9 @@
 import numpy as np
-import torch
+import pytest
+
+# The core CI intentionally installs requirements.txt without neural runtimes.
+# These numerical checks execute in the full research environment (not mocks).
+torch = pytest.importorskip('torch', reason='Optional dense-descriptor tests require the research neural runtime')
 
 from contrastive_terrain import (TerrainDescriptor, contrastive_loss,
     sample_descriptors, valid_centers)
