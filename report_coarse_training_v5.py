@@ -16,7 +16,10 @@ from lunargeo_dataset import write_new
 
 def paired_interval(candidate,baseline,seed=20261101):
     groups=defaultdict(list)
-    for key,row in candidate.items():groups[row['component']].append(int(row['pose_correct'])-int(baseline[key]['pose_correct']))
+    if set(candidate)!=set(baseline):raise ValueError('Paired interval requires identical cases')
+    for key,row in candidate.items():
+        if row['component']!=baseline[key]['component']:raise ValueError('Paired interval terrain groups differ')
+        groups[row['component']].append(int(row['pose_correct'])-int(baseline[key]['pose_correct']))
     values=list(groups.values());rng=np.random.default_rng(seed)
     samples=[]
     for _ in range(10000):
@@ -35,6 +38,11 @@ def report(root,output):
     sift={r['pair_id']:r for r in rows if r['method']=='sift_native' and r['solver']=='ap3p_reclassify'}
     frozen={r['pair_id']:r for r in rows if r['method']=='quarter_turn_bank' and r['selected']}
     manifest=json.loads(Path('reports/localization_training_data_v5.json').read_text())
+    components={t['tile_id']:t['component'] for t in manifest['tiles']}
+    # Saved rescoring inputs retain historical group names. Use the corrected
+    # footprint audit for every method, including SIFT-selected mixed rows.
+    for collection in (sift,frozen):
+        for row in collection.values():row['component']=components[row['tile_id']]
     # Keep failed orientation-bank cases in the denominator, including no pose.
     for c in manifest['cases']:
         if c['split']=='model_selection' and c['pair_id'] not in frozen:
@@ -49,6 +57,7 @@ def report(root,output):
         with gzip.open(folder/'development_results.json.gz','rt') as f:part=json.load(f)
         candidate={r['pair_id']:r for r in part}
         if set(candidate)!=expected or len(part)!=72:raise ValueError('Candidate common cases differ')
+        if any(r['component']!=components[r['tile_id']] for r in part):raise ValueError('Candidate corrected groups differ')
         for mode in sorted({r['tile_id'].split('/')[0] for r in part}):
             for same in (True,False):
                 ids=[r['pair_id'] for r in part if r['tile_id'].split('/')[0]==mode and (r['light_a']==r['light_b'])==same]
@@ -95,6 +104,8 @@ def report(root,output):
     lines='\n'.join(f"| {r['variant']} | {r['seed']} | {r['selected_step']} | {r['correct']}/72 | {r['strict']}/72 | {r['wrong']} | {r['sift_fallback_correct']}/72 | {r['sift_fallback_wrong']} |" for r in table)
     primary=next(r for r in table if r['variant']==summary['winner'] and r['seed']==20261101)
     interval=primary['descriptive_component_interval_pp']
+    strata_lines='\n'.join(f"| {r['mode']} | {'same' if r['same_light_id'] else 'different'} | {r['cases']} | {r['frozen_correct']} | {r['trained_correct']} |"
+        for r in strata if r['variant']==summary['winner'] and r['seed']==20261101)
     text=f'''# Corrected axial-depth coarse-learning study
 
 This study tests whether fine-tuning the compact coarse proposal encoder on true 3D pairs helps camera localization beyond the frozen four-orientation engineering baseline. Earlier ray-based results and training labels remain superseded by [the geometry correction](GEOMETRY_CORRECTION_V5.md). Only the corrected v5 data and geometry are used here.
@@ -113,6 +124,14 @@ The primary selected candidate gives **{primary['correct']}/72**, a change of **
 
 ![All seeds, engineering fallback and selection history](coarse_training_outcomes_v5.png)
 
+The predefined primary seed by acquisition mode and lighting IDs:
+
+| Mode | Lighting IDs | Pairs | Frozen correct | Trained correct |
+|---|---|---:|---:|---:|
+{strata_lines}
+
+Lighting IDs do not provide a numerical Sun-angle separation. These subgroups are repeated views of the same development terrain, not additional independent samples.
+
 ## Interpretation and next hypothesis
 
 Pose success, not descriptor loss, selects checkpoints. The initial checkpoint is eligible; selecting step0 is a failure to improve through training, not a new learned result. Longer fitting can reduce pose recovery even when a final batch has lower contrastive loss. Native refinement and orientation search predate this training, so their gain is not attributed to it.
@@ -121,13 +140,15 @@ The matched training ablations use uniform reference points with exact corrected
 
 A focused next hypothesis is that this very wide orientation training wastes the compact encoder's capacity when inference already tries four orientations. Test a geometry-canonicalized training orientation against the same uncanonicalized control, with unchanged architecture, learning rate, fixed inference, selection bank and step budget. Training-only query truth may build supervision and choose data transformations; it must never enter deployed inference or branch selection. This is a hypothesis, not an explanation established by the current experiment.
 
+Corrected exact-correspondence controls recover26/26 development poses; rounding query correspondences to2/4/8/16/32pixel grids gives26/23/3/1/0 of26. One-pixel Gaussian noise still recovers26/26 even with30% random outliers in this fixed-seed control; two-pixel noise without outliers gives17/26. This demonstrates precision sensitivity under the controlled estimator and spatial sampling, not a universal noise guarantee. All468 detailed control outcomes are retained. The control was run after v5 training began and supplements, rather than replaces, the independent source/depth closure audit.
+
 ## Scope and verification
 
 Training uses18 geometries/12 corrected spatial components. Model selection uses8 geometries/four other components,72 repeated lighting pairs and the fixed16-case bank. No calibration/test pixels were loaded. The original fresh-final data gate remains unmet. Correctness is rotation<=2degrees and translation<=1% actual median Euclidean reference range; stricter means0.5degree/0.1%. Missing and wrong poses stay in the denominator.
 
 These are **raw estimates, not correctly accepted pose coverage**. The70% accepted-pose target, <=1% accepted-pose error/nonoverlap rate,10-point learned improvement over the strongest simple baseline, positive fresh paired interval and modern native-pose advantage remain unestablished. No SOTA, flight or verified orbital-navigation claim is made. Runtime here includes selection/evaluation and cache reuse, so is not an inference speed comparison.
 
-Independent replay verifies completed optimizer budgets, actual trained weight changes, source/cache/weight hashes, all checkpoints and predefined seeds,10,297 uniform supported training points, native correspondence metrics, physical range, camera-to-world pose errors and all288 saved candidate cases. The previously saved correction inputs remain unchanged. Cohort wall time: {summary['elapsed_seconds']/60:.2f} minutes on two configured CPU threads, below the48-hour training cap. No paid compute, human review or automatic outreach.
+Independent replay verifies completed optimizer budgets, actual trained weight changes, source/cache/weight hashes, all checkpoints and predefined seeds,10,297 uniform supported training points, native correspondence metrics, physical range, camera-to-world pose errors and all288 saved candidate cases. The previously saved correction inputs remain unchanged. The cohort training/selection timer records {summary['elapsed_seconds']/60:.2f} minutes on two configured CPU threads (excluding initial cache loading/supervision preparation), below the48-hour training cap. No paid compute, human review or automatic outreach.
 
 ```bash
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 python train_coarse_localization_v5.py --output runs/new-v5-coarse --steps 4000 --interval 1000

@@ -1,5 +1,42 @@
 # Compact-v3 development training
 
+## Corrected geometry and coarse learning (1 November 2026)
+
+All earlier LunarGeo ray-based3D metrics and supervision labels are superseded by the [axial-depth correction](reports/GEOMETRY_CORRECTION_V5.md). The separate2D known-warp counts remain historical; depth-derived geographic independence still needs corrected audit before reuse.
+
+Corrected frozen orientation-bank pose baseline:45/72 on eight exposed geometries/four spatial components. These are development raw estimates, not accepted-pose coverage or a new final test. The [corrected learning report](reports/COARSE_TRAINING_V5.md) retains both ablations, every predefined winner seed and failed checkpoints. Own initial/selected/final weights and optimizer/RNG snapshots are distributed separately from source images.
+
+Install the corrected geometry capsule and matching SHA256 sidecar from the [axial-geometry-v5 release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/axial-geometry-v5) first:
+
+```bash
+python package_axial_geometry_v5.py --install axial-geometry-v5-capsule.zip
+python package_coarse_training_v5.py --install coarse-training-v5-capsule.zip
+python verify_coarse_training_v5.py --run runs/localization-v5-coarse-development --output runs/replayed-v5-learning-audit.json
+```
+
+The second capsule needs its matching checksum sidecar alongside the ZIP. Installers verify archive/member hashes and refuse different existing files. Use the matching tagged source checkout. Both capsules contain only train/model-selection data; no calibration/test pixels are included. Earlier v3 archives are retained solely for historical replay under their superseded geometry.
+
+To reproduce fitting, choose a new output directory:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 python train_coarse_localization_v5.py --output runs/new-v5-coarse --steps 4000 --interval 1000
+python diagnose_axial_pose_controls_v5.py --output runs/new-axial-pose-controls.json
+```
+
+Exact correspondences recover26/26 development camera poses with corrected geometry. Coarser coordinate grids and controlled noise expose strong sensitivity to native-pixel precision. This check supplements the independent raw-depth/source closure audit; it cannot replace it. It was executed after the v5 cohort started, not preregistered as that cohort's gate.
+
+The v6 follow-up keeps v5 inference unchanged and tests a training-only orientation regime: true3D wide rotation control versus exact-correspondence quarter-turn canonicalization plus small residual rotation. Both use the same model, optimizer,3D labels,scale/translation/sensor augmentation and4000-step budget. Ground-truth query information constructs training labels only; inference receives images, reference geometry and query intrinsics. The fixed16-case bank selects configurations/checkpoints; the broader72 cases are not a new test.
+
+```bash
+python diagnose_axial_pose_controls_v5.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 python train_coarse_localization_v6.py --output runs/new-v6-orientation --steps 4000 --interval 1000
+python verify_coarse_training_v5.py --run runs/new-v6-orientation --output runs/replayed-v6-learning-audit.json
+```
+
+The orientation code was published before its cohort launch at62e7f846f84d05af55f6aa394396386bc8521929. Its100-step software pilot retains initial weights and45/72; it is not a learned gain. The full v6 cohort is separate. Never edit a live run's pinned sources or relabel exposed cases as fresh. The original acceptance, fresh-validation, modern comparison and research targets remain outstanding. No paid compute, human review or automatic email.
+
+---
+
 Both five-run cohorts are complete: 20,000 optimizer steps plus the pilot.
 Balanced reliability seeds give 27/72, 31/72 and 36/72 poses versus baseline
 26/72; the primary descriptive interval includes zero and the 70% target is unmet.

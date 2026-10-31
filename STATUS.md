@@ -1,43 +1,57 @@
 # Status
 
-## Axial-depth correction — continuing active research
+## Corrected training completed; orientation follow-up active
 
-The current code incorrectly interpreted the released LunarGeo EXRs as ray
-range. Source-file and camera/depth closure audits support optical-axis z depth,
-consistent with the pinned authors' loader. All earlier LunarGeo 3D metrics,
-oracle-window ceilings and 3D-supervised labels are superseded. Keep their files
-for historical replay. Geographic bounds also require corrected unprojection;
-2D known-warp counts are separate from these 3D claims.
+All four corrected v5 runs completed4000 optimizer steps (16000 total),
+including the planar-data control and all predefined true3D winner seeds.
+The primary/repeat raw pose results are 44/72, 45/72, 45/72; the frozen orientation
+baseline is45/72. The primary gives44/72 and does not establish
+a learned advantage. Every initial/selected/final and optimizer/RNG checkpoint,
+failed later checkpoint and source snapshot is retained. No best-seed claim.
 
-Verified:52 raw EXR/cache arrays agree; training-geometry median depth closure
-improves25.87m to0.62m with unchanged source intrinsics. Corrected full-pixel
-footprints give12 training/four selection spatial components,18/eight geometries,
-no cross-split component; batch/trajectory independence remains unknown. No
-calibration/test pixels loaded. The original fresh-final gate is still unmet.
+A stronger simple SIFT-first fallback gives53/72 correct raw poses, but also
+six wrong estimates; this is not calibrated acceptance or the70% accepted-pose
+target. All trained candidates receive the identical fallback comparison.
+These are72 dependent development pairs from eight previously exposed
+geometries/four corrected footprint components, not a fresh final test.
 
-Corrected same-coordinate comparisons: frozen native+AP3P34/72 (strict17/72),
-four-orientation frozen baseline45/72 (strict17/72), native SIFT24/72
-(strict22/72), legacy-target reliability seeds34/35/33 of72 with AP3P.
-The legacy learned heads do not beat the stronger corrected baseline.
-No accepted-pose coverage, SOTA or learned superiority claim is established.
+Independent replay verifies all288 candidate outcomes, actual weight changes,
+completed budgets, checkpoint/configuration selection and every predefined seed.
+Exact corrected correspondences recover26/26 poses; rounding to an8pixel grid
+reduces this to3/26, demonstrating precision sensitivity under this control.
+The raw-depth/source-closure audit remains separate and required.
 
-Independent mathematical replay passes1,296 records/15 tables; image match
-coordinates are unchanged.167 tests pass/four optional skipped, including actual
-frozen-model controlled quarter-turn pose. The v4 coarse run was interrupted
-for the geometry correction with checkpoints preserved. A corrected100-step
-pilot reproduces45/72, selecting initial weights. The separate corrected4,000-step
-planar/true3D cohort and two predefined winner seeds are now running in
-runs/localization-v5-coarse-development.56,544 total parameters with fixed native
-refinement and orientation-bank inference. Do not edit its pinned sources while live.
+A v6 orientation-regime follow-up is now running at
+runs/localization-v6-orientation-development, with publicly pinned code from
+62e7f846f84d05af55f6aa394396386bc8521929. It compares the unchanged wide3D
+training control with training-only quarter-turn canonicalization plus small
+residual rotation; inference, architecture, optimizer and budget stay fixed.
+The100-step software pilot passed replay, retaining initial weights and45/72.
+Do not edit either live v6 training file or its pinned shared sources.
 
-Goal remains active: test hypotheses and improve until the original accuracy,
-acceptance, uncertainty and modern-comparison targets are verified. Do not mark
-completion based on this correction or a development score. LuSNAR archive
-metadata is inventoried; scenes7–9 remain reserved and uninspected. Development
-scene1 download is in progress. No paid compute, human review or automatic email.
+All earlier ray-based LunarGeo3D metrics/labels and oracle-window ceilings
+are superseded by the optical-axis depth correction. Frozen historical
+artifacts remain unchanged. Corrected26-geometry footprint audit:12 train/four
+selection components, no cross-split component; unknown trajectory/batch and
+shared renderer dependence remain. No calibration/test pixels were loaded.
+The original fresh-final data gate is still unmet.
 
-See [geometry correction](reports/GEOMETRY_CORRECTION_V5.md). All older sections
-below are historical and their LunarGeo 3D interpretations are superseded.
+Software:173 tests pass/four optional skips; fresh procedural smoke100 rows/
+20 summaries and exact replay; actual selected-candidate quarter-turn/blank
+controls and training audit are saved separately. These are software checks,
+not scientific validation of navigation risk. See
+[corrected learning study](reports/COARSE_TRAINING_V5.md) and
+[geometry correction](reports/GEOMETRY_CORRECTION_V5.md).
+
+Goal remains active. Consistent learned improvement, reliable acceptance,
+uncertainty, modern native-pose comparisons, fresh transfer/final evidence and
+the paper targets remain outstanding. No paid compute, human review or automatic
+email. LuSNAR scenes7–9 remain reserved/uninspected. Scene1 acquisition timed out
+with an incomplete archive prefix; individual complete metadata members were
+CRC-verified, but no full-archive or transfer result is claimed.
+
+All older sections below are historical; earlier ray-based3D interpretations
+are superseded.
 
 ## Supplemental training completed — balanced sampling
 

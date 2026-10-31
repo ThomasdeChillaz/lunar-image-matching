@@ -1,12 +1,22 @@
 # Compact lunar image matching
 
-**Geometry correction:** earlier LunarGeo 3D pose/correspondence metrics and 3D
-training labels used ray-distance unprojection, while the audited EXRs use
-optical-axis depth. Those 3D results are superseded. See the
-[correction, evidence and continuing experiments](reports/GEOMETRY_CORRECTION_V5.md).
-Corrected frozen native baseline: **34/72** poses; the same model with four
-orientations: **45/72**. Neither is a new learned-model improvement. Corrected
-training is running; the full research targets and fresh validation remain unmet.
+**Current corrected training:** all16000 v5 optimizer steps completed. The
+predefined primary/repeat results are **44/72, 45/72, 45/72** correct raw poses, versus
+frozen four-orientation45/72. A consistent learned gain is not established.
+A stronger SIFT-first engineering fallback gives53/72, but includes six wrong
+poses: raw recovery is not reliable acceptance. See the
+[complete corrected study](reports/COARSE_TRAINING_V5.md).
+
+**Geometry correction:** earlier LunarGeo3D pose/correspondence metrics and3D
+training labels used the wrong depth interpretation and are superseded. See the
+[evidence and reproducible correction](reports/GEOMETRY_CORRECTION_V5.md).
+Earlier2D known-warp counts are separate; depth-derived grouping needs corrected
+audit before reuse. No fresh final or orbital-navigation accuracy is claimed.
+
+A separate orientation-regime experiment is running. It changes training
+orientation supervision while preserving the compact model and inference.
+All research targets remain active and unmet; no SOTA claim. Reproduction and
+artifact installation: [training guide](LOCALIZATION_TRAINING.md).
 
 **Historical, before the depth correction: 20,000 development-training steps across ten runs.** The first
 cohort's descriptor seeds give 26/72, 25/72 and 26/72 correct raw poses. A

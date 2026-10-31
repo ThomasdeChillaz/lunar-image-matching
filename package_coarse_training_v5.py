@@ -21,10 +21,10 @@ def package(root,output):
     files.extend(Path(p) for p in ('train_coarse_localization_v5.py','coarse_training_v5.py','coarse_pipeline_v5.py',
         'lunar_geometry_v5.py','verify_coarse_training_v5.py','report_coarse_training_v5.py','package_coarse_training_v5.py',
         'combine_pose_backends_v5.py','test_pose_backends_v5.py','control_coarse_candidates_v5.py','verify_procedural_smoke.py',
-        'test_coarse_training_replay_v5.py','diagnose_axial_pose_controls_v5.py'))
+        'test_coarse_training_replay_v5.py','test_coarse_training_report_v5.py','diagnose_axial_pose_controls_v5.py'))
     files.extend(p for p in Path('runs/localization-v5-backend-fallback').rglob('*') if p.is_file())
     files.extend(p for p in Path('runs/localization-v5-training-smoke').rglob('*') if p.is_file())
-    files.extend([Path('reports/coarse_training_controls_v5.json'),Path('reports/coarse_training_smoke_audit_v5.json')])
+    files.extend([Path('reports/coarse_training_controls_v5.json'),Path('reports/coarse_training_smoke_audit_v5.json'),Path('reports/coarse_training_software_audit_v5.json')])
     files.extend([Path('runs/localization-v5-axial-pose-controls.json'),Path('reports/axial_pose_controls_summary_v5.json')])
     files=sorted(set(files))
     for p in files:
@@ -52,6 +52,7 @@ def package(root,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--run',default='runs/localization-v5-coarse-development')
     p.add_argument('--output',default='reports/coarse-training-v5-capsule.zip');p.add_argument('--install')
+    p.add_argument('--destination',default='.')
     a=p.parse_args()
-    if a.install:print(json.dumps(install(a.install),indent=2))
+    if a.install:install(a.install,a.destination)
     else:package(a.run,a.output)

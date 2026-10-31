@@ -1,14 +1,21 @@
 # Milestones
 
-## Active goal: corrected geometry and continued model research
+## Active goal: corrected training and continued hypotheses
 
-Cross-view depth closure and pinned upstream implementation reveal axial-depth
-EXRs; legacy ray-based LunarGeo 3D results/labels are superseded. Corrected
-geometry/source/split audits and1296-record replay pass; frozen orientation
-baseline45/72. A corrected coarse-learning cohort is running, with no claimed
-learned gain yet. Fresh final validation, acceptance, modern native-pose ranking
-and the full research targets remain outstanding. See STATUS and the
-[correction report](reports/GEOMETRY_CORRECTION_V5.md).
+Corrected-depth coarse study complete: four4000-step runs, all predefined
+seeds, primary/repeat raw poses 44/72, 45/72, 45/72 versus frozen45/72. No consistent
+learned advantage. SIFT-first engineering fallback53/72 has six wrong poses;
+not calibrated acceptance. Independent288-record training replay and actual
+candidate controls pass. Exact-correspondence diagnostic26/26; all173 software
+tests/four optional skips and fresh smoke pass.
+
+V6 orientation-regime fitting is active; its100-step software pilot passed
+replay without a learned gain. Sources pinned publicly before launch. The
+[learning study](reports/COARSE_TRAINING_V5.md) retains every seed/failure and
+stronger-baseline comparison. Earlier ray-based3D results/labels are superseded
+by the [depth correction](reports/GEOMETRY_CORRECTION_V5.md). The original fresh
+final-data gate and acceptance/uncertainty/modern comparison/paper targets remain
+unmet. Do not declare goal completion from software checks or development scores.
 
 ## Supplemental training continuation completed
 

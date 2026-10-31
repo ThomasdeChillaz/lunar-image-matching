@@ -10,6 +10,8 @@ labels and oracle-window ceilings are superseded by
 validation remains required. Do not use geometry repairs as learned novelty or
 redefine the original acceptance/comparison targets around completed work.
 
+The latest corrected development study is [coarse learning v5](reports/COARSE_TRAINING_V5.md), with all predefined seeds and a stronger simple fallback comparison. A separate orientation-regime experiment is active. Neither completes the original acceptance, fresh-data or modern native-pose requirements.
+
 ## Subsequent user-authorized development training
 
 After receiving the gate failure, the user instructed "Continue with the
