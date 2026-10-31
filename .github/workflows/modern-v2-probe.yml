@@ -1,11 +1,17 @@
 name: Modern v2 pretrained controls
 on:
   workflow_dispatch:
+    inputs:
+      runner:
+        description: Standard free public runner
+        type: choice
+        options: [ubuntu-22.04, ubuntu-24.04-arm]
+        default: ubuntu-22.04
 permissions:
   contents: read
 jobs:
   probe:
-    runs-on: ubuntu-22.04
+    runs-on: ${{ inputs.runner || 'ubuntu-22.04' }}
     timeout-minutes: 45
     strategy:
       fail-fast: false
