@@ -1,8 +1,6 @@
 name: Modern v2 pretrained controls
 on:
   workflow_dispatch:
-  push:
-    paths: ['.github/workflows/modern-v2-probe.yml', 'modern_baselines_v2.py']
 permissions:
   contents: read
 jobs:
@@ -25,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check author BF16 CPU resource profile
+        run: python3 cpu_budget_v2.py --output runs/hardware.json
       - name: Install isolated supported CPU dependencies
         run: |
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0 torchvision==0.23.0
@@ -41,6 +41,10 @@ jobs:
           subprocess.run(['git','clone',spec['url'],'upstream'],check=True)
           subprocess.run(['git','-C','upstream','checkout',spec['revision']],check=True)
           PY
+      - name: Acquire exact weights with bounded retries
+        env:
+          METHOD: ${{ matrix.method }}
+        run: python baseline_weights_v2.py --method "$METHOD" --output runs/acquisition.json
       - name: Execute actual common-profile software control
         env:
           METHOD: ${{ matrix.method }}

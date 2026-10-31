@@ -35,6 +35,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check author BF16 CPU resource profile
+        if: matrix.method == 'loma_b' || matrix.method == 'loma_r' || matrix.method == 'romav2'
+        run: python3 cpu_budget_v2.py --output runs/hardware.json
       - name: Install separate supported CPU runtime
         run: |
           if [ "$METHOD" = matchanything ]; then
