@@ -1,0 +1,157 @@
+{
+  "scope": "Corrected development geometry; fixed prior image matches and weights. Not a learned-model improvement or fresh test.",
+  "results": {
+    "frozen_coarse/frozen_epnp": {
+      "cases": 72,
+      "correct": 5,
+      "strict": 0,
+      "estimated": 36,
+      "correct_with_old_depth_median_scale": 5,
+      "returned": 22697,
+      "scorable": 20708,
+      "correct_at_two_px": 253
+    },
+    "frozen_coarse/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 6,
+      "strict": 0,
+      "estimated": 37,
+      "correct_with_old_depth_median_scale": 6,
+      "returned": 22697,
+      "scorable": 20708,
+      "correct_at_two_px": 253
+    },
+    "frozen_native/frozen_epnp": {
+      "cases": 72,
+      "correct": 30,
+      "strict": 15,
+      "estimated": 34,
+      "correct_with_old_depth_median_scale": 30,
+      "returned": 22697,
+      "scorable": 20708,
+      "correct_at_two_px": 8615
+    },
+    "frozen_native/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 34,
+      "strict": 17,
+      "estimated": 40,
+      "correct_with_old_depth_median_scale": 34,
+      "returned": 22697,
+      "scorable": 20708,
+      "correct_at_two_px": 8615
+    },
+    "legacy_target_reliability_20261101/frozen_epnp": {
+      "cases": 72,
+      "correct": 30,
+      "strict": 14,
+      "estimated": 38,
+      "correct_with_old_depth_median_scale": 30,
+      "returned": 17260,
+      "scorable": 16076,
+      "correct_at_two_px": 8485
+    },
+    "legacy_target_reliability_20261101/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 34,
+      "strict": 16,
+      "estimated": 38,
+      "correct_with_old_depth_median_scale": 34,
+      "returned": 17260,
+      "scorable": 16076,
+      "correct_at_two_px": 8485
+    },
+    "legacy_target_reliability_20261102/frozen_epnp": {
+      "cases": 72,
+      "correct": 32,
+      "strict": 12,
+      "estimated": 36,
+      "correct_with_old_depth_median_scale": 32,
+      "returned": 16284,
+      "scorable": 15212,
+      "correct_at_two_px": 8390
+    },
+    "legacy_target_reliability_20261102/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 35,
+      "strict": 13,
+      "estimated": 38,
+      "correct_with_old_depth_median_scale": 35,
+      "returned": 16284,
+      "scorable": 15212,
+      "correct_at_two_px": 8390
+    },
+    "legacy_target_reliability_20261103/frozen_epnp": {
+      "cases": 72,
+      "correct": 35,
+      "strict": 14,
+      "estimated": 38,
+      "correct_with_old_depth_median_scale": 34,
+      "returned": 11888,
+      "scorable": 11418,
+      "correct_at_two_px": 8124
+    },
+    "legacy_target_reliability_20261103/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 33,
+      "strict": 15,
+      "estimated": 39,
+      "correct_with_old_depth_median_scale": 33,
+      "returned": 11888,
+      "scorable": 11418,
+      "correct_at_two_px": 8124
+    },
+    "sift_native/frozen_epnp": {
+      "cases": 72,
+      "correct": 24,
+      "strict": 22,
+      "estimated": 24,
+      "correct_with_old_depth_median_scale": 24,
+      "returned": 15777,
+      "scorable": 15730,
+      "correct_at_two_px": 15538
+    },
+    "sift_native/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 24,
+      "strict": 22,
+      "estimated": 24,
+      "correct_with_old_depth_median_scale": 24,
+      "returned": 15777,
+      "scorable": 15730,
+      "correct_at_two_px": 15538
+    },
+    "sift_clahe/frozen_epnp": {
+      "cases": 72,
+      "correct": 24,
+      "strict": 19,
+      "estimated": 24,
+      "correct_with_old_depth_median_scale": 24,
+      "returned": 21177,
+      "scorable": 21135,
+      "correct_at_two_px": 20952
+    },
+    "sift_clahe/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 24,
+      "strict": 19,
+      "estimated": 24,
+      "correct_with_old_depth_median_scale": 24,
+      "returned": 21177,
+      "scorable": 21135,
+      "correct_at_two_px": 20952
+    },
+    "quarter_turn_bank/ap3p_reclassify": {
+      "cases": 72,
+      "correct": 45,
+      "strict": 17,
+      "estimated": 57,
+      "correct_with_old_depth_median_scale": 45,
+      "returned": 23240,
+      "scorable": 21339,
+      "correct_at_two_px": 10320
+    }
+  },
+  "records": 1296,
+  "results_sha256": "8bb48ecdcce9cfdf6cdd6a7168ba853c4deaefc512573b6072bad9d77e8c3744"
+}

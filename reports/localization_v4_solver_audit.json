@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Development solver diagnosis only; oracle results are GT-assisted controls.",
+  "records": 1632,
+  "groups": 32,
+  "selected_solver": "ap3p_reclassify",
+  "source_sha256": "e5b3d48705b2f5e3b15ecb2836599d39e968270b1c2edcdfc10dd883cb59bfb8",
+  "results_sha256": "8931f4c20f401d92c6325a7ed1ef49370b68d0b50de640becc2d59529d6a1802",
+  "historical_counts_reproduced": {
+    "frozen_native": 26,
+    "balanced_20261101": 27,
+    "balanced_20261102": 31,
+    "balanced_20261103": 36
+  },
+  "note": "Independent error/denominator/selection replay; solver behavior also covered by analytic 3D/outlier controls. No new fresh-test claim."
+}

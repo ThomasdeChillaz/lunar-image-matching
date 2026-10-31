@@ -1,0 +1,592 @@
+{
+  "scope": "Full-pixel axial-depth footprint audit on original18 train/eight selection geometries only.",
+  "source_sha256": "40a0eaa90467c7c62dce6d3c556c7d482a13882e0d77f9c7c64c2966aecc9e63",
+  "geometry_sha256": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+  "original_manifest_sha256": "a2e61bb1c997586f1d147596a237a61e9da92496bd44b47eb637febae668738f",
+  "components": [
+    [
+      "dynamicgood/dynamic/1458",
+      "nadir/nadir/2515"
+    ],
+    [
+      "nadir/nadir/6864"
+    ],
+    [
+      "dynamicgood/dynamic/1227",
+      "nadir/nadir/6138"
+    ],
+    [
+      "nadir/nadir/6453",
+      "nadir/nadir/6507"
+    ],
+    [
+      "nadir/nadir/336"
+    ],
+    [
+      "nadir/nadir/2518"
+    ],
+    [
+      "dynamicgood/dynamic/1092",
+      "dynamicgood/dynamic/942",
+      "nadir/nadir/2506",
+      "oblique/oblique/2994"
+    ],
+    [
+      "nadir/nadir/6303",
+      "nadir/nadir/6381"
+    ],
+    [
+      "nadir/nadir/2464"
+    ],
+    [
+      "dynamicgood/dynamic/1422",
+      "nadir/nadir/6297"
+    ],
+    [
+      "oblique/oblique/2770"
+    ],
+    [
+      "oblique/oblique/4621"
+    ],
+    [
+      "oblique/oblique/7432"
+    ],
+    [
+      "dynamicgood/dynamic/1437",
+      "dynamicgood/dynamic/936",
+      "oblique/oblique/7504"
+    ],
+    [
+      "dynamicgood/dynamic/825"
+    ],
+    [
+      "dynamicgood/dynamic/1407"
+    ]
+  ],
+  "cross_split_components": [],
+  "train_selection_disjoint": true,
+  "records": [
+    {
+      "pair_group": "nadir/nadir/2515",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -48757.74709770864,
+          59790.94129669237,
+          -1735714.8054375085
+        ],
+        [
+          -44782.4478508794,
+          63695.68660874669,
+          -1735546.4899672403
+        ]
+      ],
+      "source_groups": [
+        "4c2bed2e3149589d788ede5346d0736fc4d3f4e7c72086cd5a4619e6b91c1e10",
+        "25038239cd844193bfb270025622fe4c08c4540b7fea870292991120245e4f0e"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6864",
+      "split": "train",
+      "world_bounds": [
+        [
+          -14745.534546815117,
+          -49682.93460912752,
+          -1736775.0400038478
+        ],
+        [
+          -10531.956370465094,
+          -45592.03332348005,
+          -1735971.0817916382
+        ]
+      ],
+      "source_groups": [
+        "efdc67a7f4edfa414cf7e26a592bded53df319d0c1aff3ca55e9a5db6629e705",
+        "caa761b3717a8808d1dbe04a90bc25244cfe26e226053834110da4f79120d582"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6138",
+      "split": "train",
+      "world_bounds": [
+        [
+          -15700.656223244854,
+          -37678.76593885686,
+          -1737204.6979981519
+        ],
+        [
+          -11834.691480869795,
+          -33884.167830892446,
+          -1736417.4033057918
+        ]
+      ],
+      "source_groups": [
+        "02c8c40e51feca57efe578ebcfa13da2bd8d523a669318bfdfa07295d78690ad",
+        "8080a87fd85ba451b43e8ca384a178d5e07ccdba034579fee5e1cab5a56a6f8e"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6507",
+      "split": "train",
+      "world_bounds": [
+        [
+          -66488.61894803199,
+          -30056.333505656203,
+          -1736272.362133645
+        ],
+        [
+          -61962.9118760212,
+          -25622.03832266843,
+          -1734944.7446390651
+        ]
+      ],
+      "source_groups": [
+        "547db7a82a8d1df646fda00edae4b27532dc030abba55f0307efb24140f9230f",
+        "b8617cdd5c21afa08dd34cb9a0d4c1c1367f357e7f0ec936e2fa01f485137c90"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6453",
+      "split": "train",
+      "world_bounds": [
+        [
+          -67951.18149674934,
+          -27095.323238432968,
+          -1736132.135247195
+        ],
+        [
+          -64529.61293221473,
+          -23520.74806247992,
+          -1734922.7624599286
+        ]
+      ],
+      "source_groups": [
+        "d34198a044e7e05c8c846e7f45d303d9740eee0798426f7618b4af0b07d5f84c",
+        "84f201f0af897dc21f87201f8a251c8369759f17261d4bfc244831b292de283b"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/336",
+      "split": "train",
+      "world_bounds": [
+        [
+          56489.61191548539,
+          62097.83137465706,
+          -1735353.0460782498
+        ],
+        [
+          60235.54135781162,
+          66024.9161322213,
+          -1734887.9990396067
+        ]
+      ],
+      "source_groups": [
+        "63aa1bcc9465f91fa5227edb067f44e9fb08e8aebc1ab67d4289efef6b181ddd",
+        "0292e23f753efc4fbee28d8fe5c9b52e5922a7cb896db996fbe6fea65438fc93"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/2518",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -57463.514198294804,
+          52294.7008142602,
+          -1735907.456784566
+        ],
+        [
+          -53303.584338666544,
+          56471.8798989169,
+          -1735402.151457348
+        ]
+      ],
+      "source_groups": [
+        "6c09a13c022be12e623d74cd4e7ed0c2c4c892fa80d6d4b7b29f1747550a2ea9",
+        "3b7c4f8f495e43fac9dc88aa174cc1918878f5c50a279c212bbc31f477f5e1dc"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/2506",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -65000.67048653475,
+          38956.00285766018,
+          -1735914.3357522625
+        ],
+        [
+          -61917.3982683095,
+          42026.78351597609,
+          -1735488.048207348
+        ]
+      ],
+      "source_groups": [
+        "cfb1fe09dbb4bddd46deb14b97154d35ddc216959429f61557bc51c1df3698b3",
+        "6fb7f4d1d8bc2f8d5459944a9ca772c74c5328047ef81c1c761b8c6dcdbe493f"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6381",
+      "split": "train",
+      "world_bounds": [
+        [
+          -5129.452736980264,
+          -65982.71095968777,
+          -1736424.1682245152
+        ],
+        [
+          -1824.3593522560027,
+          -62838.737038683925,
+          -1735686.874798346
+        ]
+      ],
+      "source_groups": [
+        "f5128c9a351d797bb5d3519de49ecb5d6f9b9ba5dbc9dc2c975d86a2b949e39b",
+        "891233faff11fe53a097cc4100165e8397108d51163129f80e5c927caeb4edd1"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6303",
+      "split": "train",
+      "world_bounds": [
+        [
+          -2223.962516881469,
+          -65795.41922634214,
+          -1736468.2291600138
+        ],
+        [
+          1216.8740739716266,
+          -62626.05402758123,
+          -1735453.9052742678
+        ]
+      ],
+      "source_groups": [
+        "308e8b18fa0a07637217c52b08c631eff8a4f0c995cfd1ed859de5e34b71a9a4",
+        "d1bc22041448e313af1d5d711f1d5c3841435aba2ecfcc62945891ec76ebcb42"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/2464",
+      "split": "train",
+      "world_bounds": [
+        [
+          -71509.86673456122,
+          9338.22434410304,
+          -1736098.3697973606
+        ],
+        [
+          -68009.0961677219,
+          12792.306540848393,
+          -1735145.6162065845
+        ]
+      ],
+      "source_groups": [
+        "b31617173caf7e7236780db080feb11b74b6c34c2dafd9540f6d472cb6f64b59",
+        "5ae27cd8cd7aca7ef7a206a9e6e26064bf6216be2bdd8a0a3d082adfe224387d"
+      ]
+    },
+    {
+      "pair_group": "nadir/nadir/6297",
+      "split": "train",
+      "world_bounds": [
+        [
+          -68341.02803514188,
+          -18589.677371081652,
+          -1736317.9123073148
+        ],
+        [
+          -64171.82570149867,
+          -14488.992651941082,
+          -1734688.9545207822
+        ]
+      ],
+      "source_groups": [
+        "4d12c98a2c9a9ac4cef12c9cfefb4071f62adf45bf983c39da2d484e1866f49f",
+        "1ed2596a114b84bb1422d63c581b86fc355fa069667c9169b5c093686fc26d27"
+      ]
+    },
+    {
+      "pair_group": "oblique/oblique/2770",
+      "split": "train",
+      "world_bounds": [
+        [
+          -12938.096828446149,
+          14210.79853348262,
+          -1738422.666486954
+        ],
+        [
+          -7867.783897776455,
+          17584.883969077382,
+          -1736390.2311739156
+        ]
+      ],
+      "source_groups": [
+        "3b2851166ffa69891ffe0244ef2dd5a87420d7bcee59d9ade5d50088550649de",
+        "b87b5774ea5b76cf6df678b97a7b36b374f2dd50ae9a41f160d09423a2b27752"
+      ]
+    },
+    {
+      "pair_group": "oblique/oblique/4621",
+      "split": "train",
+      "world_bounds": [
+        [
+          -3949.9455010327424,
+          -24066.183409513593,
+          -1738070.2156750842
+        ],
+        [
+          21228.972981346145,
+          -6254.601865562423,
+          -1735770.0743775787
+        ]
+      ],
+      "source_groups": [
+        "702633519be62e36375f37be19a461c5cbb8e430310c8eb6776958b060354019",
+        "56cc21d8261d7a88d623f4e663f648734a719df9c1c447f93c2afc2f4d061b47"
+      ]
+    },
+    {
+      "pair_group": "oblique/oblique/2994",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -68419.78561405401,
+          28415.78988204036,
+          -1737216.4145888851
+        ],
+        [
+          -52894.43037887355,
+          41879.56590707513,
+          -1735208.895333395
+        ]
+      ],
+      "source_groups": [
+        "1baaf82f6a8d95d40017984e88c9ecd74ae72caaf7f483fbf50a9958d3fecd73",
+        "adea6a4f60581a021d88f02006cc34d2b0d5168794167da3e7c5afac1db325f0"
+      ]
+    },
+    {
+      "pair_group": "oblique/oblique/7432",
+      "split": "train",
+      "world_bounds": [
+        [
+          -69093.63711243944,
+          13194.566388678322,
+          -1736167.0910063123
+        ],
+        [
+          -63036.405744069954,
+          21757.20007535846,
+          -1735199.0100503464
+        ]
+      ],
+      "source_groups": [
+        "b6bca023d4c16825eea94b8e648a3ca0dab4d0d7faf2afa351d5a27e1c05c865",
+        "7063f71546141c89c1bf978c44ef0cf2c1c96a9a7adc3679b16ab6343d577005"
+      ]
+    },
+    {
+      "pair_group": "oblique/oblique/7504",
+      "split": "train",
+      "world_bounds": [
+        [
+          27492.213548704414,
+          -41723.34574438033,
+          -1737101.991073736
+        ],
+        [
+          33044.10508953022,
+          -35581.59072172591,
+          -1735562.3255880454
+        ]
+      ],
+      "source_groups": [
+        "6ed56e49a3ae14a6b32d7a16536599dbd7334f80558b51ea3c134d243549404c",
+        "a92b9e5082e6d6ea4a161fbb2b54833c0092b15a7a3636bfed16ae2317a53011"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1458",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -47146.97091912688,
+          61443.184428748675,
+          -1735750.4924915226
+        ],
+        [
+          -42599.33893161605,
+          68339.33788968321,
+          -1735315.366252123
+        ]
+      ],
+      "source_groups": [
+        "6bcdda24ee3d65d6bd5b3d09ef5ccc87b4ca7edf137fb40d1d7c41828b703499",
+        "7de3c9a2b82eca334a0de8670961d16e1132d8256f2cf9718c09e33c948c360a"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1227",
+      "split": "train",
+      "world_bounds": [
+        [
+          -20300.397302024146,
+          -35288.227571543226,
+          -1737067.3707242694
+        ],
+        [
+          -11852.723061961327,
+          -28580.466353449392,
+          -1735081.9635042832
+        ]
+      ],
+      "source_groups": [
+        "60f2c5f0b0500ce0a30fa56e35b9bacc17ef4f1709bcbae8a8a0c97a6788ef70",
+        "121d2243fd335e3bde33e050948e17fadca265a20e172ee09e7f3f336232434a"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/825",
+      "split": "train",
+      "world_bounds": [
+        [
+          -8596.949480131003,
+          -62461.69544063589,
+          -1736818.3863068798
+        ],
+        [
+          -5347.2199765636215,
+          -59068.939982396696,
+          -1736349.6537419271
+        ]
+      ],
+      "source_groups": [
+        "d56dc5f00ab9787f5228d20bdd1449763d4e9a87d8a02ba3b1c22fbe83a80b86",
+        "adabe6a7094ef53c7c6972d23e6c4ee0232e876edd944258ce4fbaaf165483f6"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1092",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -48544.19960578004,
+          28413.366049180433,
+          -1736761.07548207
+        ],
+        [
+          -43640.20333168018,
+          33324.59439091174,
+          -1736079.4961806536
+        ]
+      ],
+      "source_groups": [
+        "510770323100c4427ad82796b23136f691aec62c51ce4b585d7e5fc2612a4e71",
+        "b70dfb0784af98c16a346deea0d006b1e6728ff6f561ae86b970a6a1b2114769"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/942",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -53137.07037370666,
+          28941.941373070506,
+          -1737241.9974915364
+        ],
+        [
+          -47306.073412600315,
+          35392.11255589996,
+          -1736578.262692068
+        ]
+      ],
+      "source_groups": [
+        "75d6242e4aa6ec3e35d6811e65febf8f031f2a8c29533ace20e655b4278e06fc",
+        "fef40988021ae3096f5a22d33d10b7111fd8c9328ce1af10dcea25fe318fa06e"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1422",
+      "split": "train",
+      "world_bounds": [
+        [
+          -70214.67471642952,
+          -20508.377442552064,
+          -1736713.614224881
+        ],
+        [
+          -63150.80322695009,
+          -13671.589609085086,
+          -1734415.2085194993
+        ]
+      ],
+      "source_groups": [
+        "3426126ba76048b2800af83e2f4d2e54cc2c7a0c922af11f37a8267458387f23",
+        "f4b14415096c2778e6a53e3c50805b805c55b21ef68ac7f2a8d7dd0227479470"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1437",
+      "split": "train",
+      "world_bounds": [
+        [
+          25008.43529155172,
+          -39187.83538752062,
+          -1737330.05776247
+        ],
+        [
+          28545.988751545276,
+          -34472.52145222566,
+          -1736667.6028788013
+        ]
+      ],
+      "source_groups": [
+        "a2e4dec5c6fc481c38b5d97220d0989a22336ab867953c35f230f3a303ee8ae4",
+        "235c3960d662d1dfe1ee23c3a3165adc834d9fd0503dabeef4ec9898fe49baf7"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/936",
+      "split": "train",
+      "world_bounds": [
+        [
+          27512.485640500716,
+          -35671.03606013211,
+          -1737151.0894943583
+        ],
+        [
+          32243.822690872064,
+          -31021.64932500888,
+          -1736312.0860845784
+        ]
+      ],
+      "source_groups": [
+        "1195e1473c1bd286e9a5163c3524ac5bac0cda5924afacfa3cdcda33de91421e",
+        "ff79a14b4f673dc93e24dd05fca01b94180c3c30cb81431c108e7d40b659ff41"
+      ]
+    },
+    {
+      "pair_group": "dynamicgood/dynamic/1407",
+      "split": "model_selection",
+      "world_bounds": [
+        [
+          -56370.34577405513,
+          61943.088052675834,
+          -1735711.9926774644
+        ],
+        [
+          -52621.67873529845,
+          66430.06230364254,
+          -1735190.8674305154
+        ]
+      ],
+      "source_groups": [
+        "3b8111e4e3d3e7b97cac83286926ef56dd967270f2efb6abec951fec83d1e705",
+        "34d606ee8eda7c48763d1b5be7ff5d4aafeab26998365bb298d3079d9e227690"
+      ]
+    }
+  ],
+  "calibration_or_test_pixels_loaded": 0,
+  "limitation": "Spatial bounds plus200m and repeated source cameras are grouped; unknown trajectory/batch dependence remains. Not a new final test."
+}
