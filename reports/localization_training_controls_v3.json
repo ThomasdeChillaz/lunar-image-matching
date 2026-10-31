@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Procedural known-transform/software controls, not navigation validation",
+  "checkpoint_sha256": "08cfbb2d487bd97c8d1e8a81c724fa1df42387e923855cc75a9c019642f645d4",
+  "model_dir": "runs/localization-v3-development/descriptor_3d-20261101",
+  "known_translation_native_px": [
+    8,
+    -4
+  ],
+  "matches": 381,
+  "median_error_native_px": 0.37561859585786445,
+  "within_two_px": 259,
+  "default_rejects": true,
+  "blank_returns_no_matches": true,
+  "source_sha256": "b2b4c8da66990b02580e37420cb7f17f8cc071ec17b7eb985d12c515d4aabc79"
+}
