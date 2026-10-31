@@ -1,5 +1,44 @@
 # Status
 
+## Axial-depth correction — continuing active research
+
+The current code incorrectly interpreted the released LunarGeo EXRs as ray
+range. Source-file and camera/depth closure audits support optical-axis z depth,
+consistent with the pinned authors' loader. All earlier LunarGeo 3D metrics,
+oracle-window ceilings and 3D-supervised labels are superseded. Keep their files
+for historical replay. Geographic bounds also require corrected unprojection;
+2D known-warp counts are separate from these 3D claims.
+
+Verified:52 raw EXR/cache arrays agree; training-geometry median depth closure
+improves25.87m to0.62m with unchanged source intrinsics. Corrected full-pixel
+footprints give12 training/four selection spatial components,18/eight geometries,
+no cross-split component; batch/trajectory independence remains unknown. No
+calibration/test pixels loaded. The original fresh-final gate is still unmet.
+
+Corrected same-coordinate comparisons: frozen native+AP3P34/72 (strict17/72),
+four-orientation frozen baseline45/72 (strict17/72), native SIFT24/72
+(strict22/72), legacy-target reliability seeds34/35/33 of72 with AP3P.
+The legacy learned heads do not beat the stronger corrected baseline.
+No accepted-pose coverage, SOTA or learned superiority claim is established.
+
+Independent mathematical replay passes1,296 records/15 tables; image match
+coordinates are unchanged.167 tests pass/four optional skipped, including actual
+frozen-model controlled quarter-turn pose. The v4 coarse run was interrupted
+for the geometry correction with checkpoints preserved. A corrected100-step
+pilot reproduces45/72, selecting initial weights. The separate corrected4,000-step
+planar/true3D cohort and two predefined winner seeds are now running in
+runs/localization-v5-coarse-development.56,544 total parameters with fixed native
+refinement and orientation-bank inference. Do not edit its pinned sources while live.
+
+Goal remains active: test hypotheses and improve until the original accuracy,
+acceptance, uncertainty and modern-comparison targets are verified. Do not mark
+completion based on this correction or a development score. LuSNAR archive
+metadata is inventoried; scenes7–9 remain reserved and uninspected. Development
+scene1 download is in progress. No paid compute, human review or automatic email.
+
+See [geometry correction](reports/GEOMETRY_CORRECTION_V5.md). All older sections
+below are historical and their LunarGeo 3D interpretations are superseded.
+
 ## Supplemental training completed — balanced sampling
 
 All ten requested development runs completed 2,000 steps each (20,000 total),

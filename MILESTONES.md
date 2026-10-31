@@ -1,5 +1,15 @@
 # Milestones
 
+## Active goal: corrected geometry and continued model research
+
+Cross-view depth closure and pinned upstream implementation reveal axial-depth
+EXRs; legacy ray-based LunarGeo 3D results/labels are superseded. Corrected
+geometry/source/split audits and1296-record replay pass; frozen orientation
+baseline45/72. A corrected coarse-learning cohort is running, with no claimed
+learned gain yet. Fresh final validation, acceptance, modern native-pose ranking
+and the full research targets remain outstanding. See STATUS and the
+[correction report](reports/GEOMETRY_CORRECTION_V5.md).
+
 ## Supplemental training continuation completed
 
 Ten 2,000-step runs now complete across the preserved primary and supplemental

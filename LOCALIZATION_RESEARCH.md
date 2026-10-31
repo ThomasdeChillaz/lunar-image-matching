@@ -1,5 +1,15 @@
 # Compact localization study - accepted iteration 7
 
+## Current correction and active continuation
+
+The user now requests continued hypothesis testing/improvement until the full
+targets or defensible SOTA results are achieved. Source/data audits expose a
+ray-versus-axial depth error in the earlier3D pipeline. Its LunarGeo3D results,
+labels and oracle-window ceilings are superseded by
+[the explicit axial correction](reports/GEOMETRY_CORRECTION_V5.md). Fresh final
+validation remains required. Do not use geometry repairs as learned novelty or
+redefine the original acceptance/comparison targets around completed work.
+
 ## Subsequent user-authorized development training
 
 After receiving the gate failure, the user instructed "Continue with the

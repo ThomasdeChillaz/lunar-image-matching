@@ -1,6 +1,14 @@
 # Compact lunar image matching
 
-**Completed: 20,000 development-training steps across ten runs.** The first
+**Geometry correction:** earlier LunarGeo 3D pose/correspondence metrics and 3D
+training labels used ray-distance unprojection, while the audited EXRs use
+optical-axis depth. Those 3D results are superseded. See the
+[correction, evidence and continuing experiments](reports/GEOMETRY_CORRECTION_V5.md).
+Corrected frozen native baseline: **34/72** poses; the same model with four
+orientations: **45/72**. Neither is a new learned-model improvement. Corrected
+training is running; the full research targets and fresh validation remain unmet.
+
+**Historical, before the depth correction: 20,000 development-training steps across ten runs.** The first
 cohort's descriptor seeds give 26/72, 25/72 and 26/72 correct raw poses. A
 supplemental balanced-sampling reliability model gives **27/72, 31/72 and 36/72**,
 versus deterministic native refinement + LM's **26/72**. The predefined primary

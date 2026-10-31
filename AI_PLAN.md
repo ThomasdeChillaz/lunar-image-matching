@@ -2,6 +2,15 @@
 
 ## Objective
 
+The active user goal is to keep testing hypotheses and improving until the
+original target results and/or defensible state-of-the-art results are verified.
+The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes all
+earlier LunarGeo ray-based3D metrics/labels. Use the explicit v5 geometry and
+audited v5 data for new fitting/scoring; preserve legacy sources for replay.
+Current corrected training is live: do not mutate its pinned sources. The full
+accuracy/acceptance/uncertainty/comparison goal remains active, not completed by
+software checks or development gains.
+
 The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
 The user's subsequent instruction, "Continue with the training", authorizes
 development-only training on the existing train split with model-selection
