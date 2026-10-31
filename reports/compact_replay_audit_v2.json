@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "protocol_sha256": "cf97903e715fbb3f2596aa06397235bb52739cae3e1f8c93aa11893499e5ab83",
+  "runs": [
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261030-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261030-test",
+      "rows": 672
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261031-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261031-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261031-test",
+      "rows": 672
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261032-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261032-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-20261032-test",
+      "rows": 672
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-expanded-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-hard_negatives-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-hard_negatives-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/loma_b/calibration",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/loma_b/model_selection",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/loma_r/calibration",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/loma_r/model_selection",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/matchanything/calibration",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/matchanything/model_selection",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/roma/calibration",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/roma/model_selection",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/romav2/calibration",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-development/romav2/model_selection",
+      "rows": 24
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-test/loma_b/test",
+      "rows": 72
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-test/loma_r/test",
+      "rows": 72
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-test/matchanything/test",
+      "rows": 72
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-test/roma/test",
+      "rows": 72
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-modern-test/romav2/test",
+      "rows": 72
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-multiscale-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-multiscale-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-original-evidence-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-original-evidence-model_selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-original-test",
+      "rows": 672
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-reliability-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-reliability-selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-sift-evidence-calibration-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-sift-evidence-model_selection-canonical",
+      "rows": 168
+    },
+    {
+      "track": "2d",
+      "run": "runs/compact-v2-sift-test",
+      "rows": 672
+    },
+    {
+      "track": "3d",
+      "run": "runs/compact-v2-compact-3d-test",
+      "rows": 288
+    },
+    {
+      "track": "3d",
+      "run": "runs/compact-v2-original-3d-test",
+      "rows": 288
+    },
+    {
+      "track": "3d",
+      "run": "runs/compact-v2-sift-3d-test",
+      "rows": 288
+    },
+    {
+      "track": "nominal_sensor",
+      "run": "runs/compact-v2-compact-sensor",
+      "rows": 40
+    },
+    {
+      "track": "nominal_sensor",
+      "run": "runs/compact-v2-original-sensor",
+      "rows": 40
+    },
+    {
+      "track": "nominal_sensor",
+      "run": "runs/compact-v2-sift-sensor",
+      "rows": 40
+    }
+  ],
+  "confidence_policies_replayed": 13,
+  "new_model_inference": false,
+  "independently_verified_aggregate_tables": 14,
+  "verified_real_navigation_accuracy": null
+}

@@ -1,0 +1,185 @@
+{
+  "protocol": "reports/compact_freeze_v2.json",
+  "results_report": "reports/compact_results_v2.json",
+  "two_dimensional": [
+    "runs/compact-v2-expanded-20261030-calibration-canonical",
+    "runs/compact-v2-expanded-20261030-test",
+    "runs/compact-v2-expanded-20261031-calibration-canonical",
+    "runs/compact-v2-expanded-20261031-selection-canonical",
+    "runs/compact-v2-expanded-20261031-test",
+    "runs/compact-v2-expanded-20261032-calibration-canonical",
+    "runs/compact-v2-expanded-20261032-selection-canonical",
+    "runs/compact-v2-expanded-20261032-test",
+    "runs/compact-v2-expanded-selection-canonical",
+    "runs/compact-v2-hard_negatives-calibration-canonical",
+    "runs/compact-v2-hard_negatives-selection-canonical",
+    "runs/compact-v2-modern-development/loma_b/calibration",
+    "runs/compact-v2-modern-development/loma_b/model_selection",
+    "runs/compact-v2-modern-development/loma_r/calibration",
+    "runs/compact-v2-modern-development/loma_r/model_selection",
+    "runs/compact-v2-modern-development/matchanything/calibration",
+    "runs/compact-v2-modern-development/matchanything/model_selection",
+    "runs/compact-v2-modern-development/roma/calibration",
+    "runs/compact-v2-modern-development/roma/model_selection",
+    "runs/compact-v2-modern-development/romav2/calibration",
+    "runs/compact-v2-modern-development/romav2/model_selection",
+    "runs/compact-v2-modern-test/loma_b/test",
+    "runs/compact-v2-modern-test/loma_r/test",
+    "runs/compact-v2-modern-test/matchanything/test",
+    "runs/compact-v2-modern-test/roma/test",
+    "runs/compact-v2-modern-test/romav2/test",
+    "runs/compact-v2-multiscale-calibration-canonical",
+    "runs/compact-v2-multiscale-selection-canonical",
+    "runs/compact-v2-original-evidence-calibration-canonical",
+    "runs/compact-v2-original-evidence-model_selection-canonical",
+    "runs/compact-v2-original-test",
+    "runs/compact-v2-reliability-calibration-canonical",
+    "runs/compact-v2-reliability-selection-canonical",
+    "runs/compact-v2-sift-evidence-calibration-canonical",
+    "runs/compact-v2-sift-evidence-model_selection-canonical",
+    "runs/compact-v2-sift-test"
+  ],
+  "three_dimensional": [
+    "runs/compact-v2-compact-3d-test",
+    "runs/compact-v2-original-3d-test",
+    "runs/compact-v2-sift-3d-test"
+  ],
+  "sensor": [
+    "runs/compact-v2-compact-sensor",
+    "runs/compact-v2-original-sensor",
+    "runs/compact-v2-sift-sensor"
+  ],
+  "confidence": [
+    {
+      "selection": "runs/compact-v2-reliability-selection-canonical",
+      "calibration": "runs/compact-v2-reliability-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_reliability.json"
+    },
+    {
+      "selection": "runs/compact-v2-hard_negatives-selection-canonical",
+      "calibration": "runs/compact-v2-hard_negatives-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_hard_negatives.json"
+    },
+    {
+      "selection": "runs/compact-v2-multiscale-selection-canonical",
+      "calibration": "runs/compact-v2-multiscale-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_multiscale.json"
+    },
+    {
+      "selection": "runs/compact-v2-expanded-selection-canonical",
+      "calibration": "runs/compact-v2-expanded-20261030-calibration-canonical",
+      "policy": "reports/compact_policy_v2_20261030_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-expanded-20261031-selection-canonical",
+      "calibration": "runs/compact-v2-expanded-20261031-calibration-canonical",
+      "policy": "reports/compact_policy_v2_20261031_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-expanded-20261032-selection-canonical",
+      "calibration": "runs/compact-v2-expanded-20261032-calibration-canonical",
+      "policy": "reports/compact_policy_v2_20261032_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-original-evidence-model_selection-canonical",
+      "calibration": "runs/compact-v2-original-evidence-calibration-canonical",
+      "policy": "reports/compact_policy_v2_original_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-sift-evidence-model_selection-canonical",
+      "calibration": "runs/compact-v2-sift-evidence-calibration-canonical",
+      "policy": "reports/compact_policy_v2_sift_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-modern-development/loma_b/model_selection",
+      "calibration": "runs/compact-v2-modern-development/loma_b/calibration",
+      "policy": "reports/compact_policy_v2_loma_b_centers.json"
+    },
+    {
+      "selection": "runs/compact-v2-modern-development/loma_r/model_selection",
+      "calibration": "runs/compact-v2-modern-development/loma_r/calibration",
+      "policy": "reports/compact_policy_v2_loma_r_centers.json"
+    },
+    {
+      "selection": "runs/compact-v2-modern-development/romav2/model_selection",
+      "calibration": "runs/compact-v2-modern-development/romav2/calibration",
+      "policy": "reports/compact_policy_v2_romav2_centers.json"
+    },
+    {
+      "selection": "runs/compact-v2-modern-development/roma/model_selection",
+      "calibration": "runs/compact-v2-modern-development/roma/calibration",
+      "policy": "reports/compact_policy_v2_roma_canonical.json"
+    },
+    {
+      "selection": "runs/compact-v2-modern-development/matchanything/model_selection",
+      "calibration": "runs/compact-v2-modern-development/matchanything/calibration",
+      "policy": "reports/compact_policy_v2_matchanything_canonical.json"
+    }
+  ],
+  "sensor_models": {
+    "runs/compact-v2-compact-sensor": "runs/compact-v2-expanded-20261030",
+    "runs/compact-v2-original-sensor": "original",
+    "runs/compact-v2-sift-sensor": "sift"
+  },
+  "aggregate_full": {
+    "compact-20261030": {
+      "run": "runs/compact-v2-expanded-20261030-test",
+      "policy_key": "runs/compact-v2-expanded-20261030"
+    },
+    "compact-20261031": {
+      "run": "runs/compact-v2-expanded-20261031-test",
+      "policy_key": "runs/compact-v2-expanded-20261031"
+    },
+    "compact-20261032": {
+      "run": "runs/compact-v2-expanded-20261032-test",
+      "policy_key": "runs/compact-v2-expanded-20261032"
+    },
+    "original": {
+      "run": "runs/compact-v2-original-test",
+      "policy_key": "original"
+    },
+    "sift": {
+      "run": "runs/compact-v2-sift-test",
+      "policy_key": "sift"
+    },
+    "original-frozen": {
+      "run": "runs/compact-v2-original-test",
+      "policy_key": "original",
+      "original_gate": true
+    }
+  },
+  "aggregate_common": {
+    "compact": {
+      "run": "runs/compact-v2-expanded-20261030-test",
+      "policy_key": "runs/compact-v2-expanded-20261030"
+    },
+    "original": {
+      "run": "runs/compact-v2-original-test",
+      "policy_key": "original"
+    },
+    "sift": {
+      "run": "runs/compact-v2-sift-test",
+      "policy_key": "sift"
+    },
+    "loma_b": {
+      "run": "runs/compact-v2-modern-test/loma_b/test",
+      "policy_key": "loma_b"
+    },
+    "loma_r": {
+      "run": "runs/compact-v2-modern-test/loma_r/test",
+      "policy_key": "loma_r"
+    },
+    "romav2": {
+      "run": "runs/compact-v2-modern-test/romav2/test",
+      "policy_key": "romav2"
+    },
+    "roma": {
+      "run": "runs/compact-v2-modern-test/roma/test",
+      "policy_key": "roma"
+    },
+    "matchanything": {
+      "run": "runs/compact-v2-modern-test/matchanything/test",
+      "policy_key": "matchanything"
+    }
+  }
+}
