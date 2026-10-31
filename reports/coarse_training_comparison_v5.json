@@ -1,0 +1,351 @@
+{
+  "scope": "Corrected axial-depth development only; eight geometries/four components, no final or calibrated acceptance claim.",
+  "winner": "true_3d",
+  "runs": [
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "selected_step": 0,
+      "correct": 45,
+      "strict": 17,
+      "estimated": 57,
+      "wrong": 12,
+      "sift_fallback_correct": 53,
+      "sift_fallback_estimated": 59,
+      "sift_fallback_wrong": 6,
+      "raw_gain_vs_frozen_pp": 0.0,
+      "descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": 0.0,
+      "fallback_descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "completed_steps": 4000,
+      "final_weight_change_l2": 1.8976958990097046,
+      "trainable_parameters": 28272,
+      "total_parameters": 56544,
+      "elapsed_seconds": 728.8233961579972,
+      "selected_checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "results_sha256": "c504016ef8de03b7eccaf3c94f74d4f4cce785aa027737737223ebaa33b56c90"
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "selected_step": 1000,
+      "correct": 44,
+      "strict": 14,
+      "estimated": 54,
+      "wrong": 10,
+      "sift_fallback_correct": 50,
+      "sift_fallback_estimated": 57,
+      "sift_fallback_wrong": 7,
+      "raw_gain_vs_frozen_pp": -1.3888888888888888,
+      "descriptive_component_interval_pp": [
+        -6.349206349206349,
+        3.7037037037037037
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": -4.166666666666667,
+      "fallback_descriptive_component_interval_pp": [
+        -7.936507936507937,
+        0.0
+      ],
+      "completed_steps": 4000,
+      "final_weight_change_l2": 1.6852325201034546,
+      "trainable_parameters": 28272,
+      "total_parameters": 56544,
+      "elapsed_seconds": 649.675668344018,
+      "selected_checkpoint_sha256": "799f73a6b2f5b6e4f1855a61b340fa8d978beba191e260ac2a70f0e07d5bcbef",
+      "results_sha256": "bd197b4a1363d4d73d8713c50bdba20b83a6abbdc9bdee24911f53128d733ff7"
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "selected_step": 0,
+      "correct": 45,
+      "strict": 17,
+      "estimated": 57,
+      "wrong": 12,
+      "sift_fallback_correct": 53,
+      "sift_fallback_estimated": 59,
+      "sift_fallback_wrong": 6,
+      "raw_gain_vs_frozen_pp": 0.0,
+      "descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": 0.0,
+      "fallback_descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "completed_steps": 4000,
+      "final_weight_change_l2": 1.6685948371887207,
+      "trainable_parameters": 28272,
+      "total_parameters": 56544,
+      "elapsed_seconds": 639.3785122499976,
+      "selected_checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "results_sha256": "682e1a5095058a9894342c1e61200de52f6d969876aee84651c8b711ffc24819"
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "selected_step": 0,
+      "correct": 45,
+      "strict": 17,
+      "estimated": 57,
+      "wrong": 12,
+      "sift_fallback_correct": 53,
+      "sift_fallback_estimated": 59,
+      "sift_fallback_wrong": 6,
+      "raw_gain_vs_frozen_pp": 0.0,
+      "descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": 0.0,
+      "fallback_descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "completed_steps": 4000,
+      "final_weight_change_l2": 1.6638849973678589,
+      "trainable_parameters": 28272,
+      "total_parameters": 56544,
+      "elapsed_seconds": 724.3208664660051,
+      "selected_checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "results_sha256": "f1a22f06cfe7279a1e0718195b5b839383d3e9a6a392512b4ed9a4cff97f9d5a"
+    }
+  ],
+  "baseline_correct": 45,
+  "baseline_fallback_correct": 53,
+  "baseline_fallback_wrong": 6,
+  "total_optimizer_steps": 16000,
+  "elapsed_cohort_seconds": 2743.1894740269927,
+  "interval_note": "Descriptive post-selection terrain-component bootstrap on only four exposed development components, not fresh-test confidence.",
+  "strata": [
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "dynamicgood",
+      "same_light_id": true,
+      "cases": 12,
+      "frozen_correct": 4,
+      "trained_correct": 4
+    },
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "dynamicgood",
+      "same_light_id": false,
+      "cases": 24,
+      "frozen_correct": 7,
+      "trained_correct": 7
+    },
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "nadir",
+      "same_light_id": true,
+      "cases": 9,
+      "frozen_correct": 9,
+      "trained_correct": 9
+    },
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "nadir",
+      "same_light_id": false,
+      "cases": 18,
+      "frozen_correct": 17,
+      "trained_correct": 17
+    },
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "oblique",
+      "same_light_id": true,
+      "cases": 3,
+      "frozen_correct": 3,
+      "trained_correct": 3
+    },
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "mode": "oblique",
+      "same_light_id": false,
+      "cases": 6,
+      "frozen_correct": 5,
+      "trained_correct": 5
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "dynamicgood",
+      "same_light_id": true,
+      "cases": 12,
+      "frozen_correct": 4,
+      "trained_correct": 6
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "dynamicgood",
+      "same_light_id": false,
+      "cases": 24,
+      "frozen_correct": 7,
+      "trained_correct": 5
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "nadir",
+      "same_light_id": true,
+      "cases": 9,
+      "frozen_correct": 9,
+      "trained_correct": 9
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "nadir",
+      "same_light_id": false,
+      "cases": 18,
+      "frozen_correct": 17,
+      "trained_correct": 18
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "oblique",
+      "same_light_id": true,
+      "cases": 3,
+      "frozen_correct": 3,
+      "trained_correct": 3
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "mode": "oblique",
+      "same_light_id": false,
+      "cases": 6,
+      "frozen_correct": 5,
+      "trained_correct": 3
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "dynamicgood",
+      "same_light_id": true,
+      "cases": 12,
+      "frozen_correct": 4,
+      "trained_correct": 4
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "dynamicgood",
+      "same_light_id": false,
+      "cases": 24,
+      "frozen_correct": 7,
+      "trained_correct": 7
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "nadir",
+      "same_light_id": true,
+      "cases": 9,
+      "frozen_correct": 9,
+      "trained_correct": 9
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "nadir",
+      "same_light_id": false,
+      "cases": 18,
+      "frozen_correct": 17,
+      "trained_correct": 17
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "oblique",
+      "same_light_id": true,
+      "cases": 3,
+      "frozen_correct": 3,
+      "trained_correct": 3
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "mode": "oblique",
+      "same_light_id": false,
+      "cases": 6,
+      "frozen_correct": 5,
+      "trained_correct": 5
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "dynamicgood",
+      "same_light_id": true,
+      "cases": 12,
+      "frozen_correct": 4,
+      "trained_correct": 4
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "dynamicgood",
+      "same_light_id": false,
+      "cases": 24,
+      "frozen_correct": 7,
+      "trained_correct": 7
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "nadir",
+      "same_light_id": true,
+      "cases": 9,
+      "frozen_correct": 9,
+      "trained_correct": 9
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "nadir",
+      "same_light_id": false,
+      "cases": 18,
+      "frozen_correct": 17,
+      "trained_correct": 17
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "oblique",
+      "same_light_id": true,
+      "cases": 3,
+      "frozen_correct": 3,
+      "trained_correct": 3
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "mode": "oblique",
+      "same_light_id": false,
+      "cases": 6,
+      "frozen_correct": 5,
+      "trained_correct": 5
+    }
+  ],
+  "source_sha256": "fe78f82a558f5c4f156bb38095438a9cb872c96bcc6cddac28af8ef28f003915",
+  "input_sha256": {
+    "runs/localization-v5-axial-correction/results.json.gz": "8bb48ecdcce9cfdf6cdd6a7168ba853c4deaefc512573b6072bad9d77e8c3744",
+    "runs/localization-v5-coarse-development/summary.json": "7fd0ff9863ac27289f50f7f21b6379c1b34648fc4b6689afbdc6828b5f3a2107"
+  }
+}
