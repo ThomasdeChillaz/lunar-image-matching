@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "scope": "Post-evaluation software diagnostic on metadata-first development tile per acquisition mode. Exact camera-projected query points, not matcher predictions; no final metric, algorithm or threshold changed.",
+  "manifest_sha256": "1e841fc534e5da6bb7eb765c8ad4d42f7a6a1c36d41604a5c580e3336d235cdb",
+  "source_sha256": {
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "compact_research.py": "5781e08476e36355c176392c475695534f57bdd304984fee67278a77cb4292ce",
+    "verify_compact_oracle_v2.py": "d9050d9005616ebf3452a76ddeead44e2b6c699d4ebe72a11ad78c1e80eff795"
+  },
+  "rows": [
+    {
+      "tile_id": "nadir/nadir/2515",
+      "mode": "nadir",
+      "split": "model_selection",
+      "exact_visible_correspondences": 992,
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 0.0022088359972848226
+      },
+      "reference_range_m": 3542.0,
+      "passed": true
+    },
+    {
+      "tile_id": "oblique/oblique/2994",
+      "mode": "oblique",
+      "split": "model_selection",
+      "exact_visible_correspondences": 755,
+      "pose_error": {
+        "rotation_deg": 0.005418122901490324,
+        "translation_m": 5.015016007635534e-05
+      },
+      "reference_range_m": 3650.0,
+      "passed": true
+    },
+    {
+      "tile_id": "dynamicgood/dynamic/1458",
+      "mode": "dynamicgood",
+      "split": "model_selection",
+      "exact_visible_correspondences": 125,
+      "pose_error": {
+        "rotation_deg": 0.012268998599642601,
+        "translation_m": 0.002814742043791423
+      },
+      "reference_range_m": 3142.0,
+      "passed": true
+    }
+  ],
+  "development_oracle_replayed_exactly": true
+}
