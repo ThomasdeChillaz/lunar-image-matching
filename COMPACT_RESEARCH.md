@@ -159,3 +159,18 @@ No new final-test or fresh POLAR inference had run when this correction was made
 The free-CPU modern comparison covers the controlled common subset. The secondary
 raw3D/pose track includes compact, original CNN and SIFT; no modern3D ranking is
 claimed. Raw3D correspondence coverage is reported separately from pose success.
+
+## Free CPU hardware constraint
+
+The corrected-coordinate run completed14/24 workers; all ten hour-limited workers
+reported AMD EPYC7763 hosts. Their model initialization completed but BF16
+warmup/control execution exhausted the budget. Preserve these resource failures,
+not algorithmic-error labels. Retry only missing cases on standard free runners
+that report native BF16 support. A preflight records CPU models/flags before
+installation and exits immediately otherwise; it never changes model precision,
+weights, resolution or settings. All final modern latencies remain paired with
+the compact model on the identical CPU/runtime/cases. Heterogeneous hosts do not
+support an unpaired cross-machine latency ranking.
+
+GitHub documents standard hosted runners as free for public repositories:
+https://docs.github.com/en/actions/reference/runners/github-hosted-runners

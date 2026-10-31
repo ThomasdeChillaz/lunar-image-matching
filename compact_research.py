@@ -29,7 +29,7 @@ SOURCES+=['contrastive_terrain.py','confidence.py','structural_refinement.py','r
           'roma_matcher.py','matchanything_matcher.py','eloftr_matcher.py','loftr_matcher.py',
           'polar_reference.py','dataset.py','synthetic.py','verify_compact_3d.py']
 SOURCES+=['replay_compact_v2.py']
-SOURCES+=['baseline_weights_v2.py','.github/workflows/compact-baselines-v2.yml','match_terrain.py']
+SOURCES+=['cpu_budget_v2.py','baseline_weights_v2.py','.github/workflows/compact-baselines-v2.yml','match_terrain.py']
 FAMILIES=('translation','rotation','scale','combined')
 
 
@@ -363,6 +363,8 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
         cases=case_plan(manifest,'test'),stereo_cases=stereo_plan(manifest,'test'),
         stereo_methods=['compact','original','sift'],
         modern_3d_status='Not run within the free CPU budget; modern comparison is the declared controlled common subset, not a modern3D ranking.',
+        execution_resource_profile=dict(torch_cpu_threads=2,modern_author_bf16_requires_reported_native_bf16=True,
+            runners='Standard free public-repository ubuntu22.04 runners; heterogeneous CPU models recorded. Timings compared only within paired jobs.'),
         common_cases=common_plan(manifest,'test'),sensor_protocol=str(sensor_protocol),sensor_protocol_sha256=sha256(sensor_protocol),
         success_targets=dict(correct_acceptance_gain_pp=10.,max_accepted_error=.01,max_negative_acceptance=.01,
             competitive_accuracy_tolerance_pp=3.,cpu_speedup=5.,

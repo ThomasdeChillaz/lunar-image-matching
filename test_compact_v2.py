@@ -222,3 +222,11 @@ def test_author_edge_coordinates_preserve_native_rotation_and_scale_centers():
         np.testing.assert_allclose(b,target,atol=1e-12)
         fit=fit_geometry(a.astype(np.float32),b.astype(np.float32))
         assert endpoint_error(fit.matrix,truth,evaluation_points((128,128),truth))<1e-5
+
+
+def test_cpu_budget_distinguishes_timed_out_legacy_and_native_bf16_hosts():
+    from cpu_budget_v2 import inspect_cpu
+    old=inspect_cpu('model name : AMD EPYC7763\nflags : avx avx2 fma\n')
+    current=inspect_cpu('model name : AMD EPYC9V74\nflags : avx2 avx512_bf16\n')
+    assert not old['native_bf16'] and old['bf16_flags']==[]
+    assert current['native_bf16'] and current['bf16_flags']==['avx512_bf16']
