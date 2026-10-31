@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "recorded_utc": "2026-10-30T20:23:14.212409+00:00",
+  "final_test_inference_started": false,
+  "finding": "Pinned LoMa to_pixel_coords and RoMaV2 to_pixel return W*(normalized+1)/2 edge coordinates. Pixel-center conversion must be author_pixel/scale -0.5; the earlier extra internal+0.5 was incorrect.",
+  "effect": "Earlier common504 LoMa outputs have a+0.126984 input-pixel offset and common512 RoMaV2 a+0.125 offset. Pure translations can conceal a common origin error; rotations/scales and3D mapping require exact centers.",
+  "affected_methods": [
+    "loma_b",
+    "loma_r",
+    "romav2"
+  ],
+  "unaffected_methods": [
+    "compact",
+    "original",
+    "sift",
+    "roma",
+    "matchanything"
+  ],
+  "action": "Retain earlier artifacts as coordinate-v1 development diagnostics. Rerun all affected development cases with corrected adapters and refit/calibrate their rules before final freezing. No final results have been consumed.",
+  "sources": [
+    "https://github.com/davnords/loma/blob/415caedde23a9ed479172ed174fe4ff7b4514d4b/src/loma/loma.py",
+    "https://github.com/Parskatt/RoMaV2/blob/95c9968145c8906b7b59383258e9f73b02853d89/src/romav2/geometry.py"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "paid_compute": false,
+  "local_training": "Intel Mac CPU, two Torch threads;2000 steps per ablation and selected seed",
+  "free_baselines": "Standard free public-repository GitHub Actions ubuntu22.04 x64 or ubuntu24.04 ARM, two Torch CPU threads; architecture and CPU model retained. No paid larger runners.",
+  "initial_run": {
+    "id": 41112095514,
+    "commit": "dd9c59885aaabdb2aa6a96da1e2a36768d8476b2",
+    "status": "cancelled_after31m17s",
+    "reason": "Multiple modern workers stalled awaiting official DINOv2 HTTP response headers for over25minutes, before inference. Eighteen completed workers retained; only unfinished method/shard jobs restarted with bounded checksum-verified acquisition.",
+    "completed_workers": [
+      "compact-v2-development-loma_b-0",
+      "compact-v2-development-loma_b-1",
+      "compact-v2-development-loma_b-2",
+      "compact-v2-development-loma_b-5",
+      "compact-v2-development-loma_r-0",
+      "compact-v2-development-loma_r-1",
+      "compact-v2-development-loma_r-2",
+      "compact-v2-development-loma_r-4",
+      "compact-v2-development-loma_r-7",
+      "compact-v2-development-matchanything-0",
+      "compact-v2-development-roma-0",
+      "compact-v2-development-roma-1",
+      "compact-v2-development-roma-3",
+      "compact-v2-development-romav2-1",
+      "compact-v2-development-romav2-2",
+      "compact-v2-development-romav2-3",
+      "compact-v2-development-romav2-6",
+      "compact-v2-development-romav2-7"
+    ]
+  },
+  "recovery": {
+    "workers": 22,
+    "acquisition_socket_timeout_seconds": 60,
+    "attempts_per_asset": 3,
+    "download_wall_budget_seconds": 300,
+    "job_timeout_minutes": 60
+  },
+  "comparison": "No model or numerical configuration substitution. Failed acquisition is a compute limitation, not an algorithmic matching failure. Each completed shard requires the actual pretrained known-transform control.",
+  "corrected_coordinate_run": {
+    "id": 41124189265,
+    "completed_workers": 14,
+    "hour_limited_workers": 10,
+    "all_hour_limited_cpu_model": "AMD EPYC7763",
+    "action": "Preserve partials; retry only missing unchanged jobs with native-BF16 preflight on standard free runners."
+  },
+  "profile_control_run": {
+    "id": 41124858939,
+    "status": "All three common controls timed out at900s; retain resource failures."
+  },
+  "native_bf16_recovery_runs": [
+    {
+      "id": 41190344129,
+      "completed": 5,
+      "resource_unavailable": 5
+    },
+    {
+      "id": 41190796359,
+      "completed": 3,
+      "resource_unavailable": 2
+    },
+    {
+      "id": 41191243162,
+      "completed": 0,
+      "resource_unavailable": 2
+    }
+  ],
+  "arm_resource_attempt": {
+    "id": 41192211870,
+    "missing_jobs": [
+      {
+        "method": "loma_b",
+        "shard": 4
+      },
+      {
+        "method": "romav2",
+        "shard": 1
+      }
+    ],
+    "status": "In progress; native BF16 preflight passed on both standard free ARM runners.",
+    "reason": "Avoid repeated x64 allocation lottery; unchanged official sources, weights, precision, settings and inputs. Same-job controls required for final speed claims."
+  }
+}

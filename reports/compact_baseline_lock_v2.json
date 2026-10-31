@@ -15,7 +15,26 @@
       "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
       "preset": "LoMaB()",
       "preset_source_sha256": "6cb643fafc5bd18952abf5c1767873ecc39a09aa06102f455b0c20183ecc014e",
-      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R."
+      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R.",
+      "author_actual_settings": {
+        "preset": "LoMaB()",
+        "input_dim": 256,
+        "embed_dim": 256,
+        "n_layers": 9,
+        "num_heads": 4,
+        "filter_threshold": 0.1,
+        "mp": true,
+        "compile": false,
+        "descriptor": "dedode_g",
+        "num_keypoints": 2048,
+        "posenc_type": "learnable",
+        "posenc_gamma": 1.0,
+        "detector_path_loader_resize": 1024,
+        "descriptor_path_loader_size": [
+          784,
+          784
+        ]
+      }
     },
     "loma_r": {
       "url": "https://github.com/davnords/loma",
@@ -31,7 +50,26 @@
       "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
       "preset": "LoMaR()",
       "preset_source_sha256": "6cb643fafc5bd18952abf5c1767873ecc39a09aa06102f455b0c20183ecc014e",
-      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R."
+      "common_profile": "Same native128px grayscale source upsampled to504x504 RGB;2048 keypoints; full author preset, common partial-affine fit; rotation-trained weights for LoMa-R.",
+      "author_actual_settings": {
+        "preset": "LoMaR()",
+        "input_dim": 256,
+        "embed_dim": 256,
+        "n_layers": 9,
+        "num_heads": 4,
+        "filter_threshold": 0.1,
+        "mp": true,
+        "compile": false,
+        "descriptor": "dedode_g",
+        "num_keypoints": 2048,
+        "posenc_type": "learnable",
+        "posenc_gamma": 1.0,
+        "detector_path_loader_resize": 1024,
+        "descriptor_path_loader_size": [
+          784,
+          784
+        ]
+      }
     },
     "romav2": {
       "url": "https://github.com/Parskatt/RoMaV2",
@@ -49,7 +87,14 @@
         "bidirectional": false
       },
       "author_profile": "Unmodified author presets and author image-path loading; measured controls saved separately.",
-      "common_profile": "Author fast512 settings;2000 sampled correspondences; common partial-affine fit; each direction independently inferred."
+      "common_profile": "Author fast512 settings;2000 sampled correspondences; common partial-affine fit; each direction independently inferred.",
+      "author_actual_settings": {
+        "H_lr": 800,
+        "W_lr": 800,
+        "H_hr": 1280,
+        "W_hr": 1280,
+        "bidirectional": true
+      }
     }
   },
   "legacy_locks": [

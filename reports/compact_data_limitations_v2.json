@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "recorded_utc": "2026-10-30T19:39:34.717668+00:00",
+  "timing": "Recorded after compact training/development selection, before any final-test or fresh POLAR inference. Do not describe this note as a pretraining preregistration.",
+  "inspected_camera_fields": [
+    "intrinsics",
+    "cam2world"
+  ],
+  "missing": [
+    "explicit trajectory IDs",
+    "Sun-angle metadata"
+  ],
+  "actual_split": "Connected full selected-view depth footprints with200m buffer and shared camera poses; all lighting variants together. Four spatial partitions across28 selected footprint components.",
+  "trajectory_independence_verified": false,
+  "limitation": "Nadir/oblique/dynamicgood are acquisition modes, not verified independent trajectory identities. Distant frames from a shared unknown trajectory may cross spatial partitions. Shared renderer/terrain dependence remains. No trajectory-held-out generalization claim.",
+  "permitted_claim": "Held-out selected spatial-footprint performance within this public simulated south-pole sample; twelve final components across three preselected longitude sectors.",
+  "next_data_requirement": "Trajectory grouping requires released identifiers or independently established trajectory membership; do not infer it from matching outcomes or pretend repeated lights add independent terrain.",
+  "depth_reuse_verified": "All66 cached geometries have byte-identical EXR depth files across all three lighting variants for each camera. Reusing the first left/right depths is therefore source-verified."
+}
