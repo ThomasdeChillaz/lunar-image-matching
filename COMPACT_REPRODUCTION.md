@@ -29,8 +29,20 @@ metrics into a fresh output:
 
 ```sh
 python replay_compact_v2.py --models /path/to/compact-v2-models.zip --data /path/to/compact-v2-data.zip --capsule /path/to/compact-v2-experiments.zip --expected-sha256 EXPERIMENT_CAPSULE_SHA256 --output runs/compact-replay-new.json
+python verify_compact_tables_v2.py --output runs/compact-tables-new.json
 python report_compact_v2.py --output runs/compact-report-new
 ```
+
+For the publication layout, run:
+
+```sh
+python render_compact_publication_v2.py --output runs/compact-publication-new
+```
+
+It verifies the frozen analysis hash and changes only figure labels, PDF
+metadata and footer links. Measured outcomes, thresholds and uncertainty
+calculations remain in the frozen source. The release's small report ZIP can
+also be extracted and opened at `compact_research_v2.html` without model weights.
 
 Read the actual experiment capsule digest from
 `reports/compact_experiment_assets_v2.sha256`. The installer refuses to replace
@@ -141,6 +153,15 @@ correspondences. Add `--include-proposal` only for an explicitly ungated researc
 proposal. For nonplanar study, `compact_research.py stereo` extracts raw matches
 before planar fitting and uses reference-map depth for pose; query depth is only
 an external scoring reference. The 3D diagnostic does not certify navigation.
+
+A post-study geometry software control uses exact projected correspondences
+on the first development geometry in each acquisition mode. This is a diagnostic
+after the observed pose failures; it changes no matching result or test metric:
+
+```sh
+python verify_compact_oracle_v2.py --output runs/oracle-control-new.json
+python diagnose_compact_gate_v2.py --output runs/old-gate-diagnosis-new.json
+```
 
 Run repository tests and a fresh procedural smoke after changing matching or
 metrics. No human landmark review, paid compute or automatic outreach is part

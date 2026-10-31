@@ -64,7 +64,10 @@ def package():
                 if p.is_file():paths.add(p)
     from compact_research import SOURCES
     snapshot=Path('runs/compact-v2-source-snapshot')
-    for name in SOURCES+['report_compact_v2.py','package_compact_v2.py','COMPACT_RESEARCH.md','COMPACT_REPRODUCTION.md']:
+    for name in SOURCES+['report_compact_v2.py','package_compact_v2.py',
+            'render_compact_publication_v2.py','verify_compact_oracle_v2.py',
+            'verify_compact_tables_v2.py','diagnose_compact_gate_v2.py',
+            'COMPACT_RESEARCH.md','COMPACT_REPRODUCTION.md']:
         target=snapshot/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(Path(name).read_bytes());paths.add(target)
     files={str(p):sha256(p) for p in sorted(paths)}
     archive=Path('reports/compact-v2-experiments.zip')

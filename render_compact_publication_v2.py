@@ -11,7 +11,8 @@ from pathlib import Path
 from dataset import sha256
 
 
-def render(output='reports',outreach=None):
+def render(output='reports',outreach=None,modern_directory='runs/compact-v2-modern-test',
+           timing_directory='runs/compact-v2-modern-test-executions'):
     protocol=json.loads(Path('reports/compact_freeze_v2.json').read_text())
     if sha256('report_compact_v2.py')!=protocol['comparison_assets']['report_compact_v2.py']:
         raise ValueError('Frozen analysis source differs')
@@ -25,15 +26,26 @@ def render(output='reports',outreach=None):
     def ylabel(axis,label,*args,**kwargs):
         if label=='Incorrect accepted outputs (%; nonlinear scale)':
             label='Incorrect accepted outputs (%)\nNonlinear scale'
+        elif label in ('Correctly accepted common positives (%)','Correctly accepted positives (%)'):
+            if 'common' in label:
+                axis.set_title('Different CPUs across jobs; each method has a paired compact control',fontsize=8)
+            label='Correct acceptance (%)'
         return original_ylabel(axis,label,*args,**kwargs)
 
     def annotate(axis,text,*args,**kwargs):
-        offsets={'LoMa-B (504)':(-5,16),'LoMa-R (504)':(-5,-17),
-                 'RoMa v2 (fast512)':(-5,5),'Original RoMa':(5,12),
-                 'MatchAnything4x':(5,-16)}
-        if text in offsets:
-            kwargs['xytext']=offsets[text]
-            if offsets[text][0]<0:kwargs['ha']='right'
+        markers={'LoMa-B (504)':'o','LoMa-R (504)':'^',
+                 'RoMa v2 (fast512)':'s','Original RoMa':'D','MatchAnything4x':'v'}
+        if text in markers:
+            # A legend avoids misleading label offsets in the dense CPU cluster.
+            from matplotlib.markers import MarkerStyle
+            collection=axis.collections[-1]
+            marker=MarkerStyle(markers[text])
+            collection.set_paths([marker.get_path().transformed(marker.get_transform())])
+            collection.set_label(text)
+            if text=='LoMa-R (504)':
+                collection.set_edgecolors(collection.get_facecolors())
+                collection.set_facecolors('none')
+            return None
         return original_annotate(axis,text,*args,**kwargs)
 
     def paragraph(text,*args,**kwargs):
@@ -66,7 +78,14 @@ def render(output='reports',outreach=None):
     flow.SimpleDocTemplate=Document
     try:
         from report_compact_v2 import build,outreach_text
-        evidence=build(output=output)
+        evidence=build(output=output,modern_directory=modern_directory,timing_directory=timing_directory)
+        page=Path(output)/'compact_research_v2.html'
+        page.write_text(page.read_text().replace('<a href="compact_brief_v2.pdf">',
+            '<a href="COMPACT_INTERPRETATION.md">Interpretation</a> | <a href="compact_brief_v2.pdf">'))
+        interpretation=Path('reports/COMPACT_INTERPRETATION.md')
+        target=Path(output)/interpretation.name
+        if interpretation.exists() and target.resolve()!=interpretation.resolve():
+            target.write_bytes(interpretation.read_bytes())
         if outreach:
             Path(outreach).write_text(outreach_text(evidence))
         return evidence
@@ -81,5 +100,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',default='reports')
     parser.add_argument('--outreach',help='Save an unsent draft at this explicit local path')
+    parser.add_argument('--modern-directory',default='runs/compact-v2-modern-test')
+    parser.add_argument('--timing-directory',default='runs/compact-v2-modern-test-executions')
     args=parser.parse_args()
-    render(args.output,args.outreach)
+    render(args.output,args.outreach,args.modern_directory,args.timing_directory)

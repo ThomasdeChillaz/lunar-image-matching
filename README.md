@@ -1,15 +1,90 @@
-# Lunar image matching
+# Compact lunar image matching
 
-The compact south-pole study is frozen and its core evaluation is complete. The five modern-model final comparisons are still running; the final release follows their audited results.
+A reproducible study of a **28,272-parameter structural CNN**, calibrated rejection,
+modern pretrained comparisons and failure under 3D/sensor transfer. Independent
+project; no NASA/JPL affiliation or flight-readiness claim.
 
-- The 28,272-parameter primary model correctly accepts **376/384 positive pairs (97.92%)**, with zero observed incorrect outputs and **0/288 nonoverlap acceptances**.
-- **Calibration drives most of the gain.** The old checkpoint retains 100/384 with its old gate and 368/384 with newly calibrated confidence. The primary retrained model adds eight acceptances; this gain is not consistent across the three predefined seeds. Both old and primary checkpoints have 384/384 raw correct proposals.
-- **3D pose remains weak:** only 2/288 compact poses meet the declared secondary criterion. New NASA POLAR lighting cases give 23/40 nominally correct acceptances and one outside the nominal criterion. These results do not establish navigation accuracy.
-- Inference uses 128px images; the render tolerance is **12 original 512px source pixels**. Twelve selected final spatial components share a renderer/terrain model, and trajectory IDs are absent. This is a coarse-registration study, not a global SOTA or flight-readiness claim.
+**Question:** Can a small matcher retain correct lunar alignments while rejecting
+mismatches, with a useful accuracy–CPU-speed tradeoff?
 
-See the [frozen protocol](reports/compact_freeze_v2.json), [public freeze proof](reports/compact_publication_v2.json), [secondary interpretation](reports/compact_secondary_comparisons_v2.json), [development-only oracle geometry control](reports/compact_depth_oracle_control_v2.json), and [reproduction instructions](COMPACT_REPRODUCTION.md). Candidate checkpoints/data are available in [compact-v2-rc1](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2-rc1). No human review or paid compute is required; no outreach is sent automatically.
+[Release and downloads](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2) · [Two-page brief](reports/compact_brief_v2.pdf) · [Measured report](reports/RESEARCH_ITERATION_6.md) · [Interpretation](reports/COMPACT_INTERPRETATION.md) · [Reproduction](COMPACT_REPRODUCTION.md)
 
-## Earlier benchmarks (preserved)
+## Measured findings
+
+- **Primary frozen model:** 376/384 correct positive acceptances (97.92%), zero observed incorrect outputs and 0/288 nonoverlap acceptances. The other predefined seeds retain 351 and 380 correct positives; the latter accepts one nonoverlap pair. No best-of-test seed selection occurs.
+- **Calibration drives most of the gain.** The old checkpoint retains 100/384 with its old gate and 368/384 with newly calibrated confidence. Both old and primary checkpoints have 384/384 raw correct proposals. All 284 correct proposals rejected by the old gate fail only its global-correlation threshold. The primary retraining gain over the recalibrated old checkpoint is small and not consistent across seeds.
+- **Common comparison:** compact retains 35/36 correct positives versus MatchAnything's 32/36, with no observed incorrect acceptances for either. The paired gain interval is −2.78 to +19.44 points, so accuracy superiority remains inconclusive. The median paired CPU speedup is 101.2× for these specific profiles; the paired accuracy interval meets the declared −3-point margin. This is a conditional benchmark result, not global SOTA.
+- **3D remains weak:** only 2/288 compact poses meet the secondary criterion. NASA POLAR transfer gives 23/40 acceptances within nominal geometry and one outside it. Reference drift/calibration uncertainty is unknown; orbital navigation accuracy remains unverified.
+
+Inference uses **128px images** and a coarse-registration tolerance of **12 original 512px source pixels**. The final test contains 12 selected spatial components across three polar sectors, not 384 independent terrain tests. Trajectory IDs and Sun angles are absent; shared terrain/renderer dependence remains. Calibration has only 12 positives and 12 negatives across four components, so observed low error is not a deployment guarantee.
+
+## Identical common-input comparison
+
+36 positive and 36 known-nonoverlap cases across the same 12 final components.
+Compact networks are lunar-trained; the large pretrained methods are not adapted
+to this sample. Internal resolutions and CPU allocations differ and are recorded.
+
+| Method | Raw correct positives | Correct accepted | Incorrect accepted | Nonoverlap accepted |
+|---|---:|---:|---:|---:|
+| Compact v2 / primary | 36/36 | 35/36 | 0 | 0/36 |
+| Old CNN / new confidence | 36/36 | 34/36 | 0 | 0/36 |
+| SIFT | 0/36 | 0/36 | 0 | 0/36 |
+| LoMa-B / 504 | 28/36 | 27/36 | 1 | 0/36 |
+| LoMa-R / 504 | 30/36 | 27/36 | 0 | 0/36 |
+| RoMa v2 / fast512 | 34/36 | 31/36 | 0 | 0/36 |
+| Original RoMa | 31/36 | 31/36 | 1 | 0/36 |
+| MatchAnything–EfficientLoFTR / 4× | 36/36 | 32/36 | 0 | 0/36 |
+
+LoMa-B and original RoMa exceed the declared 1% accepted-error target at their
+frozen operating points. Those thresholds were not adjusted on this test.
+
+![Accuracy and paired CPU runtime](reports/compact_accuracy_runtime_v2.png)
+
+Each baseline is compared with its compact control on identical inputs in the
+same CPU job. Absolute latency across different baseline allocations is not a
+controlled hardware ranking. Memory, all three principal figures, complete
+curves, per-region results and ablations are in the measured report. RoMa v2's
+precise author-profile control exceeded its ten-minute CPU budget; the table
+uses the explicitly declared fast512 profile. No model was silently substituted.
+
+## View or reproduce
+
+For viewing, download `compact-v2-report.zip` from the release, extract it and
+open `compact_research_v2.html`. It includes an interactive success, rejected
+mismatch and remaining failure. No landmark review or model download is needed.
+
+For saved-metric replay, install the pinned environment and download the model,
+data and experiment ZIPs plus their checksum sidecars. Follow
+[COMPACT_REPRODUCTION.md](COMPACT_REPRODUCTION.md). The experiment capsule digest is
+in [the checksum file](reports/compact_experiment_assets_v2.sha256). Saved replay
+checks source/data/model hashes, geometry, confidence fitting/calibration,
+rejection behavior, summary tables, intervals and paired CPU measurements.
+
+Select the new model explicitly after installing the released assets:
+
+```sh
+python match_terrain.py --model-version compact-v2 --model-dir runs/compact-v2-expanded-20261030 --protocol reports/compact_freeze_v2.json --reference reference128.png --query query128.png --output runs/alignment-new.json
+```
+
+Coordinates map reference pixel centers to query pixel centers. Rejection returns
+`transform: null`; raw proposals require `--include-proposal`. The default v1
+interface and all earlier results remain preserved.
+
+## Provenance and limits
+
+- [Public freeze proof](reports/compact_publication_v2.json): commit `392cdf1020c925cec61d3340a7720e26cc6cdce7` preceded all final inference. The protocol binds 29 matching/data/metric source files, analysis source, three checkpoints, ten confidence policies and every case list.
+- [Independent replay](reports/compact_replay_audit_v2.json) and [table/interval/CPU-control audit](reports/compact_table_audit_v2.json): 13 policies, 14 aggregate tables, 10 interval checks and 360 paired controls. All selected final baseline shards completed; redundant recovery jobs were stopped and retained as partial records.
+- [Old-gate diagnosis](reports/compact_gate_diagnosis_v2.json) and [development oracle geometry check](reports/compact_depth_oracle_control_v2.json) are post-study diagnostics; neither changes the frozen outcomes.
+- [Data limitations](reports/compact_data_limitations_v2.json), [execution record](reports/compact_execution_status_v2.json), [selection provenance](reports/compact_final_execution_selection_v2.json), [licenses and attribution](THIRD_PARTY.md).
+
+Validation: **128 tests passed, four optional tests skipped**, a fresh controlled
+smoke and actual public-freeze matching-command controls. No paid compute,
+human landmark review or automatic outreach. The study is complete; broader
+trajectory independence, real navigation accuracy and 3D improvement remain
+research gaps. Consumed final cases cannot become a new tuning reserve.
+
+<details>
+<summary>Earlier benchmarks and pilot documentation (preserved)</summary>
 
 A reproducible research project comparing classical and pretrained learned image matching on real lunar repeat observations and controlled image warps.
 
@@ -205,3 +280,6 @@ The earlier [development research report](reports/RESEARCH_ITERATION_2.md) recor
 [AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Original code is MIT licensed except the explicitly marked optional GPL-3.0 detector integration; third-party data and weights retain their own terms.
 
 References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](https://github.com/Bin501/CNSFM), [LightGlue](https://arxiv.org/abs/2306.13643), [DISK](https://arxiv.org/abs/2006.13566), [Adnan Ansar's public research](https://www-robotics.jpl.nasa.gov/who-we-are/people/adnan_ansar/).
+
+
+</details>

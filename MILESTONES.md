@@ -3,10 +3,10 @@
 ## Compact research execution - iteration 6
 
 - C1: executed actual LunarGeo regrouping and ray-depth audit,28 selected spatial components with8/4/4/12 partitions. Explicit trajectory membership is absent, so strict trajectory-held-out independence is not established; record this limitation without relabelling it as a pretraining preregistration.
-- C2: all40 corrected-coordinate development shards completed and audited. Corrected common controls passed for all newer methods; LoMa-B/R author controls passed, RoMa-v2 precise control hit its600s budget. Frozen five-method final comparison is running, with paired CPU controls.
+- C2: complete. All40 development and40 selected final shards completed/audited. Five modern baselines use identical common cases and paired CPU controls. RoMa-v2 precise author control hit its600s budget; the declared fast512 comparison is complete.
 - C3: completed all four2000-step ablations and three predefined selected-configuration seeds. Expanded architecture control selected by declared development criterion;28,272 parameters. Exact numerical development replay passed.
-- C4: ten policies calibrated on identical separate24-case budgets, then published with three checkpoints and all cases at392cdf1 before final inference. All five core controlled runs and three3D runs completed/audited; modern final scoring remains pending.
-- C5:40 fresh-light laboratory cases scored for compact/original/SIFT; nominal uncertainty retained. Core results show confidence-calibration gains and weak3D pose performance. Candidate models/data published as compact-v2-rc1. Final full replay, modern comparisons, brief/demo/outreach draft and stable release remain pending.
+- C4: complete. Ten policies/checkpoints/cases/source hashes publicly frozen before final inference; all core and modern final outcomes scored without retuning. Thirteen policy fits and14 aggregate tables independently replayed.
+- C5: complete bounded study and research package. All40 laboratory cases, three3D methods, two-page brief, principal figures, interactive demo, unsent outreach draft and checksummed release assets prepared. Global SOTA, reliable3D pose and verified orbital accuracy remain unestablished; research issue #2 stays open.
 
 The accepted protocol is [COMPACT_RESEARCH.md](COMPACT_RESEARCH.md). No current-SOTA, target-achievement or real-navigation claim is implied by software completion.
 
