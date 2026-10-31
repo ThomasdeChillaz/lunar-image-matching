@@ -2,13 +2,13 @@
 
 Use the exact tagged source and published assets. The model remains an independent
 research artifact; selected spatial footprints, shared rendering dependence and
-unknown trajectory membership limit the claim. Render inference uses128px grids;
-the3px input criterion equals12 original512px source pixels.
+unknown trajectory membership limit the claim. Render inference uses 128px grids;
+the 3px input criterion equals 12 original 512px source pixels.
 
 ## Install and obtain the published study
 
-Python3.12 is the validated runtime. Install the pinned requirements in a fresh
-virtual environment. The compact training/reference runtime uses PyTorch2.2.2;
+Python 3.12 is the validated runtime. Install the pinned requirements in a fresh
+virtual environment. The compact training/reference runtime uses PyTorch 2.2.2;
 modern baseline jobs use their separately pinned CPU environments. Do not merge
 those environments or silently replace an unavailable model.
 
@@ -52,7 +52,7 @@ python lunargeo_dataset.py inspect --output runs/lunargeo-inventory-new.json
 python lunargeo_dataset.py prepare --inventory runs/lunargeo-inventory-new.json --output runs/lunargeo-manifest-new.json
 ```
 
-Original source acquisition is about11.4GB. The loader regroups actual camera
+Original source acquisition is about 11.4 GB. The loader regroups actual camera
 geometry instead of assuming six consecutive filenames. It samples metadata
 before image outcomes, groups selected full-depth footprints/shared poses and
 keeps all lighting variants together. Camera files have no trajectory IDs or
@@ -63,7 +63,7 @@ or replace installed study files merely to reuse those paths.
 ## Training and development experiments
 
 Train into new directories; do not overwrite released checkpoints. Each of the
-four cumulative configurations uses2,000 steps and seed20261030:
+four cumulative configurations uses 2,000 steps and seed 20261030:
 
 ```sh
 python train_compact_v2.py --manifest reports/compact_dataset_v2.json --variant expanded --seed 20261030 --steps 2000 --output runs/expanded-retrain-new
@@ -74,7 +74,7 @@ python train_compact_v2.py --manifest reports/compact_dataset_v2.json --variant 
 
 Run development inference with `compact_research.py evaluate`; select the maximum
 raw-correct configuration with the declared tie-break, then repeat that exact
-configuration with seeds20261031/20261032. The published selected configuration
+configuration with seeds 20261031/20261032. The published selected configuration
 is `expanded`; publish every seed, never a best-of-test seed. Train/source and
 selection records bind checkpoint hashes. Different CPU/runtime kernels can
 change retraining bytes; compare those separately from replaying frozen weights.
@@ -97,21 +97,25 @@ selection in this iteration.
 
 The public commit is recorded in `reports/compact_publication_v2.json`; the
 protocol binds source/checkpoint/policy hashes and all case lists. Final
-controlled and3D commands require that exact published protocol. An intentional
+controlled and 3D commands require that exact published protocol. An intentional
 replay of frozen inference must use a new output directory and must not be
 presented as a new untouched test. Saved-metric replay is usually sufficient.
 
 The manual `compact-baselines-v2.yml` workflow uses blind, checksummed common
-inputs and two CPU threads. Its default matrix covers all40 method/shard jobs;
+inputs and two CPU threads. Select standard `ubuntu-24.04-arm` for the three
+newer BF16 methods and standard `ubuntu-22.04` for legacy integrations, as
+recorded in the released execution provenance. No paid runner is needed. Its default matrix covers all 40 method/shard jobs;
 its optional JSON matrix can recover only missing workers. Preserve every failed
 attempt and acquisition log. Each completed shard must pass the actual
 pretrained known-transform control. Author and common settings/weight hashes are
-in `reports/compact_baseline_lock_v2.json`; actual six-profile controls are in
-`reports/compact_pretrained_controls_v2.json`.
+in `reports/compact_baseline_lock_v2.json`; corrected-coordinate profile controls and resource limitations are in
+`reports/compact_pretrained_controls_centers_v2.json`. Earlier coordinate-v1
+controls remain in `reports/compact_pretrained_controls_v2.json` as historical
+software diagnostics.
 
-Common baseline inference uses exactly the same128px source information and
-validity masks. LoMa-B/R internally use504px tensors; RoMa v2 uses fast512.
-Author LoMa path controls retain1024px detection and784px description; author
+Common baseline inference uses exactly the same 128px source information and
+validity masks. LoMa-B/R internally use 504px tensors; RoMa v2 uses fast 512.
+Author LoMa path controls retain 1024px detection and 784px description; author
 RoMa-v2 control settings are recorded from the actual run. Runtime includes
 independent forward and reverse inference. Final jobs run the compact checkpoint
 on the same inputs/CPU/runtime, preserving paired latency and accuracy. Memory
@@ -136,7 +140,7 @@ to query x,y centers. Rejected outputs return `transform: null` and no public
 correspondences. Add `--include-proposal` only for an explicitly ungated research
 proposal. For nonplanar study, `compact_research.py stereo` extracts raw matches
 before planar fitting and uses reference-map depth for pose; query depth is only
-an external scoring reference. The3D diagnostic does not certify navigation.
+an external scoring reference. The 3D diagnostic does not certify navigation.
 
 Run repository tests and a fresh procedural smoke after changing matching or
 metrics. No human landmark review, paid compute or automatic outreach is part

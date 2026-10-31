@@ -312,14 +312,16 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         caveats=['Physical renders, not acquired lunar navigation ground truth.',
             'Earlier real orbital repeat-image diagnostics remain in iteration5. Their correctness is unverified; they were not used to fit this candidate or confidence.',
             'Explicit trajectory identifiers are absent. Splits group selected footprints/shared poses; trajectory-held-out independence is unverified. This shortfall was documented after training and before final inference.',
-            'Inference128px; render tolerance3 benchmark pixels =12 original512px source pixels. POLAR nominal tolerance =28.5 original sensor pixels.',
-            'Training uses18 polar geometries/54 lighting images; geographic expansion is not a claim of a larger image count.',
+            'Inference 128px; render tolerance 3 benchmark pixels =12 original512px source pixels. POLAR nominal tolerance =28.5 original sensor pixels.',
+            'Training uses 18 polar geometries/54 lighting images; geographic expansion is not a claim of a larger image count.',
+            'The winner retains the original architecture. Comparison with the old checkpoint combines a new training regime and confidence calibration; it is not an isolated causal estimate of additional data or a novel-architecture claim.',
             'Shared-brightness strata are descriptive image-support proxies, not physical illumination angles or causal effects.',
-            'Common modern comparison has36 positives and36 negatives across12 spatial components.',
-            'Confidence calibration has only12 positives and12 negatives across4 components; no1percent risk guarantee.',
+            'Common modern comparison has 36 positives and 36 negatives across 12 spatial components.',
+            'Confidence calibration has only 12 positives and 12 negatives across 4 components; no 1 percent risk guarantee.',
             'Negative pairs reuse both component endpoints. Shared terrain model and renderer create further dependence.',
             'Sun-angle metadata absent; lighting-observation IDs cannot be interpreted as fixed angular changes.',
             'Modern CPU profiles retain author BF16 settings and require native BF16 to fit the free-compute budget. Speed is profile-specific, measured only against paired controls; no CPU-optimized precision alternative was substituted.',
+            'Free runner CPU models and architectures vary. Compare each baseline with its own same-job compact control; absolute latencies across different baseline allocations are not a controlled hardware ranking.',
             'Risk-coverage curves are descriptive test curves; operating points were fixed on calibration data. Coverage includes every positive and negative pair; risk is undefined when no output is accepted.'])
     (folder/'compact_results_v2.json').write_text(json.dumps(evidence,indent=2,allow_nan=False)+'\n')
     markdown=make_markdown(evidence)
@@ -333,18 +335,18 @@ def make_markdown(e):
     p=e['full']['compact-20261030'];gain=e['paired_gain'];ci=gain['exploratory_component_bootstrap95_pp']
     lines=['# Compact lunar matching: frozen south-pole study','',
         '**Question:** Can a compact illumination-aware matcher retain more correct alignments while rejecting incorrect outputs?',
-        '',f"Selected configuration: **{e['selected']['selected_variant']}**; primary seed20261030, with both other predefined seeds reported.",
-        '', 'Inference uses128px derived images. A correct render alignment has median error at most3 input pixels, equivalent to12 original512px source pixels. This is a coarse-registration criterion.','', '## Full frozen render evaluation','',
+        '',f"Selected configuration: **{e['selected']['selected_variant']}**; primary seed 20261030, with both other predefined seeds reported.",
+        '', 'Inference uses 128px derived images. A correct render alignment has median error at most 3 input pixels, equivalent to 12 original 512px source pixels. This is a coarse-registration criterion.','', '## Full frozen render evaluation','',
         '| Method | Correctly accepted positives | Incorrect accepted outputs | Accepted nonoverlap |',
         '|---|---:|---:|---:|']
     for key,label in [('original-frozen','Original CNN, frozen gate'),('original','Original CNN, new confidence'),
-                      ('compact-20261030','Compact v2, seed20261030'),('compact-20261031','Compact v2, seed20261031'),
-                      ('compact-20261032','Compact v2, seed20261032'),('sift','SIFT')]:
+                      ('compact-20261030','Compact v2, seed 20261030'),('compact-20261031','Compact v2, seed 20261031'),
+                      ('compact-20261032','Compact v2, seed 20261032'),('sift','SIFT')]:
         r=e['full'][key];lines.append(f"| {label} | {r['correct_accepted']}/{r['positives']} ({100*r['correct_acceptance']:.2f}%) | {r['wrong_accepted']} | {r['negative_accepted']}/{r['negatives']} |")
-    lines+=['',f"Raw primary success: {p['raw_correct']}/{p['positives']}. Frozen confidence retains {p['correct_accepted']} correct alignments and accepts {p['wrong_accepted']} incorrect outputs, including {p['negative_accepted']}/{p['negatives']} nonoverlap pairs.",'',f"Primary-minus-original-frozen gain: **{gain['gain_pp']:+.2f} percentage points**; exploratory spatial-component bootstrap95% interval **{ci[0]:+.2f} to {ci[1]:+.2f}**. Twelve components share a terrain model/rendering pipeline; they are not guaranteed independent.",
-        '',f"Predeclared10-point improvement/error-budget target met: **{e['targets']['model_improvement']}**. Positive grouped evidence: **{e['targets']['positive_grouped_evidence']}**.",
+    lines+=['',f"Raw primary success: {p['raw_correct']}/{p['positives']}. Frozen confidence retains {p['correct_accepted']} correct alignments and accepts {p['wrong_accepted']} incorrect outputs, including {p['negative_accepted']}/{p['negatives']} nonoverlap pairs.",'',f"Primary-minus-original-frozen gain: **{gain['gain_pp']:+.2f} percentage points**; exploratory spatial-component bootstrap 95% interval **{ci[0]:+.2f} to {ci[1]:+.2f}**. Twelve components share a terrain model/rendering pipeline; they are not guaranteed independent.",
+        '',f"Predeclared 10-point improvement/error-budget target met: **{e['targets']['model_improvement']}**. Positive grouped evidence: **{e['targets']['positive_grouped_evidence']}**.",
         '', '## Identical common-input comparison','',
-        'All rows use the same36 positive and36 nonoverlap cases. Method-specific internal resolution and lunar training differ; this is not a reproduction of any paper benchmark.','',
+        'All rows use the same 36 positive and 36 nonoverlap cases. Method-specific internal resolution and lunar training differ; this is not a reproduction of any paper benchmark.','',
         '| Method | Raw positive success | Correct acceptance | Incorrect accepted outputs | Nonoverlap accepted |',
         '|---|---:|---:|---:|---:|']
     for method,r in e['common'].items():
@@ -356,6 +358,12 @@ def make_markdown(e):
         label=NAMES.get(method,method)+(f" ({r['cases']}/{r['expected_cases']} cases)" if not r['complete_common_cases'] else '')
         lines.append(f"| {label} | {r['median_baseline_ms']:.1f} | {r['median_compact_ms']:.1f} | {r['median_paired_speedup']:.1f}x | {memory_text} |")
     lines+=['','Memory is process high-water RSS including loading and warmup, not weight size. Each speedup uses the baseline and compact model on identical cases in the same CPU job. The JSON also reports the compact model accuracy measured in those jobs.']
+    competitive=e['competitive_comparison']
+    if competitive is None:
+        lines+=['','No completed modern baseline meets the declared empirical error constraints, so the competitive target is not established.']
+    else:
+        interval=competitive['uncertainty']['exploratory_component_bootstrap95_pp']
+        lines+=['',f"Strongest completed modern baseline within the declared error constraints: **{NAMES[competitive['strongest_completed_at_comparable_error']]}**. Compact-minus-baseline correct acceptance: **{competitive['gain_pp']:+.2f} points**, with exploratory grouped 95% interval **{interval[0]:+.2f} to {interval[1]:+.2f}**. Competitive point target met: **{competitive['point_target_met']}**; exploratory uncertainty support: **{competitive['exploratory_support']}**. A point target alone does not establish superiority."]
     for method,r in e['baseline_completion'].items():
         if not r['complete']:lines.append(f"- {NAMES[method]}: only {r['observed']}/{r['planned']} final cases completed; excluded from the complete comparison. Partial outcomes remain in the capsule.")
     lines+=['', '## Development ablations','',
@@ -374,13 +382,13 @@ def make_markdown(e):
         '![Same-job CPU accuracy and runtime](compact_accuracy_runtime_v2.png)','',
         'CPU speedups are computed only from paired same-job controls; missing controls do not support speedup claims.',
         '', '## Three-dimensional matching','',
-        'Raw correspondences are extracted before any planar fitting. Pose uses reference-map depth and predicted query pixels; query reference depth participates only in correspondence scoring, never in pose estimation. The secondary simulated pose threshold is2 degrees and1% of reference ray range.','']
+        'Raw correspondences are extracted before any planar fitting. Pose uses reference-map depth and predicted query pixels; query reference depth participates only in correspondence scoring, never in pose estimation. The secondary simulated pose threshold is 2 degrees and 1% of reference ray range.','']
     for method,r in e['three_dimensional'].items():
-        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r.get('poses_within_secondary_threshold',0)}/{r['cases']} poses meet the secondary criterion; {r['poses_estimated']}/{r['cases']} poses estimated. Match coverage: {r['correct_correspondences']}/{r['scorable_matches']} reference-scorable raw matches within3 benchmark pixels (12 original render pixels), out of {r['returned_matches']} returned matches. These different correspondence coverages are not a method ranking.")
+        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r.get('poses_within_secondary_threshold',0)}/{r['cases']} poses meet the secondary criterion; {r['poses_estimated']}/{r['cases']} poses estimated. Match coverage: {r['correct_correspondences']}/{r['scorable_matches']} reference-scorable raw matches within 3 benchmark pixels (12 original render pixels), out of {r['returned_matches']} returned matches. These different correspondence coverages are not a method ranking.")
     lines+=['', '## Sensor transfer and failures','',
         'NASA POLAR uses new lighting configurations of previously inspected laboratory terrains. Nominal fixed-camera agreement has unknown drift/calibration uncertainty. It is not verified lunar navigation accuracy.','']
     for method,r in e['sensor_nominal'].items():
-        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r['accepted_nominal_within3px']}/{r['cases']} accepted within nominal3 benchmark pixels (28.5 sensor pixels); {r['accepted_nominal_outside3px']} accepted outside the nominal criterion.")
+        lines.append(f"- {NAMES.get(method,'Compact v2')}: {r['accepted_nominal_within3px']}/{r['cases']} accepted within nominal 3 benchmark pixels (28.5 sensor pixels); {r['accepted_nominal_outside3px']} accepted outside the nominal criterion.")
     if 'original' in e['sensor_nominal']:
         r=e['sensor_nominal']['original']
         lines.append(f"- Original frozen rejection rule on these same new configurations: {r.get('original_gate_accepted_nominal_within3px',0)}/{r['cases']} nominally correct acceptances; {r.get('original_gate_accepted_nominal_outside3px',0)} outside criterion.")
@@ -393,7 +401,7 @@ def make_markdown(e):
 
 def write_html(e,markdown,folder):
     rows=''.join(f"<tr><td>{html.escape(NAMES.get(m,'Compact v2'))}</td><td>{r['correct_accepted']}/{r['positives']}</td><td>{r['wrong_accepted']}</td><td>{r['negative_accepted']}/{r['negatives']}</td></tr>" for m,r in e['common'].items())
-    text='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compact lunar matcher - frozen study</title><style>body{font:17px/1.6 system-ui;background:#f2f4f7;color:#17283a;margin:auto;max-width:1000px;padding:35px}section{background:white;padding:24px;margin:20px 0;border-radius:14px}h1{font-size:34px}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}small{color:#536475}</style><h1>Compact lunar matching</h1><p>Frozen south-pole render study. Images use128px derived grids; the render criterion is12 original512px source pixels. Real navigation accuracy remains unverified.</p><section><h2>Same inputs, measured outcomes</h2><table><tr><th>Method</th><th>Correct accepted positives</th><th>Incorrect accepted</th><th>Nonoverlap accepted</th></tr>'+rows+'</table><small>36 positives and36 negatives across12 spatial components. Original frozen-gate results and all three seeds are in the full report.</small></section>'
+    text='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compact lunar matcher - frozen study</title><style>body{font:17px/1.6 system-ui;background:#f2f4f7;color:#17283a;margin:auto;max-width:1000px;padding:35px}section{background:white;padding:24px;margin:20px 0;border-radius:14px}h1{font-size:34px}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}small{color:#536475}</style><h1>Compact lunar matching</h1><p>Frozen south-pole render study. Images use128px derived grids; the render criterion is 12 original 512px source pixels. Real navigation accuracy remains unverified.</p><section><h2>Same inputs, measured outcomes</h2><table><tr><th>Method</th><th>Correct accepted positives</th><th>Incorrect accepted</th><th>Nonoverlap accepted</th></tr>'+rows+'</table><small>36 positives and 36 negatives across 12 spatial components. Original frozen-gate results and all three seeds are in the full report.</small></section>'
     text+='''<section><h2>Three examples, including a failure</h2><div id="cases"></div><p id="case-caption"></p><div style="position:relative;width:min(100%,480px);aspect-ratio:1;background:#000"><img id="reference" alt="Reference terrain" style="position:absolute;width:100%;height:100%"><img id="query" alt="Query terrain" style="position:absolute;width:100%;height:100%;opacity:.5"></div><label>Query opacity <input id="opacity" type="range" min="0" max="100" value="50"></label><p><small>Simulated terrain with known reference geometry. Accepted output is used for the overlay; rejected examples remain unaligned. No landmark review is needed.</small></p></section>'''
     demo=json.dumps(e['gallery']).replace('<','\\u003c')
     text+='<script>const examples='+demo+''';const reference=document.getElementById('reference'),query=document.getElementById('query');function show(i){const r=examples[i];reference.src=r.reference_png;query.src=r.query_png;document.getElementById('case-caption').textContent=r.label+'. '+(r.query_aligned?'Query aligned using the accepted model output.':'No transform returned; query shown unaligned.')+(r.error_native_px===null?'':' Raw source-image error: '+r.error_native_px.toFixed(1)+' pixels.');}examples.forEach((r,i)=>{const button=document.createElement('button');button.textContent=r.label;button.style.margin='4px';button.onclick=()=>show(i);document.getElementById('cases').appendChild(button);});document.getElementById('opacity').oninput=e=>query.style.opacity=e.target.value/100;if(examples.length)show(0);</script>'''
@@ -417,29 +425,30 @@ def write_pdf(e,folder):
     p('Compact lunar image matching','Title')
     p('Frozen south-pole render study | Independent project; no NASA/JPL affiliation')
     p('<b>Question.</b> Can a small illumination-aware matcher accept more correct alignments while rejecting incorrect matches, with a useful CPU tradeoff against larger models?')
-    p(f"<b>Design.</b> 28 spatial components:8 training,4 model selection,4 confidence calibration and12 final test across three polar sectors. Configuration: {e['selected']['selected_variant']}. Primary seed20261030; all three predefined seeds retained. Reference geometry comes from simulated depth and cameras. Render correctness uses3 input pixels, equivalent to12 original512px source pixels.")
+    p(f"<b>Design.</b> 28 spatial components: 8 training, 4 model selection, 4 confidence calibration and 12 final test across three polar sectors. Configuration: {e['selected']['selected_variant']}. Primary seed 20261030; all three predefined seeds retained. Reference geometry comes from simulated depth and cameras. Render correctness uses 3 input pixels, equivalent to 12 original 512px source pixels.")
     ablation='; '.join(f"{r['variant']}: {r['correct']}/96" for r in e['selected']['candidates'])
-    p('<b>Ablations.</b> Development raw correct positives: '+ablation+'. The selected architecture has28,272 parameters. Added complexity did not improve this development criterion. Training used18 polar geometries/54 lighting images.')
+    p('<b>Ablations.</b> Development raw correct positives: '+ablation+'. The selected architecture has 28,272 parameters. Added complexity did not improve this development criterion. Training used 18 polar geometries/54 lighting images.')
     rows=[['Full frozen render test','Correct accepted','Wrong accepted','Negative accepted']]
-    for key,label in [('original-frozen','Original CNN / frozen gate'),('original','Original CNN / new confidence'),('compact-20261030','Compact v2 / primary'),('compact-20261031','Compact v2 / seed20261031'),('compact-20261032','Compact v2 / seed20261032')]:
+    for key,label in [('original-frozen','Original CNN / frozen gate'),('original','Original CNN / new confidence'),('compact-20261030','Compact v2 / primary'),('compact-20261031','Compact v2 / seed 20261031'),('compact-20261032','Compact v2 / seed 20261032')]:
         r=e['full'][key];rows.append([label,f"{r['correct_accepted']}/{r['positives']}",str(r['wrong_accepted']),f"{r['negative_accepted']}/{r['negatives']}"])
     table(rows)
     gain=e['paired_gain'];ci=gain['exploratory_component_bootstrap95_pp']
-    p(f"<b>Measured gain.</b> {gain['gain_pp']:+.2f} percentage points versus the original frozen gate; exploratory grouped95% interval {ci[0]:+.2f} to {ci[1]:+.2f}. Predeclared10-point/error-budget target met: {e['targets']['model_improvement']}. Shared terrain/rendering dependence limits interpretation.")
-    story.append(Image(str(folder/'compact_accuracy_runtime_v2.png'),width=480,height=200))
-    p('Runtime comparisons use paired same-job CPU controls only. Common modern comparisons contain36 positives and36 negatives; these are not published-paper benchmark percentages.')
+    p(f"<b>Measured gain.</b> {gain['gain_pp']:+.2f} percentage points versus the original frozen gate; exploratory grouped 95% interval {ci[0]:+.2f} to {ci[1]:+.2f}. Predeclared 10-point/error-budget target met: {e['targets']['model_improvement']}. Shared terrain/rendering dependence limits interpretation.")
+    story.append(Image(str(folder/'compact_accuracy_runtime_v2.png'),width=480,height=219.4))
+    p('Runtime comparisons use paired same-job CPU controls only. Common modern comparisons contain36 positives and 36 negatives; these are not published-paper benchmark percentages.')
     story.append(PageBreak())
     p('Comparison, transfer and limits','Heading1')
     rows=[['Identical common test','Raw correct','Correct accepted','Wrong accepted']]
     for method,r in e['common'].items():rows.append([NAMES.get(method,'Compact v2'),f"{r['raw_correct']}/36",f"{r['correct_accepted']}/36",str(r['wrong_accepted'])])
     table(rows)
-    story.append(Image(str(folder/'compact_lighting_v2.png'),width=480,height=150))
-    story.append(Image(str(folder/'compact_risk_coverage_v2.png'),width=480,height=150))
+    story.append(Image(str(folder/'compact_risk_coverage_v2.png'),width=480,height=219.4))
+    geometry=e['three_dimensional'].get('compact',{})
+    p(f"<b>3D diagnostic.</b> Compact estimates {geometry.get('poses_estimated','unavailable')}/288 poses; {geometry.get('poses_within_secondary_threshold','unavailable')} meet the declared secondary 2-degree/1%-range criterion. Raw correspondences precede planar fitting; these simulated diagnostics do not establish navigation accuracy.")
     sensor=e['sensor_nominal'].get('compact',{})
     p(f"<b>Sensor transfer.</b> Compact: {sensor.get('accepted_nominal_within3px','unavailable')}/40 nominally correct acceptances, {sensor.get('accepted_nominal_outside3px','unavailable')} outside criterion. New NASA POLAR lighting configurations reuse inspected rocks/rig; reference drift uncertainty is unknown. Orbital navigation accuracy remains unverified.")
-    p('<b>Units.</b> Inference128px. The3px render tolerance equals12 original512px pixels; POLAR nominal3px equals28.5 sensor pixels. These are coarse-registration diagnostics.')
-    p('<b>Limits.</b> Calibration has only12 positives and12 negatives across4 components; an observed1% error budget is not a deployment guarantee. Negative pairs reuse both endpoints. Sun-angle metadata is absent. Risk curves are descriptive; operating points were fixed before test. No global state-of-the-art or flight-readiness claim.')
-    p('Sources: MoonAnything DOI10.5281/zenodo.18415119; LoMa (ECCV2026); RoMa v2, arXiv2511.15706; NASA Ames POLAR. Repository contains case-level results, audits, licenses and reproduction commands.')
+    p('<b>Units.</b> Inference 128px. The 3px render tolerance equals 12 original 512px pixels; POLAR nominal 3px equals28.5 sensor pixels. These are coarse-registration diagnostics.')
+    p('<b>Limits.</b> Calibration has only 12 positives and 12 negatives across 4 components; an observed 1% error budget is not a deployment guarantee. Negative pairs reuse both endpoints. Trajectory IDs and Sun angles are absent; selected spatial footprints do not establish trajectory independence. CPU allocations vary; speed comparisons use paired controls. Risk curves are descriptive; operating points were fixed before test. No global state-of-the-art or flight-readiness claim.')
+    p('Sources: MoonAnything DOI 10.5281/zenodo.18415119; LoMa (ECCV 2026); RoMa v2, arXiv 2511.15706; NASA Ames POLAR. Repository contains case-level results, audits, licenses and reproduction commands.')
     def footer(canvas,doc):
         canvas.setFont('Helvetica',8);canvas.setFillColor(colors.HexColor('#536475'))
         canvas.drawString(42,24,'Independent lunar matching study | reproducible results, failures retained')
@@ -448,13 +457,14 @@ def write_pdf(e,folder):
 
 
 def outreach_text(e):
-    p=e['full']['compact-20261030'];old=e['full']['original-frozen'];g=e['paired_gain']
+    p=e['full']['compact-20261030'];old=e['full']['original-frozen'];recalibrated=e['full']['original'];g=e['paired_gain']
     low,high=g['exploratory_component_bootstrap95_pp']
     limitation=('The predeclared empirical improvement/error-budget target was met.' if e['targets']['model_improvement'] else 'The predeclared improvement/error-budget target was not met; the report retains that negative finding.')
     if low<=0<=high:limitation+=' The gain remains inconclusive under grouped uncertainty.'
     return ("Subject: Compact lunar matching: reproducible south-pole study\n\nDear Dr. Ansar,\n\n"
         "I built an independent study of compact image matching under changing lunar illumination, motivated by your team's terrain-relative navigation work.\n\n"
-        f"The selected model has28,272 parameters. On384 controlled positive pairs from12 held-out selected footprint groups, it correctly accepted{p['correct_accepted']}, versus{old['correct_accepted']} for the original frozen gate. It accepted{p['wrong_accepted']} incorrect outputs, including{p['negative_accepted']}/288 nonoverlap pairs. The paired gain is{g['gain_pp']:+.2f} points (exploratory grouped95% interval{low:+.2f} to{high:+.2f}). {limitation}\n\n"
+        f"The selected model has 28,272 parameters. On 384 controlled positive pairs from 12 held-out selected footprint groups, it correctly accepted {p['correct_accepted']}, versus {old['correct_accepted']} for the original frozen gate. It accepted {p['wrong_accepted']} incorrect outputs, including {p['negative_accepted']}/288 nonoverlap pairs. The paired gain is {g['gain_pp']:+.2f} points (exploratory grouped 95% interval {low:+.2f} to {high:+.2f}). {limitation}\n\n"
+        f"The winning variant keeps the original architecture. Recalibrating the old checkpoint separately retains {recalibrated['correct_accepted']}/384 correct pairs with {recalibrated['wrong_accepted']} incorrect outputs; the report separates this control from retraining gains.\n\n"
         "The package includes modern pretrained comparisons, all three training seeds, ablations, depth-based diagnostics and failures. The evidence is simulated; unknown trajectory dependence and laboratory reference uncertainty limit the claim. Real orbital navigation accuracy remains unverified.\n\n"
         "Repository and research brief: https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2\n\n"
         "Would this benchmark or further work on confidence calibration be relevant to research in your team?\n\nThank you,\nThomas de Chillaz\n")
