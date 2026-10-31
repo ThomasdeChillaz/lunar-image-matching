@@ -1,5 +1,76 @@
 # Status
 
+## Supplemental training completed — balanced sampling
+
+All ten requested development runs completed 2,000 steps each (20,000 total),
+plus a separate 100-step pilot. The second five-run cohort addresses the first
+cohort's 26% positive-label fraction with exact 50/50 sampling. The selected
+64,098-parameter reliability configuration recovers 27/72, 31/72 and 36/72 raw
+poses for predefined seeds 20261101/02/03; the deterministic native+LM baseline
+is 26/72. The primary gain is +1.39 points, with a post-selection descriptive
+component interval [-11.11,+7.78]. Five pairs improve and four regress for the
+primary seed. All outcomes use the same eight development geometries/four
+components; they are not fresh independent tests. The 70% target is unmet.
+
+The balanced descriptor/refinement ablations give 24/72 and 25/72. The original
+five runs and failed reject-all head remain unchanged below. Balanced reliability
+avoids the original reject-all failure, but its fixed point cutoff is uncalibrated
+and no pair-level acceptance policy exists. Native 2px precision among co-visible
+returned points is 57.64% for the balanced primary versus 48.57% for the frozen
+baseline; returned/scorable counts and stricter pose failures are reported.
+
+Both independent audits pass: the common 234 supervision cases, 720 candidate
+outcomes, complete training budgets, source/weight hashes, selection and every
+predefined seed replay correctly. Local tests: 147 passed/four optional skipped.
+Fresh procedural smoke: 100 rows/20 summaries with exact replay. The balanced
+candidate's known-shift median error is 0.353 native px; blank/default-rejection
+controls pass. These are software controls, not navigation validation.
+The two cohorts took 36.24 wall-clock CPU minutes including evaluation, below
+the training cap. Training and model-selection groups remain separate and no
+calibration/test pixels were loaded. Own initial/selected/final weights and
+optimizer/RNG snapshots, supervised caches and experiment artifacts are packaged
+separately with SHA256 checksums. No paid compute, human review or email outreach.
+
+See [supplemental report](reports/LOCALIZATION_BALANCED_V3.md) and
+[reproduction](LOCALIZATION_TRAINING.md). Fresh final evaluation, current native
+pose baselines, transfer tests and a superiority paper remain outstanding.
+
+## User-authorized development training completed - iteration8
+
+After the user requested "Continue with the training", development-only fitting
+resumed on the original train split. The [training report](reports/LOCALIZATION_TRAINING_V3.md)
+and [commands](LOCALIZATION_TRAINING.md) document the amendment; the earlier
+training stop remains historical. The fresh-data gate still governs final claims.
+
+Five runs completed 2,000 optimizer steps each, with three predefined seeds for
+the selected descriptor_3d configuration. Total model sizes including frozen
+coarse:56,544 (descriptor),63,505 (pair refinement),64,098 (reliability). Training
+uses18 geometries/eight components; selection uses8 geometries/four components.
+No calibration/test pixels were loaded. Old weights, sources and metrics remain
+unchanged. This is development fitting, not a fresh trajectory/terrain test.
+
+Selected primary/repeat outcomes:26/72,25/72,26/72 correct raw poses. The frozen
+native+LM baseline gives26/72; a consistent learned advantage is not established.
+The pair-refinement ablation gives26/72. Reliability retains initial weights
+(selected step0) after its trained head overrejects; later checkpoints recover
+zero poses on the16-case selection bank. Both selected and final weights are
+saved; no failed head or seed is omitted. Checkpoint selection uses the fixed
+metadata-selected bank, never the expanded72-case readout.
+
+All10,000 optimizer steps completed in17.46 wall-clock minutes including model
+selection/evaluation on two configured CPU threads. A separately retained100-step
+pilot preceded the common configuration. Actual trained-weight changes, every
+selection checkpoint, source snapshots and full case outputs are saved.
+
+Verification:145 tests passed/four optional skipped; fresh20-summary procedural
+smoke; actual candidate known-shift median error0.376 native pixels, blank
+handling and default rejection passed. Independent replay validates234 exact
+supervision cases,360 candidate records, all completed budgets, source/weight
+hashes, checkpoint/configuration selection and all three winner seeds. Research
+proposals require explicit opt-in; no calibrated pair-acceptance policy exists.
+No SOTA, deployment-risk or verified orbital accuracy claim, paid compute, human
+review or automatic outreach is made.
+
 ## Localization diagnosis; data gate failed before training - 31 October 2026
 
 The [accepted localization study](LOCALIZATION_RESEARCH.md) is implemented

@@ -1,5 +1,18 @@
 # Compact localization study - accepted iteration 7
 
+## Subsequent user-authorized development training
+
+After receiving the gate failure, the user instructed "Continue with the
+training". Development-only fitting is now authorized using the original train
+groups and separate model-selection groups. The previous training stop below
+remains the historical decision; it does not block this explicitly requested
+development phase. The fresh-data requirement still governs final validation.
+Do not load calibration/test pixels, relabel consumed data as fresh, or claim
+trajectory independence. Preserve all prior checkpoints/results. Compare true
+3D descriptor training, learned local refinement, and pair-conditioned
+reliability under equal budgets; repeat the selected configuration with the
+three predefined seeds. Publish development outcomes and failures as such.
+
 ## Objective and current gate
 
 Build a compact matcher/refiner for camera localization under simultaneous lunar

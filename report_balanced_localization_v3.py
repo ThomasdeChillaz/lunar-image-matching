@@ -13,6 +13,7 @@ def report(root='runs/localization-v3-balanced-development'):
     root=Path(root); out=Path('reports')
     audit=json.loads((out/'localization_balanced_audit_v3.json').read_text())
     if not audit['passed']:raise ValueError('Independent audit required')
+    controls=json.loads((out/'localization_balanced_controls_v3.json').read_text())
     cohort=json.loads((root/'summary.json').read_text())
     runs=[json.loads(p.read_text()) for p in root.glob('*/training.json')]
     order={'descriptor_3d':0,'refinement':1,'reliability':2}
@@ -113,6 +114,8 @@ These are raw pose results, not correctly accepted pose coverage: no calibrated 
 Selection uses correct raw pose count on the same metadata-selected 16 pairs, then 2-pixel correspondence count and earliest step. Initial weights are eligible. All 72 pairs (8 geometries / 4 components, repeated lighting) are expanded development readouts. The primary seed is fixed; no best-of-seed headline is used. Success means rotation <=2 degrees and translation <=1% median reference range. Every eligible pair remains in the denominator.
 
 Independent replay validates 234 geometric supervision cases, 360 candidate outcomes, source/weight hashes, complete optimizer budgets and selection/seed completeness for this cohort. See localization_balanced_audit_v3.json. Sources and measured artifacts are distributed with SHA256 checksums; [commands and scope](../LOCALIZATION_TRAINING.md) explain reproduction. The original fresh-data gate still governs any future generalization claim. No human review, paid compute or automatic outreach was used.
+
+Local software verification: 147 repository tests passed and four optional tests skipped; fresh procedural smoke produced 100 rows / 20 summaries with exact saved-metric replay. The selected balanced primary model returns {controls['matches']} procedural known-shift matches, with median error {controls['median_error_native_px']:.3f} native pixels and {controls['within_two_px']} within 2 pixels. Blank images and default rejection pass. This is a controlled software check, not independent lunar accuracy. The complete control record is localization_balanced_controls_v3.json.
 '''
     (out/'LOCALIZATION_BALANCED_V3.md').write_text(text)
     print(json.dumps(result,indent=2));return result

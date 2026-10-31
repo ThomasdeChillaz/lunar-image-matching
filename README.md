@@ -1,9 +1,22 @@
 # Compact lunar image matching
 
-**Localization follow-up (31 October):** development-only native correspondence
+**Completed: 20,000 development-training steps across ten runs.** The first
+cohort's descriptor seeds give 26/72, 25/72 and 26/72 correct raw poses. A
+supplemental balanced-sampling reliability model gives **27/72, 31/72 and 36/72**,
+versus deterministic native refinement + LM's **26/72**. The predefined primary
+seed gains 1.39 percentage points; its descriptive component interval is
+-11.11 to +7.78 points. The gain remains inconclusive on four selected development
+components, and the 70% pose target is unmet. No best-of-seed headline is used.
+See [balanced results](reports/LOCALIZATION_BALANCED_V3.md),
+[original training results](reports/LOCALIZATION_TRAINING_V3.md) and
+[commands/downloads](LOCALIZATION_TRAINING.md).
+Calibration/test pixels remain untouched in this phase. No fresh-test, modern
+pose ranking or verified orbital navigation claim is made.
+
+**Earlier diagnostic follow-up (31 October, before this training):** native correspondence
 and pose refinement recover 26/72 poses versus 0/72 for the coarse frontend with
 the original estimator. The requested fresh-data gate failed before training;
-there is no trained compact-v3 or new final-test claim. See the
+no compact-v3 had been trained at that milestone. See the historical
 [diagnostic report](reports/LOCALIZATION_DIAGNOSTICS_V3.md),
 [two-page brief](reports/localization_diagnostic_brief_v3.pdf) and
 [accepted next-stage contract](LOCALIZATION_RESEARCH.md).

@@ -36,7 +36,7 @@ def package(root, balanced='runs/localization-v3-balanced-development'):
     if pilot.exists():runs.append(pilot/'descriptor_3d-20261101')
     model_files=[]
     for run in runs:
-        model_files.extend(run/name for name in ('initial.pt','selected.pt','final.pt','frozen_config.json','training.json','COMPLETE.json'))
+        model_files.extend(run/name for name in ('initial.pt','selected.pt','final.pt','latest.pt','frozen_config.json','training.json','COMPLETE.json'))
     coarse=Path('runs/compact-v2-expanded-20261030')
     model_files.extend(coarse/name for name in ('selected.pt','training.json','COMPLETE.json'))
     artifacts={}

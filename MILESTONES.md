@@ -1,5 +1,33 @@
 # Milestones
 
+## Supplemental training continuation completed
+
+Ten 2,000-step runs now complete across the preserved primary and supplemental
+balanced cohorts. Balanced reliability seeds:27/72,31/72,36/72 versus native+LM
+26/72. Primary gain +1.39 points; descriptive interval [-11.11,+7.78], so a
+reliable pose advantage remains inconclusive. All weights, failed heads and
+seeds retained; 147 tests/four skips and both independent replays pass.
+The original fresh-data gate remains for final validation. See
+[balanced study](reports/LOCALIZATION_BALANCED_V3.md).
+
+## Development training continuation - iteration 8
+
+User subsequently authorized "Continue with the training". Implement and run
+3D-supervised development-only refinement ablations on the original train split,
+select using separate model-selection groups, and repeat the winner with the
+predefined seeds. Do not access calibration/test pixels or claim fresh validation.
+The historical iteration7 data gate remains failed for final generalization.
+
+Completed: three 2,000-step ablations and two repeat seeds of the selected
+descriptor_3d configuration (10,000 total optimizer steps). Combined models
+contain 56,544 /63,505 /64,098 parameters including the frozen coarse network.
+Primary/repeat outcomes26/72,25/72,26/72 versus native+LM baseline26/72; no
+consistent learned pose gain. Reliability selected its initial checkpoint after
+all later selection checks returned zero poses. Independent replay validates
+234 supervision cases,360 candidate outcomes, selection, source/weight hashes
+and seed completeness. All calibration/test pixels excluded. See
+[training report](reports/LOCALIZATION_TRAINING_V3.md).
+
 ## Localization research - iteration 7
 
 - L1: all released metadata audited: 76,802 cameras / 12,974 stereo geometries.
