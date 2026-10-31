@@ -322,6 +322,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
             'Sun-angle metadata absent; lighting-observation IDs cannot be interpreted as fixed angular changes.',
             'Modern CPU profiles retain author BF16 settings and require native BF16 to fit the free-compute budget. Speed is profile-specific, measured only against paired controls; no CPU-optimized precision alternative was substituted.',
             'Free runner CPU models and architectures vary. Compare each baseline with its own same-job compact control; absolute latencies across different baseline allocations are not a controlled hardware ranking.',
+            'RoMa v2 precise author-profile control exceeded its 600-second free-CPU budget (exit124). The completed common comparison uses the explicitly declared fast512 profile; no precise-profile lunar result is inferred.',
             'Risk-coverage curves are descriptive test curves; operating points were fixed on calibration data. Coverage includes every positive and negative pair; risk is undefined when no output is accepted.'])
     (folder/'compact_results_v2.json').write_text(json.dumps(evidence,indent=2,allow_nan=False)+'\n')
     markdown=make_markdown(evidence)

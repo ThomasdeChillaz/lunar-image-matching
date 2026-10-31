@@ -358,6 +358,8 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
             'reports/reserve_protocol_v1.json','reports/compact_baseline_lock_v2.json',
             'reports/compact_selection_v2.json','reports/compact_data_limitations_v2.json',
             'reports/compact_coordinate_audit_v2.json',
+            'reports/compact_compute_budget_v2.json','reports/compact_pretrained_controls_centers_v2.json',
+            'report_compact_v2.py',
             'roma_model_lock.json','matchanything_model_lock.json']},
         policy_index={(json.loads(Path(p).read_text())['model'] or json.loads(Path(p).read_text())['method']):str(p) for p in policies},
         cases=case_plan(manifest,'test'),stereo_cases=stereo_plan(manifest,'test'),
