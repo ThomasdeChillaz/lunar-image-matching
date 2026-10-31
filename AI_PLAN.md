@@ -2,8 +2,11 @@
 
 ## Objective
 
-The currently authorized extension is [COMPACT_RESEARCH.md](COMPACT_RESEARCH.md).
-Execute its C1-C5 milestones, preserve every earlier outcome, and distinguish
+The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
+Its fresh-data gate failed before training: finish/audit the diagnostics, record
+the shortfall, and do not train compact-v3 or infer a new final result until a
+new audited manifest passes that gate. The earlier compact-v2 study remains
+historical and unchanged. Preserve every earlier outcome, and distinguish
 implemented software from executed measurements and achieved research targets.
 Build a scientifically honest, reproducible benchmark of lunar image matching across illumination and geometric conditions. Deliver runnable code, tested metrics, provenance, frozen geographically separated evaluation, plots and a short report. Do not optimize for attractive numbers.
 

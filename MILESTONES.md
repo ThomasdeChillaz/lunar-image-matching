@@ -1,5 +1,25 @@
 # Milestones
 
+## Localization research - iteration 7
+
+- L1: all released metadata audited: 76,802 cameras / 12,974 stereo geometries.
+  Only intrinsics/cam2world fields; Tycho directory empty. Fresh split cannot be
+  certified: whole-folder fallback has three already exposed groups and zero
+  fresh versus twelve required. Modes are not trajectory IDs. Data gate failed
+  before training; no full-depth fresh-footprint independence is claimed.
+- L2: complete: 312 diagnostic records, eight geometries / four spatial
+  components, 72 predicted stereo/light cases. Oracle 8/8 passes software gate.
+  Coarse 0/72 and native refinement 7/72 using unchanged EPNP; separate
+  post-diagnostic LM refit gives 3/72 and 26/72. Independent replay passes.
+  These are engineering development results, not a new trained method.
+- L3-L7: deferred by the explicitly accepted data gate. No compact-v3 training,
+  learned checkpoint/CLI alias, final inference, new baseline ranking, transfer
+  result or completed superiority paper is claimed. A diagnostic brief/report
+  and reproducible measurement capsule are delivered instead.
+
+Resume conditions and the accepted method/evaluation contract are in
+[LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
+
 ## Compact research execution - iteration 6
 
 - C1: executed actual LunarGeo regrouping and ray-depth audit,28 selected spatial components with8/4/4/12 partitions. Explicit trajectory membership is absent, so strict trajectory-held-out independence is not established; record this limitation without relabelling it as a pretraining preregistration.

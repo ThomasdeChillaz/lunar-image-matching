@@ -1,5 +1,41 @@
 # Status
 
+## Localization diagnosis; data gate failed before training - 31 October 2026
+
+The [accepted localization study](LOCALIZATION_RESEARCH.md) is implemented
+through its conditional stop: all released metadata, development geometry and
+precision experiments, deterministic native refinement, separate pose-refit
+ablation, replay tools and [diagnostic report](reports/LOCALIZATION_DIAGNOSTICS_V3.md).
+No new learned compact-v3 model or final-test improvement is claimed.
+
+All 76,802 NPZ cameras across 12,974 stereo geometries contain only intrinsics
+and cam2world. TychoCrater is empty. Trajectory/batch IDs are absent. Retaining
+each whole released mode/folder gives three already exposed groups, zero fresh
+versus twelve required. This does not prove no unused terrain exists; the
+requested conservative split cannot be certified. Training and final evaluation
+are deferred as explicitly required by the accepted plan.
+
+Development: eight geometries / four selected footprint components; 72 dependent
+stereo/light pairs. Oracle recovers 8/8 poses. Rounding query truth to 16 native
+pixels gives 0/8 with the original estimator. Coarse CNN gives 0/72 correct poses;
+deterministic native refinement gives 7/72. Separate original-inlier LM refitting
+raises these to 3/72 and 26/72. Native refinement plus LM yields 12/24 same-light
+and 14/48 changing-light poses, but only 1/72 at the stricter 0.5-degree/0.1%-range
+criterion. Precision and pose conditioning both matter; no learned contribution
+is established.
+
+Two-original-pixel precision among co-visible points improves 4.06% to 48.57%.
+Both frontends return 22,697 matches; 14,938 reference points are co-visible.
+No new calibrated acceptance, speed-superiority, modern pose ranking or real
+orbital accuracy claim is supported.
+
+Validation: 137 tests passed/four optional skipped, fresh 20-summary procedural
+smoke with 100-row CSV replay. Independent replay checks 312 diagnostic rows /
+15 aggregates, all 76,802 camera records, and 312 separate refit poses / 15 tables.
+Original diagnostic and non-numerical import-cleanup replay are both retained;
+all count outcomes agree. Earlier sources, weights and frozen protocols remain
+unchanged. No paid compute, human review or email sending occurred.
+
 ## Compact south-pole study completed - 31 October 2026
 
 The bounded [compact study](COMPACT_RESEARCH.md) has completed all planned local trials, all40 final baseline shards, saved-metric replay and the research package. Distribution version: `compact-v2`. The global research objective in issue #2 remains open: these results do not establish global SOTA or verified real navigation accuracy.

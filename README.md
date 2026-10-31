@@ -1,5 +1,13 @@
 # Compact lunar image matching
 
+**Localization follow-up (31 October):** development-only native correspondence
+and pose refinement recover 26/72 poses versus 0/72 for the coarse frontend with
+the original estimator. The requested fresh-data gate failed before training;
+there is no trained compact-v3 or new final-test claim. See the
+[diagnostic report](reports/LOCALIZATION_DIAGNOSTICS_V3.md),
+[two-page brief](reports/localization_diagnostic_brief_v3.pdf) and
+[accepted next-stage contract](LOCALIZATION_RESEARCH.md).
+
 A reproducible study of a **28,272-parameter structural CNN**, calibrated rejection,
 modern pretrained comparisons and failure under 3D/sensor transfer. Independent
 project; no NASA/JPL affiliation or flight-readiness claim.
