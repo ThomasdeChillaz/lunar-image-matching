@@ -164,11 +164,12 @@ def plots(series,common,policies,timing,folder):
         ax.scatter(stat['median_baseline_ms'],quality,s=45)
         ax.annotate(NAMES.get(method,method),(stat['median_baseline_ms'],quality),xytext=(3,5),textcoords='offset points',fontsize=8)
         compact_quality=100*stat['compact_same_host_quality']['correct_acceptance']
-        ax.scatter(stat['median_compact_ms'],compact_quality,marker='x',color='#137f83',s=45)
+        ax.scatter(stat['median_compact_ms'],compact_quality,marker='x',color='#137f83',s=45,label='Compact v2, paired CPU' if not plotted else None)
         plotted=True
     if not plotted:
         ax.text(.5,.5,'Same-host CPU timing unavailable\nNo speedup is inferred from different machines.',ha='center',va='center',transform=ax.transAxes)
-    else:ax.set_xscale('log')
+    else:
+        ax.set_xscale('log');ax.legend(frameon=False,fontsize=8)
     ax.set(ylim=(0,110),xlabel='Same-job median bidirectional inference (ms; log scale)',ylabel='Correctly accepted common positives (%)')
     fig.tight_layout();fig.savefig(folder/'compact_accuracy_runtime_v2.png');plt.close(fig)
 
@@ -298,8 +299,9 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
         for category,label in [('mode',tile['mode']),('polar_longitude_sector',str(sector)),('shared_brightness_proxy',difficulty),('component',row['component'])]:
             stratified.setdefault(category,{}).setdefault(label,[]).append(row)
     strata={category:{label:metrics(rows) for label,rows in groups.items()} for category,groups in stratified.items()}
+    ablations=read('reports/compact_ablation_details_v2.json')
     evidence=dict(schema_version=2,created_utc=datetime.now(timezone.utc).isoformat(),selected=selected,
-        protocol_sha256=sha256(protocol_path),dataset=read(protocol['manifest_path'])['components_by_split'],
+        ablation_details=ablations,protocol_sha256=sha256(protocol_path),dataset=read(protocol['manifest_path'])['components_by_split'],
         full=full_stats,baseline_completion=completion,common={method:metrics(rows) for method,rows in common.items()},
         paired_gain=comparison,targets=targets,competitive_comparison=competitive,
         paired_common_comparisons={m:paired_interval(common['compact'],rows) for m,rows in common.items() if m!='compact'},
@@ -317,6 +319,7 @@ def build(protocol_path='reports/compact_freeze_v2.json',modern_directory='runs/
             'Confidence calibration has only12 positives and12 negatives across4 components; no1percent risk guarantee.',
             'Negative pairs reuse both component endpoints. Shared terrain model and renderer create further dependence.',
             'Sun-angle metadata absent; lighting-observation IDs cannot be interpreted as fixed angular changes.',
+            'Modern CPU profiles retain author BF16 settings and require native BF16 to fit the free-compute budget. Speed is profile-specific, measured only against paired controls; no CPU-optimized precision alternative was substituted.',
             'Risk-coverage curves are descriptive test curves; operating points were fixed on calibration data. Coverage includes every positive and negative pair; risk is undefined when no output is accepted.'])
     (folder/'compact_results_v2.json').write_text(json.dumps(evidence,indent=2,allow_nan=False)+'\n')
     markdown=make_markdown(evidence)
@@ -357,9 +360,10 @@ def make_markdown(e):
         if not r['complete']:lines.append(f"- {NAMES[method]}: only {r['observed']}/{r['planned']} final cases completed; excluded from the complete comparison. Partial outcomes remain in the capsule.")
     lines+=['', '## Development ablations','',
         'One fixed seed per cumulative experiment; 96 positive development cases. These outcomes selected the configuration and are not final-test evidence.','',
-        '| Configuration | Raw correct positives | Trainable parameters |','|---|---:|---:|']
+        '| Configuration | Raw correct positives | Trainable parameters | Median source error among correct fits | Raw nonoverlap proposals |','|---|---:|---:|---:|---:|']
     for row in e['selected']['candidates']:
-        lines.append(f"| {row['variant']} | {row['correct']}/96 | {row['parameters']:,} |")
+        details=next(a for a in e['ablation_details']['ablations'] if a['variant']==row['variant'])
+        lines.append(f"| {row['variant']} | {row['correct']}/96 | {row['parameters']:,} | {details['median_native_error_correct_only']:.2f} px | {details['raw_negative_fits']}/72 |")
     lines+=['','## Descriptive final strata','',
         'Primary model only. Longitude sectors and image-brightness support are descriptive; shared terrain/rendering dependence remains.','',
         '| Stratum | Group | Correct accepted positives |','|---|---|---:|']

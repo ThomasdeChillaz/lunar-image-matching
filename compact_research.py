@@ -364,7 +364,7 @@ def freeze(manifest_path,models,policies,output,sensor_protocol='reports/compact
         stereo_methods=['compact','original','sift'],
         modern_3d_status='Not run within the free CPU budget; modern comparison is the declared controlled common subset, not a modern3D ranking.',
         execution_resource_profile=dict(torch_cpu_threads=2,modern_author_bf16_requires_reported_native_bf16=True,
-            runners='Standard free public-repository ubuntu22.04 runners; heterogeneous CPU models recorded. Timings compared only within paired jobs.'),
+            runners='Standard free public-repository ubuntu22.04 x64 or ubuntu24.04 ARM runners; heterogeneous CPU models/architectures recorded. Timings compared only within paired jobs.'),
         common_cases=common_plan(manifest,'test'),sensor_protocol=str(sensor_protocol),sensor_protocol_sha256=sha256(sensor_protocol),
         success_targets=dict(correct_acceptance_gain_pp=10.,max_accepted_error=.01,max_negative_acceptance=.01,
             competitive_accuracy_tolerance_pp=3.,cpu_speedup=5.,

@@ -174,3 +174,11 @@ support an unpaired cross-machine latency ranking.
 
 GitHub documents standard hosted runners as free for public repositories:
 https://docs.github.com/en/actions/reference/runners/github-hosted-runners
+
+Standard free public ARM64 runners are also eligible, using the identical author
+weights/settings and two Torch CPU threads. The same native-BF16 preflight and
+actual-forward/known-transform/invalid-input controls must pass. Record architecture
+and runtime explicitly; pair the compact timing/accuracy control on that same VM.
+This is a declared hardware alternative, never a model or precision substitution.
+GitHub's public ARM runner reference:
+https://github.blog/changelog/2025-08-07-arm64-hosted-runners-for-public-repositories-are-now-generally-available/
