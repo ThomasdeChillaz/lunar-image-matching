@@ -77,7 +77,14 @@
         "shard": 1
       }
     ],
-    "status": "In progress; native BF16 preflight passed on both standard free ARM runners.",
+    "status": "Both remaining development shards completed and passed actual controls; all40 declared development shards complete.",
     "reason": "Avoid repeated x64 allocation lottery; unchanged official sources, weights, precision, settings and inputs. Same-job controls required for final speed claims."
+  },
+  "corrected_profile_controls": {
+    "run_id": 41192323816,
+    "common_all_three": "passed",
+    "author_loma_b": "passed",
+    "author_loma_r": "passed",
+    "author_romav2": "600-second timeout,exit124; precise profile excluded, common fast512 retained under its explicit declared settings."
   }
 }
