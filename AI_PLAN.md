@@ -8,35 +8,46 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current fitting: train_global_context_v16.py is LIVE from public freeze
-b2d749f639385f577da4a8ccbab6ba1f466238c0. Preserve its source bytes and existing
-run runs/localization-v16-global-context-development. Never restart completed
-runs. Use recorded live process/session evidence, not stale historical handles.
-The first pointwise2,000-update ablation completed; its48/49/44/47 readouts lose
-to54/72 initialization, so step0 was retained. All360 rows and sampler/optimizer
-budget independently replay. Self/cross context and predefined repeats remain
-in progress/pending; no complete-cohort or context model gain claim yet.
+Current fitting status: v16 is TERMINAL, all10,000 updates complete. Every
+selected model retains initialization54/72; final primary checkpoints47/43/39
+regress. All1,800 checkpoint rows and sampler records replay. Actual five-model
+controls and exact primary72-case forward replay pass. Never restart that job
+or edit its pinned M20 source. It did not produce a learned localization gain.
 
-After all five runs: verify_global_cohort_v16.py audits the full saved cohort.
-Optional --retrain separately records exact retrained update counts. Do not
-run another scientific fitting job concurrently. report_global_cohort_v16.py
-reports all configurations/seeds and the same SIFT-first fallback, never a
-best-seed headline. The current partial figure was executed and inspected.
-Do not change the frozen inference kernel, pose criterion or selection rule.
+The measured diagnosis in reports/context_failure_diagnosis_v17.md finds target
+likelihood improving while reachable proposals fall on training and selection.
+All2,160 geometry records replay. Tested truth-only filters recover at most two
+extra cases;252 oracle fits replay, but this is not model performance or a
+universal upper bound. The next prepared core is search_window_learning_v18.py:
+set labels matching native33px support, optional genuine baseline anchors,
+and a trainable coarse CNN while the native fine CNN stays frozen.81,696 or
+82,208 total parameters. Five numerical/gradient controls pass. NO v18 training
+yet. Implement/freeze its full runner, actual72-case initial gate and measured
+pilot before full fitting; do not stop at software readiness or a cost pilot.
 
-The v13 surface cohort is terminal:55/55/55 raw correct, same SIFT fallback
-58/58/58 versus57, one wrong raw estimate. The1.39pp gain is inconclusive on
-four exposed components. Release surface-supervision-development-v13 and all
-four public assets are byte/CRC verified; compact-v2 remains Latest. Current
-210 tests/four optional skips and fresh100-row smoke pass. The100-update
-train-only context cost pilot exactly retrains; it is not a localization result.
+Next immediate comparison: evaluate_native_matchanything_v17.py, native512,
+all72 exposed pairs and same geometry/AP3P, versus SIFT-first surface. Actual
+pretrained native controls passed. Publish and verify all sources before launch,
+use two threads and no simultaneous research CPU jobs for paired timing. Save
+/resume cases; no planar affine prefilter or silent profile substitution. Read
+its new public commit for --source-commit. No full lunar comparison is claimed
+yet. Afterward complete required MOONSt3R and author-profile comparisons.
 
-Latest/version metadata still show the same MoonAnything sample; no new fresh
-data established. The gate remains failed and LuSNAR7-9 reserve pixels are
-uninspected. Fresh evaluation, calibrated acceptance, remaining required native
-baselines, transfer, timing and paper remain necessary. No global SOTA or
-orbital accuracy claim. No calibration/test pixels, paid compute, review or
-email. The full research objective remains active and unmet.
+MOONSt3R acquired at f339a2c46f4e37ba7ed0ad3b7df51a1cb6aa8664, published full
+LFS SHA4ecc74a6f8190d2cdc3837c2cc1b101a0feffa84b114a5a27c1aaa9ee91d1725.
+Safe local tensor conversion passed after preserving the first strict-stride
+failure. No model forward yet. Its source is ed6ea257475abb8a5235dff3a4d6167214b6f697.
+Top-level Apache2 does not replace nested MASt3R/DUSt3R CC BY-NC-SA4 code.
+Weight-card license unspecified; do not redistribute external weights. Actual
+checkpoint metadata names split files, but they are absent in published source;
+exact training-pair overlap remains unknown.
+
+The v13 surface study remains55/55/55, same SIFT fallback58/58/58 versus57,
+one wrong raw estimate; its one-pair gain is inconclusive. Fresh final gate
+still fails: StereoLunar v2's3 archives exactly duplicate current source files.
+No calibration/test pixels, paid compute, human review or email.225 tests/four
+optional skips and fresh100-row smoke pass. Full research targets remain unmet;
+no global SOTA, fresh-generalization,1%risk or orbital-navigation claim.
 
 The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
 The user's subsequent instruction, "Continue with the training", authorizes

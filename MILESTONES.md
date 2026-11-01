@@ -1,5 +1,46 @@
 # Milestones
 
+## Context study complete; objective mismatch diagnosed — 1 November 2026
+
+All five v16 runs completed10,000 updates. Every selected checkpoint is step0:
+54/72 correct raw poses,16 strict, three wrong estimates; the same SIFT-first
+fallback remains57/72. Final trained primary checkpoints regress to47/43/39.
+This context hypothesis did not improve localization and is not adopted.
+Independent audit replays all1,800 checkpoint rows and every sampler record.
+Actual selected-weight controls pass for all five models, and the primary
+model exactly reproduces all72 saved outputs. The completed reproducibility
+capsule is checksummed; this is not a new terrain test.
+
+A separate2,160-record diagnosis finds better target likelihood but fewer
+geometrically useful proposals on both training fixtures and exposed selection.
+Independent geometry/window replay passes. Oracle filtering of the saved
+failed matches yields at most two extra correct cases across the tested rules;
+all252 fits replay. These use query truth and are not deployable model results
+or a universal upper bound. See reports/context_failure_diagnosis_v17.md.
+
+The next untrained hypothesis is search-window positives, genuine-proposal
+anchors and coarse-feature learning while native fine descriptors stay frozen.
+The81,696–82,208-parameter core and five meaningful controls are implemented.
+The full runner, actual72-case initial gate and measured training pilot remain
+pending; no v18 fitting or gain exists. See SEARCH_WINDOW_V18.md.
+
+Native512px MatchAnything passes actual pretrained software controls:0.0602px
+median known-translation error, blank/invalid-mask outputs empty. Its full
+common-pose comparison is implemented and must start only after public source
+verification and while no other research CPU job is active. No lunar result
+or isolated runtime claim comes from that one-thread control. MOONSt3R source
+and its full published checkpoint are pinned and verified;1,017 tensors were
+extracted using inert metadata parsing. No MOONSt3R forward pass is claimed.
+Its exact training overlap remains unknown; no external weights are bundled.
+
+StereoLunar v2's three public archive checksums match the consumed LunarGeo
+archives exactly, so they provide no new reserve. The fresh-final gate still
+fails.225 tests/four optional skips and a fresh100-row software smoke pass.
+Fresh evaluation, calibrated acceptance/nonoverlap, remaining native baselines,
+transfer, uncertainty, paper and compact-v3 pose interface remain required.
+No paid compute, human review or automatic email. Full research goal active
+and unmet. Older entries are historical snapshots.
+
 ## Full context cohort running; first ablation audited — 1 November 2026
 
 The complete2,000-update pointwise capacity control finished. Its trained
