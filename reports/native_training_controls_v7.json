@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "scope": "Analytic actual-model software controls, not lunar generalization or a confidence guarantee.",
+  "runs": [
+    {
+      "variant": "encoder_3d",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "passed": true,
+      "rotation_matrix_error": 0.0006742365218515091,
+      "translation_error_m": 0.005263851295609326,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "8b2429c963a0c63b828811721e4d71f06f646a74e34ef076cb1c9a23f9f1f3bb"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "passed": true,
+      "rotation_matrix_error": 0.0002488161298262447,
+      "translation_error_m": 0.002075073922751835,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "b72ac8dfe589c966c75d6fc8ea80433bbffdaceeb9ca9b245f8f0a4288be656d"
+    },
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 0,
+      "passed": true,
+      "rotation_matrix_error": 0.0009108013126283489,
+      "translation_error_m": 0.006564876943859384,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "480bb29aee55aadc852e1d47a53a4cfa908fdeb5f27e9a28b1edd7a5a2503ea6"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261102,
+      "selected_step": 1000,
+      "passed": true,
+      "rotation_matrix_error": 0.000530287658407556,
+      "translation_error_m": 0.0035757963023566905,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "6c8eab5b4e37a6751f451ec56cfe7586d8fb0f94b86e410375601b1f0e4be97f"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261103,
+      "selected_step": 500,
+      "passed": true,
+      "rotation_matrix_error": 0.0008335086352206427,
+      "translation_error_m": 0.006211345929528823,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "0247da01d256005acf26088dd20109af5c8f6058eac0de3c2da82e25c60d7233"
+    }
+  ],
+  "source_sha256": "4a1bfc0fe90a22ce7229d54aa66f08ab643553423dd9c2a6a876fca472d92c07"
+}

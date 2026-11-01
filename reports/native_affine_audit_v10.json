@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "Exposed-development deterministic affine-control replay; not a learned or final-test result.",
+  "results": {
+    "cases": 72,
+    "correct": 49,
+    "strict": 17,
+    "estimated": 60,
+    "correct_at_two_px": 10487
+  },
+  "actual_model_control_replayed": true,
+  "pose_estimator_reexecuted": true,
+  "frozen_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+  "source_sha256": "702b0bc46d0dbcf6b306db1cbc9a22a42e9fa321997b2d9b0a419ca2be7c03eb",
+  "summary_sha256": "2551cfb1c40bc0202b073076f21ea54cbb3127cf4e21791afd284cb61c7dcfcd",
+  "results_sha256": "392ae334d50f2e6e02c303472b02e7d2b1c2f90b80f0be6a24718b5b7b15e4dd"
+}

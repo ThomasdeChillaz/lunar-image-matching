@@ -1,0 +1,82 @@
+{
+  "scope": "Deterministic3D normalization on exposed development terrain; no learned breakthrough, calibrated acceptance or fresh final claim.",
+  "frozen": {
+    "cases": 72,
+    "correct": 45,
+    "strict": 17,
+    "estimated": 57,
+    "wrong": 12
+  },
+  "surface": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 57,
+    "wrong": 3
+  },
+  "frozen_sift_fallback": {
+    "cases": 72,
+    "correct": 53,
+    "strict": 27,
+    "estimated": 59,
+    "wrong": 6
+  },
+  "surface_sift_fallback": {
+    "cases": 72,
+    "correct": 57,
+    "strict": 25,
+    "estimated": 59,
+    "wrong": 2
+  },
+  "raw_gain_pp": 12.5,
+  "fallback_gain_pp": 5.555555555555555,
+  "descriptive_component_interval_pp": [
+    0.0,
+    23.80952380952381
+  ],
+  "fallback_descriptive_component_interval_pp": [
+    0.0,
+    14.285714285714286
+  ],
+  "per_component": {
+    "axial-v5-component-0000": {
+      "cases": 18,
+      "frozen_correct": 10,
+      "surface_correct": 15
+    },
+    "axial-v5-component-0005": {
+      "cases": 9,
+      "frozen_correct": 9,
+      "surface_correct": 9
+    },
+    "axial-v5-component-0006": {
+      "cases": 36,
+      "frozen_correct": 17,
+      "surface_correct": 21
+    },
+    "axial-v5-component-0015": {
+      "cases": 9,
+      "frozen_correct": 9,
+      "surface_correct": 9
+    }
+  },
+  "gained_case_ids": [
+    "nadir/nadir/2515/lights-1-0",
+    "oblique/oblique/2994/lights-0-2",
+    "dynamicgood/dynamic/1458/lights-0-0",
+    "dynamicgood/dynamic/1458/lights-0-2",
+    "dynamicgood/dynamic/1458/lights-2-1",
+    "dynamicgood/dynamic/1458/lights-2-2",
+    "dynamicgood/dynamic/1092/lights-0-0",
+    "dynamicgood/dynamic/1092/lights-1-1",
+    "dynamicgood/dynamic/1092/lights-2-2"
+  ],
+  "lost_case_ids": [],
+  "frozen_correct_at_two_px": 10320,
+  "surface_correct_at_two_px": 14696,
+  "interval_note": "Descriptive paired bootstrap on4 exposed selection components after hypothesis formation. Not fresh-test confidence.",
+  "source_sha256": "1ad28920ddd09d80d4e92437e538c127052199abf21ac3a4188caa88a879ef4d",
+  "results_sha256": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97",
+  "frozen_results_sha256": "859b78ea4df147fda7c968840c46687ec6a3e83ae040efaf7b3f11dee72c6093",
+  "calibration_or_test_pixels_loaded": 0
+}

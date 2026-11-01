@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "Software validation only, not lunar generalization or reliable acceptance.",
+  "repository_tests_passed": 187,
+  "optional_skipped": 4,
+  "fresh_smoke": "runs/localization-v11-surface-smoke",
+  "actual_native_models": "reports/native_training_controls_v7.json",
+  "surface_control_and_pose_replay": "reports/native_surface_audit_v11.json",
+  "affine_control_and_pose_replay": "reports/native_affine_audit_v10.json"
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Independent scoring/control/pose-estimator replay of a deterministic development hypothesis; not a learned, accepted-pose or fresh-test result.",
+  "results": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 57,
+    "correct_at_two_px": 14696
+  },
+  "source_sha256": "3fb6415f34ead4904a3a86352bcc2d02282f181c9dd99479fb6a74efd7ea9c1b",
+  "summary_sha256": "d8346af111082e6b9d86f289e44e5a9d8c1badfdf14343716860cd65b8bab7b4",
+  "results_sha256": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97",
+  "verification_limits": "Does not independently reimplement learned image inference or assert query-depth visibility. Surface warp uses only estimated query poses.",
+  "calibration_or_test_pixels_loaded": 0
+}
