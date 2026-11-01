@@ -8,34 +8,41 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current v18 fitting is TERMINAL: all six runs /12,000 updates completed.
-Every selected checkpoint remains initialization54/72,16strict,three wrong;
-final primary endpoints49/50/53/43 and repeat endpoints43/45. Do not restart.
-Complete cohort audit/report pass:2,160 saved rows,12,000 update/sampler
-records,97,344 projected labels and65,804,544 candidate memberships. No exact
-full-cohort retraining is claimed; the100-update pilot exactly retrains.
-Fitting source freeze76ec8bf is immutable. See window_cohort_complete_v18.md.
+Current fitting is TERMINAL and no learned v18 upgrade is adopted. All six
+runs/12,000 updates retain initialization54/72,16strict,three wrong. Complete
+independent audit2,160 saved rows and all12,000 update/sampler records passes;
+actual selected6-model controls and exact primary72-case forward pass. Do not
+restart or modify the frozen76ec8bf fitting source. Full capsule is packaged
+locally; clean public checkout replay/tag/release remain pending.
 
-238 repository tests/four skips and fresh100-row smoke replay pass, including
-new analytic camera and actual-encoder scale controls. Actual MOONSt3R control
-PASSED after strict1017safe-tensor loading: actual translation/pose, blank and
-invalid-mask controls,116.97seconds total. No lunar MOON result yet. Queue49119
-is terminal/complete. Postcheck queue50049 now runs actual selected6-model
-controls, exact72-case primary forward replay and then packages the full v18
-capsule, as the only live research CPU job. Inspect authoritative
-runs/localization-v19-moonst3r-queue-state.json and
-runs/localization-v18-postchecks-state.json; never duplicate live CPU jobs.
+The next shared-scale bank also TERMINAL negative: native/half/quarter all
+12/16, strict5/4/4, one wrong each, same successful cases; no fullscale run.
+All48 native/pose rows replay and actual selected-checkpoint controls pass.
+The historical original-border control gives six strict poses. Sourcefac436a
+was public/byte-verified before inference. No scale upgrade is adopted.
 
-The next scale diagnostic is PREPARED, not measured. FINE_PYRAMID_V22.md uses
-shared frozen native/half/quarter features, identical33px native search and
-matched conservative borders, same initial pose/two surface iterations.
-Its3 meaningful coordinate/actual-encoder tests pass. Publish/freeze source
-before actual-checkpoint controls and the16-case bank, only after jobs end.
-Do not describe this engineering diagnostic as a new learned model/gain.
-CRESENT-365 v3 metadata camera/conic controls pass only a narrower resolved-
-ellipse check while preserving the original broad failure. No image raster
-was decoded, matcher run, depth/freshness gate passed or final reserve created.
-See CRESENT_CAMERA_METADATA_V21.md. Do not mutate its pinned metadata sources.
+The only live science job is queue50522, sourcefac436adf00c9c46d7f24f40b793154830574f9f:
+full72-case MOONSt3R common-native lunar baseline, followed by saved-metric
+replay. Its actual pretrained gate PASSED with3973 known-translation matches,
+median0nativepx, blank/invalid empty, strict1017safe-tensor loading. Lunar
+performance remains unmeasured until all72 outcomes and replay finish. Shared
+four-hour comparison deadline; do not restart live work or duplicate a CPU job.
+Inspect runs/localization-v26-next-native-state.json and live cases/log. Both
+old queues49119/50049 are TERMINAL complete.238tests/four skips and fresh100-row
+smoke replay pass. PublicM25code/report commit6561f02b verified38changed files
+and all788public tree files. No worktree overwrite during metadata fast-forward.
+
+CRESENT metadata is a candidate additional source only: zero decoded raster
+pixels/matcher inferences, original broad annotation failure retained, narrower
+resolved-conic check6,940ellipses passes. Optional7MB metadata capsule is local,
+CC BY-NC4data/MITowncode; no images/external weights. It does not repair the
+original LunarGeo fresh-depth/data gate or create a final test. See
+CRESENT_CAMERA_METADATA_V21.md. Preserve all metadata-source hashes.
+
+After the required baseline, use the accumulated negative studies to diagnose
+inference/objective compatibility and training information before another
+bounded fitting pilot. Do not repeat failed cohorts or claim descriptor-point
+improvements are localization gains. Full original research targets remain.
 
 The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;
 final primaries47/43/39. Do not restart or change its pinnedM20 sources. Complete

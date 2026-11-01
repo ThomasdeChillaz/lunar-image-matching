@@ -1,8 +1,13 @@
 # Native-detail scale diagnostic
 
-Prepared 1 November2026. **Not executed; no improvement measured.** The active
-v18 cohort and its frozen sources are unchanged. Finish its full audit and the
-queued MOONSt3R control before this experiment. One two-thread CPU job at a time.
+Executed 1 November2026 after the v18 cohort, selected-checkpoint replay and
+MOONSt3R software control all completed. **No pose gain:** native/half/quarter
+profiles each12/16, strict5/4/4, one wrong estimate each. All48 native metric/pose
+rows independently replay. Source freeze `fac436adf00c9c46d7f24f40b793154830574f9f`.
+See [measured findings](reports/fine_pyramid_bank_v22.md). No full72-case scale
+run was launched because neither multiscale profile improves raw poses. The
+protocol below is retained as the executed bounded study. One two-thread CPU
+job at a time. Historical fitting sources are unchanged.
 
 ## Hypothesis and bounded test
 

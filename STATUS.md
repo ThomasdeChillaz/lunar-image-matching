@@ -1,5 +1,38 @@
 # Status
 
+## Selected-checkpoint replay complete; scale bank negative — 1 November 2026
+
+All six selected v18 checkpoints pass actual transform/blank/invalid controls.
+A fresh primary72-case neural forward exactly reproduces every saved field.
+The full negative development capsule is packaged/checksummed locally:
+`reports/native-window-v18-capsule.zip`, SHA256
+`1a68508aead95bcd86f3fcd6a372be2e18f25425d104a5464b3e64859f437ca6`.
+Its tagged release and clean public-checkout replay remain pending.
+
+The source-frozen shared-scale diagnostic also completed: native /native+half /
+native+half+quarter each12/16 correct raw poses, strict5/4/4 and one wrong
+estimate each. Successful case identities are unchanged. Point precision at
+2nativepixels rises77.96%→81.49%, but pose accuracy does not improve; the
+historical original-border control has six strict poses. No scale method is
+adopted and the conditional full72-case run is not triggered. All48 saved rows
+independently replay. See [measured scale findings](reports/fine_pyramid_bank_v22.md).
+
+MOONSt3R passes actual pretrained controls (3,973 known-translation matches,
+median0px error; both blank/invalid empty). Its **full72-case common-native
+lunar comparison is RUNNING**, as the only two-thread research CPU job, from
+public source `fac436adf00c9c46d7f24f40b793154830574f9f`. A shared four-hour
+comparison deadline survives resume. Inspect
+`runs/localization-v26-next-native-state.json` and the live case files/log;
+do not launch another training or baseline job while it is live. Partial
+case counts are not a completed baseline accuracy result.
+
+238 tests/four optional skips and fresh100-row smoke replay pass. All new code
+and the completed v18 evidence are public;38 changed files and all788 current
+public tree files were byte-verified before a metadata-only local fast-forward.
+Fresh final data, acceptance/nonoverlap calibration, transfer, remaining
+comparisons, uncertainty, paper and compact-v3 interface remain incomplete.
+No paid compute, human review, outreach or research-goal completion.
+
 ## Native-window training complete: no learned gain — 1 November 2026
 
 All six v18 runs completed **12,000 optimizer updates** from public fitting
