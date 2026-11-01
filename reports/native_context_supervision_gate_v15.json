@@ -1,0 +1,296 @@
+{
+  "passed": true,
+  "scope": "Train-only supervision/capacity preparation. No trained context model or held-out inference.",
+  "training_support": {
+    "tiles": 18,
+    "groups": 12,
+    "points_per_image": 676,
+    "per_tile": {
+      "nadir/nadir/6864": {
+        "component": "axial-v5-component-0001",
+        "forward_positive": [
+          600,
+          625,
+          608,
+          583
+        ],
+        "reverse_positive": [
+          625,
+          625,
+          605,
+          606
+        ]
+      },
+      "nadir/nadir/6138": {
+        "component": "axial-v5-component-0002",
+        "forward_positive": [
+          625,
+          625,
+          625,
+          625
+        ],
+        "reverse_positive": [
+          600,
+          625,
+          625,
+          600
+        ]
+      },
+      "nadir/nadir/6507": {
+        "component": "axial-v5-component-0003",
+        "forward_positive": [
+          596,
+          613,
+          627,
+          610
+        ],
+        "reverse_positive": [
+          583,
+          606,
+          624,
+          600
+        ]
+      },
+      "nadir/nadir/6453": {
+        "component": "axial-v5-component-0003",
+        "forward_positive": [
+          612,
+          587,
+          576,
+          600
+        ],
+        "reverse_positive": [
+          612,
+          587,
+          576,
+          600
+        ]
+      },
+      "nadir/nadir/336": {
+        "component": "axial-v5-component-0004",
+        "forward_positive": [
+          600,
+          575,
+          575,
+          600
+        ],
+        "reverse_positive": [
+          600,
+          578,
+          578,
+          600
+        ]
+      },
+      "nadir/nadir/6381": {
+        "component": "axial-v5-component-0007",
+        "forward_positive": [
+          627,
+          601,
+          600,
+          625
+        ],
+        "reverse_positive": [
+          622,
+          598,
+          600,
+          625
+        ]
+      },
+      "nadir/nadir/6303": {
+        "component": "axial-v5-component-0007",
+        "forward_positive": [
+          604,
+          581,
+          577,
+          600
+        ],
+        "reverse_positive": [
+          596,
+          579,
+          582,
+          600
+        ]
+      },
+      "nadir/nadir/2464": {
+        "component": "axial-v5-component-0008",
+        "forward_positive": [
+          579,
+          564,
+          587,
+          603
+        ],
+        "reverse_positive": [
+          595,
+          576,
+          600,
+          619
+        ]
+      },
+      "nadir/nadir/6297": {
+        "component": "axial-v5-component-0009",
+        "forward_positive": [
+          625,
+          615,
+          616,
+          626
+        ],
+        "reverse_positive": [
+          625,
+          636,
+          634,
+          624
+        ]
+      },
+      "oblique/oblique/2770": {
+        "component": "axial-v5-component-0010",
+        "forward_positive": [
+          579,
+          591,
+          593,
+          582
+        ],
+        "reverse_positive": [
+          651,
+          633,
+          616,
+          632
+        ]
+      },
+      "oblique/oblique/4621": {
+        "component": "axial-v5-component-0011",
+        "forward_positive": [
+          113,
+          112,
+          112,
+          113
+        ],
+        "reverse_positive": [
+          670,
+          673,
+          674,
+          675
+        ]
+      },
+      "oblique/oblique/7432": {
+        "component": "axial-v5-component-0012",
+        "forward_positive": [
+          676,
+          676,
+          676,
+          676
+        ],
+        "reverse_positive": [
+          266,
+          265,
+          266,
+          266
+        ]
+      },
+      "oblique/oblique/7504": {
+        "component": "axial-v5-component-0013",
+        "forward_positive": [
+          649,
+          643,
+          645,
+          651
+        ],
+        "reverse_positive": [
+          561,
+          557,
+          565,
+          568
+        ]
+      },
+      "dynamicgood/dynamic/1227": {
+        "component": "axial-v5-component-0002",
+        "forward_positive": [
+          241,
+          235,
+          252,
+          259
+        ],
+        "reverse_positive": [
+          203,
+          197,
+          215,
+          222
+        ]
+      },
+      "dynamicgood/dynamic/825": {
+        "component": "axial-v5-component-0014",
+        "forward_positive": [
+          573,
+          558,
+          571,
+          587
+        ],
+        "reverse_positive": [
+          377,
+          369,
+          385,
+          394
+        ]
+      },
+      "dynamicgood/dynamic/1422": {
+        "component": "axial-v5-component-0009",
+        "forward_positive": [
+          551,
+          560,
+          581,
+          572
+        ],
+        "reverse_positive": [
+          270,
+          274,
+          284,
+          279
+        ]
+      },
+      "dynamicgood/dynamic/1437": {
+        "component": "axial-v5-component-0013",
+        "forward_positive": [
+          379,
+          383,
+          408,
+          405
+        ],
+        "reverse_positive": [
+          240,
+          241,
+          259,
+          259
+        ]
+      },
+      "dynamicgood/dynamic/936": {
+        "component": "axial-v5-component-0013",
+        "forward_positive": [
+          623,
+          614,
+          622,
+          631
+        ],
+        "reverse_positive": [
+          358,
+          355,
+          357,
+          362
+        ]
+      }
+    }
+  },
+  "context_parameters": {
+    "pointwise": 25152,
+    "self_context": 25408,
+    "cross_context": 25664
+  },
+  "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+  "source_sha256": {
+    "context_supervision_v15.py": "860a1370c076149661961f174ba44cc2758602ae7daca5e2be1985b72da2cf90",
+    "global_context_v15.py": "3ebbb0576f8bffde112a24f8a5f3e7d4271af8d2af1cb1e35462879bd0388b3d",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+    "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59"
+  },
+  "calibration_or_test_pixels_loaded": 0,
+  "completed_optimizer_steps": 0
+}
