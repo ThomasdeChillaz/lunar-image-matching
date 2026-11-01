@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "exact_fresh_initial_state_matches_previously_controlled_graph": true,
+  "controlled_cases_per_graph": 72,
+  "independent_geometry_gate_reused": true,
+  "model_forward_calls": 0,
+  "training_updates": 0,
+  "selection_images_loaded": 0,
+  "calibration_or_test_images_loaded": 0,
+  "total_parameters": 81696,
+  "trainable_parameters": 53424,
+  "safe_optimizer_checkpoint_replay_load_passed": true,
+  "actual_initial_gate_sha256": "c2257c33c33c9ce3a6e0118af60d92d73ea96876e4992700dda343923ac2c1fb",
+  "prior_geometry_audit_sha256": "1a2971e368cd0ea9bc46d62a6da3bc445a2de7e11c625f831d40d1dc00e1a882",
+  "source_sha256": {
+    "mutual_assignment_v23.py": "a40f963ab371d78c40c21a060b74dc96b631920e03dc4b88786dc5817b396d2a",
+    "train_mutual_pilot_v23.py": "91de0592975269fa0070e6af04b443faf0e435471ca5860a2c469f3bb725c7a5",
+    "verify_mutual_pilot_v23.py": "00ad43e822e07e87888a9a484caeb85cd25c19ecbd49b4867aac1c923261e22c"
+  },
+  "scope": "Metadata/source and exact weight equality only; existing controlled graph reused, no new model forward or localization gain."
+}

@@ -1,0 +1,12 @@
+{
+  "observed_utc": "2026-11-01T19:01:22.482366+00:00",
+  "calendar_elapsed_seconds": 41891.085314,
+  "declared_wall_cap_seconds": 14400,
+  "complete_case_files": 71,
+  "invalid_case_files": [],
+  "recorded_case_inference_seconds": 3239.0336681940244,
+  "scope": "Host clock/suspension discontinuity observed while original monotonic alarm had not expired. Calendar deadline exceeded. Preserve original protocol/cases; do not claim uninterrupted protocol completion or silently resume its expired deadline.",
+  "observed_process_command": "/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python -u evaluate_native_moonst3r_v19.py --source-commit fac436adf00c9c46d7f24f40b793154830574f9f --dependency-dir /Users/admin/Documents/Codex/2026-10-25/for/work/modern-matching-deps --output runs/localization-v19-moonst3r-native-development --max-seconds 14400",
+  "requested_signal": "SIGALRM using existing program timeout handler",
+  "pid": 50608
+}
