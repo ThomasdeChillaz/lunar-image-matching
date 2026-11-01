@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_commit": "3b0cc2dc69e5d8c4c2ec59646bdca6fc786b3f47",
+  "installed_capsule_members": [
+    145,
+    379,
+    108,
+    305
+  ],
+  "global_context_capsule_sha256": "7892b64053bb6020a15d4d20f50c97d3afc1368edfafc37c293d085e4c45a285",
+  "recorded_optimizer_updates": 10000,
+  "saved_checkpoint_rows_replayed": 1800,
+  "actual_primary_forward_cases": 72,
+  "actual_primary_forward_exact": true,
+  "actual_selected_controls": 5,
+  "independent_full_optimizer_retraining": false,
+  "scope": "Fresh public source and capsule installation plus complete saved-study and actual selected-model replay. Reproducibility, not fresh terrain validation or an independent implementation."
+}
