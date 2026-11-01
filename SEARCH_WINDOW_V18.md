@@ -60,8 +60,9 @@ when their initial weights are identical.
 
 The core numerical/gradient controls pass, including exact initial proposal
 scores, protected frozen fine weights and the meaningful reachable-cell
-counterexample. **The complete runner is implemented in `train_search_window_v18.py`; no v18
-scientific fitting has started.** Before full fitting:
+counterexample. **The complete runner is implemented in `train_search_window_v18.py`; all
+gates below passed and the full scientific cohort is active from public
+freeze76ec8bf.** The required gates were:
 
 1. Publish and verify all complete runner/fitting source/protocol bytes.
 2. Verify actual native points/poses on all72 exposed selection pairs reproduce
@@ -118,3 +119,14 @@ compute budget; a timeout preserves partial evidence and is not a completed
 comparison. Earlier major cohorts record approximately5.24 hours including
 evaluation where fitting-only timing was unavailable; that is not a complete
 pilot/audit resource ledger.
+
+## Executed gates and live cohort
+
+Both initialized graphs exactly reproduce all72 frozen native/pose outputs.
+Actual transform/blank/invalid controls pass. The100-update train-only pilot
+completed in23.05s and independently exactly retrained model/gradients/optimizer/
+RNG; geometry/window audit covers97,344 points and65,804,544 memberships. This
+is a reproducibility gate, not a pose result. The full12,000-update cohort has
+started from fresh initialization. Its live stage/log and the original source
+freeze are recorded in STATUS.md. Do not launch a second fitting/research job
+or mutate its pinned sources. No completed learned gain is claimed yet.

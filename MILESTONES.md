@@ -1,5 +1,39 @@
 # Milestones
 
+## Full native-window cohort active; both fitting gates passed — 1 November 2026
+
+The v18 initialization gate passed for both distinct inference graphs on all72
+exposed selection pairs: identical native points and poses,54/72 correct raw,
+16 strict. Actual known-transform, blank and invalid-mask controls pass. This
+checks unchanged initialization, not a learned gain.
+
+The train-only100-update coarse-adaptation pilot completed in23.05 seconds.
+Independent audit checks97,344 projected label points and65,804,544 candidate
+window memberships, then exactly retrains all100 updates: gradients, weights,
+optimizer and RNG match. The fine encoder is unchanged. The measured pilot is
+not warm-started into the scientific cohort. Gates are in
+reports/native_window_initial_control_v18.json and reports/native_window_pilot_audit_v18.json.
+
+The full12,000-update cohort is RUNNING from public fitting freeze76ec8bf:
+four2,000-update controls and two predefined repeats of the selected control.
+One two-thread CPU job, with a shared six-hour cohort deadline. All72 exposed
+selection pairs choose checkpoints by unfiltered pose count, then2px count,
+then earlier update; initialization remains eligible. No completed trained
+v18 localization outcome exists yet. Do not restart or modify frozen sources.
+Authoritative log:runs/localization-v18-window-pipeline.log; stage state:
+runs/localization-v18-window-pipeline-state.json.
+
+The native512 MatchAnything comparison is complete and independently replayed:
+39/72 correct raw/five strict/30 wrong, versus SIFT-first surface57/72/25/two.
+Median4.40s versus2.98s, same warmed CPU/order-alternated full pipeline. See
+reports/native_matchanything_comparison_v17.md. This is a common-profile
+exposed-development comparison, not a fresh/SOTA or calibrated-acceptance claim.
+229 tests/four optional skips and a fresh100-row smoke pass. The MOONSt3R
+adapter is prepared locally but has no actual forward/control yet; do not
+substitute its software readiness for a completed baseline. Full fresh-data,
+acceptance, transfer, remaining comparisons and paper targets remain unmet.
+No paid compute, human review or email. Earlier entries are preserved history.
+
 ## Native-window training runner prepared — 1 November 2026
 
 The complete v18 runner now implements four2,000-update ablations and two

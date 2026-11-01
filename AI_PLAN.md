@@ -8,32 +8,32 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current fitting status: v16 is TERMINAL, all10,000 updates complete. Every
-selected model retains initialization54/72; final primary checkpoints47/43/39
-regress. All1,800 checkpoint rows and sampler records replay. Actual five-model
-controls and exact primary72-case forward replay pass. Never restart that job
-or edit its pinned M20 source. It did not produce a learned localization gain.
+Current fitting: v18 full12,000-update native-window cohort RUNNING from
+public freeze76ec8bf1e3ecdf356bbcc3293bebd12e0e4ce189. Inspect authoritative
+runs/localization-v18-window-pipeline-state.json, its live PID/log and actual
+checkpoint files before action; never restart a live job. One two-thread job.
+Do not mutate train_search_window_v18.py or any protocol-pinned source. Both
+actual72-case initial graphs reproduce exact native points/poses54/72,16strict.
+The100-update train-only pilot independently replays all65,804,544 window labels
+and exactly retrains gradients, model, optimizer and RNG. No fine weight changes.
+The full cohort begins from new initialization, not the pilot. Four ablations
+plus two selected-configuration repeat seeds,2,000 updates each, all72 selection
+pairs at0/500/1000/1500/2000. Keep initialization and every failure. No new full
+v18 learned gain has been measured yet. A shared six-hour cohort wall cap applies.
 
-The measured diagnosis in reports/context_failure_diagnosis_v17.md finds target
-likelihood improving while reachable proposals fall on training and selection.
-All2,160 geometry records replay. Tested truth-only filters recover at most two
-extra cases;252 oracle fits replay, but this is not model performance or a
-universal upper bound. The next prepared core is search_window_learning_v18.py:
-set labels matching native33px support, optional genuine baseline anchors,
-and a trainable coarse CNN while the native fine CNN stays frozen.81,696 or
-82,208 total parameters. Five numerical/gradient controls pass. NO v18 training
-yet. The full runner is now implemented in train_search_window_v18.py. Freeze
-its source and run actual72-case initial gate and independent100-step replay
-before full fitting; do not stop at software readiness or a cost pilot.
+The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;
+final primaries47/43/39. Do not restart or change its pinnedM20 sources. Complete
+negative capsule is public and clean-checkout replay passed. The audited v17
+diagnosis motivates search-window supervision/anchors/coarse adaptation; it does
+not prove the new model helps. See SEARCH_WINDOW_V18.md and STATUS.md.
 
-Completed comparison: evaluate_native_matchanything_v17.py, native512,
-all72 exposed pairs and same geometry/AP3P, versus SIFT-first surface. Actual
-pretrained native controls passed. Publish and verify all sources before launch,
-use two threads and no simultaneous research CPU jobs for paired timing. Save
-/resume cases; no planar affine prefilter or silent profile substitution. Read
-its new public commit for --source-commit. All72 completed:39 correct/five strict/30 wrong versus SIFT-first57/25/two;
-all144 metrics/common-pose fits replay. Median4.40s versus2.98s on this CPU.
-Complete required MOONSt3R and author-profile comparisons; no SOTA claim.
+Native512 MatchAnything is TERMINAL complete:39/72 correct/five strict/30wrong
+versus same SIFT-first surface57/25/two. All144 native metrics/common poses replay.
+Median4.40s versus2.98s on the same warmed two-thread CPU. See
+reports/native_matchanything_comparison_v17.md. Remaining author-profile and
+MOONSt3R baselines are required; no new baseline CPU job while fitting is live.
+The prepared native_moonst3r_v19.py/control/tests are unvalidated locally; no
+actual forward yet. Finish the active cohort and audit it before its control.
 
 MOONSt3R acquired at f339a2c46f4e37ba7ed0ad3b7df51a1cb6aa8664, published full
 LFS SHA4ecc74a6f8190d2cdc3837c2cc1b101a0feffa84b114a5a27c1aaa9ee91d1725.

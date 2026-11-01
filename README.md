@@ -357,7 +357,9 @@ References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](
 ### Native-window learning continuation
 
 The complete next cohort runner and independent train-only pilot audit are
-implemented; no v18 fitting result yet. See [SEARCH_WINDOW_V18.md](SEARCH_WINDOW_V18.md).
+implemented; both actual-initialization and independent100-update replay gates
+passed. The full12,000-update cohort is running from public76ec8bf; no completed
+new learned pose result yet. See [SEARCH_WINDOW_V18.md](SEARCH_WINDOW_V18.md).
 The completed v16 negative cohort is reproducible from
 [its prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/global-context-development-v16).
 The native512 MatchAnything comparison is complete:39/72 raw correct versus
