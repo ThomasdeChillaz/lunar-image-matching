@@ -76,3 +76,29 @@ The range runner imports the original control/scoring functions. Complete
 comparison and independent replay remain mandatory. See
 reports/native_case_range_plan_v8.json. Do not infer a global ranking from
 partial logs. All attempts, failures and duplicate outputs are retained.
+
+## Full uniform-positive experiment launched
+
+The full v8 cohort now uses2000 optimizer steps per ablation/seed, the same
+500-step selection interval and the same initial-checkpoint eligibility.
+The three primary variants and two bank-selected repeats require10000 steps.
+The100-step pilot was only a software/early-training control, with no raw
+pose gain. No calibration/test pixels or new final-test claims are introduced.
+Source was public at e408c3f before launch. Both local cohorts use two threads;
+concurrent training elapsed times are not an isolated inference benchmark.
+
+The second full v7 pair-refinement seed gives42/72; the third is pending.
+Use verify_native_training_v7.py, then report_native_training_v7.py once the
+cohort is complete. The new fixed-range modern combiner requires the exact
+assigned first36 original and last36 range cases, including paired compact
+controls. Its negative tests prevent cherry-picking better duplicate outputs.
+All partial and duplicate original outputs remain preserved.
+
+The additional no-match diagnostic in reports/native_no_match_generalization_v9.json
+uses fixed unaugmented cached proposals in both training and selection groups.
+Its validity AUC is below chance on both samples, and all sampled points are
+rejected. This is not the exact augmented sampler distribution or an
+independent test. It rules out describing the failure solely as novel-terrain
+transfer or merely an unfortunate categorical rejection threshold. The full
+uniform-positive run is the declared data-coverage test; do not promise it will
+repair the head.

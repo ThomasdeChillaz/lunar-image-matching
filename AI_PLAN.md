@@ -2,6 +2,13 @@
 
 ## Objective
 
+Current execution: v7 final seed and full v8 uniform-positive cohort are live.
+Native LoMa-R/RoMa-v2 fixed-range jobs are live. Source pins and all run IDs are
+in reports/native_execution_continuation_v9.json. Complete both training audits
+and all assigned native cases before reporting a completed comparison. The
+new rejection diagnostic shows no useful discrimination on either sampled
+train or selection proposals; preserve that failure.
+
 The active user goal is to keep testing hypotheses and improving until the
 original target results and/or defensible state-of-the-art results are verified.
 The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes all

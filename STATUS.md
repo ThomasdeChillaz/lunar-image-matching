@@ -1,5 +1,36 @@
 # Status
 
+## Native training continuation — 1 November 2026
+
+The v7 three primary runs are complete: encoder44/72, pair refinement45/72,
+and dustbin45/72 (initial checkpoint selected). The second pair-refinement
+seed gives42/72; seed20261103 is still running. Frozen native orientation
+matching remains45/72, and the stronger simple SIFT-first fallback53/72 with
+six wrong poses. A consistent learned gain is not established.
+
+The full v8 uniform-positive experiment is now running: three2000-step
+ablations, followed by the bank-selected configuration with both additional
+predefined seeds. Its earlier100-step pilot gave45/72, so no gain is assumed.
+All source was published before launch; train/selection separation and native
+inference remain unchanged. Do not edit either cohort's pinned sources.
+
+A failed final dustbin checkpoint rejects all1727 sampled train/selection
+windows before pose estimation, despite515 decoded matches within2px.
+Match-score ranking AUC for window validity is0.337 on sampled train proposals
+and0.290 on selection proposals (chance0.5). These are unaugmented,
+class-stratified, dependent coarse-proposal diagnostics, not the augmented
+training distribution or pose acceptance. The failure is not confined to
+unseen groups, and adjusting the null-vs-single-bin decision alone does not
+repair the discriminative ranking. No threshold was fitted.
+
+Native LoMa-R and RoMa-v2 comparisons are active on standard free CPU runners.
+The predeclared36+36 assignment now has all four worker IDs recorded in
+reports/native_execution_continuation_v9.json. The new combiner refuses missing
+assigned cases, incorrect source runs and accuracy-based duplicate selection.
+Complete-case replay, calibration, fresh final validation, transfer and paper
+claims remain outstanding. No paid compute, human review or automatic email.
+
+
 ## Native precision research active; no verified target achievement
 
 The completed v6 orientation ablation adds16000 optimizer steps with no pose

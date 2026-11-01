@@ -1,12 +1,12 @@
 # Compact lunar image matching
 
-**Active native-pose research:** the orientation ablation finished without a gain.
-A100-step native-refinement pilot gives47/72 raw correct poses versus frozen45;
-full ablations/repeats are still running, and their first encoder/pair runs give
-44/72 and45/72. A uniform-positive pilot gives45/72. **A consistent learned
-improvement or SOTA result has not been established.** See the
-[native study protocol](NATIVE_REFINEMENT_V7.md) and
-[completed orientation study](reports/ORIENTATION_TRAINING_V6.md).
+**Active native-pose training:** the v7 primary learned pair-refinement model
+recovers45/72 development poses; its second seed recovers42/72, versus45/72
+frozen. The third seed and the full v8 uniform-positive coverage ablation are
+running. The failed no-match head rejects all sampled proposals and does not
+rank valid matches usefully. **A consistent learned gain or SOTA result has not
+been established.** See [the native protocol](NATIVE_REFINEMENT_V7.md) and
+[execution checkpoint](reports/native_execution_continuation_v9.json).
 
 Modern native-image comparisons and local-window diagnostics are separate
 from the historical128px registration study below. All current pose readouts
@@ -26,8 +26,7 @@ training labels used the wrong depth interpretation and are superseded. See the
 Earlier2D known-warp counts are separate; depth-derived grouping needs corrected
 audit before reuse. No fresh final or orbital-navigation accuracy is claimed.
 
-A separate orientation-regime experiment is running. It changes training
-orientation supervision while preserving the compact model and inference.
+The separate orientation-regime experiment completed without a learned gain.
 All research targets remain active and unmet; no SOTA claim. Reproduction and
 artifact installation: [training guide](LOCALIZATION_TRAINING.md).
 
