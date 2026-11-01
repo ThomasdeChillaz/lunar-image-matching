@@ -21,8 +21,8 @@ receive query depth, query pose, case identity or terrain labels.
 
 The residual score correction starts exactly at the original frozen matching
 scores. This preserves the old matching threshold, mutual selection, ranking
-and point budget while allowing gradients to change context. No parameters
-have been trained yet. The cross-context module has 25,664 parameters:
+and point budget while allowing gradients to change context. At initialization no context parameters are updated. A later train-only100-step
+cost pilot has now completed; no localization evaluation was performed for it. The cross-context module has 25,664 parameters:
 53,936 including the frozen backbone, or 89,169 if combined later with the
 existing separate pair-refinement network. Neither combination exceeds 100,000.
 
@@ -35,7 +35,7 @@ software smoke. Unit tests verify initialization, swapping symmetry within
 floating-point error, actual proposal matching, finite gradients and weight
 updates. These checks prove software readiness, not a trained model advantage.
 
-## Supervision implemented; measured fitting still pending
+## Supervision and measured cost pilot complete
 
 The train-only data builder, bidirectional loss, sensor augmentations,
 nonoverlap sampler and capacity factory are implemented in
@@ -47,8 +47,11 @@ skips, plus a new 100-row smoke.
 `train_context_pilot_v15.py` implements a bounded 10–100-update pilot. It
 requires every fitting source byte to match a published Git commit, reads
 training pixels only, freezes the backbone and records all optimizer/RNG/source
-states. It has not been executed yet. Run its measured pilot after publication,
-then implement the full cohort runner before any full fitting.
+states. Its100-step pilot completed in14.33 fitting seconds under concurrent
+workload after publication at62446cb. Independent replay reproduced all100
+updates and final optimizer/RNG states exactly. This is not a localization
+result. The full capacity-controlled runner is now implemented separately in
+train_global_context_v16.py; see GLOBAL_COHORT_V16.md for its frozen protocol.
 
 The protocol requirements are:
 

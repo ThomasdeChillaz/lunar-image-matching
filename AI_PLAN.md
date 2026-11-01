@@ -8,40 +8,27 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current live job: v13 surface-supervision cohort, source freeze19a4357.
-Three primary2000-step runs are complete: raw54, normalized encoder55, and
-normalized pair55 correct poses out of72. The selected pair configuration's
-predefined repeats are still running. Monitor the existing process; never
-restart it or mutate its pinned sources. Finish the full audit, actual-model
-controls, report and capsule after all five runs complete.
+Current fitting status: the complete v13 surface cohort is terminal, not live.
+All10,000 updates and three selected seeds are audited:55/55/55 of72 raw correct,
+SIFT fallback58/58/58 versus57, one wrong raw estimate. The1.39pp gain is
+inconclusive on four exposed components; no fresh or calibrated claim.
+Both reproducibility capsules are built and clean-install replayed. The actual
+primary selected model reproduces all72 saved forward rows exactly.
 
-Completed negative control: broad12px initialization adds15 wrong poses and
-zero correct ones despite unchanged3px final fits. All72 final records and
-60 broad branches replay. No broad branch recovers a correct missing pose;
-genuine correspondence fractions are very low. Do not adopt this recovery
-rule. See reports/POSE_RECOVERY_V14.md.
+The100-step train-only context pilot completed in14.33 fitting seconds under
+concurrent workload and independently retrained exactly. No context quality
+result exists. The next full runner is train_global_context_v16.py, described
+in GLOBAL_COHORT_V16.md: three capacity controls at2,000 updates, then selected
+variant repeats at20261102/03. Publish every source/protocol byte before launch.
+Resume identical checkpoints rather than restarting. Keep the native CNN,
+reference-surface correction and3px final pose estimator frozen. No query truth
+in inference. Do not mutate any earlier cohort's pinned kernels.
 
-Next model hypothesis: small global pair-context proposal matching. The
-cross-context module has25664 parameters,53936 with the frozen backbone;
-optional later combination with separate learned fine weights totals89169.
-Zero context optimizer steps have run. Initial native controls and exact72-case
-point/pose equality to frozen54/72 pass. Capacity-controlled forward/reverse3D supervision and boundary/rotation/negative
-controls now pass. The bounded training-pilot runner is implemented but not
-executed. Publish the current source, run its100-step measured pilot, then
-implement and freeze the full context cohort before full fitting. GLOBAL_CONTEXT_V15.md records the unfinished requirements.
-
-Strong compact controls remain54/72 frozen surface and57/72 SIFT+surface with
-two wrong raw poses. Native common LoMa-R/RoMa-v2 scores are42/53; same-worker
-surface/RoMa timing is12.03x on fixed16 cases, not the SIFT or new context model.
-The v7/v8 selected learned seeds45/42/42 and47/45/47 are completed history.
-All current new fitting/scoring is exposed-development evidence from eight
-selection geometries/four components. The fresh-data gate still fails.
-
-The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes
-earlier LunarGeo ray-based3D metrics/labels. Use audited v5 geometry/data and
-preserve legacy sources/results. No calibration/test pixels, paid compute,
-human review or automatic email.205 tests/four optional skips and a fresh
-100-row software smoke pass at this milestone.
+The broader-initialization control is rejected:15 added wrong, zero added
+correct. Fresh data, calibrated acceptance, remaining required native baselines,
+transfer and paper remain necessary. Current210 tests/four optional skips and
+fresh100-row software smoke pass. The fresh-final gate still fails; no global
+SOTA or orbital accuracy is established. No paid compute, review or email.
 
 The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
 The user's subsequent instruction, "Continue with the training", authorizes

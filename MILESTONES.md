@@ -1,5 +1,37 @@
 # Milestones
 
+## Surface cohort complete; full context cohort prepared — 1 November 2026
+
+All five v13 runs completed10,000 optimizer updates. The selected geometry-
+normalized pair model gives55/72 correct raw poses at all three predefined
+seeds, versus54/72 frozen surface. The same SIFT fallback gives58/72 at every
+seed versus57/72, with one wrong raw pose. The1.39 percentage-point gain has
+an exposed-component descriptive interval[0,4.76] and remains inconclusive.
+The10-point improvement and calibrated1% error targets are not achieved.
+All1,800 checkpoint rows,360 selected rows, training samplers, native errors
+and poses independently replay. Actual selected-model forward inference also
+reproduces all72 saved rows exactly from a clean public checkout.
+
+The global-context100-update train-only cost pilot completed and independently
+retrained bit-exactly, including optimizer and random states. It provides no
+localization result. The complete capacity-controlled cohort runner is now
+implemented: pointwise/self/cross variants at2,000 updates, then two repeat
+seeds of the selected variant. Sources must be public before launch. No full
+context fitting has started at this snapshot. See GLOBAL_COHORT_V16.md.
+
+The broad-initialization negative finding remains unchanged:15 added wrong
+poses and no added correct ones. No adoption. Current software validation:
+210 passed/four optional skips, plus a fresh100-row procedural smoke and
+exact interruption/restart controls. Fresh final data, calibrated acceptance,
+remaining required native baselines, transfer, uncertainty, paper and the
+compact-v3 pose interface remain incomplete. Existing4-component raw-pose
+comparisons have a saturated-group bootstrap limitation; see
+reports/development_raw_ceiling_v16.json. This conditional arithmetic does
+not establish a ceiling on future data or calibrated acceptance.
+
+No calibration/test pixels, paid compute, human review or email. The full
+research objective remains active and unmet. Older entries are history.
+
 ## Global match failure diagnosed; context controls pass — 1 November 2026
 
 The v14 broad-initialization control is rejected: 54/72 correct poses remain

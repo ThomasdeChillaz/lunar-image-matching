@@ -1,6 +1,6 @@
 # Compact lunar image matching
 
-Current research progress: the completed primary surface-training runs give 54/72, 55/72 and 55/72 correct poses; repeat seeds remain live, so the full learned outcome is pending. [Training protocol](SURFACE_LEARNING_V13.md). The broader-initialization control failed and is [preserved as a negative finding](reports/POSE_RECOVERY_V14.md). A [small global-context proposal experiment](GLOBAL_CONTEXT_V15.md) now passes exact initial equivalence on all 72 cases, with zero trained updates. These are exposed development results, not fresh validation or a SOTA claim.
+Current research progress: the completed geometry-normalized cohort gives **55/72 correct raw poses at all three seeds**, versus54/72 frozen surface. With the same SIFT fallback:58/72 versus57/72, with one wrong raw estimate. This one-pair exposed-development gain is inconclusive. [Complete study](reports/surface_learning_v13.md). The100-update context cost pilot independently replays, but has no localization readout. The [full capacity-controlled context cohort](GLOBAL_COHORT_V16.md) is implemented and awaiting its public source freeze before fitting. Fresh final, calibrated acceptance and the full research targets remain unmet. Older results below are preserved history.
 
 **Current development finding:** using the reference terrain's3D shape improves
 the frozen small matcher from45 to54 correct raw poses out of72. The same
