@@ -1,5 +1,18 @@
 # Compact lunar image matching
 
+**Active native-pose research:** the orientation ablation finished without a gain.
+A100-step native-refinement pilot gives47/72 raw correct poses versus frozen45;
+full ablations/repeats are still running, and their first encoder/pair runs give
+44/72 and45/72. A uniform-positive pilot gives45/72. **A consistent learned
+improvement or SOTA result has not been established.** See the
+[native study protocol](NATIVE_REFINEMENT_V7.md) and
+[completed orientation study](reports/ORIENTATION_TRAINING_V6.md).
+
+Modern native-image comparisons and local-window diagnostics are separate
+from the historical128px registration study below. All current pose readouts
+are exposed development cases; fresh final and calibrated acceptance targets
+remain unmet.
+
 **Current corrected training:** all16000 v5 optimizer steps completed. The
 predefined primary/repeat results are **44/72, 45/72, 45/72** correct raw poses, versus
 frozen four-orientation45/72. A consistent learned gain is not established.
@@ -48,7 +61,7 @@ mismatches, with a useful accuracy–CPU-speed tradeoff?
 
 [Release and downloads](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2) · [Two-page brief](reports/compact_brief_v2.pdf) · [Measured report](reports/RESEARCH_ITERATION_6.md) · [Interpretation](reports/COMPACT_INTERPRETATION.md) · [Reproduction](COMPACT_REPRODUCTION.md)
 
-## Measured findings
+## Historical compact-v2 findings (3D claims superseded)
 
 - **Primary frozen model:** 376/384 correct positive acceptances (97.92%), zero observed incorrect outputs and 0/288 nonoverlap acceptances. The other predefined seeds retain 351 and 380 correct positives; the latter accepts one nonoverlap pair. No best-of-test seed selection occurs.
 - **Calibration drives most of the gain.** The old checkpoint retains 100/384 with its old gate and 368/384 with newly calibrated confidence. Both old and primary checkpoints have 384/384 raw correct proposals. All 284 correct proposals rejected by the old gate fail only its global-correlation threshold. The primary retraining gain over the recalibrated old checkpoint is small and not consistent across seeds.
@@ -57,7 +70,7 @@ mismatches, with a useful accuracy–CPU-speed tradeoff?
 
 Inference uses **128px images** and a coarse-registration tolerance of **12 original 512px source pixels**. The final test contains 12 selected spatial components across three polar sectors, not 384 independent terrain tests. Trajectory IDs and Sun angles are absent; shared terrain/renderer dependence remains. Calibration has only 12 positives and 12 negatives across four components, so observed low error is not a deployment guarantee.
 
-## Identical common-input comparison
+## Historical 2D common-input comparison
 
 36 positive and 36 known-nonoverlap cases across the same 12 final components.
 Compact networks are lunar-trained; the large pretrained methods are not adapted

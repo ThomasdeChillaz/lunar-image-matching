@@ -7,7 +7,7 @@ original target results and/or defensible state-of-the-art results are verified.
 The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes all
 earlier LunarGeo ray-based3D metrics/labels. Use the explicit v5 geometry and
 audited v5 data for new fitting/scoring; preserve legacy sources for replay.
-The corrected v5 cohort is complete; see reports/COARSE_TRAINING_V5.md. The v6 orientation-regime cohort is live: do not mutate its pinned sources. The full
+The corrected v5 cohort is complete; see reports/COARSE_TRAINING_V5.md. The v6 orientation-regime cohort is complete without a learned gain. The v7 native-refinement cohort is live: do not mutate its pinned sources. Uniform-positive pilots and native modern comparisons are separate development evidence. The full
 accuracy/acceptance/uncertainty/comparison goal remains active, not completed by
 software checks or development gains.
 

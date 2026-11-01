@@ -1,5 +1,15 @@
 # Milestones
 
+## Current native research checkpoint
+
+V6 completed16000 steps without a pose gain; all controls exactly replicate v5.
+V7 native pilot47/72 versus45, but full encoder/pair ablations44/45 so far; the
+complete study and repeat seeds remain active. Uniform-positive pilot45/72,
+with no raw-pose gain. Oracle exact-in-window67/72 is diagnostic only. Native
+LoMa-R/RoMa-v2 comparisons are executing with mandatory complete-case replay.
+No full research target, calibrated acceptance or SOTA claim is achieved.
+See STATUS and NATIVE_REFINEMENT_V7.md. Older sections are historical snapshots.
+
 ## Active goal: corrected training and continued hypotheses
 
 Corrected-depth coarse study complete: four4000-step runs, all predefined

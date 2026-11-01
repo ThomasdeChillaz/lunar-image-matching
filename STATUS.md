@@ -1,5 +1,53 @@
 # Status
 
+## Native precision research active; no verified target achievement
+
+The completed v6 orientation ablation adds16000 optimizer steps with no pose
+improvement. The narrowed regime retains initial weights (45/72); the wide
+control and repeat seeds give44/72,45/72,45/72 and exactly reproduce v5 tensors.
+Independent288-record replay passes. See reports/ORIENTATION_TRAINING_V6.md.
+
+A native-refinement100-step pilot gives47/72 correct raw poses versus frozen45,
+with eight wrong estimates. The full v7 ablation/three-seed study is running in
+runs/localization-v7-native-development. Its first completed encoder/pair
+ablations give44/72 and45/72; the no-match ablation/repeats remain pending.
+Do not present the pilot as a consistent gain or completed model study.
+The model remains below100000 total parameters; current sources are pinned.
+
+Training-source diagnosis finds only3 and23 correct local coarse proposals in
+two difficult training components. A separate uniform-positive100-step pilot
+uses10463 projected points across all12 training components and gives45/72
+(18 strict), so it has not shown a raw-pose gain. Its full study has not run.
+Both pilots pass independent234-label/72-output, checkpoint, sampling/RNG and
+actual-model controls. All points/labels are simulated geometry, not human marks.
+
+Corrected exact-in-window controls recover67/72 oracle poses; all visible
+returned reference points recover72/72. All288 branches, axial projection,
+rotation/window masks, physical ranges and pose-estimator replay pass. These
+use query truth, are not deployed methods and are not formal performance bounds.
+The frozen four-orientation bank already selects all45 correct poses available
+among its own branches; reranking those outputs alone cannot add a correct case.
+
+LoMa-R and RoMa-v2 native512px common-profile comparisons are running on
+standard public ARM CPU workers with two threads each. Both passed actual
+native known-transform/invalid-input controls. Runs41255920157/41256049036 are
+bounded; complete coverage is not established. A fixed36+36 case-range recovery
+plan preserves all72 cases, exact models/weights/settings, common geometry,
+paired same-worker controls and all earlier attempts. No incomplete baseline
+is a ranking or algorithmic accuracy result. No paid/larger runners are used.
+
+Software checks:179 tests pass/four optional skips, fresh100-row/20-summary
+procedural smoke with exact replay; initial native inference reproduces every
+frozen selected orientation and pose decision (maximum coordinate difference
+0.0000611px). Sources and evidence are in NATIVE_REFINEMENT_V7.md and reports/.
+The original fresh-final gate, consistent learned gain, reliable acceptance,
+uncertainty, full modern comparisons, transfer and paper targets remain unmet.
+No calibration/test pixels, human review, paid compute, automatic outreach or
+verified orbital-navigation claim. All earlier ray-based3D claims remain
+superseded by reports/GEOMETRY_CORRECTION_V5.md; preserve frozen artifacts.
+
+Older entries below are historical progress snapshots.
+
 ## Corrected training completed; orientation follow-up active
 
 All four corrected v5 runs completed4000 optimizer steps (16000 total),

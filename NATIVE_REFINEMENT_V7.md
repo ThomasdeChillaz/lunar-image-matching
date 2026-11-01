@@ -43,3 +43,36 @@ python verify_native_baseline_v7.py --run runs/new-native-loma-r --output runs/n
 ```
 
 The research goal remains the original one: a reproducible, sufficiently large and consistent camera-localization improvement with reliable acceptance, fresh validation/transfer, fair strong baselines and a defensible paper. No pilot gain, software pass or geometry correction completes it. No paid compute, human review, automatic email or orbital-navigation claim.
+
+## Subsequent development evidence
+
+The v6 orientation study has completed without a gain. The v7 full native
+encoder and pair-refinement primary runs give44/72 and45/72 so far; the study
+and predefined repeats are incomplete. Do not prefer the47/72 short pilot as
+if it were a completed selected model. Its stricter score was16/72 versus17
+frozen, showing a tradeoff rather than uniform dominance.
+
+A source-coverage audit found only3 and23 correct local coarse proposals in
+two difficult training components. A separate sampling ablation replaces
+positive slots with10463 uniform projected points over the12 training groups,
+using exact-query-centered jitter, while retaining v7 negatives, model, loss,
+optimizer and sensor perturbations. Its100-step pilot gives45/72 raw correct,
+18 strict and11 wrong estimates: no raw-pose gain. This changes positive
+coverage/centering, not just adds copies of successful coarse matches. Full
+uniform-data training has not been executed; its results are not promised.
+
+Corrected exact-in-window diagnostics recover67/72 poses with oracle projected
+correspondences. All visible returned reference points give72/72. The replay
+checks projection, camera range, all quarter-turn/window masks and re-executes
+the same pose estimator. This is diagnostic query-truth use, not deployable
+inference or a formal pose-performance bound. The frozen branch oracle itself
+recovers only45/72, all already selected by the existing geometry rule.
+
+Native model throughput is slow enough to threaten the initial one-hour jobs.
+The fixed execution recovery assigns cases0–35 to the original run and36–71
+to separate bounded-range workers, preserving all72 eligible pairs. No model,
+weights, numerical profile, coordinate conversion or pose estimator changes.
+The range runner imports the original control/scoring functions. Complete
+comparison and independent replay remain mandatory. See
+reports/native_case_range_plan_v8.json. Do not infer a global ranking from
+partial logs. All attempts, failures and duplicate outputs are retained.
