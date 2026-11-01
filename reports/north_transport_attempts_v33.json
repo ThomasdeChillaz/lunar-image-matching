@@ -1,0 +1,37 @@
+{
+  "original_acquisition_state": {
+    "stage": "failed; preserve all outputs",
+    "pid": 54743,
+    "public_source": "1ab551abf0f726fad36d2ec3fb512a7d5c5b4579",
+    "source_sha256": {
+      "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+      "render_north_pilots_v32.py": "24002e58af18881102db5686903accb76755c0830bf9dac16d16a22ef43b5c38",
+      "verify_north_pilots_v32.py": "366370b2cd986f9b254a32885f0f4989032dbac850eb5bee1e3dd001b603a63e",
+      "test_north_terrain_pilot_v32.py": "79e1cb2f7cb26b28e0ea392bd7d8b2fba0d0ded21c7f6b7a5b13844dd3a4aa17"
+    },
+    "updated_utc": "2026-11-01T21:01:14.160538+00:00",
+    "state": "failed",
+    "error_type": "CalledProcessError",
+    "error": "Command '['/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python', '-u', 'north_terrain_pilot_v32.py']' returned non-zero exit status 1."
+  },
+  "original_acquisition_failure": {
+    "error_type": "RasterioIOError",
+    "error": "Read failed. See previous exception for details.",
+    "completed_components": 0
+  },
+  "full_stream_state": {
+    "state": "failed; preserve partial",
+    "bytes": 159383552,
+    "updated_utc": "2026-11-01T21:05:12.357061+00:00",
+    "error_type": "KeyboardInterrupt",
+    "error": ""
+  },
+  "full_stream_partial_bytes": 159383552,
+  "source_version_unchanged": true,
+  "pilot_encoded_tile_count": 100,
+  "pilot_encoded_tile_bytes": 53976152,
+  "replacement_cache_complete": false,
+  "source_windows_successfully_extracted": 0,
+  "lunar_images_rendered": 0,
+  "note": "All original attempts preserved; replacement exact-range cache/decoding/render/oracle not yet run."
+}
