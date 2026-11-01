@@ -27,8 +27,7 @@ wrong proposals are not calibrated accepted errors.
 
 249tests/four optional skips and fresh100-row smoke replay pass. The complete
 v18 negative study's fresh public checkout replay also passes, including actual
-six selected controls and exact72-case neural forward. Tagged capsule assets
-remain pending. No source/test changes were made to live fitting. Remaining
+six selected controls and exact72-case neural forward. The [v18 negative-study prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/native-window-development-v18) now targets the exact clean-replayed6561f02 source. All four public assets are byte-identical; both ZIP CRCs pass. compact-v2 remains latest. No source/test changes were made to live fitting. Remaining
 fresh-data, calibration/nonoverlap, author-profile, transfer, uncertainty,
 paper and compact-v3 requirements are still unmet. No paid compute, human
 review, automatic email or research-goal completion. Earlier entries are history.

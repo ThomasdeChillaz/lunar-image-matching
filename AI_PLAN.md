@@ -30,7 +30,7 @@ accepted-risk claim. Dual-softmax is standard machinery, not a new operator.
 
 v18 fitting TERMINAL12000updates/no adopted gain; all selected54/72 at step0.
 Clean exact public-checkout replay now PASSED2160rows,6actual controls/exact72
-forward,144MatchAnythingrows and CRESENTmetadata. Tagged assets still pending.
+forward,144MatchAnythingrows and CRESENTmetadata. The native-window-development-v18 prerelease is now published at exact clean-replayed6561f02; all four public assets match/ZIP CRC pass, compact-v2 remains latest.
 Scale bank also negative12/16 allprofiles; do not expand or rerun old cohorts.
 One scientific CPU job at a time; lightweight saved-only reporting/publication
 may proceed during training.249tests/four skips and fresh100row smoke pass.
