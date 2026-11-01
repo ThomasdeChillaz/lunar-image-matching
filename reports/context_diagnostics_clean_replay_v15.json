@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_checkout": "62446cb93a2eb55b43b6127896bbb61d62f47a4d",
+  "verified_capsule_members": 108,
+  "capsule_sha256": "e67d9416e4555822f4166b6269e293a951595705c004436d5719402b58e9912f",
+  "independently_projected_label_checks": 97344,
+  "exact_retrained_steps": 100,
+  "exact_model_optimizer_rng_replay": true,
+  "replay_sha256": "5daeaf3fc18b0b8f5e544de4c9b6ddd439114ae3532cf4e955a6a94b4556676a",
+  "scope": "Fresh public source plus diagnostic-capsule installation and exact train-only cost-pilot retraining; not geographic validation or a context localization result."
+}
