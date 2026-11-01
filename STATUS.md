@@ -1,5 +1,26 @@
 # Status
 
+## Verified northern data pilots; no learned upgrade — 1 November 2026
+
+All96pilot images rendered in425.32s; independent exact-correspondence recovery
+passes12/12camera poses. The initial pilot audit caught an implementation
+mistake: a raw Blender camera-Zpass was calledray_depth, despite the prior
+analytic controls measuring axialZ. Original failed audit/source/arrays remain
+preserved. The corrected auditor is bound to those earlier measured controls,
+computes true ray range separately, and retains every scoring tolerance.
+282tests/four optional skips and fresh100row smoke pass. This is a data/software
+gate, not learned accuracy. [Measured outcome and limitations](NORTH_PILOT_RESULTS_V34.md).
+
+All four excluded pilot supports are acquired. Metadata checks separate all44
+candidate supports from named historical project image ledgers and known height
+probes; unknown external pretraining overlap remains uncharacterized. The16train/
+8selection/4calibration/12final supports remain unread. Next implement only new
+training/selection generation and exact supervision before the next expanded-
+data fitting control. Keep old datasets, failed6kcohort, transport failures and
+raw mislabeled fields unchanged; future records must label axial/ray explicitly.
+No new learned checkpoint, acceptance/fresh-final/SOTA/orbital claim or email.
+Full research goal remains active. Earlier entries are history.
+
 Current transport update: original v32four-pilot acquisition FAILED before any
 window returned; no renderer/fitting started. Full-stream raw download stopped
 partial159,383,552bytes because observed cost exceeded its600second allowance;

@@ -1,3 +1,14 @@
+## M34 — Actual terrain and depth-semantics controls complete
+
+96renders/four excluded pilot components in425.32s. Original audit failed on
+our mistaken ray-vs-axial interpretation; preserved. Prior analyticAXIALZcontrol
+anchors the corrected audit, with unchanged tolerances;12/12geometry oracle
+poses pass.282tests/four skips/fresh100row smoke pass. Named own-project image
+and height-probe supports are separated from prospective northern supports;
+external pretraining remains unknown. No new learned model or final inference.
+Next acquire only16train/8selection supports with explicitly labelled depth
+and exact 3D supervision; keep calibration/final untouched. Full targets unmet.
+
 ## M33 — Same-source pilot transport recovery prepared
 
 Original remote BigTIFF extraction failed; full-stream attempt interrupted and
