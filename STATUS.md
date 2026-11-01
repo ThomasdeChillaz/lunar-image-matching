@@ -1,5 +1,25 @@
 # Status
 
+## Surface CPU validation complete — 1 November 2026
+
+The direct same-worker run41262874858 completed and independently replays all
+88 records:72 surface accuracy cases and16 RoMa/paired timing cases. Surface
+54/72,16 strict, three wrong; all72 primary/strict statuses match the local
+study. On the fixed16-case bank both methods give12/16 correct/six strict.
+Surface median inference4.43s versus53.31s for RoMa-v2 fast/common512; median
+paired speedup12.03x, descriptive component interval[11.80,12.10]. Two threads,
+both warmed/loaded, alternating case order, fresh paired feature maps.
+
+This speedup does not apply to the57/72 SIFT variant. Joint3.74GB process memory
+cannot rank isolated model memory. The72-pair accuracy interval against RoMa
+includes zero; data remain four exposed terrain components, not a fresh test.
+No1% acceptance/nonoverlap, default-precise RoMa, orbital accuracy or global
+SOTA claim. See reports/SURFACE_CPU_V12.md. No fitting or remote job remains
+live; all handles from the preceding cohorts are terminal. The next learned
+experiment is geometry-normalized supervision against this stronger control.
+The full original research goal remains active and unmet.
+
+
 ## Uniform native training complete — 1 November 2026
 
 The full v8 cohort completed10000 optimizer steps/five runs and passes exact

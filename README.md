@@ -19,6 +19,11 @@ control. This does not establish a reliable advantage over RoMa-v2. See the
 [native protocol](NATIVE_REFINEMENT_V7.md), and
 [completed modern comparison](reports/NATIVE_MODERN_V10.md).
 
+Direct CPU validation reproduces54/72 and measures**12.03× paired speedup**
+over RoMa-v2 fast/common512 on the fixed16-case timing bank (4.43s versus53.31s,
+both12/16 correct). This timing does not cover the57/72 SIFT variant.
+[CPU protocol and limits](reports/SURFACE_CPU_V12.md).
+
 Modern native-image comparisons and local-window diagnostics are separate
 from the historical128px registration study below. All current pose readouts
 are exposed development cases; fresh final and calibrated acceptance targets
