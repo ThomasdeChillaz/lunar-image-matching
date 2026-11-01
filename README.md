@@ -1,6 +1,6 @@
 # Compact lunar image matching
 
-Training is active: [geometry-normalized supervision](SURFACE_LEARNING_V13.md), with matched raw/normalized training points and a frozen54/72 surface baseline. Both initial variants reproduce every historical case status and pass independent native-score/pose replay. Full new training results remain pending; no fresh-test or SOTA claim.
+Current research progress: the completed primary surface-training runs give 54/72, 55/72 and 55/72 correct poses; repeat seeds remain live, so the full learned outcome is pending. [Training protocol](SURFACE_LEARNING_V13.md). The broader-initialization control failed and is [preserved as a negative finding](reports/POSE_RECOVERY_V14.md). A [small global-context proposal experiment](GLOBAL_CONTEXT_V15.md) now passes exact initial equivalence on all 72 cases, with zero trained updates. These are exposed development results, not fresh validation or a SOTA claim.
 
 **Current development finding:** using the reference terrain's3D shape improves
 the frozen small matcher from45 to54 correct raw poses out of72. The same

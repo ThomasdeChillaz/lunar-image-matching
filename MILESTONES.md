@@ -1,5 +1,35 @@
 # Milestones
 
+## Global match failure diagnosed; context controls pass — 1 November 2026
+
+The v14 broad-initialization control is rejected: 54/72 correct poses remain
+unchanged, while wrong poses increase from 3 to 18. Independent replay covers
+all 72 final poses and all 60 coarse/broad branches on the 15 missing cases.
+No branch produces a correct broad pose. Median best genuine 12-pixel match
+fraction is 2.83%; seven cases have fewer than six such matches in every
+branch. The tested local refinement did not repair these global proposals.
+See reports/POSE_RECOVERY_V14.md. The default matcher is unchanged.
+
+The next v15 proposal experiment adds a small image-pair context module.
+Its 25,664 trainable parameters plus the frozen backbone total 53,936;
+combining it later with the existing separate learned fine model would total
+89,169. No context weights have been trained. Actual native controls and exact
+72-case native-point/pose equivalence pass, preserving 54 primary and 16 strict
+successes. Capacity-controlled bidirectional 3D supervision and the bounded
+training-pilot runner are implemented; 205 tests/four optional skips and a
+fresh 100-row smoke pass. The pilot must run after source publication; the
+full fitting cohort still needs implementation. See GLOBAL_CONTEXT_V15.md.
+No context model gain is claimed.
+
+The v13 surface-training cohort remains live. Its completed primary runs give
+54/72 raw-control, 55/72 normalized-encoder and 55/72 normalized-pair poses;
+repeat seeds and the full independent cohort audit are still pending. The
+stronger fixed SIFT baseline remains 57/72. A one-pair exposed-development gain
+is not the requested research target. Fresh validation, reliable acceptance,
+remaining native comparisons, transfer and the paper remain incomplete.
+No calibration/test pixels, paid compute, human review or automatic email.
+Earlier entries are historical snapshots; the full goal remains active.
+
 ## Geometry-normalized training active — 1 November 2026
 
 The initial gate passed: both initialized variants reproduce every historical

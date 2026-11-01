@@ -2,46 +2,46 @@
 
 ## Objective
 
-Current live cohort: v13 source freeze19a4357 preceded fitting. The exact72-case
-initial-equivalence gate and independent144-row native-score/pose replay pass.
-Three2000-step ablations plus two selected-configuration seeds are running;
-monitor the existing process, never restart or mutate its pinned sources.
-All current conclusions remain exposed-development evidence.
+Continue improving lunar camera localization under the full user-approved
+research targets. Do not replace the goal with software checks or a small
+exposed-development gain. Fresh final validation, reliable acceptance,
+remaining required native baselines, transfer, uncertainty and the paper are
+still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current next execution: v13 geometry-normalized-supervision cohort. Preserve
-its pinned source and historical v7/v8/v11 results. Require exact v11 initial
-pose-status equivalence before fitting; use all72 exposed selection cases.
-Training-only normalization uses true query pose; inference never does.
-See SURFACE_LEARNING_V13.md. No new learned outcome yet at this snapshot.
+Current live job: v13 surface-supervision cohort, source freeze19a4357.
+Three primary2000-step runs are complete: raw54, normalized encoder55, and
+normalized pair55 correct poses out of72. The selected pair configuration's
+predefined repeats are still running. Monitor the existing process; never
+restart it or mutate its pinned sources. Finish the full audit, actual-model
+controls, report and capsule after all five runs complete.
 
-Current execution: v7 completed and independently replayed all10000 steps/five
-runs, with no consistent learned gain (selected seeds45/42/42 versus45 frozen).
-Deterministic reference-surface normalization gives54/72 and the fixed SIFT
-fallback57/72 with two wrong raw poses. Its intervals include zero and it is
-not calibrated acceptance or new learning. Use this stronger simple control
-for future learning claims. Full v8 uniform-positive fitting/repeats completed: selected seeds47/45/47;
-all five runs/10000 steps pass exact replay and actual model controls. No local
-training job is live. The frozen source cohort remains preserved. Same-worker
-surface/RoMa CPU run41262874858 completed and passes88-record/control/metric
-replay:54/72 surface and12.03x paired speedup on fixed16 cases. This does not
-apply to the57/72 SIFT variant. No process remains live; do not restart terminal
-handles. Geometry-normalized supervision is the next learning hypothesis.
-Native LoMa-R/RoMa-v2 common comparisons now complete and replay all72
-assigned cases and paired controls:42/53 correct,28/19 wrong respectively.
-Original compact45 is20.6x/16.8x faster in paired CPU jobs. The surface54 method
-has no same-worker latency result yet; the new bounded workflow is prepared.
-Native author-precise settings and EfficientLoFTR/MOONSt3R remain incomplete.
-Fresh final, reliable acceptance, transfer, uncertainty and paper targets remain
-unmet. Preserve all failed heads, seeds and sources.
+Completed negative control: broad12px initialization adds15 wrong poses and
+zero correct ones despite unchanged3px final fits. All72 final records and
+60 broad branches replay. No broad branch recovers a correct missing pose;
+genuine correspondence fractions are very low. Do not adopt this recovery
+rule. See reports/POSE_RECOVERY_V14.md.
 
-The active user goal is to keep testing hypotheses and improving until the
-original target results and/or defensible state-of-the-art results are verified.
-The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes all
-earlier LunarGeo ray-based3D metrics/labels. Use the explicit v5 geometry and
-audited v5 data for new fitting/scoring; preserve legacy sources for replay.
-The corrected v5 cohort is complete; see reports/COARSE_TRAINING_V5.md. The v6 orientation-regime cohort is complete without a learned gain. The v7 native-refinement cohort is live: do not mutate its pinned sources. Uniform-positive pilots and native modern comparisons are separate development evidence. The full
-accuracy/acceptance/uncertainty/comparison goal remains active, not completed by
-software checks or development gains.
+Next model hypothesis: small global pair-context proposal matching. The
+cross-context module has25664 parameters,53936 with the frozen backbone;
+optional later combination with separate learned fine weights totals89169.
+Zero context optimizer steps have run. Initial native controls and exact72-case
+point/pose equality to frozen54/72 pass. Capacity-controlled forward/reverse3D supervision and boundary/rotation/negative
+controls now pass. The bounded training-pilot runner is implemented but not
+executed. Publish the current source, run its100-step measured pilot, then
+implement and freeze the full context cohort before full fitting. GLOBAL_CONTEXT_V15.md records the unfinished requirements.
+
+Strong compact controls remain54/72 frozen surface and57/72 SIFT+surface with
+two wrong raw poses. Native common LoMa-R/RoMa-v2 scores are42/53; same-worker
+surface/RoMa timing is12.03x on fixed16 cases, not the SIFT or new context model.
+The v7/v8 selected learned seeds45/42/42 and47/45/47 are completed history.
+All current new fitting/scoring is exposed-development evidence from eight
+selection geometries/four components. The fresh-data gate still fails.
+
+The axial-depth correction in reports/GEOMETRY_CORRECTION_V5.md supersedes
+earlier LunarGeo ray-based3D metrics/labels. Use audited v5 geometry/data and
+preserve legacy sources/results. No calibration/test pixels, paid compute,
+human review or automatic email.205 tests/four optional skips and a fresh
+100-row software smoke pass at this milestone.
 
 The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
 The user's subsequent instruction, "Continue with the training", authorizes
