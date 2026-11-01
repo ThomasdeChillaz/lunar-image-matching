@@ -77,17 +77,17 @@ def report(root, audit_path, prefix):
     if prefix.with_suffix('.md').exists() or prefix.with_suffix('.png').exists():
         raise FileExistsError('Preserve every report snapshot')
     prefix.with_suffix('.md').write_text('\n'.join(lines))
-    figure,axes = plt.subplots(1,3,figsize=(15,4.7))
+    figure,axes = plt.subplots(1,3,figsize=(16,5.5))
     primary = [r for r in records if r['seed'] == 20261101]
     for r in primary:
         axes[0].plot([v['step'] for v in r['validation']], [v['selection']['correct_poses'] for v in r['validation']], marker='o',label=r['variant'].replace('_',' '))
     axes[0].axhline(54,color='grey',linestyle='--',label='frozen surface')
     axes[0].set(xlabel='Optimizer updates',ylabel='Correct raw poses /72',title='Primary ablations; initialization eligible');axes[0].legend(fontsize=8)
-    labels = [r['variant'].replace('_',' ')+'\n'+str(r['seed']) for r in records];x=np.arange(len(records))
+    labels = [r['variant'].replace('_','\n')+'\n'+str(r['seed']) for r in records];x=np.arange(len(records))
     axes[1].bar(x-.18,[r['raw']['correct'] for r in records],.36,label='correct raw')
     axes[1].bar(x+.18,[r['raw']['wrong'] for r in records],.36,label='wrong raw')
     axes[1].axhline(57,color='grey',linestyle='--',label='stronger SIFT baseline')
-    axes[1].set(xticks=x,xticklabels=labels,ylabel='Pairs /72',title='All audited runs; no best-seed headline');axes[1].tick_params(axis='x',labelsize=7);axes[1].legend(fontsize=8)
+    axes[1].set(xticks=x,xticklabels=labels,ylim=(0,72),ylabel='Pairs /72',title='All audited runs; no best-seed headline');axes[1].tick_params(axis='x',labelsize=7);axes[1].legend(fontsize=7,loc='upper right')
     gains=np.array([r['raw_gain_pp'] for r in records]);bounds=np.array([r['raw_interval_pp'] for r in records])
     axes[2].errorbar(x,gains,yerr=np.stack([gains-bounds[:,0],bounds[:,1]-gains]),fmt='o',capsize=4)
     axes[2].axhline(0,color='grey',linestyle='--');axes[2].set(xticks=x,xticklabels=labels,ylabel='Raw gain over frozen surface (points)',title='Descriptive four-component intervals');axes[2].tick_params(axis='x',labelsize=7)

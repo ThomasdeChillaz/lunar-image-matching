@@ -1,9 +1,18 @@
 # Align coarse learning with native refinement
 
-This is the next controlled hypothesis, **not a trained model or demonstrated
-gain**. The v16 cohort remains immutable. Its primary pointwise/self/cross
-variants all retain initialization at54/72; every trained checkpoint regresses.
-All repeat seeds finished and the complete negative result is published.
+**Completed negative study, 1 November 2026.** All six runs completed12,000
+updates. Every selected checkpoint is initialization54/72; primary trained
+endpoints49/50/53/43 and repeats43/45. Same SIFT-first baseline57/72. These
+trained variants are not adopted. [Complete outcomes](reports/window_cohort_complete_v18.md)
+and [independent audit](reports/native_window_complete_audit_v18.json).
+
+The cohort audit checks2,160 saved checkpoint rows and all12,000 update/sampler
+records; no exact full retraining is claimed. The train-only100-update pilot
+was independently retrained exactly. Actual selected-model forward controls
+and the full development capsule are queued. Do not restart this terminal
+cohort or alter its public76ec8bf fitting sources. The v16 study remains
+immutable. The method motivation/protocol below is retained as executed
+history, not evidence that this hypothesis worked.
 
 ## Measured reason for the change
 
@@ -61,8 +70,8 @@ when their initial weights are identical.
 The core numerical/gradient controls pass, including exact initial proposal
 scores, protected frozen fine weights and the meaningful reachable-cell
 counterexample. **The complete runner is implemented in `train_search_window_v18.py`; all
-gates below passed and the full scientific cohort is active from public
-freeze76ec8bf.** The required gates were:
+gates below passed and the full scientific cohort completed from public
+freeze76ec8bf, without a learned improvement.** The required gates were:
 
 1. Publish and verify all complete runner/fitting source/protocol bytes.
 2. Verify actual native points/poses on all72 exposed selection pairs reproduce

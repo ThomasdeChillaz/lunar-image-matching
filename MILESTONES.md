@@ -1,5 +1,48 @@
 # Milestones
 
+## Native-window training complete: no learned gain — 1 November 2026
+
+All six v18 runs completed **12,000 optimizer updates** from public fitting
+freeze `76ec8bf1e3ecdf356bbcc3293bebd12e0e4ce189`. Every selected checkpoint is
+initialization: **54/72 correct raw poses**, 16 strict and three wrong estimates.
+The four primary trained endpoints give 49/50/53/43; the window-only repeats
+end at 43/45. The same stronger SIFT-first baseline stays at 57/72. These
+trained variants are not adopted as an improvement.
+
+Independent audit passes all **2,160 saved checkpoint rows**, 12,000 sampler/
+update records, 97,344 projected label points and 65,804,544 window memberships.
+The full cohort is not independently retrained; its separate 100-update pilot
+was exactly retrained. Both initialization graphs pass actual transform,
+blank/invalid controls and exact 72-case baseline equivalence. See
+[complete results](reports/window_cohort_complete_v18.md) and
+[audit](reports/native_window_complete_audit_v18.json). All failures and seeds
+are retained. Fitting sources remain immutable.
+
+Validation: 238 tests pass, four optional skips; a fresh 100-row software smoke
+independently replays. The optional CRESENT source-metadata fixture is installed
+locally; without it, one integration check explicitly skips. Report-only label
+layout was regenerated from the unchanged saved metrics after retaining both
+earlier renders. MOONSt3R's strict safe-tensor model load and actual pretrained
+translation/pose, blank and invalid-mask controls pass (116.97 seconds total). Full lunar
+baseline results are not available yet. The selected-checkpoint controls and
+exact primary forward replay are now running as the only research CPU job,
+followed by the complete development capsule. Inspect live state files before launching work.
+
+Next: the [shared-scale fine diagnostic](FINE_PYRAMID_V22.md) is prepared and its
+coordinate/actual-encoder tests pass. Run its actual checkpoint controls and
+fixed 16-case exposed bank only after existing jobs finish and source is
+publicly frozen. It tests context at native/half/quarter scale with identical
+search and conservative support, before another learned cohort. No scale gain
+has been measured. [CRESENT metadata](CRESENT_CAMERA_METADATA_V21.md) provides a
+candidate additional source, with original broad failure preserved; zero image
+pixels or matching results, and no completed depth/fresh-data gate.
+
+All pose numbers remain development results on four exposed terrain groups.
+Fresh final data, calibrated accepted-error/nonoverlap risk, remaining native
+comparisons, transfer, uncertainty, paper and compact-v3 pose interface remain
+unmet. No SOTA/orbital-accuracy claim, paid compute, human review or email.
+Earlier entries below are historical snapshots.
+
 ## Full native-window cohort active; both fitting gates passed — 1 November 2026
 
 The v18 initialization gate passed for both distinct inference graphs on all72

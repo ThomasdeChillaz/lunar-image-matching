@@ -8,18 +8,34 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current fitting: v18 full12,000-update native-window cohort RUNNING from
-public freeze76ec8bf1e3ecdf356bbcc3293bebd12e0e4ce189. Inspect authoritative
-runs/localization-v18-window-pipeline-state.json, its live PID/log and actual
-checkpoint files before action; never restart a live job. One two-thread job.
-Do not mutate train_search_window_v18.py or any protocol-pinned source. Both
-actual72-case initial graphs reproduce exact native points/poses54/72,16strict.
-The100-update train-only pilot independently replays all65,804,544 window labels
-and exactly retrains gradients, model, optimizer and RNG. No fine weight changes.
-The full cohort begins from new initialization, not the pilot. Four ablations
-plus two selected-configuration repeat seeds,2,000 updates each, all72 selection
-pairs at0/500/1000/1500/2000. Keep initialization and every failure. No new full
-v18 learned gain has been measured yet. A shared six-hour cohort wall cap applies.
+Current v18 fitting is TERMINAL: all six runs /12,000 updates completed.
+Every selected checkpoint remains initialization54/72,16strict,three wrong;
+final primary endpoints49/50/53/43 and repeat endpoints43/45. Do not restart.
+Complete cohort audit/report pass:2,160 saved rows,12,000 update/sampler
+records,97,344 projected labels and65,804,544 candidate memberships. No exact
+full-cohort retraining is claimed; the100-update pilot exactly retrains.
+Fitting source freeze76ec8bf is immutable. See window_cohort_complete_v18.md.
+
+238 repository tests/four skips and fresh100-row smoke replay pass, including
+new analytic camera and actual-encoder scale controls. Actual MOONSt3R control
+PASSED after strict1017safe-tensor loading: actual translation/pose, blank and
+invalid-mask controls,116.97seconds total. No lunar MOON result yet. Queue49119
+is terminal/complete. Postcheck queue50049 now runs actual selected6-model
+controls, exact72-case primary forward replay and then packages the full v18
+capsule, as the only live research CPU job. Inspect authoritative
+runs/localization-v19-moonst3r-queue-state.json and
+runs/localization-v18-postchecks-state.json; never duplicate live CPU jobs.
+
+The next scale diagnostic is PREPARED, not measured. FINE_PYRAMID_V22.md uses
+shared frozen native/half/quarter features, identical33px native search and
+matched conservative borders, same initial pose/two surface iterations.
+Its3 meaningful coordinate/actual-encoder tests pass. Publish/freeze source
+before actual-checkpoint controls and the16-case bank, only after jobs end.
+Do not describe this engineering diagnostic as a new learned model/gain.
+CRESENT-365 v3 metadata camera/conic controls pass only a narrower resolved-
+ellipse check while preserving the original broad failure. No image raster
+was decoded, matcher run, depth/freshness gate passed or final reserve created.
+See CRESENT_CAMERA_METADATA_V21.md. Do not mutate its pinned metadata sources.
 
 The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;
 final primaries47/43/39. Do not restart or change its pinnedM20 sources. Complete

@@ -1,6 +1,6 @@
 # Compact lunar image matching
 
-Current research progress: the complete10,000-update global-context cohort produced **no learned gain**. All five runs retained initialization54/72; trained primary endpoints regressed to47/43/39. [Complete results](reports/global_context_complete_v16.md). The [audited diagnosis](reports/context_failure_diagnosis_v17.md) finds better likelihood but fewer useful correspondences. A [search-window loss and coarse-feature adaptation](SEARCH_WINDOW_V18.md) is prepared but untrained. Native512px MatchAnything has passed actual pretrained controls; its full lunar comparison is next. The previous surface study remains55/72 across three seeds, or58/72 with the same SIFT fallback versus57, one wrong raw estimate—an inconclusive one-pair gain. Fresh final, reliable acceptance and full research targets remain unmet. Older results below are history.
+Current research progress: the complete **12,000-update native-window study produced no learned gain**. All six runs retained initialization at **54/72** correct raw poses; trained primary endpoints were 49/50/53/43. [Results and failures](reports/window_cohort_complete_v18.md), [independent audit](reports/native_window_complete_audit_v18.json). The same SIFT-first baseline gives 57/72. Native512 MatchAnything gives 39/72 versus 57/72 on identical common-pose cases; [comparison](reports/native_matchanything_comparison_v17.md). MOONSt3R passes actual pretrained translation/pose and invalid-input controls; its lunar performance is not yet measured. The next [shared-scale diagnostic](FINE_PYRAMID_V22.md) is prepared, not a demonstrated upgrade. Fresh final, reliable acceptance and full research targets remain unmet. Older results below are history.
 
 **Current development finding:** using the reference terrain's3D shape improves
 the frozen small matcher from45 to54 correct raw poses out of72. The same
@@ -356,13 +356,11 @@ References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](
 
 ### Native-window learning continuation
 
-The complete next cohort runner and independent train-only pilot audit are
-implemented; both actual-initialization and independent100-update replay gates
-passed. The full12,000-update cohort is running from public76ec8bf; no completed
-new learned pose result yet. See [SEARCH_WINDOW_V18.md](SEARCH_WINDOW_V18.md).
-The completed v16 negative cohort is reproducible from
-[its prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/global-context-development-v16).
-The native512 MatchAnything comparison is complete:39/72 raw correct versus
-57/72 SIFT-first surface; all144 metrics/poses replay. See
-[the common comparison](reports/native_matchanything_comparison_v17.md).
-These are four exposed terrain groups, not a fresh SOTA evaluation.
+The complete v18 cohort and independent audit retain every failed checkpoint
+and seed: 12,000 updates, all six selected at initialization54/72. No trained
+upgrade is adopted. [Results](reports/window_cohort_complete_v18.md) and
+[protocol](SEARCH_WINDOW_V18.md). The full v16 negative cohort remains available
+from [its prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/global-context-development-v16).
+MOONSt3R actual software controls pass; selected-weight replay/capsule is in
+progress; the [shared-scale diagnostic](FINE_PYRAMID_V22.md) is prepared next.
+All current poses use four exposed terrain groups; no fresh/SOTA claim.
