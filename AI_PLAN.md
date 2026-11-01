@@ -2,6 +2,12 @@
 
 ## Objective
 
+Current live cohort: v13 source freeze19a4357 preceded fitting. The exact72-case
+initial-equivalence gate and independent144-row native-score/pose replay pass.
+Three2000-step ablations plus two selected-configuration seeds are running;
+monitor the existing process, never restart or mutate its pinned sources.
+All current conclusions remain exposed-development evidence.
+
 Current next execution: v13 geometry-normalized-supervision cohort. Preserve
 its pinned source and historical v7/v8/v11 results. Require exact v11 initial
 pose-status equivalence before fitting; use all72 exposed selection cases.

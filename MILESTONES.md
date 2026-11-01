@@ -1,5 +1,26 @@
 # Milestones
 
+## Geometry-normalized training active — 1 November 2026
+
+The initial gate passed: both initialized variants reproduce every historical
+v11 primary/strict case status,54/72 correct and16 strict, with identical2px
+point counts. An independent144-row replay verifies native errors and reruns
+the common pose estimator. Sources were public at19a4357 before fitting.
+
+The full v13 cohort is now running: three2000-update ablations plus two repeat
+seeds of the selected configuration. The raw/normalized encoder ablation
+shares10340 train points, component/light/jitter draws and sensor perturbations;
+the third variant adds pair scoring. Models remain below100000 combined
+parameters. Select on all72 exposed development pairs, retaining initialization
+and every failed checkpoint. No completed new learned result is claimed yet.
+
+193 tests/four optional skips and a corrected fresh100-row software smoke pass.
+The previous study is published as native-precision-development-v11; all11
+public assets were redownloaded and verified, with compact-v2 still Latest.
+No calibration/test pixels, paid compute, human review, automatic email, fresh
+final or SOTA claim. Full research targets remain active and unmet. Earlier
+entries are historical snapshots. See SURFACE_LEARNING_V13.md.
+
 ## Geometry-normalized supervision prepared — 1 November 2026
 
 New v13 ablations compare raw3D encoder supervision, normalized encoder
