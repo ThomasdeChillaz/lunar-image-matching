@@ -1,5 +1,37 @@
 # Status
 
+## Full context cohort running; first ablation audited — 1 November 2026
+
+The complete2,000-update pointwise capacity control finished. Its trained
+checkpoints yield48/49/44/47 correct raw poses at500/1000/1500/2000 updates,
+versus54 at initialization. The predefined selection rule retains step0:
+54/72 correct,16 strict, three wrong raw estimates. Training this control did
+not improve localization. Independent replay verifies all360 checkpoint rows,
+97,344 projected label checks and the recorded2,000-update sampler/optimizer
+budget. This audit does not claim independent full retraining.
+
+Self-context and cross-image context, then two predefined repeats of the
+selected primary configuration, remain in progress/pending. Keep the live
+cohort running from public freeze b2d749f; do not restart it or mutate its
+pinned sources. The full10,000-update cohort is not complete. See
+reports/global_context_pointwise_progress_v16.md for this partial snapshot.
+
+The completed surface-study prerelease surface-supervision-development-v13
+is public. All four assets were redownloaded byte-identically and ZIP CRCs
+pass; compact-v2 remains Latest. The source tag points to b2d749f.
+
+Zenodo latest/version metadata still identify the same MoonAnything sample;
+no new released data or batch identities were established. The fresh-final
+gate remains failed. LuSNAR7-9 remain reserved with zero inspected pixels or
+inference. No new dataset or accuracy claim is substituted for that gate.
+
+210 repository tests/four optional skips, a fresh100-row software smoke, the
+actual partial-cohort audit and reviewed report figure pass. Fresh evaluation,
+calibrated acceptance, required remaining native baselines, transfer, timing,
+uncertainty, paper and compact-v3 pose interface remain required. No paid
+compute, human review or automatic email. Full goal active and unmet; older
+entries are historical snapshots.
+
 ## Surface cohort complete; full context cohort prepared — 1 November 2026
 
 All five v13 runs completed10,000 optimizer updates. The selected geometry-

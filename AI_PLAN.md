@@ -8,27 +8,35 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current fitting status: the complete v13 surface cohort is terminal, not live.
-All10,000 updates and three selected seeds are audited:55/55/55 of72 raw correct,
-SIFT fallback58/58/58 versus57, one wrong raw estimate. The1.39pp gain is
-inconclusive on four exposed components; no fresh or calibrated claim.
-Both reproducibility capsules are built and clean-install replayed. The actual
-primary selected model reproduces all72 saved forward rows exactly.
+Current fitting: train_global_context_v16.py is LIVE from public freeze
+b2d749f639385f577da4a8ccbab6ba1f466238c0. Preserve its source bytes and existing
+run runs/localization-v16-global-context-development. Never restart completed
+runs. Use recorded live process/session evidence, not stale historical handles.
+The first pointwise2,000-update ablation completed; its48/49/44/47 readouts lose
+to54/72 initialization, so step0 was retained. All360 rows and sampler/optimizer
+budget independently replay. Self/cross context and predefined repeats remain
+in progress/pending; no complete-cohort or context model gain claim yet.
 
-The100-step train-only context pilot completed in14.33 fitting seconds under
-concurrent workload and independently retrained exactly. No context quality
-result exists. The next full runner is train_global_context_v16.py, described
-in GLOBAL_COHORT_V16.md: three capacity controls at2,000 updates, then selected
-variant repeats at20261102/03. Publish every source/protocol byte before launch.
-Resume identical checkpoints rather than restarting. Keep the native CNN,
-reference-surface correction and3px final pose estimator frozen. No query truth
-in inference. Do not mutate any earlier cohort's pinned kernels.
+After all five runs: verify_global_cohort_v16.py audits the full saved cohort.
+Optional --retrain separately records exact retrained update counts. Do not
+run another scientific fitting job concurrently. report_global_cohort_v16.py
+reports all configurations/seeds and the same SIFT-first fallback, never a
+best-seed headline. The current partial figure was executed and inspected.
+Do not change the frozen inference kernel, pose criterion or selection rule.
 
-The broader-initialization control is rejected:15 added wrong, zero added
-correct. Fresh data, calibrated acceptance, remaining required native baselines,
-transfer and paper remain necessary. Current210 tests/four optional skips and
-fresh100-row software smoke pass. The fresh-final gate still fails; no global
-SOTA or orbital accuracy is established. No paid compute, review or email.
+The v13 surface cohort is terminal:55/55/55 raw correct, same SIFT fallback
+58/58/58 versus57, one wrong raw estimate. The1.39pp gain is inconclusive on
+four exposed components. Release surface-supervision-development-v13 and all
+four public assets are byte/CRC verified; compact-v2 remains Latest. Current
+210 tests/four optional skips and fresh100-row smoke pass. The100-update
+train-only context cost pilot exactly retrains; it is not a localization result.
+
+Latest/version metadata still show the same MoonAnything sample; no new fresh
+data established. The gate remains failed and LuSNAR7-9 reserve pixels are
+uninspected. Fresh evaluation, calibrated acceptance, remaining required native
+baselines, transfer, timing and paper remain necessary. No global SOTA or
+orbital accuracy claim. No calibration/test pixels, paid compute, review or
+email. The full research objective remains active and unmet.
 
 The currently authorized extension is [LOCALIZATION_RESEARCH.md](LOCALIZATION_RESEARCH.md).
 The user's subsequent instruction, "Continue with the training", authorizes
