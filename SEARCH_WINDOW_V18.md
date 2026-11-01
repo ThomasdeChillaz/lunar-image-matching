@@ -3,7 +3,7 @@
 This is the next controlled hypothesis, **not a trained model or demonstrated
 gain**. The v16 cohort remains immutable. Its primary pointwise/self/cross
 variants all retain initialization at54/72; every trained checkpoint regresses.
-The repeat seeds must finish and be published regardless of that outcome.
+All repeat seeds finished and the complete negative result is published.
 
 ## Measured reason for the change
 
@@ -60,10 +60,10 @@ when their initial weights are identical.
 
 The core numerical/gradient controls pass, including exact initial proposal
 scores, protected frozen fine weights and the meaningful reachable-cell
-counterexample. **The full cohort runner is not implemented yet; no v18
+counterexample. **The complete runner is implemented in `train_search_window_v18.py`; no v18
 scientific fitting has started.** Before full fitting:
 
-1. Implement the complete runner and publish all fitting source/protocol bytes.
+1. Publish and verify all complete runner/fitting source/protocol bytes.
 2. Verify actual native points/poses on all72 exposed selection pairs reproduce
 the frozen baseline at initialization. Run actual known-transform/blank and
 invalid-input controls. Do not infer that gate from unit tests alone.
@@ -88,3 +88,33 @@ AP3P. Confidence calibration, nonoverlap risk, fresh final data, transfer,
 remaining pretrained comparisons and paper remain required. This development
 study cannot repair the failed fresh-data gate by relabeling consumed views.
 No paid compute, human review or email. No SOTA or orbital accuracy claim.
+
+## Commands and integrity
+
+Use the validated environment and two CPU threads. Every command requires the
+public full40-character source commit, and refuses different fitting bytes.
+Do not overlap with the native baseline timing job.
+
+```
+python train_search_window_v18.py --mode initial --source-commit COMMIT --output runs/localization-v18-window-initial-control
+python train_search_window_v18.py --mode pilot --source-commit COMMIT --output runs/localization-v18-window-cost-pilot
+python verify_window_pilot_v18.py --run runs/localization-v18-window-cost-pilot --output reports/native_window_pilot_audit_v18.json
+python train_search_window_v18.py --mode cohort --source-commit COMMIT --output runs/localization-v18-window-development
+```
+
+The pilot is train-only and measures100 updates. Its audit independently checks
+3D projection/visibility and every candidate search-window membership, then
+exactly retrains the same implemented loss to compare gradient history,
+weights, optimizer and RNG. This is not an independent loss implementation.
+The full cohort must not warm-start from that pilot. Initialization checks both
+distinct inference graphs on all72 native selection pairs, plus actual transform,
+blank and invalid-mask controls. Same frozen native feature maps may be cached;
+coarse descriptors, context, points, warped queries and poses are recomputed.
+No isolated inference timing claim applies to the training runner.
+
+The new full cohort has a six-hour wall deadline shared across every ablation,
+repeat and resume. This bounds the new allocation within the original local
+compute budget; a timeout preserves partial evidence and is not a completed
+comparison. Earlier major cohorts record approximately5.24 hours including
+evaluation where fitting-only timing was unavailable; that is not a complete
+pilot/audit resource ledger.

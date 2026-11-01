@@ -1,5 +1,32 @@
 # Status
 
+## Native-window training runner prepared — 1 November 2026
+
+The complete v18 runner now implements four2,000-update ablations and two
+predefined-seed repeats of the selected configuration:12,000 updates. Search-
+window set supervision, genuine-proposal anchors, coarse adaptation and paired
+context are separated. The native fine CNN stays frozen; total81,696–82,208
+parameters. Resumable checkpoints preserve optimizer/sampler/model state and
+initialization remains eligible. This is implemented software, not a trained
+result. Actual all72-case initialization and100-update independently replayed
+pilot gates are required before scientific fitting. See SEARCH_WINDOW_V18.md.
+
+The native512 MatchAnything comparison completed from public3b0cc2d:39/72
+correct raw poses/five strict/30 wrong, versus SIFT-first surface57/72/25
+strict/two wrong. Median paired-worker inference4.40s versus2.98s. Independent
+replay verifies all144 native metrics/pose fits. No simultaneous research CPU
+job ran during timing. This profile is not a fresh test or a global SOTA claim.
+All229 repository tests pass, four optional skips; fresh100-row smoke replays.
+
+The complete v16 negative cohort is published as global-context-development-v16.
+Both public assets redownload byte-identically and ZIP CRC passes. A fresh
+public checkout reproduces all1,800 saved checkpoint rows, five selected-model
+controls and exact primary72-case forward output. This verifies reproducibility,
+not a new terrain test. Fine-grained failure diagnosis remains the reason for
+the new loss; training has not demonstrated an improvement. Original fresh-
+data, calibrated acceptance, transfer, remaining baselines and paper targets
+remain unmet. No paid compute, human review or email. Earlier entries are history.
+
 ## Context study complete; objective mismatch diagnosed — 1 November 2026
 
 All five v16 runs completed10,000 updates. Every selected checkpoint is step0:

@@ -22,16 +22,18 @@ universal upper bound. The next prepared core is search_window_learning_v18.py:
 set labels matching native33px support, optional genuine baseline anchors,
 and a trainable coarse CNN while the native fine CNN stays frozen.81,696 or
 82,208 total parameters. Five numerical/gradient controls pass. NO v18 training
-yet. Implement/freeze its full runner, actual72-case initial gate and measured
-pilot before full fitting; do not stop at software readiness or a cost pilot.
+yet. The full runner is now implemented in train_search_window_v18.py. Freeze
+its source and run actual72-case initial gate and independent100-step replay
+before full fitting; do not stop at software readiness or a cost pilot.
 
-Next immediate comparison: evaluate_native_matchanything_v17.py, native512,
+Completed comparison: evaluate_native_matchanything_v17.py, native512,
 all72 exposed pairs and same geometry/AP3P, versus SIFT-first surface. Actual
 pretrained native controls passed. Publish and verify all sources before launch,
 use two threads and no simultaneous research CPU jobs for paired timing. Save
 /resume cases; no planar affine prefilter or silent profile substitution. Read
-its new public commit for --source-commit. No full lunar comparison is claimed
-yet. Afterward complete required MOONSt3R and author-profile comparisons.
+its new public commit for --source-commit. All72 completed:39 correct/five strict/30 wrong versus SIFT-first57/25/two;
+all144 metrics/common-pose fits replay. Median4.40s versus2.98s on this CPU.
+Complete required MOONSt3R and author-profile comparisons; no SOTA claim.
 
 MOONSt3R acquired at f339a2c46f4e37ba7ed0ad3b7df51a1cb6aa8664, published full
 LFS SHA4ecc74a6f8190d2cdc3837c2cc1b101a0feffa84b114a5a27c1aaa9ee91d1725.

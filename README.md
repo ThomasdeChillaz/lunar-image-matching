@@ -352,3 +352,15 @@ References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](
 
 
 </details>
+
+
+### Native-window learning continuation
+
+The complete next cohort runner and independent train-only pilot audit are
+implemented; no v18 fitting result yet. See [SEARCH_WINDOW_V18.md](SEARCH_WINDOW_V18.md).
+The completed v16 negative cohort is reproducible from
+[its prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/global-context-development-v16).
+The native512 MatchAnything comparison is complete:39/72 raw correct versus
+57/72 SIFT-first surface; all144 metrics/poses replay. See
+[the common comparison](reports/native_matchanything_comparison_v17.md).
+These are four exposed terrain groups, not a fresh SOTA evaluation.
