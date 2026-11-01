@@ -1,0 +1,441 @@
+{
+  "scope": "Complete exposed-development coupled-assignment study. No learned improvement, calibrated acceptance, fresh generalization or SOTA claim.",
+  "completed_optimizer_steps": 6000,
+  "total_parameters": 81696,
+  "trainable_parameters": 53424,
+  "frozen_surface": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "wrong": 3,
+    "no_pose": 15
+  },
+  "stronger_simple_sift_surface_correct": 57,
+  "runs": [
+    {
+      "seed": 20261101,
+      "selected_step": 0,
+      "selected": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "no_pose": 15
+      },
+      "final": {
+        "cases": 72,
+        "correct": 47,
+        "strict": 17,
+        "wrong": 2,
+        "no_pose": 23
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "b32a0c52bf651e86d2c6f7f9028ddb5424dc3b7fb8f474a77c226370be2a8d99"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 15,
+            "estimated_poses": 45,
+            "correct_at_two_px": 10721,
+            "returned": 18750,
+            "scorable": 17722
+          },
+          "results_sha256": "99746060c8a9cf959c61ef32ecfb0a1cab33c418d918d7fb385ca46d31daf339"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 15,
+            "estimated_poses": 46,
+            "correct_at_two_px": 11036,
+            "returned": 19377,
+            "scorable": 18208
+          },
+          "results_sha256": "f0f48805156676da56ce97cac082b425a0a3f64dd7a00fd9f098ad6dc8e870b0"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 49,
+            "strict_poses": 16,
+            "estimated_poses": 51,
+            "correct_at_two_px": 11648,
+            "returned": 19425,
+            "scorable": 18249
+          },
+          "results_sha256": "a0af6eb630bb54c5b775ebf548754182c9d677c28bc2c7a216004d6c59c2e93c"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 47,
+            "strict_poses": 17,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11618,
+            "returned": 19877,
+            "scorable": 18717
+          },
+          "results_sha256": "54729762cec3e481fcedcf284bbd3aed6cbe4cbd6e43694eff76ab28627907aa"
+        }
+      ],
+      "paired_selected_minus_frozen": {
+        "difference_pp": 0.0,
+        "descriptive_component_bootstrap_95_pp": [
+          0.0,
+          0.0
+        ],
+        "resamples": 256,
+        "groups": 4,
+        "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+      },
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "no_pose": 1
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "no_pose": 0
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "no_pose": 14
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "no_pose": 0
+        }
+      },
+      "checkpoint_sha256": "78151dd1718d1a9e60e55a0519a4109d434edcaa2b211de12d130bb2c293c676",
+      "selected_rows_sha256": "b32a0c52bf651e86d2c6f7f9028ddb5424dc3b7fb8f474a77c226370be2a8d99",
+      "final_rows_sha256": "54729762cec3e481fcedcf284bbd3aed6cbe4cbd6e43694eff76ab28627907aa",
+      "fitting_seconds": 470.779366248491
+    },
+    {
+      "seed": 20261102,
+      "selected_step": 0,
+      "selected": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "no_pose": 15
+      },
+      "final": {
+        "cases": 72,
+        "correct": 47,
+        "strict": 17,
+        "wrong": 1,
+        "no_pose": 24
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "08e3a564a3f441419037d13b7f71b87cfd6465580531a3fc58f46b835cbbd769"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 44,
+            "strict_poses": 16,
+            "estimated_poses": 47,
+            "correct_at_two_px": 10619,
+            "returned": 18668,
+            "scorable": 17557
+          },
+          "results_sha256": "3397217debc4a7fc88196a25ef6ffd33d8ecaa5c6940a564622ed63a95d7d84e"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 42,
+            "strict_poses": 18,
+            "estimated_poses": 46,
+            "correct_at_two_px": 10615,
+            "returned": 19122,
+            "scorable": 17941
+          },
+          "results_sha256": "30c125bbb83b304355e38d5ecae3acd51427bdb5f667751acec7c0a9811a8401"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 46,
+            "strict_poses": 18,
+            "estimated_poses": 48,
+            "correct_at_two_px": 11241,
+            "returned": 19400,
+            "scorable": 18254
+          },
+          "results_sha256": "05ac514879d0a8a4f9443d557e53910d473124ba27b268498bbcd2cf24aa9dbf"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 47,
+            "strict_poses": 17,
+            "estimated_poses": 48,
+            "correct_at_two_px": 11437,
+            "returned": 19867,
+            "scorable": 18626
+          },
+          "results_sha256": "d63bebd58b52b24a47c9a62791c9a8b96c84d631c8bbe5cc9dac2c559bde3300"
+        }
+      ],
+      "paired_selected_minus_frozen": {
+        "difference_pp": 0.0,
+        "descriptive_component_bootstrap_95_pp": [
+          0.0,
+          0.0
+        ],
+        "resamples": 256,
+        "groups": 4,
+        "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+      },
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "no_pose": 1
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "no_pose": 0
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "no_pose": 14
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "no_pose": 0
+        }
+      },
+      "checkpoint_sha256": "bd45b56617cfc17cb66adc5bb8f46af270b9556a59ad1e0dcd55ec47513b5425",
+      "selected_rows_sha256": "08e3a564a3f441419037d13b7f71b87cfd6465580531a3fc58f46b835cbbd769",
+      "final_rows_sha256": "d63bebd58b52b24a47c9a62791c9a8b96c84d631c8bbe5cc9dac2c559bde3300",
+      "fitting_seconds": 1232.3808731378813
+    },
+    {
+      "seed": 20261103,
+      "selected_step": 0,
+      "selected": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "no_pose": 15
+      },
+      "final": {
+        "cases": 72,
+        "correct": 49,
+        "strict": 18,
+        "wrong": 1,
+        "no_pose": 22
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "7ca334509daa0d8cd296588d19404c7cb69758a866a303a5c93a4f5dc2fa6f86"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 15,
+            "estimated_poses": 46,
+            "correct_at_two_px": 10643,
+            "returned": 19260,
+            "scorable": 18100
+          },
+          "results_sha256": "66975bbe5ac8948fbedce8ddd8fce0fe5a5eb9e72a8947c985b89aa9057736fb"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 41,
+            "strict_poses": 18,
+            "estimated_poses": 43,
+            "correct_at_two_px": 10252,
+            "returned": 19316,
+            "scorable": 18135
+          },
+          "results_sha256": "2960c3a5a93bb32d19b944537b2b6b1c4552b4975459c62fc3de0a404626411f"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 18,
+            "estimated_poses": 46,
+            "correct_at_two_px": 10937,
+            "returned": 19402,
+            "scorable": 18228
+          },
+          "results_sha256": "d9e086cf03bb2f3619cbe7a0033c2f169012d879be9b70ae57b632fe2ca13396"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 49,
+            "strict_poses": 18,
+            "estimated_poses": 50,
+            "correct_at_two_px": 11990,
+            "returned": 19816,
+            "scorable": 18709
+          },
+          "results_sha256": "8ec1396a651949ce53f4eccd5a3deef571677aeec52ad39cd8497faf7771363e"
+        }
+      ],
+      "paired_selected_minus_frozen": {
+        "difference_pp": 0.0,
+        "descriptive_component_bootstrap_95_pp": [
+          0.0,
+          0.0
+        ],
+        "resamples": 256,
+        "groups": 4,
+        "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+      },
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "no_pose": 1
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "no_pose": 0
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "no_pose": 14
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "no_pose": 0
+        }
+      },
+      "checkpoint_sha256": "2855594fc7c11de07063bd363f207266e1dab8831bd0d305b0088aec5aa9c281",
+      "selected_rows_sha256": "7ca334509daa0d8cd296588d19404c7cb69758a866a303a5c93a4f5dc2fa6f86",
+      "final_rows_sha256": "8ec1396a651949ce53f4eccd5a3deef571677aeec52ad39cd8497faf7771363e",
+      "fitting_seconds": 1039.916293705639
+    }
+  ],
+  "matched_old_loss_primary_final": {
+    "cases": 72,
+    "correct": 53,
+    "strict": 16,
+    "wrong": 3,
+    "no_pose": 16
+  },
+  "matched_new_loss_primary_final": {
+    "cases": 72,
+    "correct": 47,
+    "strict": 17,
+    "wrong": 2,
+    "no_pose": 23
+  },
+  "matched_primary_2000_sampler_and_augmentation_records_equal": true,
+  "any_trained_checkpoint_selected": false,
+  "model_upgrade_adopted": false,
+  "accepted_pose_targets_proven": false,
+  "fresh_final_gate_passed": false,
+  "independent_saved_rows_replayed": 1080,
+  "independently_retrained_pilot_steps": 100,
+  "independently_retrained_full_cohort": false,
+  "actual_selected_model_controls": 3,
+  "actual_primary_forward_cases": 72,
+  "actual_primary_forward_exact": true,
+  "source_sha256": "a77acf009eeafba6bb24c03553c4df2416da68424dddd66364cdfb7d1dfe6028",
+  "protocol_sha256": "45b7fb76d083194cbed9bc622fe42ec60405485f3688a4fc164285aefa90bbf9",
+  "summary_sha256": "7e5a14b81466fb286f9866f58b533c817948b3669b8a2a90c79edcc88b802878",
+  "audit_sha256": "eb20384b30ae5a182e3c74d298c5b48e38bad957373e75755c03b87c4237da7b",
+  "selected_controls_sha256": "adea048d290237f27e7c118c931f0c5cbe4b77013ccf8587b8f5c47ebb3e2225",
+  "limits": [
+    "72dependent pairs/eightgeometries/fourexposedterrain components; all model selection reuses them.",
+    "Selected initialization is a negative finding, not a newly trained superior model.",
+    "Raw wrong poses are not calibrated accepted errors; nonoverlap and1%risk targets remain unverified.",
+    "Toy objective guarantees and independent numerical replay do not establish actual localization benefit.",
+    "Fitting seconds are not isolated inference latency or a fair comparison to larger models.",
+    "Original fresh-data shortfall, remaining author profiles, transfer, uncertainty, paper and compact-v3interface remain incomplete."
+  ]
+}
