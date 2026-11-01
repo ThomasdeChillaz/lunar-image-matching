@@ -1,3 +1,13 @@
+## M37 — Correct celestial lighting before model fitting
+
+24development meshes acquired; v35render stopped/preserved before any model
+inference after96/144solar settings failed a necessary lunar geometry screen.
+New fixed body-latitude/hour-angle contract is independent of model results.
+144actual Blender lamp controls and295tests/four skips/fresh100row smoke pass.
+Original render allowance and absolute deadline remain. Corrected render,
+72geometry audit and gated v38train-only100update/exact replay are next. No
+model gain, fresh-final or SOTA result; full objective remains active.
+
 ## M35 — Expanded development data/software freeze prepared
 
 16training/eightselection original supports only;576renders and exact

@@ -1,5 +1,23 @@
 # Status
 
+## Solar correction before expanded-data fitting — 1 November 2026
+
+All 24 development terrains/meshes were acquired. The first render was stopped
+and preserved after a necessary celestial-geometry check found 96/144 old Sun
+settings outside a generous lunar envelope. No matching/fitting outcomes were
+used. The fixed solar-body latitude/hour-angle amendment keeps source regions,
+cameras, case-index pairs and metrics unchanged. Actual Blender lamp controls
+pass all 144 configurations. 295 tests/four optional skips and fresh 100-row
+smoke pass. The original six-hour render budget/absolute deadline is retained.
+[Evidence and gated commands](NORTH_SOLAR_AMENDMENT_V37.md).
+
+Next publicly verify and launch the corrected v37 render/audit, then prepare
+v38 data and a train-only 100-update cost pilot with exact independent replay.
+The v38 programs are PREPARED; no new fitting or new model accuracy is measured.
+Keep four calibration/twelve final supports untouched. Historical v35 output
+is stress data, not the primary lunar lighting study; do not restart it. Full
+research targets remain active and unmet. No paid compute, human review or email.
+
 ## Expanded development generation prepared — 1 November 2026
 
 Only the original16training/eightselection terrain supports are allowed by the
