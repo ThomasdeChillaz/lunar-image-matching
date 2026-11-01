@@ -10,7 +10,8 @@ This is an engineering correction; the learned native-refinement seeds give
 These are dependent, exposed development pairs from eight geometries/four
 terrain components. The descriptive gain intervals include zero. **Raw pose
 recovery is not calibrated acceptance, fresh validation or SOTA.** Full uniform
-positive training remains active. Native LoMa-R/RoMa-v2 common comparisons
+positive training completed with47/45/47 across the selected model’s seeds; it
+still trails the stronger geometry control. Native LoMa-R/RoMa-v2 common comparisons
 are complete:42/72 and53/72 raw correct respectively, versus54 for the surface
 control. This does not establish a reliable advantage over RoMa-v2. See the
 [surface-normalization report](reports/SURFACE_WARP_V11.md),

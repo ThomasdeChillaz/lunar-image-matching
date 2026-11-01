@@ -7,8 +7,12 @@ runs, with no consistent learned gain (selected seeds45/42/42 versus45 frozen).
 Deterministic reference-surface normalization gives54/72 and the fixed SIFT
 fallback57/72 with two wrong raw poses. Its intervals include zero and it is
 not calibrated acceptance or new learning. Use this stronger simple control
-for future learning claims. Full v8 uniform-positive fitting/repeats remain
-live; never mutate its pinned sources. Native LoMa-R/RoMa-v2 common comparisons now complete and replay all72
+for future learning claims. Full v8 uniform-positive fitting/repeats completed: selected seeds47/45/47;
+all five runs/10000 steps pass exact replay and actual model controls. No local
+training job is live. The frozen source cohort remains preserved. Same-worker
+surface/RoMa CPU run41262874858 is live; poll its real job handle before any
+latency claim. Geometry-normalized supervision is the next learning hypothesis.
+Native LoMa-R/RoMa-v2 common comparisons now complete and replay all72
 assigned cases and paired controls:42/53 correct,28/19 wrong respectively.
 Original compact45 is20.6x/16.8x faster in paired CPU jobs. The surface54 method
 has no same-worker latency result yet; the new bounded workflow is prepared.

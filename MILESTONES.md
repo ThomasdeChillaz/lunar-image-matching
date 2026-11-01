@@ -1,5 +1,31 @@
 # Milestones
 
+## Uniform native training complete — 1 November 2026
+
+The full v8 cohort completed10000 optimizer steps/five runs and passes exact
+360-result/234-label/uniform-projection/checkpoint/sampler/selection replay.
+All five selected models pass actual quarter-turn and blank controls. The
+selected pair-refinement seeds give47/72,45/72,47/72, versus45/42/42 in v7 and45
+for the frozen native control. The encoder-only primary gives48 but is not
+substituted for the predefined bank-selected configuration. The no-match head
+again selects initialization after trained checkpoints reject everything.
+
+Uniform positive coverage and exact-query centering both change. Their modest
+gains over the previous trained configuration do not establish a reliable or
+large gain over the frozen model, and remain below the stronger deterministic
+surface pipeline54/72 (57 with SIFT). The original research targets remain
+unmet. No fresh final, calibrated1% error/nonoverlap or orbital accuracy claim.
+See reports/UNIFORM_NATIVE_V8.md. Both completed native cohorts and every failed
+checkpoint are packaged separately. No local fitting process remains live.
+
+The bounded direct surface/RoMa CPU comparison is live in run41262874858,
+using two threads on the standard public ARM worker. It tests surface accuracy
+on all72 and paired latency on the existing fixed16-case bank. Do not borrow
+the old compact speedup for the new surface method. The next learned hypothesis
+is geometry-normalized supervision against the stronger deterministic control.
+Earlier entries below are historical snapshots.
+
+
 ## Native LoMa-R / RoMa-v2 common comparisons complete — 1 November 2026
 
 Both fixed36+36 native comparisons now pass all72 cases and paired controls:
