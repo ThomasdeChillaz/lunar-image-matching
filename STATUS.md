@@ -1,5 +1,38 @@
 # Status
 
+## Coupled-assignment fitting live; amended MOONSt3R complete — 1 November 2026
+
+The publicly frozen new objective passed its actual100-update train-only pilot
+in16.90seconds. Independent retraining exactly reproduces model, optimizer,
+RNG, losses and gradients; eight float64 NumPy scalar checks pass. This is a
+reproducibility gate, not a pose gain. The **6,000-update, three-seed study is
+RUNNING** from public freeze `4978ed2b564049a57ee97edb85d202afbb6b9302`.
+All72 exposed model-selection cases and initialization remain eligible; all
+three seeds will be retained. One two-thread science job, shared six-hour cap.
+Inspect `runs/localization-v27-mutual-pipeline-state.json` and
+`runs/localization-v27-mutual_cohort.log`; do not restart or mutate frozen code.
+Initial54/72 remains ahead of the first seed's500/1000-update45/72 checkpoints.
+This is interim evidence, not a completed negative or positive cohort result.
+
+The explicit public single-case recovery contract completed in42.48seconds.
+The **amended MOONSt3R comparison is complete and independently replayed72/72:
+28 correct raw poses,21 strict,44 wrong**. All71 original rows are byte-identical.
+The original clock-interrupted four-calendar-hour run remains incomplete; this
+separate600-second resource amendment does not reset or complete that protocol.
+Exact training overlap is unknown. [Consolidated native results and limits](reports/native_pose_comparison_v29.md)
+compare SIFT-first+surface57/72, frozen-surface54, RoMa-v2 fast/common53,
+LoMa-R42 and MatchAnything39. MOON's21strict exceeds frozen-surface16; these
+profiles do not establish general precision, speed or SOTA dominance. Raw
+wrong proposals are not calibrated accepted errors.
+
+249tests/four optional skips and fresh100-row smoke replay pass. The complete
+v18 negative study's fresh public checkout replay also passes, including actual
+six selected controls and exact72-case neural forward. Tagged capsule assets
+remain pending. No source/test changes were made to live fitting. Remaining
+fresh-data, calibration/nonoverlap, author-profile, transfer, uncertainty,
+paper and compact-v3 requirements are still unmet. No paid compute, human
+review, automatic email or research-goal completion. Earlier entries are history.
+
 ## New coupled-assignment study prepared; calendar interruption preserved — 1 November 2026
 
 A small algebra fixture using the full v18 loss shows an objective decrease

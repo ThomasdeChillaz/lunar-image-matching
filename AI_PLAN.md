@@ -8,47 +8,35 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current new hypothesis is PREPARED, not fitted: dual-softmax reachable-window
-mass couples row/column competition while leaving architecture/inference,
-thresholds, geometry, margins and anchors unchanged. The actual v18 loss can
-prefer a toy score change that reduces mutual proposals2→1; the added loss
-penalizes it. This does not prove the lunar failure's cause. See
-MUTUAL_ASSIGNMENT_V23.md, train_mutual_pilot_v23.py and train_mutual_cohort_v24.py.
-100-update train-only pilot+independent exact replay must pass before6000full
-updates/three seeds; all72exposed cases, initialization eligible.81,696total
-parameters. No source was fitted yet.249tests/four skips and fresh100-row smoke
-pass, including actual new-loss gradient/protection/resumption integration.
-The full public source must be byte-verified before any fitting.
+Current two-thread study is LIVE: train_mutual_cohort_v24.py, parent52307,
+child52459, pipeline state runs/localization-v27-mutual-pipeline-state.json,
+root runs/localization-v24-mutual-development. Public freeze
+4978ed2b564049a57ee97edb85d202afbb6b9302. Do not restart or alter its pinned
+sources. Three predefined seeds ×2000 updates, initialization eligible,72
+exposed selection cases, shared6h cap. Actual100-update new-loss pilot passed
+in16.90s with exact optimizer/model/RNG/gradient replay and eight independent
+NumPy scalar checks. No pose gain yet; first seed500/1000 checkpoints45/72
+versus54/72 initialization. All three outcomes must be retained. Full saved
+cohort audit and actual selected controls/exact72forward are queued serially.
 
-Current v18 fitting is TERMINAL12,000updates, all selected initialization54/72.
-Six actual selected controls/exact72-case forward and a CLEAN public-checkout
-replay now pass:2160rows,144nativeMatchAnythingrows and metadata proof. No
-learned v18/scale upgrade is adopted. Capsules are packaged, not newly released.
-Do not restart/alter any old fitting source or consumed data. Scale bank all
-12/16, strict5/4/4, all48rows replay; no fullscale expansion.
+MOONSt3R original71-case calendar-expired run remains TERMINAL INCOMPLETE.
+A separately public600s fixed-case amendment completed the single missing case
+in42.48s, preserving71rows byte-identically. Amended72 independently replay:
+28correct raw,21strict,44wrong. Original calendar protocol was not completed
+or reset. Exact pretraining overlap unknown. See reports/native_pose_comparison_v29.md;
+stronger simple pipeline remains57/72, RoMa-v2 fast/common53, frozen-surface54.
+Profiles/adaptation differ; no globalSOTA, paired MOON speed or calibrated
+accepted-risk claim. Dual-softmax is standard machinery, not a new operator.
 
-The original MOONSt3R baseline is TERMINAL INCOMPLETE71/72 after a host clock/
-suspension divergence. Calendar age41891s exceeded original14400s, though
-completed-case inference total3239s. It was stopped using its own timeout;
-original source/protocol/cases remain unchanged and no summary exists. Do not
-resume/reset this expired run. The separate600-calendar-second recovery
-contract fixes only its one missing case and all71existing hashes before
-inference. See MOONST3R_RECOVERY_V28.md and
-reports/moonst3r_recovery_contract_v28.json. Publish/verify code+contract first;
-run recover_native_moonst3r_v28.py into a NEW amended directory, then audit.
-Label any full result amended two-phase, never completed original protocol.
-This resource amendment stays inside unchanged user72CPUwall-hour allowance.
-Actual pretrained gate passed (3973matches,median0knownshiftpx), but no completed
-lunar accuracy claim. No matching configuration or correctness-based row choice
-is allowed in recovery. Model training overlap remains unknown.
-
-All old queues50522/50750/51689 are TERMINAL;51689 ends ready_for_public_source_freeze.
-No duplicate science job. First publish the new tested sources/contract, then
-run bounded recovery+audit, then new100-update pilot+exact replay, and only if
-gates/cost pass start the complete three-seed6000-update study. One two-thread
-science CPU job at a time. CRESENT is metadata candidate only; fresh-data gate
-remains failed. Full fresh final/acceptance/nonoverlap/transfer/remaining modern
-profiles/uncertainty/paper/compact-v3 CLI requirements remain unmet. No email.
+v18 fitting TERMINAL12000updates/no adopted gain; all selected54/72 at step0.
+Clean exact public-checkout replay now PASSED2160rows,6actual controls/exact72
+forward,144MatchAnythingrows and CRESENTmetadata. Tagged assets still pending.
+Scale bank also negative12/16 allprofiles; do not expand or rerun old cohorts.
+One scientific CPU job at a time; lightweight saved-only reporting/publication
+may proceed during training.249tests/four skips and fresh100row smoke pass.
+Fresh final data/calibration/nonoverlap/authorprofiles/transfer/uncertainty/paper/
+compact-v3 CLI remain unmet; CRESENT metadata is not a fresh-depth gate. No
+email. Goal active. Do not equate a completed software check with the research target.
 
 ## Historical checkpoints (retained; current state above takes precedence)
 
