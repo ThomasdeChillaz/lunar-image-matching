@@ -1,5 +1,12 @@
 # Status
 
+Current transport update: original v32four-pilot acquisition FAILED before any
+window returned; no renderer/fitting started. Full-stream raw download stopped
+partial159,383,552bytes because observed cost exceeded its600second allowance;
+preserved. Same-source v33exact-range cache covers only100pilot tiles (~54MB).
+Publish/verify source before decoding; original renderer and oracle thresholds
+unchanged. See NORTH_TRANSPORT_RECOVERY_V33.md. Do not restart old attempts.
+
 ## Coupled-assignment cohort complete; next-data controls running — 1 November 2026
 
 All6,000updates and three predefined seeds completed. Every run selects

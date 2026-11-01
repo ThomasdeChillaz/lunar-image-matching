@@ -1,3 +1,10 @@
+## M33 — Same-source pilot transport recovery prepared
+
+Original remote BigTIFF extraction failed; full-stream attempt interrupted and
+preserved159MBpartial. New bounded strict-range cache covers identical four
+pilot supports (100tiles/54MB), no reserve access. Six transport tests pass;
+actual replacement cache/decoding/render/oracle not run. No new fitting/gain.
+
 ## M32 — Complete coupled-assignment negative cohort / data software recovery
 
 Executed6,000updates, three seeds all selected initialization54/72; endpoints

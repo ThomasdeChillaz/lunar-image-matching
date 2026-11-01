@@ -2,6 +2,13 @@
 
 ## Objective
 
+Current transport update: original v32four-pilot acquisition FAILED before any
+window returned; no renderer/fitting started. Full-stream raw download stopped
+partial159,383,552bytes because observed cost exceeded its600second allowance;
+preserved. Same-source v33exact-range cache covers only100pilot tiles (~54MB).
+Publish/verify source before decoding; original renderer and oracle thresholds
+unchanged. See NORTH_TRANSPORT_RECOVERY_V33.md. Do not restart old attempts.
+
 Current update: all6,000 coupled-assignment updates/audit/actual selected controls
 are TERMINAL complete; selected54/54/54, endpoints47/47/49. No adopted gain.
 Original v30 exact replay failed on7floating-point values (max4.66e-10m);
