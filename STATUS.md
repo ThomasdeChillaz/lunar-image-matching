@@ -1,5 +1,33 @@
 # Status
 
+## Training continues; additional terrain-reference check reveals uncertainty — 1 November 2026
+
+The first coupled-assignment seed finished2000updates: checkpoints54/45/45/49/47
+correct raw poses, so selection retains initialization54/72. The second seed
+remains live; its500/1000 checkpoints44/42 are below initialization54. The third
+seed and full independent cohort/actual selected controls remain queued. These
+are partial development outcomes, not a completed all-seed result. All fitting
+source bytes still match public freeze4978ed2. Do not restart or edit them.
+
+An official2.12GB northern LOLA512ppd height tile is completely acquired and
+locally hashed; source size/ETag match the fixed range query. No publisher
+checksum is claimed. Three official labels/eight actual samples pass an
+independent byte/unit audit and11focused no-neural controls. A predeclared
+40crater/360rim-position check on already exposed CRESENTmetadata frame0 finds
+311.68m median absolute radius discrepancy, maximum1125.09m. An explicitly
+exploratory half-axis alternative gives84.79m median but1259.45m maximum; it
+does not settle semantics or renderer registration. Original annotations and
+all outcomes remain preserved. [Data/reference findings](LOLA_REFERENCE_V30.md).
+No source optical pixels or matching inference, camera-depth map or fresh-test
+gate is created. CRESENT cannot silently replace missing fresh LunarGeo groups.
+
+The full repository neural regression, fresh100row smoke and actual map-probe
+replay are queued behind the verified live fitting parent52307; waiting
+process53249 must not start until all fitting/audit/control phases exit cleanly.
+Metadata controls run without neural inference. No learned upgrade, calibrated
+acceptance, fresh-test or SOTA claim; the full research goal remains active.
+Earlier milestones are history.
+
 ## Coupled-assignment fitting live; amended MOONSt3R complete — 1 November 2026
 
 The publicly frozen new objective passed its actual100-update train-only pilot

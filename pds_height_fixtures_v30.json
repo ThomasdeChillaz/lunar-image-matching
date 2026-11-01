@@ -1,0 +1,129 @@
+{
+  "scope": "Reference-map byte/unit query only, not optical registration, ray-depth, fresh evaluation or a comparison of crater-rim versus floor height.",
+  "protocol": {
+    "scope": "Reference-map byte/unit query only, not optical registration, ray-depth, fresh evaluation or a comparison of crater-rim versus floor height.",
+    "source_annotation": "data/cresent-metadata-v21/controls/ground_truth_selenographic_crater_coordinates-0.txt",
+    "source_annotation_sha256": "c35e511da01d6b8810f9e945a6ffcedbd8b673b22d169f94e4505a8a66c646bd",
+    "metadata_control_frame": 0,
+    "chosen_crater": "first published world-annotation row, fixed before map bytes",
+    "crater_id": "01-1-001250",
+    "latitude": 69.9336,
+    "longitude": 31.547400000000003,
+    "products": [
+      "LDEM_64.LBL",
+      "LDEM_512_45N_90N_000_090.LBL"
+    ],
+    "request": "Two adjacent signed16-bit samples on two neighboring rows per product;8decoded map samples total. No source optical pixels.",
+    "recorded_utc": "2026-11-01T19:40:34.559758+00:00",
+    "renderer_registration_gate": false
+  },
+  "official_labels": {
+    "LDEM_64.LBL": {
+      "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.LBL",
+      "label": "PDS_VERSION_ID            = \"PDS3\" \r\n/*** GENERAL DATA DESCRIPTION PARAMETERS ***/\r\nPRODUCT_VERSION_ID        = \"V3.1\"\r\nDATA_SET_ID               = \"LRO-L-LOLA-4-GDR-V1.0\"\r\nPRODUCT_ID                = \"LDEM_64\"\r\nINSTRUMENT_HOST_NAME      = \"LUNAR RECONNAISSANCE ORBITER\"\r\nINSTRUMENT_NAME           = \"LUNAR ORBITER LASER ALTIMETER\"\r\nINSTRUMENT_ID             = \"LOLA\"\r\nMISSION_PHASE_NAME        = {\"COMMISSIONING\",\"NOMINAL MISSION\",\"SCIENCE\r\n                            MISSION\",\"EXTENDED SCIENCE MISSION\",\r\n                            \"SECOND EXTENDED SCIENCE MISSION\",\"THIRD\r\n                            EXTENDED SCIENCE MISSION\"} \r\nTARGET_NAME               = MOON\r\nSTART_TIME                = 2009-07-13T17:33:17\r\nSTOP_TIME                 = 2016-11-29T05:48:19\r\nPRODUCT_CREATION_TIME     = 2019-03-15\r\nPRODUCER_ID               = LRO_LOLA_TEAM\r\nPRODUCER_FULL_NAME        = \"DAVID E. SMITH\"\r\nPRODUCER_INSTITUTION_NAME = \"GODDARD SPACE FLIGHT CENTER\"\r\nDESCRIPTION               = \"This data product is a shape map (radius)\r\n   of the Moon at a resolution of 473.802 m/pix by 473.802 m/pix,\r\n   based on altimetry data acquired through mission phase LRO_ES_52\r\n   by the LOLA instrument. All LOLA data used for the generation of \r\n   this GDR products are geolocated using precision orbits based on a \r\n   revised lunar gravity field GRGM 900C[LEMOINEETAL2014].  The previous\r\n   version of this product was generated with data through LRO_ES_21.\r\n   An additional 505,763,339 data points have been added.\r\n\r\n   The gridfiles were produced in 45 degree latitude bands, and there \r\n   may be edge artifacts at this boundary.  Unlike previous versions of\r\n   these products, the Generic Mapping Tools (GMT) program 'grdblend' was \r\n   not used.  At higher resolutions, the GMT5.4.2 program 'surface' was\r\n   used to compensate for incomplete coverage. Tension was set to 0.5\r\n   and Anisotropy to 0.5 to minimize latitude distortion. The map is in\r\n   the form of a binary table with one row for each 0.015625 degrees of \r\n   latitude, pixel registered.  Map values are relative to a radius of \r\n   1737.4 km.\r\n\r\n   This label describes an IMG file in the form of a binary resampling\r\n   to pixel registration.\r\n\"\r\n\r\nOBJECT                    = UNCOMPRESSED_FILE\r\nFILE_NAME                 = \"LDEM_64.IMG\"\r\nRECORD_TYPE               = FIXED_LENGTH\r\nFILE_RECORDS              = 11520\r\nRECORD_BYTES              = 46080\r\n^IMAGE                    = \"LDEM_64.IMG\"\r\n\r\n\r\n  OBJECT                  = IMAGE\r\n    NAME                  = HEIGHT\r\n    DESCRIPTION           = \"Each sample represents height relative to a\r\n      reference radius (OFFSET) and is generated using geolocated LOLA data\r\n      produced by the LOLA team.\"\r\n    LINES                 = 11520\r\n    LINE_SAMPLES          = 23040\r\n    MAXIMUM               = 21546\r\n    MINIMUM               = -18251\r\n    SAMPLE_TYPE           = LSB_INTEGER\r\n    SAMPLE_BITS           = 16\r\n    UNIT                  = METER\r\n    SCALING_FACTOR        = 0.5\r\n    OFFSET                = 1737400.\r\n\r\n/* NOTE:                                                                   */\r\n/* Conversion from Digital Number to HEIGHT, i.e. elevation in meters, is: */\r\n/* HEIGHT = (DN * SCALING_FACTOR).                                         */\r\n/* The conversion from Digital Number to PLANETARY_RADIUS in meters is:    */\r\n/* PLANETARY_RADIUS = (DN * SCALING_FACTOR) + OFFSET                       */\r\n/* where OFFSET is the radius of a reference sphere.                       */\r\n/* The planetopotential TOPOGRAPHY is PLANETARY_RADIUS - GEOID_RADIUS,     */\r\n/* where GEOID_RADIUS is derived from a gravitational equipotential model. */\r\n/* By convention, the average GEOID_RADIUS at the equator is OFFSET.       */\r\n\r\n  END_OBJECT              = IMAGE\r\nEND_OBJECT                = UNCOMPRESSED_FILE\r\nOBJECT                    = IMAGE_MAP_PROJECTION\r\n ^DATA_SET_MAP_PROJECTION     = \"DSMAP.CAT\"\r\n MAP_PROJECTION_TYPE          = \"SIMPLE CYLINDRICAL\"\r\n MAP_RESOLUTION               = 64 <pix/deg>\r\n A_AXIS_RADIUS                = 1737.4 <km>\r\n B_AXIS_RADIUS                = 1737.4 <km>\r\n C_AXIS_RADIUS                = 1737.4 <km>\r\n FIRST_STANDARD_PARALLEL      = 'N/A'\r\n SECOND_STANDARD_PARALLEL     = 'N/A'\r\n POSITIVE_LONGITUDE_DIRECTION = \"EAST\"\r\n CENTER_LATITUDE              = 0 <deg>\r\n CENTER_LONGITUDE             = 180 <deg>\r\n REFERENCE_LATITUDE           = 'N/A'\r\n REFERENCE_LONGITUDE          = 'N/A'\r\n LINE_FIRST_PIXEL             = 1\r\n LINE_LAST_PIXEL              = 11520\r\n SAMPLE_FIRST_PIXEL           = 1\r\n SAMPLE_LAST_PIXEL            = 23040\r\n MAP_PROJECTION_ROTATION      = 0.0\r\n MAP_SCALE                    = 473.802 <m/pix>\r\n MAXIMUM_LATITUDE             = 90 <deg>\r\n MINIMUM_LATITUDE             = -90 <deg>\r\n WESTERNMOST_LONGITUDE        = 0 <deg>\r\n EASTERNMOST_LONGITUDE        = 360 <deg>\r\n LINE_PROJECTION_OFFSET       = 5759.5 <pix>\r\n SAMPLE_PROJECTION_OFFSET     = 11519.5 <pix>\r\n COORDINATE_SYSTEM_TYPE       = \"BODY-FIXED ROTATING\"\r\n COORDINATE_SYSTEM_NAME       = \"MEAN EARTH/POLAR AXIS OF DE421\"\r\nEND_OBJECT                    = IMAGE_MAP_PROJECTION\r\n\r\nEND\r\n",
+      "label_sha256": "4e7a94c76c716a147b21ccf07669d004246b0d1b017b7d63d50befaa1a34142d",
+      "samples": [
+        {
+          "row": 1283,
+          "column": 2018,
+          "width": 2,
+          "data_base64": "rPav9g==",
+          "planetary_radius_m": [
+            1736206.0,
+            1736207.5
+          ],
+          "trace": {
+            "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+            "start": 59124676,
+            "length": 4,
+            "total_bytes": 530841600,
+            "sha256": "cb2dc403f94e228b06dd9da20fe6d980d9c48cf742153382202a5947f9518efc",
+            "content_range": "bytes 59124676-59124679/530841600",
+            "etag": "\"5c770269-1fa40000\"",
+            "last_modified": "Wed, 27 Feb 2019 21:34:33 GMT",
+            "complete_source_checksum_verified": false
+          }
+        },
+        {
+          "row": 1284,
+          "column": 2018,
+          "width": 2,
+          "data_base64": "o/a59g==",
+          "planetary_radius_m": [
+            1736201.5,
+            1736212.5
+          ],
+          "trace": {
+            "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+            "start": 59170756,
+            "length": 4,
+            "total_bytes": 530841600,
+            "sha256": "065ef074735b2ab993ba07cbed3a3fbf16393458239a7f2f049ef883ea9e4f17",
+            "content_range": "bytes 59170756-59170759/530841600",
+            "etag": "\"5c770269-1fa40000\"",
+            "last_modified": "Wed, 27 Feb 2019 21:34:33 GMT",
+            "complete_source_checksum_verified": false
+          }
+        }
+      ]
+    },
+    "LDEM_512_45N_90N_000_090.LBL": {
+      "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_512_45N_90N_000_090.LBL",
+      "label": "PDS_VERSION_ID            = \"PDS3\"\r\n\r\n/*** GENERAL DATA DESCRIPTION PARAMETERS ***/\r\nPRODUCT_VERSION_ID        = \"V3.0\"\r\nDATA_SET_ID               = \"LRO-L-LOLA-4-GDR-V1.0\"\r\nPRODUCT_ID                = \"LDEM_512_45N_90N_000_090\"\r\nINSTRUMENT_HOST_NAME      = \"LUNAR RECONNAISSANCE ORBITER\"\r\nINSTRUMENT_NAME           = \"LUNAR ORBITER LASER ALTIMETER\"\r\nINSTRUMENT_ID             = \"LOLA\"\r\nMISSION_PHASE_NAME        = {\"COMMISSIONING\",\"NOMINAL MISSION\",\"SCIENCE\r\n                            MISSION\",\"EXTENDED SCIENCE MISSION\",\r\n                            \"SECOND EXTENDED SCIENCE MISSION\",\"THIRD\r\n                            EXTENDED SCIENCE MISSION\"} \r\nTARGET_NAME               = MOON\r\nSTART_TIME                = 2009-07-13T17:33:17\r\nSTOP_TIME                 = 2016-11-29T05:48:19\r\nPRODUCT_CREATION_TIME     = 2017-09-15\r\nPRODUCER_ID               = LRO_LOLA_TEAM\r\nPRODUCER_FULL_NAME        = \"DAVID E. SMITH\"\r\nPRODUCER_INSTITUTION_NAME = \"GODDARD SPACE FLIGHT CENTER\"\r\nDESCRIPTION               = \"This data product is a rectangular \r\n   subsection (tile) of a global shape map (radius) of the Moon \r\n   at a resolution of 512 pix/deg by 512 pix/deg, based on \r\n   based on altimetry data acquired through mission phase LRO_ES_52\r\n   by the LOLA instrument. All LOLA data used for the generation of \r\n   this GDR products are geolocated using precision orbits based on a \r\n   revised lunar gravity field GRGM 900C[LEMOINEETAL2014].  The previous\r\n   version of this product was generated with data through LRO_ES_21.\r\n   An additional 505,763,339 data points have been added.\r\n\r\n   The gridfiles were produced in 45 degree latitude bands, and there \r\n   may be edge artifacts at this boundary.  Unlike previous versions of\r\n   these products, the Generic Mapping Tools (GMT) program 'grdblend' was\r\n   not used.  At higher resolutions, the GMT5.4.2 program 'surface' was\r\n   used to compensate for incomplete coverage. Tension was set to 0.5\r\n   and Anisotropy to 0.5 to minimize latitude distortion. The map is in\r\n   the form of a binary table with one row for each\r\n   0.0019531250 degrees of latitude, pixel registered.  Map values are\r\n   relative to a radius of 1737.4 km.\r\n\r\n   This label describes an IMG file in the form of a binary \r\n   resampling to pixel registration.\r\n\"\r\n\r\nOBJECT                    = UNCOMPRESSED_FILE\r\nFILE_NAME                 = \"LDEM_512_45N_90N_000_090.IMG\"\r\nRECORD_TYPE               = FIXED_LENGTH\r\nFILE_RECORDS              = 23040\r\nRECORD_BYTES              = 92160\r\n^IMAGE                    = \"LDEM_512_45N_90N_000_090.IMG\"\r\n\r\n\r\n  OBJECT                  = IMAGE\r\n    NAME                  = HEIGHT\r\n    DESCRIPTION           = \"Each sample represents height relative to a\r\n      reference radius (OFFSET) and is generated using geolocated LOLA data\r\n      produced by the LOLA team.\"\r\n    LINES                 = 23040\r\n    LINE_SAMPLES          = 46080\r\n    SAMPLE_TYPE           = LSB_INTEGER\r\n    SAMPLE_BITS           = 16\r\n    UNIT                  = METER\r\n    SCALING_FACTOR        = 0.5\r\n    OFFSET                = 1737400.\r\n\r\n/* NOTE:                                                                   */\r\n/* Conversion from Digital Number to HEIGHT, i.e. elevation in meters, is: */\r\n/* HEIGHT = (DN * SCALING_FACTOR).                                         */\r\n/* The conversion from Digital Number to PLANETARY_RADIUS in meters is:    */\r\n/* PLANETARY_RADIUS = (DN * SCALING_FACTOR) + OFFSET                       */\r\n/* where OFFSET is the radius of a reference sphere.                       */\r\n/* The planetopotential TOPOGRAPHY is PLANETARY_RADIUS - GEOID_RADIUS,     */\r\n/* where GEOID_RADIUS is derived from a gravitational equipotential model. */\r\n/* By convention, the average GEOID_RADIUS at the equator is OFFSET.       */\r\n\r\n  END_OBJECT              = IMAGE\r\nEND_OBJECT                = UNCOMPRESSED_FILE\r\n\r\n\r\nOBJECT                    = IMAGE_MAP_PROJECTION\r\n ^DATA_SET_MAP_PROJECTION     = \"DSMAP.CAT\"\r\n MAP_PROJECTION_TYPE          = \"SIMPLE CYLINDRICAL\"\r\n MAP_RESOLUTION               = 512 <pix/deg>\r\n A_AXIS_RADIUS                = 1737.4 <km>\r\n B_AXIS_RADIUS                = 1737.4 <km>\r\n C_AXIS_RADIUS                = 1737.4 <km>\r\n FIRST_STANDARD_PARALLEL      = 'N/A'\r\n SECOND_STANDARD_PARALLEL     = 'N/A'\r\n POSITIVE_LONGITUDE_DIRECTION = \"EAST\"\r\n CENTER_LATITUDE              = 0. <deg>\r\n CENTER_LONGITUDE             = 180. <deg>\r\n REFERENCE_LATITUDE           = 'N/A'\r\n REFERENCE_LONGITUDE          = 'N/A'\r\n LINE_FIRST_PIXEL             = 1\r\n LINE_LAST_PIXEL              = 23040\r\n SAMPLE_FIRST_PIXEL           = 1\r\n SAMPLE_LAST_PIXEL            = 46080\r\n MAP_PROJECTION_ROTATION      = 0.0\r\n MAP_SCALE                    = 0.0592252938 <km/pix>\r\n MAXIMUM_LATITUDE             = 90 <deg>\r\n MINIMUM_LATITUDE             = 45 <deg>\r\n WESTERNMOST_LONGITUDE        = 0 <deg>\r\n EASTERNMOST_LONGITUDE        = 90 <deg>\r\n LINE_PROJECTION_OFFSET       = 46079.5 <pix>\r\n SAMPLE_PROJECTION_OFFSET     = 92159.5 <pix>\r\n COORDINATE_SYSTEM_TYPE       = \"BODY-FIXED ROTATING\"\r\n COORDINATE_SYSTEM_NAME       = \"MEAN EARTH/POLAR AXIS OF DE421\"\r\nEND_OBJECT                    = IMAGE_MAP_PROJECTION\r\n\r\nEND\r\n",
+      "label_sha256": "f179d4e2ad8dc3083448568be520e830bcc948f7b53de865835fd5fd0123a9c6",
+      "samples": [
+        {
+          "row": 10273,
+          "column": 16151,
+          "width": 2,
+          "data_base64": "rvau9g==",
+          "planetary_radius_m": [
+            1736207.0,
+            1736207.0
+          ],
+          "trace": {
+            "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_512_45N_90N_000_090.IMG",
+            "start": 946791982,
+            "length": 4,
+            "total_bytes": 2123366400,
+            "sha256": "ecb5ce519b1dac769557fa881f4ec033d7fce556098906579b2c5506c79e16e1",
+            "content_range": "bytes 946791982-946791985/2123366400",
+            "etag": "\"59a852fb-7e900000\"",
+            "last_modified": "Thu, 31 Aug 2017 18:18:35 GMT",
+            "complete_source_checksum_verified": false
+          }
+        },
+        {
+          "row": 10274,
+          "column": 16151,
+          "width": 2,
+          "data_base64": "rfat9g==",
+          "planetary_radius_m": [
+            1736206.5,
+            1736206.5
+          ],
+          "trace": {
+            "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_512_45N_90N_000_090.IMG",
+            "start": 946884142,
+            "length": 4,
+            "total_bytes": 2123366400,
+            "sha256": "b5114ccbc71da2068ed09d8488b89b1a27d58934c877760ee3c538feae2ce3ad",
+            "content_range": "bytes 946884142-946884145/2123366400",
+            "etag": "\"59a852fb-7e900000\"",
+            "last_modified": "Thu, 31 Aug 2017 18:18:35 GMT",
+            "complete_source_checksum_verified": false
+          }
+        }
+      ]
+    }
+  },
+  "unused_label": {
+    "name": "LDEM_512_00N_45N_000_090.LBL",
+    "label": "PDS_VERSION_ID            = \"PDS3\"\r\n\r\n/*** GENERAL DATA DESCRIPTION PARAMETERS ***/\r\nPRODUCT_VERSION_ID        = \"V3.0\"\r\nDATA_SET_ID               = \"LRO-L-LOLA-4-GDR-V1.0\"\r\nPRODUCT_ID                = \"LDEM_512_00N_45N_000_090\"\r\nINSTRUMENT_HOST_NAME      = \"LUNAR RECONNAISSANCE ORBITER\"\r\nINSTRUMENT_NAME           = \"LUNAR ORBITER LASER ALTIMETER\"\r\nINSTRUMENT_ID             = \"LOLA\"\r\nMISSION_PHASE_NAME        = {\"COMMISSIONING\",\"NOMINAL MISSION\",\"SCIENCE\r\n                            MISSION\",\"EXTENDED SCIENCE MISSION\",\r\n                            \"SECOND EXTENDED SCIENCE MISSION\",\"THIRD\r\n                            EXTENDED SCIENCE MISSION\"} \r\nTARGET_NAME               = MOON\r\nSTART_TIME                = 2009-07-13T17:33:17\r\nSTOP_TIME                 = 2016-11-29T05:48:19\r\nPRODUCT_CREATION_TIME     = 2017-09-15\r\nPRODUCER_ID               = LRO_LOLA_TEAM\r\nPRODUCER_FULL_NAME        = \"DAVID E. SMITH\"\r\nPRODUCER_INSTITUTION_NAME = \"GODDARD SPACE FLIGHT CENTER\"\r\nDESCRIPTION               = \"This data product is a rectangular \r\n   subsection (tile) of a global shape map (radius) of the Moon \r\n   at a resolution of 512 pix/deg by 512 pix/deg, based on \r\n   based on altimetry data acquired through mission phase LRO_ES_52\r\n   by the LOLA instrument. All LOLA data used for the generation of \r\n   this GDR products are geolocated using precision orbits based on a \r\n   revised lunar gravity field GRGM 900C[LEMOINEETAL2014].  The previous\r\n   version of this product was generated with data through LRO_ES_21.\r\n   An additional 505,763,339 data points have been added.\r\n\r\n   The gridfiles were produced in 45 degree latitude bands, and there \r\n   may be edge artifacts at this boundary.  Unlike previous versions of\r\n   these products, the Generic Mapping Tools (GMT) program 'grdblend' was\r\n   not used.  At higher resolutions, the GMT5.4.2 program 'surface' was\r\n   used to compensate for incomplete coverage. Tension was set to 0.5\r\n   and Anisotropy to 0.5 to minimize latitude distortion. The map is in\r\n   the form of a binary table with one row for each\r\n   0.0019531250 degrees of latitude, pixel registered.  Map values are\r\n   relative to a radius of 1737.4 km.\r\n\r\n   This label describes an IMG file in the form of a binary \r\n   resampling to pixel registration.\r\n\"\r\n\r\nOBJECT                    = UNCOMPRESSED_FILE\r\nFILE_NAME                 = \"LDEM_512_00N_45N_000_090.IMG\"\r\nRECORD_TYPE               = FIXED_LENGTH\r\nFILE_RECORDS              = 23040\r\nRECORD_BYTES              = 92160\r\n^IMAGE                    = \"LDEM_512_00N_45N_000_090.IMG\"\r\n\r\n\r\n  OBJECT                  = IMAGE\r\n    NAME                  = HEIGHT\r\n    DESCRIPTION           = \"Each sample represents height relative to a\r\n      reference radius (OFFSET) and is generated using geolocated LOLA data\r\n      produced by the LOLA team.\"\r\n    LINES                 = 23040\r\n    LINE_SAMPLES          = 46080\r\n    SAMPLE_TYPE           = LSB_INTEGER\r\n    SAMPLE_BITS           = 16\r\n    UNIT                  = METER\r\n    SCALING_FACTOR        = 0.5\r\n    OFFSET                = 1737400.\r\n\r\n/* NOTE:                                                                   */\r\n/* Conversion from Digital Number to HEIGHT, i.e. elevation in meters, is: */\r\n/* HEIGHT = (DN * SCALING_FACTOR).                                         */\r\n/* The conversion from Digital Number to PLANETARY_RADIUS in meters is:    */\r\n/* PLANETARY_RADIUS = (DN * SCALING_FACTOR) + OFFSET                       */\r\n/* where OFFSET is the radius of a reference sphere.                       */\r\n/* The planetopotential TOPOGRAPHY is PLANETARY_RADIUS - GEOID_RADIUS,     */\r\n/* where GEOID_RADIUS is derived from a gravitational equipotential model. */\r\n/* By convention, the average GEOID_RADIUS at the equator is OFFSET.       */\r\n\r\n  END_OBJECT              = IMAGE\r\nEND_OBJECT                = UNCOMPRESSED_FILE\r\n\r\n\r\nOBJECT                    = IMAGE_MAP_PROJECTION\r\n ^DATA_SET_MAP_PROJECTION     = \"DSMAP.CAT\"\r\n MAP_PROJECTION_TYPE          = \"SIMPLE CYLINDRICAL\"\r\n MAP_RESOLUTION               = 512 <pix/deg>\r\n A_AXIS_RADIUS                = 1737.4 <km>\r\n B_AXIS_RADIUS                = 1737.4 <km>\r\n C_AXIS_RADIUS                = 1737.4 <km>\r\n FIRST_STANDARD_PARALLEL      = 'N/A'\r\n SECOND_STANDARD_PARALLEL     = 'N/A'\r\n POSITIVE_LONGITUDE_DIRECTION = \"EAST\"\r\n CENTER_LATITUDE              = 0. <deg>\r\n CENTER_LONGITUDE             = 180. <deg>\r\n REFERENCE_LATITUDE           = 'N/A'\r\n REFERENCE_LONGITUDE          = 'N/A'\r\n LINE_FIRST_PIXEL             = 1\r\n LINE_LAST_PIXEL              = 23040\r\n SAMPLE_FIRST_PIXEL           = 1\r\n SAMPLE_LAST_PIXEL            = 46080\r\n MAP_PROJECTION_ROTATION      = 0.0\r\n MAP_SCALE                    = 0.0592252938 <km/pix>\r\n MAXIMUM_LATITUDE             = 45 <deg>\r\n MINIMUM_LATITUDE             = 0 <deg>\r\n WESTERNMOST_LONGITUDE        = 0 <deg>\r\n EASTERNMOST_LONGITUDE        = 90 <deg>\r\n LINE_PROJECTION_OFFSET       = 23039.5 <pix>\r\n SAMPLE_PROJECTION_OFFSET     = 92159.5 <pix>\r\n COORDINATE_SYSTEM_TYPE       = \"BODY-FIXED ROTATING\"\r\n COORDINATE_SYSTEM_NAME       = \"MEAN EARTH/POLAR AXIS OF DE421\"\r\nEND_OBJECT                    = IMAGE_MAP_PROJECTION\r\n\r\nEND\r\n"
+  },
+  "source_optical_pixels_decoded": 0,
+  "decoded_height_map_samples": 8,
+  "full_IMG_checksum_verified": false,
+  "renderer_depth_agreement_verified": false,
+  "serialization_note": "Raw official UTF8 label bytes retained including CRLF; first normalized-newline fixture failed SHA controls and is preserved locally. No map bytes or values changed."
+}

@@ -38,6 +38,16 @@ Fresh final data/calibration/nonoverlap/authorprofiles/transfer/uncertainty/pape
 compact-v3 CLI remain unmet; CRESENT metadata is not a fresh-depth gate. No
 email. Goal active. Do not equate a completed software check with the research target.
 
+Additional data work: LOLA_REFERENCE_V30.md records a completely acquired2.12GB
+northern512ppd map (ignored data/lola-reference-v30),3official labels/8height
+samples and11isolated metadata tests. Same40exposed metadata-control craters
+show311.68m median/1125.09m max nominal-radius discrepancy. Exploratory halfaxes
+84.79m median/1259.45m max do not establish a correction. No reference camera
+depth, optical image inference, renderer agreement or fresh gate. New5metadata
+source bytes are sealed by waiting53249, state runs/localization-v30-data-software-state.json;
+it waits actual parent52307 clean completion, then fullpytest/freshsmoke/mapreplay.
+Do not mutate these queued sources. Do not run another neural job before it.
+
 ## Historical checkpoints (retained; current state above takes precedence)
 
 The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;
