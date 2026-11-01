@@ -1,3 +1,13 @@
+## M32 — Complete coupled-assignment negative cohort / data software recovery
+
+Executed6,000updates, three seeds all selected initialization54/72; endpoints
+47/47/49. All1,080saved rows and6,000draws audit; three actual selected controls
+and exact primary72forward pass. Original byte-exact map replay failed on seven
+floating-point values; preserved alongside separate <=1.87e-9m numeric recovery.
+272tests/four skips and fresh100row smoke pass. Actual renderer and independent triangle/AP3P controls pass;
+no height pixels decoded/new model gain/fresh benchmark. Full research targets
+remain incomplete. Package/public-source replay are pending.
+
 # Milestones
 
 ## Two seeds complete; prospective northern simulation controls prepared — 1 November 2026

@@ -1,5 +1,32 @@
 # Status
 
+## Coupled-assignment cohort complete; next-data controls running — 1 November 2026
+
+All6,000updates and three predefined seeds completed. Every run selects
+initialization54/72correct raw poses; trained endpoints47/47/49. No learned
+upgrade is adopted. The full independent audit replays1,080saved checkpoint
+rows and6,000update records; all three selected models pass actual controls,
+and a fresh primary72case forward exactly reproduces the saved outputs.
+[Complete negative result](reports/mutual_cohort_complete_v24.md).
+
+The repository passes272tests/four optional skips and a fresh100row smoke.
+Original byte-exact map replay failed on seven floating-point values, maximum
+4.66e-10m. The original failure is preserved; a separate numeric recovery check
+passes within eight representable increments at lunar radius (1.87e-9m).
+This does not repair the311.68m terrain-registration discrepancy. All sources
+and both probe outputs remain unchanged. Actual public-source Blender analytic
+controls and independent triangle/common AP3P audit PASSED via the recovered precondition, with unchanged
+renderer sources/tolerances and no northern height decoding. Check
+runs/localization-v32-north-control-recovery-state.json before another science
+job. The original waiting queue failed upstream before rendering.
+
+Next: preserve/publish the negative result and verify exact camera/depth controls,
+then only the four predeclared northern terrain pilots, cost and actual terrain
+oracle gates. More loss sweeps on the same four exposed terrain components are
+not evidence of progress. Original fresh-data, calibrated acceptance, modern
+profiles, transfer, uncertainty, paper and compact-v3 targets remain unmet.
+No paid compute, human review or email. Earlier entries are history.
+
 ## Two seeds complete; prospective northern simulation controls prepared — 1 November 2026
 
 The first two coupled-assignment seeds completed2000updates each, both ending

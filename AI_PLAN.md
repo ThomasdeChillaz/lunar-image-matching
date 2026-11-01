@@ -2,6 +2,17 @@
 
 ## Objective
 
+Current update: all6,000 coupled-assignment updates/audit/actual selected controls
+are TERMINAL complete; selected54/54/54, endpoints47/47/49. No adopted gain.
+Original v30 exact replay failed on7floating-point values (max4.66e-10m);
+separate numeric recovery passes, failure preserved.272tests/four skips and
+fresh100row smoke pass. Actual unchanged-source north analytic renderer
+controls and independent triangle/common AP3P audit PASSED; inspect
+runs/localization-v32-north-control-recovery-state.json and actual process
+before more science. No northern terrain pixels decoded or new training yet.
+Next prioritize actual verified additional3D terrain, not repeating failed loss
+sweeps. The older LIVE entries below are superseded by this update.
+
 Continue improving lunar camera localization under the full user-approved
 research targets. Do not replace the goal with software checks or a small
 exposed-development gain. Fresh final validation, reliable acceptance,
