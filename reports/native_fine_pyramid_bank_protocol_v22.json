@@ -1,0 +1,75 @@
+{
+  "scope": "Exposed model-selection diagnostic, no training, new test, accepted-pose or runtime superiority claim.",
+  "recorded_utc": "2026-11-01T07:21:27.007288+00:00",
+  "source_commit": "fac436adf00c9c46d7f24f40b793154830574f9f",
+  "source_sha256": {
+    "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+    "evaluate_geometry_warp_v11.py": "4c03b185e32d2a95c30b36df3e6753c3646f139a66f700907115007157405d4f",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+    "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+    "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+    "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+    "fine_pyramid_v22.py": "918ddd3c44ef8e30c9b75f5516324a1f29d5324ed356e9e722a4a97ceaac826b",
+    "evaluate_fine_pyramid_v22.py": "8e34b4d58f5758c78e38394e294d967d78001a80b7a9aad67a9da70baca19311",
+    "localization_refiner_v3.py": "da741c1dbb9525f7a9f7e8376ff0c7c71b06acde5495d2a0d53731d07d83e2ed"
+  },
+  "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+  "case_ids": [
+    "nadir/nadir/2515/lights-2-0",
+    "nadir/nadir/2515/lights-2-2",
+    "nadir/nadir/2518/lights-0-0",
+    "nadir/nadir/2518/lights-0-1",
+    "nadir/nadir/2506/lights-2-0",
+    "nadir/nadir/2506/lights-2-2",
+    "oblique/oblique/2994/lights-2-0",
+    "oblique/oblique/2994/lights-2-2",
+    "dynamicgood/dynamic/1458/lights-1-1",
+    "dynamicgood/dynamic/1458/lights-1-2",
+    "dynamicgood/dynamic/1092/lights-1-1",
+    "dynamicgood/dynamic/1092/lights-1-2",
+    "dynamicgood/dynamic/942/lights-2-0",
+    "dynamicgood/dynamic/942/lights-2-2",
+    "dynamicgood/dynamic/1407/lights-0-0",
+    "dynamicgood/dynamic/1407/lights-0-1"
+  ],
+  "profiles": [
+    [
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      4
+    ]
+  ],
+  "fine_encoder_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+  "hypothesis": "At native resolution the frozen25px descriptor field covers4x less terrain than during128px pretraining. Shared1/2/4 scales may recover context without more parameters.",
+  "matching": "Same initial pose and original point list for every profile; same33nativepx candidates, equal-weight cosine scores, peak-only subpixel interpolation, two surface updates.",
+  "support": "Same conservative56nativepx feature support and72px normalized-warp support in every scale profile. Historical v11 original-border results remain separate.",
+  "query_geometry": "Query depth/true pose used only after prediction for scoring; shadow is not occlusion.",
+  "selection": "No per-case truth-based method or checkpoint choice; report every profile.",
+  "input_sha256": {
+    "data/localization-v5-development/c1c8c67a309a9271.npz": "8240a6cc3a0152a5afa4d2a930145c68effdb5686d52e69d889af55e2431e4ba",
+    "data/localization-v5-development/565f9ab836b6755f.npz": "2aacba29076f2ab06610e2ef91784ddcab1b95114ef51354bff298a917f1520f",
+    "data/localization-v5-development/2c35800264a8b7d9.npz": "923bce0ddca39348de028e7887237e888caf9d0e2b7398e4c32b18ece99116f0",
+    "data/localization-v5-development/fe92d4ce634c1945.npz": "74c0e39b765eaaa66580a05caaa1a69c924c3d6ffa7dc1afaffb327023c0dda9",
+    "data/localization-v5-development/c4e83e24dbf8a7e8.npz": "5e6b412f4991bb9d7581ee1b5f7a3153525ab7ac330f5b1719c1d151c5e45d48",
+    "data/localization-v5-development/0123318aeb0ecade.npz": "6814b5384760d1d670ccb5ddcd971ff916702bc1206e68bbbec1baa5bc875026",
+    "data/localization-v5-development/0ba1bbc9b602cfe5.npz": "e4ae23ebb7e3309ec50b4808afb1fc58a50a8599a887e9c1ea74bd2c800914c2",
+    "data/localization-v5-development/6323e54b1609cea2.npz": "77c444ef1539c11adc6dbca2164e53289d6f7f640b3c91af6af291587ef4e7c4"
+  },
+  "cpu_threads": 2,
+  "max_comparison_seconds": 1800,
+  "calibration_or_test_pixels_loaded": 0,
+  "timing": "Cross-case feature caching allowed for a bounded diagnostic. Not an isolated speed benchmark."
+}
