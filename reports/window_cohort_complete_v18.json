@@ -1,0 +1,1580 @@
+{
+  "scope": "Exposed development-only native-window training; no calibrated acceptance, fresh generalization or SOTA claim.",
+  "partial": false,
+  "frozen_surface": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "wrong": 3,
+    "estimated": 57,
+    "returned": 22010,
+    "scorable": 20978,
+    "correct_at_two_px": 14696
+  },
+  "frozen_surface_sift": {
+    "cases": 72,
+    "correct": 57,
+    "strict": 25,
+    "wrong": 2,
+    "estimated": 59,
+    "returned": 28815,
+    "scorable": 28052,
+    "correct_at_two_px": 22147
+  },
+  "winner": "window_only",
+  "runs": [
+    {
+      "variant": "anchored_window",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 266.0697911680327,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 81696,
+      "trainable_parameters": 25152,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "164c6b02584abb320c69765f6fc586c7508c5ded87ad3d2e0e0294e9357ec875"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 16,
+            "estimated_poses": 48,
+            "correct_at_two_px": 11378,
+            "returned": 19079,
+            "scorable": 18010
+          },
+          "results_sha256": "902b993ed2493c04adf3752bc84bb40ad91e168b22bf1879485b1aa505876b96"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 49,
+            "strict_poses": 20,
+            "estimated_poses": 51,
+            "correct_at_two_px": 11880,
+            "returned": 19111,
+            "scorable": 18135
+          },
+          "results_sha256": "5c4ba9fa9d6d51ca66f934f85712345884f064bd4c7acf825f35f04257df17e4"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 50,
+            "strict_poses": 17,
+            "estimated_poses": 50,
+            "correct_at_two_px": 11572,
+            "returned": 18816,
+            "scorable": 17797
+          },
+          "results_sha256": "961dd1947dd612ecc28d0e84287ec942e64d81ea6140f01b02cb5c0dee321a43"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 50,
+            "strict_poses": 13,
+            "estimated_poses": 51,
+            "correct_at_two_px": 11818,
+            "returned": 18992,
+            "scorable": 17997
+          },
+          "results_sha256": "f9cf992a0c276ac2542ffc26bc31248baa2d2bfe8c6e4b54e30e4267d89f0173"
+        }
+      ],
+      "checkpoint_sha256": "78151dd1718d1a9e60e55a0519a4109d434edcaa2b211de12d130bb2c293c676",
+      "selected_rows_sha256": "164c6b02584abb320c69765f6fc586c7508c5ded87ad3d2e0e0294e9357ec875"
+    },
+    {
+      "variant": "coarse_adaptation",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 432.61188272203435,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 81696,
+      "trainable_parameters": 53424,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "5f2bebe06cdeafdf4f1d4b2c05623c267cba55fd8419e27d0a06b39ac27637c7"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 14,
+            "estimated_poses": 48,
+            "correct_at_two_px": 11319,
+            "returned": 18892,
+            "scorable": 17805
+          },
+          "results_sha256": "acefd9d3440e350367d7dca806b1a5681b2968515144bb9fda05a03c4b061fa7"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 15,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11632,
+            "returned": 19137,
+            "scorable": 18075
+          },
+          "results_sha256": "9d3a1cea9c17ff2773f37b6d402b47c45cd6409d88299a90e82f30fd0ec9e1dc"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 17,
+            "estimated_poses": 48,
+            "correct_at_two_px": 11621,
+            "returned": 19362,
+            "scorable": 18185
+          },
+          "results_sha256": "a85f439ef8d88b7cecc1d5d59e9ac400101bfa0c501139a35259b0f9b618572a"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 53,
+            "strict_poses": 16,
+            "estimated_poses": 56,
+            "correct_at_two_px": 12589,
+            "returned": 19160,
+            "scorable": 18189
+          },
+          "results_sha256": "f70e1a643301325f9385b2e8a871c18e1ea4f171e7a5115f3529fda29bc180e6"
+        }
+      ],
+      "checkpoint_sha256": "78151dd1718d1a9e60e55a0519a4109d434edcaa2b211de12d130bb2c293c676",
+      "selected_rows_sha256": "5f2bebe06cdeafdf4f1d4b2c05623c267cba55fd8419e27d0a06b39ac27637c7"
+    },
+    {
+      "variant": "cross_adaptation",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 523.6242566914298,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 82208,
+      "trainable_parameters": 53936,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "c745286ccd98b9e1cc63eca82ee78f1cf69203b7f98a2f044b99299319ce68a2"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 16,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11649,
+            "returned": 18931,
+            "scorable": 17863
+          },
+          "results_sha256": "dbe2dcdd9987d58aae5ebb4573e9ef6bbec65d3e3727b130cd649f308efb1a32"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 48,
+            "strict_poses": 17,
+            "estimated_poses": 50,
+            "correct_at_two_px": 11203,
+            "returned": 18298,
+            "scorable": 17220
+          },
+          "results_sha256": "7de3d16c461de11211bc0b05a27d5d57d6c578489e495b41ea099e99a6f6d7ef"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 43,
+            "strict_poses": 15,
+            "estimated_poses": 47,
+            "correct_at_two_px": 10947,
+            "returned": 19839,
+            "scorable": 18356
+          },
+          "results_sha256": "deeadeb6c00217bba6a10a9c18be77b79f17e59a1908e255f85370da61e15a4d"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 43,
+            "strict_poses": 15,
+            "estimated_poses": 51,
+            "correct_at_two_px": 11117,
+            "returned": 20005,
+            "scorable": 18548
+          },
+          "results_sha256": "b4f0bea87d48aa4175db3a8d4cbfee0c6dbdf58f50496456843c9f7252e9023e"
+        }
+      ],
+      "checkpoint_sha256": "2e8d56bf7e29da9a9ba8294f2f5aa5b4cb0df3c7ad9da0ed4613abff27f23f52",
+      "selected_rows_sha256": "c745286ccd98b9e1cc63eca82ee78f1cf69203b7f98a2f044b99299319ce68a2"
+    },
+    {
+      "variant": "window_only",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 265.5235437299707,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 81696,
+      "trainable_parameters": 25152,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "c7a41f7352d25716c401960d9018fc995f107ba9166f8fc73b8cb306c8cd1529"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 46,
+            "strict_poses": 17,
+            "estimated_poses": 50,
+            "correct_at_two_px": 11254,
+            "returned": 18894,
+            "scorable": 17858
+          },
+          "results_sha256": "5167204ffc8fbccf61acd412dd9bc7ea24b538d78191612cc7cc473ba1a9a3fb"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 49,
+            "strict_poses": 18,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11628,
+            "returned": 19006,
+            "scorable": 17881
+          },
+          "results_sha256": "efc88394ca6d8accf18f4f1852dceed93e1036dcd0fce1a5a1be720120e2902d"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 17,
+            "estimated_poses": 46,
+            "correct_at_two_px": 11173,
+            "returned": 18792,
+            "scorable": 17606
+          },
+          "results_sha256": "ad14b0f8d92bd1206255dad278588fbb60dab4e903595690151759e31da4cc22"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 49,
+            "strict_poses": 14,
+            "estimated_poses": 51,
+            "correct_at_two_px": 11374,
+            "returned": 18661,
+            "scorable": 17654
+          },
+          "results_sha256": "7803c781848e7959637984a10f44c6d577c3834157c990c46545c8a4fed29b2f"
+        }
+      ],
+      "checkpoint_sha256": "78151dd1718d1a9e60e55a0519a4109d434edcaa2b211de12d130bb2c293c676",
+      "selected_rows_sha256": "c7a41f7352d25716c401960d9018fc995f107ba9166f8fc73b8cb306c8cd1529"
+    },
+    {
+      "variant": "window_only",
+      "seed": 20261102,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 287.34169655197184,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 81696,
+      "trainable_parameters": 25152,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "70793760b8416c70f34ed3578b12c8ebef38704c745a014369e93886492f4956"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 47,
+            "strict_poses": 15,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11075,
+            "returned": 18440,
+            "scorable": 17458
+          },
+          "results_sha256": "80d3aa92a6ca2e70ce8578c7276429fc66687e1102f1414e49c7f1ac50ac7f35"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 47,
+            "strict_poses": 16,
+            "estimated_poses": 50,
+            "correct_at_two_px": 11166,
+            "returned": 18200,
+            "scorable": 17240
+          },
+          "results_sha256": "3863ee4d13c9f34b1f1271d624a5427078993b55c762590ef7a7122466ac32cc"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 16,
+            "estimated_poses": 48,
+            "correct_at_two_px": 10822,
+            "returned": 18647,
+            "scorable": 17598
+          },
+          "results_sha256": "6228ae2afe74ab60261ed8a5cef52d6a7ed01faf92425cb6ebce20ad373ee70f"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 43,
+            "strict_poses": 17,
+            "estimated_poses": 43,
+            "correct_at_two_px": 10634,
+            "returned": 19114,
+            "scorable": 17835
+          },
+          "results_sha256": "eb2dfe80705b93d48e7d98ce49fed14f6fee9d527b90a26e7cdcc97cf3d833cb"
+        }
+      ],
+      "checkpoint_sha256": "bd45b56617cfc17cb66adc5bb8f46af270b9556a59ad1e0dcd55ec47513b5425",
+      "selected_rows_sha256": "70793760b8416c70f34ed3578b12c8ebef38704c745a014369e93886492f4956"
+    },
+    {
+      "variant": "window_only",
+      "seed": 20261103,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 291.81215147537296,
+      "raw": {
+        "cases": 72,
+        "correct": 54,
+        "strict": 16,
+        "wrong": 3,
+        "estimated": 57,
+        "returned": 22010,
+        "scorable": 20978,
+        "correct_at_two_px": 14696
+      },
+      "sift_fallback": {
+        "cases": 72,
+        "correct": 57,
+        "strict": 25,
+        "wrong": 2,
+        "estimated": 59,
+        "returned": 28815,
+        "scorable": 28052,
+        "correct_at_two_px": 22147
+      },
+      "total_parameters": 81696,
+      "trainable_parameters": 25152,
+      "raw_gain_pp": 0.0,
+      "raw_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": [],
+      "lost": [],
+      "per_component": {
+        "axial-v5-component-0000": {
+          "cases": 18,
+          "correct": 15,
+          "strict": 4,
+          "wrong": 2,
+          "estimated": 17,
+          "returned": 4749,
+          "scorable": 4663,
+          "correct_at_two_px": 3523
+        },
+        "axial-v5-component-0005": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 3,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 3633,
+          "scorable": 3633,
+          "correct_at_two_px": 3046
+        },
+        "axial-v5-component-0006": {
+          "cases": 36,
+          "correct": 21,
+          "strict": 9,
+          "wrong": 1,
+          "estimated": 22,
+          "returned": 11154,
+          "scorable": 10208,
+          "correct_at_two_px": 6181
+        },
+        "axial-v5-component-0015": {
+          "cases": 9,
+          "correct": 9,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 9,
+          "returned": 2474,
+          "scorable": 2474,
+          "correct_at_two_px": 1946
+        }
+      },
+      "per_lighting_id": {
+        "(0, 0)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2951,
+          "scorable": 2826,
+          "correct_at_two_px": 2688
+        },
+        "(0, 1)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 5,
+          "returned": 2216,
+          "scorable": 2062,
+          "correct_at_two_px": 798
+        },
+        "(0, 2)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2433,
+          "scorable": 2330,
+          "correct_at_two_px": 1704
+        },
+        "(1, 0)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2050,
+          "scorable": 1905,
+          "correct_at_two_px": 683
+        },
+        "(1, 1)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 5,
+          "wrong": 1,
+          "estimated": 8,
+          "returned": 2893,
+          "scorable": 2837,
+          "correct_at_two_px": 2714
+        },
+        "(1, 2)": {
+          "cases": 8,
+          "correct": 5,
+          "strict": 0,
+          "wrong": 1,
+          "estimated": 6,
+          "returned": 2030,
+          "scorable": 1915,
+          "correct_at_two_px": 825
+        },
+        "(2, 0)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 1,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2388,
+          "scorable": 2270,
+          "correct_at_two_px": 1671
+        },
+        "(2, 1)": {
+          "cases": 8,
+          "correct": 6,
+          "strict": 0,
+          "wrong": 0,
+          "estimated": 6,
+          "returned": 2113,
+          "scorable": 2000,
+          "correct_at_two_px": 932
+        },
+        "(2, 2)": {
+          "cases": 8,
+          "correct": 7,
+          "strict": 4,
+          "wrong": 0,
+          "estimated": 7,
+          "returned": 2936,
+          "scorable": 2833,
+          "correct_at_two_px": 2681
+        }
+      },
+      "validation": [
+        {
+          "step": 0,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 54,
+            "strict_poses": 16,
+            "estimated_poses": 57,
+            "correct_at_two_px": 14696,
+            "returned": 22010,
+            "scorable": 20978
+          },
+          "results_sha256": "b4adc470f76f3f7228849aa607754c441e21dc17c244a9b0b95184a9e3dd511c"
+        },
+        {
+          "step": 500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 44,
+            "strict_poses": 17,
+            "estimated_poses": 46,
+            "correct_at_two_px": 11005,
+            "returned": 19187,
+            "scorable": 18133
+          },
+          "results_sha256": "877c320d0eaa7da9ac9e7b6e6b1ed39125c9f630b0dcfff76e2fc8e43c8cf922"
+        },
+        {
+          "step": 1000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 47,
+            "strict_poses": 16,
+            "estimated_poses": 49,
+            "correct_at_two_px": 11188,
+            "returned": 18737,
+            "scorable": 17578
+          },
+          "results_sha256": "04306aa37e28d51e7f6677116c35f78d4eefb6a023d8ef5dfcd10516e63663f2"
+        },
+        {
+          "step": 1500,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 46,
+            "strict_poses": 17,
+            "estimated_poses": 48,
+            "correct_at_two_px": 10957,
+            "returned": 18719,
+            "scorable": 17553
+          },
+          "results_sha256": "0155e1e97d8df23896b35eadc4301b2a755e00188a153133942872a11d6fd0c2"
+        },
+        {
+          "step": 2000,
+          "selection": {
+            "cases": 72,
+            "correct_poses": 45,
+            "strict_poses": 18,
+            "estimated_poses": 46,
+            "correct_at_two_px": 10869,
+            "returned": 19056,
+            "scorable": 17802
+          },
+          "results_sha256": "acbb57374d7beffefecbe0e50bc56bfdb43cd6f907cd0a1239e210d3666ab016"
+        }
+      ],
+      "checkpoint_sha256": "2855594fc7c11de07063bd363f207266e1dab8831bd0d305b0088aec5aa9c281",
+      "selected_rows_sha256": "b4adc470f76f3f7228849aa607754c441e21dc17c244a9b0b95184a9e3dd511c"
+    }
+  ],
+  "source_sha256": "ce1ac01f5cb4e5852daef259184d49c59c460d67565092cde755b7b04e165ade",
+  "audit_sha256": "18aaeff3a79bc1d567b8728515f6f36a646c5c873b1c9ab4980da11e746b591a",
+  "protocol_sha256": "d58fdc7dce8c72a394ae54f814bbb983b88589260f9e54a7557fc04cd97be7cb",
+  "intervals": "Descriptive paired bootstrap across four previously exposed components; checkpoint/configuration selection reuse these cases. Not confirmatory inference.",
+  "limits": [
+    "All72 pairs are dependent views of eight geometries in four exposed components.",
+    "Wrong raw estimates are not calibrated accepted poses;1% error/nonoverlap is not established.",
+    "Frozen native CNN caches accelerate repeated evaluation; fitting seconds are not isolated inference latency.",
+    "Shared renderer/batch/trajectory dependence and failed fresh-final data gate remain.",
+    "Required remaining native baselines, transfer, reliable acceptance and full paper remain incomplete."
+  ]
+}

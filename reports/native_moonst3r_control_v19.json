@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "actual_native_pretrained_forward_attempted": true,
+  "elapsed_seconds": 116.97371412999928,
+  "peak_process_rss_bytes": 6080212992,
+  "source_sha256": "ea82605916e4745875dbe174152fd9b411a6c89a5f9a18397968fa3f2c0d2004",
+  "scope": "Actual known-transform and invalid-input software gate, not lunar accuracy, independent renderer transfer or isolated model latency.",
+  "controls": {
+    "passed": true,
+    "scope": "Actual native512px known-transform and invalid-input software controls.",
+    "matches": 3973,
+    "median_native_error_px": 0.0,
+    "translation_error_m": 6.025120552441461e-09,
+    "rotation_error_deg": 0.0,
+    "warm_match_seconds": 39.623155080975266,
+    "blank_empty": true,
+    "invalid_mask_empty": true,
+    "inliers": 3973,
+    "known_translation_native": [
+      8.0,
+      -4.0
+    ],
+    "image_seed": 20261101
+  },
+  "actual_model_parameters": 688638856,
+  "full_saved_control_sha256": "6c983e8305f5e75e68d7212bdd7d806b3878210a9c892d13d6f09b9e95ae8f16"
+}
