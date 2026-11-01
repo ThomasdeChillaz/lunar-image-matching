@@ -1,0 +1,37 @@
+{
+  "recorded_utc": "2026-11-01T04:55:20.814784+00:00",
+  "source_record": "https://zenodo.org/records/21133765",
+  "source_metadata_sha256": "bc112257b1e10a61c87dcfe5ff5ff296662c05876adaea16e53d2edb17f8ba35",
+  "latest_record": 21133765,
+  "archives": [
+    {
+      "existing_lunargeo_archive": "data/lunargeo/nadir.zip",
+      "stereolunar_name": "nadir.zip",
+      "bytes": 3732503007,
+      "md5": "81a754dfcd59a111f27be23141edf59c",
+      "published_md5": "md5:81a754dfcd59a111f27be23141edf59c",
+      "byte_identity_supported_by_size_and_md5": true
+    },
+    {
+      "existing_lunargeo_archive": "data/lunargeo/oblique.zip",
+      "stereolunar_name": "oblique.zip",
+      "bytes": 4192186371,
+      "md5": "19472755e520bbf5243c4728305c6b32",
+      "published_md5": "md5:19472755e520bbf5243c4728305c6b32",
+      "byte_identity_supported_by_size_and_md5": true
+    },
+    {
+      "existing_lunargeo_archive": "data/lunargeo/dynamicgood.zip",
+      "stereolunar_name": "dynamic.zip",
+      "bytes": 3493396868,
+      "md5": "d9b684622454b101c6b96de7b175dd76",
+      "published_md5": "md5:d9b684622454b101c6b96de7b175dd76",
+      "byte_identity_supported_by_size_and_md5": true
+    }
+  ],
+  "all_same": true,
+  "fresh_groups_established": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "scope": "Byte-level archive identity check, no pixel decoding or new data selection. If all comparisons match, StereoLunar v2 provides the same archives as the consumed LunarGeo SouthPole sample.",
+  "moonst3r_overlap": "The public StereoLunar corpus overlaps exactly with the existing source archives. Specific released-model train/test pair overlap remains unknown until its training split is verified; do not claim zero overlap."
+}

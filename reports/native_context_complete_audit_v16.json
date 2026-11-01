@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "partial": false,
+  "completed_runs": 5,
+  "recorded_updates": 10000,
+  "replayed_pose_rows": 1800,
+  "independently_projected_label_points": 97344,
+  "exact_retrained_steps": 0,
+  "exact_retraining_requested": false,
+  "runs": [
+    {
+      "variant": "cross_context",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 260.64031455284567
+    },
+    {
+      "variant": "pointwise",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 160.73440290195867
+    },
+    {
+      "variant": "pointwise",
+      "seed": 20261102,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 165.10023549417383
+    },
+    {
+      "variant": "pointwise",
+      "seed": 20261103,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 162.57168534878292
+    },
+    {
+      "variant": "self_context",
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 16,
+        "estimated_poses": 57,
+        "correct_at_two_px": 14696,
+        "returned": 22010,
+        "scorable": 20978
+      },
+      "selection_key": [
+        54,
+        14696,
+        0
+      ],
+      "fitting_seconds": 220.92950461435248
+    }
+  ],
+  "source_sha256": "75fb4c2d9d093da2a6aec3447afd5d5554ede62ff2de4cb30489ab21779848c1",
+  "protocol_sha256": "1ba175782b41226055e23f94b86d2fecf653788368ce5c36057c2fbc803f6c78",
+  "scope": "Exposed-development reproducibility audit, not fresh geographic validation or calibrated acceptance. Full retraining only if explicitly recorded."
+}
