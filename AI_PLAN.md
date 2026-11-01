@@ -48,6 +48,16 @@ source bytes are sealed by waiting53249, state runs/localization-v30-data-softwa
 it waits actual parent52307 clean completion, then fullpytest/freshsmoke/mapreplay.
 Do not mutate these queued sources. Do not run another neural job before it.
 
+Prospective next-data work: NORTH_RENDER_STUDY_V31.md, north_render_plan_v31.py
+and reports/north_render_prospective_plan_v31.json define44disjoint fullterrain
+supports before any northern height decode.16train/8select/4cal/12candidatefinal/
+4pilots. Freshness not certified.6isolated analytic tests and independent GDAL
+projection proof pass; official Blender4.5.9checksum/signature/build/APImetadata
+checked. Actual Blender analytic render+independent triangle/commonAP3P oracle
+are prepared, notrun. Publish/byteverify before forward; wait52307and53249clean
+terminal before another renderer/science job. No northern optical/height pixels
+or model inference yet. Original missing12releasedLunarGeogroups remain failed.
+
 ## Historical checkpoints (retained; current state above takes precedence)
 
 The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;

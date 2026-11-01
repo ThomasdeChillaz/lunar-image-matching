@@ -1,5 +1,32 @@
 # Milestones
 
+## Two seeds complete; prospective northern simulation controls prepared — 1 November 2026
+
+The first two coupled-assignment seeds completed2000updates each, both ending
+47/72correct raw poses and retaining initialization54/72. Third seed remains
+live; its500/1000 checkpoints45/41 trail initialization54. The complete6000-
+update result, independent1080rowaudit and actual selected controls remain
+pending. Do not claim an adopted learned improvement or stop/restart this run.
+
+A separate additional northern-terrain study is prospectively specified before
+any source-height decoding:16training,8selection,4calibration,12candidatefinal
+components and4pilot components, with disjoint20.48kmfullterrain supports.
+Historical optical/training overlap still needs audit before calling them fresh.
+Official Blender4.5.9package checksum/signature/build/API and actual COGheader
+are checked; independent GDAL-versus-analytic projection error is2.85e-14degrees.
+Six isolated geometry/triangle tests pass. Actual renderer camera/depth/occlusion
+and independent common-AP3P controls are PREPARED, not run. No new terrain
+pixels, training pairs, renderer forward or final matching result exists.
+See [prospective data/control contract](NORTH_RENDER_STUDY_V31.md). The original
+fresh released-LunarGeo shortfall remains recorded.
+
+Serialize actual renderer controls only after live52307and waiting53249finish
+all phases cleanly; first publicly freeze and byte-verify their source. No
+competing neural or renderer jobs. Data/camera/oracle/cost gates must pass before
+full generation or new fitting. The original fresh-test/acceptance/modern-profile/
+transfer/uncertainty/paper/CLI targets remain active and incomplete. No email.
+Earlier milestones are history.
+
 ## Training continues; additional terrain-reference check reveals uncertainty — 1 November 2026
 
 The first coupled-assignment seed finished2000updates: checkpoints54/45/45/49/47
