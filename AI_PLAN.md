@@ -8,41 +8,49 @@ exposed-development gain. Fresh final validation, reliable acceptance,
 remaining required native baselines, transfer, uncertainty and the paper are
 still required. No global SOTA or orbital-navigation accuracy is established.
 
-Current fitting is TERMINAL and no learned v18 upgrade is adopted. All six
-runs/12,000 updates retain initialization54/72,16strict,three wrong. Complete
-independent audit2,160 saved rows and all12,000 update/sampler records passes;
-actual selected6-model controls and exact primary72-case forward pass. Do not
-restart or modify the frozen76ec8bf fitting source. Full capsule is packaged
-locally; clean public checkout replay/tag/release remain pending.
+Current new hypothesis is PREPARED, not fitted: dual-softmax reachable-window
+mass couples row/column competition while leaving architecture/inference,
+thresholds, geometry, margins and anchors unchanged. The actual v18 loss can
+prefer a toy score change that reduces mutual proposals2→1; the added loss
+penalizes it. This does not prove the lunar failure's cause. See
+MUTUAL_ASSIGNMENT_V23.md, train_mutual_pilot_v23.py and train_mutual_cohort_v24.py.
+100-update train-only pilot+independent exact replay must pass before6000full
+updates/three seeds; all72exposed cases, initialization eligible.81,696total
+parameters. No source was fitted yet.249tests/four skips and fresh100-row smoke
+pass, including actual new-loss gradient/protection/resumption integration.
+The full public source must be byte-verified before any fitting.
 
-The next shared-scale bank also TERMINAL negative: native/half/quarter all
-12/16, strict5/4/4, one wrong each, same successful cases; no fullscale run.
-All48 native/pose rows replay and actual selected-checkpoint controls pass.
-The historical original-border control gives six strict poses. Sourcefac436a
-was public/byte-verified before inference. No scale upgrade is adopted.
+Current v18 fitting is TERMINAL12,000updates, all selected initialization54/72.
+Six actual selected controls/exact72-case forward and a CLEAN public-checkout
+replay now pass:2160rows,144nativeMatchAnythingrows and metadata proof. No
+learned v18/scale upgrade is adopted. Capsules are packaged, not newly released.
+Do not restart/alter any old fitting source or consumed data. Scale bank all
+12/16, strict5/4/4, all48rows replay; no fullscale expansion.
 
-The only live science job is queue50522, sourcefac436adf00c9c46d7f24f40b793154830574f9f:
-full72-case MOONSt3R common-native lunar baseline, followed by saved-metric
-replay. Its actual pretrained gate PASSED with3973 known-translation matches,
-median0nativepx, blank/invalid empty, strict1017safe-tensor loading. Lunar
-performance remains unmeasured until all72 outcomes and replay finish. Shared
-four-hour comparison deadline; do not restart live work or duplicate a CPU job.
-Inspect runs/localization-v26-next-native-state.json and live cases/log. Both
-old queues49119/50049 are TERMINAL complete.238tests/four skips and fresh100-row
-smoke replay pass. PublicM25code/report commit6561f02b verified38changed files
-and all788public tree files. No worktree overwrite during metadata fast-forward.
+The original MOONSt3R baseline is TERMINAL INCOMPLETE71/72 after a host clock/
+suspension divergence. Calendar age41891s exceeded original14400s, though
+completed-case inference total3239s. It was stopped using its own timeout;
+original source/protocol/cases remain unchanged and no summary exists. Do not
+resume/reset this expired run. The separate600-calendar-second recovery
+contract fixes only its one missing case and all71existing hashes before
+inference. See MOONST3R_RECOVERY_V28.md and
+reports/moonst3r_recovery_contract_v28.json. Publish/verify code+contract first;
+run recover_native_moonst3r_v28.py into a NEW amended directory, then audit.
+Label any full result amended two-phase, never completed original protocol.
+This resource amendment stays inside unchanged user72CPUwall-hour allowance.
+Actual pretrained gate passed (3973matches,median0knownshiftpx), but no completed
+lunar accuracy claim. No matching configuration or correctness-based row choice
+is allowed in recovery. Model training overlap remains unknown.
 
-CRESENT metadata is a candidate additional source only: zero decoded raster
-pixels/matcher inferences, original broad annotation failure retained, narrower
-resolved-conic check6,940ellipses passes. Optional7MB metadata capsule is local,
-CC BY-NC4data/MITowncode; no images/external weights. It does not repair the
-original LunarGeo fresh-depth/data gate or create a final test. See
-CRESENT_CAMERA_METADATA_V21.md. Preserve all metadata-source hashes.
+All old queues50522/50750/51689 are TERMINAL;51689 ends ready_for_public_source_freeze.
+No duplicate science job. First publish the new tested sources/contract, then
+run bounded recovery+audit, then new100-update pilot+exact replay, and only if
+gates/cost pass start the complete three-seed6000-update study. One two-thread
+science CPU job at a time. CRESENT is metadata candidate only; fresh-data gate
+remains failed. Full fresh final/acceptance/nonoverlap/transfer/remaining modern
+profiles/uncertainty/paper/compact-v3 CLI requirements remain unmet. No email.
 
-After the required baseline, use the accumulated negative studies to diagnose
-inference/objective compatibility and training information before another
-bounded fitting pilot. Do not repeat failed cohorts or claim descriptor-point
-improvements are localization gains. Full original research targets remain.
+## Historical checkpoints (retained; current state above takes precedence)
 
 The v16 cohort is TERMINAL10,000 updates, all selected54/72 at initialization;
 final primaries47/43/39. Do not restart or change its pinnedM20 sources. Complete

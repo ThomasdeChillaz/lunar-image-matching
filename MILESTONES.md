@@ -1,5 +1,46 @@
 # Milestones
 
+## New coupled-assignment study prepared; calendar interruption preserved — 1 November 2026
+
+A small algebra fixture using the full v18 loss shows an objective decrease
+0.09809→0.09448 while mutual proposals fall2→1. The new coupled positive mass
+penalizes that fixture (0.55291→1.02631). This is a counterexample to a guarantee,
+not evidence that this caused the actual lunar regressions. No new fitting or
+pose improvement is measured. See [hypothesis and complete prepared commands](MUTUAL_ASSIGNMENT_V23.md).
+
+Prepared: a train-only100-update cost/exact-replay pilot, then a gated three-
+seed6,000-update cohort with unchanged native inference,81,696 total parameters,
+all72 exposed selection cases and initialization eligible. Full software gates
+pass: **249 tests/four skips**, including actual new-objective gradient/protected-
+weight/exact-resume integration; a fresh100-row smoke independently replays.
+Fresh seeded weights match the previously actually controlled graph exactly.
+Publish/byte-verify all source before pilot fitting; independent100-update
+retraining/new-scalar audit is required before the full cohort. Neither software
+checks nor the toy fixture establish a localization gain.
+
+The original MOONSt3R run was stopped incomplete at **71/72** after observed
+calendar/monotonic clock divergence. Calendar elapsed41,891s exceeded its14,400s
+contract; completed-case inference totalled3,239s. Preserve its original data,
+protocol and timeout. The exact cause of the divergence is not proven. A
+[separate publicly frozen600-second recovery contract](MOONST3R_RECOVERY_V28.md)
+permits only the single missing case with identical source/weights/inputs and
+copies the original71rows byte-identically. It stays within the unchanged
+72CPUwall-hour project allowance. This is an amended two-phase comparison,
+not a reset or completed original four-calendar-hour study. Supplemental
+inference has not run yet and no completed baseline accuracy is claimed.
+
+The complete v18 negative capsule now passes a fresh public checkout/install:
+all2,160 saved checkpoint rows, six actual selected-model controls, exact72-
+case primary forward,144 saved MatchAnything rows and separate CRESENT metadata
+replay. Tagged assets/public download verification remain pending. The CRESENT
+reference-depth/freshness gates remain false; zero new source raster pixels.
+
+No current science job is active; prior fitting/comparison/replay queues are
+terminal. Source publication, bounded recovery and the new pilot are next.
+Full fresh final data, calibrated acceptance/nonoverlap, remaining comparisons,
+transfer, uncertainty, paper and compact-v3 interface remain incomplete. No
+paid compute, human review, email or goal completion. Earlier entries are history.
+
 ## Selected-checkpoint replay complete; scale bank negative — 1 November 2026
 
 All six selected v18 checkpoints pass actual transform/blank/invalid controls.
