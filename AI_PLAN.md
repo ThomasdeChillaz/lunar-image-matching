@@ -2,6 +2,17 @@
 
 ## Objective
 
+## Expanded development generation prepared — 1 November 2026
+
+Only the original16training/eightselection terrain supports are allowed by the
+new v35cache/acquirer.576renders and243,360exact fractional-grid labels are
+prepared, not generated. Actual pinned Blender BVHlabels match independent
+analytic triangles in both directions/allfourrotations.288tests/four optional
+skips and fresh100row smoke pass. Publish and byte-verify before new height
+reads. Keep calibration/final/pilots out; use explicit rawZ/axial/ray fields.
+See [generation/training handoff](NORTH_DEVELOPMENT_DATA_V35.md). No new fitting
+or model gain is measured. Original full research targets remain active.
+
 ## Verified northern data pilots; no learned upgrade — 1 November 2026
 
 All96pilot images rendered in425.32s; independent exact-correspondence recovery

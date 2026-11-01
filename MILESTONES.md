@@ -1,3 +1,11 @@
+## M35 — Expanded development data/software freeze prepared
+
+16training/eightselection original supports only;576renders and exact
+fractional-grid forward/reverse visibility banks prepared. Actual Blender BVH
+controls8/8match independent triangles,288tests/four skips/fresh100row smoke
+pass. Public source verification required before decoding. Full72geometry
+oracle and actual generation remain pending; no new fitting/model result.
+
 ## M34 — Actual terrain and depth-semantics controls complete
 
 96renders/four excluded pilot components in425.32s. Original audit failed on
