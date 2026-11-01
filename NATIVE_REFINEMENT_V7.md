@@ -1,5 +1,35 @@
 # Native correspondence precision experiment (development only)
 
+## Completed native study and stronger engineering controls
+
+The complete v7 cohort gives45/42/42 across the selected pair-refinement seeds
+versus45/72 frozen. All10000 optimizer steps,360 candidate rows, sampling/RNG,
+source/checkpoint and234 supervision cases pass replay; every selected model
+passes analytic actual-inference controls. See reports/NATIVE_TRAINING_V7.md.
+The100-step47/72 pilot is not substituted for this negative result.
+
+An affine viewpoint correction gives49/72, but retains only53/72 with the same
+SIFT-first fallback and adds wrong proposals. A subsequent explicit3D surface
+normalization control gives54/72 (three wrong), or57/72 with SIFT (two wrong).
+Both use the frozen28,272-parameter model. Strict fallback poses27→25 and the
+four-component descriptive gain intervals include zero. These are engineering
+controls, not learned novelty, calibrated acceptance or a new final test.
+No query depth or true pose is provided to their inference interfaces.
+All geometry/native-error/common-estimator replays and actual model controls pass.
+
+```bash
+python verify_native_training_v7.py --run runs/localization-v7-native-development --output runs/new-native-audit.json
+python evaluate_geometry_warp_v11.py --full --output runs/new-surface-control
+python verify_geometry_warp_v11.py --run runs/new-surface-control --output runs/new-surface-audit.json
+```
+
+The full v8 coverage experiment is still running and remains a distinct
+controlled data ablation. Native modern jobs each stopped after64/72; partial
+artifacts are verified without claiming completion. Exact36+36 assembly and
+all earlier research targets remain outstanding. Earlier sections retain the
+historical protocol and execution snapshots.
+
+
 The corrected coarse-learning study did not establish a consistent pose gain. The next hypothesis targets the precision bottleneck directly: train the native-resolution local encoder and pair-conditioned scoring, keeping coarse proposals, four-orientation search, reference geometry and pose fitting fixed.
 
 ## Software and current pilot evidence

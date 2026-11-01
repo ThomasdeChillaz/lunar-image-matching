@@ -1,5 +1,68 @@
 # Milestones
 
+## Native LoMa-R / RoMa-v2 common comparisons complete — 1 November 2026
+
+Both fixed36+36 native comparisons now pass all72 cases and paired controls:
+LoMa-R42/72 (28 wrong raw proposals), RoMa-v2 fast/common51253/72 (19 wrong).
+The original compact control is45/72, with median paired CPU speedups20.6× and
+16.8× respectively. These speedups apply to the old compact pipeline, not the
+new surface control. Native surface normalization is54/72 (three wrong), or
+57/72 with SIFT (two wrong); a reliable advantage over RoMa-v2 is unestablished.
+The surface-minus-RoMa terrain interval includes zero. Only four exposed
+terrain components are available; generic modern weights and lunar-trained
+small weights are not a matched adaptation comparison.
+
+See reports/NATIVE_MODERN_V10.md. Exact source, weights, native pixel controls,
+full72 denominators and all288 assigned output records replay. All original
+partial/duplicate attempts are retained with verified ZIP hashes. Original
+jobs stopped64/72, but both declared tail workers completed36/36. No cherry-
+picking is used in the principal assignment. Author-precise native settings,
+EfficientLoFTR/MOONSt3R native runs, calibrated acceptance, fresh final and
+transfer targets remain missing. A direct same-worker surface/RoMa timing and
+full-score workflow is prepared; no surface speedup is yet claimed.
+
+Full v8 coverage-training winner repeats remain live. The completed v7 model
+study and geometry corrections are frozen development evidence, not the full
+goal. The native capsule preserves all completed cohorts and every failure.
+Earlier entries below are historical snapshots.
+
+
+## Completed native study and 3D normalization control — 1 November 2026
+
+All10000 v7 optimizer steps and five runs are complete. Independent replay
+passes360 candidate rows,234 supervised cases, optimizer/sampling/source and
+seed checks. Actual selected-model quarter-turn/blank controls pass for all
+five models. The selected pair-refinement seeds give45/72,42/72,42/72 versus
+frozen45/72: no consistent learned advantage. See reports/NATIVE_TRAINING_V7.md.
+
+The deterministic affine correction gives49/72 versus45, but the same
+SIFT-first fallback remains53/72 and wrong poses increase6→9. It does not
+replace the default or establish a gain over the stronger simple pipeline.
+
+Explicit reference-surface normalization gives54/72 raw correct poses versus45,
+with wrong poses12→3 and strict poses17→16. The same SIFT-first fallback gives
+57/72 with two wrong proposals, versus53/72 with six wrong. The terrain-bootstrap
+intervals include zero. This is a frozen28,272-parameter engineering correction,
+not a newly learned contribution, calibrated acceptance or final validation.
+Query depth and true query pose enter scoring only. Source/input/checkpoint,
+analytic controls, native metrics and pose-estimator replay pass. See
+reports/SURFACE_WARP_V11.md. The stronger simple control must be included in
+future learning claims. Do not equate raw57/72 with70% reliable acceptance.
+
+Full v8 uniform-positive training remains live. Completed primary encoder/pair
+readouts48/72 and47/72 are preliminary; the failed no-match head again collapses.
+The predefined winner repeats remain required. No calibration/test pixels.
+
+The original LoMa-R/RoMa-v2 jobs each timed out after64/72 cases. Both verified
+ZIP hashes and all256 partial output rows/control metrics replay successfully;
+they remain incomplete comparisons. The predeclared last36-case workers are
+live. Preserve duplicates and use the fixed36+36 combiner once all assigned
+cases exist. No modern ranking, fresh-final, transfer,1% error or SOTA target
+is achieved. No paid compute, human review or automatic outreach.
+
+Earlier entries below are historical execution snapshots.
+
+
 ## Native training continuation — 1 November 2026
 
 The v7 three primary runs are complete: encoder44/72, pair refinement45/72,

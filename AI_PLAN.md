@@ -2,12 +2,19 @@
 
 ## Objective
 
-Current execution: v7 final seed and full v8 uniform-positive cohort are live.
-Native LoMa-R/RoMa-v2 fixed-range jobs are live. Source pins and all run IDs are
-in reports/native_execution_continuation_v9.json. Complete both training audits
-and all assigned native cases before reporting a completed comparison. The
-new rejection diagnostic shows no useful discrimination on either sampled
-train or selection proposals; preserve that failure.
+Current execution: v7 completed and independently replayed all10000 steps/five
+runs, with no consistent learned gain (selected seeds45/42/42 versus45 frozen).
+Deterministic reference-surface normalization gives54/72 and the fixed SIFT
+fallback57/72 with two wrong raw poses. Its intervals include zero and it is
+not calibrated acceptance or new learning. Use this stronger simple control
+for future learning claims. Full v8 uniform-positive fitting/repeats remain
+live; never mutate its pinned sources. Native LoMa-R/RoMa-v2 common comparisons now complete and replay all72
+assigned cases and paired controls:42/53 correct,28/19 wrong respectively.
+Original compact45 is20.6x/16.8x faster in paired CPU jobs. The surface54 method
+has no same-worker latency result yet; the new bounded workflow is prepared.
+Native author-precise settings and EfficientLoFTR/MOONSt3R remain incomplete.
+Fresh final, reliable acceptance, transfer, uncertainty and paper targets remain
+unmet. Preserve all failed heads, seeds and sources.
 
 The active user goal is to keep testing hypotheses and improving until the
 original target results and/or defensible state-of-the-art results are verified.

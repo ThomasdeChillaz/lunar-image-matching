@@ -1,12 +1,22 @@
 # Compact lunar image matching
 
-**Active native-pose training:** the v7 primary learned pair-refinement model
-recovers45/72 development poses; its second seed recovers42/72, versus45/72
-frozen. The third seed and the full v8 uniform-positive coverage ablation are
-running. The failed no-match head rejects all sampled proposals and does not
-rank valid matches usefully. **A consistent learned gain or SOTA result has not
-been established.** See [the native protocol](NATIVE_REFINEMENT_V7.md) and
-[execution checkpoint](reports/native_execution_continuation_v9.json).
+**Current development finding:** using the reference terrain's3D shape improves
+the frozen small matcher from45 to54 correct raw poses out of72. The same
+SIFT-first fallback improves53→57, with wrong proposals6→2. Stricter poses
+decrease27→25 for that fallback, so the gain is not uniform precision dominance.
+This is an engineering correction; the learned native-refinement seeds give
+45/42/42 versus45 frozen. A consistent learned gain is not established.
+
+These are dependent, exposed development pairs from eight geometries/four
+terrain components. The descriptive gain intervals include zero. **Raw pose
+recovery is not calibrated acceptance, fresh validation or SOTA.** Full uniform
+positive training remains active. Native LoMa-R/RoMa-v2 common comparisons
+are complete:42/72 and53/72 raw correct respectively, versus54 for the surface
+control. This does not establish a reliable advantage over RoMa-v2. See the
+[surface-normalization report](reports/SURFACE_WARP_V11.md),
+[completed learned study](reports/NATIVE_TRAINING_V7.md), and
+[native protocol](NATIVE_REFINEMENT_V7.md), and
+[completed modern comparison](reports/NATIVE_MODERN_V10.md).
 
 Modern native-image comparisons and local-window diagnostics are separate
 from the historical128px registration study below. All current pose readouts
