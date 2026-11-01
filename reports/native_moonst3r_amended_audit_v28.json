@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "records": 72,
+  "eligible_pairs": 72,
+  "native_metric_and_common_pose_replay": true,
+  "actual_pretrained_control_replayed": true,
+  "exact_training_overlap_known": false,
+  "source_sha256": "3ad95e443304a8041e6914068d23e3e027d8e423a76413554c4a4b921e7f870e",
+  "summary_sha256": "35040b60bde094c8874c9883037cf72cab2b3c242a64884c472e0f0bf59a7696",
+  "scope": "Explicit amended two-phase development comparison. All72 metrics/common poses replay; original calendar-expired run remains incomplete. No fresh test, paired latency or SOTA claim.",
+  "base_auditor_source_sha256": "053211feadf9835b8eadd3a12021672c0330c3b47407d3d42a6db861cd1afea1",
+  "original_calendar_protocol_completed": false,
+  "amended_complete_cases": 72,
+  "original_cases_preserved": 71,
+  "supplemental_cases": 1,
+  "recovery_contract_sha256": "67adb92404a9c70885b3966221b78c4da83064a20a5655492e0d3f3f58f6e7da",
+  "core_audit_sha256": "e17f9852a77c1984387dc833523092ceb92b18d02482df69b9e63fe9dbedd14a"
+}
