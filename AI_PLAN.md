@@ -2,6 +2,12 @@
 
 ## Objective
 
+Current next execution: v13 geometry-normalized-supervision cohort. Preserve
+its pinned source and historical v7/v8/v11 results. Require exact v11 initial
+pose-status equivalence before fitting; use all72 exposed selection cases.
+Training-only normalization uses true query pose; inference never does.
+See SURFACE_LEARNING_V13.md. No new learned outcome yet at this snapshot.
+
 Current execution: v7 completed and independently replayed all10000 steps/five
 runs, with no consistent learned gain (selected seeds45/42/42 versus45 frozen).
 Deterministic reference-surface normalization gives54/72 and the fixed SIFT

@@ -1,5 +1,24 @@
 # Milestones
 
+## Geometry-normalized supervision prepared — 1 November 2026
+
+New v13 ablations compare raw3D encoder supervision, normalized encoder
+supervision and normalized pair refinement, with identical common training
+support:10340 visible integer-reference points from18 geometries/12 training
+components. Fractional crop jitter preserves subpixel labels. Query truth is
+training/scoring only; inference retains estimated query pose/reference depth.
+Each primary run has2000 updates; the predefined winner receives two repeat
+seeds. All72 exposed selection pairs select checkpoints for this new cohort.
+
+The initial gate must reproduce every v11 primary/strict status before fitting.
+A feature-batch shape error was caught before fitting; the failed preparation
+is retained with zero optimizer steps and covered by an actual-forward
+regression test.193 tests/four optional skips and a fresh100-row software smoke
+pass after correction. No new learned result is available at this snapshot.
+Sources/protocol are pinned; no calibration/test pixels, fresh final, paid
+compute, human review or automatic email. See SURFACE_LEARNING_V13.md. The
+full research goal remains active and unmet. Earlier entries are history.
+
 ## Surface CPU validation complete — 1 November 2026
 
 The direct same-worker run41262874858 completed and independently replays all

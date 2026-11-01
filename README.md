@@ -1,5 +1,7 @@
 # Compact lunar image matching
 
+Next development study: [geometry-normalized supervision](SURFACE_LEARNING_V13.md), with matched raw/normalized training points and a frozen54/72 surface baseline. Training results remain pending; no fresh-test or SOTA claim.
+
 **Current development finding:** using the reference terrain's3D shape improves
 the frozen small matcher from45 to54 correct raw poses out of72. The same
 SIFT-first fallback improves53→57, with wrong proposals6→2. Stricter poses
