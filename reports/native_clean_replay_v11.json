@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "Independent fresh-public-checkout installation, source/checkpoint/sampling/native-score/pose replay and actual-model software controls; not fresh geographic validation.",
+  "checkout_commit": "e72ddf5669df3ef170ab7bd133f3a2fca435ce69",
+  "capsule_sha256": "4f443863234d61af003ada869d9d623a05ff446b3980c8b62a7d4a5eb830cc73",
+  "installed_verified_members": 379,
+  "replays": {
+    "runs/replayed-native-v7-clean.json": "c5a7dd62eb7f15b3a85e74ed11a03fd6b92388e6a0586e99b27e11d17f08a73d",
+    "runs/replayed-surface-v11-clean.json": "43ad7f07403c40692a4d0ff370780940000ffc67bcd9700fc80e9a9148acde63",
+    "runs/replayed-native-loma-clean.json": "3688c4dda8f46cdc82ab5f256a21381be0c04c90fac8053c582c99568730572a",
+    "runs/replayed-native-romav2-clean.json": "cf43174cb9252e5de959e7a2827cb178520cde7edb8285e411888225d4dbbaed",
+    "runs/replayed-native-model-controls-clean.json": "410bae50a6dbb2f7cd55b8c6d6ce82564eb7a677642fe0efd054b6ab503f3126"
+  },
+  "trained_native_runs": 5,
+  "optimizer_steps": 10000,
+  "supervision_cases": 234,
+  "native_candidate_rows": 360,
+  "surface_cases": 72,
+  "assigned_modern_and_paired_control_rows": 288,
+  "actual_selected_model_controls": 5,
+  "full_goal_achieved": false
+}
