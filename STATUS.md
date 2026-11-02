@@ -1,5 +1,34 @@
 # Status
 
+## Three-technique research implementation started — 3 November 2026
+
+The accepted next study implements joint matching/pose/Sun inference, a compact
+lighting-response descriptor and active patch selection as one matcher, with
+all eight module ablations. All three will be developed and evaluated even if
+an earlier method is negative. These are candidate contributions, not proven
+novelty, completed implementations or measured gains. The research contract is
+in SOLAR_MATCHING_RESEARCH.md. No paid compute, human annotation or email.
+
+The previous attention control completed 2,000 updates and independent replay
+of all 576 saved metrics and 2,000 sampler records. Selected update 1,500 gives
+15/96 correct raw poses, four strict poses, 16 wrong positive poses and 6/96 raw
+nonoverlap proposals. It ties the best earlier coarse-control seed's coverage;
+there is no demonstrated substantial model advance and no model is promoted.
+All calibration/final terrain remains untouched.
+
+The prepared missing-camera completion has passed 491 repository tests, four
+optional skips and a fresh 100-row procedural smoke. Before rendering, publish
+and byte-verify its four sources, contract and checks. Copy all 40 complete
+pairs/480 images unchanged and render only eight missing pairs/96 new images.
+The original 1,800-second deadline remains failed. Old per-image render timings
+are unknown; no zero timings or 576-new-image speed claim. Completion/audit/cache
+caps are 900/1,200/300 seconds and jobs run serially with two CPU threads.
+
+Evidence: reports/north_context_completed_results_v61.json,
+reports/north_context_study_audit_v61.json and
+reports/north_camera_completion_software_v62.json. Completion and independent
+geometry/solar support remain unmeasured. Broader targets stay ACTIVE.
+
 ## Cross-image attention study running — 2 November 2026, 21:35 UTC
 
 The new attention model completed its 100-update training-only pilot in 44.10

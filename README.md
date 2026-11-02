@@ -1,5 +1,13 @@
 # Compact lunar image matching
 
+**Current research — 3 November 2026:** implementing a shared-Sun geometric matcher,
+learned lighting-response descriptors and active patch search, with independent
+ablations. No new technique has measured performance yet. The completed attention
+control gives 15/96 correct raw poses and is not promoted. See [current status](STATUS.md)
+and the [accepted research contract](SOLAR_MATCHING_RESEARCH.md). Older snapshots below
+are preserved history. Calibration/final terrain stays untouched.
+
+
 **Current training — 2 November 2026:** a compact cross-image attention model
 (82,208 parameters) passed its 100-update pilot and exact training replay.
 The 2,000-update development study is running; no accuracy gain is established.

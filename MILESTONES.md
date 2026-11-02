@@ -1231,3 +1231,11 @@ Integrated48pair/576image pilot with separate camera intrinsics, oblique stress,
 Prepared100update pilot/exact optimizer replay and single-seed2000update study with full576case saved-metric replay.482tests/four optional skips and fresh100row procedural smoke passed. Publish/byte-verify before training; no neural training/inference or improvement claimed yet. M59original30minute rendering attempt failed at40complete pairs/490PNGs;26raw occluded labels remain unaudited. Partial attempt and deadlines preserved; no camera data enter fitting.
 
 M61 update: 100-update training pilot completed; independent full optimizer/loss/gradient/RNG replay and matched original sampling passed. The source-frozen 2,000-update development study is running. No new accuracy result, model promotion or final evaluation.
+
+## M62 — preserve completed controls and complete camera geometry
+
+Attention study complete: 15/96 raw correct,16wrong,6/96nonoverlap;576metrics/2000samplers replayed. No promotion. Missing-only camera completion software491tests/four optional skips and fresh smoke passed; source publication/byte verification and actual900second rendering plus1200second independent audit remain pending.
+
+## M63–M69 — accepted solar research program
+
+Implement and evaluate all three techniques as one matcher: solar visibility/joint correspondence-pose-Sun solver; degree-five spherical-harmonic lighting-response model and pooled control; active native patch selection. New deterministic24-light/four-camera-pair development data, all eight toggles, fixed seeds, common baselines, frozen calibration/final evaluation and research package. No new learned result or completed scientific acceptance claimed.
