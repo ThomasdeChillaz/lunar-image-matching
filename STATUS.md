@@ -1,5 +1,35 @@
 # Status
 
+## Diagnose coarse learning before another cohort — 2 November 2026
+
+The v53 coarse diagnostic and independent replay COMPLETE: 768 proposal
+branches / 192 case summaries. The ground-truth-assisted ideal local
+refinement/rejection control recovers **54/96 frozen** and **49/96 trained
+seed1 endpoint** poses. These are oracle diagnostics, NOT usable matcher
+accuracy or a strict mathematical bound. No reachable proposal exists in
+28 frozen cases and 31 endpoint cases. Under light pair1–5, both ideal
+controls recover only8/24; same-light controls recover18/24. The current
+local33px strategy therefore needs better coarse proposals as well as better
+local refinement. These endpoint comparisons do not evaluate the selected
+step1500 checkpoint and do not establish a causal architectural effect.
+
+The next v54 experiment is a TRAIN-ONLY optimization diagnostic: four fixed
+examples (identity, physical relighting, viewpoint, both), each100updates
+from identical original initialization using the original objective and
+optimizer. This is400logical updates total, not a new adopted candidate.
+No appearance augmentation; no holdout, calibration, final or transfer
+inference. Record per-part gradients, parameter changes, full score matrices
+and20checkpoint snapshots. A separate NumPy objective and actual snapshot
+forward replay are prepared. Seventeen focused controls pass. Current full software checks PASSED
+404 tests/four optional skips and a fresh100-row procedural smoke.
+Public source freeze and actual fitting remain pending.
+Fixed-example improvement cannot establish generalization or localization gains.
+
+Completed cohort evidence remains14/96,15/96,15/96 correct raw selected poses,
+versus13/96frozen; this is far below the research targets. Original fitting
+deadline staysFAILED; the v52 evaluation-only amendment remains separately
+complete and audited. Preserve all original files and the4cal/12final reserve.
+
 ## Completed three-seed evaluation; coarse failure diagnosis next — 2 November 2026
 
 The separate v52 completion finished in 319.68 seconds with ZERO additional
