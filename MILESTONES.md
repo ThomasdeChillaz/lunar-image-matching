@@ -1225,3 +1225,7 @@ M58 completed as a negative bounded study: both4000updates total and1152saved me
 ## M59 — stronger camera/visibility pilot
 
 Integrated48pair/576image pilot with separate camera intrinsics, oblique stress, explicit first-hit occlusion/uncertainty and independent geometry/visibility/pose audit.468tests/four optional skips and fresh smoke pass. Publish/byte-verify source before actual rendering. True occlusion support and95%oracle geometry remain unmeasured; no model improvement claimed.
+
+## M61 — nearly matched-capacity cross-image context control
+
+Prepared100update pilot/exact optimizer replay and single-seed2000update study with full576case saved-metric replay.482tests/four optional skips and fresh100row procedural smoke passed. Publish/byte-verify before training; no neural training/inference or improvement claimed yet. M59original30minute rendering attempt failed at40complete pairs/490PNGs;26raw occluded labels remain unaudited. Partial attempt and deadlines preserved; no camera data enter fitting.

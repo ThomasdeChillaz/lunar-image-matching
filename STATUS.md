@@ -1,5 +1,50 @@
 # Status
 
+## Cross-image attention training prepared; camera render timed out — 2 November 2026
+
+The next controlled test replaces the pointwise coarse-context blocks with the
+existing two-block self/cross-attention architecture. Total capacity is82,208
+parameters (53,936trainable), only512more than the pointwise control. This is an
+existing architectural control, not a novel method. Original coarse/fine
+initialization, sixteen training/eight selection groups, all six lights,
+negative sampling, reachable-window loss and AdamW rates remain unchanged.
+The native fine encoder stays frozen. No new model has been trained yet.
+
+Publish and byte-verify source before the100update training-only pilot. Require
+actual known-transform/blank controls and exact optimizer/loss/gradient/RNG
+retraining. Four fixed native training cases measure inference cost. Only if
+the measured factor-two cost estimate fits its three-hour fixed allowance,
+run one2000update seed20261101 with five complete96positive-case evaluations
+and96selected nonoverlap cases. Select by correct poses,2px correspondence
+count, then earlier checkpoint; initialization remains eligible. Independently
+replay all576saved native metric rows and2000sampler records afterward.
+No model is automatically promoted, and cached timings are not fair speed claims.
+
+All482repository tests/four optional skips and a fresh100-row procedural smoke
+passed. The prepared commands are train_north_context_v61.py,
+verify_north_context_v61.py, train_north_context_study_v61.py and
+verify_north_context_study_v61.py. Pilot/replay/study caps are900/900/10800seconds,
+serial execution with two CPU threads. No paid compute or human review.
+
+The separate v59camera render reached its ORIGINAL1800second deadline and failed:
+40completed pairs,490saved PNGs (including partial pair images),26RAW occluded
+sample labels. These are NOT independently verified occlusion results, a complete
+dataset, or training inputs. All partial files are hashed/preserved; there was
+no clock extension/restart. Completing missing cases needs a separately declared
+amendment. The four reused pilot terrains are not new independent geography.
+
+The current accepted evidence remains weak: selected fine variants14/96 raw
+poses, no gain over the same-seed pointwise control, and no model adoption.
+The new attention study still uses only three historical relative-camera
+geometries. Random-camera diagnostics must test any apparent gain before
+claiming generalization. Zero sampled in-frame occlusions in the original
+training bank remain a known limitation. Four calibration/twelve final groups
+stay untouched; the70%/10pp/1% targets and SOTA remain unachieved. Goal ACTIVE.
+
+Evidence: reports/north_context_preparation_v61.json,
+reports/north_context_software_v61.json,
+reports/north_camera_partial_attempt_v59.json.
+
 ## Fine control completed; stronger camera-data pilot prepared — 2 November 2026
 
 Both2000update native fine studies COMPLETED and passed independent replay:
