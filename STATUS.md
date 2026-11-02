@@ -1,5 +1,34 @@
 # Status
 
+## One-factor learning-rate comparison prepared — 2 November 2026
+
+The previous turn made scientific progress: it completed the original cohort's
+missing evaluation, replayed all 1,728 rows, diagnosed coarse reachability, and
+completed/replayed 400 fixed-example updates. It did not produce a strong
+localization model. The full research goal remains active.
+
+The next v55 control compares coarse AdamW rates **1e-4 and 1e-3** against the
+completed v54 **1e-5** control. Keep all four training fixtures, 100 updates each,
+initial weights, context rate1e-4, loss, clipping, augmentation and decoder fixed.
+No architecture or supervision change. The original v54 files stay unchanged.
+Two serial jobs, two threads, each at most900calendar seconds including its
+10-update cost pilot; independent replay follows each. Total800new logical
+updates, zero reserve cases. Both alternatives will be published, including
+failures. These are optimization diagnostics, not model-selection pose results.
+
+The v55 verifier additionally checks the same inputs, initial tensors, step-zero
+scores and first pre-intervention gradients, and verifies that only the coarse
+optimizer rate changed. It reuses the unchanged v54 twenty-checkpoint actual
+forward/decoder replay and independent NumPy objective replay. Ten focused
+controls pass. Full414tests/four optional skips and a fresh100-row procedural
+smoke PASSED. Public source freeze and actual training are still pending.
+
+Proceed only after publishing and byte-verifying the source. If either rate
+improves fitting, test any proposed change on development geometry before a
+larger cohort; fixed-example learning cannot establish generalization.
+All4calibration/12final groups remain untouched. No candidate promotion,
+SOTA, orbital accuracy or1%risk claim; no paid compute, human review or email.
+
 ## Fixed-example learning completed: relighting remains weak — 2 November 2026
 
 The v54 diagnostic COMPLETED all 400 logical training updates in 123.22 seconds.
