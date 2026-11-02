@@ -1,5 +1,58 @@
 # AI coding-agent execution brief
 
+## Fine control completed; stronger camera-data pilot prepared — 2 November 2026
+
+Both2000update native fine studies COMPLETED and passed independent replay:
+1152saved native metric rows,4000sampler/input records and exact100update
+optimizer replay for each pilot. A separate matched audit confirms identical
+initial values,16000physical point samples, reference inputs and final random
+states. Only the declared query resampling and its labels differ.
+
+| Pipeline/checkpoint | Correct raw /96 | Strict | Wrong positive poses | Raw nonoverlap /96 |
+|---|---:|---:|---:|---:|
+|Original frozen surface|13|2|28|11|
+|Earlier coarse adaptation, same seed|14|2|15|4|
+|Aligned fine, selected1500|14|4|26|11|
+|Fractional fine, selected2000|14|3|22|8|
+
+Both fine variants recover the same14positive cases. Neither improves coverage
+over the earlier trained control, and both have worse raw rejection diagnostics.
+The three earlier coarse seeds reach14/15/15correct. No model is promoted.
+No confidence calibration/final inference occurred. The70%/10pp/1% targets,
+modern comparisons, transfer study, paper and release remain incomplete.
+Cached timings varied across jobs and cannot establish an efficiency advantage.
+
+The training-label inventory contains0in-frame nonvisible points among32448
+samples from48geometries/16terrain groups;102samples are outside the field of
+view or behind the camera. Thus these sampled labels cannot teach geometric
+occlusion. Darkness remains distinct from visibility. Counts are not independent
+terrain trials and are not replicated across lighting variants.
+
+The integrated v59 pilot preserves all32planned random-motion/heldout-roll
+camera pairs and adds16oblique stress pairs on the four existing pilot supports.
+Stress queries use65–75degree zenith angles and an explicit10degree field of
+view, with separate source/query camera calibration. This is not new independent
+terrain or a matched roll-only causal ablation. All576planned images use the
+existing physical six-light contract. No camera images have been rendered yet.
+
+Before matching, require adequate finite/free-space/overlap support, at least12
+eligible pairs per family, and95%exact-correspondence common-estimator pose
+recovery. The separate occlusion-training gate requires at least8confirmed
+occluded samples across two components and two independently verified occluded
+query rays. Missing intersections are uncertain, not confirmed occluders.
+Independent full-mesh first-hit samples and camera-clearance checks are prepared.
+Failure of occlusion support remains a data shortfall, even if pose geometry passes.
+
+All468repository tests/four optional skips and a fresh100-row procedural smoke
+PASSED. Public source/schedule byte verification must precede rendering. The
+render/audit caps are1800/1200seconds, two CPU threads, no paid compute or human
+review. Four calibration/12final groups remain untouched. The full goal stays ACTIVE.
+
+Evidence: reports/north_fine_completed_results_v58.json,
+reports/north_fine_matched_audit_v58.json,
+reports/north_training_geometry_inventory_v59.json,
+reports/north_camera_schedule_v59.json and reports/north_camera_software_v59.json.
+
 ## Aligned fine study audited; one-case gain is insufficient — 2 November 2026
 
 The aligned native fine-encoder study COMPLETED2000updates in2028.64seconds

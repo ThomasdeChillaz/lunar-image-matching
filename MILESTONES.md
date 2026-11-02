@@ -1219,3 +1219,9 @@ Prepared encoder-only aligned/fractional sampling controls, exact100update pilot
 M58 update: both100update pilots completed and exact optimizer replays passed. Full aligned study running; fractional study queued serially. No pose gain or final result claimed.
 
 M58 aligned study completed2000updates;576saved metric rows and2000sampler/input records replayed. Selected1500:14/96correct,26wrong,11/96raw nonoverlap. No model promoted. Fractional study running; full research targets unmet.
+
+M58 completed as a negative bounded study: both4000updates total and1152saved metrics replayed; no useful pose-coverage improvement or model adoption.
+
+## M59 — stronger camera/visibility pilot
+
+Integrated48pair/576image pilot with separate camera intrinsics, oblique stress, explicit first-hit occlusion/uncertainty and independent geometry/visibility/pose audit.468tests/four optional skips and fresh smoke pass. Publish/byte-verify source before actual rendering. True occlusion support and95%oracle geometry remain unmeasured; no model improvement claimed.
