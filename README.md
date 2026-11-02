@@ -1,5 +1,32 @@
 # Compact lunar image matching
 
+**Current research status — 2 November 2026:** the three-seed expanded-data
+training control is running. No improved model or state-of-the-art result is
+established.
+
+The additional northern development dataset has 24 terrain groups and 576
+images. All 72 geometry oracle controls and the exact 100-update training replay
+pass. On its full 96-positive/96-nonoverlap selection set, the frozen compact
+surface pipeline and SIFT-first pipeline each recover **13/96 correct raw
+poses**, with 28 wrong positive proposals and 11/96 nonoverlap proposals.
+These are weak, uncalibrated development results and a different dataset from
+the historical 72-pair comparison.
+
+Training uses three fixed seeds, 2,000 updates each, initialization eligible,
+with all outcomes retained. Calibration/final supports stay unused. The original
+render deadline failed; a separately documented recovery completed within its
+supplemental allowance. Fixed camera templates and shared renderer/DEM dependence
+still limit generalization claims.
+
+[Current evidence](NORTH_DATA_AND_PILOT_V41.md) ·
+[Training protocol](NORTH_EXPANDED_CONTROL_V39.md) ·
+[Live research tracker](https://github.com/ThomasdeChillaz/lunar-image-matching/issues/2)
+
+The earlier status snapshots below are preserved history; their descriptions of
+what was running at the time are superseded by the dated status above.
+
+---
+
 Current research progress: a new **6,000-update, three-seed coupled-assignment study is running**, after its actual100-update train-only pilot and exact optimizer/scalar replay passed. No learned pose gain is established. The completed12,000-update window study retained initialization54/72 in all six runs; [negative results](reports/window_cohort_complete_v18.md). The **amended MOONSt3R comparison independently replays28/72 correct raw poses,21strict and44wrong**, preserving71 original cases plus one publicly frozen supplemental case. Its original clock-expired run remains incomplete. [Complete native comparison and limits](reports/native_pose_comparison_v29.md): SIFT-first+surface57/72, frozen-surface54, RoMa-v2 fast/common53, LoMa-R42 and MatchAnything39. These are dependent exposed development cases with different model profiles, not fresh-test or globalSOTA evidence. The [new hypothesis](MUTUAL_ASSIGNMENT_V23.md) must improve actual camera poses before adoption. Fresh data, calibrated acceptance and the full research targets remain unmet. Older entries below are history.
 
 **Current development finding:** using the reference terrain's3D shape improves

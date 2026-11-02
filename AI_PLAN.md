@@ -1,5 +1,25 @@
 # AI coding-agent execution brief
 
+## Northern data and training gates complete; full fitting live — 2 November 2026
+
+All 576 images are complete; the unchanged audit passes 72/72 oracle poses and
+243,360 exact label points. The separate recovery took 726.75 seconds; the
+original v37 calendar deadline stays failed. The train-only 100-update pilot
+completed, and all model/optimizer/loss/gradient/RNG states independently replay
+exactly. No calibration or final supports were loaded.
+
+The full common baselines and all 384 saved metric rows replay. Frozen compact/
+surface and SIFT-first/surface each recover 13/96 correct raw positive poses,
+with 28 wrong positive proposals, 55 failed poses, and 11/96 nonoverlap proposals.
+These are raw development proposals, not calibrated acceptances or SOTA results.
+The northern dataset is different from the old 72-pair benchmark.
+
+The fixed three-seed architectural control is live: 2,000 updates per seed,
+all 96 positive selection cases, initialization eligible. Keep its sealed source
+unchanged, retain all outcomes, and inspect the actual controller before another
+scientific CPU job. [Verified data, pilot and baseline evidence](NORTH_DATA_AND_PILOT_V41.md).
+Full research targets remain active and unmet; no email or paid compute.
+
 ## Original render timeout; separate recovery prepared — 2 November 2026
 
 The original v37 render terminated at its fixed calendar cap after an observed
