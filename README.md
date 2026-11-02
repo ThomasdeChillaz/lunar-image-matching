@@ -1,5 +1,28 @@
 # Compact lunar image matching
 
+**Current research status — 2 November 2026:** two expanded-data training seeds
+are complete, selecting **14/96 and 15/96 correct raw poses** versus 13/96 for
+the frozen model. Their selected checkpoints emit 4/96 and 7/96 raw nonoverlap
+proposals, versus 11/96 initially. The third seed and complete audit are running.
+These are small development gains, far below the target; no improved model
+release or state-of-the-art result is established.
+
+The changing-light cases remain the main failure. Prepared diagnostic code will
+measure whether coarse proposals reach the correct local neighborhood, then
+separately test a ground-truth-assisted ideal local refiner. That oracle is a
+control, not a usable matcher. Its execution waits for the full cohort,
+regression checks and verified public source. Camera-template dependence also
+requires an unseen-pose control before broad localization claims.
+
+[Next diagnostic and evidence](NORTH_FAILURE_DIAGNOSIS_V43.md) ·
+[Camera-design limitation](NORTH_CAMERA_DESIGN_V41.md) ·
+[Completed data/pilot controls](NORTH_DATA_AND_PILOT_V41.md)
+
+Earlier dated snapshots below are preserved history and are superseded by this
+status. Calibration and final-test supports remain unused; no email is sent.
+
+---
+
 **Current research status — 2 November 2026:** the three-seed expanded-data
 training control is running. No improved model or state-of-the-art result is
 established.

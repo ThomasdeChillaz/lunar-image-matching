@@ -1,5 +1,28 @@
 ## M37 — Correct celestial lighting before model fitting
 
+## Two seeds complete; diagnostic sources frozen before inference — 2 November 2026
+
+The first two expanded-data seeds completed 2,000 updates each. Their selected
+checkpoints recover 14/96 and 15/96 correct raw poses, versus 13/96 frozen;
+selected nonoverlap proposals are 4/96 and 7/96 versus 11/96. These small gains
+are far below the targets; the third seed and complete cohort audit are running.
+Keep every seed, checkpoint and endpoint; no trained upgrade is adopted.
+
+Prepared v43 sources test coarse-proposal reachability and a separately labelled
+perfect-local-refinement oracle, followed by independent grid/window/pose replay.
+The oracle uses query truth and is never model accuracy. All 18 new isolated
+metadata/metric/cache checks pass. The new full repository regression and fresh
+smoke remain queued after the current scientific controller; do not claim the
+sum of old/new isolated counts as a completed suite. Publish and byte-verify
+source before the new probe, and execute it only after all upstream gates and
+process-exit checks pass. [Failure diagnosis](NORTH_FAILURE_DIAGNOSIS_V43.md),
+[camera-design limitation](NORTH_CAMERA_DESIGN_V41.md).
+
+All running v38/v39/v40 fitting/inference sources stay unchanged. Keep four
+calibration/twelve final supports unused. Full acceptance, modern comparisons,
+unseen-camera transfer, uncertainty, paper and compact-v3 targets remain open.
+No paid compute, human landmark review, email or SOTA claim.
+
 ## Northern data and training gates complete; full fitting live — 2 November 2026
 
 All 576 images are complete; the unchanged audit passes 72/72 oracle poses and
