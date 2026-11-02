@@ -1,0 +1,20 @@
+{
+  "prepared_utc": "2026-11-02T17:22:44.309175+00:00",
+  "state": "PREPARED; no actualfixedpairfittingyet",
+  "source_sha256": {
+    "north_optimization_probe_v54.py": "6e8e9e2856a8293e027234b8a10eb7fa7488b3c76ca16b37dbd2bafd37dbd618",
+    "test_north_optimization_probe_v54.py": "9d20acc59ff2feb60dbbfcba108a5d2ff91616157a9d744d2c3a7df290750030",
+    "verify_north_optimization_v54.py": "92fc8b8b249645445f47aaa2189dd6ecd9a8f6e87ab8ab1639debbf701f7e712",
+    "test_north_optimization_replay_v54.py": "83a38da21cbdb875fba5e6bcee32c5c310e89a86880962eecffda4cc1ea5cab7"
+  },
+  "focused_tests_passed": 17,
+  "focused_seconds": 1.99,
+  "expected_logical_updates": 400,
+  "expected_snapshot_replays": 20,
+  "max_calendar_seconds": 3600,
+  "additional_full_cohort": false,
+  "candidate_adoption": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "full_QA_pending": true,
+  "publication_pending": true
+}
