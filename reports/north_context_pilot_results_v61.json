@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "completed_steps": 100,
+  "fitting_seconds": 28.0864792719658,
+  "calendar_seconds": 44.10335,
+  "fixed_train_cost_cases": 4,
+  "median_native_case_seconds": 2.28019950450107,
+  "train_cost_bank_sha256": "c0e56c3b400551ce7975cc37e48522af884fbc151c8c8879e349f55f7ee2517e",
+  "total_parameters": 82208,
+  "trainable_parameters": 53936,
+  "lights_a": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lights_b": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "protocol_sha256": "a37e98a323f7e93b6f6837a1a4ecf0d124f9d97a11a818fcbbb4977283d7ccf6",
+  "final_checkpoint_sha256": "514a0e3582e0c10215d9e3fc3f4e095d6b95ddbd6b11a61173b52750df169fc5",
+  "fine_encoder_unchanged": true,
+  "model_selection_evaluated": false,
+  "scope": "Train-only100update cross-image context pilot; not selected pose performance or novelty."
+}
