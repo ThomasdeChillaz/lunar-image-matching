@@ -1,5 +1,21 @@
 # AI coding-agent execution brief
 
+## Expanded-data training continuation prepared — 2 November 2026
+
+The corrected v37 data pipeline is active; its train-only 100-update pilot and
+exact replay remain queued behind the complete geometry audit. The separate
+v39 control is now implemented: unchanged architecture/loss, three fixed seeds,
+2,000 updates each, all 96 positive selection cases, initialization eligible,
+and selected-checkpoint nonoverlap diagnostics. Eight targeted failure/resume/
+freeze/cache regressions pass. The full suite and fresh smoke for this new code
+are queued after the current scientific job, before full fitting.
+
+Publish/verify this prepared source, then serialize: upstream completion,
+repository tests/smoke, full frozen/SIFT baselines and metric replay, measured
+cost admission, three-seed fitting and saved-result audit. Keep calibration and
+final supports unused. No new model gain, accepted-pose or SOTA result is yet
+measured. [Protocol and commands](NORTH_EXPANDED_CONTROL_V39.md).
+
 ## Objective
 
 ## Solar correction before expanded-data fitting — 1 November 2026
