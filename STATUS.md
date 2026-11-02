@@ -1,5 +1,55 @@
 # Status
 
+## Larger-rate study complete: no pose gain; native-grid control next — 2 November 2026
+
+The v56 matched experiment COMPLETED 2,000 updates in 1,539.63 seconds and passed
+all 576 saved native metric replays, 2,000 original sampler/label records, matched
+initialization/first gradient and optimizer-setting checks. Both clocks stayed
+within its separate one-hour allowance. No model is adopted or promoted.
+
+| Update | Original 1e-5 correct/wrong | Higher 1e-3 correct/wrong |
+|---|---:|---:|
+|0|13/28|13/28|
+|500|13/15|12/7|
+|1000|14/8|12/5|
+|1500|14/15|12/8|
+|2000|13/14|12/6|
+
+All counts are out of 96 positive DEVELOPMENT pairs at every checkpoint.
+The unchanged selection rule keeps initialization for the higher-rate run:
+13 correct, 28 wrong and 11/96 selected nonoverlap poses. The original run selects
+step 1500: 14 correct, 15 wrong and 4/96 nonoverlap poses. No confidence calibration
+was performed. The learning improvement on repeated training fixtures did NOT
+transfer to greater pose coverage on varied development terrain. Changed-light
+positive loss over the last 500 updates is 5.3123 versus 5.3009 originally; changing
+step size alone did not resolve learning on the varied training distribution.
+Do not repeat this failed higher-rate configuration across additional seeds.
+
+Next v57 is a small diagnostic of native-pixel fine supervision. The older fine
+training code resamples fractional image crops before encoding. Native inference
+uses an integer query grid and samples fractional reference features after
+encoding. These operations need not commute. A difference is not by itself a
+software bug or proof of why earlier models failed. Integer-origin crops can
+provide a directly comparable control without changing shadow/occlusion labels.
+
+The control uses one TRAINING terrain and four image conditions, eight geometry-
+supported points each. It compares full-image versus aligned-crop features at
+identical coordinates, plus a separately measured fractional-resampling path.
+100 neural forwards, zero optimizer updates, two threads, a fixed 300-second cap.
+An independent saved-feature arithmetic replay is prepared. Eight focused
+array/coordinate/error tests and the full 434 tests/four optional skips/fresh
+100-row procedural smoke PASSED. No crop-control neural inference has run yet;
+publish/verify source first. Feature-vector error is not correspondence or pose
+accuracy, and this diagnostic cannot establish geographic generalization.
+
+Evidence: `reports/north_rate_development_results_v56.json` and
+`reports/north_rate_development_audit_v56.json`; crop preparation and software
+receipts are separately versioned. GitHub CI is repaired and passed: the core
+workflow now installs the pinned CPU neural runtime, leaving every executed
+experiment source unchanged. The original six-hour attempt remains FAILED.
+All 4 calibration/12 final groups remain untouched. Full 70%/10pp/1%, modern-model,
+fresh test, transfer, paper and release targets remain unmet; the goal is active.
+
 ## Full-development pose experiment prepared — 2 November 2026
 
 The previous goal turn made progress: 800 new training updates and 40 actual
