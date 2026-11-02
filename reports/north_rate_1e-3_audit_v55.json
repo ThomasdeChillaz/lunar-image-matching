@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "coarse_learning_rate": 0.001,
+  "only_coarse_rate_changed": true,
+  "matched_fixtures": 4,
+  "matched_initializations": 4,
+  "matched_first_update_gradients": 4,
+  "neural_snapshot_forwards_replayed": 20,
+  "logical_recorded_updates": 400,
+  "numeric_replay_sha256": "c0ae59c4e42af19fc9cb920118fc9aef48c30e1d06c0a0a8035d75b14314e13e",
+  "summary_sha256": "825ff64e886f5a4c062c18d4683c4990867bc534fd9252d91c2495b048f682e8",
+  "baseline_evidence": {
+    "root": "runs/north-v54-fixed-pair-optimization",
+    "audit_sha256": "2e961c9dd36d28d0dbe44c3da8d5a096a7a6c4c5699e38a285b04867c1708d27",
+    "summary_sha256": "2e03ae41ef5769c907cf62eb6998564b699de32ce1a5ad556e63769d0ba2bb35",
+    "seal_sha256": "f970f2309ce267b56630936be90fd83acec1c3976679708ac7de94ad273f2a0a"
+  },
+  "source_sha256": "f8ac13bae532ed388f6c3d439e7ac48bd421d62f5fcd95ca22c761c5407e62f5",
+  "model_promoted": false,
+  "full_optimizer_retraining": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "scope": "Fixed TRAINING-example learning-rate control and twenty actual snapshot replays; no held-out localization or candidate promotion."
+}
