@@ -1,5 +1,52 @@
 # AI coding-agent execution brief
 
+## Larger coarse learning rate improves fitting; pose test next — 2 November 2026
+
+The v55 one-factor comparison COMPLETED 800 new logical training updates.
+Both rates passed all 40 actual checkpoint forward/decoder replays and the
+independent objective replay. Inputs, initial tensors, step-zero outputs and
+first pre-intervention gradients match v54; optimizer settings differ only in
+the declared coarse rate. The original control and its files remain unchanged.
+
+| Coarse AdamW rate | Relighting | Viewpoint | Relighting + viewpoint |
+|---|---:|---:|---:|
+| Original 1e-5 |5.33%|98.05%|4.66%|
+| 1e-4 |6.95%|99.55%|7.07%|
+| 1e-3 |31.21%|100.0%|32.78%|
+
+Each cell is the fraction of highest-scoring coarse locations within the
+native 33-pixel refinement search after 100 updates on ONE fixed TRAINING
+example. Identity stays 100% at every rate. These are neither precise matches
+nor held-out camera poses. Returned reachable matches also increase: under
+relighting, 16/181 at 1e-5 becomes 143/301 at 1e-3; for relighting+viewpoint,
+7/182 becomes 120/247. Many matches remain wrong. No candidate is promoted.
+
+This supports the hypothesis that the original 1e-5 coarse rate limited fitting;
+it does not prove that learning rate alone explains the original pose failures.
+The 1e-3 setting is an exploratory candidate, chosen on training diagnostics.
+Next run ONE matched full-development seed 20261101 at 1e-3 for 2,000 updates,
+using the original data sampler, loss, initialization, architecture, native
+refinement, checkpoint steps 0/500/1000/1500/2000 and all 96 positive/96 negative
+cases. Compare with the original same-seed/full-budget run, including its best
+selected checkpoint. Keep context rate 1e-4 and every other training setting
+fixed. Predeclare a separate 3,600-second cap; publish current source/checks and
+cost admission before training. This next experiment is NOT yet implemented
+or running. Repeat other seeds only if development pose evidence justifies it.
+
+Important data fact: north v39 ALREADY samples all six rendered lighting
+settings (`north_training_bundle_v38.py`); do not infer a three-light shortage
+from the older v18 sampler. Existing three-camera-template dependence remains
+a limitation. Unseen-camera controls are required before a strong claim.
+All 4 calibration/12 final terrain groups remain untouched.
+
+Evidence: `reports/north_rate_results_v55.json`, both rate audits/numeric
+replays, and `reports/north_rate_training_curves_v55.png`. The figure is derived
+only from saved audited metrics; no matching/scoring code changed. Training
+source at `de231381424ba14efe47079b227eafd0719c4847` passed 414 repository tests,
+four optional skips and a fresh 100-row procedural smoke before inference.
+All research targets remain unmet: no adopted model, SOTA, fresh-test pose
+advantage, calibrated 1% risk, orbital accuracy or outreach claim.
+
 ## One-factor learning-rate comparison prepared — 2 November 2026
 
 The previous turn made scientific progress: it completed the original cohort's
