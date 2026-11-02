@@ -1,5 +1,36 @@
 # AI coding-agent execution brief
 
+## Completed three-seed evaluation; coarse failure diagnosis next — 2 November 2026
+
+The separate v52 completion finished in 319.68 seconds with ZERO additional
+fitting. Independent replay PASSED all 1,728 saved rows and 6,000 original
+sampler/update records. All 1,652 original files remain byte-identical; the
+original six-hour attempt remains FAILED. The new allowance completed only
+62 missing endpoint positives and 96 selected-negative evaluations.
+
+Selected correct raw poses are **14/96, 15/96, 15/96** for seeds 20261101–3,
+compared with **13/96** for the frozen baseline on the same development set.
+Wrong positive-pair poses are 15, 10, 13; raw nonoverlap poses are 4/96, 7/96,
+5/96. These are uncalibrated proposals, not correct acceptance. The gains are
+small, post-selection development evidence; no strong model is adopted. Seed3
+selected step1500; its step2000 endpoint scored14/96. Historical unequal speed
+conditions prevent treating these saved timings as a fair speed comparison.
+
+`north_coarse_reachability_v53.py` is the explicit completion-aware successor
+to the unexecuted v43 diagnostic. Its geometric measurement functions are
+AST-identical to v43. It compares frozen and seed1 endpoint proposals against
+exact labels, then measures a separate ground-truth-assisted ideal local
+refinement/rejection control. This control is NOT model accuracy or a usable
+branch selector. Ten focused geometry/replay controls pass. Current full software validation
+PASSED 387 tests/four optional skips and a fresh 100-row procedural smoke.
+Public source freeze and actual diagnostic remain pending.
+Run the diagnostic only after its source-bound software and completion gates.
+
+Evidence: `reports/north_amended_completion_audit_v52.json` and
+`reports/north_amended_numeric_metric_replay_v52.json`. All 4 calibration and
+12 final groups remain untouched. No extra training, SOTA, fresh-test,
+orbital accuracy or 1% risk claim. The full research goal remains active.
+
 ## Original fitting deadline failed; completion-only amendment prepared — 2 November 2026
 
 Current software update: the latest full suite PASSED 377 tests/four optional
