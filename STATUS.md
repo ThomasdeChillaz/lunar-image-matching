@@ -1,5 +1,36 @@
 # Status
 
+## Native fine-encoder training control prepared — 2 November 2026
+
+The next experiment freezes the original coarse proposal network and trains only
+its native-resolution fine encoder using exact visible BVH3D correspondences.
+The combined model has **56,544 parameters**, of which **28,272 are trainable**.
+No new pose gain or improved model is claimed before measured development results.
+
+Two matched variants use integer-aligned versus fractional query-image crops.
+Both draw identical physical examples, lighting, jitter, fractional phases and
+sensor augmentation; only the query sampling intervention and its exact label
+change. Reference features retain their fractional native coordinates after
+encoding. Full-image augmentation precedes cropping. Native feature maps are
+invalidated whenever the fine checkpoint changes. The frozen128px coarse model
+and native512px pose inference remain unchanged.
+
+Predeclared sequence: each variant runs a100update TRAINING-ONLY pilot with a
+600-second cap and exact optimizer replay. Both actual controls and the measured
+cost gate must pass before either2000update study. Studies reuse their100pilot
+updates, add1900updates, and each retain a separate5400-second absolute cap.
+Seed20261101, batch8, AdamW1e-4, decay1e-4, gradient clip5, two CPU threads.
+Evaluate all96 positive development pairs at0/500/1000/1500/2000 updates; select
+by the existing raw-pose rule with initialization eligible, then evaluate all96
+nonoverlap pairs. Saved576metric rows and2000sampler/input records must replay.
+Training-patch loss and precision are diagnostics, not held-out camera accuracy.
+No no-match/reliability head or confidence calibration is added in this ablation.
+
+Source and software checks will be published and byte-verified before training.
+No v58 optimizer has run yet. Four calibration and12final groups remain untouched.
+The70%/10pp/1% research targets, modern and transfer comparisons and paper/release
+remain incomplete. Earlier failed and negative experiments are preserved.
+
 ## Native-grid control passed; no improved pose model yet — 2 November 2026
 
 The full-development larger-rate study remains a negative result: every learned

@@ -1211,3 +1211,7 @@ Freeze methods/parameters using development regions. Run held-out real regions, 
 
 ## M6 — Portfolio release
 Review installation from a clean environment, documentation, citations, licenses and data provenance. Add a concise demo and tagged release after validation. Prepare an outreach summary only from measured real-data results. Do not email anyone without authorization.
+
+## M58 — matched native fine supervision
+
+Prepared encoder-only aligned/fractional sampling controls, exact100update pilot optimizer audit and full development metric replay. Execute source-published pilots, cost/control gates and sequential2000update studies. No learned improvement or final evaluation claimed.
