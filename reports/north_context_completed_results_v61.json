@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "total_updates": 2000,
+  "protocol_sha256": "79b078edf58769a901ac8f9fafb1c42e171271a26308b6f37be60a7851f98784",
+  "seeds": [
+    {
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 1500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 15,
+        "strict_raw_poses": 4,
+        "wrong_raw_poses": 16,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2027.516135989572,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 15,
+        "strict_poses": 4,
+        "correct_at_two_px": 2954,
+        "returned": 13777,
+        "scorable": 13760
+      },
+      "selected_negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 6,
+        "median_measured_inference_ms": 3241.0236514988355,
+        "calibrated_acceptance_evaluated": false
+      },
+      "selected_checkpoint_sha256": "ec7b9f77f695bcbc6c4377aa3f1b49687bf2f60bc50b04389ea7e5f09d1c5f09",
+      "fitting_seconds": 489.87622892452055,
+      "actual_selected_control_passed": true,
+      "eligible_for_adoption": true
+    }
+  ],
+  "independent_full_optimizer_retraining": false,
+  "exact_pilot_optimizer_updates": 100,
+  "scope": "Northern cross-image context control; raw development poses only, not architectural novelty or held-out final results.",
+  "calibrated_acceptance_evaluated": false,
+  "calibration_or_test_pixels_loaded": 0,
+  "original_backbone_unchanged": true
+}
