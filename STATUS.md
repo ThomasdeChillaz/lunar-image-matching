@@ -1,5 +1,57 @@
 # Status
 
+## Native-grid control passed; no improved pose model yet — 2 November 2026
+
+The full-development larger-rate study remains a negative result: every learned
+checkpoint scores 12/96 correct raw poses, below the original selected 14/96.
+The predeclared rule retains initialization, not learned weights. The sampler,
+optimizer and 576 saved metric rows independently replayed. No model is promoted.
+
+The v57 native-grid control now COMPLETED 100 neural forwards in 4.32 seconds,
+with 32 training-image control points and independent saved-feature replay.
+At identical native coordinates, integer-origin image crops plus fractional
+reference-feature sampling agree with full-image feature extraction within
+**1.1921e-7 maximum absolute feature-channel error** across all four conditions.
+That is safely below the declared 1e-4 tolerance.
+
+| Training image condition | Aligned max feature error | Fractional path mean feature-vector L2 |
+|---|---:|---:|
+|Identity|1.1921e-7|0.3618|
+|Relighting|1.1921e-7|0.4175|
+|Viewpoint|1.1921e-7|0.3062|
+|Relighting + viewpoint|1.1921e-7|0.3778|
+
+The fractional path compares interpolation of images before encoding with
+interpolation of encoded features at the SAME fractional coordinates. These
+operations need not commute in a nonlinear encoder. The measured difference
+is a representation/sampling effect, not a pixel correspondence error, software
+bug, proven cause of earlier model failure, pose gain or independent-terrain
+validation. In particular, the v56 coarse-only experiment used full 128px images;
+this crop diagnostic does NOT explain its failure to learn on varied pairs.
+It informs the next NATIVE FINE training experiment. No optimizer ran in v57.
+
+Next: implement a matched native fine-encoder training control using the north
+training split, exact fractional BVH correspondences and all six rendered
+lighting settings. Compare integer-aligned query sampling with a separately
+controlled fractional-query sampling variant; keep physical pairs, initial
+weights, sensor augmentation, updates and inference identical. The reference
+point stays fractional AFTER encoding; darkness remains distinct from occlusion.
+Augment full images before integer slicing so blur does not create crop-border
+artifacts. Reset native feature caches whenever fine weights change.
+
+Start with encoder-only refinement and the original frozen proposal generator,
+under 100k combined parameters. Gate on actual crop/full-image agreement and a
+short cost/gradient pilot before full development pose evaluation. Neither
+variant is implemented or running yet. Pair-specific reliability/refinement
+heads remain a later controlled change. More coarse-match progress and unseen-
+camera controls are also needed before the complete research targets can hold.
+
+Evidence: `reports/native_crop_results_v57.json` and
+`reports/native_crop_audit_v57.json`. All 434 repository tests/four optional skips
+and fresh 100-row procedural smoke passed before this neural control. The final
+reserve remains untouched: 4 calibration/12 final groups. The full 70%/10pp/1%
+acceptance, modern/fresh/transfer/paper/release goal remains ACTIVE, not achieved.
+
 ## Larger-rate study complete: no pose gain; native-grid control next — 2 November 2026
 
 The v56 matched experiment COMPLETED 2,000 updates in 1,539.63 seconds and passed
