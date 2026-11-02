@@ -1229,3 +1229,5 @@ Integrated48pair/576image pilot with separate camera intrinsics, oblique stress,
 ## M61 — nearly matched-capacity cross-image context control
 
 Prepared100update pilot/exact optimizer replay and single-seed2000update study with full576case saved-metric replay.482tests/four optional skips and fresh100row procedural smoke passed. Publish/byte-verify before training; no neural training/inference or improvement claimed yet. M59original30minute rendering attempt failed at40complete pairs/490PNGs;26raw occluded labels remain unaudited. Partial attempt and deadlines preserved; no camera data enter fitting.
+
+M61 update: 100-update training pilot completed; independent full optimizer/loss/gradient/RNG replay and matched original sampling passed. The source-frozen 2,000-update development study is running. No new accuracy result, model promotion or final evaluation.

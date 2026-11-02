@@ -1,5 +1,36 @@
 # AI coding-agent execution brief
 
+## Cross-image attention study running — 2 November 2026, 21:35 UTC
+
+The new attention model completed its 100-update training-only pilot in 44.10
+seconds, including controls and four native-image cost cases; optimizer fitting
+took 28.09 seconds. Independent retraining reproduced every saved model tensor,
+optimizer state, loss, gradient and random state exactly. All 100 sampling
+records match the original pointwise pilot. Both use all six rendered lights.
+The starting model passed actual known-transform and blank-image controls.
+This establishes reproducibility and cost, **not improved lunar accuracy**.
+
+The 2,000-update, seed 20261101 development study is now running serially on two
+CPU threads. It first checks exact initial outputs on all 96 development pairs,
+then scores every pair at updates 500, 1,000, 1,500 and 2,000. The selected
+checkpoint also receives all 96 nonoverlap cases. Failed poses remain in the
+denominator. The model has 82,208 total parameters, versus 81,696 for the
+pointwise control; the native fine encoder stays frozen. No checkpoint is
+promoted automatically. Four calibration and twelve final terrain groups stay
+untouched. The original fixed three-hour study deadline remains in force.
+
+The previous fine studies remain at 14/96 correctly recovered raw poses and
+show no useful gain over the same-seed coarse control. There is no new accuracy,
+calibrated acceptance, state-of-the-art or orbital-navigation result yet.
+The separate varied-camera render stopped at its original deadline; all partial
+files remain preserved and excluded from fitting. Its 26 raw occlusion labels
+are still unverified. Software verification: 482 tests passed, four optional
+skips, plus a fresh 100-row procedural smoke experiment. Research goal ACTIVE.
+
+Evidence: reports/north_context_pilot_results_v61.json and
+reports/north_context_pilot_audit_v61.json. Source/protocol freeze before any
+new lunar inference: dbd2869f0c433136d5e2619832c8ada18185a9d6.
+
 ## Cross-image attention training prepared; camera render timed out — 2 November 2026
 
 The next controlled test replaces the pointwise coarse-context blocks with the

@@ -1,5 +1,14 @@
 # Compact lunar image matching
 
+**Current training — 2 November 2026:** a compact cross-image attention model
+(82,208 parameters) passed its 100-update pilot and exact training replay.
+The 2,000-update development study is running; no accuracy gain is established.
+The previous fine-refinement studies recover 14/96 raw camera poses and do not
+improve the stronger compact control. Final test terrain remains untouched.
+See [current status and evidence](STATUS.md). The older dated snapshots below
+are preserved research history.
+
+
 **Current research status — 2 November 2026:** two expanded-data training seeds
 are complete, selecting **14/96 and 15/96 correct raw poses** versus 13/96 for
 the frozen model. Their selected checkpoints emit 4/96 and 7/96 raw nonoverlap
