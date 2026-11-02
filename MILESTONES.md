@@ -1215,3 +1215,5 @@ Review installation from a clean environment, documentation, citations, licenses
 ## M58 — matched native fine supervision
 
 Prepared encoder-only aligned/fractional sampling controls, exact100update pilot optimizer audit and full development metric replay. Execute source-published pilots, cost/control gates and sequential2000update studies. No learned improvement or final evaluation claimed.
+
+M58 update: both100update pilots completed and exact optimizer replays passed. Full aligned study running; fractional study queued serially. No pose gain or final result claimed.

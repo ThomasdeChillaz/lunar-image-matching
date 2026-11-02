@@ -1,5 +1,24 @@
 # Status
 
+## Native fine training underway; both pilots replayed — 2 November 2026
+
+Both matched100update pilots COMPLETED and independently replayed every optimizer
+update, exact input hash, final weight, Adam state and random state. Aligned took
+42.25seconds; fractional40.96seconds. Both preserved the known-transform and
+blank-image controls; the original coarse weights remained frozen. All800
+physical examples/reference inputs matched between variants. Training-only bank
+loss decreased in each variant; this is not a held-out pose-accuracy result.
+
+The measured control/cost gates admitted both2000update development studies.
+The aligned study is now running; the fractional study is queued after its
+completion and audit. Each study reuses its100pilot updates and has its own
+original90minute deadline, without resetting a failed attempt. All96 positives
+are evaluated at five checkpoints and96 negatives at the selected checkpoint.
+No improved model is adopted. Four calibration/12final groups remain untouched.
+Evidence: reports/north_fine_pilot_results_v58.json and both pilot audit receipts.
+438tests/four optional skips and a fresh100-row procedural smoke passed before
+training; source was public and byte-verified at6cc8a4c before either pilot.
+
 ## Native fine-encoder training control prepared — 2 November 2026
 
 The next experiment freezes the original coarse proposal network and trains only
