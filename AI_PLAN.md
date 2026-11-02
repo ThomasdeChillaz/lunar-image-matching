@@ -1,5 +1,46 @@
 # AI coding-agent execution brief
 
+## Fixed-example learning completed: relighting remains weak — 2 November 2026
+
+The v54 diagnostic COMPLETED all 400 logical training updates in 123.22 seconds.
+Independent NumPy objective replay and actual 20-checkpoint forward/decoder
+replay PASSED. Both coarse encoder and context weights changed; protected
+fine weights stayed identical. No additional full cohort or candidate promotion.
+
+Highest-scoring coarse locations within native 33-pixel refinement reach changed:
+
+| Fixed TRAINING example | Before | After 100 updates |
+|---|---:|---:|
+| Identity |100.0%|100.0%|
+| Physical relighting, same camera |2.81%|5.33%|
+| Same-light viewpoint change |85.11%|98.05%|
+| Relighting and viewpoint |1.20%|4.66%|
+
+These are coarse search-window diagnostics on four TRAINING examples, NOT
+precise correspondences, camera pose, held-out generalization or a learned
+upgrade. Loss decreased for every fixture, but relighting ranking stayed weak.
+This rules out completely inactive learning; it does not establish that the
+architecture cannot fit relighting or identify the best learning rate.
+
+Next: compare original coarse AdamW learning rate 1e-5 with 1e-4 and 1e-3 on
+these same metadata-fixed examples, keeping context rate 1e-4, initialization,
+objective, steps, decoding and all other settings fixed. Publish both outcomes.
+Predeclare finite serial compute allowance and current checks/source before
+new fitting. If increased step size does not help, inspect illumination
+representation and supervision rather than repeating the same large cohort.
+No full new cohort starts from this diagnostic alone.
+
+Evidence: `reports/north_optimization_results_v54.json` and
+`reports/north_optimization_audit_v54.json`. Reproduce with the source at
+`819f9cbe6534ca4c3ef77f413645a9dd97fd5204` using
+`python north_optimization_probe_v54.py --publication-commit <that SHA>`;
+then `python verify_north_optimization_v54.py`. Keep existing output roots;
+use an explicitly new output/audit path for another replay. All 404 repository
+tests/four optional skips and fresh 100-row smoke passed before fitting.
+Original six-hour attempt stays FAILED; completion amendment is separately
+complete. All 4 calibration/12 final groups remain untouched. Full research
+targets remain unmet; no SOTA, orbital or 1% risk claim.
+
 ## Diagnose coarse learning before another cohort — 2 November 2026
 
 The v53 coarse diagnostic and independent replay COMPLETE: 768 proposal
