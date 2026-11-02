@@ -1,0 +1,8 @@
+{
+  "initial_launch_failed_before_tests": true,
+  "reason": "Launcher used systemPython withoutNumPy; prerequisite import stopped before creating the QA state or a test/scientific child.",
+  "fixed_invocation": "work/lunar-clean-env/bin/python work/run_north_camera_qa_v59.py",
+  "scientific_jobs_started": 0,
+  "tests_started": 0,
+  "original_experiment_deadlines_changed": false
+}

@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "matched_updates": 2000,
+  "matched_physical_point_samples": 16000,
+  "initialization_exact": true,
+  "reference_inputs_exact": true,
+  "final_numpy_and_torch_rng_exact": true,
+  "different_query_batches": 2000,
+  "different_target_batches": 2000,
+  "selected_pose_difference_fractional_minus_aligned": {
+    "difference_pp": 0.0,
+    "gained_cases": 0,
+    "lost_cases": 0,
+    "terrain_groups": 8,
+    "terrain_bootstrap_95_interval_pp": [
+      0.0,
+      0.0
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20261102,
+    "scope": "Exploratory paired component resampling on exposed development data. Shared source terrain, renderer and camera-template dependence remain. Not a selected-model confidence guarantee."
+  },
+  "selected": {
+    "aligned": {
+      "step": 1500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 4,
+        "wrong_raw_poses": 26,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2025.413914496312,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 4,
+        "correct_at_two_px": 3533,
+        "returned": 17986,
+        "scorable": 17959
+      },
+      "negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 11,
+        "median_measured_inference_ms": 2483.613416494336,
+        "calibrated_acceptance_evaluated": false
+      }
+    },
+    "fractional": {
+      "step": 2000,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 3,
+        "wrong_raw_poses": 22,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2656.3719465048052,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 3,
+        "correct_at_two_px": 3556,
+        "returned": 18149,
+        "scorable": 18119
+      },
+      "negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 8,
+        "median_measured_inference_ms": 1959.4408715056488,
+        "calibrated_acceptance_evaluated": false
+      }
+    }
+  },
+  "summary_sha256": {
+    "aligned": "fc911665417977b16bb360d3b934a8316b3ee2b3fd413803fe5b09ed626a80e9",
+    "fractional": "893d47da1377d51f5c078a71d2fc9a892d0553d34cd9582acc0f66a234ab5d20"
+  },
+  "audit_sha256": {
+    "aligned": "e47917d122e261f6acaa325a84005209856b973b14eb449fc32bb21f285c9719",
+    "fractional": "4f7e974287c94fc140cac05c6b296e436c40c0345e50fef26daf292b6f19c32c"
+  },
+  "source_sha256": "0faa3dbeda0d8ae17103b6afd6ad14ccf6c8adc9054b9302d803e69879819699",
+  "comparison_source_sha256": "1e308b813b1516387f6e7c1c724946eb439484f303710a5bb162c4e3bf625328",
+  "model_promoted": false,
+  "scope": "Matched sampling-control replay on exposed northern development data. Only query resampling and its labels differ by design. Pose intervals are exploratory, conditional on development selection/shared renderer. No calibrated acceptance/final/SOTA result."
+}
