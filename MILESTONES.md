@@ -1,5 +1,77 @@
 ## M37 — Correct celestial lighting before model fitting
 
+## Original fitting deadline failed; completion-only amendment prepared — 2 November 2026
+
+Current software update: the latest full suite PASSED 377 tests/four optional
+skips and a fresh 100-row procedural smoke/audit. This supersedes neither the
+original 363-test source state nor the failed original smoke. No completion-only
+inference has run yet; publish/verify source before the separate missing-case
+pass. `reports/north_completion_software_checks_v52.json` records exact hashes.
+
+The original v39/v40 six-hour attempt is TERMINAL FAILED after a large observed
+clock gap. All original processes ended. All 6,000 fitting updates are intact:
+three 2,000-update histories, Adam counters and endpoint tensors independently
+agree. The third endpoint has 34/96 valid saved case files; 62 positive and
+96 selected-negative evaluations remain. The original full regression passed
+363 tests/four skips before the latest two fixture-cache tests; its fresh smoke
+hit its own calendar cap and produced no output. The waiting v43 probe refused
+inference because its prerequisites failed. Preserve every original state/log.
+
+`north_completion_v52.py` prepares a separate 1,800-second inference-only
+allowance in a NEW root. All old files are copied and verified without hard
+links; the original protocol/deadline stay byte-identical and FAILED. Reuse
+all weights, updates and completed cases; execute no optimizer updates. Keep
+the original checkpoint selection/metrics/cases. An unchanged numerical cohort
+replayer plus an amendment-aware byte-preservation audit are prepared. Twelve
+focused controls pass; fresh complete regression/smoke, public source freeze
+and actual completion/audit are PENDING. Do not restart the original training.
+
+Evidence: `reports/north_original_timeout_inventory_v52.json` and
+`reports/north_completion_contract_v52.json`. New v49/v51 experiments remain
+PREPARED, not executed. Their old success-only gates need an explicit amended
+handoff after recovery/coarse diagnostics; never relabel old failures as passes.
+The v51 fixed-pair fixture/metric/cache code passes 15 isolated checks; this is
+not an optimization result. All 70%/10pp/1%/modern/fresh/transfer/paper targets
+remain unmet; no model upgrade, paid compute, landmark review or email.
+
+## Saved modern-control replay hardened; full comparison still pending — 2 November 2026
+
+The prepared v49 verifier now refits the saved known-translation control,
+recomputes its pixel/pose errors and the compact known-rotation errors, and
+rejects absent/altered control records or invalid rigid camera poses. All 25
+focused numerical/interface/evidence tests pass (no neural forward). The earlier
+15-check preparation is preserved as history. Latest source hashes and scope:
+`reports/north_modern_replay_hardening_v50.json`.
+
+Full repository regression/fresh smoke, public source verification, actual
+pretrained controls and common-case inference/replay remain PENDING. Do not
+create a passed admission receipt, run another neural job, or claim a modern
+ranking from these software checks. Current third-seed fitting/evaluation and
+all three original controller/source seals remain unchanged.
+
+## New northern modern-comparison adapter prepared — 2 November 2026
+
+`north_modern_comparison_v49.py` prepares standalone SIFT and the pinned
+MatchAnything, LoMa-R, RoMa-v2 and MOONSt3R common profiles on the original
+96-positive/96-negative northern selection cases. The paired control preserves
+the frozen compact/native/surface pipeline. The earlier SIFT-first fallback
+is still labelled separately; it is not standalone SIFT. Query pose/depth enter
+scoring only. Complete/partial cases, controls, source provenance and the
+original absolute time allowance are retained; no precision/profile fallback.
+
+Fifteen isolated interface/cache/process/numerical-PnP checks pass. The new
+complete repository regression/fresh smoke, public source verification,
+actual pretrained controls and benchmark/replay are PENDING. This is prepared
+software, not measured modern accuracy. No new comparison is autoqueued.
+The program refuses inference until all three existing controllers end cleanly,
+the v43 independent diagnostic passes, and a source-bound software receipt exists.
+LoMa/RoMa keep their native-BF16 CPU requirement; use existing free resources,
+never an undeclared local precision replacement. One two-thread science job.
+
+Evidence: `reports/north_modern_preparation_v49.json`. Keep all current fitting
+and v43 sources unchanged. Third seed is live; full research targets, four
+calibration/twelve final supports and all no-paid-compute/no-email limits remain.
+
 ## Two seeds complete; diagnostic sources frozen before inference — 2 November 2026
 
 The first two expanded-data seeds completed 2,000 updates each. Their selected
