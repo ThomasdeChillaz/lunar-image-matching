@@ -1,5 +1,43 @@
 ## M37 — Correct celestial lighting before model fitting
 
+## Full-development pose experiment prepared — 2 November 2026
+
+The previous goal turn made progress: 800 new training updates and 40 actual
+checkpoint replays showed better fixed-example fitting at coarse rate 1e-3.
+The v56 experiment now tests actual DEVELOPMENT camera poses, with one seed
+20261101, 2,000 updates and checkpoint steps 0/500/1000/1500/2000. Only coarse
+AdamW rate changes from 1e-5 to 1e-3; context stays 1e-4. Architecture, initial
+weights, all six physical lights, original sampler/appearance augmentation,
+loss, clipping, fine encoder, native refinement and pose selection stay fixed.
+
+All five checkpoint evaluations are FRESH on all 96 positive pairs; selected
+nonoverlap evaluation covers all 96 negative pairs. 576 fresh native inference
+rows plus all 2,000 sampler/geometry-label records must replay. No reuse of old
+checkpoint case caches. Compare to the original same-seed full 2,000-update
+control's selected checkpoint (14/96 correct, 15 wrong, 4/96 nonoverlap proposals),
+not just its 13/96 frozen initialization. Counts remain raw and uncalibrated.
+
+The resource gate independently checked the existing measured fitting pilot,
+full common baselines and cost bank. A factor-two projection including all 576
+cases and control overhead is 2,902.91 seconds, below the separate 3,600-second
+limit. One scientific job/two threads; atomic per-update checkpoints and
+per-case inference caches; explicit resume only inside the original deadline.
+The original six-hour attempt stays FAILED, with every old file unchanged.
+
+Twelve focused controls pass: finite budget/clock checks, full-denominator
+inference failure handling, public-source guard, and AST identity of the
+numerical inference and training loops with the original implementation.
+Full current software checks PASSED426tests/four optional skips and a fresh
+100-row procedural smoke. Public source and actual training are pending. The saved replay checks same initialization, optimizer settings,
+first pre-intervention gradient, every original sampled draw and target-label
+count, and all saved checkpoint/selected-negative pose metrics.
+
+No candidate is promoted automatically. Three-camera-template dependence
+remains; any gain needs repeated seeds and unseen-camera controls before a
+strong claim. All 4 calibration/12 final groups stay untouched. Full 70%/10pp/1%
+acceptance, modern comparisons, fresh test, transfer and paper targets remain
+unmet. No paid compute, human review or automatic email.
+
 ## Larger coarse learning rate improves fitting; pose test next — 2 November 2026
 
 The v55 one-factor comparison COMPLETED 800 new logical training updates.
