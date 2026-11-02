@@ -1,5 +1,24 @@
 ## M37 — Correct celestial lighting before model fitting
 
+## Original render timeout; separate recovery prepared — 2 November 2026
+
+The original v37 render terminated at its fixed calendar cap after an observed
+wall-clock gap; 16/24 terrains are complete. Both original processes ended.
+The exact cause of that clock gap is unknown. Original timeout, partial outputs
+and deadlines remain preserved. No new-data matching or training ran.
+
+A separate explicit v40 amendment permits up to 30 additional calendar minutes
+for the eight incomplete components. All sixteen completed components are
+byte-verified and copied, not linked; the rendering/supervision kernel is
+identical. There is no camera, lighting, terrain, metric or case-selection change.
+307 tests/four optional skips and a fresh 100-row procedural smoke pass.
+
+After public source verification, queue recovery, the unchanged full geometry
+audit, six-light bundle, 100-update pilot/exact replay, cost bank, full common
+baselines/replay and the prepared three-seed architectural control. Each gate
+must pass; no final/calibration pixels, paid compute or email. New model
+accuracy remains unmeasured. [Amendment](NORTH_RENDER_RECOVERY_V40.md).
+
 ## Expanded-data training continuation prepared — 2 November 2026
 
 The corrected v37 data pipeline is active; its train-only 100-update pilot and
