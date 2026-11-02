@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "completed_steps": 100,
+  "exact_full_optimizer_retraining": true,
+  "exact_model_optimizer_losses_gradients_rng": true,
+  "fine_encoder_unchanged": true,
+  "training_components": 16,
+  "training_geometries": 48,
+  "lighting_count": 6,
+  "model_selection_pixels_loaded": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "pilot_protocol_sha256": "9bf24a517349bca7ad5d840a8b6466f2f2624d663a58db12c2cd2cc3926d3d0c",
+  "pilot_summary_sha256": "4eae4bbf687afaf8664da6da7886de365ea4defd32164bd896fc07b635cf8d6b",
+  "source_sha256": "abb5e33b2ff425c0736d5a1566cefb3666e4413bba17ad22e4bb8f5daec792d0",
+  "scope": "Exacttrain-only100update pilot replay, not localization improvement or full-cohort retraining."
+}
