@@ -1217,3 +1217,5 @@ Review installation from a clean environment, documentation, citations, licenses
 Prepared encoder-only aligned/fractional sampling controls, exact100update pilot optimizer audit and full development metric replay. Execute source-published pilots, cost/control gates and sequential2000update studies. No learned improvement or final evaluation claimed.
 
 M58 update: both100update pilots completed and exact optimizer replays passed. Full aligned study running; fractional study queued serially. No pose gain or final result claimed.
+
+M58 aligned study completed2000updates;576saved metric rows and2000sampler/input records replayed. Selected1500:14/96correct,26wrong,11/96raw nonoverlap. No model promoted. Fractional study running; full research targets unmet.

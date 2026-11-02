@@ -1,5 +1,45 @@
 # AI coding-agent execution brief
 
+## Aligned fine study audited; one-case gain is insufficient — 2 November 2026
+
+The aligned native fine-encoder study COMPLETED2000updates in2028.64seconds
+(33.81minutes). Independent replay passed all576saved native metric rows and
+2000sampler/input records. Its100update pilot already passed exact optimizer
+retraining; the full2000update optimizer trajectory was not retrained.
+The56,544parameter combined model keeps the original coarse weights frozen.
+
+| Update | Correct raw poses /96 | Strict | Wrong raw poses |
+|---|---:|---:|---:|
+|0|13|2|28|
+|500|13|4|24|
+|1000|14|3|27|
+|1500 — selected by unchanged rule|14|4|26|
+|2000|14|2|20|
+
+The selected1500update checkpoint returns11raw nonoverlap poses of96, matching
+the original frozen count. Its actual known-transform and blank controls pass.
+Only one extra positive case is recovered, with no lost initial successes.
+This is not a demonstrated substantial localization gain, a calibrated acceptance
+result or a state-of-the-art model. No model is promoted and the70%/10pp/1%
+research targets remain unmet. Four calibration/12final groups stay untouched.
+
+The earlier same-seed coarse-adaptation control also recovers14/96 poses,
+with15wrong positive proposals and4/96raw nonoverlap proposals. The new fine
+variant therefore does not improve its pose coverage and has worse raw rejection
+diagnostics. These counts use the same development cases, without confidence
+calibration; they do not compare independently accepted navigation risk.
+
+The matched fractional-query study is now running with the same physical draws,
+optimizer settings, original coarse proposals and native inference. It retains
+its own predeclared90minute deadline. Do not stop at the favorable checkpoint
+or alter the ongoing source. Evidence: reports/north_fine_aligned_results_v58.json
+and reports/north_fine_aligned_study_audit_v58.json.
+
+A varied-camera pilot renderer/auditor is being prepared separately to address
+the three-template camera limitation. It has no rendered data or model result
+and must pass full software checks, public source freeze and actual geometry
+controls before inference. The full research goal remains ACTIVE.
+
 ## Native fine training underway; both pilots replayed — 2 November 2026
 
 Both matched100update pilots COMPLETED and independently replayed every optimizer
