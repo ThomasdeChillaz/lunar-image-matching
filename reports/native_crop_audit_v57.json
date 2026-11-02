@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "aligned_controls_passed": true,
+  "replayed_points": 32,
+  "per_fixture": {
+    "identity": {
+      "points": 8,
+      "aligned_max_abs": 1.1920928955078125e-07,
+      "fractional_query_mean_l2": 0.3617904774073197
+    },
+    "relighting": {
+      "points": 8,
+      "aligned_max_abs": 1.1920928955078125e-07,
+      "fractional_query_mean_l2": 0.41749269176325177
+    },
+    "viewpoint": {
+      "points": 8,
+      "aligned_max_abs": 1.1920928955078125e-07,
+      "fractional_query_mean_l2": 0.3062368076157434
+    },
+    "relighting_and_viewpoint": {
+      "points": 8,
+      "aligned_max_abs": 1.1920928955078125e-07,
+      "fractional_query_mean_l2": 0.37781168015174155
+    }
+  },
+  "neural_forward_repeated": false,
+  "optimizer_updates": 0,
+  "model_promoted": false,
+  "summary_sha256": "5efbac68072805d15af26772f476742ec4ed05a992302f2e18f069418da4d889",
+  "source_sha256": "b9a4a08694e3c105213b7cd43c1a118fa6c3f15705721ba934611dd1378072bf",
+  "scope": "Independent saved-feature arithmetic for one training terrain/four image conditions. Feature differences are not pose accuracy and do not establish why earlier learned models failed."
+}

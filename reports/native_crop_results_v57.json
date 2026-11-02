@@ -1,0 +1,1070 @@
+{
+  "complete": true,
+  "aligned_controls_passed": true,
+  "points": 32,
+  "neural_forward_calls": 100,
+  "rows": [
+    {
+      "fixture": "identity",
+      "point_index": 0,
+      "reference_native": [
+        49.5,
+        49.5
+      ],
+      "exact_target_native": [
+        49.5,
+        49.5
+      ],
+      "query_center": [
+        56,
+        44
+      ],
+      "arrays": "arrays/identity-0.npz",
+      "arrays_sha256": "45a96825285e11abdd511708c28f46d1c694c56bdb6f65a0aa4064cc9880bf35",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5163764873707017e-07,
+        "max_l2": 1.5163764873707017e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.4730905815958977,
+        "mean_l2": 0.4255646075683996,
+        "max_l2": 0.9503863055475817
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 96,
+      "reference_native": [
+        337.5,
+        97.5
+      ],
+      "exact_target_native": [
+        337.5,
+        97.5
+      ],
+      "query_center": [
+        344,
+        92
+      ],
+      "arrays": "arrays/identity-1.npz",
+      "arrays_sha256": "1038f5d0430153e7fb3ab05d4cebccb8c0119f585bb58645782fb4825ab750ff",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.5567997740153025e-07,
+        "max_l2": 1.5567997740153025e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.33247990161180496,
+        "mean_l2": 0.35840834912659947,
+        "max_l2": 0.7753917853466304
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 192,
+      "reference_native": [
+        209.5,
+        161.5
+      ],
+      "exact_target_native": [
+        209.5,
+        161.5
+      ],
+      "query_center": [
+        216,
+        156
+      ],
+      "arrays": "arrays/identity-2.npz",
+      "arrays_sha256": "649d7eb9cdc0c4f454e7fb375e9b7de8567796fe77fa004a2afa2c5950c9f87b",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.681881932866151e-07,
+        "max_l2": 1.681881932866151e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.37524583376944065,
+        "mean_l2": 0.47408959911625065,
+        "max_l2": 0.7756072744464841
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 289,
+      "reference_native": [
+        97.5,
+        225.5
+      ],
+      "exact_target_native": [
+        97.5,
+        225.5
+      ],
+      "query_center": [
+        104,
+        220
+      ],
+      "arrays": "arrays/identity-3.npz",
+      "arrays_sha256": "5a08efd71f974d2c8ae80c2c2e91628369c3cc24ef218bc22a26fa8119e14fc4",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.2386240116168782e-07,
+        "max_l2": 1.2386240116168782e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3099214658141136,
+        "mean_l2": 0.2177698759375921,
+        "max_l2": 0.5924444382651041
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 385,
+      "reference_native": [
+        385.5,
+        273.5
+      ],
+      "exact_target_native": [
+        385.5,
+        273.5
+      ],
+      "query_center": [
+        392,
+        268
+      ],
+      "arrays": "arrays/identity-4.npz",
+      "arrays_sha256": "0e2d633038a5ccb992719cb604a2ab721c216590f14df3e731e09d8b2bccaab2",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.5325744681298305e-07,
+        "max_l2": 1.5325744681298305e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.27748531475663185,
+        "mean_l2": 0.252337461267726,
+        "max_l2": 0.5875398706959827
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 482,
+      "reference_native": [
+        273.5,
+        337.5
+      ],
+      "exact_target_native": [
+        273.5,
+        337.5
+      ],
+      "query_center": [
+        280,
+        332
+      ],
+      "arrays": "arrays/identity-5.npz",
+      "arrays_sha256": "aefb4eadb5f96f9b3af2db50ff5e05f912edd8539f20f18b73cfadd2f06ddd8b",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.972827228812755e-07,
+        "max_l2": 1.972827228812755e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.30203601717948914,
+        "mean_l2": 0.3710331580336721,
+        "max_l2": 0.680377373061478
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 578,
+      "reference_native": [
+        145.5,
+        401.5
+      ],
+      "exact_target_native": [
+        145.5,
+        401.5
+      ],
+      "query_center": [
+        152,
+        396
+      ],
+      "arrays": "arrays/identity-6.npz",
+      "arrays_sha256": "beb0119dcd46685b94cf2cc203f0e0626ffcbb5d91ac5ba6a8d9a73c897037a1",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 1.829284446213672e-07,
+        "max_l2": 1.829284446213672e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3364064022898674,
+        "mean_l2": 0.44050957013081077,
+        "max_l2": 0.7032571520200421
+      }
+    },
+    {
+      "fixture": "identity",
+      "point_index": 675,
+      "reference_native": [
+        449.5,
+        449.5
+      ],
+      "exact_target_native": [
+        449.5,
+        449.5
+      ],
+      "query_center": [
+        456,
+        444
+      ],
+      "arrays": "arrays/identity-7.npz",
+      "arrays_sha256": "10f7eaf0d83497935740188a65e084a0b417fe2840f95d7d25a2bdad7bc83598",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.3666345635942437e-07,
+        "max_l2": 1.3666345635942437e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.31049737334251404,
+        "mean_l2": 0.35461119807750674,
+        "max_l2": 0.6681682565682668
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 0,
+      "reference_native": [
+        49.5,
+        49.5
+      ],
+      "exact_target_native": [
+        49.5,
+        49.5
+      ],
+      "query_center": [
+        56,
+        44
+      ],
+      "arrays": "arrays/relighting-0.npz",
+      "arrays_sha256": "4c3813c9654c484dde35c3bbb6201e9cead01965b264d983d4c14f2c8408eae7",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5163764873707017e-07,
+        "max_l2": 1.5163764873707017e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.26349591836333275,
+        "mean_l2": 0.3429959799794455,
+        "max_l2": 0.5702557689971961
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 96,
+      "reference_native": [
+        337.5,
+        97.5
+      ],
+      "exact_target_native": [
+        337.5,
+        97.5
+      ],
+      "query_center": [
+        344,
+        92
+      ],
+      "arrays": "arrays/relighting-1.npz",
+      "arrays_sha256": "93d678f7bdaa8f7464901ae23ea4171e708aab520cb598d2d355acbd5abaeedb",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.5567997740153025e-07,
+        "max_l2": 1.5567997740153025e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3916913643479347,
+        "mean_l2": 0.5055265502709658,
+        "max_l2": 0.7853735408126278
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 192,
+      "reference_native": [
+        209.5,
+        161.5
+      ],
+      "exact_target_native": [
+        209.5,
+        161.5
+      ],
+      "query_center": [
+        216,
+        156
+      ],
+      "arrays": "arrays/relighting-2.npz",
+      "arrays_sha256": "e31df6bd18976035d6ebb59f4b563c3270d1623d7857c4e1917af8af9f9aef0c",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.681881932866151e-07,
+        "max_l2": 1.681881932866151e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.40257182717323303,
+        "mean_l2": 0.3928130904411874,
+        "max_l2": 0.7100316363719432
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 289,
+      "reference_native": [
+        97.5,
+        225.5
+      ],
+      "exact_target_native": [
+        97.5,
+        225.5
+      ],
+      "query_center": [
+        104,
+        220
+      ],
+      "arrays": "arrays/relighting-3.npz",
+      "arrays_sha256": "3f3bf7ad4a282406e793c7a807c38d241b0fb8457e14b93059163f01ac8f98e5",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.2386240116168782e-07,
+        "max_l2": 1.2386240116168782e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.36267500184476376,
+        "mean_l2": 0.3660122157798243,
+        "max_l2": 0.7293338364891083
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 385,
+      "reference_native": [
+        385.5,
+        273.5
+      ],
+      "exact_target_native": [
+        385.5,
+        273.5
+      ],
+      "query_center": [
+        392,
+        268
+      ],
+      "arrays": "arrays/relighting-4.npz",
+      "arrays_sha256": "0ad62483d42bcbdf56ee06f8913ba7ca3695352890fae15c1339e9d5cf47d042",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.5325744681298305e-07,
+        "max_l2": 1.5325744681298305e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.4615979716181755,
+        "mean_l2": 0.6234338269994919,
+        "max_l2": 0.983741996575977
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 482,
+      "reference_native": [
+        273.5,
+        337.5
+      ],
+      "exact_target_native": [
+        273.5,
+        337.5
+      ],
+      "query_center": [
+        280,
+        332
+      ],
+      "arrays": "arrays/relighting-5.npz",
+      "arrays_sha256": "3eeb25513b0290b511baeb9158cfe0c7e1e8666bff4af757fc6bd77008c1ae0d",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.972827228812755e-07,
+        "max_l2": 1.972827228812755e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.264949731528759,
+        "mean_l2": 0.3217306300981887,
+        "max_l2": 0.4813291246050503
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 578,
+      "reference_native": [
+        145.5,
+        401.5
+      ],
+      "exact_target_native": [
+        145.5,
+        401.5
+      ],
+      "query_center": [
+        152,
+        396
+      ],
+      "arrays": "arrays/relighting-6.npz",
+      "arrays_sha256": "e10670449b4e99c3fe3545c3abbe65593357e3c5c146d6b0e3b65748c43c8469",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 1.829284446213672e-07,
+        "max_l2": 1.829284446213672e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.4130553603172302,
+        "mean_l2": 0.41254584593203003,
+        "max_l2": 0.9016450238211516
+      }
+    },
+    {
+      "fixture": "relighting",
+      "point_index": 675,
+      "reference_native": [
+        449.5,
+        449.5
+      ],
+      "exact_target_native": [
+        449.5,
+        449.5
+      ],
+      "query_center": [
+        456,
+        444
+      ],
+      "arrays": "arrays/relighting-7.npz",
+      "arrays_sha256": "f9113f98f5aadc32cb8458871ede48d2b7290388ea42b81bb6f50cdde50c2182",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.3666345635942437e-07,
+        "max_l2": 1.3666345635942437e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3341457322239876,
+        "mean_l2": 0.37488339460488057,
+        "max_l2": 0.67118506866971
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 0,
+      "reference_native": [
+        49.5,
+        49.5
+      ],
+      "exact_target_native": [
+        59.69406121584734,
+        62.261535585824504
+      ],
+      "query_center": [
+        67,
+        57
+      ],
+      "arrays": "arrays/viewpoint-0.npz",
+      "arrays_sha256": "53b5668ee624dba8a69c8ab629bcbebb8531a7e39f4d7be8b9c94ae5f51ecfcd",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5163764873707017e-07,
+        "max_l2": 1.5163764873707017e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.2853301018476486,
+        "mean_l2": 0.36241567670813385,
+        "max_l2": 0.6569180595997984
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 100,
+      "reference_native": [
+        401.5,
+        97.5
+      ],
+      "exact_target_native": [
+        413.5724071907847,
+        87.05986802715154
+      ],
+      "query_center": [
+        421,
+        82
+      ],
+      "arrays": "arrays/viewpoint-1.npz",
+      "arrays_sha256": "0017bf23b3a58bf4b8e234ef892dd4a9db6b9e664c5142a28749e28bc8ae2fb1",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5126754446963193e-07,
+        "max_l2": 1.5126754446963193e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.31178712099790573,
+        "mean_l2": 0.3657697049980292,
+        "max_l2": 0.619918992605017
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 196,
+      "reference_native": [
+        273.5,
+        161.5
+      ],
+      "exact_target_native": [
+        273.67675053748883,
+        161.63506265846843
+      ],
+      "query_center": [
+        281,
+        157
+      ],
+      "arrays": "arrays/viewpoint-2.npz",
+      "arrays_sha256": "0eb55c5b47120b9de1a5243602830160a89e3e51c6a55615cc101d273dc69485",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 2.1041501827487993e-07,
+        "max_l2": 2.1041501827487993e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3547784239053726,
+        "mean_l2": 0.45792555142158536,
+        "max_l2": 0.679133138399173
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 292,
+      "reference_native": [
+        145.5,
+        225.5
+      ],
+      "exact_target_native": [
+        151.37414243839808,
+        226.9737791534
+      ],
+      "query_center": [
+        158,
+        222
+      ],
+      "arrays": "arrays/viewpoint-3.npz",
+      "arrays_sha256": "24a9b9a319e723eb33abd66139065985df07f95ba3d779ed285c76021faaf661",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 2.0484452731403787e-07,
+        "max_l2": 2.0484452731403787e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.29906758666038513,
+        "mean_l2": 0.27722891481050954,
+        "max_l2": 0.6286161846730124
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 387,
+      "reference_native": [
+        417.5,
+        273.5
+      ],
+      "exact_target_native": [
+        424.0718673685524,
+        276.1632065012628
+      ],
+      "query_center": [
+        431,
+        271
+      ],
+      "arrays": "arrays/viewpoint-4.npz",
+      "arrays_sha256": "4ba790577266c6f15a1762d499a4780832061e1fc2c8e18b567c39b114acaa22",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 1.9737063413023144e-07,
+        "max_l2": 1.9737063413023144e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.19418058637529612,
+        "mean_l2": 0.1719514209022975,
+        "max_l2": 0.36235249260438196
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 483,
+      "reference_native": [
+        289.5,
+        337.5
+      ],
+      "exact_target_native": [
+        288.42939185156706,
+        334.88231817144265
+      ],
+      "query_center": [
+        295,
+        330
+      ],
+      "arrays": "arrays/viewpoint-5.npz",
+      "arrays_sha256": "d1311d0051979a7876dc4502ea7cc28b246d7e0b3867303fdf9a32d0b35d36fc",
+      "aligned_reference": {
+        "max_abs": 7.450580596923828e-08,
+        "mean_l2": 1.833665121365416e-07,
+        "max_l2": 1.833665121365416e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.2982344701886177,
+        "mean_l2": 0.24098614962290296,
+        "max_l2": 0.5812457736637837
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 579,
+      "reference_native": [
+        161.5,
+        401.5
+      ],
+      "exact_target_native": [
+        168.93975430132224,
+        386.7690414180108
+      ],
+      "query_center": [
+        176,
+        382
+      ],
+      "arrays": "arrays/viewpoint-6.npz",
+      "arrays_sha256": "87b36e31c7abd9fafa3b152896cfb6bf0117ab758388d6bd7ff5173ab6deed46",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.4635846119111326e-07,
+        "max_l2": 1.4635846119111326e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.295730397105217,
+        "mean_l2": 0.21220977228793692,
+        "max_l2": 0.5888772301862326
+      }
+    },
+    {
+      "fixture": "viewpoint",
+      "point_index": 675,
+      "reference_native": [
+        449.5,
+        449.5
+      ],
+      "exact_target_native": [
+        449.60882094270096,
+        453.0967601724516
+      ],
+      "query_center": [
+        457,
+        448
+      ],
+      "arrays": "arrays/viewpoint-7.npz",
+      "arrays_sha256": "cb2a5f5592c657509d0d874ec6d73a62c5cfe25b1a201c15d2c75639eb4c3c10",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.3666345635942437e-07,
+        "max_l2": 1.3666345635942437e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3265366107225418,
+        "mean_l2": 0.36140727017455204,
+        "max_l2": 0.633877475975092
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 0,
+      "reference_native": [
+        49.5,
+        49.5
+      ],
+      "exact_target_native": [
+        59.69406121584734,
+        62.261535585824504
+      ],
+      "query_center": [
+        67,
+        57
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-0.npz",
+      "arrays_sha256": "73a58acccf8ed14b5c424e010fd2a50a2271006aa817e62babe7aeaffbd5d906",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5163764873707017e-07,
+        "max_l2": 1.5163764873707017e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.3243468441069126,
+        "mean_l2": 0.3628002188912973,
+        "max_l2": 0.6188360084471984
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 100,
+      "reference_native": [
+        401.5,
+        97.5
+      ],
+      "exact_target_native": [
+        413.5724071907847,
+        87.05986802715154
+      ],
+      "query_center": [
+        421,
+        82
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-1.npz",
+      "arrays_sha256": "be3653c0952c67e4469634942ea69d81471383ae3a6ceae2808ef9ef299f4fb0",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.5126754446963193e-07,
+        "max_l2": 1.5126754446963193e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.42992109060287476,
+        "mean_l2": 0.4564285762922465,
+        "max_l2": 0.7567772065778392
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 196,
+      "reference_native": [
+        273.5,
+        161.5
+      ],
+      "exact_target_native": [
+        273.67675053748883,
+        161.63506265846843
+      ],
+      "query_center": [
+        281,
+        157
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-2.npz",
+      "arrays_sha256": "c2eb7d6b9673bc4b8cc149763a1c8227873e674695d5d4faec63430070baef1d",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 2.1041501827487993e-07,
+        "max_l2": 2.1041501827487993e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.4205741286277771,
+        "mean_l2": 0.5046546781699305,
+        "max_l2": 0.9145888170758125
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 292,
+      "reference_native": [
+        145.5,
+        225.5
+      ],
+      "exact_target_native": [
+        151.37414243839808,
+        226.9737791534
+      ],
+      "query_center": [
+        158,
+        222
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-3.npz",
+      "arrays_sha256": "882aa1ad19ca124c440e112ebd99f881aec122a8dea6de99154cf32d631c69e8",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 2.0484452731403787e-07,
+        "max_l2": 2.0484452731403787e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.26467031287029386,
+        "mean_l2": 0.31282480341316704,
+        "max_l2": 0.5743722976906863
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 387,
+      "reference_native": [
+        417.5,
+        273.5
+      ],
+      "exact_target_native": [
+        424.0718673685524,
+        276.1632065012628
+      ],
+      "query_center": [
+        431,
+        271
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-4.npz",
+      "arrays_sha256": "54fe7c82bf6e53cff909a708071d8438f079614d84b3d0543eff2e2caa31ca3c",
+      "aligned_reference": {
+        "max_abs": 1.1920928955078125e-07,
+        "mean_l2": 1.9737063413023144e-07,
+        "max_l2": 1.9737063413023144e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.40757810696959496,
+        "mean_l2": 0.524594113861772,
+        "max_l2": 0.7325984204236262
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 483,
+      "reference_native": [
+        289.5,
+        337.5
+      ],
+      "exact_target_native": [
+        288.42939185156706,
+        334.88231817144265
+      ],
+      "query_center": [
+        295,
+        330
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-5.npz",
+      "arrays_sha256": "2a96041b905eb31f8c56db9f1467e7da0fcb4a211587d34a3df2d10c2d663a4d",
+      "aligned_reference": {
+        "max_abs": 7.450580596923828e-08,
+        "mean_l2": 1.833665121365416e-07,
+        "max_l2": 1.833665121365416e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.21392367780208588,
+        "mean_l2": 0.29422818083275326,
+        "max_l2": 0.5113169465925701
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 579,
+      "reference_native": [
+        161.5,
+        401.5
+      ],
+      "exact_target_native": [
+        168.93975430132224,
+        386.7690414180108
+      ],
+      "query_center": [
+        176,
+        382
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-6.npz",
+      "arrays_sha256": "36cc2a136effa8f1430e586df2dd6e2fc1e6f92af59c01710ce0fd733d310174",
+      "aligned_reference": {
+        "max_abs": 8.940696716308594e-08,
+        "mean_l2": 1.4635846119111326e-07,
+        "max_l2": 1.4635846119111326e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.324041236191988,
+        "mean_l2": 0.20537781228551732,
+        "max_l2": 0.6424415674951156
+      }
+    },
+    {
+      "fixture": "relighting_and_viewpoint",
+      "point_index": 675,
+      "reference_native": [
+        449.5,
+        449.5
+      ],
+      "exact_target_native": [
+        449.60882094270096,
+        453.0967601724516
+      ],
+      "query_center": [
+        457,
+        448
+      ],
+      "arrays": "arrays/relighting_and_viewpoint-7.npz",
+      "arrays_sha256": "c0c37685d05c094bd1221f997d4a64f2aa62b6ec00615e55809ef2a69e9b167e",
+      "aligned_reference": {
+        "max_abs": 5.960464477539063e-08,
+        "mean_l2": 1.3666345635942437e-07,
+        "max_l2": 1.3666345635942437e-07
+      },
+      "aligned_query": {
+        "max_abs": 0.0,
+        "mean_l2": 0.0,
+        "max_l2": 0.0
+      },
+      "fractional_query": {
+        "max_abs": 0.2838086783885956,
+        "mean_l2": 0.3615850574672486,
+        "max_l2": 0.6087188157235943
+      }
+    }
+  ],
+  "optimizer_updates": 0,
+  "calibration_or_final_pixels_loaded": 0,
+  "model_promoted": false,
+  "protocol_sha256": "28a1d2b3cd25e7e02fc98a13b482f544de5e69fdfaf6f7a8e7e5e78d3a72f734",
+  "calendar_seconds": 4.320622,
+  "scope": "Four fixed TRAINING-image conditions. Measure feature extraction consistency at identical coordinates. No optimizer, pose accuracy, model adoption or causal attribution to historical pose failures."
+}
