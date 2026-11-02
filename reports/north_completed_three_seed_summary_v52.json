@@ -1,0 +1,123 @@
+{
+  "complete": true,
+  "total_updates": 6000,
+  "protocol_sha256": "8a8750c468871aa724dbede7b6653d0e731581c48026d42a987f8bfd89e52556",
+  "seeds": [
+    {
+      "seed": 20261101,
+      "completed_steps": 2000,
+      "selected_step": 1500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 2,
+        "wrong_raw_poses": 15,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 1886.8501584947808,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 2,
+        "correct_at_two_px": 3053,
+        "returned": 16957,
+        "scorable": 16924
+      },
+      "selected_negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 4,
+        "median_measured_inference_ms": 1795.593232018291,
+        "calibrated_acceptance_evaluated": false
+      },
+      "selected_checkpoint_sha256": "01b7696ad077ccd932c03e8c5d3f477dda30c625c2ea0280d02701ec021e796e",
+      "fitting_seconds": 390.417971097806,
+      "actual_selected_control_passed": true,
+      "eligible_for_adoption": true
+    },
+    {
+      "seed": 20261102,
+      "completed_steps": 2000,
+      "selected_step": 500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 15,
+        "strict_raw_poses": 3,
+        "wrong_raw_poses": 10,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 1838.5012409853516,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 15,
+        "strict_poses": 3,
+        "correct_at_two_px": 3040,
+        "returned": 16773,
+        "scorable": 16743
+      },
+      "selected_negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 7,
+        "median_measured_inference_ms": 1845.126877495204,
+        "calibrated_acceptance_evaluated": false
+      },
+      "selected_checkpoint_sha256": "c67944b587c183aa0e9cf8af60f6aa89225c8e44ad6343f314f74526b96b8c4f",
+      "fitting_seconds": 378.1799139940704,
+      "actual_selected_control_passed": true,
+      "eligible_for_adoption": true
+    },
+    {
+      "seed": 20261103,
+      "completed_steps": 2000,
+      "selected_step": 1500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 15,
+        "strict_raw_poses": 1,
+        "wrong_raw_poses": 13,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 18139.159977494273,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 15,
+        "strict_poses": 1,
+        "correct_at_two_px": 3003,
+        "returned": 16685,
+        "scorable": 16656
+      },
+      "selected_negative_counts": {
+        "positive_cases": 0,
+        "correct_raw_poses": 0,
+        "strict_raw_poses": 0,
+        "wrong_raw_poses": 0,
+        "negative_cases": 96,
+        "raw_nonoverlap_proposals": 5,
+        "median_measured_inference_ms": 1785.9988440031884,
+        "calibrated_acceptance_evaluated": false
+      },
+      "selected_checkpoint_sha256": "30d718ea7909f89b4376f3d4056460a28f39c2a9201e31e775538488cb70bed8",
+      "fitting_seconds": 1363.1642127033265,
+      "actual_selected_control_passed": true,
+      "eligible_for_adoption": true
+    }
+  ],
+  "independent_full_optimizer_retraining": false,
+  "exact_pilot_optimizer_updates": 100,
+  "scope": "Separate completion-only inference allowance; original six-hour timeout and all original files stay unchanged. No new fitting, case/threshold/selection change or fresh-test claim.",
+  "calibrated_acceptance_evaluated": false,
+  "calibration_or_test_pixels_loaded": 0,
+  "original_backbone_unchanged": true,
+  "original_time_protocol_completed": false,
+  "completion_only_amendment": true,
+  "additional_fitting_updates": 0,
+  "recovery_protocol_sha256": "4ae90428d226bd89759a2c5e0bed2749d63cdd08c06456f51926be42aceac7e3",
+  "recovery_calendar_seconds": 319.67999
+}
