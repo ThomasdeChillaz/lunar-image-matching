@@ -144,7 +144,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     """
     if budget not in(32,64,128):raise ValueError('Declared32/64/128patch budget required')
     graph=CandidateGraph(**{name:getattr(graph,name).copy()for name in graph.__dataclass_fields__})
-    beams=initial_beams(graph,solar_mode,min(8,budget//16));measurements={};history=[]
+    beams=initial_beams(graph,solar_mode,8);measurements={};history=[]
     if not beams:return dict(pose=None,reason='no_candidate_assignments',measurements=[],hypotheses=[])
     n,k=graph.appearance.shape;actions=[(i,c)for i in range(n)for c in range(k)]
     points=np.repeat(graph.reference_xy,k,axis=0);used=np.zeros(len(actions),bool)
@@ -160,26 +160,44 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
             if 'observed_shadow'in m:graph.observed_shadow[i,c]=float(m['observed_shadow'])
         measurements[(i,c)]=m;history.append(dict(anchor=i,candidate=c,trial_sun_index=beam['sun_index'],response_used=bool(m.get('response_scores')is not None)))
     # Eight spatially distributed seeds per initial solar/assignment beam.
+    # Fixed proposal allocation BEFORE native acquisition. Coarse poses are
+    # tentative inference hypotheses, never query ground truth. This permits
+    # eight beams even for the32patch control without spending64seed patches.
+    proposal_requested=0
+    for b in beams:
+        a=b['assignment'];ids=a['keep'];q=graph.query_xy[ids,a['candidate'][ids]];allocation=1024//len(beams);proposal_requested+=allocation
+        b['pose'],b['pose_info']=estimate(graph.world[ids],q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True))
+        b['native_pose']=False
     seed_count=min(budget//2,8*len(beams));orders=[]
     for b in beams:
         a=b['assignment'];order=sorted(a['keep'],key=lambda i:(int(graph.reference_xy[i,1]//128)*4+int(graph.reference_xy[i,0]//128),i))
         positions=np.rint(np.linspace(0,max(0,len(order)-1),8)).astype(int)
         orders.append([int(order[j])*k+int(a['candidate'][order[j]])for j in positions]if order else[])
+    # First cover eight spatial anchors under the best current assignment.
+    # Then diversify beam/candidate measurements, rather than spending eight
+    # queries on one anchor before obtaining a camera constraint elsewhere.
+    best_seed=max(range(len(beams)),key=lambda j:beams[j]['score'])
     for position in range(8):
-        for b,order in zip(beams,orders):
-            if len(history)>=seed_count:break
-            if order and not used[order[position]]:take(order[position],b)
-    proposal_requested=0
-    for b in beams:
-        _,q,w,_=_matched(graph,b,measurements);allocation=1024//len(beams);proposal_requested+=allocation
-        b['pose'],info=estimate(w,q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True));b['pose_info']=info
+        order=orders[best_seed]
+        if len(history)>=seed_count:break
+        if order and not used[order[position]]:take(order[position],beams[best_seed])
+    for turn in range(8*len(beams)):
+        if len(history)>=seed_count:break
+        j=turn%len(beams);position=(turn//len(beams)+j)%8;order=orders[j]
+        if order and not used[order[position]]:take(order[position],beams[j])
     rounds=[]
     for round_index in range(3):
         target=min(budget,len(history)+int(np.ceil((budget-len(history))/(3-round_index))))
         while len(history)<target and not used.all():
             predictions,weights,valid=acquisition_predictions(graph,beams,actions,intrinsics)
             chosen_policy=policy if active and any(b['pose']is not None for b in beams)else'uniform'
-            action=choose_action(predictions,weights,points,used,chosen_policy,appearances,valid)
+            # A search at the same reference location supplies no new spatial
+            # camera constraint. Apply this common acquisition guard to every
+            # policy; revisit candidates only after all anchors were visited.
+            visited={i for i,c in measurements};unavailable=used.copy()
+            if len(visited)<n:
+                unavailable|=np.array([i in visited for i,c in actions])
+            action=choose_action(predictions,weights,points,unavailable,chosen_policy,appearances,valid)
             best=max(beams,key=lambda b:b['score']);take(action,best)
         evidence=evidence_tensor(graph)
         for b in beams:
@@ -194,14 +212,14 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
                             scores=np.asarray(m['response_scores'],float)
                             if scores.shape!=(len(graph.sun_vectors),):raise ValueError('One learned response score per candidate Sun required')
                             response[i,c]=scores[si]
-                a=assignments(graph,si,solar_mode,b['pose'],intrinsics,response,evidence)
+                a=assignments(graph,si,solar_mode,b['pose']if b['native_pose']else None,intrinsics,response,evidence)
                 choices.append((a['total'],-si,si,a))
             _,_,b['sun_index'],b['assignment']=max(choices,key=lambda x:x[:2])
             _,q,w,_=_matched(graph,b,measurements)
-            if b['pose']is None:
-                allocation=1024//len(beams);proposal_requested+=allocation
-                b['pose'],info=estimate(w,q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True));b['pose_info']=info
-            else:b['pose']=_lm_update(b['pose'],w,q,intrinsics)
+            allocation=1024//len(beams);proposal_requested+=allocation
+            native_pose,info=estimate(w,q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True))
+            if native_pose is not None:
+                b['pose']=_lm_update(native_pose,w,q,intrinsics);b['native_pose']=True;b['pose_info']=info
             b['score']=b['assignment']['total']
         rounds.append(dict(round=round_index+1,queries=len(history),live_poses=sum(b['pose']is not None for b in beams)))
     # Common final estimator remains the unchanged3px AP3P/RANSAC2000control.

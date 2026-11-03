@@ -452,3 +452,22 @@ fine Sun refinement is incomplete, and no new lunar localization gain has been
 measured. The eight-toggle smoke uses historical pretrained encoders and a
 procedural image shift. The full24-light training bank and experiments remain
 pending. Source, geometry and compute gates precede actual new lunar inference.
+
+
+### New physical-data acquisition and compute limits
+
+The24-light cost pilot completed and its independent geometry audit passed.
+The new96unit acquisition is frozen in
+[the admission protocol](reports/solar_development_admission_v67.json).
+`run_solar_development_v67.py --help` describes the serial controller. It enforces
+one original shared deadline, source bytes,900s/unit and complete-unit seals.
+It refuses expired protocols and partial-unit overwrite. Original failed renders
+are retained. A later independent replication needs a newly versioned protocol,
+not editing the original deadline.
+
+[Compute accounting](reports/solar_compute_admission_v67.json) deliberately charges
+whole historical calendar envelopes where precise job times are missing. It is
+a conservative admission bound, not an exact CPU-use claim. New fitting and
+comparison jobs reserve complete caps through `solar_compute_budget_v67.py`;
+failed and duplicate invocations do not refund time. Rendering has a separate
+fixed data allowance and does not authorize training or final evaluation.

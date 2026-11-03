@@ -12,6 +12,7 @@ from solar_frontend_v63 import ReferenceGeometry
 from localize_terrain import load_matcher,public_result,jsonable
 from verify_north_camera_v59 import pose_errors
 from lunar_geometry_v5 import median_reference_range_z
+from solar_compute_budget_v67 import reserve
 
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
@@ -50,6 +51,7 @@ def run(protocol_path,publication_commit):
     for n,h in protocol['source_sha256'].items():
         if sha(n)!=h or subprocess.check_output(['git','show',publication_commit+':'+n])!=Path(n).read_bytes():raise ValueError('Executed source differs from public freeze:'+n)
     if root.exists():raise FileExistsError('Preserve prior experiments; explicit resume needs original fixed deadline')
+    reservation=reserve(protocol['compute_ledger'],protocol['compute_ledger_sha256'],protocol['reservation_journal'],sha(protocol_path)+'/experiment',protocol['budget_category'],protocol['max_calendar_seconds'])
     root.mkdir(parents=True);rows=[]
     try:
         for case in protocol['cases']:
@@ -70,7 +72,7 @@ def run(protocol_path,publication_commit):
                 path=root/(hashlib.sha256((case['case_id']+'/'+profile['name']+'/'+profile['track']).encode()).hexdigest()+'.json')
                 with path.open('x')as f:json.dump(dict(row=row,result=public_result(result,True)),f,indent=2,allow_nan=False)
                 rows.append(row);print(json.dumps(row),flush=True)
-        summary=dict(complete=True,rows=rows,protocol_sha256=sha(protocol_path),publication_commit=publication_commit,calendar_seconds=time.monotonic()-tick,scope='Raw development pose and correspondence ablations. No calibration, accepted poses, final performance or scientific superiority inferred automatically.')
+        summary=dict(complete=True,compute_reservation=reservation,rows=rows,protocol_sha256=sha(protocol_path),publication_commit=publication_commit,calendar_seconds=time.monotonic()-tick,scope='Raw development pose and correspondence ablations. No calibration, accepted poses, final performance or scientific superiority inferred automatically.')
         with(root/'summary.json').open('x')as f:json.dump(summary,f,indent=2,allow_nan=False);f.write('\n')
         return summary
     except BaseException as exc:

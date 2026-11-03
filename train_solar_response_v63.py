@@ -12,6 +12,7 @@ import torch
 from compact_lunar import load_checkpoint
 from solar_response_v63 import LightingResponseModel
 from solar_training_v63 import TrainingBank,fitting_step
+from solar_compute_budget_v67 import reserve
 
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
@@ -41,6 +42,7 @@ def run(protocol_path,publication_commit):
     if not ledger['accounting_complete']or ledger['remaining_training_wall_seconds']<p['max_calendar_seconds']:raise ValueError('Cumulative48hour training budget not reconstructed or insufficient')
     if sha(p['bank'])!=p['bank_sha256']:raise ValueError('Training bank changed')
     if p['updates']==2000 and(not p['pilot_exact_replay_passed']or not p['measured_cost_fits']):raise ValueError('Actual100update reproducibility/cost gate required')
+    reservation=reserve(p['compute_ledger'],p['compute_ledger_sha256'],p['reservation_journal'],sha(protocol_path)+'/train','training',p['max_calendar_seconds'])
     bank=TrainingBank(p['bank']);model,optimizer,rng=initialize(p);frozen={k:v.clone()for k,v in model.coarse.state_dict().items()}
     out.mkdir(parents=True);history=[]
     def save(n,z):
@@ -49,7 +51,7 @@ def run(protocol_path,publication_commit):
         path=out/f'step_{step}.pt'
         if path.exists():raise FileExistsError(path)
         torch.save(snapshot(model,optimizer,rng,step),path)
-    save('execution.json',dict(publication_commit=publication_commit,protocol_sha256=sha(protocol_path),started_utc=start.isoformat(),absolute_deadline_utc=deadline.isoformat(),total_parameters=model.total_parameters));checkpoint(0)
+    save('execution.json',dict(publication_commit=publication_commit,protocol_sha256=sha(protocol_path),started_utc=start.isoformat(),absolute_deadline_utc=deadline.isoformat(),total_parameters=model.total_parameters,compute_reservation=reservation));checkpoint(0)
     try:
         for step in range(1,p['updates']+1):
             if datetime.now(timezone.utc)>=deadline or time.monotonic()-tick>=p['max_calendar_seconds']:raise TimeoutError('Original response-study allowance exhausted')
@@ -65,6 +67,10 @@ def run(protocol_path,publication_commit):
 def replay_pilot(protocol_path,run_root):
     p=json.loads(Path(protocol_path).read_text());root=Path(run_root)
     if p['updates']!=100:raise ValueError('Exact100update pilot replay only')
+    cap=p['replay_cap_seconds']
+    if type(cap)is not int or not 0<cap<=900:raise ValueError('Fixed bounded replay allowance required')
+    reserve(p['compute_ledger'],p['compute_ledger_sha256'],p['reservation_journal'],sha(protocol_path)+'/exact_replay','training',cap)
+    tick=time.monotonic()
     bank=TrainingBank(p['bank']);model,optimizer,rng=initialize(p);history=[]
     initial=torch.load(root/'step_0.pt',map_location='cpu',weights_only=True)
     def identical(a,b):
@@ -73,7 +79,9 @@ def replay_pilot(protocol_path,run_root):
         if isinstance(a,(list,tuple)):return len(a)==len(b)and all(identical(x,y)for x,y in zip(a,b))
         return a==b
     if not identical(snapshot(model,optimizer,rng,0),initial):raise ValueError('Pilot initialization not exactly replayed')
-    for step in range(1,101):history.append(dict(step=step,**fitting_step(model,optimizer,bank,rng,p['pooled'])))
+    for step in range(1,101):
+        if time.monotonic()-tick>=cap:raise TimeoutError('Original exact replay allowance exhausted')
+        history.append(dict(step=step,**fitting_step(model,optimizer,bank,rng,p['pooled'])))
     final=torch.load(root/'step_100.pt',map_location='cpu',weights_only=True)
     if not identical(snapshot(model,optimizer,rng,100),final)or history!=json.loads((root/'history_100.json').read_text()):raise ValueError('Model, optimizer, random state, losses, gradients or sampler differ')
     return dict(passed=True,updates=100,exact_model_optimizer_rng_loss_gradient_sampler=True)

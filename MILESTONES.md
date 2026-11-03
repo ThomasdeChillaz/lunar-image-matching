@@ -1259,3 +1259,18 @@ Implement and evaluate all three techniques as one matcher: solar visibility/joi
 - Physical solar lookup and24-light camera pilot protocols prepared.
 -96pair main schedule unadmitted; fine Sun search, complete experiments,
   compute reconstruction and research package remain incomplete. Goal ACTIVE.
+
+
+## M66–M67 — physical pilots verified, conservative compute/data admission
+
+-48new24-light pilot images complete; independent mesh/native centre and2/2
+  exact-pose oracle passed without relaxed tolerances.
+- Sun lookup18.81s;unknown11.44%retained. SH per-patch sampling rank11/36 disclosed.
+-537tests/four skips, fresh100row procedural replay and eight-toggle native
+  software metric replay passed after correcting repeated-anchor selection.
+- Historical compute conservatively bounded; full-cap cumulative reservations
+  implemented.5.62training/18.67baseline hours remain, not measured exact costs.
+- New96unit data-only acquisition admitted under original fixed ten-hour deadline;
+  source verification before launch. No training or matcher comparison admitted.
+- Full learned bank/studies/fineSun/ablation/comparison/paper remain incomplete.
+  Calibration/final reserve intact; broader research goal ACTIVE.
