@@ -1249,3 +1249,13 @@ Implement and evaluate all three techniques as one matcher: solar visibility/joi
   amendment prepared with unchanged0.02pxthreshold. Independent replay pending.
 - Frontend, full24-light data, training/ablations/comparisons remain incomplete.
 - No measured new lunar improvement, model promotion or final reserve exposure.
+
+
+## M65 — native integrated frontend and physical-data cost pilots
+
+- M64geometry gate passed92/92directions;46eligible pairs. Raw failure retained.
+- Eight-toggle image frontend/procedural control complete; no lunar gain shown.
+- Bounded trainer/even-light loader implemented; actual bank/fitting pending.
+- Physical solar lookup and24-light camera pilot protocols prepared.
+-96pair main schedule unadmitted; fine Sun search, complete experiments,
+  compute reconstruction and research package remain incomplete. Goal ACTIVE.

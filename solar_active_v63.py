@@ -37,6 +37,8 @@ def choose_action(predictions,weights,points,used,policy='active',appearance=Non
     if policy in('active','geometry'):
         scores=disagreement_scores(predictions,weights,valid,policy=='geometry')
         if scores.shape!=used.shape:raise ValueError('Prediction/action counts differ')
+        if float(scores[eligible].max())<=1e-12:
+            return choose_action(predictions,weights,points,used,'uniform',appearance,valid)
         return int(min(eligible,key=lambda i:(-scores[i],i)))
     if policy=='appearance':
         a=np.asarray(appearance,float)

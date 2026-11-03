@@ -57,7 +57,7 @@ def evidence_tensor(graph):
     return solar_log_evidence(graph.solar_states[:,:,None],graph.observed_shadow[:,None,:])
 
 
-def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,response=None,precomputed_evidence=None):
+def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,response=None,precomputed_evidence=None,candidate_rank=0):
     if solar_mode not in('off','shared','independent'):raise ValueError('Unknown solar consistency control')
     score=graph.appearance.copy()if response is None else np.asarray(response,float).copy()
     if score.shape!=graph.appearance.shape or not np.isfinite(score).all():raise ValueError('Finite candidate appearance/response score required')
@@ -68,7 +68,8 @@ def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,re
         projected,front=project(graph.world,pose,intrinsics)
         error=np.linalg.norm(graph.query_xy-projected[:,None],axis=-1)
         score-=np.where(front[:,None],np.minimum((error/3.)**2,9.),9.)
-    index=score.argmax(-1);values=score[np.arange(len(score)),index]
+    if not 0<=candidate_rank<score.shape[1]:raise ValueError('Initial candidate rank outside candidate bank')
+    index=np.argsort(-score,axis=1,kind='stable')[:,candidate_rank];values=score[np.arange(len(score)),index]
     # One query grid point cannot represent two distinct reference anchors.
     keep=[];seen=set()
     for i in sorted(range(len(index)),key=lambda i:(-values[i],i)):
@@ -82,18 +83,19 @@ def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,re
 
 
 def initial_beams(graph,solar_mode='shared',maximum=8):
-    candidates=[];seen=set();evidence=evidence_tensor(graph)
-    suns=range(len(graph.sun_vectors))if solar_mode=='shared'else(0,)
-    for s in suns:
-        a=assignments(graph,s,solar_mode,precomputed_evidence=evidence);key=tuple(a['candidate'])
-        candidates.append(dict(sun_index=s,assignment=a,pose=None,score=a['total']))
-    candidates.sort(key=lambda b:(-b['score'],b['sun_index']))
-    chosen=[]
+    candidates=[];evidence=evidence_tensor(graph)
+    suns=range(len(graph.sun_vectors))
+    for rank in range(min(8,graph.appearance.shape[1])):
+        for si in suns:
+            a=assignments(graph,si,solar_mode,precomputed_evidence=evidence,candidate_rank=rank)
+            candidates.append(dict(sun_index=si,assignment=a,pose=None,score=a['total'],initial_candidate_rank=rank))
+    candidates.sort(key=lambda b:(-b['score'],b['initial_candidate_rank'],b['sun_index']))
+    chosen=[];seen=set()
     for b in candidates:
         key=tuple(b['assignment']['candidate'])
-        if key in seen:continue
-        if any(np.dot(graph.sun_vectors[b['sun_index']],graph.sun_vectors[x['sun_index']])>np.cos(np.radians(10.))for x in chosen):continue
-        seen.add(key);chosen.append(b)
+        # Distinct assignment OR separated lighting constitutes diversity.
+        if any(key==tuple(x['assignment']['candidate'])and np.dot(graph.sun_vectors[b['sun_index']],graph.sun_vectors[x['sun_index']])>np.cos(np.radians(10.))for x in chosen):continue
+        chosen.append(b)
         if len(chosen)==maximum:break
     return chosen
 
@@ -182,7 +184,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
         evidence=evidence_tensor(graph)
         for b in beams:
             # The Sun is updated jointly with pose and correspondence choices.
-            suns=range(len(graph.sun_vectors))if solar_mode=='shared'else(0,)
+            suns=range(len(graph.sun_vectors))if solar_mode=='shared'or response_enabled else(0,)
             choices=[]
             for si in suns:
                 response=graph.appearance.copy()

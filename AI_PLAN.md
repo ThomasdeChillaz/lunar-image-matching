@@ -1,5 +1,34 @@
 # AI coding-agent execution brief
 
+## Integrated matcher wired; geometry pilot qualified — 3 November 2026
+
+Strict camera qualification passed92/92exact-correspondence pose directions
+(46eligible pairs:16motion,16roll,14oblique). The four-pixel failed query view
+remains preserved/excluded; that pair was already ineligible, so eligible counts
+did not change.26geometrically occluded labels across2terrains include3independent
+first-hit checks. These are camera-occlusion labels, not solar-shadow labels.
+
+Current software verification:533tests passed/four optional skips, plus fresh
+100-row procedural replay.
+
+The image frontend, reference-only localization command, eight-toggle runner,
+95,808parameter response model, even-light training loader and bounded trainer
+are implemented. All eight toggles pass a procedural8,-4px image-to-pose control
+using historical pretrained encoders and an UNTRAINED response head. A prior
+random-encoder/noisy-image control failed all eight and is retained. Neither
+control establishes lunar improvement. No response model has been trained.
+
+Prepared source-published next steps: a reference-only BVH Sun-ray cost/support
+pilot and ONE fresh-seed24-light camera-pair render-cost pilot on an old excluded
+pilot terrain. The96pair/4608image main development schedule is declared but
+NOT admitted until measured cost and geometry checks. Calibration/final terrain
+stays untouched. Full bank producer, actual100/2000update studies, exact pilot
+replay, complete ablations, fine Sun search, calibration and modern comparisons
+remain incomplete. Reconstruct cumulative compute before fitting/comparisons.
+The previous attention control remains15/96; no new lunar gain or promotion.
+Broader goal ACTIVE. No paid compute, human annotation or email.
+
+
 ## Camera completion and research module software — 3 November 2026
 
 All eight missing pairs have rendered: 96 new frames, with the 40 original

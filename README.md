@@ -433,3 +433,22 @@ public-checkout reproduction pass; the full negative capsule is packaged.
 MOONSt3R original study stopped incomplete; a separate recovery is prepared.
 The [shared-scale diagnostic](reports/fine_pyramid_bank_v22.md) also shows no pose gain.
 All current poses use four exposed terrain groups; no fresh/SOTA claim.
+
+
+### Experimental solar localization
+
+The work in [SOLAR_MATCHING_RESEARCH.md](SOLAR_MATCHING_RESEARCH.md) now has an
+integrated native image frontend, shared-Sun assignment, lighting-response
+network and active patch selection. `match_terrain.py` retains its behavior.
+`localize_terrain.py --help` describes the separate experimental command.
+Its geometry archive accepts reference depth/pose/intrinsics/normals, physically
+computed solar-ray tables and reference-ray intersections under height shifts.
+Extra fields such as true query pose/depth are rejected. Both image inputs are512px.
+A configuration must pin checkpoint bytes. Public pose is always null until a
+separate acceptance study; `--research-output` explicitly exposes raw hypotheses.
+
+This is development software: the response head is not yet trained, bounded
+fine Sun refinement is incomplete, and no new lunar localization gain has been
+measured. The eight-toggle smoke uses historical pretrained encoders and a
+procedural image shift. The full24-light training bank and experiments remain
+pending. Source, geometry and compute gates precede actual new lunar inference.
