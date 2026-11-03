@@ -1,0 +1,24 @@
+{
+  "schema_version": 64,
+  "scope": "Pilot-only strict geometry qualification amendment after original audit failure; no raw-data repair, new rendering, matching or fitting.",
+  "pixel_tolerance_native": 0.02,
+  "whole_pair_on_any_pixel_failure": true,
+  "minimum_qualified_pairs_per_family": 12,
+  "minimum_exact_pose_success": 0.95,
+  "render_root": "runs/north-v62-camera-completion",
+  "render_summary_sha256": "d9b9a6d005935488e055dd0423a671aa32760886ce77b3aa7803f77f841e574f",
+  "failed_audit_state_sha256": "cc1330f7e2f72033d3334c8f236dbc46a6bb89b04575fbd173b6710101c46c1a",
+  "completion_contract_path": "reports/north_camera_completion_contract_v62.json",
+  "qualification_source_sha256": {
+    "verify_north_camera_qualified_v64.py": "73c9f067b1c8108b6bd0ec4963b4d52b5c43981787aace2984533be1bee956c6",
+    "north_camera_bundle_v64.py": "66dadd6ba00207d058e2ce8e8824b95986a17bb3ccc61f456959e3fba21d4f07",
+    "test_north_camera_qualified_v64.py": "4294d29d5608a18500cd0de9a3fbfd92b7a8e3f03ceccdfcdb88407b3fb05fc8"
+  },
+  "audit_cap_seconds": 1200,
+  "cache_cap_seconds": 300,
+  "forensic_scope": "A read-only scan found four out-of-tolerance pixels in one query view. Same fixed threshold applies to all views; an entire pair is excluded before matcher inference. Position-pass interpolation near discontinuities is a possible cause, not established.",
+  "raw_failures_preserved": true,
+  "no_matching_outcomes_used_for_qualification": true,
+  "calibration_or_final_access": false,
+  "fitting_allowed": false
+}
