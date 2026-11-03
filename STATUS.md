@@ -1,5 +1,22 @@
 # Status
 
+## Camera completion and research module software — 3 November 2026
+
+All eight missing pairs have rendered: 96 new frames, with the 40 original
+complete pairs/480 frames byte-preserved. The original geometry audit FAILED
+on four native pixel-centre projections in one query view. The raw dataset and
+failed audit remain unchanged. A new source-published qualification amendment
+applies the same 0.02px threshold to every view and excludes the whole pair on
+any failure, before matching. Its independent geometry/pose gate is unrun.
+
+Joint shared-Sun assignment, a 95,808-parameter lighting-response network,
+coverage-aware solar rays, lazy native refinement and robust active selection
+have software prototypes. 521 repository tests pass with four optional skips.
+These are not completed image integrations, trained models or lunar gains.
+The previous selected attention checkpoint remains 15/96 raw correct poses.
+No new fitting, calibration or final-test exposure; broader goal ACTIVE.
+
+
 ## Three-technique research implementation started — 3 November 2026
 
 The accepted next study implements joint matching/pose/Sun inference, a compact

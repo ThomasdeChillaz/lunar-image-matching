@@ -1239,3 +1239,13 @@ Attention study complete: 15/96 raw correct,16wrong,6/96nonoverlap;576metrics/20
 ## M63–M69 — accepted solar research program
 
 Implement and evaluate all three techniques as one matcher: solar visibility/joint correspondence-pose-Sun solver; degree-five spherical-harmonic lighting-response model and pooled control; active native patch selection. New deterministic24-light/four-camera-pair development data, all eight toggles, fixed seeds, common baselines, frozen calibration/final evaluation and research package. No new learned result or completed scientific acceptance claimed.
+
+
+## M63–M64 — integrated solar primitives and strict pilot geometry qualification
+
+- Research primitives implemented; software checks 521 passed/four optional skips.
+- Eight missing camera pairs completed; original40pairs preserved byte-for-byte.
+- Original completion geometry audit FAILED; strict whole-pair qualification
+  amendment prepared with unchanged0.02pxthreshold. Independent replay pending.
+- Frontend, full24-light data, training/ablations/comparisons remain incomplete.
+- No measured new lunar improvement, model promotion or final reserve exposure.
