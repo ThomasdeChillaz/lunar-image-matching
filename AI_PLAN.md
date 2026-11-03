@@ -1,51 +1,63 @@
 # AI coding-agent execution brief
 
-## Integrated software verified; larger data acquisition admitted — 3 November 2026
+## Three-technique study: data acquisition running — 3 November 2026
 
-Current software:537repository tests passed/four optional skips, a fresh100-row
-procedural replay, and independent replay of all eight integrated image-to-pose
-controls. Full eight-beam acquisition exposed repeated-anchor degeneracy at32
-queries. The failed four-active-toggle control is preserved; common spatial
-seeding and new-anchor acquisition fix the software control. All eight now pass
-at32queries, with maximum0.1473degree procedural rotation error. This is software
-verification using historical encoders and an untrained response head, not a
-new lunar result. Previous attention control remains15/96raw correct poses.
+The first experimental matcher integrates shared-Sun correspondence and pose
+inference, a 95,808-parameter lighting-response network, and active patch selection.
+The response head has not been trained on lunar data. **The full research study
+is still in progress; no new lunar accuracy gain has been demonstrated.** The
+latest completed learned control remains at 15/96 correct raw poses.
 
-Physical pilots completed: reference-only Sun tables18.81seconds with11.44%
-unknown states retained; one fresh-seed camera pair produced48images/24lights
-per view in175.81seconds. Independent native-centre/mesh audit passed2/2oracle
-poses; worst native projection error0.0000661px, unchanged tolerance0.02px.
-The original v59/v62raw failures, deadlines and40reused complete pairs stay
-unchanged. Earlier v64qualified geometry remains92/92directions on46pairs.
+The new acquisition is running on two CPU threads: **96 camera pairs and 4,608
+images**, with four pairs per original development terrain and 24 physical
+lighting states per view. It uses the existing 16 training and eight selection
+groups; lighting and camera variants do not add independent geography. The first
+48-image unit completed and its file seal was verified. The four calibration
+and twelve final groups remain untouched. See the timestamped
+[launch snapshot](reports/solar_acquisition_started_v67.json).
 
-The96pair/4608image development acquisition is now admitted as a NEW data-only
-cohort on the original16training/eightselection groups. Factor-two pilot cost
-projection9.38hours fits a separately published ten-hour shared deadline, plus
-900seconds per unit. Original deadline never resets; partial units are preserved,
-only sealed complete units may resume, and no matching/training is admitted by
-render completion. Source/protocol byte verification must precede launch.
+Sources and the [generation protocol](reports/solar_development_admission_v67.json)
+were published and byte-verified at `af062eca28fd3f60998a5e9a8c2dc9c7fc85f38a`
+before launch. The original shared deadline is **3 November, 22:42:36 UTC**, with
+900 seconds per unit. A factor-two pilot projection is 9.38 hours within the
+10-hour data allowance. Partial units and failed attempts are preserved; a
+resume can reuse only sealed complete units before the original deadline.
+Rendering completion does not authorize matching or training.
 
-Cumulative compute is conservatively reconstructed using charged historical
-calendar envelopes, not fabricated exact CPU times:5.62training and18.67baseline
-hours remain under the original48h/72hlimits. All known retained model metadata
-is covered; assumptions/unknown exact costs are explicit. New jobs reserve full
-caps atomically; duplicate/failed jobs never regain allowance. Data has its
-separate fixed cap. No neural trial is currently admitted.
+Completed checks:
 
-The per-patch twelve-light degree-five SH design has rank11for36coefficients.
-Shared conditioning/regularization supplies a prior; full angular identifiability
-or solar-latitude generalization is not established. Complete training-bank
-construction, actual100/2000update studies, fine Sun search, full ablations and
-seed repeats, uncertainty/calibration/modern comparisons, final inference and
-paper package remain incomplete. Four calibration/twelvefinal groups remain
-untouched. No new gain, accepted model, SOTA or orbital accuracy claim. Goal ACTIVE.
+- **537 repository tests passed**, with four optional skips, a fresh 100-row
+  procedural replay and independent replay of all eight integrated controls.
+  The full eight-beam test exposed repeated-anchor degeneracy at 32 searches;
+  that failure is retained. Spatial seeding and new-anchor acquisition corrected
+  the software control, which now passes all eight toggles at the same budget.
+- The physical Sun-table pilot completed in **18.81 seconds**, retaining
+  **11.44% unknown states** where coverage did not certify clearance.
+- The new camera pilot rendered **48 images in 175.81 seconds**. Its independent
+  mesh and native-coordinate audit recovered **2/2 exact-correspondence poses**.
+  Maximum pixel-centre error was **0.0000661 pixels**, under the unchanged
+  0.02-pixel tolerance. Earlier strict camera qualification remains 92/92 pose
+  directions on 46 eligible pairs; original raw failures remain unchanged.
 
-Evidence:reports/solar_release_software_v67.json,
-reports/solar_eight_toggle_replay_v67.json,
-reports/solar_render_geometry_audit_v66.json,
-reports/solar_compute_admission_v67.json and
-reports/solar_development_admission_v67.json.
+[Compute accounting](reports/solar_compute_admission_v67.json) conservatively
+charges whole historical calendar windows where exact job times are missing.
+It leaves 5.62 training hours and 18.67 comparison hours under the original
+48-hour/72-hour limits. These are admission bounds, not exact CPU-use totals.
+New jobs reserve their complete caps; failed and duplicate jobs do not refund
+time. Data acquisition has its separate fixed allowance.
 
+The per-patch 12-light harmonic design has rank 11 for 36 coefficients. Shared
+conditioning and regularization provide a prior; full angular identifiability
+and solar-latitude generalization are unverified. Remaining work includes the
+complete geometry audit and training bank, trained feature-space verification,
+fine Sun search and supplied-Sun coverage, 100/2,000-update studies and seed
+repetitions, all ablations, calibration, modern comparisons, frozen final
+inference and the paper package. **The broader research goal remains active.**
+
+Evidence: [software checks](reports/solar_release_software_v67.json),
+[independent software replay](reports/solar_eight_toggle_replay_v67.json),
+[new camera audit](reports/solar_render_geometry_audit_v66.json) and
+[lighting observability](reports/solar_response_observability_v65.json).
 
 ## Integrated matcher wired; geometry pilot qualified — 3 November 2026
 
