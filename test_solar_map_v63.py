@@ -12,7 +12,7 @@ def test_missing_triangle_never_gets_clear_coverage_certificate():
 
 
 def test_full_map_height_perturbation_reintersects_camera_rays_and_shadow_is_independent_of_intensity():
-    y,x=np.mgrid[-100:101:20,-100:101:20];v=np.column_stack([x.ravel(),y.ravel(),np.zeros(x.size)]);env=grid_envelope(v,grid_faces(11))
+    y,x=np.mgrid[-100:101:20,-100:101:20];v=np.column_stack([x.ravel(),y.ravel(),np.zeros(x.size)]);env=grid_envelope(v,grid_faces(11),scene_maximum_height=0.)
     def raycast(o,r,limit):
         if r[2]>=0:return None
         t=-o[2]/r[2]

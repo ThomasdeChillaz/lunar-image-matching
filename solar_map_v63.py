@@ -12,7 +12,7 @@ from solar_physics_v63 import TerrainEnvelope,classify_solar_ray
 from solar_active_v63 import HEIGHT_VARIANTS_M
 
 
-def grid_envelope(vertices,faces):
+def grid_envelope(vertices,faces,scene_maximum_height=None):
     v=np.asarray(vertices,float);f=np.asarray(faces)
     n=math.isqrt(len(v))
     if n*n!=len(v)or v.shape!=(n*n,3)or n<3 or f.shape!=(2*(n-1)**2,3)or not np.isfinite(v).all():raise ValueError('Complete finite square structured terrain grid required')
@@ -29,7 +29,16 @@ def grid_envelope(vertices,faces):
     inward*=orientation;distance=np.sum((centre-boundary)*inward,axis=1)
     if (distance<=0).any():raise ValueError('No certified star-shaped central map support')
     half=float(np.min(distance/(np.abs(inward).sum(1))))*.999
-    return TerrainEnvelope(centre[0]-half,centre[0]+half,centre[1]-half,centre[1]+half,float(v[:,2].max()),True)
+    observed_maximum=float(v[:,2].max())
+    if scene_maximum_height is None:
+        # A cropped map maximum is not a bound on the original renderer scene.
+        # It can establish shadows from observed hits, never a clear ray.
+        ceiling=observed_maximum;certified=False
+    else:
+        ceiling=float(scene_maximum_height)
+        if not np.isfinite(ceiling)or ceiling<observed_maximum-1e-6:raise ValueError('Declared original-scene ceiling does not bound map heights')
+        certified=True
+    return TerrainEnvelope(centre[0]-half,centre[0]+half,centre[1]-half,centre[1]+half,ceiling,certified)
 
 
 def reference_solar_table(points,intrinsics,cam2world,sun_vectors,envelope,raycast):

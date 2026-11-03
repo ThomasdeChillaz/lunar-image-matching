@@ -13,6 +13,7 @@ from compact_lunar import load_checkpoint
 from solar_response_v63 import LightingResponseModel
 from solar_training_v63 import TrainingBank,fitting_step
 from solar_compute_budget_v67 import reserve
+from solar_training_admission_v70 import validate_training_contract
 
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
@@ -31,7 +32,8 @@ def snapshot(model,optimizer,rng,step):
 
 
 def run(protocol_path,publication_commit):
-    p=json.loads(Path(protocol_path).read_text());out=Path(p['output']);tick=time.monotonic();start=datetime.now(timezone.utc);deadline=start+timedelta(seconds=p['max_calendar_seconds'])
+    p=validate_training_contract(protocol_path,publication_commit);out=Path(p['output']);tick=time.monotonic();start=datetime.now(timezone.utc);deadline=min(start+timedelta(seconds=p['max_calendar_seconds']),datetime.fromisoformat(p['absolute_deadline_utc']))
+    if start>=deadline:raise TimeoutError('Original published training deadline expired')
     if out.exists():raise FileExistsError('Preserve every prior training/checkpoint/failure')
     if p['updates']not in(100,2000)or p['seed']not in(20261101,20261102,20261103)or p['cpu_threads']!=2:raise ValueError('Fixed update, seed and CPU contract required')
     if subprocess.check_output(['git','show',publication_commit+':'+protocol_path])!=Path(protocol_path).read_bytes():raise ValueError('Training protocol not source-published')
@@ -41,7 +43,6 @@ def run(protocol_path,publication_commit):
     ledger=json.loads(Path(p['compute_ledger']).read_text())
     if not ledger['accounting_complete']or ledger['remaining_training_wall_seconds']<p['max_calendar_seconds']:raise ValueError('Cumulative48hour training budget not reconstructed or insufficient')
     if sha(p['bank'])!=p['bank_sha256']:raise ValueError('Training bank changed')
-    if p['updates']==2000 and(not p['pilot_exact_replay_passed']or not p['measured_cost_fits']):raise ValueError('Actual100update reproducibility/cost gate required')
     reservation=reserve(p['compute_ledger'],p['compute_ledger_sha256'],p['reservation_journal'],sha(protocol_path)+'/train','training',p['max_calendar_seconds'])
     bank=TrainingBank(p['bank']);model,optimizer,rng=initialize(p);frozen={k:v.clone()for k,v in model.coarse.state_dict().items()}
     out.mkdir(parents=True);history=[]
@@ -56,21 +57,29 @@ def run(protocol_path,publication_commit):
         for step in range(1,p['updates']+1):
             if datetime.now(timezone.utc)>=deadline or time.monotonic()-tick>=p['max_calendar_seconds']:raise TimeoutError('Original response-study allowance exhausted')
             record=fitting_step(model,optimizer,bank,rng,p['pooled']);history.append(dict(step=step,**record))
+            if datetime.now(timezone.utc)>=deadline or time.monotonic()-tick>=p['max_calendar_seconds']:raise TimeoutError('Response update exceeded original allowance')
             if any(not torch.equal(v,frozen[k])for k,v in model.coarse.state_dict().items()):raise ValueError('Frozen coarse proposal encoder changed')
             if step%100==0:print('RESPONSE',step,'loss',record['loss'],flush=True)
             if step in(100,500,1000,1500,2000):checkpoint(step);save(f'history_{step}.json',history)
-        summary=dict(complete=True,updates=p['updates'],seed=p['seed'],pooled=p['pooled'],total_parameters=model.total_parameters,calendar_seconds=time.monotonic()-tick,all_history_sha256=sha(out/f'history_{p["updates"]}.json'),checkpoint_sha256={f'step_{s}.pt':sha(out/f'step_{s}.pt')for s in(0,100,500,1000,1500,2000)if(out/f'step_{s}.pt').exists()},heldout_image_reads=0,model_selection_performed=False,calibration_or_final_access=False,model_promoted=False)
+        summary=dict(complete=True,protocol_sha256=sha(protocol_path),updates=p['updates'],seed=p['seed'],pooled=p['pooled'],total_parameters=model.total_parameters,calendar_seconds=time.monotonic()-tick,all_history_sha256=sha(out/f'history_{p["updates"]}.json'),checkpoint_sha256={f'step_{s}.pt':sha(out/f'step_{s}.pt')for s in(0,100,500,1000,1500,2000)if(out/f'step_{s}.pt').exists()},heldout_image_reads=0,model_selection_performed=False,calibration_or_final_access=False,model_promoted=False)
         save('summary.json',summary);return summary
     except BaseException as exc:save('FAILED.json',dict(error_type=type(exc).__name__,error=str(exc),updates=len(history),calendar_seconds=time.monotonic()-tick));raise
 
 
-def replay_pilot(protocol_path,run_root):
-    p=json.loads(Path(protocol_path).read_text());root=Path(run_root)
+def replay_pilot(protocol_path,run_root,publication_commit,output):
+    p=validate_training_contract(protocol_path,publication_commit);root=Path(run_root)
+    if not output or str(output)!=p['exact_replay_output']or Path(output).exists():raise ValueError('New source-published exact replay receipt required')
     if p['updates']!=100:raise ValueError('Exact100update pilot replay only')
     cap=p['replay_cap_seconds']
     if type(cap)is not int or not 0<cap<=900:raise ValueError('Fixed bounded replay allowance required')
+    summary=json.loads((root/'summary.json').read_text())
+    if not summary['complete']or summary['protocol_sha256']!=sha(protocol_path)or summary['updates']!=100:raise ValueError('Complete pilot belongs to a different protocol')
+    for n,h in summary['checkpoint_sha256'].items():
+        if sha(root/n)!=h:raise ValueError('Pilot checkpoint changed before replay')
+    if sha(root/'history_100.json')!=summary['all_history_sha256']:raise ValueError('Pilot history changed before replay')
     reserve(p['compute_ledger'],p['compute_ledger_sha256'],p['reservation_journal'],sha(protocol_path)+'/exact_replay','training',cap)
-    tick=time.monotonic()
+    tick=time.monotonic();deadline=datetime.fromisoformat(p['replay_absolute_deadline_utc'])
+    if datetime.now(timezone.utc)>=deadline:raise TimeoutError('Original published replay deadline expired')
     bank=TrainingBank(p['bank']);model,optimizer,rng=initialize(p);history=[]
     initial=torch.load(root/'step_0.pt',map_location='cpu',weights_only=True)
     def identical(a,b):
@@ -80,14 +89,17 @@ def replay_pilot(protocol_path,run_root):
         return a==b
     if not identical(snapshot(model,optimizer,rng,0),initial):raise ValueError('Pilot initialization not exactly replayed')
     for step in range(1,101):
-        if time.monotonic()-tick>=cap:raise TimeoutError('Original exact replay allowance exhausted')
+        if datetime.now(timezone.utc)>=deadline or time.monotonic()-tick>=cap:raise TimeoutError('Original exact replay allowance exhausted')
         history.append(dict(step=step,**fitting_step(model,optimizer,bank,rng,p['pooled'])))
+        if datetime.now(timezone.utc)>=deadline or time.monotonic()-tick>=cap:raise TimeoutError('Replay update exceeded original allowance')
     final=torch.load(root/'step_100.pt',map_location='cpu',weights_only=True)
     if not identical(snapshot(model,optimizer,rng,100),final)or history!=json.loads((root/'history_100.json').read_text()):raise ValueError('Model, optimizer, random state, losses, gradients or sampler differ')
-    return dict(passed=True,updates=100,exact_model_optimizer_rng_loss_gradient_sampler=True)
+    result=dict(passed=True,updates=100,protocol_sha256=sha(protocol_path),pilot_summary_sha256=sha(root/'summary.json'),exact_model_optimizer_rng_loss_gradient_sampler=True,calendar_seconds=time.monotonic()-tick)
+    with Path(output).open('x')as f:json.dump(result,f,indent=2,allow_nan=False);f.write('\n')
+    return result
 
 
 if __name__=='__main__':
     import argparse
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--protocol',required=True);p.add_argument('--publication-commit');p.add_argument('--replay-pilot')
-    a=p.parse_args();result=replay_pilot(a.protocol,a.replay_pilot)if a.replay_pilot else run(a.protocol,a.publication_commit);print(json.dumps(result,indent=2))
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--protocol',required=True);p.add_argument('--publication-commit',required=True);p.add_argument('--replay-pilot');p.add_argument('--replay-output')
+    a=p.parse_args();result=replay_pilot(a.protocol,a.replay_pilot,a.publication_commit,a.replay_output)if a.replay_pilot else run(a.protocol,a.publication_commit);print(json.dumps(result,indent=2))

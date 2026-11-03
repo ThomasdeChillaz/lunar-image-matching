@@ -1,5 +1,7 @@
 # Compact lunar image matching
 
+Current work — 4 November 2026: the three-technique matcher is implemented as experimental software; its response head is not yet lunar-trained. A source-frozen diagnostic identifies poor candidate coverage under changed lighting and roll. Missing-data completion continues under the unchanged deadline, followed by the full geometry gate. [Current status](STATUS.md) · [Evidence and SOTA requirements](reports/REQUIREMENTS_AND_SOTA_V69.md). No new localization gain is established.
+
 **Current research — 3 November 2026:** implementing a shared-Sun geometric matcher,
 learned lighting-response descriptors and active patch search, with independent
 ablations. No new technique has measured performance yet. The completed attention

@@ -5,6 +5,7 @@ forbidden until this code, inputs and experiment protocol are source-published.
 """
 from copy import deepcopy
 import math
+import hashlib
 import torch
 from torch import nn
 from torch.nn import functional as F
@@ -63,9 +64,12 @@ class LightingResponseModel(nn.Module):
 
     def condition_features(self,base,condition):
         if base.shape!=(len(condition),32)or condition.shape!=(len(base),9)or not torch.isfinite(condition).all():raise ValueError('Paired32Dfeatures and9Dphysical conditioning required')
+        return self.coefficients(self.adjusted_features(base,condition)).reshape(-1,36,32)
+
+    def adjusted_features(self,base,condition):
+        if base.shape!=(len(condition),32)or condition.shape!=(len(base),9)or not torch.isfinite(base).all()or not torch.isfinite(condition).all():raise ValueError('Finite paired32Dfeatures and9Dphysical conditioning required')
         gamma,beta=self.condition(condition).chunk(2,-1)
-        adjusted=base*(1+.1*gamma.tanh())+.1*beta
-        return self.coefficients(adjusted).reshape(-1,36,32)
+        return base*(1+.1*gamma.tanh())+.1*beta
 
     def decode(self,coefficients,target_sun,pooled=False):
         if coefficients.ndim!=3 or coefficients.shape[1:]!=(36,32):raise ValueError('Bx36x32response coefficients required')
@@ -79,6 +83,39 @@ class LightingResponseModel(nn.Module):
 
     def forward(self,patches,condition,target_sun,pooled=False):
         return self.decode(self.encode(patches,condition),target_sun,pooled)
+
+
+class FusedLightingDecoder:
+    """Exact inference-only contraction of SH basis with the trained head.
+
+    W_eff[s,o,i] = sum_l Y_l(s) W[l,o,i]. This cache adds no learned
+    parameters and is invalidated by any coefficient-head change. Training
+    still uses the unfused coefficient objective and its full gradients.
+    """
+    def __init__(self,model,target_suns,pooled=False):
+        self.model=model;self.target_suns=torch.as_tensor(target_suns,dtype=model.coefficients.weight.dtype,device=model.coefficients.weight.device)
+        if self.target_suns.ndim!=2 or self.target_suns.shape[1]!=3:raise ValueError('Sx3target directions required')
+        self.pooled=bool(pooled);self.digest=None;self.rebuilds=0;self.ensure_current()
+
+    def ensure_current(self):
+        head=self.model.coefficients
+        digest=hashlib.sha256(head.weight.detach().cpu().contiguous().numpy().tobytes()+head.bias.detach().cpu().contiguous().numpy().tobytes()).hexdigest()
+        if digest!=self.digest:
+            with torch.inference_mode():
+                basis=real_spherical_harmonics(self.target_suns)
+                if self.pooled:basis=torch.cat([basis[:,:1],torch.zeros_like(basis[:,1:])],-1)
+                self.weight=torch.einsum('sl,loi->soi',basis,head.weight.reshape(36,32,32))
+                self.bias=basis@head.bias.reshape(36,32)
+            self.digest=digest;self.rebuilds+=1
+
+    def __call__(self,base,condition,target_indices):
+        self.ensure_current()
+        ids=torch.as_tensor(target_indices,dtype=torch.long,device=base.device)
+        if ids.shape!=(len(base),)or not len(ids)or ids.min()<0 or ids.max()>=len(self.target_suns):raise ValueError('One valid target Sun column per patch required')
+        with torch.inference_mode():
+            adjusted=self.model.adjusted_features(base,condition)
+            value=torch.einsum('boi,bi->bo',self.weight[ids],adjusted)+self.bias[ids]
+            return F.normalize(value,dim=-1,eps=1e-8)
 
 
 def counterfactual_loss(model,patches,condition,target_suns,teacher_features,available,positive_pairs,pooled=False):

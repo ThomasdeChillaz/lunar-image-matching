@@ -1,3 +1,45 @@
+## M70 — Integrated software, candidate failure mechanism and checksum-safe completion
+
+## Three-technique implementation and same-deadline data continuation — 4 November 2026
+
+The integrated matcher now has teacher-space lighting-response comparisons,
+pose-dependent patch refresh, bounded fine Sun search, a common final AP3P
+estimator and measurement-by-measurement hypothesis updates. The complete model
+has **95,808 parameters**. The even-light 3D teacher-bank producer is implemented.
+Root verification passes **570 tests** and all eight procedural image-to-pose
+toggles, with an independent saved-metric replay. These are software checks;
+**the response model still has zero lunar optimizer updates**.
+
+The completed, publicly frozen old-pilot diagnostic gives a useful failure
+mechanism. Under changed lighting plus unseen roll, only **44/863 visible
+anchors** put truth inside any usable top-eight native search window, versus
+167/863 with unchanged lighting. Truth-assisted refinement recovers 16/16 pilot
+poses, but this is a diagnostic using labels, **not usable matcher accuracy**.
+A stronger rotation-search control and staged physical lookups are being built;
+all experimental modules must beat matched controls before claiming a gain.
+
+The v68 completion rendered all 48 images of its first missing unit, then stopped:
+its parent wrote a self-referential checksum list. Every new payload byte is
+verified and preserved. The [same-deadline continuation](reports/solar_completion_contract_v70.json)
+copies the ten original sealed units unchanged, copies/reseals the existing
+48-image unit in a new folder and renders **only units 11–95**. It retains the
+original **4 November 13:23:15.913367 UTC deadline** and 50,400-second shared cap.
+No completed image is rendered again. Both failed attempts remain recorded.
+
+The [two-phase protocol](reports/solar_pipeline_protocol_v70.json) runs completion,
+then the independent full 96-unit geometry audit. At least 95% exact-pose success
+across every eligible camera direction is required before teacher extraction or
+training. The 16 training/eight selection groups are unchanged; four calibration
+and twelve final groups stay untouched. The cumulative compute ledger remains
+binding. The broader research targets remain active and unmet.
+
+Evidence: [candidate diagnostic](reports/solar_candidate_diagnostic_v69.json),
+[independent replay](reports/solar_candidate_replay_v69.json),
+[core software verification](reports/solar_core_integration_v68.json),
+[checksum repair audit](reports/completion_amendment_qa_v70.json), and
+[requirements and primary-source comparisons](reports/REQUIREMENTS_AND_SOTA_V69.md).
+No scientific superiority, real orbital accuracy, email or submission is claimed.
+
 ## M69 — Preserve failed acquisition; diagnose candidate reach and complete missing data
 
 ## Three-technique study: missing-only completion prepared — 4 November 2026
