@@ -1,0 +1,26 @@
+{
+  "schema_version": 63,
+  "cpu_threads": 2,
+  "max_calendar_seconds": 900,
+  "reference_geometry": "runs/north-v62-camera-completion/np31-pilot-0/training_motion-0/reference/geometry.npz",
+  "reference_geometry_sha256": "f9c94ca6ab07b6c725c8b75e300953a10ac33d30ec4d672cd75c9c3ef43b9511",
+  "mesh": "data/north-render-v31/pilots-v33-local/np31-pilot-0/mesh.npz",
+  "mesh_sha256": "a236e1a426262e316d6d1ed7a2e7c003362ec5ae2c771f66c8e880e1690664ec",
+  "geometry_audit": "reports/north_camera_qualified_geometry_v64.json",
+  "geometry_audit_sha256": "5f54b575068bccd4f047a10f36adf1bfd085dd193b220c5cccd057b10bbee356",
+  "qualified_pair_id": "np31-pilot-0/training_motion-0",
+  "render_summary": "runs/north-v62-camera-completion/summary.json",
+  "latitude_deg": 84.91049148847395,
+  "reference_hour_angle_deg": -80.0,
+  "reference_subsolar_latitude_deg": 1.5,
+  "output": "data/north-render-v31/solar-reference-pilot-v63.npz",
+  "source_sha256": {
+    "prepare_solar_reference_v63.py": "7477ebcde0b8a410229a533c077e9a16b67c18a64a6cfd07a36b703744b95eb8",
+    "solar_map_v63.py": "4841cc91abed2751fb9fb32392e109a98499ab5bb767b862137831235bf121d7",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee"
+  },
+  "query_truth_used": false,
+  "scope": "Reference-only Sun-ray cost/support pilot on a strict audit-qualified OLD pilot reference camera. Finite-scene ceiling and conservative coverage. Not a training bank or measured matcher gain."
+}
