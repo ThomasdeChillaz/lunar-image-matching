@@ -1,0 +1,39 @@
+{
+  "recorded_utc": "2026-11-03T13:01:23.133812+00:00",
+  "state_snapshot": {
+    "stage": "rendering fresh camera/light data",
+    "pid": 88568,
+    "updated_utc": "2026-11-03T12:59:13.868898+00:00",
+    "publication_commit": "af062eca28fd3f60998a5e9a8c2dc9c7fc85f38a",
+    "master_protocol_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+    "absolute_deadline_utc": "2026-11-03T22:42:36.341288+00:00",
+    "completed_units": 2,
+    "planned_units": 96,
+    "planned_images": 4608,
+    "matcher_forwards": 0,
+    "optimizer_updates": 0,
+    "state": "running",
+    "child_pid": 89221,
+    "current_unit": 2,
+    "component": "np31-r0-c0",
+    "family": "unseen_roll",
+    "unit_deadline_utc": "2026-11-03T13:14:13.855121+00:00",
+    "unit_started_utc": "2026-11-03T12:59:13.855121+00:00"
+  },
+  "complete_units_at_snapshot": 2,
+  "first_complete_unit": {
+    "unit_index": 0,
+    "output": "runs/solar-v67-development/np31-r0-c0/training_motion-0",
+    "summary_sha256": "5b5d5e6b67f0974caa558cb586b596bad494fa4533804ae8459510d07742e23d",
+    "seal_sha256": "ed5a195b081cb61f391b683c9f20a98213d92d40cc89552d54b1f5ea159e5f25",
+    "rendered_images": 48,
+    "outer_calendar_seconds": 202.727336,
+    "reused_complete_unit": false
+  },
+  "first_unit_file_seal_verified": true,
+  "source_publication_commit": "af062eca28fd3f60998a5e9a8c2dc9c7fc85f38a",
+  "fitting_allowed": false,
+  "matcher_forwards": 0,
+  "optimizer_updates": 0,
+  "scope": "A timestamped rendering-progress snapshot, not a full dataset, geometry audit or model result. Ongoing state remains local in runs/solar-development-v67-state.json."
+}
