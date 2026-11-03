@@ -1,0 +1,148 @@
+{
+  "schema_version": 69,
+  "phase": "old_pilot_candidate_diagnostic",
+  "created_utc": "2026-11-03T23:23:15.802282+00:00",
+  "cases": [
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-0",
+      "tile_id": "np31-pilot-0/training_motion-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-3",
+      "tile_id": "np31-pilot-0/training_motion-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-0",
+      "tile_id": "np31-pilot-0/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-3",
+      "tile_id": "np31-pilot-0/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-0",
+      "tile_id": "np31-pilot-1/training_motion-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-3",
+      "tile_id": "np31-pilot-1/training_motion-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-0",
+      "tile_id": "np31-pilot-1/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-3",
+      "tile_id": "np31-pilot-1/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-0",
+      "tile_id": "np31-pilot-2/training_motion-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-3",
+      "tile_id": "np31-pilot-2/training_motion-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-0",
+      "tile_id": "np31-pilot-2/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-3",
+      "tile_id": "np31-pilot-2/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-0",
+      "tile_id": "np31-pilot-3/training_motion-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-3",
+      "tile_id": "np31-pilot-3/training_motion-0",
+      "light_a": 0,
+      "light_b": 3
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-0",
+      "tile_id": "np31-pilot-3/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 0
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-3",
+      "tile_id": "np31-pilot-3/unseen_roll-0",
+      "light_a": 0,
+      "light_b": 3
+    }
+  ],
+  "source_sha256": {
+    "diagnose_solar_candidates_v69.py": "5ef3ddb62b5aef358cca4c5ebd058585597b2064a9775184a4e00909d2d02922",
+    "solar_frontend_v63.py": "3e91d4d26c48bbaf30fdd585e37844d0e89180adba792f9b3c3259fc3a075f9a",
+    "solar_assignment_v63.py": "179350d8687db4269d56eb879a0655128096aa6fa273409efe509ac5afe3542f",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_response_v63.py": "48579696b2af540b4380e74b6df80d85fb364a9a0d35d138f48c3810bd9d3c0a",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+    "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+    "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "verify_north_camera_v59.py": "f644a30340688ada54ea2335ee0570b5f5f6d24b61d0bbccca6ff80f8abea830"
+  },
+  "input_sha256": {
+    "reports/north_camera_data_v64.json": "d0e6398483111b7c424cd18de96f0ca02bfb69e93faf67c839ed76198a7cdcf0",
+    "reports/north_camera_qualified_geometry_v64.json": "5f54b575068bccd4f047a10f36adf1bfd085dd193b220c5cccd057b10bbee356",
+    "runs/compact-v2-expanded-20261030/selected.pt": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+    "runs/compact-v2-expanded-20261030/training.json": "80e37a58aa24873d0bbc2fb2b6eb35ce307bfbb9ef0d3e546aec73e35480aff4",
+    "runs/compact-v2-expanded-20261030/COMPLETE.json": "16776ae4749ecdc2c9141b19744da48233bfbbfcea71bbb6a9de51fb63038690",
+    "data/north-render-v31/camera-v64-cache/9f0b28a1ba63923906a30af65472816185bd026d04107cef4aa308e4088a17c1.npz": "d1df7e8097c7c7cde50692a382183bc4a6b0a6da6f0ae44cf8eddcce58167211",
+    "data/north-render-v31/camera-v64-cache/b21ba95d8b861e7a11f78c1b949c4ec9e7bae2a83b5f996072fdeb2bf3870e6b.npz": "6f94daa6d1d1cf6704cb070c851b2a4c8836453358eed6e35de28a33468953f7",
+    "data/north-render-v31/camera-v64-cache/5f4cf84c1d6d3aa656124b9e552162f50f1b9eebfb520bd460d64351ecbbf5a7.npz": "461e228a8df39df515f4d87e8e43fbeb445707bcb1ce4db3a68f6182094b18c9",
+    "data/north-render-v31/camera-v64-cache/74c42c7c4bd77df97c5de99aa4e847293a0a30cf2152cf3ce14a2b4b11ad6ac9.npz": "0de6b19f0eec78e3fdff8f06b92a8d29bf89a03df18173a22c4fb17e72b2aaaa",
+    "data/north-render-v31/camera-v64-cache/9841a63cb4d89fe08b71195a736808ae11ea95be13e9906a958aebc2a5727c64.npz": "988d89749bdb0e77dec2d0d90f4f8795f84592b9693af73d1f17e92117a95174",
+    "data/north-render-v31/camera-v64-cache/b08a0363ae62890b281f2a3603c8385f08954473c9b6982129cb54dec86af1bd.npz": "fe51683135fc9a0ba0d5a5a326faac56e578f1b508860b34c99192608b3b127f",
+    "data/north-render-v31/camera-v64-cache/53b0c86ed839662c70505ab84c28833b331b5d1d4e7db1710945793743a0ccdc.npz": "d7de4b9aea39e009b0739d95f1022efceab87c8a10deadcef0911c720b30ed5f",
+    "data/north-render-v31/camera-v64-cache/3b551ade9ddb4d216c3c940ec02c38c290d94dcae81239b17ef5e0e550899248.npz": "b8b3971eabf9d5dd7e24c01eefef98c6c3872be4a2f9639157114084f7fdb496",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1"
+  },
+  "manifest": "reports/north_camera_data_v64.json",
+  "geometry_audit": "reports/north_camera_qualified_geometry_v64.json",
+  "model": "runs/compact-v2-expanded-20261030",
+  "max_calendar_seconds": 300,
+  "cpu_threads": 2,
+  "training_or_reserve_access": false,
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "compute_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "output": "runs/solar-v69-candidate-diagnostic",
+  "scope": "Predeclared diagnostic on four already-exposed old excluded pilot supports. Frozen original 256-anchor/eight-candidate proposal generator. Truth only after image-only inference. Support oracle diagnoses search reach; it is not a learned result or true performance upper bound. No new geography, training, calibration or final reserve access.",
+  "additional_source_dependency": "lunar_geometry_v2.py pinned in input_sha256 and full public-tree byte verification"
+}

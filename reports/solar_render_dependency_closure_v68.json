@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "exact_project_import_dependency_closure": [
+    "blender_camera_control_v31.py",
+    "north_camera_contract_v59.py",
+    "north_camera_correspondences_v59.py",
+    "north_camera_scene_v59.py",
+    "north_camera_variation_v59.py",
+    "north_development_plan_v35.py",
+    "north_render_plan_v31.py",
+    "north_terrain_pilot_v32.py",
+    "render_solar_completion_v68.py",
+    "render_solar_data_v65.py",
+    "run_solar_completion_v68.py",
+    "solar_completion_v68.py",
+    "solar_data_v65.py",
+    "solar_physics_v63.py"
+  ],
+  "imports": {
+    "render_solar_completion_v68": [
+      "north_camera_correspondences_v59",
+      "north_camera_scene_v59",
+      "north_development_plan_v35",
+      "render_solar_data_v65",
+      "solar_completion_v68",
+      "solar_physics_v63"
+    ],
+    "render_solar_data_v65": [
+      "north_camera_correspondences_v59",
+      "north_camera_scene_v59",
+      "north_development_plan_v35",
+      "solar_data_v65",
+      "solar_physics_v63"
+    ],
+    "solar_data_v65": [
+      "north_camera_variation_v59",
+      "north_render_plan_v31"
+    ],
+    "north_camera_variation_v59": [
+      "north_render_plan_v31"
+    ],
+    "north_render_plan_v31": [],
+    "solar_physics_v63": [],
+    "north_camera_scene_v59": [
+      "blender_camera_control_v31"
+    ],
+    "blender_camera_control_v31": [
+      "north_render_plan_v31"
+    ],
+    "north_development_plan_v35": [
+      "north_terrain_pilot_v32"
+    ],
+    "north_terrain_pilot_v32": [
+      "north_render_plan_v31"
+    ],
+    "north_camera_correspondences_v59": [
+      "north_development_plan_v35"
+    ],
+    "solar_completion_v68": [
+      "north_camera_contract_v59",
+      "solar_data_v65"
+    ],
+    "north_camera_contract_v59": [],
+    "run_solar_completion_v68": [
+      "solar_completion_v68"
+    ]
+  },
+  "matcher_training_sources_included": false,
+  "scope": "Statictransitiveprojectsourceclosure for data completion. Runtimepurestandardlibrary/officialBlender/Numpydeps areenvironment-pinned. Onlythese14sourcefiles needfreeze duringrendering; unrelatedmatcher/trainingcode can change."
+}
