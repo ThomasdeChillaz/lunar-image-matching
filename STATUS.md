@@ -1,5 +1,50 @@
 # Status
 
+## Three-technique study: missing-only completion prepared — 4 November 2026
+
+**No new trained accuracy result yet.** The audited historical attention control
+remains **15/96 raw poses**, uncalibrated and below the research targets. The
+joint Sun/pose matcher, response model and active measurement modules are
+experimental software; their lunar ablations and training remain pending.
+
+The original v67 data attempt **failed at 10/96 units** and its deadline expired.
+The failure occurred before unit 10 rendered: a cross-version rotation rounding
+difference of 2.22e-16 failed an exact check. The repair uses the existing audited
+1e-12 allowance for the rotation basis only and always renders the stored
+original cameras. Original images, seals, failures and the expired deadline are
+preserved. A real Blender exception control now exits nonzero.
+
+The separately frozen [completion contract](reports/solar_completion_contract_v68.json)
+copies the ten complete units / 480 images byte-for-byte and renders only the
+86 missing units / 4,128 images. Its new 14-hour cap ends **2026-11-04T13:23:15.913367+00:00**;
+it never restarts the original attempt or refunds its cost. The measured
+ten-unit maximum, doubled across the missing units, projects 47,692.545 seconds.
+The source closure, physical schedule and terrain splits are pinned before
+execution. Extra cameras and lighting remain repeated conditions on the same
+16 training and eight selection terrains. Calibration/final terrain stays closed.
+
+The [serial execution protocol](reports/solar_pipeline_protocol_v69.json) first
+runs a 300-second, 16-case diagnostic on four **old excluded pilot terrains**.
+It measures whether the frozen coarse top-eight candidates put the true point
+inside a usable native 33-pixel search. Its truth-assisted pose check is a search
+reach diagnostic, never an image-only result or a performance upper bound.
+After an independent metric replay, the missing-only completion runs, followed
+by the full 96-unit exact-correspondence geometry gate. **Learning requires at
+least 95% correct oracle poses across all eligible camera directions.**
+
+The cumulative training and pretrained-comparison ledgers remain in force.
+No teacher extraction, optimizer update, final test, email or submission is
+admitted by this data-completion protocol. Source publication and byte checking
+precede scientific execution; the live receipt is `runs/solar-pipeline-v69-state.json`.
+
+Evidence: [preserved partial dataset](reports/solar_partial_snapshot_v68.json),
+[Blender camera replay](reports/solar_blender_schedule_replay_v68.json),
+[real exception control](reports/solar_blender_exit_control_v68.json),
+[one-unit geometry check](reports/solar_one_unit_geometry_check_v68.json), and
+[render dependency closure](reports/solar_render_dependency_closure_v68.json).
+The one-unit check is 2/2 correct; it does **not** replace the full-data gate.
+
+
 ## Three-technique study: data acquisition running — 3 November 2026
 
 The first experimental matcher integrates shared-Sun correspondence and pose
