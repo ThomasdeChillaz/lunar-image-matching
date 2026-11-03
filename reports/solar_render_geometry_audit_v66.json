@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "oracle_success": 1.0,
+  "oracle_pose_directions": 2,
+  "correct_oracle_poses": 2,
+  "views": [
+    {
+      "role": "reference",
+      "pixel_qualification": {
+        "qualified": true,
+        "maximum_pixel_error": 6.143103428331657e-05,
+        "pixels_over_tolerance": 0,
+        "tolerance_native_px": 0.02
+      },
+      "maximum_independent_mesh_error_m": 0.0002717788431709778,
+      "camera_clearance_m": 1377.645487191104,
+      "passed": true
+    },
+    {
+      "role": "query",
+      "pixel_qualification": {
+        "qualified": true,
+        "maximum_pixel_error": 6.600832725442657e-05,
+        "pixels_over_tolerance": 0,
+        "tolerance_native_px": 0.02
+      },
+      "maximum_independent_mesh_error_m": 0.00032679916512279306,
+      "camera_clearance_m": 1577.0043039382197,
+      "passed": true
+    }
+  ],
+  "outcomes": [
+    {
+      "source": "reference",
+      "pose_error": {
+        "rotation_deg": 0.0037181582540957263,
+        "translation_m": 0.09157090095141811
+      },
+      "correct": true,
+      "reference_range_m": 1534.5276116149214
+    },
+    {
+      "source": "query",
+      "pose_error": {
+        "rotation_deg": 0.006017167223675382,
+        "translation_m": 0.33229286240674943
+      },
+      "correct": true,
+      "reference_range_m": 1793.346139017931
+    }
+  ],
+  "minimum_bidirectional_visible_fraction": 0.8905325443786982,
+  "independent_camera_visibility": [
+    {
+      "source": "reference",
+      "kind": "visible",
+      "index": 0,
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2129.0171838413457,
+      "target_distance_m": 2129.0173719223935
+    },
+    {
+      "source": "query",
+      "kind": "visible",
+      "index": 51,
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1915.8611581479086,
+      "target_distance_m": 1915.8611568959077
+    }
+  ],
+  "source_sha256": "83d9cfe173524d9d57367642ce5fb7aa686a5be8e04a00463cdbe2ce20943eb3",
+  "raw_summary_sha256": "0799b20e5343a9b7fc9b60bfe8a1b42a4d4ca68a457f770348773a4f9a49a227",
+  "calendar_seconds": 12.388173241983168,
+  "scope": "ONE old excluded pilot terrain with fresh camera seed and24physical lights. Exact-correspondence oracle/geometry only, no matcher accuracy, learned gain, new geography or training permission."
+}

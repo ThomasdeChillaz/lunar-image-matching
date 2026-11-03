@@ -1,0 +1,25 @@
+{
+  "scope": "Analytic observability of a per-patch degree-five SH response on12even lights at fixed subsolar latitude+1.5deg, representative80degterrain latitude. No lunar image/model result.",
+  "shape": [
+    12,
+    36
+  ],
+  "rank_default": 11,
+  "singular_values": [
+    2.689320509710649,
+    2.635800075398008,
+    2.5434810357387185,
+    2.384427979786021,
+    2.1571721525099,
+    1.684045801869613,
+    0.7206195122889462,
+    0.1821857141868425,
+    0.029881190561767006,
+    0.0030512317679168995,
+    0.00016313519682691787,
+    2.742495666672758e-16
+  ],
+  "unknowns_per_descriptor": 36,
+  "training_lights": 12,
+  "conclusion": "A single fixed-declination solar arc cannot identify a general36coefficient angular response for one patch. Shared neural conditioning/regularization is a prior, not independent full-sphere supervision. Odd lights test interpolation along the same arc; solar-latitude extrapolation remains unverified."
+}
