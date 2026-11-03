@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "replayed_cases": 16,
+  "rows": [
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-0",
+      "visible": 204,
+      "top1_support": 99,
+      "top8_support": 132,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-3",
+      "visible": 204,
+      "top1_support": 3,
+      "top8_support": 17,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-0",
+      "visible": 240,
+      "top1_support": 20,
+      "top8_support": 81,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-3",
+      "visible": 240,
+      "top1_support": 3,
+      "top8_support": 15,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-0",
+      "visible": 255,
+      "top1_support": 31,
+      "top8_support": 118,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-3",
+      "visible": 255,
+      "top1_support": 5,
+      "top8_support": 24,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-0",
+      "visible": 206,
+      "top1_support": 9,
+      "top8_support": 44,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-3",
+      "visible": 206,
+      "top1_support": 1,
+      "top8_support": 12,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-0",
+      "visible": 256,
+      "top1_support": 98,
+      "top8_support": 175,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-3",
+      "visible": 256,
+      "top1_support": 2,
+      "top8_support": 15,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-0",
+      "visible": 196,
+      "top1_support": 8,
+      "top8_support": 32,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-3",
+      "visible": 196,
+      "top1_support": 1,
+      "top8_support": 6,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-0",
+      "visible": 256,
+      "top1_support": 4,
+      "top8_support": 30,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-3",
+      "visible": 256,
+      "top1_support": 4,
+      "top8_support": 24,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-0",
+      "visible": 221,
+      "top1_support": 2,
+      "top8_support": 10,
+      "truth_assisted_pose_recovered": true
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-3",
+      "visible": 221,
+      "top1_support": 0,
+      "top8_support": 11,
+      "truth_assisted_pose_recovered": true
+    }
+  ],
+  "summary_sha256": "1ec2168e650e1bc5d5a221c1928a314ee0685ba7d13b07408fa2ceb7a54b4dd1",
+  "source_sha256": "03caeff531fd9178931a1ff8cbf18dacb64cc9cfeb1cf5c21c29041d58f3e952",
+  "scope": "Independent saved-array/native-coordinate/pose arithmetic replay only. No new model inference or performance ceiling inferred."
+}

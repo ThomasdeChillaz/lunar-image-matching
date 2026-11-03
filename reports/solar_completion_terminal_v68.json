@@ -1,0 +1,23 @@
+{
+  "state": "failed",
+  "stage": "failed; preserve all original/copied/new outputs",
+  "pid": 91550,
+  "updated_utc": "2026-11-03T23:33:01.301935+00:00",
+  "publication_commit": "48f0622d50f187b7a8555ad6da924af1ad71f194",
+  "completion_contract_sha256": "b3ba84a3ad54317f506bdc0f91517e52c5bd2eb336d04b325ecda0dffd1ff14d",
+  "completion_absolute_deadline_utc": "2026-11-04T13:23:15.913367+00:00",
+  "original_shared_deadline_utc": "2026-11-03T22:42:36.341288+00:00",
+  "original_deadline_met": false,
+  "complete_units": 10,
+  "planned_units": 96,
+  "matcher_forwards": 0,
+  "optimizer_updates": 0,
+  "error_type": "ValueError",
+  "error": "Complete-unit file inventory differs",
+  "last_active_unit": {
+    "unit_index": 10,
+    "unit_started_utc": "2026-11-03T23:30:06.962501+00:00",
+    "unit_absolute_deadline_utc": "2026-11-03T23:45:06.962501+00:00",
+    "child_pid": 91597
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "procedural_tests": 10,
+  "test_log_sha256": "5eee80b98496332322b6a64ebf44c7146a0fdaef3c6611f2cc0cb4a0a6c73ba2",
+  "source_sha256": {
+    "build_solar_training_bank_v68.py": "0fc239ec85c0efb72f06a215388e1e55788a34d2d32cf73133a935e958812c79",
+    "solar_training_bank_v68.py": "3523ae9fac8abe607b9cdb461ce191e40ab98072c326d6f29e8de51b65ee5f23",
+    "test_solar_training_bank_v68.py": "6775a326e5a68e98f46e683edb04b113878c1c5a683e444214ffed907747f1e3"
+  },
+  "real_lunar_teacher_forwards": 0,
+  "real_lunar_image_decodes": 0,
+  "real_lunar_optimizer_updates": 0,
+  "root_repository_files_edited": false,
+  "published": false,
+  "capabilities": [
+    "full96unit/24group>=95%oracle gate before teacher construction",
+    "Even-only PNG byte read/hash/decode with odd access rejected beforehand",
+    "Exact localfacet normals, barycentric/plane checks, native sharedcanonicalization",
+    "Counterfactual teacher targets in frozen32Dspace, same physicalpoint/targetSun frame",
+    "Unknown/unavailableodd targets remainNaN; darkness is not camera occlusion",
+    "Immutable checkpoint/source/environment-sensitive complete record cache",
+    "Actualfresh4group costpilot and mechanically checked full-bank cost bound",
+    "Canonical shared cumulative training-budget reservation",
+    "Existing16group/64record TrainingBank format/sampling integration"
+  ],
+  "limitations": [
+    "Draft only; parent must integrate/source-publish and run fullrepositorychecks before actualextraction.",
+    "Requires completed recovery dataset/audit; no actualteacherextraction performed.",
+    "Opaque native33patch interior camera occlusion is not exhaustivelylabelled; exact centre visibility and image/surface support are separate.",
+    "Poseconditioning default is exacttraininggeometry; optional publishedjitter only.",
+    "This is dataset/preparation software, not a trained matching contribution or lunar accuracy result."
+  ]
+}

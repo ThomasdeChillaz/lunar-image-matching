@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "toggle": "000",
+      "passed": true,
+      "translation_error_m": 0.26803040872055073,
+      "rotation_error_deg": 0.1359614310395336,
+      "median_native_correspondence_error_px": 0.2723403414976976,
+      "saved_result_sha256": "8b5e3ddc15498a6db5c5a1fd25b9e8db091140dc09f24054c4a792b4179bcbe7"
+    },
+    {
+      "toggle": "001",
+      "passed": true,
+      "translation_error_m": 0.11947617559882637,
+      "rotation_error_deg": 0.0581270281899432,
+      "median_native_correspondence_error_px": 0.23211004307252409,
+      "saved_result_sha256": "b8f26bf7f1b13b0703d5575ac2d598edc83616cbedc1d32d054b0fac1dd3f305"
+    },
+    {
+      "toggle": "010",
+      "passed": true,
+      "translation_error_m": 0.2680304129786058,
+      "rotation_error_deg": 0.13596143286237583,
+      "median_native_correspondence_error_px": 0.222893672499262,
+      "saved_result_sha256": "bd41a3a46b9d55540d819bf77aae5c760ec491afea881002713ef933c7fb4c51"
+    },
+    {
+      "toggle": "011",
+      "passed": true,
+      "translation_error_m": 0.13630705292285114,
+      "rotation_error_deg": 0.06831458145289293,
+      "median_native_correspondence_error_px": 0.21234258949974422,
+      "saved_result_sha256": "d07904387847dd90c96b40213be3e03df002ff0826cd22a05b7065a501aeb839"
+    },
+    {
+      "toggle": "100",
+      "passed": true,
+      "translation_error_m": 0.2959292991235873,
+      "rotation_error_deg": 0.14725062090608754,
+      "median_native_correspondence_error_px": 0.27172180782399075,
+      "saved_result_sha256": "0a305c43f19195bdefef3936f5b3d771447f057c513c9a4f6bd02b166be42f9d"
+    },
+    {
+      "toggle": "101",
+      "passed": true,
+      "translation_error_m": 0.2819509517036811,
+      "rotation_error_deg": 0.1348158619641287,
+      "median_native_correspondence_error_px": 0.16762625699408484,
+      "saved_result_sha256": "ebd14fb16a9eca79707832d8237243d4ab007bca8ba65eb5179901a6893a6771"
+    },
+    {
+      "toggle": "110",
+      "passed": true,
+      "translation_error_m": 0.29592929751404917,
+      "rotation_error_deg": 0.14725062013879578,
+      "median_native_correspondence_error_px": 0.22872373817185598,
+      "saved_result_sha256": "0a48435e66ae88dcab40885c3038d87bb9c45fdcacb5a41d060e2605ed9b4c76"
+    },
+    {
+      "toggle": "111",
+      "passed": true,
+      "translation_error_m": 0.1164989458279728,
+      "rotation_error_deg": 0.04854333130934014,
+      "median_native_correspondence_error_px": 0.13697556469863809,
+      "saved_result_sha256": "c7bd9cf84178501f01d808420e313db39f5f4f7b114ad107220b12f0e2688e8d"
+    }
+  ],
+  "source_sha256": "d296912f6aa9f86e9ff5c2b09512550b1243aca162ba52e22d928e6b2a9f5bc7",
+  "summary_sha256": "91b887fc43d0558b02a63f10eb6f6569a94ac4bc9f2d4ab93d89c7ad384efa70",
+  "scope": "Independent arithmetic replay of eight PROCEDURAL image-to-pose controls. Rotation added as diagnostic; original<1m/<1px software gate retained. Does not replay runtimes or establish lunar accuracy/learning."
+}

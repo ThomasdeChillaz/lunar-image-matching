@@ -1,0 +1,27 @@
+{
+  "scope": "Draft-only software controls; NO actual lunar neural inference/training. Root integration/full repository checks and new source publication still required.",
+  "focused_tests": 47,
+  "focused_log_sha256": "6959f109e89e25ef1032bf8871aa54ebfe1dd97402ab7cf130532fd4859e8eb4",
+  "procedural_eight_toggles_passed": true,
+  "procedural_smoke": "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_next_v68/software-smoke-v68-draft",
+  "smoke_note": "All8passed against repaired algorithms. After this run only output inference_revision and honest custom-callback iteration metadata were added; no pose/score arithmetic changed. Root fresh smoke required under final integrated source.",
+  "invalid_invocation_preserved": "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_next_v68/software-smoke-v68-invalid-invocation.json",
+  "sun_materialization": "Current snapshot uses fully precomputed fine catalogue. Staged/lazy materialization work follows; do NOT buildfullfine tables before measured admission.",
+  "files": {
+    "solar_assignment_v63.py": "c90ddcf4998b93230d8488c1207ff7e89832478471dd99d7cf51de88c0a686f9",
+    "solar_frontend_v63.py": "6f0ce32744d4c34fcf90e19b2a0cf2087107f611d62ad9c3f12e92d339ce75e2",
+    "solar_response_v63.py": "66370e95fb0baf35380b5f7eac694d3c50aa596a2fbd19127906f5dacb76784e",
+    "solar_map_v63.py": "bcdebe475e4764a9838bb15ee324b2302efdb1128e97454a6d27e1b1c5cf3184",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a",
+    "prepare_solar_reference_v63.py": "7f38ae61272e1b917c60e0e0557b8c95f8b8346908c3ab8d5f95db1c2093a643",
+    "localize_terrain.py": "44b5ead01eeeffe35a32486c261c2e271f7acfd558bb5f1afd9aa584fd89433b",
+    "test_response_space_v68.py": "5f76f92551c8333b558fcfa41e40940b9867cb180adf6166be058aa67ef5bff4",
+    "test_sun_search_v68.py": "44f904ab8455e9aef58add5f76315ce300d42f1e07ae528aa96ccf9297ca7e13",
+    "test_response_fusion_v68.py": "fd15f1be443074700ad29d88ca527b1f8631bda8cd66f42bff4196eea4989c3d",
+    "test_cropped_map_v68.py": "e1255340c4f188672f4eeac2ff905e52dd42eeec112f8a5393d52a1a32e03a98",
+    "test_joint_refresh_v68.py": "ffc00acb06b18222a1f32b78efe7717081df7300223aec64d4eb59f36f661641",
+    "test_response_cache_v68.py": "31967a4edd3c1e1b26d260e4da2fa2bf254d1dacafda7759d863db0c33805a05",
+    "test_solar_frontend_v63.py": "4ddba625ecc25a311b8bb39811e4e0899a0b44453b2aa25ff67495b655dd3594",
+    "test_solar_map_v63.py": "8b41f86833bb919bc1e1334f75a54a23ac238e54d1241fd51139ee3d7300898b"
+  }
+}

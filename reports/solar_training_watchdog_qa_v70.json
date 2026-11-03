@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "scope": "Procedural controller and file-admission checks only; no scientific program, model, optimizer or renderer invoked.",
+  "external_watchdog_source_sha256": "a2affde47af68649cb2169e71bdd07c8ff663f3606c8e2492bac9d143af4f7c0",
+  "training_admission_source_sha256": "6c05c945ac9ca9c9027884bea71d7a63d503ec3aae42af332b52bd7cb901338e",
+  "actual_dummy_controls": [
+    {
+      "case": "deadline",
+      "controller_returncode": 1,
+      "detached_dummy_pid": 92047,
+      "detached_dummy_pgid": 92047,
+      "detached_dummy_terminated": true,
+      "receipt_complete": false,
+      "failure_type": "TimeoutError",
+      "measured_calendar_seconds": 6.0405771470000005,
+      "child_returncode": -9,
+      "deadline_unchanged": true,
+      "receipt_sha256": "b8e5ecb4de705bec3ecec2e29d204552ee1e0c8b52bdedf4a54c9ab17022c5a0",
+      "passed": true
+    },
+    {
+      "case": "SIGTERM",
+      "controller_returncode": 1,
+      "detached_dummy_pid": 92055,
+      "detached_dummy_pgid": 92055,
+      "detached_dummy_terminated": true,
+      "receipt_complete": false,
+      "failure_type": "InterruptedError",
+      "measured_calendar_seconds": 5.2666805210000005,
+      "child_returncode": -9,
+      "deadline_unchanged": true,
+      "receipt_sha256": "5d2b2135babd47dc804be30d69c3c4eb69bdf712cf9dc2bebcc95793c274a420",
+      "passed": true
+    },
+    {
+      "case": "SIGINT",
+      "controller_returncode": 1,
+      "detached_dummy_pid": 92069,
+      "detached_dummy_pgid": 92069,
+      "detached_dummy_terminated": true,
+      "receipt_complete": false,
+      "failure_type": "InterruptedError",
+      "measured_calendar_seconds": 0.261195575,
+      "child_returncode": -15,
+      "deadline_unchanged": true,
+      "receipt_sha256": "ce17abc7b8a44d55dfc0073876036c518cd0f05444dedbff6e9f42425f8e7e86",
+      "passed": true
+    },
+    {
+      "case": "inside_popen",
+      "controller_returncode": 1,
+      "detached_dummy_pid": 92074,
+      "detached_dummy_pgid": 92074,
+      "detached_dummy_terminated": true,
+      "receipt_complete": false,
+      "failure_type": "InterruptedError",
+      "measured_calendar_seconds": 0.007250661999999998,
+      "child_returncode": -15,
+      "deadline_unchanged": true,
+      "receipt_sha256": "d4de68fc8547f85df253e1a7d43ee1496186f82e7fa3d83b9e7db65e8200f4e0",
+      "passed": true
+    }
+  ],
+  "dummy_cleanup_controls_passed": 4,
+  "remaining_dummy_processes": 0,
+  "admission_file_controls": [
+    {
+      "mutation": "structurally_valid_dummy_baseline",
+      "accepted_by_current_pilot_validator": true,
+      "error": null
+    },
+    {
+      "mutation": "nan_cost",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Finite measured cost and fixed allowance required"
+    },
+    {
+      "mutation": "empty_checkpoint_map",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Both actual 0/100 pilot checkpoints are required"
+    },
+    {
+      "mutation": "foreign_watchdog_program",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Executed pilot watchdog/source/program differs"
+    },
+    {
+      "mutation": "wrong_watchdog_source",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Executed pilot watchdog/source/program differs"
+    },
+    {
+      "mutation": "failed_watchdog_child",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Executed pilot watchdog/source/program differs"
+    },
+    {
+      "mutation": "watchdog_over_cap",
+      "accepted_by_current_pilot_validator": false,
+      "error": "Pilot/replay exceeded its measured original deadline"
+    }
+  ],
+  "missing_publication_commit_rejected_before_scientific_work": true,
+  "no_remaining_observed_training_admission_blocker_in_reviewed_controls": true,
+  "detailed_watchdog_report_sha256": "7f755d63d8484f9830be3a4e4c9db0f345ee2abb00a9cc105dd8a8f775edd0e5",
+  "admission_report_sha256": "bb30ff56e4452d46be3b54b84f0ce11be93da846e5ac50b76e2bf6f03fd024f1",
+  "timing_scope": "1-second deadline test deliberately ignores SIGTERM and takes6.04seconds including5second kill grace; failed termination receipt preserves observed time. Other resistant SIGTERM test takes5.27seconds. This is cleanup evidence, not a measured training cost or scientific gain.",
+  "root_sources_changed_by_control": false,
+  "scientific_job_launched": false
+}
