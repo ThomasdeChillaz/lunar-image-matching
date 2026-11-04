@@ -1,5 +1,25 @@
 # Status
 
+## Dither-free pose control completed
+
+On the fixed eight-case development pilot, the fresh default arm
+reproduced all archived correspondence and pose arrays. Removing dither
+eliminated the three wrong dark poses and preserved the bright success.
+No clean arm recovered a dark pose. That outcome held for dither-free RGB8,
+RGB16 and RGB16 with independent read noise. All 104 images reproduced
+the historical decoded RGB pixels in the default arm, and every camera and
+depth comparison passed. The next improvement must recover genuine
+scene evidence under low light.
+[Measured paired result](reports/SOLAR_CLEAN_RADIANCE_RESULTS_V106.md)
+
+The sealed-pixel diagnostic found a central intensity span of 0.051
+equivalent 8-bit codes in each of the two darkest cases even in RGB16.
+The third dark case has a sparse brighter tail. This separates the two
+near-uniform inputs from the case where targeted observations of brighter
+regions may still help. The synthetic noise comparison is a sensitivity
+check and does not characterize a physical camera.
+[Native signal audit](reports/SOLAR_CLEAN_SIGNAL_V107.md)
+
 ## Dither pattern isolated and verified in archived failures
 
 Two featureless native renders gave 2,025 same-coordinate SIFT matches

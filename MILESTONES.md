@@ -1,3 +1,18 @@
+## M106 — Remove the artifact in a matched pose experiment
+
+The frozen four-arm comparison completed and independently replayed all
+32 method–case rows. All three clean arms removed the three wrong dark
+poses without losing the bright success. The dark cases still produced
+no correct poses. Original image pixels, camera arrays and default pose
+outputs reproduced exactly before attributing the difference to encoding.
+[Published result](reports/SOLAR_CLEAN_RADIANCE_RESULTS_V106.md)
+
+The follow-up pixel audit measured the available intensity range in nine
+fixed exposures. Two dark cases have near-uniform clean16 images. The
+third has a sparse higher-intensity tail that warrants a separate spatial
+overlap and acquisition study.
+[Pixel audit](reports/SOLAR_CLEAN_SIGNAL_V107.md)
+
 ## M105 — Identify a fixed-coordinate encoding failure
 
 The prepublished procedural intervention isolates fixed-coordinate PNG
