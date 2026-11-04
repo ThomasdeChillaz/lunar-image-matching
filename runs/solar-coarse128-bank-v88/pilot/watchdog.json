@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "protocol_sha256": "aa9d30a9f001c86af433bcf121525ce0ba4e03da0274b71119c2a135c0d0444f",
+  "publication_commit": "ebacb236e4d64d9de9b0ad90f0eea75cf2c513c3",
+  "started_utc": "2026-11-04T11:31:21.651549+00:00",
+  "ended_utc": "2026-11-04T11:31:33.071798+00:00",
+  "calendar_seconds": 11.419918997038621,
+  "cap_seconds": 72,
+  "hard_deadline_utc": "2026-11-04T11:32:33.651549+00:00",
+  "work_deadline_utc": "2026-11-04T11:32:28.651549+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "aa9d30a9f001c86af433bcf121525ce0ba4e03da0274b71119c2a135c0d0444f/coarse128_teacher_bank",
+      "category": "training",
+      "seconds": 72,
+      "reserved_utc": "2026-11-04T11:31:24.167904+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 15195.0
+  },
+  "child_returncode": 0,
+  "failure": null,
+  "artifacts": {
+    "summary.json": "d8278f5936a9db21b71af80b75fe14aba5246f78f70c22eae79e349c84c2e402",
+    "manifest.json": "66da9aa1b81f8658ff18510f880dfc6f69f2d009670037a3f0c268ff7f1cbcef",
+    "worker.log": "486d4d94d903d457a1fe08e2535de9c869247c1fec15174e17580ff435f899f1"
+  }
+}
