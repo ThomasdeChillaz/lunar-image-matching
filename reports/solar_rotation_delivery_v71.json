@@ -1,0 +1,45 @@
+{
+  "files": {
+    "solar_rotation_v71.py": "be7bb8255e0d1c0bf331b5bc807baeb9f77339b6a33c7426f0c794c4cb422d43",
+    "test_rotation_bank_v71.py": "c6923aaee044b8ec3f730a3a5f1604f9381a3491755f7232a74db1037b054b64",
+    "solar_frontend_v63.py": "c8e5f628cf8d6f9854852886dd60e7b804e0312d98be8c763cf5378245ab78c8",
+    "localize_terrain.py": "47b951420e6522769a16350480acfbd702ebcdca4a71a88c904960038abc33a9"
+  },
+  "tests": "61 procedural tests passed7.24s; includes exactolddefault replay, native affine/inverse controls, validFOV rejection,16angle proposal forward on random procedural texture only.",
+  "api": {
+    "constructor": "SolarMatcher(coarse,fine,response=None,pooled=False,proposal_angles=None)",
+    "configuration_key": "proposal_angles",
+    "historical_default": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "matched_expanded": [
+      0.0,
+      22.5,
+      45.0,
+      67.5,
+      90.0,
+      112.5,
+      135.0,
+      157.5,
+      180.0,
+      202.5,
+      225.0,
+      247.5,
+      270.0,
+      292.5,
+      315.0,
+      337.5
+    ],
+    "candidates": "candidates(encoder,reference,query,proposal_angles=None) -> p[256,2],q[256,8,2],score[256,8],bank_index[256,8]"
+  },
+  "limitations": [
+    "Expanded bank is an engineering control; must be identical acrossall8 ablations and compact controls.",
+    "No actual lunar forward, candidate diagnostic, timingpilot or model comparison executed. Root must publishsource and admit measured pilot before use.",
+    "No accuracy gain claimed. Coarse orientation expansion can increase memory/runtime; complete timing includes rotation/resampling/masks.",
+    "Historical quarter-turndefault byte-exact candidate outputs verified; expanded bankindex isnot a quarterturn count."
+  ],
+  "physics63_unchanged": true
+}

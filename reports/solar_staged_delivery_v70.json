@@ -1,0 +1,19 @@
+{
+  "files": {
+    "solar_assignment_v63.py": "3f3a7b15d0915bfcdd2b83303ff7ab26f6fad5c45b62ff2c4fc0ee106dd2930f",
+    "solar_frontend_v63.py": "b1fc76ede2fbb445fcb1067b9963fae3a65c478112e679a1e0370242a0f62a00",
+    "prepare_solar_reference_v63.py": "629a10f5a058cb3439ef56d188e54df8f4b14f9f33bd2eba324c47b8da3ac933",
+    "localize_terrain.py": "d97e9ed047a6b5cb56418c00c87adc089096eda6f8366ebfd5069a2efd35db39",
+    "solar_lookup_v70.py": "5e741b1d06456663aa3d1df50ffcf1a228da68818251cfa3cddb7ec0800e8bf1",
+    "solar_lookup_worker_v70.py": "89c176af5dfe902ccadfadf2e9ba109428e2e3bd34230d1412dcf700376cce86",
+    "test_staged_solar_v70.py": "2874f8dbf7b0229d52089f2609f9bea70d082e3c3dc3391c6f96b77c85071bf8"
+  },
+  "tests": "45 passed in4.39s, importlib mode with draft module origin assertion; procedural only",
+  "physics63_unchanged": true,
+  "limitations": [
+    "No actual Blender IPC worker or lunar physical table executed; requires published-source measured cold-start/ray pilot before scientific admission.",
+    "No persistent disk ray cache; physical provider cache is in memory. Report warm/cold profile cost explicitly.",
+    "Independent-Sun bounded union may materialize many columns; report actual physical cost.",
+    "Quarter-turn proposal bank remains default; optional16angle control follows separately."
+  ]
+}

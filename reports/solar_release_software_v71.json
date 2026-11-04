@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "repository_tests_passed": 608,
+  "optional_skips": 4,
+  "test_log_sha256": "d1e5a8de5e22dfeaab37458618a97971865ef849d405e2325155f27c42fb4ced",
+  "fresh_smoke_sha256": "360931ac7d5a43f680ecb6deb0149895343a23aecdb51060a44044883175e7f8",
+  "independent_replay_sha256": "38fb97564effdaae78a5431c267553e80c3065052822b4bf76563f74193c5fb9",
+  "source_sha256": {
+    "solar_assignment_v63.py": "3f3a7b15d0915bfcdd2b83303ff7ab26f6fad5c45b62ff2c4fc0ee106dd2930f",
+    "solar_frontend_v63.py": "c8e5f628cf8d6f9854852886dd60e7b804e0312d98be8c763cf5378245ab78c8",
+    "prepare_solar_reference_v63.py": "629a10f5a058cb3439ef56d188e54df8f4b14f9f33bd2eba324c47b8da3ac933",
+    "localize_terrain.py": "47b951420e6522769a16350480acfbd702ebcdca4a71a88c904960038abc33a9",
+    "solar_lookup_v70.py": "5e741b1d06456663aa3d1df50ffcf1a228da68818251cfa3cddb7ec0800e8bf1",
+    "solar_lookup_worker_v70.py": "89c176af5dfe902ccadfadf2e9ba109428e2e3bd34230d1412dcf700376cce86",
+    "test_staged_solar_v70.py": "2874f8dbf7b0229d52089f2609f9bea70d082e3c3dc3391c6f96b77c85071bf8",
+    "solar_rotation_v71.py": "be7bb8255e0d1c0bf331b5bc807baeb9f77339b6a33c7426f0c794c4cb422d43",
+    "test_rotation_bank_v71.py": "c6923aaee044b8ec3f730a3a5f1604f9381a3491755f7232a74db1037b054b64",
+    "solar_evaluation_v70.py": "1650d1b21c740c2ff8900399f63bdf8900f3758da79f05c69bdb9bccc03f5f9e",
+    "run_solar_evaluation_v70.py": "dd3204e9fb74c4f540cc76265b656c67ba19fb3402e1f53c08e2957253bf9c39",
+    "verify_solar_evaluation_v70.py": "15ff0fc18c4c5ebdd0ea15e5634001709629c9c2c5c19fbb0eedc3a435a4bcb8",
+    "test_solar_evaluation_v70.py": "5d8faba234f8fd32f93072fb09e0d8cd92da2c0cf9104346eda458f41cd03850"
+  },
+  "total_model_parameters": 95808,
+  "lunar_response_optimizer_updates": 0,
+  "physical_worker_executed": false,
+  "scope": "Procedural software verification for integrated lazy-Sun lookup, matched16-angle proposal control, nativecoordinate inversion, checkpoints and ablation evaluation. The16-angle bank has no lunar accuracy or cost result yet. Real physical worker, geometry-qualified data and trained-model comparisons remain pending."
+}
