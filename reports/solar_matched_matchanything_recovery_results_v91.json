@@ -1,0 +1,1762 @@
+{
+  "complete": true,
+  "independent_saved_metric_replay_passed": true,
+  "original_run_complete": false,
+  "original_protocol_sha256": "debb173f2b4a0b3281b46ba7e6d62843492a4daa89f851f0ce03cb1e533b50a5",
+  "original_watchdog_sha256": "6d2dd974c75ac8f75e38ecc5426f964a26552d5cd5f699be5f815259ab576d2f",
+  "recovery_protocol_sha256": "e902f75e017d611659b6fffe4e825dcb3c6164c01223c1c3a373250a8249489f",
+  "recovery_watchdog_sha256": "39c0ce4d0129c033186fdb7e3b63aab13db3685feac678270a9de8f6e3263880",
+  "carried_rows": 4,
+  "fresh_rows": 4,
+  "rows": [
+    {
+      "metrics": {
+        "positive": true,
+        "correct": true,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "pose_error": {
+          "rotation_deg": 0.08344925532360237,
+          "translation_m": 3.227161662356945
+        },
+        "reference_range_m": 1413.787695642399,
+        "correspondence": {
+          "1": {
+            "correct": 2043,
+            "co_visible": 2922,
+            "returned": 2922
+          },
+          "2": {
+            "correct": 2558,
+            "co_visible": 2922,
+            "returned": 2922
+          },
+          "4": {
+            "correct": 2740,
+            "co_visible": 2922,
+            "returned": 2922
+          },
+          "8": {
+            "correct": 2880,
+            "co_visible": 2922,
+            "returned": 2922
+          },
+          "12": {
+            "correct": 2915,
+            "co_visible": 2922,
+            "returned": 2922
+          }
+        }
+      },
+      "inference_seconds": 6.7814704370102845,
+      "common_pose_replay_seconds": 0.045973753032740206,
+      "inference_failure": null,
+      "label_method": "common_axial_depth_projection_at_returned_points",
+      "final_estimator": {
+        "inliers": 2675,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4458.701657750651,
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": null,
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "1db68942636d5e94f44699146822287026bc5d5ab33b0519d24f765cb27fed91",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4958647369639948
+        },
+        "after": {
+          "physical_key": "1db68942636d5e94f44699146822287026bc5d5ab33b0519d24f765cb27fed91",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4958647369639948
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            2922,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            2922,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00002",
+          "dtype": "<f8",
+          "shape": [
+            4,
+            4
+          ],
+          "nonfinite_count": 0
+        },
+        "reason": null,
+        "common_estimator": {
+          "inliers": 2675,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 4458.701657750651,
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 3,
+        "serialized_array_bytes": 93632,
+        "compact_json_bytes": 552,
+        "structure_nodes": 12,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 0.00020376004977151752,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u012-l00-00-positive",
+      "component": "np31-r0-c4",
+      "query_component": "np31-r0-c4",
+      "positive": true,
+      "unit_index": 12,
+      "query_unit_index": 12,
+      "light_a": 0,
+      "light_b": 0,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.018045671982690692,
+        "reference_geometry_load_seconds": 0.036975377006456256,
+        "reference_physics_setup_seconds": 0.4958778889849782
+      },
+      "complete_localization_cold_seconds": 7.33236937498441,
+      "case_calendar_seconds": 7.536180516995955,
+      "profile_load_seconds": 2.6983370789675973,
+      "saved_arrays": "runs/solar-matched-matchanything-v90/pilot/61bdcb8e3311d5719db9f440f9d5f536263753ca6835fea2ed6d040e7d16b5cd.npz",
+      "saved_arrays_sha256": "634e4ed063f7600c746be83d7ea910b54f1febdc19640a53621ef818a053a698"
+    },
+    {
+      "metrics": {
+        "positive": false,
+        "correct": false,
+        "strict": false,
+        "pose_returned": false,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "pose_error": null,
+        "reference_range_m": 1413.787695642399,
+        "correspondence": {}
+      },
+      "inference_seconds": 4.3929392080171965,
+      "common_pose_replay_seconds": 0.004548388998955488,
+      "inference_failure": null,
+      "label_method": "nonoverlap_full_footprint_certificate",
+      "final_estimator": {
+        "inliers": 0,
+        "reason": "ransac_failed",
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": "ransac_failed",
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "1db68942636d5e94f44699146822287026bc5d5ab33b0519d24f765cb27fed91",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4958647369639948
+        },
+        "after": {
+          "physical_key": "1db68942636d5e94f44699146822287026bc5d5ab33b0519d24f765cb27fed91",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4958647369639948
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            9,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            9,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": null,
+        "reason": "ransac_failed",
+        "common_estimator": {
+          "inliers": 0,
+          "reason": "ransac_failed",
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 2,
+        "serialized_array_bytes": 288,
+        "compact_json_bytes": 416,
+        "structure_nodes": 11,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 0.00016314303502440453,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "component": "np31-r0-c4",
+      "query_component": "np31-r0-c7",
+      "positive": false,
+      "unit_index": 12,
+      "query_unit_index": 20,
+      "light_a": 0,
+      "light_b": 0,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.010014225030317903,
+        "reference_geometry_load_seconds": 0.0,
+        "reference_physics_setup_seconds": 0.0
+      },
+      "complete_localization_cold_seconds": 4.402953433047514,
+      "case_calendar_seconds": 4.506980555015616,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v90/pilot/fee8fc854b699a8261820614d3839f33d1d29047d4044f4e1f92d7fabd291861.npz",
+      "saved_arrays_sha256": "ea015ac2009d0a589f5ba35bba3eb7c9bb9f07539b8c43fcd8718e085997f029"
+    },
+    {
+      "metrics": {
+        "positive": true,
+        "correct": false,
+        "strict": false,
+        "pose_returned": false,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "pose_error": null,
+        "reference_range_m": 1334.3998827472255,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "co_visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "co_visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "co_visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "co_visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "co_visible": 0,
+            "returned": 0
+          }
+        }
+      },
+      "inference_seconds": 0.004676559998188168,
+      "common_pose_replay_seconds": 0.00043288199231028557,
+      "inference_failure": null,
+      "label_method": "exact_frozen_projected_labels",
+      "final_estimator": {
+        "inliers": 0,
+        "reason": "insufficient_or_invalid_matches",
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": "insufficient_or_invalid_matches",
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "a739d29b3fd77a785ceb29fe96fd50dd4d22dfc8c70584395d63a7fd37730704",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6760543269920163
+        },
+        "after": {
+          "physical_key": "a739d29b3fd77a785ceb29fe96fd50dd4d22dfc8c70584395d63a7fd37730704",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6760543269920163
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            0,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            0,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": null,
+        "reason": "insufficient_or_invalid_matches",
+        "common_estimator": {
+          "inliers": 0,
+          "reason": "insufficient_or_invalid_matches",
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 2,
+        "serialized_array_bytes": 0,
+        "compact_json_bytes": 452,
+        "structure_nodes": 11,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 0.00013469200348481536,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u026-l00-17-positive",
+      "component": "np31-r1-c0",
+      "query_component": "np31-r1-c0",
+      "positive": true,
+      "unit_index": 26,
+      "query_unit_index": 26,
+      "light_a": 0,
+      "light_b": 17,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.012317260028794408,
+        "reference_geometry_load_seconds": 0.03827857197029516,
+        "reference_physics_setup_seconds": 0.6760653450037353
+      },
+      "complete_localization_cold_seconds": 0.731337737001013,
+      "case_calendar_seconds": 0.8462481340393424,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v90/pilot/4f2ee9871dff09a3a7855a6d4df360b59912b03dd49c80ad215d7ff40030a757.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a"
+    },
+    {
+      "metrics": {
+        "positive": false,
+        "correct": false,
+        "strict": false,
+        "pose_returned": false,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "pose_error": null,
+        "reference_range_m": 1334.3998827472255,
+        "correspondence": {}
+      },
+      "inference_seconds": 0.003175091987941414,
+      "common_pose_replay_seconds": 0.00037205801345407963,
+      "inference_failure": null,
+      "label_method": "nonoverlap_full_footprint_certificate",
+      "final_estimator": {
+        "inliers": 0,
+        "reason": "insufficient_or_invalid_matches",
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": "insufficient_or_invalid_matches",
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "a739d29b3fd77a785ceb29fe96fd50dd4d22dfc8c70584395d63a7fd37730704",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6760543269920163
+        },
+        "after": {
+          "physical_key": "a739d29b3fd77a785ceb29fe96fd50dd4d22dfc8c70584395d63a7fd37730704",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6760543269920163
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            0,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            0,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": null,
+        "reason": "insufficient_or_invalid_matches",
+        "common_estimator": {
+          "inliers": 0,
+          "reason": "insufficient_or_invalid_matches",
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 2,
+        "serialized_array_bytes": 0,
+        "compact_json_bytes": 452,
+        "structure_nodes": 11,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 9.471399243921041e-05,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "component": "np31-r1-c0",
+      "query_component": "np31-r3-c2",
+      "positive": false,
+      "unit_index": 26,
+      "query_unit_index": 58,
+      "light_a": 0,
+      "light_b": 17,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.007272389018908143,
+        "reference_geometry_load_seconds": 0.0,
+        "reference_physics_setup_seconds": 0.0
+      },
+      "complete_localization_cold_seconds": 0.010447481006849557,
+      "case_calendar_seconds": 0.10539368400350213,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v90/pilot/62d16887bc7ae23b699740aca2c5c73522adb055646b6c1cb62e7b6125941fd6.npz",
+      "saved_arrays_sha256": "fb6fb7bf501018ed7ba1d224297d797a4ab82d056d2e6181b6766691a9251b06"
+    },
+    {
+      "metrics": {
+        "positive": true,
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "pose_error": {
+          "rotation_deg": 1.4083442002646003,
+          "translation_m": 42.8882689457587
+        },
+        "reference_range_m": 1804.2161350040333,
+        "correspondence": {
+          "1": {
+            "correct": 125,
+            "co_visible": 561,
+            "returned": 563
+          },
+          "2": {
+            "correct": 185,
+            "co_visible": 561,
+            "returned": 563
+          },
+          "4": {
+            "correct": 245,
+            "co_visible": 561,
+            "returned": 563
+          },
+          "8": {
+            "correct": 328,
+            "co_visible": 561,
+            "returned": 563
+          },
+          "12": {
+            "correct": 409,
+            "co_visible": 561,
+            "returned": 563
+          }
+        }
+      },
+      "inference_seconds": 5.0827166630188,
+      "common_pose_replay_seconds": 0.01167453802190721,
+      "inference_failure": null,
+      "label_method": "common_axial_depth_projection_at_returned_points",
+      "final_estimator": {
+        "inliers": 240,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 3357.351961611089,
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": null,
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "c558f5dd992d519ca4cf0ad08beb89966fb1f226c9e69186bf5b7a35f76ccaca",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4899759949767031
+        },
+        "after": {
+          "physical_key": "c558f5dd992d519ca4cf0ad08beb89966fb1f226c9e69186bf5b7a35f76ccaca",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4899759949767031
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            563,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            563,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00002",
+          "dtype": "<f8",
+          "shape": [
+            4,
+            4
+          ],
+          "nonfinite_count": 0
+        },
+        "reason": null,
+        "common_estimator": {
+          "inliers": 240,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 3357.351961611089,
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 3,
+        "serialized_array_bytes": 18144,
+        "compact_json_bytes": 549,
+        "structure_nodes": 12,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 0.00013506796676665545,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u060-l16-16-positive",
+      "component": "np31-r3-c3",
+      "query_component": "np31-r3-c3",
+      "positive": true,
+      "unit_index": 60,
+      "query_unit_index": 60,
+      "light_a": 16,
+      "light_b": 16,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.012124478991609067,
+        "reference_geometry_load_seconds": 0.02769112802343443,
+        "reference_physics_setup_seconds": 0.48999072198057547
+      },
+      "complete_localization_cold_seconds": 5.612522992014419,
+      "case_calendar_seconds": 5.748947694024537,
+      "profile_load_seconds": 2.8307707990170456,
+      "saved_arrays": "runs/solar-matched-matchanything-v91/recovery/945c3819d7eb4d835cdd447ba77b7c5799724cc611a95fdc3475896e884dfabc.npz",
+      "saved_arrays_sha256": "a5a11eed1729cfbf08bb8e6c34248cb9beadb8bbb02b182722e09b3aba74a442"
+    },
+    {
+      "metrics": {
+        "positive": false,
+        "correct": false,
+        "strict": false,
+        "pose_returned": false,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "pose_error": null,
+        "reference_range_m": 1804.2161350040333,
+        "correspondence": {}
+      },
+      "inference_seconds": 3.438780475000385,
+      "common_pose_replay_seconds": 0.000456310051959008,
+      "inference_failure": null,
+      "label_method": "nonoverlap_full_footprint_certificate",
+      "final_estimator": {
+        "inliers": 0,
+        "reason": "insufficient_or_invalid_matches",
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": "insufficient_or_invalid_matches",
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "c558f5dd992d519ca4cf0ad08beb89966fb1f226c9e69186bf5b7a35f76ccaca",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4899759949767031
+        },
+        "after": {
+          "physical_key": "c558f5dd992d519ca4cf0ad08beb89966fb1f226c9e69186bf5b7a35f76ccaca",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.4899759949767031
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            5,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            5,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": null,
+        "reason": "insufficient_or_invalid_matches",
+        "common_estimator": {
+          "inliers": 0,
+          "reason": "insufficient_or_invalid_matches",
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 2,
+        "serialized_array_bytes": 160,
+        "compact_json_bytes": 452,
+        "structure_nodes": 11,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 9.960302850231528e-05,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "component": "np31-r3-c3",
+      "query_component": "np31-r3-c5",
+      "positive": false,
+      "unit_index": 60,
+      "query_unit_index": 68,
+      "light_a": 16,
+      "light_b": 16,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.008136774005834013,
+        "reference_geometry_load_seconds": 0.0,
+        "reference_physics_setup_seconds": 0.0
+      },
+      "complete_localization_cold_seconds": 3.446917249006219,
+      "case_calendar_seconds": 3.5387384350178763,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v91/recovery/2ccd27a8dadc44bb419791d4848573a6c4447f48805f4c6b51c5cf3635cf5f76.npz",
+      "saved_arrays_sha256": "1f4e44c5f4289415ddd94c55bd2976751fdbfeaad4eb222f822f441f2222c77c"
+    },
+    {
+      "metrics": {
+        "positive": true,
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "pose_error": {
+          "rotation_deg": 82.78658430416056,
+          "translation_m": 1192.4512455760696
+        },
+        "reference_range_m": 1665.3875254274294,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "co_visible": 47,
+            "returned": 47
+          },
+          "2": {
+            "correct": 0,
+            "co_visible": 47,
+            "returned": 47
+          },
+          "4": {
+            "correct": 0,
+            "co_visible": 47,
+            "returned": 47
+          },
+          "8": {
+            "correct": 0,
+            "co_visible": 47,
+            "returned": 47
+          },
+          "12": {
+            "correct": 0,
+            "co_visible": 47,
+            "returned": 47
+          }
+        }
+      },
+      "inference_seconds": 3.8146158589515835,
+      "common_pose_replay_seconds": 0.05312818998936564,
+      "inference_failure": null,
+      "label_method": "common_axial_depth_projection_at_returned_points",
+      "final_estimator": {
+        "inliers": 8,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 368.6315661649768,
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": null,
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "b25603e3ea64f4329d39193173939b9e956f0852be7b8a86cf2f7860c8a0557f",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6596439270069823
+        },
+        "after": {
+          "physical_key": "b25603e3ea64f4329d39193173939b9e956f0852be7b8a86cf2f7860c8a0557f",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6596439270069823
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            47,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            47,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00002",
+          "dtype": "<f8",
+          "shape": [
+            4,
+            4
+          ],
+          "nonfinite_count": 0
+        },
+        "reason": null,
+        "common_estimator": {
+          "inliers": 8,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 368.6315661649768,
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 3,
+        "serialized_array_bytes": 1632,
+        "compact_json_bytes": 545,
+        "structure_nodes": 12,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 0.00011460605310276151,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u074-l08-01-positive",
+      "component": "np31-r4-c1",
+      "query_component": "np31-r4-c1",
+      "positive": true,
+      "unit_index": 74,
+      "query_unit_index": 74,
+      "light_a": 8,
+      "light_b": 1,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.010679584054742008,
+        "reference_geometry_load_seconds": 0.04632744303671643,
+        "reference_physics_setup_seconds": 0.6596550199901685
+      },
+      "complete_localization_cold_seconds": 4.5312779060332105,
+      "case_calendar_seconds": 4.710939169977792,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v91/recovery/4fd2640ee1c5462bc728e792dabdff232ff55f92215937b4e48231f1b2b0901e.npz",
+      "saved_arrays_sha256": "ca2d369f25b4ef37072c89bb5dba6e8c9f556bef11945ef1912350f42eb0e337"
+    },
+    {
+      "metrics": {
+        "positive": false,
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "pose_error": null,
+        "reference_range_m": 1665.3875254274294,
+        "correspondence": {}
+      },
+      "inference_seconds": 3.4927826679777354,
+      "common_pose_replay_seconds": 0.051412823027931154,
+      "inference_failure": null,
+      "label_method": "nonoverlap_full_footprint_certificate",
+      "final_estimator": {
+        "inliers": 7,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 423.54643669147123,
+        "iterations_requested": 2000,
+        "reprojection_threshold_native_px": 3.0,
+        "solver": "ap3p_reclassify"
+      },
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "historical_control": null,
+      "render_search": null,
+      "response_requested": null,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "rounds": null,
+      "reason": null,
+      "initialization": null,
+      "initial_hypothesis_count": null,
+      "returned_hypothesis_count": null,
+      "live_hypothesis_count": null,
+      "solar_lookup_stats": {
+        "policy": "One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        "before": {
+          "physical_key": "b25603e3ea64f4329d39193173939b9e956f0852be7b8a86cf2f7860c8a0557f",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6596439270069823
+        },
+        "after": {
+          "physical_key": "b25603e3ea64f4329d39193173939b9e956f0852be7b8a86cf2f7860c8a0557f",
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "ray_direction": "toward_Sun",
+          "world_frame": "reference_scene_ENU",
+          "cache_policy": "per-reference provider; caller must declare cold versus warm profile timing",
+          "validation_seconds": 0.6596439270069823
+        },
+        "numeric_delta": {
+          "requests": 0,
+          "requested_columns": 0,
+          "cache_hits": 0,
+          "computed_columns": 0,
+          "solar_rays": 0,
+          "reference_rays": 0,
+          "cold_start_seconds": 0.0,
+          "worker_seconds": 0.0,
+          "calendar_seconds": 0.0,
+          "validation_seconds": 0.0
+        }
+      },
+      "raw_inference_result": {
+        "reference_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00000",
+          "dtype": "<f8",
+          "shape": [
+            52,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "query_xy": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00001",
+          "dtype": "<f8",
+          "shape": [
+            52,
+            2
+          ],
+          "nonfinite_count": 0
+        },
+        "pose": {
+          "$raw": "ndarray",
+          "npz_key": "_raw_inference_00002",
+          "dtype": "<f8",
+          "shape": [
+            4,
+            4
+          ],
+          "nonfinite_count": 0
+        },
+        "reason": null,
+        "common_estimator": {
+          "inliers": 7,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 423.54643669147123,
+          "iterations_requested": 2000,
+          "reprojection_threshold_native_px": 3.0,
+          "solver": "ap3p_reclassify"
+        }
+      },
+      "raw_inference_reporting": {
+        "format": "raw-inference-npz-v82",
+        "encoding_complete": true,
+        "unsupported_values": [],
+        "nonfinite_scalar_paths": [],
+        "serialized_array_count": 3,
+        "serialized_array_bytes": 1792,
+        "compact_json_bytes": 546,
+        "structure_nodes": 12,
+        "effective_C_policy": "unrecorded_in_frozen_solver",
+        "C_fallback_reason": "unrecorded_in_frozen_solver",
+        "capture_status": "returned_result",
+        "backend_infer_calls": 1,
+        "serialization_seconds": 9.61099867708981e-05,
+        "scope": "Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements."
+      },
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "component": "np31-r4-c1",
+      "query_component": "np31-r4-c7",
+      "positive": false,
+      "unit_index": 74,
+      "query_unit_index": 94,
+      "light_a": 8,
+      "light_b": 1,
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "reference_setup": {
+        "image_decode_seconds": 0.00846629700390622,
+        "reference_geometry_load_seconds": 0.0,
+        "reference_physics_setup_seconds": 0.0
+      },
+      "complete_localization_cold_seconds": 3.5012489649816416,
+      "case_calendar_seconds": 3.635233053995762,
+      "profile_load_seconds": 0.0,
+      "saved_arrays": "runs/solar-matched-matchanything-v91/recovery/1b0e231e3eb123dfe96b138d2cbcc9d94dd84d39bf9570ee52ad7e1e341e609d.npz",
+      "saved_arrays_sha256": "a05ac4b172ebd26ca621e13eac65f02ac2a2bd763e6a1d6dcd7267a4a16d3b96"
+    }
+  ],
+  "provenance": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "phase": "original_v90_sealed",
+      "seal_path": "runs/solar-matched-matchanything-v90/pilot/61bdcb8e3311d5719db9f440f9d5f536263753ca6835fea2ed6d040e7d16b5cd.COMPLETE.json",
+      "seal_sha256": "9dc7750aeb9772f8c1a8ca43dd80410dfc4e1c1685b57324b063930981cdffe3"
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "phase": "original_v90_sealed",
+      "seal_path": "runs/solar-matched-matchanything-v90/pilot/fee8fc854b699a8261820614d3839f33d1d29047d4044f4e1f92d7fabd291861.COMPLETE.json",
+      "seal_sha256": "466545422b9f4561b4a786b01e506d49fbbb304e46c3b98e91fea7350040f250"
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "phase": "original_v90_sealed",
+      "seal_path": "runs/solar-matched-matchanything-v90/pilot/4f2ee9871dff09a3a7855a6d4df360b59912b03dd49c80ad215d7ff40030a757.COMPLETE.json",
+      "seal_sha256": "e920cf879060c813f34d36630f7614ba0d99dc682a607e5f91d06896d2f8245f"
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "phase": "original_v90_sealed",
+      "seal_path": "runs/solar-matched-matchanything-v90/pilot/62d16887bc7ae23b699740aca2c5c73522adb055646b6c1cb62e7b6125941fd6.COMPLETE.json",
+      "seal_sha256": "61d96c8320e26abc69be3e515b99b6ea64fc9217fba671cf382f6207c64275e6"
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "phase": "recovered_v91_fresh",
+      "seal_path": "runs/solar-matched-matchanything-v91/recovery/945c3819d7eb4d835cdd447ba77b7c5799724cc611a95fdc3475896e884dfabc.COMPLETE.json",
+      "seal_sha256": "d4990e5a386e5862979b5b048a9ddf1c580ea2dbf150c60d8fcdd9e308c34601"
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "phase": "recovered_v91_fresh",
+      "seal_path": "runs/solar-matched-matchanything-v91/recovery/2ccd27a8dadc44bb419791d4848573a6c4447f48805f4c6b51c5cf3635cf5f76.COMPLETE.json",
+      "seal_sha256": "7b66bcf5d810d34b8723f34829936856330cc01be957ef6d24452bb2b1c3bc44"
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "phase": "recovered_v91_fresh",
+      "seal_path": "runs/solar-matched-matchanything-v91/recovery/4fd2640ee1c5462bc728e792dabdff232ff55f92215937b4e48231f1b2b0901e.COMPLETE.json",
+      "seal_sha256": "cdf86ef5f60f1b46b249a5bd7d4a1e9b7c206fe47ee2e5704a4bcfa9a7040a3e"
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "phase": "recovered_v91_fresh",
+      "seal_path": "runs/solar-matched-matchanything-v91/recovery/1b0e231e3eb123dfe96b138d2cbcc9d94dd84d39bf9570ee52ad7e1e341e609d.COMPLETE.json",
+      "seal_sha256": "db07d221d0a4f0ad2ba8e4eb215ce01f9a1fda8ee6cd804d81bcd3719f428e9a"
+    }
+  ],
+  "replayed": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 2043,
+          "co_visible": 2922,
+          "returned": 2922
+        },
+        "2": {
+          "correct": 2558,
+          "co_visible": 2922,
+          "returned": 2922
+        },
+        "4": {
+          "correct": 2740,
+          "co_visible": 2922,
+          "returned": 2922
+        },
+        "8": {
+          "correct": 2880,
+          "co_visible": 2922,
+          "returned": 2922
+        },
+        "12": {
+          "correct": 2915,
+          "co_visible": 2922,
+          "returned": 2922
+        }
+      }
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 125,
+          "co_visible": 561,
+          "returned": 563
+        },
+        "2": {
+          "correct": 185,
+          "co_visible": 561,
+          "returned": 563
+        },
+        "4": {
+          "correct": 245,
+          "co_visible": 561,
+          "returned": 563
+        },
+        "8": {
+          "correct": 328,
+          "co_visible": 561,
+          "returned": 563
+        },
+        "12": {
+          "correct": 409,
+          "co_visible": 561,
+          "returned": 563
+        }
+      }
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 47,
+          "returned": 47
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 47,
+          "returned": 47
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 47,
+          "returned": 47
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 47,
+          "returned": 47
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 47,
+          "returned": 47
+        }
+      }
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": true,
+      "correspondence": {}
+    }
+  ],
+  "table": [
+    {
+      "profile": "MatchAnything-EfficientLoFTR-native512",
+      "track": "estimated_sun",
+      "positive": {
+        "cases": 4,
+        "raw_correct_poses": 1,
+        "raw_pose_outputs": 3,
+        "raw_wrong_positive": 2,
+        "raw_nonoverlap_outputs": 0,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "nonoverlap": {
+        "cases": 4,
+        "raw_correct_poses": 0,
+        "raw_pose_outputs": 1,
+        "raw_wrong_positive": 0,
+        "raw_nonoverlap_outputs": 1,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "raw_pose_success": 0.25,
+      "median_complete_inference_seconds": 3.6536992634646595,
+      "mean_localization_seconds_including_measured_cold_setup": 3.6961343922594097,
+      "cold_reference_setup_total_seconds": 2.4708614959963597,
+      "model_load_seconds_shared_across_tracks": 2.8307707990170456,
+      "module_execution": {
+        "response_requested_cases": 0,
+        "response_confirmed_cases": 0,
+        "response_zero_cases": 0,
+        "response_unreported_cases": 8,
+        "response_refresh_attempted_cases": 0,
+        "scope": "Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."
+      },
+      "by_reference_terrain": {
+        "np31-r0-c4": {
+          "cases": 2,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r1-c0": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 0,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c3": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r4-c1": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 1,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "by_lighting": {
+        "0,0": {
+          "cases": 2,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,16": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "0,17": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 0,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,1": {
+          "cases": 0,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 0,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,17": {
+          "cases": 0,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 0,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,1": {
+          "cases": 2,
+          "raw_correct_poses": 0,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 1,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "comparison_available": true,
+      "nonoverlap_evaluation_available": true,
+      "accepted_performance": null
+    }
+  ],
+  "accepted_results": false,
+  "timing_scope": "Per-row model-resident inference timings span two separately charged runs; no single-run eight-case calendar claim."
+}
