@@ -11,6 +11,7 @@ import time
 
 import numpy as np
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from render_solar_raw_acquisition_v109 import (
     BLENDER_BUILD, BLENDER_SHA, SIZE, add_outputs, check_exr_header, digest,
     read, relative, render_settings, setup_camera, utc, write,
