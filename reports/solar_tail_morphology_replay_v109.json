@@ -1,0 +1,12 @@
+{
+  "schema": "solar_tail_morphology_replay_v109",
+  "passed": true,
+  "cases_replayed": 4,
+  "geometry_tables_replayed": 4,
+  "comparison_cells_replayed": 120,
+  "method": "Separate relative-camera projection, inverse-depth interpolation, common-support reduction, rank interpolation and contingency arithmetic.",
+  "protocol_sha256": "0388eb9d352afb75c568b564a2fdddb04a24a77ae4ee4eeda0210dc7f0608d91",
+  "result_sha256": "91cc4173a5db0f5aa7fbea41c6e86647721a879fb8837344f37e9599fb745569",
+  "replay_source_sha256": "db48df17b70bd2fc7ed11d2d297bbe705d8db6f76cf9ae7cfd444b55ef6cf782",
+  "calibration_or_final_access": false
+}

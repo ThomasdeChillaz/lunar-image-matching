@@ -1,0 +1,11 @@
+# Same-case ARM modern matcher pilot outcome
+
+The published protocol froze eight native 512-pixel development cases for LoMa-R, RoMa v2, the frozen compact control and SIFT. The comparison used the same reference geometry and estimated-Sun track. No calibration or final case was included. The public release archive was independently verified by size and SHA-256, and the ticket branch had one signed commit containing only the ticket.
+
+GitHub Actions run 41926059385 reached a Linux ARM64 worker with native BF16. The original watchdog confirmed the checkout, transport and four author checkpoint downloads. It stopped after 43.96 seconds of watchdog wall time during reference-asset validation. The evaluator never started and the run produced **0 of 32 planned matcher rows**. The checks compared locally archived generic Sun vectors with vectors freshly computed on the Linux worker. The run reported a catalogue equality error. The exact mismatching field and magnitude require a platform arithmetic probe before another comparison is admitted.
+
+The source commit was `4cad05232bff4f21947eb04f6bb600ec84ec8e11` and the verified ticket commit was `e1a7e6075236342c377759b3743f69db0de7bafd`. The artifact digest was `1c26156a7674c81c65d6d1e90cf61e9f68ff9093164f8986b6989db726d3fe32`. Its two records below were extracted byte-for-byte. The single 1,800-second reservation remains charged to the original budget. The signed ticket is spent.
+
+The completed comparable development result remains the 192-positive common cohort for Direct relighting, MatchAnything–EfficientLoFTR and SIFT. They recovered 114, 42 and 41 raw poses respectively. Direct uses the simulated reference library. The LoMa and RoMa v2 papers report different datasets and metrics, so their published numbers provide context while the common lunar comparison remains open.
+
+[Frozen pilot protocol](solar-modern-arm-v98/pilot-protocol.json) · [Public run](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41926059385) · [Original watchdog](solar_arm_v98_remote_watchdog.json) · [Original hardware receipt](solar_arm_v98_hardware.json) · [Existing common-cohort results](solar_full_paired_development_v94.json)
