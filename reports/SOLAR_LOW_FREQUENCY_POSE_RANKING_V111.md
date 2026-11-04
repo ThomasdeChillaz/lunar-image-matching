@@ -1,6 +1,8 @@
 # Test whether coarse radiance can rerank blind lunar pose hypotheses
 
-The v110 diagnostic found a coherent 32-pixel pattern in one low-light simulated pair at the known geometry and physical Sun direction. It also found much weaker native-pixel agreement. The next test asks whether a terrain-scattered score can help choose among plausible poses when the geometry and Sun direction have to be inferred. This is a separate prospective experiment. No new cases were opened and no ranking was run.
+The v110 diagnostic found a coherent 32-pixel pattern in one low-light simulated pair at the known geometry and physical Sun direction. It also found much weaker native-pixel agreement. The next test asks whether a terrain-scattered score can help choose among plausible poses when the geometry and Sun direction have to be inferred. [Cross-view evidence](SOLAR_RAW_CROSSVIEW_V110.md)
+
+The isolated ranker already accepts an observed query image, candidate-predicted detector images, reference-derived coverage and the original candidate order. Constructed fixtures verified positive gain and offset invariance, deterministic ties, exact fallback for inadequate support, and the gradient-removal control. The predictor that renders candidate irradiance into the detector and the fresh lunar ranking test are pending. [Ranker source](solar-low-frequency-ranking-v111/solar_low_frequency_ranking_v111.py) · [Runnable fixture](solar-low-frequency-ranking-v111/check_solar_low_frequency_ranking_v111.py) · [Fixture result](solar-low-frequency-ranking-v111/solar_low_frequency_ranking_fixture_v111.json)
 
 ## Freeze a blind development test
 
