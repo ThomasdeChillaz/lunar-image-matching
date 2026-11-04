@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-04T07:30:52.265286+00:00",
+  "created_utc": "2026-11-04T08:31:31.103045+00:00",
   "original_requirements": "reports/requirements_and_sota_v69.json",
   "original_requirements_sha256": "f9aa5d7391ad88539e51541592fc9f35df7eb75ec03ba00c3c46922e05fcd3ab",
   "original_scope_and_targets_preserved": true,
@@ -59,7 +59,7 @@
       "id": "R06_all_three_and_ablations",
       "original_target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
       "status": "all_on_pilots_complete_all_eight_lunar_ablations_pending",
-      "evidence_and_remaining_work": "80all-oncostrowswithfullrawexecutiontraces. Bunused on2failednonblankpositivesbecausenotrialpose. Cpolicymodeflagsdonotestablishbenefit. All8scientificon/offcombinationsstillpending."
+      "evidence_and_remaining_work": "All-onSH/pooledoriginal+cachecostpilots160rows,fouruniquepositivepairs. All8lunarabequalitiesnotrun. NativeglobalretrievalprototypeonlydiagnosticbecausepreselectionnativefeatureswouldviolateprincipalCdeferral."
     },
     {
       "id": "R07_training_repetitions",
@@ -89,14 +89,14 @@
         "cumulative_pretrained_comparison_wall_hours_lte": 72,
         "paid_compute": false
       },
-      "status": "budgets_preserved_full_studies_not_admitted",
-      "evidence_and_remaining_work": "Canonicalbaseline53100/training15867secondsremainafterfixedcaps. Measuredfullcaps exceedunchanged12000maximum; no chargesrefunded/deadlinesextended. Separatelytestedcacheversionrequiresfreshscientificadmission."
+      "status": "budgets_preserved_both_cache_full_studies_refused",
+      "evidence_and_remaining_work": "Bothnew40rowpilots/replayscomplete;fullestimates70009/70844>unchanged12000. Originalbaseline50700/training15867secondsremain. No charges/deadlines/failuresreset."
     },
     {
       "id": "R11_verification",
       "original_target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
-      "status": "both_40row_replays_and_final_cache_software_checks_passed",
-      "evidence_and_remaining_work": "Both40rowmetricreplayspass;32map/384caseauditpassed;982tests4skips,75cachechecks,fresh8toggleimagecontrol/replay/equalitypass. Newsource-publishedlunarcachecostpilotstillpending."
+      "status": "all_four_40row_replays_and_cache_checks_passed",
+      "evidence_and_remaining_work": "Original+cachedSH/pooled160rowsreplayed;all80old/newpairedoutputs exact.982localtests4skips,980cleanCItests6skips,fresh8toggleimagecontrol/replaypass. Scientificgain/fullablation/finalproofstillpending."
     },
     {
       "id": "R12_final_freeze",
@@ -119,7 +119,7 @@
   ],
   "remaining_canonical_seconds": {
     "training": 15867.0,
-    "baseline": 53100.0
+    "baseline": 50700.0
   },
   "historical_caps_are_conservative_envelopes_not_exact_consumed_wall_time": true,
   "source_closures": {
@@ -139,7 +139,12 @@
     "bootstrap_diagnosis": "reports/solar_pose_bootstrap_diagnosis_v84.json",
     "sh_replay": "reports/solar-sh-checkpoint-selection-cost-pilot-replay-v79.json",
     "pooled_replay": "reports/solar-pooled-checkpoint-selection-cost-pilot-replay-v79.json",
-    "cache_software": "reports/solar_exact_cache_verification_v84.json"
+    "cache_software": "reports/solar_exact_cache_verification_v84.json",
+    "cached_pilots": "reports/solar_cache_pilot_results_v84.json",
+    "cache_saved_comparisons": [
+      "reports/solar_cache_sh_saved_comparison_v84.json",
+      "reports/solar_cache_pooled_saved_comparison_v84.json"
+    ]
   },
   "all_eligible_failures_remain_in_denominators": true,
   "calibration_or_final_access": false,

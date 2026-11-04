@@ -1,8 +1,10 @@
 # Explicit cache execution version
 
-This version reuses repeated computation. It is **not a new learned technique,
-an accuracy improvement or a measured lunar speedup**. The completed pose
-pilots and the original implementation remain unchanged.
+This version reuses repeated computation. It adds **no new learned technique
+or measured accuracy improvement**. Its completed pilot measures a runtime
+saving on the tested workloads; see [the results](SOLAR_CACHE_PILOT_V84.md) for
+the timing scope and unchanged recovery. The original implementation and
+earlier pose pilots remain unchanged.
 
 `localize_terrain.py` accepts `inference_revision: solar-v84-exact-cache` with
 `pose_initialization: strict3`. A separate
@@ -71,6 +73,7 @@ original v79 learning contract. The new inference revision is explicit in
 every protocol. Existing comparison checks require scientific identities to
 match across phases. No files, aliases or copied results stand in for a run.
 
-If the new cost still exceeds admission, retain that finding and the complete
-case list. Independently of speed, the saved pilot diagnosis still requires a
-proposal/pose-bootstrap improvement before claiming useful learned recovery.
+Both new full-study projections exceed admission, so those findings and the
+complete case list are retained. Independently of speed, the saved diagnosis
+still requires a proposal/pose-bootstrap improvement before claiming useful
+learned recovery.
