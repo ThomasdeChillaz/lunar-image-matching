@@ -15,10 +15,12 @@ import run_solar_evaluation_v70 as runner
 MODES={'checkpoint_selection_sh':('checkpoint_selection','sh'),
        'checkpoint_selection_pooled':('checkpoint_selection','pooled'),
        'principal_ablations':('principal_ablations',None),
+       'preselection_compact_controls':('additional_controls','sh'),
        'additional_controls_sh':('additional_controls','sh'),
        'additional_controls_pooled':('additional_controls','pooled')}
 OWN_SOURCES={'solar_evaluation_protocol_v74.py','build_solar_evaluation_protocol_v74.py','solar_learning_pipeline_v73.py','verify_solar_development_v68.py','solar_reference_pipeline_v74.py'}
 DEFAULT_CONFIG=dict(proposal_angles=[0.,90.,180.,270.],pose_initialization='strict3',inference_revision='solar-v68')
+PRESELECTION_MODE='preselection_compact_controls'
 sha=evaluation.sha
 read=evaluation.read
 utc=learning.utc
@@ -98,13 +100,52 @@ def _configuration(settings):
     return value
 
 
+def _preselection_compact_profiles(settings,contract,config):
+    """Frozen controls only: no learned checkpoint choice or selection shortcut.
+
+    The completed SH study supplies a sealed step0 identity and its original
+    frozen proposal encoder. Its response head is disabled in EVERY control.
+    SIFT continues to use the existing native2048-feature common-PnP backend.
+    """
+    if settings['tracks']!=['estimated_sun']:
+        raise ValueError('Preselection compact controls are primary-only')
+    if type(settings.get('include_quantization_aware_control'))is not bool:
+        raise ValueError('Explicit optional quantization-aware frozen control required')
+    if config['proposal_angles']!=[0.,90.,180.,270.]or config['pose_initialization']!='strict3':
+        raise ValueError('Preselection controls require four rotations and a strict3 base policy')
+    integer(settings['pilot_cap_seconds'],600)
+    candidates,stage=_study_profiles(contract,'sh')
+    owner=next(p for p in candidates if p['training_step']==0)
+    if Path(owner['checkpoint']).name!='step_0.pt' or owner['configuration']['pooled']:
+        raise ValueError('Only completed SH step0 may supply frozen preselection controls')
+    role='Predeclared frozen baseline; not checkpoint selection or a learned response gain.'
+    profiles=[dict(name='SIFT2048',backend='sift',scientific_role=role)]
+    for name,solar,active,initialization in [
+        ('frozen_step0_A0B0C0_strict3','off',False,'strict3'),
+        ('frozen_step0_A1B0C1_strict3','shared',True,'strict3'),
+    ]+([('frozen_step0_A1B0C1_quantization_aware','shared',True,'quantization_aware')]
+       if settings['include_quantization_aware_control']else[]):
+        profile=copy.deepcopy(owner)
+        profile.update(name=name,scientific_role=role,
+            checkpoint_role='Completed SH study step0; original coarse encoder frozen; response disabled.')
+        profile['configuration'].update(copy.deepcopy(config),solar_mode=solar,response=False,active=active,
+            pooled=False,budget=128,policy='active',pose_initialization=initialization)
+        if initialization=='quantization_aware':
+            profile['configuration']['inference_revision']=('solar-v84-quantized-init-exact-cache'
+                if config['inference_revision']=='solar-v84-exact-cache'else'solar-v73-quantized-init')
+        profiles.append(profile)
+    return profiles,stage
+
+
 def profiles_from_artifacts(settings,contract):
     mode=settings['mode']
     if mode not in MODES:raise ValueError('Explicit supported evaluation stage required')
     purpose,response_mode=MODES[mode];config=_configuration(settings);inputs={};selection=None
     def remember(stage):
         for key in('protocol','summary','watchdog_receipt'):inputs[stage[key]]=sha(stage[key])
-    if purpose=='checkpoint_selection':
+    if mode==PRESELECTION_MODE:
+        profiles,stage=_preselection_compact_profiles(settings,contract,config);remember(stage)
+    elif purpose=='checkpoint_selection':
         profiles,stage=_study_profiles(contract,response_mode);remember(stage)
     else:
         # Existing helper requires BOTH completed studies and independently
@@ -127,7 +168,10 @@ def profiles_from_artifacts(settings,contract):
                 profile['configuration']['pooled']=response_mode=='pooled'
                 profile.update(training_evidence=copy.deepcopy(owner['training_evidence']),training_seed=owner['training_seed'],training_step=owner['training_step'])
     for profile in profiles:
-        profile['configuration'].update(copy.deepcopy(config))
+        if profile['backend']!='solar':
+            continue
+        if mode!=PRESELECTION_MODE:
+            profile['configuration'].update(copy.deepcopy(config))
         evaluation.validate_profile_training(profile,purpose)
         inputs[profile['checkpoint']]=profile['configuration']['checkpoint_sha256']
         for key in('protocol','summary','watchdog_receipt'):
@@ -143,6 +187,15 @@ def _pilot_ids(cases,explicit):
     chosen=[by[key]for key in explicit]
     if len({c['component']for c in chosen})<2 or not any(c['positive']for c in chosen)or not any(not c['positive']for c in chosen):raise ValueError('Pilot must include two terrains, positives and matched nonoverlap')
     return list(explicit)
+
+
+def _preselection_pilot_ids(cases,explicit):
+    ids=_pilot_ids(cases,explicit);by={c['case_id']:c for c in cases}
+    positive={key for key in ids if by[key]['positive']}
+    negative=[by[key]for key in ids if not by[key]['positive']]
+    if len(ids)!=8 or len(positive)!=4 or len(negative)!=4 or {c.get('matched_positive_case')for c in negative}!=positive:
+        raise ValueError('Preselection cost pilot requires four positives and their four matched nonoverlap cases')
+    return ids
 
 
 def _input_pins(settings_path,settings,contract,manifest,cases,training_inputs):
@@ -203,6 +256,22 @@ def validate_runtime(protocol,protocol_path,at=None):
     if protocol.get('builder_schema_version')!=74:raise ValueError('Artifact-driven evaluation freeze schema74required')
     cap,latest,absolute=validate_lease(protocol)
     contract=learning.load_contract(protocol['learning_contract'])
+    if protocol.get('stage_mode')==PRESELECTION_MODE:
+        settings=read(protocol['settings_path'])
+        if sha(protocol['settings_path'])!=protocol['settings_sha256']or settings.get('mode')!=PRESELECTION_MODE:
+            raise ValueError('Frozen preselection settings changed')
+        profiles,_,selection=profiles_from_artifacts(settings,contract)
+        if selection is not None or protocol['profiles']!=profiles or protocol['target_purpose']!='additional_controls' or protocol['purpose']not in('cost_pilot','additional_controls'):
+            raise ValueError('Preselection mode admits only the exact frozen step0/SIFT controls')
+        expected_pilot=_preselection_pilot_ids(read(settings['manifest'])['cases'],settings['pilot_case_ids'])
+        if (protocol['pilot_case_ids']!=expected_pilot or protocol['manifest']!=settings['manifest']
+                or protocol['geometry_audit']!=settings['geometry_audit']
+                or protocol['baseline_admission']['maximum_full_calendar_seconds']!=settings['maximum_full_calendar_seconds']):
+            raise ValueError('Preselection cases/data/maximum allowance differ from their frozen settings')
+        if protocol['tracks']!=['estimated_sun']or protocol['purpose']=='cost_pilot'and cap>600:
+            raise ValueError('Preselection primary pilot allowance changed')
+        if protocol['purpose']=='cost_pilot'and cap!=settings['pilot_cap_seconds']:
+            raise ValueError('Preselection pilot cap differs from its frozen settings')
     if sha(protocol['learning_contract'])!=protocol['learning_contract_sha256']or protocol['reservation_journal']!=learning.CANONICAL_JOURNAL or protocol['compute_ledger_sha256']!=contract['compute_ledger_sha256']:raise ValueError('Canonical learning/baseline budget identities changed')
     ledger,journal,charged=learning.journal_state(protocol['compute_ledger'],protocol['compute_ledger_sha256'],protocol['reservation_journal'])
     initial=protocol['baseline_admission']['initial_reservations']
@@ -280,7 +349,7 @@ def prepare(settings_path,phase,output_path,created=None):
     profiles,training_inputs,selection=profiles_from_artifacts(s,contract);purpose=MODES[s['mode']][0]
     if purpose=='checkpoint_selection'and s['tracks']!=['estimated_sun']:raise ValueError('Checkpoint selection is primary-only')
     if s['tracks']not in(['estimated_sun'],list(evaluation.TRACKS)):raise ValueError('Primary track required; known-Sun metadata is a separate optional track')
-    pilot_ids=_pilot_ids(cases,s['pilot_case_ids']);sources=source_closure(s['repository_root'])
+    pilot_ids=(_preselection_pilot_ids if s['mode']==PRESELECTION_MODE else _pilot_ids)(cases,s['pilot_case_ids']);sources=source_closure(s['repository_root'])
     if selection is not None:
         for mode,evidence in selection['evidence'].items():
             selected_protocol=read(evidence['protocol']['path']);selected_summary=read(evidence['summary']['path'])
