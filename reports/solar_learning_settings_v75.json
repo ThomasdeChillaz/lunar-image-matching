@@ -1,0 +1,39 @@
+{
+  "prepared_only": false,
+  "calibration_or_final_access": false,
+  "training_ceiling_seconds": 20220,
+  "baseline_ceiling_seconds": 66900,
+  "original_master": "reports/solar_development_admission_v67.json",
+  "dataset_summary": "runs/solar-v70-completion/summary.json",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "lighting_schedule": "reports/solar_data_schedule_v65.json",
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "initializer": "runs/compact-v2-expanded-20261030",
+  "expected_frozen_descriptor_sha256": "a12c175767a4270e39ccaa94852421f86254164abb1a9b99d87d4cd8b31485df",
+  "protocol_directory": "reports/solar-learning-v74",
+  "run_directory": "runs/solar-learning-v74",
+  "stage_journal": "runs/solar-learning-v74-state.json",
+  "teacher_pilot_cap_seconds": 600,
+  "training_pilot_cap_seconds": 300,
+  "training_replay_cap_seconds": 300,
+  "maximum_points_per_unit": 64,
+  "teacher_batch_size": 64,
+  "trial_pose_jitter": {
+    "translation_sigma_m": 25.0,
+    "rotation_sigma_deg": 1.5
+  },
+  "publication_dispatch_lease_seconds": 1800,
+  "selection_evidence": {
+    "sh": {
+      "protocol": "reports/solar-sh-checkpoint-selection-v74.json",
+      "summary": "runs/solar-sh-checkpoint-selection-v74/full/summary.json",
+      "metric_replay": "reports/solar-sh-checkpoint-selection-replay-v74.json"
+    },
+    "pooled": {
+      "protocol": "reports/solar-pooled-checkpoint-selection-v74.json",
+      "summary": "runs/solar-pooled-checkpoint-selection-v74/full/summary.json",
+      "metric_replay": "reports/solar-pooled-checkpoint-selection-replay-v74.json"
+    }
+  }
+}
