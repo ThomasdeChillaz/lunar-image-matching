@@ -163,7 +163,11 @@ def geometry_mask(source, master, worker_geometry):
     asset = source["archive_geometry_path"]
     data = pinned_bytes(asset, source["archive_geometry_sha256"])
     role = source["role"]
-    camera = master["units"][source["unit_index"]]["camera_pairs"][0][role]
+    unit = master["units"][source["unit_index"]]
+    if (master["calibration_or_final_access"] or unit["calibration_or_final_access"]
+            or unit["site"]["split"] != "model_selection"):
+        raise ValueError("Only model-selection camera masks may be replayed")
+    camera = unit["camera_pairs"][0][role]
     with np.load(io.BytesIO(data), allow_pickle=False) as archive:
         if sorted(archive.files) != list(GEOMETRY_FIELDS):
             raise ValueError("Unexpected frozen native geometry fields")
@@ -171,18 +175,26 @@ def geometry_mask(source, master, worker_geometry):
         depth = archive["axial_depth"]
         positions = archive["position"]
         normals = archive["normals"]
+        pose, intrinsics = archive["cam2world"], archive["intrinsics"]
         reconstructed_valid = (np.isfinite(positions).all(axis=-1) & np.isfinite(normals).all(axis=-1)
                                & np.isfinite(depth) & (depth > 0))
         if (valid.shape != (512, 512) or valid.dtype != np.bool_ or not valid.all()
                 or not np.array_equal(reconstructed_valid, valid)
-                or not np.array_equal(np.asarray(camera["cam2world"]), archive["cam2world"])
-                or not np.array_equal(np.asarray(camera["intrinsics"]), archive["intrinsics"])):
+                or not np.array_equal(np.asarray(camera["cam2world"]), pose)
+                or not np.array_equal(np.asarray(camera["intrinsics"]), intrinsics)):
             raise ValueError("Independent archive geometry mask or camera replay failed")
+        camera_frame = (positions - pose[:3, 3]) @ pose[:3, :3]
+        homogeneous = camera_frame @ intrinsics.T
+        native = homogeneous[..., :2] / homogeneous[..., 2:3]
+        expected_y, expected_x = np.indices(valid.shape)
+        native_residual = float(np.hypot(native[..., 0] - expected_x, native[..., 1] - expected_y).max())
+        if native_residual > .02 or not np.allclose(camera_frame[..., 2], depth, rtol=0, atol=1e-8):
+            raise ValueError("Independent native projection or axial depth exceeds geometry tolerance")
     if (worker_geometry["exact_camera_depth_and_rays"] is not True
             or worker_geometry["native_rays"] != 512 * 512
             or worker_geometry["compared_arrays"] != list(GEOMETRY_FIELDS)):
         raise ValueError("Worker did not reproduce the exact original ray inventory")
-    return packed_mask(valid)
+    return {**packed_mask(valid), "native_reprojection_max_px": native_residual}
 
 
 def row_job(row):
@@ -208,12 +220,13 @@ def exact_quantile(array, fraction):
     return float((1 - weight) * ordered[lower] + weight * ordered[upper])
 
 
-def seed_statistics(first, second, block):
-    def luma(pixels):
-        return sum(np.multiply(pixels[..., channel], weight, dtype=np.float64)
-                   for channel, weight in enumerate(WEIGHTS))
+def luminance(pixels):
+    return sum(np.multiply(pixels[..., channel], weight, dtype=np.float64)
+               for channel, weight in enumerate(WEIGHTS))
 
-    left, right = (block_means(luma(image), block).ravel() for image in (first, second))
+
+def seed_statistics(first, second, block):
+    left, right = (block_means(luminance(image), block).ravel() for image in (first, second))
     mean = .5 * left + .5 * right
     low = exact_quantile(mean, .01)
     high = exact_quantile(mean, .995)
@@ -257,6 +270,21 @@ def paired_seed_replay(pairs, original):
     if set(results) != set(original) or any(set(values) != set(original[k]) for k, values in results.items()):
         raise ValueError("Unexpected frozen independent seed group")
     return results
+
+
+def ladder_residual(pairs):
+    """Compare independent 64- and 256-sample ensemble means where both exist."""
+    residuals = {}
+    for key, levels in pairs.items():
+        if 256 not in levels:
+            continue
+        residuals[key] = {}
+        for plane in ("combined", "direct", "indirect"):
+            groups = [[luminance(levels[level][seed][plane]) for seed in (0, 1)] for level in (64, 256)]
+            differences = (groups[0][0] + groups[0][1] - groups[1][0] - groups[1][1]) / 2
+            residuals[key][plane] = {str(block): float(np.sqrt(np.mean(block_means(differences, block) ** 2)))
+                                     for block in (1, 32)}
+    return residuals
 
 
 def fixture_replay(receipt, folder):
@@ -376,7 +404,8 @@ def replay_native(protocol, receipt, output, source_rows, master):
                           "exr_sha256": {name: item["sha256"] for name, item in row["exr"].items()}})
     repeated = paired_seed_replay(pairs, receipt["same_camera_repeatability"])
     return {"artifacts": artifacts, "native_valid_masks": masks,
-            "original_rgb8_parity": legacy, "same_camera_repeatability": repeated}
+            "original_rgb8_parity": legacy, "same_camera_repeatability": repeated,
+            "independent_sample_ladder_rms": ladder_residual(pairs)}
 
 
 def replay():
@@ -441,6 +470,12 @@ def markdown(replayed):
             overlap = indirect["decoded_positive_masks"]["both_positive"]["count"]
             lines.append(f"| {case} {role} | {level} | {fmt_pair(direct['stats']['32'])} "
                          f"| {fmt_pair(indirect['stats']['32'])} | {overlap / (512 * 512):.2%} |")
+    ladder = replayed["study"]["independent_sample_ladder_rms"]
+    if ladder:
+        lines.extend(("", "The independent 64-to-256 sample secondary-light ensemble means differ "
+                      "at 32-pixel block scale by " + ", ".join(
+                          f"{values['indirect']['32']:.3g} in {key.split('/')[0]} {key.split('/')[1]}"
+                          for key, values in ladder.items()) + "."))
     lines.extend((
         "",
         "Positive-support masks describe decoded radiance and have no minimum intensity. The repeatability "

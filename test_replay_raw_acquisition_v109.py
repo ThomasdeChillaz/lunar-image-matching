@@ -62,6 +62,14 @@ class ReplayTests(unittest.TestCase):
         self.assertTrue(np.array_equal(reconstructed["direct"], .5 * direct))
         self.assertTrue(np.array_equal(reconstructed["indirect"], .5 * indirect))
 
+    def test_sample_ladder_compares_two_ensembles(self):
+        def seed(offset):
+            return {name: np.full((32, 32, 3), offset) for name in ("combined", "direct", "indirect")}
+
+        metrics = replay.ladder_residual({"toy": {64: {0: seed(1), 1: seed(2)},
+                                                  256: {0: seed(2), 1: seed(3)}}})
+        self.assertAlmostEqual(metrics["toy"]["indirect"]["32"], 1.)
+
 
 if __name__ == "__main__":
     unittest.main()
