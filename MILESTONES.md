@@ -1,3 +1,12 @@
+## M84 measured result — cached pilots complete, selection refused
+
+Both 40-row pilots/replays pass and all 80 saved scientific outputs are exact.
+Worker calendars improve to 308.96/310.11 seconds, with raw pose recovery still 1/4.
+The full selection estimates 70,009/70,844 seconds exceed the original 12,000 maximum;
+no subset, partial winner, threshold change or budget reset substitutes for it.
+Goal active; next scientific gate is proposal/bootstrap improvement under the
+original native-feature deferral rule. See reports/SOLAR_CACHE_PILOT_V84.md.
+
 ## M84 — Exact per-case cache version verified
 
 The optional v84 execution version preserves model weights, scientific policy,

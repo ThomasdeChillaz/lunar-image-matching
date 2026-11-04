@@ -1,5 +1,29 @@
 # Status
 
+## Cached lunar pilots completed — 4 November 2026
+
+Both fresh cache pilots and their independent metric replays complete 40/40.
+All 80 paired saved outputs equal the original execution exactly. Worker times
+fall from 471.26 to 308.96 seconds (SH) and 473.33 to 310.11 seconds (pooled), but raw recovery
+stays 1/4 at every checkpoint and changed-light recovery stays 0/2. This is an
+engineering saving on the measured workloads, not a learned accuracy gain.
+
+Full projections of 70,009/70,844 seconds again exceed the unchanged 12,000-second
+limit. No full selections, checkpoint promotion, seed repeats or final tests
+start. All 384 cases and five checkpoints, historical results and charges remain.
+Original allowances are 15,867 training / 50,700 baseline seconds; reserves stay closed.
+
+The cache version passes 982 local tests/four skips, fresh eight-toggle image
+smoke/replay/equality, and clean public CI (980 tests/six platform skips). All 49/42
+protected sources stay byte-identical. Next accuracy work targets candidate
+coverage and no-pose/no-response bootstrap. A globally native pose-free adapter
+is only an unqualified diagnostic prototype: it would violate the principal
+active policy's deferred native extraction and cannot silently replace it.
+
+Evidence: [cached pilots](reports/SOLAR_CACHE_PILOT_V84.md) and
+[exact results](reports/solar_cache_pilot_results_v84.json). All scientific
+ablations, modern comparisons and final research targets remain pending.
+
 ## First native pose pilots completed — 4 November 2026
 
 Both trained modes complete 40/40 predeclared pilot rows and independent saved-
