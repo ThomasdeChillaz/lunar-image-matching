@@ -36,7 +36,10 @@ def public_result(result,research=False):
 
 
 def load_matcher(checkpoint,configuration,allow_untrained=False):
-    if configuration.get('inference_revision','solar-v68')!='solar-v68':raise ValueError('Configuration requires a different inference revision')
+    initialization=configuration.get('pose_initialization','strict3')
+    if initialization not in('strict3','quantization_aware'):raise ValueError('Unsupported initial-pose policy')
+    revision='solar-v68'if initialization=='strict3'else'solar-v73-quantized-init'
+    if configuration.get('inference_revision',revision)!=revision:raise ValueError('Configuration requires a different inference revision')
     digest=hashlib.sha256(Path(checkpoint).read_bytes()).hexdigest()
     if configuration.get('model_version')!='solar-experimental-v63'or configuration.get('checkpoint_sha256')!=digest:raise ValueError('Versioned configuration must pin the exact checkpoint bytes')
     z=torch.load(checkpoint,map_location='cpu',weights_only=True)
@@ -44,10 +47,10 @@ def load_matcher(checkpoint,configuration,allow_untrained=False):
     coarse=CompactDescriptor(False);fine=CompactDescriptor(False)
     if z.get('format')=='solar-response-v63':
         response=LightingResponseModel(coarse);response.load_state_dict(z['model'],strict=True)
-        return SolarMatcher(response.coarse,response.coarse,response,configuration.get('pooled',False),configuration.get('proposal_angles'))
+        return SolarMatcher(response.coarse,response.coarse,response,configuration.get('pooled',False),configuration.get('proposal_angles'),initialization)
     if z.get('format')!='compact-pair-v63'or configuration.get('response',False):raise ValueError('Declared complete coarse/fine or learned-response checkpoint required')
     coarse.load_state_dict(z['coarse'],strict=True);fine.load_state_dict(z['fine'],strict=True)
-    return SolarMatcher(coarse,fine,proposal_angles=configuration.get('proposal_angles'))
+    return SolarMatcher(coarse,fine,proposal_angles=configuration.get('proposal_angles'),pose_initialization=initialization)
 
 
 def main(argv=None):
@@ -62,7 +65,7 @@ def main(argv=None):
     a=p.parse_args(argv);torch.set_num_threads(2);torch.set_num_interop_threads(1)
     import cv2
     cv2.setNumThreads(1)
-    config=json.loads(Path(a.config).read_text());allowed={'model_version','checkpoint_sha256','solar_mode','response','active','budget','policy','pooled','inference_revision','proposal_angles'}
+    config=json.loads(Path(a.config).read_text());allowed={'model_version','checkpoint_sha256','solar_mode','response','active','budget','policy','pooled','inference_revision','proposal_angles','pose_initialization'}
     if set(config)-allowed:raise ValueError('Unknown configuration keys are forbidden')
     matcher=load_matcher(a.checkpoint,config,a.allow_untrained_software_control)
     geometry=ReferenceGeometry.load(a.reference_geometry)

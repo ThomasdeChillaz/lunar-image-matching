@@ -172,8 +172,17 @@ def validate_profiles(profiles, purpose):
     elif purpose not in ("cost_pilot", "additional_controls", "modern_comparison"):
         raise ValueError("Explicit development purpose required")
     for p in profiles:
-        if p["backend"] not in ("solar", "sift", "modern"):
+        if p["backend"] not in ("solar", "sift", "modern", "native_pretrained", "historical_compact", "direct_render"):
             raise ValueError("Unimplemented baselines must be recorded as unavailable, never substituted")
+        if p["backend"] == "native_pretrained":
+            from native_pretrained_adapters_v73 import specification
+            specification(p)
+        if p["backend"] == "historical_compact":
+            from historical_compact_adapters_v73 import METHODS
+            if p["method"] not in METHODS: raise ValueError("Unknown immutable historical control")
+        if p["backend"] == "direct_render":
+            from direct_render_adapter_v73 import METHOD
+            if p["method"] != METHOD: raise ValueError("Unknown direct-render method; no fallback")
         if p["backend"] == "solar":
             c = p["configuration"]
             if c["budget"] not in (32, 64, 128) or c["policy"] not in ("active", "uniform", "appearance", "geometry") or c["solar_mode"] not in ("shared", "off", "independent"):
@@ -378,7 +387,8 @@ def aggregate_rows(rows):
                 raw_pose_outputs=sum(r["metrics"]["pose_returned"] for r in items),
                 raw_wrong_positive=sum(r["metrics"]["wrong_positive"] for r in items),
                 raw_nonoverlap_outputs=sum(r["metrics"]["raw_nonoverlap"] for r in items),
-                inference_failures=sum(r["inference_failure"] is not None for r in items))
+                inference_failures=sum(r["inference_failure"] is not None for r in items),
+                unavailable_cases=sum((r["inference_failure"] or {}).get("status") == "unavailable" for r in items))
         table.append(dict(profile=profile, track=track, positive=counts(pos), nonoverlap=counts(neg),
             raw_pose_success=None if not pos else sum(r["metrics"]["correct"] for r in pos)/len(pos),
             median_complete_inference_seconds=float(np.median([r["inference_seconds"] for r in part])),
@@ -394,6 +404,8 @@ def aggregate_rows(rows):
                 scope="Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."),
             by_reference_terrain={g: counts([r for r in part if r["component"] == g]) for g in sorted({r["component"] for r in part})},
             by_lighting={f"{a},{b}": counts([r for r in part if (r["light_a"], r["light_b"]) == (a, b)]) for a, b in LIGHT_PAIRS},
+            comparison_available=not any((r["inference_failure"] or {}).get("status") == "unavailable" for r in part),
+            nonoverlap_evaluation_available=not any((r["inference_failure"] or {}).get("status") == "unavailable" for r in neg),
             accepted_performance=None))
     return table
 
@@ -409,6 +421,18 @@ class Backend:
             from modern_baselines_v2 import ModernMatcher
             self.model = ModernMatcher(profile["method"], profile["source"], profile["author_profile"], "cpu")
             self.provenance = self.model.provenance
+        elif profile["backend"] == "native_pretrained":
+            from native_pretrained_adapters_v73 import make_native_pretrained
+            self.model = make_native_pretrained(profile)
+            self.provenance = self.model.provenance
+        elif profile["backend"] == "historical_compact":
+            from historical_compact_adapters_v73 import make_historical_compact
+            self.model = make_historical_compact(profile)
+            self.provenance = self.model.provenance
+        elif profile["backend"] == "direct_render":
+            from direct_render_adapter_v73 import make_direct_render
+            self.model = make_direct_render(profile)
+            self.provenance = self.model.provenance
         elif profile["backend"] == "sift":
             import cv2
             self.model = cv2.SIFT_create(nfeatures=2048)
@@ -417,6 +441,8 @@ class Backend:
 
     def infer(self, inp):
         p = self.profile
+        if p["backend"] in ("historical_compact", "direct_render"):
+            return self.model.infer(inp)
         if p["backend"] == "solar":
             c = p["configuration"]
             # Callback uses exactly the common estimator for EVERY method.
@@ -425,7 +451,7 @@ class Backend:
             return self.model.localize(inp.reference, inp.query, inp.geometry, inp.query_intrinsics,
                 solar_mode=c["solar_mode"], response=c["response"], active=c["active"], budget=c["budget"], policy=c["policy"],
                 known_sun=inp.known_query_sun, reference_sun=inp.reference_sun, final_estimator=final_estimator, solar_lookup=inp.solar_lookup)
-        if p["backend"] == "modern":
+        if p["backend"] in ("modern", "native_pretrained"):
             a, b = self.model.points(inp.reference, inp.query); self.model.sync()
         else:
             import cv2
@@ -458,7 +484,8 @@ def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=com
         # Every eligible failure remains a row, not a skipped case.
         p = q = np.empty((0, 2)); pose = None; info = dict(reason="inference_failure", inliers=0); result = {}
         infer_seconds = time.perf_counter()-tick; replay_seconds = 0.
-        failure = dict(type=type(exc).__name__, message=str(exc))
+        failure = dict(type=type(exc).__name__, message=str(exc),
+            status="unavailable" if type(exc).__name__.endswith("Unavailable") else "failed")
     if failure is None and ((pose is None) != (internal_pose is None) or (pose is not None and not np.allclose(pose, internal_pose, rtol=0, atol=1e-7))):
         # A broken common-estimator integration is an experiment-wide defect,
         # not an ordinary difficult image that may be counted as a model miss.
@@ -488,10 +515,12 @@ def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=com
     return dict(metrics=metrics, inference_seconds=infer_seconds, common_pose_replay_seconds=replay_seconds,
         inference_failure=failure, label_method=label_method, final_estimator=info,
         response_cost=result.get("response_cost"), native_encoder_forwards=result.get("native_encoder_forwards"),
+        historical_control=json_values(result.get("historical_control")), render_search=json_values(result.get("render_search")),
         response_requested=getattr(backend, "profile", {}).get("configuration", {}).get("response"),
         response_measurements=response_measurements, response_refresh_calls=result.get("response_refresh_calls"),
         response_usage_confirmed=None if response_measurements is None else bool(response_measurements>0),
         rounds=json_values(result.get("rounds")), reason=result.get("reason", info.get("reason")),
+        initialization=json_values(result.get("initialization")),
         initial_hypothesis_count=result.get("initial_hypothesis_count"),
         returned_hypothesis_count=None if hypotheses is None else len(hypotheses),
         live_hypothesis_count=None if hypotheses is None else sum(h.get("pose") is not None for h in hypotheses),

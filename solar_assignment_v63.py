@@ -78,10 +78,14 @@ def evidence_tensor(graph):
     return evidence
 
 
-def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,response=None,precomputed_evidence=None,candidate_rank=0,response_by_sun=None,independent_sun_indices=None):
+def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,response=None,precomputed_evidence=None,candidate_rank=0,response_by_sun=None,independent_sun_indices=None,measurement_state=None,native_reprojection_gate=None):
     if solar_mode not in('off','shared','independent'):raise ValueError('Unknown solar consistency control')
     score=graph.appearance.copy()if response is None else np.asarray(response,float).copy()
     if score.shape!=graph.appearance.shape or not np.isfinite(score).all():raise ValueError('Finite candidate appearance/response score required')
+    if measurement_state is not None:
+        measurement_state=np.asarray(measurement_state)
+        if measurement_state.shape!=score.shape or not np.isin(measurement_state,[0,1,2]).all():raise ValueError('Explicit unobserved/native/failed local measurement states required')
+    if native_reprojection_gate is not None and(pose is None or native_reprojection_gate!=3.):raise ValueError('Verified native support must retain the fixed3pxgeometry gate')
     evidence=evidence_tensor(graph)if precomputed_evidence is None else precomputed_evidence
     if solar_mode=='shared':
         if not graph.solar_materialized_mask[sun_index]:raise ValueError('Requested solar column is uncomputed, not coverage-unknown')
@@ -100,19 +104,47 @@ def assignments(graph,sun_index,solar_mode='shared',pose=None,intrinsics=None,re
     if pose is not None:
         projected,front=project(graph.world,pose,intrinsics)
         error=np.linalg.norm(graph.query_xy-projected[:,None],axis=-1)
+        if measurement_state is not None:
+            # An unrefined candidate denotes a33x33search, not a precise
+            # native correspondence. This rotation-independent outer bound
+            # includes16pxhalfwidth plus <=.5px centre rounding per axis.
+            radius=np.sqrt(2.)*16.5
+            error=np.where(measurement_state==0,np.maximum(error-radius,0.),error)
         score-=np.where(front[:,None],np.minimum((error/3.)**2,9.),9.)
+    if measurement_state is not None:score=np.where(measurement_state==2,-np.inf,score)
     if not 0<=candidate_rank<score.shape[1]:raise ValueError('Initial candidate rank outside candidate bank')
     index=np.argsort(-score,axis=1,kind='stable')[:,candidate_rank];values=score[np.arange(len(score)),index]
     # One query grid point cannot represent two distinct reference anchors.
     keep=[];seen=set()
     for i in sorted(range(len(index)),key=lambda i:(-values[i],i)):
         key=tuple(graph.query_xy[i,index[i]])
-        if key not in seen:keep.append(i);seen.add(key)
+        if np.isfinite(values[i])and key not in seen:keep.append(i);seen.add(key)
     keep=np.asarray(sorted(keep),int)
     known=(graph.solar_states[:,sun_index]!=SolarState.UNKNOWN)&(np.abs(graph.observed_shadow[np.arange(len(index)),index]-.5)>=.1)
+    if measurement_state is not None:known&=np.isin(np.arange(len(index)),keep)
     cells=np.floor(graph.reference_xy[known]/256).astype(int)
     support=bool(solar_mode=='shared'and known.sum()>=32 and len(set(map(tuple,cells)))>=4)
-    return dict(candidate=index,keep=keep,total=float(values[keep].sum()/len(graph.world)),solar_supported=support,informative_anchors=int(known.sum()),independent_sun_indices=None if independent_choices is None else independent_choices[np.arange(len(index)),index])
+    result=dict(candidate=index,keep=keep,total=float(values[keep].sum()/len(graph.world)),solar_supported=support,informative_anchors=int(known.sum()),independent_sun_indices=None if independent_choices is None else independent_choices[np.arange(len(index)),index])
+    if measurement_state is not None:
+        # Pose fitting requires actual native measurements. An unmeasured
+        # alternative may still lead the latent coarse assignment, but cannot
+        # erase the native evidence already acquired at the same anchor.
+        native_scores=np.where(measurement_state==1,score,-np.inf)
+        native_index=np.argmax(native_scores,axis=1)
+        native_values=native_scores[np.arange(len(index)),native_index]
+        native_keep=[];seen=set()
+        for i in sorted(range(len(index)),key=lambda i:(-native_values[i],i)):
+            key=tuple(graph.query_xy[i,native_index[i]])
+            if np.isfinite(native_values[i])and key not in seen:native_keep.append(i);seen.add(key)
+        result.update(native_candidate=native_index,native_keep=np.asarray(sorted(native_keep),int))
+        if native_reprojection_gate is not None:
+            # Current inliers verify a hypothesis, but all paid measurements
+            # stay available to the next RANSAC update so a wrong early pose
+            # cannot permanently censor corrective observations.
+            native_keep=np.asarray(sorted(native_keep),int)
+            residual=np.linalg.norm(graph.query_xy[np.arange(len(index)),native_index]-projected,axis=-1)
+            result['native_inlier_keep']=native_keep[front[native_keep]&(residual[native_keep]<=3.)]
+    return result
 
 
 def initial_beams(graph,solar_mode='shared',maximum=8,response_enabled=False):
@@ -136,8 +168,9 @@ def initial_beams(graph,solar_mode='shared',maximum=8,response_enabled=False):
 
 def _matched(graph,beam,measurements):
     p=[];q=[];w=[];ids=[]
-    for i in beam['assignment']['keep']:
-        key=(int(i),int(beam['assignment']['candidate'][i]));m=measurements.get(key)
+    a=beam['assignment'];keep=a.get('native_keep',a['keep']);candidate=a.get('native_candidate',a['candidate'])
+    for i in keep:
+        key=(int(i),int(candidate[i]));m=measurements.get(key)
         if m is not None and m.get('query_xy')is not None:
             p.append(graph.reference_xy[i]);q.append(m['query_xy']);w.append(graph.world[i]);ids.append(i)
     return np.asarray(p).reshape(-1,2),np.asarray(q).reshape(-1,2),np.asarray(w).reshape(-1,3),ids
@@ -179,7 +212,8 @@ def acquisition_predictions(graph,beams,actions,intrinsics,solar_mode='shared'):
 
 
 def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='active',budget=128,
-          response_enabled=False,response_refresh=None,final_estimator=None,solar_lookup=None):
+          response_enabled=False,response_refresh=None,final_estimator=None,solar_lookup=None,
+          pose_initialization='strict3'):
     """Joint research inference without query depth, true pose or Sun labels.
 
     Each local search counts once. Responses are refreshed on the selected
@@ -192,6 +226,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     reference-depth geometry/estimator used by all competing matchers.
     """
     if budget not in(32,64,128):raise ValueError('Declared32/64/128patch budget required')
+    if pose_initialization not in('strict3','quantization_aware'):raise ValueError('Explicit supported initial-pose policy required')
     if response_enabled and not callable(response_refresh):raise ValueError('Pair-specific current-pose response refresh callback required')
     graph=CandidateGraph(**{name:getattr(graph,name).copy()for name in graph.__dataclass_fields__})
     def ensure_suns(suns):
@@ -208,6 +243,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     n,k=graph.appearance.shape;actions=np.array([(i,c)for i in range(n)for c in range(k)],int)
     points=np.repeat(graph.reference_xy,k,axis=0);used=np.zeros(len(actions),bool);appearances=graph.appearance.reshape(-1)
     evidence=evidence_tensor(graph);response_calls=0;response_edges=set()
+    measurement_state=np.zeros((n,k),np.uint8)if pose_initialization=='quantization_aware'else None
 
     def response_cube(beam,suns):
         nonlocal response_calls
@@ -243,14 +279,16 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
             ensure_suns(suns)
             evidence[:,suns]=solar_log_evidence(graph.solar_states[:,suns,None],graph.observed_shadow[:,None,:])
         responses=None if solar_mode=='independent'and not response_enabled else response_cube(beam,suns)
-        pose=beam['pose']if beam['native_pose']else None
+        pose=beam['pose']if beam['native_pose']or pose_initialization=='quantization_aware'else None
         if solar_mode=='independent':
             a=assignments(graph,beam['sun_index'],solar_mode,pose,intrinsics,None,evidence,
-                response_by_sun=responses,independent_sun_indices=suns)
+                response_by_sun=responses,independent_sun_indices=suns,measurement_state=measurement_state,
+                native_reprojection_gate=3. if measurement_state is not None and beam['native_pose']else None)
             beam['assignment']=a;beam['score']=a['total'];return
         choices=[]
         for j,si in enumerate(suns):
-            a=assignments(graph,int(si),solar_mode,pose,intrinsics,responses[:,j,:],evidence)
+            a=assignments(graph,int(si),solar_mode,pose,intrinsics,responses[:,j,:],evidence,measurement_state=measurement_state,
+                native_reprojection_gate=3. if measurement_state is not None and beam['native_pose']else None)
             choices.append((a['total'],-int(si),int(si),a))
         _,_,beam['sun_index'],beam['assignment']=max(choices,key=lambda x:x[:2]);beam['score']=beam['assignment']['total']
 
@@ -266,6 +304,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
             computed=graph.solar_materialized_mask
             evidence[i,computed,c]=solar_log_evidence(graph.solar_states[i,computed],graph.observed_shadow[i,c])
         measurements[(i,c)]=measurement;history.append(dict(anchor=i,candidate=c,trial_sun_index=beam['sun_index']))
+        if measurement_state is not None:measurement_state[i,c]=1 if q is not None else 2
         # Assimilate the new measurement before the next acquisition. Poses
         # remain fixed within a round, allowing exact reuse of responses.
         for current in beams:
@@ -278,7 +317,14 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     proposal_requested=0
     for b in beams:
         a=b['assignment'];ids=a['keep'];q=graph.query_xy[ids,a['candidate'][ids]];allocation=1024//len(beams);proposal_requested+=allocation
-        b['pose'],b['pose_info']=estimate(graph.world[ids],q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True));b['native_pose']=False
+        if pose_initialization=='quantization_aware':
+            from solar_pose_proposals_v73 import propose
+            b['pose'],b['pose_info']=propose(graph.world[ids],q,intrinsics,allocation)
+        else:b['pose'],b['pose_info']=estimate(graph.world[ids],q,intrinsics,dict(solver='ap3p',iterations=allocation,reclassify=True))
+        b['native_pose']=False
+    initialization=dict(policy=pose_initialization,initial_hypothesis_count=len(beams),
+        initial_live_poses=sum(b['pose']is not None for b in beams),
+        proposal_info=[dict(b['pose_info'])for b in beams],final_reprojection_threshold_native_px=3.)
     seed_count=min(budget//2,8*len(beams));orders=[]
     for b in beams:
         a=b['assignment'];order=sorted(a['keep'],key=lambda i:(int(graph.reference_xy[i,1]//128)*4+int(graph.reference_xy[i,0]//128),i))
@@ -322,7 +368,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     if not candidates:
         p,q,_,_=_matched(graph,max(beams,key=lambda b:b['score']),measurements)
         for b in beams:b.pop('_response_matrices',None);b.pop('_independent_search',None)
-        return dict(pose=None,reason='no_pose_hypothesis',reference_xy=p,query_xy=q,measurements=history,hypotheses=beams,proposal_samples_requested=proposal_requested,rounds=rounds,incremental_updates=incremental,response_refresh_calls=response_calls)
+        return dict(pose=None,reason='no_pose_hypothesis',reference_xy=p,query_xy=q,measurements=history,hypotheses=beams,proposal_samples_requested=proposal_requested,rounds=rounds,incremental_updates=incremental,response_refresh_calls=response_calls,initialization=initialization)
     # Re-score all surviving beams under their LAST updated poses and bounded
     # Sun support before ranking; no extra RANSAC budget is introduced.
     for b in candidates:
@@ -330,6 +376,19 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
         elif solar_mode=='shared'or response_enabled:suns=graph.search_indices(b['sun_index'],2)
         else:suns=np.array([b['sun_index']])
         update_beam(b,suns)
+    if pose_initialization=='quantization_aware':
+        # A free coarse proposal must not outrank a native-verified hypothesis
+        # just because it escaped the geometric likelihood or lacks6matches.
+        supported=[b for b in candidates if len(_matched(graph,b,measurements)[0])>=6]
+        verified=[b for b in supported if b['native_pose']and len(b['assignment'].get('native_inlier_keep',[]))>=6]
+        if verified:candidates=verified
+        elif supported:candidates=supported
+        else:
+            p,q,_,_=_matched(graph,max(candidates,key=lambda b:b['score']),measurements)
+            for b in beams:b.pop('_response_matrices',None);b.pop('_independent_search',None)
+            return dict(pose=None,reason='insufficient_supported_native_matches',reference_xy=p,query_xy=q,
+                hypotheses=beams,measurements=history,proposal_samples_requested=proposal_requested,
+                rounds=rounds,initialization=initialization,response_refresh_calls=response_calls)
     best=max(candidates,key=lambda b:b['score']);p,q,w,_=_matched(graph,best,measurements)
     if final_estimator is None:
         pose,info=estimate(w,q,intrinsics,dict(solver='ap3p',iterations=2000,reclassify=True));final_geometry='exact_reference_map_anchors';final_iterations=2000
@@ -337,7 +396,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
         pose,info=final_estimator(p,q);final_geometry='caller_supplied_common_reference_geometry';final_iterations=info.get('iterations_requested')
     for b in beams:b.pop('_response_matrices',None);b.pop('_independent_search',None)
     for record in history:record['response_used']=(record['anchor'],record['candidate'])in response_edges
-    return dict(pose=pose,reason=info['reason'],reference_xy=p,query_xy=q,
+    return dict(pose=pose,reason=info['reason'],reference_xy=p,query_xy=q,initialization=initialization,
         sun_enu=None if solar_mode!='shared'else graph.sun_vectors[best['sun_index']],solar_supported=best['assignment']['solar_supported'],
         measurements=history,hypotheses=beams,proposal_samples_requested=proposal_requested,final_estimator_iterations=final_iterations,
         final_geometry=final_geometry,rounds=rounds,incremental_updates=incremental,response_measurements=len(response_edges),

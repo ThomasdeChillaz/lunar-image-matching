@@ -33,6 +33,7 @@ REQUIRED_SOURCES = {
     "localization_diagnostics_v3.py", "lunargeo_dataset.py", "remote_archive.py",
     "train_balanced_localization_v3.py", "localization_refiner_v3.py",
     "prepare_localization_training_v3.py",
+    "solar_pose_proposals_v73.py",
 }
 
 
@@ -66,6 +67,34 @@ def admission(protocol_path, commit):
         modern_sources = {"modern_baselines_v2.py", "dataset.py", "geometry.py", "matchers.py"}
         if not modern_sources <= set(p["source_sha256"]):
             raise ValueError("Modern adapter and coordinate/weight-lock source pins required")
+    for profile in p["profiles"]:
+        if profile["backend"] == "native_pretrained":
+            from native_pretrained_adapters_v73 import validate_native_profile, required_native_sources
+            gate = validate_native_profile(profile)
+            actual_protocol = read(profile["pretrained_evidence"]["protocol"])
+            if not required_native_sources(profile, actual_protocol) <= set(p["source_sha256"]):
+                raise ValueError("Complete native pretrained adapter/control/source/weight-lock pins required")
+            evidence = profile["pretrained_evidence"]
+            for field in ("protocol", "summary", "controls", "provenance"):
+                if p["input_sha256"].get(evidence[field]) != evidence[field+"_sha256"]:
+                    raise ValueError("Actual pretrained gate evidence must be bound to the published evaluation protocol")
+    for profile in p["profiles"]:
+        if profile["backend"] == "historical_compact":
+            from historical_compact_adapters_v73 import validate_historical_profile, historical_profile_inputs
+            validate_historical_profile(profile)
+            required_inputs = historical_profile_inputs(profile)
+        elif profile["backend"] == "direct_render":
+            from direct_render_adapter_v73 import validate_render_profile, render_profile_inputs
+            validate_render_profile(profile)
+            required_inputs = render_profile_inputs(profile)
+        else:
+            continue
+        for name, expected in profile["source_sha256"].items():
+            if p["source_sha256"].get(name) != expected:
+                raise ValueError("Historical/render source must be bound to comparison freeze: " + name)
+        for name, expected in required_inputs.items():
+            if p["input_sha256"].get(name) != expected:
+                raise ValueError("Actual historical/render evidence must be pinned: " + name)
     for path in [protocol_path, *p["source_sha256"]]:
         if subprocess.check_output(["git", "show", commit+":"+path]) != Path(path).read_bytes():
             raise ValueError("Executed protocol/source not identical to its source publication: "+path)
@@ -97,7 +126,7 @@ def admission(protocol_path, commit):
             if "solar_lookup_v70.py" not in p["source_sha256"]:
                 raise ValueError("Online reference-only solar lookup implementation must be source-pinned")
         if c["positive"]: required.add(c["scoring_labels"])
-        if any(profile["backend"] in ("modern", "sift") for profile in p["profiles"]) and c["positive"]:
+        if any(profile["backend"] in ("modern", "sift", "native_pretrained", "historical_compact", "direct_render") for profile in p["profiles"]) and c["positive"]:
             required.add(c["scoring_geometry"])
         if not required <= set(c["input_sha256"]):
             raise ValueError("Every actual image, reference map and scoring label must be pinned")

@@ -31,6 +31,9 @@ def run(protocol_path, commit, python, program, replay_root=None, replay_output=
     if type(cap) is not int or cap <= 0:
         raise ValueError('Explicit positive fixed allowance required')
     started = datetime.now(timezone.utc)
+    latest_key = 'replay_latest_start_utc' if replay_root else 'latest_start_utc'
+    if latest_key in p and started > datetime.fromisoformat(p[latest_key]):
+        raise TimeoutError('Original published dispatch lease expired; never reset the job deadline')
     deadline = min(started + timedelta(seconds=cap), datetime.fromisoformat(p['replay_absolute_deadline_utc'] if replay_root else p['absolute_deadline_utc']))
     if started >= deadline:
         raise TimeoutError('Original published job deadline expired')

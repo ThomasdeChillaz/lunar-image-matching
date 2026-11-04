@@ -1,3 +1,40 @@
+## M73 — Integrated comparison adapters and artifact-driven learning
+
+## Integrated comparisons and learning execution ready — 4 November 2026
+
+The three candidate modules now have a serial, source-bound learning dispatcher
+and the remaining historical, pretrained and direct-render comparison adapters.
+**709 repository tests pass**, four optional tests skip, and a fresh default
+image-to-pose smoke passes all eight combinations with independent saved-result
+replay. The matcher remains **95,808 total parameters**.
+
+**The new response head still has zero lunar optimizer updates.** The active
+missing-only camera completion has sealed **33/96 units** in this snapshot and
+will run the full independent geometry gate before learning. All 16 live
+rendering/controller source guards and the original deadline remain unchanged.
+The prepared training dispatcher requires measured pilots, exact 100-update
+replay, two completed 2,000-update studies, pose-based checkpoint selection and
+the two selected-seed repeats. Every scientific stage uses the canonical
+cumulative budget; a prepared profile does not count as a measured result.
+
+A separate optional quantization-aware pose initializer and native-evidence
+assignment correction preserve the historical default and final three-pixel
+estimator. They address a demonstrated coarse-grid bias, but expanded-bank
+software controls also retain many incorrect tentative correspondences. The
+45-degree control fails its original combined gate in all eight cases; those
+failures and their source snapshots are preserved. No lunar gain or new
+technique is claimed from this engineering control.
+
+The attention study stays at **15/96 raw correct poses**, uncalibrated. Actual
+new learning, all ablations/modern comparisons, transfer, calibration, final
+freeze/test and the research package remain incomplete. The final reserve is
+closed. The broader research objective remains active.
+
+Evidence: [release checks and live-data snapshot](reports/solar_software_release_v73.json),
+[independent default smoke replay](reports/solar_final_controlled_smoke_replay_v73.json),
+[retained failed controls](reports/solar_optional_control_failures_v73.json), and
+[execution sequence and remaining evidence](reports/INTEGRATED_EXECUTION_V73.md).
+
 ## M72 — Source-bound selection assets and measured-study admission
 
 ## Qualified-data indexing and completed-study checks ready — 4 November 2026
