@@ -1,0 +1,14 @@
+{
+  "prepared_only": true,
+  "control_kind": "legacy_matchanything",
+  "method": "matchanything",
+  "original_master": "reports/solar_development_admission_v67.json",
+  "dataset_summary": null,
+  "geometry_audit": null,
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "max_calendar_seconds": null,
+  "publication_dispatch_lease_seconds": 1800,
+  "dependency_dir": null,
+  "output": "runs/matchanything-native-two-thread-control-v74"
+}

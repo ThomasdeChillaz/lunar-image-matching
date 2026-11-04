@@ -1,0 +1,53 @@
+{
+  "scope": "Pure loss/masking correctness controls with constant stub descriptors; no CNN, lunar images or optimizer update. Lackofsame-Sunnegatives is not correspondence evidence; true same-Sun collapse muststillbe penalized.",
+  "rows": [
+    {
+      "method": "before_first_available_per_pair",
+      "constant_stub_descriptors": true,
+      "shared_counterfactual_negatives": false,
+      "parts": {
+        "reconstruction": 0.0,
+        "discrimination": 0.6931471824645996,
+        "harmonic_regularizer": 0.0
+      }
+    },
+    {
+      "method": "before_first_available_per_pair",
+      "constant_stub_descriptors": true,
+      "shared_counterfactual_negatives": true,
+      "parts": {
+        "reconstruction": 0.0,
+        "discrimination": 0.6931471824645996,
+        "harmonic_regularizer": 0.0
+      }
+    },
+    {
+      "method": "after_common_sun_per_matrix",
+      "constant_stub_descriptors": true,
+      "shared_counterfactual_negatives": false,
+      "parts": {
+        "reconstruction": 0.0,
+        "discrimination": 0.0,
+        "harmonic_regularizer": 0.0,
+        "discrimination_pair_light_count": 0,
+        "discrimination_light_count": 0
+      }
+    },
+    {
+      "method": "after_common_sun_per_matrix",
+      "constant_stub_descriptors": true,
+      "shared_counterfactual_negatives": true,
+      "parts": {
+        "reconstruction": 0.0,
+        "discrimination": 0.6931471824645996,
+        "harmonic_regularizer": 0.0,
+        "discrimination_pair_light_count": 4,
+        "discrimination_light_count": 2
+      }
+    }
+  ],
+  "source_sha256": {
+    "before": "66370e95fb0baf35380b5f7eac694d3c50aa596a2fbd19127906f5dacb76784e",
+    "after": "c677c17c3492006b89844c09c34848df78b20fd6c6b8c67a5afcb253963c26eb"
+  }
+}

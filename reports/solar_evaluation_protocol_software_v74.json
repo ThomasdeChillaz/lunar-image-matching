@@ -1,0 +1,45 @@
+{
+  "new_python_files": {
+    "solar_evaluation_protocol_v74.py": "d74ee39aca25b81a60c8eed23cffc4c5e0de1f5aebc69b17da949e4fb62152a0",
+    "build_solar_evaluation_protocol_v74.py": "1412e5834f20a2f6257c5ac53965103f9630f0695f33b53b447824f291fac37b",
+    "test_solar_evaluation_protocol_v74.py": "1aeaa4a95a7a4e05b5f70e694e41331ff8663a827ec6b5112168f8c6555a3c16"
+  },
+  "templates": [
+    "solar-evaluation-settings-template-v74.json"
+  ],
+  "runner_patch": "evaluation-runtime-guards-v74.patch",
+  "affected_test_fixture_patch": "native-admission-fixture-v74.patch",
+  "runner_base_sha256": "a60cc035e6ebb7af2cf95d1c6051bf5945fc8249a7178d3d617dbbd1d83a8292",
+  "runner_proposed_sha256": "bc539ab91f8b7304b7e651fa98a1bfc1e09282db8d60598f8017a9d5daf9fac5",
+  "merge_instruction": "Copy the3new Python modules/test. Apply/merge the two minimal patches. The complete modified runner/test are review references only: preserve root-owned external_control, timeout and diagnostic updates added since the recorded base. Do not copy the test-environment solar_evaluation/native adapter/guard sources.",
+  "dependencies": [
+    "M74 corrected solar_reference_pipeline package with completed_reference_preparation(protocol_path,summary_path) inventory/cost API",
+    "M74 raw eligibility producer patch; existing schema70 manifest and full96 audit",
+    "Existing completed-learning contract/study/watchdog and ranking helpers"
+  ],
+  "tests": {
+    "total_passed": 63,
+    "dedicated_builder_tests": 26,
+    "calendar_seconds": 12.42,
+    "scope": "Metadata/procedural/stub tests only; no actual model forward, image decode, ray, render, training or scientific subprocess."
+  },
+  "coverage": [
+    "Exact all12*N case freeze, allfive checkpoints0/500/1000/1500/2000, matched8A/B/C+explicitpooled, all13independentSun/acquisition controls.",
+    "Raw32generated inventory/all8groups/exclusions retained;31eligible=>372cases;empty eligible group explicit;oracleposefailure remains eligible.",
+    "Actual completed2000study/watchdog required; initialization can honestly win a negative completed selection.",
+    "Physical preparation binds original canonical charges, startup-inclusive archive costs, internal costs and phase calendar costs.",
+    "Full caps derive only from exact fresh sealed/replayed/published measured cost pilots; malformed, late, duplicated, cached or uncharged evidence rejected.",
+    "Old completed receipts replay after launch leases/deadlines and with less current budget than their old cap; new starts alone enforce current lease, absolute deadline, remaining allowance and canonical history."
+  ],
+  "actual_project_protocols_created": 0,
+  "actual_scientific_jobs_started": 0,
+  "root_files_modified": false,
+  "publication_performed": false,
+  "limits": [
+    "Prepared templates require real artifacts; no successful actual study/pilot/prep evidence was generated.",
+    "Modern/native-baseline and repeat-seed evaluation profile builders are separate; new native comparisons must additionally bind successful OUTER control/watchdog evidence.",
+    "The publication barrier reuses local Git byte verification; the parent workflow performs/verifies actual remote publication.",
+    "Parent must rerun the complete repository suite and fresh controlled smoke after merging with its current M74 sources.",
+    "All incomplete/failed prior jobs and fixed-cap charges remain immutable; no new study is silently narrowed to fit budget."
+  ]
+}

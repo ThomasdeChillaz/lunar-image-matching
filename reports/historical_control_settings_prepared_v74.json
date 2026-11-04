@@ -1,0 +1,14 @@
+{
+  "prepared_only": true,
+  "control_kind": "historical_compact",
+  "method": "historical_original_native512",
+  "prepared_profiles": "reports/solar_historical_profiles_prepared_v73.json",
+  "original_master": "reports/solar_development_admission_v67.json",
+  "dataset_summary": null,
+  "geometry_audit": null,
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "max_calendar_seconds": null,
+  "publication_dispatch_lease_seconds": 1800,
+  "output": "runs/historical-original-native-control-v74"
+}
