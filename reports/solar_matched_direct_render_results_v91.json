@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "replayed_rows": 8,
+  "rows": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 84,
+          "co_visible": 88,
+          "returned": 88
+        },
+        "2": {
+          "correct": 87,
+          "co_visible": 88,
+          "returned": 88
+        },
+        "4": {
+          "correct": 87,
+          "co_visible": 88,
+          "returned": 88
+        },
+        "8": {
+          "correct": 88,
+          "co_visible": 88,
+          "returned": 88
+        },
+        "12": {
+          "correct": 88,
+          "co_visible": 88,
+          "returned": 88
+        }
+      }
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 17,
+          "co_visible": 17,
+          "returned": 17
+        },
+        "2": {
+          "correct": 17,
+          "co_visible": 17,
+          "returned": 17
+        },
+        "4": {
+          "correct": 17,
+          "co_visible": 17,
+          "returned": 17
+        },
+        "8": {
+          "correct": 17,
+          "co_visible": 17,
+          "returned": 17
+        },
+        "12": {
+          "correct": 17,
+          "co_visible": 17,
+          "returned": 17
+        }
+      }
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 9,
+          "co_visible": 9,
+          "returned": 9
+        },
+        "2": {
+          "correct": 9,
+          "co_visible": 9,
+          "returned": 9
+        },
+        "4": {
+          "correct": 9,
+          "co_visible": 9,
+          "returned": 9
+        },
+        "8": {
+          "correct": 9,
+          "co_visible": 9,
+          "returned": 9
+        },
+        "12": {
+          "correct": 9,
+          "co_visible": 9,
+          "returned": 9
+        }
+      }
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 9,
+          "co_visible": 10,
+          "returned": 10
+        },
+        "2": {
+          "correct": 10,
+          "co_visible": 10,
+          "returned": 10
+        },
+        "4": {
+          "correct": 10,
+          "co_visible": 10,
+          "returned": 10
+        },
+        "8": {
+          "correct": 10,
+          "co_visible": 10,
+          "returned": 10
+        },
+        "12": {
+          "correct": 10,
+          "co_visible": 10,
+          "returned": 10
+        }
+      }
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    }
+  ],
+  "protocol_sha256": "2c070870a4ca63ede04c83e7bd12bce916ff339297e2c3fbc46157083f1cb303",
+  "summary_sha256": "c4f5ffa48871e974516bbfdbb94f13235954c08c210e44f7a34a200eb525dc89",
+  "watchdog_sha256": "b730e28ff5764d786c28ae7f22ca38fcce4f570cf8ea752b7fc5255bb3af42ab",
+  "accepted_results": false,
+  "scope": "Independent saved-array replay on the eight paired development cases."
+}
