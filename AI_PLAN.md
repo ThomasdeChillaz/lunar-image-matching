@@ -12,7 +12,10 @@ checkpoint. The fine-encoder initialization check now loads its own sealed,
 zero-update procedural checkpoint from an empty temporary directory, while
 preserving equal-forward and independent-storage checks and explicitly testing
 frozen coarse/trainable fine weights. A machine-specific test import override
-was also removed. This changes test portability, not the scientific matcher.
+was also removed. The terrain-origin check now tests all three coordinates
+within a lunar-radius float64 roundoff bound rather than exact zero, while
+retaining reconstruction and spherical-curvature checks. These changes affect
+test portability; production geometry and scientific gates are unchanged.
 
 The missing-only data job is live: **71/96 completed units** in this snapshot.
 Its 16 protected sources and original deadline are unchanged. Full completion

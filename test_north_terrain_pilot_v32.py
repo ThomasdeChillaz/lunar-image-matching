@@ -22,7 +22,11 @@ def test_terrain_nodes_use_sphere_and_preserve_radius():
         for c,dx in enumerate(offsets):
             expected=body_point(site['x']+dx*10,site['y']-dy*10,float(height[1024+dy,1024+dx]))
             np.testing.assert_allclose(recovered[r,c],expected,atol=2e-6,rtol=0)
-    assert v[1,1,2]==0
+    # Scalar and vector spherical conversions can differ by float64 roundoff
+    # before subtracting the lunar-radius body origin. Check all three local
+    # coordinates within that numerical scale, not exact floating-point zero.
+    roundoff_m=32*np.finfo(np.float64).eps*np.linalg.norm(origin)
+    np.testing.assert_allclose(v[1,1],0.,atol=roundoff_m,rtol=0)
     # Spherical curvature must not be accidentally replaced by a flat DEM.
     assert v[0,0,2]<0
 
