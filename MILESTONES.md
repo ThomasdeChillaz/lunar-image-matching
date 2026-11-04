@@ -1,34 +1,36 @@
 ## M80 — Complete physical training bank and exact learned pilots
 
-## Learned-response training started — 4 November 2026
+## Both full learned-response studies completed — 4 November 2026
 
-The corrected training bank is complete: **64 camera pairs, all 16 training
-terrain groups and 3,933 paired samples**. Its 163 unsupported trial patches are
-explicitly recorded; every camera pair contributes at least 48 usable samples.
-Independent artifact replay passes physical labels, Sun/normal/view conditioning,
-seals and even-light-only targets. No held-out image was read.
+The directional-response model and the matched pooled control each completed
+**2,000 updates**, taking **261.736 and 248.759 seconds**. Both save checkpoints
+at 0/100/500/1,000/1,500/2,000 updates and remain **95,808 total parameters**.
+Their 100-update pilots passed exact replay. The coarse encoder stays frozen;
+no checkpoint has been selected or promoted.
 
-Both the directional-response model and its matched pooled control completed
-**100 training updates and exact replay** of model, optimizer, losses, gradients,
-random state and sampling. They retain **95,808 total parameters**. Their measured
-pilots take 14.857 and 15.068 seconds respectively. The source-published
-2,000-update directional study is now running with a 595-second cap, followed
-serially by the pooled study. Checkpoint selection will use raw pose recovery,
-not training loss.
+Training uses **64 camera pairs from all 16 training terrain groups**, with
+3,933 physical paired samples and even-light-only teacher targets. All cameras
+contribute; 163 trial-support omissions are explicit. Independent bank and
+checkpoint audits pass. The original failed extraction and its charge remain
+preserved, alongside the corrected experiment and additional charges.
 
-These establish executable, reproducible learning, not improved lunar localization.
-The historical attention control remains **15/96 raw correct poses**. Actual
-pose comparisons, all ablations, seed repetitions, transfer, calibration,
-final freeze/test and the paper package remain unfinished. Calibration/final
-terrain is untouched; the broader goal is active.
+A source-published full generic Sun-ray cost pilot is now running on reference
+geometry only, with fixed terrain-envelope and height-perturbation rules. Its
+measured cost gates the remaining reference preparation and then the full raw-pose
+checkpoint comparison. Query pose, depth and true Sun are unavailable to primary
+inference. Calibration/final terrain remains untouched.
 
-Evidence: [complete bank](reports/solar_teacher_full_completed_v79.json),
+**No improved lunar localization result is claimed yet.** Training completion
+is not pose recovery. The historical attention control remains **15/96 raw correct
+poses**. All ablations, selection and seed repetitions, modern comparisons,
+transfer, calibration, final freeze/test and the paper package remain unfinished;
+the broader research goal is active.
+
+Evidence: [directional study](reports/solar_sh_study_summary_v79.json),
+[pooled study](reports/solar_pooled_study_summary_v79.json),
 [bank replay](reports/solar_teacher_full_replay_v79.json),
-[directional pilot](reports/solar_sh_pilot_summary_v79.json),
-[exact replay](reports/solar_sh_pilot_exact_replay_v79.json),
-[full study protocol](reports/solar-learning-v79/sh_study.json).
-
-## M79 — Explicit unavailable trial-patch support and preserved extraction failure
+[pilot checkpoint audit](reports/solar_pilot_checkpoint_review_v79.json), and
+[physical pilot protocol](reports/solar-reference-v80-full/reference_one.json).
 
 ## Training-patch support correction — 4 November 2026
 
