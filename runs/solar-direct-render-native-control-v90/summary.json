@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "protocol_sha256": "ee7887774c593b800a88b0774a023280985e51ac194430c8d85e331ab620d647",
+  "publication_commit": "555e33f09538719be42e7f623bed5c0c2b177cb4",
+  "rows": [
+    {
+      "case_id": "known_transform",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "render_reads": 24,
+      "pose_returned": true
+    },
+    {
+      "case_id": "blank",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "render_reads": 24,
+      "pose_returned": false
+    },
+    {
+      "case_id": "invalid_support",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "render_reads": 0,
+      "pose_returned": false
+    }
+  ],
+  "purpose": "direct_render_procedural_control_v90",
+  "controls_sha256": "0d4fd6bfa936b2fddd50dcfe4269c6bcd0de606065a2ee174154d0cf36003d58",
+  "replay": {
+    "passed": true,
+    "known_matches": 423,
+    "median_native_error_px": 0.0,
+    "pose_returned": true,
+    "rotation_error_deg": 0.002984515227146609,
+    "translation_error_m": 0.0005261503765965955,
+    "common_pose_replayed": true,
+    "inliers": 423
+  },
+  "execution_data": "procedural_only",
+  "lunar_images_loaded": 0,
+  "calibration_or_final_access": false
+}
