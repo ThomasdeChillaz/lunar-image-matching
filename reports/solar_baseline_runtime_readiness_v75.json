@@ -1,0 +1,344 @@
+{
+  "scope": "READ-ONLY metadata/source and streaming byte-hash readiness; no models, NN, lunar pixels, or rays loaded",
+  "assets": {
+    "dad": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-v2-torch-cache/hub/checkpoints/dad.pth",
+      "bytes": 26075286,
+      "sha256": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+      "expected_sha256": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+      "matches": true,
+      "hash_seconds": 0.0712615359807387
+    },
+    "dinov2": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-v2-torch-cache/hub/checkpoints/dinov2_vitl14_pretrain.pth",
+      "bytes": 1217586395,
+      "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "expected_sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "matches": true,
+      "hash_seconds": 2.919689010013826
+    },
+    "loma_r": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-v2-torch-cache/hub/checkpoints/loma_R.pth",
+      "bytes": 757905869,
+      "sha256": "ade1379fb52143da65c36730f24b69eaa49618bb277890c6d2a0fb1630d33d67",
+      "expected_sha256": "ade1379fb52143da65c36730f24b69eaa49618bb277890c6d2a0fb1630d33d67",
+      "matches": true,
+      "hash_seconds": 1.8416253390023485
+    },
+    "romav2": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-v2-torch-cache/hub/checkpoints/romav2.0.1.pt",
+      "bytes": 1095883548,
+      "sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+      "expected_sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+      "matches": true,
+      "hash_seconds": 2.6599244789686054
+    },
+    "matchanything": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/data/models/matchanything_eloftr.safetensors",
+      "bytes": 64254616,
+      "sha256": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+      "expected_sha256": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+      "matches": true,
+      "hash_seconds": 0.1610339400358498
+    },
+    "moonst3r": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/data/models/moonst3r/model.safetensors",
+      "bytes": 2781203944,
+      "sha256": "f1f356da8f400d503f2c675623775e08f736bb24066e75f48301a1aff8cb3d5f",
+      "expected_sha256": "f1f356da8f400d503f2c675623775e08f736bb24066e75f48301a1aff8cb3d5f",
+      "matches": true,
+      "hash_seconds": 7.504281332017854
+    }
+  },
+  "sources": {
+    "loma": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/loma-upstream",
+      "head": "415caedde23a9ed479172ed174fe4ff7b4514d4b",
+      "status": [],
+      "head_exit": 0
+    },
+    "romav2_work": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/romav2-upstream",
+      "head": "95c9968145c8906b7b59383258e9f73b02853d89",
+      "status": [],
+      "head_exit": 0
+    },
+    "romav2_repo": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/data/models/romav2-upstream",
+      "head": "95c9968145c8906b7b59383258e9f73b02853d89",
+      "status": [],
+      "head_exit": 0
+    },
+    "dinov3_repo": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/data/models/dinov3-romav2",
+      "head": "adc254450203739c8149213a7a69d8d905b4fcfa",
+      "status": [],
+      "head_exit": 0
+    },
+    "moonst3r": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/data/models/moonst3r-upstream",
+      "head": "ed6ea257475abb8a5235dff3a4d6167214b6f697",
+      "status": [],
+      "head_exit": 0
+    },
+    "matchanything_locked_closure": {
+      "count": 44,
+      "mismatches": [],
+      "lock_sha256": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5"
+    },
+    "moonst3r_locked_closure": {
+      "count": 162,
+      "mismatches": [],
+      "lock_sha256": "5319f954a18d2f308af5e26fdc0dbd555bcfd56de449577d172bc9254877b526"
+    },
+    "dinov3_hub_cache": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-v2-torch-cache/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa",
+      "python_files_checked": 128,
+      "matches_pinned_clean_clone": true,
+      "mismatches": []
+    }
+  },
+  "native_evidence": {
+    "loma_r": {
+      "directory": "/Users/admin/Documents/Codex/2026-10-25/for/work/native-modern-artifacts/native-v7-loma_r-common/native-comparison",
+      "files_sha256": {
+        "protocol.json": "7f66e2750e0c2861562bc9d77e742284c329275586e569922921384507d6a53e",
+        "provenance.json": "a7b8bad4cabe2aaab7bf72303fc45d229c861435e5aa7818f1ea3ae6fee05aaf",
+        "controls.json": "deab49d2bdf9a1562fa42773e9f4230da7c78a26cadfea5e5e770a78a918c64c"
+      },
+      "upstream_tree_files": 30,
+      "upstream_tree_mismatches": [],
+      "current_control_source_mismatches": [],
+      "cpu_threads": 2,
+      "runtime": {
+        "torch": "2.8.0+cpu",
+        "numpy": "1.26.4",
+        "opencv": "4.10.0",
+        "platform": "Linux-7.0.0-1017-azure-aarch64-with-glibc2.39"
+      },
+      "profile": "common",
+      "revision": "415caedde23a9ed479172ed174fe4ff7b4514d4b",
+      "settings": {},
+      "saved_arrays_replayed": true,
+      "actual_control_metrics": {
+        "passed": true,
+        "matches": 1898,
+        "median_native_error_px": 0.07735536565603832,
+        "translation_error_m": 0.0013344788586370489,
+        "rotation_error_deg": 0.008321859929399239,
+        "warm_match_seconds": 54.07713878300001,
+        "blank_empty": true,
+        "invalid_mask_empty": true
+      }
+    },
+    "romav2": {
+      "directory": "/Users/admin/Documents/Codex/2026-10-25/for/work/native-modern-artifacts/native-v7-romav2-common/native-comparison",
+      "files_sha256": {
+        "protocol.json": "d2a4c26f9c66c1cd6044270d7be2cffc858767739cce696480fd6c890ba68160",
+        "provenance.json": "126045ff88ec7ce1e76c4e9a4c9a7bbb7fdcccde002efd4d0802d1b4c7407b54",
+        "controls.json": "3cf16737c9bf1c66d7ba5d71aa3f572761b11b4ce5de7bbd69119eaf8595a1ed"
+      },
+      "upstream_tree_files": 29,
+      "upstream_tree_mismatches": [],
+      "current_control_source_mismatches": [],
+      "cpu_threads": 2,
+      "runtime": {
+        "torch": "2.8.0+cpu",
+        "numpy": "1.26.4",
+        "opencv": "4.10.0",
+        "platform": "Linux-7.0.0-1017-azure-aarch64-with-glibc2.39"
+      },
+      "profile": "common",
+      "revision": "95c9968145c8906b7b59383258e9f73b02853d89",
+      "settings": {
+        "H_lr": 512,
+        "W_lr": 512,
+        "H_hr": null,
+        "W_hr": null,
+        "bidirectional": false
+      },
+      "saved_arrays_replayed": true,
+      "actual_control_metrics": {
+        "passed": true,
+        "matches": 2000,
+        "median_native_error_px": 0.028033567838347293,
+        "translation_error_m": 0.0009010166316120073,
+        "rotation_error_deg": 0.0043578291345917125,
+        "warm_match_seconds": 53.339420640000014,
+        "blank_empty": true,
+        "invalid_mask_empty": true
+      }
+    },
+    "matchanything": {
+      "directory": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/localization-v17-matchanything-native-control",
+      "files_sha256": {
+        "protocol.json": "7a4577700b1949f14b120fea3fc062d05e69a5c937097209c5d6d68877171803",
+        "summary.json": "23b47784d43bd69fbb44ef07f18b81a8d1b99bb3a5fe7b8eb4acc343bfe6b256",
+        "controls.json": "e16a3798ea99196dc1f843e0d78c397ca08358235f2c77791443139390ec5d2b",
+        "provenance.json": "61ba33153d74645326205cf099dda5136fadbb927a9a4c57b1328588d6d7bf13"
+      },
+      "cpu_threads": 1,
+      "current_control_source_mismatches": []
+    },
+    "moonst3r": {
+      "directory": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/localization-v19-moonst3r-native-control",
+      "files_sha256": {
+        "protocol.json": "0c41ee7de980a0d14f3e863655fd5ed620495644b51c523edc37e9ad6af97c23",
+        "summary.json": "6c983e8305f5e75e68d7212bdd7d806b3878210a9c892d13d6f09b9e95ae8f16",
+        "controls.json": "9170ad5e8b054c72c019a051736cfa15195eda98c641c47e9b1b07c09653912c",
+        "provenance.json": "455df7115e9c6e435a815b6dfcd2992448ff1d1a5e8e67abba1b27a3c9f30290"
+      },
+      "cpu_threads": 2,
+      "current_control_source_mismatches": []
+    }
+  },
+  "current_source_sha256": {
+    "modern_baselines_v2.py": "6cfa9c962b7a434bea9e942b958b6b64a684a24d4bb6ff85a80c2b5696449156",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "native_matchanything_v17.py": "06337d67bbf620307eed8a4fc594f6349dae8fd7eff7f7527f4d88b71ea6449f",
+    "native_moonst3r_v19.py": "8e76da510df824e513943b79d4c06ba372cf0ba186022429f827d4e9394707e9"
+  },
+  "local_cpu_environment": {
+    "host_architecture": "x86_64",
+    "processor": "Intel Core i9-9980HK",
+    "model": "MacBookPro16,1",
+    "validated_python": "/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "torch_2_8_official_native_macos_x86_wheel_available": false,
+    "installations_performed": false,
+    "nn_forwards_performed": false,
+    "separate_modern_2_8_env_on_this_host": "blocked: official macOS x64 wheels end at 2.2.x; ARM64 wheel is incompatible",
+    "official_sources": [
+      "https://pytorch.org/blog/pytorch2-2/",
+      "https://download.pytorch.org/whl/cpu/torch/",
+      "https://pytorch.org/get-started/previous-versions/"
+    ],
+    "romav2_additional_api_blocker": "Pinned matcher uses nn.Buffer; installed Torch2.2.2 torch/nn/__init__.py and parameter.py have no public Buffer symbol/class. Static source inspection only; no upstream import/model construction attempted."
+  },
+  "precision_policy": {
+    "loma": {
+      "upstream_cpu_dtype": "bfloat16",
+      "cfg_mp_default": true,
+      "cfg_mp_false_is_complete_fp32_switch": false,
+      "reason": "DaD and DeDoDe factory amp=True; DINOv2 casts descriptor model to amp_dtype. A complete FP32 fork requires explicitly declared source/config changes and new controls."
+    },
+    "romav2": {
+      "upstream_descriptor_amp": true,
+      "upstream_matcher_amp": true,
+      "upstream_refiner_amp": true,
+      "top_level_all_fp32_switch": false,
+      "reason": "Descriptor and Matcher expose enable_amp; Refiners factory instantiates ConvRefiner defaults with enable_amp=True without exposing override; FineFeatures uses hard-coded CUDA autocast context."
+    },
+    "preserve_profiles": "Use untouched pinned common/author defaults on a separately qualified supported platform; never relabel partial FP32 changes as author baseline."
+  },
+  "qualification_scope": "Preserved actual software controls only. LoMa/RoMa native common qualified on Linux aarch64/Torch2.8, not this Intel Mac. MA one-thread control does not qualify new two-thread comparison. MOON native common two-thread control passes current metadata + common-PnP replay. None admits new lunar jobs before full96 gate, source publication and current fixed-budget admission.",
+  "upstream_requirements": {
+    "loma": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/loma-upstream/pyproject.toml",
+      "sha256": "6fad22f2d38469959c6805559613a721a0d03672d7467f46a86d0f0525e674d7",
+      "python": ">=3.10",
+      "dependencies": [
+        "einops>=0.8.1",
+        "opencv-python>=4.12.0.88",
+        "pillow>=12.0.0",
+        "torch",
+        "torchvision>=0.23.0",
+        "tqdm>=4.67.1",
+        "tyro"
+      ],
+      "build_system": {
+        "requires": [
+          "uv_build>=0.8.15,<0.9.0"
+        ],
+        "build-backend": "uv_build"
+      }
+    },
+    "romav2": {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/work/romav2-upstream/pyproject.toml",
+      "sha256": "98127151c7fc11a0b3cd894b3e1d03f44553b5427e2a000f0660e257a0a57442",
+      "python": ">=3.10",
+      "dependencies": [
+        "einops>=0.8.1",
+        "pillow>=12.0.0",
+        "rich>=14.2.0",
+        "torch",
+        "torchvision>=0.23.0",
+        "tqdm>=4.67.1",
+        "fused-local-corr ; sys_platform == 'linux'"
+      ],
+      "build_system": {
+        "requires": [
+          "uv_build>=0.8.15,<0.9.0"
+        ],
+        "build-backend": "uv_build"
+      }
+    }
+  },
+  "preserved_worker_lock": {
+    "python": "3.12",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0",
+    "numpy": "1.26.4",
+    "opencv-python": "4.10.0.84",
+    "pillow": "12.0.0",
+    "einops": "0.8.1",
+    "tqdm": "4.67.1",
+    "rich": "14.2.0",
+    "tyro": "0.9.35",
+    "rasterio": "1.4.4",
+    "workflow": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/.github/workflows/native-localization-v7.yml",
+    "workflow_sha256": "b0f5cdfd294fb3cd15b8fcf444268d5aa5f706ef58176a11520a25eeeb89b950",
+    "note": "Preserved manually pinned and actually controlled runtime; OpenCV4.10 is below newer LoMa pyproject>=4.12 requirement, so do not characterize this as satisfying all upstream installation metadata. Changing packages requires separate controls."
+  },
+  "historical_author_controls": [
+    {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/compact-v2-modern-centers-probes-compatible/modern-v2-loma_r/loma_r-author/probe.json",
+      "expected_sha256": "ebeb9a32e863095c7c6cc2ff2ecfd4e78fd109872108a0646fb44fbe024037bb",
+      "file_present": true,
+      "actual_sha256": "ebeb9a32e863095c7c6cc2ff2ecfd4e78fd109872108a0646fb44fbe024037bb",
+      "byte_match": true,
+      "status": "passed",
+      "method": "loma_r",
+      "profile": "author",
+      "reason": null,
+      "scope": "128-pixel software registration probe, NOT a native512 camera-pose qualification; blocked author profile stays blocked."
+    },
+    {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/compact-v2-modern-centers-probes-compatible/modern-v2-loma_r-common-control/loma_r-common/probe.json",
+      "expected_sha256": "75675720087fbe76ca02ad537f40327ed69bd369e6edf05d8aa71d6fcb06e919",
+      "file_present": true,
+      "actual_sha256": "75675720087fbe76ca02ad537f40327ed69bd369e6edf05d8aa71d6fcb06e919",
+      "byte_match": true,
+      "status": "passed",
+      "method": "loma_r",
+      "profile": "common",
+      "reason": null,
+      "scope": "128-pixel software registration probe, NOT a native512 camera-pose qualification; blocked author profile stays blocked."
+    },
+    {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/compact-v2-modern-centers-probes-arm-41192323816/modern-v2-romav2/romav2-author/probe.json",
+      "expected_sha256": "a2ed5f10913b019e8b1f1ece682f0ea7d52e226eb5ba58726b9ece6a6aff90a0",
+      "file_present": true,
+      "actual_sha256": "a2ed5f10913b019e8b1f1ece682f0ea7d52e226eb5ba58726b9ece6a6aff90a0",
+      "byte_match": true,
+      "status": "blocked",
+      "method": "romav2",
+      "profile": "author",
+      "reason": "Author-profile subprocess exceeded10minute free CPU budget or failed before completion; no inferred lunar result.",
+      "scope": "128-pixel software registration probe, NOT a native512 camera-pose qualification; blocked author profile stays blocked."
+    },
+    {
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/compact-v2-modern-centers-probes-arm-41192323816/modern-v2-romav2-common-control/romav2-common/probe.json",
+      "expected_sha256": "603ff44c5c9eaa13954f0eb415b28ba4d3549b2c0a758009e712539ab6790b6c",
+      "file_present": true,
+      "actual_sha256": "603ff44c5c9eaa13954f0eb415b28ba4d3549b2c0a758009e712539ab6790b6c",
+      "byte_match": true,
+      "status": "passed",
+      "method": "romav2",
+      "profile": "common",
+      "reason": null,
+      "scope": "128-pixel software registration probe, NOT a native512 camera-pose qualification; blocked author profile stays blocked."
+    }
+  ]
+}

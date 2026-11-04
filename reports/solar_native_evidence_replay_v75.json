@@ -1,0 +1,42 @@
+{
+  "scope": "Read-only current-source, saved-array and common-pose replay of preserved ACTUAL pretrained software controls. No new neural forward or lunar measurement.",
+  "rows": [
+    {
+      "method": "matchanything",
+      "author_profile": "native512",
+      "existing_actual_control_run": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/localization-v17-matchanything-native-control",
+      "gate_eligible": false,
+      "reason": "ValueError: A successful actual TWO-thread native control is required for this comparison"
+    },
+    {
+      "method": "moonst3r",
+      "author_profile": "common_native512_full_field_of_view",
+      "existing_actual_control_run": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/localization-v19-moonst3r-native-control",
+      "gate_eligible": true,
+      "control_replay": {
+        "matches": 3973,
+        "median_native_error_px": 0.0,
+        "translation_error_m": 6.025120552441461e-09,
+        "rotation_error_deg": 0.0,
+        "blank_empty": true,
+        "invalid_mask_empty": true,
+        "common_pose_replayed": true,
+        "scope": "Independent saved-array arithmetic and pose-estimator replay only; actual pretrained forward comes from linked source/provenance receipt."
+      },
+      "evidence_sha256": {
+        "protocol": "0c41ee7de980a0d14f3e863655fd5ed620495644b51c523edc37e9ad6af97c23",
+        "summary": "6c983e8305f5e75e68d7212bdd7d806b3878210a9c892d13d6f09b9e95ae8f16",
+        "controls": "9170ad5e8b054c72c019a051736cfa15195eda98c641c47e9b1b07c09653912c",
+        "provenance": "455df7115e9c6e435a815b6dfcd2992448ff1d1a5e8e67abba1b27a3c9f30290"
+      }
+    }
+  ],
+  "runtime_assets_loaded": false,
+  "new_actual_controls_executed": false,
+  "lunar_images_loaded": 0,
+  "full_dataset_geometry_gate_checked": false,
+  "comparison_admitted": false,
+  "lunar_performance_claim": false,
+  "inspector_sha256": "21c6f6fc2dedd10952455dd393c06e5f4850b2af5229dee905d9b3f290312767",
+  "adapter_sha256": "8b4de69cf2159857d9cd2b9b06822ce25469268392f67e422e7643b91cbe6c5f"
+}
