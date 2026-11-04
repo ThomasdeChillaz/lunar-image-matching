@@ -1,0 +1,95 @@
+{
+  "schema": "procedural_png_dither_v105",
+  "scope": "Synthetic emission planes only. Causal dither intervention; no images or data from any project cohort.",
+  "source_sha256": "9bbf931ad259a871737a5a710be41fc56f1931c7a5327563ccd400a07000f61c",
+  "dependency_sha256": {
+    "north_camera_scene_v59.py": "169a9319d6b611d7ff40a34c5e20500e378acf990d6f7fa98fae1cb8570c3845",
+    "blender_camera_control_v31.py": "5c77ed2d97aaac47c1d0b556c977def5e751cc6b2a6b4d95e3c8b00ac4fa632d",
+    "render_solar_development_v67.py": "09f3522baf635420a3784def3d46462f418d756c2de9bb893e70e85fefee2eb9",
+    "render_solar_completion_v68.py": "225531c6eed146863073fbdaec65a3c72a8f1939703495a49581cbcabcdaceba",
+    "solar_radiometric_control_v101.py": "46b708ed7d5dacec8e11f8494d56f3832c46a11ae18e84237eb38b7ef3d6a528",
+    "direct_render_adapter_v73.py": "077ef2a601478ed31101b52cbef1939a2b16dd1346acc8dd1bd1d7a9448e03b8",
+    "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7"
+  },
+  "renderer_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "renderer_build": "8bf95cbd38d1",
+  "renderer_version": [
+    4,
+    5,
+    9
+  ],
+  "historical_contract_sha256": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+  "native_shape": [
+    512,
+    512
+  ],
+  "cpu_threads": 2,
+  "limit_wall_seconds": 120,
+  "stimuli": [
+    {
+      "name": "flat_low",
+      "nominal_srgb_8bit_code": 1.5
+    },
+    {
+      "name": "flat_high",
+      "nominal_srgb_8bit_code": 2.5
+    },
+    {
+      "name": "flat_low_repeat",
+      "nominal_srgb_8bit_code": 1.5
+    },
+    {
+      "name": "ramp",
+      "nominal_srgb_8bit_code": null
+    }
+  ],
+  "modes": [
+    {
+      "name": "default",
+      "dither_intensity": null
+    },
+    {
+      "name": "zero",
+      "dither_intensity": 0.0
+    },
+    {
+      "name": "one",
+      "dither_intensity": 1.0
+    }
+  ],
+  "ramp_srgb_8bit_end_codes": [
+    0.2,
+    3.8
+  ],
+  "ramp_visible_plane_x": [
+    0.34,
+    0.66
+  ],
+  "residual_xy_shifts_px": [
+    [
+      0,
+      0
+    ],
+    [
+      17,
+      29
+    ],
+    [
+      31,
+      -13
+    ],
+    [
+      -19,
+      23
+    ],
+    [
+      43,
+      11
+    ]
+  ],
+  "sift_fixed_coordinate_limit_px": 1.0,
+  "optical_or_pose_claim": false,
+  "calibration_or_final_access": false,
+  "archived_images_access": false,
+  "created_utc": "2026-11-04T21:50:42.622347+00:00"
+}
