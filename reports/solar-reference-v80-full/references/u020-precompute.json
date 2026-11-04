@@ -1,0 +1,27 @@
+{
+  "cpu_threads": 2,
+  "query_truth_used": false,
+  "reference_geometry": "runs/solar-v70-completion/np31-r0-c7/training_motion-0/reference/geometry.npz",
+  "reference_geometry_sha256": "4b61b74fe6634670bdc12c12a8e37937f30f7b82d3d2f3c02aa46fa8287af9a9",
+  "mesh": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+  "mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+  "scene_mesh": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+  "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "approved_reference_key": "np31-r0-c7/training_motion-0",
+  "max_calendar_seconds": 900,
+  "output": "runs/solar-reference-v80-full/references/u020.npz",
+  "precompute": "full",
+  "latitude_deg": 86.01324107216145,
+  "reference_hour_angle_deg": -86.25,
+  "reference_subsolar_latitude_deg": 1.5,
+  "source_sha256": {
+    "prepare_solar_reference_v63.py": "629a10f5a058cb3439ef56d188e54df8f4b14f9f33bd2eba324c47b8da3ac933",
+    "solar_map_v63.py": "bcdebe475e4764a9838bb15ee324b2302efdb1128e97454a6d27e1b1c5cf3184",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a"
+  }
+}
