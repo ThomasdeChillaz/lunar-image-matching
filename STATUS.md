@@ -1,5 +1,21 @@
 # Status
 
+## Withheld lighting templates
+
+Keeping only the 12 even-index reference renders reduced changed-light
+recovery from 74/128 to 46/128. Same-light recovery remained 40/64.
+The paired changed-light difference was −21.88 percentage points, with
+a 95% terrain-group interval of −43.75 to −4.69. The restricted library
+returned 0/192 nonoverlap poses and recovered 86/192 correct raw poses
+overall. All 384 restricted-library rows independently replayed.
+
+This controls for exact lighting availability within the shared
+simulator. It leaves transfer and calibrated acceptance open. The
+translation-window pilot has started, and the separate cross-light
+pilot is frozen. [Restricted-library results](reports/SOLAR_OFFCATALOGUE_DIRECT_V95.md) ·
+[Translation-window pilot](reports/solar-direct-additive-windows-pilot-v97.json) ·
+[Cross-light pilot](reports/solar-crosslight-mechanism-dispatch-v98.json)
+
 ## Full matched development benchmark
 
 Direct reference relighting recovered 114/192 correct raw poses. On the
@@ -14,8 +30,7 @@ pairs. MatchAnything returned 51. Their median online times were 1.293,
 0.120 and 3.820 seconds on the same CPU. Direct relighting also requires
 offline reference render preparation. All 768 native baseline rows
 independently replayed, in addition to the 384 direct relighting rows.
-The full library used on-grid lighting under the shared simulator. A
-separate even-index-library comparison is now running on the same cases.
+The full library used on-grid lighting under the shared simulator.
 Calibration and the final terrain reserve remain closed.
 [Paired results](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md) ·
 [Restricted-library protocol](reports/solar-offcatalogue-direct-dispatch-v95.json) ·
