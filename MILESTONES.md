@@ -1,3 +1,33 @@
+## M103 — Reference relighting measured and ARM comparison scoped
+
+Same-view synthesis of withheld illumination reduced local contrast error
+in 289 of 342 scored conditions. All 384 diagnostic rows are preserved,
+including conditions without an angular bracket or informative texture.
+A saved-result audit confirms the exposure pilot covers six near-black
+conditions with no saved matches. Metadata-only modern comparison cohorts
+and a truth-free same-worker Direct bridge are prepared.
+[Reference photometry](reports/SOLAR_REFERENCE_PHOTOMETRY_V103.md) ·
+[ARM comparison](reports/SOLAR_MATCHED_ARM_BRIDGE_V103.md)
+
+## M102 — Supplied-Sun control and comparison brief
+
+Two-reference synthesis and the matched nearest-template arm pass native
+synthetic matching and pose checks. The metadata audit exposes different
+angular support on positive and nonoverlap cases. The development analysis
+separates faint optical texture from exact template availability. The
+interim brief records the matched result and the original research gates.
+[Supplied-Sun control](reports/SUPPLIED_SUN_CONTROL_V102.md) ·
+[Comparison](reports/SOTA_AND_ACCEPTANCE_V102.md)
+
+## M99–100 — Full cross-light rescue replay and failure diagnosis
+
+Both arms completed 384 development pairs. Every paired outcome agrees.
+The rescue produced no correct pose on 60 positive direct misses. Fifty-five
+misses lacked six distinct pooled correspondences and the solver returned
+no pose on the remaining five. Metadata-qualified physical analog inputs
+and a new equal-budget terrain-warp pilot are prepared.
+[Full cross-light results](reports/SOLAR_FULL_CROSSLIGHT_RESCUE_V99.md)
+
 ## M97–98 — Direct relighting mechanism pilots replayed
 
 The translation-window pilot replayed 24 rows. Uniform and translation

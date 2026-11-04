@@ -1,5 +1,57 @@
 # Status
 
+## Withheld reference-light prediction
+
+Two-reference contrast synthesis reduced local signed-gradient error in
+289 of 342 scored same-camera conditions. It improved 53 of 56 scored
+conditions at lights 1 and 17, where median whole-image error dropped from
+6.07 to 3.02 grayscale codes. All eight terrain medians favored synthesis.
+This reference-only diagnostic gives the supplied-Sun pose pilot a measured
+mechanism to test. Query-image matching and pose recovery remain open.
+[Reference photometry](reports/SOLAR_REFERENCE_PHOTOMETRY_V103.md)
+
+The same-worker Direct metadata bridge passes its isolated controls.
+The future LoMa-R and RoMa v2 comparison has predeclared 96-, 64- and
+48-case development designs, each covering all eight observed terrains.
+The worker pilot determines which design fits the existing budget.
+[Same-worker bridge](reports/SOLAR_MATCHED_ARM_BRIDGE_V103.md) ·
+[Case lists](reports/solar_matched_arm_cohorts_v103.json)
+
+## Supplied-Sun control and interim research brief
+
+The supplied-Sun comparison now has nearest-even and two-reference
+contrast synthesis adapters using identical preprocessing, native SIFT
+and the common pose estimator. The analytic and native synthetic checks
+passed. Metadata supports a two-reference bracket on all 128 withheld-light
+positives and 72 of 128 corresponding nonoverlap cases. Common-support
+reporting is required for a comparison of image-based rejection.
+
+The deduplicated audit finds 38 of 39 no-pose conditions below six matches
+under every full-library template. Low optical contrast appears on both
+image sides, and 20 of 38 still have at least 230 geometrically available
+patch centres. The full-library raw ceiling remains 114/192. A two-page
+interim brief explains the measured illumination result and the acceptance
+and same-case comparison evidence still required.
+[Supplied-Sun control](reports/SUPPLIED_SUN_CONTROL_V102.md) ·
+[Match-scarcity audit](reports/SOLAR_MATCH_SCARCITY_V102.md) ·
+[State-of-the-art comparison](reports/SOTA_AND_ACCEPTANCE_V102.md)
+
+## Full cross-light rescue replay
+
+The complete 768-row paired replay found identical raw pose outcomes for
+both methods. Direct relighting and cross-light pooling each recovered
+114/192 positive pairs and returned 0/192 nonoverlap poses. Among the
+60 positive misses, 55 pools had fewer than six distinct correspondences.
+The other five reached the pooled solver and returned no pose. Queries in
+the 39 zero-correspondence cases were nonuniform, with a median
+95th-percentile grayscale value of 2/255.
+
+The equal-budget terrain-warp pilot is prepared. An independently tracked
+physical analog diagnostic is also staged with 24 metadata-selected pairs.
+The completed same-case modern comparison is MatchAnything–EfficientLoFTR.
+[Full cross-light results](reports/SOLAR_FULL_CROSSLIGHT_RESCUE_V99.md) ·
+[Physical analog preparation](reports/SPICE_HL3_TRANSFER_PREPARATION_V100.md)
+
 ## Direct relighting mechanism pilots
 
 The matched translation-window pilot independently replayed all 24 rows.
@@ -12,10 +64,8 @@ The cross-light pilot independently replayed all 16 rows. It used the
 same nine pose solves as the direct control. Four nonoverlap cases
 activated the rescue and returned no pose. All four positives already
 had a direct pose. The pilot qualifies the measured cost projection for
-a separately frozen full comparison. That comparison is running both
-arms fresh on all 384 development pairs. The terrain-warped patch
-prototype has passed its synthetic nonplanar geometry check. Its lunar
-effect remains unmeasured.
+a separately frozen full comparison. The terrain-warped patch prototype
+passed its synthetic nonplanar geometry check.
 [Mechanism pilot results](reports/SOLAR_DIRECT_MECHANISM_PILOTS_V97_V98.md) ·
 [Full cross-light protocol](reports/solar-full-crosslight-rescue-dispatch-v99.json) ·
 [Saved patch diagnosis](reports/additive_pilot_geometry_diagnosis_v99.json)
@@ -53,7 +103,7 @@ The full library used on-grid lighting under the shared simulator.
 Calibration and the final terrain reserve remain closed.
 [Paired results](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md) ·
 [Restricted-library protocol](reports/solar-offcatalogue-direct-dispatch-v95.json) ·
-[Research requirements status](reports/research_requirements_status_v99.json)
+[Research requirements status](reports/research_requirements_status_v102.json)
 
 ## Matched relighting pilot and full development run
 
