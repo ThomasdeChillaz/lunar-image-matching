@@ -1,0 +1,47 @@
+{
+  "prepared_only": false,
+  "mode": "preselection_compact_controls",
+  "calibration_or_final_access": false,
+  "repository_root": ".",
+  "learning_contract": "reports/solar_learning_contract_v79.json",
+  "manifest": "runs/solar-reference-v80-full/case-assets/manifest.json",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "tracks": [
+    "estimated_sun"
+  ],
+  "inference_configuration": {
+    "proposal_angles": [
+      0.0,
+      90.0,
+      180.0,
+      270.0
+    ],
+    "pose_initialization": "strict3",
+    "inference_revision": "solar-v84-exact-cache"
+  },
+  "pilot_case_ids": [
+    "u012-l00-00-positive",
+    "u012-to-u020-l00-00-nonoverlap",
+    "u026-l00-17-positive",
+    "u026-to-u058-l00-17-nonoverlap",
+    "u060-l16-16-positive",
+    "u060-to-u068-l16-16-nonoverlap",
+    "u074-l08-01-positive",
+    "u074-to-u094-l08-01-nonoverlap"
+  ],
+  "pilot_cap_seconds": 600,
+  "maximum_full_calendar_seconds": 12000,
+  "publication_dispatch_lease_seconds": 1800,
+  "output_directory": "runs/solar-preselection-compact-controls-v86",
+  "blender_executable": "/Users/admin/Documents/Codex/2026-10-25/for/work/fresh-render-runtime-v31/Blender.app/Contents/MacOS/Blender",
+  "cost_pilot_evidence": {
+    "protocol": "reports/solar-preselection-compact-controls-cost-pilot-v86.json",
+    "summary": "runs/solar-preselection-compact-controls-v86/cost_pilot/summary.json",
+    "metric_replay": "reports/solar-preselection-compact-controls-cost-pilot-replay-v86.json"
+  },
+  "reference_preparation_evidence": {
+    "protocol": "reports/solar-reference-v80-full/reference_full.json",
+    "summary": "runs/solar-reference-v80-full/stages/reference_full/summary.json"
+  },
+  "include_quantization_aware_control": true
+}
