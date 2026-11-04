@@ -1,0 +1,63 @@
+{
+  "captured_utc": "2026-11-04T06:34:34.724651+00:00",
+  "passed": true,
+  "review_scope": "Narrow independent reporter/software review; no matching or scientific experiment",
+  "reviewed_file": "run_solar_evaluation_v70.py",
+  "reviewed_sha256": "69c4fd825d0c3042b5f7cd6cd95d5b38354ada15259d229a887eea7423b0b2ab",
+  "expected_sha256": "69c4fd825d0c3042b5f7cd6cd95d5b38354ada15259d229a887eea7423b0b2ab",
+  "protected_sources": {
+    "learning": {
+      "contract": "reports/solar_learning_contract_v79.json",
+      "source_files": 49,
+      "mismatches": [],
+      "passed": true
+    },
+    "physical": {
+      "contract": "reports/solar_reference_contract_v80.json",
+      "source_files": 42,
+      "mismatches": [],
+      "passed": true
+    }
+  },
+  "unchanged_ast_functions": [
+    "worker_peak_rss_snapshot",
+    "worker_memory_scope",
+    "admission",
+    "comparison_identity",
+    "measured_cost",
+    "cache_index",
+    "InputLoader",
+    "run"
+  ],
+  "checks": {
+    "exact_one_original_infer_delegate": true,
+    "delegate_result_identity_preserved": true,
+    "capture_cleared_after_success_and_delegate_failure": true,
+    "following_case_has_no_stale_result": true,
+    "profile_backend_model_owner_released": true,
+    "typed_npz_roundtrip_without_pickle": true,
+    "preserved_dtypes": [
+      "float32",
+      "int16",
+      "uint64",
+      "complex128"
+    ],
+    "python_nonfinite_explicit": true,
+    "array_nonfinite_preserved_with_counts": true,
+    "unsupported_object_array_marked_unavailable": true,
+    "bounds_fail_transactionally": true,
+    "raw_mapping_key_escaped": true,
+    "unknown_effective_C_policy_explicit": true,
+    "no_solar_support_inferred_from_vector": true
+  },
+  "cache_review": "Cache identity expression is unchanged and includes full source pins. Historical cache rows retain their existing raw traces, if present, and are explicitly labelled as historical, not fresh module observation.",
+  "timing_memory_review": "M76 formulas, worker lifetime RSS helpers and existing timing definitions are unchanged. Proxy bookkeeping is inside inference_seconds; JSON/NPZ packing is outside inference_seconds but inside case_calendar_seconds. Added serialized byte counts are explicitly not model-memory measurements.",
+  "policy_review": "No solver/model/scoring/policy or hypothesis generation source changed;49learning and42physical guards are byte-identical. New raw traces preserve proposals, not a new solar-support or effective-C inference.",
+  "issues": [],
+  "scientific_job": false,
+  "nn_forward": false,
+  "images_or_png": false,
+  "rays": false,
+  "fitting": false,
+  "source_changes": false
+}

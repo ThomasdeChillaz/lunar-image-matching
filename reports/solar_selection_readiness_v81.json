@@ -1,0 +1,631 @@
+{
+  "prepared_only": true,
+  "created_utc": "2026-11-04T06:00:37.313675+00:00",
+  "files": {
+    "sh": {
+      "prepared_file": "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_selection_prepared_v81/solar-sh-checkpoint-selection-settings-v79.prepared.json",
+      "prepared_sha256": "a0fd4fe55623906b9247a1d5b9ede145660bd2e3f3f21cd9e195d9347b89e46b",
+      "activation_destination": "reports/solar-sh-checkpoint-selection-settings-v79.json",
+      "pilot_protocol": "reports/solar-sh-checkpoint-selection-cost-pilot-v79.json",
+      "full_protocol": "reports/solar-sh-checkpoint-selection-v79.json",
+      "full_summary": "runs/solar-sh-checkpoint-selection-v79/full/summary.json",
+      "full_metric_replay": "reports/solar-sh-checkpoint-selection-replay-v79.json"
+    },
+    "pooled": {
+      "prepared_file": "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_selection_prepared_v81/solar-pooled-checkpoint-selection-settings-v79.prepared.json",
+      "prepared_sha256": "7534357e5983797690e34716b0158e8bf662fd4fa8b2d11abaa8aca324a19939",
+      "activation_destination": "reports/solar-pooled-checkpoint-selection-settings-v79.json",
+      "pilot_protocol": "reports/solar-pooled-checkpoint-selection-cost-pilot-v79.json",
+      "full_protocol": "reports/solar-pooled-checkpoint-selection-v79.json",
+      "full_summary": "runs/solar-pooled-checkpoint-selection-v79/full/summary.json",
+      "full_metric_replay": "reports/solar-pooled-checkpoint-selection-replay-v79.json"
+    }
+  },
+  "ready_for_scientific_activation": false,
+  "scope": "Prepared inactive settings and metadata/hash checks only; no source/protocol, image decoding, matching, training, rendering, ray query, reservation or scientific launch.",
+  "expected_inventory": {
+    "selection_cameras": 32,
+    "selection_terrain_groups": 8,
+    "positive_cases": 192,
+    "negative_cases": 192,
+    "total_cases": 384,
+    "profiles_per_mode": 5,
+    "full_rows_per_mode": 1920,
+    "pilot_rows_per_mode": 40,
+    "calibration_groups_closed": 4,
+    "final_groups_closed": 12
+  },
+  "planned_pilot_cases": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "query_unit_index": 12,
+      "light_a": 0,
+      "light_b": 0,
+      "positive": true,
+      "component": "np31-r0-c4",
+      "query_component": "np31-r0-c4",
+      "family": "training_motion",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "unit_index": 12,
+      "query_unit_index": 20,
+      "light_a": 0,
+      "light_b": 0,
+      "positive": false,
+      "matched_positive_case": "u012-l00-00-positive",
+      "component": "np31-r0-c4",
+      "query_component": "np31-r0-c7",
+      "family": "training_motion",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "query_unit_index": 26,
+      "light_a": 0,
+      "light_b": 17,
+      "positive": true,
+      "component": "np31-r1-c0",
+      "query_component": "np31-r1-c0",
+      "family": "unseen_roll",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "unit_index": 26,
+      "query_unit_index": 58,
+      "light_a": 0,
+      "light_b": 17,
+      "positive": false,
+      "matched_positive_case": "u026-l00-17-positive",
+      "component": "np31-r1-c0",
+      "query_component": "np31-r3-c2",
+      "family": "unseen_roll",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "query_unit_index": 60,
+      "light_a": 16,
+      "light_b": 16,
+      "positive": true,
+      "component": "np31-r3-c3",
+      "query_component": "np31-r3-c3",
+      "family": "training_motion",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "unit_index": 60,
+      "query_unit_index": 68,
+      "light_a": 16,
+      "light_b": 16,
+      "positive": false,
+      "matched_positive_case": "u060-l16-16-positive",
+      "component": "np31-r3-c3",
+      "query_component": "np31-r3-c5",
+      "family": "training_motion",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "query_unit_index": 74,
+      "light_a": 8,
+      "light_b": 1,
+      "positive": true,
+      "component": "np31-r4-c1",
+      "query_component": "np31-r4-c1",
+      "family": "unseen_roll",
+      "pair_index": 0
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "unit_index": 74,
+      "query_unit_index": 94,
+      "light_a": 8,
+      "light_b": 1,
+      "positive": false,
+      "matched_positive_case": "u074-l08-01-positive",
+      "component": "np31-r4-c1",
+      "query_component": "np31-r4-c7",
+      "family": "unseen_roll",
+      "pair_index": 0
+    }
+  ],
+  "planned_case_metadata_source": "Existing solar_eval_data_v69.plan_cases over audit-qualified original full-scene bounds; not a completed case manifest.",
+  "actual_completed_profile_evidence": {
+    "sh": {
+      "actual_completed_profile_count": 5,
+      "profiles": [
+        {
+          "name": "step_0",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/sh_study/step_0.pt",
+          "training_step": 0,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/sh_study.json",
+            "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+            "summary": "runs/solar-learning-v79/sh_study/summary.json",
+            "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+            "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": false,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_500",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/sh_study/step_500.pt",
+          "training_step": 500,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/sh_study.json",
+            "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+            "summary": "runs/solar-learning-v79/sh_study/summary.json",
+            "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+            "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "faf4f10062e4741f1f7daabf5d25bc0d23ec6020425c6c859e35ff3c685916cd",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": false,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_1000",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/sh_study/step_1000.pt",
+          "training_step": 1000,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/sh_study.json",
+            "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+            "summary": "runs/solar-learning-v79/sh_study/summary.json",
+            "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+            "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "d1c0056b04856a80de5a507db05b2fa06a6745534b6c1952968ae38e9e3fee6e",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": false,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_1500",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/sh_study/step_1500.pt",
+          "training_step": 1500,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/sh_study.json",
+            "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+            "summary": "runs/solar-learning-v79/sh_study/summary.json",
+            "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+            "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "dafe98e426cc7a709b610c9a1dc8cd00fec9422950e6cdada6711b38bcb6a2cd",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": false,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_2000",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/sh_study/step_2000.pt",
+          "training_step": 2000,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/sh_study.json",
+            "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+            "summary": "runs/solar-learning-v79/sh_study/summary.json",
+            "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+            "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "5bbceb4a4c12f9c49d2d0e2c311a65eea89d1de88b9a13162e2436b2df930300",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": false,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        }
+      ],
+      "input_evidence_sha256": {
+        "reports/solar-learning-v79/sh_study.json": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "runs/solar-learning-v79/sh_study/summary.json": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "runs/solar-learning-v79/sh_study-watchdog-run.json": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044",
+        "runs/solar-learning-v79/sh_study/step_0.pt": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+        "runs/solar-learning-v79/sh_study/step_500.pt": "faf4f10062e4741f1f7daabf5d25bc0d23ec6020425c6c859e35ff3c685916cd",
+        "runs/solar-learning-v79/sh_study/step_1000.pt": "d1c0056b04856a80de5a507db05b2fa06a6745534b6c1952968ae38e9e3fee6e",
+        "runs/solar-learning-v79/sh_study/step_1500.pt": "dafe98e426cc7a709b610c9a1dc8cd00fec9422950e6cdada6711b38bcb6a2cd",
+        "runs/solar-learning-v79/sh_study/step_2000.pt": "5bbceb4a4c12f9c49d2d0e2c311a65eea89d1de88b9a13162e2436b2df930300"
+      }
+    },
+    "pooled": {
+      "actual_completed_profile_count": 5,
+      "profiles": [
+        {
+          "name": "step_0",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/pooled_study/step_0.pt",
+          "training_step": 0,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/pooled_study.json",
+            "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+            "summary": "runs/solar-learning-v79/pooled_study/summary.json",
+            "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+            "watchdog_receipt": "runs/solar-learning-v79/pooled_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": true,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_500",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/pooled_study/step_500.pt",
+          "training_step": 500,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/pooled_study.json",
+            "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+            "summary": "runs/solar-learning-v79/pooled_study/summary.json",
+            "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+            "watchdog_receipt": "runs/solar-learning-v79/pooled_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "49c0ea28b29b60f6127ee53ba2a0a825116fd3306dad232abc20285eece3d646",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": true,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_1000",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/pooled_study/step_1000.pt",
+          "training_step": 1000,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/pooled_study.json",
+            "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+            "summary": "runs/solar-learning-v79/pooled_study/summary.json",
+            "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+            "watchdog_receipt": "runs/solar-learning-v79/pooled_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "5d80ff13070b486ce140d15b57af62717b335703e94554f216c37947fd04e591",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": true,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_1500",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/pooled_study/step_1500.pt",
+          "training_step": 1500,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/pooled_study.json",
+            "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+            "summary": "runs/solar-learning-v79/pooled_study/summary.json",
+            "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+            "watchdog_receipt": "runs/solar-learning-v79/pooled_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "1175234b2efc85ea186fbd904d9d40927484a8a5d22cf3ffaa24e83b8c0793fe",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": true,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        },
+        {
+          "name": "step_2000",
+          "backend": "solar",
+          "checkpoint": "runs/solar-learning-v79/pooled_study/step_2000.pt",
+          "training_step": 2000,
+          "training_seed": 20261101,
+          "training_evidence": {
+            "protocol": "reports/solar-learning-v79/pooled_study.json",
+            "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+            "summary": "runs/solar-learning-v79/pooled_study/summary.json",
+            "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+            "watchdog_receipt": "runs/solar-learning-v79/pooled_study-watchdog-run.json",
+            "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374"
+          },
+          "configuration": {
+            "model_version": "solar-experimental-v63",
+            "checkpoint_sha256": "9ce787b992b18efbb6a2f9d695f9381610c4c369efcdf199f5341babf17b5181",
+            "solar_mode": "shared",
+            "response": true,
+            "active": true,
+            "pooled": true,
+            "budget": 128,
+            "policy": "active",
+            "proposal_angles": [
+              0.0,
+              90.0,
+              180.0,
+              270.0
+            ],
+            "pose_initialization": "strict3",
+            "inference_revision": "solar-v68"
+          }
+        }
+      ],
+      "input_evidence_sha256": {
+        "reports/solar-learning-v79/pooled_study.json": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+        "runs/solar-learning-v79/pooled_study/summary.json": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+        "runs/solar-learning-v79/pooled_study-watchdog-run.json": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374",
+        "runs/solar-learning-v79/pooled_study/step_0.pt": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+        "runs/solar-learning-v79/pooled_study/step_500.pt": "49c0ea28b29b60f6127ee53ba2a0a825116fd3306dad232abc20285eece3d646",
+        "runs/solar-learning-v79/pooled_study/step_1000.pt": "5d80ff13070b486ce140d15b57af62717b335703e94554f216c37947fd04e591",
+        "runs/solar-learning-v79/pooled_study/step_1500.pt": "1175234b2efc85ea186fbd904d9d40927484a8a5d22cf3ffaa24e83b8c0793fe",
+        "runs/solar-learning-v79/pooled_study/step_2000.pt": "9ce787b992b18efbb6a2f9d695f9381610c4c369efcdf199f5341babf17b5181"
+      }
+    }
+  },
+  "inactive_predeclared_budget": {
+    "pilot_cap_seconds_per_mode": 900,
+    "maximum_full_seconds_per_mode": 12000,
+    "pilot_metric_replay_allowance_per_mode": 300,
+    "full_metric_replay_allowance_per_mode": 900,
+    "total_selection_envelope_seconds": 28200,
+    "unreserved_reference_index_and_case_assets_allowance_seconds": 1200,
+    "current_canonical_baseline_remaining_seconds": 56700.0,
+    "remaining_for_later_8_ablations_plus_pooled_modern_and_other_controls_after_this_envelope_seconds": 27300.0,
+    "no_new_reservation": true,
+    "note": "Replay allowances are planning caps, not new M74 settings fields or an admission mechanism. Parent must charge/enforce them through existing canonical operations before use. Full inference caps are derived from actual pilots, not automatically set to maxima; later experiments require their own measured admission."
+  },
+  "activation_readiness": [
+    {
+      "field": "both_actual_2000_update_studies_and_external_watchdogs",
+      "status": "verified_now"
+    },
+    {
+      "field": "v80_full_reference_phase_summary_and_all32_archives",
+      "status": "pending",
+      "path": "runs/solar-reference-v80-full/stages/reference_full/summary.json"
+    },
+    {
+      "field": "v80_reference_asset_index",
+      "status": "pending",
+      "path": "runs/solar-reference-v80-full/reference-assets-index.json"
+    },
+    {
+      "field": "v80_case_manifest_and_COMPLETE",
+      "status": "pending",
+      "path": "runs/solar-reference-v80-full/case-assets/manifest.json"
+    },
+    {
+      "field": "exact384_case_inventory_and_both_negative_endpoints",
+      "status": "revalidate_on_completed_manifest"
+    },
+    {
+      "field": "all8_predeclared_pilot_ids_and_metadata_match_completed_manifest",
+      "status": "revalidate_before_activation"
+    },
+    {
+      "field": "actual_reference_cost_receipts_via_existing_completed_reference_preparation",
+      "status": "pending"
+    },
+    {
+      "field": "canonical_remaining_budget_all_proposed_caps_plus_replays_and_later_work",
+      "status": "revalidate_before_each_real_stage"
+    },
+    {
+      "field": "copy_settings_to_exact_repo_relative_destination_then_set_prepared_only_false",
+      "status": "not_done"
+    },
+    {
+      "field": "freeze_protocol_hashes_with_existing_M74_builder_only_after_assets_complete",
+      "status": "not_done"
+    },
+    {
+      "field": "publish_exact_settings_protocol_sources_before_any_dispatch",
+      "status": "not_done"
+    }
+  ],
+  "read_only_validation": {
+    "passed": true,
+    "checks": [
+      {
+        "mode": "sh",
+        "exact_template_fields": true,
+        "existing_configuration_validation": true,
+        "actual_completed_training_evidence_valid": true,
+        "all_five_steps": true,
+        "principal_shared_sun_response_active_128": true,
+        "original_four_angles_strict3": true,
+        "prepared_only_rejection_before_future_assets": true,
+        "no_protocol_created": true
+      },
+      {
+        "mode": "pooled",
+        "exact_template_fields": true,
+        "existing_configuration_validation": true,
+        "actual_completed_training_evidence_valid": true,
+        "all_five_steps": true,
+        "principal_shared_sun_response_active_128": true,
+        "original_four_angles_strict3": true,
+        "prepared_only_rejection_before_future_assets": true,
+        "no_protocol_created": true
+      }
+    ],
+    "same_pilot_and_inference_configuration_both_modes": true,
+    "all_384_planned_cases_retained": true,
+    "actual_study_hashes_only": true,
+    "future_manifest_or_reference_summary_hashes_invented": false,
+    "images_decoded": 0,
+    "nn_forwards": 0,
+    "ray_queries": 0,
+    "new_reservations": 0,
+    "new_protocols": 0,
+    "existing_M74_pilot_id_validator_passed": true,
+    "paired_negative_endpoints_preserved": true
+  },
+  "actual_input_sha256": {
+    "reports/solar-evaluation-settings-template-v74.json": "2c49957cea60a48ee61c9a5e58b9f041bdfd917bc8666fbe06c3d0c995520a6e",
+    "reports/solar_learning_contract_v79.json": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+    "reports/solar_learning_settings_v79.json": "4015211839e59375845b4c4888c1a3533265f3b86f3331e112034d2c8698aae6",
+    "reports/solar_reference_contract_v80.json": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+    "reports/solar_full_geometry_audit_v70.json": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+    "solar_evaluation_protocol_v74.py": "d74ee39aca25b81a60c8eed23cffc4c5e0de1f5aebc69b17da949e4fb62152a0",
+    "solar_evaluation_v70.py": "ab768b2484251841914d64e54f97f10bfe15907d8def25b7726022a2041c3ad6",
+    "solar_eval_data_v69.py": "7ba5ccbbf65378f1a3af0ed6c3e974be73f104a245b6bf7b9c002c1851be5f15",
+    "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+    "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+    "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+    "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+    "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+    "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+    "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+    "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8"
+  },
+  "pilot_reference_terrain_count": 4,
+  "pilot_joint_endpoint_terrain_groups": [
+    "np31-r0-c4",
+    "np31-r0-c7",
+    "np31-r1-c0",
+    "np31-r3-c2",
+    "np31-r3-c3",
+    "np31-r3-c5",
+    "np31-r4-c1",
+    "np31-r4-c7"
+  ]
+}
