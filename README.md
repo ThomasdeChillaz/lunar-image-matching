@@ -1,5 +1,16 @@
 # Compact lunar image matching
 
+Current evidence — 4 November 2026: both 2,000-update response studies are complete,
+but no learned localization gain is established. In a matched development pilot,
+SIFT recovers 2/4 raw camera poses; each frozen compact control recovers 1/4.
+All methods fail both changed-light pairs. Independent replay corrects an
+anchor-order scoring bug in a separate dense diagnostic; every prediction is
+preserved. [Results, correction and limits](reports/SOLAR_DIAGNOSTICS_V86.md) ·
+[Active original requirements](reports/research_requirements_status_v86.json).
+Calibration and final terrain remain untouched. Older progress snapshots below
+are preserved history and are superseded by this entry.
+
+
 Current work — 4 November 2026: the three-technique matcher is implemented as experimental software; its response head is not yet lunar-trained. A source-frozen diagnostic identifies poor candidate coverage under changed lighting and roll. Missing-data completion continues under the unchanged deadline, followed by the full geometry gate. [Current status](STATUS.md) · [Evidence and SOTA requirements](reports/REQUIREMENTS_AND_SOTA_V69.md). No new localization gain is established.
 
 **Current research — 3 November 2026:** implementing a shared-Sun geometric matcher,
