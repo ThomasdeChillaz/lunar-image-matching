@@ -1,3 +1,14 @@
+## M94 — Compact bootstrap replay and full native comparison
+
+The five-arm pilot completed and independently replayed all 40 rows.
+Each arm recovered one of four positive poses and zero of two changed-light
+poses. The direct relighting control recovered three positives on the same
+cases. On the changed-light case recovered by direct relighting, the
+128-pixel reference search found the right light but could not seed a pose.
+The native SIFT and MatchAnything comparison is running on all 384 cases.
+The compact pilot selected no model and the final reserve remains closed.
+[Pilot report](reports/SOLAR_RENDER_BOOTSTRAP_RESULTS_V94.md)
+
 ## M92–94 — Full relighting replay and renewed comparison dispatches
 
 The direct-render benchmark independently replayed all 384 development
