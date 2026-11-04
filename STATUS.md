@@ -20,15 +20,20 @@ modeled translation sensitivity. The repository suite passed 1,199 tests
 with four skips, and the new render-seeded matcher passed its real-encoder
 procedural translation control.
 
-The five-arm mechanism pilot is running under a fresh published dispatch
-because its earlier lease expired without a run. A separate renewed protocol
-freezes the same full 384 cases for SIFT and MatchAnything. These are
-development experiments using a shared simulator and an on-grid light
-library. Calibration, final terrain, transfer, and the original scientific
-targets remain open.
+The five-arm compact bootstrap pilot independently replayed all 40 rows.
+Every arm recovered the same one of four positive poses, with zero of two
+under changed lighting. Render-derived pose seeds and projected windows
+added a wrong pose. Adding the coarse learned response returned two wrong
+positive poses and one nonoverlap pose. Direct relighting recovered three
+of four on the same cases. The full matched 384-case SIFT and MatchAnything
+comparison has started. An off-catalogue runner is available to test the
+direct method with alternate reference light angles withheld.
+
+These development experiments share a simulator. Calibration, final
+terrain, transfer, and the original scientific targets remain open.
 [Matched report](reports/SOLAR_MATCHED_RELIGHTING_V91.md) ·
 [Full direct benchmark](reports/SOLAR_FULL_DIRECT_RENDER_V92.md) ·
-[Mechanism pilot](reports/solar-render-bootstrap-dispatch-v94.json) ·
+[Bootstrap results](reports/SOLAR_RENDER_BOOTSTRAP_RESULTS_V94.md) ·
 [Full native comparison](reports/solar-full-native-baselines-dispatch-v94.json) ·
 [Original requirements](reports/requirements_and_sota_v69.json)
 
