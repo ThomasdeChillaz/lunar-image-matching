@@ -17,7 +17,7 @@ import shutil
 from datetime import datetime, timezone, timedelta
 import numpy as np
 from solar_evaluation_v70 import (Backend, InferenceInput, TRACKS, aggregate_rows, checkpoint_ranking,
-    digest, evaluate_case, paired_component_bootstrap, read, sha, validate_manifest, validate_profiles)
+    digest, evaluate_case, paired_component_bootstrap, read, sha, validate_manifest, validate_profiles, validate_profile_training)
 
 REQUIRED_SOURCES = {
     "solar_evaluation_v70.py", "run_solar_evaluation_v70.py", "verify_solar_evaluation_v70.py", "localize_terrain.py",
@@ -27,6 +27,12 @@ REQUIRED_SOURCES = {
     "localization_robust_pose_v4.py", "localization_pose_refit_v3.py",
     "lunar_geometry_v2.py", "lunar_geometry_v5.py", "compact_lunar.py",
     "contrastive_terrain.py", "rotation_bank_pose_v4.py", "native_crop_alignment_v57.py",
+    "solar_rotation_v71.py", "solar_sun_search_v68.py", "solar_lookup_v70.py",
+    "solar_lookup_worker_v70.py", "solar_map_v63.py", "north_terrain_pilot_v32.py",
+    "north_render_plan_v31.py", "dataset.py", "matchers.py", "geometry.py",
+    "localization_diagnostics_v3.py", "lunargeo_dataset.py", "remote_archive.py",
+    "train_balanced_localization_v3.py", "localization_refiner_v3.py",
+    "prepare_localization_training_v3.py",
 }
 
 
@@ -51,6 +57,7 @@ def admission(protocol_path, commit):
     if type(p["max_calendar_seconds"]) is not int or p["max_calendar_seconds"] <= 0:
         raise ValueError("Original finite wall allowance required")
     validate_profiles(p["profiles"], p["purpose"])
+    for profile in p["profiles"]: validate_profile_training(profile, p["purpose"])
     if p["purpose"] == "checkpoint_selection" and p["tracks"] != ["estimated_sun"]:
         raise ValueError("Checkpoint selection uses primary unfiltered poses only")
     if not REQUIRED_SOURCES <= set(p["source_sha256"]):
@@ -221,7 +228,8 @@ def worker(protocol_path, commit):
             raise TimeoutError("Original evaluation allowance exhausted")
     check()
     write_new(root / "execution.json", dict(protocol_sha256=sha(protocol_path), publication_commit=commit, software=software_identity(),
-        purpose=p["purpose"], raw_uncalibrated=True, final_reserve_access=False, profile_order=[v["name"] for v in p["profiles"]]))
+        purpose=p["purpose"], raw_uncalibrated=True, final_reserve_access=False, profile_order=[v["name"] for v in p["profiles"]],
+        initialization_only_cost_controls=[v["name"] for v in p["profiles"] if v.get("initialization_only_cost_control",False)]))
     loader = InputLoader(commit, p.get("blender_executable")); reusable = cache_index(p)
     try:
         for profile in p["profiles"]:
@@ -252,6 +260,7 @@ def worker(protocol_path, commit):
                         with array_path.open("xb") as destination, Path(cached["saved_arrays"]).open("rb") as source: shutil.copyfileobj(source, destination)
                     row.update(case_id=case["case_id"], component=case["component"], query_component=case["query_component"],
                         positive=case["positive"], profile=profile["name"], track=track,
+                        initialization_only_cost_control=bool(profile.get("initialization_only_cost_control",False)),
                         unit_index=case["unit_index"], query_unit_index=case["query_unit_index"], light_a=case["light_a"], light_b=case["light_b"],
                         saved_arrays=str(array_path), saved_arrays_sha256=sha(array_path),
                         case_total_calendar_seconds=time.monotonic()-before,
@@ -269,6 +278,7 @@ def worker(protocol_path, commit):
             calendar_seconds=time.monotonic()-start, profiles=p["profiles"], case_ids=[c["case_id"] for c in cases],
             fresh_inference_cases=sum(not r["reused_case_cache"] for r in rows), cached_cases=sum(r["reused_case_cache"] for r in rows),
             accepted_results=False, calibration_or_final_access=False, automatic_model_promotion=False)
+        summary["scientific_model_evidence"] = not any(v.get("initialization_only_cost_control",False) for v in p["profiles"])
         summary["offline_reference_preparation"] = []
         for geometry in sorted({c["reference_geometry"] for c in cases}):
             receipt = m["reference_precompute_receipts"][geometry]

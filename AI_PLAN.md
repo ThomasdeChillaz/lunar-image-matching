@@ -1,5 +1,32 @@
 # AI coding-agent execution brief
 
+## Qualified-data indexing and completed-study checks ready — 4 November 2026
+
+The dataset indexing/case producers and evaluation admission checks are now
+integrated. **637 repository tests pass**, four optional tests skip, and a fresh
+100-row controlled smoke passes independent replay. These are software checks;
+the new response head still has zero lunar optimizer updates.
+
+Actual case construction requires the complete 96-unit data audit. It retains
+every eligible selection camera at all six lighting pairs, records both
+nonoverlap endpoints, separates scoring labels from inference inputs, and binds
+reference-map preparation costs. Primary Sun tables use only the generic search
+catalogue; exact query Sun metadata is confined to the secondary track.
+
+Scientific checkpoint selection and learned ablations require a completed
+2,000-update study and its successful external watchdog receipt. Untrained
+initialization is allowed only as an explicitly marked cost pilot. Evaluation
+records whether learned responses were actually used, not merely requested.
+The data continuation remains active under its unchanged deadline. Reference
+precomputation, teacher extraction, actual training, modern comparisons,
+calibration and final testing remain ahead; the final reserve stays closed.
+
+Evidence: [integration checks and data snapshot](reports/solar_release_software_v72.json),
+[data producer checks](reports/solar_eval_data_software_v69.json),
+[completed-study gate checks](reports/solar_eval_guard_software_v72.json), and
+[controlled metric replay](reports/solar_controlled_smoke_replay_v72.json).
+
+
 ## Lazy physical inference and matched rotation control integrated — 4 November 2026
 
 **The new response head is still untrained; no lunar accuracy gain is claimed.**

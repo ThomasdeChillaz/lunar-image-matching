@@ -8,6 +8,8 @@ from dataclasses import dataclass
 import hashlib
 import itertools
 import json
+import math
+from datetime import datetime, timedelta
 from pathlib import Path
 import time
 import numpy as np
@@ -42,11 +44,78 @@ def principal_profiles(checkpoint, pooled_checkpoint, checkpoint_sha256, pooled_
     return profiles
 
 
-def checkpoint_profiles(run_root, pooled=False):
+def completed_training_evidence(profile):
+    """Verify that a saved checkpoint belongs to a completed bounded study.
+
+    A training summary can be written immediately before the outer watchdog
+    rejects a late process. Only the linked successful run receipt admits its
+    checkpoints for scientific selection or learned ablation results.
+    """
+    evidence = profile.get("training_evidence", {})
+    required = {key for name in ("protocol", "summary", "watchdog_receipt") for key in (name, name+"_sha256")}
+    if not required <= set(evidence):
+        raise ValueError("Completed source-bound training protocol, summary and external watchdog evidence required")
+    for name in ("protocol", "summary", "watchdog_receipt"):
+        if sha(evidence[name]) != evidence[name+"_sha256"]:
+            raise ValueError("Frozen completed-training evidence changed: "+name)
+    protocol = read(evidence["protocol"]); summary = read(evidence["summary"]); receipt = read(evidence["watchdog_receipt"])
+    protocol_sha = sha(evidence["protocol"])
+    if protocol["updates"] != 2000 or not summary["complete"] or summary["updates"] != 2000 or summary["protocol_sha256"] != protocol_sha:
+        raise ValueError("Completed source-bound 2000-update training required for checkpoint selection")
+    if protocol["seed"] not in (20261101, 20261102, 20261103) or summary["seed"] != protocol["seed"] or summary["pooled"] != protocol["pooled"] or protocol["pooled"] != profile["configuration"]["pooled"]:
+        raise ValueError("Training seed/pooling differs from evaluated checkpoint")
+    if "training_seed" in profile and profile["training_seed"] != protocol["seed"]:
+        raise ValueError("Evaluated checkpoint declares a different training seed")
+    if Path(protocol["output"]).resolve() != Path(evidence["summary"]).parent.resolve() or Path(protocol["watchdog_receipts"]["run"]).resolve() != Path(evidence["watchdog_receipt"]).resolve():
+        raise ValueError("Training evidence paths do not belong to the published study")
+    if receipt["complete"] is not True or receipt["mode"] != "run" or receipt["program"] != "train_solar_response_v63.py" or receipt["child_returncode"] != 0 or receipt.get("failure") is not None or receipt["protocol_sha256"] != protocol_sha:
+        raise ValueError("Checkpoint study did not complete its external training watchdog")
+    if receipt["source_sha256"] != protocol["source_sha256"]["run_solar_job_v70.py"]:
+        raise ValueError("Executed training watchdog differs from the published source")
+    started = datetime.fromisoformat(receipt["started_utc"]); deadline = datetime.fromisoformat(receipt["absolute_deadline_utc"])
+    published_deadline = datetime.fromisoformat(protocol["absolute_deadline_utc"])
+    if started.tzinfo is None or deadline.tzinfo is None or published_deadline.tzinfo is None:
+        raise ValueError("Unambiguous original training deadlines required")
+    cap = receipt["cap_seconds"]; elapsed = receipt["calendar_seconds"]; training_elapsed = summary["calendar_seconds"]
+    if type(cap) is not int or cap != protocol["max_calendar_seconds"] or cap <= 0 or deadline != min(started+timedelta(seconds=cap), published_deadline):
+        raise ValueError("Training watchdog original allowance or deadline changed")
+    if any(isinstance(x, bool) or not isinstance(x, (int, float)) or not math.isfinite(x) for x in (elapsed, training_elapsed)) or not 0 < training_elapsed <= elapsed <= min(cap, (deadline-started).total_seconds()):
+        raise ValueError("Checkpoint study exceeded its measured external training deadline")
+    root = Path(evidence["summary"]).parent
+    if (root/"FAILED.json").exists():
+        raise ValueError("A failed training study cannot supply selected checkpoints")
+    checkpoint = Path(profile["checkpoint"])
+    if checkpoint.parent.resolve() != root.resolve() or checkpoint.name not in summary["checkpoint_sha256"] or sha(checkpoint) != summary["checkpoint_sha256"][checkpoint.name] or sha(checkpoint) != profile["configuration"]["checkpoint_sha256"]:
+        raise ValueError("Evaluated checkpoint does not belong to completed training evidence")
+    if "training_step" in profile and checkpoint.name != f'step_{profile["training_step"]}.pt':
+        raise ValueError("Evaluated training step does not match the checkpoint file")
+    if sha(root/"history_2000.json") != summary["all_history_sha256"]:
+        raise ValueError("Completed training history changed")
+    return evidence
+
+
+def validate_profile_training(profile, purpose):
+    """Initialization-only cost measurements never become model evidence."""
+    if profile["backend"] != "solar": return
+    if profile.get("initialization_only_cost_control", False):
+        if purpose != "cost_pilot":
+            raise ValueError("Initialization-only checkpoints are restricted to cost pilots")
+        return
+    completed_training_evidence(profile)
+
+
+def checkpoint_profiles(run_root, pooled=False, *, training_protocol=None, watchdog_receipt=None):
     """Requires completed, hash-sealed training; intermediate optimizer loss is not selection."""
     root = Path(run_root); summary = read(root / "summary.json")
     if not summary["complete"] or summary["updates"] != 2000 or summary["pooled"] != pooled:
         raise ValueError("A completed, matching 2000-update study is required")
+    if training_protocol is None:
+        raise ValueError("Published training protocol and successful external watchdog evidence required")
+    protocol = read(training_protocol)
+    watchdog_receipt = protocol["watchdog_receipts"]["run"] if watchdog_receipt is None else watchdog_receipt
+    evidence = dict(protocol=str(training_protocol), protocol_sha256=sha(training_protocol),
+        summary=str(root/"summary.json"), summary_sha256=sha(root/"summary.json"),
+        watchdog_receipt=str(watchdog_receipt), watchdog_receipt_sha256=sha(watchdog_receipt))
     result = []
     for step in CHECKPOINT_STEPS:
         path = root / f"step_{step}.pt"; h = sha(path)
@@ -54,8 +123,10 @@ def checkpoint_profiles(run_root, pooled=False):
             raise ValueError("Training checkpoint no longer matches its completion summary")
         result.append(dict(name=f"step_{step}", backend="solar", checkpoint=str(path),
             training_step=step, training_seed=summary["seed"],
+            training_evidence=evidence.copy(),
             configuration=dict(model_version="solar-experimental-v63", checkpoint_sha256=h,
                 solar_mode="shared", response=True, active=True, pooled=pooled, budget=128, policy="active")))
+    for profile in result: completed_training_evidence(profile)
     return result
 
 
@@ -314,6 +385,13 @@ def aggregate_rows(rows):
             mean_localization_seconds_including_measured_cold_setup=float(np.mean([r["complete_localization_cold_seconds"] for r in part])),
             cold_reference_setup_total_seconds=float(sum(r["reference_setup"]["reference_geometry_load_seconds"]+r["reference_setup"]["reference_physics_setup_seconds"] for r in part)),
             model_load_seconds_shared_across_tracks=float(max(r["profile_load_seconds"] for r in part)),
+            module_execution=dict(
+                response_requested_cases=sum(r.get("response_requested") is True for r in part),
+                response_confirmed_cases=sum(r.get("response_usage_confirmed") is True for r in part),
+                response_zero_cases=sum(r.get("response_usage_confirmed") is False for r in part),
+                response_unreported_cases=sum(r.get("response_usage_confirmed") is None for r in part),
+                response_refresh_attempted_cases=sum((r.get("response_refresh_calls") or 0)>0 for r in part),
+                scope="Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."),
             by_reference_terrain={g: counts([r for r in part if r["component"] == g]) for g in sorted({r["component"] for r in part})},
             by_lighting={f"{a},{b}": counts([r for r in part if (r["light_a"], r["light_b"]) == (a, b)]) for a, b in LIGHT_PAIRS},
             accepted_performance=None))
@@ -365,6 +443,7 @@ class Backend:
 def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=common_pose):
     """The labels loader is deliberately outside and after the measured call."""
     import cv2
+    lookup_before = None if inp.solar_lookup is None else dict(inp.solar_lookup.stats)
     tick = time.perf_counter(); failure = None
     try:
         result = backend.infer(inp)
@@ -392,7 +471,28 @@ def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=com
         scoring_query_xy=np.empty((0, 2)) if not case["positive"] else truth["query_xy"],
         scoring_visible=np.empty(0, bool) if not case["positive"] else truth["visible"],
         scoring_query_cam2world=np.empty((0, 4)) if not case["positive"] else truth["query_cam2world"])
+    def json_values(value):
+        if isinstance(value, np.ndarray): return value.tolist()
+        if isinstance(value, np.generic): return value.item()
+        if isinstance(value, dict): return {key: json_values(v) for key, v in value.items()}
+        if isinstance(value, (list, tuple)): return [json_values(v) for v in value]
+        return value
+    lookup_after = None if inp.solar_lookup is None else dict(inp.solar_lookup.stats)
+    lookup_stats = None if lookup_after is None else dict(
+        policy="One reference-provider lifetime; online call work is inside inference_seconds; factory validation is cold reference setup.",
+        before=lookup_before, after=lookup_after,
+        numeric_delta={key: value-lookup_before.get(key, 0) for key, value in lookup_after.items()
+            if isinstance(value, (int, float)) and not isinstance(value, bool) and isinstance(lookup_before.get(key, 0), (int, float))})
+    hypotheses = result.get("hypotheses")
+    response_measurements = result.get("response_measurements")
     return dict(metrics=metrics, inference_seconds=infer_seconds, common_pose_replay_seconds=replay_seconds,
         inference_failure=failure, label_method=label_method, final_estimator=info,
         response_cost=result.get("response_cost"), native_encoder_forwards=result.get("native_encoder_forwards"),
-        solar_lookup_stats=None if inp.solar_lookup is None else dict(inp.solar_lookup.stats)), arrays
+        response_requested=getattr(backend, "profile", {}).get("configuration", {}).get("response"),
+        response_measurements=response_measurements, response_refresh_calls=result.get("response_refresh_calls"),
+        response_usage_confirmed=None if response_measurements is None else bool(response_measurements>0),
+        rounds=json_values(result.get("rounds")), reason=result.get("reason", info.get("reason")),
+        initial_hypothesis_count=result.get("initial_hypothesis_count"),
+        returned_hypothesis_count=None if hypotheses is None else len(hypotheses),
+        live_hypothesis_count=None if hypotheses is None else sum(h.get("pose") is not None for h in hypotheses),
+        solar_lookup_stats=json_values(lookup_stats)), arrays
