@@ -12,8 +12,13 @@ The cross-light pilot independently replayed all 16 rows. It used the
 same nine pose solves as the direct control. Four nonoverlap cases
 activated the rescue and returned no pose. All four positives already
 had a direct pose. The pilot qualifies the measured cost projection for
-a separately frozen full comparison.
-[Mechanism pilot results](reports/SOLAR_DIRECT_MECHANISM_PILOTS_V97_V98.md)
+a separately frozen full comparison. That comparison is running both
+arms fresh on all 384 development pairs. The terrain-warped patch
+prototype has passed its synthetic nonplanar geometry check. Its lunar
+effect remains unmeasured.
+[Mechanism pilot results](reports/SOLAR_DIRECT_MECHANISM_PILOTS_V97_V98.md) ·
+[Full cross-light protocol](reports/solar-full-crosslight-rescue-dispatch-v99.json) ·
+[Saved patch diagnosis](reports/additive_pilot_geometry_diagnosis_v99.json)
 
 ## Withheld lighting templates
 
@@ -48,7 +53,7 @@ The full library used on-grid lighting under the shared simulator.
 Calibration and the final terrain reserve remain closed.
 [Paired results](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md) ·
 [Restricted-library protocol](reports/solar-offcatalogue-direct-dispatch-v95.json) ·
-[Research requirements status](reports/research_requirements_status_v94.json)
+[Research requirements status](reports/research_requirements_status_v99.json)
 
 ## Matched relighting pilot and full development run
 
