@@ -8,8 +8,6 @@ import sys
 import numpy as np
 import pytest
 
-REPO = Path("/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching")
-sys.path.insert(0, str(REPO))
 from solar_evaluation_v70 import (Backend, CHECKPOINT_STEPS, InferenceInput, LIGHT_PAIRS, additional_profiles,
     aggregate_rows, checkpoint_ranking, common_pose, evaluate_case,
     paired_component_bootstrap, principal_profiles, score_arrays,

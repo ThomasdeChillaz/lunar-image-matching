@@ -40,11 +40,32 @@ def test_feature_cache_tracks_actual_weight_identity():
     with pytest.raises(ValueError):c.for_weights('')
 
 
-def test_fine_initialized_but_not_shared_with_frozen_proposal():
-    from compact_lunar import CompactMatcher
-    from north_training_bundle_v38 import read
-    coarse=CompactMatcher(read('reports/north_training_data_v38.json')['coarse_model']);coarse.model.eval().requires_grad_(False)
-    fine=make_fine(coarse)
+def test_fine_initialized_but_not_shared_with_frozen_proposal(tmp_path,monkeypatch):
+    import json
+    import compact_lunar
+    from compact_lunar import CompactDescriptor,CompactMatcher
+    from dataset import sha256
+    monkeypatch.chdir(tmp_path)
+    checkpoint=tmp_path/'procedural-descriptor'
+    checkpoint.mkdir()
+    # Exercise the real sealed loader without requiring a trained artifact.
+    # fork_rng preserves the global RNG for the other procedural controls.
+    with torch.random.fork_rng(devices=[]):
+        torch.manual_seed(58)
+        initial=CompactDescriptor(reliability=False)
+        torch.save(initial.state_dict(),checkpoint/'selected.pt')
+        metadata=dict(variant='expanded',seed=58,updates=0,procedural_fixture=True,
+            scope='Procedural initialization only; no training or real imagery.',
+            source_sha256={'compact_lunar.py':sha256(compact_lunar.__file__)})
+        (checkpoint/'training.json').write_text(json.dumps(metadata,sort_keys=True))
+        seal=dict(checkpoint_sha256=sha256(checkpoint/'selected.pt'),
+            training_sha256=sha256(checkpoint/'training.json'),
+            procedural_fixture=True,updates=0)
+        (checkpoint/'COMPLETE.json').write_text(json.dumps(seal,sort_keys=True))
+        coarse=CompactMatcher(checkpoint);coarse.model.eval().requires_grad_(False)
+        fine=make_fine(coarse)
+    assert all(not p.requires_grad for p in coarse.model.parameters())
+    assert all(p.requires_grad for p in fine.parameters())
     assert sum(p.numel()for p in fine.parameters())==28272
     assert {p.data_ptr()for p in fine.parameters()}.isdisjoint({p.data_ptr()for p in coarse.model.parameters()})
     a=torch.linspace(0,1,64*64).reshape(1,1,64,64)

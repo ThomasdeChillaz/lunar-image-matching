@@ -7,6 +7,13 @@ procedural image-to-pose controls pass independent replay. These are software
 checks. The matcher remains **95,808 total parameters**; the new response head
 still has **zero lunar optimizer updates**.
 
+A clean-checkout test repair removes a dependency on an unbundled local
+checkpoint. The fine-encoder initialization check now loads its own sealed,
+zero-update procedural checkpoint from an empty temporary directory, while
+preserving equal-forward and independent-storage checks and explicitly testing
+frozen coarse/trainable fine weights. A machine-specific test import override
+was also removed. This changes test portability, not the scientific matcher.
+
 The missing-only data job is live: **71/96 completed units** in this snapshot.
 Its 16 protected sources and original deadline are unchanged. Full completion
 and the independent ≥95% exact-correspondence gate still precede learning.
