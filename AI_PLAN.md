@@ -1,5 +1,39 @@
 # AI coding-agent execution brief
 
+## Data complete; geometry audit in progress — 4 November 2026
+
+All **96 camera pairs and 4,608 images are complete**. Original completed
+payloads and earlier failed attempts are preserved. The independent full-dataset
+geometry audit is active: **51/96 pairs processed** in this snapshot under
+its original fixed deadline. The complete ≥95% pose-control gate has not yet
+passed; the new response head still has **zero lunar optimizer updates**.
+These are 24 development terrain groups with repeated conditions, not 96
+independent geographies. Calibration and final terrain remain untouched.
+
+**896 repository tests pass**, four optional checks skip, and all eight fresh
+procedural image-to-pose controls pass independent replay. The matcher remains
+**95,808 total parameters**. These checks do not establish a lunar improvement.
+
+The comparison runner now records worker-process lifetime peak RSS in normalized
+bytes, explicitly excluding child processes and isolated model-memory claims.
+Shared-profile peaks cannot rank model memory. Timing labels distinguish
+model-resident inference, setup actually incurred, model startup, offline physics
+and cached history without changing their numeric definitions. The 49 frozen
+learning sources are unchanged; this reporting addition does not delay training.
+
+After the full geometry gate, the next jobs are the four-unit teacher pilot,
+complete training bank, and SH/pooled 100-update pilots with exact replay.
+Selection Sun tables are required for later integrated pose evaluation, not
+teacher extraction. Actual learned studies, comparisons, calibration, final
+freeze/test and the paper package remain unfinished. The historical attention
+control stays **15/96 raw correct poses**, uncalibrated; the broader goal is active.
+
+Evidence: [data and reporting checks](reports/solar_data_and_reporting_v76.json),
+[completed data manifest](reports/solar_completed_data_summary_v76.json),
+[independent smoke replay](reports/solar_controlled_smoke_replay_v76.json),
+[measurement scope](reports/SOLAR_MEMORY_TIMING_SCOPE_V76.md), and
+[independent reporting review](reports/solar_memory_review_v76.json).
+
 ## Portable comparison execution integrated — 4 November 2026
 
 **885 repository tests pass**, four optional tests skip, and all eight fresh

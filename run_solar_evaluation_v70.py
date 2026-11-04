@@ -53,6 +53,45 @@ def write_new(path, value):
         json.dump(value, f, indent=2, allow_nan=False); f.write("\n")
 
 
+MEMORY_SCOPE = ("Current worker process LIFETIME high-water RSS up to this snapshot, including runtime, models, data and allocator/cache history. "
+    "Excludes child processes; not current RSS, isolated model/case RAM, or newly allocated memory. "
+    "Deleting a backend does not reset this high-water mark; shared-profile values cannot rank model memory.")
+TIMING_SCOPE = dict(
+    inference_seconds="Model-resident Backend.infer, including its pose/online physics; independent pose replay and scoring are separate.",
+    complete_localization_cold_seconds="Model-resident inference plus input/reference setup ACTUALLY incurred by the reused loader; not a forced cold setup per case. Model startup, offline preparation and cached history are separate.",
+    profile_load_seconds="Profile construction/validation measured once and shared across its cases/tracks; do not add to every row.",
+    cached_rows="Pinned historical inference/setup/startup timings; current cache-copy time is not fresh model latency.",
+    offline_reference_preparation="Measured startup-inclusive offline preparation and its fixed-study amortization are reported separately.")
+
+
+def worker_peak_rss_snapshot():
+    """Cheap stdlib-only self-process snapshot; telemetry errors never alter inference."""
+    import math
+    result = dict(available=False, worker_pid=os.getpid(), platform=sys.platform,
+        metric="process_lifetime_peak_rss", peak_rss_bytes=None, scope=MEMORY_SCOPE,
+        child_processes_included=False, newly_allocated_memory=False)
+    if sys.platform not in ("darwin", "linux"):
+        return dict(result, unavailable_reason="unsupported_platform", error=None)
+    try:
+        import resource
+        raw = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        if isinstance(raw, bool) or not isinstance(raw, (int, float)) or not math.isfinite(raw) or raw < 0:
+            raise ValueError("Finite nonnegative ru_maxrss required")
+        scale = 1 if sys.platform == "darwin" else 1024
+        return dict(result, available=True, peak_rss_bytes=int(raw*scale), native_maxrss=raw,
+            native_maxrss_unit="bytes" if sys.platform == "darwin" else "KiB", unavailable_reason=None, error=None)
+    except Exception as error:
+        return dict(result, unavailable_reason="resource_snapshot_error",
+            error=dict(type=type(error).__name__, message=str(error)))
+
+
+def worker_memory_scope(profiles):
+    return dict(worker_pid=os.getpid(), profile_order=[profile["name"] for profile in profiles],
+        job_scope="standalone_profile_worker_process" if len(profiles) == 1 else "shared_multi_profile_worker_process",
+        scope=MEMORY_SCOPE, child_processes_included=False, per_case_memory_measured=False,
+        isolated_model_memory_measured=False, per_model_memory_ranking_supported=False)
+
+
 def software_identity():
     import torch, cv2, platform
     return dict(torch=torch.__version__, opencv=cv2.__version__, numpy=np.__version__,
@@ -282,13 +321,19 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
         if time.monotonic()-start >= cap or datetime.now(timezone.utc) >= deadline:
             raise TimeoutError("Original evaluation allowance exhausted")
     check()
+    memory_scope = worker_memory_scope(p["profiles"]); profile_memory = []; current_memory = None
     write_new(root / "execution.json", dict(protocol_sha256=sha(protocol_path), publication_commit=commit, software=software_identity(),
+        memory_measurement=memory_scope, worker_peak_rss=worker_peak_rss_snapshot(), timing_scope=TIMING_SCOPE,
         purpose=p["purpose"], raw_uncalibrated=True, final_reserve_access=False, profile_order=[v["name"] for v in p["profiles"]],
         initialization_only_cost_controls=[v["name"] for v in p["profiles"] if v.get("initialization_only_cost_control",False)]))
     loader = InputLoader(commit, p.get("blender_executable"), fully_materialized_primary=bool(pre_reserved_ticket)); reusable = cache_index(p)
     try:
-        for profile in p["profiles"]:
+        for profile_index, profile in enumerate(p["profiles"]):
             check(); backend = None; load_seconds = 0.
+            profile_rows_start = len(rows)
+            current_memory = dict(profile=profile["name"], profile_index=profile_index, worker_pid=os.getpid(),
+                before=worker_peak_rss_snapshot(), after=None, completed=False)
+            profile_memory.append(current_memory)
             for track in p["tracks"]:
                 for case in cases:
                     check(); before = time.monotonic(); model_load_this_case = 0.
@@ -306,6 +351,7 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
                         row, arrays = evaluate_case(backend, inp, case)
                         row["reference_setup"] = loader.last_setup.copy()
                         row["complete_localization_cold_seconds"] = row["inference_seconds"] + sum(loader.last_setup.values())
+                        row["timing_scope"] = TIMING_SCOPE["complete_localization_cold_seconds"]
                         with array_path.open("xb") as f: np.savez_compressed(f, **arrays)
                         row["reused_case_cache"] = False
                         row["profile_load_seconds"] = load_seconds
@@ -313,6 +359,8 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
                         row = dict(cached, reused_case_cache=True, original_case_calendar_seconds=cached["case_calendar_seconds"],
                             timing_scope="Inference and setup latency replayed from this exact pinned cached execution; current cache-copy time is not model latency")
                         with array_path.open("xb") as destination, Path(cached["saved_arrays"]).open("rb") as source: shutil.copyfileobj(source, destination)
+                    row["memory_measurement_scope"] = ("Cached execution memory fields, if present, are historical; this row has no fresh case/model RAM attribution. Current profile snapshots include all fresh and cached activity in this run."
+                        if row["reused_case_cache"] else "No case/model RAM measured; current worker lifetime peaks are recorded before/after the profile.")
                     row.update(case_id=case["case_id"], component=case["component"], query_component=case["query_component"],
                         positive=case["positive"], profile=profile["name"], track=track,
                         initialization_only_cost_control=bool(profile.get("initialization_only_cost_control",False)),
@@ -325,10 +373,14 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
                         arrays_path=str(array_path), arrays_sha256=sha(array_path), source_protocol_sha256=sha(protocol_path)))
                     rows.append(row); print(json.dumps(row), flush=True); check()
             del backend
+            current_memory.update(after=worker_peak_rss_snapshot(), completed=True,
+                fresh_inference_cases=sum(not row["reused_case_cache"] for row in rows[profile_rows_start:]),
+                cached_cases=sum(row["reused_case_cache"] for row in rows[profile_rows_start:]))
         check()
         expected = len(cases)*len(p["profiles"])*len(p["tracks"])
         if len(rows) != expected: raise ValueError("Full matched case/profile/track denominator incomplete")
         summary = dict(complete=True, purpose=p["purpose"], rows=rows, software=software_identity(), comparison_identity=comparison_identity(p, m),
+            memory_measurement=dict(memory_scope, profile_snapshots=profile_memory), timing_scope=TIMING_SCOPE,
             protocol_sha256=sha(protocol_path), manifest_sha256=sha(p["manifest"]), source_publication_commit=commit,
             calendar_seconds=time.monotonic()-start, profiles=p["profiles"], case_ids=[c["case_id"] for c in cases],
             fresh_inference_cases=sum(not r["reused_case_cache"] for r in rows), cached_cases=sum(r["reused_case_cache"] for r in rows),
@@ -350,9 +402,15 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
             summary["paired_terrain_intervals"] = {track: paired_component_bootstrap(rows, "A1B1C1", "A0B0C0", track) for track in p["tracks"]}
         if p["purpose"] == "checkpoint_selection": summary["selection"] = checkpoint_ranking(rows, p["profiles"], [c["case_id"] for c in cases])
         if p["purpose"] == "cost_pilot": summary["measured_full_cost"] = measured_cost(rows, len(m["cases"]), p["tracks"], p["profiles"])
+        summary["worker_peak_rss"] = worker_peak_rss_snapshot()
         write_new(root / "summary.json", summary)
     except BaseException as e:
-        write_new(root / "WORKER_FAILED.json", dict(error_type=type(e).__name__, error=str(e), completed_rows=len(rows), calendar_seconds=time.monotonic()-start)); raise
+        if current_memory is not None and current_memory["after"] is None:
+            current_memory.update(after=worker_peak_rss_snapshot(), completed=False,
+                fresh_inference_cases=sum(not row["reused_case_cache"] for row in rows[profile_rows_start:]),
+                cached_cases=sum(row["reused_case_cache"] for row in rows[profile_rows_start:]))
+        write_new(root / "WORKER_FAILED.json", dict(error_type=type(e).__name__, error=str(e), completed_rows=len(rows), calendar_seconds=time.monotonic()-start,
+            memory_measurement=dict(memory_scope, profile_snapshots=profile_memory), timing_scope=TIMING_SCOPE)); raise
     finally:
         loader.close()
 
