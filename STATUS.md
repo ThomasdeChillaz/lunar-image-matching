@@ -11,12 +11,25 @@ range. All eight direct and all eight MatchAnything rows independently replay.
 The corrected MatchAnything scorer retains all correspondence rows and
 preserves the first four sealed results from the initial run.
 
-The direct-render pilot supports a 1,256-second allowance for all 384
-development cases. That source-frozen run is active. This is development
-evidence from a shared simulator and an on-grid light library. Calibration,
-final terrain, transfer, and the original scientific targets remain open.
+The full source-frozen direct-render run and independent replay completed
+all 384 development cases. It recovered 114/192 correct raw poses, including
+74/128 under changed lighting. It returned 18 wrong positive poses and zero
+poses on 192 nonoverlap pairs. The geometry diagnostic reproduced every saved
+inlier count. Wrong poses had fewer and more clustered inliers and higher
+modeled translation sensitivity. The repository suite passed 1,199 tests
+with four skips, and the new render-seeded matcher passed its real-encoder
+procedural translation control.
+
+The five-arm mechanism pilot is running under a fresh published dispatch
+because its earlier lease expired without a run. A separate renewed protocol
+freezes the same full 384 cases for SIFT and MatchAnything. These are
+development experiments using a shared simulator and an on-grid light
+library. Calibration, final terrain, transfer, and the original scientific
+targets remain open.
 [Matched report](reports/SOLAR_MATCHED_RELIGHTING_V91.md) ·
-[Full protocol](reports/solar-full-direct-render-v92.json) ·
+[Full direct benchmark](reports/SOLAR_FULL_DIRECT_RENDER_V92.md) ·
+[Mechanism pilot](reports/solar-render-bootstrap-dispatch-v94.json) ·
+[Full native comparison](reports/solar-full-native-baselines-dispatch-v94.json) ·
 [Original requirements](reports/requirements_and_sota_v69.json)
 
 ## Development diagnostics completed — 4 November 2026
