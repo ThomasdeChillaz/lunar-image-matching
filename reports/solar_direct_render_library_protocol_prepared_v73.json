@@ -1,0 +1,30 @@
+{
+  "prepared_only": true,
+  "phase": "reference_camera_render_library",
+  "split": "model_selection",
+  "native_size": 512,
+  "cpu_threads": 2,
+  "max_calendar_seconds": 1800,
+  "calibration_or_final_access": false,
+  "query_truth_used": false,
+  "reuse_policy": "reference_role_only_same_full_primary_mesh",
+  "sun_catalogue_source": "original_predeclared_24_light_schedule",
+  "output": "runs/direct-reference-render-library-v73",
+  "dataset_summary": "runs/solar-v70-completion/summary.json",
+  "dataset_summary_sha256": "REQUIRES_COMPLETE_96_UNIT_DATASET",
+  "geometry_audit": "REQUIRES_FULL96_GEOMETRY_AUDIT_PATH",
+  "geometry_audit_sha256": "REQUIRES_FULL96_GEOMETRY_AUDIT_SHA256",
+  "original_master": "reports/solar_development_admission_v67.json",
+  "original_master_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+  "reference_assets_index": "REQUIRES_COMPLETED_REFERENCE_ASSETS_INDEX",
+  "reference_assets_index_sha256": "REQUIRES_COMPLETED_INDEX_SHA256",
+  "source_sha256": {
+    "build_direct_render_library_v73.py": "12ac9cfe56916ab9ad5b499e12e3ae0d3a783f190b51d07c25125b73d7633390",
+    "direct_render_adapter_v73.py": "077ef2a601478ed31101b52cbef1939a2b16dd1346acc8dd1bd1d7a9448e03b8",
+    "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+    "solar_eval_data_v69.py": "63e64158bd3806733af30d75c82da30be217b0e93728af13b368c6d4cb970bf2",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a",
+    "verify_solar_development_v68.py": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243"
+  }
+}

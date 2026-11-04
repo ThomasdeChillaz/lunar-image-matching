@@ -1,0 +1,317 @@
+{
+  "created_utc": "2026-11-04T01:03:41.165213+00:00",
+  "scope": "Preserved iterative SOFTWARE controls; not lunar data, learning, final localization claims or independent terrain tests. Each attempt used an earlier source snapshot preserved and hash-verified locally.",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": false,
+      "metric_replay_consistent": true,
+      "controls_passed": 0,
+      "controls_total": 8,
+      "rows": [
+        {
+          "toggle": "000",
+          "passed": false,
+          "translation_error_m": 0.48378333501259513,
+          "rotation_error_deg": 0.20652591299854534,
+          "median_native_correspondence_error_px": 2.036791532276987,
+          "saved_result_sha256": "9fafabcc62ff7ce77de5d73b15cf2fa0a1f9762a9aeb912d91ee570e64a3cfd1"
+        },
+        {
+          "toggle": "001",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 112.94202461236918,
+          "saved_result_sha256": "a0689fad53a0ccbf25e49d4f7a2df794e10ac97ff8760720263c2eca8eb3e822"
+        },
+        {
+          "toggle": "010",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 11.344423167662306,
+          "saved_result_sha256": "ee26c53ab163b6a3a35ae7ab4f8687380cf5afeda7aeea4be114e599c08c7dc1"
+        },
+        {
+          "toggle": "011",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 15.344952602042893,
+          "saved_result_sha256": "d6e0609c4c152ff8acba9b0bc0033c2403d6d1e21553b804e51b48c03700957a"
+        },
+        {
+          "toggle": "100",
+          "passed": false,
+          "translation_error_m": 0.27926870298213224,
+          "rotation_error_deg": 0.09851934381866788,
+          "median_native_correspondence_error_px": 1.2329117299310468,
+          "saved_result_sha256": "adc62dd8f94d542a6d74da2e04a8bf1599328a80763b15d10c0ce78ddfeac6a7"
+        },
+        {
+          "toggle": "101",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 8.832230036444075,
+          "saved_result_sha256": "d4c88b37f7b2bda552bdbe9d2a224e9fc3a08b382bf6e55f0f45ac44287cfc80"
+        },
+        {
+          "toggle": "110",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 0.2729588751714044,
+          "saved_result_sha256": "d055bd33593b862921e09a091b6be29fd2ef9551903bb932047501046077ec2e"
+        },
+        {
+          "toggle": "111",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 0.19019359666005958,
+          "saved_result_sha256": "1813540d94e11e0a851a4b8db8f3cb84ce307169b80ed8499b2ae1d231f6a76e"
+        }
+      ],
+      "independent_replay_sha256": "6d02cd1ae832fe9a070f5b8d345ff6f992f947e1c037459d06684ed362ec5394"
+    },
+    {
+      "attempt": 2,
+      "passed": false,
+      "metric_replay_consistent": true,
+      "controls_passed": 6,
+      "controls_total": 8,
+      "rows": [
+        {
+          "toggle": "000",
+          "passed": true,
+          "translation_error_m": 0.9783057760043853,
+          "rotation_error_deg": 0.48776145941280435,
+          "median_native_correspondence_error_px": 0.2729588751714044,
+          "saved_result_sha256": "90a8d67ff29ec25b134f3650975f655ee19f009094c824602e7316a4cbb2da39"
+        },
+        {
+          "toggle": "001",
+          "passed": true,
+          "translation_error_m": 0.09283260035628346,
+          "rotation_error_deg": 0.03911959635962872,
+          "median_native_correspondence_error_px": 0.1434884469967506,
+          "saved_result_sha256": "0ffdc9d88491303e47de021bb45d438b6a25bb7475c12f38c0a60cb5eb164147"
+        },
+        {
+          "toggle": "010",
+          "passed": true,
+          "translation_error_m": 0.2936184132415211,
+          "rotation_error_deg": 0.09744754718874406,
+          "median_native_correspondence_error_px": 0.2196740324090378,
+          "saved_result_sha256": "4dc114b4ab4c7bcf6507e4ed454037e2e86426cba034168b90db39a1962a52de"
+        },
+        {
+          "toggle": "011",
+          "passed": true,
+          "translation_error_m": 0.5014799594534959,
+          "rotation_error_deg": 0.22047284048816734,
+          "median_native_correspondence_error_px": 0.1789099268270722,
+          "saved_result_sha256": "c4020eabea5b8862adf3d53382e4ed97127a4c40094e5bf1b09794475d347ff6"
+        },
+        {
+          "toggle": "100",
+          "passed": true,
+          "translation_error_m": 0.15699071000320433,
+          "rotation_error_deg": 0.09144408601057032,
+          "median_native_correspondence_error_px": 0.27172180782399075,
+          "saved_result_sha256": "7716b1952f683e240b76f4476b46e5899ce0959dd9e570cc60d63648e917d79e"
+        },
+        {
+          "toggle": "101",
+          "passed": true,
+          "translation_error_m": 0.14727571277156737,
+          "rotation_error_deg": 0.07523777560354847,
+          "median_native_correspondence_error_px": 0.1789099268270722,
+          "saved_result_sha256": "21a486bb617826e254d5a8451ce77915976e75b2d7ae072f82a8187d98df32ee"
+        },
+        {
+          "toggle": "110",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 0.1304626824005256,
+          "saved_result_sha256": "efd3a12ee543987f2ef72f0cd506c0be94d95fd8f425930a2f9cab1095dec3f4"
+        },
+        {
+          "toggle": "111",
+          "passed": false,
+          "translation_error_m": null,
+          "rotation_error_deg": null,
+          "median_native_correspondence_error_px": 0.1603281395302926,
+          "saved_result_sha256": "f7980165a9b230cb89673eae868a3e2b39d48d451a871115118e4f50e1fddd98"
+        }
+      ],
+      "independent_replay_sha256": "568dbfbc0ff60c2b23b3199ffda79b2386ee9b94b143af8d83329548edee97a6"
+    },
+    {
+      "attempt": 3,
+      "passed": false,
+      "metric_replay_consistent": true,
+      "controls_passed": 0,
+      "controls_total": 8,
+      "rows": [
+        {
+          "toggle": "000",
+          "passed": false,
+          "translation_error_m": 0.48378333524754424,
+          "rotation_error_deg": 0.20652591325619804,
+          "median_native_correspondence_error_px": 39.576991676124734,
+          "saved_result_sha256": "d725a5112b328d34246dfdebecc94b689ae5f7b4e68a82e0d56d46f83f40d798"
+        },
+        {
+          "toggle": "001",
+          "passed": false,
+          "translation_error_m": 1.889820511518594,
+          "rotation_error_deg": 0.9709389918174772,
+          "median_native_correspondence_error_px": 39.576991676124734,
+          "saved_result_sha256": "e40ee70c06203cd9b437aeb912312c1d3567f0d1f363a5cec4a549473a88985a"
+        },
+        {
+          "toggle": "010",
+          "passed": false,
+          "translation_error_m": 0.48378333524754424,
+          "rotation_error_deg": 0.20652591325619804,
+          "median_native_correspondence_error_px": 39.576991676124734,
+          "saved_result_sha256": "d74752f3ac3179510bd68519a597733569ae19ebaf42d18c873191408c0b1af4"
+        },
+        {
+          "toggle": "011",
+          "passed": false,
+          "translation_error_m": 0.356546130945107,
+          "rotation_error_deg": 0.1485667228912697,
+          "median_native_correspondence_error_px": 18.32650898260833,
+          "saved_result_sha256": "9a87b49b93b06c331b3546b952c52c7d345a21971441eae2e6db73afa3b46741"
+        },
+        {
+          "toggle": "100",
+          "passed": false,
+          "translation_error_m": 0.27926870297846207,
+          "rotation_error_deg": 0.09851934381866788,
+          "median_native_correspondence_error_px": 11.385586159163537,
+          "saved_result_sha256": "88d2d730ee10ce34d131eda4f9c12792bff67e1a7538691eca782190a5c9c7b6"
+        },
+        {
+          "toggle": "101",
+          "passed": false,
+          "translation_error_m": 0.1542377625481072,
+          "rotation_error_deg": 0.06886816906737725,
+          "median_native_correspondence_error_px": 10.08832660205319,
+          "saved_result_sha256": "f8f6f7be99b97aa6820cef05ffbdf19625ee6e86d6984dbdbb962bf4067f312e"
+        },
+        {
+          "toggle": "110",
+          "passed": false,
+          "translation_error_m": 0.27926870297846207,
+          "rotation_error_deg": 0.09851934381866788,
+          "median_native_correspondence_error_px": 11.385586159163537,
+          "saved_result_sha256": "097f927a5300a894812841bd9f5db065b0b721abcb0048772f9156fe15310a9a"
+        },
+        {
+          "toggle": "111",
+          "passed": false,
+          "translation_error_m": 0.15012430257381748,
+          "rotation_error_deg": 0.062255284872653825,
+          "median_native_correspondence_error_px": 5.301195077798265,
+          "saved_result_sha256": "eb43243bafad278c030b397ac65a9fc86e6d790822eda432adad272780dcd2aa"
+        }
+      ],
+      "independent_replay_sha256": "7398717492ea1be726889d472cb382ac39b1321376c76ff715e4a5b8f856a928"
+    },
+    {
+      "attempt": 4,
+      "passed": false,
+      "metric_replay_consistent": true,
+      "controls_passed": 4,
+      "controls_total": 8,
+      "rows": [
+        {
+          "toggle": "000",
+          "passed": false,
+          "translation_error_m": 0.48378333524754424,
+          "rotation_error_deg": 0.20652591325619804,
+          "median_native_correspondence_error_px": 39.576991676124734,
+          "saved_result_sha256": "16a8f56c68e43365533c2e2ebeccdfe238cc3809cd431af1db13f49c49e3cf87"
+        },
+        {
+          "toggle": "001",
+          "passed": false,
+          "translation_error_m": 1.8898205246463584,
+          "rotation_error_deg": 0.9709389990174845,
+          "median_native_correspondence_error_px": 0.16762625699408484,
+          "saved_result_sha256": "5e55abcc520a5d944488b1db308b9db298731598b86313f203fd28ea6346783b"
+        },
+        {
+          "toggle": "010",
+          "passed": false,
+          "translation_error_m": 0.48378333524754424,
+          "rotation_error_deg": 0.20652591325619804,
+          "median_native_correspondence_error_px": 39.576991676124734,
+          "saved_result_sha256": "e0691690182c83069c0685f745dca639356fb0297ec5bfc6c555dd15192ecbb1"
+        },
+        {
+          "toggle": "011",
+          "passed": false,
+          "translation_error_m": 1.8898205246463584,
+          "rotation_error_deg": 0.9709389990174845,
+          "median_native_correspondence_error_px": 0.16762625699408484,
+          "saved_result_sha256": "167ef3596e4533059c7f28deedac15a566e5478274751abaea296dbb839f8b0a"
+        },
+        {
+          "toggle": "100",
+          "passed": true,
+          "translation_error_m": 0.2792687039172993,
+          "rotation_error_deg": 0.09851934432178963,
+          "median_native_correspondence_error_px": 0.14904446969730523,
+          "saved_result_sha256": "ac115f8b067b74fe321890894635feb029c4b1d22384f61304a4eddf095488a5"
+        },
+        {
+          "toggle": "101",
+          "passed": true,
+          "translation_error_m": 0.15423776335427122,
+          "rotation_error_deg": 0.06886816966010477,
+          "median_native_correspondence_error_px": 0.12725681108522177,
+          "saved_result_sha256": "98e436c6942b3909aa78566a243d001d04ce4818c023f3fede4d3a8767193aee"
+        },
+        {
+          "toggle": "110",
+          "passed": true,
+          "translation_error_m": 0.2792687039172993,
+          "rotation_error_deg": 0.09851934432178963,
+          "median_native_correspondence_error_px": 0.14904446969730523,
+          "saved_result_sha256": "e5164b49186bdd6058d23adb7ba66fa5c7b9877ad60c5e3151e44fb8d49ef03e"
+        },
+        {
+          "toggle": "111",
+          "passed": true,
+          "translation_error_m": 0.15012430273789173,
+          "rotation_error_deg": 0.062255284872653825,
+          "median_native_correspondence_error_px": 0.1502488861219371,
+          "saved_result_sha256": "fc727aa59fa66606b9375f3fc12ba0cd09747af1ceae170ea1104c5e584ca886"
+        }
+      ],
+      "independent_replay_sha256": "3c0fd54ba3063d629addd2d73cb9c55e05db796981ded4fac937f9106b400d02"
+    }
+  ],
+  "final_rotated_45_control": {
+    "replay": "reports/solar_rotated_control_replay_v73.json",
+    "replay_sha256": "531da8325375dab6525969be83d54eb15b5e74f27b762202a42278359994cb68",
+    "combined_controls_passed": 0,
+    "small_translation_errors": 4,
+    "controls_total": 8,
+    "note": "All raw tentative matches, including wrong acquisitions, remain in correspondence metrics. This optional16angle/quantization-aware control has not qualified as a lunar improvement. Earlier early-return response_measurements defaults were unknown usage, not evidence that the response callback never executed."
+  },
+  "initial_geometry_diagnostic": {
+    "path": "reports/solar_procedural_quantization_v73.json",
+    "sha256": "7bfc9b602eae83485007bdfcad7adb32fd4482c493958dd7313d3be3a7de11d0",
+    "geography": "One procedural nonplanar surface with8camera seeds; not8independent terrains",
+    "pose_stage": "INITIAL ONLY",
+    "final_estimator_changed": false
+  }
+}

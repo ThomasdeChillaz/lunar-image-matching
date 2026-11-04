@@ -1,0 +1,259 @@
+{
+  "as_of_utc": "2026-11-04T01:04:09.459384+00:00",
+  "scope": "Targeted primary-source antecedent review, not an exhaustive novelty search, scientific evaluation or legal/patent opinion.",
+  "starting_document": "reports/REQUIREMENTS_AND_SOTA_V69.md",
+  "sources": [
+    {
+      "id": "DLR2015",
+      "title": "Shadow-Based Matching for Precise and Robust Absolute Self-Localization during Lunar Landings",
+      "authors": "Hannah Kaufmann; Martin Lingenauber; Tim Bodenmüller; Michael Suppa",
+      "year": 2015,
+      "venue": "IEEE Aerospace",
+      "url": "https://elib.dlr.de/97110/",
+      "doi": "10.1109/AERO.2015.7119045",
+      "access": "Official DLR institutional abstract; full PDF restricted.",
+      "actually_did": "Matched segmented shadow configurations to DEM-rendered references using known Sun position, a shadow-neighborhood descriptor and RANSAC.",
+      "relevance": [
+        "A"
+      ],
+      "not_established": "Does not establish the same unknown-Sun sparse correspondence/pose inference mechanism."
+    },
+    {
+      "id": "WEHRWEIN2015",
+      "title": "Shadow Detection and Sun Direction in Photo Collections",
+      "authors": "Scott Wehrwein; Kavita Bala; Noah Snavely",
+      "year": 2015,
+      "venue": "3DV",
+      "url": "https://www.cs.cornell.edu/projects/shadows/",
+      "paper_url": "https://www.cs.cornell.edu/projects/shadows/files/wehrwein_3dv15_shadows.pdf",
+      "access": "Official author project page inspected; 12MB PDF exceeded web-tool content limit.",
+      "actually_did": "Used illumination ratios across reconstructed photo collections to label shadows at 3D points and estimate Sun directions.",
+      "relevance": [
+        "A"
+      ],
+      "not_established": "Not evidence of the same two-image native-patch matcher or its pose accuracy."
+    },
+    {
+      "id": "SUNDIAL2023",
+      "title": "SUNDIAL: 3D Satellite Understanding through Direct, Ambient, and Complex Lighting Decomposition",
+      "authors": "Nikhil Behari; Akshat Dave; Kushagra Tiwary; William Yang; Ramesh Raskar",
+      "year": 2023,
+      "venue": "arXiv v1, 24 December 2023; CVPR EarthVision workshop version 2024",
+      "url": "https://arxiv.org/html/2312.16215v1",
+      "publisher_paper_url": "https://openaccess.thecvf.com/content/CVPR2024W/EarthVision/papers/Behari_SUNDIAL_3D_Satellite_Understanding_through_Direct_Ambient_and_Complex_Lighting_CVPRW_2024_paper.pdf",
+      "access": "Primary full text inspected, especially Sections 3.4 and 4.3.",
+      "actually_did": "Jointly trained satellite-scene geometry and image-dependent Sun directions with secondary shadow rays and illumination decomposition.",
+      "relevance": [
+        "A"
+      ],
+      "not_established": "Per-scene neural reconstruction does not demonstrate the same fixed-map, sparse PnP inference task."
+    },
+    {
+      "id": "LIMA2025",
+      "title": "Illumination Invariant Image Matching for Lunar TRN",
+      "authors": "Noah Rothenberger; Georgios Georgakis; Yang Cheng; Adnan Ansar",
+      "year": 2025,
+      "venue": "AIAA SciTech, paper 2025-2073",
+      "url": "https://doi.org/10.2514/6.2025-2073",
+      "author_url": "https://noahzegna.github.io/",
+      "access": "Publisher search abstract and author summary inspected; full AIAA page/PDF inaccessible (403).",
+      "actually_did": "Introduced correlation-based LIMA and learned illumination-invariant features, with synthetic and real experiments.",
+      "relevance": [
+        "A",
+        "B"
+      ],
+      "not_established": "Full algorithm details and numerical tables were not verified in this review."
+    },
+    {
+      "id": "LIMA2026",
+      "title": "Stitching Illumination-Matched Maps: A LIMA-Based Pipeline for Robust Reference Map Generation",
+      "authors": "Noah Rothenberger; Yang Cheng; Adnan Ansar; Yumi Iwashita",
+      "year": 2026,
+      "venue": "AIAA SciTech, paper 2026-2244",
+      "url": "https://doi.org/10.2514/6.2026-2244",
+      "author_url": "https://noahzegna.github.io/",
+      "access": "Author research summary inspected; linked AIAA full page inaccessible (403).",
+      "actually_did": "Reports synthesizing target-lighting reference maps from images acquired at different Sun angles.",
+      "relevance": [
+        "A",
+        "B"
+      ],
+      "not_established": "Do not infer an identical implementation or compare inaccessible numerical results."
+    },
+    {
+      "id": "PRT2002",
+      "title": "Precomputed Radiance Transfer for Real-Time Rendering in Dynamic, Low-Frequency Lighting Environments",
+      "authors": "Peter-Pike Sloan; Jan Kautz; John Snyder",
+      "year": 2002,
+      "venue": "ACM SIGGRAPH",
+      "url": "https://www.microsoft.com/en-us/research/publication/precomputed-radiance-transfer-real-time-rendering-dynamic-low-frequency-lighting-environments/",
+      "doi": "10.1145/566570.566612",
+      "access": "Official Microsoft Research publication abstract inspected.",
+      "actually_did": "Represented precomputed surface light-transfer functions and lighting using low-order SH for efficient rendering including shadowing and interreflection.",
+      "relevance": [
+        "B"
+      ],
+      "not_established": "SH transfer representation is not new; this work is not a learned descriptor-response matcher."
+    },
+    {
+      "id": "NRTF2022",
+      "title": "Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination",
+      "authors": "Linjie Lyu; Ayush Tewari; Thomas Leimkühler; Marc Habermann; Christian Theobalt",
+      "year": 2022,
+      "venue": "ECCV",
+      "url": "https://vcai.mpi-inf.mpg.de/projects/2022-NRTF/data/paper.pdf",
+      "project_url": "https://vcai.mpi-inf.mpg.de/projects/2022-NRTF/index.htm",
+      "official_repository": "https://github.com/LinjieLyu/NRTF",
+      "access": "Primary full paper Section 3, author project and official repository inspected.",
+      "actually_did": "Learned radiance transfer conditioned on position, normal and incoming/outgoing directions, using synthetic one-light-at-a-time and real-image supervision.",
+      "relevance": [
+        "B"
+      ],
+      "not_established": "Its outputs are scene radiance, not frozen local matching descriptors or lunar camera localization."
+    },
+    {
+      "id": "DFF2022",
+      "title": "Decomposing NeRF for Editing via Feature Field Distillation",
+      "authors": "Sosuke Kobayashi; Eiichi Matsumoto; Vincent Sitzmann",
+      "year": 2022,
+      "venue": "NeurIPS",
+      "url": "https://pfnet-research.github.io/distilled-feature-fields/",
+      "paper_url": "https://arxiv.org/abs/2205.15585",
+      "access": "Official author project abstract and method summary inspected.",
+      "actually_did": "Distilled pretrained 2D image features such as LSeg or DINO into a 3D feature field for semantic decomposition and editing.",
+      "relevance": [
+        "B"
+      ],
+      "not_established": "Feature-field distillation is established; this source does not demonstrate the same Sun-conditioned matching-feature targets."
+    },
+    {
+      "id": "BASRI2003",
+      "title": "Lambertian Reflectance and Linear Subspaces",
+      "authors": "Ronen Basri; David W. Jacobs",
+      "year": 2003,
+      "venue": "IEEE TPAMI 25(2), 218–233",
+      "url": "https://www.cs.umd.edu/~djacobs/pubs_files/Basri%20Jacobs%20-%20Lambertian%20Reflectance%20and%20Linear%20Subspaces.pdf",
+      "access": "Primary full paper inspected; assumptions and exclusion of cast shadows explicit in Sections 2–3.",
+      "actually_did": "Derived a low-dimensional SH approximation for convex Lambertian reflectance under distant illumination, including attached shadows but excluding cast shadows.",
+      "relevance": [
+        "B"
+      ],
+      "not_established": "Does not guarantee a finite SH model for nonconvex lunar cast shadows or normalized nonlinear descriptor responses."
+    },
+    {
+      "id": "ACTIVE2008",
+      "title": "Active Matching",
+      "authors": "Margarita Chli; Andrew J. Davison",
+      "year": 2008,
+      "venue": "ECCV, LNCS 5302, 72–85",
+      "url": "https://www.doc.ic.ac.uk/~ajd/Publications/chli_davison_eccv2008.pdf",
+      "access": "Primary full paper Sections 2–3 inspected.",
+      "actually_did": "Used dynamic mixture-of-Gaussians hypotheses and expected Shannon information gain to choose sequential feature searches and update global consensus before more image processing.",
+      "relevance": [
+        "C"
+      ],
+      "not_established": "Deferred image processing, multiple-hypothesis search and informative feature acquisition cannot be claimed as new general ideas."
+    },
+    {
+      "id": "OLSON2002",
+      "title": "Selecting Landmarks for Localization in Natural Terrain",
+      "authors": "Clark F. Olson",
+      "year": 2002,
+      "venue": "Autonomous Robots 12(2), 201–210",
+      "url": "https://faculty.washington.edu/cfolson/abstracts/ar2002.html",
+      "access": "Official author abstract inspected.",
+      "actually_did": "Selected natural-terrain localization landmarks by minimizing predicted localization uncertainty under a sensor error model.",
+      "relevance": [
+        "C"
+      ],
+      "not_established": "Uncertainty-aware selection in terrain localization predates this implementation."
+    },
+    {
+      "id": "FANG2020",
+      "title": "Terrain Relative Navigation for Lunar Polar Roving: Exploiting Geometry, Shadows, and Planning",
+      "authors": "Eugene Fang",
+      "year": 2020,
+      "venue": "CMU PhD thesis / CMU-RI-TR-20-11",
+      "url": "https://publications.ri.cmu.edu/terrain-relative-navigation-for-lunar-polar-roving-exploiting-geometry-shadows-and-planning",
+      "access": "Official CMU institutional abstract inspected; linked Dropbox thesis unavailable.",
+      "actually_did": "Combined terrain registration under map/sensor uncertainty, shadow features, localization-uncertainty prediction and information-aware belief-space planning for lunar polar roving.",
+      "relevance": [
+        "A",
+        "C"
+      ],
+      "not_established": "Not evidence of the same within-image sparse patch-budget policy or its efficiency."
+    }
+  ],
+  "modules": [
+    {
+      "id": "A",
+      "implemented": "Sparse candidates and camera-pose hypotheses share one query Sun; reference-map rays score soft query shadow observations during assignment/refinement.",
+      "closest_sources": [
+        "DLR2015",
+        "WEHRWEIN2015",
+        "SUNDIAL2023",
+        "LIMA2025",
+        "LIMA2026",
+        "FANG2020"
+      ],
+      "candidate_difference_our_inference": "The fixed-map, two-image sparse matcher couples one Sun across all candidate assignments and pose updates at inference, rather than assuming Sun known or learning a scene reconstruction.",
+      "novelty_status": "Unproven; broad joint illumination/geometry reasoning and lunar shadow localization are established.",
+      "decisive_tests": [
+        "Shared vs solar-off vs independent-Sun with identical candidates and pose budget.",
+        "Estimated-Sun vs supplied-Sun information tracks; report Sun errors and informative-anchor support separately.",
+        "Camera-pose gains under lighting/viewpoint change, not just improved shadow agreement."
+      ]
+    },
+    {
+      "id": "B",
+      "implemented": "Canonical 33px patches produce 36 real-SH coefficient vectors for a 32D frozen-teacher descriptor response, conditioned on observed Sun, normal and view; total model remains below100k.",
+      "closest_sources": [
+        "PRT2002",
+        "NRTF2022",
+        "DFF2022",
+        "BASRI2003",
+        "LIMA2025"
+      ],
+      "candidate_difference_our_inference": "A compact patch-conditioned field predicts counterfactual local matching descriptors, rather than RGB radiance or semantic NeRF features, and is evaluated through correspondence/absolute camera pose.",
+      "novelty_status": "Unproven; SH response bases, learned directional transfer, feature distillation and illumination-robust descriptors are established.",
+      "decisive_tests": [
+        "Capacity/data/training-budget matched pooled control and frozen native refinement.",
+        "Held-out physical illumination and terrain groups; report actual response use.",
+        "Failure/conditioning analysis near hard shadow transitions; no full-sphere response claim from the limited training lighting domain."
+      ]
+    },
+    {
+      "id": "C",
+      "implemented": "Native patch measurements are selected sequentially from pose/Sun hypotheses using interval separation across0,±5,±10,±20m height variants; extraction is deferred until selection.",
+      "closest_sources": [
+        "ACTIVE2008",
+        "OLSON2002",
+        "FANG2020"
+      ],
+      "candidate_difference_our_inference": "A particular Sun/pose disagreement heuristic under specified height perturbations is inserted into a compact lunar matching search with bounded native measurement counts.",
+      "novelty_status": "Unproven; active matching and uncertainty-aware terrain landmark selection already exist.",
+      "implementation_cautions": [
+        "The score is weighted interval separation, not expected Shannon information gain.",
+        "Its channels currently contain projected geometry, physical shadow states and a geometry-consistency proxy—not predicted learned-descriptor observations.",
+        "Global height shifts do not cover arbitrary map errors; no-live-hypothesis fallback can be uniform."
+      ],
+      "decisive_tests": [
+        "Uniform, strongest-appearance and geometry-only controls at32/64/128 measurements.",
+        "Complete timing including hypothesis management, physical lookups and cold reference preparation.",
+        "Pose gains under declared height perturbations; log nonuniform decisions and valid response usage."
+      ]
+    }
+  ],
+  "global_caveats": [
+    "No absence-of-prior-art or first-method claim follows from this review.",
+    "Task/information/compute differences preclude a numerical SOTA ranking from these sources.",
+    "No model run, optimization, image annotation, root edit, email, submission or publication performed."
+  ],
+  "implementation_sha256": {
+    "solar_assignment_v63.py": "4e373e2ac4b21e7db4b27871d16ddf0d3bcc0fbc63c7d8374313253e129ccd10",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "solar_response_v63.py": "66370e95fb0baf35380b5f7eac694d3c50aa596a2fbd19127906f5dacb76784e",
+    "solar_frontend_v63.py": "aef8e4ccc25ac0cba286ee0fddc0afebdc6160b6d3f0d28227147782ee351fa2",
+    "solar_training_v63.py": "d9fb0d6e1ce70a46167c13d3e6303473b72c518530bf0dc3dc7cc4770103bd39"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "generated_utc": "2026-11-04T00:46:23.339746+00:00",
+  "methods": [
+    {
+      "method": "historical_original_native512",
+      "checkpoint": "runs/contrastive-terrain-train-v1/selected.pt",
+      "checkpoint_sha256": "ab555480bf44c878f509ffacbe2778f35bbd48d1f1b4b04902fb6e858d9ca416",
+      "base_artifacts_present": true,
+      "historical_algorithm_source_currently_matches": true,
+      "native_adapter_control_complete": false,
+      "scientifically_available_now": false,
+      "historical_scope": "Historical development/control only; new native camera/light evaluation not run."
+    },
+    {
+      "method": "historical_frozen_surface",
+      "checkpoint": "runs/compact-v2-expanded-20261030/selected.pt",
+      "checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+      "base_artifacts_present": true,
+      "historical_algorithm_source_currently_matches": true,
+      "native_adapter_control_complete": false,
+      "scientifically_available_now": false,
+      "historical_scope": "Historical development/control only; new native camera/light evaluation not run."
+    },
+    {
+      "method": "historical_north_context",
+      "checkpoint": "runs/north-v61-context-study/cross_adaptation-20261101/selected.pt",
+      "checkpoint_sha256": "ec7b9f77f695bcbc6c4377aa3f1b49687bf2f60bc50b04389ea7e5f09d1c5f09",
+      "base_artifacts_present": true,
+      "historical_algorithm_source_currently_matches": true,
+      "native_adapter_control_complete": false,
+      "scientifically_available_now": false,
+      "historical_scope": "Historical development/control only; new native camera/light evaluation not run."
+    }
+  ],
+  "raw_historical_context_result": {
+    "correct_raw_poses": 15,
+    "positive_cases": 96,
+    "calibrated_acceptance_evaluated": false
+  },
+  "new_forward_or_render_performed": false
+}

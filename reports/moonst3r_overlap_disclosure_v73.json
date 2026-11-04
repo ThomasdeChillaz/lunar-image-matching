@@ -1,0 +1,185 @@
+{
+  "scope": "Training-overlap disclosure from published paper and actual development reference-terrain meshes. No images/model inference/final-reserve pixels read.",
+  "paper_source": "https://arxiv.org/html/2510.18172v1",
+  "paper_version": "v1,20October2025",
+  "reported_lunar_adaptation_latitude_bounds_deg": [
+    -90,
+    -87
+  ],
+  "actual_reference_scene_bounds": [
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "scene_mesh_sha256": "8dd49dd32f1e7f7af565f796f7256e521f834a8a3f2ba01d504136cc924e1cbb",
+      "latitude_min_deg": 85.55163027503592,
+      "latitude_max_deg": 86.4715471876626
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "scene_mesh_sha256": "a5cc6932ec2f98d606ae64e9b1a1515733fa837dd3b1f66ef1e1ef8029e2314d",
+      "latitude_min_deg": 86.35879414592905,
+      "latitude_max_deg": 87.30723693964143
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "scene_mesh_sha256": "ef5c2715db9105b4726d27e434a3353a5135f7e05d8306e041e042de5206151d",
+      "latitude_min_deg": 87.05373521681379,
+      "latitude_max_deg": 87.99845260909672
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+      "latitude_min_deg": 87.53878971860917,
+      "latitude_max_deg": 88.35146333683028
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "scene_mesh_sha256": "40c905bd087bdea304c046c232224e307e63a774eaf4fb19c803caff19dfd44e",
+      "latitude_min_deg": 86.35853990884092,
+      "latitude_max_deg": 87.30697557912167
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+      "latitude_min_deg": 85.55134909839882,
+      "latitude_max_deg": 86.47125548996439
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+      "latitude_min_deg": 85.97635720648668,
+      "latitude_max_deg": 86.80874895832665
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "scene_mesh_sha256": "491083fc59defcf66e55cbe8e0ef2c459416fecbfbe6afb3391414e08486364b",
+      "latitude_min_deg": 86.89231595249102,
+      "latitude_max_deg": 87.76753949580498
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "scene_mesh_sha256": "2d39d5cecbb4200264baa8d82d694475b26e1096e4a8beb4beaf7f1e22af8a50",
+      "latitude_min_deg": 88.43339806722776,
+      "latitude_max_deg": 89.32952540263679
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "scene_mesh_sha256": "e42496fdde451b0103cc6ca7a8adfdb52023d2a40e121b8515ebce22eee49afd",
+      "latitude_min_deg": 87.74626476987768,
+      "latitude_max_deg": 88.6812476742743
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "scene_mesh_sha256": "5bcbaf6e377803eb24ee2d9d2e442b637a93d4931d72b68760cac7fadaba7ccd",
+      "latitude_min_deg": 86.89201793907021,
+      "latitude_max_deg": 87.76722418399326
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "scene_mesh_sha256": "6c6ceaec102654dcecf4a8e51f4ee5b1ebb72a85c462b44d6ab919a34db53bf0",
+      "latitude_min_deg": 87.16947369537246,
+      "latitude_max_deg": 87.8647641394729
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "scene_mesh_sha256": "89ad27763549e6fd218e286df4fe32d46cb1026631a4f9ea36d6c9c63642bfd8",
+      "latitude_min_deg": 88.14755976955382,
+      "latitude_max_deg": 88.85389178440464
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "scene_mesh_sha256": "5d6403d8a22c7b2a1c68d83d5f5f3ed91db15077d753b31ca3317c98b4c30a1c",
+      "latitude_min_deg": 87.16914646756835,
+      "latitude_max_deg": 87.86443447362518
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+      "latitude_min_deg": 87.74672532968,
+      "latitude_max_deg": 88.68169726609663
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+      "latitude_min_deg": 88.43385259918276,
+      "latitude_max_deg": 89.32992324255659
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "scene_mesh_sha256": "5b74dd130a027501c9a41084538a0b3d05e5b710e93116e33bcf9ccc097ef465",
+      "latitude_min_deg": 88.43367736569338,
+      "latitude_max_deg": 89.3298460093755
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+      "latitude_min_deg": 87.74645886393012,
+      "latitude_max_deg": 88.68141060138775
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+      "latitude_min_deg": 86.35900365744462,
+      "latitude_max_deg": 87.30743775981095
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "scene_mesh_sha256": "ab1c48fdd07741b9a20b6b42becf70cb505d483ead0f0c36f39a9ed2f299ff3f",
+      "latitude_min_deg": 87.05399425173263,
+      "latitude_max_deg": 87.99872288450936
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "scene_mesh_sha256": "65c4d14c32d141c9c705ca6f568cec579e6befdfef2d325f812185626f4bb70b",
+      "latitude_min_deg": 87.53921139974584,
+      "latitude_max_deg": 88.35182294486201
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "scene_mesh_sha256": "cdd3d8478a5c26516daa51b7b6ba5840320b4dc4e84750122648517a0121eb96",
+      "latitude_min_deg": 87.53909991151822,
+      "latitude_max_deg": 88.35179154420979
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "scene_mesh_sha256": "86647362da5b626d8a2f6ab92797bc9af3d02dd54fd063e2c4f2101082551b16",
+      "latitude_min_deg": 86.35874940490636,
+      "latitude_max_deg": 87.30717639688105
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+      "latitude_min_deg": 85.55152046334472,
+      "latitude_max_deg": 86.4714086491153
+    }
+  ],
+  "reported_adaptation_geographically_disjoint": true,
+  "master_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+  "source_files": {
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48"
+  },
+  "caveat": "The paper describes lunar training data in the southern polar cap. All current reference scene meshes are northern. This supports geographic separation from the reported lunar-adaptation data, conditional on that description matching the released checkpoint. Exact checkpoint training split files are absent; full pretraining and checkpoint-specific overlap remain unverified. Shared global LOLA terrain source and simulation dependence remain. This is not an accuracy or novelty result."
+}

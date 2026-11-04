@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "models_loaded": false,
+  "neural_forwards": 0,
+  "results": {
+    "historical_original_native512": {
+      "selected_checkpoint_sha256": "ab555480bf44c878f509ffacbe2778f35bbd48d1f1b4b04902fb6e858d9ca416"
+    },
+    "historical_frozen_surface": {
+      "selected_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65"
+    },
+    "historical_north_context": {
+      "coarse_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+      "selected_checkpoint_sha256": "ec7b9f77f695bcbc6c4377aa3f1b49687bf2f60bc50b04389ea7e5f09d1c5f09",
+      "historical_correct_raw_poses": 15,
+      "historical_positive_cases": 96
+    }
+  }
+}

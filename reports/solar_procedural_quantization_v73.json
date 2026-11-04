@@ -1,0 +1,4537 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "seed": 0,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9971810864448255,
+          -0.00992608861737232,
+          0.07437307040507071,
+          49.2991582122534
+        ],
+        [
+          0.012407452294539646,
+          0.9993791155638281,
+          -0.03297633245858892,
+          30.162217686924947
+        ],
+        [
+          -0.07399956732492599,
+          0.03380615535107082,
+          0.9966851096991983,
+          -59.461974717573185
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 3.475127886257918e-13
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 224,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.737709270140144e-25
+      },
+      "software_elapsed_seconds": 0.0023016890045255423
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9971810864448255,
+          -0.009926088617372281,
+          0.07437307040507081,
+          49.299158212253275
+        ],
+        [
+          0.0124074522945396,
+          0.9993791155638281,
+          -0.03297633245858881,
+          30.162217686924777
+        ],
+        [
+          -0.07399956732492612,
+          0.0338061553510707,
+          0.9966851096991983,
+          -59.46197471757296
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 4.2750823912715883e-13
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 408,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 224
+      },
+      "software_elapsed_seconds": 0.060919649025890976
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9967844846322774,
+          -0.008479403880192662,
+          0.07967930036214983,
+          42.435810591001854
+        ],
+        [
+          0.011223859578748059,
+          0.9993567884982035,
+          -0.03405927566336948,
+          31.532540422221636
+        ],
+        [
+          -0.07933924736548527,
+          0.03484406681765808,
+          0.9962385130254124,
+          -59.16214496304406
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.32098289797306173,
+        "translation_m": 7.00522825114993
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 224,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 504.9754619627829
+      },
+      "software_elapsed_seconds": 0.0027509209467098117
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.996784484640499,
+          -0.008479403862827055,
+          0.07967930026114686,
+          42.435810725481375
+        ],
+        [
+          0.011223859571126342,
+          0.9993567884925845,
+          -0.03405927583075592,
+          31.532540644393976
+        ],
+        [
+          -0.07933924726327166,
+          0.034844066983045374,
+          0.9962385130277681,
+          -59.16214495164263
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.3209828943963295,
+        "translation_m": 7.005228163342173
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 342,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 224
+      },
+      "software_elapsed_seconds": 0.052495924988761544
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9941363518844516,
+          -0.009204161189972481,
+          0.10774134433291127,
+          2.1716982053655016
+        ],
+        [
+          0.010442329002669237,
+          0.9998857016695706,
+          -0.010933497233294709,
+          -2.7841628863886
+        ],
+        [
+          -0.10762839600623045,
+          0.011994457617560473,
+          0.9941188366385513,
+          -49.91774291013394
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.301446048923449,
+        "translation_m": 58.28853952859489
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 112,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1305.5766573753854
+      },
+      "software_elapsed_seconds": 0.005871659028343856
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9963769842378308,
+          -0.010139318613360544,
+          0.08443991650388016,
+          35.30409864281603
+        ],
+        [
+          0.013065802162489985,
+          0.9993303713894185,
+          -0.03417738481127082,
+          31.96528805426894
+        ],
+        [
+          -0.08403683772594114,
+          0.03515683485104673,
+          0.9958422600333249,
+          -59.4079286099477
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5831729286775208,
+        "translation_m": 14.110835414086592
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 306,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 110
+      },
+      "software_elapsed_seconds": 0.048900032008532435
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9977326264978185,
+          -0.0320953112912946,
+          0.0591565466781113,
+          71.43387438132275
+        ],
+        [
+          0.03324991963418389,
+          0.9992732751604531,
+          -0.018637714302505066,
+          17.3446963237457
+        ],
+        [
+          -0.058515372903921385,
+          0.020562406065837386,
+          0.9980747159359857,
+          -86.40069348761176
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.709564886815964,
+        "translation_m": 37.147396715679385
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 27,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1868.2728214973886
+      },
+      "software_elapsed_seconds": 0.007418236986268312
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9988272370803211,
+          -0.01220152252252177,
+          0.04685374386988191,
+          86.24643271556405
+        ],
+        [
+          0.013760574122657828,
+          0.9993573855308009,
+          -0.0330977731102429,
+          30.18042793833945
+        ],
+        [
+          -0.04641979175208504,
+          0.03370369168466079,
+          0.9983532762006235,
+          -58.11070556952927
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.585024240965516,
+        "translation_m": 36.97198064949602
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 298,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 223,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 29
+      },
+      "software_elapsed_seconds": 0.0499877740512602
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9958208367283243,
+          0.02098453835151001,
+          0.08888481472036759,
+          31.37146478797169
+        ],
+        [
+          -0.027459666879482803,
+          0.9970074671277523,
+          0.07226394112122309,
+          -116.86081631023183
+        ],
+        [
+          -0.0871023985465837,
+          -0.07440268571548858,
+          0.9934170385722979,
+          -63.42874135142597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.502198194182949,
+        "translation_m": 148.16514419650687
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 24,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1879.4490138989618
+      },
+      "software_elapsed_seconds": 0.006613495002966374
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9987662255628772,
+          -0.011654762056301327,
+          0.04827207470468816,
+          84.40942875681787
+        ],
+        [
+          0.013400382953225907,
+          0.9992620215213652,
+          -0.035997806624036746,
+          33.871309653870725
+        ],
+        [
+          -0.04781690508168516,
+          0.036600257737421066,
+          0.9981853358580076,
+          -58.65232161484596
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.5118716774044731,
+        "translation_m": 35.31492600981253
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 272,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 179,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 23
+      },
+      "software_elapsed_seconds": 0.04651184700196609
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9997565890739112,
+          -0.015204469720278172,
+          0.01598707927745953,
+          110.78069794626252
+        ],
+        [
+          0.015738045177068335,
+          0.9993047977498091,
+          -0.033796969216452206,
+          42.79366241014806
+        ],
+        [
+          -0.015462100028883137,
+          0.03404034804079426,
+          0.9993008446748949,
+          -49.93334292642271
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 3.3630964347273644,
+        "translation_m": 63.484863925755626
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 20,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1913.642703033221
+      },
+      "software_elapsed_seconds": 0.006955394987016916
+    },
+    {
+      "seed": 0,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9991180525006197,
+          -0.008967535991435273,
+          0.04102073214377475,
+          92.8020826956786
+        ],
+        [
+          0.01005525415844196,
+          0.9996012218425099,
+          -0.026387291539120415,
+          22.51992332249268
+        ],
+        [
+          -0.04076774498519801,
+          0.026776493220803076,
+          0.9988097968980972,
+          -62.02220892928176
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.9533392394586957,
+        "translation_m": 44.24323565226718
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 250,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 136,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 19
+      },
+      "software_elapsed_seconds": 0.04341005999594927
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9948188206220495,
+          -0.06872977672382077,
+          0.0749114939621969,
+          5.830603077082376
+        ],
+        [
+          0.07181457587714549,
+          0.996643789450859,
+          -0.03929152123063703,
+          13.89760167525884
+        ],
+        [
+          -0.07195957773458814,
+          0.04446768197832704,
+          0.9964157989673459,
+          -44.46730245349681
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 2.1554756290409945e-13
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 235,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.876754840287568e-25
+      },
+      "software_elapsed_seconds": 0.0019738769624382257
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9948188206220495,
+          -0.06872977672382073,
+          0.07491149396219658,
+          5.830603077082802
+        ],
+        [
+          0.07181457587714545,
+          0.996643789450859,
+          -0.03929152123063726,
+          13.897601675259118
+        ],
+        [
+          -0.07195957773458779,
+          0.044467681978327254,
+          0.9964157989673459,
+          -44.467302453496586
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 5.349990466936836e-13
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 408,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 235,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 235
+      },
+      "software_elapsed_seconds": 0.06200345105025917
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9948765612378011,
+          -0.06864438061098586,
+          0.07421978786133704,
+          6.720058660530999
+        ],
+        [
+          0.07182855311356755,
+          0.9965691532183486,
+          -0.041116685314784275,
+          16.167972051749047
+        ],
+        [
+          -0.07114272174480796,
+          0.04623712646994511,
+          0.9963939187282022,
+          -45.19451917312358
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.11187169573843278,
+        "translation_m": 2.5445150891038284
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 235,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 637.3449680183874
+      },
+      "software_elapsed_seconds": 0.002693150017876178
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9948765612342484,
+          -0.06864438060322336,
+          0.07421978791613945,
+          6.720058588427552
+        ],
+        [
+          0.0718285531083851,
+          0.9965691532186957,
+          -0.041116685315426386,
+          16.167972051971205
+        ],
+        [
+          -0.0711427217997232,
+          0.04623712647398958,
+          0.9963939187240936,
+          -45.19451917219567
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.11187169465029968,
+        "translation_m": 2.544515063832521
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 350,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 235,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 235
+      },
+      "software_elapsed_seconds": 0.05581454001367092
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.993532714691508,
+          -0.06597305652625382,
+          0.09241374708508589,
+          -18.32112033322839
+        ],
+        [
+          0.06986280378954637,
+          0.9967740931819647,
+          -0.03950437707311797,
+          16.595249582990817
+        ],
+        [
+          -0.08950940444660464,
+          0.04570517447571402,
+          0.9949367334367339,
+          -45.15542242986294
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.017856080015629,
+        "translation_m": 24.311654757011397
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 111,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1594.9461441276706
+      },
+      "software_elapsed_seconds": 0.007733251026365906
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9951008980198156,
+          -0.06733096583717235,
+          0.0723929817011989,
+          9.126641117037668
+        ],
+        [
+          0.07067094015943295,
+          0.9965017634945934,
+          -0.04460777476121607,
+          21.090904181215933
+        ],
+        [
+          -0.06913624937135682,
+          0.04950531680132012,
+          0.9963781423893554,
+          -44.918747372246344
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.3421482773479792,
+        "translation_m": 7.925356157151894
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 324,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 235,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 110
+      },
+      "software_elapsed_seconds": 0.05286260700086132
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9712399649326809,
+          -0.06906748602396805,
+          0.2278653393824823,
+          -190.11378362981242
+        ],
+        [
+          0.07042877565459905,
+          0.9975144683869553,
+          0.002161693429691476,
+          -31.288770936097407
+        ],
+        [
+          -0.22744827560867334,
+          0.01394875381597914,
+          0.9736902557741975,
+          6.141801841253709
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 9.185802697295104,
+        "translation_m": 207.35788480120632
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 24,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1981.9665669420538
+      },
+      "software_elapsed_seconds": 0.006929502007551491
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9948776335241103,
+          -0.07066807517737436,
+          0.07228082362695587,
+          9.343793957636127
+        ],
+        [
+          0.07354341204359408,
+          0.9965708056062459,
+          -0.03792091716064139,
+          11.950350349420567
+        ],
+        [
+          -0.06935316040709522,
+          0.04304245072069027,
+          0.9966631760918554,
+          -43.67715628114797
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.20028771602082338,
+        "translation_m": 4.093730433585339
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 280,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 235,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 23
+      },
+      "software_elapsed_seconds": 0.04723522800486535
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9976161353847077,
+          -0.06666353760543299,
+          -0.017833092104556376,
+          131.88568167196206
+        ],
+        [
+          0.0648219542616421,
+          0.9939063132595768,
+          -0.08915354568640252,
+          66.55418888652204
+        ],
+        [
+          0.02366771357318131,
+          0.08778503982276764,
+          0.9958582359540603,
+          -54.63939669577462
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.036222762656467,
+        "translation_m": 136.9893080410747
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 25,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1991.8531968032269
+      },
+      "software_elapsed_seconds": 0.006990752997808158
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9945098335738259,
+          -0.06880969351362379,
+          0.07883791602726493,
+          0.7804094446452616
+        ],
+        [
+          0.07142569563729992,
+          0.9969686107423753,
+          -0.030853836019948944,
+          1.8252620481109858
+        ],
+        [
+          -0.07647588461527406,
+          0.036315496320156,
+          0.9964098673735282,
+          -45.282537224368525
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5341527476754568,
+        "translation_m": 13.111462448176866
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 256,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 188,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 22
+      },
+      "software_elapsed_seconds": 0.043733344005886465
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9981626223222185,
+          -0.06054604301613251,
+          -0.002357132563269878,
+          110.3417654705305
+        ],
+        [
+          0.060175012262949364,
+          0.9951000666329929,
+          -0.07845269457556615,
+          52.061810528725566
+        ],
+        [
+          0.007095582991276344,
+          0.07816670686489104,
+          0.9969150508643714,
+          -53.47385619875536
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 4.980971651199919,
+        "translation_m": 111.62530139984821
+      },
+      "points": 235,
+      "proposal_info": {
+        "inliers": 15,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2031.719820730067
+      },
+      "software_elapsed_seconds": 0.006520266993902624
+    },
+    {
+      "seed": 1,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9947638767390432,
+          -0.06939527529019122,
+          0.07502749697616329,
+          5.361601692774901
+        ],
+        [
+          0.07286559094041485,
+          0.9963463646484211,
+          -0.04454803372518005,
+          21.830807091645276
+        ],
+        [
+          -0.07166195079687512,
+          0.04978169763351004,
+          0.9961859000150083,
+          -39.927647573869535
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.30765144181520127,
+        "translation_m": 9.152277143049504
+      },
+      "points": 235,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 240,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 142,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 15
+      },
+      "software_elapsed_seconds": 0.041398665052838624
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9989870624058653,
+          0.039899315319064294,
+          0.02080609965297585,
+          14.431631542642378
+        ],
+        [
+          -0.04118884825983528,
+          0.9969853745265679,
+          0.06575440486497702,
+          38.19864493004378
+        ],
+        [
+          -0.01811982132163408,
+          -0.06654477903779477,
+          0.9976188974042558,
+          6.5006397078623195
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.2074182697257333e-06,
+        "translation_m": 5.112452503496413e-13
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 213,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.458010747584982e-25
+      },
+      "software_elapsed_seconds": 0.0017998110270127654
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9989870624058654,
+          0.03989931531906431,
+          0.020806099652975137,
+          14.431631542643295
+        ],
+        [
+          -0.04118884825983521,
+          0.996985374526568,
+          0.06575440486497641,
+          38.19864493004456
+        ],
+        [
+          -0.018119821321633447,
+          -0.06654477903779413,
+          0.9976188974042559,
+          6.5006397078623195
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 7.66925479386874e-13
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 402,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 213,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 213
+      },
+      "software_elapsed_seconds": 0.06005384604213759
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9990127070452754,
+          0.03926223779925121,
+          0.02078672280725753,
+          14.223508943081892
+        ],
+        [
+          -0.04061769669708899,
+          0.9967620538588209,
+          0.06939460139065792,
+          33.59608694708668
+        ],
+        [
+          -0.017994829176571716,
+          -0.07017039739192066,
+          0.9973726993720883,
+          6.155644695744968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.21151144142467487,
+        "translation_m": 4.620159798245057
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 213,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 558.2822334422885
+      },
+      "software_elapsed_seconds": 0.002581448992714286
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9990127070453152,
+          0.03926223779942794,
+          0.020786722805010874,
+          14.223508945954265
+        ],
+        [
+          -0.04061769669700969,
+          0.9967620538592019,
+          0.0693946013852318,
+          33.59608695392084
+        ],
+        [
+          -0.017994829174541104,
+          -0.07017039738640975,
+          0.9973726993725126,
+          6.155644695895035
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.2115114411179545,
+        "translation_m": 4.6201597912963415
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 348,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 213,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 213
+      },
+      "software_elapsed_seconds": 0.0545161499758251
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9994654125243794,
+          0.03245540538626418,
+          0.00394155155812769,
+          35.18057249983541
+        ],
+        [
+          -0.032659330276628776,
+          0.9966674906404495,
+          0.07474811868101841,
+          28.747873371727756
+        ],
+        [
+          -0.0015024358070160522,
+          -0.07483688770708458,
+          0.9971946564863667,
+          10.165774964954608
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.1734450385866129,
+        "translation_m": 23.092614627740502
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 118,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1253.518878262983
+      },
+      "software_elapsed_seconds": 0.005575068003963679
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9991045330448978,
+          0.03754454271557783,
+          0.019507418112474414,
+          15.974681120317051
+        ],
+        [
+          -0.0389087709108519,
+          0.9964215265477496,
+          0.0750349850300455,
+          26.781650009641744
+        ],
+        [
+          -0.016620457134013725,
+          -0.07572680334287497,
+          0.9969900760088467,
+          6.151610696400439
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5523112417901919,
+        "translation_m": 11.526083301039375
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 328,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 213,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 110
+      },
+      "software_elapsed_seconds": 0.05077451199758798
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9998058502804902,
+          0.011988282934592531,
+          0.015637864853818663,
+          21.430275829765197
+        ],
+        [
+          -0.01268148383131671,
+          0.9989060619264151,
+          0.04500954803702429,
+          56.27552021043957
+        ],
+        [
+          -0.015081170801439534,
+          -0.04519912077619765,
+          0.9988641538108757,
+          13.332905278736234
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.0337179024033167,
+        "translation_m": 20.55320643090975
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 33,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1709.014760917075
+      },
+      "software_elapsed_seconds": 0.00753852998604998
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9988730257001419,
+          0.04317352417263097,
+          0.01971611876508476,
+          16.696647037954087
+        ],
+        [
+          -0.04408912563975438,
+          0.9978426705595462,
+          0.04864312706760133,
+          58.66833730784727
+        ],
+        [
+          -0.017573489379335883,
+          -0.049457573950893556,
+          0.9986216104460819,
+          9.41056584686271
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.9982922288527822,
+        "translation_m": 20.79918919983005
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 296,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 213,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 21
+      },
+      "software_elapsed_seconds": 0.04997527599334717
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9995303148151325,
+          0.013176966800643265,
+          0.02766798350976845,
+          4.102478850759561
+        ],
+        [
+          -0.01590036275481912,
+          0.9947958545784489,
+          0.10063988363367035,
+          -7.268780856127911
+        ],
+        [
+          -0.026197866894601067,
+          -0.1010325455458205,
+          0.9945381322557243,
+          42.66205479580981
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.5260695703815457,
+        "translation_m": 59.005306067472695
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 25,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1770.7145963261166
+      },
+      "software_elapsed_seconds": 0.006675646000076085
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9989523492886937,
+          0.04339619902742072,
+          0.014524935819898874,
+          23.4476493789002
+        ],
+        [
+          -0.04403785362380996,
+          0.9979125105227566,
+          0.047236519668333865,
+          61.09255589680762
+        ],
+        [
+          -0.012444729760327473,
+          -0.047826679292435656,
+          0.9987781222318853,
+          8.564138061362428
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.1369383232055126,
+        "translation_m": 24.691653699837563
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 272,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 171,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 15
+      },
+      "software_elapsed_seconds": 0.046446325024589896
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.999515726891254,
+          0.013916629282738796,
+          0.027832339579253754,
+          3.4379966609927637
+        ],
+        [
+          -0.016605241060686084,
+          0.994965928537836,
+          0.09882847270983322,
+          -4.865039904991484
+        ],
+        [
+          -0.026316870375570546,
+          -0.09924277544611779,
+          0.9947151822785187,
+          42.95874379783777
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.4215135250377933,
+        "translation_m": 57.48507904941755
+      },
+      "points": 213,
+      "proposal_info": {
+        "inliers": 20,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1797.2493776134393
+      },
+      "software_elapsed_seconds": 0.0063410120201297104
+    },
+    {
+      "seed": 2,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9989056982795608,
+          0.04675004062683649,
+          -0.001356335508735786,
+          43.780152660176185
+        ],
+        [
+          -0.046619753656672064,
+          0.9976045552788072,
+          0.05110528207499256,
+          56.34084505495278
+        ],
+        [
+          0.0037422604952530632,
+          -0.0509861254496013,
+          0.99869235027511,
+          9.33192402535019
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.571125267151684,
+        "translation_m": 34.619232921094564
+      },
+      "points": 213,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 252,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 127,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 13
+      },
+      "software_elapsed_seconds": 0.04370424698572606
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9979514068310102,
+          0.05716050203928018,
+          0.028734415091054084,
+          57.00913044832496
+        ],
+        [
+          -0.05578804827690774,
+          0.9973597650094086,
+          -0.046488630973936414,
+          -49.486392025890076
+        ],
+        [
+          -0.031315862968485514,
+          0.0447903577457791,
+          0.9985054534550847,
+          -67.5084693881654
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 6.1592211673e-13
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 229,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.017258382619898e-25
+      },
+      "software_elapsed_seconds": 0.001955611980520189
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9979514068310102,
+          0.05716050203928019,
+          0.028734415091054535,
+          57.009130448324335
+        ],
+        [
+          -0.055788048276907726,
+          0.9973597650094086,
+          -0.04648863097393648,
+          -49.48639202588995
+        ],
+        [
+          -0.03131586296848595,
+          0.04479035774577916,
+          0.9985054534550847,
+          -67.5084693881654
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 9.974461147802705e-13
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 402,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 229,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 229
+      },
+      "software_elapsed_seconds": 0.06156603601993993
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9979210764648169,
+          0.0574654818136104,
+          0.029176078338780914,
+          56.331369917517634
+        ],
+        [
+          -0.05605312739389845,
+          0.9973155262787446,
+          -0.04711462567731965,
+          -48.72024527741146
+        ],
+        [
+          -0.03180522058820627,
+          0.04538126753716966,
+          0.9984633035320103,
+          -67.85503798295463
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.04696007570054966,
+        "translation_m": 1.0800231331869803
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 229,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 609.5800469802073
+      },
+      "software_elapsed_seconds": 0.0036659309989772737
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9979210764647408,
+          0.057465481813266966,
+          0.029176078342059895,
+          56.33136991306889
+        ],
+        [
+          -0.05605312739310167,
+          0.9973155262783376,
+          -0.04711462568688311,
+          -48.72024526434747
+        ],
+        [
+          -0.03180522059199792,
+          0.04538126754654914,
+          0.9984633035314633,
+          -67.85503798311584
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.04696007619726403,
+        "translation_m": 1.0800231452978184
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 342,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 229,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 229
+      },
+      "software_elapsed_seconds": 0.05386341497069225
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9968093929478923,
+          0.06302342609504948,
+          0.048980423580203436,
+          30.9927213914301
+        ],
+        [
+          -0.06151859901604588,
+          0.997604077627503,
+          -0.03164753191138041,
+          -69.47505044558662
+        ],
+        [
+          -0.050857606176040876,
+          0.028533350035015503,
+          0.9982982279007722,
+          -72.24267102606609
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.485842294737574,
+        "translation_m": 33.14834340933668
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 102,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1562.4558994877962
+      },
+      "software_elapsed_seconds": 0.007941260002553463
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9978183909877529,
+          0.05754992541378424,
+          0.032349106502031516,
+          52.29338400190935
+        ],
+        [
+          -0.05600813736886013,
+          0.9973374893397617,
+          -0.04670140154140587,
+          -49.03852640697668
+        ],
+        [
+          -0.034950638836547754,
+          0.04478770414219291,
+          0.9983849530129091,
+          -67.11624589402822
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.20877884279881903,
+        "translation_m": 4.7531765619257955
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 320,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 229,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 101
+      },
+      "software_elapsed_seconds": 0.051032270945142955
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9945695873486983,
+          0.06687874508656967,
+          0.07974063817581165,
+          -8.012327574944049
+        ],
+        [
+          -0.06839098184973753,
+          0.9975240616330148,
+          0.016383530291183994,
+          -143.17041102377817
+        ],
+        [
+          -0.07844749532438208,
+          -0.02174810149918622,
+          0.9966809973900937,
+          -64.0044296080257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 4.703655427568197,
+        "translation_m": 114.09103257420921
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 26,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1912.87008408762
+      },
+      "software_elapsed_seconds": 0.006871905992738903
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9979006613226722,
+          0.05701361906389314,
+          0.03071998328467613,
+          54.26705773613626
+        ],
+        [
+          -0.05550919189501824,
+          0.9973142408962242,
+          -0.04778111050143161,
+          -48.10179760891316
+        ],
+        [
+          -0.03336165084247992,
+          0.04597556032094941,
+          0.998385320458108,
+          -68.55689319271983
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.13631915768827202,
+        "translation_m": 3.2458060528028305
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 277,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 229,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 24
+      },
+      "software_elapsed_seconds": 0.04703709401655942
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9984413938226206,
+          0.042674016873444395,
+          -0.03596819964117628,
+          149.76817341278803
+        ],
+        [
+          -0.04682196460705201,
+          0.9912118854200631,
+          -0.12372025635416226,
+          61.114363278103305
+        ],
+        [
+          0.03037246667425119,
+          0.12521152696892024,
+          0.9916650577600448,
+          -68.74939943278878
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 5.8454744739160205,
+        "translation_m": 144.3547956698096
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 23,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1933.7572571232156
+      },
+      "software_elapsed_seconds": 0.007123851042706519
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9981283250188745,
+          0.05756714049553531,
+          0.02063664532290608,
+          66.92549462306734
+        ],
+        [
+          -0.056608741812914115,
+          0.9974107775724372,
+          -0.044353028450209546,
+          -53.4626836532895
+        ],
+        [
+          -0.023136489478201995,
+          0.043101799469553094,
+          0.9988027521673694,
+          -70.36583480410036
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.4808240195584118,
+        "translation_m": 11.059372074056586
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 261,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 182,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 24
+      },
+      "software_elapsed_seconds": 0.04608684399863705
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9872323233395434,
+          0.062034875698856434,
+          0.1467106470254789,
+          -94.08977562104253
+        ],
+        [
+          -0.032962069917712264,
+          0.9806724111893549,
+          -0.19286037405023543,
+          144.58555857667133
+        ],
+        [
+          -0.15583915329706807,
+          0.18556210854882066,
+          0.9701963008435812,
+          -63.65781787968717
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 10.918181971198536,
+        "translation_m": 245.98705035648175
+      },
+      "points": 229,
+      "proposal_info": {
+        "inliers": 18,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1951.0208834570317
+      },
+      "software_elapsed_seconds": 0.006063439999707043
+    },
+    {
+      "seed": 3,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9978350984820088,
+          0.05839117781768094,
+          0.030258661412292068,
+          54.61317642099456
+        ],
+        [
+          -0.05688272133497259,
+          0.997201130039817,
+          -0.048520740522376746,
+          -47.00929769189925
+        ],
+        [
+          -0.033007154541517536,
+          0.04669450289248109,
+          0.9983637368958752,
+          -67.48989260915118
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.16058510920567548,
+        "translation_m": 3.4462932459801627
+      },
+      "points": 229,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 240,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 138,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 15
+      },
+      "software_elapsed_seconds": 0.04167402698658407
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9983138888246764,
+          0.01155829362110024,
+          -0.0568839628394503,
+          -13.811196919549637
+        ],
+        [
+          -0.01438075424884455,
+          0.9986725040679145,
+          -0.049461333645135885,
+          -51.294955892443184
+        ],
+        [
+          0.05623676099301833,
+          0.05019597062802497,
+          0.9971548481784184,
+          44.68788868516731
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 3.6515260596643195e-13
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 217,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.0773380291615305e-25
+      },
+      "software_elapsed_seconds": 0.0018711129669100046
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9983138888246764,
+          0.011558293621100255,
+          -0.056883962839450554,
+          -13.811196919549303
+        ],
+        [
+          -0.014380754248844566,
+          0.9986725040679145,
+          -0.04946133364513582,
+          -51.29495589244325
+        ],
+        [
+          0.05623676099301859,
+          0.05019597062802491,
+          0.9971548481784184,
+          44.68788868516708
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 2.441828467772152e-13
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 398,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 217,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 217
+      },
+      "software_elapsed_seconds": 0.06066202302463353
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9985120397870328,
+          0.011549565093157575,
+          -0.05329459584702564,
+          -18.14497469015113
+        ],
+        [
+          -0.01420970651303981,
+          0.9986577195898944,
+          -0.04980806505301319,
+          -50.6749312544059
+        ],
+        [
+          0.052647798065561684,
+          0.05049125319964673,
+          0.9973358725670991,
+          45.25581117699289
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.20687362563912484,
+        "translation_m": 4.414589026563716
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 217,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 543.8019817922132
+      },
+      "software_elapsed_seconds": 0.0034860529704019427
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9985120397940351,
+          0.011549565103904565,
+          -0.05329459571350471,
+          -18.14497485528659
+        ],
+        [
+          -0.014209706513722263,
+          0.9986577195930078,
+          -0.04980806499039599,
+          -50.674931330332754
+        ],
+        [
+          0.05264779793257381,
+          0.050491253135610537,
+          0.9973358725773613,
+          45.2558111718522
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.20687363292936425,
+        "translation_m": 4.414589177351107
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 338,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 217,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 217
+      },
+      "software_elapsed_seconds": 0.053235296974889934
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9941227414430426,
+          0.004583987938634803,
+          -0.10816174000240522,
+          50.273184537617794
+        ],
+        [
+          -0.009336562863148901,
+          0.9990109260226157,
+          -0.04347411047207883,
+          -59.21034785287613
+        ],
+        [
+          0.10785547524197334,
+          0.04422846076922071,
+          0.9931822792007082,
+          52.38514378083937
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.997548216876533,
+        "translation_m": 65.02852537650571
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 108,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1305.4806557788395
+      },
+      "software_elapsed_seconds": 0.006528511003125459
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9968897926256717,
+          0.00934785800346206,
+          -0.07825189396744671,
+          11.899502530096626
+        ],
+        [
+          -0.013027917182127183,
+          0.9988263006584567,
+          -0.046650771556727984,
+          -56.152762744699714
+        ],
+        [
+          0.07772396498275837,
+          0.047525137176966624,
+          0.995841526852375,
+          43.278463112126246
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.2446846146858879,
+        "translation_m": 26.203527129945662
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 322,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 217,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 95
+      },
+      "software_elapsed_seconds": 0.051196657004766166
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9998895203439245,
+          0.004230257425174636,
+          -0.014249632574679925,
+          -71.27628366367229
+        ],
+        [
+          -0.0047592559153111485,
+          0.9992929038368015,
+          -0.037296673102914596,
+          -45.66059347245705
+        ],
+        [
+          0.01408178218583146,
+          0.037360370227419476,
+          0.9992026351781409,
+          12.342553700456847
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.5819621720538177,
+        "translation_m": 66.18310154157517
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 34,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1660.6307843765821
+      },
+      "software_elapsed_seconds": 0.007141016016248614
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.999208080633843,
+          0.010537858314357265,
+          -0.03836880423179661,
+          -36.29709808729427
+        ],
+        [
+          -0.012723258390570235,
+          0.9982835798113924,
+          -0.057166537195095256,
+          -41.414867769662436
+        ],
+        [
+          0.03770053437231608,
+          0.05760944211757268,
+          0.9976270956058401,
+          48.29552937067251
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.1500063729862537,
+        "translation_m": 24.824322024079965
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 298,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 217,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 15
+      },
+      "software_elapsed_seconds": 0.04949754098197445
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9998911465327277,
+          0.004099403238785779,
+          -0.014173566190380883,
+          -71.29994398403346
+        ],
+        [
+          -0.004602809012904888,
+          0.9993530593283617,
+          -0.03566899157860632,
+          -47.417182972602035
+        ],
+        [
+          0.014018175154348618,
+          0.03573034710340497,
+          0.9992631450529997,
+          11.418796661238957
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.6147950511779645,
+        "translation_m": 66.53439445849557
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 30,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1695.102535092104
+      },
+      "software_elapsed_seconds": 0.006991167028900236
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.999180758529461,
+          0.011623765490775683,
+          -0.0387646728388928,
+          -35.86825324872932
+        ],
+        [
+          -0.013825541524240788,
+          0.9982771350174716,
+          -0.0570229436531495,
+          -41.593192681719316
+        ],
+        [
+          0.038035065216881575,
+          0.05751217068694435,
+          0.9976200098418352,
+          49.90720351757568
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.125520609585376,
+        "translation_m": 24.655206156618828
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 274,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 174,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 9
+      },
+      "software_elapsed_seconds": 0.04469284001970664
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9856876054657906,
+          0.02106910862636239,
+          -0.16726038709989388,
+          106.80743098512384
+        ],
+        [
+          -0.03169255636664677,
+          0.9976282962201983,
+          -0.06110126391271474,
+          -30.945215716689226
+        ],
+        [
+          0.16557634584101294,
+          0.06552766776312767,
+          0.9840175803589397,
+          90.41093296029476
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.438892948376211,
+        "translation_m": 130.58928784786292
+      },
+      "points": 217,
+      "proposal_info": {
+        "inliers": 17,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1859.9736976577212
+      },
+      "software_elapsed_seconds": 0.00615315098548308
+    },
+    {
+      "seed": 4,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9988265522948425,
+          0.010272216869385448,
+          -0.04732863817380023,
+          -25.4030730651548
+        ],
+        [
+          -0.013010172577498742,
+          0.9982370331872141,
+          -0.05790993855196578,
+          -40.718389196757315
+        ],
+        [
+          0.0466503359077069,
+          0.0584577380179653,
+          0.9971992975456416,
+          47.86706409740668
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.732435139304037,
+        "translation_m": 16.01069992052629
+      },
+      "points": 217,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 250,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 131,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 10
+      },
+      "software_elapsed_seconds": 0.04304270900320262
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9960017409071621,
+          -0.07961102577186868,
+          0.04052920780687862,
+          -15.99162044953391
+        ],
+        [
+          0.0783558165343318,
+          0.9964222067569503,
+          0.031672573259013924,
+          41.37715503518548
+        ],
+        [
+          -0.042905688727025784,
+          -0.028370238933789867,
+          0.9986762395379691,
+          41.25625411648275
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 1.0359374380061108e-13
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 224,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1.9114415277867204e-25
+      },
+      "software_elapsed_seconds": 0.0019074290175922215
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9960017409071622,
+          -0.07961102577186865,
+          0.04052920780687829,
+          -15.991620449533483
+        ],
+        [
+          0.0783558165343318,
+          0.9964222067569503,
+          0.031672573259013695,
+          41.37715503518578
+        ],
+        [
+          -0.0429056887270254,
+          -0.028370238933789732,
+          0.9986762395379692,
+          41.25625411648275
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 4.5065231263549306e-13
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 392,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 224
+      },
+      "software_elapsed_seconds": 0.060069522995036095
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9960031597940245,
+          -0.07911685784526971,
+          0.04145151969482231,
+          -17.130654284095982
+        ],
+        [
+          0.0778079472627549,
+          0.996445180410521,
+          0.03229436141806503,
+          40.57080110654364
+        ],
+        [
+          -0.04385919542211427,
+          -0.028940028357547255,
+          0.9986184685532253,
+          40.90828758428029
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.07039859805841221,
+        "translation_m": 1.438292543972358
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 224,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 588.7207590543412
+      },
+      "software_elapsed_seconds": 0.002872279961593449
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.996003159790179,
+          -0.07911685784842022,
+          0.04145151978121093,
+          -17.13065439120674
+        ],
+        [
+          0.0778079472579253,
+          0.9964451804068567,
+          0.03229436154276636,
+          40.5708009507854
+        ],
+        [
+          -0.043859195518011616,
+          -0.02894002847510447,
+          0.9986184685456068,
+          40.908287580364004
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.07039860545139641,
+        "translation_m": 1.4382927170677329
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 338,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 224
+      },
+      "software_elapsed_seconds": 0.05391521501587704
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9954756740638424,
+          -0.08730695895782761,
+          0.037492362751296845,
+          -13.406720724409416
+        ],
+        [
+          0.08610367014832235,
+          0.9957528590863565,
+          0.03259450273183518,
+          41.50524356501886
+        ],
+        [
+          -0.04017885431576579,
+          -0.029218804542330452,
+          0.9987651981957468,
+          36.852336120789005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.47631056499313834,
+        "translation_m": 5.108092302730817
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 100,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1541.1706239751034
+      },
+      "software_elapsed_seconds": 0.00803326303139329
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9959409153503226,
+          -0.07986640710139763,
+          0.04150963921639601,
+          -17.24706683340252
+        ],
+        [
+          0.07862449957160068,
+          0.9964302897070721,
+          0.030738669805243254,
+          42.55395052126647
+        ],
+        [
+          -0.043816448946450495,
+          -0.02735022433169849,
+          0.9986651511045777,
+          41.08244352029442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.07943925240801294,
+        "translation_m": 1.729509572733479
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 320,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 100
+      },
+      "software_elapsed_seconds": 0.05145074299070984
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9887390216438222,
+          -0.1146180369470373,
+          0.09621773581427108,
+          -88.20393869621734
+        ],
+        [
+          0.10335616241416452,
+          0.9879927078596252,
+          0.11483863856395218,
+          -55.46046807217665
+        ],
+        [
+          -0.10822500066913428,
+          -0.10360074721068757,
+          0.9887134238026472,
+          53.616030483349505
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.0143986584083216,
+        "translation_m": 121.42861370979568
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 24,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1881.0547066874503
+      },
+      "software_elapsed_seconds": 0.006673503026831895
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.996040741133522,
+          -0.08118239607840848,
+          0.036225137255123725,
+          -10.202989778364417
+        ],
+        [
+          0.0798724850355415,
+          0.9961456532105298,
+          0.036252223711298874,
+          36.31008955011589
+        ],
+        [
+          -0.03902855539770008,
+          -0.033215300039820046,
+          0.9986858944166747,
+          40.551029951434884
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.3687749538677291,
+        "translation_m": 7.7253309832106725
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 286,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 224,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 29
+      },
+      "software_elapsed_seconds": 0.048718228994403034
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9894294642769942,
+          -0.11398833515097186,
+          0.08964370959554215,
+          -78.99860091398776
+        ],
+        [
+          0.10358272013300114,
+          0.9881546936852781,
+          0.11322950780429339,
+          -53.3097276190434
+        ],
+        [
+          -0.10148869548077037,
+          -0.10274707196443067,
+          0.9895165910141919,
+          52.04221807437125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 5.737886919599798,
+        "translation_m": 114.24457252983473
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 20,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1903.67035426669
+      },
+      "software_elapsed_seconds": 0.006330934003926814
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9962112344787137,
+          -0.0816948707011502,
+          0.02981818907176762,
+          -2.266973530945796
+        ],
+        [
+          0.08063991842373805,
+          0.9961279967068576,
+          0.03501739187026201,
+          37.74832775227331
+        ],
+        [
+          -0.032563474246618755,
+          -0.03248018284900765,
+          0.9989417690071253,
+          38.47782975506584
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.6526817530893443,
+        "translation_m": 14.465613102154748
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 270,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 180,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 26
+      },
+      "software_elapsed_seconds": 0.044885537994559854
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9978597837884582,
+          -0.0639321621814152,
+          0.01373064224502222,
+          28.718441510498202
+        ],
+        [
+          0.06216719278272098,
+          0.99263754436554,
+          0.10395165057596166,
+          -49.720132230826465
+        ],
+        [
+          -0.020275404784308754,
+          -0.10287557608470559,
+          0.994487568452252,
+          52.16266961682413
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 4.53965371181856,
+        "translation_m": 102.06201686603251
+      },
+      "points": 224,
+      "proposal_info": {
+        "inliers": 21,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1909.257973904534
+      },
+      "software_elapsed_seconds": 0.006709848006721586
+    },
+    {
+      "seed": 5,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9959105128795537,
+          -0.08106615294539081,
+          0.03988143907407171,
+          -14.512743153317663
+        ],
+        [
+          0.07950599506580559,
+          0.9960607569979605,
+          0.03926531697625729,
+          32.133929187083254
+        ],
+        [
+          -0.04290742458573442,
+          -0.035933928469962295,
+          0.9984326245171155,
+          42.72409421432735
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.44180577493869483,
+        "translation_m": 9.475170536150273
+      },
+      "points": 224,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 242,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 135,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 14
+      },
+      "software_elapsed_seconds": 0.04104429599829018
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.998118403771427,
+          -0.02259987167576343,
+          -0.056999103966795445,
+          3.4493999856348836
+        ],
+        [
+          0.02144516682771452,
+          0.9995538547712343,
+          -0.020789329755858718,
+          29.10089453089123
+        ],
+        [
+          0.05744351027322428,
+          0.019527857337797355,
+          0.9981577560262128,
+          15.621151201648217
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 2.142259835363992e-13
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 241,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.646533673707868e-25
+      },
+      "software_elapsed_seconds": 0.001939595036674291
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.998118403771427,
+          -0.02259987167576341,
+          -0.056999103966794966,
+          3.4493999856342796
+        ],
+        [
+          0.02144516682771451,
+          0.9995538547712343,
+          -0.020789329755858517,
+          29.10089453089094
+        ],
+        [
+          0.0574435102732238,
+          0.019527857337797147,
+          0.9981577560262128,
+          15.621151201648217
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 7.395449492225542e-13
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 410,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 241,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 241
+      },
+      "software_elapsed_seconds": 0.06307833595201373
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9980588670268092,
+          -0.02097542187323506,
+          -0.05863897702383455,
+          5.605655165330347
+        ],
+        [
+          0.01996887617666409,
+          0.999643934901089,
+          -0.017698796561018353,
+          25.741006397483652
+        ],
+        [
+          0.05898933745519643,
+          0.016493486372112773,
+          0.9981223486997423,
+          14.8422554225981
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.21692633906282427,
+        "translation_m": 4.067550037012487
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 241,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 598.3806231344317
+      },
+      "software_elapsed_seconds": 0.0032172680366784334
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.99805886702583,
+          -0.020975421872517643,
+          -0.05863897704075785,
+          5.60565518686559
+        ],
+        [
+          0.01996887617574991,
+          0.9996439349011326,
+          -0.017698796559589246,
+          25.741006395612438
+        ],
+        [
+          0.05898933747207359,
+          0.016493486370384794,
+          0.9981223486987734,
+          14.842255423398228
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.21692633956350457,
+        "translation_m": 4.067550049821016
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 340,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 241,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 241
+      },
+      "software_elapsed_seconds": 0.054002226039301604
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9998605429334851,
+          -0.002646220170123066,
+          -0.016489154119226412,
+          -47.508841388750625
+        ],
+        [
+          0.0026950556516439454,
+          0.9999920460473293,
+          0.0029401559670720707,
+          -4.420972273610094
+        ],
+        [
+          0.016481242665251597,
+          -0.0029841851295456393,
+          0.9998597218006743,
+          4.420822725625385
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.906253450303576,
+        "translation_m": 62.01536322557241
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 146,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 897.2845167520956
+      },
+      "software_elapsed_seconds": 0.0032614049850963056
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.998363364613325,
+          -0.019083323420876486,
+          -0.05391121372381823,
+          -0.8308671238328174
+        ],
+        [
+          0.018223369232687456,
+          0.9996994596676736,
+          -0.01639814483320186,
+          23.33040950290401
+        ],
+        [
+          0.05420794233108392,
+          0.015388863095620538,
+          0.998411078604827,
+          14.584542342227678
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.3608030308066734,
+        "translation_m": 7.259045523624071
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 342,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 241,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 143
+      },
+      "software_elapsed_seconds": 0.054215896991081536
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9989718546898098,
+          -0.014381811433416717,
+          0.04299298823639965,
+          -120.14188038501705
+        ],
+        [
+          0.016286904062060188,
+          0.9988857259266957,
+          -0.044294957906871636,
+          45.702066150035584
+        ],
+        [
+          -0.042308040532206194,
+          0.04494963892838214,
+          0.9980929614352229,
+          39.70235130541528
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 5.907542784276437,
+        "translation_m": 127.00514824692354
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 36,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1951.2690664617737
+      },
+      "software_elapsed_seconds": 0.007444065005984157
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9976846198821335,
+          -0.02874362988682202,
+          -0.06163767509869407,
+          9.210479808656885
+        ],
+        [
+          0.027112070727557107,
+          0.9992637637383255,
+          -0.027145277681025058,
+          36.15033107836668
+        ],
+        [
+          0.062372549022039495,
+          0.025411301038030465,
+          0.9977293876137195,
+          20.27526553333746
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5601254522696497,
+        "translation_m": 10.224743350155393
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 322,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 239,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 29
+      },
+      "software_elapsed_seconds": 0.05411104700760916
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9997781399836879,
+          0.008293178408922255,
+          0.019362179697416076,
+          -88.58169794477311
+        ],
+        [
+          -0.006546953664692979,
+          0.9960484477060324,
+          -0.08856990019253554,
+          107.57007135011915
+        ],
+        [
+          -0.020020195015773665,
+          0.08842348677970761,
+          0.995881759435953,
+          41.80969116550591
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.137951863321254,
+        "translation_m": 123.74560324472999
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 26,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1998.4859236201928
+      },
+      "software_elapsed_seconds": 0.00719731004210189
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9976423154417141,
+          -0.027230538678576367,
+          -0.06299450931128811,
+          11.18095006902756
+        ],
+        [
+          0.02544842115725942,
+          0.9992576833939972,
+          -0.028921618880428695,
+          39.25089439646012
+        ],
+        [
+          0.06373529870250991,
+          0.02725032002264514,
+          0.9975947232007422,
+          19.6674415316902
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.6268652356461483,
+        "translation_m": 13.385508186021397
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 284,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 192,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 23
+      },
+      "software_elapsed_seconds": 0.04874721204396337
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9986785692046435,
+          -0.018924247349433078,
+          0.04778062655118158,
+          -127.44641240932886
+        ],
+        [
+          0.020874401699456382,
+          0.9989553238212637,
+          -0.040651203707194106,
+          41.702117393113774
+        ],
+        [
+          -0.04696141783481132,
+          0.0415948779468282,
+          0.9980303058342129,
+          37.318392017570886
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 6.117085674329582,
+        "translation_m": 133.2789359920954
+      },
+      "points": 241,
+      "proposal_info": {
+        "inliers": 22,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2030.418764705022
+      },
+      "software_elapsed_seconds": 0.006562086986377835
+    },
+    {
+      "seed": 6,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9977983229824086,
+          -0.030584096649556802,
+          -0.05884827682798926,
+          6.248727921606715
+        ],
+        [
+          0.029167090963609546,
+          0.9992671171252535,
+          -0.024789300855517383,
+          32.10425797696768
+        ],
+        [
+          0.05956330630693376,
+          0.023018289778248015,
+          0.9979591028080614,
+          17.980707852193973
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5119835886556213,
+        "translation_m": 4.735391902416776
+      },
+      "points": 241,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 244,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 144,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 17
+      },
+      "software_elapsed_seconds": 0.041867020016070455
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9954642936959379,
+          -0.05479154203510857,
+          0.07777356168944798,
+          26.653896200221617
+        ],
+        [
+          0.05469372998394184,
+          0.9984974271303058,
+          0.0033887924992981214,
+          -61.193850085003874
+        ],
+        [
+          -0.07784237841234747,
+          0.0008803042511362573,
+          0.9969652898609531,
+          56.23089364972952
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 5.528552169359644e-13
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 210,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 3.227640170929874e-25
+      },
+      "software_elapsed_seconds": 0.0018611419945955276
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 0,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.995464293695938,
+          -0.0547915420351086,
+          0.07777356168944755,
+          26.65389620022212
+        ],
+        [
+          0.054693729983941904,
+          0.9984974271303059,
+          0.0033887924992976556,
+          -61.1938500850033
+        ],
+        [
+          -0.07784237841234704,
+          0.0008803042511366268,
+          0.9969652898609532,
+          56.230893649729296
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.0,
+        "translation_m": 3.6866145396381985e-13
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 408,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 210,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 210
+      },
+      "software_elapsed_seconds": 0.061208439990878105
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9953314735105251,
+          -0.054407053962814055,
+          0.07971907123426845,
+          24.10816559838122
+        ],
+        [
+          0.054248326750684826,
+          0.9985188218236657,
+          0.0041571033941458085,
+          -62.30436329181538
+        ],
+        [
+          -0.07982716883441289,
+          0.0001869303777469306,
+          0.9968087018946594,
+          55.925009054809834
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.12278090332038125,
+        "translation_m": 2.7941992171390617
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 210,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 551.4440868149713
+      },
+      "software_elapsed_seconds": 0.0032864019740372896
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 4,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9953314735051855,
+          -0.05440705396202866,
+          0.07971907130147231,
+          24.10816551683091
+        ],
+        [
+          0.054248326749720355,
+          0.9985188218237082,
+          0.004157103396508338,
+          -62.304363294852834
+        ],
+        [
+          -0.07982716890164589,
+          0.00018693037898641872,
+          0.9968087018892751,
+          55.92500905930342
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.12278090690029286,
+        "translation_m": 2.7941992921529475
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 344,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 210,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 210
+      },
+      "software_elapsed_seconds": 0.052788257016800344
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9939601884493823,
+          -0.04569741465571517,
+          0.09977419541871596,
+          -0.024144779946354333
+        ],
+        [
+          0.048250424702641834,
+          0.9985628816993625,
+          -0.02332526116209036,
+          -31.076875063052746
+        ],
+        [
+          -0.09856490396527146,
+          0.027998528283619827,
+          0.9947366697374075,
+          55.71208778148343
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.0233611650183407,
+        "translation_m": 40.23703784501605
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 91,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1454.0303808738279
+      },
+      "software_elapsed_seconds": 0.007537834986578673
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 8,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9957125397711916,
+          -0.054822221779262374,
+          0.07450545041531303,
+          30.54519769211234
+        ],
+        [
+          0.054743520985157536,
+          0.9984956380633112,
+          0.0030996255723158323,
+          -60.80927619620632
+        ],
+        [
+          -0.07456329561219055,
+          0.0009923546373689488,
+          0.9972157891749021,
+          55.895069682141866
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.18854110738356106,
+        "translation_m": 3.9246531202057096
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 324,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 210,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 94
+      },
+      "software_elapsed_seconds": 0.0507938819937408
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9954007952518563,
+          -0.03156071505897032,
+          0.09044986499126721,
+          8.602593919254787
+        ],
+        [
+          0.03967513931222019,
+          0.995208283323611,
+          -0.08936641497020575,
+          47.09593493452606
+        ],
+        [
+          -0.08719598690609505,
+          0.09254401152445024,
+          0.9918832924283151,
+          77.82816865157542
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 5.446026566619504,
+        "translation_m": 111.88820018715157
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 26,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1733.1926998766276
+      },
+      "software_elapsed_seconds": 0.007495385012589395
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.0,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9958475636332687,
+          -0.05447558155583903,
+          0.07293861131003325,
+          32.77844097117466
+        ],
+        [
+          0.05491739677845279,
+          0.9984826298801777,
+          -0.004064155341777156,
+          -52.560222260136094
+        ],
+        [
+          -0.07260653921487349,
+          0.008052877853118305,
+          0.9973281514233526,
+          55.77082214771667
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.509598669060325,
+        "translation_m": 10.595340667326028
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 310,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 210,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 25
+      },
+      "software_elapsed_seconds": 0.05007030797423795
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.9956130756585106,
+          -0.03039156638387189,
+          0.08849269049212724,
+          11.657750068405974
+        ],
+        [
+          0.03888845945187054,
+          0.994627627922504,
+          -0.09593523593921698,
+          54.09883065916005
+        ],
+        [
+          -0.08510165274106574,
+          0.09895571972345872,
+          0.991446152967851,
+          81.30561022917027
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 5.809220906678445,
+        "translation_m": 118.93707598357061
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 18,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1774.2272481696803
+      },
+      "software_elapsed_seconds": 0.006747765000909567
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.2,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9956542601889254,
+          -0.05411975595527911,
+          0.07578684703155728,
+          29.1069371824562
+        ],
+        [
+          0.05479205582228236,
+          0.9984745062602158,
+          -0.006818428498272129,
+          -49.51192114059456
+        ],
+        [
+          -0.07530222298452766,
+          0.010941314535246088,
+          0.9971007285374077,
+          57.25394280178102
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 0.5958879293754271,
+        "translation_m": 11.980463408827351
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 276,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 168,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 16
+      },
+      "software_elapsed_seconds": 0.04643369000405073
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "strict3_initializer",
+      "raw_trial_pose": [
+        [
+          0.996405700841718,
+          -0.05023430882161782,
+          0.06820699045801029,
+          29.152220858720924
+        ],
+        [
+          0.05332254555476057,
+          0.9975969967186542,
+          -0.044237295051594905,
+          1.1782476161912427
+        ],
+        [
+          -0.06582085889507414,
+          0.04771526333507664,
+          0.9966899558935963,
+          65.31437223960575
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 2.7843463425045365,
+        "translation_m": 63.079551211461315
+      },
+      "points": 210,
+      "proposal_info": {
+        "inliers": 16,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1797.8633158243529
+      },
+      "software_elapsed_seconds": 0.005926490004640073
+    },
+    {
+      "seed": 7,
+      "stride_native_px": 16,
+      "outlier_fraction": 0.4,
+      "method": "quantization_disc_initializer",
+      "raw_trial_pose": [
+        [
+          0.9961687199864688,
+          -0.05789937671101576,
+          0.06554039591729777,
+          41.21324326257995
+        ],
+        [
+          0.05897616590921527,
+          0.9981524142616792,
+          -0.014614026078731126,
+          -40.04142798741164
+        ],
+        [
+          -0.06457316141531999,
+          0.018423356916072706,
+          0.9977428961134096,
+          55.09559000769082
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_error": {
+        "rotation_deg": 1.2727152078792372,
+        "translation_m": 25.703860835222986
+      },
+      "points": 210,
+      "proposal_info": {
+        "stage": "initial_quantization_disc_proposal_only",
+        "iterations_requested": 128,
+        "minimal_sets_executed": 128,
+        "roots_evaluated": 250,
+        "half_grid_native_px": 8.0,
+        "quantization_disc_native_px": 11.313708498984761,
+        "final_reprojection_threshold_native_px": 3.0,
+        "accepted": false,
+        "inliers": 125,
+        "reason": "raw_trial_pose_requires_native_refinement_and_final_estimator",
+        "strict3_support_diagnostic": 18
+      },
+      "software_elapsed_seconds": 0.0424456549808383
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "source_sha256": {
+    "diagnose_pose_quantization_v73.py": "dce9f1c3a6bda61b7683a1c241bda02eb5b8351ce7b9bc0826b96be6bbf4c9f0",
+    "solar_pose_proposals_v73.py": "7b0b649b5310dc08ff3f9f2c61e8035cff2a9dbfae0994cc238808352151ff73",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1"
+  },
+  "final_estimator_modified": false,
+  "model_training": false,
+  "lunar_images_read": 0,
+  "scope": "Procedural 3D geometry and synthetic quantization/outliers. Raw INITIAL trial poses only; neither final navigation results nor a learned/SOTA improvement. Software diagnostic timings are not CPU efficiency measurements."
+}

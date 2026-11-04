@@ -1,0 +1,199 @@
+{
+  "prepared_only": true,
+  "profiles": [
+    {
+      "name": "historical_original_native512",
+      "backend": "historical_compact",
+      "method": "historical_original_native512",
+      "prepared_only": true,
+      "available": false,
+      "unavailable_reason": "Named historical weights exist; fresh source-pinned native512 adapter control outputs are not produced by this preparation task.",
+      "publication_commit": "REQUIRES_PUBLIC_ADAPTER_FREEZE",
+      "cpu_threads": 2,
+      "native_size": 512,
+      "calibration_or_final_access": false,
+      "configuration": {
+        "model_directory": "runs/contrastive-terrain-train-v1",
+        "checkpoint": "selected",
+        "input_profile": "raw_native512"
+      },
+      "artifact_sha256": {
+        "runs/contrastive-terrain-train-v1/selected.pt": "ab555480bf44c878f509ffacbe2778f35bbd48d1f1b4b04902fb6e858d9ca416",
+        "runs/contrastive-terrain-train-v1/training.json": "820f997ebe0c70944de2594a5f757aa05247c1af197daec97f343b931e53feac",
+        "runs/contrastive-terrain-train-v1/COMPLETE.json": "110266bc97dc1332d616c33035d315ff4bbf44db1130925a18c5d49b41eabe81"
+      },
+      "source_sha256": {
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+        "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+        "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+        "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+        "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+        "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+        "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+        "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+        "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+        "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+        "raw_correspondences_v2.py": "4bc2c99fb9cf6500c52f4fdf77b5ed897608d0849ccf42a88d5311eb752e067a",
+        "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977"
+      },
+      "historical_algorithm_source_sha256": {
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f"
+      },
+      "native_control": {
+        "protocol": "reports/historical_original_native512-native-control-protocol-v73.json",
+        "outputs": "reports/historical_original_native512-native-control-outputs-v73.json",
+        "receipt": "reports/historical_original_native512-native-control-receipt-v73.json",
+        "protocol_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "outputs_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "receipt_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL"
+      }
+    },
+    {
+      "name": "historical_frozen_surface",
+      "backend": "historical_compact",
+      "method": "historical_frozen_surface",
+      "prepared_only": true,
+      "available": false,
+      "unavailable_reason": "Named historical weights exist; fresh source-pinned native512 adapter control outputs are not produced by this preparation task.",
+      "publication_commit": "REQUIRES_PUBLIC_ADAPTER_FREEZE",
+      "cpu_threads": 2,
+      "native_size": 512,
+      "calibration_or_final_access": false,
+      "configuration": {
+        "model_directory": "runs/compact-v2-expanded-20261030",
+        "input_profile": "coarse128_native512",
+        "surface_iterations": 2
+      },
+      "artifact_sha256": {
+        "runs/compact-v2-expanded-20261030/selected.pt": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+        "runs/compact-v2-expanded-20261030/training.json": "80e37a58aa24873d0bbc2fb2b6eb35ce307bfbb9ef0d3e546aec73e35480aff4",
+        "runs/compact-v2-expanded-20261030/COMPLETE.json": "16776ae4749ecdc2c9141b19744da48233bfbbfcea71bbb6a9de51fb63038690"
+      },
+      "source_sha256": {
+        "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+        "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+        "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+        "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+        "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+        "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+        "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+        "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+        "localization_refiner_v3.py": "da741c1dbb9525f7a9f7e8376ff0c7c71b06acde5495d2a0d53731d07d83e2ed",
+        "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+        "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+        "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+        "lunargeo_dataset.py": "beb03961483ace48c63a4bae1e68b28abf5a9317c1c5ba903239e74fe1dad59b",
+        "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+        "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+        "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+        "remote_archive.py": "5d4cd7a286d32d86fa54993b7386b25361f996922868a36ba8d2d5c255302e73",
+        "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+        "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977",
+        "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59"
+      },
+      "historical_algorithm_source_sha256": {
+        "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+        "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+        "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+        "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+        "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+        "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+        "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+        "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+        "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892"
+      },
+      "native_control": {
+        "protocol": "reports/historical_frozen_surface-native-control-protocol-v73.json",
+        "outputs": "reports/historical_frozen_surface-native-control-outputs-v73.json",
+        "receipt": "reports/historical_frozen_surface-native-control-receipt-v73.json",
+        "protocol_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "outputs_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "receipt_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL"
+      }
+    },
+    {
+      "name": "historical_north_context",
+      "backend": "historical_compact",
+      "method": "historical_north_context",
+      "prepared_only": true,
+      "available": false,
+      "unavailable_reason": "Named historical weights exist; fresh source-pinned native512 adapter control outputs are not produced by this preparation task.",
+      "publication_commit": "REQUIRES_PUBLIC_ADAPTER_FREEZE",
+      "cpu_threads": 2,
+      "native_size": 512,
+      "calibration_or_final_access": false,
+      "configuration": {
+        "coarse_directory": "runs/compact-v2-expanded-20261030",
+        "selected_checkpoint": "runs/north-v61-context-study/cross_adaptation-20261101/selected.pt",
+        "variant": "cross_adaptation",
+        "input_profile": "coarse128_native512",
+        "surface_iterations": 2
+      },
+      "artifact_sha256": {
+        "runs/compact-v2-expanded-20261030/selected.pt": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+        "runs/compact-v2-expanded-20261030/training.json": "80e37a58aa24873d0bbc2fb2b6eb35ce307bfbb9ef0d3e546aec73e35480aff4",
+        "runs/compact-v2-expanded-20261030/COMPLETE.json": "16776ae4749ecdc2c9141b19744da48233bfbbfcea71bbb6a9de51fb63038690",
+        "runs/north-v61-context-study/cross_adaptation-20261101/selected.pt": "ec7b9f77f695bcbc6c4377aa3f1b49687bf2f60bc50b04389ea7e5f09d1c5f09",
+        "runs/north-v61-context-study/cross_adaptation-20261101/summary.json": "81f9ae66ed3f6addd0e3c1bc33e1b119b651ae8b8ae6bac3975e9adebc11c3e3",
+        "runs/north-v61-context-study/cross_adaptation-20261101/COMPLETE.json": "06f5da6a4632af1208f7d7aab5638b7c04b4ae8bf1bccc34a4dcff0f3028666b",
+        "runs/north-v61-context-study/cross_adaptation-20261101/selected_controls.json": "7820290a2f22cada0b8732fdd782d8667800a8d1235487565e953f9498a3acab",
+        "reports/north_context_completed_results_v61.json": "51c10291a2f5ff68a038ccd7c3900889da6460f4199c33d5e8bd5a343a840715",
+        "reports/north_context_study_audit_v61.json": "97e9d9c8c1f9e1bd1d98823c2ecfcffafed534d788eb2e63e78f74cfbd337374",
+        "runs/north-v61-context-study/protocol.json": "79b078edf58769a901ac8f9fafb1c42e171271a26308b6f37be60a7851f98784"
+      },
+      "source_sha256": {
+        "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+        "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+        "context_supervision_v15.py": "860a1370c076149661961f174ba44cc2758602ae7daca5e2be1985b72da2cf90",
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+        "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+        "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+        "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+        "global_context_v15.py": "3ebbb0576f8bffde112a24f8a5f3e7d4271af8d2af1cb1e35462879bd0388b3d",
+        "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+        "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+        "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+        "localization_refiner_v3.py": "da741c1dbb9525f7a9f7e8376ff0c7c71b06acde5495d2a0d53731d07d83e2ed",
+        "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+        "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+        "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+        "lunargeo_dataset.py": "beb03961483ace48c63a4bae1e68b28abf5a9317c1c5ba903239e74fe1dad59b",
+        "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+        "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+        "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+        "remote_archive.py": "5d4cd7a286d32d86fa54993b7386b25361f996922868a36ba8d2d5c255302e73",
+        "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+        "search_window_learning_v18.py": "f2f9abbd394dfbc7a4a8c1b933261dca143ec624d245bb1890ceaec1740e2bda",
+        "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977",
+        "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59"
+      },
+      "historical_algorithm_source_sha256": {
+        "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+        "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+        "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+        "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+        "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+        "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+        "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+        "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+        "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+        "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+        "context_supervision_v15.py": "860a1370c076149661961f174ba44cc2758602ae7daca5e2be1985b72da2cf90",
+        "global_context_v15.py": "3ebbb0576f8bffde112a24f8a5f3e7d4271af8d2af1cb1e35462879bd0388b3d",
+        "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+        "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59",
+        "search_window_learning_v18.py": "f2f9abbd394dfbc7a4a8c1b933261dca143ec624d245bb1890ceaec1740e2bda"
+      },
+      "native_control": {
+        "protocol": "reports/historical_north_context-native-control-protocol-v73.json",
+        "outputs": "reports/historical_north_context-native-control-outputs-v73.json",
+        "receipt": "reports/historical_north_context-native-control-receipt-v73.json",
+        "protocol_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "outputs_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL",
+        "receipt_sha256": "REQUIRES_ACTUAL_NATIVE_CONTROL"
+      }
+    }
+  ]
+}

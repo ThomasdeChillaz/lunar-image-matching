@@ -1,0 +1,46 @@
+{
+  "new_files": {
+    "native_pretrained_adapters_v73.py": "9a7e564c9630e27d385eb8ddd3ca60e35d9ff98ecea7bdfa5113c70cd0a60103",
+    "inspect_native_pretrained_controls_v73.py": "21c6f6fc2dedd10952455dd393c06e5f4850b2af5229dee905d9b3f290312767",
+    "test_native_pretrained_adapters_v73.py": "19f919ecacad819b392ee1b920475e65a7aeb38e1d79c32eee7aa28cc4ba7f11"
+  },
+  "registry_patch": "native-adapters-registry-v73.patch",
+  "registry_base_sha256": {
+    "solar_evaluation_v70.py": "2890e40f7f26728eb93a631132865cc0df9a0a64227ba4ed6db00e197b5bfa23",
+    "run_solar_evaluation_v70.py": "3d26fdc81f3d83e81d21a41af6649700f8c6b7699b74f9598b1d19125fb8f6a4"
+  },
+  "registry_proposed_sha256": {
+    "solar_evaluation_v70.py": "fb2026fe5c04aa655a90194a28057032c5027abe4e62e639073b127e3900bc05",
+    "run_solar_evaluation_v70.py": "e64a08b9521e4a2fe4fa85de3f541537db1483b7291728e58af16666bfdf58d8"
+  },
+  "integration": "Copy the3new Python files; merge the minimal registry/admission patch with sibling compact/render branches. Full modified registry files are review references: do not blindly replace concurrent changes.",
+  "api": {
+    "backend": "native_pretrained",
+    "methods": [
+      "matchanything",
+      "moonst3r"
+    ],
+    "factory": "native_pretrained_adapters_v73.make_native_pretrained(profile)",
+    "admission": "validate_native_profile(profile), required_native_sources(profile,actual_protocol)",
+    "receipt_pins": "profile.pretrained_evidence has protocol/summary/controls/provenance path+sha256 pairs",
+    "profiles": {
+      "matchanything": [
+        "native512",
+        "training_size832"
+      ],
+      "moonst3r": [
+        "common_native512_full_field_of_view"
+      ]
+    }
+  },
+  "tests": "56 procedural/stub and existing evaluation/control guard tests passed in1.61s. No actual pretrained/lunar forward, renderer, download or training was run.",
+  "preserved_invalid_invocation": "adapter-regression-invalid-root-import-v73.log: old root backend imported during mixed collection; detected by origin assertion, no scientific execution.",
+  "actual_control_inventory": "existing-pretrained-gates-replayed-v73.json",
+  "limits": [
+    "Preserved MatchAnything control used1thread; this2thread comparison requires a new successful actual native control. A training_size832 profile also requires its own exact successful receipt.",
+    "Preserved MOONSt3R actual2thread native gate passes source/array/common-pose replay; this alone does not admit lunar inference. Fullgeometrygate, source publication and current measured cost admission remain mandatory.",
+    "MOONSt3R common512 profile intentionally preserves square fullFOV; upstream default512x384crop is not implemented or silently substituted. Existing license and unknown training-overlap disclosures retained.",
+    "All actual networks remain reviewed legacy safe-weight loaders, with exact source/weight/runtime checks. No2D affine/homography filtering or model-predictedquerydepth/pose enters the common principal pose comparison.",
+    "Run the full repository suite and fresh controlled smoke after merging registry changes."
+  ]
+}

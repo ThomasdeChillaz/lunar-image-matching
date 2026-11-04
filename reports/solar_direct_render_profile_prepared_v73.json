@@ -1,0 +1,41 @@
+{
+  "name": "reference_camera_render_match",
+  "backend": "direct_render",
+  "method": "reference_camera_render_match",
+  "prepared_only": true,
+  "available": false,
+  "unavailable_reason": "No completed full96-gated reference-only render library or measured native adapter controls exist yet.",
+  "publication_commit": "REQUIRES_PUBLIC_ADAPTER_FREEZE",
+  "cpu_threads": 2,
+  "native_size": 512,
+  "calibration_or_final_access": false,
+  "configuration": {
+    "viewpoint_search": "reference_camera_only",
+    "descriptor": "SIFT",
+    "ratio_threshold": 0.75,
+    "nfeatures": 2048,
+    "top_pose_candidates": 8,
+    "known_sun_policy": "exact_render_or_unavailable"
+  },
+  "source_sha256": {
+    "direct_render_adapter_v73.py": "077ef2a601478ed31101b52cbef1939a2b16dd1346acc8dd1bd1d7a9448e03b8",
+    "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977"
+  },
+  "artifact_sha256": {},
+  "render_evidence": {
+    "protocol": "reports/direct-render-protocol-v73.json",
+    "manifest": "reports/direct-render-manifest-v73.json",
+    "receipt": "reports/direct-render-receipt-v73.json",
+    "controls": "reports/direct-render-controls-v73.json",
+    "protocol_sha256": "REQUIRES_ACTUAL_REFERENCE_ONLY_LIBRARY_AND_CONTROL",
+    "manifest_sha256": "REQUIRES_ACTUAL_REFERENCE_ONLY_LIBRARY_AND_CONTROL",
+    "receipt_sha256": "REQUIRES_ACTUAL_REFERENCE_ONLY_LIBRARY_AND_CONTROL",
+    "controls_sha256": "REQUIRES_ACTUAL_REFERENCE_ONLY_LIBRARY_AND_CONTROL"
+  }
+}
