@@ -1,0 +1,564 @@
+{
+  "protocol_sha256": "dfec557dc407893db7c6030a1fb7a2156e1e0e03a521ce65f84e7ea415159841",
+  "renderer_receipt_sha256": "7af58cf61759633e7726ec4565c06629fe3820d2e9eddbb0759969473ff1f0b4",
+  "render_calendar_seconds": 18.411676957970485,
+  "software": {
+    "numpy": "1.26.4",
+    "opencv": "4.10.0"
+  },
+  "configuration": {
+    "default": {
+      "engine": "CYCLES",
+      "device": "CPU",
+      "samples": 16,
+      "cpu_threads": 2,
+      "dither_intensity": 1.0,
+      "view": "Standard",
+      "look": "None",
+      "display": "sRGB",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "color_mode": "RGB",
+      "color_depth": "8",
+      "file_format": "PNG"
+    },
+    "zero": {
+      "engine": "CYCLES",
+      "device": "CPU",
+      "samples": 16,
+      "cpu_threads": 2,
+      "dither_intensity": 0.0,
+      "view": "Standard",
+      "look": "None",
+      "display": "sRGB",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "color_mode": "RGB",
+      "color_depth": "8",
+      "file_format": "PNG"
+    },
+    "one": {
+      "engine": "CYCLES",
+      "device": "CPU",
+      "samples": 16,
+      "cpu_threads": 2,
+      "dither_intensity": 1.0,
+      "view": "Standard",
+      "look": "None",
+      "display": "sRGB",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "color_mode": "RGB",
+      "color_depth": "8",
+      "file_format": "PNG"
+    }
+  },
+  "rows": {
+    "default_flat_low.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "1": 131007,
+        "2": 131137
+      },
+      "raw_standard_deviation": 0.4999999385181544
+    },
+    "default_flat_high.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "2": 130921,
+        "3": 131223
+      },
+      "raw_standard_deviation": 0.4999996682016708
+    },
+    "default_flat_low_repeat.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "1": 131007,
+        "2": 131137
+      },
+      "raw_standard_deviation": 0.4999999385181544
+    },
+    "default_ramp.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "0": 24683,
+        "1": 70000,
+        "2": 72810,
+        "3": 70015,
+        "4": 24579,
+        "5": 57
+      },
+      "raw_standard_deviation": 1.1347908340736181
+    },
+    "zero_flat_low.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "2": 262144
+      },
+      "raw_standard_deviation": 0.0
+    },
+    "zero_flat_high.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "3": 262144
+      },
+      "raw_standard_deviation": 0.0
+    },
+    "zero_flat_low_repeat.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "2": 262144
+      },
+      "raw_standard_deviation": 0.0
+    },
+    "zero_ramp.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "0": 22016,
+        "1": 72704,
+        "2": 72704,
+        "3": 72704,
+        "4": 22016
+      },
+      "raw_standard_deviation": 1.1075028216668343
+    },
+    "one_flat_low.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "1": 131007,
+        "2": 131137
+      },
+      "raw_standard_deviation": 0.4999999385181544
+    },
+    "one_flat_high.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "2": 130921,
+        "3": 131223
+      },
+      "raw_standard_deviation": 0.4999996682016708
+    },
+    "one_flat_low_repeat.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "1": 131007,
+        "2": 131137
+      },
+      "raw_standard_deviation": 0.4999999385181544
+    },
+    "one_ramp.png": {
+      "achromatic_fraction": 1.0,
+      "code_histogram": {
+        "0": 24683,
+        "1": 70000,
+        "2": 72810,
+        "3": 70015,
+        "4": 24579,
+        "5": 57
+      },
+      "raw_standard_deviation": 1.1347908340736181
+    }
+  },
+  "per_dither": {
+    "default": {
+      "measured_dither_intensity": 1.0,
+      "repeat_fraction_identical": 1.0,
+      "flat_cross_intensity_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": 0.9993299206771064
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": -0.0008567428829948006
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": -0.003954441170455138
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": -0.0015948598014624464
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": -0.0025900646150617307
+        }
+      ],
+      "ramp_column_residual_vs_flat_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": 0.6130301248316296
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": -0.001982960384907204
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": -0.0014353557945273835
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": -0.0012755296785056192
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": -0.0019234114235114654
+        }
+      ],
+      "ramp_column_residual_std": 0.45203307556564315,
+      "flat_cross_intensity_sift_original": {
+        "ratio_unique_matches": 0,
+        "within_one_pixel_of_fixed_sensor_coordinates": 0,
+        "reference_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131137,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5002479553222656,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131223,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5005760192871094,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        }
+      },
+      "flat_cross_intensity_sift_frozen_exposure": {
+        "ratio_unique_matches": 2025,
+        "within_one_pixel_of_fixed_sensor_coordinates": 2025,
+        "reference_exposure": {
+          "action": "scaled",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131137,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5002479553222656,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 127.5,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 131137,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "scaled",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131223,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5005760192871094,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 85.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 131223,
+          "pixel_count": 262144
+        }
+      }
+    },
+    "zero": {
+      "measured_dither_intensity": 0.0,
+      "repeat_fraction_identical": 1.0,
+      "flat_cross_intensity_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": null
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": null
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": null
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": null
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": null
+        }
+      ],
+      "ramp_column_residual_vs_flat_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": null
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": null
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": null
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": null
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": null
+        }
+      ],
+      "ramp_column_residual_std": 0.0,
+      "flat_cross_intensity_sift_original": {
+        "ratio_unique_matches": 0,
+        "within_one_pixel_of_fixed_sensor_coordinates": 0,
+        "reference_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 262144,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 1.0,
+          "input_distinct_codes": 1,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 262144,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 1.0,
+          "input_distinct_codes": 1,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        }
+      },
+      "flat_cross_intensity_sift_frozen_exposure": {
+        "ratio_unique_matches": 0,
+        "within_one_pixel_of_fixed_sensor_coordinates": 0,
+        "reference_exposure": {
+          "action": "uniform_unchanged",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 262144,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 1.0,
+          "input_distinct_codes": 1,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "uniform_unchanged",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 262144,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 1.0,
+          "input_distinct_codes": 1,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        }
+      }
+    },
+    "one": {
+      "measured_dither_intensity": 1.0,
+      "repeat_fraction_identical": 1.0,
+      "flat_cross_intensity_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": 0.9993299206771064
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": -0.0008567428829948006
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": -0.003954441170455138
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": -0.0015948598014624464
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": -0.0025900646150617307
+        }
+      ],
+      "ramp_column_residual_vs_flat_shift_controls": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "correlation": 0.6130301248316296
+        },
+        {
+          "dx": 17,
+          "dy": 29,
+          "correlation": -0.001982960384907204
+        },
+        {
+          "dx": 31,
+          "dy": -13,
+          "correlation": -0.0014353557945273835
+        },
+        {
+          "dx": -19,
+          "dy": 23,
+          "correlation": -0.0012755296785056192
+        },
+        {
+          "dx": 43,
+          "dy": 11,
+          "correlation": -0.0019234114235114654
+        }
+      ],
+      "ramp_column_residual_std": 0.45203307556564315,
+      "flat_cross_intensity_sift_original": {
+        "ratio_unique_matches": 0,
+        "within_one_pixel_of_fixed_sensor_coordinates": 0,
+        "reference_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131137,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5002479553222656,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "identity_control",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131223,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5005760192871094,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 1.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 0,
+          "pixel_count": 262144
+        }
+      },
+      "flat_cross_intensity_sift_frozen_exposure": {
+        "ratio_unique_matches": 2025,
+        "within_one_pixel_of_fixed_sensor_coordinates": 2025,
+        "reference_exposure": {
+          "action": "scaled",
+          "p995_input_code": 2,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131137,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5002479553222656,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 127.5,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 131137,
+          "pixel_count": 262144
+        },
+        "query_exposure": {
+          "action": "scaled",
+          "p995_input_code": 3,
+          "p995_input_rank": 260834,
+          "percentile_plateau_pixels": 131223,
+          "percentile_has_duplicate_codes": true,
+          "percentile_plateau_fraction": 0.5005760192871094,
+          "input_distinct_codes": 2,
+          "input_black_pixels": 0,
+          "input_saturated_pixels": 0,
+          "input_above_white_pixels": 0,
+          "gain": 85.0,
+          "clipped_pixels": 0,
+          "output_saturated_pixels": 131223,
+          "pixel_count": 262144
+        }
+      }
+    }
+  },
+  "default_equals_explicit_one": {
+    "flat_low": true,
+    "flat_high": true,
+    "flat_low_repeat": true,
+    "ramp": true
+  },
+  "scope": "Strictly procedural Cycles emission, no lunar data or pose estimation. The write_still, color transform, native resolution and renderer match the archived setting; the emission scene intentionally differs from diffuse terrain illumination. A positive test demonstrates causation in this fixture only."
+}
