@@ -1,3 +1,33 @@
+## M80 — Complete physical training bank and exact learned pilots
+
+## Learned-response training started — 4 November 2026
+
+The corrected training bank is complete: **64 camera pairs, all 16 training
+terrain groups and 3,933 paired samples**. Its 163 unsupported trial patches are
+explicitly recorded; every camera pair contributes at least 48 usable samples.
+Independent artifact replay passes physical labels, Sun/normal/view conditioning,
+seals and even-light-only targets. No held-out image was read.
+
+Both the directional-response model and its matched pooled control completed
+**100 training updates and exact replay** of model, optimizer, losses, gradients,
+random state and sampling. They retain **95,808 total parameters**. Their measured
+pilots take 14.857 and 15.068 seconds respectively. The source-published
+2,000-update directional study is now running with a 595-second cap, followed
+serially by the pooled study. Checkpoint selection will use raw pose recovery,
+not training loss.
+
+These establish executable, reproducible learning, not improved lunar localization.
+The historical attention control remains **15/96 raw correct poses**. Actual
+pose comparisons, all ablations, seed repetitions, transfer, calibration,
+final freeze/test and the paper package remain unfinished. Calibration/final
+terrain is untouched; the broader goal is active.
+
+Evidence: [complete bank](reports/solar_teacher_full_completed_v79.json),
+[bank replay](reports/solar_teacher_full_replay_v79.json),
+[directional pilot](reports/solar_sh_pilot_summary_v79.json),
+[exact replay](reports/solar_sh_pilot_exact_replay_v79.json),
+[full study protocol](reports/solar-learning-v79/sh_study.json).
+
 ## M79 — Explicit unavailable trial-patch support and preserved extraction failure
 
 ## Training-patch support correction — 4 November 2026
