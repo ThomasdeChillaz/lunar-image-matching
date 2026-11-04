@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "protocol_sha256": "37d556db5590f7ed0757258bbc30b3a985f85960386808610011e76bd1ad388d",
+  "publication_commit": "ae1c8fb05239b9dfbaba194c5e86de383b95344a",
+  "started_utc": "2026-11-04T11:01:38.965053+00:00",
+  "ended_utc": "2026-11-04T11:01:47.951400+00:00",
+  "calendar_seconds": 8.985954438976478,
+  "cap_seconds": 600,
+  "hard_deadline_utc": "2026-11-04T11:11:38.965053+00:00",
+  "work_deadline_utc": "2026-11-04T11:11:33.965053+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "37d556db5590f7ed0757258bbc30b3a985f85960386808610011e76bd1ad388d/coarse_teacher_domain_qualification",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T11:01:41.322802+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 15267.0
+  },
+  "child_returncode": 0,
+  "failure": null,
+  "artifacts": {
+    "candidate.json": "f6d43aca58acd2a607b16e8d52bf917bd61e349a0ef2a21e995fb7374f58643e",
+    "arrays.npz": "f5edc7bbd599e26183d29ac0c019d5a97c1d729271860582547407bab431a759",
+    "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
