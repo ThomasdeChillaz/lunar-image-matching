@@ -1,3 +1,12 @@
+## M94 — Full native baseline replay complete
+
+The exact 768 native SIFT and MatchAnything rows completed and replayed.
+The joined 384-case benchmark finds 114/192 correct direct relighting
+poses, 41/192 for SIFT and 42/192 for MatchAnything. Same-light recovery
+is nearly identical. Changed-light recovery is 74/128, 0/128 and 2/128.
+The off-catalogue follow-up has started with the same case and scoring
+identities. [Full paired report](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md)
+
 ## M94 — Compact bootstrap replay and full native comparison
 
 The five-arm pilot completed and independently replayed all 40 rows.
@@ -5,7 +14,6 @@ Each arm recovered one of four positive poses and zero of two changed-light
 poses. The direct relighting control recovered three positives on the same
 cases. On the changed-light case recovered by direct relighting, the
 128-pixel reference search found the right light but could not seed a pose.
-The native SIFT and MatchAnything comparison is running on all 384 cases.
 The compact pilot selected no model and the final reserve remains closed.
 [Pilot report](reports/SOLAR_RENDER_BOOTSTRAP_RESULTS_V94.md)
 
