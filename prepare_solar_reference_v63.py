@@ -64,13 +64,21 @@ def run(protocol_path,publication_commit):
         return None if point is None else(np.asarray(point,float),np.asarray(normal,float))
     axis=49.5+16*np.rint(np.linspace(0,25,16)).astype(int);yy,xx=np.meshgrid(axis,axis,indexing='ij');anchors=np.column_stack([xx.ravel(),yy.ravel()])
     catalogue=sun_search_catalogue(p['latitude_deg']);suns=np.array([x['sun_enu']for x in catalogue])
-    table,reasons=reference_solar_table(anchors,k,pose,suns,envelope,raycast)
+    precompute=p.get('precompute','coarse')
+    if precompute not in('coarse','full'):raise ValueError('Declared coarse or full precomputation required')
+    materialized=np.array([x['coarse']for x in catalogue],bool)if precompute=='coarse'else np.ones(len(catalogue),bool)
+    partial,reasons=reference_solar_table(anchors,k,pose,suns[materialized],envelope,raycast)
+    states=np.zeros((256,len(suns)),np.uint8);variants=np.zeros((256,len(suns),7),np.uint8)
+    states[:,materialized]=partial.pop('solar_states');variants[:,materialized]=partial.pop('solar_variants')
+    table=dict(partial,solar_states=states,solar_variants=variants)
     reference_sun=solar_direction(p['latitude_deg'],p['reference_hour_angle_deg'],p.get('reference_subsolar_latitude_deg',1.5))
     np.savez_compressed(out,depth=depth,intrinsics=k,cam2world=pose,reference_sun=reference_sun,sun_vectors=suns,
         sun_parameters=np.array([[x['hour_angle_deg'],x['subsolar_latitude_deg']]for x in catalogue]),
-        coarse_sun_mask=np.array([x['coarse']for x in catalogue],bool),**table)
+        coarse_sun_mask=np.array([x['coarse']for x in catalogue],bool),solar_materialized_mask=materialized,**table)
     result=dict(complete=True,source_sha256={n:sha(n)for n in SOURCES},protocol_sha256=sha(protocol_path),publication_commit=publication_commit,
-        output_sha256=sha(out),calendar_seconds=time.monotonic()-tick,solar_state_counts={str(v):int((table['solar_variants']==v).sum())for v in(0,1,2)},reasons=reasons,
+        output_sha256=sha(out),calendar_seconds=time.monotonic()-tick,solar_state_counts={str(v):int((table['solar_variants'][:,materialized]==v).sum())for v in(0,1,2)},reasons=reasons,
+        precompute=precompute,computed_solar_columns=int(materialized.sum()),uncomputed_solar_columns=int((~materialized).sum()),
+        uncomputed_semantics='Masked placeholders are NOT coverage-unknown and cannot be scored without physical lookup.',
         sun_catalogue=catalogue,terrain_envelope=envelope.__dict__,query_truth_used=False,neural_forwards=0,
         original_scene_mesh_sha256=p['scene_mesh_sha256'],original_scene_ceiling_m=original_scene_ceiling,map_mesh_sha256=p['mesh_sha256'],
         primary_search='Only5degree/.5degree coarse mask initializes hypotheses;1.25degree/.25degree columns are accessed by bounded local refinement. Known query Sun is secondary-track metadata only.',

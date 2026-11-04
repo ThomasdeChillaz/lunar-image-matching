@@ -1,5 +1,43 @@
 # Status
 
+## Lazy physical inference and matched rotation control integrated — 4 November 2026
+
+**The new response head is still untrained; no lunar accuracy gain is claimed.**
+The 95,808-parameter matcher now computes fine Sun rays only when requested,
+distinguishes uncomputed columns from unknown coverage, and supports exact
+known-Sun metadata only on the secondary track. Physical caches depend on map
+geometry; learned feature caches depend on checkpoints and trial poses.
+
+An optional 16-angle proposal bank adds valid-image masks and exact conversion
+back to original native pixels. The historical four-angle default is preserved.
+This is a matched engineering control for every A/B/C comparison, not a claimed
+learned contribution. Controls now keep distinct candidate hypotheses when the
+solar term is off and avoid using an unused Sun for active shadow predictions.
+
+Development runners implement all five checkpoint evaluations, the eight
+matched module combinations plus pooled response, shared/off/independent Sun,
+patch budgets/policies, measured cost admission, common final pose estimation,
+and independent saved-array replay. They remain unexecuted on the new data.
+Several required modern/historical baseline adapters, calibrated acceptance,
+seed studies and final evaluation remain unfinished and explicitly tracked.
+
+Verification: **608 repository tests pass**, four optional tests skip, and all
+eight fresh procedural image-to-pose toggles pass independent replay. The actual
+Blender lookup worker still needs a source-published cold-start/ray-cost pilot.
+The data continuation has copied/resealed the existing unit and completed its
+first new unit successfully: **12/96 units sealed** in the launch snapshot.
+It retains the original 4 November 13:23:15.913367 UTC deadline; all failed
+attempts and completed image bytes remain preserved. Full-data geometry audit
+precedes teacher extraction, the 100-update reproducibility pilot and training.
+Calibration/final terrain is still closed. No email or submission is automatic.
+
+Evidence: [software verification](reports/solar_release_software_v71.json),
+[independent procedural replay](reports/solar_eight_toggle_replay_v71.json),
+[rotation control](reports/solar_rotation_delivery_v71.json),
+[staged physics implementation](reports/solar_staged_delivery_v70.json), and
+[data continuation snapshot](reports/solar_continuation_started_v70.json).
+
+
 ## Three-technique implementation and same-deadline data continuation — 4 November 2026
 
 The integrated matcher now has teacher-space lighting-response comparisons,

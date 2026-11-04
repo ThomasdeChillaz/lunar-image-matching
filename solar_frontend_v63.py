@@ -19,6 +19,7 @@ from solar_assignment_v63 import CandidateGraph,height_variants,solve
 from solar_native_v63 import SparseNativeRefiner,canonical_patch,state_digest
 from solar_physics_v63 import soft_shadow_observation
 from solar_response_v63 import FusedLightingDecoder
+from solar_rotation_v71 import RotationBank,proposal_angles as validate_proposal_angles
 
 
 def reference_anchors():
@@ -40,6 +41,7 @@ class ReferenceGeometry:
     world_variants:np.ndarray
     sun_parameters:np.ndarray=None
     coarse_sun_mask:np.ndarray=None
+    solar_materialized_mask:np.ndarray=None
 
     def __post_init__(self):
         self.intrinsics,self.cam2world=camera_check(self.intrinsics,self.cam2world)
@@ -58,6 +60,8 @@ class ReferenceGeometry:
         self.coarse_sun_mask=np.ones(s,bool)if self.coarse_sun_mask is None else np.asarray(self.coarse_sun_mask)
         if self.coarse_sun_mask.shape!=(s,)or self.coarse_sun_mask.dtype!=bool or not self.coarse_sun_mask.any():raise ValueError('Explicit nonempty coarse Sun search mask required')
         if self.sun_parameters.shape not in((0,2),(s,2))or not np.isfinite(self.sun_parameters).all():raise ValueError('Empty legacy or Sx2hour/decl metadata required')
+        self.solar_materialized_mask=np.ones(s,bool)if self.solar_materialized_mask is None else np.asarray(self.solar_materialized_mask)
+        if self.solar_materialized_mask.shape!=(s,)or self.solar_materialized_mask.dtype!=bool:raise ValueError('Explicit solar computed-column mask required')
         if len(self.sun_parameters):
             if (np.abs(self.sun_parameters[:,0])>90+1e-9).any()or(np.abs(self.sun_parameters[:,1])>1.5+1e-9).any():raise ValueError('Sun catalogue outside declared lunar search range')
             expected=np.isclose(self.sun_parameters[:,0]/5,np.rint(self.sun_parameters[:,0]/5),atol=1e-9)&np.isclose(self.sun_parameters[:,1]/.5,np.rint(self.sun_parameters[:,1]/.5),atol=1e-9)
@@ -74,30 +78,34 @@ class ReferenceGeometry:
     def load(cls,path):
         allowed=set(cls.__dataclass_fields__)
         with np.load(path,allow_pickle=False)as z:
-            legacy=allowed-{'sun_parameters','coarse_sun_mask'}
-            if set(z.files)not in(allowed,legacy):raise ValueError('Reference-only archive schema required; query truth and extra keys forbidden')
+            legacy=allowed-{'sun_parameters','coarse_sun_mask','solar_materialized_mask'}
+            schemas=(allowed,allowed-{'solar_materialized_mask'},legacy,legacy|{'solar_materialized_mask'})
+            if set(z.files)not in schemas:raise ValueError('Reference-only archive schema required; query truth and extra keys forbidden')
             return cls(**{k:z[k].copy()for k in z.files})
 
 
-def candidates(encoder,reference,query):
+def candidates(encoder,reference,query,proposal_angles=None):
     """Frozen128pxproposal maps; native high-resolution features stay lazy."""
     p=reference_anchors();yy,xx=np.mgrid[12:116:4,12:116:4];low=np.column_stack([xx.ravel(),yy.ravel()]).astype(np.float32)
     native=(low+.5)*4-.5
-    images=[reference]+[np.rot90(query,r).copy()for r in range(4)]
+    bank=RotationBank(query,proposal_angles);valid=bank.coarse_mask(low).reshape(-1)
+    images=[reference]+bank.images
     batch=np.stack([cv2.resize(im,(128,128),interpolation=cv2.INTER_AREA)for im in images])
     with torch.inference_mode():
         dense,_=encoder(torch.from_numpy(batch).float()[:,None]/255)
         pa=torch.from_numpy(((p+.5)/4-.5).astype(np.float32))[None]
         a=sample_descriptors(dense[:1],pa)[0]
-        qpoints=torch.from_numpy(low)[None].expand(4,-1,-1)
+        qpoints=torch.from_numpy(low)[None].expand(len(bank.angles),-1,-1)
         b=sample_descriptors(dense[1:],qpoints).reshape(-1,32)
         score=a@b.T
+        score[:,~torch.as_tensor(valid)]=-torch.inf
         # Stable sorting fixes ties independently of topk implementation.
         rank=torch.argsort(score,dim=1,descending=True,stable=True)[:,:8]
         values=score.gather(1,rank).cpu().numpy();ids=rank.cpu().numpy()
     rotations=ids//len(low);indices=ids%len(low);q=np.empty((len(p),8,2))
-    for r in range(4):
-        use=rotations==r;q[use]=quarter_turn(native[indices[use]],r,512,True)
+    if not np.isfinite(values).all():raise ValueError('Insufficient fully supported rotation proposals')
+    for r in range(len(bank.angles)):
+        use=rotations==r;q[use]=bank.transform(native[indices[use]],r,True)
     return p,q,values,rotations
 
 
@@ -186,7 +194,8 @@ class PairResponseCache:
 
 class SolarMatcher:
     inference_revision='solar-v68'
-    def __init__(self,coarse,fine,response=None,pooled=False):
+    def __init__(self,coarse,fine,response=None,pooled=False,proposal_angles=None):
+        self.proposal_angles=validate_proposal_angles(proposal_angles)
         self.pooled=bool(pooled);self.response=response.eval()if response is not None else None
         if response is not None:
             if state_digest(coarse)!=state_digest(response.coarse):raise ValueError('Response model must own the exact frozen proposal encoder')
@@ -204,7 +213,7 @@ class SolarMatcher:
         if count>=100000:raise ValueError('Complete experimental matcher exceeds100kparameters')
         self.total_parameters=count
 
-    def localize(self,reference,query,geometry,query_intrinsics,solar_mode='shared',response=False,active=False,budget=128,policy='active',known_sun=None,reference_sun=None,final_estimator=None):
+    def localize(self,reference,query,geometry,query_intrinsics,solar_mode='shared',response=False,active=False,budget=128,policy='active',known_sun=None,reference_sun=None,final_estimator=None,solar_lookup=None):
         tick=perf_counter()
         for image in(reference,query):
             if np.asarray(image).shape!=(512,512)or np.asarray(image).dtype!=np.uint8:raise ValueError('Native512uint8grayscale images required')
@@ -215,11 +224,16 @@ class SolarMatcher:
             known_sun=np.asarray(known_sun,float)
             if known_sun.shape!=(3,)or not np.isfinite(known_sun).all()or not np.isclose(np.linalg.norm(known_sun),1,atol=1e-6):raise ValueError('Finite known-Sun metadata required')
             matches=np.flatnonzero(np.linalg.norm(geometry.sun_vectors-known_sun,axis=1)<1e-6)
-            if len(matches)!=1:raise ValueError('Known Sun must have an exact independently prepared reference-map ray column')
-            ids=matches
+            if len(matches)>1:raise ValueError('Ambiguous exact known-Sun catalogue direction')
+            if len(matches)==0:
+                if not callable(solar_lookup):raise ValueError('Exact known Sun outside catalogue requires a source-pinned physical lookup; snapping forbidden')
+                table=solar_lookup(known_sun[None])
+                geometry=replace(geometry,sun_vectors=known_sun[None].copy(),solar_states=np.asarray(table['solar_states']),solar_variants=np.asarray(table['solar_variants']),sun_parameters=np.empty((0,2)),coarse_sun_mask=np.ones(1,bool),solar_materialized_mask=np.ones(1,bool))
+                ids=np.array([0])
+            else:ids=matches
         else:ids=np.arange(len(geometry.sun_vectors))
         if min(reference.std(),query.std())<1:return dict(pose=None,reason='blank_or_uninformative_image',reference_xy=np.empty((0,2)),query_xy=np.empty((0,2)),elapsed_seconds=perf_counter()-tick,inference_revision=self.inference_revision)
-        p,q,appearance,rotation=candidates(self.coarse,reference,query)
+        p,q,appearance,rotation=candidates(self.coarse,reference,query,self.proposal_angles)
         world,use=map_points_z(p,geometry.depth,geometry.intrinsics,geometry.cam2world)
         anchors=np.flatnonzero(use)
         if len(anchors)<6:return dict(pose=None,reason='insufficient_reference_surface',reference_xy=np.empty((0,2)),query_xy=np.empty((0,2)),elapsed_seconds=perf_counter()-tick,inference_revision=self.inference_revision)
@@ -235,14 +249,15 @@ class SolarMatcher:
         graph=CandidateGraph(p,world,q,appearance,observed,geometry.solar_states[use][:,ids],geometry.sun_vectors[ids],
             geometry.world_variants[use],geometry.solar_variants[use][:,ids],
             geometry.sun_parameters[ids]if len(geometry.sun_parameters)else None,
-            np.ones(len(ids),bool)if known_sun is not None else geometry.coarse_sun_mask[ids])
-        refiner=SparseNativeRefiner(self.fine);query_rotations=[np.rot90(query,r).copy()for r in range(4)]
+            np.ones(len(ids),bool)if known_sun is not None else geometry.coarse_sun_mask[ids],geometry.solar_materialized_mask[ids])
+        refiner=SparseNativeRefiner(self.fine);query_bank=RotationBank(query,self.proposal_angles)
         responder=PairResponseCache(self.response,reference,query,geometry,query_intrinsics,anchors,ids,self.pooled)if response else None
         def measure(i,c,trial_pose,sun):
-            r=int(rotation[i,c]);proposal=quarter_turn(q[i,c][None],r,512,False)[0]
-            measured,meta=refiner.refine(reference,query_rotations[r],p[i],proposal)
+            r=int(rotation[i,c]);proposal=query_bank.transform(q[i,c][None],r,False)[0]
+            if not query_bank.native_support(proposal,r):return dict(query_xy=None,reason='incomplete_rotated_native_patch_support')
+            measured,meta=refiner.refine(reference,query_bank.images[r],p[i],proposal)
             if measured is None:return dict(query_xy=None,reason=meta['reason'])
-            measured=quarter_turn(measured[None],r,512,True)[0]
+            measured=query_bank.transform(measured[None],r,True)[0]
             if not((measured>=0)&(measured<=511)).all():return dict(query_xy=None,reason='refinement_outside_image')
             record=dict(query_xy=measured,observed_shadow=float(cv2.remap(shadow.astype(np.float32),np.float32([[measured[0]]]),np.float32([[measured[1]]]),cv2.INTER_LINEAR)[0,0]))
             return record
@@ -253,12 +268,17 @@ class SolarMatcher:
                 return pose,dict(info,iterations_requested=2000,reprojection_threshold_native_px=3.,solver='ap3p_reclassify')
             estimator_label='common_reference_axial_depth_AP3P_3px'
         else:estimator_label='caller_supplied_common_final_estimator'
-        result=solve(graph,query_intrinsics,measure,solar_mode,active,policy,budget,response,response_refresh=responder,final_estimator=final_estimator)
+        def graph_lookup(suns):
+            table=solar_lookup(suns)
+            return dict(solar_states=np.asarray(table['solar_states'])[use],solar_variants=np.asarray(table['solar_variants'])[use])
+        result=solve(graph,query_intrinsics,measure,solar_mode,active,policy,budget,response,response_refresh=responder,final_estimator=final_estimator,solar_lookup=graph_lookup if callable(solar_lookup)else None)
         result['final_geometry']=estimator_label
+        result['proposal_bank']=dict(angles_degrees=list(self.proposal_angles),anchors=256,candidates_per_anchor=8,native_image_size=512,engineering_control=True,validity='Entire coarse25px low-resolution receptive field and native57px refinement crop must have valid rotated source support; inverse affine returns native pixel centres.')
         result.update(elapsed_seconds=perf_counter()-tick,inference_revision=self.inference_revision,total_parameters=self.total_parameters,native_encoder_forwards=refiner.forward_calls,
             observation=observation,input_digest=hashlib.sha256(reference.tobytes()+query.tobytes()).hexdigest(),
             inference_inputs='reference image/depth/pose/normals/solar ray table; query image/intrinsics; optional known-Sun metadata; no query truth',known_sun_supplied=known_sun is not None,
             response_cost=None if responder is None else responder.cost,
+            solar_lookup_cost=None if solar_lookup is None else dict(getattr(solar_lookup,'stats',{})),
             sun_search_limit='Coarse5degree/.5degree initialization, then bounded1.25degree/.25degree catalogue refinement.'if graph.has_fine_sun else'Legacy discrete catalogue; no fine columns available.',
             reference_sun_world=geometry.reference_sun.copy(),native_refinement_encoder=self.native_refinement_encoder)
         return result

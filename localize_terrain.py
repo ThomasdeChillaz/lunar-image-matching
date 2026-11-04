@@ -44,22 +44,25 @@ def load_matcher(checkpoint,configuration,allow_untrained=False):
     coarse=CompactDescriptor(False);fine=CompactDescriptor(False)
     if z.get('format')=='solar-response-v63':
         response=LightingResponseModel(coarse);response.load_state_dict(z['model'],strict=True)
-        return SolarMatcher(response.coarse,response.coarse,response,configuration.get('pooled',False))
+        return SolarMatcher(response.coarse,response.coarse,response,configuration.get('pooled',False),configuration.get('proposal_angles'))
     if z.get('format')!='compact-pair-v63'or configuration.get('response',False):raise ValueError('Declared complete coarse/fine or learned-response checkpoint required')
     coarse.load_state_dict(z['coarse'],strict=True);fine.load_state_dict(z['fine'],strict=True)
-    return SolarMatcher(coarse,fine)
+    return SolarMatcher(coarse,fine,proposal_angles=configuration.get('proposal_angles'))
 
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     for n in('reference','query','reference-geometry','query-intrinsics','config','checkpoint','output'):p.add_argument('--'+n,required=True)
+    p.add_argument('--solar-lookup-protocol',help='Published reference-only lazy solar-ray lookup protocol')
+    p.add_argument('--publication-commit',help='Commit pinning lazy lookup protocol and complete physical source closure')
+    p.add_argument('--blender-executable',help='Official Blender Python/BVH executable for bounded physical lookups')
     p.add_argument('--reference-sun',help='Optional JSON unit world-frame Sun metadata for the REFERENCE image')
     p.add_argument('--known-sun',help='Optional JSON world-frame three-vector; secondary metadata-supplied track only')
     p.add_argument('--research-output',action='store_true');p.add_argument('--allow-untrained-software-control',action='store_true')
     a=p.parse_args(argv);torch.set_num_threads(2);torch.set_num_interop_threads(1)
     import cv2
     cv2.setNumThreads(1)
-    config=json.loads(Path(a.config).read_text());allowed={'model_version','checkpoint_sha256','solar_mode','response','active','budget','policy','pooled','inference_revision'}
+    config=json.loads(Path(a.config).read_text());allowed={'model_version','checkpoint_sha256','solar_mode','response','active','budget','policy','pooled','inference_revision','proposal_angles'}
     if set(config)-allowed:raise ValueError('Unknown configuration keys are forbidden')
     matcher=load_matcher(a.checkpoint,config,a.allow_untrained_software_control)
     geometry=ReferenceGeometry.load(a.reference_geometry)
@@ -69,7 +72,16 @@ def main(argv=None):
     k=np.asarray(json.loads(Path(a.query_intrinsics).read_text()),float)
     known=None if a.known_sun is None else json.loads(Path(a.known_sun).read_text())
     reference_sun=None if a.reference_sun is None else json.loads(Path(a.reference_sun).read_text())
-    result=matcher.localize(*images,geometry,k,solar_mode=config.get('solar_mode','shared'),response=config.get('response',False),active=config.get('active',False),budget=config.get('budget',128),policy=config.get('policy','active'),known_sun=known,reference_sun=reference_sun)
+    lookup_args=(a.solar_lookup_protocol,a.publication_commit,a.blender_executable)
+    if any(lookup_args)and not all(lookup_args):raise ValueError('Lazy lookup requires protocol, publication commit and Blender executable together')
+    provider=None
+    if all(lookup_args):
+        from solar_lookup_v70 import ReferenceSunLookup
+        provider=ReferenceSunLookup.from_protocol(*lookup_args)
+    try:
+        result=matcher.localize(*images,geometry,k,solar_mode=config.get('solar_mode','shared'),response=config.get('response',False),active=config.get('active',False),budget=config.get('budget',128),policy=config.get('policy','active'),known_sun=known,reference_sun=reference_sun,solar_lookup=provider)
+    finally:
+        if provider is not None:provider.close()
     output=public_result(result,a.research_output);output['configuration_sha256']=hashlib.sha256(Path(a.config).read_bytes()).hexdigest()
     with Path(a.output).open('x')as stream:json.dump(output,stream,indent=2,allow_nan=False);stream.write('\n')
     return output
