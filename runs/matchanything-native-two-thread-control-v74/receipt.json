@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "passed": true,
+  "method": "matchanything",
+  "protocol_sha256": "456606f4d2af2b25750d06fb6f88062628ccad673cdee7a3272880ce6cbce473",
+  "outputs_sha256": null,
+  "source_sha256": "1de913d9d00b193a6b134f0c3d6e893bdfd8d05e54a2ac2c79245d03578fa3c9",
+  "cpu_threads": 2,
+  "started_utc": "2026-11-04T15:38:12.038168+00:00",
+  "absolute_deadline_utc": "2026-11-04T15:40:12.038168+00:00",
+  "cap_seconds": 120,
+  "calendar_seconds": 14.77652663103072,
+  "child_returncode": 0,
+  "failure": null,
+  "child_native_control_evidence_sha256": {
+    "protocol.json": "bd11a5ec068fe83a4758fdae9b6d27b0cf29c514192d989af76da9cd920aa403",
+    "summary.json": "b11c12ddb2c74c56179e807a1efe0320ae3e12cc538df0eb0994bd421f389780",
+    "controls.json": "c68309b82e2739b501c0674553a0709c1baa41547e0948af53b105481269a1fe",
+    "provenance.json": "6792aa3a1bff108332dfa5feb3a17645972d7361ed2c79d986ce393aa373530b"
+  },
+  "scope": "Actual native-control deadline/validation receipt; not lunar performance."
+}
