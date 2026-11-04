@@ -1,0 +1,165 @@
+{
+  "schema": "archived_blender_dither_fingerprint_v105",
+  "source_sha256": "ab15105ccc63579d2b3dc53d67212054a6c93ef886dcdfee4d700f09cad0a2a6",
+  "cpu_threads": 2,
+  "scope": "Fixed retrospective pixel fingerprint only. All five positive pairs were already evaluated in v101.",
+  "pilot_publication_commit": "6eb6eb33e6904880396ed55148fab45c911f82b6",
+  "source_protocol_sha256": "b7e821211828566d7d60d5250fb230d02e1e73d6092a96418ce5435ab3306b28",
+  "independent_replay_sha256": "4cb8d85c39cabcf84aff8f805bc9160406a268bf47a130acfe346c4f6da258f9",
+  "source_procedural_protocol_sha256": "dfec557dc407893db7c6030a1fb7a2156e1e0e03a521ce65f84e7ea415159841",
+  "source_procedural_seal_sha256": "01dbb14138aa71e9778a895a6bd973548a571a240a7ab320bafb6bf65d070a47",
+  "fixtures": {
+    "default": {
+      "path": "runs/solar-png-dither-control-v105/default_flat_low.png",
+      "sha256": "3dba034ed180df9e3ba1581f93e62798f845bf8b59357c9accaa4dc218ecdb2f"
+    },
+    "zero": {
+      "path": "runs/solar-png-dither-control-v105/zero_flat_low.png",
+      "sha256": "2b298908c728718610eb982fd4322130e6a2738de1eac34ab4936f202c004b32"
+    }
+  },
+  "observations": [
+    {
+      "case_id": "u025-l00-00-positive",
+      "stratum": "near_black_wrong",
+      "terrain": "np31-r1-c0",
+      "selected_reference_light": 1,
+      "saved_reference_p995": 2,
+      "saved_query_p995": 2,
+      "saved_correct": false,
+      "inputs": [
+        {
+          "role": "reference",
+          "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/light-1.png",
+          "sha256": "85f27c46808b5b6d25bf54e7c253a0c8d971904b33d9a0e27103ca1f735919de"
+        },
+        {
+          "role": "query",
+          "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/query/light-0.png",
+          "sha256": "8736fe1c605d16aa60ae07cc55982bb63d7aa5262ed1388b6b6f5d55af98fd64"
+        }
+      ]
+    },
+    {
+      "case_id": "u027-l08-01-positive",
+      "stratum": "near_black_wrong",
+      "terrain": "np31-r1-c0",
+      "selected_reference_light": 1,
+      "saved_reference_p995": 2,
+      "saved_query_p995": 2,
+      "saved_correct": false,
+      "inputs": [
+        {
+          "role": "reference",
+          "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/light-1.png",
+          "sha256": "4ba081a58dbb316c5e70973c8b5f10f59f9166823588221af26f4778c45e7ae2"
+        },
+        {
+          "role": "query",
+          "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/query/light-1.png",
+          "sha256": "6ab9b6b6c23707d5ccf0d7d026768b300d6d0f2a74faed18cc43f0642c0c84a2"
+        }
+      ]
+    },
+    {
+      "case_id": "u061-l00-17-positive",
+      "stratum": "dim_wrong_comparator",
+      "terrain": "np31-r3-c3",
+      "selected_reference_light": 17,
+      "saved_reference_p995": 10,
+      "saved_query_p995": 10,
+      "saved_correct": false,
+      "inputs": [
+        {
+          "role": "reference",
+          "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/light-17.png",
+          "sha256": "0c6a332bcf1f490e826fc21447e8a51a065789ecc25a5eb1dfd40e3e090a60db"
+        },
+        {
+          "role": "query",
+          "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/light-17.png",
+          "sha256": "9772e53178316dcee8c2cd54abc1595a4a2580857d112818732b6b60454e4c96"
+        }
+      ]
+    },
+    {
+      "case_id": "u013-l00-00-positive",
+      "stratum": "bright_correct_control",
+      "terrain": "np31-r0-c4",
+      "selected_reference_light": 0,
+      "saved_reference_p995": 69,
+      "saved_query_p995": 70,
+      "saved_correct": true,
+      "inputs": [
+        {
+          "role": "reference",
+          "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/light-0.png",
+          "sha256": "edc03b5939159403032a9a4f3e3ec9f879056449d1adab3a3a19b9e7c511e302"
+        },
+        {
+          "role": "query",
+          "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/query/light-0.png",
+          "sha256": "3becf814d56b63d6d89ddb7e0d08db059396120449f7c9f067ddedcc887923ce"
+        }
+      ]
+    },
+    {
+      "case_id": "u015-l00-17-positive",
+      "stratum": "bright_correct_control",
+      "terrain": "np31-r0-c4",
+      "selected_reference_light": 17,
+      "saved_reference_p995": 88,
+      "saved_query_p995": 112,
+      "saved_correct": true,
+      "inputs": [
+        {
+          "role": "reference",
+          "path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-1/reference/light-17.png",
+          "sha256": "e15689c7821e4f2ec150fd69e312e37e10a505fbb9250213b32b00b594284700"
+        },
+        {
+          "role": "query",
+          "path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-1/query/light-17.png",
+          "sha256": "74a5dacf3ef1beca221e27b15384d9c35de83d3587a1833d97cab8f17a31a4e6"
+        }
+      ]
+    }
+  ],
+  "metric": {
+    "primary": "phi between archived code>=2 and fixture code>=2 at the same native coordinates",
+    "displaced_native_fixture_offsets_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        17,
+        29
+      ],
+      [
+        31,
+        -13
+      ],
+      [
+        -19,
+        23
+      ],
+      [
+        43,
+        11
+      ]
+    ],
+    "equal_crop": [
+      48,
+      464
+    ],
+    "secondary": "full-native fixed phi and exact 2x2 counts",
+    "bright_control": "Secondary archived threshold strictly above the lower median grayscale code; fixture threshold stays >=2.",
+    "nesting": "Report both directional violations; additionally count smaller-mask positives outside the larger mask, with fixture chosen smaller on ties.",
+    "constant_mask": "Undefined phi is null; keep exact contingency counts."
+  },
+  "calibration_or_final_access": false,
+  "renderer_calls": 0,
+  "matcher_calls": 0,
+  "pose_estimator_calls": 0
+}
