@@ -1,5 +1,30 @@
 # Status
 
+## Full geometry gate passed; teacher pilot frozen — 4 November 2026
+
+All **96 camera pairs and 4,608 images are complete**. The independent full
+geometry audit passes **192/192 exact-correspondence camera poses**; all 96
+pairs remain eligible across 16 training and eight model-selection terrain groups.
+This validates the geometry pipeline, not the new matcher's accuracy.
+
+The four-pair teacher-extraction cost pilot is now frozen for source publication
+before launch, with a fixed 600-second cap and the original cumulative compute
+journal. It uses only even-indexed training illuminations. Its measured cost will
+determine whether the complete training bank is admitted; SH/pooled 100-update
+pilots and exact replay follow that bank. The new response head still has
+**zero lunar optimizer updates** in this pre-launch snapshot.
+
+The matcher remains **95,808 parameters**. The last software checks pass 896 tests
+with four optional skips and all eight independently replayed procedural controls.
+No new lunar performance gain is claimed. Actual learned studies, matched modern
+comparisons, transfer, calibration, final freeze/test and the paper package remain
+unfinished. Calibration/final terrain remains closed; the broader goal is active.
+
+Evidence: [full geometry audit](reports/solar_full_geometry_audit_v70.json),
+[learning freeze](reports/solar_learning_freeze_v77.json),
+[learning contract](reports/solar_learning_contract_v75.json), and
+[first teacher protocol](reports/solar-learning-v74/teacher_pilot.json).
+
 ## Data complete; geometry audit in progress — 4 November 2026
 
 All **96 camera pairs and 4,608 images are complete**. Original completed
