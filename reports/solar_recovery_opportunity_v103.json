@@ -1,0 +1,87 @@
+{
+  "scope": "Saved development records only. No new image access, inference, acceptance, or cohort selection.",
+  "sources": {
+    "reports/solar_match_scarcity_v102.json": "f7c92864ef78666e5362597f396e192290d2acfd3fe18fc1cf6988c66ff7fbec",
+    "reports/solar_full_crosslight_rescue_replay_v99.json": "8347b60efa4d5f3721f2e118087475ec791339c595f43e2cd204b2d678312182"
+  },
+  "positive_pilot": {
+    "frozen_cases": 24,
+    "distinct_scarce": 8,
+    "scarce_terrain_groups": {
+      "np31-r0-c7": 2,
+      "np31-r1-c0": 2,
+      "np31-r3-c2": 1,
+      "np31-r3-c3": 2,
+      "np31-r4-c1": 1
+    },
+    "scarce_geometrically_available": 4,
+    "zero_matches_query_p95_at_most_3": 6,
+    "net_correct_for_10_point_pilot_signal": 3
+  },
+  "full_24_positive": {
+    "eligible": 192,
+    "raw_correct": 114,
+    "minimum_correct_for_70_percent": 135,
+    "shortfall": 21,
+    "both_images_p95_at_most_3_misses": {
+      "distinct_conditions": 21,
+      "scheduled_rows": 33,
+      "terrain_groups": {
+        "np31-r1-c0": 8,
+        "np31-r3-c2": 8,
+        "np31-r3-c3": 4,
+        "np31-r4-c1": 1
+      }
+    },
+    "required_fraction_of_these_scheduled_misses_if_no_other_change": 0.6363636363636364
+  },
+  "nonoverlap": {
+    "raw_poses": 0,
+    "scheduled_rows": 192,
+    "terrain_endpoints": 8,
+    "unordered_endpoint_edges": [
+      {
+        "terrain_a": "np31-r0-c4",
+        "terrain_b": "np31-r0-c7",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r0-c4",
+        "terrain_b": "np31-r4-c7",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r0-c7",
+        "terrain_b": "np31-r1-c0",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r1-c0",
+        "terrain_b": "np31-r3-c2",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r3-c2",
+        "terrain_b": "np31-r3-c3",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r3-c3",
+        "terrain_b": "np31-r3-c5",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r3-c5",
+        "terrain_b": "np31-r4-c1",
+        "rows": 24
+      },
+      {
+        "terrain_a": "np31-r4-c1",
+        "terrain_b": "np31-r4-c7",
+        "rows": 24
+      }
+    ],
+    "maximum_terrain_disjoint_edges": 4,
+    "scope": "Terrain-disjoint endpoint sets are descriptive and do not certify independent errors."
+  }
+}

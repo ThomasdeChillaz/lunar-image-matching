@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-11-04T21:01:55.620024+00:00",
+  "original_requirements": "reports/requirements_and_sota_v69.json",
+  "original_requirements_sha256": "f9aa5d7391ad88539e51541592fc9f35df7eb75ec03ba00c3c46922e05fcd3ab",
+  "original_scope_and_targets_preserved": true,
+  "broader_goal_status": "active",
+  "scientific_gain_claim": false,
+  "superiority_claim": false,
+  "outreach_ready_performance_claim": false,
+  "primary_metric": {
+    "name": "correctly accepted absolute camera poses / all eligible positive pairs",
+    "rotation_degrees_lte": 2,
+    "absolute_translation_error_lte": "1% median Euclidean reference range",
+    "failed_and_rejected_cases_in_denominator": true
+  },
+  "requirements": [
+    {
+      "id": "R01_primary_metric",
+      "original_target": "At least 70% correctly accepted camera poses / all eligible positive pairs.",
+      "status": "unmet_raw_development_only",
+      "evidence_and_remaining_work": "Direct relighting has 114/192 raw correct poses on full development. Calibrated correct acceptance and final results remain unmeasured."
+    },
+    {
+      "id": "R02_compact_gain",
+      "original_target": "At least 10 percentage points accepted-pose gain versus strongest matched compact control, including deterministic refinement.",
+      "status": "no_compact_gain",
+      "evidence_and_remaining_work": "The five-arm compact bootstrap recovered the same one of four poses in each arm. Direct relighting outperformed two matched full-development controls, which does not establish an accepted-pose compact gain."
+    },
+    {
+      "id": "R03_error_constraints",
+      "original_target": {
+        "empirical_accepted_pose_error_lte": 0.01,
+        "empirical_nonoverlap_acceptance_lte": 0.01
+      },
+      "status": "calibrated_error_unmeasured",
+      "evidence_and_remaining_work": "Direct relighting returned zero raw nonoverlap poses among 192 and 18 wrong poses among 132 positive pose outputs. These are development counts before calibration."
+    },
+    {
+      "id": "R04_modern_tradeoff",
+      "original_target": "Modern pose accuracy advantage, or within 3 percentage points correct acceptance and at least 5\u00d7 faster on same CPU at comparable error.",
+      "status": "matched_modern_baseline_complete_arm_preflight_passed",
+      "evidence_and_remaining_work": "Direct gains 37.50 raw pose points versus MatchAnything on shared-simulator development. The LoMa-R and RoMa v2 ARM pilot passed the full local payload, model SHA and resource preflight after verifying 102 historical artifacts and four signed commits. Source publication, upload and ARM inference remain pending. MOONSt3R remains open."
+    },
+    {
+      "id": "R05_data_gate",
+      "original_target": {
+        "complete_camera_units": 96,
+        "train_groups": 16,
+        "selection_groups": 8,
+        "camera_pairs_per_group": 4,
+        "physical_lights": 24,
+        "train_lights": "even indices only, including teacher targets",
+        "oracle_pose_recovery_lte_failure": 0.05
+      },
+      "status": "complete_audited",
+      "evidence_and_remaining_work": "All 96 camera units and 192 exact pose controls are complete, with 16 training groups, eight selection groups and even-only training lights."
+    },
+    {
+      "id": "R06_all_three_and_ablations",
+      "original_target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
+      "status": "modules_implemented_formal_ablations_pending",
+      "evidence_and_remaining_work": "Shared-Sun inference, learned response and active patch selection have executable implementations. Matched mechanism pilots are negative. The complete eight-toggle and pooled study at the required scope remains pending."
+    },
+    {
+      "id": "R07_training_repetitions",
+      "original_target": "100-update exact replay/cost pilot, then 2,000 updates with seed 20261101; evaluate 0/500/1000/1500/2000.",
+      "status": "primary_studies_complete_repeats_pending",
+      "evidence_and_remaining_work": "The exact 100-update replays and 2,000-update primary studies exist. Pilot recovery did not support model selection; full cost projection did not admit the expanded study. No qualifying learned checkpoint or seed repeats."
+    },
+    {
+      "id": "R08_precision_and_robustness",
+      "original_target": "Diagnose and report native correspondence precision, pose failure and perturbation robustness.",
+      "status": "crosslight_full_negative_terrain_warp_prepared",
+      "evidence_and_remaining_work": "All 768 cross-light rows replay. Both arms 114/192. Of 60 positive misses, 55 had fewer than six distinct pooled pairs and the other five returned no pose. Zero-match queries were nonuniform but had low grayscale codes. Equal-budget terrain-warp and a fixed-correspondence DEM sensitivity diagnostic are prepared. Their lunar results and end-to-end perturbation robustness remain open."
+    },
+    {
+      "id": "R09_reserve_and_transfer",
+      "original_target": "Keep four calibration and twelve final terrain groups untouched during development. Preserve both consumed Tycho reserves as historical.",
+      "status": "reserve_closed_supplementary_analog_prepared",
+      "evidence_and_remaining_work": "The four calibration and twelve final terrain groups remain closed. Original LuSNAR 7\u20139, POLAR and orbital diagnostics remain open. A separate SPICE-HL3 native stereo-camera diagnostic has 24 exact timestamp-selected pairs on two traversals of one lab site. Its images and independent pose metadata are staged. No matcher has run on that data."
+    },
+    {
+      "id": "R10_resources",
+      "original_target": {
+        "total_model_parameters_lt": 100000,
+        "native_image_pixels": 512,
+        "threads_per_scientific_job": 2,
+        "cumulative_training_wall_hours_lte": 48,
+        "cumulative_pretrained_comparison_wall_hours_lte": 72,
+        "paid_compute": false
+      },
+      "status": "original_budgets_preserved",
+      "evidence_and_remaining_work": "Two threads and native 512 remain binding. After the 3,182-second full cross-light reservation, original remaining allowances are 13,493 training and 35,879 baseline seconds."
+    },
+    {
+      "id": "R11_verification",
+      "original_target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
+      "status": "full_crosslight_replay_and_metadata_gates_passed",
+      "evidence_and_remaining_work": "Fresh regression passed 1,199 tests with four skipped, plus 21 focused tests and two SPICE-HL3 synthetic/metadata check scripts. Cross-light replay verified all 768 rows and exact historical direct outcomes on all 384 cases. New lunar and analog inference require their published freezes."
+    },
+    {
+      "id": "R12_final_freeze",
+      "original_target": "Publish hashes for checkpoints, calibration rules, policies, preprocessing, cases and metrics before final inference; evaluate final reserve once.",
+      "status": "not_reached",
+      "evidence_and_remaining_work": "Final inference requires an eligible model and a published, one-time freeze."
+    },
+    {
+      "id": "R13_interfaces_and_package",
+      "original_target": "Preserve match_terrain.py; localize_terrain.py accepts reference/query images, reference-only geometry/pose, intrinsics, frozen config/checkpoint and optional known-Sun metadata.",
+      "status": "interfaces_available_package_pending",
+      "evidence_and_remaining_work": "Existing matcher and localizer stay available. The experimental code, protocols and paired evidence are public. Final release, demonstration, brief and paper remain pending."
+    },
+    {
+      "id": "R14_novelty",
+      "original_target": "Specific integrated shared-Sun / learned response / active selection mechanism supported by measured localization gain and targeted prior-art comparison.",
+      "status": "full_crosslight_negative_new_failure_mechanism",
+      "evidence_and_remaining_work": "Generic lunar relighting, terrain-guided patch warping and pose-information feature selection have precedent. The measured off-catalogue gap and the low-code correspondence bottleneck justify targeted controlled tests. Full cross-light pooling provided no new poses."
+    }
+  ],
+  "remaining_canonical_seconds": {
+    "training": 13493,
+    "baseline": 35879
+  },
+  "historical_caps_are_conservative_envelopes_not_exact_consumed_wall_time": true,
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "current_evidence": {
+    "reports/solar_full_paired_development_v94.json": "2d95e3d4112197e81132fcbdc86b58518c37c44f685cc3cf8e2ddb2cd8920868",
+    "reports/solar_full_native_baselines_replay_v94.json": "75af1832538230553d3920bea1ee8bf9e7522232b319a30eb060cfe1616ae183",
+    "reports/solar_full_direct_render_replay_v92.json": "b11cc65d41367d82c85fc770b109a83fcd4fb65dca2a7da7c56ae039725af558",
+    "reports/solar_render_bootstrap_mechanism_replay_v94.json": "2f86e30d3eb6a5b38d93179b891bfe2e431534e8d0626003720a667d0e5060b8",
+    "reports/solar-offcatalogue-direct-dispatch-v95.json": "2eb77cccb34b602c8b355af58190890cf8ef446ec0788d3ea8949d6ce3307899",
+    "reports/solar_offcatalogue_direct_replay_v95.json": "9e441047e928e8f05ab3ec594e00ef151c0f546e88f88114fa4a330f4dccd8b6",
+    "reports/solar_direct_additive_windows_pilot_replay_v97.json": "5ec50f5ad57683c6a990a25e7a072fff698f09b519dd563fc66cdb43c09721d3",
+    "reports/solar_crosslight_mechanism_results_v98.json": "0a53ba706277ebece8122630cf309c309c3d4343cdc4c480cc0c939383a22eb8",
+    "reports/solar-full-crosslight-rescue-dispatch-v99.json": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817",
+    "reports/additive_pilot_geometry_diagnosis_v99.json": "7e7f90fb3fcd9a88da54eb91f0b231ad6c240b01f0d57afd7ba3b65c774eeba8",
+    "reports/solar_full_crosslight_rescue_replay_v99.json": "8347b60efa4d5f3721f2e118087475ec791339c595f43e2cd204b2d678312182",
+    "reports/solar_crosslight_failure_audit_v100.json": "aa01159d3b914796daf3a59b9691c9a41c278a11f854b258daef090c64ba4839",
+    "reports/solar_crosslight_query_texture_v100.json": "e58ca28e651120aff069fe8c9a867ee1e8e321fc303de5898a15ea61d49b3d4d",
+    "reports/SPICE_HL3_TRANSFER_PREPARATION_V100.md": "23d177c3986daf52f3110caa07b4b3f24ceba7f6a7a68f44b03bdbd038cd3c01",
+    "reports/solar_modern_arm_preflight_receipt_v101.json": "95a6ad35e013c586d07bd51d66b35bc7d432c842f772113a397e3b976e1dc867"
+  },
+  "all_eligible_failures_remain_in_denominators": true,
+  "calibration_or_final_access": false,
+  "previous_status": "reports/research_requirements_status_v99.json",
+  "bounded_matched_development_result": {
+    "raw_correct": [
+      114,
+      42,
+      41
+    ],
+    "positive_pairs": 192,
+    "method_order": [
+      "direct_relighting",
+      "MatchAnything\u2013EfficientLoFTR",
+      "SIFT2048"
+    ],
+    "raw_claim_scope": "Shared-simulator development at catalogue lighting. It establishes a matched direct-control advantage, without an integrated compact superiority or state-of-the-art claim."
+  }
+}

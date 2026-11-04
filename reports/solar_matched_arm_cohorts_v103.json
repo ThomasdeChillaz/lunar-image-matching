@@ -1,0 +1,890 @@
+{
+  "scope": "Metadata-only candidate subsets for matched modern baseline comparison on observed development terrain.",
+  "original_full_case_count": 384,
+  "basis": "reports/solar-preselection-compact-controls-cost-pilot-v86.json",
+  "basis_sha256": "9e14f9c1b95eb12a796ec0533e8c9e50af292a86895e763912a91f786f6b0912",
+  "manifest": "runs/solar-reference-v80-full/case-assets/manifest.json",
+  "manifest_sha256": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "seed": 20261104,
+  "terrain_groups": [
+    "np31-r0-c4",
+    "np31-r0-c7",
+    "np31-r1-c0",
+    "np31-r3-c2",
+    "np31-r3-c3",
+    "np31-r3-c5",
+    "np31-r4-c1",
+    "np31-r4-c7"
+  ],
+  "untouched_calibration_and_final": true,
+  "sizing_rule": "Choose the largest of 96, 64 and 48 that fits measured same-worker worst-case cost before inference. If none fits, report the cost gate.",
+  "pilot_case_ids": [
+    "u012-l00-00-positive",
+    "u012-to-u020-l00-00-nonoverlap",
+    "u026-l00-17-positive",
+    "u026-to-u058-l00-17-nonoverlap",
+    "u060-l16-16-positive",
+    "u060-to-u068-l16-16-nonoverlap",
+    "u074-l08-01-positive",
+    "u074-to-u094-l08-01-nonoverlap"
+  ],
+  "excluded_qualification_reference_units": [
+    12,
+    26,
+    60,
+    74
+  ],
+  "subsets": {
+    "96": {
+      "case_ids": [
+        "u013-l00-00-positive",
+        "u013-to-u021-l00-00-nonoverlap",
+        "u013-l00-17-positive",
+        "u013-to-u021-l00-17-nonoverlap",
+        "u013-l08-01-positive",
+        "u013-to-u021-l08-01-nonoverlap",
+        "u015-l16-16-positive",
+        "u015-to-u023-l16-16-nonoverlap",
+        "u015-l16-01-positive",
+        "u015-to-u023-l16-01-nonoverlap",
+        "u015-l08-17-positive",
+        "u015-to-u023-l08-17-nonoverlap",
+        "u021-l16-16-positive",
+        "u021-to-u025-l16-16-nonoverlap",
+        "u021-l16-01-positive",
+        "u021-to-u025-l16-01-nonoverlap",
+        "u021-l08-17-positive",
+        "u021-to-u025-l08-17-nonoverlap",
+        "u022-l00-00-positive",
+        "u022-to-u026-l00-00-nonoverlap",
+        "u022-l00-17-positive",
+        "u022-to-u026-l00-17-nonoverlap",
+        "u022-l08-01-positive",
+        "u022-to-u026-l08-01-nonoverlap",
+        "u024-l16-16-positive",
+        "u024-to-u056-l16-16-nonoverlap",
+        "u024-l16-01-positive",
+        "u024-to-u056-l16-01-nonoverlap",
+        "u024-l08-17-positive",
+        "u024-to-u056-l08-17-nonoverlap",
+        "u027-l00-00-positive",
+        "u027-to-u059-l00-00-nonoverlap",
+        "u027-l00-17-positive",
+        "u027-to-u059-l00-17-nonoverlap",
+        "u027-l08-01-positive",
+        "u027-to-u059-l08-01-nonoverlap",
+        "u057-l00-00-positive",
+        "u057-to-u061-l00-00-nonoverlap",
+        "u057-l00-17-positive",
+        "u057-to-u061-l00-17-nonoverlap",
+        "u057-l08-01-positive",
+        "u057-to-u061-l08-01-nonoverlap",
+        "u059-l16-16-positive",
+        "u059-to-u063-l16-16-nonoverlap",
+        "u059-l16-01-positive",
+        "u059-to-u063-l16-01-nonoverlap",
+        "u059-l08-17-positive",
+        "u059-to-u063-l08-17-nonoverlap",
+        "u061-l00-00-positive",
+        "u061-to-u069-l00-00-nonoverlap",
+        "u061-l00-17-positive",
+        "u061-to-u069-l00-17-nonoverlap",
+        "u061-l08-01-positive",
+        "u061-to-u069-l08-01-nonoverlap",
+        "u062-l16-16-positive",
+        "u062-to-u070-l16-16-nonoverlap",
+        "u062-l16-01-positive",
+        "u062-to-u070-l16-01-nonoverlap",
+        "u062-l08-17-positive",
+        "u062-to-u070-l08-17-nonoverlap",
+        "u068-l16-16-positive",
+        "u068-to-u072-l16-16-nonoverlap",
+        "u068-l16-01-positive",
+        "u068-to-u072-l16-01-nonoverlap",
+        "u068-l08-17-positive",
+        "u068-to-u072-l08-17-nonoverlap",
+        "u070-l00-00-positive",
+        "u070-to-u074-l00-00-nonoverlap",
+        "u070-l00-17-positive",
+        "u070-to-u074-l00-17-nonoverlap",
+        "u070-l08-01-positive",
+        "u070-to-u074-l08-01-nonoverlap",
+        "u072-l16-16-positive",
+        "u072-to-u092-l16-16-nonoverlap",
+        "u072-l16-01-positive",
+        "u072-to-u092-l16-01-nonoverlap",
+        "u072-l08-17-positive",
+        "u072-to-u092-l08-17-nonoverlap",
+        "u075-l00-00-positive",
+        "u075-to-u095-l00-00-nonoverlap",
+        "u075-l00-17-positive",
+        "u075-to-u095-l00-17-nonoverlap",
+        "u075-l08-01-positive",
+        "u075-to-u095-l08-01-nonoverlap",
+        "u093-l00-00-positive",
+        "u093-to-u013-l00-00-nonoverlap",
+        "u093-l00-17-positive",
+        "u093-to-u013-l00-17-nonoverlap",
+        "u093-l08-01-positive",
+        "u093-to-u013-l08-01-nonoverlap",
+        "u094-l16-16-positive",
+        "u094-to-u014-l16-16-nonoverlap",
+        "u094-l16-01-positive",
+        "u094-to-u014-l16-01-nonoverlap",
+        "u094-l08-17-positive",
+        "u094-to-u014-l08-17-nonoverlap"
+      ],
+      "positives": 48,
+      "nonoverlaps": 48,
+      "positive_lighting": [
+        {
+          "reference": 0,
+          "query": 0,
+          "cases": 8
+        },
+        {
+          "reference": 0,
+          "query": 17,
+          "cases": 8
+        },
+        {
+          "reference": 8,
+          "query": 1,
+          "cases": 8
+        },
+        {
+          "reference": 8,
+          "query": 17,
+          "cases": 8
+        },
+        {
+          "reference": 16,
+          "query": 1,
+          "cases": 8
+        },
+        {
+          "reference": 16,
+          "query": 16,
+          "cases": 8
+        }
+      ],
+      "negative_endpoints": [
+        {
+          "case_id": "u013-to-u021-l00-00-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u013-to-u021-l08-01-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u015-to-u023-l16-16-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u015-to-u023-l16-01-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u015-to-u023-l08-17-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u021-to-u025-l16-16-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u021-to-u025-l16-01-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u021-to-u025-l08-17-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l00-17-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l08-01-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u024-to-u056-l16-01-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u024-to-u056-l08-17-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u027-to-u059-l00-00-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u027-to-u059-l00-17-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u027-to-u059-l08-01-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u057-to-u061-l00-00-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u057-to-u061-l00-17-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u057-to-u061-l08-01-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l16-16-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l16-01-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l08-17-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u061-to-u069-l00-00-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u061-to-u069-l00-17-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u061-to-u069-l08-01-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u062-to-u070-l16-16-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u062-to-u070-l16-01-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u062-to-u070-l08-17-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u068-to-u072-l16-16-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u068-to-u072-l16-01-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u068-to-u072-l08-17-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l00-00-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l00-17-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l08-01-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u072-to-u092-l16-16-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u072-to-u092-l08-17-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u075-to-u095-l00-00-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u075-to-u095-l00-17-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u075-to-u095-l08-01-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u093-to-u013-l00-00-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u093-to-u013-l00-17-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u093-to-u013-l08-01-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l16-16-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l16-01-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l08-17-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        }
+      ]
+    },
+    "64": {
+      "case_ids": [
+        "u013-l00-00-positive",
+        "u013-to-u021-l00-00-nonoverlap",
+        "u013-l00-17-positive",
+        "u013-to-u021-l00-17-nonoverlap",
+        "u015-l16-16-positive",
+        "u015-to-u023-l16-16-nonoverlap",
+        "u015-l16-01-positive",
+        "u015-to-u023-l16-01-nonoverlap",
+        "u021-l16-16-positive",
+        "u021-to-u025-l16-16-nonoverlap",
+        "u021-l16-01-positive",
+        "u021-to-u025-l16-01-nonoverlap",
+        "u022-l00-00-positive",
+        "u022-to-u026-l00-00-nonoverlap",
+        "u022-l00-17-positive",
+        "u022-to-u026-l00-17-nonoverlap",
+        "u024-l16-16-positive",
+        "u024-to-u056-l16-16-nonoverlap",
+        "u024-l16-01-positive",
+        "u024-to-u056-l16-01-nonoverlap",
+        "u027-l00-00-positive",
+        "u027-to-u059-l00-00-nonoverlap",
+        "u027-l00-17-positive",
+        "u027-to-u059-l00-17-nonoverlap",
+        "u057-l00-00-positive",
+        "u057-to-u061-l00-00-nonoverlap",
+        "u057-l00-17-positive",
+        "u057-to-u061-l00-17-nonoverlap",
+        "u059-l16-16-positive",
+        "u059-to-u063-l16-16-nonoverlap",
+        "u059-l16-01-positive",
+        "u059-to-u063-l16-01-nonoverlap",
+        "u061-l00-00-positive",
+        "u061-to-u069-l00-00-nonoverlap",
+        "u061-l08-01-positive",
+        "u061-to-u069-l08-01-nonoverlap",
+        "u062-l16-16-positive",
+        "u062-to-u070-l16-16-nonoverlap",
+        "u062-l08-17-positive",
+        "u062-to-u070-l08-17-nonoverlap",
+        "u068-l16-16-positive",
+        "u068-to-u072-l16-16-nonoverlap",
+        "u068-l08-17-positive",
+        "u068-to-u072-l08-17-nonoverlap",
+        "u070-l00-00-positive",
+        "u070-to-u074-l00-00-nonoverlap",
+        "u070-l08-01-positive",
+        "u070-to-u074-l08-01-nonoverlap",
+        "u072-l16-16-positive",
+        "u072-to-u092-l16-16-nonoverlap",
+        "u072-l08-17-positive",
+        "u072-to-u092-l08-17-nonoverlap",
+        "u075-l00-00-positive",
+        "u075-to-u095-l00-00-nonoverlap",
+        "u075-l08-01-positive",
+        "u075-to-u095-l08-01-nonoverlap",
+        "u093-l00-00-positive",
+        "u093-to-u013-l00-00-nonoverlap",
+        "u093-l08-01-positive",
+        "u093-to-u013-l08-01-nonoverlap",
+        "u094-l16-16-positive",
+        "u094-to-u014-l16-16-nonoverlap",
+        "u094-l08-17-positive",
+        "u094-to-u014-l08-17-nonoverlap"
+      ],
+      "positives": 32,
+      "nonoverlaps": 32,
+      "positive_lighting": [
+        {
+          "reference": 0,
+          "query": 0,
+          "cases": 8
+        },
+        {
+          "reference": 0,
+          "query": 17,
+          "cases": 4
+        },
+        {
+          "reference": 8,
+          "query": 1,
+          "cases": 4
+        },
+        {
+          "reference": 8,
+          "query": 17,
+          "cases": 4
+        },
+        {
+          "reference": 16,
+          "query": 1,
+          "cases": 4
+        },
+        {
+          "reference": 16,
+          "query": 16,
+          "cases": 8
+        }
+      ],
+      "negative_endpoints": [
+        {
+          "case_id": "u013-to-u021-l00-00-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u015-to-u023-l16-16-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u015-to-u023-l16-01-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u021-to-u025-l16-16-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u021-to-u025-l16-01-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l00-17-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u024-to-u056-l16-01-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u027-to-u059-l00-00-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u027-to-u059-l00-17-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u057-to-u061-l00-00-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u057-to-u061-l00-17-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l16-16-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l16-01-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u061-to-u069-l00-00-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u061-to-u069-l08-01-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u062-to-u070-l16-16-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u062-to-u070-l08-17-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u068-to-u072-l16-16-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u068-to-u072-l08-17-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l00-00-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l08-01-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u072-to-u092-l16-16-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u072-to-u092-l08-17-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u075-to-u095-l00-00-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u075-to-u095-l08-01-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u093-to-u013-l00-00-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u093-to-u013-l08-01-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l16-16-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l08-17-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        }
+      ]
+    },
+    "48": {
+      "case_ids": [
+        "u013-l00-00-positive",
+        "u013-to-u021-l00-00-nonoverlap",
+        "u013-l00-17-positive",
+        "u013-to-u021-l00-17-nonoverlap",
+        "u013-l08-01-positive",
+        "u013-to-u021-l08-01-nonoverlap",
+        "u022-l00-00-positive",
+        "u022-to-u026-l00-00-nonoverlap",
+        "u022-l00-17-positive",
+        "u022-to-u026-l00-17-nonoverlap",
+        "u022-l08-01-positive",
+        "u022-to-u026-l08-01-nonoverlap",
+        "u024-l16-16-positive",
+        "u024-to-u056-l16-16-nonoverlap",
+        "u024-l16-01-positive",
+        "u024-to-u056-l16-01-nonoverlap",
+        "u024-l08-17-positive",
+        "u024-to-u056-l08-17-nonoverlap",
+        "u059-l16-16-positive",
+        "u059-to-u063-l16-16-nonoverlap",
+        "u059-l16-01-positive",
+        "u059-to-u063-l16-01-nonoverlap",
+        "u059-l08-17-positive",
+        "u059-to-u063-l08-17-nonoverlap",
+        "u061-l00-00-positive",
+        "u061-to-u069-l00-00-nonoverlap",
+        "u061-l00-17-positive",
+        "u061-to-u069-l00-17-nonoverlap",
+        "u061-l08-01-positive",
+        "u061-to-u069-l08-01-nonoverlap",
+        "u070-l00-00-positive",
+        "u070-to-u074-l00-00-nonoverlap",
+        "u070-l00-17-positive",
+        "u070-to-u074-l00-17-nonoverlap",
+        "u070-l08-01-positive",
+        "u070-to-u074-l08-01-nonoverlap",
+        "u072-l16-16-positive",
+        "u072-to-u092-l16-16-nonoverlap",
+        "u072-l16-01-positive",
+        "u072-to-u092-l16-01-nonoverlap",
+        "u072-l08-17-positive",
+        "u072-to-u092-l08-17-nonoverlap",
+        "u094-l16-16-positive",
+        "u094-to-u014-l16-16-nonoverlap",
+        "u094-l16-01-positive",
+        "u094-to-u014-l16-01-nonoverlap",
+        "u094-l08-17-positive",
+        "u094-to-u014-l08-17-nonoverlap"
+      ],
+      "positives": 24,
+      "nonoverlaps": 24,
+      "positive_lighting": [
+        {
+          "reference": 0,
+          "query": 0,
+          "cases": 4
+        },
+        {
+          "reference": 0,
+          "query": 17,
+          "cases": 4
+        },
+        {
+          "reference": 8,
+          "query": 1,
+          "cases": 4
+        },
+        {
+          "reference": 8,
+          "query": 17,
+          "cases": 4
+        },
+        {
+          "reference": 16,
+          "query": 1,
+          "cases": 4
+        },
+        {
+          "reference": 16,
+          "query": 16,
+          "cases": 4
+        }
+      ],
+      "negative_endpoints": [
+        {
+          "case_id": "u013-to-u021-l00-00-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u013-to-u021-l08-01-nonoverlap",
+          "reference": "np31-r0-c4",
+          "query": "np31-r0-c7"
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l00-17-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u022-to-u026-l08-01-nonoverlap",
+          "reference": "np31-r0-c7",
+          "query": "np31-r1-c0"
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u024-to-u056-l16-01-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u024-to-u056-l08-17-nonoverlap",
+          "reference": "np31-r1-c0",
+          "query": "np31-r3-c2"
+        },
+        {
+          "case_id": "u059-to-u063-l16-16-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l16-01-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u059-to-u063-l08-17-nonoverlap",
+          "reference": "np31-r3-c2",
+          "query": "np31-r3-c3"
+        },
+        {
+          "case_id": "u061-to-u069-l00-00-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u061-to-u069-l00-17-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u061-to-u069-l08-01-nonoverlap",
+          "reference": "np31-r3-c3",
+          "query": "np31-r3-c5"
+        },
+        {
+          "case_id": "u070-to-u074-l00-00-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l00-17-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u070-to-u074-l08-01-nonoverlap",
+          "reference": "np31-r3-c5",
+          "query": "np31-r4-c1"
+        },
+        {
+          "case_id": "u072-to-u092-l16-16-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u072-to-u092-l08-17-nonoverlap",
+          "reference": "np31-r4-c1",
+          "query": "np31-r4-c7"
+        },
+        {
+          "case_id": "u094-to-u014-l16-16-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l16-01-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        },
+        {
+          "case_id": "u094-to-u014-l08-17-nonoverlap",
+          "reference": "np31-r4-c7",
+          "query": "np31-r0-c4"
+        }
+      ]
+    }
+  },
+  "execution_authorized": false
+}
