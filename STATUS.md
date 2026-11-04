@@ -1,5 +1,24 @@
 # Status
 
+## Matched relighting pilot and full development run
+
+On the eight fixed development pairs, direct reference relighting recovered
+3/4 correct raw poses, with 1/2 changed-light successes, one wrong positive pose,
+and 0/4 raw poses on nonoverlap. SIFT recovered 2/4, and the frozen compact
+control and MatchAnything each recovered 1/4. The 2,000-step compact response
+recovered 0/4. The fixed raw pose criterion is 2° and 1% of median reference
+range. All eight direct and all eight MatchAnything rows independently replay.
+The corrected MatchAnything scorer retains all correspondence rows and
+preserves the first four sealed results from the initial run.
+
+The direct-render pilot supports a 1,256-second allowance for all 384
+development cases. That source-frozen run is active. This is development
+evidence from a shared simulator and an on-grid light library. Calibration,
+final terrain, transfer, and the original scientific targets remain open.
+[Matched report](reports/SOLAR_MATCHED_RELIGHTING_V91.md) ·
+[Full protocol](reports/solar-full-direct-render-v92.json) ·
+[Original requirements](reports/requirements_and_sota_v69.json)
+
 ## Development diagnostics completed — 4 November 2026
 
 The matched 32-row pilot and independent replay are complete. SIFT recovers 2/4
