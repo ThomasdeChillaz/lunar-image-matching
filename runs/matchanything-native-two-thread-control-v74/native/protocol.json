@@ -1,0 +1,25 @@
+{
+  "scope": "Actual pretrained native512px software/cost controls, not lunar localization performance.",
+  "profile": "native512",
+  "cpu_threads": 2,
+  "max_seconds": 120,
+  "source_sha256": {
+    "control_native_matchanything_v17.py": "199663bd855557bad691db6678e6d22f179183bbb11799da793bbe31dd59ed7f",
+    "native_matchanything_v17.py": "06337d67bbf620307eed8a4fc594f6349dae8fd7eff7f7527f4d88b71ea6449f",
+    "matchanything_matcher.py": "0604256c830597a71eb91751817ea65bf579b4f31f43ebdb6f2909eb643665c8",
+    "eloftr_matcher.py": "8e8e8004a1354653e48749ece8716829ae1ad7eb5002900fa4e3ca2c9173e6b3",
+    "loftr_matcher.py": "f06f8032dfaa6fef6cb05e62995edee9ad5ddf780be3998e5a868c94a7dfcf03",
+    "matchanything_model_lock.json": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "synthetic.py": "6de5947e09bb333b35ee9667671b1970770accb8e29db6626062895b0a06302a",
+    "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1"
+  },
+  "lunar_images_loaded": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "timing": "Concurrent local cost pilot; not isolated inference latency or an efficiency comparison.",
+  "started_utc": "2026-11-04T15:38:14.635470+00:00"
+}
