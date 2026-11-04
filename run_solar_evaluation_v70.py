@@ -34,6 +34,17 @@ REQUIRED_SOURCES = {
     "train_balanced_localization_v3.py", "localization_refiner_v3.py",
     "prepare_localization_training_v3.py",
     "solar_pose_proposals_v73.py",
+    "solar_evaluation_protocol_v74.py", "build_solar_evaluation_protocol_v74.py",
+    "solar_learning_pipeline_v73.py", "verify_solar_development_v68.py",
+    'north_camera_contract_v59.py',
+    'north_camera_variation_v59.py',
+    'north_camera_visibility_v59.py',
+    'north_development_plan_v35.py',
+    'renderer_depth_v34.py',
+    'solar_completion_v68.py',
+    'solar_data_v65.py',
+    'verify_north_camera_qualified_v64.py',
+    'verify_north_development_v35.py',
 }
 
 
@@ -51,6 +62,10 @@ def software_identity():
 def admission(protocol_path, commit):
     p = read(protocol_path)
     if p.get("prepared_only", False): raise ValueError("Prepared template cannot start scientific inference")
+    if p.get("builder_schema_version") != 74:
+        raise ValueError("New scientific evaluation requires an artifact-driven schema74 freeze")
+    from solar_evaluation_protocol_v74 import validate_runtime
+    validate_runtime(p, protocol_path)
     if p["schema_version"] != 70 or p["split"] != "model_selection" or p["calibration_or_final_access"] or p["cpu_threads"] != 2:
         raise ValueError("Frozen development-only two-thread protocol required")
     if p["tracks"] not in (["estimated_sun"], list(TRACKS)):
@@ -69,8 +84,9 @@ def admission(protocol_path, commit):
             raise ValueError("Modern adapter and coordinate/weight-lock source pins required")
     for profile in p["profiles"]:
         if profile["backend"] == "native_pretrained":
-            from native_pretrained_adapters_v73 import validate_native_profile, required_native_sources
+            from native_pretrained_adapters_v73 import validate_native_profile, required_native_sources, validate_external_comparison
             gate = validate_native_profile(profile)
+            validate_external_comparison(profile, p)
             actual_protocol = read(profile["pretrained_evidence"]["protocol"])
             if not required_native_sources(profile, actual_protocol) <= set(p["source_sha256"]):
                 raise ValueError("Complete native pretrained adapter/control/source/weight-lock pins required")
@@ -312,11 +328,13 @@ def worker(protocol_path, commit):
         for geometry in sorted({c["reference_geometry"] for c in cases}):
             receipt = m["reference_precompute_receipts"][geometry]
             count = sum(c["reference_geometry"] == geometry for c in cases)
-            seconds = read(receipt["receipt_path"])["calendar_seconds"]
+            internal_seconds = read(receipt["receipt_path"])["calendar_seconds"]
+            seconds = p["reference_preparation_costs"]["outer_calendar_seconds_by_archive"][geometry]
             summary["offline_reference_preparation"].append(dict(reference_geometry=geometry, **receipt,
-                measured_calendar_seconds=seconds, queries_per_profile_per_track=count,
+                measured_calendar_seconds=seconds, internal_sidecar_calendar_seconds=internal_seconds,
+                startup_inclusive_outer_calendar_seconds=seconds, queries_per_profile_per_track=count,
                 fixed_study_amortized_seconds_per_query=seconds/count,
-                note="Offline geometry/physical-table preparation; separate from warm online localization. Study reuse does not specify a deployment query frequency."))
+                note="Offline geometry/physical-table preparation includes external cold startup; internal sidecar time is reported separately. Fixed-study reuse does not specify a deployment query frequency."))
         summary["raw_results"] = aggregate_rows(rows)
         if p["purpose"] == "principal_ablations":
             summary["paired_terrain_intervals"] = {track: paired_component_bootstrap(rows, "A1B1C1", "A0B0C0", track) for track in p["tracks"]}
@@ -334,14 +352,20 @@ def run(protocol_path, commit, python):
     # uninterruptible long C/torch call cannot silently reset its wall limit.
     p, _, _ = admission(protocol_path, commit); root = Path(p["output"])
     if root.exists(): raise FileExistsError("Preserve every completed/partial run; no reset or automatic restart")
+    from solar_evaluation_protocol_v74 import validate_runtime
+    validate_runtime(p, protocol_path) # Recheck after source/asset admission work.
     from solar_compute_budget_v67 import reserve
     reservation = reserve(p["compute_ledger"], p["compute_ledger_sha256"], p["reservation_journal"], sha(protocol_path)+"/evaluation", "baseline", p["max_calendar_seconds"])
     root.mkdir(parents=True)
     write_new(root / "reservation.json", reservation)
     child = None; started = time.monotonic(); pending = []
     now = datetime.now(timezone.utc)
+    original_deadline = datetime.fromisoformat(p["absolute_deadline_utc"])
+    deadline = min(now+timedelta(seconds=p["max_calendar_seconds"]), original_deadline)
+    def expired():
+        return time.monotonic()-started >= p["max_calendar_seconds"] or datetime.now(timezone.utc) >= deadline
     write_new(root / "watchdog_admission.json", dict(protocol_sha256=sha(protocol_path), reservation_sha256=sha(root / "reservation.json"),
-        start_monotonic=started, started_utc=now.isoformat(), absolute_deadline_utc=(now+timedelta(seconds=p["max_calendar_seconds"])).isoformat(), controller_pid=os.getpid()))
+        start_monotonic=started, started_utc=now.isoformat(), absolute_deadline_utc=deadline.isoformat(), original_protocol_absolute_deadline_utc=p["absolute_deadline_utc"], controller_pid=os.getpid()))
     def interrupted(signum, frame): pending.append(signum)
     old = {s: signal.signal(s, interrupted) for s in (signal.SIGTERM, signal.SIGINT)}
     try:
@@ -351,14 +375,14 @@ def run(protocol_path, commit, python):
                 env=dict(os.environ, OPENBLAS_NUM_THREADS="1", OMP_NUM_THREADS="2", VECLIB_MAXIMUM_THREADS="2"))
             while child.poll() is None:
                 if pending: raise InterruptedError("Evaluation interrupted; preserve outputs and reservation")
-                if time.monotonic()-started >= p["max_calendar_seconds"]: raise TimeoutError("External evaluation watchdog exhausted original allowance")
+                if expired(): raise TimeoutError("External evaluation watchdog exhausted original allowance")
                 time.sleep(.1)
             if pending: raise InterruptedError("Evaluation interrupted at child exit")
-            if time.monotonic()-started >= p["max_calendar_seconds"]: raise TimeoutError("Evaluation exited after original allowance")
+            if expired(): raise TimeoutError("Evaluation exited after original allowance")
             if child.returncode: raise subprocess.CalledProcessError(child.returncode, child.args)
             summary = read(root / "summary.json")
             if not summary["complete"]: raise ValueError("Worker did not complete full comparison")
-            if time.monotonic()-started >= p["max_calendar_seconds"]: raise TimeoutError("Summary verification exceeded original allowance")
+            if expired(): raise TimeoutError("Summary verification exceeded original allowance")
             write_new(root / "COMPLETE.json", dict(complete=True, summary_sha256=sha(root / "summary.json"), protocol_sha256=sha(protocol_path),
                 external_watchdog_passed=True, observed_calendar_seconds=time.monotonic()-started, original_allowance_seconds=p["max_calendar_seconds"]))
             return summary

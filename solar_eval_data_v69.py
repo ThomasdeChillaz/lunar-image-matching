@@ -112,8 +112,11 @@ def validate_gate(protocol, data, audit, master, assets):
     correct=exact_integer(audit['correct_oracle_poses'],'correct oracle poses')
     if directions!=2*len(eligible) or not 0<=correct<=directions or directions==0 or abs(correct/directions-audit['oracle_success'])>1e-12:
         raise ValueError('All eligible directions and oracle failures must stay in the denominator')
-    if {r['component'] for r in eligible}!=set(group_splits):
-        raise ValueError('At least one eligible camera per development terrain required')
+    training_groups={g for g,split in group_splits.items()if split=='training'}
+    if {r['component']for r in eligible if r['split']=='training'}!=training_groups:
+        raise ValueError('At least one eligible camera per original training terrain required')
+    # Selection terrains with no independently eligible camera remain explicit
+    # inventory exclusions. Oracle/pose failures NEVER alter eligibility.
     if (assets.get('prepared_only',False)or assets['schema_version']!=69 or assets['split']!='model_selection' or
         assets['calibration_or_final_access'] or assets['geometry_audit_sha256']!=protocol['geometry_audit_sha256']):
         raise ValueError('Reference-only asset index must bind the full geometry gate')
@@ -127,6 +130,15 @@ def validate_gate(protocol, data, audit, master, assets):
         audit['audit_source_sha256']!=protocol['geometry_audit_source_sha256']):
         raise ValueError('Full audit/dataset/original source provenance differs')
     return selected
+
+
+def selection_metadata(audit):
+    """Preserve the generated32-camera inventory without dropping pose failures."""
+    rows=sorted((r for r in audit['units']if r['split']=='model_selection'),key=lambda r:r['unit_index'])
+    groups=sorted({r['component']for r in rows});eligible_groups=sorted({r['component']for r in rows if r['eligible']})
+    return dict(terrain_groups=groups,generated_selection_units=rows,generated_selection_unit_count=len(rows),
+        eligible_selection_unit_count=sum(r['eligible']for r in rows),excluded_selection_units=[r for r in rows if not r['eligible']],
+        eligible_terrain_groups=eligible_groups,zero_eligible_terrain_groups=sorted(set(groups)-set(eligible_groups)))
 
 
 def validate_sealed_unit(record, audit_row, spec, clock):
@@ -400,6 +412,7 @@ def build_reference_index(protocol_path,commit):
         units=units,source_sha256=p['source_sha256'],protocol_sha256=sha(protocol_path),publication_commit=commit,
         calendar_seconds=time.monotonic()-tick,photometric_images_decoded=0,ray_queries=0,matcher_forwards=0,optimizer_updates=0,
         scope='Source-gated inventory of already measured reference-only physical archives. No ray work or scientific matcher result.')
+    result.update(selection_metadata(audit));result['eligible_unit_indices']=sorted(selected)
     write_new(p['output'],result)
     return result
 
@@ -503,6 +516,7 @@ def build(protocol_path,commit):
             query_truth_policy='Query depth/pose and exact projected labels live only in scoring NPZs. True query Sun is explicit SECONDARY metadata only, transformed into reference ENU; estimated-Sun inference must not read it.',
             dependence='Eight original selection terrains, four camera pairs each where eligible, six light conditions; repeated conditions are not independent geography.',
             negative_pairing='Fixed family/index preference, cyclic terrain ordering and unit index; every eligible positive gets one certified different-terrain nonoverlap; no image-based cherry picking.')
+        result.update(selection_metadata(audit))
         write_new(output/'manifest.json',result)
         write_new(output/'COMPLETE.json',dict(sha256={str(p.relative_to(output)):sha(p)for p in sorted(output.rglob('*'))if p.is_file()}))
         return result

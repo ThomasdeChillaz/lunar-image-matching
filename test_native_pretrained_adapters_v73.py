@@ -174,10 +174,14 @@ def test_invalid_native_outputs_are_pipeline_defects_not_silently_refitted_or_re
     with pytest.raises(ValueError,match='invalid/unmapped'):matcher.points(image,image)
 
 
-def test_evaluation_admission_binds_full_native_source_and_actual_evidence_pins(tmp_path):
+def test_evaluation_admission_binds_full_native_source_and_actual_evidence_pins(tmp_path,monkeypatch):
     import run_solar_evaluation_v70 as runner
+    import solar_evaluation_protocol_v74 as freeze
+    # Isolate native source/evidence admission; full schema74 budget/deadline
+    # behavior is exercised by test_solar_evaluation_protocol_v74.py.
+    monkeypatch.setattr(freeze,"validate_runtime",lambda *args:dict())
     profile,repo,out,provenance=fixture(tmp_path)
-    protocol=dict(schema_version=70,split='model_selection',calibration_or_final_access=False,cpu_threads=2,tracks=['estimated_sun'],max_calendar_seconds=100,purpose='modern_comparison',profiles=[profile],source_sha256={name:'0'*64 for name in runner.REQUIRED_SOURCES},input_sha256={})
+    protocol=dict(schema_version=70,builder_schema_version=74,split='model_selection',calibration_or_final_access=False,cpu_threads=2,tracks=['estimated_sun'],max_calendar_seconds=100,purpose='modern_comparison',profiles=[profile],source_sha256={name:'0'*64 for name in runner.REQUIRED_SOURCES},input_sha256={})
     path=tmp_path/'evaluation-protocol.json';write(path,protocol)
     with pytest.raises(ValueError,match='native pretrained adapter/control/source/weight-lock'):runner.admission(str(path),'not-used')
     for name in adapters.required_native_sources(profile,adapters.read(profile['pretrained_evidence']['protocol'])):protocol['source_sha256'][name]='0'*64

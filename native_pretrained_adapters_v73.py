@@ -98,9 +98,28 @@ def _semantic_provenance(value,profile,lock,lock_sha):
     return {name:value[name]for name in fields}
 
 
+
+def validate_external_comparison(profile,comparison_protocol):
+    """Bind any optional outer watchdog to the actual comparison freeze."""
+    if profile.get('external_control')is None:return None
+    from control_historical_native_v74 import validate_external_pretrained
+    external=validate_external_pretrained(profile)
+    for name,h in external['source_sha256'].items():
+        if comparison_protocol['source_sha256'].get(name)!=h:
+            raise ValueError('Outer native control source must be pinned to comparison: '+name)
+    for name,h in external['input_sha256'].items():
+        if comparison_protocol['input_sha256'].get(name)!=h:
+            raise ValueError('Outer native control protocol/receipt must be pinned to comparison: '+name)
+    return external
+
+
 def validate_native_profile(profile,source_root=None):
     """Fail closed without loading a network, a weight file, or a lunar image."""
-    spec=specification(profile);paths=_evidence_paths(profile)
+    spec=specification(profile);external=None
+    if profile.get('external_control')is not None:
+        from control_historical_native_v74 import validate_external_pretrained
+        external=validate_external_pretrained(profile)
+    paths=_evidence_paths(profile)
     protocol,summary,controls,provenance=[read(paths[name])for name in EVIDENCE_NAMES]
     root=Path(source_root or profile.get('repository_root')or Path(__file__).resolve().parent).resolve()
     expected=required_native_sources(profile)-{'native_pretrained_adapters_v73.py'}
@@ -122,7 +141,7 @@ def validate_native_profile(profile,source_root=None):
     replay=replay_native_control(controls)
     return dict(method=profile['method'],author_profile=profile['author_profile'],source_root=str(root),source_sha256=pins,
         evidence_sha256={name:sha(path)for name,path in paths.items()},semantic_provenance=semantic,control_replay=replay,
-        isolated_latency_established=False,primary_query_truth_inputs=False)
+        isolated_latency_established=False,primary_query_truth_inputs=False,external_control=external)
 
 
 def native_profile(name,method,author_profile,control_root,repository_root='.',**settings):

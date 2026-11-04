@@ -388,7 +388,8 @@ def aggregate_rows(rows):
                 raw_wrong_positive=sum(r["metrics"]["wrong_positive"] for r in items),
                 raw_nonoverlap_outputs=sum(r["metrics"]["raw_nonoverlap"] for r in items),
                 inference_failures=sum(r["inference_failure"] is not None for r in items),
-                unavailable_cases=sum((r["inference_failure"] or {}).get("status") == "unavailable" for r in items))
+                unavailable_cases=sum((r["inference_failure"] or {}).get("status") == "unavailable" for r in items),
+                timeout_cases=sum((r["inference_failure"] or {}).get("status") == "timeout" for r in items))
         table.append(dict(profile=profile, track=track, positive=counts(pos), nonoverlap=counts(neg),
             raw_pose_success=None if not pos else sum(r["metrics"]["correct"] for r in pos)/len(pos),
             median_complete_inference_seconds=float(np.median([r["inference_seconds"] for r in part])),
@@ -404,8 +405,8 @@ def aggregate_rows(rows):
                 scope="Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."),
             by_reference_terrain={g: counts([r for r in part if r["component"] == g]) for g in sorted({r["component"] for r in part})},
             by_lighting={f"{a},{b}": counts([r for r in part if (r["light_a"], r["light_b"]) == (a, b)]) for a, b in LIGHT_PAIRS},
-            comparison_available=not any((r["inference_failure"] or {}).get("status") == "unavailable" for r in part),
-            nonoverlap_evaluation_available=not any((r["inference_failure"] or {}).get("status") == "unavailable" for r in neg),
+            comparison_available=not any((r["inference_failure"] or {}).get("status") in ("unavailable","timeout") for r in part),
+            nonoverlap_evaluation_available=not any(r["inference_failure"] is not None for r in neg),
             accepted_performance=None))
     return table
 
@@ -480,12 +481,12 @@ def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=com
         infer_seconds = time.perf_counter()-tick; replay_tick = time.perf_counter()
         pose, info = estimator(p, q, inp); replay_seconds = time.perf_counter()-replay_tick
         internal_pose = result.get("pose")
-    except (RuntimeError, cv2.error) as exc:
+    except (RuntimeError, TimeoutError, cv2.error) as exc:
         # Every eligible failure remains a row, not a skipped case.
         p = q = np.empty((0, 2)); pose = None; info = dict(reason="inference_failure", inliers=0); result = {}
         infer_seconds = time.perf_counter()-tick; replay_seconds = 0.
         failure = dict(type=type(exc).__name__, message=str(exc),
-            status="unavailable" if type(exc).__name__.endswith("Unavailable") else "failed")
+            status="timeout" if isinstance(exc,TimeoutError) else "unavailable" if type(exc).__name__.endswith("Unavailable") else "failed")
     if failure is None and ((pose is None) != (internal_pose is None) or (pose is not None and not np.allclose(pose, internal_pose, rtol=0, atol=1e-7))):
         # A broken common-estimator integration is an experiment-wide defect,
         # not an ordinary difficult image that may be counted as a model miss.
@@ -498,6 +499,29 @@ def evaluate_case(backend, inp, case, scoring_loader=load_scoring, estimator=com
         scoring_query_xy=np.empty((0, 2)) if not case["positive"] else truth["query_xy"],
         scoring_visible=np.empty(0, bool) if not case["positive"] else truth["visible"],
         scoring_query_cam2world=np.empty((0, 4)) if not case["positive"] else truth["query_cam2world"])
+    # Preserve diagnosis data without rerunning models. Query truth is first
+    # accessed here, after prediction/timing and the independent pose replay.
+    estimated_sun=result.get("sun_enu")
+    if estimated_sun is not None:
+        estimated_sun=np.asarray(estimated_sun,float)
+        if estimated_sun.shape!=(3,)or not np.isfinite(estimated_sun).all()or not np.isclose(np.linalg.norm(estimated_sun),1.,atol=1e-6,rtol=0):
+            raise ValueError("Estimated Sun must be an explicit unit reference-world vector")
+        arrays["estimated_sun_world"]=estimated_sun
+    if "secondary_known_query_sun_world"in case:
+        scoring_sun=np.asarray(case["secondary_known_query_sun_world"],float)
+        if scoring_sun.shape!=(3,)or not np.isfinite(scoring_sun).all()or not np.isclose(np.linalg.norm(scoring_sun),1.,atol=1e-6,rtol=0):
+            raise ValueError("Scoring Sun must be a unit reference-world label")
+        arrays["scoring_query_sun_world"]=scoring_sun
+    if "coarse_reference_xy"in result:
+        coarse_p=np.asarray(result["coarse_reference_xy"],float).reshape(-1,2)
+        coarse_q=np.asarray(result["coarse_query_candidates"],float)
+        rotation=np.asarray(result["coarse_rotation_indices"],int)
+        if coarse_q.shape!=(len(coarse_p),8,2)or rotation.shape!=(len(coarse_p),8)or not np.isfinite(coarse_p).all()or not np.isfinite(coarse_q).all():
+            raise ValueError("Eight finite native coarse candidates per reference anchor required")
+        coarse_truth,_=scoring_loader(case,coarse_p)
+        arrays.update(coarse_reference_xy=coarse_p,coarse_query_candidates=coarse_q,coarse_rotation_indices=rotation,
+            scoring_coarse_query_xy=np.empty((0,2))if not case["positive"]else coarse_truth["query_xy"],
+            scoring_coarse_visible=np.empty(0,bool)if not case["positive"]else coarse_truth["visible"])
     def json_values(value):
         if isinstance(value, np.ndarray): return value.tolist()
         if isinstance(value, np.generic): return value.item()

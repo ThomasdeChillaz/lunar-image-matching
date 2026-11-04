@@ -265,6 +265,8 @@ def test_independent_saved_array_replay_detects_changed_metrics(tmp_path):
 
 
 def test_external_watchdog_terminates_worker_instead_of_accepting_overrun(tmp_path, monkeypatch):
+    from datetime import datetime, timezone, timedelta
+    import solar_evaluation_protocol_v74 as freeze
     import signal
     import run_solar_evaluation_v70 as runner
     from solar_evaluation_v70 import sha
@@ -272,8 +274,12 @@ def test_external_watchdog_terminates_worker_instead_of_accepting_overrun(tmp_pa
     ledger.write_text(json.dumps(dict(accounting_complete=True, remaining_baseline_wall_seconds=1, remaining_training_wall_seconds=0)))
     protocol = tmp_path / "protocol.json"; protocol.write_text("{}")
     p = dict(output=str(tmp_path / "run"), compute_ledger=str(ledger), compute_ledger_sha256=sha(ledger),
-        reservation_journal=str(tmp_path / "reservations.json"), max_calendar_seconds=1)
+        reservation_journal=str(tmp_path / "reservations.json"), max_calendar_seconds=1,
+        absolute_deadline_utc=(datetime.now(timezone.utc)+timedelta(hours=1)).isoformat())
     monkeypatch.setattr(runner, "admission", lambda *args: (p, {}, []))
+    # This constructed process checks timeout cleanup; schema74 source/budget
+    # admission has dedicated tests and must not hide the watchdog assertion.
+    monkeypatch.setattr(freeze, "validate_runtime", lambda *args: dict())
     calls = []
     class FakeChild:
         pid = 99999999

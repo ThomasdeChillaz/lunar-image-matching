@@ -40,7 +40,14 @@ class TrainingBank:
         # Terrain-uniform, then source-record/sample-uniform. No teacher/patch
         # targets are synthesized from heldout lighting or brightness masks.
         groups=self.manifest['terrain_groups'];group=groups[int(rng.integers(len(groups)))]
-        options=[x for x in self.records if x[0]['component']==group];record,b=options[int(rng.integers(len(options)))];ids=rng.choice(len(b['patches']),size=count,replace=len(b['patches'])<count)
+        options=[x for x in self.records if x[0]['component']==group];record,b=options[int(rng.integers(len(options)))]
+        if type(count)is not int or count<1:raise ValueError('Positive physical-pair sample count required')
+        # Repeating a physical point would label its identical duplicate as a
+        # negative in the diagonal correspondence-discrimination objective.
+        # Small usable records therefore yield smaller, unique minibatches.
+        count=min(count,len(b['patches']))
+        if not count:raise ValueError('No usable physical correspondence in selected record')
+        ids=rng.choice(len(b['patches']),size=count,replace=False)
         patches=b['patches'][ids].astype(np.float32)/255
         if augment:
             import cv2

@@ -276,6 +276,10 @@ class SolarMatcher:
             return dict(solar_states=np.asarray(table['solar_states'])[use],solar_variants=np.asarray(table['solar_variants'])[use])
         result=solve(graph,query_intrinsics,measure,solar_mode,active,policy,budget,response,response_refresh=responder,final_estimator=final_estimator,solar_lookup=graph_lookup if callable(solar_lookup)else None,pose_initialization=self.pose_initialization)
         result['final_geometry']=estimator_label
+        # Raw proposals allow post-inference diagnosis of candidate recall.
+        # Public outputs omit these unless research output is explicitly enabled.
+        result.update(coarse_reference_xy=p.copy(),coarse_query_candidates=q.copy(),
+            coarse_rotation_indices=rotation.copy())
         result['proposal_bank']=dict(angles_degrees=list(self.proposal_angles),anchors=256,candidates_per_anchor=8,native_image_size=512,engineering_control=True,validity='Entire coarse25px low-resolution receptive field and native57px refinement crop must have valid rotated source support; inverse affine returns native pixel centres.')
         result.update(elapsed_seconds=perf_counter()-tick,inference_revision=self.inference_revision,total_parameters=self.total_parameters,native_encoder_forwards=refiner.forward_calls,
             observation=observation,input_digest=hashlib.sha256(reference.tobytes()+query.tobytes()).hexdigest(),

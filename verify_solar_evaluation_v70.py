@@ -44,6 +44,17 @@ def replay(root, protocol_path, output):
         if label_method != row["label_method"]: raise ValueError("Scoring projection method changed")
         if c["positive"] and (not np.array_equal(truth["query_xy"], a["scoring_query_xy"], equal_nan=True) or not np.array_equal(truth["visible"], a["scoring_visible"]) or not np.array_equal(truth["query_cam2world"], a["scoring_query_cam2world"])):
             raise ValueError("Saved labels differ from independently reopened source labels")
+        if "scoring_query_sun_world"in a and not np.array_equal(a["scoring_query_sun_world"],np.asarray(c["secondary_known_query_sun_world"],float)):
+            raise ValueError("Saved scoring Sun differs from the frozen post-inference label")
+        if "estimated_sun_world"in a and(a["estimated_sun_world"].shape!=(3,)or not np.isfinite(a["estimated_sun_world"]).all()or not np.isclose(np.linalg.norm(a["estimated_sun_world"]),1.,atol=1e-6,rtol=0)):
+            raise ValueError("Saved estimated Sun is not a unit reference-world vector")
+        if "coarse_reference_xy"in a:
+            coarse=a["coarse_reference_xy"];candidates=a["coarse_query_candidates"]
+            if coarse.ndim!=2 or coarse.shape[1]!=2 or candidates.shape!=(len(coarse),8,2)or not np.isfinite(coarse).all()or not np.isfinite(candidates).all():
+                raise ValueError("Saved raw coarse candidate schema invalid")
+            coarse_truth,_=load_scoring(c,coarse)
+            if c["positive"]and(not np.array_equal(coarse_truth["query_xy"],a["scoring_coarse_query_xy"],equal_nan=True)or not np.array_equal(coarse_truth["visible"],a["scoring_coarse_visible"])):
+                raise ValueError("Saved candidate labels differ from independently reopened source labels")
         # Explicit native camera-ray norm, independent of the metric helper.
         with np.load(c["reference_geometry"], allow_pickle=False) as z: depth = z["depth"].copy(); k = z["intrinsics"].copy()
         y, x = np.mgrid[:512, :512]; rays = np.column_stack([x.ravel(), y.ravel(), np.ones(x.size)]) @ np.linalg.inv(k).T

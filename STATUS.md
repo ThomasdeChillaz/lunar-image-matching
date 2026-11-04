@@ -1,5 +1,43 @@
 # Status
 
+## Scientific stage preparation integrated — 4 November 2026
+
+**807 repository tests pass**, four optional tests skip, and all eight fresh
+procedural image-to-pose controls pass independent replay. These remain software
+checks. The integrated model has **95,808 total parameters**, and its new
+response head still has **zero lunar training updates**.
+
+The missing-only data job is live: **50/96 units completed** in this snapshot.
+All 16 protected rendering/controller sources and its original deadline remain
+unchanged. Completion is followed automatically by the full independent
+geometry audit; the required 95% pose-control gate still precedes learning.
+
+New stage tools prepare bounded physical-reference pilots/index/cases, actual
+historical and two-thread MatchAnything qualification, and five-checkpoint/
+eight-combination evaluation protocols from measured artifacts. They share the
+original cumulative compute journal, preserve failed charges and enforce fixed
+published deadlines. Every independently eligible camera remains in the study;
+raw exclusions and terrain groups with no eligible camera remain explicit.
+
+Three pre-training correctness repairs prevent duplicated physical locations
+from becoming contrastive negatives, compare negatives under a common target
+Sun, and let valid measured matches reach the common final pose estimator even
+when short trial searches fail. These are matched corrections, not measured
+lunar improvements. Raw candidate/Sun diagnostics are saved after prediction;
+resource timeouts remain failed eligible cases rather than correct rejections.
+
+Actual new training, full ablations/comparisons, selected-seed repetitions,
+transfer, calibration, final testing and the research package remain unfinished.
+The historical attention result stays **15/96 raw correct poses**, uncalibrated.
+The final reserve is closed; the broader research objective remains active.
+
+Evidence: [checks and live-data snapshot](reports/solar_software_release_v74.json),
+[independent smoke replay](reports/solar_controlled_smoke_replay_v74.json),
+[pre-training corrections](reports/solar_learning_correctness_v74.json),
+[reference preparation](reports/REFERENCE_PIPELINE_EXECUTION_V74.md),
+[native qualification](reports/NATIVE_CONTROL_EXECUTION_V74.md), and
+[evaluation preparation](reports/EVALUATION_PROTOCOL_EXECUTION_V74.md).
+
 ## Integrated comparisons and learning execution ready — 4 November 2026
 
 The three candidate modules now have a serial, source-bound learning dispatcher

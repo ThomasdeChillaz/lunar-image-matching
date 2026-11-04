@@ -139,17 +139,27 @@ def counterfactual_loss(model,patches,condition,target_suns,teacher_features,ava
     if pairs.ndim!=2 or pairs.shape[1]!=2 or not len(pairs)or pairs.min()<0 or pairs.max()>=b:raise ValueError('Valid nonempty positive-pair indices required')
     shared=available[pairs[:,0]]&available[pairs[:,1]]
     if not shared.any(-1).all():raise ValueError('Each positive pair needs a common available lighting target')
-    light=shared.to(torch.long).argmax(-1)
-    sun_a=target_suns[pairs[:,0],light];sun_b=target_suns[pairs[:,1],light]
-    if not torch.allclose(sun_a,sun_b,atol=1e-6,rtol=0):raise ValueError('Paired canonical patches must share the same target Sun frame')
-    da=model.decode(coefficients[pairs[:,0]],sun_a,pooled)
-    db=model.decode(coefficients[pairs[:,1]],sun_b,pooled)
-    logits=da@db.T/.1;label=torch.arange(len(pairs),device=patches.device)
-    discrimination=.5*(F.cross_entropy(logits,label)+F.cross_entropy(logits.T,label))
+    # Each contrastive matrix uses one shared counterfactual Sun. Selecting
+    # a different first-available light per positive pair would let off-diagonal
+    # negatives compare lighting rather than physical correspondence.
+    paired_a=target_suns[pairs[:,0]];paired_b=target_suns[pairs[:,1]]
+    if not torch.allclose(paired_a[shared],paired_b[shared],atol=1e-6,rtol=0):raise ValueError('Paired canonical patches must share the same target Sun frame')
+    weighted=coefficients.sum()*0.;negative_pairs=0;lights=0
+    for light in range(l):
+        usable=torch.where(shared[:,light])[0]
+        if len(usable)<2:continue
+        ids=pairs[usable];sun=target_suns[ids[:,0],light]
+        if not torch.allclose(sun,sun[:1].expand_as(sun),atol=1e-6,rtol=0):raise ValueError('Each counterfactual discrimination matrix requires the same target Sun frame')
+        da=model.decode(coefficients[ids[:,0]],sun,pooled)
+        db=model.decode(coefficients[ids[:,1]],sun,pooled)
+        logits=da@db.T/.1;label=torch.arange(len(ids),device=patches.device)
+        weighted+=len(ids)*.5*(F.cross_entropy(logits,label)+F.cross_entropy(logits.T,label))
+        negative_pairs+=len(ids);lights+=1
+    discrimination=weighted/max(1,negative_pairs)
     # Penalize unsupported high-frequency oscillation without asserting an
     # exact illumination group action in the presence of cast shadows.
     degrees=torch.tensor([l*(l+1)for l in range(6)for _ in range(2*l+1)],device=patches.device,dtype=patches.dtype)
     regularizer=(coefficients.square()*degrees[None,:,None]).mean()
     total=reconstruction+discrimination+.001*regularizer
     if not torch.isfinite(total):raise ValueError('Nonfinite response objective')
-    return total,dict(reconstruction=float(reconstruction.detach()),discrimination=float(discrimination.detach()),harmonic_regularizer=float(regularizer.detach()))
+    return total,dict(reconstruction=float(reconstruction.detach()),discrimination=float(discrimination.detach()),harmonic_regularizer=float(regularizer.detach()),discrimination_pair_light_count=negative_pairs,discrimination_light_count=lights)

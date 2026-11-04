@@ -365,10 +365,7 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
             update_beam(b,np.array([b['sun_index']])if solar_mode!='independent'else b['_independent_search'])
         rounds.append(dict(round=round_index+1,queries=len(history),live_poses=sum(b['pose']is not None for b in beams),sun_indices=[b['sun_index']for b in beams]))
     candidates=[b for b in beams if b['pose']is not None]
-    if not candidates:
-        p,q,_,_=_matched(graph,max(beams,key=lambda b:b['score']),measurements)
-        for b in beams:b.pop('_response_matrices',None);b.pop('_independent_search',None)
-        return dict(pose=None,reason='no_pose_hypothesis',reference_xy=p,query_xy=q,measurements=history,hypotheses=beams,proposal_samples_requested=proposal_requested,rounds=rounds,incremental_updates=incremental,response_refresh_calls=response_calls,initialization=initialization)
+    final_only_rescue=not candidates
     # Re-score all surviving beams under their LAST updated poses and bounded
     # Sun support before ranking; no extra RANSAC budget is introduced.
     for b in candidates:
@@ -383,14 +380,14 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
         verified=[b for b in supported if b['native_pose']and len(b['assignment'].get('native_inlier_keep',[]))>=6]
         if verified:candidates=verified
         elif supported:candidates=supported
-        else:
-            p,q,_,_=_matched(graph,max(candidates,key=lambda b:b['score']),measurements)
-            for b in beams:b.pop('_response_matrices',None);b.pop('_independent_search',None)
-            return dict(pose=None,reason='insufficient_supported_native_matches',reference_xy=p,query_xy=q,
-                hypotheses=beams,measurements=history,proposal_samples_requested=proposal_requested,
-                rounds=rounds,initialization=initialization,response_refresh_calls=response_calls)
-    best=max(candidates,key=lambda b:b['score']);p,q,w,_=_matched(graph,best,measurements)
-    if final_estimator is None:
+    # Even if no short-budget trial survived, paid native evidence receives
+    # the same final2000iteration solve as every competing matcher. Returning
+    # early here could disagree with the evaluator's independent final replay.
+    best=max(candidates or beams,key=lambda b:b['score']);p,q,w,_=_matched(graph,best,measurements)
+    if len(p)<6:
+        pose=None;info=dict(reason='insufficient_supported_native_matches',inliers=0)
+        final_geometry='not_run_insufficient_native_measurements';final_iterations=0
+    elif final_estimator is None:
         pose,info=estimate(w,q,intrinsics,dict(solver='ap3p',iterations=2000,reclassify=True));final_geometry='exact_reference_map_anchors';final_iterations=2000
     else:
         pose,info=final_estimator(p,q);final_geometry='caller_supplied_common_reference_geometry';final_iterations=info.get('iterations_requested')
@@ -399,6 +396,6 @@ def solve(graph,intrinsics,measure,solar_mode='shared',active=False,policy='acti
     return dict(pose=pose,reason=info['reason'],reference_xy=p,query_xy=q,initialization=initialization,
         sun_enu=None if solar_mode!='shared'else graph.sun_vectors[best['sun_index']],solar_supported=best['assignment']['solar_supported'],
         measurements=history,hypotheses=beams,proposal_samples_requested=proposal_requested,final_estimator_iterations=final_iterations,
-        final_geometry=final_geometry,rounds=rounds,incremental_updates=incremental,response_measurements=len(response_edges),
+        final_geometry=final_geometry,final_only_rescue=final_only_rescue,rounds=rounds,incremental_updates=incremental,response_measurements=len(response_edges),
         response_refresh_calls=response_calls,fine_sun_search_available=graph.has_fine_sun,solar_columns_materialized=int(graph.solar_materialized_mask.sum()),
         estimated_sun_parameters=None if not len(graph.sun_parameters)or solar_mode!='shared'else graph.sun_parameters[best['sun_index']])

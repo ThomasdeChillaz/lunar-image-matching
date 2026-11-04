@@ -19,6 +19,8 @@ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
 def initialize(protocol):
+    import cv2
+    cv2.setNumThreads(1)
     torch.set_num_threads(2);torch.manual_seed(protocol['seed'])
     torch.use_deterministic_algorithms(True)
     encoder,metadata=load_checkpoint(protocol['initializer'])
