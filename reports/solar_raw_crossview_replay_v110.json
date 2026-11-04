@@ -1,0 +1,13 @@
+{
+  "schema": "solar_raw_crossview_replay_v110",
+  "passed": true,
+  "cases_replayed": 4,
+  "scales_per_case": 3,
+  "shifts_per_scale": 5,
+  "cross_view_seed_pair_cells_replayed": 240,
+  "method": "Reproject with the independent v109 camera arithmetic. Sort/reduce spatial blocks and recompute using covariance matrices.",
+  "shared_exr_decoder": true,
+  "result_sha256": "0a04c3f90a63c566ac9db9e3dd6ca0e256d5888a276c57ce9d29d56d9ef84498",
+  "protocol_sha256": "478d90ff7f50ff69d1f030c4875b3a7378b186bf61e4a1471c0bdf7990b5b932",
+  "calibration_or_final_access": false
+}

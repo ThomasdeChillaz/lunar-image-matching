@@ -1,0 +1,310 @@
+{
+  "schema": "solar_raw_crossview_protocol_v110",
+  "public_predecessor_commit": "416233c8ce5c11841ed59d545342906c8565a6f2",
+  "source_sha256": "55f920a07f245bc29c69526b47672c7f539008e567ade4a5677b1edcb8abc2ae",
+  "repo_source_sha256": {
+    "audit_clean_tail_morphology_v109.py": "19e80adaa6582fc2381a64b30af3f183ed68238e39a14c7bdd73fc07d4415a11",
+    "replay_clean_tail_morphology_v109.py": "db48df17b70bd2fc7ed11d2d297bbe705d8db6f76cf9ae7cfd444b55ef6cf782",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "replay_raw_acquisition_v109.py": "2670cdb5adc69b6f9e7c224d955ca7be8d2fe705c845a4ab2ce8bd7f17fb4372"
+  },
+  "evidence": {
+    "reports/solar-raw-acquisition-v109-study.json": "d711eb8429a8de80d74b16edc20bd49eae011801d32fcf2cd7410d78db28bb60",
+    "runs/solar-raw-acquisition-v109-study/COMPLETE.json": "4ce6d2b7364722205f1b067bbb4d6fb4a29c3e3ae224350a92aca0f4c5a31067",
+    "reports/solar-clean-tail-morphology-protocol-v109.json": "0388eb9d352afb75c568b564a2fdddb04a24a77ae4ee4eeda0210dc7f0608d91",
+    "reports/solar_tail_morphology_v109.json": "91cc4173a5db0f5aa7fbea41c6e86647721a879fb8837344f37e9599fb745569",
+    "reports/solar_tail_morphology_replay_v109.json": "27b13f60066bf86675b29ac7bd87c4e2bb2132c1b98749e3c35c4d1c32da7506"
+  },
+  "independent_raw_replay_sha256": "51bee959b252e962889346612a7b360422deaac974c2082e5145fae7d21e1426",
+  "items": [
+    {
+      "case_id": "u061-l00-17-positive",
+      "purpose": "sparse_tail_primary",
+      "light_index": 17,
+      "samples_per_pixel": 256,
+      "scoring_geometry": {
+        "path": "runs/solar-reference-v80-full/case-assets/u061/scoring_geometry.npz",
+        "sha256": "0a0d26d2421d274cd305359e2c4da4a7920ef2b736531889c3217ac3f84c22ce"
+      },
+      "views": {
+        "reference": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+            "sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/combined_0001.exr",
+              "sha256": "e73087f94863fdb44dc39e04f16532236f8d748ad1650c0a78df465b78c9fc17",
+              "seed": 20261752,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/combined_0001.exr",
+              "sha256": "52d14bbd47293fa34957da6340464367f268166b75b2707776bf1e6736e1a735",
+              "seed": 20261753,
+              "replicate": 1
+            }
+          ]
+        },
+        "query": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/geometry.npz",
+            "sha256": "78ac7e2ef00b58039ee65fb71c9692602f9e45cb1a4875ef8ca48fa95ecaf595"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/combined_0001.exr",
+              "sha256": "4039cafff6ea2459392b76c8c11ed8ad71f64f483f21e02f82194480f4c763c4",
+              "seed": 20261852,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/combined_0001.exr",
+              "sha256": "d41932651a99d5816c3bd004760c51783520cacf7d23e9466282e34b7f54e73e",
+              "seed": 20261853,
+              "replicate": 1
+            }
+          ]
+        }
+      },
+      "expected_geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 211460,
+        "query_supported_smooth_depth_stencil": 211460,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 211460,
+        "reciprocal_cov_visible": 211460,
+        "common_support_before_unique": 177714,
+        "common_support_unique": 167234
+      }
+    },
+    {
+      "case_id": "u013-l00-00-positive",
+      "purpose": "bright_control",
+      "light_index": 0,
+      "samples_per_pixel": 64,
+      "scoring_geometry": {
+        "path": "runs/solar-reference-v80-full/case-assets/u013/scoring_geometry.npz",
+        "sha256": "43a9c57075c60195db95bc917b3cf0f05116133837135d676915ba41af31807a"
+      },
+      "views": {
+        "reference": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/geometry.npz",
+            "sha256": "2be7b995ff8d9042a86bbb900bab9a2d133b293bcad1486a3033218104efd9ea"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "cd8e64300ddf457781ffb62f7ffbdf81c6d2d9406bc11d1c6fe245dbae3ddccf",
+              "seed": 20261116,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "46861062148e198ca876c6f853bce24e930537f425c8d4e915d9336ab60d45cb",
+              "seed": 20261117,
+              "replicate": 1
+            }
+          ]
+        },
+        "query": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/query/geometry.npz",
+            "sha256": "c0f9574e5817614da3a6bd63b0f41b8f1ceef064bbf32f0f89b06b4401a5be0e"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "e49a072645a5396ff04f4db80fdb7c492577d08b0592c2a3917208dca58b5880",
+              "seed": 20261216,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "f44628cf25f2662e3e7c01b4f1c891ccc50a36d8cc29b6cdfcb9da3ee2925e7d",
+              "seed": 20261217,
+              "replicate": 1
+            }
+          ]
+        }
+      },
+      "expected_geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 238434,
+        "query_supported_smooth_depth_stencil": 238434,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 238434,
+        "reciprocal_cov_visible": 238434,
+        "common_support_before_unique": 212409,
+        "common_support_unique": 163765
+      }
+    },
+    {
+      "case_id": "u025-l00-00-positive",
+      "purpose": "near_uniform_control",
+      "light_index": 0,
+      "samples_per_pixel": 64,
+      "scoring_geometry": {
+        "path": "runs/solar-reference-v80-full/case-assets/u025/scoring_geometry.npz",
+        "sha256": "632fce4e309229de9edd236047f3b9e2374e2e7f11843806deec1d7c4fca2589"
+      },
+      "views": {
+        "reference": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/geometry.npz",
+            "sha256": "b1f42a5a47446e904f8467a45e1a59400925552b63056ab45356b0849b6cdd39"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "661932d08eac43124c7abe42ea72bdd84f9f3e7f306aa51892244eeb2013a2b0",
+              "seed": 20261316,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "4a41e6fe3ec5567be04bd810a9008b0a1e4b791443052c74998d989e73870609",
+              "seed": 20261317,
+              "replicate": 1
+            }
+          ]
+        },
+        "query": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/query/geometry.npz",
+            "sha256": "cb64e759f058dc2f94622660b176212cf516641266d2e31e13d6a599430d8a7d"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "321ee3f3cf61c79a8ec3cd3423b82b3e28b66c18d50f0fafa7c21333eaae12b4",
+              "seed": 20261416,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "4b6ea820ea13d25a8aa515d82d57f7f41d9065e702ce02f37c278b5b836867c9",
+              "seed": 20261417,
+              "replicate": 1
+            }
+          ]
+        }
+      },
+      "expected_geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 212882,
+        "query_supported_smooth_depth_stencil": 212882,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 212882,
+        "reciprocal_cov_visible": 212882,
+        "common_support_before_unique": 176446,
+        "common_support_unique": 167401
+      }
+    },
+    {
+      "case_id": "u027-l08-01-positive",
+      "purpose": "near_uniform_control",
+      "light_index": 1,
+      "samples_per_pixel": 64,
+      "scoring_geometry": {
+        "path": "runs/solar-reference-v80-full/case-assets/u027/scoring_geometry.npz",
+        "sha256": "578d8b23a65024c1eddc33178216008008602e90137a2609c3efceb536bc7be4"
+      },
+      "views": {
+        "reference": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/geometry.npz",
+            "sha256": "a1dd385e31128e89a9c78131e7b6205949e7736cb05cf286a77cf0f2e153d575"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "653d079bc789e990323a478a382326d53d74b3280887e61260619255b2bd7e7d",
+              "seed": 20261516,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "cb344ba8109efbefb607f414d6d65e8e9205398617cdb0c554156a7d1550eb90",
+              "seed": 20261517,
+              "replicate": 1
+            }
+          ]
+        },
+        "query": {
+          "archive_geometry": {
+            "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/query/geometry.npz",
+            "sha256": "fdb45cf4e0b70b5ea93a338af8cf57f9403838f03f8d1d414b96cbaef621eafa"
+          },
+          "combined": [
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/combined_0001.exr",
+              "sha256": "b6bd07bce96065bb36ebffeb760e371d58586bad535203120fe1a665513bd70e",
+              "seed": 20261616,
+              "replicate": 0
+            },
+            {
+              "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/combined_0001.exr",
+              "sha256": "96accd0ca5c5cd233cafc41289e0e3fe44441efd0f030ad9d3cbc3e9843b78ac",
+              "seed": 20261617,
+              "replicate": 1
+            }
+          ]
+        }
+      },
+      "expected_geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 237297,
+        "query_supported_smooth_depth_stencil": 237297,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 237297,
+        "reciprocal_cov_visible": 237297,
+        "common_support_before_unique": 210189,
+        "common_support_unique": 152670
+      }
+    }
+  ],
+  "native_shape": [
+    512,
+    512
+  ],
+  "query_offsets_pixels": [
+    [
+      0,
+      0
+    ],
+    [
+      -32,
+      0
+    ],
+    [
+      32,
+      0
+    ],
+    [
+      0,
+      -32
+    ],
+    [
+      0,
+      32
+    ]
+  ],
+  "block_sizes": [
+    32,
+    16,
+    1
+  ],
+  "common_support": "Reuse v109 depth/reciprocal conservative native support and one reference pixel per aligned query centre. Compare nearest native query pixel at true projection and all four integer offsets on identical support.",
+  "projection_scope": "Camera/depth and physical query Sun are sealed audit inputs only. Dense geometry uses conservative subpixel depth tests, not new mesh rays.",
+  "block_rule": "Fixed reference-native nonoverlapping blocks anchored at x=y=0. Use common pixels only, retain each block with at least half nominal pixels, and weight retained block means equally.",
+  "photometry": "Unclipped black-space Combined EXR float32 RGB, decoded native, linear Rec.709 luminance in float64. No per-view normalization, display transform, EXR albedo or geometry-derived brightness labels.",
+  "comparison": "Report Pearson r, population covariance and spatial RMS for both within-view seed repeats, all four cross-view seed pairs, and the two seed-average maps at each shift.",
+  "primary": "32-pixel blocks on u061 at 256 spp. All four independent cross-view seed pairs must exceed all shifted correlations by more than 1e-9; undefined metrics are indeterminate.",
+  "controls": "u013 bright and u025/u027 near-uniform at 64 spp. Report same fixed 32/16/native-scale tables; sensitivities do not replace the primary.",
+  "scope": "Relative renderer output repeatability on four exposed positives. No pose estimation, matching, render, optimizer, photon model, calibration or final access.",
+  "calibration_or_final_access": false
+}
