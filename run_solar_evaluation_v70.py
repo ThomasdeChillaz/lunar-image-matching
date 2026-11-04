@@ -61,7 +61,8 @@ TIMING_SCOPE = dict(
     complete_localization_cold_seconds="Model-resident inference plus input/reference setup ACTUALLY incurred by the reused loader; not a forced cold setup per case. Model startup, offline preparation and cached history are separate.",
     profile_load_seconds="Profile construction/validation measured once and shared across its cases/tracks; do not add to every row.",
     cached_rows="Pinned historical inference/setup/startup timings; current cache-copy time is not fresh model latency.",
-    offline_reference_preparation="Measured startup-inclusive offline preparation and its fixed-study amortization are reported separately.")
+    offline_reference_preparation="Measured startup-inclusive offline preparation and its fixed-study amortization are reported separately.",
+    raw_inference_reporting="Single-call observer bookkeeping is inside inference_seconds; raw trace JSON/NPZ packing is outside inference_seconds and inside case_calendar_seconds.")
 
 
 def worker_peak_rss_snapshot():
@@ -90,6 +91,115 @@ def worker_memory_scope(profiles):
         job_scope="standalone_profile_worker_process" if len(profiles) == 1 else "shared_multi_profile_worker_process",
         scope=MEMORY_SCOPE, child_processes_included=False, per_case_memory_measured=False,
         isolated_model_memory_measured=False, per_model_memory_ranking_supported=False)
+
+
+RAW_ARRAY_PREFIX = "_raw_inference_"
+RAW_MAX_ARRAY_BYTES = 16*1024*1024
+RAW_MAX_JSON_BYTES = 512*1024
+RAW_MAX_NODES = 100000
+_NO_INFERENCE_RESULT = object()
+
+
+class InferenceResultCapture:
+    """One delegate call, unchanged result; owned/deleted as the profile backend."""
+    def __init__(self, backend):
+        self._backend = backend; self._result = _NO_INFERENCE_RESULT; self._calls = 0
+    def __getattr__(self, name):
+        return getattr(self._backend, name)
+    def infer(self, inp):
+        self._result = _NO_INFERENCE_RESULT; self._calls += 1
+        result = self._backend.infer(inp)
+        self._result = result
+        return result
+    def release(self):
+        result, calls = self._result, self._calls
+        self._result = _NO_INFERENCE_RESULT; self._calls = 0
+        return result, calls
+
+
+def pack_raw_inference(result, arrays):
+    """Exact numeric arrays go to existing NPZ; JSON contains typed pointers.
+
+    No model/provenance/tensor objects or reprs are retained. Unsupported values
+    are explicitly unavailable; bounds fail instead of silently truncating.
+    Array insertion is transactional, with no object arrays or pickle.
+    """
+    import math
+    if any(name.startswith(RAW_ARRAY_PREFIX) for name in arrays):
+        raise ValueError("Reserved raw-inference NPZ namespace collision")
+    packed = {}; unsupported = []; nonfinite = []; nodes = 0; total_bytes = 0
+    def array_value(value, kind="ndarray", container=None):
+        nonlocal total_bytes
+        if value.dtype.kind not in "biufc" or value.dtype.hasobject:
+            return None
+        total_bytes += value.nbytes
+        if total_bytes > RAW_MAX_ARRAY_BYTES:
+            raise ValueError("Raw inference trace exceeds predeclared numeric-byte bound")
+        name = RAW_ARRAY_PREFIX + str(len(packed)).zfill(5)
+        packed[name] = value.copy()
+        count = int((~np.isfinite(value)).sum()) if value.dtype.kind in "fc" else 0
+        out = {"$raw":kind, "npz_key":name, "dtype":value.dtype.str,
+            "shape":list(value.shape), "nonfinite_count":count}
+        if container is not None: out["container"] = container
+        return out
+    def encode(value, path="$", depth=0):
+        nonlocal nodes
+        nodes += 1
+        if nodes > RAW_MAX_NODES or depth > 32:
+            raise ValueError("Raw inference trace exceeds predeclared structure bound")
+        if isinstance(value, np.ndarray):
+            encoded = array_value(value)
+            if encoded is not None: return encoded
+        elif isinstance(value, np.generic):
+            encoded = array_value(np.asarray(value), "numpy_scalar")
+            if encoded is not None: return encoded
+        elif value is None or type(value) in (str, bool, int):
+            return value
+        elif type(value) is float:
+            if math.isfinite(value): return value
+            label = "NaN" if math.isnan(value) else "+Infinity" if value > 0 else "-Infinity"
+            nonfinite.append(path)
+            return {"$raw":"nonfinite_float", "value":label}
+        elif type(value) in (list, tuple):
+            if value and all(isinstance(v, np.ndarray) and v.dtype.kind in "biufc" and not v.dtype.hasobject
+                    and v.shape == value[0].shape and v.dtype == value[0].dtype for v in value):
+                # In particular, eight256-anchor assignment arrays become ONE
+                # typed NPZ array per update, preserving element dtype exactly.
+                if total_bytes + sum(v.nbytes for v in value) > RAW_MAX_ARRAY_BYTES:
+                    raise ValueError("Raw inference trace exceeds predeclared numeric-byte bound")
+                stacked = np.stack(value, dtype=value[0].dtype, casting="no")
+                return array_value(stacked, "ndarray_sequence", "tuple" if type(value) is tuple else "list")
+            items = [encode(v, path+"["+str(i)+"]", depth+1) for i,v in enumerate(value)]
+            return items if type(value) is list else {"$raw":"tuple", "items":items}
+        elif type(value) is dict and all(type(k) is str for k in value):
+            items = {key:encode(v,path+"."+key,depth+1) for key,v in value.items()}
+            return items if "$raw" not in value else {"$raw":"escaped_mapping", "items":items}
+        unsupported.append(dict(path=path, python_type=type(value).__module__+"."+type(value).__qualname__))
+        return {"$raw":"unsupported", "python_type":unsupported[-1]["python_type"], "value_preserved":False}
+    encoded = encode(result)
+    size = len(json.dumps(encoded, separators=(",",":"), allow_nan=False).encode("utf-8"))
+    if size > RAW_MAX_JSON_BYTES:
+        raise ValueError("Raw inference trace exceeds predeclared JSON-byte bound")
+    arrays.update(packed)
+    return encoded, dict(format="raw-inference-npz-v82", encoding_complete=not unsupported,
+        unsupported_values=unsupported, nonfinite_scalar_paths=nonfinite,
+        serialized_array_count=len(packed), serialized_array_bytes=total_bytes,
+        compact_json_bytes=size, structure_nodes=nodes,
+        effective_C_policy="unrecorded_in_frozen_solver", C_fallback_reason="unrecorded_in_frozen_solver")
+
+
+def capture_case_report(backend, arrays):
+    tick = time.perf_counter(); result, calls = backend.release()
+    if calls != 1: raise ValueError("Case reporter requires exactly one original backend inference call")
+    if result is _NO_INFERENCE_RESULT:
+        encoded = None; info = dict(format="raw-inference-npz-v82", encoding_complete=False,
+            capture_status="backend_did_not_return", effective_C_policy="unrecorded_in_frozen_solver",
+            C_fallback_reason="unrecorded_in_frozen_solver")
+    else:
+        encoded, info = pack_raw_inference(result, arrays); info["capture_status"] = "returned_result"
+    info.update(backend_infer_calls=calls, serialization_seconds=time.perf_counter()-tick,
+        scope="Observer bookkeeping is inside inference_seconds; JSON/NPZ packing is outside it and inside case_calendar_seconds. Serialized byte counts are not model-memory measurements.")
+    return encoded, info
 
 
 def software_identity():
@@ -344,11 +454,12 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
                     cached = reusable.get(key)
                     if cached is None:
                         if backend is None:
-                            load_tick = time.monotonic(); backend = Backend(profile); load_seconds = time.monotonic()-load_tick
+                            load_tick = time.monotonic(); backend = InferenceResultCapture(Backend(profile)); load_seconds = time.monotonic()-load_tick
                             model_load_this_case = load_seconds
                             write_new(root / (digest(profile)+".provenance.json"), backend.provenance)
                         inp = loader.get(case, track)
                         row, arrays = evaluate_case(backend, inp, case)
+                        row["raw_inference_result"], row["raw_inference_reporting"] = capture_case_report(backend, arrays)
                         row["reference_setup"] = loader.last_setup.copy()
                         row["complete_localization_cold_seconds"] = row["inference_seconds"] + sum(loader.last_setup.values())
                         row["timing_scope"] = TIMING_SCOPE["complete_localization_cold_seconds"]
@@ -359,6 +470,8 @@ def worker(protocol_path, commit, pre_reserved_ticket=None):
                         row = dict(cached, reused_case_cache=True, original_case_calendar_seconds=cached["case_calendar_seconds"],
                             timing_scope="Inference and setup latency replayed from this exact pinned cached execution; current cache-copy time is not model latency")
                         with array_path.open("xb") as destination, Path(cached["saved_arrays"]).open("rb") as source: shutil.copyfileobj(source, destination)
+                    row["raw_inference_execution_scope"] = ("Historical pinned prediction/trace from case cache; no fresh backend inference or module-use observation."
+                        if row["reused_case_cache"] else "Fresh single original backend inference; requested flags alone do not prove module contribution.")
                     row["memory_measurement_scope"] = ("Cached execution memory fields, if present, are historical; this row has no fresh case/model RAM attribution. Current profile snapshots include all fresh and cached activity in this run."
                         if row["reused_case_cache"] else "No case/model RAM measured; current worker lifetime peaks are recorded before/after the profile.")
                     row.update(case_id=case["case_id"], component=case["component"], query_component=case["query_component"],

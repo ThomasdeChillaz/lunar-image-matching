@@ -14,11 +14,25 @@ contribute; 163 trial-support omissions are explicit. Independent bank and
 checkpoint audits pass. The original failed extraction and its charge remain
 preserved, alongside the corrected experiment and additional charges.
 
-A source-published full generic Sun-ray cost pilot is now running on reference
-geometry only, with fixed terrain-envelope and height-perturbation rules. Its
-measured cost gates the remaining reference preparation and then the full raw-pose
-checkpoint comparison. Query pose, depth and true Sun are unavailable to primary
-inference. Calibration/final terrain remains untouched.
+Full generic Sun-ray preparation is running on reference geometry only. Four
+measured pilots admitted the remaining 28 maps under an 8,289-second cap; the
+full preparation and metadata sequence stays within its original 12,000-second
+allowance. Terrain-envelope and height-perturbation rules are fixed. Query pose,
+depth and true Sun remain unavailable to primary inference. Calibration/final
+terrain remains untouched.
+
+The first new-model pose pilot has not started. Matched eight-case pilot
+settings are prepared but inactive; full checkpoint selection retains all
+384 eligible cases and five checkpoints per model. The evaluation recorder now
+preserves raw acquisition order, assignments, hypotheses and Sun-support flags
+without changing the solver or the protected 49/42 source bindings. Unlogged
+active-policy fallback details remain explicitly unknown.
+
+A separate audit of saved original-teacher targets finds a similarity advantage
+of 0.4002 under unchanged lighting and 0.0613 after a 90-degree hour-angle
+change. This is a descriptive training-target diagnostic, not a new-model or
+pose result. The updated primary-source review distinguishes LIMA/LoFTR,
+Geo-LoFTR, lunar model distillation and modern matching metrics from our task.
 
 **No improved lunar localization result is claimed yet.** Training completion
 is not pose recovery. The historical attention control remains **15/96 raw correct
@@ -31,6 +45,11 @@ Evidence: [directional study](reports/solar_sh_study_summary_v79.json),
 [bank replay](reports/solar_teacher_full_replay_v79.json),
 [pilot checkpoint audit](reports/solar_pilot_checkpoint_review_v79.json), and
 [physical pilot protocol](reports/solar-reference-v80-full/reference_one.json).
+
+Further evidence: [raw inference reporting](reports/RAW_INFERENCE_REPORTING_V82.md),
+[teacher diagnostic](reports/SAVED_TEACHER_SIGNAL_V81.md),
+[primary-source review](reports/solar_prior_art_review_v81.md), and
+[all original requirements](reports/research_requirements_status_v82.json).
 
 ## Training-patch support correction — 4 November 2026
 

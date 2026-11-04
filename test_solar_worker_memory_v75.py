@@ -93,12 +93,16 @@ def test_stub_worker_profiles_and_caches_keep_timings_and_measure_current_proces
     class FakeBackend:
         def __init__(self, profile):
             loaded.append(profile["name"]); self.provenance = dict(historical_control_peak_rss_bytes=999999999)
+        def infer(self, inp): return {}
     class FakeLoader:
         def __init__(self, *a, **k): self.last_setup = dict(image_decode_seconds=.25, reference_geometry_load_seconds=.5, reference_physics_setup_seconds=.75)
         def get(self, *a): return None
         def close(self): pass
     monkeypatch.setattr(runner, "Backend", FakeBackend); monkeypatch.setattr(runner, "InputLoader", FakeLoader)
-    monkeypatch.setattr(runner, "evaluate_case", lambda *a: (dict(inference_seconds=1.), dict(procedural=np.zeros(1))))
+    def fake_evaluate(backend, *args):
+        backend.infer(None)  # Honor the runner's single-call capture contract; no model is constructed.
+        return dict(inference_seconds=1.), dict(procedural=np.zeros(1))
+    monkeypatch.setattr(runner, "evaluate_case", fake_evaluate)
     def snapshot():
         result = dict(available=True, peak_rss_bytes=100+len(snapshots), worker_pid=os.getpid(), scope=runner.MEMORY_SCOPE)
         snapshots.append(result); return result
