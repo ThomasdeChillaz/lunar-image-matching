@@ -1,5 +1,20 @@
 # Status
 
+## Direct relighting mechanism pilots
+
+The matched translation-window pilot independently replayed all 24 rows.
+Both patch policies recovered 2/4 positive poses versus 3/4 for the
+frozen direct control. The two policies added many reciprocal matches
+on one case while increasing translation error from 15.55 m to over
+150 m.
+
+The cross-light pilot independently replayed all 16 rows. It used the
+same nine pose solves as the direct control. Four nonoverlap cases
+activated the rescue and returned no pose. All four positives already
+had a direct pose. The pilot qualifies the measured cost projection for
+a separately frozen full comparison.
+[Mechanism pilot results](reports/SOLAR_DIRECT_MECHANISM_PILOTS_V97_V98.md)
+
 ## Withheld lighting templates
 
 Keeping only the 12 even-index reference renders reduced changed-light
@@ -10,9 +25,8 @@ returned 0/192 nonoverlap poses and recovered 86/192 correct raw poses
 overall. All 384 restricted-library rows independently replayed.
 
 This controls for exact lighting availability within the shared
-simulator. It leaves transfer and calibrated acceptance open. The
-translation-window pilot has started, and the separate cross-light
-pilot is frozen. [Restricted-library results](reports/SOLAR_OFFCATALOGUE_DIRECT_V95.md) ·
+simulator. It leaves transfer and calibrated acceptance open.
+[Restricted-library results](reports/SOLAR_OFFCATALOGUE_DIRECT_V95.md) ·
 [Translation-window pilot](reports/solar-direct-additive-windows-pilot-v97.json) ·
 [Cross-light pilot](reports/solar-crosslight-mechanism-dispatch-v98.json)
 
