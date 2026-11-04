@@ -1,5 +1,26 @@
 # Status
 
+## Full matched development benchmark
+
+Direct reference relighting recovered 114/192 correct raw poses. On the
+same cases with the same 3-pixel pose estimator, SIFT recovered 41/192
+and MatchAnything–EfficientLoFTR recovered 42/192. The gain came from
+changed-light cases, where the counts were 74/128, 0/128 and 2/128.
+The paired overall difference against MatchAnything was 37.50 percentage
+points with a 95% terrain-group interval of 19.27 to 55.73 points.
+
+Direct relighting and SIFT returned no raw poses on the 192 nonoverlap
+pairs. MatchAnything returned 51. Their median online times were 1.293,
+0.120 and 3.820 seconds on the same CPU. Direct relighting also requires
+offline reference render preparation. All 768 native baseline rows
+independently replayed, in addition to the 384 direct relighting rows.
+The full library used on-grid lighting under the shared simulator. A
+separate even-index-library comparison is now running on the same cases.
+Calibration and the final terrain reserve remain closed.
+[Paired results](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md) ·
+[Restricted-library protocol](reports/solar-offcatalogue-direct-dispatch-v95.json) ·
+[Research requirements status](reports/research_requirements_status_v94.json)
+
 ## Matched relighting pilot and full development run
 
 On the eight fixed development pairs, direct reference relighting recovered
@@ -25,9 +46,7 @@ Every arm recovered the same one of four positive poses, with zero of two
 under changed lighting. Render-derived pose seeds and projected windows
 added a wrong pose. Adding the coarse learned response returned two wrong
 positive poses and one nonoverlap pose. Direct relighting recovered three
-of four on the same cases. The full matched 384-case SIFT and MatchAnything
-comparison has started. An off-catalogue runner is available to test the
-direct method with alternate reference light angles withheld.
+of four on the same cases.
 
 These development experiments share a simulator. Calibration, final
 terrain, transfer, and the original scientific targets remain open.
