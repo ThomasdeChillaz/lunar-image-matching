@@ -1,0 +1,20 @@
+{
+  "complete": false,
+  "mode": "run",
+  "program": "build_solar_training_bank_v68.py",
+  "protocol_sha256": "5913790675d1f900b2e429d89b05b839890d87623833a4c9f6712fca4df5f02d",
+  "publication_commit": "dfb7c7d52dfde17028def4000e5d09de04426e14",
+  "source_sha256": "80b376c95569228a66599a869b645866456ea1eb028ec1169c3c6d8638dd8fd4",
+  "started_utc": "2026-11-04T05:09:14.738582+00:00",
+  "absolute_deadline_utc": "2026-11-04T05:15:15.738582+00:00",
+  "cap_seconds": 361,
+  "calendar_seconds": 11.435741542023607,
+  "child_pid": 1974,
+  "child_returncode": 1,
+  "failure": {
+    "error_type": "CalledProcessError",
+    "error": "Command '['/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python', 'build_solar_training_bank_v68.py', '--protocol', 'reports/solar-learning-v74/teacher_full.json', '--publication-commit', 'dfb7c7d52dfde17028def4000e5d09de04426e14']' returned non-zero exit status 1."
+  },
+  "source_log_sha256": "812a76c49d2a6f32544950b29918838c836e12e2aaa4a3905966e4c47272d3d5",
+  "scope": "Deadline/termination receipt, not an accuracy or replay claim."
+}

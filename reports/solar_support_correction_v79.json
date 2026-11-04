@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-11-04T05:16:26.589839+00:00",
+  "source_change": {
+    "solar_training_bank_v68.py": "471c716d120cebf93b5feb7801dda299cd226f47bec662b0c890a3c914f8808d"
+  },
+  "regression_test": {
+    "test_solar_teacher_support_v79.py": "3123851b2c908b8e3ec81d82ea4f555652cd8c916490443ed1e4c482905743c3"
+  },
+  "software_checks": {
+    "existing_tests_passed": 896,
+    "existing_optional_skips": 4,
+    "existing_seconds": 66.09,
+    "focused_new_tests_passed": 3,
+    "full_log_sha256": "a398f3016fdd3670d805a88c5fe5c1f381b5311d41e958c5b03976ec013fad4a",
+    "focused_log_sha256": "33066b5ddd8517afd861d20253ccff07cba4a807f052c2b862a0785d518fef83",
+    "procedural_replay": "reports/solar_controlled_smoke_replay_v79.json",
+    "procedural_replay_sha256": "3f4aef33284de0760fc1b3c2067127d95cf71bfc90c23a0949658947bf65852d"
+  },
+  "independent_actual_replay": "reports/solar_teacher_actual_replay_v79.json",
+  "independent_source_review": "reports/solar_support_review_v79.json",
+  "preserved_failed_attempt": "reports/solar_teacher_full_failed_v78.json",
+  "preserved_failed_charge_seconds": 361,
+  "response_lunar_optimizer_updates": 0,
+  "calibration_or_final_access": false,
+  "scientific_goal_complete": false,
+  "scope": "Focused support correction and software checks; no new lunar matcher accuracy claim."
+}

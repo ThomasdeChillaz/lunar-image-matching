@@ -1,0 +1,31 @@
+{
+  "kind": "independent_trial_support_correction_review",
+  "created_utc": "2026-11-04T05:13:58.559394+00:00",
+  "blocking_findings": [],
+  "source_sha256": {
+    "solar_training_bank_v68.py": "471c716d120cebf93b5feb7801dda299cd226f47bec662b0c890a3c914f8808d",
+    "teacher_trial_support_v78.patch": "c84a4482dcba8c03ee3f612554de8eaebbf5a1fa794db76cf1f8dbf0b192ea38"
+  },
+  "actual_failure": "Original full-bank unit3 selected64 true-pose-supported anchors; unchanged jitter invalidates4 trial patches (indices18,41,59,60), leaving60. Original4unitpilot is otherwise valid; independent arithmetic receipt REPLAY.json.",
+  "semantic_checks": [
+    "Preserves same per-unit seeded jitter draw, sigma25m/1.5deg and exact point/query-center identities.",
+    "Preserves original observed-light assignment and selected_indices mapping rather than renumbering after masking.",
+    "Preflights geometry-only trial support before teacher extraction; no extra PNG access or odd-light targets.",
+    "Supported teacher targets retain exact original true-geometry maps; observed inputs reuse exact trial maps from shared canonicalization.",
+    "Unsupported slots remain unavailableNaN and omitted separately; no darkness/occlusion/negative label inferred.",
+    "All camera/terrain records remain required; existing>=8usable-point producer/cache floor remains unchanged."
+  ],
+  "procedural_tests": "Implementation agent preparing focused tests; no tests or teacher forwards were run by this review.",
+  "recovery_conditions": [
+    "Versioned source-matched fresh4unitpilot/bank, no oldcache reuse; preserve old artifacts/failure/charged caps.",
+    "Use honest new creation times with shorter300s publicationlease, both latest/absolute no later than original stage bounds.",
+    "Measured full cap must fit<=361seconds and original full deadline; no-go if publication or cost gate misses.",
+    "Next SH100 remains gated on a complete sealed all-eligible corrected bank, source publication and canonical charging."
+  ],
+  "activity": {
+    "source_edits": 0,
+    "scientific_jobs": 0,
+    "model_forwards": 0,
+    "actual_images_decoded": 0
+  }
+}
