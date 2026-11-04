@@ -1,5 +1,31 @@
 # Status
 
+## Completed exposure, supplied-Sun and physical lab pilots
+
+Blind exposure normalization moved raw pose recovery from 15/24 to 17/24
+and increased wrong positives from one to four. It recovered none of the
+six near-black zero-match positives. Two generated more than 1,800 matches
+within one pixel of zero motion and placed the estimated camera close to
+the reference, about 192 m and 203 m from the query truth.
+[Exposure pilot](reports/SOLAR_EXPOSURE_PILOT_V101.md) ·
+[Saved identity analysis](reports/SOLAR_IDENTITY_LOCK_V104.md)
+
+With query Sun supplied, nearest-even and two-reference synthesis each
+recovered 16/24 poses and 10/16 on withheld odd lights. Synthesis gained one
+correct pose and lost another. The earlier same-view contrast improvement
+did not yield a net pose improvement.
+[Supplied-Sun pose pilot](reports/SOLAR_SUPPLIED_SUN_POSE_PILOT_V102.md)
+
+The SPICE-HL3 baseline produced 24 poses and met the nominal rotation
+threshold in 23 pairs. None met the joint criterion because all signed
+translation-direction errors exceeded 15 degrees. The roughly 41-degree
+direction discrepancy calls for a reference and frame-convention audit
+before using this cohort to rank matchers. Calibration and final terrain
+remain closed.
+[Physical lab result](reports/SPICE_HL3_GEOMETRY_RESULT_V101.md) ·
+[Recent lunar comparisons](reports/LUNAR_SOTA_AND_TRANSFER_V104.md) ·
+[LunaPolaris access probe](reports/LUNAPOLARIS_RANGE_PROBE_V104.md)
+
 ## Withheld reference-light prediction
 
 Two-reference contrast synthesis reduced local signed-gradient error in

@@ -1,3 +1,18 @@
+## M104 — Paired optical pilots and a physical lab baseline
+
+The exposure and supplied-Sun experiments each completed and independently
+replayed 96 method–case records. Exposure recovered two additional correct
+poses and emitted three more wrong ones. The saved arrays establish the
+near-identity correspondence mechanism in three wrong positives. With Sun
+supplied, better reference photometry produced no net pose gain. The
+independent physical baseline replayed all 24 lab pairs, with a systematic
+nominal translation-direction discrepancy requiring a separate reference
+audit. The recent Endurance and lunar SLAM studies provide mission and
+transfer context.
+[Exposure results](reports/SOLAR_EXPOSURE_PILOT_V101.md) ·
+[Supplied-Sun results](reports/SOLAR_SUPPLIED_SUN_POSE_PILOT_V102.md) ·
+[Physical lab results](reports/SPICE_HL3_GEOMETRY_RESULT_V101.md)
+
 ## M103 — Reference relighting measured and ARM comparison scoped
 
 Same-view synthesis of withheld illumination reduced local contrast error
