@@ -1,11 +1,19 @@
+## M95 — Withheld lighting templates replayed
+
+The same 384 cases ran with alternate reference lighting angles withheld.
+Changed-light recovery decreased from 74/128 to 46/128 while same-light
+recovery remained 40/64. The restricted library returned no nonoverlap
+poses. Independent replay verified every row. Both follow-up mechanism
+pilots are source-published and frozen.
+[Restricted-library results](reports/SOLAR_OFFCATALOGUE_DIRECT_V95.md)
+
 ## M94 — Full native baseline replay complete
 
 The exact 768 native SIFT and MatchAnything rows completed and replayed.
 The joined 384-case benchmark finds 114/192 correct direct relighting
 poses, 41/192 for SIFT and 42/192 for MatchAnything. Same-light recovery
 is nearly identical. Changed-light recovery is 74/128, 0/128 and 2/128.
-The off-catalogue follow-up has started with the same case and scoring
-identities. [Full paired report](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md)
+[Full paired report](reports/SOLAR_FULL_PAIRED_DEVELOPMENT_V94.md)
 
 ## M94 — Compact bootstrap replay and full native comparison
 
