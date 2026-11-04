@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "format": "distributional-coarse128-study-v90",
+  "updates": 2000,
+  "seed": 20261101,
+  "checkpoint_steps": [
+    0,
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "exact_pilot_prefix_rows": 100,
+  "exact_pilot_prefix_endpoint_states": [
+    0,
+    100
+  ],
+  "pilot_replay_evidence": {
+    "pilot": {
+      "protocol_sha256": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca",
+      "complete_sha256": "dff20401b31ebeeea26386bf6a11f421ca2422473e864f5f0527b189ab73119a",
+      "watchdog_sha256": "b95efb46c1d02a5b52bb211fc4a85a12c3ec8c0e6731cc33acff767ce631b838",
+      "worker_summary_sha256": "d1e12bfb1d36cf752d6aa6d7ea1489c6ea74efad4a350ab88284ee1a520db8df",
+      "reservation_sha256": "251edc4d4524cdc6cb4e19e86efea120d7390fbae9af7263cbbc3522631d0b95"
+    },
+    "replay": {
+      "protocol_sha256": "f27b038155593081eca91834d713af0ef2d431b899f08af5aff3278f9f3d205f",
+      "complete_sha256": "75c756153ac1d8b920b03ad4fc4db61c540cc54166088ff766eaaa23be03c4c7",
+      "watchdog_sha256": "809c10d1bc67eb821995a3df2cc3de20765e8e2fd34e12348f25367830d26428",
+      "worker_summary_sha256": "9c36b0a0aea4be547bf4e6941f879c156cc82937d1c1cefdfc370a17043139a7",
+      "reservation_sha256": "8dd62ff1421fc6a6511e95dd235a6ca9b202b2623570a1d88b345b95b0b6e145",
+      "exact_replay_sha256": "602a6795eff9c0ccb4a6b386acfa9a7dab6c941256c1ffde78f7ee4668ce0432",
+      "replay_trace_sha256": "cde521d58accb7e9e78771deb0af2821a337e91937cdc75779161b07ff44efe3"
+    }
+  },
+  "bank_manifest_sha256": "e08adbd5ff997e8c67b33ae2556cabe6af714ccaedc4ca327f2cd5e5576b6085",
+  "bank_prior_sha256": "2302f7b1cac58fa76ca442ae088a5d42fd5a2742f023cdf1bffa0af861ec5d53",
+  "teacher_domain": "full-coarse128-field-only",
+  "calibration_or_final_access": false,
+  "model_selection_performed": false,
+  "model_promoted": false,
+  "artifacts": {
+    "step_0.pt": "469b7c22aa8fa617ccd23d39cd70d031cfc637bf1e48b33260ae8ab837e67c39",
+    "step_500.pt": "6bfc2006407bafba6cdb85aabdfb1debf3b7b7e77bad0669a7d022784ebfb150",
+    "step_1000.pt": "02c03ca236161ebc3d373b70063aa4a00c15e21c774a358bd8687b90655bff6d",
+    "step_1500.pt": "b0e10116c022f4a36db273bc1a40885c06ba9198a48155ab4f6f8e37fab27e7c",
+    "step_2000.pt": "5184111ea93be82833d53e8d3ca54bf98b3d65a059f793720af27732e82e5f06",
+    "execution.json": "5ccde184c9b5c8b726d818d86279b0d999e5be75ad240786b1d26d7b2e9e4262",
+    "trace.jsonl": "2d5561f4fd89aed1c424db7f125087be11a24121df5172ee51cd24442cf7c7a3"
+  }
+}
