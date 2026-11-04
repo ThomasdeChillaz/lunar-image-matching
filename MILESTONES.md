@@ -1,3 +1,12 @@
+## M97–98 — Direct relighting mechanism pilots replayed
+
+The translation-window pilot replayed 24 rows. Uniform and translation
+selection each regressed to 2/4 correct positives, against 3/4 for the
+frozen direct arm. The cross-light pilot replayed 16 rows. Its four
+positives needed no rescue, and its four attempted nonoverlap rescues
+returned no pose. Measured full-study cost qualifies for separate
+cross-light admission. [Pilot results](reports/SOLAR_DIRECT_MECHANISM_PILOTS_V97_V98.md)
+
 ## M95 — Withheld lighting templates replayed
 
 The same 384 cases ran with alternate reference lighting angles withheld.
