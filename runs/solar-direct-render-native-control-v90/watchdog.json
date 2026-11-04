@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "protocol_sha256": "ee7887774c593b800a88b0774a023280985e51ac194430c8d85e331ab620d647",
+  "publication_commit": "555e33f09538719be42e7f623bed5c0c2b177cb4",
+  "started_utc": "2026-11-04T15:49:06.304740+00:00",
+  "ended_utc": "2026-11-04T15:49:12.450889+00:00",
+  "calendar_seconds": 6.145855016016867,
+  "cap_seconds": 120,
+  "hard_deadline_utc": "2026-11-04T15:51:06.304740+00:00",
+  "work_deadline_utc": "2026-11-04T15:51:01.304740+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "ee7887774c593b800a88b0774a023280985e51ac194430c8d85e331ab620d647/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T15:49:07.103230+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 48060.0
+  },
+  "child_returncode": 0,
+  "failure": null
+}
