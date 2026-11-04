@@ -1,3 +1,14 @@
+## M91–92 — Matched relighting evidence and full development admission
+
+The exact 100-update training replay and the 2,000-update primary compact study
+completed. The six-arm compact pilot independently replayed all 48 rows and
+found no gain. The full compact study projection exceeded the fixed cap.
+The later direct-render pilot recovered 3/4 correct poses and the exact
+MatchAnything comparison recovered 1/4. Both eight-row comparisons replay.
+The full 384-case direct run was published and admitted at a pilot-derived
+1,256 seconds. The repository regression passed 1,196 tests with four skips.
+See [the matched benchmark](reports/SOLAR_MATCHED_RELIGHTING_V91.md).
+
 ## M86 — Corrected diagnostics and matched control pilot complete
 
 The 32-row pilot and independent replay of saved metrics are complete. SIFT
