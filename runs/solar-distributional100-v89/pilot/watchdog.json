@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "protocol_sha256": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca",
+  "publication_commit": "029f654f9962d90395538e78249ff92deb04daa4",
+  "started_utc": "2026-11-04T11:45:34.085719+00:00",
+  "ended_utc": "2026-11-04T11:45:52.478378+00:00",
+  "calendar_seconds": 18.39229918597266,
+  "cap_seconds": 300,
+  "hard_deadline_utc": "2026-11-04T11:50:34.085719+00:00",
+  "work_deadline_utc": "2026-11-04T11:50:29.085719+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca/distributional100_pilot",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T11:45:36.587242+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 14529.0
+  },
+  "child_returncode": 0,
+  "failure": null,
+  "artifacts": {
+    "worker_summary.json": "d1e12bfb1d36cf752d6aa6d7ea1489c6ea74efad4a350ab88284ee1a520db8df",
+    "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
