@@ -1,3 +1,14 @@
+## M105 — Identify a fixed-coordinate encoding failure
+
+The prepublished procedural intervention isolates fixed-coordinate PNG
+dither as a source of false correspondence evidence after normalization.
+The archived fingerprint detects that same pattern in all four images
+used by the two dense identity failures. The resulting method requirement
+is a separate dither-free and sensor-noise validation before judging a
+low-light candidate.
+[Procedural control](reports/SOLAR_PNG_DITHER_CONTROL_V105.md) ·
+[Archived fingerprint](reports/SOLAR_DITHER_FINGERPRINT_V105.md)
+
 ## M104 — Paired optical pilots and a physical lab baseline
 
 The exposure and supplied-Sun experiments each completed and independently

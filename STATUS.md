@@ -1,5 +1,17 @@
 # Status
 
+## Dither pattern isolated and verified in archived failures
+
+Two featureless native renders gave 2,025 same-coordinate SIFT matches
+after exposure normalization under the exact Blender default. Explicit
+zero dither gave zero. The separately frozen archived fingerprint found
+all 131,137 high pixels from the procedural mask in both archived image
+roles for each of the two catastrophic wrong poses and one dim wrong
+case. Shifted controls were near zero. Bright correct controls also
+carry a low-code signature, so the pattern alone does not predict failure.
+[Procedural cause](reports/SOLAR_PNG_DITHER_CONTROL_V105.md) ·
+[Archived fingerprint](reports/SOLAR_DITHER_FINGERPRINT_V105.md)
+
 ## Completed exposure, supplied-Sun and physical lab pilots
 
 Blind exposure normalization moved raw pose recovery from 15/24 to 17/24
