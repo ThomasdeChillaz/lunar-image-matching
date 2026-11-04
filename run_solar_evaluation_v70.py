@@ -34,6 +34,7 @@ REQUIRED_SOURCES = {
     "train_balanced_localization_v3.py", "localization_refiner_v3.py",
     "prepare_localization_training_v3.py",
     "solar_pose_proposals_v73.py",
+    "solar_inference_cache_v84.py", "solar_response_cache_v84.py", "solar_acquisition_cache_v84.py",
     "solar_evaluation_protocol_v74.py", "build_solar_evaluation_protocol_v74.py",
     "solar_learning_pipeline_v73.py", "verify_solar_development_v68.py",
     'north_camera_contract_v59.py',

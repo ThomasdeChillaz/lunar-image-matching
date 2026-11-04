@@ -13,6 +13,7 @@ from PIL import Image
 from compact_lunar import CompactDescriptor
 from solar_response_v63 import LightingResponseModel
 from solar_frontend_v63 import ReferenceGeometry,SolarMatcher
+from solar_inference_cache_v84 import CACHE_REVISIONS,SolarMatcherV84
 
 
 def jsonable(value):
@@ -39,7 +40,9 @@ def load_matcher(checkpoint,configuration,allow_untrained=False):
     initialization=configuration.get('pose_initialization','strict3')
     if initialization not in('strict3','quantization_aware'):raise ValueError('Unsupported initial-pose policy')
     revision='solar-v68'if initialization=='strict3'else'solar-v73-quantized-init'
-    if configuration.get('inference_revision',revision)!=revision:raise ValueError('Configuration requires a different inference revision')
+    requested=configuration.get('inference_revision',revision)
+    if requested not in(revision,CACHE_REVISIONS[initialization]):raise ValueError('Configuration requires a different inference revision')
+    matcher_class=SolarMatcherV84 if requested==CACHE_REVISIONS[initialization]else SolarMatcher
     digest=hashlib.sha256(Path(checkpoint).read_bytes()).hexdigest()
     if configuration.get('model_version')!='solar-experimental-v63'or configuration.get('checkpoint_sha256')!=digest:raise ValueError('Versioned configuration must pin the exact checkpoint bytes')
     z=torch.load(checkpoint,map_location='cpu',weights_only=True)
@@ -47,10 +50,10 @@ def load_matcher(checkpoint,configuration,allow_untrained=False):
     coarse=CompactDescriptor(False);fine=CompactDescriptor(False)
     if z.get('format')=='solar-response-v63':
         response=LightingResponseModel(coarse);response.load_state_dict(z['model'],strict=True)
-        return SolarMatcher(response.coarse,response.coarse,response,configuration.get('pooled',False),configuration.get('proposal_angles'),initialization)
+        return matcher_class(response.coarse,response.coarse,response,configuration.get('pooled',False),configuration.get('proposal_angles'),initialization)
     if z.get('format')!='compact-pair-v63'or configuration.get('response',False):raise ValueError('Declared complete coarse/fine or learned-response checkpoint required')
     coarse.load_state_dict(z['coarse'],strict=True);fine.load_state_dict(z['fine'],strict=True)
-    return SolarMatcher(coarse,fine,proposal_angles=configuration.get('proposal_angles'),pose_initialization=initialization)
+    return matcher_class(coarse,fine,proposal_angles=configuration.get('proposal_angles'),pose_initialization=initialization)
 
 
 def main(argv=None):

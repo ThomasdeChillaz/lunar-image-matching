@@ -93,7 +93,8 @@ def _configuration(settings):
     proposal_angles(value['proposal_angles'])
     if value['pose_initialization']not in('strict3','quantization_aware'):raise ValueError('Unsupported explicit initialization policy')
     expected='solar-v68'if value['pose_initialization']=='strict3'else'solar-v73-quantized-init'
-    if value['inference_revision']!=expected:raise ValueError('Declared inference revision disagrees with pose policy')
+    cached='solar-v84-exact-cache'if value['pose_initialization']=='strict3'else'solar-v84-quantized-init-exact-cache'
+    if value['inference_revision']not in(expected,cached):raise ValueError('Declared inference revision disagrees with pose policy')
     return value
 
 

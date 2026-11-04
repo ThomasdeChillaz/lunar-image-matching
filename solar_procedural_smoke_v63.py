@@ -12,7 +12,7 @@ from localize_terrain import public_result,jsonable
 from lunar_geometry_v5 import world_points_z
 
 
-def run(output,pose_initialization='strict3',proposal_bank=4,rotation_deg=0.):
+def run(output,pose_initialization='strict3',proposal_bank=4,rotation_deg=0.,exact_cache=False):
     root=Path(output);root.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2);cv2.setNumThreads(1);torch.manual_seed(20261101)
     from compact_lunar import load_checkpoint
     frozen,metadata=load_checkpoint('runs/compact-v2-expanded-20261030')
@@ -27,7 +27,11 @@ def run(output,pose_initialization='strict3',proposal_bank=4,rotation_deg=0.):
     truth=np.eye(4);truth[:3,:3]=r;truth[:3,3]=-.25*r@np.array([8.,-4.,0.])
     if proposal_bank not in(4,16):raise ValueError('Declared four/sixteen-angle procedural control required')
     angles=None if proposal_bank==4 else(np.arange(16)*22.5).tolist()
-    matcher=SolarMatcher(model.coarse,model.fine,model,proposal_angles=angles,pose_initialization=pose_initialization);rows=[]
+    matcher_class=SolarMatcher
+    if exact_cache:
+        from solar_inference_cache_v84 import SolarMatcherV84
+        matcher_class=SolarMatcherV84
+    matcher=matcher_class(model.coarse,model.fine,model,proposal_angles=angles,pose_initialization=pose_initialization);rows=[]
     for a,b,c in itertools.product((False,True),repeat=3):
         tick=perf_counter();result=matcher.localize(reference,query,geometry,k,solar_mode='shared'if a else'off',response=b,active=c,budget=32)
         error=None if result['pose']is None else float(np.linalg.norm(result['pose'][:3,3]-truth[:3,3]))
@@ -40,7 +44,7 @@ def run(output,pose_initialization='strict3',proposal_bank=4,rotation_deg=0.):
         print(json.dumps(row),flush=True)
     blank=matcher.localize(np.zeros_like(reference),np.zeros_like(query),geometry,k)
     result=dict(passed=all(r['passed']for r in rows)and blank['pose']is None,rows=rows,blank_rejected=blank['pose']is None,total_parameters=matcher.total_parameters,
-        configuration=dict(pose_initialization=pose_initialization,proposal_bank=proposal_bank,rotation_deg=rotation_deg,affine_reference_to_query=affine.tolist(),scoring_query_cam2world=truth.tolist()),
+        configuration=dict(pose_initialization=pose_initialization,proposal_bank=proposal_bank,rotation_deg=rotation_deg,exact_cache_v84=bool(exact_cache),inference_revision=matcher.inference_revision,affine_reference_to_query=affine.tolist(),scoring_query_cam2world=truth.tolist()),
         scope='Historical pretrained encoders with an UNTRAINED constant-response head, procedural known-transform imagery and planar map; checks wiring for all eight toggles at32searches. Not actual lunar performance or learning improvement.',source_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest()for p in Path('.').glob('solar*.py')})
     with(root/'summary.json').open('x')as f:json.dump(result,f,indent=2);f.write('\n')
     return result
@@ -50,4 +54,5 @@ if __name__=='__main__':
     import argparse
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',required=True)
     p.add_argument('--pose-initialization',choices=('strict3','quantization_aware'),default='strict3');p.add_argument('--proposal-bank',type=int,choices=(4,16),default=4);p.add_argument('--rotation-deg',type=float,default=0.)
-    a=p.parse_args();run(a.output,a.pose_initialization,a.proposal_bank,a.rotation_deg)
+    p.add_argument('--exact-cache-v84',action='store_true',help='Explicit versioned inference-cache software control')
+    a=p.parse_args();run(a.output,a.pose_initialization,a.proposal_bank,a.rotation_deg,a.exact_cache_v84)

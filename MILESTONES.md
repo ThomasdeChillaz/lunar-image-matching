@@ -1,3 +1,28 @@
+## M84 — Exact per-case cache version verified
+
+The optional v84 execution version preserves model weights, scientific policy,
+old defaults and all49/42 protected sources. The final suite passes982tests
+with4skips;75cache controls and a fresh8-toggle nativeimage smoke pass, including
+independent replay and exact earlier procedural output comparison. Geometry
+replacement guards cover original and derived reference-Sun objects.
+
+Fresh cost pilots and300-second replays are prepared under unchanged cumulative
+budgets; scientific speed and recovery improvement remain unmeasured for this
+execution version. Both modes and all five checkpoints/cases remain mandatory.
+Evidence: reports/EXACT_CACHE_V84.md and solar_exact_cache_verification_v84.json.
+
+## M83 — Measure native pose pilots and retain compute refusal
+
+Both 40-row pilots and independent source-label metric replays pass. Raw pose
+recovery stays 1/4 at every checkpoint for both SH and pooled; the two changed-light
+positives fail. Full measured caps exceed the original12,000-second maxima;
+no cases/checkpoints, charges or deadlines are removed or reset.
+
+All 32 physical references and384 cases are complete and audited. Saved traces
+identify proposal coverage, spatial support and no-pose/no-response bootstrap
+failures. Versioned per-case caches are being tested for repeated computation;
+no scientific improvement or speedup is claimed. The broader goal remains active.
+
 ## M82 — Preserve module-execution evidence before pose inference
 
 The recorder retains original raw results in compact typed JSON/NPZ storage,

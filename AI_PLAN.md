@@ -1,5 +1,32 @@
 # AI coding-agent execution brief
 
+## First native pose pilots completed — 4 November 2026
+
+Both trained modes complete 40/40 predeclared pilot rows and independent saved-
+metric replay. Each checkpoint recovers the same **1/4 unique positive pairs**;
+changed-light recovery is **0/2**, with **0/4 raw mismatch poses**. These are
+four positive pairs repeated over five checkpoints, not twenty independent
+positive tests. No learned pose improvement, calibrated risk or superiority
+is demonstrated. The historical attention control remains 15/96 on other cases.
+
+All 32 reference maps, the exact32-camera index and all 384 cases are complete
+and independently audited. All 49 learning and 42 reference source hashes remain
+unchanged; four calibration and twelve final terrain groups remain closed.
+
+The full-selection builder refuses the estimated 130,720/130,295-second studies
+under the unchanged 12,000-second limit. It preserves all cases and checkpoints and
+charges. An explicit cache execution version passes all 982 repository tests and a
+fresh independently replayed eight-toggle image control. Its lunar speed and
+accuracy remain unmeasured; fresh source-published pilots are prepared. Saved traces also identify poor candidate coverage, nearly
+identical beams and absent initial poses that prevent learned response use.
+These require an additional controlled proposal/bootstrap experiment.
+
+Evidence: [completed pose pilots](reports/SOLAR_POSE_PILOT_V83.md),
+[exact results/artifact hashes](reports/solar_pose_pilot_results_v83.json), and
+[saved failure mechanism](reports/SOLAR_POSE_BOOTSTRAP_DIAGNOSIS_V84.md).
+All ablations, seed repetitions, modern comparisons, transfer, calibration,
+final freeze/test and final research package remain pending. Goal active.
+
 ## Both full learned-response studies completed — 4 November 2026
 
 The directional-response model and the matched pooled control each completed
