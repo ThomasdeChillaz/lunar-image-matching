@@ -1,0 +1,36 @@
+{
+  "kind": "corrective_v79_full_bank_protocol_review",
+  "created_utc": "2026-11-04T05:20:14.433218+00:00",
+  "blocking_findings": [],
+  "protocol": "reports/solar-learning-v79/teacher_full.json",
+  "protocol_sha256": "977b2e57aff05a0168bd88881d891935887417b7dfc2b11d6cbafaaf7fe5eb6c",
+  "contract": "reports/solar_learning_contract_v79.json",
+  "contract_sha256": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+  "pilot_summary": "runs/solar-learning-v79/teacher_pilot/summary.json",
+  "pilot_summary_sha256": "1bb54634d370459c02a0a44fb3e0b790021fa3e4687000604d2c44176936d85f",
+  "replayed_measured_projection_seconds": 393.63329052738845,
+  "new_cap_seconds": 394,
+  "new_created_utc": "2026-11-04T05:18:37.857774+00:00",
+  "new_latest_start_utc": "2026-11-04T05:23:37.857774+00:00",
+  "new_absolute_deadline_utc": "2026-11-04T05:30:11.857774+00:00",
+  "new_publication_lease_seconds": 300,
+  "new_bounds_strictly_earlier_than_old_full": true,
+  "old_failed_charge_preserved": true,
+  "training_reserved_before_new_full": 1561,
+  "canonical_training_available_before_new_full": 18659,
+  "canonical_training_available_after_new_full_cap": 18265,
+  "interpretation": "Fresh source-corrected version with a measured fresh pilot and separately charged full-bank cap. Old failed361s invocation/artifacts/charge are unchanged. Restricting the new distinct job to361s was an extra self-imposed condition, not the user cumulative budget contract;394s fits the same ledger and strictly earlier original time bounds. No statistical design/heldout/geography change follows from this measured cost update.",
+  "conditions": [
+    "Publish exact corrected source/contract/protocol before invocation.",
+    "Actual launch must meet new earlier latest-start and fixed deadline.",
+    "No old failure/cache reuse or refunds; only source-matched corrected pilot records eligible for cache.",
+    "All original full96geometry, training-only/even-light, all-eligible camera and parameter/CPU gates remain."
+  ],
+  "activity": {
+    "protocol_or_source_edits": 0,
+    "tests": 0,
+    "scientific_jobs": 0,
+    "model_forwards": 0,
+    "images_or_rays": 0
+  }
+}

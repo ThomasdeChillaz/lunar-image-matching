@@ -1,0 +1,4238 @@
+{
+  "prepared_only": false,
+  "calibration_or_final_access": false,
+  "query_truth_in_primary_inference": false,
+  "original_master": "reports/solar_development_admission_v67.json",
+  "dataset_summary": "runs/solar-v70-completion/summary.json",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "baseline_ceiling_seconds": 12000,
+  "per_reference_cap_seconds": 900,
+  "pilot_one_cap_seconds": 1020,
+  "metadata_cap_seconds": 600,
+  "online_lookup_cap_seconds": 900,
+  "online_request_cap_seconds": 300,
+  "publication_dispatch_lease_seconds": 1800,
+  "dispatch_overhead_seconds": 120,
+  "preparation_absolute_deadline_utc": "2026-11-05T00:00:00+00:00",
+  "blender_executable": "/Users/admin/Documents/Codex/2026-10-25/for/work/fresh-render-runtime-v31/Blender.app/Contents/MacOS/Blender",
+  "python_executable": "/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python",
+  "protocol_directory": "reports/solar-reference-v80-full",
+  "run_directory": "runs/solar-reference-v80-full",
+  "reference_assets_index": "runs/solar-reference-v80-full/reference-assets-index.json",
+  "case_assets_output": "runs/solar-reference-v80-full/case-assets",
+  "stage_journal": "runs/solar-reference-v80-full-state.json",
+  "instructions": "Activated metadata freeze only. Run physical preparation only after source publication and a confirmed idle scientific queue following the SH/pooled100update pilots/replays. Full generic choice and original2026-11-05UTC deadline remain fixed. No query truth, paid compute, automatic retries or failed-charge refunds.",
+  "reference_precompute": "full",
+  "schema_version": 74,
+  "contract_path": "reports/solar_reference_contract_v80.json",
+  "settings_path": "reports/solar_reference_settings_v80.json",
+  "settings_sha256": "a04dedda96e3255c7aa9e316cd727c9b0f747f627bb74a1a87df26aca4b387c5",
+  "source_sha256": {
+    "build_solar_eval_data_v69.py": "95b9a177a7c7f37b91bf8404bb5325036e72940e3f733159f6dea5541186a686",
+    "build_solar_reference_protocol_v74.py": "9c0f47847f73e78ff38499efd5b4c6ee6f10e4f0d060268403edbb4ef888fa44",
+    "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+    "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+    "index_solar_reference_assets_v69.py": "9c1e103659091b4f009cb0ab42c46c5a9c1d2f5c5f0eb295f93ceb235a114fe5",
+    "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "lunargeo_dataset.py": "beb03961483ace48c63a4bae1e68b28abf5a9317c1c5ba903239e74fe1dad59b",
+    "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "native_crop_alignment_v57.py": "45e8396cc1c266c8ad90ebe36c40333d74b5323c6ff70f3efb1bb444ee16958d",
+    "north_camera_contract_v59.py": "1a4bab9e63a59b5ce0ffabb23dc8ecd3c745ef9dfb1c90fc4b537cd0611b2a95",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_camera_visibility_v59.py": "f65d896283e81763f970442c6a14cff9865d5cb48555ab164bcf4e669e7720b3",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+    "prepare_solar_reference_v63.py": "629a10f5a058cb3439ef56d188e54df8f4b14f9f33bd2eba324c47b8da3ac933",
+    "remote_archive.py": "5d4cd7a286d32d86fa54993b7386b25361f996922868a36ba8d2d5c255302e73",
+    "renderer_depth_v34.py": "c977d27361e6ef95ed22d7095e888c9bfef09d389dcce6eebe338040f77b3981",
+    "run_solar_reference_pipeline_v74.py": "f22924ad356e1ce2bef71d3d38b70df0ca7e57640ec063954d8fe169e86a0edf",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "solar_completion_v68.py": "d5793db1e55747392e0689759e4c3a0b36fed2a29f3a37e99b700764c40538bc",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_eval_data_v69.py": "7ba5ccbbf65378f1a3af0ed6c3e974be73f104a245b6bf7b9c002c1851be5f15",
+    "solar_learning_pipeline_v73.py": "90df3cf8b003e57c1a6e6cdad0c59e5b1d324b962221c2d944bea52a2e86f50e",
+    "solar_lookup_v70.py": "5e741b1d06456663aa3d1df50ffcf1a228da68818251cfa3cddb7ec0800e8bf1",
+    "solar_lookup_worker_v70.py": "89c176af5dfe902ccadfadf2e9ba109428e2e3bd34230d1412dcf700376cce86",
+    "solar_map_v63.py": "bcdebe475e4764a9838bb15ee324b2302efdb1128e97454a6d27e1b1c5cf3184",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_reference_pipeline_v74.py": "6c77ef42a8b1f84738cd3c1619bf0c31b8feb8029f073bfa655810b8931cf162",
+    "solar_reference_watchdog_v74.py": "3adc4be40b45bfa8cbdd68e2f41c9a4130be94ad38599cb56132fb7aecef6536",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a",
+    "solar_training_bank_v68.py": "471c716d120cebf93b5feb7801dda299cd226f47bec662b0c890a3c914f8808d",
+    "verify_north_camera_qualified_v64.py": "73c9f067b1c8108b6bd0ec4963b4d52b5c43981787aace2984533be1bee956c6",
+    "verify_north_development_v35.py": "58941b99b5ba1cfff2930834e3c913da8e098d277d24dcc03f72d5ef63948e50",
+    "verify_solar_development_v68.py": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243"
+  },
+  "original_master_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+  "dataset_summary_sha256": "9b648109a85a43d30cc387ba15a5912f4f0010efb7e17e844179ceaaf451cd0f",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "compute_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "initial_reservations": [
+    {
+      "job_id": "b0117ca4a0300d7efe5d45352c012d56d0f8f478068a75ece9f980334a52b1c7/candidate_diagnostic",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-03T23:29:58.156353+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "63bb5d6e6cbfea54ece43343d93df40468b3bceeb6e0c438385039c27e95fe47/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:00:21.115423+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "5913790675d1f900b2e429d89b05b839890d87623833a4c9f6712fca4df5f02d/teacher_bank",
+      "category": "training",
+      "seconds": 361,
+      "reserved_utc": "2026-11-04T05:09:16.946531+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "befa53cc3402bc247c73f2fcf69c6d858a76d22b7c90488563d91414d300b0d2/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:18:25.858693+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "977b2e57aff05a0168bd88881d891935887417b7dfc2b11d6cbafaaf7fe5eb6c/teacher_bank",
+      "category": "training",
+      "seconds": 394,
+      "reserved_utc": "2026-11-04T05:20:05.180134+00:00",
+      "refund_on_failure": false
+    }
+  ],
+  "initial_charged": {
+    "training": 1955,
+    "baseline": 300
+  },
+  "canonical_journal_absolute": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/solar-compute-reservations-v67.json",
+  "selection_units": [
+    12,
+    13,
+    14,
+    15,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    92,
+    93,
+    94,
+    95
+  ],
+  "selection_groups": [
+    "np31-r0-c4",
+    "np31-r0-c7",
+    "np31-r1-c0",
+    "np31-r3-c2",
+    "np31-r3-c3",
+    "np31-r3-c5",
+    "np31-r4-c1",
+    "np31-r4-c7"
+  ],
+  "pilot_units": [
+    12,
+    24,
+    60,
+    72
+  ],
+  "reference_units": {
+    "12": {
+      "component": "np31-r0-c4",
+      "latitude_deg": 87.9604458102747,
+      "approved_reference_key": "np31-r0-c4/training_motion-0",
+      "approved": {
+        "unit_index": 12,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "473003deba177ee2f4518ae4d72aeab8faa688de895aca0ae0b53581d7814793",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "13": {
+      "component": "np31-r0-c4",
+      "latitude_deg": 87.9604458102747,
+      "approved_reference_key": "np31-r0-c4/training_motion-1",
+      "approved": {
+        "unit_index": 13,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "2be7b995ff8d9042a86bbb900bab9a2d133b293bcad1486a3033218104efd9ea",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "14": {
+      "component": "np31-r0-c4",
+      "latitude_deg": 87.9604458102747,
+      "approved_reference_key": "np31-r0-c4/unseen_roll-0",
+      "approved": {
+        "unit_index": 14,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "598d75b58bb2bf9fa4f2164e3f6800375d46e54027f566db9d27fb082e4a29db",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "15": {
+      "component": "np31-r0-c4",
+      "latitude_deg": 87.9604458102747,
+      "approved_reference_key": "np31-r0-c4/unseen_roll-1",
+      "approved": {
+        "unit_index": 15,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "bbb8f1dc338096aedfca9dedaed958d6c82f04f4b88feb6a60c0a0621c44e46b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "20": {
+      "component": "np31-r0-c7",
+      "latitude_deg": 86.01324107216145,
+      "approved_reference_key": "np31-r0-c7/training_motion-0",
+      "approved": {
+        "unit_index": 20,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "4b61b74fe6634670bdc12c12a8e37937f30f7b82d3d2f3c02aa46fa8287af9a9",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "21": {
+      "component": "np31-r0-c7",
+      "latitude_deg": 86.01324107216145,
+      "approved_reference_key": "np31-r0-c7/training_motion-1",
+      "approved": {
+        "unit_index": 21,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "e84263242174fc99f69b141814f18581eba8f1bcb51be7bda7a0933e7fed8d46",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "22": {
+      "component": "np31-r0-c7",
+      "latitude_deg": 86.01324107216145,
+      "approved_reference_key": "np31-r0-c7/unseen_roll-0",
+      "approved": {
+        "unit_index": 22,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e71fd1dee33164dd9049fabcbda3d743d4618e37a289c4e147a54b27b1eef1ce",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "23": {
+      "component": "np31-r0-c7",
+      "latitude_deg": 86.01324107216145,
+      "approved_reference_key": "np31-r0-c7/unseen_roll-1",
+      "approved": {
+        "unit_index": 23,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "acb6e6ae1508ad73d568c481f9a8f1894a1950160e00f6c6150bd35c13e1ff94",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "24": {
+      "component": "np31-r1-c0",
+      "latitude_deg": 86.40005846967291,
+      "approved_reference_key": "np31-r1-c0/training_motion-0",
+      "approved": {
+        "unit_index": 24,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "288e7337b0ecee5dfd26bf70c9514baf95f3360a6025e27993f86f2406770761",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "25": {
+      "component": "np31-r1-c0",
+      "latitude_deg": 86.40005846967291,
+      "approved_reference_key": "np31-r1-c0/training_motion-1",
+      "approved": {
+        "unit_index": 25,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "b1f42a5a47446e904f8467a45e1a59400925552b63056ab45356b0849b6cdd39",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "26": {
+      "component": "np31-r1-c0",
+      "latitude_deg": 86.40005846967291,
+      "approved_reference_key": "np31-r1-c0/unseen_roll-0",
+      "approved": {
+        "unit_index": 26,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "195da4fbfcb94a65f438d9d5ef74ee74ee0f15e9aecd50f8478017242438106b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "27": {
+      "component": "np31-r1-c0",
+      "latitude_deg": 86.40005846967291,
+      "approved_reference_key": "np31-r1-c0/unseen_roll-1",
+      "approved": {
+        "unit_index": 27,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "a1dd385e31128e89a9c78131e7b6205949e7736cb05cf286a77cf0f2e153d575",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "56": {
+      "component": "np31-r3-c2",
+      "latitude_deg": 88.21682071057447,
+      "approved_reference_key": "np31-r3-c2/training_motion-0",
+      "approved": {
+        "unit_index": 56,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "1a0a05e53ad8b9beda29ca79c7d13cc872f0a176c73d4d60949dbf7ecdf4301f",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "57": {
+      "component": "np31-r3-c2",
+      "latitude_deg": 88.21682071057447,
+      "approved_reference_key": "np31-r3-c2/training_motion-1",
+      "approved": {
+        "unit_index": 57,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "3506ca459e2873fd621f9ada26a6771c61ffda69ea4b23eabed082dc6adc05f5",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "58": {
+      "component": "np31-r3-c2",
+      "latitude_deg": 88.21682071057447,
+      "approved_reference_key": "np31-r3-c2/unseen_roll-0",
+      "approved": {
+        "unit_index": 58,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "594ca65130a0153981c38ac52d7ec9436bd7eda9d540fba68b7c77d7021a1fe3",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "59": {
+      "component": "np31-r3-c2",
+      "latitude_deg": 88.21682071057447,
+      "approved_reference_key": "np31-r3-c2/unseen_roll-1",
+      "approved": {
+        "unit_index": 59,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "7af02cd5ecbf597626a30f7e6f8a701292a4e606165a60c53e426927597e2c44",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "60": {
+      "component": "np31-r3-c3",
+      "latitude_deg": 88.89414362085425,
+      "approved_reference_key": "np31-r3-c3/training_motion-0",
+      "approved": {
+        "unit_index": 60,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "638ebe1f0afd6a75922c40e66a4e6178036a9eda8a781a4bc61746a4ffa2aee6",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "61": {
+      "component": "np31-r3-c3",
+      "latitude_deg": 88.89414362085425,
+      "approved_reference_key": "np31-r3-c3/training_motion-1",
+      "approved": {
+        "unit_index": 61,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "62": {
+      "component": "np31-r3-c3",
+      "latitude_deg": 88.89414362085425,
+      "approved_reference_key": "np31-r3-c3/unseen_roll-0",
+      "approved": {
+        "unit_index": 62,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "21c042fa4e1cfe2790f1d7e9c5ff046f449183c43a99e81637af66a8dbd67657",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "63": {
+      "component": "np31-r3-c3",
+      "latitude_deg": 88.89414362085425,
+      "approved_reference_key": "np31-r3-c3/unseen_roll-1",
+      "approved": {
+        "unit_index": 63,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "6e8d5255dcbb412cee4556c9bdbaf3dae61d5a8b6b0ec2885c65c713f006a965",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "68": {
+      "component": "np31-r3-c5",
+      "latitude_deg": 88.21654637035665,
+      "approved_reference_key": "np31-r3-c5/training_motion-0",
+      "approved": {
+        "unit_index": 68,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "cc472c2ff2ab3a1f241e9a9722e2c9d4c3390d2695df1652c55d023b0161517e",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "69": {
+      "component": "np31-r3-c5",
+      "latitude_deg": 88.21654637035665,
+      "approved_reference_key": "np31-r3-c5/training_motion-1",
+      "approved": {
+        "unit_index": 69,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "d187ab38316d7773c8df0b74a07a343319769e31418c13dfa0e816853a29c31b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "70": {
+      "component": "np31-r3-c5",
+      "latitude_deg": 88.21654637035665,
+      "approved_reference_key": "np31-r3-c5/unseen_roll-0",
+      "approved": {
+        "unit_index": 70,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e3ddc465e1ced0ce2acd0fcf327c7205f221575e77f35aebfad7f8531a79c84a",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "71": {
+      "component": "np31-r3-c5",
+      "latitude_deg": 88.21654637035665,
+      "approved_reference_key": "np31-r3-c5/unseen_roll-1",
+      "approved": {
+        "unit_index": 71,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "f7b9300371832801132352713bb52d7f891ec59d66eb1aeb9b3d5eddd561e457",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "72": {
+      "component": "np31-r4-c1",
+      "latitude_deg": 86.8336153398115,
+      "approved_reference_key": "np31-r4-c1/training_motion-0",
+      "approved": {
+        "unit_index": 72,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "83dc205954770221daff1c24205b58aa410d3646db73aca685e6690cfa752f8d",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "73": {
+      "component": "np31-r4-c1",
+      "latitude_deg": 86.8336153398115,
+      "approved_reference_key": "np31-r4-c1/training_motion-1",
+      "approved": {
+        "unit_index": 73,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "a381db98dea5aec3673250c3c203c3767d180dee6c4a2fd98f15ea26e0190a03",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "74": {
+      "component": "np31-r4-c1",
+      "latitude_deg": 86.8336153398115,
+      "approved_reference_key": "np31-r4-c1/unseen_roll-0",
+      "approved": {
+        "unit_index": 74,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e487e76ce19568965157891a446279bca0dc533a42920863bd42355705e7b60c",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "75": {
+      "component": "np31-r4-c1",
+      "latitude_deg": 86.8336153398115,
+      "approved_reference_key": "np31-r4-c1/unseen_roll-1",
+      "approved": {
+        "unit_index": 75,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "1ef2abb1711c29c0851e45e5d3697e1c762a82be3b98a6e2b2b9da02dcc51197",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "92": {
+      "component": "np31-r4-c7",
+      "latitude_deg": 86.0134044844742,
+      "approved_reference_key": "np31-r4-c7/training_motion-0",
+      "approved": {
+        "unit_index": 92,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "6d22cea99f8fad973d15f20cba7f18c312496ced64be347ad1faed2383ba79a3",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "93": {
+      "component": "np31-r4-c7",
+      "latitude_deg": 86.0134044844742,
+      "approved_reference_key": "np31-r4-c7/training_motion-1",
+      "approved": {
+        "unit_index": 93,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "000e9a8847c5a213d51e3ee155e1499dc7a68a8f6de14b0fc36104c4a2a80d98",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "94": {
+      "component": "np31-r4-c7",
+      "latitude_deg": 86.0134044844742,
+      "approved_reference_key": "np31-r4-c7/unseen_roll-0",
+      "approved": {
+        "unit_index": 94,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "59b0b22a856d55427a8c40a93bdb9882ca94de9a83f2a90eefb4f76a4d16f4ee",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    },
+    "95": {
+      "component": "np31-r4-c7",
+      "latitude_deg": 86.0134044844742,
+      "approved_reference_key": "np31-r4-c7/unseen_roll-1",
+      "approved": {
+        "unit_index": 95,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "9d38a35e82023ee928731d522f8c0c6f2b0f4769ec6ec06e155d2c561be01534",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      }
+    }
+  },
+  "published_protocols_required_before_each_invocation": true,
+  "query_truth_used_for_physical_prep": false,
+  "scoring_labels_materialized_only_in_case_stage": true,
+  "scope": "Every independently eligible selection reference, all32generated cameras retained in metadata, source-frozen coarse/full generic Sun and schema70 cases; no matcher, teacher, training, calibration or final reserve inference.",
+  "terrain_groups": [
+    "np31-r0-c4",
+    "np31-r0-c7",
+    "np31-r1-c0",
+    "np31-r3-c2",
+    "np31-r3-c3",
+    "np31-r3-c5",
+    "np31-r4-c1",
+    "np31-r4-c7"
+  ],
+  "generated_selection_units": [
+    {
+      "approved_reference_input": {
+        "unit_index": 12,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "473003deba177ee2f4518ae4d72aeab8faa688de895aca0ae0b53581d7814793",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c4/training_motion-0",
+      "source_summary_sha256": "c6dd2d7bd004dcca90ea705bec43f4eabfd765cabb4e7b29576ae9ddaa094d00",
+      "source_seal_sha256": "2f150ab55d57a05cc743fe080f0c452cac5eef9d14b3124b8b158839350fc470",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.306041516528245e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00025067175238291384,
+          "camera_clearance_m": 1265.2436101925182,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.4482686100701776e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002449890200750815,
+          "camera_clearance_m": 1528.750847939695,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8446745562130178,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2035.556761956551,
+          "target_distance_m": 2035.5567200917026
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 30,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1710.0030792867353,
+          "target_distance_m": 1710.003100328532
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.003530062782971014,
+            "translation_m": 0.13672443771075066
+          },
+          "correct": true,
+          "reference_range_m": 1413.787695642399,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0036374595107030606,
+            "translation_m": 0.21963904154401265
+          },
+          "correct": true,
+          "reference_range_m": 1759.1756584364496,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 13,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "2be7b995ff8d9042a86bbb900bab9a2d133b293bcad1486a3033218104efd9ea",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 13,
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c4/training_motion-1",
+      "source_summary_sha256": "b450ed977b14700570d53a77efbc2d852669c2d54af26a3cf9263a8dfd39d90b",
+      "source_seal_sha256": "77d9d5b7c7b39c05827c402a153aeabbbea5abbc2109f6cfb352d71ffb33b593",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.192261291810523e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00021637463760271203,
+          "camera_clearance_m": 1455.7558520590928,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.698142950918194e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003255190729305468,
+          "camera_clearance_m": 1516.135520430842,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9127218934911243,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2015.6002161962942,
+          "target_distance_m": 2015.600395079837
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1700.2101802000864,
+          "target_distance_m": 1700.2100219776546
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0040621085843582,
+            "translation_m": 0.1356971353595767
+          },
+          "correct": true,
+          "reference_range_m": 1591.162737137531,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.004475811583624354,
+            "translation_m": 0.14478893445496366
+          },
+          "correct": true,
+          "reference_range_m": 1729.1781820586164,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 14,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "598d75b58bb2bf9fa4f2164e3f6800375d46e54027f566db9d27fb082e4a29db",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 14,
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-0",
+      "source_summary_sha256": "3968c3817a7488dd6b0cb1ffd58f73023916c693552facfcf553f012d00b57a6",
+      "source_seal_sha256": "c3226d062191d4934974ccc5b8c81c2dedb6c8617a46a48bda7afb68729ae017",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.023651659887669e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003190173699749721,
+          "camera_clearance_m": 1430.4605463743837,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.111342100641619e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0004194738867226988,
+          "camera_clearance_m": 1576.444365621702,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8047337278106509,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2292.28402728094,
+          "target_distance_m": 2292.2838978746645
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 11,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1783.764045280504,
+          "target_distance_m": 1783.7638220067035
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.004721016861646491,
+            "translation_m": 0.22161657718079145
+          },
+          "correct": true,
+          "reference_range_m": 1579.1589436214645,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0048504845805108325,
+            "translation_m": 0.31693389257053595
+          },
+          "correct": true,
+          "reference_range_m": 1798.6965533915463,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 15,
+        "component": "np31-r0-c4",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "bbb8f1dc338096aedfca9dedaed958d6c82f04f4b88feb6a60c0a0621c44e46b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+        "scene_mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+        "scene_maximum_height_m": 538.6673583984375,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 15,
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c4/unseen_roll-1",
+      "source_summary_sha256": "dceadf7b4855658f08da25808a4add0184e55c83b3617c3fad082e3a1a30261c",
+      "source_seal_sha256": "caaf838633e0f2e51ca1ea7323f47d250b47ee49c30f48aff7e6a592d4b7bbf3",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.08697330066748e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00031003487629277515,
+          "camera_clearance_m": 1422.0769245111667,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.74011009993536e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00028944804762431886,
+          "camera_clearance_m": 1568.8137746067116,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.849112426035503,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1847.266790987181,
+          "target_distance_m": 1847.2668626253392
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 4,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1725.6282368081518,
+          "target_distance_m": 1725.6282088278554
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0071741069885397435,
+            "translation_m": 0.20233919297135444
+          },
+          "correct": true,
+          "reference_range_m": 1565.05830825349,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.005141809380946443,
+            "translation_m": 0.33675332744182707
+          },
+          "correct": true,
+          "reference_range_m": 1748.2941989667274,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 20,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "4b61b74fe6634670bdc12c12a8e37937f30f7b82d3d2f3c02aa46fa8287af9a9",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 20,
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c7/training_motion-0",
+      "source_summary_sha256": "15c66fbd70f299f0cf8253ef9e91deecbd28b29995e9347912b55f77a0b7ca8e",
+      "source_seal_sha256": "cdee90ec92191eb445055f420383879c9b3f812b9b6db177271cfcb3bca60240",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.086081512321523e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00033493208638901706,
+          "camera_clearance_m": 1876.653602965679,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.164702418020856e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00035319891139806714,
+          "camera_clearance_m": 1400.9217842007774,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9289940828402367,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 3,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1316.517304558778,
+          "target_distance_m": 1316.517476878582
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1711.0998578089466,
+          "target_distance_m": 1711.0996988439738
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.006388756194454211,
+            "translation_m": 0.3347540512993223
+          },
+          "correct": true,
+          "reference_range_m": 2156.8150913527434,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.012055512706802244,
+            "translation_m": 0.6800034602516298
+          },
+          "correct": true,
+          "reference_range_m": 1951.0366261669465,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 21,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "e84263242174fc99f69b141814f18581eba8f1bcb51be7bda7a0933e7fed8d46",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 21,
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c7/training_motion-1",
+      "source_summary_sha256": "8cbd52fa8ad810735177c5ff5f48b2ecac1b51e68bb755edfedd0649208ee87a",
+      "source_seal_sha256": "4d3b16e90464357a987a38e9c9dabc461e5a89583a5993ea41c577f2f73ab7ea",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.968466561623788e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003427982378525485,
+          "camera_clearance_m": 1666.0273774636287,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.361991673831552e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00040552072914579185,
+          "camera_clearance_m": 1952.6496538033625,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8165680473372781,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1767.7326683455858,
+          "target_distance_m": 1767.732838779555
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 9,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1558.140718449087,
+          "target_distance_m": 1558.140803216028
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.005612549507531506,
+            "translation_m": 0.2907055495448914
+          },
+          "correct": true,
+          "reference_range_m": 1869.7335849297806,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0038149090562758165,
+            "translation_m": 0.1546267693701294
+          },
+          "correct": true,
+          "reference_range_m": 2038.3391256315542,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 22,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e71fd1dee33164dd9049fabcbda3d743d4618e37a289c4e147a54b27b1eef1ce",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 22,
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-0",
+      "source_summary_sha256": "4f87935f3f6326b45665a2eb025456985cfd18ec835867dec5595e8e77f2bb13",
+      "source_seal_sha256": "4213cf0194947bb5e3c39418be9c69cfef63ff807231134bc87e55f57a3cb495",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.29707778095953e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003706187026182306,
+          "camera_clearance_m": 1664.171994341899,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.933136140411169e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00031468807355850004,
+          "camera_clearance_m": 1834.6083746485251,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8905325443786982,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 4,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1655.8000342384887,
+          "target_distance_m": 1655.8000106115403
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 6,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1626.9007735804018,
+          "target_distance_m": 1626.900453908593
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0019693351019143142,
+            "translation_m": 0.14745975979704073
+          },
+          "correct": true,
+          "reference_range_m": 1785.2486964048035,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0016624672021917349,
+            "translation_m": 0.11191554772463878
+          },
+          "correct": true,
+          "reference_range_m": 2025.7757619013466,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 23,
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "acb6e6ae1508ad73d568c481f9a8f1894a1950160e00f6c6150bd35c13e1ff94",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+        "scene_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+        "scene_maximum_height_m": 851.1197509765625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 23,
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r0-c7/unseen_roll-1",
+      "source_summary_sha256": "07d3ee30a96bfd590c30402fcb819a7ff613672df48827e48fbff9b60d50e9d5",
+      "source_seal_sha256": "bbd3e8b8528ed66e1c695e119bbe94805502e70e6526992cb81c714ad5a70a3b",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.904969743562583e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003147757092847314,
+          "camera_clearance_m": 1845.2433799143757,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.468722889241828e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003220540884285583,
+          "camera_clearance_m": 1675.8092040465556,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.727810650887574,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 12,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1597.8125400541876,
+          "target_distance_m": 1597.8125120863997
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1688.1192835277857,
+          "target_distance_m": 1688.1192455131168
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.003046202872975406,
+            "translation_m": 0.3964121685107635
+          },
+          "correct": true,
+          "reference_range_m": 1967.0980143405532,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.002465152796575429,
+            "translation_m": 0.21708365602153076
+          },
+          "correct": true,
+          "reference_range_m": 1724.382940447725,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 24,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "288e7337b0ecee5dfd26bf70c9514baf95f3360a6025e27993f86f2406770761",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 24,
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r1-c0/training_motion-0",
+      "source_summary_sha256": "34afd88ab91636dffa1313bc4742a0f00c7acd0df32794169416fc8b3a5415d5",
+      "source_seal_sha256": "d46d694e0ea2d4d158bc29baa073c6fb5616309841be1b3a5da9c5f86e8aec10",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.543574340785247e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0001841427263116202,
+          "camera_clearance_m": 1260.182088359622,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.483724629438985e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003362054396802705,
+          "camera_clearance_m": 1616.2390344808332,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8890532544378699,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1716.1710131987124,
+          "target_distance_m": 1716.1709265638221
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1623.0489089485604,
+          "target_distance_m": 1623.0488668693172
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.002632769930799909,
+            "translation_m": 0.07513440860320146
+          },
+          "correct": true,
+          "reference_range_m": 1370.1684946332557,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0014852088905197274,
+            "translation_m": 0.13965107963235562
+          },
+          "correct": true,
+          "reference_range_m": 1768.491170670366,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 25,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "b1f42a5a47446e904f8467a45e1a59400925552b63056ab45356b0849b6cdd39",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 25,
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r1-c0/training_motion-1",
+      "source_summary_sha256": "2c87b8775ad486035c3614f3e810bae1c8ab7633901abb78300103152fe1f3bc",
+      "source_seal_sha256": "a5455e40914d6afa5940771db3d5cd83cd560f365dbcaa62e3d630b23e0b06f9",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.040851089138723e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0001948787976289168,
+          "camera_clearance_m": 1199.6542034079587,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.888290838336154e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00023573522912556655,
+          "camera_clearance_m": 1112.9022739079667,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9349112426035503,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 5,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1476.4130032708904,
+          "target_distance_m": 1476.412985025246
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1402.7756008352894,
+          "target_distance_m": 1402.7755326820043
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0003561720174202442,
+            "translation_m": 0.029448071400709135
+          },
+          "correct": true,
+          "reference_range_m": 1313.1969263733947,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.000721863472113105,
+            "translation_m": 0.00907598357820674
+          },
+          "correct": true,
+          "reference_range_m": 1227.5052287563858,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 26,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "195da4fbfcb94a65f438d9d5ef74ee74ee0f15e9aecd50f8478017242438106b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-0",
+      "source_summary_sha256": "c51b490b219811b3c87b68b00102457be4d6814d2b32e5009abcbb2dcc2d4e40",
+      "source_seal_sha256": "62a51a34eb574cfcbc144a390d8118e0625a7b5170520602bc110b96ec0419ac",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 8.464852529213647e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00024007469505704648,
+          "camera_clearance_m": 1225.502120415744,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.663848865369684e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002495169787835039,
+          "camera_clearance_m": 1561.3190080741679,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.7707100591715976,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1696.0665259103969,
+          "target_distance_m": 1696.0665306981866
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 5,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1483.1771891157264,
+          "target_distance_m": 1483.1771872276483
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0027664766741765227,
+            "translation_m": 0.07058834035129927
+          },
+          "correct": true,
+          "reference_range_m": 1334.3998827472255,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0005932148071538546,
+            "translation_m": 0.1911517723432274
+          },
+          "correct": true,
+          "reference_range_m": 1715.2910338789188,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 27,
+        "component": "np31-r1-c0",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "a1dd385e31128e89a9c78131e7b6205949e7736cb05cf286a77cf0f2e153d575",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+        "scene_mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+        "scene_maximum_height_m": 1942.7032470703125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 27,
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1",
+      "source_summary_sha256": "e69a44c3ddb04897aaa4f72ce0c170a09fc5b3124f02908b5e46af7b739d5017",
+      "source_seal_sha256": "97d529a718c4d0cf606fce0b72d2042fd8059e1d73286d47fe64f6f978c4ad54",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.854508925829112e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00020703687300738238,
+          "camera_clearance_m": 1457.1616513351769,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.609150193272866e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00027275690217720694,
+          "camera_clearance_m": 1653.8305196325748,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8905325443786982,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 4,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1919.127071270563,
+          "target_distance_m": 1919.1269419262894
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 4,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1823.6332986855318,
+          "target_distance_m": 1823.6332448964456
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0007801473195126498,
+            "translation_m": 0.039677476040346785
+          },
+          "correct": true,
+          "reference_range_m": 1588.2945440202834,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0009139446497437668,
+            "translation_m": 0.038062283364140186
+          },
+          "correct": true,
+          "reference_range_m": 1796.0749772142692,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 56,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "1a0a05e53ad8b9beda29ca79c7d13cc872f0a176c73d4d60949dbf7ecdf4301f",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 56,
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c2/training_motion-0",
+      "source_summary_sha256": "b9ccc8a91e0a45555785e50a28673bc923f59de90de3b29a6914f4d0fe79c715",
+      "source_seal_sha256": "155569d4cf24a764ecc3556dd8e92fbc5dcba05ceb8fc376a3e1d3bbe45b9a0e",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.80507049578392e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00043919528025071486,
+          "camera_clearance_m": 1969.7239949262068,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.452426861031356e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00025183509114867775,
+          "camera_clearance_m": 1760.0212441105202,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.985207100591716,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2766.936162814761,
+          "target_distance_m": 2766.936431350591
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2660.940247316608,
+          "target_distance_m": 2660.94036917845
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.004995246984496132,
+            "translation_m": 0.2077650497090465
+          },
+          "correct": true,
+          "reference_range_m": 2149.486038960941,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.003742900626357005,
+            "translation_m": 0.3096105129747861
+          },
+          "correct": true,
+          "reference_range_m": 1978.9068735304609,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 57,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "3506ca459e2873fd621f9ada26a6771c61ffda69ea4b23eabed082dc6adc05f5",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 57,
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c2/training_motion-1",
+      "source_summary_sha256": "c058ac0c505bb4760e69c8d06dd8477d532f6ddcf4965d194c4e48e2a5707f30",
+      "source_seal_sha256": "5d71f669b61528dbfc4d1d5624b79d74bacc44399a7c641c97360f9121baba33",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.4451661973518e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.000360337271104072,
+          "camera_clearance_m": 1907.4149703877217,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.714789401628168e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003498353855775349,
+          "camera_clearance_m": 1753.4089524627882,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9571005917159763,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2156.8752896676474,
+          "target_distance_m": 2156.8752179718854
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 7,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2037.7299047979507,
+          "target_distance_m": 2037.7299533044018
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.005102238031263568,
+            "translation_m": 0.14720305013257054
+          },
+          "correct": true,
+          "reference_range_m": 2082.9241597934006,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0032647125365152705,
+            "translation_m": 0.10828686898024624
+          },
+          "correct": true,
+          "reference_range_m": 1923.8954106193305,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 58,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "594ca65130a0153981c38ac52d7ec9436bd7eda9d540fba68b7c77d7021a1fe3",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 58,
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-0",
+      "source_summary_sha256": "d31b219e8f22d899f433d226b5e4597d0d1d7111d58446aba5cf6f0e96f1804f",
+      "source_seal_sha256": "cc43982c92d1b4a135fd6b87adae54818978f30758b2a27703fed40bbf091fde",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.8647846612683193e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003493554113447317,
+          "camera_clearance_m": 1909.536922896536,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 8.454266608570651e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00047711283013995853,
+          "camera_clearance_m": 2121.2616502244146,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8402366863905325,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 5,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2327.3949759075595,
+          "target_distance_m": 2327.395180770504
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 3,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2119.3735844363355,
+          "target_distance_m": 2119.373888293982
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.005516809558289855,
+            "translation_m": 0.20001344541534247
+          },
+          "correct": true,
+          "reference_range_m": 2081.949498792126,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.004762003163841892,
+            "translation_m": 0.3147931554713133
+          },
+          "correct": true,
+          "reference_range_m": 2404.068667302382,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 59,
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "7af02cd5ecbf597626a30f7e6f8a701292a4e606165a60c53e426927597e2c44",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+        "scene_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+        "scene_maximum_height_m": 1738.712890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 59,
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-1",
+      "source_summary_sha256": "9a4d94274a23f73ff7b228869f03ebc9dda7cb413dff1821bfe895ddaade084b",
+      "source_seal_sha256": "34d776dce028ccca33d2bbb14036978b22db012a80b8d1e180cc1bda508062e2",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.20253169831769e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00018722818640526384,
+          "camera_clearance_m": 1799.6580154659096,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.618525508375413e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002864320317712554,
+          "camera_clearance_m": 1936.2049972554753,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8816568047337278,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 6,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2016.2190695269178,
+          "target_distance_m": 2016.2193750128886
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 6,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2001.6397326944873,
+          "target_distance_m": 2001.6395787919128
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0031211045290454077,
+            "translation_m": 0.03211255102005468
+          },
+          "correct": true,
+          "reference_range_m": 1960.550422487925,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0032547963368077565,
+            "translation_m": 0.1984208490779487
+          },
+          "correct": true,
+          "reference_range_m": 2109.278261067563,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 60,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "638ebe1f0afd6a75922c40e66a4e6178036a9eda8a781a4bc61746a4ffa2aee6",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c3/training_motion-0",
+      "source_summary_sha256": "590db86e00e728294d02b2973be9ea2b17c58619b84b2332a2f1a0ef72c55263",
+      "source_seal_sha256": "88d2f0fb6d1692ec89a663358bf64c5033d9d62cd805680673e86f3021c9ef58",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.828473073265825e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003971430141973542,
+          "camera_clearance_m": 1673.1736174334699,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.574909248358905e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002219907614744443,
+          "camera_clearance_m": 1445.5838838627194,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9171597633136095,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1986.2387810245148,
+          "target_distance_m": 1986.238746352458
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2000.422183048002,
+          "target_distance_m": 2000.422278953748
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0017118355356016397,
+            "translation_m": 0.06493644985434414
+          },
+          "correct": true,
+          "reference_range_m": 1804.2161350040333,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.006300893820663135,
+            "translation_m": 0.09494303076043394
+          },
+          "correct": true,
+          "reference_range_m": 1578.1874811852335,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 61,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 61,
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c3/training_motion-1",
+      "source_summary_sha256": "3458d002fbf64725176006b0c0cb83ab11f2c8a1b7ae021a7730572c215a46a0",
+      "source_seal_sha256": "4945ec29dc1d4a03f480fdf45f6aa9e5619dc2be0231ced481de68edb24d1c4f",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.005799503030548e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002834655233527883,
+          "camera_clearance_m": 1731.4759494383284,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.158579155507946e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00026930813214676164,
+          "camera_clearance_m": 1664.7658936576322,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9585798816568047,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2080.067515883693,
+          "target_distance_m": 2080.067455592384
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2018.1334562021445,
+          "target_distance_m": 2018.1334141262382
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.005837516712830782,
+            "translation_m": 0.1973420762648682
+          },
+          "correct": true,
+          "reference_range_m": 1878.7619664073363,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.008029614285335798,
+            "translation_m": 0.1969965257960953
+          },
+          "correct": true,
+          "reference_range_m": 1780.7121959177648,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 62,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "21c042fa4e1cfe2790f1d7e9c5ff046f449183c43a99e81637af66a8dbd67657",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 62,
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-0",
+      "source_summary_sha256": "d544fdcaba60e2ad385f6bf2e3ff195fbd13fba59d937fe796b71bae6118ace0",
+      "source_seal_sha256": "5a689c61b79f2c03c211e79ba97220281ec259bc47e4f8e83404a3abcc78b3e7",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.400195244942021e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00018299990529158094,
+          "camera_clearance_m": 1481.5950730865914,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.370647226126317e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00033114262510025583,
+          "camera_clearance_m": 1311.9309454956444,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8920118343195266,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 7,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1631.4522817399015,
+          "target_distance_m": 1631.452494021102
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 3,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1746.726905014031,
+          "target_distance_m": 1746.7268134368153
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.002633119314886609,
+            "translation_m": 0.06769762527476952
+          },
+          "correct": true,
+          "reference_range_m": 1610.951330115428,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0009989443545431794,
+            "translation_m": 0.08977868009346093
+          },
+          "correct": true,
+          "reference_range_m": 1426.0118429513755,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 63,
+        "component": "np31-r3-c3",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "6e8d5255dcbb412cee4556c9bdbaf3dae61d5a8b6b0ec2885c65c713f006a965",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+        "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+        "scene_maximum_height_m": 536.5658569335938,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 63,
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c3/unseen_roll-1",
+      "source_summary_sha256": "bbc47e8761256403d22205d763e8ea7f30adab091d6975c172650ca8d1b2b2d4",
+      "source_seal_sha256": "2e475462f4da86efa5a34b37af0ae9b7fbd1a179c872531d8a8b4504e0cad73e",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.288651132641999e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002731489071265969,
+          "camera_clearance_m": 1696.586273970553,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.577203267248636e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00035650026825351233,
+          "camera_clearance_m": 1393.5250024064512,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.7869822485207101,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 12,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1461.729621885122,
+          "target_distance_m": 1461.7296477505506
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1818.4689859009502,
+          "target_distance_m": 1818.4688481270698
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.013646568486588982,
+            "translation_m": 0.3518751972357413
+          },
+          "correct": true,
+          "reference_range_m": 1826.5092533956076,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.010935727463508176,
+            "translation_m": 0.5333778925438333
+          },
+          "correct": true,
+          "reference_range_m": 1602.40725050406,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 68,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "cc472c2ff2ab3a1f241e9a9722e2c9d4c3390d2695df1652c55d023b0161517e",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 68,
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c5/training_motion-0",
+      "source_summary_sha256": "9af169bd2abdb2f38514b482afaabb018482f28bf38de9fe43e405c6ffb2bd0e",
+      "source_seal_sha256": "cb15e8bebdeb768db1119b4a73ee4fe8c32df9aa71b16e8c1c13bea68cbadd87",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.968650140903761e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00030609864597863634,
+          "camera_clearance_m": 1222.0090666107155,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.328153780627788e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002739735657542042,
+          "camera_clearance_m": 1099.3390056854082,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8698224852071006,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 3,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1452.8224036563772,
+          "target_distance_m": 1452.8225185136916
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1439.999424254096,
+          "target_distance_m": 1439.9994551336285
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0029020445683347225,
+            "translation_m": 0.04935922246986905
+          },
+          "correct": true,
+          "reference_range_m": 1338.5352594877888,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0034887577329653493,
+            "translation_m": 0.1497528557084144
+          },
+          "correct": true,
+          "reference_range_m": 1355.7341501667017,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 69,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "d187ab38316d7773c8df0b74a07a343319769e31418c13dfa0e816853a29c31b",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 69,
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c5/training_motion-1",
+      "source_summary_sha256": "29eea42c4e58d7bfabca12d019e0d4338201dbf32d5a2be5b2892160408900b4",
+      "source_seal_sha256": "7b470bc53faf6424bab0b574145b90b276309a2a2bd859bb9cfdee400aa7a6af",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.9530477941923696e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002863944328055368,
+          "camera_clearance_m": 1255.5388654602796,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.822767326644667e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0001805539309316373,
+          "camera_clearance_m": 1214.1597790393353,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.7795857988165681,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1352.137307813069,
+          "target_distance_m": 1352.1372681237729
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 92,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1442.9338726262993,
+          "target_distance_m": 1442.9338746871845
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0019599768287260843,
+            "translation_m": 0.11145101341176163
+          },
+          "correct": true,
+          "reference_range_m": 1366.7165185132721,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.001934361697147715,
+            "translation_m": 0.07811886761485205
+          },
+          "correct": true,
+          "reference_range_m": 1469.9830192932202,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 70,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e3ddc465e1ced0ce2acd0fcf327c7205f221575e77f35aebfad7f8531a79c84a",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 70,
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-0",
+      "source_summary_sha256": "7e56001f505225b8b2b1e01d307770ce5d77a1e924b4001e9e1197052d8df3df",
+      "source_seal_sha256": "e5a24b4c9030b43462c08702652394a85781ce635fc32b6e84d3193444974982",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.659221509479931e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00021570995431829942,
+          "camera_clearance_m": 1362.299078306606,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.817900609532698e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00035845133152179187,
+          "camera_clearance_m": 1543.5003336900033,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8224852071005917,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1580.0750991140485,
+          "target_distance_m": 1580.0750585943913
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 11,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1475.6733603574985,
+          "target_distance_m": 1475.6732053077453
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0009862597158312664,
+            "translation_m": 0.08418001927020756
+          },
+          "correct": true,
+          "reference_range_m": 1488.5171260307516,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0007515128832253536,
+            "translation_m": 0.05676457404947218
+          },
+          "correct": true,
+          "reference_range_m": 1727.5576081881738,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 71,
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "f7b9300371832801132352713bb52d7f891ec59d66eb1aeb9b3d5eddd561e457",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+        "scene_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+        "scene_maximum_height_m": 429.4371337890625,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 71,
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r3-c5/unseen_roll-1",
+      "source_summary_sha256": "3da77eb229f91299f1872c5d8ef5d67aa2e336265f92086a98e3b6edcc296033",
+      "source_seal_sha256": "66ef4bde704263172c326154a13c0b8317d3273bc8cc4c26f6f79c6947ac45a9",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.080461908799182e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003028306020951277,
+          "camera_clearance_m": 1371.8004571705712,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.8330191048573384e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00017232205959771818,
+          "camera_clearance_m": 1027.8063677667922,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.7100591715976331,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 14,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1260.270497983334,
+          "target_distance_m": 1260.2705118819613
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1453.920259988182,
+          "target_distance_m": 1453.9200015754166
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0014855170762580847,
+            "translation_m": 0.07458675799317083
+          },
+          "correct": true,
+          "reference_range_m": 1495.4255603979586,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0018313812886621937,
+            "translation_m": 0.04802485968694249
+          },
+          "correct": true,
+          "reference_range_m": 1129.0899207448156,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 72,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "83dc205954770221daff1c24205b58aa410d3646db73aca685e6690cfa752f8d",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 72,
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c1/training_motion-0",
+      "source_summary_sha256": "c4f581491e3947e9f404ac2fd7b2586fd1ce8cc580fa871a9e457e73581e2229",
+      "source_seal_sha256": "0a0bf659eba1e493b6a61faa39fa8e59c393d30fe288750209756a062eff3e1f",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.91772963107653e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00020393272416185937,
+          "camera_clearance_m": 1235.916721387794,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.527315665071667e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00028468197297115694,
+          "camera_clearance_m": 1226.696613921814,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9792899408284024,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1952.3911083544879,
+          "target_distance_m": 1952.391161704669
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 1,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2106.739903128295,
+          "target_distance_m": 2106.740004556782
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.003387033150852719,
+            "translation_m": 0.04520309214970891
+          },
+          "correct": true,
+          "reference_range_m": 1372.0797969791934,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.005189475437742941,
+            "translation_m": 0.0695795213888777
+          },
+          "correct": true,
+          "reference_range_m": 1363.9484245005006,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 73,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "a381db98dea5aec3673250c3c203c3767d180dee6c4a2fd98f15ea26e0190a03",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 73,
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c1/training_motion-1",
+      "source_summary_sha256": "50346c4bbaecd968fa1deff103bbdcd0fff2cd549eefcb0cd5e5f9d88cdf0425",
+      "source_seal_sha256": "4202053f768e560b604c10b62d4511d0f992b3ea2c0d0eea8adf6a392619bb59",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.669823623018298e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002663159573330631,
+          "camera_clearance_m": 1155.2234548539575,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.640760329607712e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003806001752764132,
+          "camera_clearance_m": 993.4052515850059,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9452662721893491,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 1,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1394.3027739321155,
+          "target_distance_m": 1394.3028714197046
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1411.611595633706,
+          "target_distance_m": 1411.6116999633532
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0061477909892088635,
+            "translation_m": 0.08980879663101854
+          },
+          "correct": true,
+          "reference_range_m": 1280.1717588996166,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.003087109739002012,
+            "translation_m": 0.08357099672769648
+          },
+          "correct": true,
+          "reference_range_m": 1202.3238678708774,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 74,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "e487e76ce19568965157891a446279bca0dc533a42920863bd42355705e7b60c",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-0",
+      "source_summary_sha256": "0cd1451a7f410cdb6843061741ac4b91d8fa4ff536c5ddf5b1227c4b0df446ad",
+      "source_seal_sha256": "d037af85872343d04a666790df38964a4319c9e8ef05c9e32dcc24b9a8d0b5a8",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.55393569516729e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00022333279525810212,
+          "camera_clearance_m": 1498.5165264979696,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.0774880251306305e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002703473560359271,
+          "camera_clearance_m": 1377.6004920805237,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8905325443786982,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 10,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1402.4064183376436,
+          "target_distance_m": 1402.4064030016798
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 1,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1650.7722649161253,
+          "target_distance_m": 1650.7721384621125
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.011256434113003205,
+            "translation_m": 0.2647172882888679
+          },
+          "correct": true,
+          "reference_range_m": 1665.3875254274294,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.004626128680102756,
+            "translation_m": 0.47150061337195714
+          },
+          "correct": true,
+          "reference_range_m": 1616.177738278647,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 75,
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "1ef2abb1711c29c0851e45e5d3697e1c762a82be3b98a6e2b2b9da02dcc51197",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+        "scene_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+        "scene_maximum_height_m": 577.008544921875,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 75,
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c1/unseen_roll-1",
+      "source_summary_sha256": "61763b00239575c7a99e2f516ba95f7cec99e6eca63fc81e675ca4932b676a73",
+      "source_seal_sha256": "97b1486e35459d6825093ede8af42a54ea7ba08b80cfa020d11edd825e6f2fae",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.641523631577425e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0001515478609235288,
+          "camera_clearance_m": 1514.4716371127804,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.896267400667942e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002559970998845529,
+          "camera_clearance_m": 1168.676501357112,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8372781065088757,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 7,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1811.6757078125038,
+          "target_distance_m": 1811.675808685353
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1677.5091554988753,
+          "target_distance_m": 1677.5093181859916
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.020853981936710876,
+            "translation_m": 0.3933372913122379
+          },
+          "correct": true,
+          "reference_range_m": 1677.135110558469,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.015494626992908283,
+            "translation_m": 0.4101827156536681
+          },
+          "correct": true,
+          "reference_range_m": 1348.6379954929967,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 92,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/training_motion-0/reference/geometry.npz",
+        "reference_geometry_sha256": "6d22cea99f8fad973d15f20cba7f18c312496ced64be347ad1faed2383ba79a3",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 92,
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c7/training_motion-0",
+      "source_summary_sha256": "80f400eb08769c8385939949f0e6648b43b3a63735f75191c9b193c6a50232f2",
+      "source_seal_sha256": "2c2d190b8e4879ed63a256fe783d551706e1ab062d2030650b63f69813739045",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.149291999544403e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00030904047184776573,
+          "camera_clearance_m": 1395.2882106839068,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.619938583599975e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0003162000041356805,
+          "camera_clearance_m": 1458.405319945023,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9630177514792899,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 2117.3197436014734,
+          "target_distance_m": 2117.319551674427
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1732.3451828536197,
+          "target_distance_m": 1732.345246991898
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0039480614862825916,
+            "translation_m": 0.15496945674628806
+          },
+          "correct": true,
+          "reference_range_m": 1538.4321837525467,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.005060621847955223,
+            "translation_m": 0.40476160581547105
+          },
+          "correct": true,
+          "reference_range_m": 1651.8981227125919,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 93,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/training_motion-1/reference/geometry.npz",
+        "reference_geometry_sha256": "000e9a8847c5a213d51e3ee155e1499dc7a68a8f6de14b0fc36104c4a2a80d98",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 93,
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "family": "training_motion",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c7/training_motion-1",
+      "source_summary_sha256": "aff378d894efa23fee4393c4f3ccc380bdeec04f59401e825dcd9d068a077b94",
+      "source_seal_sha256": "9461ffb4157c6352984bc19c68d2ec0199379fefb647cdcc262195c9195380e1",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 5.975026905292365e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002005017913688789,
+          "camera_clearance_m": 1363.5109279174144,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.506731071499742e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0002501048381873261,
+          "camera_clearance_m": 1297.2206370433835,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.9393491124260355,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1588.6103478306625,
+          "target_distance_m": 1588.610315180862
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 18,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1593.2207385047222,
+          "target_distance_m": 1593.2208651718445
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.00047726634116075173,
+            "translation_m": 0.01864467859666345
+          },
+          "correct": true,
+          "reference_range_m": 1500.1395553583861,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 5.929886688545646e-05,
+            "translation_m": 0.023009494673773567
+          },
+          "correct": true,
+          "reference_range_m": 1424.115073239329,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 94,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-0/reference/geometry.npz",
+        "reference_geometry_sha256": "59b0b22a856d55427a8c40a93bdb9882ca94de9a83f2a90eefb4f76a4d16f4ee",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 94,
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 0,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-0",
+      "source_summary_sha256": "03cf7d7ec4259843ac9f0a25c5ac859d6bb6118f7f08771fd487754fd425e0eb",
+      "source_seal_sha256": "05c93130e9fc57ccb809d5e675300ee9d0c609fef99504d08184fd22bf000d6b",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 7.08958533596989e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00015134565228436259,
+          "camera_clearance_m": 1169.3032323954892,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.941250679170893e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0001709243920231529,
+          "camera_clearance_m": 1345.07086158471,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8683431952662722,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1450.6720012694616,
+          "target_distance_m": 1450.6720324307394
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 2,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1319.3492666555474,
+          "target_distance_m": 1319.3493565236834
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0016333794410755506,
+            "translation_m": 0.03980999911423122
+          },
+          "correct": true,
+          "reference_range_m": 1289.8450511602032,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0012955119784445945,
+            "translation_m": 0.065949108137809
+          },
+          "correct": true,
+          "reference_range_m": 1469.3364251675512,
+          "pose_returned": true
+        }
+      ]
+    },
+    {
+      "approved_reference_input": {
+        "unit_index": 95,
+        "component": "np31-r4-c7",
+        "split": "model_selection",
+        "reference_geometry_path": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-1/reference/geometry.npz",
+        "reference_geometry_sha256": "9d38a35e82023ee928731d522f8c0c6f2b0f4769ec6ec06e155d2c561be01534",
+        "scene_mesh_path": "data/north-render-v31/development-v35/np31-r4-c7/mesh.npz",
+        "scene_mesh_sha256": "e1c2e61e30c0de4120842915e62c18ffa3ecbd8c6e8cd382f78bf405041af5d8",
+        "scene_maximum_height_m": 557.3331298828125,
+        "scene_coverage": "Original complete finite renderer terrain mesh; retain this ceiling when map coverage is cropped, not max(croppedmap)."
+      },
+      "unit_index": 95,
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "family": "unseen_roll",
+      "pair_index": 1,
+      "eligible": true,
+      "qualification_reasons": [],
+      "source_output": "runs/solar-v70-completion/np31-r4-c7/unseen_roll-1",
+      "source_summary_sha256": "0d739b07c13930bed1454691a45209344627b04f2e4893611794a027b4ec820e",
+      "source_seal_sha256": "846711086c961b03e2656b13cb90cab069d337ebd16e79fad0de935dc1771cb5",
+      "views": [
+        {
+          "role": "reference",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.981840424576497e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.00023935921285556105,
+          "camera_clearance_m": 1371.6143149157183,
+          "free_space": true
+        },
+        {
+          "role": "query",
+          "body_local_frame_verified": true,
+          "complete_surface": true,
+          "pixel_qualification": {
+            "qualified": true,
+            "maximum_pixel_error": 6.8288421284086e-05,
+            "pixels_over_tolerance": 0,
+            "tolerance_native_px": 0.02
+          },
+          "maximum_independent_mesh_error_m": 0.0005047902250225889,
+          "camera_clearance_m": 1561.1864272631312,
+          "free_space": true
+        }
+      ],
+      "minimum_bidirectional_visible_fraction": 0.8772189349112426,
+      "independent_camera_visibility": [
+        {
+          "source": "reference",
+          "kind": "visible",
+          "index": 0,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1865.317624347191,
+          "target_distance_m": 1865.3176679408
+        },
+        {
+          "source": "query",
+          "kind": "visible",
+          "index": 4,
+          "visible": true,
+          "geometrically_occluded": false,
+          "visibility_uncertain": false,
+          "first_hit_m": 1612.0944450985407,
+          "target_distance_m": 1612.0942405380329
+        }
+      ],
+      "geometric_occlusion": [
+        {
+          "source": "reference",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        },
+        {
+          "source": "query",
+          "geometrically_occluded": 0,
+          "visibility_uncertain": 0
+        }
+      ],
+      "oracle_outcomes": [
+        {
+          "source": "reference",
+          "pose_error": {
+            "rotation_deg": 0.0008584285372317961,
+            "translation_m": 0.017559695570702624
+          },
+          "correct": true,
+          "reference_range_m": 1512.5116893308777,
+          "pose_returned": true
+        },
+        {
+          "source": "query",
+          "pose_error": {
+            "rotation_deg": 0.0032789094356839976,
+            "translation_m": 0.08755660170632894
+          },
+          "correct": true,
+          "reference_range_m": 1718.1648068658287,
+          "pose_returned": true
+        }
+      ]
+    }
+  ],
+  "generated_selection_unit_count": 32,
+  "eligible_selection_unit_count": 32,
+  "excluded_selection_units": [],
+  "eligible_terrain_groups": [
+    "np31-r0-c4",
+    "np31-r0-c7",
+    "np31-r1-c0",
+    "np31-r3-c2",
+    "np31-r3-c3",
+    "np31-r3-c5",
+    "np31-r4-c1",
+    "np31-r4-c7"
+  ],
+  "zero_eligible_terrain_groups": [],
+  "blender_executable_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "python_executable_sha256": "751bdffc8fe603914e0afe3421a9814fc87a362b1714e207038d0c70a4a0e186"
+}
