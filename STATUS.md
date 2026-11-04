@@ -1,5 +1,41 @@
 # Status
 
+## Development diagnostics completed — 4 November 2026
+
+The matched 32-row pilot and independent replay are complete. SIFT recovers 2/4
+raw positive poses, and each frozen compact control recovers 1/4. Every method
+recovers 0/2 changed-light poses. The projected full study requires 20,324 seconds,
+exceeding the unchanged 12,000-second maximum, so admission is refused before
+reservation. No learned gain, calibrated acceptance, checkpoint promotion or
+final test is established.
+
+An actual pretrained pose-free diagnostic passes its generated-translation
+control with 223/256 anchors. Independent replay corrects a label-order scoring
+bug: candidate-window recall on one lunar pair is 43/256 for the native control,
+7/256 for SH and 8/256 for the pooled response, within 16 pixels. Original raw
+outputs and the erroneous counts of 5/1/0 remain preserved and are explicitly
+superseded. This dense diagnostic extracts native features before patch selection,
+violating the main active policy's deferral rule, and is not adopted.
+
+The repository passes 1,063 tests, with 4 skipped. A fresh coordinate-join control
+also passes using coordinate arrays only, with no neural inference. All 49
+learning and 42 physical source bindings remain unchanged. Remaining canonical
+allowances are 15,867 training seconds and 49,080 baseline seconds. Four calibration
+and twelve final terrain groups stay closed.
+
+A separate view-marginal response prototype outside the repository has 95,116
+parameters and passes 31 toy tests. It is untrained on lunar data: actual lunar
+feature-bank extraction, training and inference have not started. The broader
+goal and all 14 original research targets remain active and unmet where noted.
+
+Evidence: [results, correction and limitations](reports/SOLAR_DIAGNOSTICS_V86.md),
+[exact table](reports/solar_diagnostics_results_v86.json), and
+[all original requirements](reports/research_requirements_status_v86.json).
+
+Earlier dated entries below are preserved history, and their live-work
+descriptions are superseded by this entry.
+
+
 ## Cached lunar pilots completed — 4 November 2026
 
 Both fresh cache pilots and their independent metric replays complete 40/40.
