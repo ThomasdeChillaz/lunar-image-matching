@@ -52,7 +52,7 @@ def setup(tmp_path,monkeypatch):
     put('ledger.json',dict(accounting_complete=True,remaining_baseline_wall_seconds=66900,remaining_training_wall_seconds=20220))
     put(m.CANONICAL_JOURNAL,dict(ledger_sha256=m.sha('ledger.json'),reservations=[dict(job_id='historical-failed-control',category='baseline',seconds=300,refund_on_failure=False)]))
     put('blender-procedural-identity','not an executable');put('python-procedural-identity','not an executable')
-    settings=dict(prepared_only=False,calibration_or_final_access=False,query_truth_in_primary_inference=False,original_master='master.json',dataset_summary='data.json',geometry_audit='audit.json',compute_ledger='ledger.json',reservation_journal=m.CANONICAL_JOURNAL,
+    settings=dict(prepared_only=False,reference_precompute='coarse',calibration_or_final_access=False,query_truth_in_primary_inference=False,original_master='master.json',dataset_summary='data.json',geometry_audit='audit.json',compute_ledger='ledger.json',reservation_journal=m.CANONICAL_JOURNAL,
         baseline_ceiling_seconds=30000,per_reference_cap_seconds=900,metadata_cap_seconds=600,online_lookup_cap_seconds=900,online_request_cap_seconds=300,publication_dispatch_lease_seconds=1800,dispatch_overhead_seconds=120,pilot_one_cap_seconds=1020,
         preparation_absolute_deadline_utc='2030-01-03T00:00:00+00:00',protocol_directory='protocols',run_directory='runs/physical',reference_assets_index='runs/reference-index.json',case_assets_output='runs/cases',stage_journal='runs/physical-state.json',blender_executable='blender-procedural-identity',python_executable='python-procedural-identity')
     put('settings.json',settings)

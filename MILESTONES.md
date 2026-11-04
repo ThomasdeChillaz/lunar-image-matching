@@ -1,3 +1,43 @@
+## M75 — Portable physical evidence and fair CPU comparison execution
+
+## Portable comparison execution integrated — 4 November 2026
+
+**885 repository tests pass**, four optional tests skip, and all eight fresh
+procedural image-to-pose controls pass independent replay. These are software
+checks. The matcher remains **95,808 total parameters**; the new response head
+still has **zero lunar optimizer updates**.
+
+The missing-only data job is live: **71/96 completed units** in this snapshot.
+Its 16 protected sources and original deadline are unchanged. Full completion
+and the independent ≥95% exact-correspondence gate still precede learning.
+
+Physical-reference preparation now freezes an explicit coarse/full generic
+Sun-table choice before its own measured pilots. Completed evidence can replay
+without the original Mac installation. A bounded, byte-preserving handoff uses
+the same canonical compute charge, fixed deadline and single-use worker identity;
+failed and partial scientific outputs are retained. No new remote run, full-ray
+pilot, capsule export or training job has been launched.
+
+The local Intel/Torch2.2.2 study and optional free ARM/Torch2.8 comparison remain
+separate CPU strata. The same candidate and SIFT bridge them; speed comparisons
+must be paired on the same worker. LoMa-R and RoMa-v2 retain their qualified
+common profiles. MatchAnything and MOONSt3R retain the local supported runtime.
+Actual measured pilots decide feasibility; prepared code is not a comparison result.
+
+Training lights span one subsolar latitude. They cannot identify arbitrary
+36-coefficient lighting responses or establish latitude extrapolation; the
+planned study tests hour-angle interpolation with the existing regularizer.
+
+Actual new learning, all scientific comparisons, transfer, calibration, final
+freeze/test and the research package remain unfinished. The historical attention
+control stays **15/96 raw correct poses**, uncalibrated. The final reserve is
+closed, and the broader research objective remains active.
+
+Evidence: [software checks and live-job snapshot](reports/solar_software_release_v75.json),
+[independent smoke replay](reports/solar_controlled_smoke_replay_v75.json),
+[review](reports/solar_portability_review_v75.json), and
+[execution requirements](reports/REMOTE_CPU_EXECUTION_V75.md).
+
 ## M74 — Artifact-driven scientific stages and pre-training correctness
 
 ## Scientific stage preparation integrated — 4 November 2026

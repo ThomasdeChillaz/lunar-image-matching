@@ -95,11 +95,13 @@ def unit_paths(c,index):
 def physical_protocols(c,index):
     from solar_physics_v63 import lighting_schedule
     row=c['reference_units'][str(index)];approved=row['approved'];paths=unit_paths(c,index)
+    mode=c.get('reference_precompute','coarse')  # legacy completed contracts remain readable
+    if mode not in('coarse','full'):raise ValueError('Explicit coarse/full generic physical precompute required')
     common=dict(cpu_threads=2,query_truth_used=False,reference_geometry=approved['reference_geometry_path'],
         reference_geometry_sha256=approved['reference_geometry_sha256'],mesh=approved['scene_mesh_path'],mesh_sha256=approved['scene_mesh_sha256'],
         scene_mesh=approved['scene_mesh_path'],scene_mesh_sha256=approved['scene_mesh_sha256'],geometry_audit=c['geometry_audit'],geometry_audit_sha256=c['geometry_audit_sha256'],approved_reference_key=row['approved_reference_key'])
     first=lighting_schedule(row['latitude_deg'])[0]
-    pre=dict(common,max_calendar_seconds=c['per_reference_cap_seconds'],output=paths['archive'],precompute='coarse',
+    pre=dict(common,max_calendar_seconds=c['per_reference_cap_seconds'],output=paths['archive'],precompute=mode,
         latitude_deg=row['latitude_deg'],reference_hour_angle_deg=first['hour_angle_deg'],reference_subsolar_latitude_deg=first['subsolar_latitude_deg'],source_sha256={n:c['source_sha256'][n]for n in PREP_SOURCES})
     lookup=dict(common,schema_version=70,max_lookup_calendar_seconds=c['online_lookup_cap_seconds'],max_request_seconds=c['online_request_cap_seconds'],source_sha256={n:c['source_sha256'][n]for n in LOOKUP_SOURCES})
     return pre,lookup
@@ -109,6 +111,7 @@ def initialize(settings_path,contract_path):
     s=read(settings_path)
     if s.get('prepared_only',False):raise ValueError('Prepared reference settings cannot initialize jobs')
     if s['calibration_or_final_access']is not False or s['query_truth_in_primary_inference']is not False:raise ValueError('Reference-only development preparation required')
+    if s.get('reference_precompute')not in('coarse','full'):raise ValueError('New physical preparation must explicitly freeze reference_precompute coarse or full before pilots')
     # This real gate precedes reference inputs/protocols, budget admission and all output construction.
     gate=full_geometry_gate(s['original_master'],s['dataset_summary'],s['geometry_audit'])
     try:ids,groups,pilot=schedule(gate.audit)
@@ -134,7 +137,7 @@ def initialize(settings_path,contract_path):
         canonical_journal_absolute=str(Path(CANONICAL_JOURNAL).absolute()),selection_units=ids,selection_groups=groups,pilot_units=pilot,
         reference_units={},published_protocols_required_before_each_invocation=True,
         query_truth_used_for_physical_prep=False,scoring_labels_materialized_only_in_case_stage=True,
-        scope='Every independently eligible selection reference, all32generated cameras retained in metadata, generic coarse Sun and schema70 cases; no matcher, teacher, training, calibration or final reserve inference.',**selection_metadata(gate.audit))
+        scope='Every independently eligible selection reference, all32generated cameras retained in metadata, source-frozen coarse/full generic Sun and schema70 cases; no matcher, teacher, training, calibration or final reserve inference.',**selection_metadata(gate.audit))
     for binary in('blender_executable','python_executable'):c[binary+'_sha256']=sha(c[binary])
     for index in ids:
         # Audit row order need not imply index order.
@@ -227,13 +230,14 @@ def validate_reference(c,index,*,validate_arrays=True):
     if len(jobs)!=1:raise ValueError('A successful original phase must own this reference')
     validate_watchdog(c,phasepath,phase,jobs[0])
     if (receipt['complete']is not True or receipt['protocol_sha256']!=sha(paths['precompute'])or receipt['output_sha256']!=sha(paths['archive'])or
-        receipt['source_sha256']!=pre['source_sha256']or receipt['publication_commit']!=watch['publication_commit']or receipt['query_truth_used']is not False or receipt['neural_forwards']!=0 or receipt['precompute']!='coarse'or
+        receipt['source_sha256']!=pre['source_sha256']or receipt['publication_commit']!=watch['publication_commit']or receipt['query_truth_used']is not False or receipt['neural_forwards']!=0 or receipt['precompute']!=pre['precompute']or
         receipt['map_mesh_sha256']!=pre['mesh_sha256']or receipt['original_scene_mesh_sha256']!=row['approved']['scene_mesh_sha256']or receipt['original_scene_ceiling_m']!=row['approved']['scene_maximum_height_m']):raise ValueError('Complete measured reference-only physical archive required')
     if validate_arrays:
         import numpy as np
         from solar_eval_data_v69 import validate_reference_archive,validate_generic_catalogue
         geometry=validate_reference_archive(paths['archive']);validate_generic_catalogue(geometry,row['latitude_deg'])
-        if not np.array_equal(geometry['solar_materialized_mask'],geometry['coarse_sun_mask']):raise ValueError('Pilot/full primary tables must compute generic COARSE states only')
+        expected=geometry['coarse_sun_mask']if pre['precompute']=='coarse'else np.ones(len(geometry['sun_vectors']),bool)
+        if not np.array_equal(geometry['solar_materialized_mask'],expected):raise ValueError('Physical availability must match the exact source-frozen coarse/full generic choice')
     elapsed=watch['calendar_seconds'];bounded_time(receipt['calendar_seconds'],min(pre['max_calendar_seconds'],elapsed),'internal ray preparation time')
     return dict(unit_index=index,archive=paths['archive'],archive_sha256=sha(paths['archive']),program_receipt=paths['archive']+'.json',program_receipt_sha256=sha(paths['archive']+'.json'),
         watchdog_receipt=paths['watchdog'],watchdog_receipt_sha256=sha(paths['watchdog']),outer_calendar_seconds=elapsed,internal_calendar_seconds=receipt['calendar_seconds'])

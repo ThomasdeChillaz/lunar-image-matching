@@ -221,14 +221,17 @@ def cache_index(protocol):
 
 
 class InputLoader:
-    def __init__(self, publication_commit=None, blender_executable=None):
+    def __init__(self, publication_commit=None, blender_executable=None, fully_materialized_primary=False):
         self.image_key = self.geometry_key = None
         self.images = self.geometry = None
         self.last_setup = {}
         self.lookup = None; self.publication_commit = publication_commit; self.blender_executable = blender_executable
+        self.fully_materialized_primary = fully_materialized_primary
     def close(self):
         if self.lookup is not None: self.lookup.close(); self.lookup = None
     def get(self, case, track):
+        if self.fully_materialized_primary and track != "estimated_sun":
+            raise ValueError("Portable remote archives support the primary estimated-Sun track only")
         # One current pair only. Dense ray tables and image arrays are not
         # retained for all cameras or mixed with scoring-only query geometry.
         self.last_setup = dict(image_decode_seconds=0., reference_geometry_load_seconds=0., reference_physics_setup_seconds=0.)
@@ -250,7 +253,10 @@ class InputLoader:
             tick = time.perf_counter(); self.geometry = ReferenceGeometry.load(case["reference_geometry"])
             self.geometry_key = geometry_key
             self.last_setup["reference_geometry_load_seconds"] = time.perf_counter()-tick
-            if case.get("solar_lookup_protocol"):
+            if self.fully_materialized_primary:
+                if track != "estimated_sun" or not self.geometry.solar_materialized_mask.all():
+                    raise ValueError("Remote primary requires all physical columns; no Linux Blender fallback")
+            elif case.get("solar_lookup_protocol"):
                 from solar_lookup_v70 import ReferenceSunLookup
                 tick = time.perf_counter()
                 self.lookup = ReferenceSunLookup.from_protocol(case["solar_lookup_protocol"], self.publication_commit, self.blender_executable)
@@ -260,7 +266,11 @@ class InputLoader:
             None if track == "estimated_sun" else np.asarray(case["secondary_known_query_sun_world"], float), self.lookup)
 
 
-def worker(protocol_path, commit):
+def worker(protocol_path, commit, pre_reserved_ticket=None):
+    if pre_reserved_ticket is not None:
+        from solar_remote_relay_v75 import validate_worker_ticket, primary_scope
+        validate_worker_ticket(pre_reserved_ticket, protocol_path)
+        primary_scope(protocol_path, read(protocol_path))
     import torch, cv2
     torch.set_num_threads(2); cv2.setNumThreads(1)
     p, m, cases = admission(protocol_path, commit); root = Path(p["output"]); rows = []
@@ -275,7 +285,7 @@ def worker(protocol_path, commit):
     write_new(root / "execution.json", dict(protocol_sha256=sha(protocol_path), publication_commit=commit, software=software_identity(),
         purpose=p["purpose"], raw_uncalibrated=True, final_reserve_access=False, profile_order=[v["name"] for v in p["profiles"]],
         initialization_only_cost_controls=[v["name"] for v in p["profiles"] if v.get("initialization_only_cost_control",False)]))
-    loader = InputLoader(commit, p.get("blender_executable")); reusable = cache_index(p)
+    loader = InputLoader(commit, p.get("blender_executable"), fully_materialized_primary=bool(pre_reserved_ticket)); reusable = cache_index(p)
     try:
         for profile in p["profiles"]:
             check(); backend = None; load_seconds = 0.
@@ -347,15 +357,20 @@ def worker(protocol_path, commit):
         loader.close()
 
 
-def run(protocol_path, commit, python):
+def run(protocol_path, commit, python, pre_reserved_ticket=None):
     # The controller is independent of the scientific worker. Even an
     # uninterruptible long C/torch call cannot silently reset its wall limit.
     p, _, _ = admission(protocol_path, commit); root = Path(p["output"])
     if root.exists(): raise FileExistsError("Preserve every completed/partial run; no reset or automatic restart")
     from solar_evaluation_protocol_v74 import validate_runtime
     validate_runtime(p, protocol_path) # Recheck after source/asset admission work.
-    from solar_compute_budget_v67 import reserve
-    reservation = reserve(p["compute_ledger"], p["compute_ledger_sha256"], p["reservation_journal"], sha(protocol_path)+"/evaluation", "baseline", p["max_calendar_seconds"])
+    if pre_reserved_ticket is None:
+        from solar_compute_budget_v67 import reserve
+        reservation = reserve(p["compute_ledger"], p["compute_ledger_sha256"], p["reservation_journal"], sha(protocol_path)+"/evaluation", "baseline", p["max_calendar_seconds"])
+    else:
+        from solar_remote_relay_v75 import consume_pre_reservation, primary_scope
+        primary_scope(protocol_path, p)
+        reservation = consume_pre_reservation(pre_reserved_ticket, protocol_path)
     root.mkdir(parents=True)
     write_new(root / "reservation.json", reservation)
     child = None; started = time.monotonic(); pending = []
@@ -370,7 +385,9 @@ def run(protocol_path, commit, python):
     old = {s: signal.signal(s, interrupted) for s in (signal.SIGTERM, signal.SIGINT)}
     try:
         with (root / "worker.log").open("x") as log:
-            child = subprocess.Popen([python, str(Path(__file__)), "--protocol", protocol_path, "--publication-commit", commit, "--worker"],
+            command = [python, str(Path(__file__)), "--protocol", protocol_path, "--publication-commit", commit, "--worker"]
+            if pre_reserved_ticket is not None: command += ["--pre-reserved-ticket", pre_reserved_ticket]
+            child = subprocess.Popen(command,
                 stdout=log, stderr=subprocess.STDOUT, start_new_session=True,
                 env=dict(os.environ, OPENBLAS_NUM_THREADS="1", OMP_NUM_THREADS="2", VECLIB_MAXIMUM_THREADS="2"))
             while child.poll() is None:
@@ -400,6 +417,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--protocol", required=True); parser.add_argument("--publication-commit", required=True)
     parser.add_argument("--python", default=sys.executable); parser.add_argument("--worker", action="store_true")
+    parser.add_argument("--pre-reserved-ticket", help="Authenticated one-use remote relay only; local default still reserves normally")
     args = parser.parse_args()
-    if args.worker: worker(args.protocol, args.publication_commit)
-    else: run(args.protocol, args.publication_commit, args.python)
+    if args.worker: worker(args.protocol, args.publication_commit, args.pre_reserved_ticket)
+    else: run(args.protocol, args.publication_commit, args.python, args.pre_reserved_ticket)
