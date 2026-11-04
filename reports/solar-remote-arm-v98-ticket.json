@@ -1,0 +1,39 @@
+{
+  "schema_version": 75,
+  "repository": "ThomasdeChillaz/lunar-image-matching",
+  "workflow": ".github/workflows/solar-remote-cpu-v98.yml",
+  "workflow_name": "Solar paired native modern CPU pilot v98",
+  "nonce": "ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "authorized_attempt": 1,
+  "source_publication_commit": "4cad05232bff4f21947eb04f6bb600ec84ec8e11",
+  "protocol_path": "reports/solar-modern-arm-v98/pilot-protocol.json",
+  "protocol_sha256": "9ac4fe0828069b32d26741477428ce41ccd3a06a8e16b6df64426b3c8c192a25",
+  "authorization": {
+    "path": "reports/solar-modern-arm-v98/authorization.json",
+    "sha256": "903cea12904896143902ff32f836ce67e14293d7e5a8f6f2f62bc3ab4cee27e7"
+  },
+  "capsule": {
+    "parts": [
+      {
+        "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/solar-arm-transport-v98/solar-arm-v98-public.zip",
+        "sha256": "2d25dca8b56f86f10444289b7458aeed4ba9a6755bf1ff19fca7014afaa1dee0",
+        "bytes": 563675388
+      }
+    ],
+    "archive_sha256": "2d25dca8b56f86f10444289b7458aeed4ba9a6755bf1ff19fca7014afaa1dee0",
+    "archive_bytes": 563675388,
+    "manifest_sha256": "825ca518c562e269c6128fd485d133aef9091f7eb43c07c8a0261868c757522a",
+    "transport": "public_projected_full_closure_v98"
+  },
+  "original_latest_start_utc": "2026-11-04T23:26:12.862643+00:00",
+  "original_absolute_deadline_utc": "2026-11-04T23:56:12.862643+00:00",
+  "max_calendar_seconds": 1800,
+  "required_runner": "ubuntu-24.04-arm",
+  "cpu_threads": 2,
+  "expected_run_title": "solar-v98-ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "expected_branch": "solar-v98-ticket-ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "refunds": false,
+  "automatic_retry": false,
+  "primary_only": true,
+  "recorded_pilot_software": null
+}
