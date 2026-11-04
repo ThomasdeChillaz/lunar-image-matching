@@ -1,5 +1,16 @@
 # Status
 
+## Blind scattered-light pilot stopped at candidate and coverage gates
+
+Four development terrain groups passed all eight exact-correspondence pose
+controls. Both changed-light renders of the first positive geometry yielded
+blind pose candidates, with zero correct poses anywhere in either bank and
+zero shared valid atlas pixels. The two ranking arms fell back to the original
+order. The study stopped after the first six exposures, and its saved scoring
+replayed byte for byte in a clean checkout. The next experiment needs to
+improve correct-pose candidate recall before measuring reranking benefit.
+[Pilot and replay](reports/SOLAR_SECONDARY_BLIND_SENTRY_V112.md)
+
 ## Dither-free pose control completed
 
 On the fixed eight-case development pilot, the fresh default arm

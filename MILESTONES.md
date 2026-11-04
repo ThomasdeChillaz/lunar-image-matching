@@ -1,3 +1,12 @@
+## M112 — Run the blind scattered-light coverage pilot
+
+The published geometry and inference protocols produced six sealed exposures
+and four sealed blind banks. All eight exact geometry controls passed.
+Neither positive bank contained a correct pose, and both had zero shared
+direct-plus-secondary coverage. The fixed stop rule ended the pilot before
+the remaining 18 exposures. Independent saved-result replay was byte-exact.
+[Pilot and replay](reports/SOLAR_SECONDARY_BLIND_SENTRY_V112.md)
+
 ## M106 — Remove the artifact in a matched pose experiment
 
 The frozen four-arm comparison completed and independently replayed all
