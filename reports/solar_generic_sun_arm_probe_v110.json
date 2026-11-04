@@ -1,0 +1,174 @@
+{
+  "system": "Linux",
+  "machine": "aarch64",
+  "python": "3.12.15",
+  "libc": [
+    "glibc",
+    "2.39"
+  ],
+  "fixture_sha256": "8f02dd100cd5805ca42fbb7f1e470d6f2c7791d9b4f9c4eec8c7fcf85d412b50",
+  "atol": 2e-15,
+  "controls_passed": true,
+  "catalogues": [
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 200,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 87.9604458102747,
+      "units": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "pilot_reference_units": [
+        12
+      ],
+      "stored_row_count": 1627,
+      "recomputed_row_count": 1627,
+      "smallest_archived_up_component": 2.1792233805601542e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 1613,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 86.01324107216145,
+      "units": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "pilot_reference_units": [],
+      "stored_row_count": 1759,
+      "recomputed_row_count": 1759,
+      "smallest_archived_up_component": 4.25723565877674e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 220,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 86.40005846967291,
+      "units": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "pilot_reference_units": [
+        26
+      ],
+      "stored_row_count": 1743,
+      "recomputed_row_count": 1743,
+      "smallest_archived_up_component": 3.8447480743334415e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 190,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 88.21682071057447,
+      "units": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "pilot_reference_units": [],
+      "stored_row_count": 1583,
+      "recomputed_row_count": 1583,
+      "smallest_archived_up_component": 1.9053866725075426e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 1005,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 88.89414362085425,
+      "units": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "pilot_reference_units": [
+        60
+      ],
+      "stored_row_count": 1355,
+      "recomputed_row_count": 1355,
+      "smallest_archived_up_component": 1.181761906952657e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 190,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 88.21654637035665,
+      "units": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "pilot_reference_units": [],
+      "stored_row_count": 1583,
+      "recomputed_row_count": 1583,
+      "smallest_archived_up_component": 1.9056797195262463e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 220,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 86.8336153398115,
+      "units": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "pilot_reference_units": [
+        74
+      ],
+      "stored_row_count": 1725,
+      "recomputed_row_count": 1725,
+      "smallest_archived_up_component": 3.38221188650156e-18
+    },
+    {
+      "catalogue_membership_order_and_coarse_exact": true,
+      "all_availability_exact": true,
+      "historical_vector_equality_pass": false,
+      "bounded_vector_check_pass": true,
+      "vector_mismatch_rows": 222,
+      "max_abs_vector_delta": 1.1102230246251565e-16,
+      "latitude": 86.0134044844742,
+      "units": [
+        92,
+        93,
+        94,
+        95
+      ],
+      "pilot_reference_units": [],
+      "stored_row_count": 1759,
+      "recomputed_row_count": 1759,
+      "smallest_archived_up_component": 4.25706144165286e-18
+    }
+  ]
+}
