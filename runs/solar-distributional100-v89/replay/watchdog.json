@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "protocol_sha256": "f27b038155593081eca91834d713af0ef2d431b899f08af5aff3278f9f3d205f",
+  "publication_commit": "51a343b3e58909cbfc4e60eaee87cf01658468c2",
+  "started_utc": "2026-11-04T15:29:53.009049+00:00",
+  "ended_utc": "2026-11-04T15:30:11.029601+00:00",
+  "calendar_seconds": 18.020157177990768,
+  "cap_seconds": 300,
+  "hard_deadline_utc": "2026-11-04T15:34:53.009049+00:00",
+  "work_deadline_utc": "2026-11-04T15:34:48.009049+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "f27b038155593081eca91834d713af0ef2d431b899f08af5aff3278f9f3d205f/distributional100_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T15:29:55.520219+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 14229.0
+  },
+  "child_returncode": 0,
+  "failure": null,
+  "artifacts": {
+    "worker_summary.json": "9c36b0a0aea4be547bf4e6941f879c156cc82937d1c1cefdfc370a17043139a7",
+    "replay.json": "602a6795eff9c0ccb4a6b386acfa9a7dab6c941256c1ffde78f7ee4668ce0432",
+    "replay_trace.jsonl": "cde521d58accb7e9e78771deb0af2821a337e91937cdc75779161b07ff44efe3",
+    "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
