@@ -1,5 +1,32 @@
 # Status
 
+## Training-patch support correction — 4 November 2026
+
+The source-published four-pair teacher pilot completed with 256 samples in
+11.269834 seconds. Independent replay confirms even-light-only access and the
+stored Sun, geometry and trial-pose conditions. The subsequent full-bank attempt
+failed on camera pair 3 because four of its 64 perturbed canonical patches leave
+the image. Its partial records, failure, watchdog and full 361-second charge are
+preserved. This is a data-loader failure, not a measured matcher result.
+
+The focused correction passes 896 existing tests, three new boundary regressions
+and all eight independently replayed procedural controls. Unavailable trial patches receive an
+explicit support mask, separately from teacher availability, camera occlusion and
+solar shadow. All camera pairs, the original jitter distribution and every
+held-out boundary remain fixed. A corrected experiment must use fresh teacher
+forwards with the new source, a versioned output, additional cumulative charges
+and deadlines no later than the original published teacher stages.
+
+The independent full geometry gate remains 192/192, and all 96 camera pairs are
+eligible. The response model still has zero lunar optimizer updates. No new lunar
+accuracy improvement is claimed. Calibration/final terrain stays closed and the
+full research objective remains active.
+
+Evidence: [actual teacher replay](reports/solar_teacher_actual_replay_v79.json),
+[preserved failure](reports/solar_teacher_full_failed_v78.json), and
+[external watchdog](reports/solar_teacher_full_watchdog_v78.json).
+
+
 ## Full geometry gate passed; teacher pilot frozen — 4 November 2026
 
 All **96 camera pairs and 4,608 images are complete**. The independent full

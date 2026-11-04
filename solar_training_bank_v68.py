@@ -229,12 +229,26 @@ def build_unit_arrays(geometry,points,reader,latitude_deg,encoder,seed,batch_siz
     query_view=trial[:3,3]-world;query_view/=np.linalg.norm(query_view,axis=1,keepdims=True)
     views=np.stack([ref_view@r,query_view@r],1)
     teacher=np.full((n,2,24,32),np.nan,np.float32);available=np.zeros((n,2,24),bool)
-    patches=np.empty((n,2,33,33),np.uint8);conditions=np.empty((n,2,9),np.float32)
+    patches=np.zeros((n,2,33,33),np.uint8);conditions=np.full((n,2,9),np.nan,np.float32)
     indices=(np.arange(n)+int(seed)%12)%12;observed=np.column_stack([np.asarray(EVEN)[indices],np.asarray(EVEN)[(indices+5+np.arange(n)//12)%12]])
+    # Trial support is geometric and lighting-independent. Preserve the ONE
+    # frozen jitter draw and original point/light indices; never reroll, clamp,
+    # relabel a missing observation as an incorrect match, or drop its camera.
+    support=np.zeros(n,bool);trial_maps={};support_failures=[]
+    zeros=np.zeros((512,512),np.uint8)
+    for i,point in enumerate(points):
+        clock()
+        pair,meta=canonical_patch(zeros,zeros,point['reference_xy'],ref['axial_depth'],ref['intrinsics'],ref['cam2world'],query['intrinsics'],trial,query_center=point['query_xy'])
+        if pair is None:
+            support_failures.append(dict(sample_index=i,label_index=int(point['label_index']),reason=meta['reason']))
+            continue
+        support[i]=True;trial_maps[i]=(meta['reference_xy'],meta['query_xy'])
+    if not support.any():raise ValueError('No paired sample with canonical support under the declared trial pose')
     teacher_patches=[];teacher_keys=[];zero_norm=[]
     for light in EVEN:
         clock();images=[reader.get(role,light)for role in ROLES]
         for i,point in enumerate(points):
+            if not support[i]:continue
             for role,image,key in zip(ROLES,images,('reference_map','query_map')):
                 teacher_patches.append(remap_patch(image,point[key]));teacher_keys.append((i,ROLES.index(role),light))
     encoded=encode_teacher(encoder,np.stack(teacher_patches),batch_size,clock)
@@ -244,18 +258,18 @@ def build_unit_arrays(geometry,points,reader,latitude_deg,encoder,seed,batch_siz
         if not np.isclose(norm,1.,rtol=0,atol=2e-4):raise ValueError('Nonzero teacher descriptors must be unit normalized')
         teacher[key]=feature;available[key]=True
     for i,point in enumerate(points):
+        if not support[i]:continue
         clock();ref_image=reader.get('reference',int(observed[i,0]));query_image=reader.get('query',int(observed[i,1]))
-        pair,meta=canonical_patch(ref_image,query_image,point['reference_xy'],ref['axial_depth'],ref['intrinsics'],ref['cam2world'],query['intrinsics'],trial,query_center=point['query_xy'])
-        if pair is None:raise ValueError('Declared trial-pose augmentation loses canonical image support')
-        patches[i]=pair
+        patches[i]=[remap_patch(image,xy)for image,xy in zip((ref_image,query_image),trial_maps[i])]
         for role in range(2):conditions[i,role]=np.concatenate([suns[observed[i,role]],normal[i],views[i,role]])
     # Inputs whose observed descriptors/paired common counterfactual targets
     # are unavailable are omitted as unusable descriptor samples, NEVER relabelled
     # as camera occlusions or solar shadows.
-    use=available.any(-1).all(-1)&(available[:,0]&available[:,1]).any(-1)
-    for role in range(2):use&=available[np.arange(n),role,observed[:,role]]
+    teacher_usable=available.any(-1).all(-1)&(available[:,0]&available[:,1]).any(-1)
+    for role in range(2):teacher_usable&=available[np.arange(n),role,observed[:,role]]
+    use=support&teacher_usable
     if not use.any():raise ValueError('No paired sample with usable frozen teacher targets')
     result=dict(patches=patches[use],conditions=conditions[use],target_suns=np.broadcast_to(suns,(n,2,24,3)).astype(np.float32).copy()[use],teacher=teacher[use],available=available[use],observed_lights=observed[use].astype(np.int64))
     if np.isfinite(result['teacher'][:,:,1::2]).any()or result['available'][:,:,1::2].any()or any(r['light']not in EVEN for r in reader.decoded):raise ValueError('Heldout light leakage detected')
-    details=dict(selected_indices=np.flatnonzero(use).tolist(),omitted_unusable_teacher_samples=int((~use).sum()),zero_norm_teacher_targets=zero_norm,even_images_decoded=reader.decoded,heldout_image_reads=0,query_training_trial_pose=trial.tolist(),trial_pose_jitter=jitter,teacher_patch_count=len(teacher_patches),geometry_labels_independent_of_brightness=True,teacher_availability_is_not_geometric_visibility=True)
+    details=dict(selected_indices=np.flatnonzero(use).tolist(),omitted_unusable_teacher_samples=int((support&~teacher_usable).sum()),omitted_trial_support_samples=int((~support).sum()),omitted_samples_total=int((~use).sum()),canonical_trial_support_available=support.tolist(),canonical_trial_support_failures=support_failures,trial_support_is_not_visibility_or_negative_label=True,zero_norm_teacher_targets=zero_norm,even_images_decoded=reader.decoded,heldout_image_reads=0,query_training_trial_pose=trial.tolist(),trial_pose_jitter=jitter,teacher_patch_count=len(teacher_patches),geometry_labels_independent_of_brightness=True,teacher_availability_is_not_geometric_visibility=True)
     return result,details
