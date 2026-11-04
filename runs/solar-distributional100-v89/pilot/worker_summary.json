@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "mode": "pilot",
+  "protocol_sha256": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca",
+  "updates": 100,
+  "bank_manifest_sha256": "e08adbd5ff997e8c67b33ae2556cabe6af714ccaedc4ca327f2cd5e5576b6085",
+  "bank_prior_sha256": "2302f7b1cac58fa76ca442ae088a5d42fd5a2742f023cdf1bffa0af861ec5d53",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "platform": "macOS-26.7.1-x86_64-i386-64bit",
+    "processor": "i386",
+    "torch_threads": 2
+  },
+  "parameter_report": {
+    "frozen_coarse": 28272,
+    "reference_geometry_encoder": 28704,
+    "observed_condition_film": 1264,
+    "mean_patch_factors": 16896,
+    "mean_angular": 4032,
+    "noise_patch_factors": 15840,
+    "noise_angular": 108,
+    "total_parameters": 95116,
+    "trainable_parameters": 66844,
+    "fixed_prior_buffer_elements": 105,
+    "parameters_plus_fixed_buffers": 95221,
+    "actual_parameters": 95116,
+    "actual_trainable_parameters": 66844,
+    "actual_state_elements": 95221
+  },
+  "model_selection_performed": false,
+  "science_summary_sha256": "004f37112fa289ac2db0a1cf56b99693c4cc4d53f1d10c98c8760a23049103c0"
+}
