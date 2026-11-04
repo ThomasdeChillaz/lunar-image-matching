@@ -1,0 +1,30 @@
+{
+  "method": "MatchAnything-EfficientLoFTR",
+  "profile": "native512",
+  "native_input_size": 512,
+  "internal_input_size": 512,
+  "npe": [
+    832,
+    832,
+    512,
+    512
+  ],
+  "source_repository": "LittleFrog/MatchAnything",
+  "source_revision": "6a7bcb589ec8da3a9e861e799122beaa5eba2193",
+  "source_license": "Apache-2.0, author release LICENSE",
+  "source_lock_sha256": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5",
+  "weight_sha256": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+  "input": "Full native512px grayscale content; optional832px bilinear resize preserves field of view.",
+  "filtering": "Unchanged author confidence0.1 and fine matching; finite/native-mask checks only. No2D affine/homography prefilter.",
+  "pose": "Separate common3-native-pixel AP3P with reference geometry; query geometry never enters this class.",
+  "profile_note": "832 is the positional-encoding training-size control, not a claimed author-recommended lunar profile.",
+  "reparameterization": false,
+  "cpu_threads": 2,
+  "trainable_parameters": 0,
+  "environment": {
+    "torch": "2.2.2",
+    "kornia": "0.7.4",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0"
+  }
+}
