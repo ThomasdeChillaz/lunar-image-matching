@@ -1,0 +1,606 @@
+{
+  "schema": "v112_independent_blind_sentry_replay",
+  "passed": true,
+  "calibration_or_final_access": false,
+  "matcher_calls": 0,
+  "renderer_calls": 0,
+  "fresh_pose_fits": 0,
+  "track": "estimated_sun",
+  "coverage_gate_pass": false,
+  "positive_gates": [
+    {
+      "id": "r00",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 0,
+      "coverage_pass": false,
+      "reason": "insufficient_shared_quadrant_support"
+    },
+    {
+      "id": "r01",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 1,
+      "coverage_pass": false,
+      "reason": "insufficient_shared_quadrant_support"
+    }
+  ],
+  "rotation_threshold_deg": 2.0,
+  "translation_fraction_threshold": 0.01,
+  "median_reference_range_m": 1941.2833636845344,
+  "summary": {
+    "methods": {
+      "original_beam": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 2,
+        "no_positive_pose": 0,
+        "nonoverlap_outputs": 2,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      },
+      "combined": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 2,
+        "no_positive_pose": 0,
+        "nonoverlap_outputs": 2,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      },
+      "direct": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 2,
+        "no_positive_pose": 0,
+        "nonoverlap_outputs": 2,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      },
+      "combined_residual": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 2,
+        "no_positive_pose": 0,
+        "nonoverlap_outputs": 2,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      },
+      "direct_residual": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 2,
+        "no_positive_pose": 0,
+        "nonoverlap_outputs": 2,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      },
+      "compact_final": {
+        "correct_top1": 0,
+        "positive_total": 2,
+        "wrong_positive_poses": 0,
+        "no_positive_pose": 2,
+        "nonoverlap_outputs": 0,
+        "nonoverlap_total": 2,
+        "gains_vs_original_beam": 0,
+        "losses_vs_original_beam": 0
+      }
+    },
+    "candidate_oracle_correct": 0,
+    "positive_renderer_replicates": 2,
+    "nonoverlap_renderer_replicates": 2,
+    "positive_case_ids": 1,
+    "negative_case_ids": 1
+  },
+  "rows": [
+    {
+      "id": "r00",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 0,
+      "positive": true,
+      "candidate_count": 7,
+      "candidate_oracle_correct": false,
+      "coverage_pass": false,
+      "gate_reason": "insufficient_shared_quadrant_support",
+      "distinct_poses": 3,
+      "support": {
+        "common_pixels": 0,
+        "retained_blocks": 0,
+        "retained_pixels": 0,
+        "quadrant_blocks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active_quadrants": []
+      },
+      "candidates": [
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 51.63064404171461,
+          "translation_error_m": 4261.453619516169
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 164.26539516815728,
+          "translation_error_m": 3831.0247502164125
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 164.26539516815728,
+          "translation_error_m": 3831.0247502164125
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 164.26539516815728,
+          "translation_error_m": 3831.0247502164125
+        }
+      ],
+      "methods": {
+        "original_beam": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        "combined": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        "direct": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        "combined_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        "direct_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814
+        },
+        "compact_final": {
+          "candidate_index": null,
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      },
+      "blind_sha256": {
+        "rank_sha256": "3f066e598f8e738fda62b67a1e064688f339723237385b106fc922073cf9ece0",
+        "bank_sha256": "ed5a664b93bcd600cdb45ac6c167e3230dc8537cc044cba870ba578d5ca19b4d",
+        "prediction_receipt_sha256": "fb380bdb4d440fa00675b6200cc0383b82c87f3f4184fafd33540aae81eef3aa",
+        "prediction_sha256": "08d8b6b3f9c3bdbe68ee72db382bf956bf64b6f7b2fd2f3698752d347bddb871",
+        "luminance_sha256": "89f4f8ceba7db476d79c9d485d9d612281882f3301ff5be49df50a39d1834637"
+      }
+    },
+    {
+      "id": "r01",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 1,
+      "positive": true,
+      "candidate_count": 5,
+      "candidate_oracle_correct": false,
+      "coverage_pass": false,
+      "gate_reason": "insufficient_shared_quadrant_support",
+      "distinct_poses": 4,
+      "support": {
+        "common_pixels": 0,
+        "retained_blocks": 0,
+        "retained_pixels": 0,
+        "quadrant_blocks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active_quadrants": []
+      },
+      "candidates": [
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 157.9639041774211,
+          "translation_error_m": 1846.7689071386892
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 128.59589398097293,
+          "translation_error_m": 1417.9637107553772
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 139.49426743121631,
+          "translation_error_m": 3054.786525021986
+        }
+      ],
+      "methods": {
+        "original_beam": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        "combined": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        "direct": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        "combined_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        "direct_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412
+        },
+        "compact_final": {
+          "candidate_index": null,
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      },
+      "blind_sha256": {
+        "rank_sha256": "a10231def3f2ec8a45ad6df96c45da708976322b128c41d6b9ee919924eca661",
+        "bank_sha256": "bced76057d8cfd47cd2d3cd577d8d93a3857056a3264a202c4abc3d788ba8a17",
+        "prediction_receipt_sha256": "bf9ee056d47619c80c7aa8eebc63c422fb1940c9637ec1dde6b2a3c8c4a07ae7",
+        "prediction_sha256": "bc74fd2688c14fca120bb4722950166dc88954bea8e11ec8d69e11e44c660303",
+        "luminance_sha256": "d595850751aac35b4a3369a390dbaf8cf758b8187a7920f2c3f0bb721cfa96a9"
+      }
+    },
+    {
+      "id": "r02",
+      "case_id": "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap",
+      "replicate": 0,
+      "positive": false,
+      "candidate_count": 8,
+      "candidate_oracle_correct": false,
+      "coverage_pass": false,
+      "gate_reason": "insufficient_shared_quadrant_support",
+      "distinct_poses": 7,
+      "support": {
+        "common_pixels": 0,
+        "retained_blocks": 0,
+        "retained_pixels": 0,
+        "quadrant_blocks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active_quadrants": []
+      },
+      "candidates": [
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      ],
+      "methods": {
+        "original_beam": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "combined": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "direct": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "combined_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "direct_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "compact_final": {
+          "candidate_index": null,
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      },
+      "blind_sha256": {
+        "rank_sha256": "6a2704606149f62df943458eca62c92f5b8886fc6781e1ae3d6dab8628ec5f81",
+        "bank_sha256": "64141b09ba37a304ac0da2576e78444413cbeb74345112fa1c35c3a983aedfc6",
+        "prediction_receipt_sha256": "10e3ffba254686bed8e54a42d4c5fc0c684035f4d06226177971b0f2b4e76b1c",
+        "prediction_sha256": "1f04928ad8f2833f81a6a01eede1bdaac17af0b62b7e66b184822b3fe2f0c4c7",
+        "luminance_sha256": "97b2e0bbfb27846af4acc3664014e5de12ca62c79cbce58773530d596cbd7b26"
+      }
+    },
+    {
+      "id": "r03",
+      "case_id": "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap",
+      "replicate": 1,
+      "positive": false,
+      "candidate_count": 4,
+      "candidate_oracle_correct": false,
+      "coverage_pass": false,
+      "gate_reason": "insufficient_shared_quadrant_support",
+      "distinct_poses": 3,
+      "support": {
+        "common_pixels": 11,
+        "retained_blocks": 0,
+        "retained_pixels": 0,
+        "quadrant_blocks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active_quadrants": []
+      },
+      "candidates": [
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      ],
+      "methods": {
+        "original_beam": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "combined": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "direct": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "combined_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "direct_residual": {
+          "candidate_index": 0,
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        },
+        "compact_final": {
+          "candidate_index": null,
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null
+        }
+      },
+      "blind_sha256": {
+        "rank_sha256": "9eb9cd6e183c3e11f6318c34fa7b9aabc8da5f6ae9434437509ae92fbf63eb7b",
+        "bank_sha256": "39e7c40dcb3aa373bd4cfba08dfb8e4d6c7380b8ff7a9e63ebe50ebecc9b3f8c",
+        "prediction_receipt_sha256": "f439063bd908c6ada6d5a61404089ffbc949c41a060e0cee5e988c6cec64fdad",
+        "prediction_sha256": "be753bb72002f6f94738769677acb47047a6e249ba8e7296f6eb958a77ed4d01",
+        "luminance_sha256": "b367bad28b11f3124de0d18e8eef6411c80f10804bcf74a3e168a0acd5ea46d4"
+      }
+    }
+  ],
+  "publication_commit": "abfb1918b2bdddfa0a0ddb497a56c131810b127e",
+  "dispatch_sha256": "82d2a0cb780318cfa2303af9945caba1e1ff119c30b541febb5dd52b6fc267fd",
+  "rank_seal_sha256": "8e58355c7cac5cd9b8d4e965770ed3b4a05174a47030c0a87384dd33a92d526a",
+  "blind_complete_sha256": "8152d58875866ec1f8f40176aef013bba8a436cea47bae65072a2fb94194e307",
+  "watchdog_sha256": "9c029547a186a77654c9285d719abd1393e6abbaf37534dbd3a3ca80577d9160",
+  "scoring_index_sha256": "96435da6d0c81cc59c549ef2d089bd18ba8f28091aa0c1304b2f4a839a7a32a5",
+  "roster_sha256": "59ea302a5bd9f924dd03366ebe66b92b5458ea29a4abb47371ae205ae6e3826f",
+  "reference_geometry_sha256": "f7bf234659ebc520f9e5a1f0bf69e34c9aac23a6fb7aadc738876c960670fbad",
+  "query_geometry_sha256": "0ca927408c343c46e294954b57fa2fa25486091f1e331378dbc4d956d4511513",
+  "replay_source_sha256": "5de525cd01f5962890bbb8309d359b169a9c533a31f5da29e500098c0be85e82"
+}
