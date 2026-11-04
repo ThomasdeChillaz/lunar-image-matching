@@ -1,3 +1,16 @@
+## M92–94 — Full relighting replay and renewed comparison dispatches
+
+The direct-render benchmark independently replayed all 384 development
+cases. Correct raw recovery is 114/192 overall and 74/128 under changed
+lighting, with 18 wrong positive poses and zero raw nonoverlap poses.
+The saved geometry diagnostic links wrong poses with sparse spatial
+coverage and higher translation sensitivity. The mechanism matcher passes
+its real-encoder procedural translation and blank controls. The full suite
+passes 1,199 tests with four skips. The original unused launch windows
+expired. The mechanism and paired native follow-ups preserve the frozen
+cases, method definitions, and allowances under versioned dispatches.
+[Full benchmark](reports/SOLAR_FULL_DIRECT_RENDER_V92.md)
+
 ## M91–92 — Matched relighting evidence and full development admission
 
 The exact 100-update training replay and the 2,000-update primary compact study
