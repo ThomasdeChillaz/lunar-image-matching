@@ -1,3 +1,24 @@
+## M86 — Corrected diagnostics and matched control pilot complete
+
+The 32-row pilot and independent replay of saved metrics are complete. SIFT
+recovers 2/4 raw positive poses, and each compact control recovers 1/4. All methods
+recover 0/2 changed-light poses. The projected full study requires 20,324 seconds,
+exceeding the unchanged 12,000-second maximum, so admission is refused. No cases,
+profiles or caps are altered.
+
+The incorrect v85 metrics are preserved and explicitly superseded by coordinate-
+joined candidate recall of 43/256 for the native control, 7/256 for SH and 8/256
+for the pooled response. The repository passes 1,063 tests, with 4 skipped. A fresh
+coordinate-join control passes using coordinate arrays only, with no neural
+inference. All 49 learning and 42 physical source bindings remain unchanged.
+
+No new learned gain, calibrated acceptance or final-test claim is established.
+The next gate is qualification of the separate view-marginal response prototype,
+which remains outside the repository and untrained on lunar data. All eight
+scientific ablations, seed repeats, modern comparisons, transfer tests, calibration,
+final freeze and research package are still required. The goal remains active.
+See [results and limitations](reports/SOLAR_DIAGNOSTICS_V86.md).
+
 ## M84 measured result — cached pilots complete, selection refused
 
 Both 40-row pilots/replays pass and all 80 saved scientific outputs are exact.
