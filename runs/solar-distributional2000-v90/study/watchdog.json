@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "protocol_sha256": "56a6b1f5cbab50ad6fb84f84c50625825e8461b102f7811f98ba08b4d4719f84",
+  "publication_commit": "ed45e2202f73af13d7a3d75b68d583ba590e9b19",
+  "started_utc": "2026-11-04T15:35:05.550492+00:00",
+  "ended_utc": "2026-11-04T15:37:54.761912+00:00",
+  "calendar_seconds": 169.21049299300648,
+  "cap_seconds": 736,
+  "hard_deadline_utc": "2026-11-04T15:47:21.550492+00:00",
+  "work_deadline_utc": "2026-11-04T15:47:16.550492+00:00",
+  "compute_reservation": {
+    "reservation": {
+      "job_id": "56a6b1f5cbab50ad6fb84f84c50625825e8461b102f7811f98ba08b4d4719f84/distributional2000_study",
+      "category": "training",
+      "seconds": 736,
+      "reserved_utc": "2026-11-04T15:35:07.642999+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 13493.0
+  },
+  "child_returncode": 0,
+  "failure": null
+}
