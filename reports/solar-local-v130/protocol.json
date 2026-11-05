@@ -47,10 +47,10 @@
     "reports/solar-local-v129/reference_cache.py": "fdd69d323dacde8ce5488f1b1aa5a5e9f3d18f9c59e2802f22e29519b76b4507",
     "reports/solar-local-v129/experiment.py": "639705d05ba492cdd2c6c07cdb8ea19def178a9667ed61ce16b27834d3376ff6",
     "reports/solar-local-v129/test_reference_cache.py": "fb74e40b8b6a8a01c3878c68036e94332e601832edf5a7d985d6c1f52b1da1fd",
-    "reports/solar-local-v130/experiment.py": "95f0dadd153cb7b910969fe4f9cc44f92d7d7dfd5a0466f8f78c052801d0547a",
-    "reports/solar-local-v130/test_admission.py": "b9b6e60e62d8c7adf56c2cd59cee3780a50495953cc33dd1a0a2f751b9c18e70",
+    "reports/solar-local-v130/experiment.py": "eac7e6a29d97f065b88ceefdfa135e27d9f5e8ece80fc515d0ac496b5bfb07d3",
+    "reports/solar-local-v130/test_admission.py": "bd84c76befbb1cd1c910e14593976bff72713c09fdc272259fdef7f738f6947f",
     "reports/solar-local-v130/replay_saved.py": "38943fc6658cb50423a2b8f313eebbd27f6ead724fc2dc3b83e174bb52b4696a",
-    "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v129/replay_saved.py": "c691bcd4637d767df927a000a55bab61af06a6c0f57f0ddf3516639ea7d77b03"
+    "reports/solar-local-v129/replay_saved.py": "c691bcd4637d767df927a000a55bab61af06a6c0f57f0ddf3516639ea7d77b03"
   },
   "input_sha256": {
     "reports/solar-warp-v117/inference-inputs.json": "471a2176f54cebe62432cbf78aaf6ff37515566bb66df9ca2b6d96f719697049",
@@ -188,11 +188,14 @@
     "runs/solar-local-v127/timing/FAILED.json": "ee0983bfde18953e84e418e0069ad4234c5215ffc06b80ac4d41735a22b34560",
     "runs/solar-local-v128/timing/FAILED.json": "b31436286e532985bcd22c53ad542183fea3ece0504ff46e76bdd69fb5bcced6",
     "runs/solar-local-v128/timing/timing.log": "d72df3745cfaa4b46bfce5c4bfd468fad9575a029fe00df03c89bfde65a21dea",
-    "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v129/protocol.json": "f404ef6fe97c4598333d71683de07c4918f5a9d6e4564a02f299dd232b50e386",
+    "reports/solar-local-v129/protocol.json": "f404ef6fe97c4598333d71683de07c4918f5a9d6e4564a02f299dd232b50e386",
     "runs/solar-local-v129/timing/timing.json": "bef7615cf060cd88fe6d3761ef3f2e9ec2ea4e93987958966128925ea8f52958",
     "runs/solar-local-v129/timing/FAILED.json": "56868955ab8586a546c3dfb87c6028656ceb187f073130c5f4cb2236b10ef543",
     "runs/solar-local-v129/timing/execution.json": "87937e493bf7ba4e98d7af954cc560bd92fa63bb337523a69abea57834bb9e71",
-    "runs/solar-local-v129/timing/timing.log": "90c3137b65dc3ce7b8338d91c72c5c78a07e8d776d9a4ee71581c528f68c8b15"
+    "runs/solar-local-v129/timing/timing.log": "90c3137b65dc3ce7b8338d91c72c5c78a07e8d776d9a4ee71581c528f68c8b15",
+    "reports/solar-local-v130/preflight/launch.log": "848061aa7f734494191d4c811c3e36fdcc38ac9fa69a6616a175cc86445f4f9c",
+    "reports/solar-local-v130/preflight/rejected-protocol.json": "7499ec7cc50af5fe4ad41aedcd082e7406d297c585f4bd6337b8008c27150b2f",
+    "reports/solar-local-v130/preflight/experiment.py.txt": "95f0dadd153cb7b910969fe4f9cc44f92d7d7dfd5a0466f8f78c052801d0547a"
   },
   "cases": [
     {
@@ -2822,5 +2825,6 @@
     "cache_parity_and_nonnull_pose_checks_passed": true
   },
   "matching_scoring_and_roster_unchanged_from_v129": true,
+  "preflight_manifest_correction": "Repository-relative dependency paths; earlier publication-check refusal preserved before any scientific inference or reservation.",
   "per_job_cap_amendment": "New prospective reservation from the unchanged original cumulative allowance. Prior 60/600-second attempts and their refusals remain untouched."
 }

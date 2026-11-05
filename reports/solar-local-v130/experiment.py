@@ -52,13 +52,18 @@ def build():
     p = deepcopy(base.read(OLD / "protocol.json"))
     p["schema"] = "measured_admission_native_measurement_repair_v130"
     p["caps"]["comparison"] = CAP
-    for file in (HOME / "experiment.py", HOME / "test_admission.py", HOME / "replay_saved.py", OLD / "replay_saved.py"):
+    for file in (HOME / "experiment.py", HOME / "test_admission.py", HOME / "replay_saved.py",
+                 Path("reports/solar-local-v129/replay_saved.py")):
         p["sources"][str(file)] = base.sha(file)
-    for file in (OLD / "protocol.json", *Path("runs/solar-local-v129/timing").glob("*")):
+    for file in (Path("reports/solar-local-v129/protocol.json"), *Path("runs/solar-local-v129/timing").glob("*"),
+                 *Path("reports/solar-local-v130/preflight").glob("*")):
         if file.is_file():
             p["input_sha256"][str(file)] = base.sha(file)
     p["admission"] = timing_proof()
     p["matching_scoring_and_roster_unchanged_from_v129"] = True
+    base.check(all(not Path(name).is_absolute() for name in (*p["sources"], *p["input_sha256"])),
+               "All frozen dependencies must have portable repository-relative paths")
+    p["preflight_manifest_correction"] = "Repository-relative dependency paths; earlier publication-check refusal preserved before any scientific inference or reservation."
     p["per_job_cap_amendment"] = "New prospective reservation from the unchanged original cumulative allowance. Prior 60/600-second attempts and their refusals remain untouched."
     return p
 

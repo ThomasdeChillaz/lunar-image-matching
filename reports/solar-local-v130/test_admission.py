@@ -16,6 +16,7 @@ def test_only_per_job_allocation_changes_and_all_cases_remain():
     assert p["admission"]["forecast_seconds"] < 900
     assert p["admission"]["previous_refusal_preserved"]
     assert p["matching_scoring_and_roster_unchanged_from_v129"]
+    assert all(not Path(name).is_absolute() for name in (*p["sources"], *p["input_sha256"]))
 
 
 def test_incomplete_geometry_control_cannot_admit_the_job(monkeypatch):
