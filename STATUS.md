@@ -1,5 +1,15 @@
 # Status
 
+## Low-light archive completed with the original controls
+
+The exact projection implementation passed the original timing cap and
+completed all 32 archived cells. Independent replay confirmed the
+coarse pose gate failed. On the faint and bright conditions, 3D and plane
+ranked the same first pose, which brought six distributed anchor
+projections within 16 pixels while remaining outside the pose tolerance.
+The archive supplied no 3D-specific advantage or native matching gain.
+[Results and reproduction](reports/solar-warp-v125/RESULTS.md)
+
 ## Lunar-trained comparison and low-light cost gate completed
 
 MOONSt3R recovered 2/4 positives and 0/2 changed-light positives in its
