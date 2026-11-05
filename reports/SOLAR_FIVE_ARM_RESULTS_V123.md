@@ -75,8 +75,14 @@ issue. The strict local x86 verifier then found a one-ULP difference in
 one projected LoMa-R coordinate, (1.42\times10^{-14}) native pixels.
 Independent model-free arithmetic reproduced all correspondence threshold
 decisions and all pose classifications. The original artifacts and both
-local replay failures were preserved. Exact bitwise ARM replay is pending.
+local replay failures were preserved. The unchanged verifier then passed
+all 480 cells on ARM with the original wheel versions. That replay performed
+no new matching, training, or model loading.
 [Portable arithmetic receipt](solar-five-arm-results-v123/portability_recheck_v123.json) ·
 [Replay source](solar-five-arm-results-v123/recheck_saved_rows.py) ·
 [Selected input hashes](solar-five-arm-results-v123/replay_input_hashes_v115.json)
-[Original GitHub Actions run](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41941904269)
+[Original benchmark](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41941904269) ·
+[Exact ARM replay](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41964097603) ·
+[Exact replay rows](solar-five-arm-results-v123/independent_replay_v115.json) ·
+[Full paired table](solar-five-arm-results-v123/matched_comparison_v115.json) ·
+[Replay data and commands](solar-five-arm-results-v123/README.md)
