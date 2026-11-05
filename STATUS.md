@@ -1,5 +1,18 @@
 # Status
 
+## Lunar-trained comparison and low-light cost gate completed
+
+MOONSt3R recovered 2/4 positives and 0/2 changed-light positives in its
+prospectively selected same-case pilot. It produced raw poses on 3/4
+matched nonoverlaps. All eight cells independently replayed. Direct
+recovered all four positives on the same cases.
+[MOONSt3R results](reports/moonst3r-v121/RESULTS.md)
+
+The 3D low-light proposal passed five generated geometry controls.
+Its measured archived-study forecast was 193.48 seconds against a
+fixed 180-second cap. The archive study did not start.
+[Timing evidence](reports/solar-warp-v117/TIMING_RESULTS_V123.md)
+
 ## Five-method ARM comparison completed and independently replayed
 
 Direct recovered 30/48 poses, including 19/32 changed-light positives.
