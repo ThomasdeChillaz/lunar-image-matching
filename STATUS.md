@@ -1,5 +1,21 @@
 # Status
 
+## Direct ARM qualification and camera-angle diagnostic completed
+
+Direct recovered 3/4 positives and 1/2 changed-light positives on the same
+eight development cases used by the modern ARM pilot. The fresh median
+inference was 0.773 seconds. All eight rows replayed byte for byte.
+Measured costs admit the predefined 96-case five-method cohort within the
+original cap. Its execution requires a separate same-worker freeze.
+[Direct results and forecast](reports/SOLAR_DIRECT_ARM_V113.md)
+
+The paired 52° camera-angle diagnostic recovered zero correct positive
+proposals. It produced one new raw final pose on nonoverlap. The current
+development focus is candidate generation with the same scene and information
+available to every comparison method.
+[Cone experiment](reports/SOLAR_POSE_CONE_V113.md) ·
+[Ansar benchmark alignment](reports/ANSAR_BASELINE_ALIGNMENT_V113.md)
+
 ## Blind scattered-light pilot stopped at candidate and coverage gates
 
 Four development terrain groups passed all eight exact-correspondence pose

@@ -1,3 +1,14 @@
+## M113 — Test the angle constraint and qualify Direct on Linux ARM
+
+The blind paired cone test removed out-of-cone candidates without creating a
+correct one. Its new raw nonoverlap pose also failed the safety gate.
+The separate Direct qualification recovered three of four positive poses.
+Exact saved-array replay and the observed runtime admit 96 predefined cases
+per method for a future five-arm run. The qualification and full comparison
+remain distinct milestones.
+[Cone result](reports/SOLAR_POSE_CONE_V113.md) ·
+[Direct qualification](reports/SOLAR_DIRECT_ARM_V113.md)
+
 ## M112 — Run the blind scattered-light coverage pilot
 
 The published geometry and inference protocols produced six sealed exposures
