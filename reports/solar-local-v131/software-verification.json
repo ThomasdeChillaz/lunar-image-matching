@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-05T12:41:11.853716+00:00",
+  "pytest": {
+    "passed": 1439,
+    "skipped": 4,
+    "seconds": 279.45,
+    "log_sha256": "6ea3274b145cc58037976041f11d067b16d352504b21cccb31a5d1a4b0e4af87"
+  },
+  "fresh_procedural_replay": {
+    "path": "runs/solar-controlled-eight-toggle-v131-replay.json",
+    "sha256": "aa2c548402bbf248b1348ec5ba3a3caf19642af390999bd6358b138ed5098eb7",
+    "passed": true,
+    "rows": 8
+  },
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "system": "Darwin",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0.84"
+  },
+  "scientific_accuracy_established_by_tests": false
+}

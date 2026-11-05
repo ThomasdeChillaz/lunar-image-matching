@@ -1,0 +1,26 @@
+{
+  "procedural_only": true,
+  "archived_images_opened": false,
+  "samples": [
+    {
+      "multidepth": false,
+      "optimizer_seconds": 5.381500847986899,
+      "measurement_seconds": 4.522056433954276,
+      "evaluations": 5058,
+      "maximum_evaluations": 7872,
+      "conservative_optimizer_seconds": 8.375479374328366,
+      "passed": true
+    },
+    {
+      "multidepth": true,
+      "optimizer_seconds": 5.177973470999859,
+      "measurement_seconds": 4.685532901028637,
+      "evaluations": 4617,
+      "maximum_evaluations": 7872,
+      "conservative_optimizer_seconds": 8.828461590580657,
+      "passed": true
+    }
+  ],
+  "projected_seconds": 1476.787474221138,
+  "admitted": true
+}
