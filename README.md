@@ -1,5 +1,24 @@
 # Compact lunar image matching
 
+Current evidence — 5 November 2026: the zero-pose failure is repaired, but
+**the new native techniques do not beat Direct**. The primary 3D variant
+recovers 4/16 raw poses and adds 4 wrong positive poses; Direct recovers 4/16
+with no wrong outputs and is about 5.7 times faster. Planar variants recover
+5/16 but add 3 wrong poses. All 640 saved results replay and all seven
+historical controls repeat exactly. No candidate is promoted.
+
+[Measured comparison and failure analysis](reports/solar-local-v134/RESULTS.md) ·
+[Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-native-v134-development) ·
+[All original requirements](reports/research_requirements_status_v134.json).
+
+These are four exposed camera conditions on three terrain components with
+supplied matching illumination. Calibration/final groups remain reserved,
+real navigation accuracy is unverified, and the broader goal remains active.
+
+<details>
+<summary>Earlier development snapshots</summary>
+
+
 Current evidence — 5 November 2026: the shared-camera experimental pipeline
 fixes the latest zero-recovery failure, recovering **4/16 raw poses** versus
 **0/16** for the local-patch control. Direct also recovers 4/16, passes all four
@@ -171,6 +190,9 @@ project; no NASA/JPL affiliation or flight-readiness claim.
 mismatches, with a useful accuracy–CPU-speed tradeoff?
 
 [Release and downloads](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2) · [Two-page brief](reports/compact_brief_v2.pdf) · [Measured report](reports/RESEARCH_ITERATION_6.md) · [Interpretation](reports/COMPACT_INTERPRETATION.md) · [Reproduction](COMPACT_REPRODUCTION.md)
+
+
+</details>
 
 ## Historical compact-v2 findings (3D claims superseded)
 

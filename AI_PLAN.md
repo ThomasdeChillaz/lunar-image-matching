@@ -1,5 +1,34 @@
 # AI coding-agent execution brief
 
+## Native comparison completed — 5 November 2026
+
+The original zero-pose failure is repaired, but the new variants do not beat
+Direct. Primary native 3D: **4/16 correct, 4 wrong positive poses**. Direct:
+**4/16 correct, 0 wrong**, about **5.7 times faster**. Planar native variants
+recover 5/16 but add 3 wrong poses. No candidate is promoted.
+
+All **640 method/case cells** replay; all seven historical controls repeat
+exactly. Scientific-freeze public CI passes 1,457 tests/eight explicit skips
+and end-to-end smoke. Full local pre-serialization suite: 1,458/four skips;
+16 focused current checks and a fresh eight-toggle replay pass. Prior failed
+attempts, malformed output, deadlines and charges are preserved.
+
+Faint measurement precision remains inadequate: 2–5 of 8–10 matches are within
+one pixel, and camera errors are 22–82m. Bright cases reach about 1m.
+These are four exposed conditions on three terrains with supplied matching
+light. Calibration/final groups remain shut. Original remaining envelopes:
+**13,493 training seconds / 95 baseline seconds**.
+
+[Results and diagnosis](reports/solar-local-v134/RESULTS.md) ·
+[All original requirements](reports/research_requirements_status_v134.json)
+
+Next incomplete accuracy work: preserve local correlation ambiguity and fit
+the shared camera to image likelihoods under an equal-budget hard-peak control.
+This is a research hypothesis, not a demonstrated technique. Any new inference
+needs a source-published protocol and cost admission within the remaining
+original envelopes; no final or calibration access is allowed without a
+qualifying model. The full fourteen-requirement goal remains active.
+
 ## Shared-camera repair completed — 5 November 2026
 
 The experimental shared-camera pipeline recovers **4/16 raw poses**, fixing

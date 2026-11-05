@@ -1,3 +1,12 @@
+## M134 — Test native precision and geometry against the strongest control
+
+Completed 20 methods × 32 image pairs, independently replaying 640 cells and
+seven historical controls. Primary 4/16 plus 4 wrong poses does not improve
+Direct 4/16 plus 0 wrong. Preserved failed attempts; repaired rejected-diagnostic
+serialization without changing decisions. Added a post-hoc conditioning audit
+and explicit uncertainty limits. No model promotion or final inference.
+[Measured results](reports/solar-local-v134/RESULTS.md)
+
 ## M131 — Recover poses through shared-camera image evidence
 
 Completed the seven-method native diagnostic: 4/16 shared-camera poses
