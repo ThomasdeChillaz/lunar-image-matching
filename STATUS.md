@@ -1,5 +1,14 @@
 # Status
 
+## LuSNAR Scene 1 geometry verification prepared
+
+Verified 30 disjoint temporal pairs and five stereo anchor masks from the
+local development archive. The candidate camera conventions have distinct
+selection and confirmation windows. Geometry is scored after image-only
+tracks are sealed, and a separate exact pose gate follows only a unique
+confirmed convention. The archived checks await a bounded dispatch.
+[Extraction receipts and validation method](reports/lusnar-scene1-v119/README.md)
+
 ## Coarse 3D radiance proposal experiment prepared
 
 The prepared method ranks a reference-derived camera bank using native

@@ -1,3 +1,11 @@
+## M119 — Prepare independent rover-view geometry checks
+
+Reproduced the exact Scene 1 temporal roster and verified 180 local
+payloads and five stereo anchor semantic masks. The prepared audits separate
+image observations, stereo depth, motion-log conventions and the exact-pose
+control. The reserved LuSNAR scenes remain outside this experiment.
+[Preparation and checks](reports/lusnar-scene1-v119/README.md)
+
 ## M118 — Prepare the low-light 3D pose-proposal experiment
 
 Bound all 16 exact archived EXRs and separated prediction from truth.
