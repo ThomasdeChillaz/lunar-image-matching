@@ -1,0 +1,130 @@
+[
+  {
+    "id": "blind138-00",
+    "source_case": "u013-l00-00-positive",
+    "positive": true,
+    "component": "np31-r0-c4",
+    "query_component": "np31-r0-c4",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/query/geometry.npz",
+      "sha256": "c0f9574e5817614da3a6bd63b0f41b8f1ceef064bbf32f0f89b06b4401a5be0e"
+    },
+    "query_sun_scoring_only": [
+      0.9975169819076923,
+      -0.06440767589202111,
+      0.028487226821102968
+    ]
+  },
+  {
+    "id": "blind138-01",
+    "source_case": "u013-to-u021-l00-00-nonoverlap",
+    "positive": false,
+    "component": "np31-r0-c4",
+    "query_component": "np31-r0-c7",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r0-c7/training_motion-1/query/geometry.npz",
+      "sha256": "e313463c6ebace468c4e9d919af98346b9ad0ce410c7665550bc6d7f211a189b"
+    },
+    "query_sun_scoring_only": [
+      0.9975169819076923,
+      -0.06340252852001572,
+      0.030659259336083107
+    ]
+  },
+  {
+    "id": "blind138-02",
+    "source_case": "u025-l00-00-positive",
+    "positive": true,
+    "component": "np31-r1-c0",
+    "query_component": "np31-r1-c0",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/query/geometry.npz",
+      "sha256": "cb64e759f058dc2f94622660b176212cf516641266d2e31e13d6a599430d8a7d"
+    },
+    "query_sun_scoring_only": [
+      0.9975169819076923,
+      -0.06360806996660356,
+      0.030230518369559464
+    ]
+  },
+  {
+    "id": "blind138-03",
+    "source_case": "u025-to-u057-l00-00-nonoverlap",
+    "positive": false,
+    "component": "np31-r1-c0",
+    "query_component": "np31-r3-c2",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r3-c2/training_motion-1/query/geometry.npz",
+      "sha256": "c1682664e9b6c101381bf46ed07b52fb78ae49333293c112babbafae600b0cfe"
+    },
+    "query_sun_scoring_only": [
+      0.9975169819076923,
+      -0.0645344992350436,
+      0.028198744905593973
+    ]
+  },
+  {
+    "id": "blind138-04",
+    "source_case": "u027-l08-01-positive",
+    "positive": true,
+    "component": "np31-r1-c0",
+    "query_component": "np31-r1-c0",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/query/geometry.npz",
+      "sha256": "fdb45cf4e0b70b5ea93a338af8cf57f9403838f03f8d1d414b96cbaef621eafa"
+    },
+    "query_sun_scoring_only": [
+      0.9804491897832952,
+      -0.1929950101402367,
+      0.03837072209706119
+    ]
+  },
+  {
+    "id": "blind138-05",
+    "source_case": "u027-to-u059-l08-01-nonoverlap",
+    "positive": false,
+    "component": "np31-r1-c0",
+    "query_component": "np31-r3-c2",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r3-c2/unseen_roll-1/query/geometry.npz",
+      "sha256": "09c6a0456c41a208a54f21ad75b85e9448ab42990bb6578c7484809792fe1bee"
+    },
+    "query_sun_scoring_only": [
+      0.9804491897832952,
+      -0.19411447049948136,
+      0.032232880665338644
+    ]
+  },
+  {
+    "id": "blind138-06",
+    "source_case": "u061-l00-17-positive",
+    "positive": true,
+    "component": "np31-r3-c3",
+    "query_component": "np31-r3-c3",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/geometry.npz",
+      "sha256": "78ac7e2ef00b58039ee65fb71c9692602f9e45cb1a4875ef8ca48fa95ecaf595"
+    },
+    "query_sun_scoring_only": [
+      -0.6591198737567632,
+      -0.7509369789798063,
+      0.04067733545293575
+    ]
+  },
+  {
+    "id": "blind138-07",
+    "source_case": "u061-to-u069-l00-17-nonoverlap",
+    "positive": false,
+    "component": "np31-r3-c3",
+    "query_component": "np31-r3-c5",
+    "query_geometry": {
+      "path": "runs/solar-v70-completion/np31-r3-c5/training_motion-1/query/geometry.npz",
+      "sha256": "a1ba36f73810dc9e7ca2489c54d272b677e5276a06c6e68488989a6b11d436b6"
+    },
+    "query_sun_scoring_only": [
+      -0.6591198737567632,
+      -0.7504034147453797,
+      0.049555092143414275
+    ]
+  }
+]
