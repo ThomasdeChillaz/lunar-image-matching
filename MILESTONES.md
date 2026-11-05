@@ -1,3 +1,11 @@
+## M122 — Prepare geometry checks for a full patch search
+
+Added an after-seal probe for detector support, the actual fractional
+search lattice and reciprocal paths. A generated regression covers
+observations that can cross a quadrant boundary within the error
+tolerance. The probe does not evaluate archived lunar radiance.
+[Reproduction](reports/solar-warp-handoff-v122/README.md)
+
 ## M121 — Measure the ceiling of selecting among completed poses
 
 Joined every historical result to the same development case roster.
@@ -5,6 +13,11 @@ Hindsight selection adds six same-light successes and zero changed-light
 successes to Direct. Used saved correspondence counts to separate
 candidate scarcity from cases where the estimator warrants closer study.
 [Coverage analysis](reports/SOLAR_SAVED_POSE_COVERAGE_V121.md)
+
+Also prepared the prospective eight-case MOONSt3R comparator, with the
+original benchmark verification and cumulative budget checks in its
+execution guard.
+[Comparison preparation](reports/moonst3r-v121/README.md)
 
 ## M120 — Verify a native handoff beyond the old local search radius
 
