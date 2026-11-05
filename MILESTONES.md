@@ -1,3 +1,12 @@
+## M125 — Run and replay the complete low-light archive
+
+Replaced per-bin footprint sorting with exact depth and source-index
+reductions. The complete study forecast passed the original 180-second
+cap with byte-identical procedural evidence. All 32 archived cells
+replayed. The coarse pose gate failed, while 3D and plane achieved the
+same geometric anchor reach on the faint and bright controls.
+[Archived results and replay package](reports/solar-warp-v125/RESULTS.md)
+
 ## M124 — Replay the lunar-trained pilot and measure the next proposal cost
 
 MOONSt3R completed the eight fixed cases and passed independent replay.
