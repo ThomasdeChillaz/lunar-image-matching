@@ -1,3 +1,13 @@
+## M118 — Prepare the low-light 3D pose-proposal experiment
+
+Bound all 16 exact archived EXRs and separated prediction from truth.
+Implemented a fitted-plane control, shared detector support, reuse of
+reference-only projection across render seeds, and an independent replay
+of ranked cell evidence. The timing and archived study have separate
+future dispatches and a serial completion check for the live benchmark.
+[Prepared experiment](reports/solar-warp-v117/preparation.json) ·
+[Decisive study gate](reports/solar-warp-v117/ARCHIVE_GATE.md)
+
 ## M117 — Check the physical lab camera frame against released IMU data
 
 Audited 48 archived camera times without loading their images. The 34 times

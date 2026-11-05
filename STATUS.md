@@ -1,5 +1,16 @@
 # Status
 
+## Coarse 3D radiance proposal experiment prepared
+
+The prepared method ranks a reference-derived camera bank using native
+image-cell radiance. The 3D, fitted-plane and brightness-trend arms
+share exactly the same supported detector subbins. The scoring worker
+opens query pose only after the full prediction archive is sealed.
+The admission controller requires the existing ARM attempt to finish
+and its available artifacts to be audited before reserving compute.
+[Prepared method and tests](reports/solar-warp-v117/README.md) ·
+[Archived study gate](reports/solar-warp-v117/ARCHIVE_GATE.md)
+
 ## Physical lab frame discrepancy confirmed against an independent sensor
 
 Released ZED2 accelerometer data disagrees with the nominal motion-capture
