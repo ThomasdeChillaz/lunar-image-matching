@@ -1,3 +1,13 @@
+## M115 — Freeze and launch the five-method ARM comparison
+
+Published the exact 96-case roster and one-use native CPU workflow. The
+two released archives passed a clean reconstruction and all eight fresh
+procedural combinations passed independent replay. The first GitHub attempt
+started on 5 November 2026. Its 480 planned lunar outcomes require a complete
+worker seal and independent replay before comparison.
+[Protocol](reports/SOLAR_FIVE_ARM_V115_PROTOCOL.md) ·
+[Run](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41941904269)
+
 ## M113 — Test the angle constraint and qualify Direct on Linux ARM
 
 The blind paired cone test removed out-of-cone candidates without creating a

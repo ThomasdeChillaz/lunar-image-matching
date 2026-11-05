@@ -1,5 +1,15 @@
 # Status
 
+## Five-method ARM development comparison launched
+
+The frozen native-512 comparison uses 48 overlapping and 48 matched
+nonoverlapping cases across eight development terrains. It compares frozen
+compact, SIFT, LoMa-R, RoMa v2 and Direct on one worker and one pose estimator.
+The original ledger holds one 18,000-second reservation. This is a raw-pose
+development comparison. Calibration and final terrain remain closed.
+[Protocol and scope](reports/SOLAR_FIVE_ARM_V115_PROTOCOL.md) ·
+[Live run](https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41941904269)
+
 ## Direct ARM qualification and camera-angle diagnostic completed
 
 Direct recovered 3/4 positives and 1/2 changed-light positives on the same
