@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-05T19:46:33.557706+00:00",
+  "independent_source_checkout": true,
+  "archive_sha256": "ac12965b4faf714ad06aba64a10259a2f9cbe4e4c6f6392539313868c465d182",
+  "inventory_entries_verified": 365,
+  "saved_method_case_cells": 640,
+  "historical_seven_controls_exact": true,
+  "comparisons": {
+    "results.json": {
+      "byte_equal": true,
+      "sha256": "291fedbd3cd22fce1b25594ebcd08a68245d211aecbdf393ce70e334dbf970f5"
+    },
+    "paired-results.json": {
+      "byte_equal": true,
+      "sha256": "d8e0aa4ddc2a0dc025a2187831b355e10a177f9a3c4f19ba73c2e8e55e827e6a"
+    },
+    "conditioning-diagnostic.json": {
+      "byte_equal": true,
+      "sha256": "6af494cc25ce4b88fe47159fef5924decbcb2a29911e9321b4ec88b37693d1a6"
+    }
+  },
+  "procedural_replay_passed": true,
+  "canonical_journal_or_reserve_images": false
+}

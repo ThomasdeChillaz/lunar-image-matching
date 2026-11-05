@@ -22,15 +22,16 @@ def render():
     fig, axes = plt.subplots(2, 1, figsize=(10.8, 7.2))
     fig.subplots_adjust(left=.09, right=.97, top=.88, bottom=.17, hspace=.58)
     fig.suptitle("Native camera localization: matched development comparison", fontsize=15, y=.97)
-    axes[0].bar(x-.17, [r["correct"] for r in rows], .34, color="#2169a5", label="Correct raw pose")
-    axes[0].bar(x+.17, [r["strict"] for r in rows], .34, color="#e6a33e", label="Strict raw pose")
+    axes[0].bar(x-.26, [r["correct"] for r in rows], .24, color="#2169a5", label="Correct raw pose")
+    axes[0].bar(x, [r["strict"] for r in rows], .24, color="#e6a33e", label="Strict raw pose")
+    axes[0].bar(x+.26, [r["wrong_positive"] for r in rows], .24, color="#bc4946", label="Wrong raw pose")
     for i, row in enumerate(rows):
-        for offset, key in ((-.17, "correct"), (.17, "strict")):
+        for offset, key in ((-.26, "correct"), (0., "strict"), (.26, "wrong_positive")):
             axes[0].text(i+offset, row[key]+.3, str(row[key]), ha="center", fontsize=10)
     axes[0].set_ylim(0, 17)
     axes[0].set_yticks([0, 4, 8, 12, 16])
-    axes[0].set_ylabel("Correct camera poses /16")
-    axes[0].legend(loc="upper right", frameon=False, ncol=2, fontsize=10)
+    axes[0].set_ylabel("Camera poses /16")
+    axes[0].legend(loc="upper right", frameon=False, ncol=3, fontsize=9)
     times = [r["median_positive_inference_seconds"] for r in rows]
     axes[1].bar(x, times, .55, color=["#8296a7", "#8296a7", "#398970", "#2169a5", "#2169a5", "#2169a5"])
     for i, value in enumerate(times):
