@@ -1,0 +1,49 @@
+{
+  "schema": "moonst3r_v121_local_dispatch",
+  "execution_authorized": true,
+  "protocol_sha256": "c96bcd1dbb8569dae280d8817f7350ad623d55ca7a312a8475689a4c67ba53d2",
+  "max_calendar_seconds": 1800,
+  "created_utc": "2026-11-05T03:53:18.325907+00:00",
+  "latest_start_utc": "2026-11-05T04:03:18.325907+00:00",
+  "absolute_deadline_utc": "2026-11-05T04:33:18.325907+00:00",
+  "v115_official_zip_sha256": "813f2c9e6c5986ae711ab885d3a6c25a146cb87fead8261f99984e689f5e538b",
+  "artifact_verifier_source_sha256": "d77bfa4a298eb0497f3f72a9b15acf62a78d97917c23ff3fcf51a3747acaeb5b",
+  "v115_evidence": {
+    "official_run": {
+      "path": "github_v115_metadata.json",
+      "sha256": "2d3bbe4e9cdc63b7f49fe80390c6410a2c6aad1810ce0228b958bec425235e46"
+    },
+    "artifact_audit": {
+      "path": "artifact_audit_v115.json",
+      "sha256": "75a66c58c2322be8b9d685eae4e57e6a5609a20a7d25779b9f3aebe82cb9f746"
+    },
+    "summary": {
+      "path": "runs/solar-five-arm-v115/comparison/summary.json",
+      "sha256": "3f65b164472e2300d6b5aeb1611a2988d0f5d0155fe850c6a5f229eb567a38bc"
+    },
+    "seal": {
+      "path": "runs/solar-five-arm-v115/comparison/COMPLETE.json",
+      "sha256": "dd108e49fa87be8ac49308a378405c263ede1cc5ed9d41a4b952823a0c0c2c50"
+    },
+    "replay": {
+      "path": "independent_replay_v115.json",
+      "sha256": "844433a3bcfcb5180da648e446b3a05c089d2b69d5ebcdb8ee2af214f25dd2b5"
+    },
+    "comparison": {
+      "path": "matched_comparison_v115.json",
+      "sha256": "984b3a7a84cc8f356f55dfb003b61b7d5d72b7c47cc51476f6e9309f04298e99"
+    },
+    "nested_cell_inventory": {
+      "path": "nested_cell_inventory_v115.json",
+      "sha256": "6e14ec6770a1699fa26438464a73cde5721d0143a7ba348077d205f5d9c95a30"
+    },
+    "outer_watchdog": {
+      "path": "runs/solar-remote-five-arm-v115/f4185e74104c0a62d3b14d64e61cc6b3ef622feec4b28c3191ceba871855dd11/remote_watchdog.json",
+      "sha256": "ccdb2ae888b870d2cfd856819a056c85b503250875ec166b95073562e9e96430"
+    },
+    "archive": {
+      "path": "runs/solar-remote-five-arm-v115/f4185e74104c0a62d3b14d64e61cc6b3ef622feec4b28c3191ceba871855dd11/scientific_results.zip",
+      "sha256": "3b08451d43580c598bb9e6176f7fa96e53cb09714eb4e9fbdc0595ca34f010f2"
+    }
+  }
+}
