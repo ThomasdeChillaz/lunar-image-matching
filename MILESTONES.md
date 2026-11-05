@@ -1,3 +1,13 @@
+## M123 — Complete the five-method comparison and its exact replay
+
+Verified the original Actions artifact and all 480 saved cells. The
+unchanged verifier passed on native ARM. Direct recovered 30/48 raw poses,
+against 15/48 each for LoMa-R and RoMa v2, on the same development cases.
+Released the exact summary, completion seal and numerical arrays with a
+verified digest and reproduction commands.
+[Results](reports/SOLAR_FIVE_ARM_RESULTS_V123.md) ·
+[Reproduction](reports/solar-five-arm-results-v123/README.md)
+
 ## M122 — Prepare geometry checks for a full patch search
 
 Added an after-seal probe for detector support, the actual fractional
