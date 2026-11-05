@@ -1,0 +1,42 @@
+{
+  "schema": "public_download_verification_v137",
+  "release_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-active-v137-development",
+  "passed": true,
+  "files": {
+    "lunar-active-v137-development.zip": {
+      "bytes": 86427701,
+      "sha256": "28ab578081a5059ff6e2a2ab4c1fd8231232dd3702f207515a2e9d4317e37563",
+      "matches_local_verified_bytes": true
+    },
+    "lunar-active-v137-development.zip.sha256": {
+      "bytes": 100,
+      "sha256": "bfdeec127d1d5fa7c84743b82f440229317794aaa0fbef5ec6b6c162537250cd",
+      "matches_local_verified_bytes": true
+    },
+    "lunar-active-acquisition-v137-brief.pdf": {
+      "bytes": 210058,
+      "sha256": "64af8ce1e94791ba880e1d64728fe0a1b11fdd3ce1b189ec4ccaa3fef8be9046",
+      "matches_local_verified_bytes": true
+    },
+    "lunar-active-acquisition-v137-working-paper.pdf": {
+      "bytes": 159057,
+      "sha256": "78e8527845c97483f7b7da78360780932cb7765b92b52a41ed865cdf6ff5f15e",
+      "matches_local_verified_bytes": true
+    }
+  },
+  "capsule_clean_replay_pass": true,
+  "capsule_inventory_payload_files": 298,
+  "independently_replayed_method_case_cells": 832,
+  "no_scientific_inference": true,
+  "original_ledger_and_journal_byte_identical": true,
+  "supplement_fixed_reservations_seconds": 1920,
+  "supplement_unused_recovery_seconds": 480,
+  "release_source_commit": "8611bcbea9ea3c35e440b8529df9dc4fc9d48abd",
+  "public_release_source_ci": {
+    "run_id": 42121643631,
+    "job_id": 127575234386,
+    "conclusion": "success",
+    "tests_and_end_to_end_smoke_pass": true,
+    "source": "8611bcbea9ea3c35e440b8529df9dc4fc9d48abd"
+  }
+}
