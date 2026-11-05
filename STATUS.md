@@ -1,5 +1,51 @@
 # Status
 
+## Unknown-light cost gate measured - 6 November 2026
+
+The complete six-method generated controls pass on flat and layered geometry,
+using 24 reference lights, 2,048 camera candidates and 32 extra searches. Pair
+costs of 46.06/51.88s imply 652.51s for the eight-case lunar comparison after the frozen
+safety factor/margin. The controller stopped before lunar inference; this is
+not a zero-pose lunar result. No smaller subset or free retry was substituted.
+
+All 1,507 local tests/four skips and public 1,499/eight skips plus fresh 20-cell smoke
+pass. The original 2,400s supplement is fully reserved: 120 + 1,800 + 480; actual v139 timing
+worker at 98.06s is separate from conservative fixed charges. Original training at 13,493s /
+comparison at 0s is unchanged. Calibration/final terrain remains closed.
+
+The original 14 targets remain active. V137: 8/16 raw poses with supplied reference
+light remains the latest acquisition evidence; clean unknown-light performance,
+full learned A/B/C, calibrated acceptance, modern comparison and transfer are open.
+A prospective 900s continuation is prepared, not authorized or launched.
+
+[Measured cost gate](reports/solar-blind-v139/RESULTS.md) ·
+[Concrete continuation](reports/solar-blind-v140/NEXT_EXPERIMENT.md) ·
+[All original targets](reports/research_requirements_status_v139.json)
+
+## Unknown-light search and clean-data gate prepared - 6 November 2026
+
+Implemented an image-only search over reference catalogue illumination and camera
+hypotheses, followed by the unchanged native acquisition controls. Nine focused
+checks, all 1,503 full tests/four skips and a generated image-to-pose smoke pass; independent replay verifies all
+four generated methods. These controls do not simulate physical sunlight or
+establish new lunar accuracy. V137 remains 8/16 raw poses on supplied-light data.
+
+A hash/header-only census verifies 104 completed clean RGB16 images and separates
+inference from query-truth scoring. They support four positives/four nonoverlaps
+on three positive terrain components. Only three of the larger modern benchmark's
+16 reference cameras have complete clean catalogues; 13 need clean acquisition.
+Its old Direct 30/48, LoMa-R 15/48 and RoMa v2 15/48 remain conditional on archived
+default-dither inputs, not a clean-image ranking.
+
+Original remaining training 13,493s / comparison 0s and supplement 1,920s fixed charges
+are unchanged. Its 480s recovery remains uncharged; a prospectively frozen v139 continuation
+uses it under the existing approval, with no new allowance or refund. The original 14 targets and broader goal remain active.
+Calibration/final terrain stays closed; no paid compute or automatic outreach.
+
+[Implemented method and data limits](reports/solar-blind-v138/README.md) ·
+[Bounded next experiment](reports/solar-blind-v138/NEXT_EXPERIMENT.md) ·
+[All original targets](reports/research_requirements_status_v138.json)
+
 ## Sequential acquisition study completed - 5 November 2026
 
 The active policy recovers **8/16 raw poses**, versus **4/16 Direct**, **5/16

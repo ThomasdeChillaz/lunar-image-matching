@@ -1,5 +1,19 @@
 # Compact lunar image matching
 
+Latest execution - 6 November 2026: the unknown-light software passes both full
+six-arm generated controls, but its 652.51s forecast exceeds the original recovery
+cap. It stopped before lunar inference; no new lunar accuracy result exists.
+Local1,503/public 1,499 tests pass. [Timing and limits](reports/solar-blind-v139/RESULTS.md)
+· [Complete proposed continuation](reports/solar-blind-v140/NEXT_EXPERIMENT.md)
+· [Original research requirements](reports/research_requirements_status_v139.json).
+
+New software preparation: [image-selected lighting and camera initialization](reports/solar-blind-v138/README.md)
+removes supplied matching illumination from the experimental interface. Generated
+controls pass; no new lunar result is claimed. A clean-data census identifies
+13 missing reference catalogues for the broader modern comparison; historical
+modern counts use archived dithered inputs. [Next bounded study](reports/solar-blind-v138/NEXT_EXPERIMENT.md)
+and [unchanged research targets](reports/research_requirements_status_v138.json).
+
 Current evidence - 5 November 2026: **active patch acquisition recovers 8/16 raw
 camera poses**, versus 4/16 Direct and 7/16 uniform/geometry at the same extra-patch
 budget. Active returns zero wrong positive poses and 0/16 nonoverlap poses. The

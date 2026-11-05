@@ -1,3 +1,21 @@
+## M139 - Complete the unknown-light cost gate
+
+All six generated poses pass on both full-budget controls. The 652.51s forecast
+exceeds the original 480s shared recovery deadline, so lunar inference did not run.
+Published the timing, sanitized failure receipt and passing public verification.
+Supplement 2,400s is fully reserved; no refund, new allowance, reserve access or
+model promotion. A complete unchanged-source continuation is prepared only.
+[Measured outcome](reports/solar-blind-v139/RESULTS.md)
+
+## M138 - Prepare shared camera/lighting inference and qualify clean inputs
+
+Implemented the bounded catalogue/camera initializer with common support across
+lights, reference-only cache guards, native acquisition and uncalibrated-null
+public outputs. Nine focused checks and generated matching/replay pass. Verified
+104 clean16 images; broader clean modern comparison lacks13 reference catalogues.
+No new lunar inference; recovery is prospectively bounded within the existing approval; all original targets remain open.
+[Implementation and bounded proposal](reports/solar-blind-v138/README.md)
+
 ## M137 - Test sequential acquisition against Direct and equal-search controls
 
 Completed the explicitly approved six-arm native study: active 8/16, Direct 4/16,
