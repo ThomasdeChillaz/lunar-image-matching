@@ -1,3 +1,11 @@
+## M121 — Measure the ceiling of selecting among completed poses
+
+Joined every historical result to the same development case roster.
+Hindsight selection adds six same-light successes and zero changed-light
+successes to Direct. Used saved correspondence counts to separate
+candidate scarcity from cases where the estimator warrants closer study.
+[Coverage analysis](reports/SOLAR_SAVED_POSE_COVERAGE_V121.md)
+
 ## M120 — Verify a native handoff beyond the old local search radius
 
 Implemented 3D and fitted-plane detector templates with identical support,
