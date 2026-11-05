@@ -59,6 +59,20 @@ The earlier ranker chose references under matched illumination. The
 same four seed pairings per camera remain repeated renderings of that
 camera pair. An archived result can establish whether this choice of
 patches improves measured pose recovery on those development images.
+The 60-second generated timing trial admits all 16 archive pairings
+if the conservative forecast fits 180 seconds. Otherwise it admits
+the eight fixed faint and bright pairings if they fit. The scope is
+chosen before archived matching.
+
+A feasibility pass requires at least two additional qualifying faint
+pairings over uniform selection, and no paired loss on the faint or
+bright condition. A qualifying pose meets the common 2° and 1%-of-range
+criterion, uses the original three-pixel pose inlier rules, and has
+at least six distinct measured endpoints within two native pixels
+of independently projected geometry across at least three quadrants
+in both images.
+[Bounded protocol](control_parallax_v126.py) · [Scoring](score_parallax_v126.py)
+
 Estimated-Sun performance, nonoverlap risk and broader generalization
 need separate preregistered evidence. Calibration and final terrain
 stay reserved under the original research requirements.
