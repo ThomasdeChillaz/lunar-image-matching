@@ -1,5 +1,14 @@
 # Status
 
+## Measured ceiling of reusing saved development poses
+
+Perfect hindsight selection among five completed methods recovers
+120/192 poses and adds zero changed-light successes over Direct.
+On 37 of 54 changed-light misses, all five methods returned fewer than
+six correspondences within four native pixels. The next experiment will
+measure candidate capture and image-based refinement separately.
+[Saved-pose coverage and replay](reports/SOLAR_SAVED_POSE_COVERAGE_V121.md)
+
 ## Native patch handoff verified in a generated displacement control
 
 The bounded ±128-pixel reciprocal search recovered all 16 measured offsets
