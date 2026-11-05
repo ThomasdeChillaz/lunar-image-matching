@@ -1,5 +1,19 @@
 # Compact lunar image matching
 
+Current evidence — 5 November 2026: the shared-camera experimental pipeline
+fixes the latest zero-recovery failure, recovering **4/16 raw poses** versus
+**0/16** for the local-patch control. Direct also recovers 4/16, passes all four
+strict pose checks and runs about 6.4 times faster. The new pipeline therefore
+does not beat the strongest control. All 224 saved results replay, including
+exact repetition of five historical controls. These are four exposed camera
+conditions on three terrains with supplied matching illumination.
+
+[Measured comparison](reports/solar-local-v131/RESULTS.md) ·
+[Tagged replay bundle](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-native-v131-development) ·
+[All original requirements](reports/research_requirements_status_v131.json).
+Calibration and final terrain remain reserved. The broader research goal
+remains active. Older dated snapshots below are superseded by this entry.
+
 Current evidence — 4 November 2026: both 2,000-update response studies are complete,
 but no learned localization gain is established. In a matched development pilot,
 SIFT recovers 2/4 raw camera poses; each frozen compact control recovers 1/4.
