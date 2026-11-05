@@ -1,5 +1,24 @@
 # Compact lunar image matching
 
+Current evidence - 5 November 2026: **active patch acquisition recovers 8/16 raw
+camera poses**, versus 4/16 Direct and 7/16 uniform/geometry at the same extra-patch
+budget. Active returns zero wrong positive poses and 0/16 nonoverlap poses. The
+prespecified early signal passes; the isolated selection gain is one pose
+(6.25 points), with an interval including zero. Active is 8.33 times slower than
+Direct. These are four exposed conditions on three terrains with supplied
+matching reference illumination; no new learned or state-of-the-art result.
+
+All 832 saved method/case scores independently replay. Local 1,490 tests/four skips
+and fresh generated smoke pass. The original 70% correctly accepted/10-point gain
+and remaining research targets are unmet. Calibration/final terrain stays closed.
+
+[Measured results and limitations](reports/solar-active-v137/RESULTS.md) ·
+[Reproduction and research package](reports/solar-active-v137/REPLAY.md) ·
+[All original requirements](reports/research_requirements_status_v137.json).
+
+<details>
+<summary>Earlier development snapshots</summary>
+
 Current evidence — 5 November 2026: **joint camera/correlation fitting does not
 improve the final matcher's recovery: 1/4 poses, tying Direct**. It removes the
 hard-peak control's wrong pose. The separate camera proposal improves the faint
@@ -21,8 +40,7 @@ tests pass, including generated-image controls and replay. It has not run a luna
 comparison; the supplementary resource request remains pending. Current measured
 lunar performance and reserved test data are unchanged.
 
-<details>
-<summary>Earlier development snapshots</summary>
+
 
 
 Current evidence — 5 November 2026: the zero-pose failure is repaired, but

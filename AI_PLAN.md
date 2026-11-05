@@ -1,5 +1,37 @@
 # AI coding-agent execution brief
 
+## Sequential acquisition study completed - 5 November 2026
+
+The active policy recovers **8/16 raw poses**, versus **4/16 Direct**, **5/16
+joint without extra patches**, and **7/16 uniform/geometry** at the same budget.
+Active returns zero wrong positives and zero raw poses on 16 nonoverlaps.
+The prespecified early signal passes; the isolated policy gain is only one pose
+(6.25 points), with descriptive terrain interval [0,19.58] including zero.
+All eight nearly uniform positives still fail. Active is about 8.33 times slower
+than Direct. No learned, calibrated, fresh-terrain or SOTA advantage is claimed.
+
+All **832 saved method/case cells** independently replay; 20 historical controls,
+fresh initialization/Direct and eight no-extra pilot rows repeat exactly.
+Local **1,490 tests pass / four explicit skips**, plus fresh generated smoke/replay.
+Four exposed conditions/three terrains and supplied matching reference light
+remain the scope; calibration/final terrain stays closed.
+
+The separate approved 2,400-second supplement completed: 120+1,800 seconds fixed
+reservations, actual 66.43+499.38 seconds, 480 recovery unspent. Original accounting
+remains 13,493 training seconds / 0 comparison seconds; no refund or paid compute.
+All 14 original requirements and the broader goal remain active.
+
+[Measured results](reports/solar-active-v137/RESULTS.md) ·
+[Replay and research package](reports/solar-active-v137/REPLAY.md) ·
+[Original requirements audit](reports/research_requirements_status_v137.json)
+
+Next incomplete scientific step: keep the active policy frozen and prospectively
+compare it on additional development terrain, mismatched illumination and full
+terrain perturbations against all equal-budget controls. The completed study's
+recovery envelope cannot silently fund another experiment. Prepare measured
+admission before any new comparison; do not open calibration/final terrain.
+The full learned A/B/C contribution and original accepted-pose targets remain open.
+
 ## Sequential patch acquisition prepared — 5 November 2026
 
 Implemented a new sequential policy: choose one additional patch, acquire its

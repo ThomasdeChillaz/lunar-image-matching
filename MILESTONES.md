@@ -1,3 +1,14 @@
+## M137 - Test sequential acquisition against Direct and equal-search controls
+
+Completed the explicitly approved six-arm native study: active 8/16, Direct 4/16,
+no-extra 5/16, uniform/geometry 7/16. Zero active wrong/nonoverlap outputs.
+The early signal passes, but isolated selection gain 6.25pp and interval [0,19.58]
+do not meet the original 10-point/positive-interval targets. All 832 cells replay;
+1,490 local tests/four skips and fresh procedural smoke pass. Added research brief,
+working draft, figures and complete saved evidence; no final/calibration access,
+trained neural upgrade, SOTA claim or automatic outreach.
+[Measured result](reports/solar-active-v137/RESULTS.md)
+
 ## M136 — Implement sequential image acquisition with causal controls
 
 Prepared the actual acquire/update/reselect loop, weak-direction camera hypotheses,
