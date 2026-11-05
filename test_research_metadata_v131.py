@@ -41,3 +41,14 @@ def test_archive_digest_is_checked_before_any_write(tmp_path):
     with pytest.raises(ValueError,match="archive digest"):
         restore(tmp_path,data,"0"*64)
     assert not list(tmp_path.iterdir())
+
+
+def test_production_controller_still_refuses_a_different_native_runtime(monkeypatch):
+    from importlib.util import module_from_spec,spec_from_file_location
+    from pathlib import Path
+    source=Path(__file__).parent/"reports/solar-warp-v125/control_warp_archive_v125.py"
+    spec=spec_from_file_location("unpatched_native_runtime_guard",source)
+    control=module_from_spec(spec);spec.loader.exec_module(control)
+    monkeypatch.setattr(control.legacy.platform,"system",lambda:"unsupported-runtime")
+    with pytest.raises(ValueError,match="Original sources, native runtime"):
+        control.immutable("archive")
