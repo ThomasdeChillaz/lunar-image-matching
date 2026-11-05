@@ -1,0 +1,26 @@
+{
+  "procedural_only": true,
+  "physical_sunlight_simulation": false,
+  "samples": [
+    {
+      "layered": false,
+      "elapsed_seconds": 46.06053834198974,
+      "all_six_pose_controls_pass": true,
+      "cameras": 2048,
+      "lights": 24,
+      "extra_searches": 32
+    },
+    {
+      "layered": true,
+      "elapsed_seconds": 51.87614810804371,
+      "all_six_pose_controls_pass": true,
+      "cameras": 2048,
+      "lights": 24,
+      "extra_searches": 32
+    }
+  ],
+  "full_pipeline": true,
+  "lunar_images_opened": false,
+  "comparison_forecast_seconds": 652.5137772965245,
+  "generated_pattern_controls_not_sunlight": true
+}
