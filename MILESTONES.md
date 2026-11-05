@@ -1,3 +1,13 @@
+## M124 — Replay the lunar-trained pilot and measure the next proposal cost
+
+MOONSt3R completed the eight fixed cases and passed independent replay.
+Both recovered poses were same-light. The same-case report keeps the
+local x86 timings separate from ARM. The low-light proposal's known-
+geometry controls passed, but its cost forecast exceeded the original
+archive cap. The archived lunar cases remain untested by that method.
+[MOONSt3R pilot](reports/moonst3r-v121/RESULTS.md) ·
+[Low-light timing result](reports/solar-warp-v117/TIMING_RESULTS_V123.md)
+
 ## M123 — Complete the five-method comparison and its exact replay
 
 Verified the original Actions artifact and all 480 saved cells. The
