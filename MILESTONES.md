@@ -1,3 +1,12 @@
+## M120 — Verify a native handoff beyond the old local search radius
+
+Implemented 3D and fitted-plane detector templates with identical support,
+bounded reciprocal scene-linear patch search and the shared AP3P solve on
+measured query offsets. The synthetic control recovered the known pose
+with both wide arms. A separate post-seal geometry audit is ready for the
+original proposal archive when it qualifies.
+[Code and procedural control](reports/solar-warp-handoff-v120/README.md)
+
 ## M119 — Prepare independent rover-view geometry checks
 
 Reproduced the exact Scene 1 temporal roster and verified 180 local

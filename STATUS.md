@@ -1,5 +1,14 @@
 # Status
 
+## Native patch handoff verified in a generated displacement control
+
+The bounded ±128-pixel reciprocal search recovered all 16 measured offsets
+and the pose in a generated 40-pixel translation. The ±16-pixel control
+returned no measurements. Both wide arms passed on the planar scene.
+The sealed capture audit will measure how often an actual proposal brings
+at least six distributed lunar anchors into reach before archived matching.
+[Native handoff and result](reports/solar-warp-handoff-v120/README.md)
+
 ## LuSNAR Scene 1 geometry verification prepared
 
 Verified 30 disjoint temporal pairs and five stereo anchor masks from the
