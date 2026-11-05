@@ -1,3 +1,11 @@
+## M117 — Check the physical lab camera frame against released IMU data
+
+Audited 48 archived camera times without loading their images. The 34 times
+with adequate IMU coverage show a systematic disagreement between the
+nominal motion-capture camera transform and independent gravity. Reacquiring
+the two archived IMU members reproduced all reported measurements.
+[Physical reference audit](reports/SPICE_HL3_GRAVITY_AUDIT_V117.md)
+
 ## M115 — Freeze and launch the five-method ARM comparison
 
 Published the exact 96-case roster and one-use native CPU workflow. The

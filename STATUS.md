@@ -1,5 +1,14 @@
 # Status
 
+## Physical lab frame discrepancy confirmed against an independent sensor
+
+Released ZED2 accelerometer data disagrees with the nominal motion-capture
+camera gravity direction by a median 70.10° and 71.06° across the two
+traversals. A diagnostic quarter-turn reduces the disagreement to 8.17° and
+6.52°, leaving the full extrinsic unresolved. The lab comparison requires an
+independent camera calibration witness before it can rank matchers.
+[Gravity audit](reports/SPICE_HL3_GRAVITY_AUDIT_V117.md)
+
 ## Five-method ARM development comparison launched
 
 The frozen native-512 comparison uses 48 overlapping and 48 matched
