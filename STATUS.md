@@ -1,5 +1,24 @@
 # Status
 
+## Full-patch reachability probe prepared
+
+The new probe checks full native patch support, the fractional search
+lattice and reciprocal path feasibility before an archived handoff can
+be interpreted. Generated tests cover a quadrant boundary and reject
+scoring inputs whose pre-truth seal has changed. Its output is a geometric
+upper bound. Matching under archived lunar radiance is still unmeasured.
+[Probe and scope](reports/solar-warp-handoff-v122/README.md)
+
+## MOONSt3R same-case pilot prepared
+
+Four positives and their four matched nonoverlaps were selected from the
+five-method development roster before its outcome rows were available.
+The pinned local comparison requires the audited original Actions ZIP,
+an independent complete replay and a new charge within the existing
+budget. The pilot supports a same-case raw accuracy check. Local and ARM
+timing will be reported separately.
+[Prospective pilot](reports/moonst3r-v121/README.md)
+
 ## Measured ceiling of reusing saved development poses
 
 Perfect hindsight selection among five completed methods recovers
