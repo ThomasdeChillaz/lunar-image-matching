@@ -1,0 +1,18 @@
+{
+  "clean_extraction_replay": {
+    "passed": true,
+    "verified_sources": 101,
+    "verified_inputs": 125,
+    "independently_recomputed_forecast_seconds": 652.5137772965245,
+    "original_cap_seconds": 480,
+    "forecast_exceeds_full_original_cap": true,
+    "new_lunar_accuracy_results": 0,
+    "inference_performed": false,
+    "private_authority_used": false,
+    "scope": "Read-only hash/admission replay; generated live pose controls are not independently replayed saved poses"
+  },
+  "capsule_payloads_verified": 244,
+  "capsule_sha256": "3bf78666ff35c312a6e74861ebbd32a74be252aab51d1d961e372ed7e556935c",
+  "matching_or_training_run": false,
+  "new_lunar_results": 0
+}
