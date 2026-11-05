@@ -1,0 +1,65 @@
+name: Exact ARM replay of saved solar v115 results
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: solar-v115-exact-arm-replay-v122
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: >-
+      github.repository == 'ThomasdeChillaz/lunar-image-matching' &&
+      toJSON(github.event.repository.private) == 'false' &&
+      github.ref == 'refs/heads/main' && github.run_attempt == '1'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 12
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+      VECLIB_MAXIMUM_THREADS: '2'
+      OPENCV_FOR_THREADS_NUM: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Start clean audit status
+        run: |
+          audit_root="$RUNNER_TEMP/solar-v115-replay-v122"
+          mkdir "$audit_root"
+          printf 'AUDIT_ROOT=%s\n' "$audit_root" >> "$GITHUB_ENV"
+          printf '%s\n' '{"schema":"solar_v115_exact_replay_arm_v122","complete":false,"stage":"setup_or_timeout","original_run_id":41941904269,"new_inference":false}' > "$audit_root/audit_status.json"
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.15'
+      - name: Verify exact original artifact and replay only saved arrays
+        id: exact-replay
+        timeout-minutes: 10
+        env:
+          V115_ARTIFACT_READ_TOKEN: ${{ github.token }}
+        run: |
+          python -B reports/solar-five-arm-replay-v122/audit_arm_replay.py \
+            --repository "$GITHUB_WORKSPACE" --scratch "$AUDIT_ROOT"
+      - name: Publish approved audit receipts
+        if: steps.exact-replay.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: v115-exact-arm-replay-v122-${{ github.run_id }}
+          path: ${{ env.AUDIT_ROOT }}/public-success/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Publish only a clean failure status
+        if: always() && steps.exact-replay.outcome != 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: v115-exact-arm-replay-v122-${{ github.run_id }}-failure
+          path: ${{ env.AUDIT_ROOT }}/audit_status.json
+          if-no-files-found: error
+          retention-days: 30
