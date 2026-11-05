@@ -29,9 +29,10 @@ coarse result was also zero. The original advancement gate failed.
 
 The radiance gradient and reference-order controls reached zero
 distributed-anchor cases at ±16 px. A separate support-only ranking,
-using the weakest cell count and total support, reached zero coarse
-basin cases across the full archive. The uniform observation in u025
-produced no eligible ranked candidates at either detector scale.
+using the weakest cell count and total support, also reached zero at
+±16 px and zero coarse basin cases across the full archive. The uniform
+observation in u025 produced no eligible ranked candidates at either
+detector scale. [Support-only projection check](support-only-native-capture-v125.json)
 
 For the faint and bright conditions, 3D and plane selected the same
 first camera for all four seed pairs at the primary scale. That camera's
@@ -65,12 +66,13 @@ Of the 12 changed-light misses, nine had fewer than six four-pixel
 correspondences from any method. Three merit a separate check of spatial
 coverage and camera conditioning. In one of them, RoMa v2 supplied 759
 two-pixel correspondences but its translation error was 16.26 m against
-the 13.72 m limit. The evidence points to both
-missing observations and difficult pose estimation. The next design
-should measure whether independently observed, distributed patches
-convert the image-space initialization into a correct pose. A study of
-that mechanism needs a separate freeze and should keep the fitted-plane
-initializer as a control.
+the 13.72 m limit. The evidence points to both missing observations and
+difficult pose estimation. A distinct next experiment would use the plane
+initializer to place search windows, then select patches at different
+terrain heights to distinguish competing camera poses. Compare that
+selection against the same number of evenly distributed patches and
+require the common estimator to recover the pose from measured native
+correspondences. This is a separate hypothesis and requires its own freeze.
 [Saved-pose diagnostic](../solar-five-arm-results-v123/saved-pose-diagnostics-v125.json) ·
 [Five-method benchmark](../SOLAR_FIVE_ARM_RESULTS_V123.md)
 
