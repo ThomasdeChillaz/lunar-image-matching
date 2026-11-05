@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v133/experiment.py", line 136, in <module>
+    base.execute(args.stage, args.commit)
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v127/experiment.py", line 324, in execute
+    check(status == 0 and time.monotonic()-started < allowance and now() < deadline,
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v127/experiment.py", line 54, in check
+    raise ValueError(message)
+ValueError: Worker failed or original cap elapsed
+      378.34 real       356.43 user        20.48 sys
+          1353265152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              736462  page reclaims
+                1979  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 587  voluntary context switches
+               18609  involuntary context switches
+          1441243911  instructions retired
+          2110393695  cycles elapsed
+            27684864  peak memory footprint
