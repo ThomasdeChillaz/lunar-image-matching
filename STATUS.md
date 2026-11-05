@@ -1,5 +1,28 @@
 # Status
 
+## Joint correlation pilot completed — 5 November 2026
+
+The final matcher recovers **1/4 raw poses**, tying Direct and failing the
+prospective improvement rule. It removes the hard-peak control's one wrong
+positive. Separate soft camera proposals recover 2/4: on the faint condition,
+error falls from 28.03m to 10.02m, but only five reliable image-grid matches
+survive and unchanged AP3P requires six. The proposal is not the primary result.
+
+All 192 cells replay, all 20 cached controls remain identical, and the fresh
+hard-peak control exactly repeats its saved endpoints/camera/estimator.
+Local 1,470 tests/four skips and public 1,466/eight skips plus smoke pass.
+These are four exposed known-light conditions on three terrains, not new
+geography. No learned model, calibrated acceptance or superiority is promoted.
+
+Original canonical allowance: **13493 training seconds / 0 comparison seconds**.
+The fixed 15+80-second reservations remain charged; no refund or ledger reset.
+Further inference requires a separate prospective resource decision. Four
+calibration and 12 final terrain groups remain shut; all 14 research targets
+and the broader goal remain active.
+
+[Results and next hypothesis](reports/solar-joint-v135/RESULTS.md) ·
+[Full current audit](reports/research_requirements_status_v135.json)
+
 ## Native comparison completed — 5 November 2026
 
 The original zero-pose failure is repaired, but the new variants do not beat

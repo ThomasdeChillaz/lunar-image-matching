@@ -1,3 +1,13 @@
+## M135 — Test joint camera fitting before committing to pixel matches
+
+Implemented robust masked native correlation potentials, a shared six-dimensional
+camera fit and camera-conditioned image-grid modes under the unchanged AP3P gate.
+All 192 cells replay; the fresh hard control repeats exactly. Primary 1/4 ties
+Direct. Proposal-only 2/4 supplies a faint-case lead, not a qualifying matcher gain.
+Local 1,470/public 1,466 tests pass; final comparison allowance is fully reserved.
+No candidate promotion or calibration/final access.
+[Results and scope](reports/solar-joint-v135/RESULTS.md)
+
 ## M134 — Test native precision and geometry against the strongest control
 
 Completed 20 methods × 32 image pairs, independently replaying 640 cells and

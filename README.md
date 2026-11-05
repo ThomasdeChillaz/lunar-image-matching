@@ -1,5 +1,24 @@
 # Compact lunar image matching
 
+Current evidence — 5 November 2026: **joint camera/correlation fitting does not
+improve the final matcher's recovery: 1/4 poses, tying Direct**. It removes the
+hard-peak control's wrong pose. The separate camera proposal improves the faint
+case from 28.03m to 10.02m, but five surviving reliable matches cannot pass the
+unchanged six-match AP3P gate. No candidate is promoted.
+
+All 192 results replay; twenty saved controls remain unchanged and a fresh
+hard-peak control exactly repeats the earlier output. Four exposed known-light
+conditions on three terrains do not establish new-terrain, learned or final-test
+performance. Original research targets remain active and reserves stay closed.
+
+[Measured result and next experiment](reports/solar-joint-v135/RESULTS.md) ·
+[Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-joint-v135-development) ·
+[All original requirements](reports/research_requirements_status_v135.json).
+
+<details>
+<summary>Earlier development snapshots</summary>
+
+
 Current evidence — 5 November 2026: the zero-pose failure is repaired, but
 **the new native techniques do not beat Direct**. The primary 3D variant
 recovers 4/16 raw poses and adds 4 wrong positive poses; Direct recovers 4/16
@@ -15,8 +34,6 @@ These are four exposed camera conditions on three terrain components with
 supplied matching illumination. Calibration/final groups remain reserved,
 real navigation accuracy is unverified, and the broader goal remains active.
 
-<details>
-<summary>Earlier development snapshots</summary>
 
 
 Current evidence — 5 November 2026: the shared-camera experimental pipeline
