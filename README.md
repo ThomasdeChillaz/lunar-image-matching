@@ -15,6 +15,12 @@ performance. Original research targets remain active and reserves stay closed.
 [Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-joint-v135-development) ·
 [All original requirements](reports/research_requirements_status_v135.json).
 
+New software preparation: [sequential patch acquisition and its controls](reports/solar-active-v136/README.md)
+updates camera hypotheses after each selected image measurement. All 1,480 local
+tests pass, including generated-image controls and replay. It has not run a lunar
+comparison; the supplementary resource request remains pending. Current measured
+lunar performance and reserved test data are unchanged.
+
 <details>
 <summary>Earlier development snapshots</summary>
 

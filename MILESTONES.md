@@ -1,3 +1,13 @@
+## M136 — Implement sequential image acquisition with causal controls
+
+Prepared the actual acquire/update/reselect loop, weak-direction camera hypotheses,
+robust height-envelope observation proxy and four equal-budget acquisition policies.
+Full local 1,480 tests/four skips, ten focused checks, ten-cell generated replay and
+blank/missing-reference probes pass. No lunar inference, training or reserve access.
+Original comparison allowance remains exhausted; supplementary request pending.
+This is software preparation, not completion of the scientific performance gate.
+[Implementation and limits](reports/solar-active-v136/README.md)
+
 ## M135 — Test joint camera fitting before committing to pixel matches
 
 Implemented robust masked native correlation potentials, a shared six-dimensional

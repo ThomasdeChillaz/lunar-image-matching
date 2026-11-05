@@ -1,5 +1,28 @@
 # Status
 
+## Sequential patch acquisition prepared — 5 November 2026
+
+Implemented a new sequential policy: choose one additional patch, acquire its
+actual native correlation field, update the camera and hypotheses, then choose
+again. Uniform, reference-texture and geometry-only controls receive identical
+spatial slots and search limits. Seven-height envelopes handle missing evidence
+conservatively; the score is a linearized proxy, not calibrated information gain.
+
+All **1,480 local tests pass / four explicit skips**. Ten focused checks and
+independent replay of ten generated-image cells pass. Blank and missing-reference
+controls return no raw pose. Protected 49/42 source closures remain unchanged.
+These are software controls; **no new lunar experiment or training has run**.
+The latest lunar primary remains 1/4, tying Direct; no superior model is promoted.
+
+Original comparison allowance remains 0 seconds; training 13,493 seconds.
+The separate 40-minute resource request is pending. No allowance, launch authority
+or reserve access is created. All 14 original targets and the broader goal remain
+active. Active-search prior art is acknowledged.
+
+[Implementation, controls and limits](reports/solar-active-v136/README.md) ·
+[Pending preparation](reports/solar-active-v136/preparation.json) ·
+[All original requirements](reports/research_requirements_status_v136.json)
+
 ## Joint correlation pilot completed — 5 November 2026
 
 The final matcher recovers **1/4 raw poses**, tying Direct and failing the
