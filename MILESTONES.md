@@ -1,3 +1,19 @@
+## M131 — Recover poses through shared-camera image evidence
+
+Completed the seven-method native diagnostic: 4/16 shared-camera poses
+against 4/16 Direct, with worse strict precision and about 6.4 times higher
+latency. All 224 saved cells replay and all five controls repeat exactly.
+Fixed clean-checkout metadata dependencies; 1,440 tests pass with eight
+explicit optional skips. No learned candidate is promoted.
+[Measured result](reports/solar-local-v131/RESULTS.md)
+
+## M130 — Repair zero native measurements and test the strongest control
+
+Masked pooled measurements restore 17 matches, but 0/16 poses. Direct
+recovers 4/16. The complete 160-cell comparison and post-hoc window audit
+are preserved, including failed timing attempts and preflight refusal.
+[Failure analysis](reports/solar-local-v130/RESULTS.md)
+
 ## M125 — Run and replay the complete low-light archive
 
 Replaced per-bin footprint sorting with exact depth and source-index

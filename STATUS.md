@@ -1,5 +1,29 @@
 # Status
 
+## Shared-camera repair completed — 5 November 2026
+
+The experimental shared-camera pipeline recovers **4/16 raw poses**, fixing
+the previous **0/16** result. Accurate two-pixel matches rise from 6 to 43.
+It ties Direct's 4/16, but is about 6.4 times slower and gives 0 strict poses
+versus Direct's 4. All 224 method/case cells replay; all five historical
+control predictions match exactly. These are four exposed camera
+conditions on three terrain components with supplied matching light.
+
+The clean checkout passes 1,440 tests/eight explicit skips; the local
+scientific version passes 1,439/four skips and eight fresh procedural
+toggles. Exact JSON fixtures repair old source-only metadata dependencies
+without restoring imagery, weights or compute authority. Public Linux CI also passes 1,441 tests and its end-to-end smoke.
+
+Faint correspondence recovery and native precision remain unresolved.
+The raw photometric proposals include 7 wrong positives and 8/16
+nonoverlap poses, so they are not verified outputs. The broader research
+goal remains active; no superior learned model or final result is claimed.
+Calibration and final terrain remain closed. Remaining canonical envelopes:
+13,493 training seconds and1,715 baseline seconds.
+
+[Results and reproduction](reports/solar-local-v131/RESULTS.md) ·
+[All original requirements](reports/research_requirements_status_v131.json)
+
 ## Low-light archive completed with the original controls
 
 The exact projection implementation passed the original timing cap and
