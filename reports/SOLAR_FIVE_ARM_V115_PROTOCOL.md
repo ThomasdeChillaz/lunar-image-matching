@@ -17,9 +17,13 @@ All arms receive the same native 512-pixel image content, camera intrinsics and
 reference geometry. The common estimator uses a three-native-pixel
 reprojection limit. Query depth, query pose and true query Sun are outside the
 primary inference interface. Pose scoring uses at most 2 degrees of rotation
-error and 1% of median reference range for translation error. Runtime includes
-cold per-case reference setup. Model loading, offline reference preparation
-and shared-worker peak memory are reported separately where measurable.
+error and 1% of median reference range for translation error. Report
+model-resident inference separately from inference plus the input and
+reference setup actually incurred by the reused loader. The latter field is
+named `complete_localization_cold_seconds` in the frozen output schema.
+The worker does not force a cold setup before each case. Report model
+startup, offline reference preparation and shared-worker peak memory
+separately where measurable.
 
 The exact ordered subset, author sources, weights, settings and data bytes
 were published before inference. The cap covers setup, controls and execution
