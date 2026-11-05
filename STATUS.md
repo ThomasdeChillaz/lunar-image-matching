@@ -1,5 +1,16 @@
 # Status
 
+## Five-method ARM comparison completed and independently replayed
+
+Direct recovered 30/48 poses, including 19/32 changed-light positives.
+LoMa-R and RoMa v2 each recovered 15/48. The frozen compact control
+recovered 6/48 and none under changed light. Direct returned no raw
+nonoverlap poses. All 480 saved cells passed the unchanged verifier on
+ARM. An independent x86 check found one one-ULP projection difference
+with no metric change. Calibration and final terrain remain closed.
+[Paired report](reports/SOLAR_FIVE_ARM_RESULTS_V123.md) ·
+[Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-five-arm-v115-results)
+
 ## Full-patch reachability probe prepared
 
 The new probe checks full native patch support, the fractional search
@@ -66,7 +77,7 @@ traversals. A diagnostic quarter-turn reduces the disagreement to 8.17° and
 independent camera calibration witness before it can rank matchers.
 [Gravity audit](reports/SPICE_HL3_GRAVITY_AUDIT_V117.md)
 
-## Five-method ARM development comparison launched
+## Five-method ARM development comparison launch record
 
 The frozen native-512 comparison uses 48 overlapping and 48 matched
 nonoverlapping cases across eight development terrains. It compares frozen
