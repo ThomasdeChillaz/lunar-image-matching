@@ -1,0 +1,288 @@
+{
+  "schema": "lusnar_scene1_extraction_receipt_v117",
+  "scene": 1,
+  "complete": true,
+  "freeze_sha256": "305fbd81a394462d81c99e94e507d5601f435dc995df0a422bb3d413306408b6",
+  "entries": [
+    {
+      "timestamp_ns": null,
+      "role": "metadata",
+      "path": "Moon_1/gt.txt",
+      "sha256": "023a9352b744e7739d465e720379b538bcdc10af6f7fd5e5424185cb0a470d6e",
+      "bytes": 201441,
+      "local_zip_crc32": 3512344133,
+      "header": null
+    },
+    {
+      "timestamp_ns": null,
+      "role": "metadata",
+      "path": "Moon_1/image0/color_timestamp.txt",
+      "sha256": "f409b7f578a31ca3620621824eb49bb6f923f5ddcd9fa72045ccdb35ee24cd7f",
+      "bytes": 49256,
+      "local_zip_crc32": 1728364523,
+      "header": null
+    },
+    {
+      "timestamp_ns": null,
+      "role": "metadata",
+      "path": "Moon_1/image0/depth_timestamp.txt",
+      "sha256": "c3327657a7fb2a883dc82ab69a31c842233b0fdee2aa8903e49acd58c8621bc4",
+      "bytes": 49256,
+      "local_zip_crc32": 1546482125,
+      "header": null
+    },
+    {
+      "timestamp_ns": "1693274724086398208",
+      "role": "left",
+      "path": "Moon_1/image0/color/1693274724086398208.png",
+      "sha256": "31248f634debbd0118cb529a8a1c79f4904b3e46d320ae1016d467234ca7a2e0",
+      "bytes": 1758627,
+      "local_zip_crc32": 1684115985,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274724086398208",
+      "role": "right",
+      "path": "Moon_1/image1/color/1693274724086398208.png",
+      "sha256": "1b1699b0475106e62f2c55cf9be9160889494221e4ea653c22d44338b35dfb4f",
+      "bytes": 1755310,
+      "local_zip_crc32": 3289561401,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274724086398208",
+      "role": "depth",
+      "path": "Moon_1/image0/depth/1693274724086398208.pfm",
+      "sha256": "02c581729464726b53aa2be17af67e3be20a59c01ff6267b8d3fd8befb935d76",
+      "bytes": 4194320,
+      "local_zip_crc32": 262160672,
+      "header": {
+        "format": "PFM",
+        "width": 1024,
+        "height": 1024,
+        "storage_endian": "little",
+        "scale_magnitude": 1.0,
+        "sample_storage_bytes": 4,
+        "sample_payload_bytes": 4194304
+      }
+    },
+    {
+      "timestamp_ns": "1693274751177630208",
+      "role": "left",
+      "path": "Moon_1/image0/color/1693274751177630208.png",
+      "sha256": "6cfcf3dc0212556588f11490e9b077029d37f033a9096c1af023e36a9dfbc15a",
+      "bytes": 1316575,
+      "local_zip_crc32": 1423712695,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274751177630208",
+      "role": "right",
+      "path": "Moon_1/image1/color/1693274751177630208.png",
+      "sha256": "9c58c56e7f7fbc1a722472073777c973428cfdfb758344a53fe14cadcc2cf812",
+      "bytes": 1236890,
+      "local_zip_crc32": 1324231845,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274751177630208",
+      "role": "depth",
+      "path": "Moon_1/image0/depth/1693274751177630208.pfm",
+      "sha256": "3fcfea2ce441de1c1d12e8361e1bf5b07d863343c4ae8a12f80c09a476a0a8f4",
+      "bytes": 4194320,
+      "local_zip_crc32": 2946136455,
+      "header": {
+        "format": "PFM",
+        "width": 1024,
+        "height": 1024,
+        "storage_endian": "little",
+        "scale_magnitude": 1.0,
+        "sample_storage_bytes": 4,
+        "sample_payload_bytes": 4194304
+      }
+    },
+    {
+      "timestamp_ns": "1693274777542074880",
+      "role": "left",
+      "path": "Moon_1/image0/color/1693274777542074880.png",
+      "sha256": "34a10ce9a47ec3ca7e72897be8c92d2113afb15d44fa5de2a5df25186b1cdd8b",
+      "bytes": 1778880,
+      "local_zip_crc32": 1238118812,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274777542074880",
+      "role": "right",
+      "path": "Moon_1/image1/color/1693274777542074880.png",
+      "sha256": "591e41e6c7b1393624eece284cc6df8b1dda516fc70ead1e6917faf91ad111c3",
+      "bytes": 1775980,
+      "local_zip_crc32": 3557000669,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274777542074880",
+      "role": "depth",
+      "path": "Moon_1/image0/depth/1693274777542074880.pfm",
+      "sha256": "604638fc7904390dda6a0313c235a9ef49f32d54388b04e547acb19c1fb67e09",
+      "bytes": 4194320,
+      "local_zip_crc32": 3618533678,
+      "header": {
+        "format": "PFM",
+        "width": 1024,
+        "height": 1024,
+        "storage_endian": "little",
+        "scale_magnitude": 1.0,
+        "sample_storage_bytes": 4,
+        "sample_payload_bytes": 4194304
+      }
+    },
+    {
+      "timestamp_ns": "1693274803834658304",
+      "role": "left",
+      "path": "Moon_1/image0/color/1693274803834658304.png",
+      "sha256": "429d661fe5c506be67f3954ac42cf3133df7a83d8b3f2439062e9bad1186e035",
+      "bytes": 1686699,
+      "local_zip_crc32": 2924889117,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274803834658304",
+      "role": "right",
+      "path": "Moon_1/image1/color/1693274803834658304.png",
+      "sha256": "7b8eb28846f46ce3f230503895d2cfa4b9a33b30ab8e56dc63351807e44d7d2e",
+      "bytes": 1694151,
+      "local_zip_crc32": 3582626243,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274803834658304",
+      "role": "depth",
+      "path": "Moon_1/image0/depth/1693274803834658304.pfm",
+      "sha256": "b985c326205bac65a508c64084a292257e718b0eb38ebae50ded21f95852bcc5",
+      "bytes": 4194320,
+      "local_zip_crc32": 1149608345,
+      "header": {
+        "format": "PFM",
+        "width": 1024,
+        "height": 1024,
+        "storage_endian": "little",
+        "scale_magnitude": 1.0,
+        "sample_storage_bytes": 4,
+        "sample_payload_bytes": 4194304
+      }
+    },
+    {
+      "timestamp_ns": "1693274830206660864",
+      "role": "left",
+      "path": "Moon_1/image0/color/1693274830206660864.png",
+      "sha256": "90eb984046ef011191400b7e0512b1181a37d6ea655691b13286464ed58d93af",
+      "bytes": 1737238,
+      "local_zip_crc32": 1935374768,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274830206660864",
+      "role": "right",
+      "path": "Moon_1/image1/color/1693274830206660864.png",
+      "sha256": "e34ad7dfe19e45e960cb7ca18b305b5857156ee1152bd9807a25255fc6c7ef4b",
+      "bytes": 1738509,
+      "local_zip_crc32": 2840114251,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 6,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274830206660864",
+      "role": "depth",
+      "path": "Moon_1/image0/depth/1693274830206660864.pfm",
+      "sha256": "f02726f8a2f9e9d6cd05c588de37ee15440aacf1aebdde369245d61f990cb9fa",
+      "bytes": 4194320,
+      "local_zip_crc32": 4175726989,
+      "header": {
+        "format": "PFM",
+        "width": 1024,
+        "height": 1024,
+        "storage_endian": "little",
+        "scale_magnitude": 1.0,
+        "sample_storage_bytes": 4,
+        "sample_payload_bytes": 4194304
+      }
+    }
+  ],
+  "complete_archive_verified": false,
+  "image_sample_arrays_decoded": 0,
+  "optical_matches_computed": 0,
+  "reserved_scenes_opened": [],
+  "depth_units_verified": false,
+  "axial_vs_ray_verified": false,
+  "camera_pose_verified": false,
+  "geometry_gate_status": "pending_separate_frozen_development_run"
+}

@@ -1,0 +1,91 @@
+{
+  "scene": 1,
+  "complete": true,
+  "freeze_sha256": "7ae6bfd9fc88651effce3d43df1282668f5212a90dd90242953bb3daf2ea9d45",
+  "reserved_scenes_opened": [],
+  "parent_extraction_freeze_sha256": "305fbd81a394462d81c99e94e507d5601f435dc995df0a422bb3d413306408b6",
+  "schema": "lusnar_scene1_semantic_support_v119",
+  "entries": [
+    {
+      "timestamp_ns": "1693274724086398208",
+      "role": "semantic",
+      "path": "Moon_1/image0/label/1693274724086398208.png",
+      "sha256": "8477ec7b037084d127353b2c1679966caff40020265c472e3ff4ec0aad4e46bb",
+      "bytes": 4459,
+      "local_zip_crc32": 3906097184,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 3,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274751177630208",
+      "role": "semantic",
+      "path": "Moon_1/image0/label/1693274751177630208.png",
+      "sha256": "fd19bfde314a741eeddf4012d9bc2c4ef6e02c5824e1401e24fb64ceeb7dffb7",
+      "bytes": 5128,
+      "local_zip_crc32": 683338792,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 3,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274777542074880",
+      "role": "semantic",
+      "path": "Moon_1/image0/label/1693274777542074880.png",
+      "sha256": "2abeac050c02416b2ca5e6a31e39ea3348eb172942aed66e4dbc359e2a289738",
+      "bytes": 4940,
+      "local_zip_crc32": 3533829370,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 3,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274803834658304",
+      "role": "semantic",
+      "path": "Moon_1/image0/label/1693274803834658304.png",
+      "sha256": "220d77f46e639c254ad8e22ec3edfd180a1c5968cd83852c628bd867c4db7813",
+      "bytes": 5104,
+      "local_zip_crc32": 3727337666,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 3,
+        "interlaced": false
+      }
+    },
+    {
+      "timestamp_ns": "1693274830206660864",
+      "role": "semantic",
+      "path": "Moon_1/image0/label/1693274830206660864.png",
+      "sha256": "45a9e8e878ebbc90eaab9f8e56048c7f1b2f029dac13edba65ec88f9f7df404d",
+      "bytes": 4472,
+      "local_zip_crc32": 2000492667,
+      "header": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 3,
+        "interlaced": false
+      }
+    }
+  ],
+  "semantic_sample_arrays_decoded": 0
+}
