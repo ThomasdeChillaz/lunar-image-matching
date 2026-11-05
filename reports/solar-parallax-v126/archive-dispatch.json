@@ -1,0 +1,200 @@
+{
+  "schema": "solar_plane_initialized_parallax_pilot_v126",
+  "phase": "archive",
+  "split": "model_selection",
+  "prepared_only": false,
+  "calibration_or_final_access": false,
+  "cpu_threads": 2,
+  "cap_seconds": 180,
+  "known_reference_illumination": true,
+  "accepted_results": false,
+  "v125_gate_passed": false,
+  "predecessor_v125_charge": {
+    "job_id": "1483a5838b9a1781e3f2a1e601ed47e0423fb0cd9656de46719588c717be85ec/warp-v125-archive",
+    "category": "baseline",
+    "seconds": 180,
+    "reserved_utc": "2026-11-05T04:18:28.250947+00:00",
+    "refund_on_failure": false
+  },
+  "original_predictions_sha256": "d72ce03e6ec00dcc4a9119f6c168b462eaa48ee159fc40ef54033345de2e1430",
+  "software": {
+    "platform": "Darwin",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0.84"
+  },
+  "original_prediction_seal_sha256": "73df566d7a7aad51f5d88f7b3829039a67e44a4a375fe40028c9cf3a7e96cea5",
+  "reference_anchor_count": 36,
+  "patch_budget_per_arm": 12,
+  "patch_radius_native": 16,
+  "seeds": {
+    "detector_scale": 32,
+    "ranking": "planar",
+    "max_ordered_hypotheses": 8,
+    "warps": 1
+  },
+  "arms": [
+    "parallax",
+    "uniform"
+  ],
+  "timing": {
+    "protocol_sha256": "3646d66463214555f484abf2e1c3981b84a3c43d2360a66dfcb2233aecffd917",
+    "receipt_sha256": "30b138ee298a58edbf119d3fa2d1e03e7648f459ef7a84a6ab22bd3c46b1098c",
+    "completed_sha256": "09aa1f2c01c4b1cc71a4f869fd82b71ae00d028a15b259bb3f701ab35670a7dc",
+    "charge": {
+      "job_id": "3646d66463214555f484abf2e1c3981b84a3c43d2360a66dfcb2233aecffd917/parallax-v126-timing",
+      "category": "baseline",
+      "seconds": 60,
+      "reserved_utc": "2026-11-05T04:39:38.927768+00:00",
+      "refund_on_failure": false
+    },
+    "row_count": 16,
+    "projected_seconds": {
+      "16": 108.79151920834556,
+      "8": 69.39575960417278
+    }
+  },
+  "pairings": [
+    [
+      "exposure-0",
+      0,
+      0
+    ],
+    [
+      "exposure-0",
+      0,
+      1
+    ],
+    [
+      "exposure-0",
+      1,
+      0
+    ],
+    [
+      "exposure-0",
+      1,
+      1
+    ],
+    [
+      "exposure-1",
+      0,
+      0
+    ],
+    [
+      "exposure-1",
+      0,
+      1
+    ],
+    [
+      "exposure-1",
+      1,
+      0
+    ],
+    [
+      "exposure-1",
+      1,
+      1
+    ],
+    [
+      "exposure-2",
+      0,
+      0
+    ],
+    [
+      "exposure-2",
+      0,
+      1
+    ],
+    [
+      "exposure-2",
+      1,
+      0
+    ],
+    [
+      "exposure-2",
+      1,
+      1
+    ],
+    [
+      "exposure-3",
+      0,
+      0
+    ],
+    [
+      "exposure-3",
+      0,
+      1
+    ],
+    [
+      "exposure-3",
+      1,
+      0
+    ],
+    [
+      "exposure-3",
+      1,
+      1
+    ]
+  ],
+  "scope_policy": "All 16 pairings if measured conservative cost fits, otherwise fixed faint/bright 8, otherwise refuse.",
+  "follow_on": {
+    "automatic": false,
+    "requires_new_frozen_matched_nonoverlaps": true,
+    "requires_estimated_sun_with_no_query_sun_label": true,
+    "calibration_and_final_remain_closed": true
+  },
+  "feasibility_gate": {
+    "faint_min_paired_wins": 2,
+    "no_faint_or_bright_paired_losses": true,
+    "both_pose_and_independent_2px_support": true,
+    "exact_shared_detector_cell_quotas": true,
+    "no_benchmark_or_deployment_promotion": true
+  },
+  "source_sha256": {
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "replay_raw_acquisition_v109.py": "2670cdb5adc69b6f9e7c224d955ca7be8d2fe705c845a4ab2ce8bd7f17fb4372",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "run_solar_secondary_v112.py": "a7d5e4ec3a46e31e188deb5dc9e0069ce4795c0a9b47f8b9ea1b62d603fcdc6d",
+    "solar_learning_pipeline_v73.py": "90df3cf8b003e57c1a6e6cdad0c59e5b1d324b962221c2d944bea52a2e86f50e",
+    "reports/solar_learning_contract_v79.json": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+    "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+    "lunargeo_dataset.py": "beb03961483ace48c63a4bae1e68b28abf5a9317c1c5ba903239e74fe1dad59b",
+    "reports/solar-warp-v117/control_warp_archive_v117.py": "d5798af948125e746dd1653cd0796441e628b051919b2974062a158e528cea95",
+    "reports/solar-warp-v117/archived_warp_worker.py": "ba536b11a63fc0dfe58014b1ebd40bf6243254fa168845c2292ac7c51b70b14e",
+    "reports/solar-warp-v117/prepare_warp_roster_v117.py": "545d2eddc250be77c589b4fc383110d83627d8c04d9a4a2dea7bac36b02dd7c8",
+    "reports/solar-warp-v117/warp_candidates.py": "86bb0a8e56da2a1cf1ed161f39454dc50a53ce715f1719bd55e8427e7d24de95",
+    "reports/solar-warp-handoff-v120/reference_patch_warp.py": "ef690e47ced6563f900662da6464939733066b8f09bafa947358a233ceba1756",
+    "reports/solar-warp-handoff-v120/handoff_patch.py": "1db8ddc2a165595300bc41949e6c6329da6dcfb6886f9fe8164d87ecfc58b4f9",
+    "reports/solar-warp-handoff-v120/handoff_localizer.py": "e894fecddd66c05c52273434e5f1d2d01d2c29e71245adf95d007f049a9ad4fb",
+    "reports/solar-warp-handoff-v120/handoff_pipeline.py": "ecb51796e26b26fdcd933e8e86b0a2f508ad830f3d88b5331b67c36db7f79ff3",
+    "reports/solar-parallax-v126/control_parallax_v126.py": "7aa3d1880bb6ffe7ec2c410f03004b33260816b32c4f6523d1a4927b50d2f84b",
+    "reports/solar-parallax-v126/measure_v126.py": "c0c2253c9b3c86694c5cb633145c29c2b5fc33a08655494ce3e2315e1efc89f1",
+    "reports/solar-parallax-v126/smoke_v126.py": "abea441cf8d3d2a7f85253964e5f785994b0c469967e6d7e911f2d8fffd30d6f",
+    "reports/solar-parallax-v126/parallax_policy.py": "1865f094719ede0561dccfad36a583560a748dbf16c6255019ad30dd2772a21c",
+    "reports/solar-parallax-v126/score_parallax_v126.py": "8ca272f74a8e78e0cb496a77b0afd429b51cfa1204206bd0150cac0db9ebd7d6",
+    "reports/solar-warp-v125/archive-complete-v125.json": "73bd207346aff215ecbbd1146c7397ec4143828f70655c64b32de8ff36dc09cb",
+    "reports/solar-warp-v125/archive-dispatch.json": "1483a5838b9a1781e3f2a1e601ed47e0423fb0cd9656de46719588c717be85ec",
+    "reports/solar-warp-v125/archive-independent-replay-v125.json": "9b190892c109164801e283a0af8c9b9a5f96c298b5a1e757ff30535674f65913",
+    "reports/solar-warp-v117/inference-inputs.json": "471a2176f54cebe62432cbf78aaf6ff37515566bb66df9ca2b6d96f719697049",
+    "reports/solar-warp-v117/scoring-inputs.json": "4a8549742ecdd9663a7eb5616c5a16b512e56a0d03eab0ccbdd625b29351b8b7"
+  },
+  "inputs": {
+    "path": "reports/solar-warp-v117/inference-inputs.json",
+    "sha256": "471a2176f54cebe62432cbf78aaf6ff37515566bb66df9ca2b6d96f719697049"
+  },
+  "labels": {
+    "path": "reports/solar-warp-v117/scoring-inputs.json",
+    "sha256": "4a8549742ecdd9663a7eb5616c5a16b512e56a0d03eab0ccbdd625b29351b8b7"
+  },
+  "created_utc": "2026-11-05T04:39:59.580823+00:00",
+  "latest_start_utc": "2026-11-05T05:39:59.580823+00:00"
+}
