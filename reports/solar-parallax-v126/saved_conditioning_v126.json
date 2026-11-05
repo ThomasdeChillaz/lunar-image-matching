@@ -1,0 +1,631 @@
+{
+  "schema": "solar_v115_saved_conditioning_v126",
+  "source_sha256": "d7e8de235872fdc1ed7e75fc2bec4efb1b24a1db492b322ad5396716413f44a9",
+  "benchmark_run_id": 41941904269,
+  "exact_arm_replay_run_id": 41964097603,
+  "official_original_actions_sha256": "813f2c9e6c5986ae711ab885d3a6c25a146cb87fead8261f99984e689f5e538b",
+  "public_replay_zip_sha256": "f19f372f46bd874e780b3b803e0e846765044968c9e87b555863594ddc5c6715",
+  "base_input_zip_sha256": "2d25dca8b56f86f10444289b7458aeed4ba9a6755bf1ff19fca7014afaa1dee0",
+  "sealed_summary_sha256": "3f65b164472e2300d6b5aeb1611a2988d0f5d0155fe850c6a5f229eb567a38bc",
+  "completion_sha256": "dd108e49fa87be8ac49308a378405c263ede1cc5ed9d41a4b952823a0c0c2c50",
+  "manifest_sha256": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+  "metadata_sha256": {
+    "reports/solar-five-arm-v115/comparison-protocol.json": "c43b7a0a5236b27055a7179caf1cfa1a274b18743a9fd868d0054fa96d23878c",
+    "reports/solar-five-arm-results-v123/public-replay-receipt.json": "d4468742704b148c419fb64d5f5dc296a7e4c9cbc24b02e8a6191ebbef67e4b1",
+    "reports/solar-five-arm-results-v123/independent_replay_v115.json": "844433a3bcfcb5180da648e446b3a05c089d2b69d5ebcdb8ee2af214f25dd2b5",
+    "reports/solar-five-arm-results-v123/replay_input_hashes_v115.json": "bd856d419adb42c40a0f5b4ff7ab452e1918a7280a74d96584382ecd53f54d09"
+  },
+  "eligible_changed_light_misses": 12,
+  "measured_cases": [
+    {
+      "case_id": "u021-l16-01-positive",
+      "component": "np31-r0-c7",
+      "geometry_sha256": {
+        "runs/solar-reference-v80-full/references/u021.npz": "30404afac5c83b08232be6c79a01cc7bf51d5bb5fef60e56303b6216218e935c",
+        "runs/solar-reference-v80-full/case-assets/u021/scoring_geometry.npz": "e033f18c0c5cc23e86b4f154330843d3c138cff4c7fa17cab90c6f1eaa8f1e0b"
+      },
+      "reference_query_camera_baseline_m": 406.208483,
+      "rows": [
+        {
+          "profile": "frozen_step0_A1B0C1_quantization_aware",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/b41c8da1a8b2fe7eecf91a4f52ff0a919754e4928af1ca1a77adbc707ea2328e.npz",
+          "saved_arrays_sha256": "1823726dc52ea99573194c1f0666a7b9633b80d540db998f76e5e3d1a460cc67",
+          "returned": 123,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 18.697336,
+          "archived_pose_reason": "ransac_failed"
+        },
+        {
+          "profile": "SIFT2048",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/2fd3122f212eb492151de72c8372296d53e7dc95d2d9cbf8f0e783b2473c408f.npz",
+          "saved_arrays_sha256": "0cbd6a1d24401afe1b3c911375e664c915e5e70631d87af0e43830192475370b",
+          "returned": 0,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 18.697336,
+          "archived_pose_reason": "insufficient_or_invalid_matches"
+        },
+        {
+          "profile": "loma_r_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/ec511a5e669ea789abc4f6f1224cc495cc37a0046a1dad9ebac5db4c91545668.npz",
+          "saved_arrays_sha256": "b2f4fbc9542537854407df174d4c49401fca93c52ab3684414ef064bafd2450b",
+          "returned": 97,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 18.697336,
+          "archived_pose_reason": "ransac_failed"
+        },
+        {
+          "profile": "romav2_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/5027997381e058490e3f53cf63749d83d5010dc5ac2606c00d7e9a5d08fe4c89.npz",
+          "saved_arrays_sha256": "c72af2a141032acc0761c16d2fad44d517527707f50d293a96141b5512e0f534",
+          "returned": 2000,
+          "accurate_at_2px": 28,
+          "archived_ap3p_inliers": 235,
+          "archived_pose_error": {
+            "rotation_deg": 21.682361809133184,
+            "translation_m": 650.7057127824946
+          },
+          "native_translation_limit_m": 18.697336,
+          "archived_pose_reason": null,
+          "exact_unique_pairs": 28,
+          "reference_support": {
+            "hull_pct": 4.407501,
+            "span_native_px": [
+              158.0,
+              299.0
+            ],
+            "quadrant_counts": [
+              19,
+              1,
+              3,
+              5
+            ],
+            "exact_unique_points": 28,
+            "occupied_16px_cells": 10
+          },
+          "query_support": {
+            "hull_pct": 2.819329,
+            "span_native_px": [
+              51.14151,
+              271.552307
+            ],
+            "quadrant_counts": [
+              12,
+              6,
+              0,
+              10
+            ],
+            "exact_unique_points": 28,
+            "occupied_16px_cells": 8
+          },
+          "terrain_elevation_p10_p90_m": [
+            -146.089258,
+            357.358158
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1659.876163,
+            2109.303044
+          ],
+          "world_plane_singular_3_over_2": 0.035484,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            9.117168,
+            10.668779,
+            10.814075
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 701.442004,
+            "weakest_mode_px_per_anchor": 0.025189,
+            "saved_displacement_fraction_in_weakest_two_subspace": 0.995967
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 591.5477,
+            "weakest_mode_px_per_anchor": 0.029355
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 54,
+            "saved_consensus_at_3px": 235,
+            "saved_consensus_outside_truth_3px": 230,
+            "saved_consensus_in_accurate_2px": 0,
+            "truth_clipped_squared_cost": 17729.471341,
+            "saved_clipped_squared_cost": 16695.923359,
+            "truth_median_px_on_accurate_2px": 1.426526,
+            "saved_median_px_on_accurate_2px": 7.868155
+          }
+        },
+        {
+          "profile": "reference_camera_render_match",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/690ee64be010718e15a420123a4b213eaed658ce3a8929438f6d08b07d296dca.npz",
+          "saved_arrays_sha256": "58ff5d1237f434e3a943dd7fbe4a93fb43ca85da2a24f93cd488ee223835c7c6",
+          "returned": 11,
+          "accurate_at_2px": 8,
+          "archived_ap3p_inliers": 7,
+          "archived_pose_error": {
+            "rotation_deg": 2.319327367515213,
+            "translation_m": 73.71728068929019
+          },
+          "native_translation_limit_m": 18.697336,
+          "archived_pose_reason": null,
+          "exact_unique_pairs": 7,
+          "reference_support": {
+            "hull_pct": 17.015114,
+            "span_native_px": [
+              238.651283,
+              377.72184
+            ],
+            "quadrant_counts": [
+              2,
+              0,
+              5,
+              1
+            ],
+            "exact_unique_points": 7,
+            "occupied_16px_cells": 6
+          },
+          "query_support": {
+            "hull_pct": 14.534569,
+            "span_native_px": [
+              204.05323,
+              334.500366
+            ],
+            "quadrant_counts": [
+              2,
+              0,
+              4,
+              2
+            ],
+            "exact_unique_points": 7,
+            "occupied_16px_cells": 7
+          },
+          "terrain_elevation_p10_p90_m": [
+            -332.647737,
+            279.72418
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1721.907662,
+            2260.428694
+          ],
+          "world_plane_singular_3_over_2": 0.024559,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            8.479505,
+            9.66598,
+            11.158761
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 66.135088,
+            "weakest_mode_px_per_anchor": 0.261416,
+            "saved_displacement_fraction_in_weakest_two_subspace": 0.953247
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 61.606274,
+            "weakest_mode_px_per_anchor": 0.284436
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 8,
+            "saved_consensus_at_3px": 7,
+            "saved_consensus_outside_truth_3px": 0,
+            "saved_consensus_in_accurate_2px": 7,
+            "truth_clipped_squared_cost": 30.053795,
+            "saved_clipped_squared_cost": 36.104988,
+            "truth_median_px_on_accurate_2px": 0.303227,
+            "saved_median_px_on_accurate_2px": 0.099035
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "u061-l08-01-positive",
+      "component": "np31-r3-c3",
+      "geometry_sha256": {
+        "runs/solar-reference-v80-full/references/u061.npz": "579043ef29d023c069e069e67e0757e4286c19d59de771f9ad9565f35edde8fc",
+        "runs/solar-reference-v80-full/case-assets/u061/scoring_geometry.npz": "0a0d26d2421d274cd305359e2c4da4a7920ef2b736531889c3217ac3f84c22ce"
+      },
+      "reference_query_camera_baseline_m": 339.64079,
+      "rows": [
+        {
+          "profile": "frozen_step0_A1B0C1_quantization_aware",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/211d0a86a61832b10c73ca1ca0f8090ca0711e399a73d82e733318009748d8d0.npz",
+          "saved_arrays_sha256": "4c14698fc2b68b3c62c17c096e03d479b35d703d2bccfac59f5aed6698dc85cb",
+          "returned": 128,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 18.78762,
+          "archived_pose_reason": "ransac_failed"
+        },
+        {
+          "profile": "SIFT2048",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/1130f9c6d0ccf7058287fd22e25e976cac3bd36510ce0cc09a674efd2450f6a5.npz",
+          "saved_arrays_sha256": "1c8d6092b6444c9fb6e6b661948f5e278afe01090a9cb99a6fab0ea279d03943",
+          "returned": 2,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 18.78762,
+          "archived_pose_reason": "insufficient_or_invalid_matches"
+        },
+        {
+          "profile": "loma_r_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/628120c7e4992e2941ed10226b9d4e218fb3d0b530b04990d54d9300fb695578.npz",
+          "saved_arrays_sha256": "3702aea7999e7fdfb60879f933d119757ad137c05e0951dbc6eca735fbb0ed43",
+          "returned": 61,
+          "accurate_at_2px": 2,
+          "archived_ap3p_inliers": 7,
+          "archived_pose_error": {
+            "rotation_deg": 107.41371032088098,
+            "translation_m": 2148.218736468629
+          },
+          "native_translation_limit_m": 18.78762,
+          "archived_pose_reason": null
+        },
+        {
+          "profile": "romav2_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/1e1298c513ec68199490f6963f7ca1634500976011ab5ca59923358ee9c25614.npz",
+          "saved_arrays_sha256": "001aeb2704826b170fdb00dea291af7805a9e4660076c816f9691ed9e50082f0",
+          "returned": 2000,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 166,
+          "archived_pose_error": {
+            "rotation_deg": 58.237540941705205,
+            "translation_m": 1241.0659737249416
+          },
+          "native_translation_limit_m": 18.78762,
+          "archived_pose_reason": null
+        },
+        {
+          "profile": "reference_camera_render_match",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/23ff6a9f2c734ae1e84a874fd30124174db808aa41da777555c64ae663be5097.npz",
+          "saved_arrays_sha256": "ffcc2f2a2d95bc69d1fb9e296d2bfa28b07df478d413348bfc20623e4825faba",
+          "returned": 15,
+          "accurate_at_2px": 12,
+          "archived_ap3p_inliers": 13,
+          "archived_pose_error": {
+            "rotation_deg": 1.0846113525662986,
+            "translation_m": 39.2021159747774
+          },
+          "native_translation_limit_m": 18.78762,
+          "archived_pose_reason": null,
+          "exact_unique_pairs": 10,
+          "reference_support": {
+            "hull_pct": 3.232212,
+            "span_native_px": [
+              240.555653,
+              81.14566
+            ],
+            "quadrant_counts": [
+              12,
+              0,
+              0,
+              0
+            ],
+            "exact_unique_points": 10,
+            "occupied_16px_cells": 10
+          },
+          "query_support": {
+            "hull_pct": 2.774476,
+            "span_native_px": [
+              231.146912,
+              69.540953
+            ],
+            "quadrant_counts": [
+              8,
+              4,
+              0,
+              0
+            ],
+            "exact_unique_points": 10,
+            "occupied_16px_cells": 9
+          },
+          "terrain_elevation_p10_p90_m": [
+            25.478101,
+            88.433285
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1735.009881,
+            1802.207761
+          ],
+          "world_plane_singular_3_over_2": 0.031192,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            9.086974,
+            9.616303,
+            9.924421
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 216.645348,
+            "weakest_mode_px_per_anchor": 0.093695,
+            "saved_displacement_fraction_in_weakest_two_subspace": 0.999259
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 215.395499,
+            "weakest_mode_px_per_anchor": 0.094045
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 13,
+            "saved_consensus_at_3px": 13,
+            "saved_consensus_outside_truth_3px": 0,
+            "saved_consensus_in_accurate_2px": 12,
+            "truth_clipped_squared_cost": 27.461557,
+            "saved_clipped_squared_cost": 25.309558,
+            "truth_median_px_on_accurate_2px": 0.413159,
+            "saved_median_px_on_accurate_2px": 0.431438
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "u072-l08-17-positive",
+      "component": "np31-r4-c1",
+      "geometry_sha256": {
+        "runs/solar-reference-v80-full/references/u072.npz": "4449d9e1687a3af0df827946d065ee5c9e7a6f36509d3eec4a9da32895f950ec",
+        "runs/solar-reference-v80-full/case-assets/u072/scoring_geometry.npz": "b61950d10579a052513f04a62b4e017a4ba3c809b2f25c07ef6951a3bf0b5d67"
+      },
+      "reference_query_camera_baseline_m": 104.953239,
+      "rows": [
+        {
+          "profile": "frozen_step0_A1B0C1_quantization_aware",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/40445e3deeb7a33ad248b2f59e6d8ecf4cef2ff7dc4d342fb6c7cb9f65e15d03.npz",
+          "saved_arrays_sha256": "0d2a59297d170e949f6799e2919dcea7761a592b1677c780a4b00501fb26616e",
+          "returned": 108,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 13.720798,
+          "archived_pose_reason": "ransac_failed"
+        },
+        {
+          "profile": "SIFT2048",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/f1b1aabf1e5f9734ec87f70ee391cad79bebd677a03f3b722feebc3201aa7f19.npz",
+          "saved_arrays_sha256": "1fe015360d5ae00675bd4be8bc40f366f72d700ff7dc89d88e261d70ff110408",
+          "returned": 4,
+          "accurate_at_2px": 0,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 13.720798,
+          "archived_pose_reason": "insufficient_or_invalid_matches"
+        },
+        {
+          "profile": "loma_r_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/bf43c4ead56eeb4125d9ad1b8dea149b3c706cfb838e99723da5622e156c2e49.npz",
+          "saved_arrays_sha256": "01459c8dac96418f3aad60d280774b33dd1c3d12a2b6ec2612875f82fb5962a9",
+          "returned": 214,
+          "accurate_at_2px": 9,
+          "archived_ap3p_inliers": 37,
+          "archived_pose_error": {
+            "rotation_deg": 1.1223040643852293,
+            "translation_m": 13.879841826023037
+          },
+          "native_translation_limit_m": 13.720798,
+          "archived_pose_reason": null,
+          "exact_unique_pairs": 9,
+          "reference_support": {
+            "hull_pct": 6.894407,
+            "span_native_px": [
+              161.516907,
+              192.993912
+            ],
+            "quadrant_counts": [
+              0,
+              9,
+              0,
+              0
+            ],
+            "exact_unique_points": 9,
+            "occupied_16px_cells": 8
+          },
+          "query_support": {
+            "hull_pct": 6.751402,
+            "span_native_px": [
+              194.058594,
+              166.641693
+            ],
+            "quadrant_counts": [
+              0,
+              8,
+              0,
+              1
+            ],
+            "exact_unique_points": 9,
+            "occupied_16px_cells": 9
+          },
+          "terrain_elevation_p10_p90_m": [
+            28.126685,
+            86.93218
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1167.531865,
+            1251.710726
+          ],
+          "world_plane_singular_3_over_2": 0.03485,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            4.471708,
+            4.660436,
+            4.756126
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 185.376074,
+            "weakest_mode_px_per_anchor": 0.096947,
+            "saved_displacement_fraction_in_weakest_two_subspace": 0.835753
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 175.94288,
+            "weakest_mode_px_per_anchor": 0.101978
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 22,
+            "saved_consensus_at_3px": 37,
+            "saved_consensus_outside_truth_3px": 31,
+            "saved_consensus_in_accurate_2px": 5,
+            "truth_clipped_squared_cost": 1830.290757,
+            "saved_clipped_squared_cost": 1735.462422,
+            "truth_median_px_on_accurate_2px": 1.563207,
+            "saved_median_px_on_accurate_2px": 2.792891
+          }
+        },
+        {
+          "profile": "romav2_common",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/84fe8d339284656bee35eb5ad5034bb836023972f74f154f53bf2a164a4b2dd5.npz",
+          "saved_arrays_sha256": "a759c3333cfece475f3e65bf6fae9406190c9c1a892f1e77b27059922a85159e",
+          "returned": 2000,
+          "accurate_at_2px": 759,
+          "archived_ap3p_inliers": 1144,
+          "archived_pose_error": {
+            "rotation_deg": 0.6365767629567433,
+            "translation_m": 16.255676941328474
+          },
+          "native_translation_limit_m": 13.720798,
+          "archived_pose_reason": null,
+          "exact_unique_pairs": 759,
+          "reference_support": {
+            "hull_pct": 44.836617,
+            "span_native_px": [
+              372.0,
+              481.0
+            ],
+            "quadrant_counts": [
+              40,
+              275,
+              76,
+              368
+            ],
+            "exact_unique_points": 759,
+            "occupied_16px_cells": 252
+          },
+          "query_support": {
+            "hull_pct": 44.077671,
+            "span_native_px": [
+              423.118042,
+              411.074539
+            ],
+            "quadrant_counts": [
+              35,
+              176,
+              127,
+              421
+            ],
+            "exact_unique_points": 759,
+            "occupied_16px_cells": 249
+          },
+          "terrain_elevation_p10_p90_m": [
+            -42.406616,
+            79.719214
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1135.047604,
+            1301.728448
+          ],
+          "world_plane_singular_3_over_2": 0.040729,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            4.280297,
+            4.58576,
+            4.8299
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 62.408607,
+            "weakest_mode_px_per_anchor": 0.289462,
+            "saved_displacement_fraction_in_weakest_two_subspace": 0.979087
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 60.826329,
+            "weakest_mode_px_per_anchor": 0.296261
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 1033,
+            "saved_consensus_at_3px": 1144,
+            "saved_consensus_outside_truth_3px": 138,
+            "saved_consensus_in_accurate_2px": 756,
+            "truth_clipped_squared_cost": 11465.373916,
+            "saved_clipped_squared_cost": 10266.834947,
+            "truth_median_px_on_accurate_2px": 1.062123,
+            "saved_median_px_on_accurate_2px": 1.009122
+          }
+        },
+        {
+          "profile": "reference_camera_render_match",
+          "saved_arrays": "runs/solar-five-arm-v115/comparison/13c1a751675deca0ed8e689ddab61044cb51a9023f20c4d28be6591af2be5c8e.npz",
+          "saved_arrays_sha256": "338bf2375b48bec790aca656602b25a8ec6eb8ff67d663327a13c062386a95f9",
+          "returned": 6,
+          "accurate_at_2px": 6,
+          "archived_ap3p_inliers": 0,
+          "archived_pose_error": null,
+          "native_translation_limit_m": 13.720798,
+          "archived_pose_reason": "ransac_failed",
+          "exact_unique_pairs": 4,
+          "reference_support": {
+            "hull_pct": 8.553903,
+            "span_native_px": [
+              234.537552,
+              237.540276
+            ],
+            "quadrant_counts": [
+              3,
+              1,
+              0,
+              2
+            ],
+            "exact_unique_points": 4,
+            "occupied_16px_cells": 4
+          },
+          "query_support": {
+            "hull_pct": 7.935367,
+            "span_native_px": [
+              164.215836,
+              254.543411
+            ],
+            "quadrant_counts": [
+              3,
+              1,
+              0,
+              2
+            ],
+            "exact_unique_points": 4,
+            "occupied_16px_cells": 4
+          },
+          "terrain_elevation_p10_p90_m": [
+            -32.837021,
+            46.811249
+          ],
+          "true_query_axial_depth_p10_p90_m": [
+            1176.433787,
+            1420.853498
+          ],
+          "world_plane_singular_3_over_2": 0.055016,
+          "viewing_ray_angle_p10_p50_p90_deg": [
+            3.869902,
+            4.291489,
+            4.839603
+          ],
+          "true_local_pnp": {
+            "rank": 6,
+            "condition_number": 162.73496,
+            "weakest_mode_px_per_anchor": 0.107792
+          },
+          "true_local_pnp_one_per_reference_16px_cell": {
+            "rank": 6,
+            "condition_number": 148.678016,
+            "weakest_mode_px_per_anchor": 0.117549
+          },
+          "consensus": {
+            "truth_consensus_at_3px": 6
+          }
+        }
+      ]
+    }
+  ],
+  "selection": "Exposed development cases missed by all five v115 arms with at least six visible 2px correspondences in one arm.",
+  "conditioning": "Analytic pixel Jacobian at the frozen true query camera. Scale angle columns by 2 degrees and translation columns by 1% median reference range. Report all accurate matches and first original observation per fixed reference 16px cell.",
+  "limitations": "Local full rank is not a test for separate global pose solutions. Count/reprojection diagnostics score archived observations only, including duplicates. Truth is used after the original inference seal. No new fit, inference, or reserve access."
+}
