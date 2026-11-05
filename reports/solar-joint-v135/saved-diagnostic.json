@@ -1,0 +1,367 @@
+{
+  "schema": "saved_only_joint_pilot_diagnostic_v135",
+  "post_hoc": true,
+  "predictions_sha256": "1a6d30fcd24883275b194e0eccfcfe1040625fdfd7f9d62929e8ecc25ae87cc8",
+  "scores_sha256": "41b041251fe97d53e74ca4735ada69b0ea21772e6347e7b8e5745a01381aa5f4",
+  "new_matcher_inference": false,
+  "new_pose_fitting": false,
+  "threshold_changes": false,
+  "independent_landmark_validation": false,
+  "rows": [
+    {
+      "reference_index": 0,
+      "component": "np31-r3-c3",
+      "methods": {
+        "hard": {
+          "returned_matches": 8,
+          "native_one_pixel_matches": 4,
+          "native_two_pixel_matches": 7,
+          "correct": false,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.6605317452767198,
+            "translation_m": 22.44060414091136,
+            "reference_range_m": 1878.7619664073363
+          },
+          "estimator": {
+            "inliers": 8,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 8.695936473593889
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 1,
+            "nonreciprocal_peak": 4,
+            "weak_peak": 19,
+            "reverse_weak_peak": 1
+          }
+        },
+        "joint": {
+          "returned_matches": 5,
+          "native_one_pixel_matches": 5,
+          "native_two_pixel_matches": 5,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 1,
+            "nonreciprocal_peak": 6,
+            "weak_peak": 20,
+            "ambiguous_peak": 1
+          }
+        },
+        "joint_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.3369041862681026,
+            "translation_m": 10.023899108510625,
+            "reference_range_m": 1878.7619664073363
+          },
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.9283969548979062,
+            "translation_m": 28.03164859607667,
+            "reference_range_m": 1878.7619664073363
+          },
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_framed_direct": {
+          "returned_matches": 3,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "camera_fit": {
+        "reason": null,
+        "calls": 463,
+        "iterations": 34,
+        "initial_energy": -0.0206742982561264,
+        "final_energy": -0.022585572500416963,
+        "energy_improved": true,
+        "calibrated_probability": false
+      }
+    },
+    {
+      "reference_index": 1,
+      "component": "np31-r0-c4",
+      "methods": {
+        "hard": {
+          "returned_matches": 18,
+          "native_one_pixel_matches": 18,
+          "native_two_pixel_matches": 18,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.03503427039998631,
+            "translation_m": 1.0016977645136707,
+            "reference_range_m": 1591.162737137531
+          },
+          "estimator": {
+            "inliers": 18,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 0.044902033358956
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 5,
+            "reverse_insufficient_reference_support": 3,
+            "weak_peak": 8,
+            "reverse_ambiguous_peak": 1
+          }
+        },
+        "joint": {
+          "returned_matches": 18,
+          "native_one_pixel_matches": 18,
+          "native_two_pixel_matches": 18,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.010777512896239926,
+            "translation_m": 0.4094032792733657,
+            "reference_range_m": 1591.162737137531
+          },
+          "estimator": {
+            "inliers": 18,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 0.008837225187604894
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 5,
+            "reverse_insufficient_reference_support": 3,
+            "weak_peak": 8,
+            "reverse_ambiguous_peak": 1
+          }
+        },
+        "joint_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.026759706864299525,
+            "translation_m": 0.8978965755784974,
+            "reference_range_m": 1591.162737137531
+          },
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.026759706864313913,
+            "translation_m": 0.8978965755785756,
+            "reference_range_m": 1591.162737137531
+          },
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_framed_direct": {
+          "returned_matches": 464,
+          "native_one_pixel_matches": 445,
+          "native_two_pixel_matches": 453,
+          "correct": true,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 0.017898722884993633,
+            "translation_m": 0.7031591125948128,
+            "reference_range_m": 1591.162737137531
+          },
+          "estimator": {
+            "inliers": 459,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 117.9486142067917
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "camera_fit": {
+        "reason": null,
+        "calls": 21,
+        "iterations": 1,
+        "initial_energy": -0.2710158958059254,
+        "final_energy": -0.2710158958059254,
+        "energy_improved": false,
+        "calibrated_probability": false
+      }
+    },
+    {
+      "reference_index": 2,
+      "component": "np31-r1-c0",
+      "methods": {
+        "hard": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {}
+        },
+        "joint": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {}
+        },
+        "joint_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_framed_direct": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "camera_fit": {
+        "reason": "insufficient_image_fields",
+        "calls": 0
+      }
+    },
+    {
+      "reference_index": 3,
+      "component": "np31-r1-c0",
+      "methods": {
+        "hard": {
+          "returned_matches": 1,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 20,
+            "uniform_template": 10,
+            "weak_peak": 1
+          }
+        },
+        "joint": {
+          "returned_matches": 1,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {
+            "insufficient_reference_support": 20,
+            "uniform_template": 10,
+            "weak_peak": 1
+          }
+        },
+        "joint_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_camera_proposal": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": true,
+          "pose_error": {
+            "rotation_deg": 75.91571124890727,
+            "translation_m": 1701.8769910704648,
+            "reference_range_m": 1588.2945440202834
+          },
+          "estimator": null,
+          "rejection_reasons": {}
+        },
+        "cached_framed_direct": {
+          "returned_matches": 0,
+          "native_one_pixel_matches": 0,
+          "native_two_pixel_matches": 0,
+          "correct": false,
+          "pose_returned": false,
+          "pose_error": null,
+          "estimator": {
+            "inliers": 0,
+            "reason": "insufficient_or_invalid_matches"
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "camera_fit": {
+        "reason": "insufficient_image_fields",
+        "calls": 0
+      }
+    }
+  ],
+  "interpretation": "The soft camera is a proposal. The primary result uses unchanged AP3P and includes insufficient-match failures."
+}

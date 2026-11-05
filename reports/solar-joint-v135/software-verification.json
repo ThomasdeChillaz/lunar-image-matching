@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-11-05T20:30:20.221807+00:00",
+  "scientific_source_freeze": "66c515a160ff11ad1d06e2d969d22423a1cba790",
+  "public_ci": {
+    "run_id": 42101870326,
+    "job_id": 127506444460,
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42101870326",
+    "conclusion": "success",
+    "pytest_passed": 1466,
+    "pytest_skipped": 8,
+    "pytest_seconds": 160.73,
+    "end_to_end_smoke_passed": true
+  },
+  "local_full_suite": {
+    "passed": 1470,
+    "skipped": 4,
+    "seconds": 293.34,
+    "log_sha256": "bc644ef706ff262d4a57379d6fc9ef5d98f946711e137039a693adb217691f19"
+  },
+  "focused_new_tests": {
+    "passed": 7,
+    "seconds": 10.94
+  },
+  "saved_metric_replay": {
+    "passed": true,
+    "method_case_cells": 192,
+    "all20_cached_controls_exact": true,
+    "fresh_hard_peak_control_exact": true,
+    "results_sha256": "52f61aa49a02c0aa7030be98854e424fb79c598acd830a25ccb215063a50f5fc"
+  },
+  "generated_image_to_AP3P_controls": {
+    "passed": true,
+    "variants": [
+      "flat",
+      "layered"
+    ],
+    "timing_json_sha256": "f714e25b5f90f6257b1d9809661fef143e430819be5938ef3f630d7be887bbf0"
+  },
+  "fresh_procedural_replay": {
+    "passed": true,
+    "scope": "Procedural software controls, not lunar navigation accuracy.",
+    "rows": 100,
+    "summaries": 20,
+    "results_sha256": "7b1a9e2e3bf29c68f597c09a896bdfee4caed7a67a99b5927089a445d5afb6dc",
+    "summary_sha256": "d718a6270b7a7fb1589f5689b4740d268fb79c67b25bfb391897b703d0d26402",
+    "source_sha256": "8b9c2cb637e2fb9a17c6a2c0f009ec48fea430bacfb59967eed15c5dc6e45f4a"
+  },
+  "legacy_json_verifier_attempt": {
+    "passed": false,
+    "reason": "Wrong artifact schema: CSV procedural benchmark has no frozen_config.json. Correct CSV-schema verifier subsequently passed all100 rows."
+  },
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "scientific_accuracy_established_by_tests": false
+}
