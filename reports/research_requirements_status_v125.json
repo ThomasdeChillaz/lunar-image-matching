@@ -272,11 +272,12 @@
     "reports/solar-five-arm-results-v123/public-replay-receipt.json": "d4468742704b148c419fb64d5f5dc296a7e4c9cbc24b02e8a6191ebbef67e4b1",
     "reports/moonst3r-v121/same-case-results.json": "e72186efb89f1a935cfc051a19667691e0919a4f0cd759b512af9839eeba7fc4",
     "reports/solar-warp-v117/timing-procedural-v123.json": "09c42572f7c9b0daca04860074a22ba2023796eb8db16a795b70d6014b81f8a9",
-    "reports/solar-warp-v125/RESULTS.md": "3e91a0d486e536222676a83f46cffaafe57f674497e66ac1e3a267aa4a6dde5d",
+    "reports/solar-warp-v125/RESULTS.md": "5077dc279b8e7b77e47367db604feaa4c5c03de5592bce3022a297819b1aac57",
     "reports/solar-warp-v125/archive-dispatch.json": "1483a5838b9a1781e3f2a1e601ed47e0423fb0cd9656de46719588c717be85ec",
     "reports/solar-warp-v125/archive-complete-v125.json": "73bd207346aff215ecbbd1146c7397ec4143828f70655c64b32de8ff36dc09cb",
     "reports/solar-warp-v125/archive-independent-replay-v125.json": "9b190892c109164801e283a0af8c9b9a5f96c298b5a1e757ff30535674f65913",
-    "reports/solar-five-arm-results-v123/saved-pose-diagnostics-v125.json": "0009e93e7d43459aad8106b55960332974c4fcd35d6cd641291a87163bdfa93b"
+    "reports/solar-five-arm-results-v123/saved-pose-diagnostics-v125.json": "0009e93e7d43459aad8106b55960332974c4fcd35d6cd641291a87163bdfa93b",
+    "reports/solar-warp-v125/support-only-native-capture-v125.json": "65a56480b97d56d5cff0e64e0fa4bf0535c0999f6044092922831dafc4b592c1"
   },
   "all_eligible_failures_remain_in_denominators": true,
   "calibration_or_final_access": false,
@@ -460,6 +461,7 @@
       "3D": 4,
       "plane": 4
     },
-    "native_correspondences_measured": false
+    "native_correspondences_measured": false,
+    "support_only_16px_distributed_anchor_reach_all_rows": 0
   }
 }
