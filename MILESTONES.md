@@ -1,3 +1,13 @@
+## M143 - Retain lighting and camera alternatives through acquisition
+
+Implemented four-light/eight-camera seeding, persistent per-branch native fields,
+shared-light identities, measured camera updates and selection from all final
+pose fits. Common candidate support and a total128-field cap also constrain the
+strong single-camera baseline. Generated branch-switch/known-transform controls
+and 1,532 local tests/four skips pass; no new lunar gain is claimed. The prospective
+matched seven-arm comparison remains unrun. New resource authority is not issued.
+[Implementation and complete proposed study](reports/solar-beam-v143/README.md)
+
 ## M142 - Execute the approved frozen v140 unknown-light comparison
 
 Completed all eight cases, six methods and independent replay of all 48 cells.

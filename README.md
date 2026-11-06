@@ -1,5 +1,13 @@
 # Compact lunar image matching
 
+Persistent camera/light acquisition is now implemented: up to four reference
+lights and eight qualified cameras stay alive through native patch measurements.
+The matched controls share one total field allowance. Local 1,532 tests/four skips
+and fresh generated/procedural checks pass; **no new lunar accuracy result exists**.
+[Implementation](reports/solar-beam-v143/README.md) · [Prepared complete comparison](reports/solar-beam-v143/NEXT_EXPERIMENT.md).
+The original comparison budgets and both supplements are fully charged; a new
+bounded 1,800-second resource decision is required before scientific execution.
+
 Latest experiment - 6 November 2026: **all six unknown-light methods recover the
 same 1/4 raw poses**. Active, joint without extras, uniform and geometry return
 zero wrong positives; Direct returns two and appearance one. All methods return

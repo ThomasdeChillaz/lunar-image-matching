@@ -1,5 +1,29 @@
 # AI coding-agent execution brief
 
+## Persistent camera/light acquisition implemented - 6 November 2026
+
+Added an experimental matcher retaining up to four reference lights and eight
+qualified cameras through native patch selection, measurement and camera updates.
+All qualified alternatives survive provisional weighting. Every branch-specific
+attempt is charged; the single-camera control receives the full common field
+allowance and candidate universe. The original matching commands are unchanged;
+public poses remain null until calibration.
+
+Generated native-image controls exercise branch switching and actual AP3P. These
+are software evidence, not new lunar recovery or physical sunlight validation.
+The full local suite passes 1,532 tests/four skips/14 subtests. Fresh generated
+branch-switch geometry and a 100-evaluation/20-summary procedural smoke replay.
+The seven-method/eight-case comparison and independent 56-cell replay are prepared.
+
+All old comparison caps remain charged, with no new allowance or lunar inference.
+A prospective 1,800-second free local CPU cap is specified for the cost controls,
+complete study and replay. Calibration/final terrain and all 14 original research
+targets remain unchanged. Current measured unknown-light performance remains 1/4.
+
+[Implementation and limits](reports/solar-beam-v143/README.md) ·
+[Concrete next experiment](reports/solar-beam-v143/NEXT_EXPERIMENT.md) ·
+[Original requirement audit](reports/research_requirements_status_v143.json)
+
 ## Frozen unknown-light comparison completed - 6 November 2026
 
 The complete eight-case/six-method v140 experiment finished within the explicitly
