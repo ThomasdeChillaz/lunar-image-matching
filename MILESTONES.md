@@ -1,3 +1,12 @@
+## M141 - Update prior-art boundaries and current research documents
+
+Completed a targeted nine-source review and verified a current two-page brief /
+eight-page working draft. Lunar model distillation is relevant prior art; no
+compact-model novelty or state-of-the-art advantage is claimed. Historical PDFs,
+scientific sources, inputs and accounting remain unchanged. M140 is still the
+next scientific experiment and awaits its resource decision; all targets persist.
+[Updated research documents](reports/solar-review-v141/README.md)
+
 ## M139 - Complete the unknown-light cost gate
 
 All six generated poses pass on both full-budget controls. The 652.51s forecast

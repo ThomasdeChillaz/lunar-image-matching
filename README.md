@@ -1,5 +1,11 @@
 # Compact lunar image matching
 
+Current research documents: [two-page brief and eight-page working draft](reports/solar-review-v141/README.md).
+Updated primary-source comparisons distinguish lunar match precision, relative-pose
+AUC and our absolute pose criterion, and include recent lunar-model distillation.
+This is a documentation update; measured performance and all original targets are
+unchanged. The prepared unknown-light experiment remains unrun.
+
 Latest execution - 6 November 2026: the unknown-light software passes both full
 six-arm generated controls, but its 652.51s forecast exceeds the original recovery
 cap. It stopped before lunar inference; no new lunar accuracy result exists.

@@ -1,5 +1,23 @@
 # Status
 
+## Primary-source comparison and research drafts updated - 6 November 2026
+
+Updated a two-page brief and eight-page working paper from unchanged saved evidence.
+The targeted review adds recent lunar foundation-model distillation, so compact
+lunar adaptation alone cannot support a novelty claim. It separates match precision,
+relative-pose AUC, dense reconstruction and our absolute camera-pose criterion.
+The default-dither historical modern comparison remains conditional; no clean
+matched ranking or new accuracy gain is asserted.
+
+All ten rendered pages were checked. The 104 scientific-source/130 input closure,
+old v137 PDFs and original accounting remain byte-identical. Scientific code is
+unchanged; prior 1,507 local/1,503 public tests remain the applicable checks.
+The prepared v140 eight-case experiment still awaits its resource decision.
+All 14 original targets and the broader goal remain active.
+
+[Brief, working paper and evidence](reports/solar-review-v141/README.md) ·
+[All original targets](reports/research_requirements_status_v141.json)
+
 ## Unknown-light cost gate measured - 6 November 2026
 
 The complete six-method generated controls pass on flat and layered geometry,
