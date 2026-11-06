@@ -1,0 +1,29 @@
+{
+  "schema": "public_research_package_verification_v141",
+  "published_source_commit": "0c9f34f5c5d956b266a5021c8df5d294c973c2b8",
+  "public_files": {
+    "reports/solar-review-v141/literature.json": "752041b33ae079b43aba4a17f126c56ce5f8d06a90cdfd70971fabcbe36e87d4",
+    "reports/solar-review-v141/evidence.json": "847f7c268ac4a607da3a1c74571d00f3ff3eb750b25ec03b5266c88986f68254",
+    "reports/solar-review-v141/lunar-localization-v141-research-brief.pdf": "ec4d271639b85a1da2cdae9d539f8cef61b6c9c372a540882ad89403e2a25e15",
+    "reports/solar-review-v141/build_package.py": "03e809b4c435788239c0ebad92d161aa37f80aaccd9df390b1f2f8b303a6bbef",
+    "reports/solar-review-v141/lunar-localization-v141-working-paper.pdf": "889fbe8d46a629a122dbb30bf1d69b2d1e44e0e0327c812f12c53026e00af3ed",
+    "reports/solar-review-v141/README.md": "633db40df0ceab46940fce21ff62fafee88e6338a29d02463137b3859d061df9",
+    "reports/solar-review-v141/verification.json": "8b7fe8844d0a8abdbc6e98f0602594715d65be0b2eec62df53f1ddc2692599ce"
+  },
+  "source_ci": {
+    "run_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42136234229",
+    "job_id": 127624968572,
+    "conclusion": "success",
+    "tests_passed": 1503,
+    "explicit_skips": 8,
+    "subtests_passed": 14,
+    "test_elapsed_seconds": 169.56,
+    "fresh_controlled_smoke_cells": 20
+  },
+  "protected_sources_byte_verified": 104,
+  "protected_inputs_byte_verified": 130,
+  "scientific_matching_training_or_rendering": false,
+  "original_requirements_unchanged": true,
+  "broader_goal_status": "active",
+  "pending_scientific_continuation_unchanged": true
+}
