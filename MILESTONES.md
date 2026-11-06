@@ -1,3 +1,14 @@
+## M142 - Execute the approved frozen v140 unknown-light comparison
+
+Completed all eight cases, six methods and independent replay of all 48 cells.
+Every method recovers the same 1/4 raw poses. Active adds no recovery or efficiency
+advantage; no candidate is promoted. The full 900-second approved cap remains
+charged despite 471.60 seconds elapsed. Original accounting and final/calibration
+terrain are unchanged. Post hoc saved proposals identify lighting pruning and
+incorrect camera support; alternative-method success is not established.
+All 14 original scientific targets remain open where unmet.
+[Complete measured results](reports/solar-blind-v142/README.md)
+
 ## M141 - Update prior-art boundaries and current research documents
 
 Completed a targeted nine-source review and verified a current two-page brief /

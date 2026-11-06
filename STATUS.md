@@ -1,5 +1,30 @@
 # Status
 
+## Frozen unknown-light comparison completed - 6 November 2026
+
+The complete eight-case/six-method v140 experiment finished within the explicitly
+approved additional 900-second cap (471.60 seconds actual; full cap stays charged).
+Every method recovers the same 1/4 raw poses. Active/no-extra/uniform/geometry
+return zero wrong positives; Direct returns two and appearance one. All methods
+return 0/4 nonoverlap poses. Active is 8.07 times slower than Direct; no promotion.
+
+All 48 cells independently replay, with unchanged 104-source/130-input hashes.
+Local 1,513 tests/four skips/14 subtests and a fresh procedural smoke with
+100 evaluations / 20 summaries pass.
+The primary unknown-light interface searches a discrete 24-light catalogue; it is
+not continuous Sun inference or the completed learned A/B/C model. Four positives
+cover three exposed terrain groups. The paired recovery gain is zero, not proof
+of population equivalence. Calibration and final terrain remain untouched.
+
+Post hoc saved-output diagnosis finds only one case with a correct camera among
+the eight retained hypotheses. The faint case drops the true light (rank four),
+while the other two failures retain true lighting but no correct camera. A
+future investigation should retain lighting/camera diversity through acquisition;
+no success from that change is measured or promised. Original targets persist.
+
+[Results, replay and limitations](reports/solar-blind-v142/README.md) ·
+[All original requirements](reports/research_requirements_status_v142.json)
+
 ## Primary-source comparison and research drafts updated - 6 November 2026
 
 Updated a two-page brief and eight-page working paper from unchanged saved evidence.

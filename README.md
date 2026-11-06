@@ -1,26 +1,30 @@
 # Compact lunar image matching
 
-Current research documents: [two-page brief and eight-page working draft](reports/solar-review-v141/README.md).
-Updated primary-source comparisons distinguish lunar match precision, relative-pose
-AUC and our absolute pose criterion, and include recent lunar-model distillation.
-This is a documentation update; measured performance and all original targets are
-unchanged. The prepared unknown-light experiment remains unrun.
+Latest experiment - 6 November 2026: **all six unknown-light methods recover the
+same 1/4 raw poses**. Active, joint without extras, uniform and geometry return
+zero wrong positives; Direct returns two and appearance one. All methods return
+0/4 nonoverlap poses. Active adds no recovery gain and is 8.07 times slower than
+Direct. No candidate is promoted. [Complete results and failure diagnosis](reports/solar-blind-v142/README.md)
+· [Original research targets](reports/research_requirements_status_v142.json).
 
-Latest execution - 6 November 2026: the unknown-light software passes both full
-six-arm generated controls, but its 652.51s forecast exceeds the original recovery
-cap. It stopped before lunar inference; no new lunar accuracy result exists.
-Local1,503/public 1,499 tests pass. [Timing and limits](reports/solar-blind-v139/RESULTS.md)
-· [Complete proposed continuation](reports/solar-blind-v140/NEXT_EXPERIMENT.md)
-· [Original research requirements](reports/research_requirements_status_v139.json).
+All eight clean RGB16 cases and 48 method/case metrics independently replay.
+Lighting is selected from a shared 24-image reference catalogue; query truth is
+scoring-only. Four positives cover three exposed terrain components. This is
+uncalibrated classical development evidence, with no new learned, fresh-test or
+state-of-the-art claim. Calibration/final terrain stays closed.
 
-New software preparation: [image-selected lighting and camera initialization](reports/solar-blind-v138/README.md)
-removes supplied matching illumination from the experimental interface. Generated
-controls pass; no new lunar result is claimed. A clean-data census identifies
-13 missing reference catalogues for the broader modern comparison; historical
-modern counts use archived dithered inputs. [Next bounded study](reports/solar-blind-v138/NEXT_EXPERIMENT.md)
-and [unchanged research targets](reports/research_requirements_status_v138.json).
+The previously approved complete continuation finished in 471.60 seconds within
+its new 900-second allowance; the full cap remains charged. The earlier failed
+[v139 cost gate](reports/solar-blind-v139/RESULTS.md) is preserved. No automatic
+email or paper submission occurs.
 
-Current evidence - 5 November 2026: **active patch acquisition recovers 8/16 raw
+The dated [two-page brief and eight-page working draft](reports/solar-review-v141/README.md)
+describe earlier evidence and primary-source metric boundaries. The new report
+above supersedes their statement that the unknown-light experiment is unrun.
+Historical default-dither modern comparisons are not a clean matched ranking;
+13 broader reference catalogues still need clean acquisition.
+
+Earlier supplied-light evidence - 5 November 2026: **active patch acquisition recovers 8/16 raw
 camera poses**, versus 4/16 Direct and 7/16 uniform/geometry at the same extra-patch
 budget. Active returns zero wrong positive poses and 0/16 nonoverlap poses. The
 prespecified early signal passes; the isolated selection gain is one pose
