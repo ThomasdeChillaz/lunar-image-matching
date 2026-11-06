@@ -1,0 +1,296 @@
+{
+  "schema": "posthoc_sealed_proposal_diagnosis_v142",
+  "post_hoc": true,
+  "query_truth_scoring_only": true,
+  "inference_rerun": false,
+  "metric_or_policy_changes": false,
+  "initial_correct_pose_cases": 1,
+  "eligible_positive_cases": 4,
+  "cases": [
+    {
+      "id": "blind138-00",
+      "source_case": "u013-l00-00-positive",
+      "nearest_true_catalogue_light_id": 0,
+      "nearest_true_catalogue_error_deg": 0.0,
+      "nearest_light_rank_by_min_coarse_loss": 1,
+      "retained_coarse_light_ids": [
+        0,
+        1
+      ],
+      "photometric_hypotheses": [
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 0.01943171763887115,
+          "translation_m": 0.7648399186137645,
+          "correct": true
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 0.019431639087845034,
+          "translation_m": 0.7648380824451024,
+          "correct": true
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 0.019431507456020125,
+          "translation_m": 0.7648350388156687,
+          "correct": true
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 0.01936901206078563,
+          "translation_m": 0.761349558788945,
+          "correct": true
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134413,
+          "rotation_deg": 0.9046459439224172,
+          "translation_m": 26.0457511118981,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134413,
+          "rotation_deg": 0.9045099349559608,
+          "translation_m": 26.041780078965388,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134413,
+          "rotation_deg": 0.9047142738505166,
+          "translation_m": 26.04733037361673,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134413,
+          "rotation_deg": 0.903778432649272,
+          "translation_m": 26.021872879833168,
+          "correct": false
+        }
+      ],
+      "any_correct_retained_camera": true,
+      "translation_limit_m": 15.91162737137531
+    },
+    {
+      "id": "blind138-02",
+      "source_case": "u025-l00-00-positive",
+      "nearest_true_catalogue_light_id": 0,
+      "nearest_true_catalogue_error_deg": 0.0,
+      "nearest_light_rank_by_min_coarse_loss": 1,
+      "retained_coarse_light_ids": [
+        0,
+        1
+      ],
+      "photometric_hypotheses": [
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 2.071878273295769,
+          "translation_m": 43.12821069437792,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 2.08109308568381,
+          "translation_m": 43.42827116036246,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 2.1159640556156694,
+          "translation_m": 44.47675361495495,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 2.1210282486217373,
+          "translation_m": 44.63781805333303,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 2.1220919610913835,
+          "translation_m": 44.644993262415596,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 2.1448850715164594,
+          "translation_m": 45.13506618802006,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 2.1478506854590926,
+          "translation_m": 45.19927567608394,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 2.1590432646567677,
+          "translation_m": 45.50556007566679,
+          "correct": false
+        }
+      ],
+      "any_correct_retained_camera": false,
+      "translation_limit_m": 13.131969263733948
+    },
+    {
+      "id": "blind138-04",
+      "source_case": "u027-l08-01-positive",
+      "nearest_true_catalogue_light_id": 1,
+      "nearest_true_catalogue_error_deg": 0.0,
+      "nearest_light_rank_by_min_coarse_loss": 2,
+      "retained_coarse_light_ids": [
+        0,
+        1
+      ],
+      "photometric_hypotheses": [
+        {
+          "light_id": 1,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 4.167213279622297,
+          "translation_m": 126.75571141588873,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 4.121199816548138,
+          "translation_m": 125.52114790684514,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 4.031281022805832,
+          "translation_m": 123.09161854591123,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 4.114330453913278,
+          "translation_m": 125.28547593881538,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 3.7126440333476567,
+          "translation_m": 113.78241331459823,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 3.184678983986373,
+          "translation_m": 98.37642663003918,
+          "correct": false
+        },
+        {
+          "light_id": 1,
+          "sun_error_deg": 0.0,
+          "rotation_deg": 3.17827331067315,
+          "translation_m": 98.18352731693463,
+          "correct": false
+        },
+        {
+          "light_id": 0,
+          "sun_error_deg": 7.497426263134411,
+          "rotation_deg": 2.92998247258863,
+          "translation_m": 90.99114501196298,
+          "correct": false
+        }
+      ],
+      "any_correct_retained_camera": false,
+      "translation_limit_m": 15.882945440202834
+    },
+    {
+      "id": "blind138-06",
+      "source_case": "u061-l00-17-positive",
+      "nearest_true_catalogue_light_id": 17,
+      "nearest_true_catalogue_error_deg": 0.0,
+      "nearest_light_rank_by_min_coarse_loss": 4,
+      "retained_coarse_light_ids": [
+        15,
+        23
+      ],
+      "photometric_hypotheses": [
+        {
+          "light_id": 15,
+          "sun_error_deg": 14.994830329140608,
+          "rotation_deg": 16.73541968450297,
+          "translation_m": 488.76698288457254,
+          "correct": false
+        },
+        {
+          "light_id": 15,
+          "sun_error_deg": 14.994830329140608,
+          "rotation_deg": 16.757657626363653,
+          "translation_m": 489.3822975781171,
+          "correct": false
+        },
+        {
+          "light_id": 15,
+          "sun_error_deg": 14.994830329140608,
+          "rotation_deg": 16.79674513155049,
+          "translation_m": 490.47815484155063,
+          "correct": false
+        },
+        {
+          "light_id": 23,
+          "sun_error_deg": 44.9837352785373,
+          "rotation_deg": 68.0493468685415,
+          "translation_m": 1864.5444899660706,
+          "correct": false
+        },
+        {
+          "light_id": 15,
+          "sun_error_deg": 14.994830329140608,
+          "rotation_deg": 27.978331604397315,
+          "translation_m": 798.1826323997133,
+          "correct": false
+        },
+        {
+          "light_id": 23,
+          "sun_error_deg": 44.9837352785373,
+          "rotation_deg": 67.86115883455616,
+          "translation_m": 1897.0644512494289,
+          "correct": false
+        },
+        {
+          "light_id": 23,
+          "sun_error_deg": 44.9837352785373,
+          "rotation_deg": 34.37354887800863,
+          "translation_m": 1561.7741957057451,
+          "correct": false
+        },
+        {
+          "light_id": 23,
+          "sun_error_deg": 44.9837352785373,
+          "rotation_deg": 73.06417135214006,
+          "translation_m": 2642.7250487452807,
+          "correct": false
+        }
+      ],
+      "any_correct_retained_camera": false,
+      "translation_limit_m": 18.787619664073365
+    }
+  ],
+  "claim_limit": "Describes saved proposal retention; an absent good proposal does not establish whether untested alternatives would succeed"
+}
