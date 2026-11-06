@@ -1,0 +1,39 @@
+{
+  "source_commit": "dbeb77776b330518c7d5a1c02ccf98e02ccd2bdb",
+  "public_files_sha256": {
+    "reports/solar-beam-v143/NEXT_EXPERIMENT.md": "a3c11da003958ca91e4e0dc4e35d7ddd4b0c72d58a58a552eae3bca457a5ee1d",
+    "reports/solar-beam-v143/README.md": "f6e6c5951f0696d40e66fc13040a69e115f32728a0d87f9c21c399a3b2f46bc4",
+    "reports/solar-beam-v143/beam_matcher_v143.py": "602d922e7386cff5f04dfc22b3300c1ae331944a04e6cf1fa867b8f75dbefc1a",
+    "reports/solar-beam-v143/beam_policy_v143.py": "daeb26b3d1d5f28118e5b79f6bddb67a77aa7ca692873e2ab8f7696704540afd",
+    "reports/solar-beam-v143/engine_beam_v143.py": "33685f1bdef805195a5386729385c760c794eb1b12c4c0d2f587f9459d491f11",
+    "reports/solar-beam-v143/localize_beam.py": "65626c855b92a8adbcdc0e8c46bb3d3e8e9d65fcd9b8d278052305b1dac38975",
+    "reports/solar-beam-v143/preflight.json": "cf5d557f25632874cecb1ef433ee7e2b328340eb3f7ac767d5d942b7ee4e6e69",
+    "reports/solar-beam-v143/protocol.json": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+    "reports/solar-beam-v143/replay_beam_v143.py": "46b3c94eaa260539e817496747296d7870b72fa5e04f4ea8fd218f541693eeac",
+    "reports/solar-beam-v143/smoke_beam_v143.py": "b464f55c4673a88619b2c265f8955a720bd135e9e105ea5356083cc6cf96af49",
+    "reports/solar-beam-v143/software-smoke-replay.json": "4e33aae13f31b211924c78db54582944e37edefef75dd25f958d9639e3c8c821",
+    "reports/solar-beam-v143/software-smoke.json": "6fe447fbb1fed3ca50f1987aac395f3c7130df4c16beb7e2e7c288f0460227e4",
+    "reports/solar-beam-v143/software-verification.json": "4631259e2e36ac23bea8c5133861a61986c24fa09399c2c84918e884bce1bc93",
+    "reports/solar-beam-v143/study_beam_v143.py": "85cf84491acc59353bdea223b3ba134aba93836c36474f67f235c05a8efc1679",
+    "reports/solar-beam-v143/test_admission_v143.py": "4920914bb1c7b7fbc2f09e49422ab674ef9a8916892817a55f81e3aa164d5cf4",
+    "reports/solar-beam-v143/test_beam_v143.py": "6b2c6d7cec5cac9e6ccb6126a1f32bdcdb8f3becda04c71ea70c416d1f675cb3"
+  },
+  "scientific_sources": 115,
+  "inputs": 134,
+  "no_new_lunar_inference": true,
+  "new_authority_issued": false,
+  "prior_accounting_unchanged": true,
+  "full_original_targets_preserved": 14,
+  "public_ci_run_id": 42234723453,
+  "public_ci_status": "success",
+  "actual_resource_reply_received": false,
+  "public_ci_job_id": 127949272873,
+  "public_ci": {
+    "passed": 1528,
+    "skipped": 8,
+    "subtests": 14,
+    "seconds": 209.48,
+    "procedural_smoke_summaries": 20,
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42234723453"
+  }
+}
