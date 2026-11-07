@@ -1,5 +1,32 @@
 # Status
 
+## Persistent-hypothesis comparison completed - 7 November 2026
+
+The approved frozen v143 study completed all seven methods on eight cases.
+**Every method recovers the same 1/4 raw positive poses.** Beam active ties the
+strong single control and uniform/geometry beams; no candidate is promoted.
+All beam methods return zero wrong positives and 0/4 nonoverlap poses, as do the
+old no-extra/active32 controls. Direct and strong single return two wrong positives.
+Active beam takes 54.52s median versus no-extra 21.77s; no efficiency advantage.
+
+All 56 geometry/Sun/precision cells, branch retention and actual field budgets
+independently replay. All 24 historical control decisions repeat exactly.
+Every new policy uses 128 actual fields; eight branches receive 16 rounds each.
+The faint true light now survives, but its closest saved initial camera remains
+364.51m/12.11deg wrong. None of the three failed positives has a correct final beam
+branch. Strong single visits correct soft cameras on two near-uniform cases yet
+its final AP3P poses are wrong; proposal coverage and measurement-to-pose precision
+are separate next investigations. Oracle intermediate cameras are not successes.
+
+Actual controller time is 1,238.06s within the newly approved 1,800s cap. Its full
+charge remains, alongside all prior charges. Zero new trainable parameters,
+three exposed positive terrain components, no calibrated acceptance, fresh test,
+modern ranking or orbital navigation claim. Four calibration/twelve final terrain
+groups remain untouched. All 14 original research targets persist where unmet.
+
+[Complete results and causal limits](reports/solar-beam-v144/README.md) ·
+[Original requirements](reports/research_requirements_status_v144.json)
+
 ## Persistent camera/light acquisition implemented - 6 November 2026
 
 Added an experimental matcher retaining up to four reference lights and eight

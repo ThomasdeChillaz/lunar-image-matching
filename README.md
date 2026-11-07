@@ -1,30 +1,25 @@
 # Compact lunar image matching
 
-Persistent camera/light acquisition is now implemented: up to four reference
-lights and eight qualified cameras stay alive through native patch measurements.
-The matched controls share one total field allowance. Local 1,532 tests/four skips
-and fresh generated/procedural checks pass; **no new lunar accuracy result exists**.
-[Implementation](reports/solar-beam-v143/README.md) · [Prepared complete comparison](reports/solar-beam-v143/NEXT_EXPERIMENT.md).
-The original comparison budgets and both supplements are fully charged; a new
-bounded 1,800-second resource decision is required before scientific execution.
+Latest result - **7 November 2026**: keeping multiple camera/lighting hypotheses
+through patch selection **does not improve recovery on the frozen pilot**.
+All seven methods recover the same **1/4 raw poses**. Active beam returns no wrong
+positive or nonoverlap poses, but the old no-extra control already does so and is
+2.50 times faster (21.77s versus 54.52s median). No candidate is promoted.
+[Complete results and figure](reports/solar-beam-v144/README.md) ·
+[Original research targets](reports/research_requirements_status_v144.json).
 
-Latest experiment - 6 November 2026: **all six unknown-light methods recover the
-same 1/4 raw poses**. Active, joint without extras, uniform and geometry return
-zero wrong positives; Direct returns two and appearance one. All methods return
-0/4 nonoverlap poses. Active adds no recovery gain and is 8.07 times slower than
-Direct. No candidate is promoted. [Complete results and failure diagnosis](reports/solar-blind-v142/README.md)
-· [Original research targets](reports/research_requirements_status_v142.json).
+All eight cases, 56 method/case metrics and 24 historical control decisions
+independently replay. The new single and beam controls share 128 actual field
+attempts; all eight camera/light branches survive to final estimation. The faint
+correct light is now retained, but useful camera geometry remains missing. Two
+near-uniform cases also expose inaccurate final AP3P despite accurate intermediate
+soft cameras in the strong single control. Saved oracle states are diagnostics.
 
-All eight clean RGB16 cases and 48 method/case metrics independently replay.
-Lighting is selected from a shared 24-image reference catalogue; query truth is
-scoring-only. Four positives cover three exposed terrain components. This is
-uncalibrated classical development evidence, with no new learned, fresh-test or
-state-of-the-art claim. Calibration/final terrain stays closed.
-
-The previously approved complete continuation finished in 471.60 seconds within
-its new 900-second allowance; the full cap remains charged. The earlier failed
-[v139 cost gate](reports/solar-blind-v139/RESULTS.md) is preserved. No automatic
-email or paper submission occurs.
+This is uncalibrated classical development evidence on three reused positive
+terrain components, with zero new trainable parameters. It establishes no learned,
+fresh-test, clean modern-model or orbital accuracy advantage. Calibration and
+final terrain remain closed. The newly approved 1,800s cap completed in 1,238.06s;
+its full charge and all prior accounting remain. No automatic outreach occurs.
 
 The dated [two-page brief and eight-page working draft](reports/solar-review-v141/README.md)
 describe earlier evidence and primary-source metric boundaries. The new report

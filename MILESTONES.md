@@ -1,3 +1,14 @@
+## M144 - Test persistent camera/light hypotheses against matched controls
+
+Completed the explicitly approved seven-method/eight-case comparison under one
+1,800s cap (1,238.06s actual, full charge retained). Every method recovers 1/4 raw
+poses. No beam or active-policy gain over the strongest control. All 56 cells and
+24 historical identities replay; common 128-field budgets hold. Preserved Sun choices
+do not rescue absent accurate cameras, and near-uniform single-control soft
+cameras expose a separate final-geometry handoff issue. No promotion, calibration,
+final-reserve access, new training or original-target relaxation.
+[Results, diagnostics and reproducible package](reports/solar-beam-v144/README.md)
+
 ## M143 - Retain lighting and camera alternatives through acquisition
 
 Implemented four-light/eight-camera seeding, persistent per-branch native fields,
