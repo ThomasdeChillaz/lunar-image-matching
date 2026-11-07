@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "local_pytest": {
+    "passed": 1535,
+    "skipped": 4,
+    "subtests_passed": 14,
+    "warnings": 14,
+    "seconds": 409.57,
+    "log_sha256": "ff6c93628fe7b69a1a5b956692261b24eaf3e36e106fcb1b834bb237219f0507"
+  },
+  "focused_report_tests": {
+    "passed": 3,
+    "seconds": 0.57
+  },
+  "fresh_generated_image_to_pose_controls": {
+    "passed": true,
+    "controls": 14,
+    "methods": 7,
+    "flat_and_layered": true,
+    "lights": 24,
+    "cameras": 2048,
+    "native_field_cap": 128,
+    "physical_sunlight_simulation": false,
+    "source": "runs/solar-beam-v143/timing.json",
+    "sha256": "767137416aa7c1ac35c1298d8e1cd93da8d80d753823a9426063d50c06710a39"
+  },
+  "independent_saved_replay": {
+    "passed": true,
+    "method_case_cells": 56,
+    "historical_control_identities": 24,
+    "sources": 115,
+    "inputs": 134,
+    "independently_recomputed_geometry": true,
+    "branch_retention_and_field_accounting": true,
+    "summary_and_component_analysis_exact": true,
+    "no_matching_or_fitting": true,
+    "saved_branch_diagnosis_exact": true,
+    "private_authority_used": false,
+    "accepted_pose_study": false,
+    "methods": {
+      "direct": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 2,
+        "raw_nonoverlap": 0
+      },
+      "legacy_no_extra": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "legacy_active32": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "single_uniform128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 2,
+        "raw_nonoverlap": 0
+      },
+      "beam_uniform128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "beam_geometry128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "beam_active128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      }
+    }
+  },
+  "source_files_verified": 115,
+  "input_files_verified": 134,
+  "inference_only_paths": 109,
+  "source_closure_unchanged_after_tests": true,
+  "protocol_sha256": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+  "new_trainable_parameters": 0,
+  "no_paid_compute": true,
+  "calibration_or_final_access": false,
+  "public_pose_uncalibrated_null": true,
+  "original_targets_preserved": 14
+}
