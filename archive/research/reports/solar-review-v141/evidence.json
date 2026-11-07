@@ -1,0 +1,122 @@
+{
+  "schema": "presentation_evidence_v141",
+  "scientific_inference": false,
+  "model_training": false,
+  "calibration_or_final_access": false,
+  "source_hashes": {
+    "reports/solar-active-v137/results.json": "58173c736029ecf88b2077fa4d4d829d672ed6bda41e841e27e5e7be5297d277",
+    "reports/solar-active-v137/RESULTS.md": "11e335ec12018b73e83cfe122df5ef929f059c2dc316f0f47cc7910ad207a27a",
+    "reports/solar-blind-v139/timing.json": "8a9cfa44028ee04fdbd2ec66d63b887e554e4f3c0b2cf70e9418d695417d9abc",
+    "reports/solar-blind-v139/result.json": "5788ea406f405db63da0956a0463502c0c92f956bc8491b948877aaa9986c892",
+    "reports/solar-blind-v138/data-preparation.json": "b565f72c59d42b5a1e058c7906089edd4de691e65f91c8d8ac9319193ba78c71",
+    "reports/solar-blind-v140/protocol.json": "1f92fff326af37f8914066725d4df7cd3bbd9cba4d4b4521f8aff82ec0aa2a77",
+    "reports/SOLAR_DITHER_FINGERPRINT_V105.md": "259c144347f8c059bcc6160be45e3f95877f621863addbd08180e69f3e6363d8",
+    "reports/SOLAR_CLEAN_RADIANCE_RESULTS_V106.md": "5236e0d0122d542a97c118f61d4f59fa4d016fc80cf94186e9fd9dad9fdfd2d0",
+    "reports/solar-five-arm-results-v123/matched_comparison_v115.json": "984b3a7a84cc8f356f55dfb003b61b7d5d72b7c47cc51476f6e9309f04298e99",
+    "reports/solar-review-v141/literature.json": "752041b33ae079b43aba4a17f126c56ce5f8d06a90cdfd70971fabcbe36e87d4",
+    "reports/solar-active-v137/recovery.png": "3979822e0481eeb64edce0d5c6edfbd40206f873b3de21cb7ea22d6fcc31e5e2",
+    "reports/solar-active-v137/conditions.png": "4988b97997a43215db125915a69453e3b7af246e67519124b122fb46404198c7",
+    "reports/solar-active-v137/accuracy-runtime.png": "b4b8c7e2d557e4b51dbbfd5ac098c89520c9b2509b268e9db3c6061e027e14dc",
+    "reports/solar-active-v137/faint-errors.png": "2911466cec283bef698e5650e3c59ad30e9c5e59dc61acb14d396be9e7f15433"
+  },
+  "protected_scientific_source_count": 104,
+  "protected_input_count": 130,
+  "positive_pairs": 16,
+  "terrain_components": [
+    "np31-r0-c4",
+    "np31-r1-c0",
+    "np31-r3-c3"
+  ],
+  "methods": {
+    "direct": {
+      "correct": 4,
+      "strict": 4,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive": 4,
+      "matches": 1868,
+      "one_pixel_matches": 1788,
+      "two_pixel_matches": 1817,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 1.3573169270239305,
+      "median_all_online_seconds": 1.0675482645165175
+    },
+    "joint_no_extra": {
+      "correct": 5,
+      "strict": 4,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive": 6,
+      "matches": 100,
+      "one_pixel_matches": 89,
+      "two_pixel_matches": 95,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 7.524334665504284,
+      "median_all_online_seconds": 7.881911709468113
+    },
+    "uniform": {
+      "correct": 7,
+      "strict": 4,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive": 8,
+      "matches": 254,
+      "one_pixel_matches": 228,
+      "two_pixel_matches": 244,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 11.11290474748239,
+      "median_all_online_seconds": 10.282260743988445
+    },
+    "appearance": {
+      "correct": 6,
+      "strict": 4,
+      "wrong_positive": 4,
+      "raw_nonoverlap": 0,
+      "returned_positive": 10,
+      "matches": 261,
+      "one_pixel_matches": 229,
+      "two_pixel_matches": 240,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 10.548573517007753,
+      "median_all_online_seconds": 10.324199957511155
+    },
+    "geometry": {
+      "correct": 7,
+      "strict": 5,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive": 8,
+      "matches": 244,
+      "one_pixel_matches": 217,
+      "two_pixel_matches": 235,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 11.602405358484248,
+      "median_all_online_seconds": 10.509865298023215
+    },
+    "active": {
+      "correct": 8,
+      "strict": 4,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive": 8,
+      "matches": 258,
+      "one_pixel_matches": 224,
+      "two_pixel_matches": 243,
+      "timing_scope": "fresh_online",
+      "median_positive_online_seconds": 11.312701014947379,
+      "median_all_online_seconds": 10.52445416446426
+    }
+  },
+  "isolated_policy_gain_pp": 6.25,
+  "isolated_policy_descriptive_interval_pp": [
+    0.0,
+    19.583333333333314
+  ],
+  "unknown_light_lunar_results": 0,
+  "unknown_light_forecast_seconds": 652.5137772965245,
+  "clean_modern_catalogues_available": 3,
+  "clean_modern_reference_cameras": 16,
+  "original_requirements_unchanged": true,
+  "goal_complete": false,
+  "superiority_claim": false
+}

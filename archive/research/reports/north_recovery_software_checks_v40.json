@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "repository_tests_passed": 307,
+  "optional_tests_skipped": 4,
+  "repository_test_command": "python -m pytest -q",
+  "repository_test_wall_seconds": 16.94,
+  "software_smoke_sha256": "a2cdce9abf6228aa873367b14090ea4a7af8a925f46e9915a9052e00a0300cd9",
+  "fresh_procedural_rows": 100,
+  "new_data_model_updates": 0,
+  "source_sha256": {
+    "train_north_control_v39.py": "6693251fa658bc487090df606482962dd434d9be4f602104594870ce493eccde",
+    "verify_north_results_v39.py": "ce786704c6bddc708bb6d606f8942fc5bca7cc8050d9d9034c62a1c51996be9a",
+    "test_north_control_v39.py": "6d992a7c78058f7c1fc4e8ac4491ce8460908c3189d0318b074818bd0119d8eb",
+    "render_north_development_v40.py": "7f8ed18923c6c9f79a457d2b77ad126c01305e1a2af3c35ef6cba830943231bf",
+    "north_render_recovery_v40.py": "9382e8248c1b2768706cb100b0ed25bb647afc9b1638767a4e38376c19da6eee",
+    "test_north_render_recovery_v40.py": "1fd4db4f6bb1c1b1d3edcdc0d62147e98d745c213f9e7b998330cd43b3bcf2ce"
+  },
+  "scope": "Prepared/recovery software tests, not learned pose accuracy."
+}

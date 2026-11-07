@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "neural_snapshot_forwards_replayed": 20,
+  "logical_recorded_updates": 400,
+  "independent_numpy_objective_replay": true,
+  "full_optimizer_retraining": false,
+  "model_promoted": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "summary_sha256": "2e03ae41ef5769c907cf62eb6998564b699de32ce1a5ad556e63769d0ba2bb35",
+  "source_sha256": "92fc8b8b249645445f47aaa2189dd6ecd9a8f6e87ab8ab1639debbf701f7e712",
+  "scope": "Fixed training-fixture numerical/forward replay only; no held-out pose, candidate, novelty or SOTA claim."
+}

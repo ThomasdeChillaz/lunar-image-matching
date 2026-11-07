@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "replayed_rows": 576,
+  "recorded_updates": 2000,
+  "exact_sampler_rng_replay": true,
+  "independent_full_optimizer_retraining": false,
+  "exact_optimizer_pilot_updates": 100,
+  "neural_forward_repeated": false,
+  "summary_sha256": "51c10291a2f5ff68a038ccd7c3900889da6460f4199c33d5e8bd5a343a840715",
+  "source_sha256": "8cc926812dcb96734e69aba3618707068e86b3dec8bdda1ddf5872fb97afd856",
+  "calibration_or_test_pixels_loaded": 0,
+  "scope": "All saved checkpoint/selected-negative metrics, selection, frozen fine encoder, update counts and sampler states replayed. No full optimizer retraining or accepted-pose superiority claim."
+}

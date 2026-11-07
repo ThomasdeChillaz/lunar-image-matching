@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "full_cohort_complete": false,
+  "scope": "Completed three primary runs only; repeat seeds remain live. Independent source/artifact/optimizer/selection/native-metric and final-pose replay; full sampler audit remains for completed cohort.",
+  "checkpoint_rows_replayed": 1080,
+  "runs": [
+    {
+      "experiment": "raw_encoder",
+      "seed": 20261101,
+      "selected_step": 2000,
+      "completed_steps": 2000,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 54,
+        "strict_poses": 18,
+        "estimated_poses": 57,
+        "correct_at_two_px": 15076,
+        "returned": 21933,
+        "scorable": 20908
+      },
+      "training_sha256": "ba73e87b609b134c4512b5e4af45a376fe05e9afd446631a5cdc2782b3861ce3"
+    },
+    {
+      "experiment": "normalized_encoder",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "completed_steps": 2000,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 55,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 15585,
+        "returned": 21928,
+        "scorable": 20911
+      },
+      "training_sha256": "c089f238d476b3ae020b7f359bb83e6516e0dac058abda8bfd3ad3f67702bef5"
+    },
+    {
+      "experiment": "normalized_pair",
+      "seed": 20261101,
+      "selected_step": 2000,
+      "completed_steps": 2000,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 55,
+        "strict_poses": 18,
+        "estimated_poses": 57,
+        "correct_at_two_px": 15733,
+        "returned": 21939,
+        "scorable": 20912
+      },
+      "training_sha256": "d2f7a8da2a6bee654cc4f6ea016f45a0cab21711878cb57db74343fc8a860f2b"
+    }
+  ]
+}

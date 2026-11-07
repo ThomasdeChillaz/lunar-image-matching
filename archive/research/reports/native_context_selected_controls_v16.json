@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "selected_models": 5,
+  "actual_primary_forward_cases": 72,
+  "actual_primary_forward_exact": true,
+  "source_sha256": "0d64bc053ea5cbbc01c362fbd911a0360d6361a00bff491649d06383e6d60874",
+  "cohort_summary_sha256": "b146474af3dec2400b1386099b8f80a7fb4766792642a022cc3b6ae7913af0cd",
+  "checkpoint_controls": [
+    {
+      "variant": "pointwise",
+      "seed": 20261101,
+      "selected_step": 0,
+      "checkpoint_sha256": "12dab989de20e46178b6497915374efda4b1278088bfe76b9f787fa7764f96c9",
+      "passed": true,
+      "rotation_matrix_error": 0.0011713706505313156,
+      "translation_error_m": 0.007883176418447732,
+      "blank_pose_null": true
+    },
+    {
+      "variant": "self_context",
+      "seed": 20261101,
+      "selected_step": 0,
+      "checkpoint_sha256": "36883e8d10d28fb6500818dfddbccc577355fd9e3cf119d8a250a7ecc6fcb491",
+      "passed": true,
+      "rotation_matrix_error": 0.0011713706505313156,
+      "translation_error_m": 0.007883176418447732,
+      "blank_pose_null": true
+    },
+    {
+      "variant": "cross_context",
+      "seed": 20261101,
+      "selected_step": 0,
+      "checkpoint_sha256": "fb04f9ebdcc599bd28a123f1b0c66565547b9536fab21b454107e6fa8328d33c",
+      "passed": true,
+      "rotation_matrix_error": 0.0011713706505313156,
+      "translation_error_m": 0.007883176418447732,
+      "blank_pose_null": true
+    },
+    {
+      "variant": "pointwise",
+      "seed": 20261102,
+      "selected_step": 0,
+      "checkpoint_sha256": "c08aa2077970a2aac001f0feeee9064a7f74ee217e221aa86c88100b6e1bcd23",
+      "passed": true,
+      "rotation_matrix_error": 0.0011713706505313156,
+      "translation_error_m": 0.007883176418447732,
+      "blank_pose_null": true
+    },
+    {
+      "variant": "pointwise",
+      "seed": 20261103,
+      "selected_step": 0,
+      "checkpoint_sha256": "e4ea26e4ebc48d62a9625d2c393a3e40dae92c6b9851a84c4c29039b39f05e12",
+      "passed": true,
+      "rotation_matrix_error": 0.0011713706505313156,
+      "translation_error_m": 0.007883176418447732,
+      "blank_pose_null": true
+    }
+  ],
+  "scope": "Actual pretrained/fitted-checkpoint software control and selected primary native forward replay. Exposed development data, not fresh geographic validation."
+}

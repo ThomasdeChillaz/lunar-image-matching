@@ -1,0 +1,934 @@
+{
+  "scope": "Complete saved checkpoint decomposition by fixed lighting; interim while cohort unfinished. No new neural inference, model selection, pose estimation or acceptance calibration.",
+  "snapshot_utc": "2026-11-02T08:41:03.544128+00:00",
+  "source_sha256": "742718a6258006cc5ca031ff1cb9c902ce42caa702a865a73d70ce9c1267507b",
+  "manifest_sha256": "2f0961d8198f59ab8276eb21c9191cec1b6c578ab9f5517bf7fb4ff423248381",
+  "cohort_protocol_sha256": "8a8750c468871aa724dbede7b6653d0e731581c48026d42a987f8bfd89e52556",
+  "complete_cohort_summary_present": false,
+  "records": [
+    {
+      "model": "frozen_surface",
+      "seed": null,
+      "step": null,
+      "rows_sha256": "3d4eec7180f3c6cdc03a864c7520841d7bbdc3185f1865256ccd78bb5ee8e22d",
+      "results": {
+        "all": {
+          "eligible_positive_pairs": 96,
+          "correct_raw_poses": 13,
+          "wrong_raw_poses": 28,
+          "no_pose": 55,
+          "strict_raw_poses": 2,
+          "returned_matches": 17670,
+          "scorable_matches": 17645,
+          "nonvisible_returned_matches": 25,
+          "correct_at_native_px": {
+            "1": 2539,
+            "2": 3394,
+            "4": 4334,
+            "5": 4693,
+            "8": 5637,
+            "12": 6710
+          },
+          "precision_all_returned": {
+            "1": 0.14368986983588003,
+            "2": 0.19207696661007356,
+            "4": 0.2452744765138653,
+            "5": 0.26559139784946234,
+            "8": 0.3190152801358234,
+            "12": 0.37973967176004525
+          },
+          "precision_scorable_only": {
+            "1": 0.14389345423632757,
+            "2": 0.19234910739586286,
+            "4": 0.24562198923207706,
+            "5": 0.26596769623122696,
+            "8": 0.31946727118163787,
+            "12": 0.3802776990648909
+          },
+          "pose_success_all_eligible": 0.13541666666666666,
+          "calibrated_acceptance_evaluated": false
+        },
+        "by_lighting_pattern": {
+          "0-0": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 12,
+            "wrong_raw_poses": 6,
+            "no_pose": 6,
+            "strict_raw_poses": 2,
+            "returned_matches": 7578,
+            "scorable_matches": 7577,
+            "nonvisible_returned_matches": 1,
+            "correct_at_native_px": {
+              "1": 2443,
+              "2": 3120,
+              "4": 3707,
+              "5": 3945,
+              "8": 4480,
+              "12": 5070
+            },
+            "precision_all_returned": {
+              "1": 0.3223805753496965,
+              "2": 0.4117181314330958,
+              "4": 0.48917920295592504,
+              "5": 0.5205859065716548,
+              "8": 0.5911850092372658,
+              "12": 0.6690419635787807
+            },
+            "precision_scorable_only": {
+              "1": 0.3224231226078923,
+              "2": 0.4117724693150323,
+              "4": 0.48924376402270026,
+              "5": 0.5206546126435264,
+              "8": 0.5912630328626105,
+              "12": 0.6691302626369275
+            },
+            "pose_success_all_eligible": 0.5,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-3": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 11,
+            "no_pose": 13,
+            "strict_raw_poses": 0,
+            "returned_matches": 4062,
+            "scorable_matches": 4052,
+            "nonvisible_returned_matches": 10,
+            "correct_at_native_px": {
+              "1": 25,
+              "2": 80,
+              "4": 235,
+              "5": 292,
+              "8": 505,
+              "12": 813
+            },
+            "precision_all_returned": {
+              "1": 0.006154603643525357,
+              "2": 0.019694731659281144,
+              "4": 0.05785327424913836,
+              "5": 0.07188577055637617,
+              "8": 0.12432299359921221,
+              "12": 0.20014771048744462
+            },
+            "precision_scorable_only": {
+              "1": 0.006169792694965449,
+              "2": 0.019743336623889437,
+              "4": 0.05799605133267522,
+              "5": 0.07206317867719644,
+              "8": 0.12462981243830207,
+              "12": 0.2006416584402764
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-4": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 1,
+            "wrong_raw_poses": 6,
+            "no_pose": 17,
+            "strict_raw_poses": 0,
+            "returned_matches": 3036,
+            "scorable_matches": 3029,
+            "nonvisible_returned_matches": 7,
+            "correct_at_native_px": {
+              "1": 62,
+              "2": 165,
+              "4": 316,
+              "5": 363,
+              "8": 495,
+              "12": 616
+            },
+            "precision_all_returned": {
+              "1": 0.020421607378129116,
+              "2": 0.05434782608695652,
+              "4": 0.10408432147562582,
+              "5": 0.11956521739130435,
+              "8": 0.16304347826086957,
+              "12": 0.2028985507246377
+            },
+            "precision_scorable_only": {
+              "1": 0.020468801584681413,
+              "2": 0.05447342357213602,
+              "4": 0.10432485968966655,
+              "5": 0.11984153185869924,
+              "8": 0.16342027071640805,
+              "12": 0.20336744800264114
+            },
+            "pose_success_all_eligible": 0.041666666666666664,
+            "calibrated_acceptance_evaluated": false
+          },
+          "1-5": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 5,
+            "no_pose": 19,
+            "strict_raw_poses": 0,
+            "returned_matches": 2994,
+            "scorable_matches": 2987,
+            "nonvisible_returned_matches": 7,
+            "correct_at_native_px": {
+              "1": 9,
+              "2": 29,
+              "4": 76,
+              "5": 93,
+              "8": 157,
+              "12": 211
+            },
+            "precision_all_returned": {
+              "1": 0.003006012024048096,
+              "2": 0.009686038744154976,
+              "4": 0.025384101536406144,
+              "5": 0.031062124248496994,
+              "8": 0.05243820975283901,
+              "12": 0.0704742818971276
+            },
+            "precision_scorable_only": {
+              "1": 0.003013056578506863,
+              "2": 0.009708737864077669,
+              "4": 0.025443588885169066,
+              "5": 0.031134917977904252,
+              "8": 0.05256109809173083,
+              "12": 0.07063943756277201
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          }
+        },
+        "changed_lighting": {
+          "eligible_positive_pairs": 72,
+          "correct_raw_poses": 1,
+          "wrong_raw_poses": 22,
+          "no_pose": 49,
+          "strict_raw_poses": 0,
+          "returned_matches": 10092,
+          "scorable_matches": 10068,
+          "nonvisible_returned_matches": 24,
+          "correct_at_native_px": {
+            "1": 96,
+            "2": 274,
+            "4": 627,
+            "5": 748,
+            "8": 1157,
+            "12": 1640
+          },
+          "precision_all_returned": {
+            "1": 0.009512485136741973,
+            "2": 0.02715021799445105,
+            "4": 0.06212841854934602,
+            "5": 0.07411811335711455,
+            "8": 0.114645263575109,
+            "12": 0.16250495441934204
+          },
+          "precision_scorable_only": {
+            "1": 0.009535160905840286,
+            "2": 0.02721493841875248,
+            "4": 0.06227651966626937,
+            "5": 0.07429479539133889,
+            "8": 0.11491855383392928,
+            "12": 0.16289233214143822
+          },
+          "pose_success_all_eligible": 0.013888888888888888,
+          "calibrated_acceptance_evaluated": false
+        }
+      }
+    },
+    {
+      "model": "expanded_data_control",
+      "seed": 20261101,
+      "step": 0,
+      "rows_sha256": "497102863cfb4dd93a0ad3617c0352d58075e72bbaa7a20e3d0c899eceb5f0bf",
+      "receipt_sha256": "0f2be73ee6ee1fbb4bf0a67c5fa3d176792a45b94d4e97594518b01b34b57ac0",
+      "results": {
+        "all": {
+          "eligible_positive_pairs": 96,
+          "correct_raw_poses": 13,
+          "wrong_raw_poses": 28,
+          "no_pose": 55,
+          "strict_raw_poses": 2,
+          "returned_matches": 17670,
+          "scorable_matches": 17645,
+          "nonvisible_returned_matches": 25,
+          "correct_at_native_px": {
+            "1": 2539,
+            "2": 3394,
+            "4": 4334,
+            "5": 4693,
+            "8": 5637,
+            "12": 6710
+          },
+          "precision_all_returned": {
+            "1": 0.14368986983588003,
+            "2": 0.19207696661007356,
+            "4": 0.2452744765138653,
+            "5": 0.26559139784946234,
+            "8": 0.3190152801358234,
+            "12": 0.37973967176004525
+          },
+          "precision_scorable_only": {
+            "1": 0.14389345423632757,
+            "2": 0.19234910739586286,
+            "4": 0.24562198923207706,
+            "5": 0.26596769623122696,
+            "8": 0.31946727118163787,
+            "12": 0.3802776990648909
+          },
+          "pose_success_all_eligible": 0.13541666666666666,
+          "calibrated_acceptance_evaluated": false
+        },
+        "by_lighting_pattern": {
+          "0-0": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 12,
+            "wrong_raw_poses": 6,
+            "no_pose": 6,
+            "strict_raw_poses": 2,
+            "returned_matches": 7578,
+            "scorable_matches": 7577,
+            "nonvisible_returned_matches": 1,
+            "correct_at_native_px": {
+              "1": 2443,
+              "2": 3120,
+              "4": 3707,
+              "5": 3945,
+              "8": 4480,
+              "12": 5070
+            },
+            "precision_all_returned": {
+              "1": 0.3223805753496965,
+              "2": 0.4117181314330958,
+              "4": 0.48917920295592504,
+              "5": 0.5205859065716548,
+              "8": 0.5911850092372658,
+              "12": 0.6690419635787807
+            },
+            "precision_scorable_only": {
+              "1": 0.3224231226078923,
+              "2": 0.4117724693150323,
+              "4": 0.48924376402270026,
+              "5": 0.5206546126435264,
+              "8": 0.5912630328626105,
+              "12": 0.6691302626369275
+            },
+            "pose_success_all_eligible": 0.5,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-3": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 11,
+            "no_pose": 13,
+            "strict_raw_poses": 0,
+            "returned_matches": 4062,
+            "scorable_matches": 4052,
+            "nonvisible_returned_matches": 10,
+            "correct_at_native_px": {
+              "1": 25,
+              "2": 80,
+              "4": 235,
+              "5": 292,
+              "8": 505,
+              "12": 813
+            },
+            "precision_all_returned": {
+              "1": 0.006154603643525357,
+              "2": 0.019694731659281144,
+              "4": 0.05785327424913836,
+              "5": 0.07188577055637617,
+              "8": 0.12432299359921221,
+              "12": 0.20014771048744462
+            },
+            "precision_scorable_only": {
+              "1": 0.006169792694965449,
+              "2": 0.019743336623889437,
+              "4": 0.05799605133267522,
+              "5": 0.07206317867719644,
+              "8": 0.12462981243830207,
+              "12": 0.2006416584402764
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-4": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 1,
+            "wrong_raw_poses": 6,
+            "no_pose": 17,
+            "strict_raw_poses": 0,
+            "returned_matches": 3036,
+            "scorable_matches": 3029,
+            "nonvisible_returned_matches": 7,
+            "correct_at_native_px": {
+              "1": 62,
+              "2": 165,
+              "4": 316,
+              "5": 363,
+              "8": 495,
+              "12": 616
+            },
+            "precision_all_returned": {
+              "1": 0.020421607378129116,
+              "2": 0.05434782608695652,
+              "4": 0.10408432147562582,
+              "5": 0.11956521739130435,
+              "8": 0.16304347826086957,
+              "12": 0.2028985507246377
+            },
+            "precision_scorable_only": {
+              "1": 0.020468801584681413,
+              "2": 0.05447342357213602,
+              "4": 0.10432485968966655,
+              "5": 0.11984153185869924,
+              "8": 0.16342027071640805,
+              "12": 0.20336744800264114
+            },
+            "pose_success_all_eligible": 0.041666666666666664,
+            "calibrated_acceptance_evaluated": false
+          },
+          "1-5": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 5,
+            "no_pose": 19,
+            "strict_raw_poses": 0,
+            "returned_matches": 2994,
+            "scorable_matches": 2987,
+            "nonvisible_returned_matches": 7,
+            "correct_at_native_px": {
+              "1": 9,
+              "2": 29,
+              "4": 76,
+              "5": 93,
+              "8": 157,
+              "12": 211
+            },
+            "precision_all_returned": {
+              "1": 0.003006012024048096,
+              "2": 0.009686038744154976,
+              "4": 0.025384101536406144,
+              "5": 0.031062124248496994,
+              "8": 0.05243820975283901,
+              "12": 0.0704742818971276
+            },
+            "precision_scorable_only": {
+              "1": 0.003013056578506863,
+              "2": 0.009708737864077669,
+              "4": 0.025443588885169066,
+              "5": 0.031134917977904252,
+              "8": 0.05256109809173083,
+              "12": 0.07063943756277201
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          }
+        },
+        "changed_lighting": {
+          "eligible_positive_pairs": 72,
+          "correct_raw_poses": 1,
+          "wrong_raw_poses": 22,
+          "no_pose": 49,
+          "strict_raw_poses": 0,
+          "returned_matches": 10092,
+          "scorable_matches": 10068,
+          "nonvisible_returned_matches": 24,
+          "correct_at_native_px": {
+            "1": 96,
+            "2": 274,
+            "4": 627,
+            "5": 748,
+            "8": 1157,
+            "12": 1640
+          },
+          "precision_all_returned": {
+            "1": 0.009512485136741973,
+            "2": 0.02715021799445105,
+            "4": 0.06212841854934602,
+            "5": 0.07411811335711455,
+            "8": 0.114645263575109,
+            "12": 0.16250495441934204
+          },
+          "precision_scorable_only": {
+            "1": 0.009535160905840286,
+            "2": 0.02721493841875248,
+            "4": 0.06227651966626937,
+            "5": 0.07429479539133889,
+            "8": 0.11491855383392928,
+            "12": 0.16289233214143822
+          },
+          "pose_success_all_eligible": 0.013888888888888888,
+          "calibrated_acceptance_evaluated": false
+        }
+      }
+    },
+    {
+      "model": "expanded_data_control",
+      "seed": 20261101,
+      "step": 500,
+      "rows_sha256": "cb40f6879060a1964b146deeb4337909794a77396610c3317792fa4e8e8f64ec",
+      "receipt_sha256": "d61aa1c6705ef2319a1f9bd59b5da153c0f8b8dbf5dab4ab2d0072563160c63c",
+      "results": {
+        "all": {
+          "eligible_positive_pairs": 96,
+          "correct_raw_poses": 13,
+          "wrong_raw_poses": 15,
+          "no_pose": 68,
+          "strict_raw_poses": 2,
+          "returned_matches": 16725,
+          "scorable_matches": 16695,
+          "nonvisible_returned_matches": 30,
+          "correct_at_native_px": {
+            "1": 2332,
+            "2": 3047,
+            "4": 3839,
+            "5": 4133,
+            "8": 4916,
+            "12": 5784
+          },
+          "precision_all_returned": {
+            "1": 0.1394319880418535,
+            "2": 0.18218236173393124,
+            "4": 0.22953662182361734,
+            "5": 0.2471150971599402,
+            "8": 0.29393124065769805,
+            "12": 0.34582959641255606
+          },
+          "precision_scorable_only": {
+            "1": 0.13968253968253969,
+            "2": 0.18250973345312968,
+            "4": 0.22994908655286014,
+            "5": 0.2475591494459419,
+            "8": 0.2944594189877209,
+            "12": 0.3464510332434861
+          },
+          "pose_success_all_eligible": 0.13541666666666666,
+          "calibrated_acceptance_evaluated": false
+        },
+        "by_lighting_pattern": {
+          "0-0": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 12,
+            "wrong_raw_poses": 6,
+            "no_pose": 6,
+            "strict_raw_poses": 2,
+            "returned_matches": 7050,
+            "scorable_matches": 7049,
+            "nonvisible_returned_matches": 1,
+            "correct_at_native_px": {
+              "1": 2260,
+              "2": 2839,
+              "4": 3373,
+              "5": 3585,
+              "8": 4118,
+              "12": 4671
+            },
+            "precision_all_returned": {
+              "1": 0.32056737588652484,
+              "2": 0.4026950354609929,
+              "4": 0.47843971631205673,
+              "5": 0.5085106382978724,
+              "8": 0.5841134751773049,
+              "12": 0.6625531914893616
+            },
+            "precision_scorable_only": {
+              "1": 0.3206128528869343,
+              "2": 0.4027521634274365,
+              "4": 0.47850758972903956,
+              "5": 0.5085827776989644,
+              "8": 0.5841963399063697,
+              "12": 0.6626471839977301
+            },
+            "pose_success_all_eligible": 0.5,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-3": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 4,
+            "no_pose": 20,
+            "strict_raw_poses": 0,
+            "returned_matches": 3643,
+            "scorable_matches": 3636,
+            "nonvisible_returned_matches": 7,
+            "correct_at_native_px": {
+              "1": 9,
+              "2": 32,
+              "4": 80,
+              "5": 96,
+              "8": 184,
+              "12": 296
+            },
+            "precision_all_returned": {
+              "1": 0.0024704913532802636,
+              "2": 0.008783969256107603,
+              "4": 0.021959923140269007,
+              "5": 0.026351907768322812,
+              "8": 0.05050782322261872,
+              "12": 0.08125171561899533
+            },
+            "precision_scorable_only": {
+              "1": 0.0024752475247524753,
+              "2": 0.0088008800880088,
+              "4": 0.022002200220022004,
+              "5": 0.026402640264026403,
+              "8": 0.050605060506050605,
+              "12": 0.0814081408140814
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-4": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 1,
+            "wrong_raw_poses": 3,
+            "no_pose": 20,
+            "strict_raw_poses": 0,
+            "returned_matches": 3041,
+            "scorable_matches": 3033,
+            "nonvisible_returned_matches": 8,
+            "correct_at_native_px": {
+              "1": 54,
+              "2": 144,
+              "4": 298,
+              "5": 344,
+              "8": 442,
+              "12": 569
+            },
+            "precision_all_returned": {
+              "1": 0.01775731667214732,
+              "2": 0.04735284445905952,
+              "4": 0.09799408089444261,
+              "5": 0.11312068398553107,
+              "8": 0.14534692535350213,
+              "12": 0.18710950345281158
+            },
+            "precision_scorable_only": {
+              "1": 0.017804154302670624,
+              "2": 0.04747774480712166,
+              "4": 0.098252555225849,
+              "5": 0.11341905703923508,
+              "8": 0.14573030003297066,
+              "12": 0.18760303330036268
+            },
+            "pose_success_all_eligible": 0.041666666666666664,
+            "calibrated_acceptance_evaluated": false
+          },
+          "1-5": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 2,
+            "no_pose": 22,
+            "strict_raw_poses": 0,
+            "returned_matches": 2991,
+            "scorable_matches": 2977,
+            "nonvisible_returned_matches": 14,
+            "correct_at_native_px": {
+              "1": 9,
+              "2": 32,
+              "4": 88,
+              "5": 108,
+              "8": 172,
+              "12": 248
+            },
+            "precision_all_returned": {
+              "1": 0.003009027081243731,
+              "2": 0.010698762955533266,
+              "4": 0.029421598127716483,
+              "5": 0.03610832497492478,
+              "8": 0.057505850885991305,
+              "12": 0.08291541290538282
+            },
+            "precision_scorable_only": {
+              "1": 0.0030231776956667787,
+              "2": 0.010749076251259657,
+              "4": 0.029559959690964057,
+              "5": 0.03627813234800134,
+              "8": 0.05777628485052066,
+              "12": 0.08330534094726234
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          }
+        },
+        "changed_lighting": {
+          "eligible_positive_pairs": 72,
+          "correct_raw_poses": 1,
+          "wrong_raw_poses": 9,
+          "no_pose": 62,
+          "strict_raw_poses": 0,
+          "returned_matches": 9675,
+          "scorable_matches": 9646,
+          "nonvisible_returned_matches": 29,
+          "correct_at_native_px": {
+            "1": 72,
+            "2": 208,
+            "4": 466,
+            "5": 548,
+            "8": 798,
+            "12": 1113
+          },
+          "precision_all_returned": {
+            "1": 0.0074418604651162795,
+            "2": 0.021498708010335918,
+            "4": 0.04816537467700258,
+            "5": 0.056640826873385015,
+            "8": 0.08248062015503876,
+            "12": 0.11503875968992248
+          },
+          "precision_scorable_only": {
+            "1": 0.0074642338793282186,
+            "2": 0.0215633423180593,
+            "4": 0.04831018038565208,
+            "5": 0.056811113414887,
+            "8": 0.08272859216255443,
+            "12": 0.11538461538461539
+          },
+          "pose_success_all_eligible": 0.013888888888888888,
+          "calibrated_acceptance_evaluated": false
+        }
+      }
+    },
+    {
+      "model": "expanded_data_control",
+      "seed": 20261101,
+      "step": 1000,
+      "rows_sha256": "d0e4614fd22d8eaab783176698880626cb3f8a29d02d140ec4042e365dffd4a7",
+      "receipt_sha256": "958c90ce0c35e3ba9084fe5d65b192aeaf444d459a310d3c9ee6284a3bdbd185",
+      "results": {
+        "all": {
+          "eligible_positive_pairs": 96,
+          "correct_raw_poses": 14,
+          "wrong_raw_poses": 8,
+          "no_pose": 74,
+          "strict_raw_poses": 3,
+          "returned_matches": 16673,
+          "scorable_matches": 16645,
+          "nonvisible_returned_matches": 28,
+          "correct_at_native_px": {
+            "1": 2180,
+            "2": 2838,
+            "4": 3479,
+            "5": 3738,
+            "8": 4437,
+            "12": 5176
+          },
+          "precision_all_returned": {
+            "1": 0.13075031488034547,
+            "2": 0.17021531817909194,
+            "4": 0.20866070893060637,
+            "5": 0.22419480597372998,
+            "8": 0.2661188748275655,
+            "12": 0.31044203202782944
+          },
+          "precision_scorable_only": {
+            "1": 0.13097026133974166,
+            "2": 0.17050165214779214,
+            "4": 0.20901171522979875,
+            "5": 0.22457194352658455,
+            "8": 0.26656653649744666,
+            "12": 0.31096425352958845
+          },
+          "pose_success_all_eligible": 0.14583333333333334,
+          "calibrated_acceptance_evaluated": false
+        },
+        "by_lighting_pattern": {
+          "0-0": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 12,
+            "wrong_raw_poses": 6,
+            "no_pose": 6,
+            "strict_raw_poses": 3,
+            "returned_matches": 6800,
+            "scorable_matches": 6799,
+            "nonvisible_returned_matches": 1,
+            "correct_at_native_px": {
+              "1": 2128,
+              "2": 2692,
+              "4": 3194,
+              "5": 3404,
+              "8": 3928,
+              "12": 4480
+            },
+            "precision_all_returned": {
+              "1": 0.3129411764705882,
+              "2": 0.39588235294117646,
+              "4": 0.4697058823529412,
+              "5": 0.5005882352941177,
+              "8": 0.5776470588235294,
+              "12": 0.6588235294117647
+            },
+            "precision_scorable_only": {
+              "1": 0.3129872040005883,
+              "2": 0.39594057949698486,
+              "4": 0.4697749669068981,
+              "5": 0.5006618620385351,
+              "8": 0.5777320194146198,
+              "12": 0.6589204294749228
+            },
+            "pose_success_all_eligible": 0.5,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-3": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 1,
+            "no_pose": 23,
+            "strict_raw_poses": 0,
+            "returned_matches": 3771,
+            "scorable_matches": 3763,
+            "nonvisible_returned_matches": 8,
+            "correct_at_native_px": {
+              "1": 3,
+              "2": 19,
+              "4": 44,
+              "5": 53,
+              "8": 115,
+              "12": 200
+            },
+            "precision_all_returned": {
+              "1": 0.0007955449482895784,
+              "2": 0.00503845133916733,
+              "4": 0.011667992574913817,
+              "5": 0.01405462741978255,
+              "8": 0.030495889684433838,
+              "12": 0.05303632988597189
+            },
+            "precision_scorable_only": {
+              "1": 0.0007972362476747276,
+              "2": 0.005049162901939941,
+              "4": 0.011692798299229338,
+              "5": 0.014084507042253521,
+              "8": 0.030560722827531226,
+              "12": 0.053149083178315175
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          },
+          "0-4": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 2,
+            "wrong_raw_poses": 1,
+            "no_pose": 21,
+            "strict_raw_poses": 0,
+            "returned_matches": 3133,
+            "scorable_matches": 3122,
+            "nonvisible_returned_matches": 11,
+            "correct_at_native_px": {
+              "1": 41,
+              "2": 109,
+              "4": 210,
+              "5": 241,
+              "8": 334,
+              "12": 423
+            },
+            "precision_all_returned": {
+              "1": 0.013086498563676987,
+              "2": 0.034790935205872967,
+              "4": 0.06702840727736993,
+              "5": 0.07692307692307693,
+              "8": 0.10660708586019789,
+              "12": 0.13501436323013086
+            },
+            "precision_scorable_only": {
+              "1": 0.01313260730301089,
+              "2": 0.03491351697629724,
+              "4": 0.06726457399103139,
+              "5": 0.07719410634208841,
+              "8": 0.10698270339525945,
+              "12": 0.13549007046764894
+            },
+            "pose_success_all_eligible": 0.08333333333333333,
+            "calibrated_acceptance_evaluated": false
+          },
+          "1-5": {
+            "eligible_positive_pairs": 24,
+            "correct_raw_poses": 0,
+            "wrong_raw_poses": 0,
+            "no_pose": 24,
+            "strict_raw_poses": 0,
+            "returned_matches": 2969,
+            "scorable_matches": 2961,
+            "nonvisible_returned_matches": 8,
+            "correct_at_native_px": {
+              "1": 8,
+              "2": 18,
+              "4": 31,
+              "5": 40,
+              "8": 60,
+              "12": 73
+            },
+            "precision_all_returned": {
+              "1": 0.002694509936005389,
+              "2": 0.006062647356012125,
+              "4": 0.010441226002020883,
+              "5": 0.013472549680026945,
+              "8": 0.020208824520040417,
+              "12": 0.024587403166049175
+            },
+            "precision_scorable_only": {
+              "1": 0.002701789935832489,
+              "2": 0.0060790273556231,
+              "4": 0.010469436001350895,
+              "5": 0.013508949679162444,
+              "8": 0.020263424518743668,
+              "12": 0.02465383316447146
+            },
+            "pose_success_all_eligible": 0.0,
+            "calibrated_acceptance_evaluated": false
+          }
+        },
+        "changed_lighting": {
+          "eligible_positive_pairs": 72,
+          "correct_raw_poses": 2,
+          "wrong_raw_poses": 2,
+          "no_pose": 68,
+          "strict_raw_poses": 0,
+          "returned_matches": 9873,
+          "scorable_matches": 9846,
+          "nonvisible_returned_matches": 27,
+          "correct_at_native_px": {
+            "1": 52,
+            "2": 146,
+            "4": 285,
+            "5": 334,
+            "8": 509,
+            "12": 696
+          },
+          "precision_all_returned": {
+            "1": 0.005266889496606908,
+            "2": 0.014787805125088626,
+            "4": 0.028866605894864783,
+            "5": 0.03382963638205206,
+            "8": 0.05155474526486377,
+            "12": 0.070495290185354
+          },
+          "precision_scorable_only": {
+            "1": 0.005281332520820638,
+            "2": 0.014828356693073329,
+            "4": 0.02894576477757465,
+            "5": 0.033922405037578714,
+            "8": 0.05169612025187893,
+            "12": 0.07068860450944546
+          },
+          "pose_success_all_eligible": 0.027777777777777776,
+          "calibrated_acceptance_evaluated": false
+        }
+      }
+    }
+  ],
+  "precision_denominator": "Allreturnedmatches; known nonvisible returns are incorrect. Scorable-only precision retained separately.",
+  "native_error_thresholds_px": [
+    1,
+    2,
+    4,
+    5,
+    8,
+    12
+  ],
+  "threshold5_used_for_selection": false,
+  "final_camera_pose_criterion": "Unchanged2degrees/1percentmedianreference range; failed poses included.",
+  "stage_attribution_established": false,
+  "stage_limit": "Saved final correspondences cannot determine whether a mismatch originated in coarse proposals or native refinement. A separate proposal-reachability diagnostic is required.",
+  "images_or_depth_arrays_loaded": 0,
+  "neural_forwards": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "full_optimizer_or_neural_replay_performed": false
+}

@@ -1,0 +1,1248 @@
+{
+  "purpose": "spice_hl3_c_native_zed2_geometry_transfer_v101",
+  "scope": "Supplementary physical lunar-analog optics. Twenty-four within-traverse ZED2 left pairs at author-rectified native 640\u00d7360 on one laboratory site. Mocap only scores nominal relative rotation, signed translation direction and epipolar consistency. No calibration or final reserve, principal 512-pixel comparison, metric translation, or illumination-transfer claim.",
+  "output": "runs/spice-hl3-c-geometry-v101",
+  "settings": {
+    "asset_root": "runs/spice-hl3-c-assets-v101",
+    "publication_dispatch_lease_seconds": 1800
+  },
+  "split": "supplementary_analog_diagnostic",
+  "tracks": [
+    "qualified_mocap"
+  ],
+  "profiles": [
+    {
+      "name": "sift_nominal_relative_geometry"
+    }
+  ],
+  "cpu_threads": 2,
+  "calibration_or_final_access": false,
+  "accepted_results": false,
+  "automatic_model_promotion": false,
+  "native_size": [
+    640,
+    360
+  ],
+  "case_ids": [
+    "C-fast-b1-01",
+    "C-fast-b1-02",
+    "C-fast-b1-03",
+    "C-fast-b1-04",
+    "C-fast-b1-05",
+    "C-fast-b1-06",
+    "C-fast-b2-01",
+    "C-fast-b2-02",
+    "C-fast-b2-03",
+    "C-fast-b2-04",
+    "C-fast-b2-05",
+    "C-fast-b2-06",
+    "C-slow-b1-01",
+    "C-slow-b1-02",
+    "C-slow-b1-03",
+    "C-slow-b1-04",
+    "C-slow-b1-05",
+    "C-slow-b1-06",
+    "C-slow-b2-01",
+    "C-slow-b2-02",
+    "C-slow-b2-03",
+    "C-slow-b2-04",
+    "C-slow-b2-05",
+    "C-slow-b2-06"
+  ],
+  "case_counts_by_stream": {
+    "fast": 12,
+    "slow": 12
+  },
+  "expected_software": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "platform": "macOS-26.7.1-x86_64-i386-64bit",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4",
+    "cpu_thread_ceiling": 2
+  },
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "compute_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "source_sha256": {
+    "control_historical_native_v74.py": "1de913d9d00b193a6b134f0c3d6e893bdfd8d05e54a2ac2c79245d03578fa3c9",
+    "run_solar_crosslight_mechanism_v98.py": "96e266d32ce07514f676a399d599bbfe125d08a480b5f5f09bcdd558e4d00af8",
+    "run_solar_distributional_evaluation_v90.py": "f0242f07e205a1035cbf703f559a94344614180c1bdbae32914eed915ab6906f",
+    "run_solar_full_direct_render_v92.py": "23af85c2a9a0ce97271aeec67ac40d25bf78354c3d32995018ee2d64e97884f6",
+    "run_solar_full_native_baselines_v93.py": "845e408506625f6e19ac287da2f915ad1a6665148ce88d7064247fd94965bb93",
+    "run_solar_matched_direct_render_v91.py": "440785230b458c8fc63230ace6b0012cf14128bba3d54c263e70565eecfa0b9f",
+    "run_solar_matched_matchanything_recovery_v91.py": "f12c37f9984e6c42f8eb5cf15f61bf20eb2851028d96371507c17a0acd73c20b",
+    "run_solar_matched_matchanything_v90.py": "0aa645b3ceb899bb40839683f357fa6c4d92d74f9f3c00f9cf4e60fcd84fa10b",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "solar_learning_pipeline_v73.py": "90df3cf8b003e57c1a6e6cdad0c59e5b1d324b962221c2d944bea52a2e86f50e",
+    "run_spice_hl3_geometry_dispatch_v101.py": "dbcb26685761a07c13de54b526198b895fd4782ddba2890384b97bfedb439d5a",
+    "spice_hl3_optical_transfer_v100.py": "011f4f5ac3b793f4d816ddf744152fc48d9afba8d827221ad0d645309d15e8fa"
+  },
+  "metadata_sha256": {
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "reports/solar-full-crosslight-rescue-dispatch-v99.json": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817"
+  },
+  "serial_predecessors": {
+    "reports/solar-full-crosslight-rescue-dispatch-v99.json": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817"
+  },
+  "prepared_manifest_sha256": "d4d9d151be40a80e8fbc628138717141a6279605b7125fd03512731f2454a435",
+  "optical_manifest": {
+    "schema": "spice-hl3-optical-transfer-v100",
+    "trajectory": "C",
+    "camera_key": "zed2:left",
+    "track": "qualified_mocap",
+    "prepared_only": false,
+    "calibration_or_final_access": false,
+    "calibration": {
+      "path": "camera_intrinsics.json",
+      "sha256": "40326c4581e9dff2ab6d5d7d2722ef6619441441650329f116950642229485c5"
+    },
+    "extrinsics": {
+      "path": "sensor_extrinsics.json",
+      "sha256": "113a7cc99e3c337f09a41992632048ea24034bbbb2e3b6630c38b7396818c4cc"
+    },
+    "time_convention": "marker_seconds = camera_seconds + published_t_d",
+    "crop": [
+      0,
+      0,
+      640,
+      360
+    ],
+    "scope": "Supplementary physical lunar-analog geometry diagnostic on one lab site, two traversals. Case selection uses metadata only and does not claim illumination transfer.",
+    "source": "https://doi.org/10.5281/zenodo.13970078",
+    "license": "CC BY 4.0",
+    "metadata_schedule": {
+      "path": "trajectory_C_metadata_cases_v2.json",
+      "sha256": "8e5f38aa087a147dc58979c5f2abee2bcf6580bb2bf31a831cab6929e69034f8"
+    },
+    "acquisition": {
+      "original_release_native_grayscale_png": true,
+      "pixel_arrays_decoded": 0,
+      "network_bytes_read": 7493539
+    },
+    "mocap_streams": {
+      "fast": {
+        "mocap": {
+          "path": "fast_stereo_mocap_data.csv",
+          "sha256": "11b087263fdc29d4e5c5565db47e1e5246083ed7c16422bc86c09af03318e007"
+        },
+        "camera_metadata": {
+          "path": "fast_stereo_left_metadata.csv",
+          "sha256": "e44a784c1d389cfb1314ad40b393677c417c94503cba2e3ccffb83080e45e791"
+        }
+      },
+      "slow": {
+        "mocap": {
+          "path": "slow_stereo_mocap_data.csv",
+          "sha256": "855349ef4c5c3c294957db25bc247e826fe35c6a38e7d75223575392ac0ad1ba"
+        },
+        "camera_metadata": {
+          "path": "slow_stereo_left_metadata.csv",
+          "sha256": "03d1c420f6efa721cb083f662395136558b9b069afce7ad9859fb975b61345d0"
+        }
+      }
+    },
+    "frames": [
+      {
+        "id": "C-fast-029",
+        "path": "frames/C-fast-029.png",
+        "sha256": "b2d4216226d99166b1f1fa4eacf486443148eeb61f59a0854c58833887cc5384",
+        "stream_id": "fast",
+        "timestamp_s": "1726152139.634060590",
+        "camera_metadata_row": 34,
+        "marker_bracket_rows": [
+          18,
+          1
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152139.634060590_29.png"
+      },
+      {
+        "id": "C-fast-030",
+        "path": "frames/C-fast-030.png",
+        "sha256": "2e2369905cf0f34feed8f87ac2f621fcb1fe6a2bb71eda9ca106932ffe238e2c",
+        "stream_id": "fast",
+        "timestamp_s": "1726152139.700705590",
+        "camera_metadata_row": 35,
+        "marker_bracket_rows": [
+          20,
+          21
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152139.700705590_30.png"
+      },
+      {
+        "id": "C-fast-036",
+        "path": "frames/C-fast-036.png",
+        "sha256": "072a928a9e5b74b86dcf48112eac8017f8aeb2a63286a0f1cd1bb393ff9ea721",
+        "stream_id": "fast",
+        "timestamp_s": "1726152140.300689590",
+        "camera_metadata_row": 41,
+        "marker_bracket_rows": [
+          41,
+          42
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152140.300689590_36.png"
+      },
+      {
+        "id": "C-fast-037",
+        "path": "frames/C-fast-037.png",
+        "sha256": "034359149f92a2b0700dcec49a0767b2af1ca75b368051351a8c9af5b651cb73",
+        "stream_id": "fast",
+        "timestamp_s": "1726152140.367485590",
+        "camera_metadata_row": 42,
+        "marker_bracket_rows": [
+          43,
+          44
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152140.367485590_37.png"
+      },
+      {
+        "id": "C-fast-044",
+        "path": "frames/C-fast-044.png",
+        "sha256": "9e4ee2852b221e3e4f046431e3a1c62413e214c05fb444cc6c797fce605c019b",
+        "stream_id": "fast",
+        "timestamp_s": "1726152141.200895590",
+        "camera_metadata_row": 50,
+        "marker_bracket_rows": [
+          70,
+          71
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152141.200895590_44.png"
+      },
+      {
+        "id": "C-fast-047",
+        "path": "frames/C-fast-047.png",
+        "sha256": "51cb13082c9bad038b7233106325b0caf85bb92c3cd3d080214e0d60c45dbb0d",
+        "stream_id": "fast",
+        "timestamp_s": "1726152141.400903590",
+        "camera_metadata_row": 53,
+        "marker_bracket_rows": [
+          77,
+          78
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152141.400903590_47.png"
+      },
+      {
+        "id": "C-fast-053",
+        "path": "frames/C-fast-053.png",
+        "sha256": "6b56b07f2fdcb19b15c62fb07af8b1c67d0eb77726cb67aad65594ff779313fc",
+        "stream_id": "fast",
+        "timestamp_s": "1726152141.934335590",
+        "camera_metadata_row": 61,
+        "marker_bracket_rows": [
+          96,
+          97
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152141.934335590_53.png"
+      },
+      {
+        "id": "C-fast-056",
+        "path": "frames/C-fast-056.png",
+        "sha256": "1f8bbe2446896e1a84cc5893291c0dac30bb36f6f852c526d03a6043048a03ab",
+        "stream_id": "fast",
+        "timestamp_s": "1726152142.134271590",
+        "camera_metadata_row": 64,
+        "marker_bracket_rows": [
+          105,
+          106
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152142.134271590_56.png"
+      },
+      {
+        "id": "C-fast-063",
+        "path": "frames/C-fast-063.png",
+        "sha256": "4e0da9907c8d771bd339e2dac532c38b9707bec33bad7e3f48b03fc0a2cafab8",
+        "stream_id": "fast",
+        "timestamp_s": "1726152142.800889590",
+        "camera_metadata_row": 71,
+        "marker_bracket_rows": [
+          127,
+          128
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152142.800889590_63.png"
+      },
+      {
+        "id": "C-fast-065",
+        "path": "frames/C-fast-065.png",
+        "sha256": "874730ebbf7a8eddddd7c7008287489fa91cdeaae55e4e3d12f5849617bda78a",
+        "stream_id": "fast",
+        "timestamp_s": "1726152142.934128590",
+        "camera_metadata_row": 73,
+        "marker_bracket_rows": [
+          132,
+          133
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152142.934128590_65.png"
+      },
+      {
+        "id": "C-fast-069",
+        "path": "frames/C-fast-069.png",
+        "sha256": "97b67d1bed6de445a404fbec369fff3076dba4d6b71f80ca5a4a40247616a46b",
+        "stream_id": "fast",
+        "timestamp_s": "1726152143.534131590",
+        "camera_metadata_row": 79,
+        "marker_bracket_rows": [
+          151,
+          152
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152143.534131590_69.png"
+      },
+      {
+        "id": "C-fast-072",
+        "path": "frames/C-fast-072.png",
+        "sha256": "1c02d478d79d8870564c8d18bd2ccbe11eb11466226d5990ab1cf2f0fa80f2ac",
+        "stream_id": "fast",
+        "timestamp_s": "1726152143.867487590",
+        "camera_metadata_row": 84,
+        "marker_bracket_rows": [
+          161,
+          162
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152143.867487590_72.png"
+      },
+      {
+        "id": "C-fast-081",
+        "path": "frames/C-fast-081.png",
+        "sha256": "31af8f684c623417579d0e0b0a376f6382c3be27651426afac930bb2bd46caa4",
+        "stream_id": "fast",
+        "timestamp_s": "1726152144.600858590",
+        "camera_metadata_row": 93,
+        "marker_bracket_rows": [
+          182,
+          183
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152144.600858590_81.png"
+      },
+      {
+        "id": "C-fast-083",
+        "path": "frames/C-fast-083.png",
+        "sha256": "8e3511b11e2bd68529c8630913b4fdf80d8b402338ebc8ac004f43defe156b75",
+        "stream_id": "fast",
+        "timestamp_s": "1726152144.800901590",
+        "camera_metadata_row": 96,
+        "marker_bracket_rows": [
+          191,
+          192
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152144.800901590_83.png"
+      },
+      {
+        "id": "C-fast-086",
+        "path": "frames/C-fast-086.png",
+        "sha256": "8bdd0d217c095af915c9a77f261252818b5dba7b42fdce2a492d9ca88fb60efc",
+        "stream_id": "fast",
+        "timestamp_s": "1726152145.200842590",
+        "camera_metadata_row": 100,
+        "marker_bracket_rows": [
+          202,
+          203
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152145.200842590_86.png"
+      },
+      {
+        "id": "C-fast-089",
+        "path": "frames/C-fast-089.png",
+        "sha256": "514994627cf6aa127c2ae06e902b1deb0f4a32de2c100ba1d77480960f6430a8",
+        "stream_id": "fast",
+        "timestamp_s": "1726152145.400934590",
+        "camera_metadata_row": 103,
+        "marker_bracket_rows": [
+          209,
+          210
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152145.400934590_89.png"
+      },
+      {
+        "id": "C-fast-101",
+        "path": "frames/C-fast-101.png",
+        "sha256": "a240ebb3c309338e3c7b3d80903ec04d9d0eed3a0eb7c8a253d29206b6df3fe5",
+        "stream_id": "fast",
+        "timestamp_s": "1726152146.334552590",
+        "camera_metadata_row": 115,
+        "marker_bracket_rows": [
+          232,
+          242
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152146.334552590_101.png"
+      },
+      {
+        "id": "C-fast-102",
+        "path": "frames/C-fast-102.png",
+        "sha256": "0cf9a77dd5e08a331de0f8cef0ec60df7ebb9197cb42be5349fa5b96cff82912",
+        "stream_id": "fast",
+        "timestamp_s": "1726152146.467721590",
+        "camera_metadata_row": 116,
+        "marker_bracket_rows": [
+          245,
+          246
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152146.467721590_102.png"
+      },
+      {
+        "id": "C-fast-107",
+        "path": "frames/C-fast-107.png",
+        "sha256": "e7432a8b8ecce08f29bc3c4bf94c4b69a503e86a9d32c0e656b5716bb5513830",
+        "stream_id": "fast",
+        "timestamp_s": "1726152146.834530590",
+        "camera_metadata_row": 121,
+        "marker_bracket_rows": [
+          258,
+          259
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152146.834530590_107.png"
+      },
+      {
+        "id": "C-fast-109",
+        "path": "frames/C-fast-109.png",
+        "sha256": "bac71eae92d5d1235412d5e8bd2024e5d572be8cbc97e1e3610904f84b0bd576",
+        "stream_id": "fast",
+        "timestamp_s": "1726152146.967686590",
+        "camera_metadata_row": 123,
+        "marker_bracket_rows": [
+          262,
+          263
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152146.967686590_109.png"
+      },
+      {
+        "id": "C-fast-120",
+        "path": "frames/C-fast-120.png",
+        "sha256": "efbb0fac2710d8ddb917aecfab801b9f7eea94a083862c2cb0ab634d1f598974",
+        "stream_id": "fast",
+        "timestamp_s": "1726152147.901049590",
+        "camera_metadata_row": 136,
+        "marker_bracket_rows": [
+          267,
+          291
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152147.901049590_120.png"
+      },
+      {
+        "id": "C-fast-123",
+        "path": "frames/C-fast-123.png",
+        "sha256": "d47711ecf32e0291b126848ba8d3499a1494ff1aa1097d05fbfc560bbd0e91e8",
+        "stream_id": "fast",
+        "timestamp_s": "1726152148.234476590",
+        "camera_metadata_row": 140,
+        "marker_bracket_rows": [
+          305,
+          306
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152148.234476590_123.png"
+      },
+      {
+        "id": "C-fast-127",
+        "path": "frames/C-fast-127.png",
+        "sha256": "4203ddc62e80adab8726609d48699a988b57844d06a8c3906dad557edcc8ddf4",
+        "stream_id": "fast",
+        "timestamp_s": "1726152148.701289590",
+        "camera_metadata_row": 144,
+        "marker_bracket_rows": [
+          321,
+          322
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152148.701289590_127.png"
+      },
+      {
+        "id": "C-fast-128",
+        "path": "frames/C-fast-128.png",
+        "sha256": "05cae146b42f1aebe0e7fc05284056884ccd459a2548cd2b3699ca289b29c7a9",
+        "stream_id": "fast",
+        "timestamp_s": "1726152148.767901590",
+        "camera_metadata_row": 145,
+        "marker_bracket_rows": [
+          323,
+          324
+        ],
+        "archive_member": "fast/stereo/left/stereo_left_1726152148.767901590_128.png"
+      },
+      {
+        "id": "C-slow-016",
+        "path": "frames/C-slow-016.png",
+        "sha256": "d572329e05b9c46e55481a2e56b32d9725bb33409ad0e53d2b58035fe8740a75",
+        "stream_id": "slow",
+        "timestamp_s": "1726151998.260282590",
+        "camera_metadata_row": 17,
+        "marker_bracket_rows": [
+          58,
+          59
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726151998.260282590_16.png"
+      },
+      {
+        "id": "C-slow-027",
+        "path": "frames/C-slow-027.png",
+        "sha256": "a303958eea1fabf93b79a73335537cf9ef3ae0f7f3c1f65fdb6c9125c2bbebb0",
+        "stream_id": "slow",
+        "timestamp_s": "1726151999.126506590",
+        "camera_metadata_row": 30,
+        "marker_bracket_rows": [
+          87,
+          88
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726151999.126506590_27.png"
+      },
+      {
+        "id": "C-slow-078",
+        "path": "frames/C-slow-078.png",
+        "sha256": "ee4c0bd5ba897aca85ee7c320f13b94e7ed59b3217cfbe4966e12a450d277796",
+        "stream_id": "slow",
+        "timestamp_s": "1726152003.560140590",
+        "camera_metadata_row": 93,
+        "marker_bracket_rows": [
+          236,
+          237
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152003.560140590_78.png"
+      },
+      {
+        "id": "C-slow-087",
+        "path": "frames/C-slow-087.png",
+        "sha256": "709844d6f96c50bd1a280aaa6bb63f1279f6db58411af977835168868fe0a78d",
+        "stream_id": "slow",
+        "timestamp_s": "1726152004.426753590",
+        "camera_metadata_row": 104,
+        "marker_bracket_rows": [
+          252,
+          265
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152004.426753590_87.png"
+      },
+      {
+        "id": "C-slow-113",
+        "path": "frames/C-slow-113.png",
+        "sha256": "38b31ab344d78d3abeb5943a45339e184ff40cc642fabfb949ef89fc5a6492a1",
+        "stream_id": "slow",
+        "timestamp_s": "1726152007.326963590",
+        "camera_metadata_row": 136,
+        "marker_bracket_rows": [
+          348,
+          349
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152007.326963590_113.png"
+      },
+      {
+        "id": "C-slow-135",
+        "path": "frames/C-slow-135.png",
+        "sha256": "23b62c570da40828939e387ff8739224d8762ab7d525618f3cd7821a0fa3f91a",
+        "stream_id": "slow",
+        "timestamp_s": "1726152009.227046590",
+        "camera_metadata_row": 159,
+        "marker_bracket_rows": [
+          401,
+          402
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152009.227046590_135.png"
+      },
+      {
+        "id": "C-slow-145",
+        "path": "frames/C-slow-145.png",
+        "sha256": "eb987c9ffd44b4ba16c64262c2fb9d4e6e9ae9829482bc60acc669843fdc3649",
+        "stream_id": "slow",
+        "timestamp_s": "1726152011.27056590",
+        "camera_metadata_row": 177,
+        "marker_bracket_rows": [
+          447,
+          448
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152011.27056590_145.png"
+      },
+      {
+        "id": "C-slow-164",
+        "path": "frames/C-slow-164.png",
+        "sha256": "b3ebcd53ff1a827cd5301e6a66564e954ec786f93848e4a9034b0c687035ffca",
+        "stream_id": "slow",
+        "timestamp_s": "1726152013.160604590",
+        "camera_metadata_row": 206,
+        "marker_bracket_rows": [
+          507,
+          508
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152013.160604590_164.png"
+      },
+      {
+        "id": "C-slow-184",
+        "path": "frames/C-slow-184.png",
+        "sha256": "6e7a7c3f6a3b263aee00cc26175c27ddbd11293d04b2c60323cedc56b5347e23",
+        "stream_id": "slow",
+        "timestamp_s": "1726152016.660731590",
+        "camera_metadata_row": 236,
+        "marker_bracket_rows": [
+          540,
+          541
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152016.660731590_184.png"
+      },
+      {
+        "id": "C-slow-190",
+        "path": "frames/C-slow-190.png",
+        "sha256": "d5e0e764c61c97359367969c5aae6583507b2404813cc2a07d926ec88fa6a575",
+        "stream_id": "slow",
+        "timestamp_s": "1726152017.460610590",
+        "camera_metadata_row": 245,
+        "marker_bracket_rows": [
+          552,
+          553
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152017.460610590_190.png"
+      },
+      {
+        "id": "C-slow-213",
+        "path": "frames/C-slow-213.png",
+        "sha256": "6754b890b21b7316d05e21cd5fbd9a9e2077b059723f34d3866e425debb02e2f",
+        "stream_id": "slow",
+        "timestamp_s": "1726152021.894417590",
+        "camera_metadata_row": 279,
+        "marker_bracket_rows": [
+          583,
+          584
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152021.894417590_213.png"
+      },
+      {
+        "id": "C-slow-214",
+        "path": "frames/C-slow-214.png",
+        "sha256": "fee19353822ab5628dfb5212ca211102f6386066847053e32ac1cc704e0f117a",
+        "stream_id": "slow",
+        "timestamp_s": "1726152021.961030590",
+        "camera_metadata_row": 280,
+        "marker_bracket_rows": [
+          585,
+          586
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152021.961030590_214.png"
+      },
+      {
+        "id": "C-slow-227",
+        "path": "frames/C-slow-227.png",
+        "sha256": "114ac66c6cd9f8f5bb2a6d93449fb9af2f435e2966a38f8840180c4edce3ac6f",
+        "stream_id": "slow",
+        "timestamp_s": "1726152023.527809590",
+        "camera_metadata_row": 295,
+        "marker_bracket_rows": [
+          604,
+          600
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152023.527809590_227.png"
+      },
+      {
+        "id": "C-slow-238",
+        "path": "frames/C-slow-238.png",
+        "sha256": "f4e27bdce3c785079712a3cd2183a1564ddfff6ae27c2d0c464bc63c1b9e3f82",
+        "stream_id": "slow",
+        "timestamp_s": "1726152028.428047590",
+        "camera_metadata_row": 319,
+        "marker_bracket_rows": [
+          627,
+          628
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152028.428047590_238.png"
+      },
+      {
+        "id": "C-slow-242",
+        "path": "frames/C-slow-242.png",
+        "sha256": "77bafba10b84d9c6ad5a0a01f9d95c68740213c748a29d6fb025b854c22f3dfc",
+        "stream_id": "slow",
+        "timestamp_s": "1726152029.361455590",
+        "camera_metadata_row": 326,
+        "marker_bracket_rows": [
+          633,
+          636
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152029.361455590_242.png"
+      },
+      {
+        "id": "C-slow-254",
+        "path": "frames/C-slow-254.png",
+        "sha256": "c55668c62b055f6a256764ecf43ef504e4f6d4fc647660dc2e1d142e89aba493",
+        "stream_id": "slow",
+        "timestamp_s": "1726152032.528055590",
+        "camera_metadata_row": 347,
+        "marker_bracket_rows": [
+          657,
+          658
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152032.528055590_254.png"
+      },
+      {
+        "id": "C-slow-261",
+        "path": "frames/C-slow-261.png",
+        "sha256": "b11d92233967b9da20b224b98ad7e985c52365625da28143fd3c9939b2b85605",
+        "stream_id": "slow",
+        "timestamp_s": "1726152033.328329590",
+        "camera_metadata_row": 356,
+        "marker_bracket_rows": [
+          668,
+          666
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152033.328329590_261.png"
+      },
+      {
+        "id": "C-slow-262",
+        "path": "frames/C-slow-262.png",
+        "sha256": "5dd3c422f76822f36f4062851699bfb58870452db4e16fd8e345ecf4d851e2ea",
+        "stream_id": "slow",
+        "timestamp_s": "1726152033.395075590",
+        "camera_metadata_row": 357,
+        "marker_bracket_rows": [
+          666,
+          669
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152033.395075590_262.png"
+      },
+      {
+        "id": "C-slow-285",
+        "path": "frames/C-slow-285.png",
+        "sha256": "12604ce6242938643f83e098e2951b26005a35fb68b7c25846d93eda4ef7e264",
+        "stream_id": "slow",
+        "timestamp_s": "1726152037.895195590",
+        "camera_metadata_row": 387,
+        "marker_bracket_rows": [
+          695,
+          696
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152037.895195590_285.png"
+      },
+      {
+        "id": "C-slow-312",
+        "path": "frames/C-slow-312.png",
+        "sha256": "4fc235ff0136de25e3657b23cce4c94990155147403fca398d870ca74914f1db",
+        "stream_id": "slow",
+        "timestamp_s": "1726152040.628757590",
+        "camera_metadata_row": 419,
+        "marker_bracket_rows": [
+          766,
+          767
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152040.628757590_312.png"
+      },
+      {
+        "id": "C-slow-342",
+        "path": "frames/C-slow-342.png",
+        "sha256": "6dc85fb6115a1b58df43066e109eef627ce295b74a9d36bcb6c536ae5a00affc",
+        "stream_id": "slow",
+        "timestamp_s": "1726152043.328833590",
+        "camera_metadata_row": 452,
+        "marker_bracket_rows": [
+          828,
+          825
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152043.328833590_342.png"
+      },
+      {
+        "id": "C-slow-348",
+        "path": "frames/C-slow-348.png",
+        "sha256": "5b558f9e4244dd784d3f4875ad878f8ef331c3531a88765b816a139c80994ff2",
+        "stream_id": "slow",
+        "timestamp_s": "1726152043.862284590",
+        "camera_metadata_row": 460,
+        "marker_bracket_rows": [
+          835,
+          836
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152043.862284590_348.png"
+      },
+      {
+        "id": "C-slow-387",
+        "path": "frames/C-slow-387.png",
+        "sha256": "f844705f4a1502728d1037eb6bc5f50a2f8a73049e7c203aa1f90c9cd286ddfc",
+        "stream_id": "slow",
+        "timestamp_s": "1726152047.895815590",
+        "camera_metadata_row": 505,
+        "marker_bracket_rows": [
+          936,
+          937
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152047.895815590_387.png"
+      },
+      {
+        "id": "C-slow-392",
+        "path": "frames/C-slow-392.png",
+        "sha256": "7a0248786003a497f2035ce73d518193806b55d81354e160064f47fe7ac29067",
+        "stream_id": "slow",
+        "timestamp_s": "1726152048.429160590",
+        "camera_metadata_row": 512,
+        "marker_bracket_rows": [
+          945,
+          946
+        ],
+        "archive_member": "slow/stereo/left/stereo_left_1726152048.429160590_392.png"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C-fast-b1-01",
+        "reference": "C-fast-030",
+        "query": "C-fast-036"
+      },
+      {
+        "id": "C-fast-b1-02",
+        "reference": "C-fast-047",
+        "query": "C-fast-053"
+      },
+      {
+        "id": "C-fast-b1-03",
+        "reference": "C-fast-065",
+        "query": "C-fast-069"
+      },
+      {
+        "id": "C-fast-b1-04",
+        "reference": "C-fast-083",
+        "query": "C-fast-086"
+      },
+      {
+        "id": "C-fast-b1-05",
+        "reference": "C-fast-102",
+        "query": "C-fast-107"
+      },
+      {
+        "id": "C-fast-b1-06",
+        "reference": "C-fast-123",
+        "query": "C-fast-127"
+      },
+      {
+        "id": "C-fast-b2-01",
+        "reference": "C-fast-029",
+        "query": "C-fast-037"
+      },
+      {
+        "id": "C-fast-b2-02",
+        "reference": "C-fast-044",
+        "query": "C-fast-056"
+      },
+      {
+        "id": "C-fast-b2-03",
+        "reference": "C-fast-063",
+        "query": "C-fast-072"
+      },
+      {
+        "id": "C-fast-b2-04",
+        "reference": "C-fast-081",
+        "query": "C-fast-089"
+      },
+      {
+        "id": "C-fast-b2-05",
+        "reference": "C-fast-101",
+        "query": "C-fast-109"
+      },
+      {
+        "id": "C-fast-b2-06",
+        "reference": "C-fast-120",
+        "query": "C-fast-128"
+      },
+      {
+        "id": "C-slow-b1-01",
+        "reference": "C-slow-027",
+        "query": "C-slow-078"
+      },
+      {
+        "id": "C-slow-b1-02",
+        "reference": "C-slow-135",
+        "query": "C-slow-145"
+      },
+      {
+        "id": "C-slow-b1-03",
+        "reference": "C-slow-190",
+        "query": "C-slow-213"
+      },
+      {
+        "id": "C-slow-b1-04",
+        "reference": "C-slow-238",
+        "query": "C-slow-254"
+      },
+      {
+        "id": "C-slow-b1-05",
+        "reference": "C-slow-262",
+        "query": "C-slow-285"
+      },
+      {
+        "id": "C-slow-b1-06",
+        "reference": "C-slow-348",
+        "query": "C-slow-387"
+      },
+      {
+        "id": "C-slow-b2-01",
+        "reference": "C-slow-016",
+        "query": "C-slow-087"
+      },
+      {
+        "id": "C-slow-b2-02",
+        "reference": "C-slow-113",
+        "query": "C-slow-164"
+      },
+      {
+        "id": "C-slow-b2-03",
+        "reference": "C-slow-184",
+        "query": "C-slow-214"
+      },
+      {
+        "id": "C-slow-b2-04",
+        "reference": "C-slow-227",
+        "query": "C-slow-242"
+      },
+      {
+        "id": "C-slow-b2-05",
+        "reference": "C-slow-261",
+        "query": "C-slow-312"
+      },
+      {
+        "id": "C-slow-b2-06",
+        "reference": "C-slow-342",
+        "query": "C-slow-392"
+      }
+    ]
+  },
+  "optical_manifest_sha256": "6fb7185f3e4c43249b2817e8b1b7975adf45a33211a3cfd66187303166cb9421",
+  "publication_dispatch_lease_seconds": 1800,
+  "max_calendar_seconds": 120,
+  "publication_ref": "origin/refs/heads/main",
+  "automatic_execution": false,
+  "prepared_only": false,
+  "initial_reservations": [
+    {
+      "job_id": "b0117ca4a0300d7efe5d45352c012d56d0f8f478068a75ece9f980334a52b1c7/candidate_diagnostic",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-03T23:29:58.156353+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "63bb5d6e6cbfea54ece43343d93df40468b3bceeb6e0c438385039c27e95fe47/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:00:21.115423+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "5913790675d1f900b2e429d89b05b839890d87623833a4c9f6712fca4df5f02d/teacher_bank",
+      "category": "training",
+      "seconds": 361,
+      "reserved_utc": "2026-11-04T05:09:16.946531+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "befa53cc3402bc247c73f2fcf69c6d858a76d22b7c90488563d91414d300b0d2/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:18:25.858693+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "977b2e57aff05a0168bd88881d891935887417b7dfc2b11d6cbafaaf7fe5eb6c/teacher_bank",
+      "category": "training",
+      "seconds": 394,
+      "reserved_utc": "2026-11-04T05:20:05.180134+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2d119503b01d2e236f0a246a17f69bc569bb6dc6664a68616da1f401e0b94242/train",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:24:16.047656+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2d119503b01d2e236f0a246a17f69bc569bb6dc6664a68616da1f401e0b94242/exact_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:24:34.952591+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "6b8f5d4155d0803d499cf4075c1688e896b906b6847a8c58b87e58e2fed6b44d/train",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:26:16.078446+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "6b8f5d4155d0803d499cf4075c1688e896b906b6847a8c58b87e58e2fed6b44d/exact_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:26:35.099480+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7/train",
+      "category": "training",
+      "seconds": 595,
+      "reserved_utc": "2026-11-04T05:28:20.954714+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8/train",
+      "category": "training",
+      "seconds": 603,
+      "reserved_utc": "2026-11-04T05:34:25.615436+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "7fda85eb8e526ac0d80323a8f2f0fb2ff1a1e7e26808f2e2e877a4b5602dad0d/reference_physics",
+      "category": "baseline",
+      "seconds": 1020,
+      "reserved_utc": "2026-11-04T05:38:55.730207+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "b32409aba41fd772a72b1a1103563a6bb2e2c727df2dae03521d70b116f81c5f/reference_physics",
+      "category": "baseline",
+      "seconds": 891,
+      "reserved_utc": "2026-11-04T05:44:41.094595+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "59335bc71569896d68937d565a11f1bba44af7f6418827fbf2f3fd1c690fc0f9/reference_physics",
+      "category": "baseline",
+      "seconds": 8289,
+      "reserved_utc": "2026-11-04T05:52:57.845855+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "a3068122f0c8b1e75e6fa3ae7064425ab529e85cdf203dd414867c5dfa9d30a0/reference_physics",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T06:56:53.571631+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "d597ca8cbb0f004f50ec4ad53e9c134c4adf952d4d75b925b580a58a5160fb3e/reference_physics",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T06:58:20.964451+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "0b63ea5bc8edb0492eef20c570773cb6ae611f972efae46167a831ba7cf2cc35/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:02:18.505171+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9a1644908cd71da3c92688f9ad8b809e1d0d539680ce9ffb5901fe31874f6828/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T07:10:27.764746+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9d0c53adbee895d883fa045ad1c10cd4b9ff2ede520dd57e3437da3bdd401d27/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:12:08.972706+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "d6c52e29a39e9894ebc7739db0c9192b7a75b373c5a458d159ffb1e73d79da27/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T07:20:48.689257+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "3ed2770e6bb16390e02566ee55014855b73fe8e34eec03b8041c460b9358a9c5/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:54:15.608707+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "24187be5c0d30286f13232989da4667e4559b26fa10c686e2c24c111e42c2023/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T08:01:34.682908+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "ed2345e8dd79999bed2c52798edc62d27b8a28ef74313e6586a3a622746004bb/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T08:04:14.135574+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "f2018e8a66979463c870b198188fd27c2efa62a4fc242a894261ad4091d7f9f1/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T08:12:16.251902+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "133b7cfb4b8ba08da21b2cb384a7fd4157aa26eb85b6ced62f87482c1556d80d/image_inventory",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T08:50:49.798773+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "0162a8922eda91d9de243305115a7a9d51ec65052f4951854eccef88c31d2b18/pose_free_qualification",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T09:57:46.998714+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9e14f9c1b95eb12a796ec0533e8c9e50af292a86895e763912a91f786f6b0912/evaluation",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T10:06:03.841550+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "7227f0fd2d2ca3e5169e560b302cc248c4184edf71c04d104f61bd0d1e556931/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T10:09:37.588067+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "37d556db5590f7ed0757258bbc30b3a985f85960386808610011e76bd1ad388d/coarse_teacher_domain_qualification",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T11:01:41.322802+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "aa9d30a9f001c86af433bcf121525ce0ba4e03da0274b71119c2a135c0d0444f/coarse128_teacher_bank",
+      "category": "training",
+      "seconds": 72,
+      "reserved_utc": "2026-11-04T11:31:24.167904+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "552096752f7cfef4e31c21e8995b4e12764e7d3bfd2a0de00fb05cb2644fe312/coarse128_teacher_bank",
+      "category": "training",
+      "seconds": 366,
+      "reserved_utc": "2026-11-04T11:33:06.410576+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca/distributional100_pilot",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T11:45:36.587242+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "f27b038155593081eca91834d713af0ef2d431b899f08af5aff3278f9f3d205f/distributional100_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T15:29:55.520219+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "56a6b1f5cbab50ad6fb84f84c50625825e8461b102f7811f98ba08b4d4719f84/distributional2000_study",
+      "category": "training",
+      "seconds": 736,
+      "reserved_utc": "2026-11-04T15:35:07.642999+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "456606f4d2af2b25750d06fb6f88062628ccad673cdee7a3272880ce6cbce473/native_control",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T15:38:12.036571+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "e73cfbdeb5e98b6e138318a0b51169b37f0048708426c26c3ea84d560276b213/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T15:39:54.453611+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "debb173f2b4a0b3281b46ba7e6d62843492a4daa89f851f0ce03cb1e533b50a5/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 180,
+      "reserved_utc": "2026-11-04T15:47:20.384827+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "ee7887774c593b800a88b0774a023280985e51ac194430c8d85e331ab620d647/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T15:49:07.103230+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "e902f75e017d611659b6fffe4e825dcb3c6164c01223c1c3a373250a8249489f/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T15:55:19.830958+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2c070870a4ca63ede04c83e7bd12bce916ff339297e2c3fbc46157083f1cb303/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T15:56:36.825566+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9421f06bdaad9d3b8b9da8e424d4d21b6e5ceda90f6a1d228848842d24c0f909/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 1256,
+      "reserved_utc": "2026-11-04T17:10:10.085839+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9e4c8d69b233d8396e7e05b09d9df8614ff4065d266839d7c1a15b9a5afa70a9/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T19:41:02.129851+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "82e51b9a3e325e8eafc3022c7ac613dbce1a2400b71405a32eef4aca3dd8f1bc/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 5047,
+      "reserved_utc": "2026-11-04T19:48:16.698621+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2eb77cccb34b602c8b355af58190890cf8ef446ec0788d3ea8949d6ce3307899/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 1256,
+      "reserved_utc": "2026-11-04T20:15:05.878338+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "89ce084f6ec3d76eff93de1be2f7f27d760924664c437e9ce8462853721eb6ff/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 360,
+      "reserved_utc": "2026-11-04T20:24:13.206887+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "de83a2d240a0346b8c96b71037710d169301652b5e0056fd10e671730744a877/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 240,
+      "reserved_utc": "2026-11-04T20:26:04.531665+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 3182,
+      "reserved_utc": "2026-11-04T20:32:59.762863+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "b7e821211828566d7d60d5250fb230d02e1e73d6092a96418ce5435ab3306b28/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 902,
+      "reserved_utc": "2026-11-04T21:39:03.192291+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "f673aedc2927e15b87897eccdc63506cb409983d37d5501dd2169a3729ee51e7/matched_development_evaluation",
+      "category": "baseline",
+      "seconds": 542,
+      "reserved_utc": "2026-11-04T21:44:36.247062+00:00",
+      "refund_on_failure": false
+    }
+  ],
+  "created_utc": "2026-11-04T21:46:04.003269+00:00",
+  "latest_start_utc": "2026-11-04T22:16:04.003269+00:00",
+  "absolute_deadline_utc": "2026-11-04T22:18:04.003269+00:00"
+}

@@ -1,0 +1,363 @@
+{
+  "scope": "Completed train-only cost/optimizer pilot; no context localization result.",
+  "protocol": {
+    "scope": "Train-only optimizer/cost pilot, not a model-selection study or demonstrated localization gain.",
+    "variant": "cross_context",
+    "steps": 100,
+    "seed": 20261101,
+    "publication_commit": "62446cb93a2eb55b43b6127896bbb61d62f47a4d",
+    "source_sha256": {
+      "train_context_pilot_v15.py": "a1a9f1641d4338f97bf8618f2e7accc36cfbbbfa5e0576a8baa90232d1f247f1",
+      "context_supervision_v15.py": "860a1370c076149661961f174ba44cc2758602ae7daca5e2be1985b72da2cf90",
+      "global_context_v15.py": "3ebbb0576f8bffde112a24f8a5f3e7d4271af8d2af1cb1e35462879bd0388b3d",
+      "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+      "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+      "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+      "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+      "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+      "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+      "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+      "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+      "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+      "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59"
+    },
+    "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "input_sha256": {
+      "data/localization-v5-development/023b36ecd59ce2ac.npz": "e4caf3f8997a87f2f8cedf50f9def1e8416ab6c004fa0e0c269b83a530c9dd78",
+      "data/localization-v5-development/0dcbde0b1faa2a47.npz": "89440328f2370157aeed2c2e4b30dced165fd41140a64c31dd9afa4329d2a11b",
+      "data/localization-v5-development/8dfcdbd8669c0b5c.npz": "a5509f4a72d2a092f823fbecefe8706db0deb31f98e7d81c5a95bbb970a34d17",
+      "data/localization-v5-development/b0403e0c2f2754f4.npz": "f84a05d8dc3a92016934116aee8b9c3e9041bce8fa533e523ea0304f69332350",
+      "data/localization-v5-development/e955ab19b4f4ba98.npz": "1a22ba853ff02b6b60905f433b1deef3ec6d1ad4e73535b24f0d8eaac6d14b68",
+      "data/localization-v5-development/7986e4df0ba9208e.npz": "c8dd8db51dcbc1b1edb850796d646cb146cedf08c35876a80ec130d1cc572dc6",
+      "data/localization-v5-development/ce6d1ed95120691d.npz": "0f4c6292d8d97f99c6c849fd2ee938be4d06424272f506460f8452995d3df135",
+      "data/localization-v5-development/2cca330426d284b1.npz": "ba376aee520b6fb0cc3c99182d92e9ef96c777659eec41c723a7bb1bf82faf06",
+      "data/localization-v5-development/c1f9d63a0f47e179.npz": "c4b576c3271e4891b1f2dd66dbe27da75863a300b381ae9c15e20000d46b962b",
+      "data/localization-v5-development/02c8b2c7a672270e.npz": "8f2b4444f34d45c5ef5a8b34eb4be04cb454fef600bd05be962b785b312682f5",
+      "data/localization-v5-development/0300d17fcde9da02.npz": "8d5a9ee09ecee5c1caa60dc56156748c9366ec2acc080608d8060562b5bbb7cf",
+      "data/localization-v5-development/deacf5c7e57538d6.npz": "9334791fc06f496a3c022d9391f1002c7be17531eeb8d4317dbb7fcf7b1831c5",
+      "data/localization-v5-development/46bac274a1c8c189.npz": "df48e70abd3b13dd54e57ca1a2db5cbd4f77b9c493a35cb4ce01344d1a80b49b",
+      "data/localization-v5-development/0728b4d86ace7357.npz": "c9b43b02f313d921bbdf1c2282310b2fe165a06f3edeeafcc7c630443eb7c727",
+      "data/localization-v5-development/07ae3b83b074b737.npz": "c41deb52359d1bf33b831932565e64a3b3b8254f7042b79e692606e8aef75bdf",
+      "data/localization-v5-development/491bd4067bacda61.npz": "b6769b729d94e151c205280eb22266f015c6b41f0285b21db5b009030541ae85",
+      "data/localization-v5-development/ca623be66c1a98f9.npz": "6e453bd39ea22928f0e6c7c4817b25db464005aa3d4d6c92973bc8b63405743a",
+      "data/localization-v5-development/f98e2a3a1ea1a48a.npz": "d46c5212dedc6d0db385cd72d63f6bb2ce7e68a0f2628e4c6277d55e13a69cfb"
+    },
+    "frozen_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+    "training_support": {
+      "tiles": 18,
+      "groups": 12,
+      "points_per_image": 676,
+      "per_tile": {
+        "nadir/nadir/6864": {
+          "component": "axial-v5-component-0001",
+          "forward_positive": [
+            600,
+            625,
+            608,
+            583
+          ],
+          "reverse_positive": [
+            625,
+            625,
+            605,
+            606
+          ]
+        },
+        "nadir/nadir/6138": {
+          "component": "axial-v5-component-0002",
+          "forward_positive": [
+            625,
+            625,
+            625,
+            625
+          ],
+          "reverse_positive": [
+            600,
+            625,
+            625,
+            600
+          ]
+        },
+        "nadir/nadir/6507": {
+          "component": "axial-v5-component-0003",
+          "forward_positive": [
+            596,
+            613,
+            627,
+            610
+          ],
+          "reverse_positive": [
+            583,
+            606,
+            624,
+            600
+          ]
+        },
+        "nadir/nadir/6453": {
+          "component": "axial-v5-component-0003",
+          "forward_positive": [
+            612,
+            587,
+            576,
+            600
+          ],
+          "reverse_positive": [
+            612,
+            587,
+            576,
+            600
+          ]
+        },
+        "nadir/nadir/336": {
+          "component": "axial-v5-component-0004",
+          "forward_positive": [
+            600,
+            575,
+            575,
+            600
+          ],
+          "reverse_positive": [
+            600,
+            578,
+            578,
+            600
+          ]
+        },
+        "nadir/nadir/6381": {
+          "component": "axial-v5-component-0007",
+          "forward_positive": [
+            627,
+            601,
+            600,
+            625
+          ],
+          "reverse_positive": [
+            622,
+            598,
+            600,
+            625
+          ]
+        },
+        "nadir/nadir/6303": {
+          "component": "axial-v5-component-0007",
+          "forward_positive": [
+            604,
+            581,
+            577,
+            600
+          ],
+          "reverse_positive": [
+            596,
+            579,
+            582,
+            600
+          ]
+        },
+        "nadir/nadir/2464": {
+          "component": "axial-v5-component-0008",
+          "forward_positive": [
+            579,
+            564,
+            587,
+            603
+          ],
+          "reverse_positive": [
+            595,
+            576,
+            600,
+            619
+          ]
+        },
+        "nadir/nadir/6297": {
+          "component": "axial-v5-component-0009",
+          "forward_positive": [
+            625,
+            615,
+            616,
+            626
+          ],
+          "reverse_positive": [
+            625,
+            636,
+            634,
+            624
+          ]
+        },
+        "oblique/oblique/2770": {
+          "component": "axial-v5-component-0010",
+          "forward_positive": [
+            579,
+            591,
+            593,
+            582
+          ],
+          "reverse_positive": [
+            651,
+            633,
+            616,
+            632
+          ]
+        },
+        "oblique/oblique/4621": {
+          "component": "axial-v5-component-0011",
+          "forward_positive": [
+            113,
+            112,
+            112,
+            113
+          ],
+          "reverse_positive": [
+            670,
+            673,
+            674,
+            675
+          ]
+        },
+        "oblique/oblique/7432": {
+          "component": "axial-v5-component-0012",
+          "forward_positive": [
+            676,
+            676,
+            676,
+            676
+          ],
+          "reverse_positive": [
+            266,
+            265,
+            266,
+            266
+          ]
+        },
+        "oblique/oblique/7504": {
+          "component": "axial-v5-component-0013",
+          "forward_positive": [
+            649,
+            643,
+            645,
+            651
+          ],
+          "reverse_positive": [
+            561,
+            557,
+            565,
+            568
+          ]
+        },
+        "dynamicgood/dynamic/1227": {
+          "component": "axial-v5-component-0002",
+          "forward_positive": [
+            241,
+            235,
+            252,
+            259
+          ],
+          "reverse_positive": [
+            203,
+            197,
+            215,
+            222
+          ]
+        },
+        "dynamicgood/dynamic/825": {
+          "component": "axial-v5-component-0014",
+          "forward_positive": [
+            573,
+            558,
+            571,
+            587
+          ],
+          "reverse_positive": [
+            377,
+            369,
+            385,
+            394
+          ]
+        },
+        "dynamicgood/dynamic/1422": {
+          "component": "axial-v5-component-0009",
+          "forward_positive": [
+            551,
+            560,
+            581,
+            572
+          ],
+          "reverse_positive": [
+            270,
+            274,
+            284,
+            279
+          ]
+        },
+        "dynamicgood/dynamic/1437": {
+          "component": "axial-v5-component-0013",
+          "forward_positive": [
+            379,
+            383,
+            408,
+            405
+          ],
+          "reverse_positive": [
+            240,
+            241,
+            259,
+            259
+          ]
+        },
+        "dynamicgood/dynamic/936": {
+          "component": "axial-v5-component-0013",
+          "forward_positive": [
+            623,
+            614,
+            622,
+            631
+          ],
+          "reverse_positive": [
+            358,
+            355,
+            357,
+            362
+          ]
+        }
+      }
+    },
+    "context_parameters": 25664,
+    "total_with_frozen_backbone": 53936,
+    "total_with_separate_learned_fine": 89169,
+    "feedforward_width": 64,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "cpu_threads": 2,
+    "pairs_per_update": 1,
+    "tokens_per_image": 676,
+    "negative_pair_every": 4,
+    "fitting": "Both directions projected3D candidate likelihood, positive score margin0.7, negative max-score margin0.5; ignore ambiguous candidate-edge bands.",
+    "augmentation": "Actual128px exposure/gamma/blur/noise/quantization plus query quarter turns. Physical lighting from released renders.",
+    "selection_inference": 0,
+    "selection_pixels_loaded": 0,
+    "calibration_or_test_pixels_loaded": 0,
+    "max_seconds": 600,
+    "timing": "Observed two-thread fitting cost under concurrent workload, not isolated inference latency.",
+    "environment": {
+      "torch": "2.2.2",
+      "numpy": "1.26.4",
+      "opencv": "4.10.0"
+    },
+    "started_utc": "2026-11-01T03:48:09.865100+00:00"
+  },
+  "summary": {
+    "scope": "Train-only optimizer/cost pilot, not a model-selection study or demonstrated localization gain.",
+    "completed_steps": 100,
+    "elapsed_seconds": 14.329446590010775,
+    "final_weight_change_l2": 0.4780427813529968,
+    "negative_pairs": 25,
+    "no_selection_inference": true,
+    "no_selection_pixels_loaded": true,
+    "no_calibration_or_test_pixels_loaded": true,
+    "frozen_backbone_unchanged": true,
+    "context_parameters": 25664
+  },
+  "independent_retraining_audit": "reports/native_context_pilot_audit_v15.json",
+  "audit_sha256": "5daeaf3fc18b0b8f5e544de4c9b6ddd439114ae3532cf4e955a6a94b4556676a"
+}

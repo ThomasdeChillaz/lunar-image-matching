@@ -1,0 +1,74 @@
+{
+  "scope": "100-step native refinement software/development pilot; no fresh, acceptance or consistent-gain claim.",
+  "summary": {
+    "scope": "Native refinement on corrected development data; original fresh-final gate remains unmet.",
+    "pilot": true,
+    "winner": "dustbin",
+    "elapsed_seconds": 282.29777162498794,
+    "results": [
+      {
+        "variant": "dustbin",
+        "seed": 20261101,
+        "completed_steps": 100,
+        "selected_step": 100,
+        "selection_key": [
+          11,
+          3079,
+          -100
+        ],
+        "evaluation": {
+          "cases": 72,
+          "correct_poses": 47,
+          "strict_poses": 16,
+          "estimated_poses": 55,
+          "correct_at_two_px": 10401,
+          "returned": 23215,
+          "scorable": 21335,
+          "bank_only": false
+        },
+        "final_weight_change_l2": 0.8508718013763428
+      }
+    ]
+  },
+  "protocol": {
+    "scope": "Native refinement on corrected development data; original fresh-final gate remains unmet.",
+    "variants": [
+      "dustbin"
+    ],
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "steps": 100,
+    "interval": 100,
+    "pilot": true,
+    "source_sha256": {
+      "train_native_refinement_v7.py": "3f50347a51d19d11bf23f9a84eb8e38bbe088d8c4c87fa7540f9d3cb4d6e2513",
+      "native_refinement_v7.py": "89f3d8773d335c923e1065fc21d60de51d68c22dcac8a7788e5fd0d363fb6ed0",
+      "native_pipeline_v7.py": "477a429c6d47271afe6f5724b9664b51211fb97ee23bc338cf8e32ed07a7ac33",
+      "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59",
+      "localization_refiner_v3.py": "da741c1dbb9525f7a9f7e8376ff0c7c71b06acde5495d2a0d53731d07d83e2ed",
+      "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+      "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+      "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+      "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+      "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+      "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+      "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+      "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+      "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+      "verify_axial_results_v5.py": "514fa509a791765ab6d78a79f60211f4811b8bc8bcd9cda6e0f1c4f53e73d733"
+    },
+    "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "label_audit": {
+      "cases": 234,
+      "proposed_points": 75310,
+      "geometrically_visible": 70537,
+      "depth_support": "All26 native depth pairs finite/positive; fixed crop bounds verified.",
+      "labels": "Independent axial projection/visibility replay; predictions choose sampling locations, never ground truth."
+    },
+    "exact_pose_gate_sha256": "580625de761f9559a64b3e552f848a6c71d260053c074e7a72e5bf416ad32fd9",
+    "calibration_or_test_pixels_loaded": 0
+  }
+}

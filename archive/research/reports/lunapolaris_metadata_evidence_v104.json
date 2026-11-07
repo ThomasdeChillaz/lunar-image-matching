@@ -1,0 +1,623 @@
+{
+  "scope": "Sidecars, SQLite schema and timestamp index only. No image, point cloud, transform or pose payloads fetched.",
+  "calibration": {
+    "record": 16728838,
+    "doi": "10.5281/zenodo.16728838",
+    "version": "1.0.0",
+    "file": {
+      "key": "calibration_results.json",
+      "size": 4046,
+      "publisher_md5": "b80161a348720252f5d5335cc0af56d9",
+      "url": "https://zenodo.org/api/records/16728838/files/calibration_results.json/content",
+      "sha256": "4d6aff2c8f6109aa7a2ad756e1f9824bb7597dc28b92f6339eda78571fb51bff"
+    },
+    "dimensions": [
+      640,
+      360
+    ],
+    "fields": [
+      "DIM",
+      "Q",
+      "R",
+      "T",
+      "calibration_time",
+      "height",
+      "left_P",
+      "left_RT",
+      "left_camera_matrix",
+      "left_dist",
+      "left_right_criteria",
+      "left_right_flags",
+      "left_rms",
+      "right_P",
+      "right_RT",
+      "right_camera_matrix",
+      "right_dist",
+      "right_rms",
+      "stereo_criteria",
+      "stereo_flags",
+      "stereo_rms",
+      "width"
+    ]
+  },
+  "sequences": [
+    {
+      "sequence": "01",
+      "record": 15737938,
+      "doi": "10.5281/zenodo.15737938",
+      "version": "1.0.0",
+      "archive": {
+        "key": "sequence_01.db3",
+        "size": 33827237888,
+        "publisher_md5": "be6629e277e209de6fb9e479ffd1ec98",
+        "url": "https://zenodo.org/api/records/15737938/files/sequence_01.db3/content"
+      },
+      "metadata": {
+        "key": "metadata.yaml",
+        "size": 8917,
+        "publisher_md5": "c98a57bad7d8e53e4f28132c97858401",
+        "url": "https://zenodo.org/api/records/15737938/files/metadata.yaml/content",
+        "sha256": "16348d6d0a5f70ba79d23732d1d909395edd4cd6fbfa8e936269d6bf922a17c5"
+      },
+      "bag_duration_ns": 912124976603,
+      "bag_start_ns": 1750084249798238824,
+      "messages": 494324,
+      "topics": [
+        {
+          "name": "/leo01/zed2/left/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 13118
+        },
+        {
+          "name": "/leo01/zed2/right/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 13244
+        },
+        {
+          "name": "/leo01/zed2/left/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 13197
+        },
+        {
+          "name": "/leo01/zed2/atm_press",
+          "type": "sensor_msgs/msg/FluidPressure",
+          "messages": 22333
+        },
+        {
+          "name": "/leo01/joint_states",
+          "type": "sensor_msgs/msg/JointState",
+          "messages": 18219
+        },
+        {
+          "name": "/leo01/zed2/imu/data",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 88947
+        },
+        {
+          "name": "/leo01/zed2/imu/data_raw",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 88963
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 27523
+        },
+        {
+          "name": "/tf",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 10001
+        },
+        {
+          "name": "/leo01/zed2/imu/mag",
+          "type": "sensor_msgs/msg/MagneticField",
+          "messages": 44773
+        },
+        {
+          "name": "/leo01/zed2/right/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 13233
+        },
+        {
+          "name": "/tf_static",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 3
+        },
+        {
+          "name": "/leo01/zed2/left_cam_imu_transform",
+          "type": "geometry_msgs/msg/TransformStamped",
+          "messages": 89047
+        },
+        {
+          "name": "/leo01/livox/imu",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 16207
+        },
+        {
+          "name": "/leo01/livox/lidar",
+          "type": "sensor_msgs/msg/PointCloud2",
+          "messages": 7904
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/rectified/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 27610
+        },
+        {
+          "name": "/leo01/robot_description",
+          "type": "std_msgs/msg/String",
+          "messages": 2
+        }
+      ],
+      "schema": {
+        "schema": {
+          "kind": "table",
+          "table": "schema",
+          "root_page": 2,
+          "sql": "CREATE TABLE schema(schema_version INTEGER PRIMARY KEY,ros_distro TEXT NOT NULL)"
+        },
+        "metadata": {
+          "kind": "table",
+          "table": "metadata",
+          "root_page": 3,
+          "sql": "CREATE TABLE metadata(id INTEGER PRIMARY KEY,metadata_version INTEGER NOT NULL,metadata TEXT NOT NULL)"
+        },
+        "topics": {
+          "kind": "table",
+          "table": "topics",
+          "root_page": 4,
+          "sql": "CREATE TABLE topics(id INTEGER PRIMARY KEY,name TEXT NOT NULL,type TEXT NOT NULL,serialization_format TEXT NOT NULL,offered_qos_profiles TEXT NOT NULL)"
+        },
+        "messages": {
+          "kind": "table",
+          "table": "messages",
+          "root_page": 5,
+          "sql": "CREATE TABLE messages(id INTEGER PRIMARY KEY,topic_id INTEGER NOT NULL,timestamp INTEGER NOT NULL, data BLOB NOT NULL)"
+        },
+        "timestamp_idx": {
+          "kind": "index",
+          "table": "messages",
+          "root_page": 6,
+          "sql": "CREATE INDEX timestamp_idx ON messages (timestamp ASC)"
+        }
+      },
+      "schema_page": {
+        "content_range": "bytes 0-4095/33827237888",
+        "sha256": "993d9e86752815452b1f951ecded1533ecce6b04372f2367398c20985d631d0c",
+        "etag": null
+      },
+      "pages": {
+        "1": {
+          "content_range": "bytes 0-4095/33827237888",
+          "sha256": "993d9e86752815452b1f951ecded1533ecce6b04372f2367398c20985d631d0c",
+          "etag": null
+        },
+        "6": {
+          "content_range": "bytes 20480-24575/33827237888",
+          "sha256": "dcbcdaae7675390e9724d97f06e62f828e2beb3a98bd47f491b95b17344776e4",
+          "etag": null
+        },
+        "3888788": {
+          "content_range": "bytes 15928471552-15928475647/33827237888",
+          "sha256": "6cc1e04d89aaebe32e812a9389e6cbe0dabc5864b68b6118ea16f7685a78aa8e",
+          "etag": null
+        },
+        "4063572": {
+          "content_range": "bytes 16644386816-16644390911/33827237888",
+          "sha256": "1a477bee4bca92df43d6e101b73113e1676c1353bb289f6984d68ac9da4c6113",
+          "etag": null
+        },
+        "4067669": {
+          "content_range": "bytes 16661168128-16661172223/33827237888",
+          "sha256": "f2941377d558153442d74ab030f1b446090d588edc43c823095bf89b972adc41",
+          "etag": null
+        },
+        "4070798": {
+          "content_range": "bytes 16673984512-16673988607/33827237888",
+          "sha256": "c75823cbece48b658031200af8727b39e60604fba2ab89ea9a57555302a89d7b",
+          "etag": null
+        }
+      },
+      "index_window": {
+        "start_ns": 1750084705860727125,
+        "duration_ns": 1000000000,
+        "count": 553,
+        "first_timestamp_rowid": [
+          1750084705861467762,
+          245121
+        ],
+        "last_timestamp_rowid": [
+          1750084706859207130,
+          245673
+        ]
+      }
+    },
+    {
+      "sequence": "07",
+      "record": 15745932,
+      "doi": "10.5281/zenodo.15745932",
+      "version": "1.0.0",
+      "archive": {
+        "key": "sequence_07.db3",
+        "size": 29695537152,
+        "publisher_md5": "7dff727dc279bd16e4cead8aaa0b04e3",
+        "url": "https://zenodo.org/api/records/15745932/files/sequence_07.db3/content"
+      },
+      "metadata": {
+        "key": "metadata.yaml",
+        "size": 9520,
+        "publisher_md5": "f3098f8e18656b4099603a1ea5de8e26",
+        "url": "https://zenodo.org/api/records/15745932/files/metadata.yaml/content",
+        "sha256": "ad85d1c84138667f9b90979272f0720a156b7a442af815efd050e9fd3b3d7ed8"
+      },
+      "bag_duration_ns": 883240283121,
+      "bag_start_ns": 1750067630647434444,
+      "messages": 435735,
+      "topics": [
+        {
+          "name": "/leo01/joint_states",
+          "type": "sensor_msgs/msg/JointState",
+          "messages": 17569
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/rectified/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 30166
+        },
+        {
+          "name": "/leo01/robot_description",
+          "type": "std_msgs/msg/String",
+          "messages": 2
+        },
+        {
+          "name": "/leo01/zed2/atm_press",
+          "type": "sensor_msgs/msg/FluidPressure",
+          "messages": 18302
+        },
+        {
+          "name": "/leo01/zed2/imu/data",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 75051
+        },
+        {
+          "name": "/leo01/zed2/imu/data_raw",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 75101
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 30099
+        },
+        {
+          "name": "/leo01/zed2/imu/mag",
+          "type": "sensor_msgs/msg/MagneticField",
+          "messages": 36932
+        },
+        {
+          "name": "/leo01/zed2/right/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 11251
+        },
+        {
+          "name": "/tf_static",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 3
+        },
+        {
+          "name": "/tf",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 8796
+        },
+        {
+          "name": "/leo01/livox/lidar",
+          "type": "sensor_msgs/msg/PointCloud2",
+          "messages": 7485
+        },
+        {
+          "name": "/leo01/zed2/left_cam_imu_transform",
+          "type": "geometry_msgs/msg/TransformStamped",
+          "messages": 75297
+        },
+        {
+          "name": "/leo01/livox/imu",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 15914
+        },
+        {
+          "name": "/leo01/zed2/left/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 11245
+        },
+        {
+          "name": "/leo01/zed2/left/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 11254
+        },
+        {
+          "name": "/leo01/zed2/right/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 11268
+        }
+      ],
+      "schema": {
+        "schema": {
+          "kind": "table",
+          "table": "schema",
+          "root_page": 2,
+          "sql": "CREATE TABLE schema(schema_version INTEGER PRIMARY KEY,ros_distro TEXT NOT NULL)"
+        },
+        "metadata": {
+          "kind": "table",
+          "table": "metadata",
+          "root_page": 3,
+          "sql": "CREATE TABLE metadata(id INTEGER PRIMARY KEY,metadata_version INTEGER NOT NULL,metadata TEXT NOT NULL)"
+        },
+        "topics": {
+          "kind": "table",
+          "table": "topics",
+          "root_page": 4,
+          "sql": "CREATE TABLE topics(id INTEGER PRIMARY KEY,name TEXT NOT NULL,type TEXT NOT NULL,serialization_format TEXT NOT NULL,offered_qos_profiles TEXT NOT NULL)"
+        },
+        "messages": {
+          "kind": "table",
+          "table": "messages",
+          "root_page": 5,
+          "sql": "CREATE TABLE messages(id INTEGER PRIMARY KEY,topic_id INTEGER NOT NULL,timestamp INTEGER NOT NULL, data BLOB NOT NULL)"
+        },
+        "timestamp_idx": {
+          "kind": "index",
+          "table": "messages",
+          "root_page": 6,
+          "sql": "CREATE INDEX timestamp_idx ON messages (timestamp ASC)"
+        }
+      },
+      "schema_page": {
+        "content_range": "bytes 0-4095/29695537152",
+        "sha256": "7369359888b67b0a641634570b404b1c28a8e332b836e6c6dd29a702964c1540",
+        "etag": null
+      },
+      "pages": {
+        "1": {
+          "content_range": "bytes 0-4095/29695537152",
+          "sha256": "7369359888b67b0a641634570b404b1c28a8e332b836e6c6dd29a702964c1540",
+          "etag": null
+        },
+        "6": {
+          "content_range": "bytes 20480-24575/29695537152",
+          "sha256": "49cc3f29c31e86b0e5635b1ec5a94d0795516280df2e76c93890eac28bd47177",
+          "etag": null
+        },
+        "3347487": {
+          "content_range": "bytes 13711302656-13711306751/29695537152",
+          "sha256": "280de5096cd9a79668dda8cf559bb3c3ac2c95634d6bcca36f4b1fa80e2f7efe",
+          "etag": null
+        },
+        "3323119": {
+          "content_range": "bytes 13611491328-13611495423/29695537152",
+          "sha256": "eb5be76fc1b35aedb79a6255eb748f54222c425911d567d156af37ba0e95f32e",
+          "etag": null
+        },
+        "3324282": {
+          "content_range": "bytes 13616254976-13616259071/29695537152",
+          "sha256": "ada0321a92e600e32cc1aa02393dfdd98c821e98c07a29ddfa4e6d585ca3b462",
+          "etag": null
+        },
+        "3330176": {
+          "content_range": "bytes 13640396800-13640400895/29695537152",
+          "sha256": "e3e919dccfb2ee9f074eb8a8d8a80822ec476893eae427b2227c0701a4cc2f46",
+          "etag": null
+        }
+      },
+      "index_window": {
+        "start_ns": 1750068072267576004,
+        "duration_ns": 1000000000,
+        "count": 521,
+        "first_timestamp_rowid": [
+          1750068072269561782,
+          197725
+        ],
+        "last_timestamp_rowid": [
+          1750068073265190473,
+          198245
+        ]
+      }
+    },
+    {
+      "sequence": "10",
+      "record": 15747096,
+      "doi": "10.5281/zenodo.15747096",
+      "version": "1.0.0",
+      "archive": {
+        "key": "sequence_10.db3",
+        "size": 34111774720,
+        "publisher_md5": "a26b14273ed087cc7583dad1c29f0ffb",
+        "url": "https://zenodo.org/api/records/15747096/files/sequence_10.db3/content"
+      },
+      "metadata": {
+        "key": "metadata.yaml",
+        "size": 9520,
+        "publisher_md5": "03f44576af8ec238be1658b2eb50434d",
+        "url": "https://zenodo.org/api/records/15747096/files/metadata.yaml/content",
+        "sha256": "9afdae4ab859d42a1577f33cf0c0559f56df8a191c68a5888770dd0f3c87360c"
+      },
+      "bag_duration_ns": 907644042232,
+      "bag_start_ns": 1750070128551527604,
+      "messages": 501157,
+      "topics": [
+        {
+          "name": "/leo01/zed2/left/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 13347
+        },
+        {
+          "name": "/leo01/zed2/right/camera_info",
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 13493
+        },
+        {
+          "name": "/leo01/zed2/left/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 13445
+        },
+        {
+          "name": "/leo01/joint_states",
+          "type": "sensor_msgs/msg/JointState",
+          "messages": 17327
+        },
+        {
+          "name": "/leo01/zed2/atm_press",
+          "type": "sensor_msgs/msg/FluidPressure",
+          "messages": 22204
+        },
+        {
+          "name": "/leo01/zed2/imu/data",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 89430
+        },
+        {
+          "name": "/leo01/zed2/imu/data_raw",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 89427
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 30968
+        },
+        {
+          "name": "/leo01/livox/lidar",
+          "type": "sensor_msgs/msg/PointCloud2",
+          "messages": 7758
+        },
+        {
+          "name": "/tf",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 8849
+        },
+        {
+          "name": "/leo01/zed2/imu/mag",
+          "type": "sensor_msgs/msg/MagneticField",
+          "messages": 45036
+        },
+        {
+          "name": "/leo01/zed2/right/image_rect_color",
+          "type": "sensor_msgs/msg/Image",
+          "messages": 13479
+        },
+        {
+          "name": "/tf_static",
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 3
+        },
+        {
+          "name": "/leo01/zed2/left_cam_imu_transform",
+          "type": "geometry_msgs/msg/TransformStamped",
+          "messages": 89475
+        },
+        {
+          "name": "/leo01/livox/imu",
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 15828
+        },
+        {
+          "name": "/vrpn_mocap/ZED2_camera_marker/rectified/pose",
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 31086
+        },
+        {
+          "name": "/leo01/robot_description",
+          "type": "std_msgs/msg/String",
+          "messages": 2
+        }
+      ],
+      "schema": {
+        "schema": {
+          "kind": "table",
+          "table": "schema",
+          "root_page": 2,
+          "sql": "CREATE TABLE schema(schema_version INTEGER PRIMARY KEY,ros_distro TEXT NOT NULL)"
+        },
+        "metadata": {
+          "kind": "table",
+          "table": "metadata",
+          "root_page": 3,
+          "sql": "CREATE TABLE metadata(id INTEGER PRIMARY KEY,metadata_version INTEGER NOT NULL,metadata TEXT NOT NULL)"
+        },
+        "topics": {
+          "kind": "table",
+          "table": "topics",
+          "root_page": 4,
+          "sql": "CREATE TABLE topics(id INTEGER PRIMARY KEY,name TEXT NOT NULL,type TEXT NOT NULL,serialization_format TEXT NOT NULL,offered_qos_profiles TEXT NOT NULL)"
+        },
+        "messages": {
+          "kind": "table",
+          "table": "messages",
+          "root_page": 5,
+          "sql": "CREATE TABLE messages(id INTEGER PRIMARY KEY,topic_id INTEGER NOT NULL,timestamp INTEGER NOT NULL, data BLOB NOT NULL)"
+        },
+        "timestamp_idx": {
+          "kind": "index",
+          "table": "messages",
+          "root_page": 6,
+          "sql": "CREATE INDEX timestamp_idx ON messages (timestamp ASC)"
+        }
+      },
+      "schema_page": {
+        "content_range": "bytes 0-4095/34111774720",
+        "sha256": "e18b4f42684eb96b58315b37371e92297d9db024bdbc2030ea97cdb88576c161",
+        "etag": null
+      },
+      "pages": {
+        "1": {
+          "content_range": "bytes 0-4095/34111774720",
+          "sha256": "e18b4f42684eb96b58315b37371e92297d9db024bdbc2030ea97cdb88576c161",
+          "etag": null
+        },
+        "6": {
+          "content_range": "bytes 20480-24575/34111774720",
+          "sha256": "938ee356e1f39f2c045e2b8af7e110c83f1e6aefd54b06a540d72059fbc14ef4",
+          "etag": null
+        },
+        "3933304": {
+          "content_range": "bytes 16110809088-16110813183/34111774720",
+          "sha256": "f9cf419faf83d46ea0061d6935065318f86d74a02feb85b1d6bb37b2fcfd1b27",
+          "etag": null
+        },
+        "4181644": {
+          "content_range": "bytes 17128009728-17128013823/34111774720",
+          "sha256": "da0f37735f7c97eba5b1aece65c3f8ccea25c162b76bfaf1767a11cf3c1e588c",
+          "etag": null
+        },
+        "4185739": {
+          "content_range": "bytes 17144782848-17144786943/34111774720",
+          "sha256": "33c55ec7407f5aacbc97c6aa9828a7b86380bcbe5ba03c83aa9eceb4d74ab534",
+          "etag": null
+        },
+        "4189155": {
+          "content_range": "bytes 17158774784-17158778879/34111774720",
+          "sha256": "b14f9762da0aee153d5d437755ca844609b62591b70e1520706e5f1d08f140d4",
+          "etag": null
+        },
+        "4193021": {
+          "content_range": "bytes 17174609920-17174614015/34111774720",
+          "sha256": "1fb8f09abc8a3cdb76f3a7ec89ce517b530f34e88c1d189161ec36e467651d01",
+          "etag": null
+        }
+      },
+      "index_window": {
+        "start_ns": 1750070582373548720,
+        "duration_ns": 1000000000,
+        "count": 547,
+        "first_timestamp_rowid": [
+          1750070582377259623,
+          249704
+        ],
+        "last_timestamp_rowid": [
+          1750070583372675192,
+          250250
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "scope": "Corrected native development replay; no fresh-test or calibrated-acceptance claim.",
+  "trained_runs": 1,
+  "optimizer_steps": 100,
+  "supervision_cases": 234,
+  "development_rows": 72,
+  "selected_variant": "dustbin",
+  "runs": [
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 100,
+      "selection_key": [
+        11,
+        3073,
+        -100
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 18,
+        "estimated_poses": 56,
+        "correct_at_two_px": 10360,
+        "returned": 23213,
+        "scorable": 21348,
+        "bank_only": false
+      }
+    }
+  ],
+  "source_sha256": "bb42256c09d69a4ceea4d2351f5b9303c65de9345341bbdd128f48ba7a418e00",
+  "summary_sha256": "a0f17fc95a7d49581f8bce8aacff53ca0650da16b310ba95b0a41891e91f5479",
+  "calibration_or_test_pixels_loaded": 0
+}

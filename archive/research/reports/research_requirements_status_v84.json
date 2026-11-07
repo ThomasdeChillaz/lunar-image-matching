@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-11-04T08:31:31.103045+00:00",
+  "original_requirements": "reports/requirements_and_sota_v69.json",
+  "original_requirements_sha256": "f9aa5d7391ad88539e51541592fc9f35df7eb75ec03ba00c3c46922e05fcd3ab",
+  "original_scope_and_targets_preserved": true,
+  "broader_goal_status": "active_not_achieved",
+  "scientific_gain_claim": false,
+  "superiority_claim": false,
+  "outreach_ready_performance_claim": false,
+  "primary_metric": {
+    "name": "correctly accepted absolute camera poses / all eligible positive pairs",
+    "rotation_degrees_lte": 2,
+    "absolute_translation_error_lte": "1% median Euclidean reference range",
+    "failed_and_rejected_cases_in_denominator": true
+  },
+  "requirements": [
+    {
+      "id": "R01_primary_metric",
+      "original_target": "At least 70% correctly accepted camera poses / all eligible positive pairs.",
+      "status": "pilot_raw_only_no_accepted_result",
+      "evidence_and_remaining_work": "Bothmodes/checkpoints1/4unique positive raw poses oncostsubset; no correctly accepted full result or selectedcheckpoint."
+    },
+    {
+      "id": "R02_compact_gain",
+      "original_target": "At least 10 percentage points accepted-pose gain versus strongest matched compact control, including deterministic refinement.",
+      "status": "no_pilot_training_gain_matched_controls_pending",
+      "evidence_and_remaining_work": "Rawposecorrectnessunchangedacross0/500/1000/1500/2000; no matchedsimple compact baseline/all384comparison;historical15/96notcomparable."
+    },
+    {
+      "id": "R03_error_constraints",
+      "original_target": {
+        "empirical_accepted_pose_error_lte": 0.01,
+        "empirical_nonoverlap_acceptance_lte": 0.01
+      },
+      "status": "not_measured",
+      "evidence_and_remaining_work": "Calibration and full error/coverage curves remain pending; no1% deployment-risk claim."
+    },
+    {
+      "id": "R04_modern_tradeoff",
+      "original_target": "Modern pose accuracy advantage, or within 3 percentage points correct acceptance and at least 5\u00d7 faster on same CPU at comparable error.",
+      "status": "review_updated_comparisons_pending",
+      "evidence_and_remaining_work": "Primary-paper results are protocol-specific; qualified same-case CPU comparisons are still required."
+    },
+    {
+      "id": "R05_data_gate",
+      "original_target": {
+        "complete_camera_units": 96,
+        "train_groups": 16,
+        "selection_groups": 8,
+        "camera_pairs_per_group": 4,
+        "physical_lights": 24,
+        "train_lights": "even indices only, including teacher targets",
+        "oracle_pose_recovery_lte_failure": 0.05
+      },
+      "status": "complete_audited",
+      "evidence_and_remaining_work": "All96cameras/4608images,192/192exactposes,64trainingbank,and32selectionmaps/index/384cases complete. Originalgeographydependenciesandreserveboundariesretained."
+    },
+    {
+      "id": "R06_all_three_and_ablations",
+      "original_target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
+      "status": "all_on_pilots_complete_all_eight_lunar_ablations_pending",
+      "evidence_and_remaining_work": "All-onSH/pooledoriginal+cachecostpilots160rows,fouruniquepositivepairs. All8lunarabequalitiesnotrun. NativeglobalretrievalprototypeonlydiagnosticbecausepreselectionnativefeatureswouldviolateprincipalCdeferral."
+    },
+    {
+      "id": "R07_training_repetitions",
+      "original_target": "100-update exact replay/cost pilot, then 2,000 updates with seed 20261101; evaluate 0/500/1000/1500/2000.",
+      "status": "base_studies_complete_selection_refused_repeats_pending",
+      "evidence_and_remaining_work": "Both2000studies/exactpilots complete. Bothrequiredfullselectionsrefusedforruntime130720/130295seconds; no partialwinnerorlossselection. Seed2/3remainpending."
+    },
+    {
+      "id": "R08_precision_and_robustness",
+      "original_target": "Diagnose and report native correspondence precision, pose failure and perturbation robustness.",
+      "status": "pilot_precision_failure_diagnosed_robustness_pending",
+      "evidence_and_remaining_work": "Nativeprecision/coarsecoverage/beamdiversitydocumentedfromsavedarrays. Allcheckpoints1/4; changedlight0/2 withrollconfounding. Sunerrors39.99/58.80/2.36degrees on3uniqueemittingpositives. No fullperturbationgain/uncertaintyresult."
+    },
+    {
+      "id": "R09_reserve_and_transfer",
+      "original_target": "Keep four calibration and twelve final terrain groups untouched during development. Preserve both consumed Tycho reserves as historical.",
+      "status": "reserve_closed_transfer_pending",
+      "evidence_and_remaining_work": "Fourcalibration andtwelvefinalterrain groups remain closed; all transfer requirements preserved."
+    },
+    {
+      "id": "R10_resources",
+      "original_target": {
+        "total_model_parameters_lt": 100000,
+        "native_image_pixels": 512,
+        "threads_per_scientific_job": 2,
+        "cumulative_training_wall_hours_lte": 48,
+        "cumulative_pretrained_comparison_wall_hours_lte": 72,
+        "paid_compute": false
+      },
+      "status": "budgets_preserved_both_cache_full_studies_refused",
+      "evidence_and_remaining_work": "Bothnew40rowpilots/replayscomplete;fullestimates70009/70844>unchanged12000. Originalbaseline50700/training15867secondsremain. No charges/deadlines/failuresreset."
+    },
+    {
+      "id": "R11_verification",
+      "original_target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
+      "status": "all_four_40row_replays_and_cache_checks_passed",
+      "evidence_and_remaining_work": "Original+cachedSH/pooled160rowsreplayed;all80old/newpairedoutputs exact.982localtests4skips,980cleanCItests6skips,fresh8toggleimagecontrol/replaypass. Scientificgain/fullablation/finalproofstillpending."
+    },
+    {
+      "id": "R12_final_freeze",
+      "original_target": "Publish hashes for checkpoints, calibration rules, policies, preprocessing, cases and metrics before final inference; evaluate final reserve once.",
+      "status": "not_reached",
+      "evidence_and_remaining_work": "No qualifying calibrated model/final freeze; no final inference performed."
+    },
+    {
+      "id": "R13_interfaces_and_package",
+      "original_target": "Preserve match_terrain.py; localize_terrain.py accepts reference/query images, reference-only geometry/pose, intrinsics, frozen config/checkpoint and optional known-Sun metadata.",
+      "status": "interfaces_present_research_package_incomplete",
+      "evidence_and_remaining_work": "Existing matching command unchanged; experimental native localizer remains uncalibrated. Code and study summaries public; full release/checkpoints/artifacts/brief/paper/principalfigures/demo/unsentdraft remain required."
+    },
+    {
+      "id": "R14_novelty",
+      "original_target": "Specific integrated shared-Sun / learned response / active selection mechanism supported by measured localization gain and targeted prior-art comparison.",
+      "status": "hypothesis_only_targeted_review_updated",
+      "evidence_and_remaining_work": "FullLIMA2025andGeo-LoFTR plus lunar distillation and active/SH prior art inspected. Specific combination needs measured localization gains and falsification controls; no first/superior claim."
+    }
+  ],
+  "remaining_canonical_seconds": {
+    "training": 15867.0,
+    "baseline": 50700.0
+  },
+  "historical_caps_are_conservative_envelopes_not_exact_consumed_wall_time": true,
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "current_evidence": {
+    "pose_pilots": "reports/solar_pose_pilot_results_v83.json",
+    "public_report": "reports/SOLAR_POSE_PILOT_V83.md",
+    "completed_data_audit": "reports/solar_reference_completed_review_v83.json",
+    "bootstrap_diagnosis": "reports/solar_pose_bootstrap_diagnosis_v84.json",
+    "sh_replay": "reports/solar-sh-checkpoint-selection-cost-pilot-replay-v79.json",
+    "pooled_replay": "reports/solar-pooled-checkpoint-selection-cost-pilot-replay-v79.json",
+    "cache_software": "reports/solar_exact_cache_verification_v84.json",
+    "cached_pilots": "reports/solar_cache_pilot_results_v84.json",
+    "cache_saved_comparisons": [
+      "reports/solar_cache_sh_saved_comparison_v84.json",
+      "reports/solar_cache_pooled_saved_comparison_v84.json"
+    ]
+  },
+  "all_eligible_failures_remain_in_denominators": true,
+  "calibration_or_final_access": false,
+  "previous_status": "reports/research_requirements_status_v82.json"
+}

@@ -1,0 +1,301 @@
+{
+  "schema": "sealed_native_measurement_repair_results_v130",
+  "passed": true,
+  "protocol_sha256": "30ced0abda8ea1a7d63438bc660e885a430adc13b8ec03b117e41e354f5eb4e1",
+  "predictions_sha256": "b185a9598d26beb0a01edddf402ef0dfd7edc844f11055daaf6518ec17bfc2b7",
+  "scores_sha256": "b4ef37418a1143f65197ca0050b43fe73ddf47488d60aac9b2b8f0f946e3f4f7",
+  "positive_pairs": 16,
+  "negative_pairs": 16,
+  "terrain_components": [
+    "np31-r0-c4",
+    "np31-r1-c0",
+    "np31-r3-c3"
+  ],
+  "independent_camera_conditions": 4,
+  "calibrated_acceptance_evaluated": false,
+  "known_matching_illumination": true,
+  "calibration_or_final_access": false,
+  "methods": {
+    "legacy": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "retained_positive_matches": 0,
+      "native_two_pixel_matches": 0,
+      "median_positive_inference_seconds": 3.8713817104289774,
+      "patch_failures": {
+        "forward_ambiguous_peak": 4,
+        "forward_boundary_peak": 30,
+        "forward_insufficient_target_support_or_texture": 2,
+        "forward_uniform_template": 40,
+        "forward_weak_peak": 55,
+        "reverse_boundary_peak": 5,
+        "reverse_insufficient_target_support_or_texture": 8
+      },
+      "paired_against_direct": {
+        "wins": 0,
+        "losses": 4,
+        "difference_percentage_points": -25.0,
+        "descriptive_95pct_component_bootstrap_interval_pp": [
+          -78.33333333333334,
+          0.0
+        ],
+        "enumerated_component_draws": 27,
+        "negative_endpoint_weighted_interval": [
+          0.0,
+          0.0
+        ],
+        "negative_draws_with_no_represented_edges": 9
+      },
+      "pilot_improvement_rule_passed": false
+    },
+    "halo": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "retained_positive_matches": 0,
+      "native_two_pixel_matches": 0,
+      "median_positive_inference_seconds": 3.9257250899390783,
+      "patch_failures": {
+        "forward_ambiguous_peak": 5,
+        "forward_boundary_peak": 12,
+        "forward_uniform_template": 40,
+        "forward_weak_peak": 62,
+        "reverse_boundary_peak": 1,
+        "reverse_insufficient_target_support_or_texture": 24
+      },
+      "paired_against_direct": {
+        "wins": 0,
+        "losses": 4,
+        "difference_percentage_points": -25.0,
+        "descriptive_95pct_component_bootstrap_interval_pp": [
+          -78.33333333333334,
+          0.0
+        ],
+        "enumerated_component_draws": 27,
+        "negative_endpoint_weighted_interval": [
+          0.0,
+          0.0
+        ],
+        "negative_draws_with_no_represented_edges": 9
+      },
+      "pilot_improvement_rule_passed": false
+    },
+    "pooled_uniform": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "retained_positive_matches": 14,
+      "native_two_pixel_matches": 6,
+      "median_positive_inference_seconds": 4.487156153918477,
+      "patch_failures": {
+        "forward_ambiguous_peak": 3,
+        "forward_boundary_peak": 13,
+        "forward_outside_returned_search_radius": 6,
+        "forward_uniform_template": 40,
+        "forward_weak_peak": 39,
+        "nonreciprocal_peak": 24,
+        "reverse_ambiguous_peak": 2,
+        "reverse_boundary_peak": 3
+      },
+      "paired_against_direct": {
+        "wins": 0,
+        "losses": 4,
+        "difference_percentage_points": -25.0,
+        "descriptive_95pct_component_bootstrap_interval_pp": [
+          -78.33333333333334,
+          0.0
+        ],
+        "enumerated_component_draws": 27,
+        "negative_endpoint_weighted_interval": [
+          0.0,
+          0.0
+        ],
+        "negative_draws_with_no_represented_edges": 9
+      },
+      "pilot_improvement_rule_passed": false
+    },
+    "pooled_parallax": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "retained_positive_matches": 17,
+      "native_two_pixel_matches": 6,
+      "median_positive_inference_seconds": 4.404175035975641,
+      "patch_failures": {
+        "forward_ambiguous_peak": 5,
+        "forward_boundary_peak": 16,
+        "forward_outside_returned_search_radius": 2,
+        "forward_uniform_template": 41,
+        "forward_weak_peak": 39,
+        "nonreciprocal_peak": 19,
+        "reverse_ambiguous_peak": 3,
+        "reverse_boundary_peak": 2
+      },
+      "paired_against_direct": {
+        "wins": 0,
+        "losses": 4,
+        "difference_percentage_points": -25.0,
+        "descriptive_95pct_component_bootstrap_interval_pp": [
+          -78.33333333333334,
+          0.0
+        ],
+        "enumerated_component_draws": 27,
+        "negative_endpoint_weighted_interval": [
+          0.0,
+          0.0
+        ],
+        "negative_draws_with_no_represented_edges": 9
+      },
+      "pilot_improvement_rule_passed": false
+    },
+    "direct": {
+      "correct": 4,
+      "strict": 4,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 4,
+      "retained_positive_matches": 1868,
+      "native_two_pixel_matches": 1817,
+      "median_positive_inference_seconds": 1.2927580704854336,
+      "patch_failures": {},
+      "paired_against_direct": {
+        "wins": 0,
+        "losses": 0,
+        "difference_percentage_points": 0.0,
+        "descriptive_95pct_component_bootstrap_interval_pp": [
+          0.0,
+          0.0
+        ],
+        "enumerated_component_draws": 27,
+        "negative_endpoint_weighted_interval": [
+          0.0,
+          0.0
+        ],
+        "negative_draws_with_no_represented_edges": 9
+      },
+      "pilot_improvement_rule_passed": false
+    }
+  },
+  "by_condition": {
+    "exposure-0": {
+      "case_id": "u061-l00-17-positive",
+      "purpose": "sparse_tail_primary",
+      "pairs": 4,
+      "methods": {
+        "legacy": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "halo": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_uniform": {
+          "correct": 0,
+          "returned_matches": 6
+        },
+        "pooled_parallax": {
+          "correct": 0,
+          "returned_matches": 5
+        },
+        "direct": {
+          "correct": 0,
+          "returned_matches": 12
+        }
+      }
+    },
+    "exposure-1": {
+      "case_id": "u013-l00-00-positive",
+      "purpose": "bright_control",
+      "pairs": 4,
+      "methods": {
+        "legacy": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "halo": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_uniform": {
+          "correct": 0,
+          "returned_matches": 8
+        },
+        "pooled_parallax": {
+          "correct": 0,
+          "returned_matches": 12
+        },
+        "direct": {
+          "correct": 4,
+          "returned_matches": 1856
+        }
+      }
+    },
+    "exposure-2": {
+      "case_id": "u025-l00-00-positive",
+      "purpose": "near_uniform_control",
+      "pairs": 4,
+      "methods": {
+        "legacy": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "halo": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_uniform": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_parallax": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "direct": {
+          "correct": 0,
+          "returned_matches": 0
+        }
+      }
+    },
+    "exposure-3": {
+      "case_id": "u027-l08-01-positive",
+      "purpose": "near_uniform_control",
+      "pairs": 4,
+      "methods": {
+        "legacy": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "halo": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_uniform": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "pooled_parallax": {
+          "correct": 0,
+          "returned_matches": 0
+        },
+        "direct": {
+          "correct": 0,
+          "returned_matches": 0
+        }
+      }
+    }
+  },
+  "uncertainty_scope": "Exact enumeration of the empirical three-component paired bootstrap; negatives weight both endpoints. Too few terrain groups for a reliable population interval or a 1% risk claim.",
+  "latency_scope": "Actual reference-cache misses and hits in frozen case order; query work always rerun, complete coarse initialization and shared patch preparation included. These are development workload measurements.",
+  "elapsed_seconds": 189.4813449929934
+}

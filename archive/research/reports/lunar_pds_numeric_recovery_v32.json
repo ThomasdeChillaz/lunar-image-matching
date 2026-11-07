@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "original_exact_replay_passed": false,
+  "original_failure_preserved": true,
+  "scope": "Supplemental floating-point replay check; original exact gate remains failed. No terrain-registration discrepancy or metric threshold repaired.",
+  "absolute_numeric_bound_m": 1.862645149230957e-09,
+  "max_absolute_difference_m": 4.656612873077393e-10,
+  "differences": [
+    {
+      "field": "/records/2/sampled_map_minimum_m",
+      "original": 1736224.588320407,
+      "replay": 1736224.5883204076,
+      "absolute_difference_m": 4.656612873077393e-10
+    },
+    {
+      "field": "/records/10/approximate_map_median_rim_radius_m",
+      "original": 1736887.6033031382,
+      "replay": 1736887.603303138,
+      "absolute_difference_m": 2.3283064365386963e-10
+    },
+    {
+      "field": "/records/10/difference_m",
+      "original": 257.8062378799077,
+      "replay": 257.8062378796749,
+      "absolute_difference_m": 2.3283064365386963e-10
+    },
+    {
+      "field": "/records/13/sampled_map_maximum_m",
+      "original": 1736999.348559027,
+      "replay": 1736999.3485590268,
+      "absolute_difference_m": 2.3283064365386963e-10
+    },
+    {
+      "field": "/records/30/sampled_map_minimum_m",
+      "original": 1735439.2094585828,
+      "replay": 1735439.2094585826,
+      "absolute_difference_m": 2.3283064365386963e-10
+    },
+    {
+      "field": "/records/33/approximate_map_median_rim_radius_m",
+      "original": 1735665.845744161,
+      "replay": 1735665.8457441607,
+      "absolute_difference_m": 2.3283064365386963e-10
+    },
+    {
+      "field": "/records/33/difference_m",
+      "original": 174.72764685587026,
+      "replay": 174.72764685563743,
+      "absolute_difference_m": 2.3283064365386963e-10
+    }
+  ],
+  "tests_passed": 266,
+  "optional_skipped": 4,
+  "smoke_rows": 100,
+  "source_sha256": {
+    "lunar_pds_height_v30.py": "8e7f9c1343efef88c95b310433806c72e68cdefc95d8bbad1b6846b0cb6ccdc0",
+    "verify_lunar_pds_v30.py": "4a7e59a65143d89b600cc47713aa3b11692632c9d18be75ec9e22b22e9ec87cb",
+    "probe_cresent_lola_rims_v30.py": "65ff6b71e20c10a13ca457a9e98359b5ed5d20914e86ee48c58af4c97ce55838",
+    "test_lunar_pds_height_v30.py": "73e4bb5347dde17896cf85698728e8916ac9aef95bcc50eb9cbb483c69739148",
+    "pds_height_fixtures_v30.json": "4bea8871574fb9a5ce60cd558ddde6419ea0c0989696bd65d3c456128ee260fc"
+  },
+  "evidence_sha256": {
+    "reports/cresent_lola_rim_probe_v30.json": "4faaab9c56bf408879df7a8d07019f7897e052e298147fbe4966206928c34a92",
+    "runs/replayed-cresent-lola-rims-v30.json": "31cf451e5dcad0be2e4c2f1d5019d41848f45b21c8795d54700dfdca17bdb82e",
+    "runs/localization-v30-data-software-state.json": "ccac9bcbe4614f4d4e2375855f4ea43853e6f1cdebd48456d8c692796d3ec2d3",
+    "runs/localization-v30-repository_tests.log": "54b243a4d28f533b062d14cffaa5dded31fb3e35aa1f10e76d3f4463741c412d",
+    "reports/lunar_pds_software_smoke_v30.json": "e1baf208ae718651c05547045a5a94e283dcd50effebc5e14d58c531560cc2aa",
+    "runs/replayed-pds-height-probe-v30.json": "bb146668d6a93cab9fdcf7fb4c53459c724290e29789cb8ba5eb03fe4437c0ff"
+  }
+}

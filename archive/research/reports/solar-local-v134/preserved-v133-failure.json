@@ -1,0 +1,16 @@
+{
+  "parent_pid": 90029,
+  "protocol_sha256": "eb373992bfbca6ed6911b1f5c7aaa2d10aacb8147dcd182773b328b0c8b51836",
+  "commit": "8c005918f4e653c97461ad3dbd35699f5ba40dfd",
+  "charge": {
+    "job_id": "eb373992bfbca6ed6911b1f5c7aaa2d10aacb8147dcd182773b328b0c8b51836/v127-comparison",
+    "category": "baseline",
+    "seconds": 900,
+    "reserved_utc": "2026-11-05T19:11:15.932635+00:00",
+    "refund_on_failure": false
+  },
+  "deadline": "2026-11-05T19:26:15.932635+00:00",
+  "complete": false,
+  "error": "ValueError",
+  "message": "Worker failed or original cap elapsed"
+}

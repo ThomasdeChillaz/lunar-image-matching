@@ -1,0 +1,168 @@
+{
+  "schema_version": 65,
+  "phase": "render_cost_pilot",
+  "cpu_threads": 2,
+  "max_calendar_seconds": 900,
+  "output": "runs/solar-v65-24light-cost-pilot",
+  "site": {
+    "component": "np31-pilot-0",
+    "sector": "pilot_only",
+    "x": -134995.0,
+    "y": -75005.0,
+    "centre_native_row": 29140,
+    "centre_native_column": 8140,
+    "split": "renderer_cost_pilot",
+    "native_window": [
+      28116,
+      7116,
+      2049,
+      2049
+    ],
+    "centre_latitude_deg": 84.91049148847395,
+    "centre_longitude_deg": 299.05712658650674
+  },
+  "mesh": "data/north-render-v31/pilots-v33-local/np31-pilot-0/mesh.npz",
+  "mesh_sha256": "a236e1a426262e316d6d1ed7a2e7c003362ec5ae2c771f66c8e880e1690664ec",
+  "core_max_height": 110.69960021972656,
+  "camera_pairs": [
+    {
+      "component": "np31-pilot-0",
+      "split": "renderer_cost_pilot",
+      "family": "training_motion",
+      "pair_index": 0,
+      "seed_sha256": "0df596b4e44ea002778fe49d5dd34c97eea46195ba66845ebac803b32a86ed18",
+      "relative_roll_parameter_degrees": -0.4485461389113752,
+      "reference": {
+        "position": [
+          -24.765377247096325,
+          17.650970980224088,
+          1377.9759252904687
+        ],
+        "target": [
+          -58.15823495023087,
+          -34.6280419290335,
+          0.0
+        ],
+        "roll_degrees": -16.803573247533393,
+        "cam2world": [
+          [
+            0.9567550660206083,
+            0.28988563291383845,
+            -0.024208747882623397,
+            -24.765377247096325
+          ],
+          [
+            0.2888837913649819,
+            -0.9566136625505128,
+            -0.037900603006906765,
+            17.650970980224088
+          ],
+          [
+            -0.034145259268231636,
+            0.029268079059562732,
+            -0.9989882285681191,
+            1377.9759252904687
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fov_degrees": 60.0,
+        "intrinsics": [
+          [
+            443.4050067376327,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            443.4050067376327,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "query": {
+        "position": [
+          413.6533415106576,
+          -7.5550836207124235,
+          1571.7394458786107
+        ],
+        "target": [
+          -4.72057462657429,
+          84.14739321151151,
+          0.0
+        ],
+        "roll_degrees": -17.252119386444768,
+        "cam2world": [
+          [
+            0.9271679449213676,
+            0.2727688703810237,
+            -0.2568204533547667,
+            413.6533415106576
+          ],
+          [
+            0.2961066348406053,
+            -0.9534946671950592,
+            0.05629192156922541,
+            -7.5550836207124235
+          ],
+          [
+            -0.2295222488423727,
+            -0.12823830543813217,
+            -0.9648183633745246,
+            1571.7394458786107
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fov_degrees": 60.0,
+        "intrinsics": [
+          [
+            443.4050067376327,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            443.4050067376327,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "render_solar_data_v65.py": "e66d7561fd1a5d0d863fa882d532ff4e8f40a24feb3ee956419cdec6803a9ea3",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "north_camera_scene_v59.py": "169a9319d6b611d7ff40a34c5e20500e378acf990d6f7fa98fae1cb8570c3845",
+    "north_camera_correspondences_v59.py": "de5f20027b35b1cba82073b6aa665483ab4c8d2564e52a2a76770c89716ed1f8",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "blender_camera_control_v31.py": "5c77ed2d97aaac47c1d0b556c977def5e751cc6b2a6b4d95e3c8b00ac4fa632d"
+  },
+  "calibration_or_final_access": false,
+  "training_allowed": false,
+  "new_camera_seed": 20261104,
+  "lighting_count": 24,
+  "original_v59_and_v62_attempts_unchanged": true,
+  "scope": "ONE newly seeded motion pair on an old excluded cost-pilot terrain.48new512pxphysical beauty images. No neural inference or training. Main96pair development acquisition not admitted before measured cost/geometry audit."
+}

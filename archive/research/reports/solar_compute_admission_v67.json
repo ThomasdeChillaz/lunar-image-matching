@@ -1,0 +1,463 @@
+{
+  "schema_version": 67,
+  "accounting_complete": true,
+  "accounting_kind": "Conservative historical calendar-envelope allocation for admission, NOT exact measured CPU/wall usage.",
+  "exact_consumed_training_seconds": null,
+  "exact_consumed_baseline_seconds": null,
+  "charged_training_upper_bound_seconds": 152580.0,
+  "charged_baseline_upper_bound_seconds": 192000.0,
+  "training_budget_seconds": 172800,
+  "baseline_budget_seconds": 259200,
+  "remaining_training_wall_seconds": 20220.0,
+  "remaining_baseline_wall_seconds": 67200.0,
+  "charged_training_windows": [
+    [
+      "2026-10-31T18:00:00+00:00",
+      "2026-11-01T20:48:00+00:00"
+    ],
+    [
+      "2026-11-02T07:45:00+00:00",
+      "2026-11-02T23:20:00+00:00"
+    ]
+  ],
+  "baseline_window": [
+    "2026-10-31T18:00:00+00:00",
+    "2026-11-02T23:20:00+00:00"
+  ],
+  "artifact_roots": [
+    {
+      "root": "runs/localization-v13-surface-development",
+      "checkpoint_files": 20,
+      "metadata_timestamps": [
+        "2026-11-01T02:50:52.396750+00:00",
+        "2026-11-01T02:54:51.491661+00:00",
+        "2026-11-01T03:04:34.449246+00:00",
+        "2026-11-01T03:14:14.012607+00:00",
+        "2026-11-01T03:25:57.875331+00:00",
+        "2026-11-01T03:38:02.204361+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v13-surface-development/protocol.json": "b747968d82e1cf44644de2416cc3827f3e56861cfa902291f467e7e68095ca9a",
+        "runs/localization-v13-surface-development/normalized_encoder-20261101/training.json": "c089f238d476b3ae020b7f359bb83e6516e0dac058abda8bfd3ad3f67702bef5",
+        "runs/localization-v13-surface-development/raw_encoder-20261101/training.json": "ba73e87b609b134c4512b5e4af45a376fe05e9afd446631a5cdc2782b3861ce3",
+        "runs/localization-v13-surface-development/normalized_pair-20261103/training.json": "15d63e14d850cc2b5bec42ec5c7220012d10884c6d8c8730e44b1451d1c93c44",
+        "runs/localization-v13-surface-development/normalized_pair-20261102/training.json": "daef086fd6cbd883f6c18acfb00333cb7ce704ad2675407cca90ad58c46e3396",
+        "runs/localization-v13-surface-development/normalized_pair-20261101/training.json": "d2f7a8da2a6bee654cc4f6ea016f45a0cab21711878cb57db74343fc8a860f2b"
+      }
+    },
+    {
+      "root": "runs/localization-v15-context-cost-pilot",
+      "checkpoint_files": 3,
+      "metadata_timestamps": [
+        "2026-11-01T03:48:09.865100+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v15-context-cost-pilot/protocol.json": "29dec21eb7919422048958d62975bd569df8da53fd63d7563b478623e0be2a19"
+      }
+    },
+    {
+      "root": "runs/localization-v15-context-initial-control",
+      "checkpoint_files": 1,
+      "metadata_timestamps": [],
+      "metadata_sha256": {
+        "runs/localization-v15-context-initial-control/protocol.json": "adf9d2ae8639e3c8a2d424ca0d1e737930c6e704cb87db64e3bc633c862812bb"
+      }
+    },
+    {
+      "root": "runs/localization-v16-global-context-development",
+      "checkpoint_files": 45,
+      "metadata_timestamps": [
+        "2026-11-01T04:28:39.339248+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v16-global-context-development/protocol.json": "1ba175782b41226055e23f94b86d2fecf653788368ce5c36057c2fbc803f6c78"
+      }
+    },
+    {
+      "root": "runs/localization-v18-window-cost-pilot",
+      "checkpoint_files": 3,
+      "metadata_timestamps": [
+        "2026-11-01T05:55:35.821479+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v18-window-cost-pilot/protocol.json": "9cf5ed09ac7d1b119cea317d57a65d61d995d912631270d74c07720fac9494a8"
+      }
+    },
+    {
+      "root": "runs/localization-v18-window-development",
+      "checkpoint_files": 54,
+      "metadata_timestamps": [
+        "2026-11-01T05:56:31.752463+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v18-window-development/protocol.json": "d58fdc7dce8c72a394ae54f814bbb983b88589260f9e54a7557fc04cd97be7cb"
+      }
+    },
+    {
+      "root": "runs/localization-v18-window-initial-control",
+      "checkpoint_files": 2,
+      "metadata_timestamps": [],
+      "metadata_sha256": {}
+    },
+    {
+      "root": "runs/localization-v23-mutual-cost-pilot",
+      "checkpoint_files": 3,
+      "metadata_timestamps": [
+        "2026-11-01T19:16:08.007973+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v23-mutual-cost-pilot/protocol.json": "de3a864c5ba713e4aeb643d97b7661693ff5e57b8633ca8f4025bc2009f007b7"
+      }
+    },
+    {
+      "root": "runs/localization-v24-mutual-development",
+      "checkpoint_files": 27,
+      "metadata_timestamps": [
+        "2026-11-01T19:16:47.807885+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v24-mutual-development/protocol.json": "45b7fb76d083194cbed9bc622fe42ec60405485f3688a4fc164285aefa90bbf9"
+      }
+    },
+    {
+      "root": "runs/localization-v3-balanced-development",
+      "checkpoint_files": 20,
+      "metadata_timestamps": [
+        "2026-10-31T18:29:12.954362+00:00",
+        "2026-10-31T18:32:28.968748+00:00",
+        "2026-10-31T18:36:21.908656+00:00",
+        "2026-10-31T18:40:16.660947+00:00",
+        "2026-10-31T18:44:10.814748+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v3-balanced-development/protocol.json": "eeab949a4e7b802ba4a0a186b734e9a0b003a87deb89045f6f9100b2cedb94bd",
+        "runs/localization-v3-balanced-development/reliability-20261103/training.json": "9242e7984db4e0c332d40a16645585cf8067098d2f779ecc17d8ab54e943005a",
+        "runs/localization-v3-balanced-development/reliability-20261102/training.json": "93a55fde0414473974dfb3b2be75c1431e3669eb032d89abe5ff96f3652c1afb",
+        "runs/localization-v3-balanced-development/refinement-20261101/training.json": "65fa6bca411dc7a81ac7f112c601b9a932b7fd99d5195f9cb882d4f0f830d0f4",
+        "runs/localization-v3-balanced-development/reliability-20261101/training.json": "6b106df755ba481107a737edbb87767015b4e6eadfcb7c5740fddd00e250c928",
+        "runs/localization-v3-balanced-development/descriptor_3d-20261101/training.json": "773cf49462e6552a43e246d7f9925f20d46428c0050a1524714c6f4b556f55d6"
+      }
+    },
+    {
+      "root": "runs/localization-v3-development",
+      "checkpoint_files": 20,
+      "metadata_timestamps": [
+        "2026-10-31T18:05:10.094145+00:00",
+        "2026-10-31T18:08:24.736558+00:00",
+        "2026-10-31T18:12:11.118859+00:00",
+        "2026-10-31T18:15:53.045596+00:00",
+        "2026-10-31T18:19:10.735908+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v3-development/protocol.json": "73ee59cdd15edf817a23d9081376a2718142853fe16403e3274261d91fd4e7df",
+        "runs/localization-v3-development/refinement-20261101/training.json": "d9384280b70a16975d024a708fccbd9f493718314ba75eb274ecb1da2cd289e7",
+        "runs/localization-v3-development/descriptor_3d-20261103/training.json": "a93d8d3080a85d946ff6c69d6c010d1f0a666e40a8fc577af0fd874dcfb75e55",
+        "runs/localization-v3-development/descriptor_3d-20261102/training.json": "40fb7be3d3e1629468a39265d4902bd774fa907690751ee5c13e1b1fb90379c5",
+        "runs/localization-v3-development/reliability-20261101/training.json": "a3ec7dcdc77c6b0c9c34aa4fa781f1b23641039907f4423ce76b5ea3004c92c5",
+        "runs/localization-v3-development/descriptor_3d-20261101/training.json": "90cba92541683dc25bdc7dae42bbae71c5f7ba77c3660ca41bcb282f8c5cb3e4"
+      }
+    },
+    {
+      "root": "runs/localization-v3-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-10-31T18:02:05.734701+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v3-pilot/protocol.json": "c1f0828c696159a2e1cebc9d402336bf1f87d29bed20103102c3dc36ead1eb79",
+        "runs/localization-v3-pilot/descriptor_3d-20261101/training.json": "247eaeed2013dbc2353cf7266ab7cb8d83047961eb834eb5a5be485408222abd"
+      }
+    },
+    {
+      "root": "runs/localization-v4-coarse-development",
+      "checkpoint_files": 8,
+      "metadata_timestamps": [
+        "2026-10-31T22:26:43.632657+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v4-coarse-development/protocol.json": "152e503b5bb1200f84da669ecee8cae78d79f1ea0750caade51cfce35252438d",
+        "runs/localization-v4-coarse-development/planar_control-20261101/training.json": "ae1620829af02c56a4dc7adc1596ae4b6e1e9b681393e71e3fea73ccc317e686"
+      }
+    },
+    {
+      "root": "runs/localization-v4-coarse-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-10-31T22:25:18.544957+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v4-coarse-pilot/protocol.json": "3ce5339af3faf9df0d29716b76ebe98abfa9b2c45935a5bccc33985a67f05c6e",
+        "runs/localization-v4-coarse-pilot/true_3d-20261101/training.json": "100af1dae3865df9b6e38a5c7a708bd23895771a11c735f7f722e907f4dd9488"
+      }
+    },
+    {
+      "root": "runs/localization-v5-coarse-development",
+      "checkpoint_files": 16,
+      "metadata_timestamps": [
+        "2026-10-31T23:00:43.245394+00:00",
+        "2026-10-31T23:12:52.963282+00:00",
+        "2026-10-31T23:23:42.690373+00:00",
+        "2026-10-31T23:34:22.113235+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v5-coarse-development/protocol.json": "aad2e3e5d5a3789a8f984390fbe1ef119e5ebba22ea8c023659bb592221e91ff",
+        "runs/localization-v5-coarse-development/true_3d-20261101/training.json": "f20a7b4b9df917d919d31b00418ce07c2ddbf7ab1dbd487247c5f0ace6c4c1c3",
+        "runs/localization-v5-coarse-development/planar_control-20261101/training.json": "c0ae1dc7762eba4344fab11a29205f5ac145144b2214c85cfc0c13911b54f0e0",
+        "runs/localization-v5-coarse-development/true_3d-20261102/training.json": "98eacd0210180a1a265997d0c363b92dbcc19959b10abfbc6c8938e6b02677ec",
+        "runs/localization-v5-coarse-development/true_3d-20261103/training.json": "fef1a432fa550079b937c008c1941cfcf174fda39196b8b7fed1b37036c8e0f7"
+      }
+    },
+    {
+      "root": "runs/localization-v5-coarse-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-10-31T22:56:20.991091+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v5-coarse-pilot/protocol.json": "af4f0dc5f039c28a2db5ee122043a5344480c190cb69eb461a7323b4b7394b7f",
+        "runs/localization-v5-coarse-pilot/true_3d-20261101/training.json": "feb89af80957b4e1f4744518fb496fc561506bdd03df1390f0b24189e0976fad"
+      }
+    },
+    {
+      "root": "runs/localization-v6-orientation-development",
+      "checkpoint_files": 16,
+      "metadata_timestamps": [
+        "2026-10-31T23:39:01.065996+00:00",
+        "2026-10-31T23:51:28.777687+00:00",
+        "2026-11-01T00:01:45.614339+00:00",
+        "2026-11-01T00:12:33.309133+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v6-orientation-development/protocol.json": "a1f40229a5011a3d4acf319d1000a6e0a2fec637a6da3da8be23db51f109c39e",
+        "runs/localization-v6-orientation-development/true_3d-20261101/training.json": "38c5f7968a6f7fb34a03cfc754cf15b14ac4e93dd4cf8b012c9af767ccf51791",
+        "runs/localization-v6-orientation-development/canonical_3d-20261101/training.json": "d1eb568986807b4129a8693feac3ed0078d01f9dfe5948b7117309cadde2a64c",
+        "runs/localization-v6-orientation-development/true_3d-20261102/training.json": "21b48f501521576fb276a7f1b0846ae60158401efb37cdc61bd5c83dd0f9d581",
+        "runs/localization-v6-orientation-development/true_3d-20261103/training.json": "bb1e0887cacda7da3545ebc14719e19bb1c466a8941bfae246a6c385a17a7937"
+      }
+    },
+    {
+      "root": "runs/localization-v6-orientation-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-10-31T23:35:57.982509+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v6-orientation-pilot/protocol.json": "7c4a81db01ea839d04d6a24d24a9c6083e98b2b6fc12cf3e78f62da26dc7bc52",
+        "runs/localization-v6-orientation-pilot/canonical_3d-20261101/training.json": "87d10662f4431adaafab7a8f6b77f269eadf37363f07ae8e84deefc442484c39"
+      }
+    },
+    {
+      "root": "runs/localization-v7-native-development",
+      "checkpoint_files": 20,
+      "metadata_timestamps": [
+        "2026-11-01T00:13:13.380208+00:00",
+        "2026-11-01T00:25:12.030091+00:00",
+        "2026-11-01T00:38:01.445455+00:00",
+        "2026-11-01T00:49:36.987760+00:00",
+        "2026-11-01T01:01:10.051827+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v7-native-development/protocol.json": "cb13ffd26cd4060769baa7c5f24a67c3be28527b854c87747cd3e44fbfefe0eb",
+        "runs/localization-v7-native-development/encoder_3d-20261101/training.json": "26c901aefa82f7a8cca476b7860bcf0b8c96c37d9f831215ededa9e7c31e3dfb",
+        "runs/localization-v7-native-development/pair_refinement-20261102/training.json": "4c496608155de73504240c2fb2ab47f36cfaaee761d62e68f40dde77243fbfa0",
+        "runs/localization-v7-native-development/pair_refinement-20261103/training.json": "1ba8422f67ce0bb893330257b5e82ded5972d7db006df4b82a5e6f9e6b552d61",
+        "runs/localization-v7-native-development/dustbin-20261101/training.json": "06a57b019e457ef886b3f11013791cf3bfba110fdefc63f9ec7f062c4db9cf40",
+        "runs/localization-v7-native-development/pair_refinement-20261101/training.json": "2f5d02559c7f4c22ae19912afa728c204551e8d93ac675c33fcbdcc2a1fca366"
+      }
+    },
+    {
+      "root": "runs/localization-v7-native-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-11-01T00:02:50.309024+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v7-native-pilot/protocol.json": "89f32d1397232bd4f9ada9acbef005028fbd969168e06ecb319e1e384680120f",
+        "runs/localization-v7-native-pilot/dustbin-20261101/training.json": "45a139bc8eb71b950e350c037f03db7c655935a4e8f986ffd4d882407e51b27a"
+      }
+    },
+    {
+      "root": "runs/localization-v8-uniform-native-development",
+      "checkpoint_files": 20,
+      "metadata_timestamps": [
+        "2026-11-01T00:59:24.219607+00:00",
+        "2026-11-01T01:10:27.737887+00:00",
+        "2026-11-01T01:21:41.824906+00:00",
+        "2026-11-01T01:32:04.100618+00:00",
+        "2026-11-01T01:42:08.579157+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v8-uniform-native-development/protocol.json": "85bb2e548dc0f825e710bbb75bc3ae02982f2570e54bc2ef30b28ab5dd69ea65",
+        "runs/localization-v8-uniform-native-development/encoder_3d-20261101/training.json": "d6728e6884b32509868499632ed0c9608cffc88c8db4a61906b9bd065fe45092",
+        "runs/localization-v8-uniform-native-development/pair_refinement-20261102/training.json": "916a0e056d73b771e01d0e530650672304282d74149455f129e93c6091ca6528",
+        "runs/localization-v8-uniform-native-development/pair_refinement-20261103/training.json": "5fc1a9b62cf31c72d252ce428f65a3dae16010e1d1123e64451323775502c86d",
+        "runs/localization-v8-uniform-native-development/dustbin-20261101/training.json": "bb632f5761311e6d1ea1c5327f1091c2da639b45fe7dfe98a338b096574cf236",
+        "runs/localization-v8-uniform-native-development/pair_refinement-20261101/training.json": "26bd6506cda7716e535d49f6543c855e06638f7b068b12dac18db2029c7f33d5"
+      }
+    },
+    {
+      "root": "runs/localization-v8-uniform-native-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-11-01T00:32:12.456548+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/localization-v8-uniform-native-pilot/protocol.json": "0531a0919598412217f92f28bcb2b2d5ee540f89ad5022334572aa3ea8e924ac",
+        "runs/localization-v8-uniform-native-pilot/dustbin-20261101/training.json": "3ccff0b8d191c182d8e552434e5fdb58212f99d9384a9325f2a2d1b2a2faf635"
+      }
+    },
+    {
+      "root": "runs/north-fine-v58-pilot-aligned",
+      "checkpoint_files": 3,
+      "metadata_timestamps": [
+        "2026-11-02T19:04:25.662868+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-fine-v58-pilot-aligned/protocol.json": "e69404f224812160cd3f5d056448eccf4ef6b1b1788262ebba4d91e22a393bf3"
+      }
+    },
+    {
+      "root": "runs/north-fine-v58-pilot-fractional",
+      "checkpoint_files": 3,
+      "metadata_timestamps": [
+        "2026-11-02T19:05:48.532408+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-fine-v58-pilot-fractional/protocol.json": "d7feda2c5881a37f136282f3564e06182eebc15493fc5af5c2adb81b0854f6aa"
+      }
+    },
+    {
+      "root": "runs/north-fine-v58-study-aligned",
+      "checkpoint_files": 10,
+      "metadata_timestamps": [
+        "2026-11-02T19:07:09.949163+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-fine-v58-study-aligned/protocol.json": "15de4335a4cf1beb8e79f5bf4ad6719057fe1cff816cdf12127046b0329a4a48"
+      }
+    },
+    {
+      "root": "runs/north-fine-v58-study-fractional",
+      "checkpoint_files": 10,
+      "metadata_timestamps": [
+        "2026-11-02T19:48:03.668656+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-fine-v58-study-fractional/protocol.json": "eb75eb2dd87fc386acefffabc984fbe9eff38773628f8f6cda1d10fc08ecbcdb"
+      }
+    },
+    {
+      "root": "runs/north-v38-training-cost-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-11-02T08:08:36.672215+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v38-training-cost-pilot/protocol.json": "9bf24a517349bca7ad5d840a8b6466f2f2624d663a58db12c2cd2cc3926d3d0c"
+      }
+    },
+    {
+      "root": "runs/north-v39-expanded-control",
+      "checkpoint_files": 25,
+      "metadata_timestamps": [
+        "2026-11-02T08:24:09.219888+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v39-expanded-control/protocol.json": "8a8750c468871aa724dbede7b6653d0e731581c48026d42a987f8bfd89e52556"
+      }
+    },
+    {
+      "root": "runs/north-v52-completion-only",
+      "checkpoint_files": 27,
+      "metadata_timestamps": [
+        "2026-11-02T08:24:09.219888+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v52-completion-only/protocol.json": "8a8750c468871aa724dbede7b6653d0e731581c48026d42a987f8bfd89e52556"
+      }
+    },
+    {
+      "root": "runs/north-v54-fixed-pair-optimization",
+      "checkpoint_files": 28,
+      "metadata_timestamps": [
+        "2026-11-02T17:24:35.323245+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v54-fixed-pair-optimization/protocol.json": "b1944d872a3c920a92e5618bb43bab02371d20cc56c6d54683b62f07fa66675a"
+      }
+    },
+    {
+      "root": "runs/north-v55-lr-1e-3",
+      "checkpoint_files": 28,
+      "metadata_timestamps": [
+        "2026-11-02T17:38:56.164597+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v55-lr-1e-3/protocol.json": "fc7d407f32615ab6446cbe13699145fca380b198b0f7509b684efb880df62a3b"
+      }
+    },
+    {
+      "root": "runs/north-v55-lr-1e-4",
+      "checkpoint_files": 28,
+      "metadata_timestamps": [
+        "2026-11-02T17:37:06.111389+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v55-lr-1e-4/protocol.json": "bdb51ee9115b1ac11b94e6e8e37e045bc0e4d551011e6e12989dc0497d7e9bab"
+      }
+    },
+    {
+      "root": "runs/north-v56-rate-development",
+      "checkpoint_files": 9,
+      "metadata_timestamps": [
+        "2026-11-02T17:56:32.714605+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v56-rate-development/protocol.json": "1c2fd7154bb9e3147a811edfabbe31011c616f0b47585602cf608a02b08ffd6c"
+      }
+    },
+    {
+      "root": "runs/north-v61-context-cost-pilot",
+      "checkpoint_files": 4,
+      "metadata_timestamps": [
+        "2026-11-02T21:33:31.256486+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v61-context-cost-pilot/protocol.json": "a37e98a323f7e93b6f6837a1a4ecf0d124f9d97a11a818fcbbb4977283d7ccf6"
+      }
+    },
+    {
+      "root": "runs/north-v61-context-study",
+      "checkpoint_files": 9,
+      "metadata_timestamps": [
+        "2026-11-02T21:34:51.079222+00:00"
+      ],
+      "metadata_sha256": {
+        "runs/north-v61-context-study/protocol.json": "79b078edf58769a901ac8f9fafb1c42e171271a26308b6f37be60a7851f98784"
+      }
+    }
+  ],
+  "untimed_roots": [
+    "localization-v15-context-initial-control",
+    "localization-v18-window-initial-control"
+  ],
+  "untimed_handling": "Charged full enclosing historical calendar windows; step0-only controls add no optimizer work. No missing duration is assigned0.",
+  "evidence_sha256": {
+    "runs/localization-v27-mutual-pipeline-state.json": "8f76e8cdea25899c3672298cdc22dc2fa0d10310c784b3009ba5a97e873669b6",
+    "runs/north-v38-training-cost-pilot/protocol.json": "9bf24a517349bca7ad5d840a8b6466f2f2624d663a58db12c2cd2cc3926d3d0c",
+    "runs/north-context-v61-state.json": "094022a1d9c7e5bf2e427a5c0068306941a8b509c6ad9a7a16ba5ab7866a9727",
+    "runs/north-camera-completion-v62-state.json": "cc1330f7e2f72033d3334c8f236dbc46a6bb89b04575fbd173b6710101c46c1a",
+    "reports/north_context_study_audit_v61.json": "97e9d9c8c1f9e1bd1d98823c2ecfcffafed534d788eb2e63e78f74cfbd337374",
+    "reports/north_fine_matched_audit_v58.json": "dedf358012d21f005c8547eef5ae559e5b9b90fb4ee591ab722ebd7694927505"
+  },
+  "coverage_assumptions": [
+    "All historical lunar training/replay work is represented by the retained artifact roots/controller history; no undisclosed outside jobs are inferred.",
+    "First window charges ALL calendar time from before firstv3pilot through completed mutual controller, including idle/data/baseline work.",
+    "Second window charges ALL time from before north training-bank work through after attention/replays/camera attempts. v38firstoptimizer08:08; v61pipelinecomplete22:11.",
+    "Between windows, retained controllers perform data acquisition/rendering/geometry recovery; no retained lunar optimizer or newly admitted training exists. Metadata without precise finishing times is covered by enclosing windows.",
+    "Baseline charge includes the ENTIRE calendar span, including BOTH training windows and overnight data/idle periods, deliberately overcharging comparisons.",
+    "Original consumed compact-v2 study predates this3D48h/72hcontract and remains in reports/compact_compute_budget_v2.json.",
+    "New model-freev62completion/v64geometry/v65data pilots and procedural software regressions are separately recorded; no new lunar fitting/pretrained comparison occurred after these historical windows."
+  ],
+  "new_jobs_rule": "Reserve full fixed pilot/study caps from these remaining allowances before admission; never restore allowance from a failed or duplicate invocation. Refine conservative history only using retained evidence, not an assumed0."
+}

@@ -1,0 +1,5035 @@
+{
+  "passed": true,
+  "eligible_by_family": {
+    "training_motion": 16,
+    "unseen_roll": 16,
+    "occlusion_stress": 14
+  },
+  "renderer_declared_eligible_by_family": {
+    "training_motion": 16,
+    "unseen_roll": 16,
+    "occlusion_stress": 14
+  },
+  "qualified_pair_ids": [
+    "np31-pilot-0/occlusion_stress-0",
+    "np31-pilot-0/occlusion_stress-1",
+    "np31-pilot-0/occlusion_stress-2",
+    "np31-pilot-0/occlusion_stress-3",
+    "np31-pilot-0/training_motion-0",
+    "np31-pilot-0/training_motion-1",
+    "np31-pilot-0/training_motion-2",
+    "np31-pilot-0/training_motion-3",
+    "np31-pilot-0/unseen_roll-0",
+    "np31-pilot-0/unseen_roll-1",
+    "np31-pilot-0/unseen_roll-2",
+    "np31-pilot-0/unseen_roll-3",
+    "np31-pilot-1/occlusion_stress-0",
+    "np31-pilot-1/occlusion_stress-1",
+    "np31-pilot-1/occlusion_stress-2",
+    "np31-pilot-1/occlusion_stress-3",
+    "np31-pilot-1/training_motion-0",
+    "np31-pilot-1/training_motion-1",
+    "np31-pilot-1/training_motion-2",
+    "np31-pilot-1/training_motion-3",
+    "np31-pilot-1/unseen_roll-0",
+    "np31-pilot-1/unseen_roll-1",
+    "np31-pilot-1/unseen_roll-2",
+    "np31-pilot-1/unseen_roll-3",
+    "np31-pilot-2/occlusion_stress-0",
+    "np31-pilot-2/occlusion_stress-2",
+    "np31-pilot-2/occlusion_stress-3",
+    "np31-pilot-2/training_motion-0",
+    "np31-pilot-2/training_motion-1",
+    "np31-pilot-2/training_motion-2",
+    "np31-pilot-2/training_motion-3",
+    "np31-pilot-2/unseen_roll-0",
+    "np31-pilot-2/unseen_roll-1",
+    "np31-pilot-2/unseen_roll-2",
+    "np31-pilot-2/unseen_roll-3",
+    "np31-pilot-3/occlusion_stress-0",
+    "np31-pilot-3/occlusion_stress-2",
+    "np31-pilot-3/occlusion_stress-3",
+    "np31-pilot-3/training_motion-0",
+    "np31-pilot-3/training_motion-1",
+    "np31-pilot-3/training_motion-2",
+    "np31-pilot-3/training_motion-3",
+    "np31-pilot-3/unseen_roll-0",
+    "np31-pilot-3/unseen_roll-1",
+    "np31-pilot-3/unseen_roll-2",
+    "np31-pilot-3/unseen_roll-3"
+  ],
+  "qualification_failures": [
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "reason": "native_pixel_centre_or_front_facing_geometry_failed",
+      "maximum_pixel_error": 0.06333656523139901,
+      "pixels_over_tolerance": 4,
+      "tolerance_native_px": 0.02
+    }
+  ],
+  "pixel_tolerance_native": 0.02,
+  "qualification_declaration_sha256": "bf7ebb68ff353d858fe402d2bb7d240c4a3fc6a5dcc0f7bf0420374f22133ac7",
+  "qualification_publication_commit": "f94bb545306d9fee1015cd43e53b3a15f7cb141e",
+  "original_v62_audit_passed": false,
+  "raw_rendering_unchanged": true,
+  "completion_lineage": {
+    "passed": true,
+    "original_attempt_deadline_met": false,
+    "reused_pairs": 40,
+    "reused_images": 480,
+    "newly_rendered_images": 96,
+    "completion_calendar_seconds": 381.66827,
+    "sum_observed_render_program_intervals_seconds": 2178.990856,
+    "timing_limit": "Sum of original observed render-program interval and supplemental program interval, excluding admissions/imports and idle time between attempts. Not total CPU cost; outer fixed-deadline receipts retained separately.",
+    "original_per_image_timings_unknown": true,
+    "all_reused_bytes_exact": true
+  },
+  "oracle_pose_directions": 92,
+  "correct_oracle_poses": 92,
+  "oracle_success": 1.0,
+  "outcomes": [
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.005870668531798156,
+        "translation_m": 0.1144658638539606
+      },
+      "reference_range_m": 1563.0293925116111,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0025169869749774036,
+        "translation_m": 0.13961627627451875
+      },
+      "reference_range_m": 1463.7938421502151,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0030167195058384147,
+        "translation_m": 0.08479333655471442
+      },
+      "reference_range_m": 1291.4736541581028,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0051835882425507645,
+        "translation_m": 0.33304691649242274
+      },
+      "reference_range_m": 1799.7074570344716,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0017746925189530353,
+        "translation_m": 0.046654756758779094
+      },
+      "reference_range_m": 1250.0151844880816,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.001336551488725541,
+        "translation_m": 0.16830982765167418
+      },
+      "reference_range_m": 1663.292499069725,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0014042425014416232,
+        "translation_m": 0.08253993848492909
+      },
+      "reference_range_m": 1399.1093076997088,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.003776523906588582,
+        "translation_m": 0.5152675271608844
+      },
+      "reference_range_m": 1839.0932802223886,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0023510601012818604,
+        "translation_m": 0.08410443222994966
+      },
+      "reference_range_m": 1474.9327226568225,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.002714681219649243,
+        "translation_m": 0.06627444872487583
+      },
+      "reference_range_m": 1669.7041746287823,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0011827800593253287,
+        "translation_m": 0.022412620412738962
+      },
+      "reference_range_m": 1651.9550653181973,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0015300891009055492,
+        "translation_m": 0.006207951091367294
+      },
+      "reference_range_m": 1698.1531239310084,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.006147066023543271,
+        "translation_m": 0.033748077097014724
+      },
+      "reference_range_m": 1594.8927122433365,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.002719698329054922,
+        "translation_m": 0.0649217621108121
+      },
+      "reference_range_m": 1461.5269327003516,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0042585029597586935,
+        "translation_m": 0.08707056197952927
+      },
+      "reference_range_m": 1642.7009650138762,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.004619906392980454,
+        "translation_m": 0.20782752022537457
+      },
+      "reference_range_m": 1723.5052386295397,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.008269527259215462,
+        "translation_m": 0.48079605231078704
+      },
+      "reference_range_m": 1591.4638153620479,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.1711917737925121,
+        "translation_m": 4.550463808265908
+      },
+      "reference_range_m": 2785.5833062340143,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.020158210556228077,
+        "translation_m": 0.9115032742895285
+      },
+      "reference_range_m": 1389.169965724962,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.04511027620450695,
+        "translation_m": 1.8756139037513182
+      },
+      "reference_range_m": 2914.376690141511,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.014407220731307986,
+        "translation_m": 1.011079947977238
+      },
+      "reference_range_m": 1403.6126064239604,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.11159602407126672,
+        "translation_m": 3.9128012842546815
+      },
+      "reference_range_m": 3865.0307647766335,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.012312224396718651,
+        "translation_m": 0.575332758729175
+      },
+      "reference_range_m": 1343.5297023055628,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.18977468575663228,
+        "translation_m": 3.8291561101267044
+      },
+      "reference_range_m": 2587.461401021541,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.020595785480028054,
+        "translation_m": 0.3523320837530406
+      },
+      "reference_range_m": 1420.4029846910194,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.02420922216044192,
+        "translation_m": 0.6314816458453055
+      },
+      "reference_range_m": 1359.4131363488484,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.007466622844169356,
+        "translation_m": 0.23304043126237256
+      },
+      "reference_range_m": 1716.4137838134022,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.003234694953079326,
+        "translation_m": 0.1512019621686112
+      },
+      "reference_range_m": 1633.6309686003704,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.012805185043834252,
+        "translation_m": 0.21455802803047042
+      },
+      "reference_range_m": 1421.2773539798482,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.014328776337610443,
+        "translation_m": 0.2735146790486196
+      },
+      "reference_range_m": 1292.2862056611543,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.009711765343277211,
+        "translation_m": 0.17459705634455633
+      },
+      "reference_range_m": 1606.9949947676373,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.006886736591960802,
+        "translation_m": 0.1088388137656033
+      },
+      "reference_range_m": 1615.5293712030684,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.007651010686185254,
+        "translation_m": 0.29072242785575764
+      },
+      "reference_range_m": 1727.5302798555674,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.004581989274784347,
+        "translation_m": 0.23510642982664237
+      },
+      "reference_range_m": 1587.905487680482,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.010896792901744713,
+        "translation_m": 0.32255564047068586
+      },
+      "reference_range_m": 1553.8031638679847,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.010891957938985636,
+        "translation_m": 0.2859400903389459
+      },
+      "reference_range_m": 1546.8458458227412,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.008109905766941218,
+        "translation_m": 0.20219915978545394
+      },
+      "reference_range_m": 1661.4327914938062,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.005024622931308727,
+        "translation_m": 0.13305863809940183
+      },
+      "reference_range_m": 1633.2607656682394,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.013501904988900202,
+        "translation_m": 0.29809529544690183
+      },
+      "reference_range_m": 1650.9935515567886,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.008760703314359427,
+        "translation_m": 0.08273221224699133
+      },
+      "reference_range_m": 1528.6441740523023,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.05882237561657519,
+        "translation_m": 3.6340317383313736
+      },
+      "reference_range_m": 1699.8905679935026,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.015875988978592645,
+        "translation_m": 3.5934091261130496
+      },
+      "reference_range_m": 3362.215315283379,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.05417296850862467,
+        "translation_m": 1.9694316085514083
+      },
+      "reference_range_m": 1347.807823650676,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.11360605146768778,
+        "translation_m": 4.076644344068354
+      },
+      "reference_range_m": 2956.667696336892,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.029893229966097702,
+        "translation_m": 1.01395980454203
+      },
+      "reference_range_m": 1497.9305481199253,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.25538140360118783,
+        "translation_m": 8.261670350846567
+      },
+      "reference_range_m": 2743.1600663786494,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.050687027153669545,
+        "translation_m": 2.0920216748745597
+      },
+      "reference_range_m": 1570.4137525797996,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.133413858225418,
+        "translation_m": 6.668898804357808
+      },
+      "reference_range_m": 2901.5410558459803,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.005652589724752275,
+        "translation_m": 0.14925996666656308
+      },
+      "reference_range_m": 1352.6126349045674,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.006843165093361808,
+        "translation_m": 0.16703388196550392
+      },
+      "reference_range_m": 1597.2312392354015,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.007567267622714367,
+        "translation_m": 0.14808607775299767
+      },
+      "reference_range_m": 1420.9297623729608,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.008104361247056522,
+        "translation_m": 0.273855373135991
+      },
+      "reference_range_m": 1252.395841968518,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.00935323117081749,
+        "translation_m": 0.20368454217253876
+      },
+      "reference_range_m": 1215.4731606729947,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.006525386117227741,
+        "translation_m": 0.16973037068958566
+      },
+      "reference_range_m": 1076.1101527036913,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.008870495528092343,
+        "translation_m": 0.15326865611050328
+      },
+      "reference_range_m": 1465.3070510332718,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.025618452088399562,
+        "translation_m": 0.6495412373121462
+      },
+      "reference_range_m": 1103.0772771696045,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.00981266437045472,
+        "translation_m": 0.24587388972257906
+      },
+      "reference_range_m": 1379.0544258304853,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.022984851384137108,
+        "translation_m": 0.3523994149741613
+      },
+      "reference_range_m": 1158.5188904883973,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0017241501666130834,
+        "translation_m": 0.03968068138864734
+      },
+      "reference_range_m": 1587.1222951483378,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.004290633153132205,
+        "translation_m": 0.09563164717806857
+      },
+      "reference_range_m": 1339.779627378588,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0038866510915106667,
+        "translation_m": 0.10456060760242765
+      },
+      "reference_range_m": 1521.2611793632143,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0044946386341804,
+        "translation_m": 0.10870617028668973
+      },
+      "reference_range_m": 1711.8730310744183,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0016960681408518998,
+        "translation_m": 0.08600359347101423
+      },
+      "reference_range_m": 1548.6682160506643,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.007770725146957669,
+        "translation_m": 0.1913642432129404
+      },
+      "reference_range_m": 1127.0539595407517,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.024516688896307398,
+        "translation_m": 0.7664465187118622
+      },
+      "reference_range_m": 1317.5036021245057,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.1778623008545039,
+        "translation_m": 2.9661382389006308
+      },
+      "reference_range_m": 2645.789057094409,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0246762463170624,
+        "translation_m": 0.6561155280447476
+      },
+      "reference_range_m": 1418.545407628249,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.04478760857140997,
+        "translation_m": 2.9834399945527235
+      },
+      "reference_range_m": 3358.5344146024327,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.020165583475617137,
+        "translation_m": 0.6116748609774784
+      },
+      "reference_range_m": 1546.9513763049758,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.09584480195879032,
+        "translation_m": 2.391005916580031
+      },
+      "reference_range_m": 2437.972331327788,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.004469525180770899,
+        "translation_m": 0.4120094836441228
+      },
+      "reference_range_m": 2582.560364310769,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0033794131842680504,
+        "translation_m": 0.3989813949826112
+      },
+      "reference_range_m": 2762.810773549309,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.007278447729998512,
+        "translation_m": 0.4832286865405647
+      },
+      "reference_range_m": 2429.732422666617,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.006101889252948216,
+        "translation_m": 0.2973501093104587
+      },
+      "reference_range_m": 2907.945739579769,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.005547889740780826,
+        "translation_m": 0.36126197538745297
+      },
+      "reference_range_m": 2521.8657720984584,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.005437719275306181,
+        "translation_m": 0.2885927862694809
+      },
+      "reference_range_m": 2555.905549178953,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0036422672211293694,
+        "translation_m": 0.287191744573011
+      },
+      "reference_range_m": 2683.6808096224304,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "family": "training_motion",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0037001204338890496,
+        "translation_m": 0.21021437816646002
+      },
+      "reference_range_m": 2737.003897735861,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.006503311726363673,
+        "translation_m": 0.41585349039782427
+      },
+      "reference_range_m": 2785.6405161939083,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.0070653227099702,
+        "translation_m": 0.22171759707145625
+      },
+      "reference_range_m": 2486.0923400483057,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0062734186054743705,
+        "translation_m": 0.4302007929831527
+      },
+      "reference_range_m": 2696.8441438909394,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.004792136182152669,
+        "translation_m": 0.3377356815625825
+      },
+      "reference_range_m": 2365.0246810480767,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.0017596351486414614,
+        "translation_m": 0.18244479770469654
+      },
+      "reference_range_m": 2700.775298946121,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.00174698403274556,
+        "translation_m": 0.07699446445751025
+      },
+      "reference_range_m": 2342.0426387762604,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.012221283648372862,
+        "translation_m": 0.6433318841678184
+      },
+      "reference_range_m": 2733.0708034924046,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "family": "unseen_roll",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.013864283720306176,
+        "translation_m": 0.9522591377780738
+      },
+      "reference_range_m": 2568.911242268423,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.06570712938422996,
+        "translation_m": 3.4434785979200555
+      },
+      "reference_range_m": 2554.868456939643,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.09587108647867695,
+        "translation_m": 6.075753356256728
+      },
+      "reference_range_m": 5314.598897943526,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.05319876431959735,
+        "translation_m": 3.874818818214388
+      },
+      "reference_range_m": 2371.1287310627863,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.06026702150742649,
+        "translation_m": 2.984165050306524
+      },
+      "reference_range_m": 7531.377329048401,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "reference",
+      "oracle_error": {
+        "rotation_deg": 0.040034325304515915,
+        "translation_m": 1.8680068777482342
+      },
+      "reference_range_m": 2436.2932485214374,
+      "correct": true
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "family": "occlusion_stress",
+      "source": "query",
+      "oracle_error": {
+        "rotation_deg": 0.1519319450308097,
+        "translation_m": 3.6667592657713497
+      },
+      "reference_range_m": 5765.509558517426,
+      "correct": true
+    }
+  ],
+  "source_sha256": "73c9f067b1c8108b6bd0ec4963b4d52b5c43981787aace2984533be1bee956c6",
+  "summary_sha256": "d9b9a6d005935488e055dd0423a671aa32760886ce77b3aa7803f77f841e574f",
+  "matcher_forwards": 0,
+  "model_improvement_established": false,
+  "independent_surface_records": [
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.080261790775694e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.2787039597460534e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002973964678858465
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002778924445010489
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.8377313381279237e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 8.840982445690315e-06
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00027374344199415646
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002947286170638108
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.885641596454661e-06
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.7163157053801115e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002110566119881696
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00027636126014840556
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3411725376499817e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.467106560288812e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00022649338075098058
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00035262854407847044
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3313907857082086e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3232501714810496e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000363084983519002
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00031538085636384494
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.6597456351519213e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.6106423547389568e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00022085019782025483
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003923541862604907
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.325303355770302e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.917374243021186e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003562330959994142
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004236587749346654
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.6883148191482178e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.4365567039931193e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00035005573795388045
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004127484994569386
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2616236972462502e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.0151535611366853e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00035559292405196175
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0008119773510770756
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.254441925397259e-06
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.17906072572805e-06
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00017104251810451387
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000508501315380272
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0264780030411202e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.7367008240398718e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00025011073125824623
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004981442452844931
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3149377537047258e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.163641369814286e-05
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0001982653761842812
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006419598939828575
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0811761285367538e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.547736587781401e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002663749592102249
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00023094156472325267
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.848300462370389e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.9086877273366554e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00035762697780228336
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002662273554960848
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.282039534089563e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.325760510757391e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00032374170064031205
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002920964234363055
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1964485111093381e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.805556939871167e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003333303968702239
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003489187629384105
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.241728157059697e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.0705951101263054e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003376193001258798
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00046789178895778605
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.9212494407838676e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.8509666006139014e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00030061283860050025
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000306850102106182
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5917843686329434e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2481184057833161e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00026298279794900736
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003260413218413305
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.530787176307058e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.132168770520366e-06
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00027496907046042907
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00024299942879224545
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.9794639229075983e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.399854540475644e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00033282776894338895
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006637136539211497
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.8009377527050674e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.086420201725559e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002446171495193994
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0007369648433268594
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.548591080791084e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.2123885123146465e-05
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00035644386616695556
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0005901135505155253
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.8302329054859e-06
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 0.00023521094453826663
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002615756388877344
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0005176417189431959
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1262165799053037e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.628966613992816e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002304817101048684
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00031826992562855594
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0665722356861806e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.520683079244918e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000265465628444872
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00023337118250310596
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.5865536978672026e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.8351189383975e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00022255685894378985
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00023575839463774173
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1897933518412174e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.3277006221178453e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00028141065354247985
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00016332353288817103
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0480127457412891e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.94048219177057e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003521394339713879
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002197411888573697
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.7075934920285363e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.811471399079892e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00028536979425553
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00020321512533882924
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1163432873217971e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3246630032881512e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003039545192677906
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00031026768647279823
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0106544777954696e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.648204594559502e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00029524897104238335
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0001738358423608588
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.125349785979779e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.66685367730679e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0002313955039880966
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003929545910068555
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.028246727713849e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.744235517748166e-06
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00030804361790615076
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003725511037373508
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.5967545323292143e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.5095326034497702e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00036981865741836373
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0007357946306001395
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.0478578335314523e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.043502809101483e-05
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004478403038774559
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00043633860650516
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.349084201749065e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.882416674765409e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00045747585681965575
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006008388950249355
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.9261720101203537e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.519405592873227e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00043807587599076214
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000697741195835988
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.223568910470931e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.4884788419731194e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0005086358096377808
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0003234189648537722
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5969821308535757e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.80674325444852e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00046448042394331424
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004836809325752256
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.704091386680375e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.883694166186615e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00042181911385341664
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006021786484780023
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.8965462661290076e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.690457197080832e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006796632228542876
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.000537783341769682
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.142639116049395e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.8575170290423557e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0007401900365948677
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.00048493086842427147
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.2574762826698134e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.0345081086124992e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0005410065100477368
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0005086345840936701
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.0213757781893946e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.522861334204208e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004600107981787005
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0012222519808346988
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.455887346921372e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.154887235723436e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.316688318795059e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0004831747837670264
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0015146740570344264
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.709839908580761e-05
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 0.00018327001544093946
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0006394502497641952
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "query-exact",
+      "independent_mesh_rays": 43,
+      "maximum_mesh_error_m": 0.0008834899117573514
+    }
+  ],
+  "source_ray_tolerance_px": 0.02,
+  "independent_camera_clearance": [
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1401.934579159563
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1296.6821150291155
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1160.4716852644683
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1578.5998212802604
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1135.4424012213165
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1486.849753667756
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1251.037449457608
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1510.2295725168362
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1321.9373810867644
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1483.9750404962706
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1474.971252899454
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1488.782925092147
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1429.9067107867545
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1228.6254959960636
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1485.368923959555
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1499.5346102833503
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1427.0284604788012
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1142.9389689054753
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1259.6033215730165
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1447.8243814056634
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1267.2586422081943
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1498.2016214135976
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1207.498020053666
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1401.643229247431
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1258.0659824855363
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1184.020984369257
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1516.6271322092352
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1461.973507791809
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1273.002663194409
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1155.832429087845
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1426.9320128643385
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1385.562933255639
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1534.4070015527757
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1430.2059347111924
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1385.1622272551015
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1338.178620210471
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1502.6056447211756
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1437.2669775492475
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1462.5664368148516
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1296.1342656112104
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1514.1093660544464
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1057.574033411546
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1196.8552201483815
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1216.2974755045059
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1329.1590589111058
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1062.8146962489384
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1391.4984256343662
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1165.8944915256875
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1236.1518048760404
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1354.3846793354912
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1283.3904949945634
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1113.3248302454017
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1105.1018270604097
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 943.4441860253586
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1354.3364461348567
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 976.2196756932588
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1301.1847461209356
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 972.4362506905844
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1463.0419729672954
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1242.9662383844998
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1372.6296263867664
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1476.3942071126776
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1426.1459794006175
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 952.5055350239094
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1241.9555084705196
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 938.1525736393163
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1449.516172154441
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 837.7264970945091
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1327.347340087382
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 959.2453865519726
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 1407.2016866508757
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 889.679344962258
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2356.4502783205926
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2340.9567931388146
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2296.9282552883656
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2810.4671873351076
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2375.4003854564216
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2391.524391538924
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2520.407559566256
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2622.582174188242
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2640.617271711573
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2392.971643542924
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2512.4701362871506
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2155.048779703004
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2530.8379664204726
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2190.8286280381103
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2615.727401065635
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2313.0866217727703
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2439.8485456308863
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2512.464560662938
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-1",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2456.489091166199
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-1",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 737.603120138078
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2221.360914870015
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 2390.1016101720106
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "reference",
+      "free_space": true,
+      "clearance_m": 2306.3090722295974
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "role": "query",
+      "free_space": true,
+      "clearance_m": 1854.1563226777457
+    }
+  ],
+  "independent_full_mesh_query_visibility": [
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "point_index": 17,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1776.1293739507428,
+      "target_distance_m": 1776.1296206565878
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1578.736700306588,
+      "target_distance_m": 1578.7366124207313
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1657.162484983981,
+      "target_distance_m": 1657.1626160048077
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1446.0603883001006,
+      "target_distance_m": 1446.060344743435
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1833.0142962373575,
+      "target_distance_m": 1833.0142582105716
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1463.9074803550209,
+      "target_distance_m": 1463.9072411074449
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2209.435586138445,
+      "target_distance_m": 2209.435443141249
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "point_index": 108,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1763.5433071075481,
+      "target_distance_m": 1763.5432237341413
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "point_index": 3,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1576.8655737310128,
+      "target_distance_m": 1576.8655996663792
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "point_index": 9,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1487.920220347071,
+      "target_distance_m": 1487.9202766116327
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1970.5584762605922,
+      "target_distance_m": 1970.5585542077363
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "point_index": 7,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2083.1008097494614,
+      "target_distance_m": 2083.1008661914093
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "point_index": 2,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2036.8094438328174,
+      "target_distance_m": 2036.8094212256328
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "point_index": 2,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1766.7756339420355,
+      "target_distance_m": 1766.7755763977036
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1848.8243922817649,
+      "target_distance_m": 1848.8243631454077
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1885.7729856338767,
+      "target_distance_m": 1885.772964792602
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "point_index": 78,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3703.7762874143136,
+      "target_distance_m": 3703.7766858187765
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1855.771913926481,
+      "target_distance_m": 1855.7717586763986
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "point_index": 11,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2432.095216192605,
+      "target_distance_m": 2432.0951278863654
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1412.766733653162,
+      "target_distance_m": 1412.7666645704614
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3103.182065852566,
+      "target_distance_m": 3103.1823629827086
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1563.099999233257,
+      "target_distance_m": 1563.0998734851482
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 120,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2353.1896616227677,
+      "target_distance_m": 2353.1896502728423
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "point_index": 2,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1348.8199538582367,
+      "target_distance_m": 1348.819955119878
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1195.8521269181658,
+      "target_distance_m": 1195.852174128066
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "point_index": 6,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1458.3025284361017,
+      "target_distance_m": 1458.3026553994875
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "point_index": 12,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1661.7805313550589,
+      "target_distance_m": 1661.7805801750926
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1818.940450123173,
+      "target_distance_m": 1818.9403325252617
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1811.2900892618468,
+      "target_distance_m": 1811.2898838421124
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1732.4044886657516,
+      "target_distance_m": 1732.4044792369511
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1766.935647666469,
+      "target_distance_m": 1766.9354086604176
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1728.2386265353437,
+      "target_distance_m": 1728.2388984002148
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1993.757944426605,
+      "target_distance_m": 1993.7580560776864
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "point_index": 4,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1791.2313014633792,
+      "target_distance_m": 1791.2311598338108
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1867.6156791403318,
+      "target_distance_m": 1867.6158610839248
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1656.8774844821248,
+      "target_distance_m": 1656.8775855114595
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1960.1047960130331,
+      "target_distance_m": 1960.1047516410456
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "point_index": 8,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2005.6177809456171,
+      "target_distance_m": 2005.6178083977816
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "point_index": 8,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1786.8847739175023,
+      "target_distance_m": 1786.8846791505368
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1596.4209265877403,
+      "target_distance_m": 1596.4208862167222
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "point_index": 8,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3990.628460667523,
+      "target_distance_m": 3990.6285153508697
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "point_index": 24,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1830.6658646965875,
+      "target_distance_m": 1830.6658689411017
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "point_index": 90,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2433.422739037583,
+      "target_distance_m": 2433.4227371789993
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1241.7360667607747,
+      "target_distance_m": 1241.735982749195
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "point_index": 86,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2202.3062771456703,
+      "target_distance_m": 2202.306490575473
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1398.0925176851276,
+      "target_distance_m": 1398.0923747228342
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 308,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3298.7369055829868,
+      "target_distance_m": 3298.7364692491537
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 543,
+      "kind": "geometrically_occluded",
+      "visible": false,
+      "geometrically_occluded": true,
+      "visibility_uncertain": false,
+      "first_hit_m": 3411.202016368426,
+      "target_distance_m": 3428.4934757361434
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1470.7365493975408,
+      "target_distance_m": 1470.7365912181917
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1743.7282291953727,
+      "target_distance_m": 1743.7282799376487
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1671.0067426727503,
+      "target_distance_m": 1671.0067448721318
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "point_index": 9,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1180.4116802551434,
+      "target_distance_m": 1180.411765645295
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1503.4552873280634,
+      "target_distance_m": 1503.4554233384986
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1077.821363261001,
+      "target_distance_m": 1077.8211404886658
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1227.769117537946,
+      "target_distance_m": 1227.7691944432092
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "point_index": 15,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1280.104960651704,
+      "target_distance_m": 1280.1050585211588
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1485.036796027297,
+      "target_distance_m": 1485.0368863266692
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "point_index": 8,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1369.938923265831,
+      "target_distance_m": 1369.9387385519553
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1366.5984486562083,
+      "target_distance_m": 1366.5984806501215
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "point_index": 4,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1572.1572931223373,
+      "target_distance_m": 1572.1573363602156
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1790.4390494052118,
+      "target_distance_m": 1790.4391169074445
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1972.8034621849006,
+      "target_distance_m": 1972.8031837111914
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "point_index": 6,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1538.9596577594718,
+      "target_distance_m": 1538.9598014447538
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "point_index": 35,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 984.171749786433,
+      "target_distance_m": 984.1716474178771
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1603.750198545945,
+      "target_distance_m": 1603.7501708090786
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3250.994155125095,
+      "target_distance_m": 3250.994001551952
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1422.7827162059489,
+      "target_distance_m": 1422.7828375009626
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "point_index": 161,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1721.1810549546963,
+      "target_distance_m": 1721.1810093145448
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1545.017573920753,
+      "target_distance_m": 1545.0176190522454
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "point_index": 251,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3458.9344949897577,
+      "target_distance_m": 3458.9340916971087
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "point_index": 229,
+      "kind": "geometrically_occluded",
+      "visible": false,
+      "geometrically_occluded": true,
+      "visibility_uncertain": false,
+      "first_hit_m": 3525.6706107665254,
+      "target_distance_m": 3659.5522061358256
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1503.4215120576912,
+      "target_distance_m": 1503.4215132648778
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 14,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2923.760683882407,
+      "target_distance_m": 2923.7603918969753
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 70,
+      "kind": "geometrically_occluded",
+      "visible": false,
+      "geometrically_occluded": true,
+      "visibility_uncertain": false,
+      "first_hit_m": 2823.953791267032,
+      "target_distance_m": 2920.447369864539
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 1419.5026818750162,
+      "target_distance_m": 1419.5026725062592
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3729.8717943350853,
+      "target_distance_m": 3729.8720578374387
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3527.071235037091,
+      "target_distance_m": 3527.071190937015
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3353.767586061705,
+      "target_distance_m": 3353.767822953825
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2994.5775869687977,
+      "target_distance_m": 2994.5772967359567
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3047.6794886979046,
+      "target_distance_m": 3047.6798234433472
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3023.147619612674,
+      "target_distance_m": 3023.1477284222487
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "point_index": 7,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3067.9287474459697,
+      "target_distance_m": 3067.9287244716215
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3124.9182987284507,
+      "target_distance_m": 3124.918087405331
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "point_index": 10,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2906.4238964853016,
+      "target_distance_m": 2906.4242039191035
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2904.2418413218516,
+      "target_distance_m": 2904.2418755563695
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3028.38101439916,
+      "target_distance_m": 3028.38058899297
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3244.196288452923,
+      "target_distance_m": 3244.196378357707
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "point_index": 5,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2857.9457703105063,
+      "target_distance_m": 2857.9457989109515
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2788.401944318365,
+      "target_distance_m": 2788.4019584136504
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "point_index": 1,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3191.4279719464957,
+      "target_distance_m": 3191.4284203611523
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "point_index": 9,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 3247.368779669517,
+      "target_distance_m": 3247.368808248926
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "point_index": 145,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 5102.454605053743,
+      "target_distance_m": 5102.453861605791
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2573.652287758743,
+      "target_distance_m": 2573.6522658666586
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "point_index": 13,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 6749.934246075194,
+      "target_distance_m": 6749.9349471077285
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "point_index": 0,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2459.9725021070267,
+      "target_distance_m": 2459.972484658713
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "point_index": 182,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 5032.226741712777,
+      "target_distance_m": 5032.226554498382
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "point_index": 3,
+      "kind": "visible",
+      "visible": true,
+      "geometrically_occluded": false,
+      "visibility_uncertain": false,
+      "first_hit_m": 2548.706098467694,
+      "target_distance_m": 2548.706113217856
+    }
+  ],
+  "geometric_occlusion_records": [
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-0",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "geometrically_occluded": 1,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-1",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "geometrically_occluded": 21,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "geometrically_occluded": 4,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-2",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "training_motion-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-1",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "unseen_roll-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-0",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-2",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "source": "reference",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    },
+    {
+      "component": "np31-pilot-3",
+      "pair_id": "occlusion_stress-3",
+      "source": "query",
+      "geometrically_occluded": 0,
+      "visibility_uncertain": 0
+    }
+  ],
+  "geometrically_occluded_samples": 26,
+  "components_with_occlusion": 2,
+  "independently_verified_occluded_query_rays": 3,
+  "occlusion_training_supported": true,
+  "calendar_seconds": 123.99338142402121,
+  "visibility_limit": "Full-mesh query first hits independently replayed for one deterministic point per available visibility class/direction; not exhaustive ray replication.",
+  "scope": "Strict0.02px whole-pair geometry qualification before matching, preserving raw renderer declarations and FAILED originalv62audit. Remaining cases receive unchanged independent mesh/depth/visibility and common pose oracle. Four old pilot terrains; no matcher performance or new geographic evidence."
+}

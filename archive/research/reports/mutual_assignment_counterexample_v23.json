@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "scope": "Small loss-algebra fixture only, not a lunar/model causal diagnosis or localization result.",
+  "records": [
+    {
+      "case": "initial",
+      "scores": [
+        [
+          0.8,
+          0.7,
+          0.2
+        ],
+        [
+          0.7,
+          0.8,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.1
+        ]
+      ],
+      "full_v18_toy_objective": 0.0980882863292241,
+      "coupled_toy_objective": 0.5529107043509127,
+      "mutual_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "protected_anchors_by_direction": [
+        2,
+        2
+      ]
+    },
+    {
+      "case": "competing_reachable_candidate",
+      "scores": [
+        [
+          0.8,
+          0.95,
+          0.2
+        ],
+        [
+          0.7,
+          0.8,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.1
+        ]
+      ],
+      "full_v18_toy_objective": 0.09447944306948101,
+      "coupled_toy_objective": 1.0263126369945796,
+      "mutual_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "protected_anchors_by_direction": [
+        2,
+        2
+      ]
+    }
+  ],
+  "grid_coarse_xy": [
+    [
+      12.0,
+      12.0
+    ],
+    [
+      16.0,
+      12.0
+    ],
+    [
+      24.0,
+      12.0
+    ]
+  ],
+  "forward_target_coarse_xy": [
+    [
+      12.125,
+      12.0
+    ],
+    [
+      16.125,
+      12.0
+    ],
+    [
+      24.0,
+      12.0
+    ]
+  ],
+  "reverse_target_coarse_xy": [
+    [
+      11.875,
+      12.0
+    ],
+    [
+      15.875,
+      12.0
+    ],
+    [
+      24.0,
+      12.0
+    ]
+  ],
+  "visible": [
+    true,
+    true,
+    false
+  ],
+  "source_sha256": {
+    "diagnose_mutual_assignment_v23.py": "3823ef29700dd54a9d600ee2495e2e607c0f9dd5a49460e51360f3f875a35003",
+    "mutual_assignment_v23.py": "a40f963ab371d78c40c21a060b74dc96b631920e03dc4b88786dc5817b396d2a",
+    "search_window_learning_v18.py": "f2f9abbd394dfbc7a4a8c1b933261dca143ec624d245bb1890ceaec1740e2bda"
+  },
+  "model_inferences": 0,
+  "training_updates": 0,
+  "interpretation": "The executed v18 window loss and genuine-proposal anchor can prefer a reachable competitor that reduces mutual match cardinality. Coupled normalization penalizes this fixture. Whether this occurs in current lunar fitting and whether pose improves remain untested."
+}

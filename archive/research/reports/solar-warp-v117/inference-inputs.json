@@ -1,0 +1,212 @@
+{
+  "source_path": "reports/solar-raw-crossview-protocol-v110.json",
+  "source_sha256": "478d90ff7f50ff69d1f030c4875b3a7378b186bf61e4a1471c0bdf7990b5b932",
+  "authority_sha256": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+  "native_image_shape": [
+    512,
+    512
+  ],
+  "split": "model_selection",
+  "calibration_or_final_access": false,
+  "score_after_prediction_seal": true,
+  "scope": "Archival same-illumination feasibility with preselected matching-light reference.",
+  "role": "inference",
+  "exposures": [
+    {
+      "tag": "exposure-0",
+      "reference_geometry": {
+        "path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+        "sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+        "bytes": 6220701
+      },
+      "reference_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/combined_0001.exr",
+          "sha256": "e73087f94863fdb44dc39e04f16532236f8d748ad1650c0a78df465b78c9fc17",
+          "bytes": 648229
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/combined_0001.exr",
+          "sha256": "52d14bbd47293fa34957da6340464367f268166b75b2707776bf1e6736e1a735",
+          "bytes": 647911
+        }
+      ],
+      "query_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/combined_0001.exr",
+          "sha256": "4039cafff6ea2459392b76c8c11ed8ad71f64f483f21e02f82194480f4c763c4",
+          "bytes": 613219
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/combined_0001.exr",
+          "sha256": "d41932651a99d5816c3bd004760c51783520cacf7d23e9466282e34b7f54e73e",
+          "bytes": 615422
+        }
+      ],
+      "query_intrinsics": [
+        [
+          443.4050067376327,
+          0.0,
+          255.5
+        ],
+        [
+          0.0,
+          443.4050067376327,
+          255.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "tag": "exposure-1",
+      "reference_geometry": {
+        "path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/geometry.npz",
+        "sha256": "2be7b995ff8d9042a86bbb900bab9a2d133b293bcad1486a3033218104efd9ea",
+        "bytes": 5742882
+      },
+      "reference_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "cd8e64300ddf457781ffb62f7ffbdf81c6d2d9406bc11d1c6fe245dbae3ddccf",
+          "bytes": 689137
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "46861062148e198ca876c6f853bce24e930537f425c8d4e915d9336ab60d45cb",
+          "bytes": 688984
+        }
+      ],
+      "query_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "e49a072645a5396ff04f4db80fdb7c492577d08b0592c2a3917208dca58b5880",
+          "bytes": 707551
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "f44628cf25f2662e3e7c01b4f1c891ccc50a36d8cc29b6cdfcb9da3ee2925e7d",
+          "bytes": 707942
+        }
+      ],
+      "query_intrinsics": [
+        [
+          443.4050067376327,
+          0.0,
+          255.5
+        ],
+        [
+          0.0,
+          443.4050067376327,
+          255.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "tag": "exposure-2",
+      "reference_geometry": {
+        "path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/geometry.npz",
+        "sha256": "b1f42a5a47446e904f8467a45e1a59400925552b63056ab45356b0849b6cdd39",
+        "bytes": 5716924
+      },
+      "reference_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "661932d08eac43124c7abe42ea72bdd84f9f3e7f306aa51892244eeb2013a2b0",
+          "bytes": 4776
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "4a41e6fe3ec5567be04bd810a9008b0a1e4b791443052c74998d989e73870609",
+          "bytes": 4805
+        }
+      ],
+      "query_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "321ee3f3cf61c79a8ec3cd3423b82b3e28b66c18d50f0fafa7c21333eaae12b4",
+          "bytes": 4776
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "4b6ea820ea13d25a8aa515d82d57f7f41d9065e702ce02f37c278b5b836867c9",
+          "bytes": 4808
+        }
+      ],
+      "query_intrinsics": [
+        [
+          443.4050067376327,
+          0.0,
+          255.5
+        ],
+        [
+          0.0,
+          443.4050067376327,
+          255.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "tag": "exposure-3",
+      "reference_geometry": {
+        "path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/geometry.npz",
+        "sha256": "a1dd385e31128e89a9c78131e7b6205949e7736cb05cf286a77cf0f2e153d575",
+        "bytes": 5848554
+      },
+      "reference_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "653d079bc789e990323a478a382326d53d74b3280887e61260619255b2bd7e7d",
+          "bytes": 5089
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "cb344ba8109efbefb607f414d6d65e8e9205398617cdb0c554156a7d1550eb90",
+          "bytes": 5369
+        }
+      ],
+      "query_radiance": [
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "b6bd07bce96065bb36ebffeb760e371d58586bad535203120fe1a665513bd70e",
+          "bytes": 5494
+        },
+        {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "96accd0ca5c5cd233cafc41289e0e3fe44441efd0f030ad9d3cbc3e9843b78ac",
+          "bytes": 5311
+        }
+      ],
+      "query_intrinsics": [
+        [
+          443.4050067376327,
+          0.0,
+          255.5
+        ],
+        [
+          0.0,
+          443.4050067376327,
+          255.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

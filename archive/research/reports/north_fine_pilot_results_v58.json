@@ -1,0 +1,54 @@
+{
+  "pilots_complete": true,
+  "variants": {
+    "aligned": {
+      "updates": 100,
+      "calendar_seconds": 42.251335,
+      "fitting_seconds": 27.873291890049586,
+      "post_control_passed": true,
+      "exact_optimizer_replay_passed": true,
+      "training_bank_initial_loss": 7.1129302978515625,
+      "training_bank_final_loss": 6.725082874298096,
+      "summary_sha256": "ce335e19775ae42646eeaf19a23bb9f6ec8dd037fbcb225a8e9f1095eb5e5793"
+    },
+    "fractional": {
+      "updates": 100,
+      "calendar_seconds": 40.961982,
+      "fitting_seconds": 27.27009427009034,
+      "post_control_passed": true,
+      "exact_optimizer_replay_passed": true,
+      "training_bank_initial_loss": 7.513040065765381,
+      "training_bank_final_loss": 6.898133754730225,
+      "summary_sha256": "2e73fb9056bdf4453f68d4e4a1f69b2d17ad246a9acdf6d49f11161b57547364"
+    }
+  },
+  "matched_physical_samples": 800,
+  "pose_improvement_measured": false,
+  "model_promoted": false,
+  "calibration_or_test_pixels_loaded": 0,
+  "queue_state_at_capture": {
+    "stage": "study-aligned",
+    "pid": 81857,
+    "queue_started_utc": "2026-11-02T19:04:24.327180+00:00",
+    "updated_utc": "2026-11-02T19:07:08.626283+00:00",
+    "publication_commit": "6cc8a4c30a4bd5eea7811aa9dd71fac8648ac272",
+    "state": "running",
+    "child_pid": 82053,
+    "started_utc": "2026-11-02T19:07:08.620867+00:00",
+    "absolute_deadline_utc": "2026-11-02T20:37:08.620867+00:00",
+    "cap_seconds": 5400,
+    "command": [
+      "/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python",
+      "train_north_fine_v58.py",
+      "--mode",
+      "study",
+      "--variant",
+      "aligned",
+      "--output",
+      "runs/north-fine-v58-study-aligned",
+      "--publication-commit",
+      "6cc8a4c30a4bd5eea7811aa9dd71fac8648ac272"
+    ]
+  },
+  "scope": "Both100update training-only pilots independently exactly replayed.2000update development studies admitted by controls/cost; no learned pose gain or final-test result yet."
+}

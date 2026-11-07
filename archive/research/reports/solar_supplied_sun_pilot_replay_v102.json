@@ -1,0 +1,5449 @@
+{
+  "passed": true,
+  "replayed_rows": 96,
+  "rows": [
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u013-l00-00-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 133,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "2": {
+          "correct": 138,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "4": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "8": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "12": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u013-to-u021-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u014-l16-01-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 75,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "2": {
+          "correct": 89,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "4": {
+          "correct": 93,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "8": {
+          "correct": 94,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "12": {
+          "correct": 94,
+          "co_visible": 96,
+          "returned": 96
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u014-to-u022-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u015-l00-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 22,
+          "co_visible": 30,
+          "returned": 31
+        },
+        "2": {
+          "correct": 25,
+          "co_visible": 30,
+          "returned": 31
+        },
+        "4": {
+          "correct": 26,
+          "co_visible": 30,
+          "returned": 31
+        },
+        "8": {
+          "correct": 27,
+          "co_visible": 30,
+          "returned": 31
+        },
+        "12": {
+          "correct": 27,
+          "co_visible": 30,
+          "returned": 31
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u015-to-u023-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u020-l08-17-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 70,
+          "co_visible": 79,
+          "returned": 79
+        },
+        "2": {
+          "correct": 77,
+          "co_visible": 79,
+          "returned": 79
+        },
+        "4": {
+          "correct": 78,
+          "co_visible": 79,
+          "returned": 79
+        },
+        "8": {
+          "correct": 78,
+          "co_visible": 79,
+          "returned": 79
+        },
+        "12": {
+          "correct": 78,
+          "co_visible": 79,
+          "returned": 79
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u020-to-u024-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u021-l16-16-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 150,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "2": {
+          "correct": 160,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "4": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "8": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "12": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u021-to-u025-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u022-l16-01-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 49,
+          "co_visible": 60,
+          "returned": 60
+        },
+        "2": {
+          "correct": 53,
+          "co_visible": 60,
+          "returned": 60
+        },
+        "4": {
+          "correct": 54,
+          "co_visible": 60,
+          "returned": 60
+        },
+        "8": {
+          "correct": 55,
+          "co_visible": 60,
+          "returned": 60
+        },
+        "12": {
+          "correct": 55,
+          "co_visible": 60,
+          "returned": 60
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u022-to-u026-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u024-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 71,
+          "co_visible": 94,
+          "returned": 94
+        },
+        "2": {
+          "correct": 91,
+          "co_visible": 94,
+          "returned": 94
+        },
+        "4": {
+          "correct": 93,
+          "co_visible": 94,
+          "returned": 94
+        },
+        "8": {
+          "correct": 94,
+          "co_visible": 94,
+          "returned": 94
+        },
+        "12": {
+          "correct": 94,
+          "co_visible": 94,
+          "returned": 94
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u024-to-u056-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u025-l00-00-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "4": {
+          "correct": 1,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "8": {
+          "correct": 14,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "12": {
+          "correct": 29,
+          "co_visible": 1560,
+          "returned": 1889
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u025-to-u057-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u027-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 1683,
+          "returned": 1862
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 1683,
+          "returned": 1862
+        },
+        "4": {
+          "correct": 1,
+          "co_visible": 1683,
+          "returned": 1862
+        },
+        "8": {
+          "correct": 3,
+          "co_visible": 1683,
+          "returned": 1862
+        },
+        "12": {
+          "correct": 6,
+          "co_visible": 1683,
+          "returned": 1862
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u027-to-u059-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u057-l16-16-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 138,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "2": {
+          "correct": 140,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "4": {
+          "correct": 140,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "8": {
+          "correct": 141,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "12": {
+          "correct": 141,
+          "co_visible": 142,
+          "returned": 142
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u057-to-u061-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u058-l00-17-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 163,
+          "co_visible": 188,
+          "returned": 188
+        },
+        "2": {
+          "correct": 181,
+          "co_visible": 188,
+          "returned": 188
+        },
+        "4": {
+          "correct": 186,
+          "co_visible": 188,
+          "returned": 188
+        },
+        "8": {
+          "correct": 186,
+          "co_visible": 188,
+          "returned": 188
+        },
+        "12": {
+          "correct": 186,
+          "co_visible": 188,
+          "returned": 188
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u058-to-u062-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u059-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 1
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 1
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 1
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 1
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 1
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u059-to-u063-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u061-l00-17-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u061-to-u069-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u062-l00-00-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 23,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "2": {
+          "correct": 26,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "4": {
+          "correct": 26,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "8": {
+          "correct": 27,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "12": {
+          "correct": 28,
+          "co_visible": 29,
+          "returned": 29
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u062-to-u070-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u063-l16-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u063-to-u071-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u068-l16-16-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 71,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "2": {
+          "correct": 75,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "4": {
+          "correct": 76,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "8": {
+          "correct": 77,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "12": {
+          "correct": 77,
+          "co_visible": 78,
+          "returned": 78
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u068-to-u072-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u069-l16-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 18,
+          "co_visible": 23,
+          "returned": 25
+        },
+        "2": {
+          "correct": 21,
+          "co_visible": 23,
+          "returned": 25
+        },
+        "4": {
+          "correct": 22,
+          "co_visible": 23,
+          "returned": 25
+        },
+        "8": {
+          "correct": 22,
+          "co_visible": 23,
+          "returned": 25
+        },
+        "12": {
+          "correct": 22,
+          "co_visible": 23,
+          "returned": 25
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u069-to-u073-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u070-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 123,
+          "co_visible": 162,
+          "returned": 162
+        },
+        "2": {
+          "correct": 148,
+          "co_visible": 162,
+          "returned": 162
+        },
+        "4": {
+          "correct": 154,
+          "co_visible": 162,
+          "returned": 162
+        },
+        "8": {
+          "correct": 156,
+          "co_visible": 162,
+          "returned": 162
+        },
+        "12": {
+          "correct": 157,
+          "co_visible": 162,
+          "returned": 162
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u070-to-u074-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u072-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 1,
+          "co_visible": 7,
+          "returned": 7
+        },
+        "2": {
+          "correct": 3,
+          "co_visible": 7,
+          "returned": 7
+        },
+        "4": {
+          "correct": 5,
+          "co_visible": 7,
+          "returned": 7
+        },
+        "8": {
+          "correct": 6,
+          "co_visible": 7,
+          "returned": 7
+        },
+        "12": {
+          "correct": 6,
+          "co_visible": 7,
+          "returned": 7
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u072-to-u092-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u073-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 16,
+          "co_visible": 32,
+          "returned": 32
+        },
+        "2": {
+          "correct": 24,
+          "co_visible": 32,
+          "returned": 32
+        },
+        "4": {
+          "correct": 29,
+          "co_visible": 32,
+          "returned": 32
+        },
+        "8": {
+          "correct": 30,
+          "co_visible": 32,
+          "returned": 32
+        },
+        "12": {
+          "correct": 31,
+          "co_visible": 32,
+          "returned": 32
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u073-to-u093-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u075-l00-00-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "2": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "4": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "8": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "12": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u075-to-u095-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u093-l08-01-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 45,
+          "co_visible": 71,
+          "returned": 72
+        },
+        "2": {
+          "correct": 57,
+          "co_visible": 71,
+          "returned": 72
+        },
+        "4": {
+          "correct": 62,
+          "co_visible": 71,
+          "returned": 72
+        },
+        "8": {
+          "correct": 66,
+          "co_visible": 71,
+          "returned": 72
+        },
+        "12": {
+          "correct": 69,
+          "co_visible": 71,
+          "returned": 72
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u093-to-u013-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u094-l16-16-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 90,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "2": {
+          "correct": 94,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "4": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "8": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "12": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u094-to-u014-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u095-l00-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 65,
+          "co_visible": 87,
+          "returned": 87
+        },
+        "2": {
+          "correct": 70,
+          "co_visible": 87,
+          "returned": 87
+        },
+        "4": {
+          "correct": 77,
+          "co_visible": 87,
+          "returned": 87
+        },
+        "8": {
+          "correct": 80,
+          "co_visible": 87,
+          "returned": 87
+        },
+        "12": {
+          "correct": 81,
+          "co_visible": 87,
+          "returned": 87
+        }
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "case_id": "u095-to-u015-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u013-l00-00-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 133,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "2": {
+          "correct": 138,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "4": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "8": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        },
+        "12": {
+          "correct": 141,
+          "co_visible": 141,
+          "returned": 141
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u013-to-u021-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u014-l16-01-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 110,
+          "co_visible": 122,
+          "returned": 122
+        },
+        "2": {
+          "correct": 115,
+          "co_visible": 122,
+          "returned": 122
+        },
+        "4": {
+          "correct": 121,
+          "co_visible": 122,
+          "returned": 122
+        },
+        "8": {
+          "correct": 122,
+          "co_visible": 122,
+          "returned": 122
+        },
+        "12": {
+          "correct": 122,
+          "co_visible": 122,
+          "returned": 122
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u014-to-u022-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u015-l00-17-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 22,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "2": {
+          "correct": 25,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "4": {
+          "correct": 28,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "8": {
+          "correct": 28,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "12": {
+          "correct": 29,
+          "co_visible": 29,
+          "returned": 29
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u015-to-u023-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u020-l08-17-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 62,
+          "co_visible": 68,
+          "returned": 68
+        },
+        "2": {
+          "correct": 66,
+          "co_visible": 68,
+          "returned": 68
+        },
+        "4": {
+          "correct": 66,
+          "co_visible": 68,
+          "returned": 68
+        },
+        "8": {
+          "correct": 67,
+          "co_visible": 68,
+          "returned": 68
+        },
+        "12": {
+          "correct": 67,
+          "co_visible": 68,
+          "returned": 68
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u020-to-u024-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u021-l16-16-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 150,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "2": {
+          "correct": 160,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "4": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "8": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        },
+        "12": {
+          "correct": 161,
+          "co_visible": 161,
+          "returned": 161
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u021-to-u025-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u022-l16-01-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 53,
+          "co_visible": 56,
+          "returned": 56
+        },
+        "2": {
+          "correct": 56,
+          "co_visible": 56,
+          "returned": 56
+        },
+        "4": {
+          "correct": 56,
+          "co_visible": 56,
+          "returned": 56
+        },
+        "8": {
+          "correct": 56,
+          "co_visible": 56,
+          "returned": 56
+        },
+        "12": {
+          "correct": 56,
+          "co_visible": 56,
+          "returned": 56
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u022-to-u026-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u024-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 105,
+          "co_visible": 109,
+          "returned": 109
+        },
+        "2": {
+          "correct": 108,
+          "co_visible": 109,
+          "returned": 109
+        },
+        "4": {
+          "correct": 109,
+          "co_visible": 109,
+          "returned": 109
+        },
+        "8": {
+          "correct": 109,
+          "co_visible": 109,
+          "returned": 109
+        },
+        "12": {
+          "correct": 109,
+          "co_visible": 109,
+          "returned": 109
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u024-to-u056-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u025-l00-00-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "4": {
+          "correct": 1,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "8": {
+          "correct": 14,
+          "co_visible": 1560,
+          "returned": 1889
+        },
+        "12": {
+          "correct": 29,
+          "co_visible": 1560,
+          "returned": 1889
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u025-to-u057-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u027-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 556,
+          "returned": 628
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 556,
+          "returned": 628
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 556,
+          "returned": 628
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 556,
+          "returned": 628
+        },
+        "12": {
+          "correct": 1,
+          "co_visible": 556,
+          "returned": 628
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u027-to-u059-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u057-l16-16-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 138,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "2": {
+          "correct": 140,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "4": {
+          "correct": 140,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "8": {
+          "correct": 141,
+          "co_visible": 142,
+          "returned": 142
+        },
+        "12": {
+          "correct": 141,
+          "co_visible": 142,
+          "returned": 142
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u057-to-u061-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u058-l00-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 129,
+          "co_visible": 136,
+          "returned": 138
+        },
+        "2": {
+          "correct": 135,
+          "co_visible": 136,
+          "returned": 138
+        },
+        "4": {
+          "correct": 135,
+          "co_visible": 136,
+          "returned": 138
+        },
+        "8": {
+          "correct": 135,
+          "co_visible": 136,
+          "returned": 138
+        },
+        "12": {
+          "correct": 135,
+          "co_visible": 136,
+          "returned": 138
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u058-to-u062-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u059-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 2
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 2
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 2
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 2
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 1,
+          "returned": 2
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u059-to-u063-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u061-l00-17-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u061-to-u069-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u062-l00-00-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 23,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "2": {
+          "correct": 26,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "4": {
+          "correct": 26,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "8": {
+          "correct": 27,
+          "co_visible": 29,
+          "returned": 29
+        },
+        "12": {
+          "correct": 28,
+          "co_visible": 29,
+          "returned": 29
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u062-to-u070-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u063-l16-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "2": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "4": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "8": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        },
+        "12": {
+          "correct": 0,
+          "co_visible": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u063-to-u071-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u068-l16-16-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 71,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "2": {
+          "correct": 75,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "4": {
+          "correct": 76,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "8": {
+          "correct": 77,
+          "co_visible": 78,
+          "returned": 78
+        },
+        "12": {
+          "correct": 77,
+          "co_visible": 78,
+          "returned": 78
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u068-to-u072-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u069-l16-01-positive",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 36,
+          "co_visible": 41,
+          "returned": 43
+        },
+        "2": {
+          "correct": 39,
+          "co_visible": 41,
+          "returned": 43
+        },
+        "4": {
+          "correct": 40,
+          "co_visible": 41,
+          "returned": 43
+        },
+        "8": {
+          "correct": 40,
+          "co_visible": 41,
+          "returned": 43
+        },
+        "12": {
+          "correct": 40,
+          "co_visible": 41,
+          "returned": 43
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u069-to-u073-l16-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u070-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 184,
+          "co_visible": 203,
+          "returned": 203
+        },
+        "2": {
+          "correct": 199,
+          "co_visible": 203,
+          "returned": 203
+        },
+        "4": {
+          "correct": 202,
+          "co_visible": 203,
+          "returned": 203
+        },
+        "8": {
+          "correct": 203,
+          "co_visible": 203,
+          "returned": 203
+        },
+        "12": {
+          "correct": 203,
+          "co_visible": 203,
+          "returned": 203
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u070-to-u074-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u072-l08-01-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 6,
+          "co_visible": 21,
+          "returned": 21
+        },
+        "2": {
+          "correct": 13,
+          "co_visible": 21,
+          "returned": 21
+        },
+        "4": {
+          "correct": 17,
+          "co_visible": 21,
+          "returned": 21
+        },
+        "8": {
+          "correct": 17,
+          "co_visible": 21,
+          "returned": 21
+        },
+        "12": {
+          "correct": 17,
+          "co_visible": 21,
+          "returned": 21
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u072-to-u092-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u073-l08-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 25,
+          "co_visible": 35,
+          "returned": 35
+        },
+        "2": {
+          "correct": 32,
+          "co_visible": 35,
+          "returned": 35
+        },
+        "4": {
+          "correct": 33,
+          "co_visible": 35,
+          "returned": 35
+        },
+        "8": {
+          "correct": 34,
+          "co_visible": 35,
+          "returned": 35
+        },
+        "12": {
+          "correct": 35,
+          "co_visible": 35,
+          "returned": 35
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u073-to-u093-l08-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u075-l00-00-positive",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "2": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "4": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "8": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        },
+        "12": {
+          "correct": 3,
+          "co_visible": 3,
+          "returned": 4
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u075-to-u095-l00-00-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u093-l08-01-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 64,
+          "co_visible": 77,
+          "returned": 77
+        },
+        "2": {
+          "correct": 72,
+          "co_visible": 77,
+          "returned": 77
+        },
+        "4": {
+          "correct": 74,
+          "co_visible": 77,
+          "returned": 77
+        },
+        "8": {
+          "correct": 74,
+          "co_visible": 77,
+          "returned": 77
+        },
+        "12": {
+          "correct": 75,
+          "co_visible": 77,
+          "returned": 77
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u093-to-u013-l08-01-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u094-l16-16-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 90,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "2": {
+          "correct": 94,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "4": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "8": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        },
+        "12": {
+          "correct": 95,
+          "co_visible": 96,
+          "returned": 96
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u094-to-u014-l16-16-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u095-l00-17-positive",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {
+        "1": {
+          "correct": 74,
+          "co_visible": 93,
+          "returned": 93
+        },
+        "2": {
+          "correct": 84,
+          "co_visible": 93,
+          "returned": 93
+        },
+        "4": {
+          "correct": 91,
+          "co_visible": 93,
+          "returned": 93
+        },
+        "8": {
+          "correct": 91,
+          "co_visible": 93,
+          "returned": 93
+        },
+        "12": {
+          "correct": 91,
+          "co_visible": 93,
+          "returned": 93
+        }
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "case_id": "u095-to-u015-l00-17-nonoverlap",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false,
+      "correspondence": {}
+    }
+  ],
+  "table": [
+    {
+      "profile": "nearest_even",
+      "track": "known_sun",
+      "positive": {
+        "cases": 24,
+        "raw_correct_poses": 16,
+        "raw_pose_outputs": 19,
+        "raw_wrong_positive": 3,
+        "raw_nonoverlap_outputs": 0,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "nonoverlap": {
+        "cases": 24,
+        "raw_correct_poses": 0,
+        "raw_pose_outputs": 0,
+        "raw_wrong_positive": 0,
+        "raw_nonoverlap_outputs": 0,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "raw_pose_success": 0.6666666666666666,
+      "median_complete_inference_seconds": 0.19654814549721777,
+      "mean_localization_seconds_including_measured_cold_setup": 0.554971448504754,
+      "cold_reference_setup_total_seconds": 16.013318432087544,
+      "model_load_seconds_shared_across_tracks": 2.232375842053443,
+      "module_execution": {
+        "response_requested_cases": 0,
+        "response_confirmed_cases": 0,
+        "response_zero_cases": 0,
+        "response_unreported_cases": 48,
+        "response_refresh_attempted_cases": 0,
+        "scope": "Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."
+      },
+      "by_reference_terrain": {
+        "np31-r0-c4": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r0-c7": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r1-c0": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 2,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c2": {
+          "cases": 6,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c3": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c5": {
+          "cases": 6,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r4-c1": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r4-c7": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "by_lighting": {
+        "0,0": {
+          "cases": 8,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,16": {
+          "cases": 8,
+          "raw_correct_poses": 4,
+          "raw_pose_outputs": 4,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "0,17": {
+          "cases": 8,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,1": {
+          "cases": 8,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,17": {
+          "cases": 8,
+          "raw_correct_poses": 4,
+          "raw_pose_outputs": 4,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,1": {
+          "cases": 8,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "comparison_available": true,
+      "nonoverlap_evaluation_available": true,
+      "accepted_performance": null
+    },
+    {
+      "profile": "two_reference_ic",
+      "track": "known_sun",
+      "positive": {
+        "cases": 24,
+        "raw_correct_poses": 16,
+        "raw_pose_outputs": 20,
+        "raw_wrong_positive": 4,
+        "raw_nonoverlap_outputs": 0,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "nonoverlap": {
+        "cases": 24,
+        "raw_correct_poses": 0,
+        "raw_pose_outputs": 0,
+        "raw_wrong_positive": 0,
+        "raw_nonoverlap_outputs": 0,
+        "inference_failures": 0,
+        "unavailable_cases": 0,
+        "timeout_cases": 0
+      },
+      "raw_pose_success": 0.6666666666666666,
+      "median_complete_inference_seconds": 0.22719517251243815,
+      "mean_localization_seconds_including_measured_cold_setup": 0.5608301593310898,
+      "cold_reference_setup_total_seconds": 16.99327698891284,
+      "model_load_seconds_shared_across_tracks": 2.8081250739633106,
+      "module_execution": {
+        "response_requested_cases": 0,
+        "response_confirmed_cases": 0,
+        "response_zero_cases": 0,
+        "response_unreported_cases": 48,
+        "response_refresh_attempted_cases": 0,
+        "scope": "Execution diagnostics only; a requested module is not proof that its learned responses were used or improved accuracy."
+      },
+      "by_reference_terrain": {
+        "np31-r0-c4": {
+          "cases": 6,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r0-c7": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r1-c0": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 2,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c2": {
+          "cases": 6,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c3": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 1,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r3-c5": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r4-c1": {
+          "cases": 6,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 2,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "np31-r4-c7": {
+          "cases": 6,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "by_lighting": {
+        "0,0": {
+          "cases": 8,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,16": {
+          "cases": 8,
+          "raw_correct_poses": 4,
+          "raw_pose_outputs": 4,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "0,17": {
+          "cases": 8,
+          "raw_correct_poses": 2,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 1,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "16,1": {
+          "cases": 8,
+          "raw_correct_poses": 3,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,17": {
+          "cases": 8,
+          "raw_correct_poses": 4,
+          "raw_pose_outputs": 4,
+          "raw_wrong_positive": 0,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        },
+        "8,1": {
+          "cases": 8,
+          "raw_correct_poses": 1,
+          "raw_pose_outputs": 3,
+          "raw_wrong_positive": 2,
+          "raw_nonoverlap_outputs": 0,
+          "inference_failures": 0,
+          "unavailable_cases": 0,
+          "timeout_cases": 0
+        }
+      },
+      "comparison_available": true,
+      "nonoverlap_evaluation_available": true,
+      "accepted_performance": null
+    }
+  ],
+  "track": "known_sun",
+  "strata": {
+    "all": {
+      "nearest_even": {
+        "positives": 24,
+        "nonoverlap": 24,
+        "correct": 16,
+        "strict": 4,
+        "wrong_positive": 3,
+        "missing_positive_pose": 5,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.19654814549721777
+      },
+      "two_reference_ic": {
+        "positives": 24,
+        "nonoverlap": 24,
+        "correct": 16,
+        "strict": 5,
+        "wrong_positive": 4,
+        "missing_positive_pose": 4,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.22719517251243815
+      },
+      "paired_terrain_interval": {
+        "raw_correct_pose_difference": [
+          -0.125,
+          0.0,
+          0.125
+        ],
+        "raw_wrong_pose_difference": [
+          -0.08333333333333333,
+          0.041666666666666664,
+          0.16666666666666666
+        ],
+        "raw_nonoverlap_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "terrain_components": 8,
+        "repetitions": 2000,
+        "seed": 20261101,
+        "negative_resampling": "product of both endpoint terrain multiplicities",
+        "accepted_performance_evaluated": false
+      }
+    },
+    "common_supported": {
+      "nearest_even": {
+        "positives": 24,
+        "nonoverlap": 14,
+        "correct": 16,
+        "strict": 4,
+        "wrong_positive": 3,
+        "missing_positive_pose": 5,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.1999362444912549
+      },
+      "two_reference_ic": {
+        "positives": 24,
+        "nonoverlap": 14,
+        "correct": 16,
+        "strict": 5,
+        "wrong_positive": 4,
+        "missing_positive_pose": 4,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.24158331748913042
+      },
+      "paired_terrain_interval": {
+        "raw_correct_pose_difference": [
+          -0.125,
+          0.0,
+          0.125
+        ],
+        "raw_wrong_pose_difference": [
+          -0.08333333333333333,
+          0.041666666666666664,
+          0.16666666666666666
+        ],
+        "raw_nonoverlap_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "terrain_components": 8,
+        "repetitions": 2000,
+        "seed": 20261101,
+        "negative_resampling": "product of both endpoint terrain multiplicities",
+        "accepted_performance_evaluated": false
+      }
+    },
+    "odd_query_index": {
+      "nearest_even": {
+        "positives": 16,
+        "nonoverlap": 16,
+        "correct": 10,
+        "strict": 2,
+        "wrong_positive": 2,
+        "missing_positive_pose": 4,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.19203443700098433
+      },
+      "two_reference_ic": {
+        "positives": 16,
+        "nonoverlap": 16,
+        "correct": 10,
+        "strict": 3,
+        "wrong_positive": 3,
+        "missing_positive_pose": 3,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.23401835799450055
+      },
+      "paired_terrain_interval": {
+        "raw_correct_pose_difference": [
+          -0.1875,
+          0.0,
+          0.1875
+        ],
+        "raw_wrong_pose_difference": [
+          -0.125,
+          0.0625,
+          0.25
+        ],
+        "raw_nonoverlap_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "terrain_components": 8,
+        "repetitions": 2000,
+        "seed": 20261101,
+        "negative_resampling": "product of both endpoint terrain multiplicities",
+        "accepted_performance_evaluated": false
+      }
+    },
+    "odd_query_common_supported": {
+      "nearest_even": {
+        "positives": 16,
+        "nonoverlap": 9,
+        "correct": 10,
+        "strict": 2,
+        "wrong_positive": 2,
+        "missing_positive_pose": 4,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.19531268900027499
+      },
+      "two_reference_ic": {
+        "positives": 16,
+        "nonoverlap": 9,
+        "correct": 10,
+        "strict": 3,
+        "wrong_positive": 3,
+        "missing_positive_pose": 3,
+        "raw_nonoverlap": 0,
+        "inference_failures_positive": 0,
+        "inference_failures_nonoverlap": 0,
+        "median_complete_inference_seconds": 0.24158716498641297
+      },
+      "paired_terrain_interval": {
+        "raw_correct_pose_difference": [
+          -0.1875,
+          0.0,
+          0.1875
+        ],
+        "raw_wrong_pose_difference": [
+          -0.125,
+          0.0625,
+          0.25
+        ],
+        "raw_nonoverlap_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "terrain_components": 8,
+        "repetitions": 2000,
+        "seed": 20261101,
+        "negative_resampling": "product of both endpoint terrain multiplicities",
+        "accepted_performance_evaluated": false
+      }
+    }
+  },
+  "metadata_support": {
+    "positive": 24,
+    "nonoverlap": 14,
+    "unsupported_nonoverlap": 10
+  },
+  "planned_and_observed_trace": [
+    {
+      "profile": "nearest_even",
+      "case_id": "u013-l00-00-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076922,
+          -0.06440767589202108,
+          0.028487226821102968
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u013-to-u021-l00-00-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.7374415372589133,
+          0.6754075773148636,
+          0.0021409415866926254
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 46.19786932245079,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u014-l16-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19396829891096756,
+          0.03310113700260949
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042850344560388,
+          0.5043455098109791
+        ],
+        "vertical_residual": -0.00022606452393190285,
+        "horizontal_condition": 7.598818120960688,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u014-to-u022-l16-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.8192252078287343,
+          0.5734428843828251,
+          0.005772106086453642
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 38.700828641436125,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u015-l00-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7501744180539803,
+          0.0529087376171488
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.497426263134477,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043378718275687,
+          0.504297195169222
+        ],
+        "vertical_residual": -0.0002261829902442461,
+        "horizontal_condition": 7.589765398790021,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u015-to-u023-l00-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          10
+        ],
+        "supplied_sun_enu": [
+          0.08651098923197881,
+          -0.9943443980352339,
+          0.06160411380786843
+        ],
+        "nearest_index": 10,
+        "nearest_angle_deg": 6.283220195341029,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5854036937110085,
+          0.42300652723655563
+        ],
+        "vertical_residual": -0.00022029347580534986,
+        "horizontal_condition": 7.583858826200059,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u020-l08-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7479434736081952,
+          0.07836805666708602
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043602898305167,
+          0.504280629439398
+        ],
+        "vertical_residual": -0.0002267415789489191,
+        "horizontal_condition": 7.582922667411295,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u020-to-u024-l08-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.07746512557002422,
+          0.9960595785314766,
+          -0.04317951292126654
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 96.76137514200876,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u021-l16-16-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764227,
+          -0.8273533646853624,
+          0.08390249609932417
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u021-to-u025-l16-16-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.20689150690818386,
+          0.9774669607522175,
+          -0.041883708134353145
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 89.26680998617783,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u022-l16-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832954,
+          -0.19273156399933764,
+          0.0396727928390385
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.504256843062716,
+          0.5043752174235152
+        ],
+        "vertical_residual": -0.00022650912051051103,
+        "horizontal_condition": 7.610095758738531,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u022-to-u026-l16-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.8243928286114413,
+          -0.5622242504350803,
+          0.06542443241434526
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 6.8032632661266295,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5507563916662528,
+          0.4578072515647728
+        ],
+        "vertical_residual": -0.00022471382119244876,
+        "horizontal_condition": 7.595115435624676,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u024-l08-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7484555056585526,
+          0.0733167652605393
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043558272108668,
+          0.5042839270815475
+        ],
+        "vertical_residual": -0.00022660954916618736,
+        "horizontal_condition": 7.584366639634587,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u024-to-u056-l08-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.9995374725381634,
+          0.017092382073446644,
+          0.025153358962080413
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 12.133062632106775,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u025-l00-00-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076921,
+          -0.0636080699666035,
+          0.030230518369559457
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 1.4787793334710982e-06,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u025-to-u057-l00-00-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          6
+        ],
+        "supplied_sun_enu": [
+          0.5961993149742527,
+          -0.7991826281762268,
+          0.07650819332313721
+        ],
+        "nearest_index": 6,
+        "nearest_angle_deg": 4.63564744231297,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.69498166839094,
+          0.3123987478161393
+        ],
+        "vertical_residual": -0.00019357874457301416,
+        "horizontal_condition": 7.579574115057892,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u027-l08-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19299501014023668,
+          0.03837072209706119
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042624527018359,
+          0.5043693060808748
+        ],
+        "vertical_residual": -0.00022639983731696095,
+        "horizontal_condition": 7.6072024875417865,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u027-to-u059-l08-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          8
+        ],
+        "supplied_sun_enu": [
+          0.48636327928395184,
+          -0.8699975205753988,
+          0.08096341616322293
+        ],
+        "nearest_index": 8,
+        "nearest_angle_deg": 2.8617814234212604,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.19295318800238234,
+          0.8123814420088925
+        ],
+        "vertical_residual": -0.00013992042608024224,
+        "horizontal_condition": 7.579574115057892,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u057-l16-16-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764226,
+          -0.8299676212780561,
+          0.052028516584005854
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 1.2074182697257333e-06,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u057-to-u061-l16-16-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          20
+        ],
+        "supplied_sun_enu": [
+          -0.8946290218759012,
+          -0.44501168322221957,
+          0.04004391355868242
+        ],
+        "nearest_index": 20,
+        "nearest_angle_deg": 0.24974329914591062,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.01684859077821012,
+          0.9837162084243979
+        ],
+        "vertical_residual": -1.4791882666391476e-05,
+        "horizontal_condition": 7.593700769153439,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u058-l00-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567631,
+          -0.7504036520135,
+          0.04955149910618627
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134477,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043349276213251,
+          0.5042993707834054
+        ],
+        "vertical_residual": -0.0002261290885675893,
+        "horizontal_condition": 7.590585610912627,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u058-to-u062-l00-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          20
+        ],
+        "supplied_sun_enu": [
+          -0.9451955418381175,
+          -0.3244816066669396,
+          0.03629152275930383
+        ],
+        "nearest_index": 20,
+        "nearest_angle_deg": 7.247683319298756,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.521039187752652,
+          0.48758246331956284
+        ],
+        "vertical_residual": -0.00022579785959673387,
+        "horizontal_condition": 7.596673778165565,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u059-l08-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.1941144704994813,
+          0.032232880665338644
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042887389972075,
+          0.5043416060282748
+        ],
+        "vertical_residual": -0.00022602555102414074,
+        "horizontal_condition": 7.597942475767577,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u059-to-u063-l08-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          4
+        ],
+        "supplied_sun_enu": [
+          0.7544490017128515,
+          -0.6547043139973648,
+          0.04657214884157686
+        ],
+        "nearest_index": 4,
+        "nearest_angle_deg": 7.247683319298756,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5209946424616481,
+          0.48762940542406447
+        ],
+        "vertical_residual": -0.00022586063125764472,
+        "horizontal_condition": 7.5921244616091235,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u061-l00-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7509369789798063,
+          0.04067733545293576
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043271554067195,
+          0.5043051140428559
+        ],
+        "vertical_residual": -0.00022600856646156492,
+        "horizontal_condition": 7.592659915699081,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u061-to-u069-l00-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.8274976156851903,
+          0.5612594266636712,
+          0.015347703948549323
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 45.36209171670131,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u062-l00-00-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076923,
+          -0.06486333411547991,
+          0.02743389679196579
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u062-to-u070-l00-00-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          12
+        ],
+        "supplied_sun_enu": [
+          0.05878952064703952,
+          -0.9972360565906202,
+          0.045431703662542955
+        ],
+        "nearest_index": 12,
+        "nearest_angle_deg": 7.119047905041243,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.4789986464610598,
+          0.5296126857819293
+        ],
+        "vertical_residual": -0.00022546039218667574,
+        "horizontal_condition": 7.590487915393143,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u063-l16-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19448193968575206,
+          0.029935954792648538
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042985207166558,
+          0.504331298218087
+        ],
+        "vertical_residual": -0.00022594440751152328,
+        "horizontal_condition": 7.5963082762411185,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u063-to-u071-l16-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          12
+        ],
+        "supplied_sun_enu": [
+          -0.07196906043019069,
+          -0.9963723848083624,
+          0.04541503200585251
+        ],
+        "nearest_index": 12,
+        "nearest_angle_deg": 0.3783788868324318,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.9753241377535159,
+          0.02552418463355757
+        ],
+        "vertical_residual": -2.2210628122736054e-05,
+        "horizontal_condition": 7.590649736937954,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u068-l16-16-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764227,
+          -0.8299673721487171,
+          0.05203249058463495
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.0,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u068-to-u072-l16-16-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9604883049996118,
+          -0.2761376934894668,
+          0.034787787990761446
+        ],
+        "nearest_index": 2,
+        "nearest_angle_deg": 2.6570245263345673,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.17915685193912126,
+          0.8258732777130257
+        ],
+        "vertical_residual": -0.0001317372587636631,
+        "horizontal_condition": 7.597943337260771,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u069-l16-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.1941143161617087,
+          0.032233810112243806
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042887350337417,
+          0.5043416102049079
+        ],
+        "vertical_residual": -0.00022602559030231867,
+        "horizontal_condition": 7.597943337260771,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u069-to-u073-l16-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.11156832376973219,
+          0.9937453999567725,
+          -0.004752809270986102
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 94.7993384305756,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u070-l08-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567633,
+          -0.7504034147453799,
+          0.049555092143414275
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.4974262631342805,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043349307711058,
+          0.5042993684558827
+        ],
+        "vertical_residual": -0.0002261291438130572,
+        "horizontal_condition": 7.590584743465377,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u070-to-u074-l08-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9161041357209816,
+          -0.3990764786784406,
+          0.038615756894429275
+        ],
+        "nearest_index": 2,
+        "nearest_angle_deg": 4.840404259970759,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.6813911834241891,
+          0.3261554286173869
+        ],
+        "vertical_residual": -0.00019764301361212266,
+        "horizontal_condition": 7.5952404157346125,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u072-l08-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.19327983306296548,
+          0.036909245243328226
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042687340562141,
+          0.5043626868960783
+        ],
+        "vertical_residual": -0.0002262897269492553,
+        "horizontal_condition": 7.604345217453417,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u072-to-u092-l08-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5422411200238334,
+          -0.8370870479331297,
+          0.072524767754864
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.9006829240088611,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.060761339467072926,
+          0.9411877610803678
+        ],
+        "vertical_residual": -5.109951572457305e-05,
+        "horizontal_condition": 7.578769405076679,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u073-l08-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567633,
+          -0.7489888599926935,
+          0.06765116130351212
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043508312813283,
+          0.5042876188117675
+        ],
+        "vertical_residual": -0.00022647400974137866,
+        "horizontal_condition": 7.585935840351929,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u073-to-u093-l08-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.4561806164957525,
+          0.8895900524562291,
+          -0.02299529744271607
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 74.06936767969833,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u075-l00-00-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076922,
+          -0.06383500088959682,
+          0.02974833553652675
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u075-to-u095-l00-00-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          14
+        ],
+        "supplied_sun_enu": [
+          -0.42798431011226945,
+          -0.9005818992464529,
+          0.07603731352024864
+        ],
+        "nearest_index": 14,
+        "nearest_angle_deg": 6.596744505193885,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5645141148339987,
+          0.44400129818141953
+        ],
+        "vertical_residual": -0.00022324835004221277,
+        "horizontal_condition": 7.578769405076679,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u093-l08-01-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.19273167714864753,
+          0.03967224315248001
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042568454336886,
+          0.5043752149250242
+        ],
+        "vertical_residual": -0.00022650907214100818,
+        "horizontal_condition": 7.610094467844665,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u093-to-u013-l08-01-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.45308913403597245,
+          -0.8871047941223993,
+          0.08806429959744422
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 6.795631972750005,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.45737504773264837,
+          0.5511923436542698
+        ],
+        "vertical_residual": -0.0002248121297901695,
+        "horizontal_condition": 7.572083060172112,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u094-l16-16-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764226,
+          -0.8273536039788716,
+          0.08390013641860286
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.0,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u094-to-u014-l16-16-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.6498616141055635,
+          0.7595835655755836,
+          -0.026696243548385214
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 60.67904405005968,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u095-l00-17-positive",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7479436971173474,
+          0.07836592346997932
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.4974262631342805,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043602879441559,
+          0.50428063083332
+        ],
+        "vertical_residual": -0.00022674152095754352,
+        "horizontal_condition": 7.582923286080424,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "nearest_even",
+      "case_id": "u095-to-u015-l00-17-nonoverlap",
+      "observed": {
+        "method": "nearest_even",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.5451540483733237,
+          0.8377195094269393,
+          -0.03214167182434523
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 68.17545066179856,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u013-l00-00-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076922,
+          -0.06440767589202108,
+          0.028487226821102968
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u013-to-u021-l00-00-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          0.7374415372589133,
+          0.6754075773148636,
+          0.0021409415866926254
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 46.19786932245079,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u014-l16-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19396829891096756,
+          0.03310113700260949
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042850344560388,
+          0.5043455098109791
+        ],
+        "vertical_residual": -0.00022606452393190285,
+        "horizontal_condition": 7.598818120960688,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u014-to-u022-l16-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          0.8192252078287343,
+          0.5734428843828251,
+          0.005772106086453642
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 38.700828641436125,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u015-l00-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7501744180539803,
+          0.0529087376171488
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.497426263134477,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043378718275687,
+          0.504297195169222
+        ],
+        "vertical_residual": -0.0002261829902442461,
+        "horizontal_condition": 7.589765398790021,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u015-to-u023-l00-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          10,
+          12
+        ],
+        "supplied_sun_enu": [
+          0.08651098923197881,
+          -0.9943443980352339,
+          0.06160411380786843
+        ],
+        "nearest_index": 10,
+        "nearest_angle_deg": 6.283220195341029,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5854036937110085,
+          0.42300652723655563
+        ],
+        "vertical_residual": -0.00022029347580534986,
+        "horizontal_condition": 7.583858826200059,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u020-l08-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7479434736081952,
+          0.07836805666708602
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043602898305167,
+          0.504280629439398
+        ],
+        "vertical_residual": -0.0002267415789489191,
+        "horizontal_condition": 7.582922667411295,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u020-to-u024-l08-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.07746512557002422,
+          0.9960595785314766,
+          -0.04317951292126654
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 96.76137514200876,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u021-l16-16-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764227,
+          -0.8273533646853624,
+          0.08390249609932417
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u021-to-u025-l16-16-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.20689150690818386,
+          0.9774669607522175,
+          -0.041883708134353145
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 89.26680998617783,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u022-l16-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832954,
+          -0.19273156399933764,
+          0.0396727928390385
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.504256843062716,
+          0.5043752174235152
+        ],
+        "vertical_residual": -0.00022650912051051103,
+        "horizontal_condition": 7.610095758738531,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u022-to-u026-l16-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18,
+          20
+        ],
+        "supplied_sun_enu": [
+          -0.8243928286114413,
+          -0.5622242504350803,
+          0.06542443241434526
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 6.8032632661266295,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5507563916662528,
+          0.4578072515647728
+        ],
+        "vertical_residual": -0.00022471382119244876,
+        "horizontal_condition": 7.595115435624676,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u024-l08-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7484555056585526,
+          0.0733167652605393
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043558272108668,
+          0.5042839270815475
+        ],
+        "vertical_residual": -0.00022660954916618736,
+        "horizontal_condition": 7.584366639634587,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u024-to-u056-l08-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.9995374725381634,
+          0.017092382073446644,
+          0.025153358962080413
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 12.133062632106775,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u025-l00-00-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076921,
+          -0.0636080699666035,
+          0.030230518369559457
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 1.4787793334710982e-06,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u025-to-u057-l00-00-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          6,
+          8
+        ],
+        "supplied_sun_enu": [
+          0.5961993149742527,
+          -0.7991826281762268,
+          0.07650819332313721
+        ],
+        "nearest_index": 6,
+        "nearest_angle_deg": 4.63564744231297,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.69498166839094,
+          0.3123987478161393
+        ],
+        "vertical_residual": -0.00019357874457301416,
+        "horizontal_condition": 7.579574115057892,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u027-l08-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19299501014023668,
+          0.03837072209706119
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042624527018359,
+          0.5043693060808748
+        ],
+        "vertical_residual": -0.00022639983731696095,
+        "horizontal_condition": 7.6072024875417865,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u027-to-u059-l08-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          6,
+          8
+        ],
+        "supplied_sun_enu": [
+          0.48636327928395184,
+          -0.8699975205753988,
+          0.08096341616322293
+        ],
+        "nearest_index": 8,
+        "nearest_angle_deg": 2.8617814234212604,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.19295318800238234,
+          0.8123814420088925
+        ],
+        "vertical_residual": -0.00013992042608024224,
+        "horizontal_condition": 7.579574115057892,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u057-l16-16-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764226,
+          -0.8299676212780561,
+          0.052028516584005854
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 1.2074182697257333e-06,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u057-to-u061-l16-16-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          18,
+          20
+        ],
+        "supplied_sun_enu": [
+          -0.8946290218759012,
+          -0.44501168322221957,
+          0.04004391355868242
+        ],
+        "nearest_index": 20,
+        "nearest_angle_deg": 0.24974329914591062,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.01684859077821012,
+          0.9837162084243979
+        ],
+        "vertical_residual": -1.4791882666391476e-05,
+        "horizontal_condition": 7.593700769153439,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u058-l00-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567631,
+          -0.7504036520135,
+          0.04955149910618627
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134477,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043349276213251,
+          0.5042993707834054
+        ],
+        "vertical_residual": -0.0002261290885675893,
+        "horizontal_condition": 7.590585610912627,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u058-to-u062-l00-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          20,
+          22
+        ],
+        "supplied_sun_enu": [
+          -0.9451955418381175,
+          -0.3244816066669396,
+          0.03629152275930383
+        ],
+        "nearest_index": 20,
+        "nearest_angle_deg": 7.247683319298756,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.521039187752652,
+          0.48758246331956284
+        ],
+        "vertical_residual": -0.00022579785959673387,
+        "horizontal_condition": 7.596673778165565,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u059-l08-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.1941144704994813,
+          0.032232880665338644
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042887389972075,
+          0.5043416060282748
+        ],
+        "vertical_residual": -0.00022602555102414074,
+        "horizontal_condition": 7.597942475767577,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u059-to-u063-l08-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          4,
+          6
+        ],
+        "supplied_sun_enu": [
+          0.7544490017128515,
+          -0.6547043139973648,
+          0.04657214884157686
+        ],
+        "nearest_index": 4,
+        "nearest_angle_deg": 7.247683319298756,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5209946424616481,
+          0.48762940542406447
+        ],
+        "vertical_residual": -0.00022586063125764472,
+        "horizontal_condition": 7.5921244616091235,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u061-l00-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7509369789798063,
+          0.04067733545293576
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043271554067195,
+          0.5043051140428559
+        ],
+        "vertical_residual": -0.00022600856646156492,
+        "horizontal_condition": 7.592659915699081,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u061-to-u069-l00-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.8274976156851903,
+          0.5612594266636712,
+          0.015347703948549323
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 45.36209171670131,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u062-l00-00-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076923,
+          -0.06486333411547991,
+          0.02743389679196579
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u062-to-u070-l00-00-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          10,
+          12
+        ],
+        "supplied_sun_enu": [
+          0.05878952064703952,
+          -0.9972360565906202,
+          0.045431703662542955
+        ],
+        "nearest_index": 12,
+        "nearest_angle_deg": 7.119047905041243,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.4789986464610598,
+          0.5296126857819293
+        ],
+        "vertical_residual": -0.00022546039218667574,
+        "horizontal_condition": 7.590487915393143,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u063-l16-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832953,
+          -0.19448193968575206,
+          0.029935954792648538
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.49742626313433,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042985207166558,
+          0.504331298218087
+        ],
+        "vertical_residual": -0.00022594440751152328,
+        "horizontal_condition": 7.5963082762411185,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u063-to-u071-l16-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          12,
+          14
+        ],
+        "supplied_sun_enu": [
+          -0.07196906043019069,
+          -0.9963723848083624,
+          0.04541503200585251
+        ],
+        "nearest_index": 12,
+        "nearest_angle_deg": 0.3783788868324318,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.9753241377535159,
+          0.02552418463355757
+        ],
+        "vertical_residual": -2.2210628122736054e-05,
+        "horizontal_condition": 7.590649736937954,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u068-l16-16-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764227,
+          -0.8299673721487171,
+          0.05203249058463495
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.0,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u068-to-u072-l16-16-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9604883049996118,
+          -0.2761376934894668,
+          0.034787787990761446
+        ],
+        "nearest_index": 2,
+        "nearest_angle_deg": 2.6570245263345673,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.17915685193912126,
+          0.8258732777130257
+        ],
+        "vertical_residual": -0.0001317372587636631,
+        "horizontal_condition": 7.597943337260771,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u069-l16-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.1941143161617087,
+          0.032233810112243806
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042887350337417,
+          0.5043416102049079
+        ],
+        "vertical_residual": -0.00022602559030231867,
+        "horizontal_condition": 7.597943337260771,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u069-to-u073-l16-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.11156832376973219,
+          0.9937453999567725,
+          -0.004752809270986102
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 94.7993384305756,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u070-l08-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567633,
+          -0.7504034147453799,
+          0.049555092143414275
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.4974262631342805,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043349307711058,
+          0.5042993684558827
+        ],
+        "vertical_residual": -0.0002261291438130572,
+        "horizontal_condition": 7.590584743465377,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u070-to-u074-l08-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          2,
+          4
+        ],
+        "supplied_sun_enu": [
+          0.9161041357209816,
+          -0.3990764786784406,
+          0.038615756894429275
+        ],
+        "nearest_index": 2,
+        "nearest_angle_deg": 4.840404259970759,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.6813911834241891,
+          0.3261554286173869
+        ],
+        "vertical_residual": -0.00019764301361212266,
+        "horizontal_condition": 7.5952404157346125,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u072-l08-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.19327983306296548,
+          0.036909245243328226
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134427,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042687340562141,
+          0.5043626868960783
+        ],
+        "vertical_residual": -0.0002262897269492553,
+        "horizontal_condition": 7.604345217453417,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u072-to-u092-l08-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          14,
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5422411200238334,
+          -0.8370870479331297,
+          0.072524767754864
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.9006829240088611,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.060761339467072926,
+          0.9411877610803678
+        ],
+        "vertical_residual": -5.109951572457305e-05,
+        "horizontal_condition": 7.578769405076679,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u073-l08-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567633,
+          -0.7489888599926935,
+          0.06765116130351212
+        ],
+        "nearest_index": 18,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043508312813283,
+          0.5042876188117675
+        ],
+        "vertical_residual": -0.00022647400974137866,
+        "horizontal_condition": 7.585935840351929,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u073-to-u093-l08-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.4561806164957525,
+          0.8895900524562291,
+          -0.02299529744271607
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 74.06936767969833,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u075-l00-00-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0
+        ],
+        "supplied_sun_enu": [
+          0.9975169819076922,
+          -0.06383500088959682,
+          0.02974833553652675
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 8.537736462515939e-07,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u075-to-u095-l00-00-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          14,
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.42798431011226945,
+          -0.9005818992464529,
+          0.07603731352024864
+        ],
+        "nearest_index": 14,
+        "nearest_angle_deg": 6.596744505193885,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5645141148339987,
+          0.44400129818141953
+        ],
+        "vertical_residual": -0.00022324835004221277,
+        "horizontal_condition": 7.578769405076679,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u093-l08-01-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          0,
+          2
+        ],
+        "supplied_sun_enu": [
+          0.9804491897832952,
+          -0.19273167714864753,
+          0.03967224315248001
+        ],
+        "nearest_index": 0,
+        "nearest_angle_deg": 7.497426263134379,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5042568454336886,
+          0.5043752149250242
+        ],
+        "vertical_residual": -0.00022650907214100818,
+        "horizontal_condition": 7.610094467844665,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u093-to-u013-l08-01-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          14,
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.45308913403597245,
+          -0.8871047941223993,
+          0.08806429959744422
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 6.795631972750005,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.45737504773264837,
+          0.5511923436542698
+        ],
+        "vertical_residual": -0.0002248121297901695,
+        "horizontal_condition": 7.572083060172112,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u094-l16-16-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16
+        ],
+        "supplied_sun_enu": [
+          -0.5553798529764226,
+          -0.8273536039788716,
+          0.08390013641860286
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 0.0,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          1.0
+        ],
+        "vertical_residual": 0.0,
+        "horizontal_condition": 1.0,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u094-to-u014-l16-16-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.6498616141055635,
+          0.7595835655755836,
+          -0.026696243548385214
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 60.67904405005968,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u095-l00-17-positive",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [
+          16,
+          18
+        ],
+        "supplied_sun_enu": [
+          -0.6591198737567632,
+          -0.7479436971173474,
+          0.07836592346997932
+        ],
+        "nearest_index": 16,
+        "nearest_angle_deg": 7.4974262631342805,
+        "horizontal_bracket_available": true,
+        "synthesis_weights": [
+          0.5043602879441559,
+          0.50428063083332
+        ],
+        "vertical_residual": -0.00022674152095754352,
+        "horizontal_condition": 7.582923286080424,
+        "final_pose_calls": 1,
+        "observed_pose_calls": 1
+      }
+    },
+    {
+      "profile": "two_reference_ic",
+      "case_id": "u095-to-u015-l00-17-nonoverlap",
+      "observed": {
+        "method": "two_reference_ic",
+        "known_sun_metadata_used": true,
+        "template_indices": [],
+        "supplied_sun_enu": [
+          -0.5451540483733237,
+          0.8377195094269393,
+          -0.03214167182434523
+        ],
+        "nearest_index": 22,
+        "nearest_angle_deg": 68.17545066179856,
+        "horizontal_bracket_available": false,
+        "synthesis_weights": [],
+        "vertical_residual": 0.0,
+        "horizontal_condition": null,
+        "final_pose_calls": 0,
+        "observed_pose_calls": 0
+      }
+    }
+  ],
+  "exact_single_reference_control": [
+    {
+      "case_id": "u013-l00-00-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u021-l16-16-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u025-l00-00-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u057-l16-16-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u062-l00-00-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u068-l16-16-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u075-l00-00-positive",
+      "exact_native_outputs": true
+    },
+    {
+      "case_id": "u094-l16-16-positive",
+      "exact_native_outputs": true
+    }
+  ],
+  "protocol_sha256": "f673aedc2927e15b87897eccdc63506cb409983d37d5501dd2169a3729ee51e7",
+  "summary_sha256": "26f6ff83589e699a17d8f2f945ad0f2eb9a451e275bd8acba5f669b2a6b88e45",
+  "watchdog_sha256": "81dd5e4b7f1bcbbecaadacf6ba409aa967d6283c721814f131d3baf8dcca5ddb",
+  "accepted_results": false,
+  "full_run_authorized": false,
+  "scope": "Secondary known-Sun track on the same 48 previously observed v100 metadata-selected development cases.",
+  "support_scope": "All unsupported and failed cases are retained. Common support is the pre-inference horizontal bracket, not a pose-output filter."
+}

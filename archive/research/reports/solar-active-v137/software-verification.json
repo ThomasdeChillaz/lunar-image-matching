@@ -1,0 +1,27 @@
+{
+  "local_full_suite": {
+    "passed": 1488,
+    "skipped": 4,
+    "seconds": 296.5,
+    "log_sha256": "962e658231519a6f6fbba8d788a5c2303ea086da95f1b6319c61b2e128c78b4a"
+  },
+  "focused_admission_and_control_tests": {
+    "passed": 8,
+    "seconds": 10.08
+  },
+  "fresh_small_software_smoke": {
+    "passed": true,
+    "scope": "Generated-image arithmetic only; no lunar performance claim.",
+    "saved_method_case_cells": 10,
+    "source_json_sha256": "f57b3259622323489889ab1389fda9c087ad8f2098911b80d2779144fed34f5b",
+    "new_matcher_inference": false,
+    "new_pose_fitting": false
+  },
+  "small_smoke_is_not_full32_cost_pilot": true,
+  "scientific_reservations_so_far": 0,
+  "immutable_preparation_sources": 80,
+  "full_comparison_cases": 32,
+  "fresh_methods": 6,
+  "original_ledger_unchanged": true,
+  "private_allowance_ledger_or_nonce_published": false
+}

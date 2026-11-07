@@ -1,0 +1,108 @@
+{
+  "schema": "targeted_primary_source_review_v141",
+  "review_date": "2026-11-06",
+  "scope": "Targeted prior-art and metric-comparability review, not an exhaustive novelty search or a new model benchmark",
+  "sources": [
+    {
+      "id": "LIMA",
+      "title": "Illumination Invariant Image Matching for Lunar TRN",
+      "authors": "Rothenberger et al.",
+      "year": 2025,
+      "url": "https://doi.org/10.2514/6.2025-2073",
+      "locator": "Section III; Section IV; Table 1, p.11",
+      "finding": "LIMA combines differently lit registered references; the separate lunar-adapted LoFTR achieves RA-1/RA-5 of 84.9/97.3% on 180E and 70.6/85.9% on unseen 0E.",
+      "metric": "Percentage of predicted matches within 1/5 image pixels; not absolute pose recovery",
+      "novelty_boundary": "Illumination-aware lunar matching and lunar adaptation already exist."
+    },
+    {
+      "id": "LoMa",
+      "title": "LoMa: Local Feature Matching Revisited",
+      "authors": "Nordstrom et al.",
+      "year": 2026,
+      "url": "https://www.davnords.com/loma",
+      "locator": "Relative Pose Estimation & Matching table",
+      "finding": "The project page reports LoMa-G 54.3 HardMatch and 73.4 WxBS mAA@10px, plus 84.0 MegaDepth AUC@20deg.",
+      "metric": "Matching mAA or relative-pose AUC on terrestrial benchmarks",
+      "novelty_boundary": "These are LoMa-G results, not the pinned LoMa-R profile used in our historical CPU study."
+    },
+    {
+      "id": "RoMaV2",
+      "title": "RoMa v2: Harder Better Faster Denser Feature Matching",
+      "authors": "Edstedt et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2511.15706v3",
+      "locator": "Section 3.3; Section 4.1; Table 4",
+      "finding": "RoMa v2 reports 86.6 MegaDepth-1500 and 73.8 ScanNet-1500 AUC@20deg, using 800px coarse/1024px fine resolution for that comparison.",
+      "metric": "Relative-pose error AUC, not a binary absolute-pose success rate",
+      "novelty_boundary": "Subpixel refinement and predicted correspondence covariance already exist."
+    },
+    {
+      "id": "RoMaOmega",
+      "title": "RoMa-Omega: What Feed-Forward 3D Models Know About Image Matching",
+      "authors": "Nordstrom et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2609.09507v1",
+      "locator": "Tables 2 and 5",
+      "finding": "Within its Table 2, RoMa-Omega/RoMa v2 score 72.9/64.8 on WxBS and 50.0/46.5 on HardMatch (mAA@10px). Runtime Table 5 uses an A100, batch 8.",
+      "metric": "Matching mAA; GPU throughput under a different hardware/batching protocol",
+      "novelty_boundary": "A newer general-purpose comparator; its GPU rate cannot establish our CPU speedup."
+    },
+    {
+      "id": "CoRe",
+      "title": "Semi-Dense Matching Uncertainty Is Not Just Local Confidence",
+      "authors": "Hoang et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.08685v2",
+      "locator": "Section 3.3; Table 2",
+      "finding": "A9-parameter error model separates coarse failures from local refinement noise and weights a geometric refit; improvements are not uniform across every metric.",
+      "metric": "Task-specific localization/homography metrics",
+      "novelty_boundary": "Reliability-weighted refitting alone is not a new contribution."
+    },
+    {
+      "id": "StereoLunar",
+      "title": "Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset",
+      "authors": "Grethen et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2510.18172v1",
+      "locator": "Sections 3-5; official repository checkpoint instructions",
+      "finding": "Lunar-domain MASt3R adaptation evaluates reconstruction and relative pose. MOONSt3R is the released adapted checkpoint.",
+      "metric": "Dense reconstruction and relative pose, not our fixed-reference-geometry AP3P protocol",
+      "novelty_boundary": "Lunar adaptation already exists; investigate shared terrain/data before claiming independent generalization."
+    },
+    {
+      "id": "LunarDistillation",
+      "title": "Geometric Foundation Model Distillation for Efficient Lunar 3D Reconstruction",
+      "authors": "Grethen et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2607.01851v1",
+      "additional_url": "https://clementinegrethen.github.io/publications/ECCV.html",
+      "locator": "Abstract; author project architecture panel",
+      "finding": "Distills a 688M lunar MASt3R teacher into students up to 7x smaller; the author page lists a 94.9M reduced-decoder student and 154.9M best student.",
+      "metric": "Reconstruction quality/model compression, not our pose-acceptance criterion",
+      "novelty_boundary": "Generic small-model lunar distillation is prior art. Those student sizes also exceed our 100k-parameter constraint."
+    },
+    {
+      "id": "ActiveSearch",
+      "title": "Active Search for Real-Time Vision",
+      "authors": "Davison",
+      "year": 2005,
+      "url": "https://www.doc.ic.ac.uk/~ajd/Publications/davison_iccv2005.pdf",
+      "locator": "Abstract and active-search formulation",
+      "finding": "Uses state uncertainty and predicted measurements to guide image search and information/cost decisions.",
+      "metric": "Active vision/search efficiency",
+      "novelty_boundary": "Active patch acquisition is not new as a general idea."
+    },
+    {
+      "id": "PixLoc",
+      "title": "Back to the Feature: Learning Robust Camera Localization from Pixels to Pose",
+      "authors": "Sarlin et al.",
+      "year": 2021,
+      "url": "https://psarlin.com/pixloc/",
+      "locator": "Abstract and method overview",
+      "finding": "Learns multiscale features for geometric 6DoF localization against a 3D model and joint keypoint/pose refinement.",
+      "metric": "Camera localization under its own initialization/evaluation conditions",
+      "novelty_boundary": "Learning features for geometric camera refinement is established prior art."
+    }
+  ],
+  "interpretation": "No universal or lunar state-of-the-art rank is inferred from these heterogeneous published scores. No new matcher, dataset, metric, or acceptance policy is run or selected here."
+}

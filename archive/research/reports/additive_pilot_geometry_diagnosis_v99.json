@@ -1,0 +1,325 @@
+{
+  "rows": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "uniform",
+      "selected_light": 0,
+      "scoring_query_light": 0,
+      "added": 36,
+      "seed_matches": 88,
+      "original_reprojection_inliers_at_seed": 87,
+      "original_reprojection_inliers_at_refit": 87,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.18936637740683587,
+        "p90": 0.7706254653079565
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.23695181957898848,
+        "p90": 0.8265071876579941
+      },
+      "added_reprojection_inliers_at_seed": 15,
+      "added_reprojection_inliers_at_refit": 15,
+      "added_within_2px_truth": 10,
+      "added_refit_inliers_within_2px_truth": 10,
+      "added_true_error_px": {
+        "median": 3.3626294806885895,
+        "p90": 14.671127275041382
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 3.2397755839080955,
+        "p90": 14.74014328086426
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 3.328821386639775,
+        "p90": 14.732036436752864
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 3.7195246475237074,
+        "p90": 3.9888750706165323
+      },
+      "pose_error_m_before": 1.217153974063894,
+      "pose_error_m_after": 3.44720229450395
+    },
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "translation_information",
+      "selected_light": 0,
+      "scoring_query_light": 0,
+      "added": 47,
+      "seed_matches": 88,
+      "original_reprojection_inliers_at_seed": 87,
+      "original_reprojection_inliers_at_refit": 87,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.18936637740683587,
+        "p90": 0.7706254653079565
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.18151970993497912,
+        "p90": 0.8131093320271282
+      },
+      "added_reprojection_inliers_at_seed": 13,
+      "added_reprojection_inliers_at_refit": 13,
+      "added_within_2px_truth": 10,
+      "added_refit_inliers_within_2px_truth": 10,
+      "added_true_error_px": {
+        "median": 8.951920258114567,
+        "p90": 16.667471303407563
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 9.11423484439118,
+        "p90": 16.75821250266978
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 9.131116021699324,
+        "p90": 16.773869730721998
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 3.720579211720562,
+        "p90": 3.9252323767298694
+      },
+      "pose_error_m_before": 1.217153974063894,
+      "pose_error_m_after": 3.4326017221823655
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "uniform",
+      "selected_light": 17,
+      "scoring_query_light": 17,
+      "added": 5,
+      "seed_matches": 17,
+      "original_reprojection_inliers_at_seed": 17,
+      "original_reprojection_inliers_at_refit": 17,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.11008147060407365,
+        "p90": 0.28957538507667696
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.09326619259130946,
+        "p90": 0.31400211089731683
+      },
+      "added_reprojection_inliers_at_seed": 1,
+      "added_reprojection_inliers_at_refit": 1,
+      "added_within_2px_truth": 1,
+      "added_refit_inliers_within_2px_truth": 1,
+      "added_true_error_px": {
+        "median": 6.626465344841404,
+        "p90": 11.341370804451092
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 6.381193504370869,
+        "p90": 11.371236152716103
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 6.465620224003158,
+        "p90": 11.403491241898706
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 6.958986581356075,
+        "p90": 7.533207285136758
+      },
+      "pose_error_m_before": 6.11526505015622,
+      "pose_error_m_after": 6.001704042887807
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "translation_information",
+      "selected_light": 17,
+      "scoring_query_light": 17,
+      "added": 5,
+      "seed_matches": 17,
+      "original_reprojection_inliers_at_seed": 17,
+      "original_reprojection_inliers_at_refit": 17,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.11008147060407365,
+        "p90": 0.28957538507667696
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.09326616038040023,
+        "p90": 0.314002078750132
+      },
+      "added_reprojection_inliers_at_seed": 1,
+      "added_reprojection_inliers_at_refit": 1,
+      "added_within_2px_truth": 1,
+      "added_refit_inliers_within_2px_truth": 1,
+      "added_true_error_px": {
+        "median": 12.195635324241469,
+        "p90": 17.78808705006251
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 12.346679354761408,
+        "p90": 17.93491342262828
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 12.363386765337403,
+        "p90": 17.912245934567892
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 7.686439420745376,
+        "p90": 7.780638440411457
+      },
+      "pose_error_m_before": 6.11526505015622,
+      "pose_error_m_after": 6.001708950601958
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "uniform",
+      "selected_light": 16,
+      "scoring_query_light": 16,
+      "added": 79,
+      "seed_matches": 9,
+      "original_reprojection_inliers_at_seed": 9,
+      "original_reprojection_inliers_at_refit": 9,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.06717145913845986,
+        "p90": 0.33345318578655925
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.8740665402560441,
+        "p90": 1.446787268099265
+      },
+      "added_reprojection_inliers_at_seed": 8,
+      "added_reprojection_inliers_at_refit": 11,
+      "added_within_2px_truth": 8,
+      "added_refit_inliers_within_2px_truth": 6,
+      "added_true_error_px": {
+        "median": 12.58160912613039,
+        "p90": 18.907896830498945
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 12.710701411029032,
+        "p90": 18.361403770527705
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 15.096956523948528,
+        "p90": 24.14024235168845
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 2.405886100259766,
+        "p90": 3.7384842643558605
+      },
+      "pose_error_m_before": 15.545014264863976,
+      "pose_error_m_after": 150.32645522898267
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "translation_information",
+      "selected_light": 16,
+      "scoring_query_light": 16,
+      "added": 70,
+      "seed_matches": 9,
+      "original_reprojection_inliers_at_seed": 9,
+      "original_reprojection_inliers_at_refit": 9,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.06717145913845986,
+        "p90": 0.33345318578655925
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 1.2825092758590486,
+        "p90": 1.657469032096007
+      },
+      "added_reprojection_inliers_at_seed": 1,
+      "added_reprojection_inliers_at_refit": 6,
+      "added_within_2px_truth": 1,
+      "added_refit_inliers_within_2px_truth": 1,
+      "added_true_error_px": {
+        "median": 13.752261666360242,
+        "p90": 20.335443390151205
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 13.367364120365375,
+        "p90": 19.324311690738618
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 13.610436369112675,
+        "p90": 25.169341710785115
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 2.815357807180272,
+        "p90": 3.8856528252305527
+      },
+      "pose_error_m_before": 15.545014264863976,
+      "pose_error_m_after": 168.21125543837474
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "uniform",
+      "selected_light": 1,
+      "scoring_query_light": 1,
+      "added": 56,
+      "seed_matches": 10,
+      "original_reprojection_inliers_at_seed": 10,
+      "original_reprojection_inliers_at_refit": 10,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.4050140294472989,
+        "p90": 0.701907652355644
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.9612471114773944,
+        "p90": 1.9675678125845932
+      },
+      "added_reprojection_inliers_at_seed": 3,
+      "added_reprojection_inliers_at_refit": 5,
+      "added_within_2px_truth": 0,
+      "added_refit_inliers_within_2px_truth": 0,
+      "added_true_error_px": {
+        "median": 12.06701856487507,
+        "p90": 18.43413464020992
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 11.773006379247345,
+        "p90": 18.160225182722
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 11.224948682449485,
+        "p90": 21.183018763458385
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 8.697691697553037,
+        "p90": 9.8246435407609
+      },
+      "pose_error_m_before": 21.53584093496329,
+      "pose_error_m_after": 65.38184339496372
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "translation_information",
+      "selected_light": 1,
+      "scoring_query_light": 1,
+      "added": 64,
+      "seed_matches": 10,
+      "original_reprojection_inliers_at_seed": 10,
+      "original_reprojection_inliers_at_refit": 10,
+      "original_reprojection_error_px_at_seed": {
+        "median": 0.4050140294472989,
+        "p90": 0.701907652355644
+      },
+      "original_reprojection_error_px_at_refit": {
+        "median": 0.6055159435273232,
+        "p90": 1.1402425476306437
+      },
+      "added_reprojection_inliers_at_seed": 3,
+      "added_reprojection_inliers_at_refit": 4,
+      "added_within_2px_truth": 0,
+      "added_refit_inliers_within_2px_truth": 0,
+      "added_true_error_px": {
+        "median": 12.189250415751841,
+        "p90": 17.82506738128351
+      },
+      "added_reprojection_error_px_at_seed": {
+        "median": 12.264088243803027,
+        "p90": 16.931308319386353
+      },
+      "added_reprojection_error_px_at_refit": {
+        "median": 11.730617357208777,
+        "p90": 18.00198970909033
+      },
+      "added_reference_patch_translation_only_warp_rms_px": {
+        "median": 8.914332667368313,
+        "p90": 9.808963061859632
+      },
+      "pose_error_m_before": 21.53584093496329,
+      "pose_error_m_after": 49.835474055434474
+    }
+  ],
+  "scope": "Saved development outputs only. Warp evaluated from the saved seed and reference map. Query truth is used only for retrospective error. Deformation and bad matches are associated, not experimentally isolated."
+}

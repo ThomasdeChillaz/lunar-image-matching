@@ -1,0 +1,971 @@
+{
+  "schema": "posthoc_sealed_window_capture_v130",
+  "predictions_sha256": "b185a9598d26beb0a01edddf402ef0dfd7edc844f11055daaf6518ec17bfc2b7",
+  "posthoc": true,
+  "new_image_matching": false,
+  "new_image_decoding": false,
+  "calibration_or_final_access": false,
+  "rows": [
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "first_seed_index": 1786,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 1
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 7,
+            "3": 7,
+            "4": 7
+          },
+          "observed_retained_matches": 1
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "first_seed_index": 1786,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 1
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 7,
+            "3": 7,
+            "4": 7
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "first_seed_index": 1786,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 1
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 7,
+            "3": 7,
+            "4": 7
+          },
+          "observed_retained_matches": 1
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "first_seed_index": 1786,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 9,
+            "2": 9,
+            "3": 9,
+            "4": 9
+          },
+          "observed_retained_matches": 3
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 7,
+            "3": 7,
+            "4": 7
+          },
+          "observed_retained_matches": 3
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "first_seed_index": 797,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 2
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 3
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "first_seed_index": 797,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 2
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 3
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "first_seed_index": 797,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 2
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 3
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "first_seed_index": 797,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 2
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8
+          },
+          "observed_retained_matches": 3
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": null,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": null,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": null,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": null,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 0,
+          "visible_selected": 0,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": 1560,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": 390,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 2
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 2
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 2
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 12,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 2
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": 630,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "first_seed_index": 910,
+      "methods": {
+        "legacy": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "halo": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_uniform": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        },
+        "pooled_parallax": {
+          "selected_anchors": 12,
+          "visible_selected": 11,
+          "possible_correct_native_grid_matches": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "observed_retained_matches": 0
+        }
+      }
+    }
+  ],
+  "scope": "Geometry-only search-window potential, using query labels after inference. It is not observed matching or a guaranteed pose-recovery bound."
+}

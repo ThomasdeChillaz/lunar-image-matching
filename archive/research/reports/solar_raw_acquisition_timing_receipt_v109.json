@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "phase": "timing",
+  "complete": true,
+  "calibration_or_final_access": false,
+  "protocol_sha256": "df5012143d000f4a3e68b0d85b94e4a6b664f71cd71bdfc998db2092f5245cf2",
+  "renderer_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "cpu_threads": 2,
+  "publication_commit": "800a23867ad5cd43bc98f5e4bba231ee24e39bb8",
+  "deadline_utc": "2026-11-04T22:40:26.673447+00:00",
+  "fixtures": {
+    "passed": true,
+    "controls": {
+      "black_sun_off": {
+        "combined_max": 0.0,
+        "combined_mean": 0.0,
+        "direct_max": 0.0,
+        "direct_mean": 0.0,
+        "indirect_mean": 0.0,
+        "recon_max_abs_error": 0.0,
+        "exr": {
+          "combined": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/black_sun_off/combined_0001.exr",
+            "sha256": "2c4fb45c1e68f8bd177af97fb84e5e4e9d16b12262aa9a5988d9f8e3da8f2c4a"
+          },
+          "direct": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/black_sun_off/direct_0001.exr",
+            "sha256": "2c4fb45c1e68f8bd177af97fb84e5e4e9d16b12262aa9a5988d9f8e3da8f2c4a"
+          },
+          "indirect": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/black_sun_off/indirect_0001.exr",
+            "sha256": "2c4fb45c1e68f8bd177af97fb84e5e4e9d16b12262aa9a5988d9f8e3da8f2c4a"
+          },
+          "albedo": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/black_sun_off/albedo_0001.exr",
+            "sha256": "8d19c539bfbdb89d083bb7464cd347dafa717765ec95cad35ab806e7f59957b1"
+          }
+        },
+        "elapsed_seconds": 0.13210838503437117
+      },
+      "blocked_with_reflector": {
+        "combined_max": 0.06042914465069771,
+        "combined_mean": 0.03431341052055359,
+        "direct_max": 0.0,
+        "direct_mean": 0.0,
+        "indirect_mean": 0.06862682104110718,
+        "recon_max_abs_error": 7.450580596923828e-09,
+        "exr": {
+          "combined": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/blocked_with_reflector/combined_0001.exr",
+            "sha256": "b4c398ea18ffea99f4625552ad55c7aefa632f2624da9ddf6c0f15aba5bc30ff"
+          },
+          "direct": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/blocked_with_reflector/direct_0001.exr",
+            "sha256": "a4d0ebb566fbc3f431a54520307909218dcfa712fc478a5f6975820c00766161"
+          },
+          "indirect": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/blocked_with_reflector/indirect_0001.exr",
+            "sha256": "519791a015d5f0bc3ac9c7e90c52ba6a403da47ce054af76b4dc33c0e8e45651"
+          },
+          "albedo": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/blocked_with_reflector/albedo_0001.exr",
+            "sha256": "a54821cb0bb9fbb13d1a27124c0b0dcdf476e9848e6b476b566c622cbbd6e563"
+          }
+        },
+        "elapsed_seconds": 0.19692210701759905
+      },
+      "unblocked": {
+        "combined_max": 0.42449575662612915,
+        "combined_mean": 0.40582218766212463,
+        "direct_max": 0.7639430165290833,
+        "direct_mean": 0.7639430165290833,
+        "indirect_mean": 0.047701310366392136,
+        "recon_max_abs_error": 8.940696716308594e-08,
+        "exr": {
+          "combined": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked/combined_0001.exr",
+            "sha256": "24a07ee8b2805f98cccd83ada37563d7efed1ea30ef668cb77816be48ffbb63e"
+          },
+          "direct": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked/direct_0001.exr",
+            "sha256": "a76c9c97a80e50b3a59687093543e18930f2e0d2ddd334046a92bc91cc267429"
+          },
+          "indirect": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked/indirect_0001.exr",
+            "sha256": "184b43b2ae7d090970cb3ebf143503e018b44c1588eee82a30fcbeead3513a96"
+          },
+          "albedo": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked/albedo_0001.exr",
+            "sha256": "7f4ffa7ac3c0919b035f0f733e5eac5b7c9896b195726cc4d5a9017a8cfbcf61"
+          }
+        },
+        "elapsed_seconds": 0.1594253450166434
+      },
+      "unblocked_half": {
+        "combined_max": 0.21224787831306458,
+        "combined_mean": 0.20291109383106232,
+        "direct_max": 0.3819715082645416,
+        "direct_mean": 0.3819715082645416,
+        "indirect_mean": 0.023850655183196068,
+        "recon_max_abs_error": 4.470348358154297e-08,
+        "exr": {
+          "combined": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked_half/combined_0001.exr",
+            "sha256": "8243c6044f1622e2d3974bf325c6429ffbaf708444d3181b6e9810c2bfd654dd"
+          },
+          "direct": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked_half/direct_0001.exr",
+            "sha256": "cf91e831f42d3e3eacb350ac63e33dbdd136f12f5216eaf513e89cb70051880d"
+          },
+          "indirect": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked_half/indirect_0001.exr",
+            "sha256": "98ace6a1968b8635879ba2e7f632399a6491707d568402d75447eaa7ec3f92b1"
+          },
+          "albedo": {
+            "path": "runs/solar-raw-acquisition-v109-timing/fixtures/unblocked_half/albedo_0001.exr",
+            "sha256": "85984bbcf9aabd1d30f685fe35772ef1208fd2f7f7dbc187b41ad3e2ee70ae04"
+          }
+        },
+        "elapsed_seconds": 0.15869023598497733
+      }
+    }
+  },
+  "rows": [
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20262707,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/16spp-r0/combined_0001.exr",
+          "sha256": "407569fab64b9e9ef97231debc5872892996a905c32f9890fcf9487ab7d55327"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/16spp-r0/direct_0001.exr",
+          "sha256": "da48080a70b4819351cfafe76c42f0485e26e0bfa1bec54bf0e5640f44f10321"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/16spp-r0/indirect_0001.exr",
+          "sha256": "4da03fa16d4b70e8e105a06560da4e7b4c1c5ab4b80f9d407be6b6718458a1e2"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/16spp-r0/albedo_0001.exr",
+          "sha256": "fc2907a736c64b686f6761cbc7f86bd5061c1232732e0bfa6f953dcccbeb1ca6"
+        }
+      },
+      "elapsed_seconds": 3.800417373946402,
+      "recon_max_abs_error": 4.656612873077393e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20262716,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "7d6bb36a747441fbfe192bbb88d8f2827e108df95d213a070a839c33425e7460"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "0af1ab8efef8117b068f8a8e0d9a08984693970cb19e1519c06dbc62cceab840"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "c6158677cede2522a43f364aae669d3518a2057baec082a7acc84767cb376370"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/reference/light-17/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "99240f1d74db5ca93dd2afe9f523f3d938ed878daf8802ede92239394a25584d"
+        }
+      },
+      "elapsed_seconds": 11.783157969999593,
+      "recon_max_abs_error": 2.3283064365386963e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20262807,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/16spp-r0/combined_0001.exr",
+          "sha256": "a08f6a081a48e693b1e282d4a039f3f1863ed65bdaac572f0e88914ba9966db3"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/16spp-r0/direct_0001.exr",
+          "sha256": "de629bf234b7c717833a129beab8333742dfa40cee522420eb2f2d28037aa67c"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/16spp-r0/indirect_0001.exr",
+          "sha256": "2effaf3ac366d1e6e098c468d22244a24bfa0664352c992b64bb3d0f65bd1584"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/16spp-r0/albedo_0001.exr",
+          "sha256": "967775f7b657839d050eb79c920c751c7f43247444d5242c829d40e0402dcf36"
+        }
+      },
+      "elapsed_seconds": 3.770656942971982,
+      "recon_max_abs_error": 4.656612873077393e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20262816,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "766233c9fc83e05c6aa6c8b03f40c7cc391eaf0a88f0127f68a9f3738dfb343d"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "a2f22880dced6504b474cc129e914a28db2d8735e6613fe1c8b8c89685691718"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "1afe8727e7b5831637fd239fc255aaede9eef9ebdef28fbf5ec95ef3218155ec"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-timing/u061/query/light-17/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "524428de7f6fcde709d2763cc5749f685b4f6d2013f2883dc125e2759375f048"
+        }
+      },
+      "elapsed_seconds": 12.682441579992883,
+      "recon_max_abs_error": 2.3283064365386963e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    }
+  ],
+  "same_camera_repeatability": {},
+  "elapsed_seconds": 36.77364078804385
+}

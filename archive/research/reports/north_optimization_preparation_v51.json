@@ -1,0 +1,71 @@
+{
+  "prepared_utc": "2026-11-02T17:03:01.850140+00:00",
+  "status": "PREPARED fixed training-pair diagnostic; no fitting or model forward executed",
+  "source_sha256": {
+    "north_optimization_probe_v51.py": "104aa9d2b77bea1757f40119983c8d77e0b0405c68de1d4a5bfdc36236ba9bc6",
+    "test_north_optimization_probe_v51.py": "18c23a119ecd43c439d9752d19cc00beb37a5c8334467a63c5f9e705fd526f1c"
+  },
+  "fixture_specs": [
+    {
+      "name": "identity",
+      "tile_id": "np31-r0-c0/views-0-1",
+      "component": "np31-r0-c0",
+      "reference_image": 0,
+      "query_image": 0,
+      "identity_geometry": true,
+      "query_quarter_turn": 0,
+      "sensor_augmentation": false
+    },
+    {
+      "name": "relighting",
+      "tile_id": "np31-r0-c0/views-0-1",
+      "component": "np31-r0-c0",
+      "reference_image": 0,
+      "query_image": 8,
+      "identity_geometry": true,
+      "query_quarter_turn": 0,
+      "sensor_augmentation": false
+    },
+    {
+      "name": "viewpoint",
+      "tile_id": "np31-r0-c0/views-0-1",
+      "component": "np31-r0-c0",
+      "reference_image": 0,
+      "query_image": 1,
+      "identity_geometry": false,
+      "query_quarter_turn": 0,
+      "sensor_augmentation": false
+    },
+    {
+      "name": "relighting_and_viewpoint",
+      "tile_id": "np31-r0-c0/views-0-1",
+      "component": "np31-r0-c0",
+      "reference_image": 0,
+      "query_image": 9,
+      "identity_geometry": false,
+      "query_quarter_turn": 0,
+      "sensor_augmentation": false
+    }
+  ],
+  "manifest_sha256": "2f0961d8198f59ab8276eb21c9191cec1b6c578ab9f5517bf7fb4ff423248381",
+  "seed": 20261101,
+  "planned_logical_updates": 400,
+  "planned_updates_per_fixture": 100,
+  "max_calendar_seconds": 3600,
+  "initialization": "Original81,696parametercoarse_adaptation graph and original seed20261101 initialization; reset identically for eachfixture.",
+  "optimizer_and_loss": "Originalcontext1e-4/coarse1e-5 AdamW, clip5, originalv18reachable-window/.5anchor objective.",
+  "sensor_augmentation": false,
+  "physical_lighting_source": "Existing originalsix physicallyrendered Sunsettings; no brightness-only sunlight claim.",
+  "purpose": "Distinguish fixed-example optimization/ranking failure from illumination/viewpoint difficulty, not train a candidate or claim pose accuracy.",
+  "isolated_tests_passed": 15,
+  "isolated_seconds": 0.39,
+  "coverage": "Metadata-onlytrain selection; exact native/128pixel conversions; uniform-scorecoverage counterexample; invalid/empty outputs; immutablecache/resumecontrols.",
+  "actual_cost_pilot_performed": false,
+  "neural_forwards": 0,
+  "optimizer_updates": 0,
+  "public_source_pending": true,
+  "actual_gated_program_not_run": true,
+  "old_upstream_failure_requires_explicit_amended_handoff": true,
+  "independent_saved_probe_replay_not_yet_implemented": true,
+  "calibration_or_final_pixels_loaded": 0
+}

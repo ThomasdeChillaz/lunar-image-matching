@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "tag": "surface-supervision-development-v13",
+  "target_commit": "b2d749f639385f577da4a8ccbab6ba1f466238c0",
+  "prerelease": true,
+  "latest_preserved": "compact-v2",
+  "assets": [
+    {
+      "name": "context-diagnostics-v15-capsule.sha256",
+      "bytes": 102,
+      "sha256": "c73ec36d2e3b69c7a1a3065232185fb22d83adcc7c07bd29838f4d8230a5bd50"
+    },
+    {
+      "name": "context-diagnostics-v15-capsule.zip",
+      "bytes": 6643060,
+      "sha256": "e67d9416e4555822f4166b6269e293a951595705c004436d5719402b58e9912f",
+      "members": 110
+    },
+    {
+      "name": "surface-learning-v13-capsule.sha256",
+      "bytes": 99,
+      "sha256": "502f52ccf84374d1041240cbf74d56c779646c9933b358ea8cbe89cefd81f0b0"
+    },
+    {
+      "name": "surface-learning-v13-capsule.zip",
+      "bytes": 31652275,
+      "sha256": "bd2920e2e5cdc84d6e8c7ecdaa79b6d5299afdc3d9efc7ed49f571f739c249ba",
+      "members": 258
+    }
+  ],
+  "scope": "Public asset byte equality and ZIP CRC verification; not new geographic validation."
+}

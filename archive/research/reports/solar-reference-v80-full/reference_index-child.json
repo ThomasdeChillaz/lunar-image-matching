@@ -1,0 +1,244 @@
+{
+  "schema_version": 69,
+  "phase": "reference_asset_index",
+  "split": "model_selection",
+  "calibration_or_final_access": false,
+  "cpu_threads": 2,
+  "max_calendar_seconds": 1800,
+  "light_pairs": [
+    [
+      0,
+      0
+    ],
+    [
+      16,
+      16
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      8,
+      17
+    ],
+    [
+      8,
+      1
+    ]
+  ],
+  "original_master": "reports/solar_development_admission_v67.json",
+  "original_master_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+  "dataset_summary": "runs/solar-v70-completion/summary.json",
+  "dataset_summary_sha256": "9b648109a85a43d30cc387ba15a5912f4f0010efb7e17e844179ceaaf451cd0f",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "geometry_audit_source": "verify_solar_development_v68.py",
+  "geometry_audit_source_sha256": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243",
+  "source_sha256": {
+    "solar_eval_data_v69.py": "7ba5ccbbf65378f1a3af0ed6c3e974be73f104a245b6bf7b9c002c1851be5f15",
+    "build_solar_eval_data_v69.py": "95b9a177a7c7f37b91bf8404bb5325036e72940e3f733159f6dea5541186a686",
+    "index_solar_reference_assets_v69.py": "9c1e103659091b4f009cb0ab42c46c5a9c1d2f5c5f0eb295f93ceb235a114fe5",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a"
+  },
+  "output": "runs/solar-reference-v80-full/reference-assets-index.json",
+  "reference_unit_protocols": {
+    "12": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u012-precompute.json",
+      "reference_precompute_protocol_sha256": "a0428deb2c33305079b97d3897472e578abcdb5b224727a1fe0c28f2d2f960c9",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u012-lookup.json",
+      "solar_lookup_protocol_sha256": "50d792aaa92cca72a273e876cb86b4b806fab65fbe1aa92d30c6d573ec7d866f"
+    },
+    "13": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u013-precompute.json",
+      "reference_precompute_protocol_sha256": "94f444705aa71268a32f1f6ea1c9c2badb5508b1ab08ae88697ab2f5d90221d3",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u013-lookup.json",
+      "solar_lookup_protocol_sha256": "2f9766fb0981a01f866070353c7b01854467bf37f120fceabda2348b473ff7e2"
+    },
+    "14": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u014-precompute.json",
+      "reference_precompute_protocol_sha256": "6b949deb640a1e9c085caad0cca2ffe6ccca6acb038b7d3717a05e894b7e69fa",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u014-lookup.json",
+      "solar_lookup_protocol_sha256": "c9600ea0c1aeee3075dc7911f380557b19bc786b3cde849e53ddabf2525397b1"
+    },
+    "15": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u015-precompute.json",
+      "reference_precompute_protocol_sha256": "cfc17a149a0d14e4d5373d6b5f08bfceb5c0a63b7a927898b02aec81cd5ae469",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u015-lookup.json",
+      "solar_lookup_protocol_sha256": "9cb3e531a71fb99009967d52d81fc9b0fe260fe199df61304bb30487f92ae42c"
+    },
+    "20": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u020-precompute.json",
+      "reference_precompute_protocol_sha256": "ca2e2bab6b7502c1938a140852cab4bf2b55f691b510c7272f55233cfe78fc45",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u020-lookup.json",
+      "solar_lookup_protocol_sha256": "748e750b596dcfe4778b875105c682995cb956d4ce274a8c539bc9238d290015"
+    },
+    "21": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u021-precompute.json",
+      "reference_precompute_protocol_sha256": "b14045ab8a9dfaccaccff3a3896a64871a90297f8f574ced646e1e253dc0f8d9",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u021-lookup.json",
+      "solar_lookup_protocol_sha256": "e269421d08a4eccdff206808d0f075c87a17011008e5a4f92a9de43f347d8a45"
+    },
+    "22": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u022-precompute.json",
+      "reference_precompute_protocol_sha256": "094fcd7af5a53b4cdf6d89c96ebc38041a5f038dd5f91d8b2aad43d4cca07406",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u022-lookup.json",
+      "solar_lookup_protocol_sha256": "5aa51ea97ec47f24023ed78f469646c783a718c0ead5199aebd5f71e7019929e"
+    },
+    "23": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u023-precompute.json",
+      "reference_precompute_protocol_sha256": "421ce0a92153c66924160648dd89a60479e511f1d1567637a8950f8f4882559f",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u023-lookup.json",
+      "solar_lookup_protocol_sha256": "6eb498231f70cabb11681be23217c1e73c1e77c3a903044e489f698d41d248c2"
+    },
+    "24": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u024-precompute.json",
+      "reference_precompute_protocol_sha256": "6913b3c22968be436151d26ea3c3b3421c7051b56544321234b0af00be983fc6",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u024-lookup.json",
+      "solar_lookup_protocol_sha256": "48165a64cd386571053e6afcc721b9a51c9338ebbf4ebada0cabaa38f05757dd"
+    },
+    "25": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u025-precompute.json",
+      "reference_precompute_protocol_sha256": "8c97d180d5859c0fa596b07bbbe5419f0da43de7c047460e22e4ec238ce0ec26",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u025-lookup.json",
+      "solar_lookup_protocol_sha256": "7f4ebec2fee5d2cd562405ce5225593643e80347a59d5ca67bfc806c14581834"
+    },
+    "26": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u026-precompute.json",
+      "reference_precompute_protocol_sha256": "70ad4b79a0674bf23edc53e32b60806a629bf16bbc463f64bfd44a3ebb19c849",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u026-lookup.json",
+      "solar_lookup_protocol_sha256": "64ee2123d9530ebbe111ae309a9995148b3ccaebadba55ae10d05b1fc37555e2"
+    },
+    "27": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u027-precompute.json",
+      "reference_precompute_protocol_sha256": "b4e59ca8d49937bb5a82e0ac9db46e1b9510a816997c5a34dafe7f6ef0a98efe",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u027-lookup.json",
+      "solar_lookup_protocol_sha256": "291f4551c2b10c88e4cf364fd05898feb24ad91d64f632c370de0d2c98a4f606"
+    },
+    "56": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u056-precompute.json",
+      "reference_precompute_protocol_sha256": "5b3115cffa07da97872eec074c89d9244127c161da13578ef68251a966fc0e80",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u056-lookup.json",
+      "solar_lookup_protocol_sha256": "505e05d84159d05c298690480f4dd3f3be7d884fc331e7b8a670df0bb33533b2"
+    },
+    "57": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u057-precompute.json",
+      "reference_precompute_protocol_sha256": "4726209bcd70e8affe8e91734793f445745ac18ffad12a0f7ebe7f1e0f99e696",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u057-lookup.json",
+      "solar_lookup_protocol_sha256": "7c13de683b534933806fc5fd7286d6ebc8ef7ebd46620bffe39fe33f146ef189"
+    },
+    "58": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u058-precompute.json",
+      "reference_precompute_protocol_sha256": "523776f9df85e3eb1224d77c9587bc90f6f903aa573f6828e35f3f973a93c1d1",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u058-lookup.json",
+      "solar_lookup_protocol_sha256": "5d07d0758c0d51470731a478049c2c188e732e42be6a34b036ef6717854ef0dd"
+    },
+    "59": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u059-precompute.json",
+      "reference_precompute_protocol_sha256": "01b26914c8edc6739177124aa98af58c225976d7fb05fc5aa57da9382f6607a9",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u059-lookup.json",
+      "solar_lookup_protocol_sha256": "4b4e748ec71c17476485f016f152b7d71ad7fe24288791ec3ba27bf2e741efab"
+    },
+    "60": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u060-precompute.json",
+      "reference_precompute_protocol_sha256": "c72c65228a824a86c121304227b5c0b90c724cc7c75001abf85beb9303d9d63f",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u060-lookup.json",
+      "solar_lookup_protocol_sha256": "d9b28f78de57ec47eff7c89dc6d6d195f19427b42e6f2fbfa1d734e7e90fcf3d"
+    },
+    "61": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u061-precompute.json",
+      "reference_precompute_protocol_sha256": "e67ba7316fe91d72da04667a58d8ccbb98702058960fe0d9053efb5723817d45",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u061-lookup.json",
+      "solar_lookup_protocol_sha256": "1a2c51c797de655efc97731b8ac5fac6a4424caa07a8244a8c171611825f69ee"
+    },
+    "62": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u062-precompute.json",
+      "reference_precompute_protocol_sha256": "60ef6ce8149a01178b5987d2208b309767bf0baa812d60cbc9f531def0021306",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u062-lookup.json",
+      "solar_lookup_protocol_sha256": "9f6b8bb1499acd5068ce3e568710a75ae62b63f3c57530152dc331dcbd90d58a"
+    },
+    "63": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u063-precompute.json",
+      "reference_precompute_protocol_sha256": "233c37b5732803a80088a755c5efd99fea5abb246d8ecc647b5e65891a312dde",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u063-lookup.json",
+      "solar_lookup_protocol_sha256": "3f8d55ec5d981a1c7d78c5ca80e773d2a991e168b6c9cd92648af5a2d21ab730"
+    },
+    "68": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u068-precompute.json",
+      "reference_precompute_protocol_sha256": "606ea0d1695c60549dbef279a4ecf9079289cbf7a4eaabf141057bba788cf4a9",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u068-lookup.json",
+      "solar_lookup_protocol_sha256": "fedeebf3cd9254a9a239f897fbabfd6e0cbc66015ec60c858307e97965489c42"
+    },
+    "69": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u069-precompute.json",
+      "reference_precompute_protocol_sha256": "56ca2a4cd4eb7a0b8f9105d2e3ad209ce0608272d27453ab622e17239ebdd138",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u069-lookup.json",
+      "solar_lookup_protocol_sha256": "e00d7651761d658f9a89253bd0243185a2beaa6aff9943e9f124e200367fc2ee"
+    },
+    "70": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u070-precompute.json",
+      "reference_precompute_protocol_sha256": "f97612d52ade1e7c6b80c1596f6b5021b34b835fc381ea3ef863b85eed941252",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u070-lookup.json",
+      "solar_lookup_protocol_sha256": "f85621a9b4b303232841c79d521fa16062fe1bd7ebf9ae15a98ce0431165ebd8"
+    },
+    "71": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u071-precompute.json",
+      "reference_precompute_protocol_sha256": "986d7e4a2e48d0f4dce17286caba19f016c1b69e512203ad5095349af7e7687c",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u071-lookup.json",
+      "solar_lookup_protocol_sha256": "eeed639159c104e0a18b7f5cca284d37bd47dd615b7a1b07cf0d9906eb386fa8"
+    },
+    "72": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u072-precompute.json",
+      "reference_precompute_protocol_sha256": "d8c0f65ab645d26a6c86b69b816a43995b2b8fc1a9d8ad8cce33b25208d54168",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u072-lookup.json",
+      "solar_lookup_protocol_sha256": "4ecbce36699f3939004a17ec9c015e43b009942177565842b054b299753c8e86"
+    },
+    "73": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u073-precompute.json",
+      "reference_precompute_protocol_sha256": "873ba20d5e88d360678531598ff292df719c99ce4f45437963cda2cdffb02820",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u073-lookup.json",
+      "solar_lookup_protocol_sha256": "ded7283e641f33612f417c708e0317a1dcf09e9f595e973d8bf6cd1ff8747c23"
+    },
+    "74": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u074-precompute.json",
+      "reference_precompute_protocol_sha256": "45547aa742d416829ba0888edad32d87aa2955c398c35fbbe54e79a29e15d75f",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u074-lookup.json",
+      "solar_lookup_protocol_sha256": "31838faf0bcb13f3d98e6e8704faa937a87f0b47f90593ca46a047731fb4beb0"
+    },
+    "75": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u075-precompute.json",
+      "reference_precompute_protocol_sha256": "a53a48d83de0f06d85d1f95aba7c1a964427c7a94220a03eb46145522ef84902",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u075-lookup.json",
+      "solar_lookup_protocol_sha256": "5848fecf743e41d67a8c1122ebfa11d4b866a68c25a5dd866111f6d129ad3be1"
+    },
+    "92": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u092-precompute.json",
+      "reference_precompute_protocol_sha256": "fa5aef1c26dda2b81d024ab8e9bb777fa7bbabac894bd423115db885f7cdce1d",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u092-lookup.json",
+      "solar_lookup_protocol_sha256": "ad45465b37a4f1bf1ea1e2a8662432ccb307468c0eb57162fd6f6cff6dbbc3af"
+    },
+    "93": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u093-precompute.json",
+      "reference_precompute_protocol_sha256": "080f44d6abad60a4490a073ac2dc4e5f043615c9af53f540968ce8b0bdcf5ed4",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u093-lookup.json",
+      "solar_lookup_protocol_sha256": "15cbd4150e6b054ab973c1da64fbf71eb620955df61b4e43727043f171ac8650"
+    },
+    "94": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u094-precompute.json",
+      "reference_precompute_protocol_sha256": "35c18a1addac32b31e7040669d0f948b5274c3153eba48f40af3f23ddd1e8ece",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u094-lookup.json",
+      "solar_lookup_protocol_sha256": "a20f7c1abe4d0f415caf29c7732b639c4501f0d47d1942196aa76bfdae375340"
+    },
+    "95": {
+      "reference_precompute_protocol": "reports/solar-reference-v80-full/references/u095-precompute.json",
+      "reference_precompute_protocol_sha256": "bb8fca14f66c29d11e84bdc872aa677623837af7d0dd21aefd7c3d062e681e74",
+      "solar_lookup_protocol": "reports/solar-reference-v80-full/references/u095-lookup.json",
+      "solar_lookup_protocol_sha256": "f2dcfc5b2d577dd26cb7c194499fc32eaee3692d24fca5e2fd1586b2bd546fbd"
+    }
+  }
+}

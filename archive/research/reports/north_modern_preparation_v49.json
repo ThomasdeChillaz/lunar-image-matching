@@ -1,0 +1,52 @@
+{
+  "prepared_utc": "2026-11-02T10:50:44.522987+00:00",
+  "source_sha256": {
+    "north_modern_comparison_v49.py": "b6a228c510c749058f57eb6edfd12a77d92cb32252b7515335af0c4fe182748d",
+    "test_north_modern_comparison_v49.py": "be596a738c16ad54c2e412d78cc0cac20996b5fb774367ee0b80dbe12c38ae85",
+    "verify_north_modern_v49.py": "3b395cb0ea99bc9906d3ff61d08e0c6609233f9fe68656d6ea84072536d56f1a"
+  },
+  "status": "PREPARED; actual modern comparison has not run",
+  "isolated_tests": {
+    "passed": 15,
+    "seconds": 5.21,
+    "scope": "Images-only/reference-geometry interface; malformed/empty outputs; atomic evidence; live-process gate; analytical common-PnP success/failure fixtures. Not pretrained or lunar accuracy."
+  },
+  "syntax_checks": [
+    "north_modern_comparison_v49.py",
+    "test_north_modern_comparison_v49.py",
+    "verify_north_modern_v49.py"
+  ],
+  "full_repository_regression_pending": true,
+  "fresh_repository_smoke_pending": true,
+  "public_source_verification_pending": true,
+  "actual_pretrained_forward_pending": true,
+  "independent_actual_comparison_replay_pending": true,
+  "software_admission_receipt_not_generated": "reports/north_modern_software_checks_v49.json",
+  "upstream_pipeline_must_end": [
+    "runs/localization-v40-recovery-training-state.json",
+    "runs/north-v41-regression-state.json",
+    "runs/north-v43-followup-state.json"
+  ],
+  "methods": [
+    "standalone SIFT",
+    "MatchAnything-EfficientLoFTR native512",
+    "LoMa-R common",
+    "RoMa-v2 common",
+    "MOONSt3R common native512"
+  ],
+  "method_profile_limits": "Common profiles and original pins. No silent replacement of author profiles, no crop reducing common field of view. LoMa/RoMa unchanged BF16 profile requires an available free CPU reporting native BF16.",
+  "comparison": {
+    "dataset": "All96positive/96negative northern model-selection cases; original16case metadata costbank before full inference.",
+    "paired_control": "Unchanged frozen compact/native/surface; fresh per-call cache, warmed/alternating paired timing.",
+    "pose": "Same reference axial geometry/camera pose and AP3P3nativepx for each matcher; query true pose/depth used only after prediction.",
+    "negative_cases": "Original both-endpoint nonoverlap cases, retained in full denominator.",
+    "acceptance": "Raw proposals only; no calibrated acceptance policy inferred from these outputs.",
+    "resource": "Only one two-thread scientific job. No new comparison autoqueued; inspect v43 diagnosis/actual cost before allocation.",
+    "verifier": "Saved-case/metric/pose refit replay prepared; no neural forward replay yet."
+  },
+  "neural_forwards": 0,
+  "lunar_image_arrays_loaded": 0,
+  "calibration_or_final_pixels_loaded": 0,
+  "model_upgrade_adopted": false,
+  "state_of_the_art_claim": false
+}

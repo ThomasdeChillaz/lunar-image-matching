@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_commit": "70ac4e6",
+  "clean_source_plus_release_data_only": true,
+  "archives": [
+    {
+      "archive": "lunar-native-v134-development.zip",
+      "files": 365,
+      "sha256": "ac12965b4faf714ad06aba64a10259a2f9cbe4e4c6f6392539313868c465d182"
+    },
+    {
+      "archive": "lunar-joint-v135-development.zip",
+      "files": 38,
+      "sha256": "873309d87e91cdcf860050f23f1ff2006361fd422cd92a7b953bedd7af475d87"
+    }
+  ],
+  "method_case_cells": 192,
+  "byte_exact_outputs": {
+    "results.json": "52f61aa49a02c0aa7030be98854e424fb79c598acd830a25ccb215063a50f5fc",
+    "saved-diagnostic.json": "34911eeac71c9c1936bdc6b6642e3060a01ff0f0d0f85f7b4f3858ec671735a1"
+  },
+  "procedural_rows": 100,
+  "new_matcher_inference": false
+}

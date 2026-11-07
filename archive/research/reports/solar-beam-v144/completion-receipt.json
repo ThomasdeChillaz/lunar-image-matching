@@ -1,0 +1,28 @@
+{
+  "schema": "sanitized_persistent_beam_completion_v144",
+  "complete": true,
+  "source_commit": "dbeb77776b330518c7d5a1c02ccf98e02ccd2bdb",
+  "protocol_sha256": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+  "elapsed_seconds": 1238.0647043819772,
+  "fixed_charge_seconds": 1800,
+  "original_accounting_unchanged": true,
+  "prior_extra_fixed_charges_seconds": 3300,
+  "refunds": false,
+  "stages": [
+    "timing",
+    "predict",
+    "score",
+    "replay"
+  ],
+  "source_files": 115,
+  "input_files": 134,
+  "method_case_cells": 56,
+  "historical_control_identities": 24,
+  "query_truth_used_in_inference": false,
+  "known_query_sun": false,
+  "accepted_pose_study": false,
+  "calibration_or_final_access": false,
+  "new_trainable_parameters": 0,
+  "paid_compute": false,
+  "private_approval_and_execution_records_excluded": true
+}

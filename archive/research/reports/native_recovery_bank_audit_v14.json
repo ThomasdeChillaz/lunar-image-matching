@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "results": {
+    "cases": 16,
+    "correct": 12,
+    "strict": 6,
+    "estimated": 16,
+    "wrong": 4,
+    "attempted": 3,
+    "recovered": 3,
+    "newly_correct": 0,
+    "correct_at_two_px": 4085
+  },
+  "initial_proposal_errors": [
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "rotation_deg": 176.91514976402595,
+      "translation_m": 5299.981748458222,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "rotation_deg": 177.1044640492427,
+      "translation_m": 5130.368105734346,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "rotation_deg": 74.1282167939628,
+      "translation_m": 2871.0515461355612,
+      "final_correct": false
+    }
+  ],
+  "source_sha256": "0cb095040c5822a7f3700b54ea3e6ed31d51bbaf907b4588dda11ada62833561",
+  "summary_sha256": "2689869ee8047b22c7a85085f0db1d1804f5ff77f0173ee504f630bed0ecb21c",
+  "results_sha256": "c38c814ad1d6ab7321917ef7a6403c5f21d3112dac4d27843370c73da9f23c7e",
+  "scope": "Independent native metric and unchanged3px final-estimator replay, routing/source/checkpoint/control audit; no fresh test or confidence guarantee.",
+  "limits": "Does not independently reimplement image matching or replay every12px proposal fit. A strict inlier fit can still be a wrong pose."
+}

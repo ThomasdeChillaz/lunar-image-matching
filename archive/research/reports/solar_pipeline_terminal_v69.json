@@ -1,0 +1,35 @@
+{
+  "stage": "failed; preserve every output and original deadline",
+  "pid": 91519,
+  "updated_utc": "2026-11-03T23:33:01.787039+00:00",
+  "queue_started_utc": "2026-11-03T23:29:56.148109+00:00",
+  "publication_commit": "48f0622d50f187b7a8555ad6da924af1ad71f194",
+  "pipeline_protocol_sha256": "237e1f25e95a36b72897e1530b3b6a4f17f5f7287581fb71188a3f29bc6795ab",
+  "completed_phases": [
+    {
+      "phase": "candidate_diagnostic",
+      "started_utc": "2026-11-03T23:29:56.148875+00:00",
+      "ended_utc": "2026-11-03T23:30:02.258283+00:00",
+      "observed_calendar_seconds": 6.109415,
+      "cap_seconds": 300
+    },
+    {
+      "phase": "candidate_metric_replay",
+      "started_utc": "2026-11-03T23:30:02.260279+00:00",
+      "ended_utc": "2026-11-03T23:30:04.294217+00:00",
+      "observed_calendar_seconds": 2.033943,
+      "cap_seconds": 120
+    }
+  ],
+  "scientific_goal_complete": false,
+  "state": "failed",
+  "error_type": "CalledProcessError",
+  "error": "Command '['/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python', 'run_solar_completion_v68.py', '--protocol', 'reports/solar_completion_contract_v68.json', '--publication-commit', '48f0622d50f187b7a8555ad6da924af1ad71f194', '--blender', '/Users/admin/Documents/Codex/2026-10-25/for/work/fresh-render-runtime-v31/Blender.app/Contents/MacOS/Blender']' returned non-zero exit status 1.",
+  "last_active_phase": {
+    "stage": "missing_data_completion",
+    "child_pid": 91550,
+    "phase_started_utc": "2026-11-03T23:30:04.294805+00:00",
+    "phase_absolute_deadline_utc": "2026-11-04T13:23:15.913367+00:00",
+    "phase_cap_seconds": 50400
+  }
+}

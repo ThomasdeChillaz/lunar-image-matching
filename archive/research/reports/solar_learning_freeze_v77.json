@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-04T04:55:09.192518+00:00",
+  "geometry_gate": {
+    "passed": true,
+    "completed_units": 96,
+    "eligible_units": 96,
+    "correct_oracle_poses": 192,
+    "oracle_pose_directions": 192,
+    "oracle_success": 1.0,
+    "terrain_groups": {
+      "training": 16,
+      "model_selection": 8
+    },
+    "audit": "reports/solar_full_geometry_audit_v70.json",
+    "audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876"
+  },
+  "learning_contract": "reports/solar_learning_contract_v75.json",
+  "learning_contract_sha256": "189b82022a2a77fac92b8a693ef58ff1daed9fadff754f41968ab25a864dc486",
+  "settings": "reports/solar_learning_settings_v75.json",
+  "settings_sha256": "ad9e467baf1a88d16a9c3fcc01255d9627b5e30215c6d496e73d29b48f66ca73",
+  "next_stage": {
+    "stage": "teacher_pilot",
+    "protocol": "reports/solar-learning-v74/teacher_pilot.json",
+    "sha256": "63bb5d6e6cbfea54ece43343d93df40468b3bceeb6e0c438385039c27e95fe47",
+    "cap_seconds": 600,
+    "source_publication_required": true,
+    "latest_start_utc": "2026-11-04T05:23:33.097566+00:00",
+    "absolute_deadline_utc": "2026-11-04T05:33:33.097566+00:00"
+  },
+  "cumulative_allowances": {
+    "training": 20220.0,
+    "baseline": 66900.0
+  },
+  "training_images": "Even-indexed physical illuminations only; odd target images unavailable to teacher and training",
+  "remaining_training_units": 64,
+  "training_groups": 16,
+  "response_optimizer_updates": 0,
+  "teacher_pilot_has_run": false,
+  "scientific_goal_complete": false,
+  "calibration_or_final_access": false
+}

@@ -1,0 +1,80 @@
+{
+  "procedural_only": true,
+  "archived_images_opened": false,
+  "samples": [
+    {
+      "multidepth": false,
+      "optimizer_seconds": 5.3799707149737515,
+      "measurement_seconds": 3.026344425161369,
+      "speed_ratio": 0.9997156679788093,
+      "passed": true,
+      "measurements": {
+        "native_plane_integer": {
+          "world_frame_pose_returned": false,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.05662894942708824,
+          "measured_correspondences": 36
+        },
+        "native_plane_subpixel": {
+          "world_frame_pose_returned": false,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.034833221323400526,
+          "measured_correspondences": 36
+        },
+        "native_terrain_subpixel": {
+          "world_frame_pose_returned": false,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.034833221323400526,
+          "measured_correspondences": 36
+        }
+      }
+    },
+    {
+      "multidepth": true,
+      "optimizer_seconds": 5.246422635042109,
+      "measurement_seconds": 3.2037696191109717,
+      "speed_ratio": 1.0132192960094544,
+      "passed": true,
+      "measurements": {
+        "native_plane_integer": {
+          "world_frame_pose_returned": true,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.9327212586012581,
+          "measured_correspondences": 36
+        },
+        "native_plane_subpixel": {
+          "world_frame_pose_returned": true,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.21159383360378176,
+          "measured_correspondences": 36
+        },
+        "native_terrain_subpixel": {
+          "world_frame_pose_returned": true,
+          "reference_frame_pose_returned": true,
+          "reference_frame_translation_error_m": 0.0419415374619475,
+          "measured_correspondences": 36
+        }
+      }
+    }
+  ],
+  "projected_seconds": 899.1092219928042,
+  "admitted": true,
+  "original_v132_failure_preserved": true,
+  "large_match_set_solver": [
+    {
+      "matches": 2048,
+      "outlier_fraction": 0.0,
+      "seconds": 0.01843234698753804
+    },
+    {
+      "matches": 2048,
+      "outlier_fraction": 0.5,
+      "seconds": 0.026422603987157345
+    },
+    {
+      "matches": 2048,
+      "outlier_fraction": 1.0,
+      "seconds": 0.3969817159813829
+    }
+  ]
+}

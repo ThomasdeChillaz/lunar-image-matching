@@ -1,0 +1,9 @@
+{
+  "machine": "aarch64",
+  "cpu_models": [],
+  "native_bf16": true,
+  "bf16_flags": [
+    "bf16"
+  ],
+  "scope": "Author BF16 CPU profile within the finite free-compute budget. No model, precision or configuration substitution."
+}

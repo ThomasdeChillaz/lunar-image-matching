@@ -1,0 +1,31 @@
+{
+  "schema": "solar_warp_projection_completion_v125",
+  "phase": "timing",
+  "protocol_sha256": "18d8b5f5b0a68ab0d94c6b66b4229ce49a9834cd903ac09b2a780b37aa2091a6",
+  "source_commit": "50e9587ac483162655db2478f8036ebe4fe7c22e",
+  "projection_engine": {
+    "path": "reports/solar-warp-v125/fast_projection.py",
+    "sha256": "1c800d79701c03f2bf38d35b603d50db560dbe910a55f34b5351f031ff0a43e8",
+    "binding": "FastProjectionBank",
+    "scope": "Only projection-cache winner construction changes. v117 rank, scoring, and replay remain byte-identical."
+  },
+  "deadline_utc": "2026-11-05T04:18:31.708949+00:00",
+  "charge": {
+    "reservation": {
+      "job_id": "18d8b5f5b0a68ab0d94c6b66b4229ce49a9834cd903ac09b2a780b37aa2091a6/warp-v125-timing",
+      "category": "baseline",
+      "seconds": 60,
+      "reserved_utc": "2026-11-05T04:17:31.708949+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 4775.0
+  },
+  "calibration_or_final_access": false,
+  "original_v117_timing_failure_sha256": "6abbd5cfdce1bdca8cf11b3d7d479249c0a90fa44c740745be08666071dda1e9",
+  "timing_receipt_sha256": "0c9aa9edf093768c758b487cc66ae7d19e047e37e6b6c13bc3048ff8f6df2abb",
+  "steps": [
+    "timing"
+  ],
+  "complete": true,
+  "ended_utc": "2026-11-05T04:17:33.250324+00:00"
+}

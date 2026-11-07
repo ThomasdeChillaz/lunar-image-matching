@@ -1,0 +1,98 @@
+{
+  "schema_version": "dummy-controller-interruption-qa-v69-1",
+  "generated_utc": "2026-11-03T23:26:56.081924+00:00",
+  "passed": true,
+  "scope": "Actual procedural interruption controls only; no rendering, model inference, matching, training or scientific data changes.",
+  "source_sha256": {
+    "run_solar_completion_v68.py": "8ab1650aaf7f847c9924388e8c41cb1f42d626ecb88d5ac99f048f757bf3f840",
+    "run_solar_pipeline_v69.py": "b4e890c4e98847a72bbc944ce6ef46bf36c187de85618bcda2cb3822c80b7819"
+  },
+  "harness_sha256": "8620dc9aa83d62becc35b80b50f22429c7683092b9eb9204b20f0d3a25fba2a6",
+  "detailed_report_sha256": "ea99c17b5f2092d1f488d4673d7c4125e069f8fd133ea5df3ac022e53fbf2ccf",
+  "controls": [
+    {
+      "controller": "completion",
+      "signal": "SIGTERM",
+      "sigterm_resistant_dummy": true,
+      "signal_inside_popen_before_return": false,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 5.725058617,
+      "normal_deadline_and_child_receipt_preserved": true,
+      "detached_processes_alive_after_controller_exit": 0
+    },
+    {
+      "controller": "completion",
+      "signal": "SIGINT",
+      "sigterm_resistant_dummy": false,
+      "signal_inside_popen_before_return": false,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 0.7554662180000005,
+      "normal_deadline_and_child_receipt_preserved": true,
+      "detached_processes_alive_after_controller_exit": 0
+    },
+    {
+      "controller": "pipeline",
+      "signal": "SIGTERM",
+      "sigterm_resistant_dummy": true,
+      "signal_inside_popen_before_return": false,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 5.772526380999999,
+      "normal_deadline_and_child_receipt_preserved": true,
+      "detached_processes_alive_after_controller_exit": 0
+    },
+    {
+      "controller": "pipeline",
+      "signal": "SIGINT",
+      "sigterm_resistant_dummy": false,
+      "signal_inside_popen_before_return": false,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 0.7316312760000017,
+      "normal_deadline_and_child_receipt_preserved": true,
+      "detached_processes_alive_after_controller_exit": 0
+    },
+    {
+      "controller": "completion",
+      "signal": "SIGTERM",
+      "sigterm_resistant_dummy": false,
+      "signal_inside_popen_before_return": true,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 0.39560889200000204,
+      "normal_deadline_and_child_receipt_preserved": null,
+      "detached_processes_alive_after_controller_exit": 0
+    },
+    {
+      "controller": "pipeline",
+      "signal": "SIGTERM",
+      "sigterm_resistant_dummy": false,
+      "signal_inside_popen_before_return": true,
+      "cleanup_passed": true,
+      "terminal_failed": true,
+      "observed_cleanup_seconds": 1.3959339740000019,
+      "normal_deadline_and_child_receipt_preserved": null,
+      "detached_processes_alive_after_controller_exit": 0
+    }
+  ],
+  "aggregate": {
+    "cases": 6,
+    "cleanup_passed": 6,
+    "direct_completion": 3,
+    "nested_pipeline": 3,
+    "normal_SIGTERM_SIGINT": 4,
+    "inside_popen_launch_signals": 2,
+    "actual_sigkill_escalations": 2,
+    "remaining_dummy_processes": 0
+  },
+  "known_limitations": [
+    "The two artificial inside-Popen interruption cases clean the child before new active metadata is published. Completion last_active_unit is empty; pipeline terminal last_active_phase names the preceding replay. The terminal failure is recorded, and no process is left running. Normal active-unit interruptions retain deadline and child metadata.",
+    "Procedural protocol/publication and scientific commands are substituted with explicit dummy fixtures. These controls do not validate renderer behavior or scientific accuracy."
+  ],
+  "scientific_deadlines_changed": false,
+  "scientific_outputs_changed": false,
+  "root_sources_changed_by_control": false,
+  "copied_source_or_pdf_in_this_report": false
+}

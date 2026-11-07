@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "completed_steps": 100,
+  "fitting_seconds": 17.217137516097864,
+  "calendar_seconds": 21.292969,
+  "total_parameters": 81696,
+  "trainable_parameters": 53424,
+  "lights_a": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lights_b": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "protocol_sha256": "9bf24a517349bca7ad5d840a8b6466f2f2624d663a58db12c2cd2cc3926d3d0c",
+  "final_checkpoint_sha256": "291b7d32615edaeda641827ea4152af7adcab3f7802f3f379992f6dc720f95d1",
+  "fine_encoder_unchanged": true,
+  "model_selection_evaluated": false,
+  "scope": "Train-only100update data/domain control pilot, not selected localization performance."
+}

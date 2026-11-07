@@ -1,0 +1,127 @@
+{
+  "scope": "Completed exposed-development native study; four dependent selection components. No calibrated acceptance, fresh final or SOTA claim.",
+  "optimizer_steps": 10000,
+  "winner": "pair_refinement",
+  "frozen_correct": 45,
+  "frozen_fallback_correct": 53,
+  "frozen_fallback_wrong": 6,
+  "runs": [
+    {
+      "variant": "encoder_3d",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "correct": 44,
+      "strict": 15,
+      "wrong": 9,
+      "sift_fallback_correct": 52,
+      "sift_fallback_wrong": 5,
+      "raw_gain_vs_frozen_pp": -1.3888888888888888,
+      "descriptive_component_interval_pp": [
+        -13.333333333333334,
+        2.380952380952381
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": -1.3888888888888888,
+      "fallback_descriptive_component_interval_pp": [
+        -13.333333333333334,
+        2.380952380952381
+      ],
+      "selected_checkpoint_sha256": "8b2429c963a0c63b828811721e4d71f06f646a74e34ef076cb1c9a23f9f1f3bb",
+      "results_sha256": "e885cbbc2ed6215c20a8155a828f09a3e9f51917628f56450a40bae4ee6de949"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "correct": 45,
+      "strict": 18,
+      "wrong": 10,
+      "sift_fallback_correct": 53,
+      "sift_fallback_wrong": 6,
+      "raw_gain_vs_frozen_pp": 0.0,
+      "descriptive_component_interval_pp": [
+        -6.666666666666667,
+        2.380952380952381
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": 0.0,
+      "fallback_descriptive_component_interval_pp": [
+        -6.666666666666667,
+        2.380952380952381
+      ],
+      "selected_checkpoint_sha256": "b72ac8dfe589c966c75d6fc8ea80433bbffdaceeb9ca9b245f8f0a4288be656d",
+      "results_sha256": "7351e01dff8545808b954d232b5349c4c8b77826d2db788ad4a326469a7670f6"
+    },
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 0,
+      "correct": 45,
+      "strict": 17,
+      "wrong": 12,
+      "sift_fallback_correct": 53,
+      "sift_fallback_wrong": 6,
+      "raw_gain_vs_frozen_pp": 0.0,
+      "descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": 0.0,
+      "fallback_descriptive_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "selected_checkpoint_sha256": "480bb29aee55aadc852e1d47a53a4cfa908fdeb5f27e9a28b1edd7a5a2503ea6",
+      "results_sha256": "71f8bb9820e744ccf7a1d619cb4e3b0f73b544abf7dcdf521db7012cde1d4d94"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261102,
+      "selected_step": 1000,
+      "correct": 42,
+      "strict": 14,
+      "wrong": 13,
+      "sift_fallback_correct": 49,
+      "sift_fallback_wrong": 11,
+      "raw_gain_vs_frozen_pp": -4.166666666666667,
+      "descriptive_component_interval_pp": [
+        -8.333333333333334,
+        -2.2222222222222223
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": -5.555555555555555,
+      "fallback_descriptive_component_interval_pp": [
+        -11.11111111111111,
+        -2.2222222222222223
+      ],
+      "selected_checkpoint_sha256": "6c8eab5b4e37a6751f451ec56cfe7586d8fb0f94b86e410375601b1f0e4be97f",
+      "results_sha256": "91d4e0cce661a00401e890ceec8be5b0be969c0fa8b0b9f09df265f3e681c110"
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261103,
+      "selected_step": 500,
+      "correct": 42,
+      "strict": 15,
+      "wrong": 16,
+      "sift_fallback_correct": 50,
+      "sift_fallback_wrong": 10,
+      "raw_gain_vs_frozen_pp": -4.166666666666667,
+      "descriptive_component_interval_pp": [
+        -16.666666666666668,
+        2.2222222222222223
+      ],
+      "fallback_gain_vs_frozen_fallback_pp": -4.166666666666667,
+      "fallback_descriptive_component_interval_pp": [
+        -16.666666666666668,
+        2.2222222222222223
+      ],
+      "selected_checkpoint_sha256": "0247da01d256005acf26088dd20109af5c8f6058eac0de3c2da82e25c60d7233",
+      "results_sha256": "768b78c7e672391e7a26cb6eff64b67b079857837a38a1c84a0d03c8b7824936"
+    }
+  ],
+  "source_sha256": "8a3157f88b1a4c9971986f172dfd84353308fe721b6d39e1ceba8a9ab476281a",
+  "interval_implementation_sha256": "fe78f82a558f5c4f156bb38095438a9cb872c96bcc6cddac28af8ef28f003915",
+  "summary_sha256": "cf9a5e147b1ed4cad9fb3206681c5f7a471a0568254b7da3ddd91db96ff49b14",
+  "audit_sha256": "c5a7dd62eb7f15b3a85e74ed11a03fd6b92388e6a0586e99b27e11d17f08a73d",
+  "baseline_results_sha256": "8bb48ecdcce9cfdf6cdd6a7168ba853c4deaefc512573b6072bad9d77e8c3744",
+  "interval_note": "Descriptive paired terrain-component bootstrap after model selection, only4 components; not fresh-test confidence.",
+  "calibration_or_test_pixels_loaded": 0
+}

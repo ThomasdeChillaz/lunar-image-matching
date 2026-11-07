@@ -1,0 +1,41 @@
+{
+  "kind": "independent_read_only_review",
+  "created_utc": "2026-11-04T03:02:29.708502+00:00",
+  "blocking_findings": [],
+  "source_sha256": {
+    "solar_remote_relay_v75.py": "17be8429ac9a73bfdc1e853f6a9d2cc84c47390d061dab0899851e5a13225b11",
+    "solar_capsule_v75.py": "c99cfd5e4650274fc445c383bc1042f721ae4cdaddb320486244557fbc971f8b",
+    "solar_portable_evidence_v75.py": "2557940c1144b7da0b968cc14fecd9ca07149b86e790c4a0a6cde12d5280453c",
+    "run_solar_evaluation_v70.py": "7e930c8d7e99617f6c821564246166d19cbfcfaf27549cec8a1a7defe4c1cc64",
+    "solar_reference_pipeline_v74.py": "6c77ef42a8b1f84738cd3c1619bf0c31b8feb8029f073bfa655810b8931cf162",
+    "solar_evaluation_protocol_v74.py": "d74ee39aca25b81a60c8eed23cffc4c5e0de1f5aebc69b17da949e4fb62152a0",
+    ".github/workflows/solar-remote-cpu-v75.yml": "97f11ded9b0a064c0304e779c2862db132e8b8e11e544583057868a48a367f23",
+    "reports/REMOTE_CPU_EXECUTION_V75.md": "60ab9999cb5f0e0e66766e3048fe4f0a8946a51732fdbe0ffeafa224f90c2263"
+  },
+  "focused_tests": {
+    "command": "python -m pytest -q test_solar_remote_relay_v75.py test_solar_portable_v75.py",
+    "result": "64 passed in 4.63s",
+    "scope": "Procedural metadata/array/fake-process tests only; run before parent final deterministic-nonce follow-up. Parent owns new nonce regressions/full suite."
+  },
+  "resolved_findings": [
+    "Local pre_reserve metadata validate_runtime does not call _complete_pilot or current software_identity; cross-host modern full protocol remains explicit manual source-bound preparation.",
+    "Matching own baseline reservation is consumed without a second charge; snapshot is not imported back into live local journal.",
+    "Original UTC latest-start and absolute deadline remain authoritative; no cross-host monotonic value transferred.",
+    "Primary archive completeness/physical catalogue and all terrain variants checked before model construction; no known query Sun supplied.",
+    "All12*N eligible positive/negative case identities retained; failures/partial scientific outputs are archived."
+  ],
+  "training_handoff": [
+    "Activate reviewed settings only at repository-relative reports/solar_learning_settings_v75.json; preserve chosen values except prepared_only=false and declared versioned paths before any admission. Do not initialize using absolute work/ path.",
+    "Actual full96>=95% audit, initialized source/input hashes and publication barrier still precede teacher4-unit pilot; 100update SH/pooled pilots follow measured complete all-eligible teacher bank.",
+    "One subsolar-latitude circle cannot identify arbitrary36SH coefficients. Existing rank11/hour-angle-only interpolation limitation appears in STATUS/AI_PLAN and M75 execution notes; no stronger latitude-extrapolation claim found in reviewed current docs."
+  ],
+  "scientific_activity": {
+    "source_edits": 0,
+    "jobs": 0,
+    "images_decoded": 0,
+    "neural_forwards": 0,
+    "rays": 0,
+    "reservations": 0,
+    "publications": 0
+  }
+}

@@ -1,0 +1,1309 @@
+{
+  "scope": "Necessary idealized lunar solar-centre latitude envelope check; no matcher outcomes used, not SPICE/ephemeris or terrain-horizon verification.",
+  "source_plan_sha256": "1487368cc7c81df3e539522e49fce5b911d05a74c3c3eca29b4bd919ae03e73b",
+  "primary_source": "https://ntrs.nasa.gov/api/citations/20230000854/downloads/Minow_SciTech_2023%20-%20presentation%20-%20final.pdf",
+  "approximate_lunar_axis_obliquity_deg": 1.54,
+  "screening_bound_deg": 1.6,
+  "records": [
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.986472951881141,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.004340414398748978,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.004340414398746593,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.986472951881138,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 2.9988931824750416,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c0",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 2.9988931824750393,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.166590522514104,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.41501905768041103,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.41501905768040886,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.166590522514104,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.4115796663796454,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c1",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.4115796663796427,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.4729904633158215,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.762395748536831,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.7623957485368292,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.47299046331582,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.760296757240359,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c2",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.7602967572403565,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.039554189725299,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.9794341659156435,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.9794341659156421,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.0395541897252984,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.9780058953820325,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.9780058953820316,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.1668478315641115,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.4148901784148977,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.41489017841489556,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.16684783156411,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.4114502289069724,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c6",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.41145022890697,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.98675892783855,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.004197165425781569,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.004197165425779184,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.98675892783855,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 2.998749153212185,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 2.9987491532121826,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.599941530327091,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.19795771659245454,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.19795771659245215,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.59994153032709,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.1935141876723816,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.1935141876723794,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.663298782225927,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.6670900860901308,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.667090086090129,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.663298782225928,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.664656029445966,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c1",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.664656029445964,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.1062987826964457,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.4465967419703478,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.446596741970347,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.106298782696445,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.446176133929441,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c4",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.44617613392944,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.783636499664449,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.1075629923782064,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.1075629923782053,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.783636499664448,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.106470400454709,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c5",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.106470400454708,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.6636048017905765,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.6669368280363436,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.6669368280363418,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.6636048017905765,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.6645022126721294,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r1-c6",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.664502212672127,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.472792682857253,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.76249479307596,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.7624947930759582,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.472792682857251,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.760396137126444,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c1",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.7603961371264427,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.483757073428635,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.2576806747610532,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.2576806747610523,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.483757073428635,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.2569243704424,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c2",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.256924370442399,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.473122308156801,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.7623297232461946,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.7623297232461929,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.4731223081568,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.760230508385149,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r2-c6",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.7602305083851477,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.7831792894255347,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.1077918869297823,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.1077918869297811,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.783179289425534,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.106699854598648,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.106699854598646,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.1058563791457554,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.446818136415186,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.4468181364151855,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.105856379145755,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.44639786451962,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.446397864519619,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.1060038666633476,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.4467443284318455,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.4467443284318449,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.1060038666633485,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.446323944487805,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c4",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.446323944487804,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 3.7834536296433514,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 1.107654543159036,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 1.1076545431590348,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 6.783453629643351,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 4.106562175072431,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 4.10656217507243,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.166384660188498,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.41512216864428325,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.4151221686442811,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.166384660188498,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.4116832239094363,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.4116832239094346,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.472726752517933,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.762527809683468,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.7625278096834662,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.472726752517933,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.760429265516298,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c2",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.7604292655162967,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.039154400762922,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.9796343378569256,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.9796343378569242,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.039154400762921,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.9782066266652203,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c3",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.978206626665219,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 4.039234364830947,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.9795943003293985,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.9795943003293972,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 7.039234364830948,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.9781664772692813,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c4",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.9781664772692795,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.166641986000141,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.4149932809883284,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.41499328098832616,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.166641986000142,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 3.4115537780461094,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c6",
+      "split": "training",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 3.411553778046107,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 0,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 5.98659551552581,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 1,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 0.004279020719440684,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 2,
+      "elevation_deg": 2.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 0.0042790207194382986,
+      "outside_generous_1_6deg_envelope": false
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 3,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 0.0,
+      "implied_solar_body_latitude_deg": 8.98659551552581,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 4,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 120.0,
+      "implied_solar_body_latitude_deg": 2.9988314543857286,
+      "outside_generous_1_6deg_envelope": true
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "light": 5,
+      "elevation_deg": 5.0,
+      "azimuth_deg": 240.0,
+      "implied_solar_body_latitude_deg": 2.998831454385726,
+      "outside_generous_1_6deg_envelope": true
+    }
+  ],
+  "outside_count": 96,
+  "total": 144,
+  "model_inference_performed": false,
+  "action": "Preserve generated photometric stress cases; amend solar directions before primary lunar training, using no model results."
+}

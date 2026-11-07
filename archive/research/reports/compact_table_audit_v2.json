@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "report_sha256": "e410b76f0dac03815364a2a992652d50e906784400b4f18b1f94d0cecd638806",
+  "summary_tables_checked": [
+    "runs/compact-v2-compact-3d-test",
+    "runs/compact-v2-compact-sensor",
+    "runs/compact-v2-original-3d-test",
+    "runs/compact-v2-original-sensor",
+    "runs/compact-v2-sift-3d-test",
+    "runs/compact-v2-sift-sensor"
+  ],
+  "paired_intervals_checked": 10,
+  "same_host_control_cases": 360,
+  "independent_control_geometry_and_cpu_medians": true,
+  "new_inference_or_fitting": false
+}

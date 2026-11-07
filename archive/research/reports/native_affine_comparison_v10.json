@@ -1,0 +1,79 @@
+{
+  "scope": "Exposed-development deterministic preconditioning; not learned novelty, accepted-pose accuracy or independent validation.",
+  "frozen": {
+    "cases": 72,
+    "correct": 45,
+    "strict": 17,
+    "wrong": 12
+  },
+  "affine": {
+    "cases": 72,
+    "correct": 49,
+    "strict": 17,
+    "wrong": 11
+  },
+  "frozen_sift_fallback": {
+    "cases": 72,
+    "correct": 53,
+    "strict": 27,
+    "wrong": 6
+  },
+  "affine_sift_fallback": {
+    "cases": 72,
+    "correct": 53,
+    "strict": 27,
+    "wrong": 9
+  },
+  "gained_case_ids": [
+    "oblique/oblique/2994/lights-0-2",
+    "dynamicgood/dynamic/1458/lights-0-0",
+    "dynamicgood/dynamic/1458/lights-0-2",
+    "dynamicgood/dynamic/1458/lights-1-2",
+    "dynamicgood/dynamic/1458/lights-2-2",
+    "dynamicgood/dynamic/1092/lights-0-0",
+    "dynamicgood/dynamic/1092/lights-1-1",
+    "dynamicgood/dynamic/1092/lights-2-2"
+  ],
+  "lost_case_ids": [
+    "dynamicgood/dynamic/1458/lights-1-1",
+    "dynamicgood/dynamic/1407/lights-0-1",
+    "dynamicgood/dynamic/1407/lights-1-0",
+    "dynamicgood/dynamic/1407/lights-2-1"
+  ],
+  "raw_gain_pp": 5.555555555555555,
+  "descriptive_component_interval_pp": [
+    -16.666666666666668,
+    14.285714285714286
+  ],
+  "fallback_descriptive_component_interval_pp": [
+    -16.666666666666668,
+    7.777777777777778
+  ],
+  "per_component": {
+    "axial-v5-component-0000": {
+      "cases": 18,
+      "frozen_correct": 10,
+      "affine_correct": 13
+    },
+    "axial-v5-component-0005": {
+      "cases": 9,
+      "frozen_correct": 9,
+      "affine_correct": 9
+    },
+    "axial-v5-component-0006": {
+      "cases": 36,
+      "frozen_correct": 17,
+      "affine_correct": 21
+    },
+    "axial-v5-component-0015": {
+      "cases": 9,
+      "frozen_correct": 9,
+      "affine_correct": 6
+    }
+  },
+  "interval_note": "Descriptive paired bootstrap on4 exposed selection components after hypothesis formation; not fresh-test confidence.",
+  "source_sha256": "82c1815bd3f447bbdcf8528ada86f15a3ab21ad6e0ac8433fa1059b78efc3740",
+  "result_sha256": "392ae334d50f2e6e02c303472b02e7d2b1c2f90b80f0be6a24718b5b7b15e4dd",
+  "frozen_results_sha256": "859b78ea4df147fda7c968840c46687ec6a3e83ae040efaf7b3f11dee72c6093",
+  "calibration_or_test_pixels_loaded": 0
+}

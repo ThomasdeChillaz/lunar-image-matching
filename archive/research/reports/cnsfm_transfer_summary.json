@@ -1,0 +1,29 @@
+{
+  "measurements": [
+    {
+      "region_id": "S1",
+      "method": "disk_lightglue_lunar",
+      "pairs": 45,
+      "returned": 31,
+      "median_map_disagreement_returned_px": 22.809924435783664,
+      "accepted_by_transported_physical_policy": null
+    },
+    {
+      "region_id": "S2",
+      "method": "disk_lightglue_lunar",
+      "pairs": 45,
+      "returned": 31,
+      "median_map_disagreement_returned_px": 5.185621205574182,
+      "accepted_by_transported_physical_policy": null
+    },
+    {
+      "region_id": "S3",
+      "method": "disk_lightglue_lunar",
+      "pairs": 231,
+      "returned": 99,
+      "median_map_disagreement_returned_px": 13.185785346943156,
+      "accepted_by_transported_physical_policy": null
+    }
+  ],
+  "warning": "Returned or accepted alignments are not independently verified correct alignments. Unknown real map-reference uncertainty; additional human landmarks required."
+}

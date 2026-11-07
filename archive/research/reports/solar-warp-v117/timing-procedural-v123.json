@@ -1,0 +1,335 @@
+{
+  "schema": "solar_warp_procedural_timing_v117",
+  "procedural_only": true,
+  "archived_lunar_images_opened": false,
+  "native_shape": [
+    512,
+    512
+  ],
+  "posed_candidates": 32,
+  "fixture_translation_native_pixels": [
+    40,
+    32
+  ],
+  "reference_samples": 4096,
+  "passed": false,
+  "cold_projection_sample": {
+    "cell_pixels": 32,
+    "repeat": "cold",
+    "rank_seconds": 0.1712939590215683,
+    "control": {
+      "passed": true,
+      "expected_index": 17,
+      "order": {
+        "geometry_3d": [
+          17,
+          31,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "planar": [
+          17,
+          7,
+          8,
+          11,
+          6,
+          9,
+          10,
+          25,
+          26,
+          29,
+          30,
+          27,
+          28,
+          31
+        ],
+        "gradient": [
+          17,
+          31,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "true_candidate_losses": {
+        "geometry_3d": 1.118303259270601e-31,
+        "planar": 0.01874989106513329,
+        "gradient": 0.4448719578533019
+      },
+      "common_supported_candidates": 32,
+      "reason": null
+    },
+    "evidence_write_seconds": 0.0016082900110632181,
+    "evidence_bytes": 55528,
+    "evidence_file": "cell-32-cold.npz",
+    "evidence_sha256": "81fd7c80eaf8f6d33678434761c381e8540d639987cc01474567757649cde791",
+    "cache_bytes": 2097152
+  },
+  "warm_samples": [
+    {
+      "cell_pixels": 32,
+      "repeat": "warm-0",
+      "rank_seconds": 0.026160091976635158,
+      "control": {
+        "passed": true,
+        "expected_index": 17,
+        "order": {
+          "geometry_3d": [
+            17,
+            31,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "planar": [
+            17,
+            7,
+            8,
+            11,
+            6,
+            9,
+            10,
+            25,
+            26,
+            29,
+            30,
+            27,
+            28,
+            31
+          ],
+          "gradient": [
+            17,
+            31,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        "true_candidate_losses": {
+          "geometry_3d": 1.118303259270601e-31,
+          "planar": 0.01874989106513329,
+          "gradient": 0.4448719578533019
+        },
+        "common_supported_candidates": 32,
+        "reason": null
+      },
+      "evidence_write_seconds": 0.0014065110008232296,
+      "evidence_bytes": 55528,
+      "evidence_file": "cell-32-warm-0.npz",
+      "evidence_sha256": "81fd7c80eaf8f6d33678434761c381e8540d639987cc01474567757649cde791"
+    },
+    {
+      "cell_pixels": 16,
+      "repeat": "warm-0",
+      "rank_seconds": 0.03158805600833148,
+      "control": {
+        "passed": true,
+        "expected_index": 17,
+        "order": {
+          "geometry_3d": [
+            17,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            31
+          ],
+          "planar": [
+            17,
+            9,
+            7,
+            8,
+            11,
+            6,
+            10,
+            31
+          ],
+          "gradient": [
+            17,
+            31,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        "true_candidate_losses": {
+          "geometry_3d": 6.073998540395188e-32,
+          "planar": 0.06222451253361015,
+          "gradient": 0.4462016762558645
+        },
+        "common_supported_candidates": 32,
+        "reason": null
+      },
+      "evidence_write_seconds": 0.0023884489783085883,
+      "evidence_bytes": 216808,
+      "evidence_file": "cell-16-warm-0.npz",
+      "evidence_sha256": "2ef4b4fd647d955e7216387bca057a75ed8e4c33ce8a8861e3f0d461482a7ef9"
+    },
+    {
+      "cell_pixels": 32,
+      "repeat": "warm-1",
+      "rank_seconds": 0.02705950097879395,
+      "control": {
+        "passed": true,
+        "expected_index": 17,
+        "order": {
+          "geometry_3d": [
+            17,
+            31,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "planar": [
+            17,
+            7,
+            8,
+            11,
+            6,
+            9,
+            10,
+            25,
+            26,
+            29,
+            30,
+            27,
+            28,
+            31
+          ],
+          "gradient": [
+            17,
+            31,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        "true_candidate_losses": {
+          "geometry_3d": 1.118303259270601e-31,
+          "planar": 0.01874989106513329,
+          "gradient": 0.4448719578533019
+        },
+        "common_supported_candidates": 32,
+        "reason": null
+      },
+      "evidence_write_seconds": 0.0017958490061573684,
+      "evidence_bytes": 55528,
+      "evidence_file": "cell-32-warm-1.npz",
+      "evidence_sha256": "81fd7c80eaf8f6d33678434761c381e8540d639987cc01474567757649cde791"
+    },
+    {
+      "cell_pixels": 16,
+      "repeat": "warm-1",
+      "rank_seconds": 0.03060006198938936,
+      "control": {
+        "passed": true,
+        "expected_index": 17,
+        "order": {
+          "geometry_3d": [
+            17,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            31
+          ],
+          "planar": [
+            17,
+            9,
+            7,
+            8,
+            11,
+            6,
+            10,
+            31
+          ],
+          "gradient": [
+            17,
+            31,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        "true_candidate_losses": {
+          "geometry_3d": 6.073998540395188e-32,
+          "planar": 0.06222451253361015,
+          "gradient": 0.4462016762558645
+        },
+        "common_supported_candidates": 32,
+        "reason": null
+      },
+      "evidence_write_seconds": 0.0017731119878590107,
+      "evidence_bytes": 216808,
+      "evidence_file": "cell-16-warm-1.npz",
+      "evidence_sha256": "2ef4b4fd647d955e7216387bca057a75ed8e4c33ce8a8861e3f0d461482a7ef9"
+    }
+  ],
+  "full_scope_forecast": {
+    "projected_seconds": 193.47633312271358,
+    "projected_uncompressed_evidence_bytes": 278872064,
+    "admitted": false,
+    "cap_seconds": 180.0,
+    "evidence_storage_cap_bytes": 536870912,
+    "full_pairings": 16,
+    "theoretical_candidates_per_pairing": 2048,
+    "all_candidates_retained_for_write_forecast": true,
+    "native_scales": [
+      32,
+      16
+    ],
+    "case_scale_factor": 1024.0,
+    "timing_margin": 1.5,
+    "by_scale": {
+      "32": {
+        "rank_seconds": 27.708929002285004,
+        "uncompressed_evidence_write_seconds": 1.8389493823051453,
+        "uncompressed_evidence_bytes": 56860672
+      },
+      "16": {
+        "rank_seconds": 32.34616935253143,
+        "uncompressed_evidence_write_seconds": 2.4457717537879944,
+        "uncompressed_evidence_bytes": 222011392
+      }
+    },
+    "setup": {
+      "python_import_seconds": 0.07110545295290649,
+      "fixture_conservative_allowance_seconds": 0.005046022008173168,
+      "reference_pose_banks_seconds": 0.6338365103283357,
+      "reference_clouds_seconds": 0.08316109608858824,
+      "full_cold_projection_seconds": 43.851253509521484,
+      "archive_read_verify_and_seal_allowance_seconds": 20.0
+    },
+    "projection_cache_geometry_bytes_per_case": 134217728
+  },
+  "timing_scope": "Measured generated fixture. Full-scope time and storage are forecasts, not archive runtime."
+}

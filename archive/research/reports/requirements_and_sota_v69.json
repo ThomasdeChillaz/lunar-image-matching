@@ -1,0 +1,585 @@
+{
+  "schema_version": "solar-requirements-sota-v69-1",
+  "generated_utc": "2026-11-03T23:23:26.805871+00:00",
+  "repository_root": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching",
+  "artifact_scope": "Outside-repository read-only evidence/requirements audit; no NN, rendering, publication, email or submission performed.",
+  "broader_goal_status": "active_not_achieved",
+  "scientific_gain_claim": false,
+  "superiority_claim": false,
+  "outreach_ready_performance_claim": false,
+  "current_evidence": {
+    "learned_control": {
+      "report": "evidence_05",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "correct_raw_poses": 15,
+      "positive_cases": 96,
+      "correct_raw_pose_fraction": 0.15625,
+      "wrong_raw_poses": 16,
+      "strict_raw_poses": 4,
+      "raw_nonoverlap_proposals": 6,
+      "negative_cases": 96,
+      "calibrated_acceptance_evaluated": false,
+      "selected_checkpoint_sha256": "ec7b9f77f695bcbc6c4377aa3f1b49687bf2f60bc50b04389ea7e5f09d1c5f09",
+      "scope": "Northern cross-image context control; raw development poses only, not architectural novelty or held-out final results."
+    },
+    "new_lighting_response": {
+      "total_parameters": 95808,
+      "lunar_training_updates": 0,
+      "performance_evaluated": false,
+      "source": "evidence_07 and evidence_11; untrained status in evidence_01/evidence_03"
+    },
+    "software": {
+      "report": "evidence_06",
+      "tests_passed": 537,
+      "optional_skips": 4,
+      "scientific_gain": false
+    },
+    "original_acquisition": {
+      "report": "evidence_10",
+      "state": "failed",
+      "completed_units": 10,
+      "planned_units": 96,
+      "original_deadline_utc": "2026-11-03T22:42:36.341288+00:00",
+      "original_deadline_expired": true,
+      "completion": "separate declaration pending; original attempt remains failed"
+    },
+    "reserve": {
+      "calibration_groups": 4,
+      "final_groups": 12,
+      "development_access": false,
+      "claim_source": "published status snapshot and parent task evidence"
+    }
+  },
+  "primary_metric": {
+    "name": "correctly accepted absolute camera poses / all eligible positive pairs",
+    "rotation_degrees_lte": 2,
+    "absolute_translation_error_lte": "1% median Euclidean reference range",
+    "failed_and_rejected_cases_in_denominator": true
+  },
+  "local_evidence": [
+    {
+      "id": "evidence_00",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/AGENTS.md",
+      "sha256": "674ac729861fa9aa3dc4376d8dbf73fc49fa7347c38c97df7c14716a6d3c9ca6"
+    },
+    {
+      "id": "evidence_01",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/AI_PLAN.md",
+      "sha256": "8e75be028852b3b108eaa64c51e493152e72b77c0b23b2771d115488e81f2db9"
+    },
+    {
+      "id": "evidence_02",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/MILESTONES.md",
+      "sha256": "ad6805563d380abbf5fdf9a6e3e014c3291f11faed81eadce074935e07c8e6c7"
+    },
+    {
+      "id": "evidence_03",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/STATUS.md",
+      "sha256": "9d6d27ea64b81bc24dccece00cfa0eb7ca0725ce7257349045bdadfdc0554d42"
+    },
+    {
+      "id": "evidence_04",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/SOLAR_MATCHING_RESEARCH.md",
+      "sha256": "43c172c34f7eefc573236a0f54555ec5644f4df2f98fbce4b3d8de7e995941c9"
+    },
+    {
+      "id": "evidence_05",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/north_context_completed_results_v61.json",
+      "sha256": "51c10291a2f5ff68a038ccd7c3900889da6460f4199c33d5e8bd5a343a840715"
+    },
+    {
+      "id": "evidence_06",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar_release_software_v67.json",
+      "sha256": "c839b21e20c63a0e324a0a68f8d2802ba4a73f2161145a2d21f59a46ad9f5a1f"
+    },
+    {
+      "id": "evidence_07",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar_spatial_eight_toggle_smoke_v67.json",
+      "sha256": "e94f78a323b50def9e895411883599431fcc619c4f65172392f7db2875302887"
+    },
+    {
+      "id": "evidence_08",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar_response_observability_v65.json",
+      "sha256": "1885c3101ff342f7b13e78916ad03211604b13ae27dd5c8e7f5587a797e5bd63"
+    },
+    {
+      "id": "evidence_09",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar_compute_admission_v67.json",
+      "sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c"
+    },
+    {
+      "id": "evidence_10",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/runs/solar-development-v67-state.json",
+      "sha256": "aab9e623299e85b875a5aa814b07201bf6a9e94d1584af001e15ce684f29371d"
+    },
+    {
+      "id": "evidence_11",
+      "path": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/solar_response_v63.py",
+      "sha256": "48579696b2af540b4380e74b6df80d85fb364a9a0d35d138f48c3810bd9d3c0a"
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "roma_v2",
+      "title": "RoMa v2: Harder Better Faster Denser Feature Matching",
+      "url": "https://arxiv.org/html/2511.15706v3",
+      "source_type": "primary_research_paper",
+      "version": "arXiv:2511.15706v3",
+      "source_date": "2026-07-06",
+      "table": "Table 4",
+      "benchmark": "MegaDepth-1500",
+      "metric": "relative camera pose angular AUC",
+      "units": "AUC points, 0–100",
+      "thresholds_degrees": [
+        5,
+        10,
+        20
+      ],
+      "values": [
+        62.8,
+        77.0,
+        86.6
+      ],
+      "auxiliary_original_paper_wxbs": {
+        "table": "Table 11",
+        "metric": "mAA@10 pixels",
+        "value": 55.4
+      },
+      "inference_profile": {
+        "coarse_shape": [
+          800,
+          800
+        ],
+        "fine_shape": [
+          1024,
+          1024
+        ]
+      },
+      "caveat": "Relative angular AUC is not joint absolute reference-map pose acceptance. Published H200 batch throughput is not a two-thread CPU latency comparison. Refinement and predicted covariance already exist in this work.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "roma_omega",
+      "title": "RoMa-Ω: What Feed-Forward 3D Models Know About Image Matching",
+      "url": "https://arxiv.org/html/2609.09507v1",
+      "source_type": "primary_research_paper",
+      "version": "arXiv:2609.09507v1",
+      "source_date": "2026-09-08",
+      "table": "Table 2",
+      "benchmark": "WxBS",
+      "metric": "mAA@10 pixels",
+      "units": "mAA points, 0–100",
+      "values": {
+        "RoMa v2": 64.8,
+        "RoMa-Ω": 72.9
+      },
+      "within_paper_gain_points": 8.1,
+      "caveat": "This same-paper comparison must not be combined with RoMa v2 original-paper WxBS 55.4. Different setup; no inference about project pose success.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "moonst3r",
+      "title": "Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset",
+      "url": "https://arxiv.org/html/2510.18172v1",
+      "source_type": "primary_research_paper",
+      "version": "arXiv:2510.18172v1",
+      "source_date": "2025-10-20",
+      "table": "Table 3",
+      "benchmark": "StereoLunar Dynamic trajectory test",
+      "metric": "separate relative rotation and translation-direction angular accuracies",
+      "units": "percent of pairs",
+      "values": {
+        "RRA_lt_2_degrees_percent": 98.0,
+        "RTA_lt_2_degrees_percent": 91.7
+      },
+      "caveat": "Separate marginals; neither a joint success rate nor absolute translation within 1% of range. Pose uses 2D matches, known intrinsics and essential-matrix estimation. Scale-invariant reconstruction and simulated terrain dependence must be disclosed.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "loma_r",
+      "title": "LoMa: Local Feature Matching Revisited",
+      "url": "https://www.davnords.com/loma",
+      "repository": "https://github.com/davnords/LoMa",
+      "source_type": "primary_author_project_and_implementation",
+      "version": "ECCV 2026 project; repository snapshot",
+      "repository_commit": "415caedde23a9ed479172ed174fe4ff7b4514d4b",
+      "variant_release_date": "2026-04-14",
+      "relevant_variant": "LoMa-R, rotation-invariant descriptor and matcher using augmentation",
+      "quantitative_claim_in_this_audit": null,
+      "caveat": "Aerial-image relevance is stated by the authors. Do not attribute LoMa-B README scores to LoMa-R; actual project forward/geometry controls and CPU measurements remain necessary.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "lunar_distillation",
+      "title": "Geometric Foundation Model Distillation for Efficient Lunar 3D Reconstruction",
+      "url": "https://clementinegrethen.github.io/publications/ECCV.html",
+      "repository": "https://github.com/clementinegrethen/mast3r-distillation",
+      "repository_commit": "e8c42a72963fcba2ef7d3fdc779ebea30b59757c",
+      "source_type": "primary_author_project_and_implementation",
+      "version": "ECCV 2026 author project and repository snapshot",
+      "metric": "model parameter count",
+      "units": "millions of parameters",
+      "student_range": [
+        94.9,
+        154.9
+      ],
+      "teacher": 688.6,
+      "caveat": "Efficient lunar reconstruction already has a direct prior. Public paper PDF and downloadable pretrained student weights were not verified. Project and README student identifiers differ; report the range, not inconsistent IDs. A much smaller matcher does not establish equivalent reconstruction functionality or better pose accuracy.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "ansar_aiaa2025",
+      "title": "Illumination Invariant Image Matching for Lunar TRN",
+      "url": "https://doi.org/10.2514/6.2025-2073",
+      "source_type": "primary_publisher_abstract",
+      "version": "AIAA 2025-2073",
+      "source_date": "2025-01-03",
+      "verified_scope": "LIMA correlation-based matching and learned illumination-invariant features, with synthetic and real experiments",
+      "access": "Publisher abstract available through indexed primary page; full page returned HTTP403. Numerical tables not inspected.",
+      "quantitative_claim_in_this_audit": null,
+      "caveat": "Do not assign the SIW 2024 numerical figures to this 2025 paper.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "georgakis_ansar_siw2024",
+      "title": "Learning Illumination Invariant Features for Lunar South Pole with Deep Learning",
+      "url": "https://seal.ae.gatech.edu/sites/default/files/2024-09/GeorgakisGeorgios.pdf",
+      "source_type": "primary_university_hosted_paper",
+      "version": "Space Imaging Workshop, 7–9 October 2024",
+      "authors": [
+        "Georgios Georgakis",
+        "Adnan Ansar"
+      ],
+      "page": 3,
+      "figures": [
+        4,
+        5
+      ],
+      "method": "LoFTR-fine",
+      "condition": {
+        "azimuth_difference_degrees": 180,
+        "elevation_difference_degrees": 3
+      },
+      "benchmark": "Ortho-to-Ortho, seen 180E map versus unseen 0E map",
+      "metric": "correspondence reprojection accuracy at figure pixel thresholds; mean matches",
+      "values": {
+        "seen": {
+          "accuracy_1px_percent": 41.8,
+          "accuracy_5px_percent": 79.9,
+          "mean_matches": 479.0
+        },
+        "unseen": {
+          "accuracy_1px_percent": 12.0,
+          "accuracy_5px_percent": 27.0,
+          "mean_matches": 193.3
+        }
+      },
+      "local_pdf_path": "/Users/admin/Documents/Codex/2026-10-25/for/work/literature_v68/ansar_team_siw_2024.pdf",
+      "local_pdf_sha256": "248faf103ffee45ff92b60e9a132f0c9da6f718c77cdc7d63b676a548225ceb0",
+      "verification": "Page 3 rendered and visually checked; selected numeric cells belong to 3-degree elevation row, not the 1-degree histogram condition.",
+      "caveat": "Not camera-pose recovery. Seen versus unseen terrain distinction is essential. No full figure copied into audit.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "ansar_aiaa2026_maps",
+      "title": "Stitching Illumination-Matched Maps: A LIMA-Based Pipeline for Robust Reference Map Generation",
+      "url": "https://noahzegna.github.io/",
+      "publisher_url": "https://doi.org/10.2514/6.2026-2244",
+      "source_type": "primary_author_publication_page",
+      "version": "AIAA SciTech 2026 author listing",
+      "authors": [
+        "Noah Rothenberger",
+        "Yang Cheng",
+        "Adnan Ansar",
+        "Yumi Iwashita"
+      ],
+      "verified_scope": "Author summary describes synthesizing target-lighting reference maps from images under different Sun angles.",
+      "access": "Author primary page inspected; publisher page HTTP403. Full methods and quantitative tables not inspected.",
+      "quantitative_claim_in_this_audit": null,
+      "caveat": "A closely related prior that must be examined before claiming response-prediction novelty.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "dlr_shadows2015",
+      "title": "Shadow-Based Matching for Precise and Robust Absolute Self-Localization during Lunar Landings",
+      "url": "https://elib.dlr.de/97110/",
+      "doi": "10.1109/AERO.2015.7119045",
+      "source_type": "primary_institutional_repository_abstract",
+      "version": "IEEE Aerospace Conference 2015",
+      "verified_scope": "Known-Sun DEM rendering, shadow matching and RANSAC for lunar absolute localization.",
+      "quantitative_claim_in_this_audit": null,
+      "caveat": "Shadow matching itself is prior art; numerical pose metrics are not being compared here.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "cmu_shadows_planning2020",
+      "title": "Terrain Relative Navigation for Lunar Polar Roving: Exploiting Geometry, Shadows, and Planning",
+      "url": "https://publications.ri.cmu.edu/terrain-relative-navigation-for-lunar-polar-roving-exploiting-geometry-shadows-and-planning",
+      "source_type": "primary_institutional_thesis_abstract",
+      "version": "CMU-RI-TR-20-11, April 2020",
+      "verified_scope": "Geometric terrain registration, shadow features, uncertainty prediction and planning for information gain.",
+      "quantitative_claim_in_this_audit": null,
+      "caveat": "Active information selection and geometric/shadow localization are not new in themselves.",
+      "directly_comparable_to_project": false
+    },
+    {
+      "id": "jpl_ansar_profile",
+      "title": "JPL Robotics: Adnan Ansar",
+      "url": "https://www-robotics.jpl.nasa.gov/who-we-are/people/adnan_ansar/",
+      "source_type": "primary_institutional_profile",
+      "version": "live page verified at snapshot",
+      "verified_scope": "Mapping, localization, stereo, feature matching and lunar terrain-relative navigation; establishes topic relevance, not interest in this project.",
+      "quantitative_claim_in_this_audit": null
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R01_primary_metric",
+      "target": "At least 70% correctly accepted camera poses / all eligible positive pairs.",
+      "definition": {
+        "rotation_degrees_lte": 2.0,
+        "absolute_camera_translation_error_lte": "0.01 * median Euclidean reference range",
+        "denominator": "all eligible positive pairs, including failures and rejected pairs"
+      },
+      "status": "not_demonstrated",
+      "evidence": [
+        "evidence_05"
+      ],
+      "gap": "15/96 is raw model-selection development recovery; calibrated correct acceptance has not been measured for the new method."
+    },
+    {
+      "id": "R02_compact_gain",
+      "target": "At least 10 percentage points accepted-pose gain versus strongest matched compact control, including deterministic refinement.",
+      "uncertainty": "Paired terrain-component interval for the gain must have lower bound above zero; reused camera/lighting variants are dependent.",
+      "status": "not_demonstrated",
+      "gap": "No matched full new-data ablations or frozen candidate result yet."
+    },
+    {
+      "id": "R03_error_constraints",
+      "target": {
+        "empirical_accepted_pose_error_lte": 0.01,
+        "empirical_nonoverlap_acceptance_lte": 0.01
+      },
+      "definition": {
+        "accepted_pose_error": "wrong accepted positive poses / all accepted positive poses",
+        "nonoverlap_acceptance": "accepted nonoverlap pairs / all eligible nonoverlap pairs"
+      },
+      "protocol": "Common calibration recipe after model selection, separately held calibration groups, complete error-versus-coverage curves and uncertainty; negative grouping includes both endpoints.",
+      "status": "not_evaluated",
+      "gap": "Six raw negative proposals are not calibrated false accepts. Finite sample rates do not establish guaranteed deployment risk."
+    },
+    {
+      "id": "R04_modern_tradeoff",
+      "target": "Modern pose accuracy advantage, or within 3 percentage points correct acceptance and at least 5× faster on same CPU at comparable error.",
+      "required_methods": [
+        "original frozen CNN",
+        "strongest completed compact control",
+        "SIFT",
+        "direct render-and-match",
+        "MatchAnything–EfficientLoFTR",
+        "LoMa-R",
+        "RoMa v2",
+        "MOONSt3R subject to actual pretrained controls and budget"
+      ],
+      "secondary_literature_or_optional": [
+        "RoMa-Ω after required comparisons"
+      ],
+      "fairness": "Same original 512-pixel content/FOV, native coordinate conversion, same available reference geometry/intrinsics and final AP3P/RANSAC 3-native-pixel threshold. Distinguish image-only reconstruction pose. Pin revisions/weights/settings/licenses; pretrained forward, known-transform and invalid-input controls; all eligible cases retained. Measure full inference time including hypothesis management/physics, memory and reference preprocessing cost; publish author settings and common-input settings, resource failures and incomplete common subsets.",
+      "status": "not_demonstrated",
+      "gap": "Paper metrics are not a same-case CPU pose comparison."
+    },
+    {
+      "id": "R05_data_gate",
+      "target": {
+        "complete_camera_units": 96,
+        "train_groups": 16,
+        "selection_groups": 8,
+        "camera_pairs_per_group": 4,
+        "physical_lights": 24,
+        "train_lights": "even indices only, including teacher targets",
+        "oracle_pose_recovery_lte_failure": 0.05
+      },
+      "conditions": "Use audited cameras and physical lighting without changing native resolution/material/schedule to accelerate rendering. Preserve old complete/failed data. Keep camera occlusion, solar shadow, clear illumination and unknown coverage separate. Certify solar clearance only using the declared terrain envelope; test cropped maps. No darkness-derived visibility labels.",
+      "status": "incomplete",
+      "evidence": [
+        "evidence_10"
+      ],
+      "gap": "Original data attempt terminal failed at 10/96; old deadline expired. Distinct missing-only completion and full geometry/visibility audit pending; pilot checks are not the all-unit gate."
+    },
+    {
+      "id": "R06_all_three_and_ablations",
+      "target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
+      "controls": [
+        "pooled-response with matched size/data/budget",
+        "identical candidates with solar term disabled",
+        "independent Sun per correspondence",
+        "uniform spatial patch selection",
+        "strongest appearance patch selection",
+        "geometry-only patch selection"
+      ],
+      "active_patch_budgets": [
+        32,
+        64,
+        128
+      ],
+      "principal_patch_budget": 128,
+      "illumination_tracks": [
+        "primary estimated query Sun",
+        "secondary supplied query Sun to all capable methods"
+      ],
+      "status": "software_prototypes_only",
+      "evidence": [
+        "evidence_06",
+        "evidence_07"
+      ],
+      "gap": "Eight procedural toggle replays are not all eight scientific lunar ablations. New head has zero lunar updates."
+    },
+    {
+      "id": "R07_training_repetitions",
+      "target": "100-update exact replay/cost pilot, then 2,000 updates with seed 20261101; evaluate 0/500/1000/1500/2000.",
+      "select_by": [
+        "unfiltered correct pose count",
+        "two-pixel correspondence count",
+        "earlier checkpoint"
+      ],
+      "selected_repeat_seeds": [
+        20261102,
+        20261103
+      ],
+      "conditions": "Identical eligible training terrain/light data and teacher availability across matched learned controls; use actual physical light variation and separate sensor exposure/blur/noise/quantization augmentation. No held-out odd-light teacher targets.",
+      "status": "not_started_for_response_model",
+      "gap": "Completed attention/context control is historical, not the new lighting-response study."
+    },
+    {
+      "id": "R08_precision_and_robustness",
+      "target": "Diagnose and report native correspondence precision, pose failure and perturbation robustness.",
+      "correspondence_thresholds_pixels": [
+        1,
+        2,
+        4,
+        8,
+        12
+      ],
+      "terrain_height_perturbations_metres": [
+        -20,
+        -10,
+        -5,
+        5,
+        10,
+        20
+      ],
+      "report": [
+        "unfiltered raw poses",
+        "correct accepted poses",
+        "wrong outputs",
+        "strict pose thresholds",
+        "absolute translation error",
+        "correspondence precision/coverage/spatial support",
+        "lighting/viewpoint/terrain/seed strata",
+        "latency/memory",
+        "complete error–coverage curves"
+      ],
+      "uncertainty": "Paired terrain-group intervals; both terrain endpoints for negative pairs. Do not bootstrap repeated variants as independent geography.",
+      "status": "incomplete",
+      "gap": "No integrated new-model lunar perturbation or uncertainty study yet."
+    },
+    {
+      "id": "R09_reserve_and_transfer",
+      "target": "Keep four calibration and twelve final terrain groups untouched during development. Preserve both consumed Tycho reserves as historical.",
+      "transfer": [
+        "fresh frozen NASA POLAR laboratory configurations grouped by reused rocks/arrangements",
+        "real orbital repeat diagnostics with unknown reference uncertainty explicit",
+        "LuSNAR scenes 7–9 without adaptation, inherited second-simulation transfer target"
+      ],
+      "conditions": "Additional render/camera/light conditions do not create independent geography; no human landmark review. Laboratory nominal agreement and simulation transfer are not independently verified orbital navigation accuracy.",
+      "status": "reserve_preserved_transfer_incomplete",
+      "gap": "No qualifying trained candidate transfer study yet."
+    },
+    {
+      "id": "R10_resources",
+      "target": {
+        "total_model_parameters_lt": 100000,
+        "native_image_pixels": 512,
+        "threads_per_scientific_job": 2,
+        "cumulative_training_wall_hours_lte": 48,
+        "cumulative_pretrained_comparison_wall_hours_lte": 72,
+        "paid_compute": false
+      },
+      "current_model_parameters": 95808,
+      "conditions": "Count frozen and trained encoders plus all prediction heads. Reconstruct actual/historical conservative compute, atomic admission, fixed caps, cache and resume; preserve failed/duplicate costs. Data-only completion allowance is separately declared and cannot refund an expired attempt.",
+      "status": "software_cap_implemented_scientific_jobs_still_require_admission",
+      "evidence": [
+        "evidence_07",
+        "evidence_09",
+        "evidence_11"
+      ],
+      "gap": "Parameter compliance does not imply an accuracy or runtime result."
+    },
+    {
+      "id": "R11_verification",
+      "target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
+      "conditions": "Known true query pose, depth and Sun are scoring or training labels, never primary inference inputs. Checkpoint-sensitive caches; independent saved metrics replay; repository tests and a fresh end-to-end procedural smoke after scientific source changes.",
+      "status": "historical_software_checks_pass_new_full_data_checks_pending",
+      "evidence": [
+        "evidence_06"
+      ],
+      "gap": "537 historical passing tests do not validate new lunar performance or full-data labels."
+    },
+    {
+      "id": "R12_final_freeze",
+      "target": "Publish hashes for checkpoints, calibration rules, policies, preprocessing, cases and metrics before final inference; evaluate final reserve once.",
+      "conditions": "Preserve reserve when development shows no meaningful recovery improvement. No post-test tuning without another untouched reserve. Retain failure results and negative findings.",
+      "status": "not_reached",
+      "gap": "No trained/qualified candidate or calibrated full ablation yet."
+    },
+    {
+      "id": "R13_interfaces_and_package",
+      "target": "Preserve match_terrain.py; localize_terrain.py accepts reference/query images, reference-only geometry/pose, intrinsics, frozen config/checkpoint and optional known-Sun metadata.",
+      "output_contract": "Native reference-to-query correspondences, camera-to-world pose, estimated Sun, acceptance and reason. Rejected or uncalibrated public results return pose:null; raw hypotheses require explicit research flag.",
+      "deliverables": [
+        "tagged release",
+        "code/checkpoints and downloadable experiment artifacts",
+        "reproduction commands",
+        "two-page research brief",
+        "6–8-page paper draft",
+        "precision-versus-pose figure",
+        "lighting/viewpoint pose figure",
+        "error-versus-coverage figure",
+        "pose-versus-runtime figure",
+        "success/rejection/remaining-failure demonstration",
+        "unsent outreach draft"
+      ],
+      "conditions": "No automatic email, submission, flight readiness or NASA affiliation claim.",
+      "status": "partial_software_no_complete_research_package",
+      "gap": "Paper/release needs measured ablations, modern comparisons, transfer and correctly limited claims."
+    },
+    {
+      "id": "R14_novelty",
+      "target": "Specific integrated shared-Sun / learned response / active selection mechanism supported by measured localization gain and targeted prior-art comparison.",
+      "blocked_claims": [
+        "first illumination-invariant lunar matcher",
+        "first shadow-based lunar localization",
+        "first active-information localization",
+        "superior to modern matchers from cross-paper percentages",
+        "better because parameter count is smaller"
+      ],
+      "known_sun_operational_track": "Evaluate available ephemeris/known-Sun metadata fairly; unknown-Sun estimation alone need not be the mission bottleneck.",
+      "status": "hypothesis_only",
+      "gap": "2025/2026 Ansar, DLR shadow matching, CMU information-aware planning, dense matching refinement and lunar distillation overlap with component ideas."
+    }
+  ],
+  "comparison_rule": "No cross-paper headline percentage ranking. A matched project rerun with the same geometry, eligible cases, pose estimator, acceptance recipe and CPU settings is necessary.",
+  "next_evidence_order": [
+    "complete and audit the separately declared missing-only data completion",
+    "pass all-unit >=95% exact pose and solar-visibility gates",
+    "build even-light-only training bank and exact reproducibility/cost pilot",
+    "train response and matched pooled control within remaining budget",
+    "run all eight combinations and decisive component controls, repetitions and perturbations",
+    "run required modern and transfer comparisons with actual pretrained controls",
+    "calibrate then publish final freeze only for a qualifying candidate; retain reserve otherwise",
+    "write paper/brief around measured gains or failures"
+  ],
+  "md_path": "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_sota_v69/requirements_and_sota_v69.md",
+  "md_sha256": "f0d497c6e2ac765c0ad55189284b5f431380fb4a6b6eead1ee26a0840b3a4204"
+}

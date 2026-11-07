@@ -1,0 +1,1242 @@
+{
+  "scope": "Metadata-only physical reference diagnostic. No image, matcher, pose output or inferred correction.",
+  "schedule_sha256": "8e5f38aa087a147dc58979c5f2abee2bcf6580bb2bf31a831cab6929e69034f8",
+  "imu_sha256": {
+    "fast": "814fcad72f43eb16ed33d1276090bdd758ed75b4f4bd7059a9f3df46000a39d4",
+    "slow": "8e1884b52a8f4f4d69f0c06f8660fb7b81dd8ca6ba4c65fb8dc912bbed0b6669"
+  },
+  "extrinsics_sha256": "113a7cc99e3c337f09a41992632048ea24034bbbb2e3b6630c38b7396818c4cc",
+  "imu_window_seconds": 0.05,
+  "minimum_samples": 3,
+  "accel_bounds_m_s2": [
+    9.3,
+    10.3
+  ],
+  "maximum_angular_rate_rad_s": 0.2,
+  "streams": {
+    "fast": {
+      "released_samples": 1125,
+      "quasi_static_samples": 1039,
+      "frames": [
+        {
+          "frame": "C-fast-029",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.07134885604676251,
+            0.8698000110473378,
+            0.4882184772444292
+          ],
+          "nominal_gravity_camera": [
+            0.822296113104998,
+            -0.0030372581879320017,
+            0.5690517352887274
+          ],
+          "imu": {
+            "roll_deg": 4.689418348014274,
+            "down_pitch_deg": 29.22355436551798,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 90.21162848918303,
+            "down_pitch_deg": 34.684126811143734,
+            "error_deg": 70.4973989746957
+          },
+          "reversed_marker": {
+            "roll_deg": 179.26073036498744,
+            "down_pitch_deg": 55.31470370218677,
+            "error_deg": 95.33354355564211
+          },
+          "quarter_turn": {
+            "roll_deg": 0.21162848918302304,
+            "down_pitch_deg": 34.684126811143734,
+            "error_deg": 6.650317108888681
+          }
+        },
+        {
+          "frame": "C-fast-030",
+          "eligible_imu_samples": 6,
+          "imu_gravity_camera": [
+            0.01340430299734558,
+            0.8891224109585695,
+            0.45747312816424096
+          ],
+          "nominal_gravity_camera": [
+            0.8232251413564028,
+            0.015343903452198998,
+            0.5675076486405976
+          ],
+          "imu": {
+            "roll_deg": 0.8637188789075373,
+            "down_pitch_deg": 27.224172898035697,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.93220082755613,
+            "down_pitch_deg": 34.57660874202545,
+            "error_deg": 73.48317646457566
+          },
+          "reversed_marker": {
+            "roll_deg": -178.88976166452667,
+            "down_pitch_deg": 55.43983302181612,
+            "error_deg": 97.33572435570274
+          },
+          "quarter_turn": {
+            "roll_deg": -1.0677991724438776,
+            "down_pitch_deg": 34.57660874202545,
+            "error_deg": 7.536395910466013
+          }
+        },
+        {
+          "frame": "C-fast-036",
+          "eligible_imu_samples": 6,
+          "imu_gravity_camera": [
+            0.09229370273507442,
+            0.901112413488797,
+            0.4236487822381236
+          ],
+          "nominal_gravity_camera": [
+            0.8343643864758771,
+            0.03257946854435042,
+            0.5502496240890133
+          ],
+          "imu": {
+            "roll_deg": 5.847954279260518,
+            "down_pitch_deg": 25.065165664775318,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 87.76390476518957,
+            "down_pitch_deg": 33.384139909165526,
+            "error_deg": 70.1549912505174
+          },
+          "reversed_marker": {
+            "roll_deg": -177.11070091835833,
+            "down_pitch_deg": 56.6113104158254,
+            "error_deg": 98.28504930033662
+          },
+          "quarter_turn": {
+            "roll_deg": -2.2360952348104326,
+            "down_pitch_deg": 33.384139909165526,
+            "error_deg": 10.899061657096627
+          }
+        },
+        {
+          "frame": "C-fast-037",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.0737613782527379,
+            0.8988306639506437,
+            0.4320447854335259
+          ],
+          "nominal_gravity_camera": [
+            0.8374636396311304,
+            0.035992211595852565,
+            0.5453065312282801
+          ],
+          "imu": {
+            "roll_deg": 4.691391718276368,
+            "down_pitch_deg": 25.597397518362957,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 87.5390769876495,
+            "down_pitch_deg": 33.045613391122245,
+            "error_deg": 70.74820518956203
+          },
+          "reversed_marker": {
+            "roll_deg": -176.7406686596147,
+            "down_pitch_deg": 56.94127379695786,
+            "error_deg": 97.45244967044735
+          },
+          "quarter_turn": {
+            "roll_deg": -2.4609230123504964,
+            "down_pitch_deg": 33.045613391122245,
+            "error_deg": 9.707975038023338
+          }
+        },
+        {
+          "frame": "C-fast-044",
+          "eligible_imu_samples": 8,
+          "imu_gravity_camera": [
+            0.05210646710200549,
+            0.8588088400245824,
+            0.5096393748345777
+          ],
+          "nominal_gravity_camera": [
+            0.8376744978360352,
+            0.04119822120169793,
+            0.5446137551007705
+          ],
+          "imu": {
+            "roll_deg": 3.4720477837671933,
+            "down_pitch_deg": 30.639811667510084,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 87.1843672523563,
+            "down_pitch_deg": 32.99827295928499,
+            "error_deg": 69.10930550358435
+          },
+          "reversed_marker": {
+            "roll_deg": -176.19137792293984,
+            "down_pitch_deg": 56.97270309927578,
+            "error_deg": 92.3870212452701
+          },
+          "quarter_turn": {
+            "roll_deg": -2.815632747643703,
+            "down_pitch_deg": 32.99827295928499,
+            "error_deg": 5.838722786664841
+          }
+        },
+        {
+          "frame": "C-fast-047",
+          "eligible_imu_samples": 12,
+          "imu_gravity_camera": [
+            0.033669767722684533,
+            0.9142751287412162,
+            0.40369212985483516
+          ],
+          "nominal_gravity_camera": [
+            0.8409155205472184,
+            0.04423039351960475,
+            0.5393558747171493
+          ],
+          "imu": {
+            "roll_deg": 2.109063380102204,
+            "down_pitch_deg": 23.809195200695772,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 86.98913662218948,
+            "down_pitch_deg": 32.639801206482154,
+            "error_deg": 73.35231149348463
+          },
+          "reversed_marker": {
+            "roll_deg": -175.8482975633464,
+            "down_pitch_deg": 57.32023904623198,
+            "error_deg": 98.8523637643436
+          },
+          "quarter_turn": {
+            "roll_deg": -3.0108633778105314,
+            "down_pitch_deg": 32.639801206482154,
+            "error_deg": 9.912218101384195
+          }
+        },
+        {
+          "frame": "C-fast-053",
+          "eligible_imu_samples": 11,
+          "imu_gravity_camera": [
+            0.08011853564944561,
+            0.8754604284543972,
+            0.4766026211172488
+          ],
+          "nominal_gravity_camera": [
+            0.8206531664748672,
+            0.02356906581938109,
+            0.5709403467011025
+          ],
+          "imu": {
+            "roll_deg": 5.228908768532159,
+            "down_pitch_deg": 28.463747911863496,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.35492391818435,
+            "down_pitch_deg": 34.815825050812435,
+            "error_deg": 68.99220366152471
+          },
+          "reversed_marker": {
+            "roll_deg": -178.06063886981684,
+            "down_pitch_deg": 55.195072111748466,
+            "error_deg": 96.29351875331196
+          },
+          "quarter_turn": {
+            "roll_deg": -1.6450760818156511,
+            "down_pitch_deg": 34.815825050812435,
+            "error_deg": 8.631996608582208
+          }
+        },
+        {
+          "frame": "C-fast-056",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.02112204290321339,
+            0.910193031424988,
+            0.4136453853834049
+          ],
+          "nominal_gravity_camera": [
+            0.819082924798016,
+            0.026575907949075064,
+            0.5730592320354061
+          ],
+          "imu": {
+            "roll_deg": 1.329373770478105,
+            "down_pitch_deg": 24.434038877075572,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 88.1416370395741,
+            "down_pitch_deg": 34.9638320151567,
+            "error_deg": 73.82731794364082
+          },
+          "reversed_marker": {
+            "roll_deg": -177.7609448176521,
+            "down_pitch_deg": 55.04295412962538,
+            "error_deg": 100.51917559955571
+          },
+          "quarter_turn": {
+            "roll_deg": -1.8583629604258936,
+            "down_pitch_deg": 34.9638320151567,
+            "error_deg": 10.885802310007374
+          }
+        },
+        {
+          "frame": "C-fast-063",
+          "eligible_imu_samples": 11,
+          "imu_gravity_camera": [
+            0.06129198351405733,
+            0.8671966736679417,
+            0.4941793418751636
+          ],
+          "nominal_gravity_camera": [
+            0.8132531213005341,
+            0.004358073730651731,
+            0.5818937771520646
+          ],
+          "imu": {
+            "roll_deg": 4.042845124281701,
+            "down_pitch_deg": 29.61564976092662,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 89.69296540661477,
+            "down_pitch_deg": 35.58385136511148,
+            "error_deg": 70.0509075293123
+          },
+          "reversed_marker": {
+            "roll_deg": -179.95835353391797,
+            "down_pitch_deg": 54.42727838510847,
+            "error_deg": 95.88606502311544
+          },
+          "quarter_turn": {
+            "roll_deg": -0.3070345933852336,
+            "down_pitch_deg": 35.58385136511148,
+            "error_deg": 7.001401420624628
+          }
+        },
+        {
+          "frame": "C-fast-065",
+          "eligible_imu_samples": 13,
+          "imu_gravity_camera": [
+            0.11096421991218855,
+            0.8299440660524664,
+            0.5466989931612999
+          ],
+          "nominal_gravity_camera": [
+            0.8169028567888009,
+            0.0015005061950989704,
+            0.5767733272711679
+          ],
+          "imu": {
+            "roll_deg": 7.615331228583782,
+            "down_pitch_deg": 33.140843512829306,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 89.89475789598502,
+            "down_pitch_deg": 35.22391420942638,
+            "error_deg": 65.9700750797379
+          },
+          "reversed_marker": {
+            "roll_deg": 179.74336640553364,
+            "down_pitch_deg": 54.78331287309372,
+            "error_deg": 91.8149851276038
+          },
+          "quarter_turn": {
+            "roll_deg": -0.10524210401497837,
+            "down_pitch_deg": 35.22391420942638,
+            "error_deg": 6.715733898350476
+          }
+        },
+        {
+          "frame": "C-fast-069",
+          "eligible_imu_samples": 9,
+          "imu_gravity_camera": [
+            0.06399848516733629,
+            0.8299095887027651,
+            0.5542150020303435
+          ],
+          "nominal_gravity_camera": [
+            0.805791678352141,
+            0.019632437445574656,
+            0.5918735832070773
+          ],
+          "imu": {
+            "roll_deg": 4.409637388632171,
+            "down_pitch_deg": 33.65666307930557,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.60431257785265,
+            "down_pitch_deg": 36.29007637563168,
+            "error_deg": 66.67864374598007
+          },
+          "reversed_marker": {
+            "roll_deg": -178.45145738368817,
+            "down_pitch_deg": 53.724361231146396,
+            "error_deg": 92.58376556543041
+          },
+          "quarter_turn": {
+            "roll_deg": -1.3956874221473534,
+            "down_pitch_deg": 36.29007637563168,
+            "error_deg": 5.435773113803345
+          }
+        },
+        {
+          "frame": "C-fast-072",
+          "eligible_imu_samples": 11,
+          "imu_gravity_camera": [
+            0.12886639837921302,
+            0.8646622346476249,
+            0.4855436863382588
+          ],
+          "nominal_gravity_camera": [
+            0.8179533795937204,
+            0.00039574935629630055,
+            0.5752843750647655
+          ],
+          "imu": {
+            "roll_deg": 8.47677899055587,
+            "down_pitch_deg": 29.048099398672104,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 89.972278657125,
+            "down_pitch_deg": 35.11954958710648,
+            "error_deg": 67.35162891248723
+          },
+          "reversed_marker": {
+            "roll_deg": 179.6284004257556,
+            "down_pitch_deg": 54.88589572649054,
+            "error_deg": 95.72129428161102
+          },
+          "quarter_turn": {
+            "roll_deg": -0.0277213428750009,
+            "down_pitch_deg": 35.11954958710648,
+            "error_deg": 9.415446476123668
+          }
+        },
+        {
+          "frame": "C-fast-081",
+          "eligible_imu_samples": 8,
+          "imu_gravity_camera": [
+            0.019494984881270647,
+            0.9084585484026176,
+            0.417520073048815
+          ],
+          "nominal_gravity_camera": [
+            0.8083008616207539,
+            0.02544395625830119,
+            0.588219620714128
+          ],
+          "imu": {
+            "roll_deg": 1.229344966660003,
+            "down_pitch_deg": 24.678118047241078,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 88.19702025736052,
+            "down_pitch_deg": 36.03076861762041,
+            "error_deg": 73.4730630312555
+          },
+          "reversed_marker": {
+            "roll_deg": -177.88595490675718,
+            "down_pitch_deg": 53.97753378953873,
+            "error_deg": 101.34062548858054
+          },
+          "quarter_turn": {
+            "roll_deg": -1.8029797426394905,
+            "down_pitch_deg": 36.03076861762041,
+            "error_deg": 11.648327578393152
+          }
+        },
+        {
+          "frame": "C-fast-083",
+          "eligible_imu_samples": 8,
+          "imu_gravity_camera": [
+            0.09028766955882955,
+            0.8782504791979233,
+            0.46960007720852615
+          ],
+          "nominal_gravity_camera": [
+            0.8099300541361557,
+            0.015100245485898087,
+            0.5863320646129371
+          ],
+          "imu": {
+            "roll_deg": 5.869615750462995,
+            "down_pitch_deg": 28.00833981434417,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.93190762777505,
+            "down_pitch_deg": 35.89715011313903,
+            "error_deg": 68.79351590491366
+          },
+          "reversed_marker": {
+            "roll_deg": -178.89587242776622,
+            "down_pitch_deg": 54.119296330207895,
+            "error_deg": 97.76891091528826
+          },
+          "quarter_turn": {
+            "roll_deg": -1.0680923722249582,
+            "down_pitch_deg": 35.89715011313903,
+            "error_deg": 9.836363296794804
+          }
+        },
+        {
+          "frame": "C-fast-086",
+          "eligible_imu_samples": 5,
+          "imu_gravity_camera": [
+            0.010553285118078603,
+            0.8585473671613905,
+            0.5126256397347493
+          ],
+          "nominal_gravity_camera": [
+            0.8175342211426352,
+            0.009461678020912814,
+            0.5758022871695919
+          ],
+          "imu": {
+            "roll_deg": 0.7042456476429432,
+            "down_pitch_deg": 30.83888109082531,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 89.33692070465773,
+            "down_pitch_deg": 35.155836235408955,
+            "error_deg": 71.82490345169032
+          },
+          "reversed_marker": {
+            "roll_deg": -179.46756383764517,
+            "down_pitch_deg": 54.859520713257005,
+            "error_deg": 94.30147053101373
+          },
+          "quarter_turn": {
+            "roll_deg": -0.6630792953422696,
+            "down_pitch_deg": 35.155836235408955,
+            "error_deg": 4.466514749371718
+          }
+        },
+        {
+          "frame": "C-fast-089",
+          "eligible_imu_samples": 9,
+          "imu_gravity_camera": [
+            0.06989368980394224,
+            0.8481823751261609,
+            0.5250728812754804
+          ],
+          "nominal_gravity_camera": [
+            0.8175236022199331,
+            0.01393278081263722,
+            0.575726530074975
+          ],
+          "imu": {
+            "roll_deg": 4.710762634549189,
+            "down_pitch_deg": 31.67314971443123,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 89.02362175187865,
+            "down_pitch_deg": 35.15052743070226,
+            "error_deg": 68.20692155212508
+          },
+          "reversed_marker": {
+            "roll_deg": -179.0225342636242,
+            "down_pitch_deg": 54.866026182971694,
+            "error_deg": 93.4011680250963
+          },
+          "quarter_turn": {
+            "roll_deg": -0.9763782481213544,
+            "down_pitch_deg": 35.15052743070226,
+            "error_deg": 5.8827693122062055
+          }
+        },
+        {
+          "frame": "C-fast-101",
+          "eligible_imu_samples": 12,
+          "imu_gravity_camera": [
+            0.06098015750160147,
+            0.8962198548785413,
+            0.4393988986246622
+          ],
+          "nominal_gravity_camera": [
+            0.8291440388014696,
+            0.016461106763230433,
+            0.5587926224317177
+          ],
+          "imu": {
+            "roll_deg": 3.892492134586394,
+            "down_pitch_deg": 26.065534796861108,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 88.86264868907503,
+            "down_pitch_deg": 33.972340600123296,
+            "error_deg": 71.88971990163733
+          },
+          "reversed_marker": {
+            "roll_deg": -178.7833671630795,
+            "down_pitch_deg": 56.04386648925701,
+            "error_deg": 97.85895439772598
+          },
+          "quarter_turn": {
+            "roll_deg": -1.1373513109249695,
+            "down_pitch_deg": 33.972340600123296,
+            "error_deg": 9.02338435954864
+          }
+        },
+        {
+          "frame": "C-fast-102",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.06603581884503391,
+            0.8651210260273382,
+            0.49719702428199564
+          ],
+          "nominal_gravity_camera": [
+            0.8237938911691569,
+            0.018096160940527233,
+            0.5666005240304613
+          ],
+          "imu": {
+            "roll_deg": 4.364997375213054,
+            "down_pitch_deg": 29.81472923821863,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 88.74159430594553,
+            "down_pitch_deg": 34.51350852987332,
+            "error_deg": 69.4045466028379
+          },
+          "reversed_marker": {
+            "roll_deg": -178.61213731271332,
+            "down_pitch_deg": 55.502016733901065,
+            "error_deg": 94.64512713570842
+          },
+          "quarter_turn": {
+            "roll_deg": -1.2584056940544783,
+            "down_pitch_deg": 34.51350852987332,
+            "error_deg": 6.686301100759073
+          }
+        },
+        {
+          "frame": "C-fast-107",
+          "eligible_imu_samples": 15,
+          "imu_gravity_camera": [
+            0.07951992369134647,
+            0.8747083553106255,
+            0.478081452145869
+          ],
+          "nominal_gravity_camera": [
+            0.824532752319697,
+            0.0093226140711412,
+            0.5657374207342001
+          ],
+          "imu": {
+            "roll_deg": 5.194492723614962,
+            "down_pitch_deg": 28.560173427439505,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 89.35221047415726,
+            "down_pitch_deg": 34.453514802827875,
+            "error_deg": 69.86764682365474
+          },
+          "reversed_marker": {
+            "roll_deg": -179.5015574840682,
+            "down_pitch_deg": 55.56168654431815,
+            "error_deg": 95.7821072577266
+          },
+          "quarter_turn": {
+            "roll_deg": -0.6477895258427401,
+            "down_pitch_deg": 34.453514802827875,
+            "error_deg": 7.712936794392601
+          }
+        },
+        {
+          "frame": "C-fast-109",
+          "eligible_imu_samples": 8,
+          "imu_gravity_camera": [
+            0.07025269097337311,
+            0.900119337243142,
+            0.4299415519951129
+          ],
+          "nominal_gravity_camera": [
+            0.8202180479161024,
+            0.009018749455631365,
+            0.5719799087651198
+          ],
+          "imu": {
+            "roll_deg": 4.462785218818419,
+            "down_pitch_deg": 25.463850943062614,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 89.3700267163402,
+            "down_pitch_deg": 34.88840653177863,
+            "error_deg": 71.84079783802999
+          },
+          "reversed_marker": {
+            "roll_deg": -179.5194631692545,
+            "down_pitch_deg": 55.12666718325275,
+            "error_deg": 99.337104529313
+          },
+          "quarter_turn": {
+            "roll_deg": -0.6299732836598059,
+            "down_pitch_deg": 34.88840653177863,
+            "error_deg": 10.397780182413202
+          }
+        },
+        {
+          "frame": "C-fast-120",
+          "eligible_imu_samples": 5,
+          "imu_gravity_camera": [
+            0.11756397891462707,
+            0.8821703914518791,
+            0.4560198584572819
+          ],
+          "nominal_gravity_camera": [
+            0.8219278205295443,
+            0.015758703572364523,
+            0.5693736217118521
+          ],
+          "imu": {
+            "roll_deg": 7.590894894454208,
+            "down_pitch_deg": 27.130572934416385,
+            "error_deg": 8.537736462515939e-07
+          },
+          "nominal": {
+            "roll_deg": 88.90161085755665,
+            "down_pitch_deg": 34.70655803334012,
+            "error_deg": 68.27348814964701
+          },
+          "reversed_marker": {
+            "roll_deg": -178.84623730691453,
+            "down_pitch_deg": 55.30979998273306,
+            "error_deg": 97.37509668237567
+          },
+          "quarter_turn": {
+            "roll_deg": -1.0983891424433625,
+            "down_pitch_deg": 34.70655803334012,
+            "error_deg": 10.619275117891346
+          }
+        },
+        {
+          "frame": "C-fast-123",
+          "eligible_imu_samples": 8,
+          "imu_gravity_camera": [
+            0.10423646144372321,
+            0.8989897213619779,
+            0.42538481518644367
+          ],
+          "nominal_gravity_camera": [
+            0.830260051622307,
+            0.02058842722078274,
+            0.5569958378163146
+          ],
+          "imu": {
+            "roll_deg": 6.613823290781823,
+            "down_pitch_deg": 25.17502338779058,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.57949532673491,
+            "down_pitch_deg": 33.848293454125795,
+            "error_deg": 70.00185463130882
+          },
+          "reversed_marker": {
+            "roll_deg": -178.3598823175966,
+            "down_pitch_deg": 56.1656626773988,
+            "error_deg": 98.54936290110876
+          },
+          "quarter_turn": {
+            "roll_deg": -1.420504673265091,
+            "down_pitch_deg": 33.848293454125795,
+            "error_deg": 11.131473890424113
+          }
+        },
+        {
+          "frame": "C-fast-127",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.05569208585686223,
+            0.8782897836071735,
+            0.47487413867695133
+          ],
+          "nominal_gravity_camera": [
+            0.8349396171835227,
+            0.02248995682515542,
+            0.5498818395795908
+          ],
+          "imu": {
+            "roll_deg": 3.628250202803529,
+            "down_pitch_deg": 28.351155527370363,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.4570523738594,
+            "down_pitch_deg": 33.358907049020964,
+            "error_deg": 70.8903593119102
+          },
+          "reversed_marker": {
+            "roll_deg": -178.16139088746448,
+            "down_pitch_deg": 56.653351161992504,
+            "error_deg": 94.98192175485646
+          },
+          "quarter_turn": {
+            "roll_deg": -1.5429476261406052,
+            "down_pitch_deg": 33.358907049020964,
+            "error_deg": 6.689955370780116
+          }
+        },
+        {
+          "frame": "C-fast-128",
+          "eligible_imu_samples": 9,
+          "imu_gravity_camera": [
+            0.03533995463622295,
+            0.8879169089903101,
+            0.45864436149962995
+          ],
+          "nominal_gravity_camera": [
+            0.8335802079047011,
+            0.016469255979663366,
+            0.5521528779215328
+          ],
+          "imu": {
+            "roll_deg": 2.2792246142926884,
+            "down_pitch_deg": 27.299665170057622,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.86813998352845,
+            "down_pitch_deg": 33.5148351191419,
+            "error_deg": 72.70306365648364
+          },
+          "reversed_marker": {
+            "roll_deg": -178.78742597655565,
+            "down_pitch_deg": 56.50138920597655,
+            "error_deg": 96.19404768248197
+          },
+          "quarter_turn": {
+            "roll_deg": -1.1318600164715558,
+            "down_pitch_deg": 33.5148351191419,
+            "error_deg": 6.87496363495838
+          }
+        }
+      ]
+    },
+    "slow": {
+      "released_samples": 2352,
+      "quasi_static_samples": 2345,
+      "frames": [
+        {
+          "frame": "C-slow-016",
+          "eligible_imu_samples": 11,
+          "imu_gravity_camera": [
+            0.0500266666207791,
+            0.8783268841413292,
+            0.4754358181935783
+          ],
+          "nominal_gravity_camera": [
+            0.8286165852769326,
+            0.019993162110175596,
+            0.5594594069928861
+          ],
+          "imu": {
+            "roll_deg": 3.259860783496969,
+            "down_pitch_deg": 28.387729898446846,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 88.61781479342096,
+            "down_pitch_deg": 34.018420375149766,
+            "error_deg": 71.03439481827635
+          },
+          "reversed_marker": {
+            "roll_deg": -178.42092923531877,
+            "down_pitch_deg": 55.995976152965575,
+            "error_deg": 95.60410700624881
+          },
+          "quarter_turn": {
+            "roll_deg": -1.3821852065790485,
+            "down_pitch_deg": 34.018420375149766,
+            "error_deg": 6.887717362453294
+          }
+        },
+        {
+          "frame": "C-slow-027",
+          "eligible_imu_samples": 9,
+          "imu_gravity_camera": [
+            0.027320065752603356,
+            0.8727595424630498,
+            0.48738526346922056
+          ],
+          "nominal_gravity_camera": [
+            0.827763874336604,
+            0.020308230008526752,
+            0.5607089656293853
+          ],
+          "imu": {
+            "roll_deg": 1.792949156743523,
+            "down_pitch_deg": 29.168866929607784,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.59459619655286,
+            "down_pitch_deg": 34.10484162965197,
+            "error_deg": 71.72247232234679
+          },
+          "reversed_marker": {
+            "roll_deg": -178.3885971757705,
+            "down_pitch_deg": 55.909310471039696,
+            "error_deg": 94.92168130897377
+          },
+          "quarter_turn": {
+            "roll_deg": -1.4054038034471381,
+            "down_pitch_deg": 34.10484162965197,
+            "error_deg": 5.636353183009459
+          }
+        },
+        {
+          "frame": "C-slow-078",
+          "eligible_imu_samples": 15,
+          "imu_gravity_camera": [
+            0.05525136199833827,
+            0.8827254482966281,
+            0.46662947820175826
+          ],
+          "nominal_gravity_camera": [
+            0.836142077917316,
+            0.027006502902726603,
+            0.5478476743923238
+          ],
+          "imu": {
+            "roll_deg": 3.581572809465771,
+            "down_pitch_deg": 27.815730150460645,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 88.15005017226834,
+            "down_pitch_deg": 33.219479379354226,
+            "error_deg": 70.99327139373807
+          },
+          "reversed_marker": {
+            "roll_deg": -177.68799744695616,
+            "down_pitch_deg": 56.78684183672872,
+            "error_deg": 95.39058366848505
+          },
+          "quarter_turn": {
+            "roll_deg": -1.8499498277316626,
+            "down_pitch_deg": 33.219479379354226,
+            "error_deg": 7.145431395808883
+          }
+        },
+        {
+          "frame": "C-slow-087",
+          "eligible_imu_samples": 9,
+          "imu_gravity_camera": [
+            0.030889984554522607,
+            0.8869613255071493,
+            0.46080952237212097
+          ],
+          "nominal_gravity_camera": [
+            0.8396886878345436,
+            0.02853264732826538,
+            0.5423179838057585
+          ],
+          "imu": {
+            "roll_deg": 1.9946198951552725,
+            "down_pitch_deg": 27.439356846457986,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.05383646798586,
+            "down_pitch_deg": 32.841573889387746,
+            "error_deg": 72.47327508442086
+          },
+          "reversed_marker": {
+            "roll_deg": -177.51953054716964,
+            "down_pitch_deg": 57.16219382629988,
+            "error_deg": 95.39745356354064
+          },
+          "quarter_turn": {
+            "roll_deg": -1.9461635320141433,
+            "down_pitch_deg": 32.841573889387746,
+            "error_deg": 6.385905659134038
+          }
+        },
+        {
+          "frame": "C-slow-113",
+          "eligible_imu_samples": 7,
+          "imu_gravity_camera": [
+            0.02682853090072896,
+            0.8930634337916239,
+            0.44913019621711303
+          ],
+          "nominal_gravity_camera": [
+            0.8432384626837219,
+            0.046323427948618746,
+            0.5355399472251179
+          ],
+          "imu": {
+            "roll_deg": 1.7207058009446972,
+            "down_pitch_deg": 26.68789192715687,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 86.85560857508185,
+            "down_pitch_deg": 32.38053671549751,
+            "error_deg": 72.27072551789789
+          },
+          "reversed_marker": {
+            "roll_deg": -175.60664788983664,
+            "down_pitch_deg": 57.57121659173438,
+            "error_deg": 95.71088119669145
+          },
+          "quarter_turn": {
+            "roll_deg": -3.1443914249181524,
+            "down_pitch_deg": 32.38053671549751,
+            "error_deg": 7.091710962002082
+          }
+        },
+        {
+          "frame": "C-slow-135",
+          "eligible_imu_samples": 1
+        },
+        {
+          "frame": "C-slow-145",
+          "eligible_imu_samples": 3,
+          "imu_gravity_camera": [
+            0.040959832479091574,
+            0.8748748987050274,
+            0.482613928248194
+          ],
+          "nominal_gravity_camera": [
+            0.8315914402368833,
+            0.013893722675242269,
+            0.5552140497096318
+          ],
+          "imu": {
+            "roll_deg": 2.6805124962244893,
+            "down_pitch_deg": 28.856261407516666,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 89.04282610934024,
+            "down_pitch_deg": 33.725459258091426,
+            "error_deg": 71.6892159342886
+          },
+          "reversed_marker": {
+            "roll_deg": -179.05111348916145,
+            "down_pitch_deg": 56.291090825958946,
+            "error_deg": 94.8398842078989
+          },
+          "quarter_turn": {
+            "roll_deg": -0.957173890659761,
+            "down_pitch_deg": 33.725459258091426,
+            "error_deg": 5.775730065148444
+          }
+        },
+        {
+          "frame": "C-slow-164",
+          "eligible_imu_samples": 6,
+          "imu_gravity_camera": [
+            0.04595872472981258,
+            0.8648254342748812,
+            0.4999647626107987
+          ],
+          "nominal_gravity_camera": [
+            0.8143875690036749,
+            0.01971274711641673,
+            0.5799864610949192
+          ],
+          "imu": {
+            "roll_deg": 3.0419622354493994,
+            "down_pitch_deg": 29.997668740477625,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 88.61339152812909,
+            "down_pitch_deg": 35.44959039041128,
+            "error_deg": 69.85183003771607
+          },
+          "reversed_marker": {
+            "roll_deg": -178.44617240190348,
+            "down_pitch_deg": 54.56487371435782,
+            "error_deg": 95.42771062995975
+          },
+          "quarter_turn": {
+            "roll_deg": -1.3866084718709077,
+            "down_pitch_deg": 35.44959039041128,
+            "error_deg": 6.601426518046564
+          }
+        },
+        {
+          "frame": "C-slow-184",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-190",
+          "eligible_imu_samples": 2
+        },
+        {
+          "frame": "C-slow-213",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-214",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-227",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-238",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-242",
+          "eligible_imu_samples": 2
+        },
+        {
+          "frame": "C-slow-254",
+          "eligible_imu_samples": 3,
+          "imu_gravity_camera": [
+            0.06581807499483756,
+            0.8623148478218796,
+            0.5020767712510733
+          ],
+          "nominal_gravity_camera": [
+            0.8116105702385872,
+            0.014612353243639412,
+            0.5840160626298545
+          ],
+          "imu": {
+            "roll_deg": 4.364763221524457,
+            "down_pitch_deg": 30.137493458797532,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.96854999695476,
+            "down_pitch_deg": 35.73350972251963,
+            "error_deg": 68.94647122827253
+          },
+          "reversed_marker": {
+            "roll_deg": -178.94603590185923,
+            "down_pitch_deg": 54.28300363660832,
+            "error_deg": 95.5309947478531
+          },
+          "quarter_turn": {
+            "roll_deg": -1.0314500030452387,
+            "down_pitch_deg": 35.73350972251963,
+            "error_deg": 7.196211004314924
+          }
+        },
+        {
+          "frame": "C-slow-261",
+          "eligible_imu_samples": 1
+        },
+        {
+          "frame": "C-slow-262",
+          "eligible_imu_samples": 0
+        },
+        {
+          "frame": "C-slow-285",
+          "eligible_imu_samples": 3,
+          "imu_gravity_camera": [
+            0.04243159692352786,
+            0.8656025361333604,
+            0.4989306655458391
+          ],
+          "nominal_gravity_camera": [
+            0.8258714245699812,
+            0.02262779249953958,
+            0.5634042714475523
+          ],
+          "imu": {
+            "roll_deg": 2.806376858681763,
+            "down_pitch_deg": 29.92927858333492,
+            "error_deg": 0.0
+          },
+          "nominal": {
+            "roll_deg": 88.43056352259083,
+            "down_pitch_deg": 34.291554291407486,
+            "error_deg": 70.38310236790076
+          },
+          "reversed_marker": {
+            "roll_deg": -178.15246337212366,
+            "down_pitch_deg": 55.72045759295624,
+            "error_deg": 94.34633639875535
+          },
+          "quarter_turn": {
+            "roll_deg": -1.5694364774091802,
+            "down_pitch_deg": 34.291554291407486,
+            "error_deg": 5.7228195269616045
+          }
+        },
+        {
+          "frame": "C-slow-312",
+          "eligible_imu_samples": 11,
+          "imu_gravity_camera": [
+            0.04470278070307487,
+            0.8733628195278376,
+            0.4850144810866974
+          ],
+          "nominal_gravity_camera": [
+            0.8238968753640652,
+            0.014445413399721182,
+            0.566555618449805
+          ],
+          "imu": {
+            "roll_deg": 2.9301080587706214,
+            "down_pitch_deg": 29.013421174517415,
+            "error_deg": 1.2074182697257333e-06
+          },
+          "nominal": {
+            "roll_deg": 88.99553396572021,
+            "down_pitch_deg": 34.51038610867135,
+            "error_deg": 71.08081142584335
+          },
+          "reversed_marker": {
+            "roll_deg": -178.9815763858409,
+            "down_pitch_deg": 55.50615564192162,
+            "error_deg": 95.46455794986097
+          },
+          "quarter_turn": {
+            "roll_deg": -1.0044660342797929,
+            "down_pitch_deg": 34.51038610867135,
+            "error_deg": 6.433371061504203
+          }
+        },
+        {
+          "frame": "C-slow-342",
+          "eligible_imu_samples": 1
+        },
+        {
+          "frame": "C-slow-348",
+          "eligible_imu_samples": 1
+        },
+        {
+          "frame": "C-slow-387",
+          "eligible_imu_samples": 1
+        },
+        {
+          "frame": "C-slow-392",
+          "eligible_imu_samples": 2
+        }
+      ]
+    }
+  }
+}

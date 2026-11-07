@@ -1,0 +1,18 @@
+{
+  "prepared": true,
+  "optimizer_updates": 0,
+  "variants": [
+    "aligned",
+    "fractional"
+  ],
+  "seed": 20261101,
+  "total_parameters": 56544,
+  "trainable_parameters": 28272,
+  "pilot_updates": 100,
+  "pilot_cap_seconds": 600,
+  "study_updates": 2000,
+  "study_cap_seconds": 5400,
+  "pilot_updates_reused": true,
+  "calibration_or_test_pixels_loaded": 0,
+  "model_promoted": false
+}

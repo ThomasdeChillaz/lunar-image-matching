@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v133/experiment.py", line 143, in <module>
+    base.worker(args.stage, args.ticket)
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v127/experiment.py", line 272, in worker
+    predict(protocol, path.parent / "predictions.json")
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v133/experiment.py", line 26, in predict
+    ORIGINAL_PREDICT(protocol, temporary)
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v127/experiment.py", line 226, in predict
+    put(output, dict(protocol_sha256=sha(HOME / "protocol.json"), query_truth_used=False, rows=rows))
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/reports/solar-local-v127/experiment.py", line 44, in put
+    json.dump(value, f, indent=2, allow_nan=False)
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 1 more time]
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 398, in _iterencode_dict
+    yield _floatstr(value)
+          ^^^^^^^^^^^^^^^^
+  File "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 240, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: inf

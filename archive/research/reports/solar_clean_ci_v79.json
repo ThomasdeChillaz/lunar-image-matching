@@ -1,0 +1,119 @@
+{
+  "scope": "Read-only GitHub public CI verification. No source changes, credentials inspection, workflow dispatch, NN, images, rays or scientific jobs.",
+  "repository": "ThomasdeChillaz/lunar-image-matching",
+  "runs": [
+    {
+      "requested_commit": "974f9546be2f6a38a0382b92c149efaf910e9304",
+      "runs": [
+        {
+          "run_id": 41778277642,
+          "name": "Tests",
+          "path": ".github/workflows/ci.yml",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "974f9546be2f6a38a0382b92c149efaf910e9304",
+          "run_attempt": 1,
+          "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41778277642",
+          "created_at": "2026-11-04T05:16:47Z",
+          "updated_at": "2026-11-04T05:18:12Z"
+        }
+      ]
+    },
+    {
+      "requested_commit": "4c8d60131c13479cb29c7940a9440058648a0fdb",
+      "runs": [
+        {
+          "run_id": 41778556287,
+          "name": "Tests",
+          "path": ".github/workflows/ci.yml",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "4c8d60131c13479cb29c7940a9440058648a0fdb",
+          "run_attempt": 1,
+          "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41778556287",
+          "created_at": "2026-11-04T05:19:36Z",
+          "updated_at": "2026-11-04T05:20:50Z"
+        }
+      ]
+    }
+  ],
+  "latest_jobs": [
+    {
+      "id": 126404520776,
+      "name": "core",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "4c8d60131c13479cb29c7940a9440058648a0fdb",
+      "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41778556287/job/126404520776",
+      "runner_labels": [
+        "ubuntu-latest"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run pip install -r requirements.txt",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install the validated CPU neural-test runtime",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pytest -q",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python benchmark.py --config smoke.json --output runs/ci-smoke",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "pytest_summary_lines": [
+    "2026-11-04T05:20:42.1248627Z 897 passed, 6 skipped, 14 warnings in 29.99s"
+  ],
+  "public_regression": {
+    "path": "test_solar_teacher_support_v79.py",
+    "commit": "4c8d60131c13479cb29c7940a9440058648a0fdb",
+    "public_content_present": true,
+    "test_functions": [
+      "test_boundary_jitter_masks_support_without_reroll_reindex_or_relabelling",
+      "test_teacher_unavailability_is_counted_separately_from_support",
+      "test_no_trial_support_is_explicit_shortfall_before_images_or_teacher"
+    ],
+    "no_hardcoded_local_path": true,
+    "no_untracked_runs_path": true,
+    "sha256": "3123851b2c908b8e3ec81d82ea4f555652cd8c916490443ed1e4c482905743c3"
+  },
+  "workflow": {
+    "path": ".github/workflows/ci.yml",
+    "full_pytest_command": true,
+    "checkout_present": true,
+    "no_artifact_download": true,
+    "cpu_runtime": "torch2.2.2/torchvision0.17.2"
+  },
+  "checked_utc": "2026-11-04T05:22:35.624517+00:00"
+}

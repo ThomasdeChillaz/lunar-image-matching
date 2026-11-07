@@ -1,0 +1,5235 @@
+{
+  "scope": "Fixed exposed-development diagnostic of a failed final checkpoint, not selected-model, pose, calibration or final-test accuracy.",
+  "final_checkpoint_sha256": "ac54e500aa9fbc9033e48b106a5282e0dbc6da988ce5278bb221b920bde9cc0b",
+  "source_sha256": "8084f1a475a7194597f30236ac166b2469e1684a5333c11a03a5d23732975eaf",
+  "model_seed": 20261101,
+  "training_step": 2000,
+  "hypothesis": "The joint1090-class argmax compares one diffuse local bin with total no-match probability. The fixed binary rule instead compares any-match mass against no-match mass; no threshold search is performed.",
+  "results": {
+    "positive_window": {
+      "samples": 246,
+      "median_no_match_probability": 0.5480521321296692,
+      "joint_argmax_rejections": 246,
+      "binary_rule_rejections": 155
+    },
+    "negative_window": {
+      "samples": 275,
+      "median_no_match_probability": 0.44652923941612244,
+      "joint_argmax_rejections": 275,
+      "binary_rule_rejections": 91
+    }
+  },
+  "rows": [
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 280,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6324811577796936,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.46692021958916147
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 187,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6188704371452332,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.34575962617935757
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 116,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6874799132347107,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2696964739158957
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 200,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5201227068901062,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.7335783284865252
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 358,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.44261133670806885,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 79,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.21092116832733154,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 90,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4551105201244354,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 341,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.44037488102912903,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 124,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.48775070905685425,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.0838591950789924
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 129,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.29255640506744385,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 20.55594761600698
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 82,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5589107275009155,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.0053547085241212
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 47,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.36600008606910706,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.2926655755875639
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 71,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5300800800323486,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 85,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4092092514038086,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 166,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5015271902084351,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 134,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.09524085372686386,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 188,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4442583918571472,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.8884618076872897
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 341,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.546613335609436,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2757342295120187
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 226,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7099352478981018,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.43953944529409383
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 22,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5839688777923584,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2893614171061721
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 285,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.348859578371048,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 360,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.24683356285095215,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 79,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5250496864318848,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 131,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.17432111501693726,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 10,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.370670348405838,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 10.27589774179453
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 181,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.566926896572113,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 26.53172607038521
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 137,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5723263621330261,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.0719726049580562
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 228,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5609248876571655,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 8.699842189842315
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 119,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5056391954421997,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 196,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4999905824661255,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 131,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5340891480445862,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 218,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.38333195447921753,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 132,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7627542614936829,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.31154958886259887
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 9,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7808142900466919,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.3343839606754422
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 105,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6631196141242981,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.06706487263826852
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 304,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6559265851974487,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.046388566910165394
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 181,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3122391104698181,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 354,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.718362033367157,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 164,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5559921860694885,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 55,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.559337854385376,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 62,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3844127058982849,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.5298319760239387
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 123,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.575168251991272,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 18.785245376722845
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 93,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.49680253863334656,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.9916854807680067
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 139,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5362869501113892,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 19.564460500046035
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 121,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5535697937011719,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 63,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.31577563285827637,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 264,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.26838067173957825,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 257,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5548684597015381,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 135,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.45178693532943726,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.5757893332056438
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 144,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5540606379508972,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.5161557896373404
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 31,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7204383015632629,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.37845351507197467
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 269,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5493039488792419,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.641651498349644
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.34532514214515686,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 125,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3469342291355133,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 190,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.42709147930145264,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 252,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43857938051223755,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 237,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5913880467414856,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 29.82018648286497
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 171,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6768457293510437,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 8.542941801173946
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 25,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.47192180156707764,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 2.036898173788272
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 18,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.395133376121521,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 18.22920979313804
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 16,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5522240996360779,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 280,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.41659045219421387,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 284,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4982903301715851,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 226,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4678584635257721,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 7,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6763778924942017,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.15650376835640623
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 166,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7874432802200317,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2624370823039317
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 205,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6840589046478271,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.1762297030693204
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 317,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6831231713294983,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.08375236826418131
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 346,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2731841504573822,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 171,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5569672584533691,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 366,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.48320671916007996,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2515/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 359,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3700491786003113,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 182,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6616137027740479,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.1136907834018591
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 180,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.47162556648254395,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.12182123899970243
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 397,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7587569355964661,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.20027809874670827
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 408,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.764426589012146,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.22101856470662645
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 445,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2886837422847748,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 506,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5149869918823242,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 86,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3940267562866211,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 179,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2410951852798462,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 182,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5765351057052612,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.7846954159275787
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 132,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5813742280006409,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.1682889501646354
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 342,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.45590701699256897,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.1301993792042433
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 102,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.36252468824386597,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.2306944471203178
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 345,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3157287538051605,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 370,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5423961877822876,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 209,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5090368986129761,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 58,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.45486173033714294,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 196,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6166796088218689,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.9770353388400806
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 318,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5680635571479797,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.6202364578374415
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 354,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5972864627838135,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2816440166748219
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 197,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5905871391296387,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.7225009928983439
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 269,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.41911211609840393,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 274,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.46271100640296936,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 208,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43924272060394287,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-0-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 327,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.480867475271225,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 280,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4612444341182709,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 7.93918555064246
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 5,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5374673008918762,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.16297076457325943
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 9,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5094637274742126,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.8637121875408118
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 16,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5525940656661987,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.6773385335213356
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 48,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4340748190879822,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 176,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2527749836444855,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 243,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3085973560810089,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 36,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3534453213214874,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 177,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5429566502571106,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.07660600890298024
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 466,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7295712232589722,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.12824293406730392
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 257,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7462038993835449,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.05889633799508701
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 155,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.616524338722229,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.12749577243462432
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 511,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.39591488242149353,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 188,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3886602818965912,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 409,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.21406500041484833,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 167,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.35815736651420593,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 3.1574532519363685
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 253,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6286587119102478,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.7134995956175594
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 80,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5050122141838074,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.097160345695371
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 69,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.35781365633010864,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 12.220848489005169
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 233,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40790069103240967,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 131,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.465426504611969,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 287,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.17120574414730072,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-1-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 261,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.547511637210846,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 286,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4193122386932373,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.188068651318283
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 31,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5901532173156738,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.1142061784231672
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 231,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6093997359275818,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 22.04243406719757
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 16,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6309575438499451,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.6417084312787259
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 182,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.498793363571167,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 234,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5388311743736267,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 140,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3324413001537323,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-0",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 186,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5454086661338806,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 177,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.548670768737793,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2530692788301597
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 192,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4904875159263611,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.9125566517331228
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 7,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5325445532798767,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.5309321507990192
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 238,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5357581377029419,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.5740265177842883
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 258,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5332119464874268,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 277,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4528772532939911,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 120,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3084447681903839,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-1",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 333,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4639015793800354,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 421,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6567848324775696,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.2578986342257672
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 212,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6251099705696106,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.16996952090458434
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 22,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.726864218711853,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.17626823742747583
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 258,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7005277276039124,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.07790584656152238
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 403,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.37197449803352356,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 198,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.49302491545677185,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 214,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3787437081336975,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2518/lights-2-2",
+      "component": "axial-v5-component-0005",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.38529255986213684,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 407,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6535978317260742,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.06678264701459898
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 47,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6641599535942078,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.08383936820223604
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 196,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7272888422012329,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.4554198940318151
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 377,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7031615972518921,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.31693466999610004
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 18,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5786352157592773,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.8838485031365412
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 204,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.48218920826911926,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.74821507305995
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 278,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5321048498153687,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.382657422840838
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 0,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5904240012168884,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 8.345827713464338
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 215,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.26967117190361023,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 282,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.506687343120575,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 136,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4296731948852539,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 69,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.31785765290260315,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 189,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5474334955215454,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.7404943619880965
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 118,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6748597025871277,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.7215037340214218
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 2,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6496785879135132,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.507685708957819
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 192,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.514403760433197,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.47532688414133034
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 210,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.41247642040252686,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 384,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.480861634016037,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 238,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5107567310333252,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 204,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2384030520915985,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 71,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.41137373447418213,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.914303785450006
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 14,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6429814100265503,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.4773460650936574
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 98,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5956943035125732,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.672457123632049
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 117,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4358917772769928,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.4693820452907111
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 58,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5755769610404968,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 160,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.47930872440338135,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 265,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.44196438789367676,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 197,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2474958896636963,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 187,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6717155575752258,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.23258994613749762
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 299,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6147958040237427,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.41264821316292166
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 180,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7095077633857727,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.3214693539836271
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 45,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6529152393341064,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.3713557804868311
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 8,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5377093553543091,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.3292749767597079
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 210,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5212433934211731,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.949009446466982
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 251,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.34088975191116333,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 6.922058768716676
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 177,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.47452202439308167,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.0961199261908652
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 106,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.47173750400543213,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 102,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.550963819026947,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 132,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5163443088531494,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 158,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5126338601112366,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 44,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4681393504142761,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 16.777281241896393
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 78,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6342441439628601,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.39409665398669
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 469,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5800971388816833,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.33689034046067723
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 291,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6530371308326721,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.4545333605978654
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 276,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.45417436957359314,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 488,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3374577462673187,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 402,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5307653546333313,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 433,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2513226866722107,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 7,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.569168210029602,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.5137633760508575
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 168,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5574737191200256,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 11.188502715999416
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 2,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6264508366584778,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.5668872781465963
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 84,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5832284688949585,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.2228030473113605
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 212,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.34185054898262024,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 263,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5638505816459656,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 238,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5427930951118469,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 301,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4005642235279083,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 392,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6785656809806824,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.1934585743210551
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 41,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6629941463470459,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.1946991788421524
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 91,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6792230606079102,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.26355114075650243
+    },
+    {
+      "pair_id": "nadir/nadir/2506/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 375,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6557596921920776,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.11831128660980027
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 70,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.8303589224815369,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.28794458144378643
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 28,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.777242124080658,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.674547824144611
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 149,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7224594354629517,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.4013154520187795
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 77,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7314663529396057,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.38156937584837713
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 307,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6982566118240356,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 436,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6848778128623962,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 427,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6682277917861938,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 467,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6751197576522827,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 34,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5381648540496826,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.943912235529174
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6650781035423279,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.5399939878874825
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 1,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7514333128929138,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.4619879491680878
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 46,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6085034012794495,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.25969959915203084
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 118,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5072031617164612,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 229,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40181422233581543,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 138,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6986258029937744,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 54,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3438722491264343,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 79,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6021149158477783,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.007445305509298
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 25,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.8395275473594666,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 17.88789605577784
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 13,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7176439166069031,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.119065218715865
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 40,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6432457566261292,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.875890886020507
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 20,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6317186951637268,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 35,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5689405798912048,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 174,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5050725340843201,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 232,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.41497698426246643,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 78,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.8217504620552063,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.9505430330800142
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 31,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6421262621879578,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 12.011288118321037
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 0,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.731229841709137,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.7977361822160692
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 96,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5098481178283691,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.5660892667558168
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 28,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.7096401453018188,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 201,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6231528520584106,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 61,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.47345978021621704,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 204,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6204380393028259,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 213,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6876969337463379,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.13248313506626783
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 240,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5695145130157471,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.65938534270528
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 4,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7890788912773132,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.17100095718931563
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 282,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5421090722084045,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.6738285421588388
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 425,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5020864605903625,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 460,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4050285518169403,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 505,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.39058011770248413,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 408,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4047780930995941,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 66,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6075531244277954,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.3683932031573365
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 49,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5862405300140381,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.494831804173703
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 212,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5644124150276184,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.3709388532008056
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 19,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5501354932785034,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.5528274795722807
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 29,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5625854730606079,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 198,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.34763985872268677,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 25,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40159258246421814,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 101,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5370792150497437,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 0,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5119693279266357,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.34737924500503053
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 133,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7153592705726624,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.7858757832297734
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 5,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.49379363656044006,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.38165968069119255
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 241,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5468882322311401,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.7377936016734739
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 94,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.7028630971908569,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 127,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6499468088150024,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 184,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.7126021385192871,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 52,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.45460066199302673,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 2,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.778240978717804,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 12.371223676977703
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 89,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6821999549865723,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.497560559695874
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 81,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5718052387237549,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.1799905225867318
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 32,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5566685199737549,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.8814186959113416
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 85,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.38778960704803467,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 42,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6893240809440613,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 36,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6283801198005676,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 185,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5561872720718384,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 381,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3560391962528229,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.7566006549088025
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 168,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.751520037651062,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.5187172443408394
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 95,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7188717722892761,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.8334886128414395
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 224,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.30494964122772217,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.6429453578550243
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 386,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5202955603599548,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 278,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.32612115144729614,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 475,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.14283542335033417,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "oblique/oblique/2994/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 230,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.17329749464988708,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 205,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5081316232681274,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 124,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3734210431575775,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 86,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5936075448989868,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 237,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2610044777393341,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 29,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.49488431215286255,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 5.679105713829644
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 23,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3511786162853241,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 11.118537528873444
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 158,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4331142008304596,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 167,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43469667434692383,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 181,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5075007081031799,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 4,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43858498334884644,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 50,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.38327381014823914,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 27.08873012472933
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 46,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.37239909172058105,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 10.576650552654403
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 207,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5202432870864868,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 76,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.48154300451278687,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 163,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3691370487213135,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 215,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.36678287386894226,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 18,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.31530511379241943,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.7966421498936944
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 27,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4519228935241699,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 5.285384213343142
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 71,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3274703025817871,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 30.387353531180416
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 5,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.19074168801307678,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 19,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.38622739911079407,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 89,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4960593581199646,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 251,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5808340311050415,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 159,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.28693342208862305,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 3,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3376404941082001,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 171,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5162799954414368,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 178,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.49626272916793823,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 129,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3618486225605011,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 30.438974285958103
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 155,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.2692785859107971,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 21.124837307544098
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 14,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5147778391838074,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 5.850748623727841
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 15,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5433527827262878,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 198,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5857326984405518,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 69,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4976838231086731,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-1-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 219,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5716711282730103,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 200,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4003455340862274,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.31438593253262
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 1,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.39575088024139404,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 15.901014606359407
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 201,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4372049570083618,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 223,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2920631170272827,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 131,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40890926122665405,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-0",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 173,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5963891744613647,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 19,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4222744107246399,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 11.026028431646703
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 199,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4416290521621704,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 25.4205822493232
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 67,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2975866496562958,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 245,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5912020802497864,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 49,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5209358334541321,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-1",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 215,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5100790858268738,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 10,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4058176577091217,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 15.68621532217962
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 149,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3771986961364746,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.9357413117181528
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 129,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5971763134002686,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 91,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2711828052997589,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 285,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3603569567203522,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-2-2",
+      "component": "axial-v5-component-0000",
+      "proposal_index": 240,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3729018568992615,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 90,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.37589627504348755,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 21.36245861618071
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 227,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.36253082752227783,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 11.266374415905565
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 205,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5060253739356995,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 12.871889688476994
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 190,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5808640122413635,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.2742137422440545
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 165,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.33657920360565186,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 33,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.42330703139305115,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 67,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.1687462329864502,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 29,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.37119215726852417,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 223,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4434930980205536,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.171013111593478
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 235,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3626672625541687,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 18.219129784640383
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 252,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.34918826818466187,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 3.7817004069901876
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 82,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5581144690513611,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.413712111713711
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 247,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3912930488586426,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 190,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3059292435646057,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 20,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4528573751449585,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 99,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4747934937477112,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 195,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3191007673740387,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.9423898791257528
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 66,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.48834285140037537,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 12.878058185628884
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.41536229848861694,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.7927235764562356
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 148,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.433351993560791,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 15.689594229200484
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 88,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.44084134697914124,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 191,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4471588432788849,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 208,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.42936769127845764,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 154,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5066823959350586,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 66,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.36198297142982483,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 19.195010721163133
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 89,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3814293444156647,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 7.295883973882652
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 142,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.33323055505752563,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 10.24393198981876
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 219,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.337969034910202,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 19.94530027306828
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 30,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2831656038761139,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 172,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43034064769744873,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 246,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.27704310417175293,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 24,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4578162729740143,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 179,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.7330172657966614,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 11.886113212870468
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 24,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5695794820785522,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.9269242216008906
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 61,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5891709923744202,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 4.2338312450033575
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 186,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4141673147678375,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.3966072373499037
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 268,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5034111142158508,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 163,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.37193357944488525,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 235,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.1735324263572693,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 136,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.34067633748054504,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 237,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5513193011283875,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 8.463603457862844
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 19,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4516600966453552,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.2063820447843967
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 86,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5756677985191345,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 7.611903759258909
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 7,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3439045250415802,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 2.0166660915006562
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 121,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3451057970523834,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 223,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4146268665790558,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 27,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.36538636684417725,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 188,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.39617666602134705,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 33,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4697771668434143,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.7582980029109483
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 108,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.26064345240592957,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.5632697237266873
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 185,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5665006637573242,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 6.178823846612851
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 191,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3246583640575409,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.8321408434655118
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 118,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.10239618271589279,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 105,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.18938365578651428,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 60,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.47630977630615234,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 12,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5176736116409302,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 83,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.37257176637649536,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 6.663770879390108
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 47,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.482984334230423,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 4.273204446222832
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 178,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4058822989463806,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 19.42226204606377
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 80,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.47775131464004517,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 15.083869217659554
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 12,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.27395862340927124,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 221,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.41534316539764404,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 193,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5282571315765381,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 8,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5189548134803772,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 222,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5856766700744629,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.7588170030722352
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 100,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5382505655288696,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.1248501542497364
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 33,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5414679050445557,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 1.6564972272517704
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 244,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3369581401348114,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 1.1459857781287996
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 234,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43102872371673584,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 31,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.38549724221229553,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 256,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5887565612792969,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 48,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3777698576450348,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 240,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.21176713705062866,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 19.05590533332206
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 157,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.35245761275291443,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 16.09647768236816
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 261,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3951377272605896,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 3.5642169697468717
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 1,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6940597891807556,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.0201904362041376
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 88,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5872657299041748,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 202,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40407541394233704,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 129,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3706766664981842,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 153,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5409417748451233,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 77,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.48553523421287537,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 7.688777889602692
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 21,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.2660077214241028,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 25.139599218841955
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 165,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.565754234790802,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 10.409650173824321
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 124,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4864734411239624,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 27.60021832190165
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 182,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4844578206539154,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 140,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5055629014968872,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 80,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6045357584953308,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 65,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.487798810005188,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 105,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6042047142982483,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 11.758417306383771
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 25,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.642779529094696,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.37411295948571
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 218,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5554651618003845,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 28.948030077700523
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 42,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.668476402759552,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 11.574575453544888
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 173,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5500227808952332,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 162,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4455678164958954,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 18,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.378994345664978,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 184,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.46978360414505005,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 108,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.14568030834197998,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.16711329341679
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 151,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5311976075172424,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.881466313284161
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 65,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5052530169487,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.6269020137474
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 126,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6031690835952759,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 6.344736335321888
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 54,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4777160584926605,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 87,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.36611345410346985,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 85,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.211656853556633,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 62,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5102435350418091,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 44,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.613803505897522,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 13.453301892247497
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 88,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6180191040039062,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 0.706308873217947
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 163,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5449422597885132,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.564969169248871
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.47355011105537415,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 0.4743667163481718
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 48,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.29961246252059937,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 68,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4096280038356781,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 24,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3610396385192871,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 85,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5166901350021362,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 197,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3212090730667114,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.378264811962445
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 25,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.19115495681762695,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 11.884041409366416
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 162,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5374554395675659,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 3.5259197022906528
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 157,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3264533281326294,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 103,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3448295593261719,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 127,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4016963839530945,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 199,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.49132028222084045,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 120,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.34276336431503296,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 17.935325794075858
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 0,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5800448656082153,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 2.1240254347397527
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 203,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.31686440110206604,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 2.918885338055861
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 209,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.2483321726322174,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 5.006686778709105
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 75,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3597888946533203,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 36,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.33424270153045654,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 175,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4510902464389801,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 135,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4567561447620392,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 157,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.38459011912345886,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 3.3274345931163984
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 115,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5185055732727051,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 10.81118750285171
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 5,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6254804134368896,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 9.541258984765436
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 169,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5643985867500305,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 153,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2976352870464325,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 8,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.39917346835136414,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 171,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5605000257492065,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 159,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.6078675389289856,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 4.617814472383947
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 183,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.328860878944397,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 19.4182793525762
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 181,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5927844643592834,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 24.92694077020354
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 219,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5435794591903687,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 18.538134133778467
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 116,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.47535109519958496,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 155,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4845569431781769,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 64,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.40499696135520935,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "component": "axial-v5-component-0006",
+      "proposal_index": 223,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5181220173835754,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 55,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.42241936922073364,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 11.89099976484306
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 36,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.43594786524772644,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 21.89333378769017
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 193,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3027671277523041,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 157,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3627808094024658,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 231,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4572615623474121,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 57,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4202817976474762,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 47,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5697602033615112,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 19.263244344055284
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 201,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.31946226954460144,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 29.090212454282867
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 51,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.527498722076416,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 5.560061375157915
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 98,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5936234593391418,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 16.550580112597558
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 59,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5801254510879517,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 130,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6915609240531921,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 32,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4027566909790039,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 258,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4342821538448334,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 183,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.517525315284729,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 21.73929374991094
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 185,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6465461850166321,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 131,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5048040151596069,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 192,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.48915743827819824,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-0-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 297,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.43317264318466187,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 61,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5538261532783508,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 24.619917488071827
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 240,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.34264853596687317,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 122,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.33362752199172974,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 197,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.49749159812927246,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 244,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4908706247806549,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 174,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.417624831199646,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 14.843464397413172
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 23,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.4441448450088501,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 5.0840772386746895
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 124,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.33619415760040283,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 16.188195894785018
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 160,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4963509440422058,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 84,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.3298701047897339,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 32,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6071670651435852,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 221,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4989122152328491,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 130,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3986186683177948,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 9.280126236772194
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 39,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.44652923941612244,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 191,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4364333152770996,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 259,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6622123718261719,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-1-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 225,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4156970977783203,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 41,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3353356719017029,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 14.922328209260295
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 61,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4399081766605377,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 121,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.2938138246536255,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 6,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.45427849888801575,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-0",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 227,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.6002891659736633,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 86,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.5358417630195618,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": 5.615999104849335
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 191,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.3958846926689148,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 14.24231732552896
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 19,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5860427618026733,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 211,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.376271516084671,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 261,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5508156418800354,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-1",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 255,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.45018941164016724,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 36,
+      "window_has_visible_correspondence": true,
+      "no_match_probability": 0.27275991439819336,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": 14.320312349212683
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 151,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4097217917442322,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 144,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5347467064857483,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 230,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.5464033484458923,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": true,
+      "decoded_error_px": null
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1407/lights-2-2",
+      "component": "axial-v5-component-0015",
+      "proposal_index": 132,
+      "window_has_visible_correspondence": false,
+      "no_match_probability": 0.4989677667617798,
+      "joint_argmax_reject": true,
+      "aggregated_binary_reject": false,
+      "decoded_error_px": null
+    }
+  ],
+  "calibration_or_test_pixels_loaded": 0
+}

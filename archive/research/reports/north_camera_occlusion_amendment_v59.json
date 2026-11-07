@@ -1,0 +1,16 @@
+{
+  "reason": "Existing48training geometries contain0geometrically occluded sampled points. Add a separate prospective oblique-camera stress family before anypilot rendering or matcher inference.",
+  "old_schedule_sha256": "dd80df191b2fffe31e8ded66f46c0ebb26dbc7a8b14a5d0e9a18a0a467cf5a86",
+  "new_schedule_sha256": "9e4dfabe7436a5f790188c5e62f3c843311f2092b1f24f0cc3e4ac6692b60c70",
+  "old_camera_pairs_preserved_exactly": 32,
+  "added_pairs": 16,
+  "query_zenith_range_degrees": [
+    65,
+    75
+  ],
+  "query_horizontal_fov_degrees": 10,
+  "minimum_camera_clearance_m": 10,
+  "rendered_images": 0,
+  "actual_occlusion_support_not_established": true,
+  "scope": "Geometry-only pilot amendment on fouralready-used supports. NarrowerqueryFOV anddifferentintrinsics are explicit, not a common-profile substitution or independent-terrain claim."
+}

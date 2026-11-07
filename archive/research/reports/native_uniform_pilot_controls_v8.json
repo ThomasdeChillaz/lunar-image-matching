@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "Analytic actual-model software controls, not lunar generalization or a confidence guarantee.",
+  "runs": [
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 100,
+      "passed": true,
+      "rotation_matrix_error": 0.0011411078435930944,
+      "translation_error_m": 0.008173667587198107,
+      "blank_no_pose": true,
+      "checkpoint_sha256": "179094add1369c4c6dbc14e887416a656ef284a3aab0af7ef1bd84d64aea37ae"
+    }
+  ],
+  "source_sha256": "4a1bfc0fe90a22ce7229d54aa66f08ab643553423dd9c2a6a876fca472d92c07"
+}

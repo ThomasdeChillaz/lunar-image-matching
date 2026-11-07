@@ -1,0 +1,5866 @@
+{
+  "sift": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "max_development_incorrect_acceptance": 0.0,
+    "policy": {
+      "min_coverage": 0.15,
+      "max_cycle_px": 0.5,
+      "max_translation_fraction": 0.15,
+      "min_scale": 0.75,
+      "max_scale": 1.25,
+      "max_rotation_deg": 20.0
+    },
+    "development_counts": {
+      "labelled": 144,
+      "unknown_labels": 0,
+      "correct": 4,
+      "incorrect": 140,
+      "accepted_correct": 4,
+      "accepted_incorrect": 0,
+      "correct_retention": 1.0,
+      "incorrect_acceptance_rate": 0.0
+    },
+    "tradeoff": [
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 2,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 4,
+        "incorrect": 140,
+        "accepted_correct": 4,
+        "accepted_incorrect": 0,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.0
+      }
+    ],
+    "warning": "Development selection is not a guarantee of held-out performance. Report each reference/dataset type separately."
+  },
+  "disk_lightglue": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "max_development_incorrect_acceptance": 0.0,
+    "policy": {
+      "min_coverage": 0.15,
+      "max_cycle_px": 0.5,
+      "max_translation_fraction": 0.05,
+      "min_scale": 0.75,
+      "max_scale": 1.25,
+      "max_rotation_deg": 20.0
+    },
+    "development_counts": {
+      "labelled": 144,
+      "unknown_labels": 0,
+      "correct": 101,
+      "incorrect": 43,
+      "accepted_correct": 13,
+      "accepted_incorrect": 0,
+      "correct_retention": 0.12871287128712872,
+      "incorrect_acceptance_rate": 0.0
+    },
+    "tradeoff": [
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 13,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.12871287128712872,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 36,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.3564356435643564,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 16,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.15841584158415842,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 47,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.46534653465346537,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 27,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.26732673267326734,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 68,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6732673267326733,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 31,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.3069306930693069,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 77,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.7623762376237624,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 13,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.12871287128712872,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 36,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.3564356435643564,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 16,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.15841584158415842,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 47,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.46534653465346537,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 27,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.26732673267326734,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 68,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.6732673267326733,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 31,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.3069306930693069,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 77,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.7623762376237624,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.20930232558139536
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 13,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.12871287128712872,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 36,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.3564356435643564,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 16,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.15841584158415842,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 47,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.46534653465346537,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 27,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.26732673267326734,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 68,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6732673267326733,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 31,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.3069306930693069,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 77,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.7623762376237624,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 13,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.12871287128712872,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 36,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.3564356435643564,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 49,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.48514851485148514,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 16,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.15841584158415842,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 47,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.46534653465346537,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 62,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6138613861386139,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 27,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.26732673267326734,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 68,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6732673267326733,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 86,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.8514851485148515,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 31,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.3069306930693069,
+        "incorrect_acceptance_rate": 0.046511627906976744
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 77,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.7623762376237624,
+        "incorrect_acceptance_rate": 0.11627906976744186
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9900990099009901,
+        "incorrect_acceptance_rate": 0.16279069767441862
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 13,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.12871287128712872,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 35,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.3465346534653465,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 48,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.4752475247524752,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 48,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.4752475247524752,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 16,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.15841584158415842,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 46,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.45544554455445546,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 61,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.6039603960396039,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 61,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.6039603960396039,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 27,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.26732673267326734,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 67,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.6633663366336634,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 85,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.8415841584158416,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 85,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.8415841584158416,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 31,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.3069306930693069,
+        "incorrect_acceptance_rate": 0.023255813953488372
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 75,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.7425742574257426,
+        "incorrect_acceptance_rate": 0.06976744186046512
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 98,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9702970297029703,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 101,
+        "incorrect": 43,
+        "accepted_correct": 98,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9702970297029703,
+        "incorrect_acceptance_rate": 0.09302325581395349
+      }
+    ],
+    "warning": "Development selection is not a guarantee of held-out performance. Report each reference/dataset type separately."
+  },
+  "disk_lightglue_clahe": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "max_development_incorrect_acceptance": 0.0,
+    "policy": {
+      "min_coverage": 0.08,
+      "max_cycle_px": 1.0,
+      "max_translation_fraction": 0.3,
+      "min_scale": 0.75,
+      "max_scale": 1.25,
+      "max_rotation_deg": 20.0
+    },
+    "development_counts": {
+      "labelled": 144,
+      "unknown_labels": 0,
+      "correct": 104,
+      "incorrect": 40,
+      "accepted_correct": 82,
+      "accepted_incorrect": 0,
+      "correct_retention": 0.7884615384615384,
+      "incorrect_acceptance_rate": 0.0
+    },
+    "tradeoff": [
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 19,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.18269230769230768,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 45,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.4326923076923077,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 26,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.25,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 60,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.5769230769230769,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 71,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.6826923076923077,
+        "incorrect_acceptance_rate": 0.075
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.075
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 78,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.75,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 104,
+        "accepted_incorrect": 9,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.225
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 104,
+        "accepted_incorrect": 10,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.25
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 19,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.18269230769230768,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 45,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.4326923076923077,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 26,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.25,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 60,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.5769230769230769,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 71,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.6826923076923077,
+        "incorrect_acceptance_rate": 0.075
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.075
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 77,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.7403846153846154,
+        "incorrect_acceptance_rate": 0.125
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.225
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 10,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.25
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 19,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.18269230769230768,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 45,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.4326923076923077,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 26,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.25,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 60,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.5769230769230769,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 71,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6826923076923077,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.1
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.1
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 77,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.7403846153846154,
+        "incorrect_acceptance_rate": 0.1
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.175
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.175
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 19,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.18269230769230768,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 45,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.4326923076923077,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 63,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.6057692307692307,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 26,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.25,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 60,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5769230769230769,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 82,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.7884615384615384,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 71,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.6826923076923077,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 96,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.9230769230769231,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 28,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.2692307692307692,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 77,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.7403846153846154,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.1
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 103,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.9903846153846154,
+        "incorrect_acceptance_rate": 0.1
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 18,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.17307692307692307,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 43,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.41346153846153844,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 61,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5865384615384616,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 61,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5865384615384616,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 25,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.2403846153846154,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 58,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.5576923076923077,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 79,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.7596153846153846,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 79,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.7596153846153846,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 27,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.25961538461538464,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 68,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.6538461538461539,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 92,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.8846153846153846,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 92,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.8846153846153846,
+        "incorrect_acceptance_rate": 0.025
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 27,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.25961538461538464,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 72,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6923076923076923,
+        "incorrect_acceptance_rate": 0.05
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 97,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.9326923076923077,
+        "incorrect_acceptance_rate": 0.075
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 104,
+        "incorrect": 40,
+        "accepted_correct": 97,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.9326923076923077,
+        "incorrect_acceptance_rate": 0.075
+      }
+    ],
+    "warning": "Development selection is not a guarantee of held-out performance. Report each reference/dataset type separately."
+  },
+  "disk_lightglue_lunar": {
+    "schema_version": 1,
+    "selected_on_split": "dev",
+    "max_development_incorrect_acceptance": 0.0,
+    "policy": {
+      "min_coverage": 0.01,
+      "max_cycle_px": 0.5,
+      "max_translation_fraction": 0.15,
+      "min_scale": 0.75,
+      "max_scale": 1.25,
+      "max_rotation_deg": 20.0
+    },
+    "development_counts": {
+      "labelled": 144,
+      "unknown_labels": 0,
+      "correct": 107,
+      "incorrect": 37,
+      "accepted_correct": 41,
+      "accepted_incorrect": 0,
+      "correct_retention": 0.38317757009345793,
+      "incorrect_acceptance_rate": 0.0
+    },
+    "tradeoff": [
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 12,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.11214953271028037,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 41,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.38317757009345793,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 54,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.5046728971962616,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 54,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.5046728971962616,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 22,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.205607476635514,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 58,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.5420560747663551,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 74,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6915887850467289,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 74,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6915887850467289,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 29,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.27102803738317754,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 77,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.719626168224299,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 101,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9439252336448598,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 101,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9439252336448598,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 31,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2897196261682243,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 81,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.7570093457943925,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 107,
+        "accepted_incorrect": 11,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 107,
+        "accepted_incorrect": 11,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 12,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.11214953271028037,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 41,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.38317757009345793,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 54,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.5046728971962616,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 54,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.5046728971962616,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 22,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.205607476635514,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 58,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.5420560747663551,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 74,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6915887850467289,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 74,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6915887850467289,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 29,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.27102803738317754,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 77,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.719626168224299,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 101,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9439252336448598,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 101,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9439252336448598,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 31,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2897196261682243,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 81,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.7570093457943925,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 107,
+        "accepted_incorrect": 11,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0.01,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 107,
+        "accepted_incorrect": 11,
+        "correct_retention": 1.0,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 12,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.11214953271028037,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 40,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.37383177570093457,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 53,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4953271028037383,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 53,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4953271028037383,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 22,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.205607476635514,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 57,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.5327102803738317,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 73,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6822429906542056,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 73,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.6822429906542056,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 29,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.27102803738317754,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 76,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.7102803738317757,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 31,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2897196261682243,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 80,
+        "accepted_incorrect": 8,
+        "correct_retention": 0.7476635514018691,
+        "incorrect_acceptance_rate": 0.21621621621621623
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 106,
+        "accepted_incorrect": 11,
+        "correct_retention": 0.9906542056074766,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0.03,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 106,
+        "accepted_incorrect": 11,
+        "correct_retention": 0.9906542056074766,
+        "incorrect_acceptance_rate": 0.2972972972972973
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 12,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.11214953271028037,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 40,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.37383177570093457,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 53,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4953271028037383,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 53,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4953271028037383,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 22,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.205607476635514,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 57,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.5327102803738317,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 73,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6822429906542056,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 73,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.6822429906542056,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 29,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.27102803738317754,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 76,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.7102803738317757,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 30,
+        "accepted_incorrect": 3,
+        "correct_retention": 0.2803738317757009,
+        "incorrect_acceptance_rate": 0.08108108108108109
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 78,
+        "accepted_incorrect": 6,
+        "correct_retention": 0.7289719626168224,
+        "incorrect_acceptance_rate": 0.16216216216216217
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 104,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9719626168224299,
+        "incorrect_acceptance_rate": 0.24324324324324326
+      },
+      {
+        "policy": {
+          "min_coverage": 0.08,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 104,
+        "accepted_incorrect": 9,
+        "correct_retention": 0.9719626168224299,
+        "incorrect_acceptance_rate": 0.24324324324324326
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 11,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.102803738317757,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 38,
+        "accepted_incorrect": 0,
+        "correct_retention": 0.35514018691588783,
+        "incorrect_acceptance_rate": 0.0
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 51,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4766355140186916,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 0.5,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 51,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.4766355140186916,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 21,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.19626168224299065,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 55,
+        "accepted_incorrect": 1,
+        "correct_retention": 0.514018691588785,
+        "incorrect_acceptance_rate": 0.02702702702702703
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 71,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.6635514018691588,
+        "incorrect_acceptance_rate": 0.10810810810810811
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 1.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 71,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.6635514018691588,
+        "incorrect_acceptance_rate": 0.10810810810810811
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 28,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.2616822429906542,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 73,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.6822429906542056,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 97,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9065420560747663,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 3.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 97,
+        "accepted_incorrect": 5,
+        "correct_retention": 0.9065420560747663,
+        "incorrect_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.05,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 28,
+        "accepted_incorrect": 2,
+        "correct_retention": 0.2616822429906542,
+        "incorrect_acceptance_rate": 0.05405405405405406
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.15,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 74,
+        "accepted_incorrect": 4,
+        "correct_retention": 0.6915887850467289,
+        "incorrect_acceptance_rate": 0.10810810810810811
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.3,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.1891891891891892
+      },
+      {
+        "policy": {
+          "min_coverage": 0.15,
+          "max_cycle_px": 8.0,
+          "max_translation_fraction": 0.6,
+          "min_scale": 0.75,
+          "max_scale": 1.25,
+          "max_rotation_deg": 20.0
+        },
+        "labelled": 144,
+        "unknown_labels": 0,
+        "correct": 107,
+        "incorrect": 37,
+        "accepted_correct": 100,
+        "accepted_incorrect": 7,
+        "correct_retention": 0.9345794392523364,
+        "incorrect_acceptance_rate": 0.1891891891891892
+      }
+    ],
+    "warning": "Development selection is not a guarantee of held-out performance. Report each reference/dataset type separately."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Prepared additional-data architectural control; not executed full training or model accuracy.",
+  "targeted_tests_passed": 8,
+  "targeted_tests_file": "test_north_control_v39.py",
+  "full_repository_suite_for_v39_executed": false,
+  "full_suite_and_smoke_required_before_fitting": true,
+  "source_sha256": {
+    "train_north_control_v39.py": "6693251fa658bc487090df606482962dd434d9be4f602104594870ce493eccde",
+    "verify_north_results_v39.py": "ce786704c6bddc708bb6d606f8942fc5bca7cc8050d9d9034c62a1c51996be9a",
+    "test_north_control_v39.py": "6d992a7c78058f7c1fc4e8ac4491ce8460908c3189d0318b074818bd0119d8eb"
+  },
+  "upstream_state": "v37 corrected renderer active; v38 pilot/replay/cost bank queued",
+  "full_cohort_executed": false,
+  "planned_seeds": [
+    20261101,
+    20261102,
+    20261103
+  ],
+  "planned_updates_per_seed": 2000,
+  "selection_positive_pairs": 96,
+  "selection_groups": 8,
+  "calibration_or_test_pixels_loaded": 0
+}

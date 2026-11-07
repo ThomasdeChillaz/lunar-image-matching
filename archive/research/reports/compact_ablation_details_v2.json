@@ -1,0 +1,89 @@
+{
+  "ablations": [
+    {
+      "variant": "expanded",
+      "model": "runs/compact-v2-expanded-20261030",
+      "selection": "runs/compact-v2-expanded-selection-canonical",
+      "calibration": "runs/compact-v2-expanded-20261030-calibration-canonical",
+      "policy": "reports/compact_policy_v2_20261030_canonical.json",
+      "raw_correct": 93,
+      "raw_negative_fits": 72,
+      "median_native_error_correct_only": 2.56536738058177,
+      "calibration_common": {
+        "positives": 12,
+        "negatives": 12,
+        "correct_accepted": 12,
+        "wrong_accepted": 0,
+        "negative_accepted": 0,
+        "correct_acceptance": 1.0,
+        "accepted_error": 0.0,
+        "negative_acceptance": 0.0
+      },
+      "selection_rule_unchanged": true
+    },
+    {
+      "variant": "reliability",
+      "model": "runs/compact-v2-reliability-20261030",
+      "selection": "runs/compact-v2-reliability-selection-canonical",
+      "calibration": "runs/compact-v2-reliability-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_reliability.json",
+      "raw_correct": 92,
+      "raw_negative_fits": 72,
+      "median_native_error_correct_only": 3.1178592468546045,
+      "calibration_common": {
+        "positives": 12,
+        "negatives": 12,
+        "correct_accepted": 12,
+        "wrong_accepted": 0,
+        "negative_accepted": 0,
+        "correct_acceptance": 1.0,
+        "accepted_error": 0.0,
+        "negative_acceptance": 0.0
+      },
+      "selection_rule_unchanged": true
+    },
+    {
+      "variant": "hard_negatives",
+      "model": "runs/compact-v2-hard_negatives-20261030",
+      "selection": "runs/compact-v2-hard_negatives-selection-canonical",
+      "calibration": "runs/compact-v2-hard_negatives-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_hard_negatives.json",
+      "raw_correct": 89,
+      "raw_negative_fits": 72,
+      "median_native_error_correct_only": 2.8315608663916096,
+      "calibration_common": {
+        "positives": 12,
+        "negatives": 12,
+        "correct_accepted": 12,
+        "wrong_accepted": 0,
+        "negative_accepted": 0,
+        "correct_acceptance": 1.0,
+        "accepted_error": 0.0,
+        "negative_acceptance": 0.0
+      },
+      "selection_rule_unchanged": true
+    },
+    {
+      "variant": "multiscale",
+      "model": "runs/compact-v2-multiscale-20261030",
+      "selection": "runs/compact-v2-multiscale-selection-canonical",
+      "calibration": "runs/compact-v2-multiscale-calibration-canonical",
+      "policy": "reports/compact_ablation_policy_v2_multiscale.json",
+      "raw_correct": 87,
+      "raw_negative_fits": 72,
+      "median_native_error_correct_only": 2.922905398133391,
+      "calibration_common": {
+        "positives": 12,
+        "negatives": 12,
+        "correct_accepted": 12,
+        "wrong_accepted": 0,
+        "negative_accepted": 0,
+        "correct_acceptance": 1.0,
+        "accepted_error": 0.0,
+        "negative_acceptance": 0.0
+      },
+      "selection_rule_unchanged": true
+    }
+  ],
+  "scope": "Development/calibration diagnostics only. Expanded was already selected by the predeclared raw-success rule; these additional diagnostics do not change selection or use final outcomes."
+}

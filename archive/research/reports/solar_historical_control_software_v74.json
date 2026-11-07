@@ -1,0 +1,32 @@
+{
+  "schema_version": 74,
+  "kind": "procedural_delivery_only",
+  "created_utc": "2026-11-04T01:37:28.489517+00:00",
+  "tests": {
+    "returncode": 0,
+    "summary": ".................                                                        [100%]\n17 passed in 1.46s"
+  },
+  "source_sha256": {
+    "control_historical_native_v74.py": "1de913d9d00b193a6b134f0c3d6e893bdfd8d05e54a2ac2c79245d03578fa3c9",
+    "test_control_historical_native_v74.py": "d1557344f11fa1b417a5ce31da6bb7654be05d37f95a9a1ec7ec8d9cbcfa424b",
+    "test_external_control_admission_v74.py": "fc5d2237737c312967f1e56af0f3576c213ff48cb2b7bb8a2aadf29384a79d62",
+    "historical_control_settings_prepared_v74.json": "932081f701cd24ed2a1cd5e60c34f2161ac3ecbd5cca203f611aba40abed7d0d",
+    "matchanything_two_thread_settings_prepared_v74.json": "9f07d7fb075aa0eb873ca51b272c827343ef5b1a122d39fb21a961d8c2d03c99",
+    "DELIVERY.txt": "644291311777fdd2055020191c2dbbc76b6bb9655d6ea3470dddc7f206696b6a",
+    "pytest.log": "32da8146bdd2dbbf882af718eb4802bec7cd7e58e9e4c320c7aa406c24ad0731",
+    "comparison_patch/external_control_comparison_v74.diff": "ae51b77e90651e03e55aac1ab976732812813b8278399ac2f47b2df4a3bb990d",
+    "comparison_patch/native_pretrained_adapters_v73.py": "8b4de69cf2159857d9cd2b9b06822ce25469268392f67e422e7643b91cbe6c5f",
+    "comparison_patch/run_solar_evaluation_v70.py": "26eda411d756b34958621e0436a6a72fa3c44f7e2aa42d03e3ec07fd6ae0754b"
+  },
+  "actual_neural_forwards": 0,
+  "actual_image_generations": 0,
+  "actual_scientific_jobs": 0,
+  "downloads": 0,
+  "root_repo_files_modified": 0,
+  "qualified_profiles_created": 0,
+  "limitations": [
+    "Prepared and procedurally tested only; no real scientific-control pass is claimed.",
+    "New MatchAnything profiles must include exact external_control pins; older profiles are not retroactively assigned an invented outer watchdog.",
+    "Minimal comparison diff must be reviewed against latest root and source pins refreshed before actual work."
+  ]
+}

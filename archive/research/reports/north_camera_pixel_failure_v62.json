@@ -1,0 +1,54 @@
+{
+  "scope": "Geometry-only forensic replay of four failed pixel-centre controls; no image matcher, threshold relaxation or data changes.",
+  "geometry_path": "np31-pilot-3/occlusion_stress-1/query/geometry.npz",
+  "pixels": [
+    {
+      "pixel": [
+        305,
+        69
+      ],
+      "rendered_pixel_error": 0.06333656523139901,
+      "exact_mesh_distance_m": 3272.181865475653,
+      "position_pass_to_exact_ray_mesh_m": 0.15570598980079436,
+      "position_pass_range_m": 3272.320661577816,
+      "raw_renderer_depth": 3265.23291015625,
+      "neighbour_world_span_m": 775.1029663085938
+    },
+    {
+      "pixel": [
+        304,
+        70
+      ],
+      "rendered_pixel_error": 0.023909201801900072,
+      "exact_mesh_distance_m": 3258.527269376537,
+      "position_pass_to_exact_ray_mesh_m": 0.03285573224403227,
+      "position_pass_range_m": 3258.507885958054,
+      "raw_renderer_depth": 3251.533447265625,
+      "neighbour_world_span_m": 772.5050659179688
+    },
+    {
+      "pixel": [
+        288,
+        84
+      ],
+      "rendered_pixel_error": 0.029451026510848282,
+      "exact_mesh_distance_m": 3321.9712996034623,
+      "position_pass_to_exact_ray_mesh_m": 0.04809646377070191,
+      "position_pass_range_m": 3322.005965768375,
+      "raw_renderer_depth": 3316.11279296875,
+      "neighbour_world_span_m": 456.6599426269531
+    },
+    {
+      "pixel": [
+        228,
+        134
+      ],
+      "rendered_pixel_error": 0.029074065286813264,
+      "exact_mesh_distance_m": 3500.4455672286795,
+      "position_pass_to_exact_ray_mesh_m": 0.061236074807009294,
+      "position_pass_range_m": 3500.495993129399,
+      "raw_renderer_depth": 3497.328857421875,
+      "neighbour_world_span_m": 204.5794219970703
+    }
+  ]
+}

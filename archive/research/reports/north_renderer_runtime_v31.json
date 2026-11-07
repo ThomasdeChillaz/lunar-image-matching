@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "official_runtime": {
+    "passed": true,
+    "pid": 53480,
+    "bytes": 335828094,
+    "sha256": "00c8a433504291374bfa045c0c2d708a779f8abc8400b4718fdd11c117486fa4",
+    "elapsed_seconds": 5.259621312,
+    "source": "https://download.blender.org/release/Blender4.5/blender-4.5.9-macos-x64.dmg",
+    "recorded_utc": "2026-11-01T20:02:12.925138+00:00",
+    "scientific_inference_started": false
+  },
+  "macos_deep_strict_signature_verified": true,
+  "version_lines": [
+    "Blender 4.5.9 LTS",
+    "\tbuild date: 2026-04-21",
+    "\tbuild time: 01:30:47",
+    "\tbuild commit date: 2026-04-20",
+    "\tbuild commit time: 14:24",
+    "\tbuild hash: 8bf95cbd38d1",
+    "\tbuild branch: blender-v4.5-release",
+    "\tbuild platform: Darwin",
+    "\tbuild type: Release"
+  ],
+  "api_metadata_probe": {
+    "filter_size": true,
+    "pixel_filter_type": true,
+    "filter_width": true,
+    "position_pass": true,
+    "outputs": [
+      "Image",
+      "Alpha",
+      "Depth",
+      "Position",
+      "Noisy Image",
+      "Normal",
+      "UV",
+      "Vector",
+      "Deprecated",
+      "Deprecated",
+      "Shadow",
+      "AO",
+      "Deprecated",
+      "Deprecated",
+      "Deprecated",
+      "IndexOB",
+      "IndexMA",
+      "Mist",
+      "Emit",
+      "Env",
+      "DiffDir",
+      "DiffInd",
+      "DiffCol",
+      "GlossDir",
+      "GlossInd",
+      "GlossCol",
+      "TransDir",
+      "TransInd",
+      "TransCol",
+      "SubsurfaceDir",
+      "SubsurfaceInd"
+    ],
+    "numpy_version": "1.26.4",
+    "render_started": false
+  },
+  "native_source_metadata": {
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp_NP/LDEM_83N_10MPP_ADJ.TIF",
+    "width": 43280,
+    "height": 43280,
+    "count": 1,
+    "dtype": [
+      "float32"
+    ],
+    "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / North Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0]],PRIMEM[\"Reference Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",SOUTH],AXIS[\"Northing\",SOUTH]]",
+    "transform": [
+      10.0,
+      0.0,
+      -216400.0,
+      0.0,
+      -10.0,
+      216400.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": "nan",
+    "block_shapes": [
+      [
+        512,
+        512
+      ]
+    ],
+    "tags": {
+      "NC_GLOBAL#Conventions": "CF-1.7",
+      "NC_GLOBAL#GMT_version": "6.5.0_2402709_2023.01.09 [64-bit]",
+      "NC_GLOBAL#history": "gmt grdmath ldem_83n_final_adj_10mpp_surf.grd 1000.0 MUL = test.grd",
+      "NC_GLOBAL#node_offset": "1",
+      "NC_GLOBAL#title": "Produced by grdmath",
+      "x#actual_range": "{-216.4,216.4}",
+      "x#axis": "X",
+      "x#long_name": "x",
+      "y#actual_range": "{-216.4,216.4}",
+      "y#axis": "Y",
+      "y#long_name": "y",
+      "z#actual_range": "{-5052.68212890625,1861.65869140625}",
+      "z#long_name": "z",
+      "z#_FillValue": "nan",
+      "AREA_OR_POINT": "Area"
+    },
+    "rasterio": "1.4.4",
+    "gdal": "3.10.3",
+    "elevation_pixels_decoded": 0
+  },
+  "source_height_pixels_decoded": 0,
+  "renderer_forward_passed": false,
+  "scope": "Official-runtime download/signature/version and no-render API/source-header checks only. Actual camera/depth/visibility rendering and independent common-pose oracle remain pending."
+}

@@ -1,0 +1,12 @@
+{
+  "method": "loftr_outdoor",
+  "pairs": 576,
+  "correct": 271,
+  "returned": 384,
+  "median_error_returned_px": 1.22340544783377,
+  "median_forward_inference_ms": 583.7219035020098,
+  "initialization_ms": 258.375174998946,
+  "rejection_policy": "Not calibrated; no test-selected policy",
+  "subset_limit": null,
+  "status": "Unmodified pretrained baseline; previously inspected terrain; no development or test tuning."
+}

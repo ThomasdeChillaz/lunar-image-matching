@@ -1,0 +1,363 @@
+{
+  "correction_audit_passed": true,
+  "original_lunar_metrics_verified": false,
+  "software_controls_replayed": true,
+  "raw_candidates_unchanged": true,
+  "observed_utc": "2026-11-04T10:11:52.872184+00:00",
+  "source_publication_commit": "4f0ed7bf6b1d47b30dd68e0389810359354da506",
+  "protocol_sha256": "0162a8922eda91d9de243305115a7a9d51ec65052f4951854eccef88c31d2b18",
+  "summary_sha256": "864b0f418c2b7c437fbb9d63282b31285d6d72950d4cdb4e00bbcc0fa27ddace",
+  "complete_sha256": "b755c195d8bbf88941def504c0b98447099ad52a7224577df549b8851196eb24",
+  "rows_replayed": 8,
+  "constant_head": {
+    "max_score_difference": 2.980232238769531e-07,
+    "near_top_ties_at_tolerance": 0,
+    "argmax_differences": 0
+  },
+  "generated": {
+    "counts": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 218,
+        "2": 218,
+        "4": 218,
+        "8": 218,
+        "12": 221,
+        "16": 223
+      },
+      "in_grid_recalled_at16": 223,
+      "in_grid_denominator": 256
+    },
+    "gate_passed": true,
+    "fraction": 0.87109375
+  },
+  "corrected_lunar": {
+    "u012-native": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 5,
+        "2": 13,
+        "4": 31,
+        "8": 37,
+        "12": 40,
+        "16": 43
+      },
+      "in_grid_recalled_at16": 43,
+      "in_grid_denominator": 256,
+      "recall_at16": 0.16796875,
+      "median_nearest_candidate_error_px": 43.2567817094624,
+      "global_score": {
+        "sun_index": 1519,
+        "score": 1.4651568190464155,
+        "appearance": 0.8298540448304266,
+        "physical": 0.6353027742159889,
+        "unique_anchors": 254,
+        "mutual_count": 232,
+        "mutual_cosine": 0.7624545218423009
+      },
+      "selected_sun_parameters": [
+        -43.75,
+        1.5
+      ],
+      "scored_suns": 233,
+      "response_decodes": 0,
+      "actual_forward_hooks": {
+        "coarse": 12,
+        "fine": 8
+      },
+      "calendar_seconds": 31.255174366000574
+    },
+    "u012-sh": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 0,
+        "2": 0,
+        "4": 1,
+        "8": 2,
+        "12": 5,
+        "16": 7
+      },
+      "in_grid_recalled_at16": 7,
+      "in_grid_denominator": 256,
+      "recall_at16": 0.02734375,
+      "median_nearest_candidate_error_px": 141.6455707110124,
+      "global_score": {
+        "sun_index": 1583,
+        "score": 0.5816537213620627,
+        "appearance": 0.3260016527492553,
+        "physical": 0.2556520686128074,
+        "unique_anchors": 102,
+        "mutual_count": 68,
+        "mutual_cosine": 0.21894329646602273
+      },
+      "selected_sun_parameters": [
+        36.25,
+        1.5
+      ],
+      "scored_suns": 230,
+      "response_decodes": 230,
+      "actual_forward_hooks": {
+        "coarse": 12,
+        "fine": 8
+      },
+      "calendar_seconds": 38.88137353002094
+    },
+    "u012-pooled": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 0,
+        "2": 0,
+        "4": 1,
+        "8": 2,
+        "12": 5,
+        "16": 8
+      },
+      "in_grid_recalled_at16": 8,
+      "in_grid_denominator": 256,
+      "recall_at16": 0.03125,
+      "median_nearest_candidate_error_px": 167.36508930762005,
+      "global_score": {
+        "sun_index": 1576,
+        "score": 0.433656737625195,
+        "appearance": 0.2531353321392089,
+        "physical": 0.1805214054859861,
+        "unique_anchors": 72,
+        "mutual_count": 48,
+        "mutual_cosine": 0.16875534714199603
+      },
+      "selected_sun_parameters": [
+        27.5,
+        1.5
+      ],
+      "scored_suns": 232,
+      "response_decodes": 1,
+      "actual_forward_hooks": {
+        "coarse": 12,
+        "fine": 8
+      },
+      "calendar_seconds": 32.11275693803327
+    }
+  },
+  "original_lunar": {
+    "u012-native": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0,
+        "12": 3,
+        "16": 5
+      },
+      "in_grid_recalled_at16": 5,
+      "in_grid_denominator": 256,
+      "scope": "Candidate-window recall only. All retained anchors remain in the denominator; FOV/coverage reported separately. No camera pose or acceptance."
+    },
+    "u012-sh": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0,
+        "12": 0,
+        "16": 1
+      },
+      "in_grid_recalled_at16": 1,
+      "in_grid_denominator": 256,
+      "scope": "Candidate-window recall only. All retained anchors remain in the denominator; FOV/coverage reported separately. No camera pose or acceptance."
+    },
+    "u012-pooled": {
+      "all_retained_reference_anchors": 256,
+      "co_visible": 256,
+      "targets_inside_query_image": 256,
+      "geometric_bank_coverage_at16": 256,
+      "recalled": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0,
+        "12": 0,
+        "16": 0
+      },
+      "in_grid_recalled_at16": 0,
+      "in_grid_denominator": 256,
+      "scope": "Candidate-window recall only. All retained anchors remain in the denominator; FOV/coverage reported separately. No camera pose or acceptance."
+    }
+  },
+  "mismatched_metric_fields": {
+    "u012-native": [
+      "recalled",
+      "in_grid_recalled_at16"
+    ],
+    "u012-sh": [
+      "recalled",
+      "in_grid_recalled_at16"
+    ],
+    "u012-pooled": [
+      "recalled",
+      "in_grid_recalled_at16"
+    ]
+  },
+  "label_association": {
+    "u012-native": {
+      "reference_inventory_count": 676,
+      "prediction_anchor_count": 256,
+      "nonidentity_label_rows": 255,
+      "first20_correct_label_indices": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15,
+        17,
+        18,
+        20,
+        22,
+        23,
+        25,
+        52,
+        54,
+        55,
+        57
+      ],
+      "original_scoring_reproduced_by_wrong_first256_label_rows": true
+    },
+    "u012-sh": {
+      "reference_inventory_count": 676,
+      "prediction_anchor_count": 256,
+      "nonidentity_label_rows": 255,
+      "first20_correct_label_indices": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15,
+        17,
+        18,
+        20,
+        22,
+        23,
+        25,
+        52,
+        54,
+        55,
+        57
+      ],
+      "original_scoring_reproduced_by_wrong_first256_label_rows": true
+    },
+    "u012-pooled": {
+      "reference_inventory_count": 676,
+      "prediction_anchor_count": 256,
+      "nonidentity_label_rows": 255,
+      "first20_correct_label_indices": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15,
+        17,
+        18,
+        20,
+        22,
+        23,
+        25,
+        52,
+        54,
+        55,
+        57
+      ],
+      "original_scoring_reproduced_by_wrong_first256_label_rows": true
+    }
+  },
+  "physical_input_association": {
+    "affected_by_scoring_bug": false,
+    "reference_anchor_grid_count": 256,
+    "source_label_grid_count": 676,
+    "archive_shapes": {
+      "world_variants": [
+        256,
+        7,
+        3
+      ],
+      "normals": [
+        256,
+        3
+      ],
+      "solar_states": [
+        256,
+        1627
+      ]
+    },
+    "max_reference_reprojection_error_px": 4.377821969289035e-05,
+    "evidence": "Reference archive uses the SAME16x16 subsampled grid as feature adapter; independently projected existing world anchors agree.676-row scoring label inventory is separate and was only accessed after prediction."
+  },
+  "false_control": {
+    "proposals_retained": true,
+    "accepted": false,
+    "pose": null,
+    "global_score": {
+      "sun_index": 1519,
+      "score": 1.434396414688996,
+      "appearance": 0.808161832857877,
+      "physical": 0.626234581831119,
+      "unique_anchors": 250,
+      "mutual_count": 229,
+      "mutual_cosine": 0.7465944716241211
+    },
+    "case_binding": {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "component": "np31-r0-c4",
+      "query_component": "np31-r0-c7",
+      "unit_index": 12,
+      "query_unit_index": 20,
+      "light_a": 0,
+      "light_b": 0
+    }
+  },
+  "source_audit": {
+    "no_query_truth_API": true,
+    "query_labels_open_after_prediction": true,
+    "global_Sun_before_NMS": true,
+    "native_dense_vs_canonical_domain_mismatch_explicit": true,
+    "reference_view_response_is_not_target_view_synthesis": true
+  },
+  "interpretation": "Software controls passed; real single-case retrieval is poor and learned SH/pooled do not improve native recall here. No camera pose, rejection or lunar accuracy superiority established.",
+  "audit_scope": "Independent saved-array/source-label arithmetic only. No model imports/forwards, matching, fresh images, new rays, fitting, new eligibility or scientific job.",
+  "audit_calendar_seconds": 1.1318917270400561,
+  "correction_source_sha256": "bf9b01dc9a887aa550264d7797b3c57b3c82cde9c1466e59a1a2b2a79a6d5600",
+  "error_archive_sha256": "a7a9dabce6d3fd6d9c451a79401c4b0c9647d7694bcaee0d9a88c81191af60d7"
+}

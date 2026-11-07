@@ -1,0 +1,108 @@
+{
+  "passed": false,
+  "rows": [
+    {
+      "solar": false,
+      "response": false,
+      "active": false,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.5496707989950664
+    },
+    {
+      "solar": false,
+      "response": false,
+      "active": true,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.4897182040149346
+    },
+    {
+      "solar": false,
+      "response": true,
+      "active": false,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.48944409799878486
+    },
+    {
+      "solar": false,
+      "response": true,
+      "active": true,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.4823664839786943
+    },
+    {
+      "solar": true,
+      "response": false,
+      "active": false,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.42872091400204226
+    },
+    {
+      "solar": true,
+      "response": false,
+      "active": true,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.4389555800007656
+    },
+    {
+      "solar": true,
+      "response": true,
+      "active": false,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.4226559500093572
+    },
+    {
+      "solar": true,
+      "response": true,
+      "active": true,
+      "passed": false,
+      "translation_error_m": null,
+      "median_native_correspondence_error_px": null,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 0.4614095900033135
+    }
+  ],
+  "blank_rejected": true,
+  "total_parameters": 95808,
+  "scope": "Untrained random-encoder procedural translation with planar map; checks wiring for all eight toggles at32searches. Not actual lunar performance or learning improvement.",
+  "source_sha256": {
+    "solar_response_v63.py": "48579696b2af540b4380e74b6df80d85fb364a9a0d35d138f48c3810bd9d3c0a",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_map_v63.py": "4841cc91abed2751fb9fb32392e109a98499ab5bb767b862137831235bf121d7",
+    "solar_active_v63.py": "a6b9aa04807ded5875baaf004e0fde52d0172221b0d8ebb216af8c4028dab1ad",
+    "solar_frontend_v63.py": "3e91d4d26c48bbaf30fdd585e37844d0e89180adba792f9b3c3259fc3a075f9a",
+    "solar_procedural_smoke_v63.py": "b536768e43c2a5feb4547e206421d319ff0903621fda4cca46dd9c340637acfe",
+    "solar_training_v63.py": "d9fb0d6e1ce70a46167c13d3e6303473b72c518530bf0dc3dc7cc4770103bd39",
+    "solar_assignment_v63.py": "60dfbae86466b0320c2c4ef7d25e976ed0fed10a3e5459a071b12e168a11d2ae",
+    "solar_metadata.py": "706e6f20ad321f44497dfc388be014384347c6693e4ff2f79fb1a971b3876538",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71"
+  }
+}

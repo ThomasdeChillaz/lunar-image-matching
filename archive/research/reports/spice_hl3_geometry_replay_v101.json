@@ -1,0 +1,969 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case_id": "C-fast-b1-01",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 188,
+      "independently_scored": {
+        "baseline_m": 0.16862139172747564,
+        "known_essential": [
+          [
+            0.0158618679947728,
+            0.8195358472824829,
+            0.06127610264556897
+          ],
+          [
+            -0.80747608849051,
+            0.016914283547026537,
+            -0.5864680864880221
+          ],
+          [
+            -0.049315564972583284,
+            0.5706772390019772,
+            -0.0012475588232871274
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 188,
+          "finite": 188,
+          "within_pixels": {
+            "1": 1,
+            "2": 2,
+            "4": 3
+          },
+          "median_px": 18.862939530832875
+        },
+        "rotation_error_deg": 1.6110548908600477,
+        "signed_translation_direction_error_deg": 40.58639180465955,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b1-02",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 227,
+      "independently_scored": {
+        "baseline_m": 0.1786084762371955,
+        "known_essential": [
+          [
+            -0.0016316260586720216,
+            0.8237870784387696,
+            0.12351206976814097
+          ],
+          [
+            -0.8402265453819393,
+            -0.02021972578479313,
+            -0.5223113489345402
+          ],
+          [
+            -0.1488098677992175,
+            0.5519975171006748,
+            -0.008525847434724971
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 227,
+          "finite": 227,
+          "within_pixels": {
+            "1": 8,
+            "2": 15,
+            "4": 27
+          },
+          "median_px": 11.954011805737837
+        },
+        "rotation_error_deg": 3.0561231387209777,
+        "signed_translation_direction_error_deg": 40.40810237724945,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b1-03",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 219,
+      "independently_scored": {
+        "baseline_m": 0.191926782936571,
+        "known_essential": [
+          [
+            0.01685817477732966,
+            0.8202420459671865,
+            0.06689521883480938
+          ],
+          [
+            -0.8309827148552764,
+            0.018297906597840034,
+            -0.5523806415321475
+          ],
+          [
+            -0.05244218389363235,
+            0.5689364623492567,
+            0.0036712276132035136
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 219,
+          "finite": 219,
+          "within_pixels": {
+            "1": 8,
+            "2": 22,
+            "4": 35
+          },
+          "median_px": 10.143596574954438
+        },
+        "rotation_error_deg": 1.883427484572912,
+        "signed_translation_direction_error_deg": 42.83893715349615,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b1-04",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 329,
+      "independently_scored": {
+        "baseline_m": 0.1129953415593154,
+        "known_essential": [
+          [
+            0.00784389029198434,
+            0.8155939149862245,
+            0.06777128891701652
+          ],
+          [
+            -0.805998666711741,
+            -0.005652942800113632,
+            -0.5853027315658581
+          ],
+          [
+            -0.0816904710274966,
+            0.575320599743957,
+            -0.015487801417764548
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 329,
+          "finite": 329,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 1
+          },
+          "median_px": 28.06096302870566
+        },
+        "rotation_error_deg": 2.2768456894229487,
+        "signed_translation_direction_error_deg": 41.518769754954356,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b1-05",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 472,
+      "independently_scored": {
+        "baseline_m": 0.11245445568665659,
+        "known_essential": [
+          [
+            -0.0026040056537744525,
+            0.8193327080267574,
+            0.12575216524000601
+          ],
+          [
+            -0.8171802798767924,
+            -0.008683072212172429,
+            -0.5603103796257262
+          ],
+          [
+            -0.1365473717475773,
+            0.5589102099951341,
+            -0.006402421626943672
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 472,
+          "finite": 472,
+          "within_pixels": {
+            "1": 1,
+            "2": 4,
+            "4": 8
+          },
+          "median_px": 21.750547116284004
+        },
+        "rotation_error_deg": 1.0510690114560106,
+        "signed_translation_direction_error_deg": 40.971437576483076,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b1-06",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 355,
+      "independently_scored": {
+        "baseline_m": 0.14043075996520057,
+        "known_essential": [
+          [
+            0.001043025982133256,
+            0.8365882403583382,
+            0.11569486925941959
+          ],
+          [
+            -0.8319528943486905,
+            0.001908728599004427,
+            -0.5426083628578586
+          ],
+          [
+            -0.1145681851582751,
+            0.5357551144144433,
+            -0.0011030154023047253
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 355,
+          "finite": 355,
+          "within_pixels": {
+            "1": 3,
+            "2": 6,
+            "4": 18
+          },
+          "median_px": 24.04430909159012
+        },
+        "rotation_error_deg": 0.6676006740831262,
+        "signed_translation_direction_error_deg": 38.18056803781981,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-01",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 176,
+      "independently_scored": {
+        "baseline_m": 0.2768694086391986,
+        "known_essential": [
+          [
+            0.029426737042891796,
+            0.8315052676217944,
+            0.08057880141068997
+          ],
+          [
+            -0.8164584857268773,
+            0.03887967852505374,
+            -0.5719653817635906
+          ],
+          [
+            -0.04808356964999273,
+            0.5510296832698888,
+            0.005821173337603169
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 176,
+          "finite": 176,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 2
+          },
+          "median_px": 19.338613042581596
+        },
+        "rotation_error_deg": 1.7831595197792034,
+        "signed_translation_direction_error_deg": 38.430646886446674,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-02",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 123,
+      "independently_scored": {
+        "baseline_m": 0.302198555000604,
+        "known_essential": [
+          [
+            -0.0018282446744486796,
+            0.8190744405475173,
+            0.11955267173623499
+          ],
+          [
+            -0.835567307068676,
+            -0.014429399011690769,
+            -0.5331158985326053
+          ],
+          [
+            -0.13615872766843334,
+            0.5600645550492093,
+            -0.003984800507942567
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 123,
+          "finite": 123,
+          "within_pixels": {
+            "1": 0,
+            "2": 3,
+            "4": 16
+          },
+          "median_px": 12.288581679081666
+        },
+        "rotation_error_deg": 2.9315563047546913,
+        "signed_translation_direction_error_deg": 41.84211694894982,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-03",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 105,
+      "independently_scored": {
+        "baseline_m": 0.3278482680232718,
+        "known_essential": [
+          [
+            -0.0013062481861125447,
+            0.8189937005691319,
+            0.13045275244142968
+          ],
+          [
+            -0.8135679273049812,
+            -0.003855750075336735,
+            -0.5653894859213564
+          ],
+          [
+            -0.13588095975085485,
+            0.5587225915459108,
+            -0.004712967137229098
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 105,
+          "finite": 105,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 1
+          },
+          "median_px": 25.796636036149327
+        },
+        "rotation_error_deg": 0.7177928843902106,
+        "signed_translation_direction_error_deg": 42.956149148735655,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-04",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 157,
+      "independently_scored": {
+        "baseline_m": 0.241204083338737,
+        "known_essential": [
+          [
+            -0.006546449281521552,
+            0.8172090763080377,
+            0.12624935718076025
+          ],
+          [
+            -0.8067035173874115,
+            -0.011340133930751246,
+            -0.5749409689792015
+          ],
+          [
+            -0.13919646936029856,
+            0.5614939740286838,
+            -0.008952544140168696
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 157,
+          "finite": 157,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 0
+          },
+          "median_px": 35.831089839235034
+        },
+        "rotation_error_deg": 2.448302555640528,
+        "signed_translation_direction_error_deg": 38.69391023805271,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-05",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 236,
+      "independently_scored": {
+        "baseline_m": 0.2339518353963365,
+        "known_essential": [
+          [
+            0.00753625125425237,
+            0.8225821329188872,
+            0.09831060905975965
+          ],
+          [
+            -0.8287411566865654,
+            -0.007165578501839845,
+            -0.5470656148449007
+          ],
+          [
+            -0.11381006998110213,
+            0.5607231176830382,
+            -0.011387698870873406
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 236,
+          "finite": 236,
+          "within_pixels": {
+            "1": 2,
+            "2": 5,
+            "4": 7
+          },
+          "median_px": 27.0221219363545
+        },
+        "rotation_error_deg": 1.7600200061263167,
+        "signed_translation_direction_error_deg": 40.25582686729581,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-fast-b2-06",
+      "arm": "reference",
+      "stream_id": "fast",
+      "matched": 144,
+      "independently_scored": {
+        "baseline_m": 0.3153298692537417,
+        "known_essential": [
+          [
+            0.00335907034738355,
+            0.8221401861506713,
+            0.11819190155109094
+          ],
+          [
+            -0.8091406320517577,
+            0.0005755168005565293,
+            -0.5739789581106085
+          ],
+          [
+            -0.12175642222181532,
+            0.5577260920091891,
+            -0.007819673889276903
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 144,
+          "finite": 144,
+          "within_pixels": {
+            "1": 0,
+            "2": 1,
+            "4": 1
+          },
+          "median_px": 34.844371277732265
+        },
+        "rotation_error_deg": 31.79343025209626,
+        "signed_translation_direction_error_deg": 86.42039647597925,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-01",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 137,
+      "independently_scored": {
+        "baseline_m": 0.1974730439266375,
+        "known_essential": [
+          [
+            0.005295991142445804,
+            0.8117876513597,
+            0.1223410799738805
+          ],
+          [
+            -0.80268830290473,
+            0.00645036504858017,
+            -0.5834791990937557
+          ],
+          [
+            -0.11820758028256408,
+            0.5720381797963352,
+            -0.0025721475763780107
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 137,
+          "finite": 137,
+          "within_pixels": {
+            "1": 2,
+            "2": 3,
+            "4": 5
+          },
+          "median_px": 16.16958828357988
+        },
+        "rotation_error_deg": 0.9356203434100364,
+        "signed_translation_direction_error_deg": 44.47838191638208,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-02",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 280,
+      "independently_scored": {
+        "baseline_m": 0.10521176583371891,
+        "known_essential": [
+          [
+            -0.012180921235166276,
+            0.8051513383952543,
+            0.1995778836596636
+          ],
+          [
+            -0.8071972847663207,
+            -0.028481222247953783,
+            -0.5473668646747868
+          ],
+          [
+            -0.22954402131608068,
+            0.5540389315282368,
+            -0.010625409283935995
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 280,
+          "finite": 280,
+          "within_pixels": {
+            "1": 1,
+            "2": 2,
+            "4": 8
+          },
+          "median_px": 10.70206101041856
+        },
+        "rotation_error_deg": 1.9075812853329608,
+        "signed_translation_direction_error_deg": 42.24678763074616,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-03",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 182,
+      "independently_scored": {
+        "baseline_m": 0.21452578413637405,
+        "known_essential": [
+          [
+            0.013479153034512905,
+            0.8247283088979045,
+            0.10647833058184963
+          ],
+          [
+            -0.8261840272888401,
+            0.01485546613689463,
+            -0.553494085384006
+          ],
+          [
+            -0.095194083061819,
+            0.5568503434480145,
+            0.0018003410223679244
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 182,
+          "finite": 182,
+          "within_pixels": {
+            "1": 1,
+            "2": 3,
+            "4": 10
+          },
+          "median_px": 14.691774608544208
+        },
+        "rotation_error_deg": 0.6248868884771834,
+        "signed_translation_direction_error_deg": 40.6924544873633,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-04",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 191,
+      "independently_scored": {
+        "baseline_m": 0.19386680313784557,
+        "known_essential": [
+          [
+            -0.001804089390529064,
+            0.8114221948402561,
+            0.12138270150477977
+          ],
+          [
+            -0.8096193276469352,
+            -0.0075757943629640315,
+            -0.5723905317735271
+          ],
+          [
+            -0.1309146427663214,
+            0.5714111120077208,
+            -0.005994573985993796
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 191,
+          "finite": 191,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 0
+          },
+          "median_px": 21.91108346322457
+        },
+        "rotation_error_deg": 0.29013894173688737,
+        "signed_translation_direction_error_deg": 39.4206484574979,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-05",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 171,
+      "independently_scored": {
+        "baseline_m": 0.2171467671196981,
+        "known_essential": [
+          [
+            0.004429844006184395,
+            0.8242113191858313,
+            0.10537421678961131
+          ],
+          [
+            -0.8119253996674922,
+            0.005365763770463043,
+            -0.5738102355503482
+          ],
+          [
+            -0.10263176100612445,
+            0.5572225955537716,
+            -0.0034957706881434984
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 171,
+          "finite": 171,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 0
+          },
+          "median_px": 24.072782429637982
+        },
+        "rotation_error_deg": 1.4687212446279116,
+        "signed_translation_direction_error_deg": 40.67010095416311,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b1-06",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 240,
+      "independently_scored": {
+        "baseline_m": 0.1897939175316682,
+        "known_essential": [
+          [
+            -0.0011481467382604162,
+            0.8320059858448912,
+            0.1195181162442633
+          ],
+          [
+            -0.8269051336829212,
+            -0.0031948121313073127,
+            -0.5484554910989111
+          ],
+          [
+            -0.124241930309175,
+            0.5417030145517717,
+            -0.0040243375928914
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 240,
+          "finite": 240,
+          "within_pixels": {
+            "1": 1,
+            "2": 2,
+            "4": 4
+          },
+          "median_px": 24.163633850153786
+        },
+        "rotation_error_deg": 0.6821324797653222,
+        "signed_translation_direction_error_deg": 38.814646399550774,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-01",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 111,
+      "independently_scored": {
+        "baseline_m": 0.23094720921044076,
+        "known_essential": [
+          [
+            0.01078891816759246,
+            0.8152883925567789,
+            0.1075431876902633
+          ],
+          [
+            -0.8023175243330436,
+            0.007891137996257314,
+            -0.5857327337172936
+          ],
+          [
+            -0.1054001712442034,
+            0.5706150188518867,
+            -0.007327202195354515
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 111,
+          "finite": 111,
+          "within_pixels": {
+            "1": 0,
+            "2": 1,
+            "4": 2
+          },
+          "median_px": 23.87533791413865
+        },
+        "rotation_error_deg": 1.6873608376588338,
+        "signed_translation_direction_error_deg": 42.02827875610075,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-02",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 111,
+      "independently_scored": {
+        "baseline_m": 0.30171755896162056,
+        "known_essential": [
+          [
+            -0.007752805105971879,
+            0.8140880702808814,
+            0.12387285982631453
+          ],
+          [
+            -0.8399697460059912,
+            -0.026297044473027137,
+            -0.5234546293281374
+          ],
+          [
+            -0.15091816876940248,
+            0.5646395051162386,
+            -0.004062058188107733
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 111,
+          "finite": 111,
+          "within_pixels": {
+            "1": 8,
+            "2": 12,
+            "4": 22
+          },
+          "median_px": 8.374842814978464
+        },
+        "rotation_error_deg": 4.056292428286778,
+        "signed_translation_direction_error_deg": 41.725830108854794,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-03",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 147,
+      "independently_scored": {
+        "baseline_m": 0.2584324030086758,
+        "known_essential": [
+          [
+            0.002797745241007762,
+            0.8210231326508499,
+            0.11956461600836402
+          ],
+          [
+            -0.8227174505651786,
+            -0.0009146537118440483,
+            -0.5546983786359785
+          ],
+          [
+            -0.1227355715902592,
+            0.5585617219432759,
+            -0.0026724149070449224
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 147,
+          "finite": 147,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 0
+          },
+          "median_px": 17.025388857299696
+        },
+        "rotation_error_deg": 0.8133462246254156,
+        "signed_translation_direction_error_deg": 40.415117615581764,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-04",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 127,
+      "independently_scored": {
+        "baseline_m": 0.2857835569414633,
+        "known_essential": [
+          [
+            0.007653427698423776,
+            0.8170233577908269,
+            0.10664599914514349
+          ],
+          [
+            -0.8211618885433261,
+            0.006803710125718693,
+            -0.5605732312965821
+          ],
+          [
+            -0.10202312478098235,
+            0.5674823462028176,
+            0.0006871530134712558
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 127,
+          "finite": 127,
+          "within_pixels": {
+            "1": 0,
+            "2": 1,
+            "4": 6
+          },
+          "median_px": 18.950031066944106
+        },
+        "rotation_error_deg": 0.6036222488009645,
+        "signed_translation_direction_error_deg": 40.88493883560386,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-05",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 83,
+      "independently_scored": {
+        "baseline_m": 0.3464412522806782,
+        "known_essential": [
+          [
+            -0.0011481038206700195,
+            0.8218375506461082,
+            0.10714525057720717
+          ],
+          [
+            -0.8122023111040813,
+            -0.0008932712085431821,
+            -0.5730310190787332
+          ],
+          [
+            -0.10890938202479691,
+            0.5596351185433293,
+            -0.003310160368464542
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 83,
+          "finite": 83,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 2
+          },
+          "median_px": 30.261925183760567
+        },
+        "rotation_error_deg": 1.267345616658646,
+        "signed_translation_direction_error_deg": 41.24069819042991,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    },
+    {
+      "case_id": "C-slow-b2-06",
+      "arm": "reference",
+      "stream_id": "slow",
+      "matched": 162,
+      "independently_scored": {
+        "baseline_m": 0.2570298477026719,
+        "known_essential": [
+          [
+            0.004592145914397521,
+            0.8265927106762361,
+            0.11561816996493188
+          ],
+          [
+            -0.8300119747896342,
+            -0.000838691707732951,
+            -0.5441473580186191
+          ],
+          [
+            -0.11999192993268805,
+            0.5512969109304247,
+            -0.003544776404891253
+          ]
+        ],
+        "independent_epipolar": {
+          "returned": 162,
+          "finite": 162,
+          "within_pixels": {
+            "1": 0,
+            "2": 0,
+            "4": 2
+          },
+          "median_px": 29.92168154308807
+        },
+        "rotation_error_deg": 1.2552922612642605,
+        "signed_translation_direction_error_deg": 41.79392099683467,
+        "recovered": false,
+        "strict_recovered": false
+      }
+    }
+  ],
+  "source_summary_sha256": "071fc725649220650114f5d1b94d8fbb9db497efe1d001a106b186a07b841fe9",
+  "manifest_sha256": "6fb7185f3e4c43249b2817e8b1b7975adf45a33211a3cfd66187303166cb9421",
+  "track": "qualified_mocap",
+  "calibration_or_final_access": false
+}

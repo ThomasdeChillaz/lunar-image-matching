@@ -1,0 +1,48 @@
+{
+  "scope": "Required lunar-pretrained baseline acquisition and static metadata only; no model forward pass, lunar inference or training-overlap clearance.",
+  "repository": "cgrethen/MOONSt3R",
+  "weight_revision": "f339a2c46f4e37ba7ed0ad3b7df51a1cb6aa8664",
+  "full_weight_bytes": 5821036807,
+  "full_weight_sha256": "4ecc74a6f8190d2cdc3837c2cc1b101a0feffa84b114a5a27c1aaa9ee91d1725",
+  "published_lfs_sha256": "4ecc74a6f8190d2cdc3837c2cc1b101a0feffa84b114a5a27c1aaa9ee91d1725",
+  "extracted_tensors": 1017,
+  "tensor_bytes": 2781097504,
+  "safe_weight_sha256": "f1f356da8f400d503f2c675623775e08f736bb24066e75f48301a1aff8cb3d5f",
+  "metadata_sha256": "03a8f794e3820a10780fb0ece605de8dddc9db15285804112dac15f154d41c58",
+  "conversion_source_sha256": "45a0d2ca6ba7266197ccaa4070f95e474b08b771a8de0739b35d8b009e4bcd00",
+  "model_configuration": "AsymmetricMASt3R(pos_embed='RoPE100', patch_embed_cls='ManyAR_PatchEmbed', img_size=(512, 512), head_type='catmlp+dpt', output_mode='pts3d+desc24', depth_mode=('exp', -inf, inf), conf_mode=('exp', 1, inf), enc_embed_dim=1024, enc_depth=24, enc_num_heads=16, dec_embed_dim=768, dec_depth=12, dec_num_heads=12, two_confs=True, desc_conf_mode=('exp', 0, inf),freeze='encoder')",
+  "epoch": 21,
+  "source_repository": "https://github.com/clementinegrethen/StereoLunar",
+  "source_revision": "ed6ea257475abb8a5235dff3a4d6167214b6f697",
+  "code_licenses": {
+    "top_level": "Apache-2.0",
+    "nested_mast3r_dust3r": "CC BY-NC-SA4.0"
+  },
+  "license_sha256": {
+    "data/models/moonst3r-upstream/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "data/models/moonst3r-upstream/mast3r/LICENSE": "f06b394a6b4804e68c4f8ff4298aec5cc981fba8934fc56525c91cc64a7d1d58",
+    "data/models/moonst3r-upstream/mast3r/dust3r/LICENSE": "f06b394a6b4804e68c4f8ff4298aec5cc981fba8934fc56525c91cc64a7d1d58"
+  },
+  "model_card_weight_license": null,
+  "third_party_weights_redistributed": false,
+  "declared_training_roots": [
+    "../../Datas/MoonFineTune/landingimages",
+    "../../Datas/MoonFineTune/nadir_clean_0_90",
+    "../../Datas/MoonFineTune/nadir_clean_180_270",
+    "../../Datas/MoonFineTune/nadir_clean_90_180",
+    "../../Datas/MoonFineTune/pitch_clean_0_90",
+    "../../Datas/MoonFineTune/pitch_clean_180_270",
+    "../../Datas/MoonFineTune/pitch_clean_90_180",
+    "../../Datas/MoonFineTune/pitch_clean_ajout"
+  ],
+  "declared_split_filenames": [
+    "split_moon_clean_oblique_test.npz",
+    "split_moon_clean_oblique_train.npz"
+  ],
+  "split_files_found_in_published_source": false,
+  "exact_train_test_pair_overlap": "Unknown. Checkpoint names a training/test split, but the split arrays were not found in the pinned public source. Archive identity with our source corpus is verified separately; do not claim disjoint pretrained data.",
+  "source_overlap_report_sha256": "fc47968cd59d900342b5b670a55f8bfe3bee26b36a3e77ca4c45928fed7c7887",
+  "lunar_images_loaded_for_this_baseline": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "preserved_conversion_failure": "runs/localization-v17-moonst3r-extraction-failed-01; zero inference/output tensors saved. Corrected converter handles bounded positive strides and passes a transposed-storage regression test."
+}

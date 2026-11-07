@@ -1,0 +1,99 @@
+{
+  "scope": "Execution checkpoint only; incomplete cohorts and incomplete native comparisons. No fresh-test, calibrated acceptance or SOTA claim.",
+  "recorded_utc": "2026-11-01T01:04:38.894910+00:00",
+  "v7_completed_runs": [
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 0,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 10320,
+        "returned": 23240,
+        "scorable": 21339,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "encoder_3d",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 44,
+        "strict_poses": 15,
+        "estimated_poses": 53,
+        "correct_at_two_px": 10344,
+        "returned": 23246,
+        "scorable": 21377,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 18,
+        "estimated_poses": 55,
+        "correct_at_two_px": 10385,
+        "returned": 23212,
+        "scorable": 21341,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261102,
+      "selected_step": 1000,
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 42,
+        "strict_poses": 14,
+        "estimated_poses": 55,
+        "correct_at_two_px": 10401,
+        "returned": 23224,
+        "scorable": 21336,
+        "bank_only": false
+      }
+    }
+  ],
+  "v7_remaining": "pair_refinement seed20261103 running",
+  "v8_run": "runs/localization-v8-uniform-native-development",
+  "v8_steps_per_run": 2000,
+  "v8_variants": [
+    "encoder_3d",
+    "pair_refinement",
+    "dustbin"
+  ],
+  "v8_seeds": [
+    20261101,
+    20261102,
+    20261103
+  ],
+  "v8_selection": "All3 primary ablations; repeat selection-bank winner twice. 10000 total optimizer steps.",
+  "v8_sources_published_before_launch": "e408c3ffa12b7328b2949523d714c1a778d3840f",
+  "remote_runs": {
+    "loma_r_original": 41255920157,
+    "romav2_original": 41256049036,
+    "loma_r_tail": 41259046837,
+    "romav2_tail": 41259085058
+  },
+  "remote_assignment_plan": "reports/native_case_range_plan_v8.json",
+  "remote_combiner": "combine_native_baselines_v8.py",
+  "no_match_diagnostic": "reports/native_no_match_generalization_v9.json",
+  "verification": {
+    "repository_tests_passed": 183,
+    "optional_skipped": 4,
+    "note": "Complete repository suite includes fixed case-assignment and reliability-ranking controls. Actual native pretrained result replay remains pending.",
+    "fresh_controlled_smoke": "reports/native_progress_smoke_v9.json"
+  },
+  "cpu": "Two threads per job; two concurrent local cohorts. Do not compare their training elapsed times as isolated latency.",
+  "calibration_or_test_pixels_loaded": 0,
+  "full_targets_met": false
+}

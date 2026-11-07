@@ -1,0 +1,16 @@
+{
+  "root_files_not_modified": true,
+  "base_sha256": {
+    "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977",
+    "run_solar_evaluation_v70.py": "b15ca7da1b6bf624338aff604fdf4e0db253e9fec08c66f5d694bdebbcde9664"
+  },
+  "candidate_sha256": {
+    "solar_evaluation_v70.py": "0aff0818448c68a7818b6ef53c65f48329d56e78526093e51863468f27ad5a55",
+    "run_solar_evaluation_v70.py": "a60cc035e6ebb7af2cf95d1c6051bf5945fc8249a7178d3d617dbbd1d83a8292"
+  },
+  "preserved_native_pretrained": true,
+  "preserved_quantization_sources": true,
+  "ast_parse_passed": true,
+  "patch_sha256": "b5b27e1e135e72d196c2320e75febbeb6c32ddf854fd5a6560fee156e5437569",
+  "notes": "Review only; no central file was written. Native-pretrained source/gates and initialization diagnostics remain in context."
+}

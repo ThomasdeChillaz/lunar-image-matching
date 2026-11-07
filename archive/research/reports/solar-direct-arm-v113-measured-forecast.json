@@ -1,0 +1,70 @@
+{
+  "canonical_remaining_seconds": 24695.0,
+  "unreserved_v112_protected_seconds": 0,
+  "unreserved_direct_qualification_seconds": 0,
+  "cumulative_headroom_after_unreserved_commitments_seconds": 24695.0,
+  "original_run_cap_seconds": 18000,
+  "effective_larger_run_cap_seconds": 18000,
+  "v110_case_peak_sum_seconds": 114.04123958100007,
+  "v110_fresh_controls_and_model_load_seconds": 237.67164405100004,
+  "v110_watchdog_unattributed_seconds": 84.98322472600012,
+  "v110_pre_watchdog_setup_seconds": 42.391409,
+  "direct_fixed_seconds": 131.38610414800002,
+  "direct_peak_seconds": 1.0768361499999912,
+  "largest_measured_budget_fit": 96,
+  "cohorts": {
+    "96": {
+      "cases_per_method": 96,
+      "five_arm_cells": 480,
+      "four_arm_parent_seconds": 16905.92080282951,
+      "four_arm_including_pre_watchdog_seconds": 16969.507916329512,
+      "raw_headroom_for_direct_fixed_and_cases": 686.9947224469925,
+      "direct_per_case_ceiling_if_fixed_zero": 7.156195025489505,
+      "five_arm_conservative_seconds": 17321.65147815151,
+      "fits_measured_cost": true
+    },
+    "64": {
+      "cases_per_method": 64,
+      "five_arm_cells": 320,
+      "four_arm_parent_seconds": 11431.941302941506,
+      "four_arm_including_pre_watchdog_seconds": 11495.528416441506,
+      "raw_headroom_for_direct_fixed_and_cases": 4336.314389038996,
+      "direct_per_case_ceiling_if_fixed_zero": 67.7549123287343,
+      "five_arm_conservative_seconds": 11795.983843063506,
+      "fits_measured_cost": true
+    },
+    "48": {
+      "cases_per_method": 48,
+      "five_arm_cells": 240,
+      "four_arm_parent_seconds": 8694.951552997505,
+      "four_arm_including_pre_watchdog_seconds": 8758.538666497505,
+      "raw_headroom_for_direct_fixed_and_cases": 6160.974222334997,
+      "direct_per_case_ceiling_if_fixed_zero": 128.3536296319791,
+      "five_arm_conservative_seconds": 9033.150025519504,
+      "fits_measured_cost": true
+    }
+  },
+  "scope": "Forecast only. Use the same actual worker for all five arms of any later comparison.",
+  "execution_authorized": false,
+  "scientific_execution": false,
+  "reservation_written": false,
+  "arm_v110_exact_source_sha256": {
+    "reports/solar_arm_v110_pilot_results.json": "79680cae639c50af4a6130fee3231547fa3d60af9011ab2f2b04fb532d0c0921",
+    "reports/solar-modern-arm-v110/pilot-protocol.json": "5bb40d750744b887f0919803cb0de1184a6c94c5c7b66f2ef6fc0c842ea6a6fe",
+    "runs/solar-modern-arm-v110/pilot/summary.json": "8f415b2bea94c3109313edc4d58d43b2d12d1878a33a0f318946f51a87583d4b",
+    "reports/solar_arm_v110_remote_watchdog.json": "ab589410f6c342a2662ddf23f6df0b4989d67d15d08e1482b987a1d8e3e1760d",
+    "reports/solar_arm_v110_independent_replay.json": "22a0a5c40b2984b4e41b467a0509347991791ccafc68746bccb26da1a39761da",
+    "reports/solar_matched_arm_cohorts_v103.json": "3f5754829bcef72d90574975b509bf9354a108531848cb2961c5590d914aa9aa",
+    "reports/solar_direct_arm_payload_preflight_v104.json": "cf252e2a44629a1b699d902921372abe99146ff6aaa08a36582e169eeb58ae0a"
+  },
+  "matched_case_counts": {
+    "96": 96,
+    "64": 64,
+    "48": 48
+  },
+  "direct_transport_preflight": {
+    "additional_direct_bytes": 106441424,
+    "combined_logical_bytes": 3766992508,
+    "remaining_logical_headroom_bytes": 527974788
+  }
+}

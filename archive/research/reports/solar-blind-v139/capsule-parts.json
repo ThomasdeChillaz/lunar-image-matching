@@ -1,0 +1,27 @@
+{
+  "schema": "two_part_equivalent_clean_capsule_v139",
+  "reason": "Single110.9MB browser upload failed twice; split into two ordinary ZIPs without changing payloads",
+  "parts": [
+    {
+      "name": "solar-blind-v139-clean-evidence-part1.zip",
+      "bytes": 54222487,
+      "sha256": "cdf3f8c482dfbfeaf99f49886fe1cc8ea74c42ac8753c20b1e7cc765491d7359",
+      "members": 121
+    },
+    {
+      "name": "solar-blind-v139-clean-evidence-part2.zip",
+      "bytes": 56696903,
+      "sha256": "8f7bdc78393b90ba03e67ef523caa9198a97717eedaf8dc910158bb92fa8aef3",
+      "members": 125
+    }
+  ],
+  "master_archive_sha256": "3bf78666ff35c312a6e74861ebbd32a74be252aab51d1d961e372ed7e556935c",
+  "payloads": 244,
+  "total_members": 246,
+  "extraction": "Extract both ZIPs into the same fresh directory, then run reports/solar-blind-v139/replay_cost.py",
+  "private_authority_included": false,
+  "new_lunar_results": 0,
+  "uploaded": true,
+  "release_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-blind-v139-cost-gate",
+  "public_downloads_independently_verified": true
+}

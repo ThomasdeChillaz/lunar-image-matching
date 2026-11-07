@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "scope": "Analytic procedural software controls; not a fresh lunar-accuracy test or confidence policy.",
+  "source_sha256": "895501d6450fb0dfa7e1867a90167ceb11b61bda8a441e49e6b0c4a51f3979e8",
+  "runs": [
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "selected_step": 0,
+      "checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "quarter_turn_pose_passed": true,
+      "rotation_matrix_error": 0.0008416820032720139,
+      "translation_error_m": 0.006053244822638718,
+      "blank_no_pose": true
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "selected_step": 1000,
+      "checkpoint_sha256": "799f73a6b2f5b6e4f1855a61b340fa8d978beba191e260ac2a70f0e07d5bcbef",
+      "quarter_turn_pose_passed": true,
+      "rotation_matrix_error": 0.00039283122173402053,
+      "translation_error_m": 0.0025737406668323837,
+      "blank_no_pose": true
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "selected_step": 0,
+      "checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "quarter_turn_pose_passed": true,
+      "rotation_matrix_error": 0.0008416820032720139,
+      "translation_error_m": 0.006053244822638718,
+      "blank_no_pose": true
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "selected_step": 0,
+      "checkpoint_sha256": "d403f50fdd0c5ab209f0120b0b30e109d5697192b51a3424392f0caf5fa6adb5",
+      "quarter_turn_pose_passed": true,
+      "rotation_matrix_error": 0.0008416820032720139,
+      "translation_error_m": 0.006053244822638718,
+      "blank_no_pose": true
+    }
+  ]
+}

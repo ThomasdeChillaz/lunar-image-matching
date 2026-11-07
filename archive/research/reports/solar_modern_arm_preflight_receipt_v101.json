@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "protocol_preflight_only": true,
+  "publication": false,
+  "compute_charge": false,
+  "dispatch": false,
+  "pilot_rows": 32,
+  "same_case_profiles": [
+    "frozen_step0_A1B0C1_quantization_aware",
+    "SIFT2048",
+    "loma_r_common",
+    "romav2_common"
+  ],
+  "input_count": 992,
+  "source_count": 82,
+  "private_completed_evidence_sha256": "a68dc09d913b8585af75bb94efb9304808070a292bfc4e26252985a6e510c678",
+  "checks": [
+    "all frozen asset and weight hashes",
+    "4 GiB full payload ceiling",
+    "allowed transport paths",
+    "prior resource caps"
+  ]
+}

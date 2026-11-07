@@ -1,0 +1,39 @@
+{
+  "purpose": "Correct raw pass semantics from prior actual independent analytic controls; original pilot audit failure and all raw files preserved.",
+  "original_renderer_source_unchanged": true,
+  "original_auditor_failure": "Renderer ray-depth convention changed",
+  "measured_convention": "axial",
+  "convention_source": "Original analytic renderer summary, bound by independentv31audit SHA; measured before any pilot rendering.",
+  "native_pixel_tolerance": 0.02,
+  "mesh_world_tolerance_m": 0.05,
+  "raw_depth_relative_tolerance": 0.0005,
+  "pose_rotation_threshold_deg": 2,
+  "pose_translation_fraction_of_true_reference_range": 0.01,
+  "required_oracle_rate": 0.95,
+  "old_failure_state": {
+    "stage": "failed; preserve all outputs",
+    "pid": 54967,
+    "public_source": "c35eb24acb79d49dd8a1d4a43b22d60929e71aaa",
+    "source_sha256": {
+      "acquire_north_pilots_v33.py": "21ff5d98c9ed612a1c2d071b60334b5f7ecb988881626facc4cc38a6d1db0a24",
+      "cache_north_pilot_tiles_v33.py": "fdfc39aa9a11b4055385e685099b63578c85b828a80ff72a9b9ef6076b5ca77d",
+      "download_north_source_v33.py": "c14dab6e7fd26c625eacb18b42f72c33f09d5e0acf72593dac1eaa2cc34ec9c8",
+      "verify_north_pilots_v33.py": "4aaa5e208ff75a8d3c5c6db8b697ccb8e3716c20d17ca8949aee5ea163bdf3b1",
+      "test_north_range_cache_v33.py": "aab15b250f55d66e0d598d6b99c7e2a1777a84eba8dff1df5074c2e1f321d470"
+    },
+    "updated_utc": "2026-11-01T21:19:17.587879+00:00",
+    "state": "failed",
+    "error_type": "CalledProcessError",
+    "error": "Command '['/Users/admin/Documents/Codex/2026-10-25/for/work/lunar-clean-env/bin/python', '-u', 'verify_north_pilots_v33.py']' returned non-zero exit status 1."
+  },
+  "sources_sha256": {
+    "renderer_depth_v34.py": "c977d27361e6ef95ed22d7095e888c9bfef09d389dcce6eebe338040f77b3981",
+    "verify_north_pilots_v34.py": "03f0b86e174ef0c2dce31dfafc6ddbe1bbbad3eae41a07aef55378c4507dc968",
+    "test_renderer_depth_v34.py": "c81a98c0d747a3ba3526a239176842a6ec5002ddf496d08ec9e496474c5b213a",
+    "reports/north_camera_control_summary_v34.json": "a345d8d917a415787b9510c6814cd11c50091dcf2df400117e6e2162ce59e306",
+    "audit_north_exposure_v34.py": "43b723986909558d5a0c790b1ac20c4cc6de060b991a3ac57dc9d42e05d53d46",
+    "report_mutual_precision_v34.py": "d20f33a9f2497a45eea269191ec7a7be6e9ce72d0119c967b6f71c091dcd61d0"
+  },
+  "unchanged_renderer_summary_sha256": "04ce380f1d0a9daaa75d0193015f30ee19f82cdd05ada3436f9912878d6621fd",
+  "scope": "Excluded development data/software pilot. No new renderer/fitting, reserve or acceptance metric tuning."
+}

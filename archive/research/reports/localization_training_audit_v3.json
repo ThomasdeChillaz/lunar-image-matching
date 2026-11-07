@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "Development-only; no new final-test or generalization claim.",
+  "training_geometry_cases": 234,
+  "trained_runs": 5,
+  "development_rows": 360,
+  "selected_variant": "descriptor_3d",
+  "calibration_or_test_pixels_loaded": 0,
+  "manifest_sha256": "a2e61bb1c997586f1d147596a237a61e9da92496bd44b47eb637febae668738f",
+  "source_sha256": "f787c596925dc8123cfbc9ae59d0bb5c53479a793673dc956c2ac3950a14cf65",
+  "runs": [
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261101,
+      "selection_key": [
+        7,
+        2270,
+        -1000
+      ],
+      "cases": 72
+    },
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261102,
+      "selection_key": [
+        7,
+        2291,
+        -1500
+      ],
+      "cases": 72
+    },
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261103,
+      "selection_key": [
+        6,
+        2276,
+        -1000
+      ],
+      "cases": 72
+    },
+    {
+      "variant": "refinement",
+      "seed": 20261101,
+      "selection_key": [
+        6,
+        2274,
+        -500
+      ],
+      "cases": 72
+    },
+    {
+      "variant": "reliability",
+      "seed": 20261101,
+      "selection_key": [
+        6,
+        2258,
+        0
+      ],
+      "cases": 72
+    }
+  ]
+}

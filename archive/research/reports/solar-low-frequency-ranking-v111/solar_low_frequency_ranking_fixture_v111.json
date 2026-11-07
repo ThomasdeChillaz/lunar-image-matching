@@ -1,0 +1,419 @@
+{
+  "schema": "solar_low_frequency_ranking_fixture_v111",
+  "passed": true,
+  "procedural_only": true,
+  "archived_inputs_opened": 0,
+  "query_truth_inputs": 0,
+  "renderer_calls": 0,
+  "calibration_or_final_access": false,
+  "source_sha256": "6cd99575d76011c968c587870372fd225eeb83dd47551eef9c0de7bc2b597834",
+  "fixture_sha256": "1a6cad7a9a59a01fbcd46a07104eba54b4f2d031de11da254cc78350728aa9ca",
+  "distinct_winner": {
+    "common_pixels": 16384,
+    "retained_blocks": 16,
+    "retained_pixels": 16384,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primary": {
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "reason": null,
+      "scores": [
+        8.712425585921758e-32,
+        0.44834618378292723,
+        0.44834618378292723
+      ],
+      "quadrant_losses": [
+        [
+          5.864456680659133e-32,
+          1.355854680848614e-31,
+          5.546678239835239e-32,
+          9.88002061470652e-32
+        ],
+        [
+          0.33326251400454326,
+          0.480699474298583,
+          0.548762365571438,
+          0.43066038125714456
+        ],
+        [
+          0.33326251400454326,
+          0.480699474298583,
+          0.548762365571438,
+          0.43066038125714456
+        ]
+      ]
+    },
+    "residual_after_plane": {
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "reason": null,
+      "scores": [
+        6.930940387363565e-32,
+        0.4474716154008164,
+        0.4474716154008164
+      ],
+      "quadrant_losses": [
+        [
+          8.36816560836254e-32,
+          4.352601674315153e-32,
+          6.788903053965006e-32,
+          8.214091212811561e-32
+        ],
+        [
+          0.337218583079996,
+          0.4803263869748719,
+          0.5331008417097504,
+          0.43924064983864747
+        ],
+        [
+          0.337218583079996,
+          0.4803263869748719,
+          0.5331008417097504,
+          0.43924064983864747
+        ]
+      ]
+    }
+  },
+  "affine_invariance": true,
+  "cropped_fallback": {
+    "common_pixels": 8192,
+    "retained_blocks": 8,
+    "retained_pixels": 8192,
+    "quadrant_blocks": [
+      4,
+      4,
+      0,
+      0
+    ],
+    "active_quadrants": [
+      0,
+      1
+    ],
+    "primary": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "insufficient_shared_quadrant_support",
+      "scores": null,
+      "quadrant_losses": null
+    },
+    "residual_after_plane": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "insufficient_shared_quadrant_support",
+      "scores": null,
+      "quadrant_losses": null
+    }
+  },
+  "reference_mask_leakage_control": true,
+  "invalid_query_fallback": {
+    "common_pixels": 11776,
+    "retained_blocks": 12,
+    "retained_pixels": 11776,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      0
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2
+    ],
+    "primary": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "nonfinite_query_on_retained_support",
+      "scores": null,
+      "quadrant_losses": null
+    },
+    "residual_after_plane": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "nonfinite_query_on_retained_support",
+      "scores": null,
+      "quadrant_losses": null
+    }
+  },
+  "deterministic_tie": {
+    "common_pixels": 16384,
+    "retained_blocks": 16,
+    "retained_pixels": 16384,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primary": {
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "reason": null,
+      "scores": [
+        8.712425585921758e-32,
+        2.4697644124335816e-31,
+        0.44834618378292723
+      ],
+      "quadrant_losses": [
+        [
+          5.864456680659133e-32,
+          1.355854680848614e-31,
+          5.546678239835239e-32,
+          9.88002061470652e-32
+        ],
+        [
+          1.6341515578125696e-31,
+          5.315566646508771e-31,
+          2.8041539990278154e-31,
+          1.2518544638517033e-32
+        ],
+        [
+          0.33326251400454326,
+          0.480699474298583,
+          0.548762365571438,
+          0.43066038125714456
+        ]
+      ]
+    },
+    "residual_after_plane": {
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "reason": null,
+      "scores": [
+        6.930940387363565e-32,
+        1.8659853748681831e-31,
+        0.4474716154008164
+      ],
+      "quadrant_losses": [
+        [
+          8.36816560836254e-32,
+          4.352601674315153e-32,
+          6.788903053965006e-32,
+          8.214091212811561e-32
+        ],
+        [
+          1.5715588346199845e-31,
+          3.2355623065705562e-31,
+          1.9663744732193678e-31,
+          6.90445885062824e-32
+        ],
+        [
+          0.337218583079996,
+          0.4803263869748719,
+          0.5331008417097504,
+          0.43924064983864747
+        ]
+      ]
+    }
+  },
+  "gradient_only_control": {
+    "common_pixels": 11776,
+    "retained_blocks": 12,
+    "retained_pixels": 11776,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      0
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2
+    ],
+    "primary": {
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "reason": null,
+      "scores": [
+        0.00012341282041593318,
+        0.0,
+        0.45681961338347943
+      ],
+      "quadrant_losses": [
+        [
+          9.21653329059576e-05,
+          0.0001312880068130353,
+          0.00014678512152880663
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.08637870155752445,
+          0.5884027674366362,
+          0.6956773711562776
+        ]
+      ]
+    },
+    "residual_after_plane": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "no_query_variation_after_plane",
+      "scores": null,
+      "quadrant_losses": null
+    }
+  },
+  "residual_discrimination": {
+    "common_pixels": 11776,
+    "retained_blocks": 12,
+    "retained_pixels": 11776,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      0
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2
+    ],
+    "primary": {
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "reason": null,
+      "scores": [
+        0.0004955831695405186,
+        0.0011130614273176557,
+        0.4576003296859608
+      ],
+      "quadrant_losses": [
+        [
+          0.0003701040754870806,
+          0.0005272071922493905,
+          0.0005894382408850846
+        ],
+        [
+          0.0008388264754245392,
+          0.0011943891353989053,
+          0.0013059686711295226
+        ],
+        [
+          0.0970345728639801,
+          0.5910620493288156,
+          0.6847043668650867
+        ]
+      ]
+    },
+    "residual_after_plane": {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "reason": null,
+      "scores": [
+        1.2666821984935406e-28,
+        0.4535476681599356,
+        4.2999329471376715e-28
+      ],
+      "quadrant_losses": [
+        [
+          1.676945721176854e-29,
+          3.368598806374021e-28,
+          2.6375321698891537e-29
+        ],
+        [
+          0.3241750575167312,
+          0.4944352865115359,
+          0.5420326604515399
+        ],
+        [
+          8.234506070222066e-29,
+          7.564922821281816e-28,
+          4.511425413108991e-28
+        ]
+      ]
+    }
+  },
+  "flat_query_fallback": {
+    "common_pixels": 16384,
+    "retained_blocks": 16,
+    "retained_pixels": 16384,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primary": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "no_query_block_variation",
+      "scores": null,
+      "quadrant_losses": null
+    },
+    "residual_after_plane": {
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "reason": "no_query_variation_after_plane",
+      "scores": null,
+      "quadrant_losses": null
+    }
+  }
+}

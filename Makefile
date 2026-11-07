@@ -1,18 +1,19 @@
-.PHONY: test smoke fetch evaluate review
+.PHONY: test test-archive smoke audit replay check
 PYTHON ?= python
 
 test:
 	$(PYTHON) -m pytest -q
 
+test-archive:
+	cd archive/research && $(PYTHON) -m pytest -q
+
 smoke:
-	$(PYTHON) benchmark.py --config smoke.json --output runs/smoke-new
+	$(PYTHON) -m lunar_matching smoke
 
-fetch:
-	$(PYTHON) dataset.py fetch
-	$(PYTHON) fetch_models.py
+audit:
+	$(PYTHON) -m lunar_matching audit
 
-evaluate:
-	$(PYTHON) reproduce.py --output runs/reproduction
+replay:
+	$(PYTHON) -m lunar_matching replay
 
-review:
-	$(PYTHON) checkpoint_review.py --output runs/checkpoint_review.html
+check: test test-archive audit smoke replay

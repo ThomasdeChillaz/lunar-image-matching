@@ -1,0 +1,575 @@
+{
+  "schema_version": 83,
+  "passed": true,
+  "captured_utc": "2026-11-04T07:07:46.436424+00:00",
+  "review_scope": "Independent completed-map/header/receipt and case/index metadata/hash audit only; no model, matching, querySun inference, fit, PNG decoding or rays.",
+  "evidence_sha256": {
+    "reports/solar_reference_contract_v80.json": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+    "runs/solar-v70-completion/summary.json": "9b648109a85a43d30cc387ba15a5912f4f0010efb7e17e844179ceaaf451cd0f",
+    "reports/solar_full_geometry_audit_v70.json": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+    "reports/solar-reference-v80-full/reference_full.json": "59335bc71569896d68937d565a11f1bba44af7f6418827fbf2f3fd1c690fc0f9",
+    "runs/solar-reference-v80-full/stages/reference_full/summary.json": "b22aedf6206f8001c7cce43cbc29a00068b749984561b4829e6188c8e87119b1",
+    "runs/solar-reference-v80-full/stages/reference_full/COMPLETE.json": "06c78a736bca133963881cc1e433a43fd279b42bd44389ec74bca158599106f7",
+    "runs/solar-reference-v80-full/reference-assets-index.json": "9f0338fad522ae46a84067c3df4e6317790c34d2fe5d340988e46dcf92a1976c",
+    "runs/solar-reference-v80-full/case-assets/manifest.json": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+    "runs/solar-reference-v80-full/case-assets/COMPLETE.json": "5e57ff867e38b568f367762db727dbac4ccdb02a74601dcadcf5583e304c2a74",
+    "reports/solar-reference-v80-full/reference_index-child.json": "e208dc8d4d50426f1f63c15b1d73fd1065e89903f6571c5b2d09a521f8cc937e",
+    "reports/solar-reference-v80-full/case_assets-child.json": "78f83b1eb52f02abd71097ed66122e8929833c8c6d079c6b62e1edcbc466745e"
+  },
+  "maps": {
+    "count": 32,
+    "native_pixels": [
+      512,
+      512
+    ],
+    "anchors_per_map": 256,
+    "height_variants": 7,
+    "all_generic_columns_materialized": true,
+    "sun_columns_range": [
+      1355,
+      1759
+    ],
+    "all_payload_headers_receipts_passed": true,
+    "prior4_archives_exactly_reused": true,
+    "original10unit_seals_preserved": true,
+    "original_raw_reference_and_scene_hashes_preserved": true,
+    "total_external_seconds": 4050.5349839099217,
+    "total_internal_seconds": 3986.9660167560214,
+    "full28phase_seconds": 3543.2016404489987,
+    "solar_state_ratios": {
+      "unknown": 0.39699242373256977,
+      "clear": 0.054865014330309554,
+      "shadow": 0.5481425619371206
+    },
+    "evidence": [
+      {
+        "unit_index": 12,
+        "archive": "runs/solar-reference-v80-full/references/u012.npz",
+        "archive_sha256": "2bf8c63fb43336d5127f9a4285b274dc4c846da63c989d970d5841ddf1bc77a9",
+        "sun_columns": 1627,
+        "sidecar": "runs/solar-reference-v80-full/references/u012.npz.json",
+        "sidecar_sha256": "7ff7cd31906a6d33f74104c6e51059c52398e18b5969371adb7da6facd89b642",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u012.json",
+        "watchdog_sha256": "dfe14acf8183fb009c166f78c0d57d57b888cda36bcac85624a1b815a1d5e899",
+        "external_seconds": 128.34552355099004,
+        "internal_seconds": 126.24964999197982
+      },
+      {
+        "unit_index": 24,
+        "archive": "runs/solar-reference-v80-full/references/u024.npz",
+        "archive_sha256": "f4d6a99c4544d0e9db6c6da474f03134d4e6379a63c0c34807de3efe41f9c501",
+        "sun_columns": 1743,
+        "sidecar": "runs/solar-reference-v80-full/references/u024.npz.json",
+        "sidecar_sha256": "68279620a389c366cc7e2beed850dac6d3730c6d6581fc1c835c5958f1dd31d8",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u024.json",
+        "watchdog_sha256": "1ceaed303eca65c0471d6aba684732a3d6f97b276501acaee906c4e56843394f",
+        "external_seconds": 145.85829078301322,
+        "internal_seconds": 143.78714215900982
+      },
+      {
+        "unit_index": 60,
+        "archive": "runs/solar-reference-v80-full/references/u060.npz",
+        "archive_sha256": "7516ee8507780f5354e7d2ad88d89fd04749c251c407b7235f1b1902dd58f294",
+        "sun_columns": 1355,
+        "sidecar": "runs/solar-reference-v80-full/references/u060.npz.json",
+        "sidecar_sha256": "28aa9fad65b7115a0518e9c0c042ba85f9e0878af15c3804989c9f7419320f25",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u060.json",
+        "watchdog_sha256": "caee82147aaef4671e3c014257943215aac30ee726731e691cfa3df6edf21c7e",
+        "external_seconds": 108.48801324900705,
+        "internal_seconds": 106.27044351201039
+      },
+      {
+        "unit_index": 72,
+        "archive": "runs/solar-reference-v80-full/references/u072.npz",
+        "archive_sha256": "4449d9e1687a3af0df827946d065ee5c9e7a6f36509d3eec4a9da32895f950ec",
+        "sun_columns": 1725,
+        "sidecar": "runs/solar-reference-v80-full/references/u072.npz.json",
+        "sidecar_sha256": "37a938335b1d9c0135e041e4b9da40f53aca5497b480c2030842c14885d6c664",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u072.json",
+        "watchdog_sha256": "536b9b82096fd343cadca5a5fa68e2e68be64d9e7e6343851d2c3fcb5bccc47e",
+        "external_seconds": 127.26578534999862,
+        "internal_seconds": 125.20733402000042
+      },
+      {
+        "unit_index": 13,
+        "archive": "runs/solar-reference-v80-full/references/u013.npz",
+        "archive_sha256": "ebfa7aeff24ca9c43a352c6d73e7d4d5f2e0fb75029288a0881d8e3d0caf8566",
+        "sun_columns": 1627,
+        "sidecar": "runs/solar-reference-v80-full/references/u013.npz.json",
+        "sidecar_sha256": "3051ee9f328c948307e060b10377d823f99a2017fe2848080889c08c247d1910",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u013.json",
+        "watchdog_sha256": "dd8496bd873aa2010bad4d824bd0dc2a77f13c35cdc6478002b60fb9fd941c2e",
+        "external_seconds": 122.69512052298523,
+        "internal_seconds": 120.74395753198769
+      },
+      {
+        "unit_index": 14,
+        "archive": "runs/solar-reference-v80-full/references/u014.npz",
+        "archive_sha256": "18f7267f5b8a8cbb371f72d12d5ff61b2c1e54b18d7a266de9f154e9c5dad2d6",
+        "sun_columns": 1627,
+        "sidecar": "runs/solar-reference-v80-full/references/u014.npz.json",
+        "sidecar_sha256": "23cccd4704261e81cc53b9739e42102e75f35df28367b07fedd3da165dc382aa",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u014.json",
+        "watchdog_sha256": "8feb48ff9c3027d3e174bf79ae6fe1912a7125bd71a46a11b60bb5871eb17acd",
+        "external_seconds": 115.61642772099003,
+        "internal_seconds": 113.64281017996836
+      },
+      {
+        "unit_index": 15,
+        "archive": "runs/solar-reference-v80-full/references/u015.npz",
+        "archive_sha256": "c3f4c07861a6a0ccf0289f4d699c14f6e9b1f37b9aed7b758ed9ccc9c23064f3",
+        "sun_columns": 1627,
+        "sidecar": "runs/solar-reference-v80-full/references/u015.npz.json",
+        "sidecar_sha256": "515abf65de818bf503f99d12d9627b80d589fc0836070b31eb3647d426f8f336",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u015.json",
+        "watchdog_sha256": "9e733d05e2c2544d2ec8c144c61513bd73e2ada23a81cb08e9af5a813b212fe5",
+        "external_seconds": 109.1693427709979,
+        "internal_seconds": 107.1721613620175
+      },
+      {
+        "unit_index": 20,
+        "archive": "runs/solar-reference-v80-full/references/u020.npz",
+        "archive_sha256": "4e409cc848135d3ca2cb382632b7b9fe6306d098a0099fd52bcd765d10c183c9",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u020.npz.json",
+        "sidecar_sha256": "76834820b3a7194a0dabcda06ced8ddf32029272e8e9b78221525a23cd576472",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u020.json",
+        "watchdog_sha256": "6c7e931a87b0b463194b079e40dcb007883a8951ccffeb268be34fd02dc95953",
+        "external_seconds": 136.4665504069999,
+        "internal_seconds": 134.4823567380081
+      },
+      {
+        "unit_index": 21,
+        "archive": "runs/solar-reference-v80-full/references/u021.npz",
+        "archive_sha256": "30404afac5c83b08232be6c79a01cc7bf51d5bb5fef60e56303b6216218e935c",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u021.npz.json",
+        "sidecar_sha256": "3ef832ae2bb16a42ac51b5c47af855026a35c891ad540d7a5dc05aeaad990b45",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u021.json",
+        "watchdog_sha256": "630b22be32cbc70397dad33328ba3d68251094422a74a8f0ea659658d4316ca6",
+        "external_seconds": 134.0285847359919,
+        "internal_seconds": 132.0024063590099
+      },
+      {
+        "unit_index": 22,
+        "archive": "runs/solar-reference-v80-full/references/u022.npz",
+        "archive_sha256": "6f49a390a0c1f0da404c44f42568ba864a5ac57c5de9cc9100eb548185ca6f2f",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u022.npz.json",
+        "sidecar_sha256": "bb96b917272eeeda47d07a609854891daad3d3ac4a444fd6204d8362047bbc9f",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u022.json",
+        "watchdog_sha256": "802263d67b7fc9d568d13feb6345efa06e3829df858f308bb098dc9ad3bd950e",
+        "external_seconds": 133.9755195120233,
+        "internal_seconds": 132.12455762398895
+      },
+      {
+        "unit_index": 23,
+        "archive": "runs/solar-reference-v80-full/references/u023.npz",
+        "archive_sha256": "972de3d1020493d46269dede23ba5e7cd6943a19b4418ad17d3aeeb19642a244",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u023.npz.json",
+        "sidecar_sha256": "70c83a215d510d293abcfb1fcf3018a64e8bbc87aac56adf2ab2f203de4147aa",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u023.json",
+        "watchdog_sha256": "30d3a4fe976130629dadf41a74a2f6914fec091dbd69ccd12b922213b5421f0c",
+        "external_seconds": 131.13127072300995,
+        "internal_seconds": 129.33347747998778
+      },
+      {
+        "unit_index": 25,
+        "archive": "runs/solar-reference-v80-full/references/u025.npz",
+        "archive_sha256": "0f1eb2e2a0b8a146b4c0d4be16cbcd4869c51a05c23f034a681fdb3b24b628ed",
+        "sun_columns": 1743,
+        "sidecar": "runs/solar-reference-v80-full/references/u025.npz.json",
+        "sidecar_sha256": "2aecb1f73db43ed9b8d82e5fea947814598831c699e0e5a2e99cc961589c4a51",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u025.json",
+        "watchdog_sha256": "3c1b7bdc54d3eacbdaac141ff505ad8c2e9fdbfbf94cc076f347ab3e4b6ab2fd",
+        "external_seconds": 126.96373198798392,
+        "internal_seconds": 125.0244944409933
+      },
+      {
+        "unit_index": 26,
+        "archive": "runs/solar-reference-v80-full/references/u026.npz",
+        "archive_sha256": "2f799e55b05f3c131dcf1a42537413ba4a0332154401419ae4a9e8a93cc9bb58",
+        "sun_columns": 1743,
+        "sidecar": "runs/solar-reference-v80-full/references/u026.npz.json",
+        "sidecar_sha256": "4cd33c8c1f8a582d2c1c10b6b4e0c54caebd864f68a266c6c8bd3fabf3e40558",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u026.json",
+        "watchdog_sha256": "669a3229ae2ff914643ac8fbe69906eedec85d3c280f9e984740ca0f3722a2f6",
+        "external_seconds": 123.12841093703173,
+        "internal_seconds": 121.1169011160382
+      },
+      {
+        "unit_index": 27,
+        "archive": "runs/solar-reference-v80-full/references/u027.npz",
+        "archive_sha256": "c39e055ee1ac70d98e25afce26d2b5059ae6840a9bd507da04b231d6170e4258",
+        "sun_columns": 1743,
+        "sidecar": "runs/solar-reference-v80-full/references/u027.npz.json",
+        "sidecar_sha256": "dea16339017e319ccf3bd13c70342cd945b0d7d5bf3080f382998c70233df61a",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u027.json",
+        "watchdog_sha256": "22667274b8ffc14f44838d00fdab563cc3967572cf80d34ff0561672e7a66036",
+        "external_seconds": 124.37900838197675,
+        "internal_seconds": 122.52300240995828
+      },
+      {
+        "unit_index": 56,
+        "archive": "runs/solar-reference-v80-full/references/u056.npz",
+        "archive_sha256": "3f149cceaf8025e03ae14a49b94644ff20f21afb51c18f0c9f37763df31968b8",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u056.npz.json",
+        "sidecar_sha256": "03fd864d1672edf2e4ba0226e3ed734a54daa7cf6e6f77a588bd79a464919d81",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u056.json",
+        "watchdog_sha256": "91b4336696dab354062201a46f289b342872728df1a618707584c5a994ff00f5",
+        "external_seconds": 128.02221095201094,
+        "internal_seconds": 126.08063335699262
+      },
+      {
+        "unit_index": 57,
+        "archive": "runs/solar-reference-v80-full/references/u057.npz",
+        "archive_sha256": "c4bbcdcb4a781fd8381da370df01f74bfea1407e97d1d357a5f6047211630045",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u057.npz.json",
+        "sidecar_sha256": "4faefb5666a7a5f39492b576379d3256c8ee27debe6492471a4be21678b007f4",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u057.json",
+        "watchdog_sha256": "7bc3678b9de71cfedaf3baac6a285bb2d7639d0da9fe17b4724352d9856423dd",
+        "external_seconds": 122.4734181429958,
+        "internal_seconds": 120.46462354098912
+      },
+      {
+        "unit_index": 58,
+        "archive": "runs/solar-reference-v80-full/references/u058.npz",
+        "archive_sha256": "14d692b778fe059e744a0d49a35e9712ce777a91a72d3a5b4faff904eac014c2",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u058.npz.json",
+        "sidecar_sha256": "7e4a5f39f8d60a07d5b20b7e8bc0d319bfd8c0dc576932c0c5be033c5badcc41",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u058.json",
+        "watchdog_sha256": "aaffeee23243530ec5c668f046131eb7de8a9c9900f3829caf13817d18fd9175",
+        "external_seconds": 131.59256370505318,
+        "internal_seconds": 129.53395053802524
+      },
+      {
+        "unit_index": 59,
+        "archive": "runs/solar-reference-v80-full/references/u059.npz",
+        "archive_sha256": "ad27ac561f06ea7ac85bfbaa3b5f6512205e2a6e85b8271d1c6ee0513986cddf",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u059.npz.json",
+        "sidecar_sha256": "964c2a4597af23cac2317d83cab03a5f9075389f8b6400845fbf2b1bb88e41f2",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u059.json",
+        "watchdog_sha256": "7ba9f4c1e509cb049898a0ac75f52086af84395c17c9780b9a5ff644afdf5278",
+        "external_seconds": 130.51639896497363,
+        "internal_seconds": 128.62493446597364
+      },
+      {
+        "unit_index": 61,
+        "archive": "runs/solar-reference-v80-full/references/u061.npz",
+        "archive_sha256": "579043ef29d023c069e069e67e0757e4286c19d59de771f9ad9565f35edde8fc",
+        "sun_columns": 1355,
+        "sidecar": "runs/solar-reference-v80-full/references/u061.npz.json",
+        "sidecar_sha256": "2dbda99182c1b713f5af0aad09adf260fcc62b5042b3907364847484301eba37",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u061.json",
+        "watchdog_sha256": "bfaefb8d127ea9dd3533052dcf3d4ab6084c227b36f4b11b65f05db67054e19e",
+        "external_seconds": 99.71712377195945,
+        "internal_seconds": 97.88030526501825
+      },
+      {
+        "unit_index": 62,
+        "archive": "runs/solar-reference-v80-full/references/u062.npz",
+        "archive_sha256": "fe6888dc4b50c04f5d0180c5232047120679d4b6b6f52eba151ee901bc7700ce",
+        "sun_columns": 1355,
+        "sidecar": "runs/solar-reference-v80-full/references/u062.npz.json",
+        "sidecar_sha256": "27d2bd532c610d36e14e5f10eebdf5294186cc687dd96430005d72b38bd437b9",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u062.json",
+        "watchdog_sha256": "6128300ac39b42e24e74423cfdb3c68f56c47d80934dadbe820ec8ec4e009ab8",
+        "external_seconds": 96.99568754201755,
+        "internal_seconds": 95.10956846602494
+      },
+      {
+        "unit_index": 63,
+        "archive": "runs/solar-reference-v80-full/references/u063.npz",
+        "archive_sha256": "3c227b37b5bf7c8f76c99609ea0c65eb50939d0c42f857d746491b96e2f13227",
+        "sun_columns": 1355,
+        "sidecar": "runs/solar-reference-v80-full/references/u063.npz.json",
+        "sidecar_sha256": "a7884dae7e2fa16b89e64c32ec7f8d656b563a913cb35e4fa931f5e97edef1c2",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u063.json",
+        "watchdog_sha256": "f33604519b35451a6101a327b8cf5e1fcbf20a4a7af81d5c6b1bb722809a08a1",
+        "external_seconds": 97.31993323599454,
+        "internal_seconds": 95.18419656599872
+      },
+      {
+        "unit_index": 68,
+        "archive": "runs/solar-reference-v80-full/references/u068.npz",
+        "archive_sha256": "52013ec778a3cd45353285ab0443c435747655a7638721f399fc4cde23ba693e",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u068.npz.json",
+        "sidecar_sha256": "e45e09a6b4d6808178e755ab2afdeabab889d5a6d6ebd8f530abf90b80bebf8f",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u068.json",
+        "watchdog_sha256": "f844d57e520abb1ae90ad7083ade029900b431e76df37d96254a4c1a0ac14cc2",
+        "external_seconds": 134.3160215849639,
+        "internal_seconds": 132.42551949399058
+      },
+      {
+        "unit_index": 69,
+        "archive": "runs/solar-reference-v80-full/references/u069.npz",
+        "archive_sha256": "7d6d7a0236e3345ec1d00ac4853740be0c8d72d1f668b25a24a3a5aa7713dcec",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u069.npz.json",
+        "sidecar_sha256": "110e65dffe5ab82a4a8ad08fb2bc2ef0a09f3f9c7c0eecae9c91956c7e361f40",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u069.json",
+        "watchdog_sha256": "79d618a1418d46ecadd7a1afcaef42ac77e8521abd3b4bd8273b09ee3995a16e",
+        "external_seconds": 139.0057122989674,
+        "internal_seconds": 137.0908526990097
+      },
+      {
+        "unit_index": 70,
+        "archive": "runs/solar-reference-v80-full/references/u070.npz",
+        "archive_sha256": "dbaa6cf885691efe49295299d36dd85cf7fba940bb0e9fe1a60f5c556f7c3a37",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u070.npz.json",
+        "sidecar_sha256": "e66500d9913a38cbf2c42335ac66f2af74f2e11a868c50f2ee817ee2f630c45d",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u070.json",
+        "watchdog_sha256": "940c92807dfe842f076cf7438572a70f2f06e7bcc08af12643a8cc08bcc11bbb",
+        "external_seconds": 134.7620691289776,
+        "internal_seconds": 132.67218804900767
+      },
+      {
+        "unit_index": 71,
+        "archive": "runs/solar-reference-v80-full/references/u071.npz",
+        "archive_sha256": "910de7f5bfbfc4e30c42b6153907ad44566bb0277562aae5043879a10b06e997",
+        "sun_columns": 1583,
+        "sidecar": "runs/solar-reference-v80-full/references/u071.npz.json",
+        "sidecar_sha256": "df72fff25942dae05997b58e32fa455c2c3677284ce198793021b7769bb00df4",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u071.json",
+        "watchdog_sha256": "44ed5b325dda1cf022f08f49c98fe545fb999fd843f4249c8f40da773414e97c",
+        "external_seconds": 130.42916029598564,
+        "internal_seconds": 128.428898320999
+      },
+      {
+        "unit_index": 73,
+        "archive": "runs/solar-reference-v80-full/references/u073.npz",
+        "archive_sha256": "841630618360a1fdb6ba17b8da554df9be1e794345ea8a117ed5113739098241",
+        "sun_columns": 1725,
+        "sidecar": "runs/solar-reference-v80-full/references/u073.npz.json",
+        "sidecar_sha256": "931b671c28b147c3ad873c097be2193584a046e570893fb0acfd5256ffb17be0",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u073.json",
+        "watchdog_sha256": "a2d57a8092bbc09d8773e15cfbd52595553b246e81423c01863dd162b888f382",
+        "external_seconds": 122.30523145600455,
+        "internal_seconds": 120.4147556850221
+      },
+      {
+        "unit_index": 74,
+        "archive": "runs/solar-reference-v80-full/references/u074.npz",
+        "archive_sha256": "10dd29cb6022db3c455a82b5b7725aef58f617eaff4fe570e6c3d36fc7addb2d",
+        "sun_columns": 1725,
+        "sidecar": "runs/solar-reference-v80-full/references/u074.npz.json",
+        "sidecar_sha256": "7e00c273166dcaacfea54432b40b7d95e69817d4ce586a70214afd0bf00288d2",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u074.json",
+        "watchdog_sha256": "45c009af87824ea5f77a4640ba71ce1aed4c13e1367c89411035e05131d8ef72",
+        "external_seconds": 120.0350224180147,
+        "internal_seconds": 118.22582265798701
+      },
+      {
+        "unit_index": 75,
+        "archive": "runs/solar-reference-v80-full/references/u075.npz",
+        "archive_sha256": "8063b7675b6d1df162fd4c753db35734e3d54c8d51157b638243e62f571c2eaa",
+        "sun_columns": 1725,
+        "sidecar": "runs/solar-reference-v80-full/references/u075.npz.json",
+        "sidecar_sha256": "1af4f0e1609f28da5aeceb79ca76a3f84b9fb4a9ff21015e36a7dffc03cbe679",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u075.json",
+        "watchdog_sha256": "c815e2b8bde7d45baa8efbaddf1d7259d5c36e9f8a51e0f4fca316ea5004d603",
+        "external_seconds": 118.9620747959707,
+        "internal_seconds": 116.79902125301305
+      },
+      {
+        "unit_index": 92,
+        "archive": "runs/solar-reference-v80-full/references/u092.npz",
+        "archive_sha256": "238f121cfa0ce9415e4808efdaa22be63df0e651d32a179c7f936b41beb96a58",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u092.npz.json",
+        "sidecar_sha256": "36b427593ce006c447474e248f12c167b08c9f41f336c635f8c981286a27552e",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u092.json",
+        "watchdog_sha256": "3e2d4e66fef60016534c9e195570159320dd138a3970f3e8632248890ace1f50",
+        "external_seconds": 144.80049151100684,
+        "internal_seconds": 142.89206017798278
+      },
+      {
+        "unit_index": 93,
+        "archive": "runs/solar-reference-v80-full/references/u093.npz",
+        "archive_sha256": "6107e237d758537964faee05d885d7b53958108b69cc8d5bdefbdf7d78694729",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u093.npz.json",
+        "sidecar_sha256": "9fa494533192942711bca81b9ec1d98353ec5c7a76c2f4e5df2898c9c4b81918",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u093.json",
+        "watchdog_sha256": "1ff02c81db1fbbc46645b50108411b51a23d75cc7867af5deb905ae6e6aa8eec",
+        "external_seconds": 145.39043434499763,
+        "internal_seconds": 143.35439930896973
+      },
+      {
+        "unit_index": 94,
+        "archive": "runs/solar-reference-v80-full/references/u094.npz",
+        "archive_sha256": "625c3c29e17e533096b98eb231bc8e102b9b6be99271c747d866ab416016647b",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u094.npz.json",
+        "sidecar_sha256": "9082a0156368f390cf988c78ff0bb57e64ded2bad9d13db7f5076d78535532f4",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u094.json",
+        "watchdog_sha256": "f7d8fa23b7a12fa1392805ba41aa2b763a389babd7ae7ceb0f2482dfc6728d3c",
+        "external_seconds": 146.0782529200078,
+        "internal_seconds": 144.2661308280076
+      },
+      {
+        "unit_index": 95,
+        "archive": "runs/solar-reference-v80-full/references/u095.npz",
+        "archive_sha256": "96a5412673690a68d3193461b821607e88bf1840d0a58284c935e3f177f93c22",
+        "sun_columns": 1759,
+        "sidecar": "runs/solar-reference-v80-full/references/u095.npz.json",
+        "sidecar_sha256": "3b7ef9eea141bdbeb2a8b434229550e348af2ec5e14345439a0d324bfe65c932",
+        "watchdog": "runs/solar-reference-v80-full/watchdogs/u095.json",
+        "watchdog_sha256": "b3f4e0914be2cfb070c7446ca7b5c30e8cb6443d71f3a8003abba81df2d9d80b",
+        "external_seconds": 140.30159620702034,
+        "internal_seconds": 137.83746115805116
+      }
+    ]
+  },
+  "case_inventory": {
+    "index_rows": 32,
+    "total_cases": 384,
+    "positives": 192,
+    "nonoverlap": 192,
+    "selection_terrains": 8,
+    "generated_cameras": 32,
+    "eligible_cameras": 32,
+    "all6lights_per_camera": true,
+    "one_matched_negative_per_positive": true,
+    "both_negative_endpoints_eligible_selection": true,
+    "full_original_scene_bounds_common_body_frame": true,
+    "primary_inputs_truth_free": true,
+    "actual_reference_sun_per_image": true,
+    "secondary_true_query_sun_separate_and_frame_conversion_verified": true,
+    "separate_scoring_archives": 64,
+    "all66case_payloads_match_COMPLETE": true,
+    "image_hashes_match_original_sealed_metadata_without_PNG_reads": true,
+    "unique_non_image_input_hashes_replayed": 233,
+    "calibration_groups_closed": 4,
+    "final_groups_closed": 12,
+    "protected_reserve_component_intersection": []
+  },
+  "prepared_v81_pilot_membership": [
+    {
+      "mode": "sh",
+      "path": "reports/solar_sh_selection_inactive_v81.json",
+      "sha256": "a0fd4fe55623906b9247a1d5b9ede145660bd2e3f3f21cd9e195d9347b89e46b",
+      "pilot_ids": [
+        "u012-l00-00-positive",
+        "u012-to-u020-l00-00-nonoverlap",
+        "u026-l00-17-positive",
+        "u026-to-u058-l00-17-nonoverlap",
+        "u060-l16-16-positive",
+        "u060-to-u068-l16-16-nonoverlap",
+        "u074-l08-01-positive",
+        "u074-to-u094-l08-01-nonoverlap"
+      ],
+      "positives": 4,
+      "nonoverlap": 4,
+      "reference_terrains": 4,
+      "all_endpoint_terrains": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5",
+        "np31-r4-c1",
+        "np31-r4-c7"
+      ],
+      "not_activated": true
+    },
+    {
+      "mode": "pooled",
+      "path": "reports/solar_pooled_selection_inactive_v81.json",
+      "sha256": "7534357e5983797690e34716b0158e8bf662fd4fa8b2d11abaa8aca324a19939",
+      "pilot_ids": [
+        "u012-l00-00-positive",
+        "u012-to-u020-l00-00-nonoverlap",
+        "u026-l00-17-positive",
+        "u026-to-u058-l00-17-nonoverlap",
+        "u060-l16-16-positive",
+        "u060-to-u068-l16-16-nonoverlap",
+        "u074-l08-01-positive",
+        "u074-to-u094-l08-01-nonoverlap"
+      ],
+      "positives": 4,
+      "nonoverlap": 4,
+      "reference_terrains": 4,
+      "all_endpoint_terrains": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5",
+        "np31-r4-c1",
+        "np31-r4-c7"
+      ],
+      "not_activated": true
+    }
+  ],
+  "all_planned_pilot_metadata_match_actual": true,
+  "protected_sources": {
+    "learning": {
+      "contract": "reports/solar_learning_contract_v79.json",
+      "files": 49,
+      "unchanged": true
+    },
+    "physical": {
+      "contract": "reports/solar_reference_contract_v80.json",
+      "files": 42,
+      "unchanged": true
+    }
+  },
+  "budget": {
+    "charges": [
+      {
+        "job_id": "7fda85eb8e526ac0d80323a8f2f0fb2ff1a1e7e26808f2e2e877a4b5602dad0d/reference_physics",
+        "category": "baseline",
+        "seconds": 1020,
+        "reserved_utc": "2026-11-04T05:38:55.730207+00:00",
+        "refund_on_failure": false
+      },
+      {
+        "job_id": "b32409aba41fd772a72b1a1103563a6bb2e2c727df2dae03521d70b116f81c5f/reference_physics",
+        "category": "baseline",
+        "seconds": 891,
+        "reserved_utc": "2026-11-04T05:44:41.094595+00:00",
+        "refund_on_failure": false
+      },
+      {
+        "job_id": "59335bc71569896d68937d565a11f1bba44af7f6418827fbf2f3fd1c690fc0f9/reference_physics",
+        "category": "baseline",
+        "seconds": 8289,
+        "reserved_utc": "2026-11-04T05:52:57.845855+00:00",
+        "refund_on_failure": false
+      },
+      {
+        "job_id": "a3068122f0c8b1e75e6fa3ae7064425ab529e85cdf203dd414867c5dfa9d30a0/reference_physics",
+        "category": "baseline",
+        "seconds": 600,
+        "reserved_utc": "2026-11-04T06:56:53.571631+00:00",
+        "refund_on_failure": false
+      },
+      {
+        "job_id": "d597ca8cbb0f004f50ec4ad53e9c134c4adf952d4d75b925b580a58a5160fb3e/reference_physics",
+        "category": "baseline",
+        "seconds": 600,
+        "reserved_utc": "2026-11-04T06:58:20.964451+00:00",
+        "refund_on_failure": false
+      }
+    ],
+    "total_fixed_caps": 11400,
+    "original_ceiling": 12000,
+    "remaining_margin": 600,
+    "no_refunds_or_reset": true
+  },
+  "original_preparation_deadline_utc": "2026-11-05T00:00:00+00:00",
+  "map_support_limit": "Complete generic tables retain clear/shadow/unknown coverage. Availability and nominal map support do not establish querySun recovery, accepted matching accuracy or camera localization.",
+  "no_inference_or_optimization": true,
+  "no_source_contract_budget_mutation": true,
+  "geometry_oracle_is_not_matcher_accuracy": true
+}

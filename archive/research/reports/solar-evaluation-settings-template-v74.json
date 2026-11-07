@@ -1,0 +1,37 @@
+{
+  "prepared_only": true,
+  "mode": "checkpoint_selection_sh",
+  "calibration_or_final_access": false,
+  "repository_root": ".",
+  "learning_contract": null,
+  "manifest": null,
+  "geometry_audit": null,
+  "tracks": [
+    "estimated_sun"
+  ],
+  "inference_configuration": {
+    "proposal_angles": [
+      0.0,
+      90.0,
+      180.0,
+      270.0
+    ],
+    "pose_initialization": "strict3",
+    "inference_revision": "solar-v68"
+  },
+  "pilot_case_ids": [],
+  "pilot_cap_seconds": null,
+  "maximum_full_calendar_seconds": null,
+  "publication_dispatch_lease_seconds": 1800,
+  "output_directory": null,
+  "blender_executable": null,
+  "cost_pilot_evidence": {
+    "protocol": null,
+    "summary": null,
+    "metric_replay": null
+  },
+  "reference_preparation_evidence": {
+    "protocol": null,
+    "summary": null
+  }
+}

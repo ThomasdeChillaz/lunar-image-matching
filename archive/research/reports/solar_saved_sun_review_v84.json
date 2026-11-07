@@ -1,0 +1,958 @@
+{
+  "scope": "Saved vector/label arithmetic and source inspection only; no images, rays, models, likelihood fitting or inference.",
+  "source_report": "reports/solar_pose_pilot_results_v83.json",
+  "source_report_sha256": "d0cc9fbaaa0d95473d6cea7a9bfbd24acc2f52b2ccffc15cbfefe5cded815bf7",
+  "summary_sha256": {
+    "runs/solar-sh-checkpoint-selection-v79/cost_pilot/summary.json": "c3e2ec236a8a5b5e516b1a8da181186193067445b166567fe193fd0779056120",
+    "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/summary.json": "cc59d2da0b97737a3bde22083c1869968ff374e4d6fcf8bcbb6cc1bcf6107fc1"
+  },
+  "source_sha256": "db75eec914ba410a4edffe841b26f9fcedbfebc94d7d6c1280370a30b2ef88e6",
+  "physics_source_sha256": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+  "assignment_source_sha256": "ebb84f4e04a1b037f427bdba4266fa776fdb1c32f7ba0518eaa24c5dbc592861",
+  "matched_reported_rows": 30,
+  "unique_emitted_positive_pairs": 3,
+  "unique": {
+    "u012-l00-00-positive": {
+      "repeated_executions": 10,
+      "sun_error_degrees": 39.985708063016666,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    "u060-l16-16-positive": {
+      "repeated_executions": 10,
+      "sun_error_degrees": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    "u074-l08-01-positive": {
+      "repeated_executions": 10,
+      "sun_error_degrees": 2.3584364149934385,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "mode": "sh",
+      "profile": "step_0",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/2a2b169962891a3398d00fc50f473f836ef52d7466e8936efb32c68be7e81cbd.npz",
+      "saved_arrays_sha256": "1d599bd1a117281ff695ff85ee95a5cf6caac489229f53a3332ff2c20f155e92",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_0",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/5ef1b622d1b1a1d7d55cd9868773831b3da88f00c13520dcb99c86db52c2a118.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_0",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/12c08441db3bcdc876a7a7860b64ce89c52a8c3f905380756928970a363f0baa.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_500",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a0f29b52ef9621813ebd2bb4867d7f3152e57b680cafa584171cbb9bf75b4cb8.npz",
+      "saved_arrays_sha256": "51731c520554e7a02a9b3b3db657053ecca9f301a90de3dfaa93b2dcd75ddd3d",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_500",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a1a1cba568dc0734d44b32da727862af70606e3354be187ed32fb7f675c42a9a.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_500",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/8516e7edba0b1c377363e476d13a9357e7728b45ed2f8cc0d5c847eb1d356ec5.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1000",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/bf170ff7d8ec7da1c453ba236664d58993b96b0f7d206751bfe6fadeb2a9882a.npz",
+      "saved_arrays_sha256": "792abe3866c0d86f480b74efbd9e51bbaa5fbe36c3353e30551f9f9dfc1d369a",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1000",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/7c22bbc7146d687fbdb8ea1b1937f4fc935f240baa34b40113fcbdca231c2102.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1000",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a43f544c5b3e62135930804a945151ea4324d8a616b0850602bd59917ebdff23.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1500",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/07d4234549d3e36978c88009492d717ab7f5da6472bd370978f1a72262b2cfc5.npz",
+      "saved_arrays_sha256": "e818d625c6556f17ee38449df0621f5e5e8bf048f867124b608925bce5254e09",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1500",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/c2fa8cf9d607aa71fe99c98f2de9ffeab32066694478fe59b4b5936f47833c52.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_1500",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/ef6787bc7b8bc911bcfaa6e5feafb1a08bf3b8d474c648ba408c6ce674c2a986.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_2000",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/78adc9792913f9a1055fbcc1876f307ad439001836bda670da35737e66373464.npz",
+      "saved_arrays_sha256": "51731c520554e7a02a9b3b3db657053ecca9f301a90de3dfaa93b2dcd75ddd3d",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_2000",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/9e2517490648ca41b02515ee53847cee35fb94a5916f995a78076b7197282a7e.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "sh",
+      "profile": "step_2000",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/12cad3c6a3b04ea0180f98ac6c67ddbed74a1215d618388c40b99fd8378bc2ff.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_0",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/ee980ea2b8886df9ee81790bc4a4224221918b886c450dc96f816a3dc562a14e.npz",
+      "saved_arrays_sha256": "1d599bd1a117281ff695ff85ee95a5cf6caac489229f53a3332ff2c20f155e92",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_0",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/e9b1e7acedb831b064747e226061a2289920f6702ecb163823a17921794b65bb.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_0",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/e9f1a084cca6d62910c66b1610d5c982f9b1d8cc96329550b82f8fedf4fadb78.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_500",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/fe36a0a666ce90f90215d57cc608be2afa426a7db4c8b94145f4027c28f8d429.npz",
+      "saved_arrays_sha256": "01c682acbd6a053c63bd4df431b9d3b9cfc00fe3f6ed661c2550763056b6cbd1",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_500",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/8f300beb75423520c84002666e2539e54cea130a8fc554d8060a2ca06ee55462.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_500",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/78bb46650f48a7cdd348276814abb335d2697dbe4d4aa65fab6fdf81069569bc.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1000",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/f5ab71e9963b256535c5576972bfd66c0aba4ce003c8e2db90f9ebcec191e25d.npz",
+      "saved_arrays_sha256": "01c682acbd6a053c63bd4df431b9d3b9cfc00fe3f6ed661c2550763056b6cbd1",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1000",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/a7ada50d519c1aa244b646fd1220c448f0720c9167a1212ed2851309e64d7c39.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1000",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/a3ae05d3f6f03349a75208840fcfbacb78a5ecd0ffd5d45bd9f2412acbd6d898.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1500",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/e3e2cf64ee09d9ff1dd71820b273ca3c1e0223f108d77d3bd9cb260edc1ba096.npz",
+      "saved_arrays_sha256": "7e48d91a479a6244d391fb26bff5515e613ba3c64cfd1b1ee536d14294bfae1f",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1500",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/6e485a4643c3f4d95bc286f7bf4a20d0604aee5ce154cc4068002b2567cda0f6.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_1500",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/a0c38c3cd46b65fc71c9f925ef79fe096f8b65eae2641b410bc62851cfb4dc47.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_2000",
+      "case_id": "u012-l00-00-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/81cacdb6fcc18dd8003f4071d7d81a0ae4cb8383ecd7767a706c22c57df7f863.npz",
+      "saved_arrays_sha256": "792abe3866c0d86f480b74efbd9e51bbaa5fbe36c3353e30551f9f9dfc1d369a",
+      "estimate": [
+        0.7221164259714001,
+        -0.6899065429721827,
+        0.050762479317534054
+      ],
+      "scoring_label": [
+        0.9975169819076922,
+        -0.06440767589202108,
+        0.028487226821102968
+      ],
+      "norms": [
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "angle_degrees_acos": 39.985708063016666,
+      "angle_degrees_independent_atan2": 39.98570806301667,
+      "solar_supported": true,
+      "pose_correct": true,
+      "observation": {
+        "threshold": 23.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_2000",
+      "case_id": "u060-l16-16-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/649411a2c852ce14e71b07b736d9ce9144dfb4d082948580eeef6c9774f40cc0.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "estimate": [
+        0.42255389493243883,
+        -0.9063377981249457,
+        3.9591042006330984e-05
+      ],
+      "scoring_label": [
+        -0.5553798529764226,
+        -0.830524670264764,
+        0.042213635113461254
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 58.797813426949354,
+      "angle_degrees_independent_atan2": 58.797813426949354,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 16.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    },
+    {
+      "mode": "pooled",
+      "profile": "step_2000",
+      "case_id": "u074-l08-01-positive",
+      "saved_arrays": "runs/solar-pooled-checkpoint-selection-v79/cost_pilot/a2c20bca43a86954b6bc76471221c9d4da46603771254db56e544a7f587e1178.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "estimate": [
+        0.984770254550593,
+        -0.17385849091750386,
+        0.0008780024194316241
+      ],
+      "scoring_label": [
+        0.9804491897832952,
+        -0.19327983306296548,
+        0.036909245243328226
+      ],
+      "norms": [
+        1.0,
+        1.0
+      ],
+      "angle_degrees_acos": 2.3584364149934385,
+      "angle_degrees_independent_atan2": 2.358436414993362,
+      "solar_supported": true,
+      "pose_correct": false,
+      "observation": {
+        "threshold": 25.0,
+        "scale": 3.0,
+        "informative": true
+      }
+    }
+  ],
+  "interpretation": [
+    "The map/observation support flag does not test angular correctness, pose correctness, uniqueness of the Sun or likelihood separation from competing directions.",
+    "The Otsu-centered sigmoid is an intensity measurement, not a measured solar-shadow label. Albedo, slope/reflectance, exposure and dark-but-visible texture may confound it; these are hypotheses, not demonstrated causes from this arithmetic.",
+    "u012 has a correct pose despite ~40-degree Sun error; u074 has a ~2.36-degree Sun estimate but failed pose. Joint physical recovery is not demonstrated.",
+    "Three emitted pairs repeated ten times remain three unique vector estimates. The blank pair is retained as a missing-Sun/pose failure, not excluded to claim full recovery."
+  ],
+  "elapsed_seconds": 0.1449474130058661
+}

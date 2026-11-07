@@ -1,0 +1,420 @@
+{
+  "schema": "solar_pose_conditioned_exposure_fixture_v110",
+  "height_variants_m": [
+    0.0,
+    -5.0,
+    5.0,
+    -10.0,
+    10.0,
+    -20.0,
+    20.0
+  ],
+  "analytic_only": true,
+  "archived_inputs_opened": 0,
+  "render_calls": 0,
+  "matcher_calls": 0,
+  "optimizer_updates": 0,
+  "calibration_or_final_access": false,
+  "source_sha256": "c91087333b3ab2e76cba2ded3503042b00327a76e51378a331911671e449b294",
+  "fixture_sha256": "fb84796076aab1adb619e4c5ca94881690a31b949f6ef01aa6d596b1855be87d",
+  "photometry_controls_passed": true,
+  "comparison": {
+    "fixed_uniform": {
+      "policy": "fixed_uniform",
+      "integration_ticks": 9,
+      "integration_seconds": 9.0,
+      "frames": 3,
+      "pixels_per_frame": 4,
+      "records": [
+        {
+          "action": 0,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0007652242047077325,
+          "max_supported_saturation_probability": 1.0
+        },
+        {
+          "action": 1,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.2192228017830522,
+          "max_supported_saturation_probability": 2.623877140371172e-36
+        },
+        {
+          "action": 2,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 6.333457844039601e-11
+        }
+      ],
+      "expected_separation": 0.2199880259877599,
+      "pair_diagnostics": [
+        {
+          "hypotheses": [
+            0,
+            1
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 54.13474710687769,
+          "accumulated_expected_separation": 0.027422610885980043
+        },
+        {
+          "hypotheses": [
+            0,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 25.363894029330964,
+          "accumulated_expected_separation": 13.878192994527934
+        },
+        {
+          "hypotheses": [
+            1,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 46.98337045781467,
+          "accumulated_expected_separation": 12.675088017480077
+        }
+      ]
+    },
+    "fixed_gradient": {
+      "policy": "fixed_gradient",
+      "integration_ticks": 9,
+      "integration_seconds": 9.0,
+      "frames": 3,
+      "pixels_per_frame": 4,
+      "records": [
+        {
+          "action": 2,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 6.333457844039601e-11
+        },
+        {
+          "action": 3,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 7.227119712118744e-18
+        },
+        {
+          "action": 4,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 2.623877140371172e-36
+        }
+      ],
+      "expected_separation": 0.0,
+      "pair_diagnostics": [
+        {
+          "hypotheses": [
+            0,
+            1
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 54.13474710687769,
+          "accumulated_expected_separation": 0.0
+        },
+        {
+          "hypotheses": [
+            0,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 25.363894029330964,
+          "accumulated_expected_separation": 0.0
+        },
+        {
+          "hypotheses": [
+            1,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 46.98337045781467,
+          "accumulated_expected_separation": 0.0
+        }
+      ]
+    },
+    "fixed_hypothesis": {
+      "policy": "fixed_hypothesis",
+      "integration_ticks": 9,
+      "integration_seconds": 9.0,
+      "frames": 3,
+      "pixels_per_frame": 4,
+      "records": [
+        {
+          "action": 1,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.219289122246692,
+          "max_supported_saturation_probability": 2.623877140371172e-36
+        },
+        {
+          "action": 0,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0006989037410679178,
+          "max_supported_saturation_probability": 1.0
+        },
+        {
+          "action": 2,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 6.333457844039601e-11
+        }
+      ],
+      "expected_separation": 0.2199880259877599,
+      "pair_diagnostics": [
+        {
+          "hypotheses": [
+            0,
+            1
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 54.13474710687769,
+          "accumulated_expected_separation": 0.027422610885980043
+        },
+        {
+          "hypotheses": [
+            0,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 25.363894029330964,
+          "accumulated_expected_separation": 13.878192994527934
+        },
+        {
+          "hypotheses": [
+            1,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 46.98337045781467,
+          "accumulated_expected_separation": 12.675088017480077
+        }
+      ]
+    },
+    "joint": {
+      "policy": "joint",
+      "integration_ticks": 9,
+      "integration_seconds": 9.0,
+      "frames": 3,
+      "pixels_per_frame": 4,
+      "records": [
+        {
+          "action": 1,
+          "duration_ticks": 5,
+          "incremental_expected_separation": 0.22700264657771657,
+          "max_supported_saturation_probability": 3.1321494220233287e-22
+        },
+        {
+          "action": 0,
+          "duration_ticks": 1,
+          "incremental_expected_separation": 0.10528129500598508,
+          "max_supported_saturation_probability": 0.2693211947501864
+        },
+        {
+          "action": 2,
+          "duration_ticks": 3,
+          "incremental_expected_separation": 0.0,
+          "max_supported_saturation_probability": 6.333457844039601e-11
+        }
+      ],
+      "expected_separation": 0.33228394158370167,
+      "pair_diagnostics": [
+        {
+          "hypotheses": [
+            0,
+            1
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 54.13474710687769,
+          "accumulated_expected_separation": 54.13636046544144
+        },
+        {
+          "hypotheses": [
+            0,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 25.363894029330964,
+          "accumulated_expected_separation": 25.363894029330964
+        },
+        {
+          "hypotheses": [
+            1,
+            2
+          ],
+          "status": "separable_some_action",
+          "actions_with_shared_pixels": 5,
+          "actions_with_complete_shared_pixels": 5,
+          "max_single_frame_expected_separation": 46.98337045781467,
+          "accumulated_expected_separation": 70.10999046428363
+        }
+      ]
+    }
+  },
+  "indistinguishable": {
+    "policy": "joint",
+    "integration_ticks": 9,
+    "integration_seconds": 9.0,
+    "frames": 3,
+    "pixels_per_frame": 4,
+    "records": [
+      {
+        "action": 0,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 4.56359095637145e-81
+      },
+      {
+        "action": 1,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 4.56359095637145e-81
+      },
+      {
+        "action": 2,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 4.56359095637145e-81
+      }
+    ],
+    "expected_separation": 0.0,
+    "pair_diagnostics": [
+      {
+        "hypotheses": [
+          0,
+          1
+        ],
+        "status": "unresolved_on_complete_atlas",
+        "actions_with_shared_pixels": 5,
+        "actions_with_complete_shared_pixels": 5,
+        "max_single_frame_expected_separation": 0.0,
+        "accumulated_expected_separation": 0.0
+      },
+      {
+        "hypotheses": [
+          0,
+          2
+        ],
+        "status": "unresolved_with_missing_coverage",
+        "actions_with_shared_pixels": 0,
+        "actions_with_complete_shared_pixels": 0,
+        "max_single_frame_expected_separation": 0.0,
+        "accumulated_expected_separation": 0.0
+      },
+      {
+        "hypotheses": [
+          1,
+          2
+        ],
+        "status": "unresolved_with_missing_coverage",
+        "actions_with_shared_pixels": 0,
+        "actions_with_complete_shared_pixels": 0,
+        "max_single_frame_expected_separation": 0.0,
+        "accumulated_expected_separation": 0.0
+      }
+    ]
+  },
+  "overlapping_variants": {
+    "policy": "joint",
+    "integration_ticks": 9,
+    "integration_seconds": 9.0,
+    "frames": 3,
+    "pixels_per_frame": 4,
+    "records": [
+      {
+        "action": 0,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.3048075724578049e-22
+      },
+      {
+        "action": 1,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.3048075724578049e-22
+      },
+      {
+        "action": 2,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.3048075724578049e-22
+      }
+    ],
+    "expected_separation": 0.0,
+    "pair_diagnostics": [
+      {
+        "hypotheses": [
+          0,
+          1
+        ],
+        "status": "unresolved_on_complete_atlas",
+        "actions_with_shared_pixels": 5,
+        "actions_with_complete_shared_pixels": 5,
+        "max_single_frame_expected_separation": 0.0,
+        "accumulated_expected_separation": 0.0
+      }
+    ]
+  },
+  "saturated": {
+    "policy": "joint",
+    "integration_ticks": 9,
+    "integration_seconds": 9.0,
+    "frames": 3,
+    "pixels_per_frame": 4,
+    "records": [
+      {
+        "action": 0,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.0
+      },
+      {
+        "action": 1,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.0
+      },
+      {
+        "action": 2,
+        "duration_ticks": 3,
+        "incremental_expected_separation": 0.0,
+        "max_supported_saturation_probability": 1.0
+      }
+    ],
+    "expected_separation": 0.0,
+    "pair_diagnostics": [
+      {
+        "hypotheses": [
+          0,
+          1
+        ],
+        "status": "unresolved_on_complete_atlas",
+        "actions_with_shared_pixels": 5,
+        "actions_with_complete_shared_pixels": 5,
+        "max_single_frame_expected_separation": 0.0,
+        "accumulated_expected_separation": 0.0
+      }
+    ]
+  }
+}

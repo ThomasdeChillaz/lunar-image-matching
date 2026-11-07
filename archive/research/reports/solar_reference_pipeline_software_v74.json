@@ -1,0 +1,58 @@
+{
+  "captured_utc": "2026-11-04T01:45:45.112144+00:00",
+  "revision": "eligible_inventory_correction",
+  "stage": "prepared_not_integrated_or_admitted",
+  "procedural_tests": {
+    "passed": 49,
+    "failed": 0,
+    "new_pipeline_controls": 33,
+    "existing_case_producer_regressions": 16,
+    "calendar_seconds": 9.44,
+    "log": "procedural_tests_v74.log",
+    "log_sha256": "70749e3019e1de2f63ba19390709c43f19ee3a401b546ca76f7a85a0f7efc6e0",
+    "kind": "Metadata fixtures and fake process/clock controls only. No external child launches."
+  },
+  "software_checks": [
+    "Full96 gate precedes outputs",
+    "Complete generated32 inventory and all8 raw groups retained",
+    "Exact independently eligible N cameras prepared; per-camera failed oracle outcomes never exclude cases",
+    "31/32 eligible fixture retains reasons and all6N positive/negative cases",
+    "Empty eligible selection group reported while original8 groups remain metadata",
+    "Four distinct terrain cost pilot or preserved pre-job SHORTFALL record",
+    "N-4 missing-only projection; N4 makes no repeated full-phase child jobs",
+    "Generic coarse Sun only; full original scene/ceiling bound",
+    "Canonical original budget/prefix and no refunds",
+    "Publication barrier before executor/reservation",
+    "Fixed original dispatch and overall deadlines",
+    "Completed pilot reusable after its own dispatch lease without recharging",
+    "Historical evidence replay after overall deadline without NPZ array parsing",
+    "Startup-hang fake process group escalation and launch-window signal cleanup",
+    "Exit0 missing physical sidecar fails",
+    "Case/scoring completion checksums remain immutable",
+    "End-to-end fake dynamic five-stage serial metadata chain"
+  ],
+  "source_closure_preview": {
+    "files": 42,
+    "path": "source_closure_preview_v74.json",
+    "prepared_only": true
+  },
+  "live_source_snapshot": "live_guard_snapshot_v74.json",
+  "depth_format_preflight": "reference_depth_format_preflight_v74.json",
+  "actual_scientific_execution": {
+    "reference_archives_built": 0,
+    "solar_rays": 0,
+    "lunar_images_decoded": 0,
+    "matcher_forwards": 0,
+    "optimizer_updates": 0,
+    "downloads": 0,
+    "publications": 0
+  },
+  "limitations": [
+    "Actual full96 geometry gate remains pending.",
+    "No real reference-prep or Blender watchdog cost/geometry pilot was run.",
+    "No code has been integrated into the repository for this M74 task.",
+    "Fewer than four distinct eligible selection terrains produces an explicit operational cost-pilot shortfall before jobs; it does not relabel pose failures or raw inventory.",
+    "The proposed 12,000-second setting is a prepared ceiling within the existing canonical baseline budget, not admitted compute or a new allowance.",
+    "No model gain, calibration, untouched-reserve test, transfer or paper result is established."
+  ]
+}

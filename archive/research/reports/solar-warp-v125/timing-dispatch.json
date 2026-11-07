@@ -1,0 +1,88 @@
+{
+  "schema": "solar_warp_archival_gate_v117",
+  "phase": "timing",
+  "split": "model_selection",
+  "cpu_threads": 2,
+  "cap_seconds": 60,
+  "calibration_or_final_access": false,
+  "primary_cell_pixels": 32,
+  "sensitivity_cell_pixels": 16,
+  "known_reference_illumination": true,
+  "query_pose_read_after_prediction_seal": true,
+  "native_size": [
+    512,
+    512
+  ],
+  "expected_prediction_rows": 32,
+  "source_sha256": {
+    "reports/solar-warp-v117/control_warp_archive_v117.py": "d5798af948125e746dd1653cd0796441e628b051919b2974062a158e528cea95",
+    "reports/solar-warp-v117/warp_candidates.py": "86bb0a8e56da2a1cf1ed161f39454dc50a53ce715f1719bd55e8427e7d24de95",
+    "reports/solar-warp-v117/archived_warp_worker.py": "ba536b11a63fc0dfe58014b1ebd40bf6243254fa168845c2292ac7c51b70b14e",
+    "reports/solar-warp-v117/prepare_warp_roster_v117.py": "545d2eddc250be77c589b4fc383110d83627d8c04d9a4a2dea7bac36b02dd7c8",
+    "reports/solar-warp-v117/smoke_warp_candidate_v117.py": "49ae9a36dfba057074f862c29446d0b5d25d2ec4af262135888e4373b302049f",
+    "reports/solar-warp-v117/verify_warp_archive_v117.py": "0c34935785002a60f2959cf3ca745da6af75bd1ad53373bcd496ceb08becf829",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "replay_raw_acquisition_v109.py": "2670cdb5adc69b6f9e7c224d955ca7be8d2fe705c845a4ab2ce8bd7f17fb4372",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "run_solar_secondary_v112.py": "a7d5e4ec3a46e31e188deb5dc9e0069ce4795c0a9b47f8b9ea1b62d603fcdc6d",
+    "solar_learning_pipeline_v73.py": "90df3cf8b003e57c1a6e6cdad0c59e5b1d324b962221c2d944bea52a2e86f50e",
+    "reports/solar_learning_contract_v79.json": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "reports/solar-warp-v125/control_warp_archive_v125.py": "d58938d687f74ea10453e3448af1264fb861b199f55c2a7840954d6a20f6af3d",
+    "reports/solar-warp-v125/fast_projection.py": "1c800d79701c03f2bf38d35b603d50db560dbe910a55f34b5351f031ff0a43e8",
+    "reports/solar-warp-v117/timing-dispatch.json": "6043d1f54efc1e834985737998c5da920084686de0508f1fdfa915f4195ab7be",
+    "reports/solar-warp-v117/timing-procedural-v123.json": "09c42572f7c9b0daca04860074a22ba2023796eb8db16a795b70d6014b81f8a9"
+  },
+  "inputs": {
+    "path": "reports/solar-warp-v117/inference-inputs.json",
+    "sha256": "471a2176f54cebe62432cbf78aaf6ff37515566bb66df9ca2b6d96f719697049"
+  },
+  "labels": {
+    "path": "reports/solar-warp-v117/scoring-inputs.json",
+    "sha256": "4a8549742ecdd9663a7eb5616c5a16b512e56a0d03eab0ccbdd625b29351b8b7"
+  },
+  "software": {
+    "platform": "Darwin",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0.84"
+  },
+  "budget_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "controller_revision": "v125",
+  "projection_engine": {
+    "path": "reports/solar-warp-v125/fast_projection.py",
+    "sha256": "1c800d79701c03f2bf38d35b603d50db560dbe910a55f34b5351f031ff0a43e8",
+    "binding": "FastProjectionBank",
+    "scope": "Only projection-cache winner construction changes. v117 rank, scoring, and replay remain byte-identical."
+  },
+  "original_v117_timing": {
+    "dispatch_sha256": "6043d1f54efc1e834985737998c5da920084686de0508f1fdfa915f4195ab7be",
+    "receipt_sha256": "09c42572f7c9b0daca04860074a22ba2023796eb8db16a795b70d6014b81f8a9",
+    "failure_sha256": "6abbd5cfdce1bdca8cf11b3d7d479249c0a90fa44c740745be08666071dda1e9",
+    "archive_started": false,
+    "projected_archive_seconds": 193.47633312271358,
+    "charge": {
+      "job_id": "6043d1f54efc1e834985737998c5da920084686de0508f1fdfa915f4195ab7be/warp-timing",
+      "category": "baseline",
+      "seconds": 60,
+      "reserved_utc": "2026-11-05T04:02:23.697161+00:00",
+      "refund_on_failure": false
+    }
+  },
+  "prepared_only": false,
+  "predecessor": {
+    "run_id": 41941904269,
+    "head_sha": "a95d290d9ecd001b2316e90285ae7bb2bff28c87",
+    "run_attempt": 1,
+    "conclusion": "success",
+    "artifact_audit_sha256": "75a66c58c2322be8b9d685eae4e57e6a5609a20a7d25779b9f3aebe82cb9f746"
+  },
+  "timing": null,
+  "created_utc": "2026-11-05T04:14:40.616684+00:00",
+  "latest_start_utc": "2026-11-05T05:14:40.616684+00:00"
+}

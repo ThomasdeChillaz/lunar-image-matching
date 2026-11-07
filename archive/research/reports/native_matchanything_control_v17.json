@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "controls": {
+    "passed": true,
+    "scope": "Actual native512px known-transform and invalid-input software controls.",
+    "matches": 5015,
+    "median_native_error_px": 0.06021498655041822,
+    "translation_error_m": 0.0011111518344254384,
+    "rotation_error_deg": 0.008230079485015583,
+    "warm_match_seconds": 8.413881211017724,
+    "blank_empty": true,
+    "invalid_mask_empty": true,
+    "inliers": 5004,
+    "known_translation_native": [
+      8.0,
+      -4.0
+    ],
+    "image_seed": 20261101
+  },
+  "elapsed_seconds": 22.16569500300102,
+  "peak_process_rss_bytes": 2739552256,
+  "protocol_sha256": "7a4577700b1949f14b120fea3fc062d05e69a5c937097209c5d6d68877171803",
+  "controls_sha256": "e16a3798ea99196dc1f843e0d78c397ca08358235f2c77791443139390ec5d2b",
+  "scope": "Actual pretrained native512px software/cost controls, not lunar localization performance.",
+  "cpu_threads": 1,
+  "timing": "Concurrent cost pilot, not an isolated comparison.",
+  "lunar_images_loaded": 0
+}

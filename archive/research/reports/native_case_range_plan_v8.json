@@ -1,0 +1,27 @@
+{
+  "scope": "Execution-range recovery only; no model, settings, native inputs, coordinate, estimator or correctness criterion changed. Development only.",
+  "original_runs": {
+    "loma_r": 41255920157,
+    "romav2": 41256049036
+  },
+  "original_source_commit": "9c68de80ed06a8437e1aac919a20dcdea9df8a62",
+  "principal_case_assignment": {
+    "original_run_global_indices": [
+      0,
+      35
+    ],
+    "range_run_global_indices": [
+      36,
+      71
+    ]
+  },
+  "eligible_positive_pairs_per_method": 72,
+  "profile": "common",
+  "cpu_threads": 2,
+  "runner": "ubuntu-24.04-arm standard public runner",
+  "case_selection": "Fixed positional split before range-job inference; independent of correctness. Preserve original attempts and all duplicates. No completed comparison until every assigned case and compact paired control passes replay.",
+  "reason": "Both live jobs passed actual native controls; LoMa-R completed15 pairs in17minutes, RoMa-v2 13 in roughly16minutes. Full72-case inference may exceed their3600s process budget.",
+  "max_additional_jobs": 2,
+  "max_additional_job_wall_minutes": 90,
+  "no_paid_compute": true
+}

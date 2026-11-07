@@ -1,0 +1,331 @@
+{
+  "passed": true,
+  "gates": {
+    "analytic_native_matches": true,
+    "analytic_pose": true,
+    "exact_24_reference_inputs": true,
+    "selected_render_and_windows": true,
+    "deferred_native_features": true,
+    "paid_patch_and_pose_limits": true,
+    "blank_rejected": true,
+    "frozen_encoder_unchanged": true
+  },
+  "scope": "Generated plane, 24 analytic reference-only renders, known translation, actual frozen SIFT/compact v92 path. No lunar data, model fitting or science admission.",
+  "native_size": 512,
+  "cpu_threads": 2,
+  "image_seed": 20261101,
+  "returned": 32,
+  "median_native_error_px": 0.24066087604104014,
+  "translation_error_m": 0.0035063322692704475,
+  "rotation_error_deg": 0.019985758395501645,
+  "blank_reason": "blank_or_uninformative_image",
+  "live_render_seeds": 4,
+  "seed_windows_inserted": 960,
+  "selected_render": 7,
+  "paid_native_searches": 32,
+  "encoder_shapes": [
+    [
+      128,
+      128
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      57,
+      57
+    ]
+  ],
+  "raw_predictions_sha256": "bfba09a7529746c00fe96c4cb5b2349b1d0c0db524a285332a24ea81f66f366f",
+  "source_sha256": {
+    "/Users/admin/Documents/Codex/2026-10-25/for/work/solar_render_bootstrap_v92/smoke_solar_render_bootstrap_v92.py": "80b3a6dda77a86d60238bd8ea4b868fa2a2605c5a43dff0c1be8474f1f8647f7",
+    "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/solar_render_bootstrap_v92.py": "c2362bc47fe644f7fee6986384835afc264ca12778e028fbda14538b4bab39ff",
+    "control_direct_render_v90.py": "19b506eb6b32216b4b73be39d7906788f38ec32dbaa31a7b92f76a151a208a4e",
+    "reports/solar_learning_contract_v79.json": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95"
+  },
+  "fixture_reference_sha256": {
+    "0": "f1c7b98e4dbe49c645474171588faad3e5ac0f9749e2edb4a2808ca6d0cfde50",
+    "1": "806052bc73374dfb1157c96165924c29d0b5ace7297f60c9d3247ac9093f56fc",
+    "2": "53ace07697b392697534c92d7081e03ea5b222e5e8740981377bc6b37e0f47b8",
+    "3": "f3e218cd0061db490bf2dfa806df30f8c4cdae6aa0307b760f2600e0558eb2f5",
+    "4": "793014d4b616d76c895855cff80dff864bab5ba822e8243c3fd639a75053135d",
+    "5": "66cdca71eb0c269f53e0b5299d60ad9238538eb2c86b5534c5d6aa8040c7849b",
+    "6": "0d7c935c81aea92edd342efd2b4597825d0b8333aad2b2697782e6687ae30813",
+    "7": "c4c8d15e7d73f24dbc001e3d860332a1d6209d20d7ca1c06767ae287adafed66",
+    "8": "eeb8b8342f00ea7fc1e1ff986b2557c3503d63205614dfd3353cfb251ac50e8c",
+    "9": "344f9de3e6d0b0c796bc65e5fe438fc6355fdcdb7f5973033bb42bec2084b114",
+    "10": "2b8d772090eda4db8e4f4e8728c86105858980706801d652ce8e73115f2061aa",
+    "11": "d09fc542bae04bcd6ce7d01c0285541f4d6321c0a8fa29b6c25af6ea8ceb720c",
+    "12": "cbea3b84a9c2ca5da71b0645c7120be27a1ea5f8c86b18fc03c9b3bf886805aa",
+    "13": "8f82cd90e925d1788b2aaa5140c0ecd69a811233b4b9123e2cf28ef58cb8d5ac",
+    "14": "c60dba395ed0dac2dc95417adec9c472c34473a21495883efe9a58916c951b2a",
+    "15": "ec42879b400ca85189070f554adb031d2d88f2eb9e6cde7458b7e07727710767",
+    "16": "88a5fb3609e2b0c9d67fead5fa400e770820abbac5c2d027e2c45f8caafba777",
+    "17": "20452d86dc18ff90b24d235db19be0a7824a2e0be097cbd1f816247953934776",
+    "18": "3f68ed0da70189b243d53900f2ff1649ef8a828ef3a42b11156cfbb028edcda0",
+    "19": "0714bc1b884c82c97e3a2b62dd3f3e7204380d0680c115c1bf68747630a3edc8",
+    "20": "2c3c5a3c2547b33fcef814dd3e2e19fab67c01e07cbf1d26de00b03c018ebcb6",
+    "21": "c283eeef5fb8550a1405be05a782fdffb69901c1f3d536256bf92e0c13391af5",
+    "22": "46497d7b241c9ba5d18eb2e99cdd92bbef2d130b00e82183d29908ae65c84f9d",
+    "23": "69eb865ee41c59ee3980b74a3895d622238d95ba27f8911f8b6adbf1a4489a1a"
+  },
+  "input_image_sha256": {
+    "observed-reference.png": "e49303c2713ba82f6ea2fd1ae8bd1d74266784cb97b5ed0f50b6844629d3c250",
+    "translated-query.png": "cedbf4904c092447b3537d4cdab66b4706cea790db16b333543ae24b0b0cf708"
+  },
+  "frozen_descriptor_sha256": "a12c175767a4270e39ccaa94852421f86254164abb1a9b99d87d4cd8b31485df",
+  "calendar_seconds": 6.624932515027467
+}

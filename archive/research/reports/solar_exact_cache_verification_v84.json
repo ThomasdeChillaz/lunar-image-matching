@@ -1,0 +1,62 @@
+{
+  "schema_version": 84,
+  "created_utc": "2026-11-04T07:48:24.309331+00:00",
+  "scope": "Software verification only; no new lunar accuracy/speed result. Full128-search solver controls use deterministic procedural response callbacks; fresh32-search image controls use untrained constant-response head and historical frozen encoders.",
+  "source_sha256": {
+    "solar_acquisition_cache_v84.py": "71c72672bb74e40cd5d21a4d0f83ba8dc02be8eba9139057e2a5a3bc2fd2266c",
+    "solar_response_cache_v84.py": "d1ac5ec85eed494b18419f0d4a3e08714007053e2bf7ffb174eceef7fcaca97f",
+    "solar_inference_cache_v84.py": "732627a68f9422533e0e633df78526600c6703d75e6674f603b1cfd0c102b769",
+    "test_solar_acquisition_cache_v84.py": "76d316f529af183a74a7d3a32fb6fe4bf5bc2673fc0736aa01e32b8b0809059e",
+    "test_solar_response_cache_v84.py": "134724d26e22a162f192a9183f59e3987ca0657864cf7e871ae98ccb9463f1c8",
+    "test_solar_inference_cache_v84.py": "a595fe2700fd0ad4830729358ce7bf778480f3e0eb5cf9f2fa71bede523b062e",
+    "localize_terrain.py": "9c8484a0e23e19454d814a5410c4e317f5ecd1003c277761efc3f25062e46f96",
+    "solar_evaluation_protocol_v74.py": "1c8281626f4e282cede59c7495b4053f23a20da985ec3dd8430c80ab27cff776",
+    "run_solar_evaluation_v70.py": "49679c949fb56a96a4c49655ba76f3b457840163890adf7998122ad50615865d",
+    "solar_procedural_smoke_v63.py": "6d8e71785c9f6497cee4abf3fa9b834c779515f768df1ba350d8e0b9478769d8"
+  },
+  "repository_tests": {
+    "passed": 982,
+    "skipped": 4,
+    "seconds": 129.55,
+    "log_sha256": "0989a414071065f4deb07c235e326c5655edd1703bd87e4af58ac7d4ec3a96da"
+  },
+  "cache_focused_tests": {
+    "passed": 75,
+    "seconds": 65.73,
+    "included_in_full_repository_count": true
+  },
+  "fresh_image_smoke": {
+    "run": "runs/solar-v84-controlled-smoke",
+    "summary_sha256": "c31941a56716a5917b887723aa5077fa56e467a4ec23e667fa817edbf1934a24",
+    "passed": true,
+    "toggle_count": 8,
+    "native_patch_budget": 32,
+    "replay": "reports/solar_controlled_smoke_replay_v84.json",
+    "replay_sha256": "496509fd66a9ca611b340de722ec33483de3552fc4ec05359289142d91d33c21"
+  },
+  "image_output_equality": {
+    "path": "reports/solar_image_equality_v84.json",
+    "sha256": "4beb39324e4ca9ea3593ef859c4d2ddc9255b35d6e07eef0ff2e385a3009163e",
+    "all8_equal_except_declared_cache_timing_provenance": true
+  },
+  "independent_source_review": "reports/solar_exact_cache_review_v84.json",
+  "model_parameters": 95808,
+  "old_defaults_unchanged": true,
+  "new_lunar_inference_started": false,
+  "measured_speedup": null,
+  "guard_scope": "Original input geometry and derived reference-Sun geometry are checked before result emission, including mutation/replacement/failure/early-return paths. Outer inference timer includes these checks; internal raw elapsed_seconds ends before the final outer guard.",
+  "protected_closures": [
+    {
+      "contract": "reports/solar_learning_contract_v79.json",
+      "contract_sha256": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+      "count": 49,
+      "all_bytes_unchanged": true
+    },
+    {
+      "contract": "reports/solar_reference_contract_v80.json",
+      "contract_sha256": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+      "count": 42,
+      "all_bytes_unchanged": true
+    }
+  ]
+}

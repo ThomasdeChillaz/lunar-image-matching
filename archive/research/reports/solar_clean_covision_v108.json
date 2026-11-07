@@ -1,0 +1,1706 @@
+{
+  "schema": "solar_clean_covision_v108",
+  "protocol_sha256": "ccd1d2d4220f3ef118703b42f57109328df0671d271e0e5ae044d71ba3fc86e0",
+  "rows": [
+    {
+      "case_id": "u061-l00-17-positive",
+      "purpose": "sparse_tail_primary",
+      "grid_anchors": 676,
+      "exact_visible_centres": 648,
+      "aligned_supported": 629,
+      "common_supported": 547,
+      "aligned": {
+        "p95_minus_p5": {
+          "1": {
+            "reference": 2,
+            "query": 2,
+            "both": 1,
+            "either": 3,
+            "neither": 626
+          },
+          "3": {
+            "reference": 2,
+            "query": 2,
+            "both": 1,
+            "either": 3,
+            "neither": 626,
+            "reference_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "query_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "6": {
+            "reference": 2,
+            "query": 2,
+            "both": 1,
+            "either": 3,
+            "neither": 626
+          }
+        },
+        "p99_minus_p5": {
+          "1": {
+            "reference": 625,
+            "query": 620,
+            "both": 618,
+            "either": 627,
+            "neither": 2
+          },
+          "3": {
+            "reference": 624,
+            "query": 619,
+            "both": 616,
+            "either": 627,
+            "neither": 2
+          },
+          "6": {
+            "reference": 619,
+            "query": 616,
+            "both": 612,
+            "either": 623,
+            "neither": 6
+          }
+        }
+      },
+      "common": [
+        {
+          "query_offset_xy": [
+            0,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 1,
+                "both": 0,
+                "either": 1,
+                "neither": 546
+              },
+              "3": {
+                "reference": 0,
+                "query": 1,
+                "both": 0,
+                "either": 1,
+                "neither": 546
+              },
+              "6": {
+                "reference": 0,
+                "query": 1,
+                "both": 0,
+                "either": 1,
+                "neither": 546
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 543,
+                "query": 539,
+                "both": 537,
+                "either": 545,
+                "neither": 2
+              },
+              "3": {
+                "reference": 542,
+                "query": 539,
+                "both": 536,
+                "either": 545,
+                "neither": 2
+              },
+              "6": {
+                "reference": 539,
+                "query": 536,
+                "both": 534,
+                "either": 541,
+                "neither": 6
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            -32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 543,
+                "query": 522,
+                "both": 522,
+                "either": 543,
+                "neither": 4
+              },
+              "3": {
+                "reference": 542,
+                "query": 521,
+                "both": 520,
+                "either": 543,
+                "neither": 4
+              },
+              "6": {
+                "reference": 539,
+                "query": 514,
+                "both": 511,
+                "either": 542,
+                "neither": 5
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 2,
+                "both": 0,
+                "either": 2,
+                "neither": 545
+              },
+              "3": {
+                "reference": 0,
+                "query": 2,
+                "both": 0,
+                "either": 2,
+                "neither": 545
+              },
+              "6": {
+                "reference": 0,
+                "query": 1,
+                "both": 0,
+                "either": 1,
+                "neither": 546
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 543,
+                "query": 543,
+                "both": 539,
+                "either": 547,
+                "neither": 0
+              },
+              "3": {
+                "reference": 542,
+                "query": 543,
+                "both": 538,
+                "either": 547,
+                "neither": 0
+              },
+              "6": {
+                "reference": 539,
+                "query": 541,
+                "both": 533,
+                "either": 547,
+                "neither": 0
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            -32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 547
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 543,
+                "query": 537,
+                "both": 537,
+                "either": 543,
+                "neither": 4
+              },
+              "3": {
+                "reference": 542,
+                "query": 535,
+                "both": 535,
+                "either": 542,
+                "neither": 5
+              },
+              "6": {
+                "reference": 539,
+                "query": 533,
+                "both": 531,
+                "either": 541,
+                "neither": 6
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 2,
+                "both": 0,
+                "either": 2,
+                "neither": 545
+              },
+              "3": {
+                "reference": 0,
+                "query": 2,
+                "both": 0,
+                "either": 2,
+                "neither": 545
+              },
+              "6": {
+                "reference": 0,
+                "query": 2,
+                "both": 0,
+                "either": 2,
+                "neither": 545
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 543,
+                "query": 542,
+                "both": 539,
+                "either": 546,
+                "neither": 1
+              },
+              "3": {
+                "reference": 542,
+                "query": 541,
+                "both": 537,
+                "either": 546,
+                "neither": 1
+              },
+              "6": {
+                "reference": 539,
+                "query": 539,
+                "both": 532,
+                "either": 546,
+                "neither": 1
+              }
+            }
+          }
+        }
+      ],
+      "contrast_sigma_quantiles": {
+        "quantiles": [
+          5,
+          50,
+          95,
+          99
+        ],
+        "reference": [
+          [
+            0.0,
+            13.578307843727938
+          ],
+          [
+            0.17522692994860173,
+            24.60132180499925
+          ],
+          [
+            0.17522692994860173,
+            28.278607198911356
+          ],
+          [
+            0.17522692994860173,
+            29.18087598082971
+          ]
+        ],
+        "query": [
+          [
+            0.0,
+            13.283818769456895
+          ],
+          [
+            0.17522692994860173,
+            24.286452490876265
+          ],
+          [
+            0.17522692994860173,
+            28.282057821531936
+          ],
+          [
+            0.17522692994860173,
+            29.02282023259342
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "u013-l00-00-positive",
+      "purpose": "bright_control",
+      "grid_anchors": 676,
+      "exact_visible_centres": 660,
+      "aligned_supported": 648,
+      "common_supported": 599,
+      "aligned": {
+        "p95_minus_p5": {
+          "1": {
+            "reference": 453,
+            "query": 452,
+            "both": 447,
+            "either": 458,
+            "neither": 190
+          },
+          "3": {
+            "reference": 446,
+            "query": 449,
+            "both": 443,
+            "either": 452,
+            "neither": 196,
+            "reference_tiles_yx": [
+              [
+                23,
+                40,
+                40,
+                25
+              ],
+              [
+                19,
+                38,
+                60,
+                40
+              ],
+              [
+                0,
+                0,
+                51,
+                40
+              ],
+              [
+                0,
+                3,
+                39,
+                25
+              ]
+            ],
+            "query_tiles_yx": [
+              [
+                31,
+                70,
+                37,
+                4
+              ],
+              [
+                0,
+                35,
+                93,
+                19
+              ],
+              [
+                0,
+                35,
+                74,
+                1
+              ],
+              [
+                0,
+                16,
+                28,
+                0
+              ]
+            ]
+          },
+          "6": {
+            "reference": 444,
+            "query": 449,
+            "both": 442,
+            "either": 451,
+            "neither": 197
+          }
+        },
+        "p99_minus_p5": {
+          "1": {
+            "reference": 572,
+            "query": 581,
+            "both": 568,
+            "either": 585,
+            "neither": 63
+          },
+          "3": {
+            "reference": 571,
+            "query": 579,
+            "both": 567,
+            "either": 583,
+            "neither": 65
+          },
+          "6": {
+            "reference": 568,
+            "query": 570,
+            "both": 559,
+            "either": 579,
+            "neither": 69
+          }
+        }
+      },
+      "common": [
+        {
+          "query_offset_xy": [
+            0,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 432,
+                "query": 432,
+                "both": 427,
+                "either": 437,
+                "neither": 162
+              },
+              "3": {
+                "reference": 426,
+                "query": 429,
+                "both": 423,
+                "either": 432,
+                "neither": 167
+              },
+              "6": {
+                "reference": 424,
+                "query": 429,
+                "both": 422,
+                "either": 431,
+                "neither": 168
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 538,
+                "query": 547,
+                "both": 534,
+                "either": 551,
+                "neither": 48
+              },
+              "3": {
+                "reference": 538,
+                "query": 545,
+                "both": 534,
+                "either": 549,
+                "neither": 50
+              },
+              "6": {
+                "reference": 535,
+                "query": 538,
+                "both": 527,
+                "either": 546,
+                "neither": 53
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            -32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 432,
+                "query": 391,
+                "both": 380,
+                "either": 443,
+                "neither": 156
+              },
+              "3": {
+                "reference": 426,
+                "query": 387,
+                "both": 379,
+                "either": 434,
+                "neither": 165
+              },
+              "6": {
+                "reference": 424,
+                "query": 387,
+                "both": 379,
+                "either": 432,
+                "neither": 167
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 538,
+                "query": 526,
+                "both": 522,
+                "either": 542,
+                "neither": 57
+              },
+              "3": {
+                "reference": 538,
+                "query": 521,
+                "both": 518,
+                "either": 541,
+                "neither": 58
+              },
+              "6": {
+                "reference": 535,
+                "query": 516,
+                "both": 513,
+                "either": 538,
+                "neither": 61
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 432,
+                "query": 475,
+                "both": 423,
+                "either": 484,
+                "neither": 115
+              },
+              "3": {
+                "reference": 426,
+                "query": 472,
+                "both": 420,
+                "either": 478,
+                "neither": 121
+              },
+              "6": {
+                "reference": 424,
+                "query": 471,
+                "both": 418,
+                "either": 477,
+                "neither": 122
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 538,
+                "query": 566,
+                "both": 537,
+                "either": 567,
+                "neither": 32
+              },
+              "3": {
+                "reference": 538,
+                "query": 563,
+                "both": 537,
+                "either": 564,
+                "neither": 35
+              },
+              "6": {
+                "reference": 535,
+                "query": 555,
+                "both": 532,
+                "either": 558,
+                "neither": 41
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            -32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 432,
+                "query": 450,
+                "both": 410,
+                "either": 472,
+                "neither": 127
+              },
+              "3": {
+                "reference": 426,
+                "query": 447,
+                "both": 405,
+                "either": 468,
+                "neither": 131
+              },
+              "6": {
+                "reference": 424,
+                "query": 446,
+                "both": 404,
+                "either": 466,
+                "neither": 133
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 538,
+                "query": 550,
+                "both": 523,
+                "either": 565,
+                "neither": 34
+              },
+              "3": {
+                "reference": 538,
+                "query": 546,
+                "both": 519,
+                "either": 565,
+                "neither": 34
+              },
+              "6": {
+                "reference": 535,
+                "query": 541,
+                "both": 512,
+                "either": 564,
+                "neither": 35
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 432,
+                "query": 428,
+                "both": 394,
+                "either": 466,
+                "neither": 133
+              },
+              "3": {
+                "reference": 426,
+                "query": 422,
+                "both": 389,
+                "either": 459,
+                "neither": 140
+              },
+              "6": {
+                "reference": 424,
+                "query": 420,
+                "both": 387,
+                "either": 457,
+                "neither": 142
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 538,
+                "query": 546,
+                "both": 523,
+                "either": 561,
+                "neither": 38
+              },
+              "3": {
+                "reference": 538,
+                "query": 541,
+                "both": 523,
+                "either": 556,
+                "neither": 43
+              },
+              "6": {
+                "reference": 535,
+                "query": 534,
+                "both": 516,
+                "either": 553,
+                "neither": 46
+              }
+            }
+          }
+        }
+      ],
+      "contrast_sigma_quantiles": {
+        "quantiles": [
+          5,
+          50,
+          95,
+          99
+        ],
+        "reference": [
+          [
+            0.061329425482010855,
+            0.17522692994860173
+          ],
+          [
+            190.0132707965308,
+            234.10476924907243
+          ],
+          [
+            535.3681473756197,
+            661.735357898491
+          ],
+          [
+            771.7318554866923,
+            919.2796793117466
+          ]
+        ],
+        "query": [
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ],
+          [
+            206.54036482179373,
+            257.65612748562995
+          ],
+          [
+            547.5941747861614,
+            681.8075318974373
+          ],
+          [
+            779.1635240454515,
+            1172.1180763250468
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "u025-l00-00-positive",
+      "purpose": "near_uniform_control",
+      "grid_anchors": 676,
+      "exact_visible_centres": 632,
+      "aligned_supported": 605,
+      "common_supported": 522,
+      "aligned": {
+        "p95_minus_p5": {
+          "1": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605
+          },
+          "3": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605,
+            "reference_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "6": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605
+          }
+        },
+        "p99_minus_p5": {
+          "1": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605
+          },
+          "3": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605
+          },
+          "6": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 605
+          }
+        }
+      },
+      "common": [
+        {
+          "query_offset_xy": [
+            0,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            -32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            -32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 522
+              }
+            }
+          }
+        }
+      ],
+      "contrast_sigma_quantiles": {
+        "quantiles": [
+          5,
+          50,
+          95,
+          99
+        ],
+        "reference": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ]
+        ],
+        "query": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "u027-l08-01-positive",
+      "purpose": "near_uniform_control",
+      "grid_anchors": 676,
+      "exact_visible_centres": 664,
+      "aligned_supported": 652,
+      "common_supported": 606,
+      "aligned": {
+        "p95_minus_p5": {
+          "1": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652
+          },
+          "3": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652,
+            "reference_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_tiles_yx": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "6": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652
+          }
+        },
+        "p99_minus_p5": {
+          "1": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652
+          },
+          "3": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652
+          },
+          "6": {
+            "reference": 0,
+            "query": 0,
+            "both": 0,
+            "either": 0,
+            "neither": 652
+          }
+        }
+      },
+      "common": [
+        {
+          "query_offset_xy": [
+            0,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            -32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            32,
+            0
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            -32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            }
+          }
+        },
+        {
+          "query_offset_xy": [
+            0,
+            32
+          ],
+          "overlap": {
+            "p95_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            },
+            "p99_minus_p5": {
+              "1": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "3": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              },
+              "6": {
+                "reference": 0,
+                "query": 0,
+                "both": 0,
+                "either": 0,
+                "neither": 606
+              }
+            }
+          }
+        }
+      ],
+      "contrast_sigma_quantiles": {
+        "quantiles": [
+          5,
+          50,
+          95,
+          99
+        ],
+        "reference": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ]
+        ],
+        "query": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ],
+          [
+            0.17522692994860173,
+            0.17522692994860173
+          ]
+        ]
+      }
+    }
+  ],
+  "matcher_calls": 0,
+  "optimizer_updates": 0,
+  "renderer_calls": 0,
+  "calibration_or_final_access": false
+}

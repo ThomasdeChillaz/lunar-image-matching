@@ -1,0 +1,242 @@
+{
+  "review_version": 81,
+  "created_utc": "2026-11-04T06:04:08.413006+00:00",
+  "repository_root": "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching",
+  "read_only_repository": true,
+  "candidate_pose_performance": "UNMEASURED for the three-module candidate; no ranking inferred",
+  "novelty_status": "Not established; targeted review cannot show absence of exact antecedents",
+  "scope_exclusions": {
+    "neural_forward": false,
+    "training": false,
+    "rendering": false,
+    "rays": false,
+    "checkpoint_selection": false,
+    "source_or_protocol_mutation": false,
+    "calibration_or_final_reserve_access": false,
+    "publication": false,
+    "email": false
+  },
+  "inspected_local_source_sha256": {
+    "reports/solar_prior_art_review_v73.md": "5da5a2b7112af6079fbda86d0121a9f163178a47d63cb779dd01319a7b22748d",
+    "reports/REQUIREMENTS_AND_SOTA_V69.md": "f0d497c6e2ac765c0ad55189284b5f431380fb4a6b6eead1ee26a0840b3a4204",
+    "solar_response_v63.py": "c677c17c3492006b89844c09c34848df78b20fd6c6b8c67a5afcb253963c26eb",
+    "solar_assignment_v63.py": "ebb84f4e04a1b037f427bdba4266fa776fdb1c32f7ba0518eaa24c5dbc592861",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "solar_frontend_v63.py": "cdbd20fd07b3d8582e82d27e56b10295e7f2c5671b21927aa74790a72a4407c0",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_training_bank_v68.py": "471c716d120cebf93b5feb7801dda299cd226f47bec662b0c890a3c914f8808d",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "reports/solar_reference_one_review_v80.json": "c8a55379f769cce222d73d0c8870d7489516c305adaa90927796e74887c18d22",
+    "reports/solar_reference_one_summary_v80.json": "331acb249a3eecc447cc96d2e74c29b9d59742b7e964e4a2ccdb94947ea0bf9d",
+    "runs/solar-reference-v80-full/stages/reference_four/summary.json": "ef4aa818ad6bfb42d7c22151eebbceb374d4411df8f8b12b93b14820f9d30909"
+  },
+  "primary_sources": [
+    {
+      "id": "lima2025",
+      "url": "https://doi.org/10.2514/6.2025-2073",
+      "access_and_sections": "Full author-hosted 13-page PDF; Sections III\u2013IV inspected; Table 1 on page 11 independently visually verified",
+      "verified_on": "2026-11-04",
+      "author_page": "https://ggeorgak11.github.io/",
+      "author_pdf_url": "https://drive.google.com/file/d/10O-6Q9ujkxPZ8bVEY5JarR7Hg7t2dSRb/view?usp=sharing",
+      "local_pdf_sha256": "efd5c1e8881cf28624f835fee40459518b26d0ff3ae73b817b321f0fb0456615",
+      "local_pdf_bytes": 7236693,
+      "redistribution": "Do not publish PDF, extracted text or page raster; cite public author page/DOI and paraphrased facts only"
+    },
+    {
+      "id": "lima2026_author_summary",
+      "url": "https://noahzegna.github.io/",
+      "access_and_sections": "Author publication summary only; no full-paper metrics",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "loma_rotation",
+      "url": "https://arxiv.org/html/2604.11809",
+      "access_and_sections": "v1, 13 April 2026; Sections 3.2\u20133.5, 4.2\u20134.4; Tables 2\u20134",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "loma_release",
+      "url": "https://github.com/davnords/LoMa",
+      "access_and_sections": "Official README; LoMa-R release and variant definitions",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "roma_v2",
+      "url": "https://arxiv.org/html/2511.15706",
+      "access_and_sections": "v3, 6 July 2026; Sections 3.3\u20133.5 and 4.1\u20134.8; Tables 4, 8, 11\u201312",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "roma_v2_repo",
+      "url": "https://github.com/Parskatt/RoMaV2",
+      "access_and_sections": "Official repository",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "roma_omega",
+      "url": "https://arxiv.org/html/2609.09507v1",
+      "access_and_sections": "v1, 8 September 2026; Sections 5.1\u20135.8; Tables 2, 3, 5",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "roma_omega_repo",
+      "url": "https://github.com/davnords/RoMa-Omega",
+      "access_and_sections": "Official repository",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "moonst3r",
+      "url": "https://arxiv.org/html/2510.18172",
+      "access_and_sections": "v1, 20 October 2025; Sections 3\u20135.2; Tables 3\u20134",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "moonst3r_repo",
+      "url": "https://github.com/clementinegrethen/StereoLunar",
+      "access_and_sections": "Official repository",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lunar_distillation",
+      "url": "https://arxiv.org/html/2607.01851",
+      "access_and_sections": "v1, 2 July 2026; Sections 3.3\u20134.3; Tables 1\u20132",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lunar_distillation_repo",
+      "url": "https://github.com/clementinegrethen/mast3r-distillation",
+      "access_and_sections": "Official repository; ECCV 2026 publication status",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dem_slam",
+      "url": "https://arxiv.org/html/2603.17229",
+      "access_and_sections": "v1, 18 March 2026; Sections III-A, VI-A\u2013VI-E; Table I",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "shadow_lunar2015",
+      "url": "https://elib.dlr.de/97110/",
+      "access_and_sections": "Institutional abstract; restricted full text",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sundial",
+      "url": "https://arxiv.org/html/2312.16215v1",
+      "access_and_sections": "v1, 24 December 2023; Sections 3.4, 4.3 and 5.1",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "prt",
+      "url": "https://www.microsoft.com/en-us/research/publication/precomputed-radiance-transfer-real-time-rendering-dynamic-low-frequency-lighting-environments/",
+      "access_and_sections": "Primary institutional abstract",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "nrtf",
+      "url": "https://vcai.mpi-inf.mpg.de/projects/2022-NRTF/data/paper.pdf",
+      "access_and_sections": "Primary ECCV 2022 PDF; abstract and method/background",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dff",
+      "url": "https://pfnet-research.github.io/distilled-feature-fields/",
+      "access_and_sections": "Official NeurIPS 2022 project abstract/method summary",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "active_matching",
+      "url": "https://www.doc.ic.ac.uk/~ajd/Publications/chli_davison_eccv2008.pdf",
+      "access_and_sections": "Primary ECCV 2008 PDF; Sections 2\u20134",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dad",
+      "url": "https://arxiv.org/abs/2503.07347",
+      "access_and_sections": "Primary author preprint abstract",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "geoloftr",
+      "url": "https://arxiv.org/html/2502.09795v3",
+      "access_and_sections": "Full HTML Sections III-A, III-C\u2013III-D, IV-A\u2013IV-D inspected; v3 23 April 2026; official author page lists ICRA 2026",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "geoloftr_code",
+      "url": "https://github.com/nasa-jpl/mbl_mars",
+      "access_and_sections": "Official README; reference inputs, weights links and tested Python",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "geoloftr_license",
+      "url": "https://github.com/nasa-jpl/mbl_mars/blob/main/LICENSE",
+      "access_and_sections": "Official code license label; no legal interpretation",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "geoloftr_dependencies",
+      "url": "https://github.com/nasa-jpl/mbl_mars/blob/main/requirements.txt",
+      "access_and_sections": "Selected declared package pins only; no install or compatibility test",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "geoloftr_weights",
+      "url": "https://huggingface.co/dpisanti/mbl-mars",
+      "access_and_sections": "Official model card and file-list metadata, including license; no binary access",
+      "verified_on": "2026-11-04"
+    }
+  ],
+  "implementation_findings": {
+    "A": "Shared Sun in sparse assignment plus iterative pose/native measurements; solar-off and independent-Sun controls are necessary; no end-to-end joint learned network claim",
+    "B": "36 by 32 degree-five SH coefficients from canonical 33px patches with observed Sun, normal, trial view; own compact frozen teacher; no learned reliability head",
+    "B_capacity": {
+      "total_parameters": 95808,
+      "trainable_parameters": 67536
+    },
+    "B_identifiability": "At most 12 target samples along one constant-subsolar-latitude circle; degree-five restriction has rank at most 11; arbitrary 36 coefficients cannot be identified per fixed conditioned observation",
+    "B_control": "Same architecture and counterfactual reconstruction; pooled angular matching/discrimination use",
+    "C": "Weighted interval separation of geometric/solar/proxy predictions; not expected information gain; no learned descriptor observations in acquisition score; explicit uniform fallback",
+    "new_close_antecedent": "July 2026 efficient lunar geometric/descriptor distillation paper must be cited; no broad first compact lunar learned model claim",
+    "B_identifiability_source": "Analytic inference from the declared constant-declination training path and degree-five basis; not a paper-derived performance result"
+  },
+  "internal_efficiency_metadata_not_pose_results": {
+    "full_generic_sun_columns": 1627,
+    "anchor_count": 256,
+    "height_variants_metres": [
+      0.0,
+      -5.0,
+      5.0,
+      -10.0,
+      10.0,
+      -20.0,
+      20.0
+    ],
+    "u012_archive_bytes": 1931596,
+    "preparation_seconds_by_reference": {
+      "12": 128.34552355099004,
+      "24": 145.85829078301322,
+      "60": 108.48801324900705,
+      "72": 127.26578534999862
+    },
+    "scope": "Offline preparation and compressed archive bytes only, excluding other terrain assets; does not measure candidate pose quality or complete online cost"
+  },
+  "critical_comparison_rules": [
+    "Do not compare homography AUC/mAA, angular relative-pose marginals, VCRE precision, aligned reconstruction/trajectory error and known-map absolute PnP as interchangeable success percentages",
+    "Do not assign LoMa-G/B numbers to LoMa-R, or equate paper variant and released checkpoint without pinned evidence",
+    "Keep RoMa-Omega paper re-evaluation numbers separate from RoMa v2 original paper numbers",
+    "Parameter count excludes map, generic Sun physics catalogue and setup; publish offline, cold, warm and amortized costs and hardware strata",
+    "Scientific final inference and all gates remain unchanged by this review",
+    "LIMA Section III requires two co-registered reference images and known Sun vectors; its separate LoFTR branch explicitly discusses perspective/6DoF matching. Do not claim 6DoF is a new capability versus the whole paper.",
+    "LIMA Table 1 is returned-match reprojection accuracy, not camera-pair pose-recovery percentage; no acquired LIMA weights or new benchmark execution follows from reading the paper."
+  ],
+  "artifact_sha256": {
+    "REVIEW.txt": "3d4e200121f8e214d298d546775ef464fab780a8c94cc53beb4fa2961430bc26",
+    "GEO_LOFTR_METADATA.json": "61368a2f40703ea82a3eab518fcb2408627dee002476dfe1883ea555dc4755a8"
+  },
+  "updated_utc": "2026-11-04T06:13:50.434778+00:00",
+  "correction": "Full LIMA 2025 paper is now author-accessible and inspected; prior publisher-only access limitation is superseded, not a continuing limitation.",
+  "lima_review_paraphrase_word_count_including_heading_and_source_line": 162,
+  "geoloftr_review_words_including_heading_sources": 204
+}

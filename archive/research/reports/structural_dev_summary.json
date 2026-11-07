@@ -1,0 +1,162 @@
+[
+  {
+    "geometry_family": "combined",
+    "method": "ncc",
+    "cases": 288,
+    "returned": 124,
+    "correct": 4,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "combined",
+    "method": "sift",
+    "cases": 288,
+    "returned": 16,
+    "correct": 16,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "combined",
+    "method": "self_similarity_ncc",
+    "cases": 288,
+    "returned": 19,
+    "correct": 10,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "combined",
+    "method": "orientation_ncc",
+    "cases": 288,
+    "returned": 6,
+    "correct": 6,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "nonoverlap_negative",
+    "method": "ncc",
+    "cases": 72,
+    "returned": 24,
+    "correct": 0,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "nonoverlap_negative",
+    "method": "sift",
+    "cases": 72,
+    "returned": 0,
+    "correct": 0,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "nonoverlap_negative",
+    "method": "self_similarity_ncc",
+    "cases": 72,
+    "returned": 0,
+    "correct": 0,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "nonoverlap_negative",
+    "method": "orientation_ncc",
+    "cases": 72,
+    "returned": 0,
+    "correct": 0,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "rotation",
+    "method": "ncc",
+    "cases": 288,
+    "returned": 157,
+    "correct": 24,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "rotation",
+    "method": "sift",
+    "cases": 288,
+    "returned": 29,
+    "correct": 28,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "rotation",
+    "method": "self_similarity_ncc",
+    "cases": 288,
+    "returned": 56,
+    "correct": 39,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "rotation",
+    "method": "orientation_ncc",
+    "cases": 288,
+    "returned": 27,
+    "correct": 24,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "scale",
+    "method": "ncc",
+    "cases": 288,
+    "returned": 179,
+    "correct": 35,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "scale",
+    "method": "sift",
+    "cases": 288,
+    "returned": 16,
+    "correct": 15,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "scale",
+    "method": "self_similarity_ncc",
+    "cases": 288,
+    "returned": 88,
+    "correct": 62,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "scale",
+    "method": "orientation_ncc",
+    "cases": 288,
+    "returned": 40,
+    "correct": 38,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "translation",
+    "method": "ncc",
+    "cases": 288,
+    "returned": 237,
+    "correct": 179,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "translation",
+    "method": "sift",
+    "cases": 288,
+    "returned": 25,
+    "correct": 25,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "translation",
+    "method": "self_similarity_ncc",
+    "cases": 288,
+    "returned": 262,
+    "correct": 262,
+    "status": "Development only; negatives have no correct alignment."
+  },
+  {
+    "geometry_family": "translation",
+    "method": "orientation_ncc",
+    "cases": 288,
+    "returned": 230,
+    "correct": 227,
+    "status": "Development only; negatives have no correct alignment."
+  }
+]

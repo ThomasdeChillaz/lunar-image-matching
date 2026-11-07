@@ -1,0 +1,25 @@
+{
+  "source": "https://zenodo.org/records/13970078/files/trajectory_C.zip",
+  "archive_bytes": 12243101038,
+  "source_directory_sha256": "feb49e35a9b1b920aa39cb3cacee499a93edf383b8aaca857c7550cc4c0ea359",
+  "bytes_received": 612220,
+  "requests": 4,
+  "members": {
+    "fast/stereo/imu_data.csv": {
+      "size": 717169,
+      "packed_size": 198101,
+      "header_offset": 1832124659,
+      "method": 8,
+      "crc32": 2072094012,
+      "sha256": "814fcad72f43eb16ed33d1276090bdd758ed75b4f4bd7059a9f3df46000a39d4"
+    },
+    "slow/stereo/imu_data.csv": {
+      "size": 1503273,
+      "packed_size": 414011,
+      "header_offset": 11358663161,
+      "method": 8,
+      "crc32": 55039116,
+      "sha256": "8e1884b52a8f4f4d69f0c06f8660fb7b81dd8ca6ba4c65fb8dc912bbed0b6669"
+    }
+  }
+}

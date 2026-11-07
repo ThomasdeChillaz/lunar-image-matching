@@ -1,0 +1,55 @@
+{
+  "observed_utc": "2026-11-02T16:48:39.701579+00:00",
+  "scope": "Originalfixeddeadlineattempt TERMINAL FAILED; all6000fittingupdatesverified. Completion-only resource amendment can reuse weights/cases without training. No completed original protocol/model gain/fresh-test/SOTA claim.",
+  "total_verified_fitting_updates": 6000,
+  "seeds": [
+    {
+      "seed": 20261101,
+      "completed_fitting_updates": 2000,
+      "adam_update_counts_verified": true,
+      "checkpoint2000_equals_latest_model": true,
+      "latest_checkpoint_sha256": "c43e3b224ce90f2d1cd5b83a4246de2500b0c9d648089f973e8f872653cc4dac",
+      "checkpoint2000_sha256": "a96b9697f8acfc4ced17b6b28a6767ef28d52f9ce5740fec3a6d22995abb0a21",
+      "complete_seed_receipt": true,
+      "complete2000evaluation": true,
+      "valid_saved2000case_files": 96
+    },
+    {
+      "seed": 20261102,
+      "completed_fitting_updates": 2000,
+      "adam_update_counts_verified": true,
+      "checkpoint2000_equals_latest_model": true,
+      "latest_checkpoint_sha256": "e862d9ddb7ba5889a8d7d2fd5ee0e5a3eda25d6c66b808e0014e117d6d3b4e72",
+      "checkpoint2000_sha256": "3cd3db1017cd16635cfeb8d4ca4d94a18079e387241139aeaab3bb34f73c6aa2",
+      "complete_seed_receipt": true,
+      "complete2000evaluation": true,
+      "valid_saved2000case_files": 96
+    },
+    {
+      "seed": 20261103,
+      "completed_fitting_updates": 2000,
+      "adam_update_counts_verified": true,
+      "checkpoint2000_equals_latest_model": true,
+      "latest_checkpoint_sha256": "da1fb0ad5677a5b7facbbadc7f05d3bf85ea618a0c072759cdd85d28cdaf1509",
+      "checkpoint2000_sha256": "ebde2d963abc52e118f62a6e24ba03fae26e01a42debaa7486a95e515a765444",
+      "complete_seed_receipt": false,
+      "complete2000evaluation": false,
+      "valid_saved2000case_files": 34
+    }
+  ],
+  "original_protocol_sha256": "8a8750c468871aa724dbede7b6653d0e731581c48026d42a987f8bfd89e52556",
+  "original_absolute_deadline_utc": "2026-11-02T14:24:09.219888+00:00",
+  "terminal_state_sha256": {
+    "runs/localization-v40-recovery-training-state.json": "8c6a2a27d6c0e46d41bd463a628f7068d1b29de71e48cddf901d6dc3e2eab60b",
+    "runs/north-v41-regression-state.json": "7558038d9079cdfd7127ec146eba8139962cce8b29996abe8086dd97d531d46a",
+    "runs/north-v43-followup-state.json": "3c097d3ef27ecbbd057f9d4a0178c6137e1ee50e648bb357a5c1a98f344128e3"
+  },
+  "original_full_repository_tests": "363passed4skipped; earlier source state, before latest2fixture-cache tests",
+  "original_fresh_smoke": "FAILED fixedcalendarallowance; emptylog/nooutputdirectory; retainfailure",
+  "missing_third2000_positive_cases": 62,
+  "missing_third_selected_negative_cases": 96,
+  "remaining_inference_cases": 158,
+  "new_fitting_updates_needed": 0,
+  "planned_separate_completion_cap_seconds": 1800,
+  "calibration_or_test_pixels_loaded": 0
+}

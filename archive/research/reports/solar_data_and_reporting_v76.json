@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-11-04T04:37:13.865271+00:00",
+  "software_checks": {
+    "passed": 896,
+    "skipped": 4,
+    "seconds": 68.14,
+    "log_sha256": "53e917ccf51eb4343a264add750868e6232078b6554ad699605aa642e711b294",
+    "controlled_smoke_replay": "reports/solar_controlled_smoke_replay_v76.json",
+    "controlled_smoke_replay_sha256": "8312fe7b4a127d9e50184fb9baae7ce8f39d5b9be9ec9cddb50b202a791e662e"
+  },
+  "data_complete": true,
+  "rendered_images": 4608,
+  "camera_pairs": 96,
+  "data_summary": "runs/solar-v70-completion/summary.json",
+  "data_summary_sha256": "9b648109a85a43d30cc387ba15a5912f4f0010efb7e17e844179ceaaf451cd0f",
+  "public_identical_summary_copy": "reports/solar_completed_data_summary_v76.json",
+  "geometry_audit_snapshot": {
+    "stage": "full_geometry_audit",
+    "pid": 929,
+    "processed_pairs": 51,
+    "expected_pairs": 96,
+    "deadline_utc": "2026-11-04T05:21:00.722901+00:00",
+    "complete_report_available": false,
+    "full_gate_not_yet_passed": true
+  },
+  "protected_sources": {
+    "count": 16,
+    "all_unchanged": true
+  },
+  "learning_source_closure": {
+    "files": 49,
+    "all_identical_to_existing_public_commit": true,
+    "evaluation_runner_included": false,
+    "sha256": "e3ff8e8ac13b385747689d956f5072f1224def0e5e467e13e62a04b31aadc508"
+  },
+  "memory_scope": "Scientific worker RUSAGE_SELF lifetime high-water, normalized bytes; not current, incremental, per-case or isolated model RAM. Shared-profile values cannot rank model memory; separate children excluded.",
+  "timing_numeric_definitions_changed": false,
+  "source_sha256": {
+    "run_solar_evaluation_v70.py": "e3b839c6f67017343d849a0f74033a8884cb70347d505a3b7cbc2e8bfc9097a1",
+    "test_solar_worker_memory_v75.py": "4c419167016f88ea9bae3c246e929d3f8349f010b3a2736cce99a0ea53af88b7",
+    "solar_evaluation_v70.py": "ab768b2484251841914d64e54f97f10bfe15907d8def25b7726022a2041c3ad6"
+  },
+  "response_lunar_optimizer_updates": 0,
+  "total_model_parameters": 95808,
+  "new_lunar_performance_result": false,
+  "scientific_goal_complete": false,
+  "calibration_or_final_access": false
+}

@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-11-07T21:44:20.294072+00:00",
+  "passed": true,
+  "scope": "Repository organization, maintained input/output interface and evidence presentation; frozen algorithm/data/scorer unchanged",
+  "original_public_commit": "3d21052ed561550fd31aa4806906279ec8ac6cf4",
+  "archived_public_files": 2288,
+  "public_report_paths_retained": 1417,
+  "root_files_before": 820,
+  "root_files_after": 14,
+  "maintained_pytest": {
+    "passed": 28,
+    "skipped": 0,
+    "seconds": 36.48,
+    "log_sha256": "ceb5f3db0343a3b01d6cf7e7cc8be74454cf8a835366cc178e3d79cbce704caf"
+  },
+  "complete_archived_pytest": {
+    "passed": 1535,
+    "skipped": 4,
+    "subtests_passed": 14,
+    "seconds": 412.18,
+    "log_sha256": "ba8be27f15805d38150c217239c14b4691aa07a97669ba741ae7b541be4752d3"
+  },
+  "fresh_generated_branch_control": {
+    "schema": "generated_persistent_branch_switch_v143",
+    "passed": true,
+    "generated_only": true,
+    "physical_sunlight_simulation": false,
+    "lunar_images_opened": false,
+    "deliberately_injected_control_hypotheses": true,
+    "actual_native_correlations_and_final_ap3p": true
+  },
+  "fresh_generated_native_cli": {
+    "passed": true,
+    "generated_only": true,
+    "physical_sunlight_simulation": false,
+    "lunar_images_opened": false,
+    "truth_used_only_for_scoring": true,
+    "translation_error_m": 0.06814325018631816,
+    "native_matches": 16,
+    "actual_native_fields": 128,
+    "public_pose_null": true,
+    "accepted": false,
+    "source_manifest_sha256": "364055325e80159ec467bd2b68fef626a0ec3dac5138a3d5352e9b87069b6a7d",
+    "result_sha256": "1b4e293b71a04d978ca614bcdf4787a1d34754b60054a471fee1a89bb33cfb90"
+  },
+  "saved_metric_replay": {
+    "passed": true,
+    "method_case_cells": 56,
+    "historical_control_identities": 24,
+    "sources": 115,
+    "inputs": 134,
+    "independently_recomputed_geometry": true,
+    "branch_retention_and_field_accounting": true,
+    "summary_and_component_analysis_exact": true,
+    "no_matching_or_fitting": true,
+    "saved_branch_diagnosis_exact": true,
+    "private_authority_used": false,
+    "accepted_pose_study": false,
+    "methods": {
+      "direct": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 2,
+        "raw_nonoverlap": 0
+      },
+      "legacy_no_extra": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "legacy_active32": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "single_uniform128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 2,
+        "raw_nonoverlap": 0
+      },
+      "beam_uniform128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "beam_geometry128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      },
+      "beam_active128": {
+        "correct": 1,
+        "strict": 1,
+        "wrong_positive": 0,
+        "raw_nonoverlap": 0
+      }
+    }
+  },
+  "pdf": {
+    "path": "output/pdf/lunar-localization-research-brief.pdf",
+    "pages": 2,
+    "sha256": "41a5ddc197041816a263af6e3807e754685a4124ccf5b7d5b6494323a4a3b904",
+    "both_pages_rendered_and_visually_reviewed": true
+  },
+  "scientific_changes": false,
+  "new_lunar_inference": 0,
+  "new_training": 0,
+  "calibration_or_final_access": false,
+  "original_resource_accounting_unchanged": true,
+  "private_correspondence_included": false,
+  "sources": {
+    "src/lunar_matching/__init__.py": "814d132d23d23511c962f0b730590442d86cae6cf338eeabf7e3585a6d616a6d",
+    "src/lunar_matching/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/lunar_matching/_worker.py": "2434f8751cbbd958ef86419f75aab2a04c1fe66990947b82ca7faf7597b7c8db",
+    "src/lunar_matching/artifacts.py": "3f56b75d984922444a805436c6d9bcf093c0e0bbd879635bfa3865dafa06b245",
+    "src/lunar_matching/backend.py": "8f00ad554600492cc100fec5b641df79268e393960b0c81aeb6d33c1cea76763",
+    "src/lunar_matching/cli.py": "42fd3349d113cacdd7839f7f24b5b82859f8d09cb68d4dd7ddb925e70639f1d9",
+    "src/lunar_matching/compat.py": "6b73cd54553d248a9a38eadc1854af679d005b92e4565ec4276040ca12c3eaf8",
+    "src/lunar_matching/evidence.py": "e0e8aa55078349e1f7208914f2fad485ccc303f5d76027a66c702855a36df644",
+    "src/lunar_matching/paths.py": "831d2367219365a8888de4ef979614bc16b221c413efc6fb9e3d287a084d5ff7",
+    "src/lunar_matching/validation.py": "4d355dbe6c3c53167c7f07119dead3534d5067285de668320ea3890a3772d85b",
+    "tests/test_contracts.py": "82524ae4a8146806ed96f76122be8fdde8e6214ea2dd65d8932de24278af4845",
+    "tests/test_workflow.py": "995220442169cb29c57a796d25f59dbaea80b1b3cce4347e5aec28181e4d7b39",
+    "tools/build_brief.py": "5780d38e400509c92c60c0d85a34c84e3615a463e3f82a161b6c2038416c81b0",
+    "tools/check_native_cli.py": "ac382f0733c74938be0b04de78a0a050ec691e4933d5062b17fb2e8c68bef276"
+  },
+  "final_whitespace_cleanup_ast_equivalent": true,
+  "root_file_count_scope": "Tracked public files; local compatibility aliases are ignored.",
+  "previous_local_artifact_paths_preserved": true,
+  "fresh_checkout_maintained_pytest": {
+    "passed": 27,
+    "skipped": 1,
+    "seconds": 20.77,
+    "skip_reason": "Public saved-output capsules are not present in a fresh checkout.",
+    "executable_code_identical": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "completed_steps": 100,
+  "matched_original_sample_records": 100,
+  "total_parameters": 82208,
+  "trainable_parameters": 53936,
+  "only_declared_context_architecture_changed": true,
+  "exact_full_optimizer_retraining": true,
+  "exact_model_optimizer_losses_gradients_rng": true,
+  "fine_encoder_unchanged": true,
+  "training_components": 16,
+  "training_geometries": 48,
+  "lighting_count": 6,
+  "model_selection_pixels_loaded": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "pilot_protocol_sha256": "a37e98a323f7e93b6f6837a1a4ecf0d124f9d97a11a818fcbbb4977283d7ccf6",
+  "pilot_summary_sha256": "8dfaa0517a140a904bc862663a0e31f1d36aec1938cea3b1aea91ef9dc038e9c",
+  "source_sha256": "183b0fd8aebcd69e222afd6093976fbb7ca67a4d7dbc953bc513bd24d76196b7",
+  "scope": "Exacttrain-only100update pilot replay, not localization improvement or full-cohort retraining."
+}

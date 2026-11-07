@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "results": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 72,
+    "wrong": 18,
+    "attempted": 15,
+    "recovered": 15,
+    "newly_correct": 0,
+    "correct_at_two_px": 14762
+  },
+  "initial_proposal_errors": [
+    {
+      "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+      "rotation_deg": 25.09479668011021,
+      "translation_m": 1813.0678831381956,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+      "rotation_deg": 87.97501745390801,
+      "translation_m": 5950.256036146625,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+      "rotation_deg": 128.59046889390967,
+      "translation_m": 4977.407161445137,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+      "rotation_deg": 121.58928641943514,
+      "translation_m": 5956.777331556434,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+      "rotation_deg": 176.91514976402595,
+      "translation_m": 5299.981748458222,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+      "rotation_deg": 151.11541458079546,
+      "translation_m": 5228.23562632209,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+      "rotation_deg": 72.13706519026834,
+      "translation_m": 4125.209823459238,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+      "rotation_deg": 163.1878146754361,
+      "translation_m": 3798.8849705619837,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+      "rotation_deg": 134.9395660283773,
+      "translation_m": 1874.7689147045319,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+      "rotation_deg": 74.32954994884845,
+      "translation_m": 2952.8147312354113,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+      "rotation_deg": 101.65393567602634,
+      "translation_m": 5110.349825693418,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+      "rotation_deg": 110.35813811945157,
+      "translation_m": 4719.430955591831,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+      "rotation_deg": 177.1044640492427,
+      "translation_m": 5130.368105734346,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+      "rotation_deg": 133.17751843560328,
+      "translation_m": 1658.0509914866298,
+      "final_correct": false
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+      "rotation_deg": 74.1282167939628,
+      "translation_m": 2871.0515461355612,
+      "final_correct": false
+    }
+  ],
+  "source_sha256": "0cb095040c5822a7f3700b54ea3e6ed31d51bbaf907b4588dda11ada62833561",
+  "summary_sha256": "06f3930333f196c6ef801669412b9e9f0142cccfbebe80218e5fc777364e9501",
+  "results_sha256": "9066fa6545a05dd8eecee8c1a1c1548b0cd38fdbbfb3bb13d54d7bbf8d0fffd9",
+  "scope": "Independent native metric and unchanged3px final-estimator replay, routing/source/checkpoint/control audit; no fresh test or confidence guarantee.",
+  "limits": "Does not independently reimplement image matching or replay every12px proposal fit. A strict inlier fit can still be a wrong pose."
+}

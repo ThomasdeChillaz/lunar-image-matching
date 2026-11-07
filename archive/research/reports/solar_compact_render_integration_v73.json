@@ -1,0 +1,57 @@
+{
+  "schema_version": 73,
+  "integrated_new_files": true,
+  "central_registry_applied": false,
+  "prepared_utc": "2026-11-04T00:57:18.926735+00:00",
+  "focused_tests_passed": 12,
+  "measured_test_seconds": 0.31,
+  "tests_imported_repository_modules": true,
+  "neural_forwards": 0,
+  "rendering_jobs_launched": 0,
+  "actual_scientific_assets_changed": false,
+  "source_sha256": {
+    "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+    "direct_render_adapter_v73.py": "077ef2a601478ed31101b52cbef1939a2b16dd1346acc8dd1bd1d7a9448e03b8",
+    "build_direct_render_library_v73.py": "12ac9cfe56916ab9ad5b499e12e3ae0d3a783f190b51d07c25125b73d7633390",
+    "prepare_historical_profiles_v73.py": "4a76feea617192e04d41437f7786d1fca8c9feb12fac580658492a6115dd3b6d",
+    "test_compact_render_adapters_v73.py": "c7df7b8b362428362f3b48f777b1c7d70f28c7801c80450692b39bb9ec29f220"
+  },
+  "central_base_sha256": {
+    "solar_evaluation_v70.py": "49cd4cf1e0b25f7391f59670ccc21ac53008e34c47fa329656629823d7141977",
+    "run_solar_evaluation_v70.py": "b15ca7da1b6bf624338aff604fdf4e0db253e9fec08c66f5d694bdebbcde9664"
+  },
+  "central_files_unchanged_during_integration": true,
+  "registry_diff": "reports/solar_compact_render_registry_v73.patch",
+  "registry_diff_sha256": "b5b27e1e135e72d196c2320e75febbeb6c32ddf854fd5a6560fee156e5437569",
+  "live_render_guard_files": 16,
+  "live_render_guard_unchanged": true,
+  "data_snapshot": {
+    "state": "running",
+    "stage": "rendering only missing original units",
+    "updated_utc": "2026-11-04T00:54:35.879813+00:00",
+    "complete_units": 31,
+    "planned_units": 96,
+    "unit_index": 31,
+    "completion_absolute_deadline_utc": "2026-11-04T13:23:15.913367+00:00",
+    "matcher_forwards": 0,
+    "optimizer_updates": 0
+  },
+  "live_processes": [
+    {
+      "pid": 92264,
+      "ps_status": "92264     1 Ss",
+      "exists": true
+    },
+    {
+      "pid": 92268,
+      "ps_status": "92268 92264 Ss",
+      "exists": true
+    },
+    {
+      "pid": 94467,
+      "ps_status": "94467 92268 Rs",
+      "exists": true
+    }
+  ],
+  "scope": "Only new dedicated modules/tests/templates/reports added. Native-pretrained and quantization central changes preserved in review-only diff; no central source or live render dependency written."
+}

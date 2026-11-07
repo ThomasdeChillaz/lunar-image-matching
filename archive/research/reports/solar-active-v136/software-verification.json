@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-05T20:59:27.691180+00:00",
+  "local_full_suite": {
+    "passed": 1480,
+    "skipped": 4,
+    "seconds": 313.55,
+    "log_sha256": "39a5d75e53d4f1dce8aa7b8d7ecd610cf446338afebd4971eb85814bdc904ce1"
+  },
+  "focused_tests": {
+    "passed": 10,
+    "seconds": 13.4
+  },
+  "procedural_replay": {
+    "passed": true,
+    "scope": "Generated-image arithmetic only; no lunar performance claim.",
+    "saved_method_case_cells": 10,
+    "source_json_sha256": "29ddb01a2c9cc60c8b1de293df786d12a8bf8b83d85f2a0ca51446c5e4b92388",
+    "new_matcher_inference": false,
+    "new_pose_fitting": false
+  },
+  "safety_probes_sha256": "0cf1993e2e01ecf82eeb7cd75ede3030435559332d718e40794cca4692a1d8a9",
+  "blank_and_missing_reference_geometry_controls_passed": true,
+  "bound_sources": 80,
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "new_lunar_inference": false,
+  "new_training": false,
+  "supplementary_allowance_granted_seconds": 0,
+  "original_remaining_seconds": {
+    "training": 13493.0,
+    "baseline": 0.0
+  },
+  "scientific_improvement_established": false
+}

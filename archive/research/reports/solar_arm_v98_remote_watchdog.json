@@ -1,0 +1,83 @@
+{
+  "complete": false,
+  "workflow_run_id": 41926059385,
+  "run_attempt": 1,
+  "workflow_source_commit": "e1a7e6075236342c377759b3743f69db0de7bafd",
+  "source_publication_commit": "4cad05232bff4f21947eb04f6bb600ec84ec8e11",
+  "ticket_nonce": "ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "reviewed_branch": "solar-v98-ticket-ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "reviewed_ticket_commit": "e1a7e6075236342c377759b3743f69db0de7bafd",
+  "html_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41926059385",
+  "workflow_started_utc": "2026-11-04T22:31:47Z",
+  "ticket_sha256": "4391ead7b74007c293d1f948e88496be03d5aa2004aa947354bd889008dc35bf",
+  "nonce": "ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+  "parent_pid": 2799,
+  "public_dispatch_evidence": {
+    "ticket_commit": "e1a7e6075236342c377759b3743f69db0de7bafd",
+    "branch": "solar-v98-ticket-ad69a78f24f6a1e869a83f0a338605debfcfff4dfb69093694c0bcd8b553c66b",
+    "verified_commit": true,
+    "release_asset_id": 711170457,
+    "archive_bytes": 563675388,
+    "archive_sha256": "2d25dca8b56f86f10444289b7458aeed4ba9a6755bf1ff19fca7014afaa1dee0"
+  },
+  "official_checkpoint_receipts": [
+    {
+      "filename": "dad.pth",
+      "source": "https://github.com/Parskatt/dad/releases/download/v0.1.0/dad.pth",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 26075286,
+      "sha256": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+      "calendar_seconds": 0.6446529410000039
+    },
+    {
+      "filename": "dinov2_vitl14_pretrain.pth",
+      "source": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth",
+      "final_host": "dl.fbaipublicfiles.com",
+      "bytes": 1217586395,
+      "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "calendar_seconds": 4.778893553000046
+    },
+    {
+      "filename": "loma_R.pth",
+      "source": "https://github.com/davnords/storage/releases/download/loma/loma_R.pth",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 757905869,
+      "sha256": "ade1379fb52143da65c36730f24b69eaa49618bb277890c6d2a0fb1630d33d67",
+      "calendar_seconds": 9.583667084000012
+    },
+    {
+      "filename": "romav2.0.1.pt",
+      "source": "https://github.com/Parskatt/RoMaV2/releases/download/v2.0.1/romav2.0.1.pt",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 1095883548,
+      "sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+      "calendar_seconds": 3.5540820520000125
+    }
+  ],
+  "public_contract_git_blob": "76b0886d09a70379e8b7cf1e7439b7ee194c0cf7",
+  "public_contract_sha256": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+  "protocol_sha256": "9ac4fe0828069b32d26741477428ce41ccd3a06a8e16b6df64426b3c8c192a25",
+  "ticket_path": "reports/solar-remote-arm-v98-ticket.json",
+  "relay_source_sha256": "bfb9003dbf192e416d32ed68cb1bc3c2d015b4c7c1cd14854290f0779685f078",
+  "workflow_source_sha256": "f91df8fb881b309221b7becadd9eec5adc38c6bd554b234be3b206c6d7b85a41",
+  "authorization_sha256": "903cea12904896143902ff32f836ce67e14293d7e5a8f6f2f62bc3ab4cee27e7",
+  "original_reservation": null,
+  "started_utc": "2026-11-04T22:32:30.875333+00:00",
+  "absolute_deadline_utc": "2026-11-04T23:02:30.875333+00:00",
+  "cap_seconds": 1800,
+  "calendar_seconds": 43.95708150600001,
+  "setup_seconds": null,
+  "child_returncode": null,
+  "phase": "setup",
+  "result_artifact": null,
+  "failure": {
+    "error_type": "ValueError",
+    "error": "Primary archive must contain exactly the a-priori generic Sun catalogue and availability mask",
+    "phase": "setup"
+  },
+  "archive_failure": null,
+  "automatic_retry": false,
+  "reservation_refunded": false,
+  "primary_only": true,
+  "note": "Remote scratch journal is evidence only; never replace the live local canonical journal. Outer cap includes capsule transport/source setup; environment installation consumes the original launch lease."
+}

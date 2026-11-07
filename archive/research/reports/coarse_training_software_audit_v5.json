@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "tests_passed": 173,
+  "optional_skipped": 4,
+  "scope": "Software and saved procedural controls only; no learned superiority or final evaluation claim.",
+  "smoke_audit": "reports/coarse_training_smoke_audit_v5.json",
+  "geometry_gate": "reports/axial_pose_controls_summary_v5.json",
+  "followup_control_sampler_byte_identical": true,
+  "terrain_interval_group_mismatch_control": true
+}

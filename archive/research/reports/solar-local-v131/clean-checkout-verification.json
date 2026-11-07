@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-05T13:11:04.699639+00:00",
+  "source_only_checkout": true,
+  "passed": 1440,
+  "skipped": 8,
+  "seconds": 270.36,
+  "log_sha256": "49873540874bae1dd9337b1876138f3116856e1497ad4d0419187ed69e1ac569",
+  "fixtures": {
+    "archive": "reports/test-metadata-v131/metadata.zip",
+    "sha256": "4f2328701b680d65a11add62da00d9f2f1bfa66b18f7963839fd1e7a22f8ec5f",
+    "immutable_json_records": 21,
+    "images_weights_or_compute_journals": false
+  },
+  "extra_skips_explained": "Two local reservation-journal integration checks and two optional pretrained/local-checkpoint checks are unavailable in the source-only checkout, in addition to the four local optional skips.",
+  "metadata_fixture_unit_checks_passed": 5,
+  "metadata_fixture_restore_overwrites_existing_files": false,
+  "focused_metadata_and_native_runtime_checks_passed": 12,
+  "production_runtime_guard_still_refuses_mismatch": true,
+  "public_ci": {
+    "passed": true,
+    "run_id": 42036573478,
+    "job_id": 127276167369,
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42036573478",
+    "conclusion": "success",
+    "pytest_passed": 1441,
+    "pytest_skipped": 8,
+    "pytest_seconds": 106.16,
+    "end_to_end_smoke_passed": true,
+    "runtime_guards_preserved": true,
+    "verified_utc": "2026-11-05T13:41:45.319225+00:00"
+  }
+}

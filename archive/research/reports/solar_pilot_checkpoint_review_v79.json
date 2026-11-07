@@ -1,0 +1,109 @@
+{
+  "kind": "artifact_only_pilot_checkpoint_audit",
+  "created_utc": "2026-11-04T05:30:40.914774+00:00",
+  "passed": true,
+  "modes": [
+    {
+      "mode": "sh",
+      "protocol": "reports/solar-learning-v79/sh_pilot.json",
+      "protocol_sha256": "2d119503b01d2e236f0a246a17f69bc569bb6dc6664a68616da1f401e0b94242",
+      "summary_sha256": "13f0fd5e850ca9567a060913d025273ec57939b6f9897b4250febb7a02d8f5f8",
+      "checkpoint_sha256": {
+        "step_0.pt": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+        "step_100.pt": "6432324710352e3871f6696397d33308605f6e401b0de221043e4c7031417ee3"
+      },
+      "exact_replay_receipt_sha256": "0a1b3b9409e6ce0174b8d7cb1db55a3cbb4808ada011c9c8dd5e97b7dd027ba1",
+      "completed_updates": 100,
+      "total_parameters": 95808,
+      "trainable_parameters": 67536,
+      "frozen_coarse_bit_identical_to_initializer": true,
+      "finite_all_model_optimizer_tensors": true,
+      "changed_tensor_counts": {
+        "fine.": 8,
+        "condition.": 4,
+        "coefficients.": 2
+      },
+      "sampled_groups": {
+        "np31-r2-c1": 6,
+        "np31-r3-c4": 8,
+        "np31-r1-c4": 4,
+        "np31-r0-c1": 4,
+        "np31-r4-c3": 9,
+        "np31-r4-c4": 7,
+        "np31-r4-c2": 12,
+        "np31-r0-c2": 8,
+        "np31-r4-c6": 8,
+        "np31-r0-c0": 7,
+        "np31-r1-c6": 3,
+        "np31-r1-c1": 5,
+        "np31-r1-c5": 3,
+        "np31-r0-c6": 5,
+        "np31-r2-c6": 5,
+        "np31-r2-c2": 6
+      },
+      "sampled_camera_records": 54,
+      "all100_sampler_labels_even_and_unique": true,
+      "complete_external_run_and_replay": true
+    },
+    {
+      "mode": "pooled",
+      "protocol": "reports/solar-learning-v79/pooled_pilot.json",
+      "protocol_sha256": "6b8f5d4155d0803d499cf4075c1688e896b906b6847a8c58b87e58e2fed6b44d",
+      "summary_sha256": "e093f4271eb6f67d6242916804e0657fa1c05b67128198be25d46ae98fabcc35",
+      "checkpoint_sha256": {
+        "step_0.pt": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+        "step_100.pt": "723fd7a56041bbe597edd39c61e05ce32b386db55ea39d14ae9f904070b7fe2d"
+      },
+      "exact_replay_receipt_sha256": "2d2fa380db8d69b9a604add48ac54176ac4ec5c6a320dc202693b8d74887a764",
+      "completed_updates": 100,
+      "total_parameters": 95808,
+      "trainable_parameters": 67536,
+      "frozen_coarse_bit_identical_to_initializer": true,
+      "finite_all_model_optimizer_tensors": true,
+      "changed_tensor_counts": {
+        "fine.": 8,
+        "condition.": 4,
+        "coefficients.": 2
+      },
+      "sampled_groups": {
+        "np31-r2-c1": 6,
+        "np31-r3-c4": 8,
+        "np31-r1-c4": 4,
+        "np31-r0-c1": 4,
+        "np31-r4-c3": 9,
+        "np31-r4-c4": 7,
+        "np31-r4-c2": 12,
+        "np31-r0-c2": 8,
+        "np31-r4-c6": 8,
+        "np31-r0-c0": 7,
+        "np31-r1-c6": 3,
+        "np31-r1-c1": 5,
+        "np31-r1-c5": 3,
+        "np31-r0-c6": 5,
+        "np31-r2-c6": 5,
+        "np31-r2-c2": 6
+      },
+      "sampled_camera_records": 54,
+      "all100_sampler_labels_even_and_unique": true,
+      "complete_external_run_and_replay": true
+    }
+  ],
+  "same_initial_parameters_and100_sampler_draws": true,
+  "same_bank_source_seed_capacity_optimizer_update_and_cap_budgets": true,
+  "calibration_final_and_odd_light_access_closed": true,
+  "interpretation": "Reproducible completed training pilots, not measured pose improvement or checkpoint selection. No loss-based ranking performed.",
+  "limitations": [
+    "Exact replay claims validated against actual source-bound run/replay receipts and saved checkpoint/history hashes; optimization was not rerun.",
+    "No teacher or matcher forward pass, optimizer update, image decode or ray was performed."
+  ],
+  "activity": {
+    "checkpoint_load_only": true,
+    "torch_threads": 2,
+    "source_edits": 0,
+    "scientific_jobs": 0,
+    "neural_forwards": 0,
+    "optimizer_updates": 0,
+    "png_decodes": 0,
+    "rays": 0
+  }
+}

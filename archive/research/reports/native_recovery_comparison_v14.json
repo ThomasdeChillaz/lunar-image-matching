@@ -1,0 +1,161 @@
+{
+  "scope": "Failed development engineering control; do not adopt. Not a learned, calibrated-acceptance or fresh-test result.",
+  "baseline": {
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 57,
+    "wrong": 3
+  },
+  "candidate": {
+    "scope": "Development-only missing-pose recovery with frozen weights. Engineering control, no learned gain or accepted-pose claim.",
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 72,
+    "wrong": 18,
+    "attempted": 15,
+    "recovered": 15,
+    "newly_correct": 0,
+    "correct_at_two_px": 14762,
+    "results_sha256": "9066fa6545a05dd8eecee8c1a1c1548b0cd38fdbbfb3bb13d54d7bbf8d0fffd9"
+  },
+  "diagnostic": {
+    "scope": "Exposed development diagnosis of all coarse/broad branches, not an oracle-deployed matcher or new test.",
+    "cases": 15,
+    "branches": 60,
+    "image_selected_broad_correct": 0,
+    "oracle_any_broad_correct": 0,
+    "per_case": [
+      {
+        "pair_id": "dynamicgood/dynamic/1458/lights-0-1",
+        "max_true_12px_matches": 29,
+        "max_true_2px_matches": 12,
+        "max_true_12px_fraction": 0.10622710622710622,
+        "best_broad_rotation_error_deg": 25.09479668011021,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-0-1",
+        "max_true_12px_matches": 11,
+        "max_true_2px_matches": 3,
+        "max_true_12px_fraction": 0.04330708661417323,
+        "best_broad_rotation_error_deg": 87.97501745390801,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-0-2",
+        "max_true_12px_matches": 13,
+        "max_true_2px_matches": 9,
+        "max_true_12px_fraction": 0.05241935483870968,
+        "best_broad_rotation_error_deg": 126.32546399528317,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-1-0",
+        "max_true_12px_matches": 9,
+        "max_true_2px_matches": 4,
+        "max_true_12px_fraction": 0.033707865168539325,
+        "best_broad_rotation_error_deg": 102.175936113527,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-1-2",
+        "max_true_12px_matches": 12,
+        "max_true_2px_matches": 3,
+        "max_true_12px_fraction": 0.049586776859504134,
+        "best_broad_rotation_error_deg": 65.76247888087872,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-2-0",
+        "max_true_12px_matches": 9,
+        "max_true_2px_matches": 6,
+        "max_true_12px_fraction": 0.03543307086614173,
+        "best_broad_rotation_error_deg": 78.55879639233767,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/1092/lights-2-1",
+        "max_true_12px_matches": 15,
+        "max_true_2px_matches": 6,
+        "max_true_12px_fraction": 0.05791505791505792,
+        "best_broad_rotation_error_deg": 72.13706519026834,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-0-0",
+        "max_true_12px_matches": 5,
+        "max_true_2px_matches": 2,
+        "max_true_12px_fraction": 0.019011406844106463,
+        "best_broad_rotation_error_deg": 125.60671109127077,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-0-1",
+        "max_true_12px_matches": 4,
+        "max_true_2px_matches": 1,
+        "max_true_12px_fraction": 0.01606425702811245,
+        "best_broad_rotation_error_deg": 84.33148214943994,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-0-2",
+        "max_true_12px_matches": 2,
+        "max_true_2px_matches": 1,
+        "max_true_12px_fraction": 0.00847457627118644,
+        "best_broad_rotation_error_deg": 74.32954994884845,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-1-0",
+        "max_true_12px_matches": 3,
+        "max_true_2px_matches": 1,
+        "max_true_12px_fraction": 0.012396694214876033,
+        "best_broad_rotation_error_deg": 101.65393567602634,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-1-2",
+        "max_true_12px_matches": 1,
+        "max_true_2px_matches": 1,
+        "max_true_12px_fraction": 0.004524886877828055,
+        "best_broad_rotation_error_deg": 110.35813811945157,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-2-0",
+        "max_true_12px_matches": 3,
+        "max_true_2px_matches": 1,
+        "max_true_12px_fraction": 0.012711864406779662,
+        "best_broad_rotation_error_deg": 90.97308791340383,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-2-1",
+        "max_true_12px_matches": 2,
+        "max_true_2px_matches": 0,
+        "max_true_12px_fraction": 0.0078125,
+        "best_broad_rotation_error_deg": 90.21008246445639,
+        "any_correct_broad_pose": false
+      },
+      {
+        "pair_id": "dynamicgood/dynamic/942/lights-2-2",
+        "max_true_12px_matches": 7,
+        "max_true_2px_matches": 2,
+        "max_true_12px_fraction": 0.02834008097165992,
+        "best_broad_rotation_error_deg": 74.1282167939628,
+        "any_correct_broad_pose": false
+      }
+    ],
+    "results_sha256": "d24e283f1ffe4650ed07ec021c5156c16705ad1939ce475ca44f88ff06460543",
+    "note": "Oracle scores do not choose outputs. Small true-inlier fractions and broad branch pose errors help distinguish global proposal failure from final precision."
+  },
+  "pairs_with_fewer_than_six_true_12px_matches": 7,
+  "median_best_true_12px_fraction": 0.02834008097165992,
+  "decision": "Reject broad12px initialization as a recovery improvement. It adds fifteen wrong poses and no correct poses despite strict3px final fits.",
+  "next_hypothesis": "Improve global correspondence discrimination. Test a small pair-context module with an exact-identity frozen initialization and capacity controls; do not infer a gain from software readiness.",
+  "source_sha256": "50cebf0fd86e99eb2c2ca3d77a1d0d9c2091744c59900d564d15e9eb9eff4e29",
+  "audit_sha256": "16b827f9400d917f0f3c79762988bcd7dd9570de967e5d92c06ccb9e568b98ba",
+  "branch_audit_sha256": "99369203c48886ab0680870850887c7fcb154c9aa12e36eca40c786771c3731d"
+}

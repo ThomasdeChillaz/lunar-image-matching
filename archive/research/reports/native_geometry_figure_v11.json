@@ -1,0 +1,55 @@
+{
+  "scope": "Presentation-only: measurements unchanged.",
+  "rows": [
+    {
+      "name": "Frozen",
+      "correct": 45,
+      "strict": 17,
+      "wrong": 12,
+      "cases": 72,
+      "returned": 23240,
+      "scorable": 21339,
+      "correct_at_two_px": 10320,
+      "input_path": "runs/localization-v7-native-initial-control/initial_results.json.gz",
+      "input_sha256": "859b78ea4df147fda7c968840c46687ec6a3e83ae040efaf7b3f11dee72c6093"
+    },
+    {
+      "name": "Learned\nseed01",
+      "correct": 45,
+      "strict": 18,
+      "wrong": 10,
+      "cases": 72,
+      "returned": 23212,
+      "scorable": 21341,
+      "correct_at_two_px": 10385,
+      "input_path": "runs/localization-v7-native-development/pair_refinement-20261101/development_results.json.gz",
+      "input_sha256": "7351e01dff8545808b954d232b5349c4c8b77826d2db788ad4a326469a7670f6"
+    },
+    {
+      "name": "Affine",
+      "correct": 49,
+      "strict": 17,
+      "wrong": 11,
+      "cases": 72,
+      "returned": 20408,
+      "scorable": 19109,
+      "correct_at_two_px": 10487,
+      "input_path": "runs/localization-v10-affine-development/results.json.gz",
+      "input_sha256": "392ae334d50f2e6e02c303472b02e7d2b1c2f90b80f0be6a24718b5b7b15e4dd"
+    },
+    {
+      "name": "Surface",
+      "correct": 54,
+      "strict": 16,
+      "wrong": 3,
+      "cases": 72,
+      "returned": 22010,
+      "scorable": 20978,
+      "correct_at_two_px": 14696,
+      "input_path": "runs/localization-v11-surface-warp-development/results.json.gz",
+      "input_sha256": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97"
+    }
+  ],
+  "source_sha256": "946c26cb806bf4f2fab25fd9035e159155ae791fa553092e1f3a4ecffde0f8a2",
+  "image_sha256": "f6c85dbf60ab75fae85367c20f5cd2a6925abd32d6bc26703b25ce89b9a03622"
+}

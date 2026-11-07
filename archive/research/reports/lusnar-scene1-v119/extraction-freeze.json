@@ -1,0 +1,253 @@
+{
+  "schema": "lusnar_scene1_exact_local_extraction_v117",
+  "source_sha256": {
+    "scene1_partial_member_inventory.json": "870f26a469288a00622fe1c2e91bf3c1868728d97bce01ae9b5196a53d49fb4b",
+    "scene1_recovered_metadata_provenance.json": "db9768169c1c01cb3269d12b39682fb8b6f5b0d70405ff5d3c11096de21901f8",
+    "lusnar_metadata_audit_v46.py": "4bf292bb1a7dd93213adf47c1395ecf098236922784c945c3f14bc8d2f4df6de",
+    "prepare_lusnar_scene1_v117.py": "9cc3cbb3fa12a9571d0c61f9062ebe19852cced9bab684ef1bf4cd3f3012c737"
+  },
+  "archive_prefix": {
+    "name": "Moon_1.zip.part",
+    "bytes": 4003463168,
+    "complete_archive_verified": false
+  },
+  "scene": 1,
+  "split": "exposed_development",
+  "reserved_scenes": [
+    7,
+    8,
+    9
+  ],
+  "reserve_access_allowed": false,
+  "geometry_run_allowed": false,
+  "eligible_triplets": 966,
+  "selection": "Sorted exact integer timestamps; floor((N-1)*q/4), q=0,1,2,3,4",
+  "triplets": [
+    {
+      "timestamp_ns": "1693274724086398208",
+      "pose_timestamp_ns": "1693274724086398300",
+      "signed_pose_offset_ns": 92,
+      "members": {
+        "left": {
+          "name": "Moon_1/image0/color/1693274724086398208.png",
+          "offset": 365087215,
+          "data_offset": 365087288,
+          "compressed": 1758627,
+          "bytes": 1758627,
+          "method": 0,
+          "crc32": 1684115985,
+          "complete": true
+        },
+        "right": {
+          "name": "Moon_1/image1/color/1693274724086398208.png",
+          "offset": 2359197989,
+          "data_offset": 2359198062,
+          "compressed": 1755310,
+          "bytes": 1755310,
+          "method": 0,
+          "crc32": 3289561401,
+          "complete": true
+        },
+        "depth": {
+          "name": "Moon_1/image0/depth/1693274724086398208.pfm",
+          "offset": 2251494926,
+          "data_offset": 2251494999,
+          "compressed": 108101,
+          "bytes": 4194320,
+          "method": 8,
+          "crc32": 262160672,
+          "complete": true
+        }
+      }
+    },
+    {
+      "timestamp_ns": "1693274751177630208",
+      "pose_timestamp_ns": "1693274751177630200",
+      "signed_pose_offset_ns": -8,
+      "members": {
+        "left": {
+          "name": "Moon_1/image0/color/1693274751177630208.png",
+          "offset": 787814026,
+          "data_offset": 787814099,
+          "compressed": 1316575,
+          "bytes": 1316575,
+          "method": 0,
+          "crc32": 1423712695,
+          "complete": true
+        },
+        "right": {
+          "name": "Moon_1/image1/color/1693274751177630208.png",
+          "offset": 2781404904,
+          "data_offset": 2781404977,
+          "compressed": 1236890,
+          "bytes": 1236890,
+          "method": 0,
+          "crc32": 1324231845,
+          "complete": true
+        },
+        "depth": {
+          "name": "Moon_1/image0/depth/1693274751177630208.pfm",
+          "offset": 2278074979,
+          "data_offset": 2278075052,
+          "compressed": 83425,
+          "bytes": 4194320,
+          "method": 8,
+          "crc32": 2946136455,
+          "complete": true
+        }
+      }
+    },
+    {
+      "timestamp_ns": "1693274777542074880",
+      "pose_timestamp_ns": "1693274777542075000",
+      "signed_pose_offset_ns": 120,
+      "members": {
+        "left": {
+          "name": "Moon_1/image0/color/1693274777542074880.png",
+          "offset": 1184349940,
+          "data_offset": 1184350013,
+          "compressed": 1778880,
+          "bytes": 1778880,
+          "method": 0,
+          "crc32": 1238118812,
+          "complete": true
+        },
+        "right": {
+          "name": "Moon_1/image1/color/1693274777542074880.png",
+          "offset": 3176258951,
+          "data_offset": 3176259024,
+          "compressed": 1775980,
+          "bytes": 1775980,
+          "method": 0,
+          "crc32": 3557000669,
+          "complete": true
+        },
+        "depth": {
+          "name": "Moon_1/image0/depth/1693274777542074880.pfm",
+          "offset": 2297911542,
+          "data_offset": 2297911615,
+          "compressed": 78821,
+          "bytes": 4194320,
+          "method": 8,
+          "crc32": 3618533678,
+          "complete": true
+        }
+      }
+    },
+    {
+      "timestamp_ns": "1693274803834658304",
+      "pose_timestamp_ns": "1693274803834658400",
+      "signed_pose_offset_ns": 96,
+      "members": {
+        "left": {
+          "name": "Moon_1/image0/color/1693274803834658304.png",
+          "offset": 1590005078,
+          "data_offset": 1590005151,
+          "compressed": 1686699,
+          "bytes": 1686699,
+          "method": 0,
+          "crc32": 2924889117,
+          "complete": true
+        },
+        "right": {
+          "name": "Moon_1/image1/color/1693274803834658304.png",
+          "offset": 3579816579,
+          "data_offset": 3579816652,
+          "compressed": 1694151,
+          "bytes": 1694151,
+          "method": 0,
+          "crc32": 3582626243,
+          "complete": true
+        },
+        "depth": {
+          "name": "Moon_1/image0/depth/1693274803834658304.pfm",
+          "offset": 2318969924,
+          "data_offset": 2318969997,
+          "compressed": 70560,
+          "bytes": 4194320,
+          "method": 8,
+          "crc32": 1149608345,
+          "complete": true
+        }
+      }
+    },
+    {
+      "timestamp_ns": "1693274830206660864",
+      "pose_timestamp_ns": "1693274830206660900",
+      "signed_pose_offset_ns": 36,
+      "members": {
+        "left": {
+          "name": "Moon_1/image0/color/1693274830206660864.png",
+          "offset": 2010290658,
+          "data_offset": 2010290731,
+          "compressed": 1737238,
+          "bytes": 1737238,
+          "method": 0,
+          "crc32": 1935374768,
+          "complete": true
+        },
+        "right": {
+          "name": "Moon_1/image1/color/1693274830206660864.png",
+          "offset": 4000801776,
+          "data_offset": 4000801849,
+          "compressed": 1738509,
+          "bytes": 1738509,
+          "method": 0,
+          "crc32": 2840114251,
+          "complete": true
+        },
+        "depth": {
+          "name": "Moon_1/image0/depth/1693274830206660864.pfm",
+          "offset": 2339044178,
+          "data_offset": 2339044251,
+          "compressed": 84874,
+          "bytes": 4194320,
+          "method": 8,
+          "crc32": 4175726989,
+          "complete": true
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "Moon_1/gt.txt": {
+      "member": {
+        "name": "Moon_1/gt.txt",
+        "offset": 365016200,
+        "data_offset": 365016243,
+        "compressed": 70878,
+        "bytes": 201441,
+        "method": 8,
+        "crc32": 3512344133,
+        "complete": true
+      },
+      "sha256": "023a9352b744e7739d465e720379b538bcdc10af6f7fd5e5424185cb0a470d6e"
+    },
+    "Moon_1/image0/color_timestamp.txt": {
+      "member": {
+        "name": "Moon_1/image0/color_timestamp.txt",
+        "offset": 2251485537,
+        "data_offset": 2251485600,
+        "compressed": 9276,
+        "bytes": 49256,
+        "method": 8,
+        "crc32": 1728364523,
+        "complete": true
+      },
+      "sha256": "f409b7f578a31ca3620621824eb49bb6f923f5ddcd9fa72045ccdb35ee24cd7f"
+    },
+    "Moon_1/image0/depth_timestamp.txt": {
+      "member": {
+        "name": "Moon_1/image0/depth_timestamp.txt",
+        "offset": 2355500029,
+        "data_offset": 2355500092,
+        "compressed": 9266,
+        "bytes": 49256,
+        "method": 8,
+        "crc32": 1546482125,
+        "complete": true
+      },
+      "sha256": "c3327657a7fb2a883dc82ab69a31c842233b0fdee2aa8903e49acd58c8621bc4"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "two_part_clean_replay_passed": true,
+  "payload_hashes_verified": 244,
+  "cost_replay": {
+    "passed": true,
+    "verified_sources": 101,
+    "verified_inputs": 125,
+    "independently_recomputed_forecast_seconds": 652.5137772965245,
+    "original_cap_seconds": 480,
+    "forecast_exceeds_full_original_cap": true,
+    "new_lunar_accuracy_results": 0,
+    "inference_performed": false,
+    "private_authority_used": false,
+    "scope": "Read-only hash/admission replay; generated live pose controls are not independently replayed saved poses"
+  },
+  "private_authority_used": false,
+  "new_lunar_results": 0
+}

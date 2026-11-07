@@ -1,0 +1,64 @@
+{
+  "schema_version": 73,
+  "passed": true,
+  "prepared_utc": "2026-11-04T00:46:23.455586+00:00",
+  "procedural_stub_tests_passed": 12,
+  "measured_test_seconds": 0.3,
+  "actual_historical_checkpoint_lineage_verified": true,
+  "checkpoint_models_loaded": false,
+  "actual_neural_forwards": 0,
+  "actual_lunar_image_reads": 0,
+  "actual_render_or_ray_jobs": 0,
+  "downloads": 0,
+  "root_scientific_sources_modified": false,
+  "live_render_and_parent_source_guard_files": 16,
+  "live_source_closure_unchanged": true,
+  "method_registry_roles": [
+    "historical_compact",
+    "direct_render"
+  ],
+  "historical_method_ids": [
+    "historical_original_native512",
+    "historical_frozen_surface",
+    "historical_north_context"
+  ],
+  "direct_method": "reference_camera_render_match",
+  "scientific_comparisons_completed": 0,
+  "qualified_new_native_adapter_controls_produced": 0,
+  "render_library_built": false,
+  "limitations": [
+    "No fresh native-model forward was executed; prepared profiles remain unavailable until actual controls are published.",
+    "Direct control covers reference-camera relighting only, not full viewpoint rendering.",
+    "Exact off-grid known Sun without a matching render is Unavailable, not a correct nonoverlap rejection.",
+    "Synthetic reference/query shared-renderer agreement cannot establish optical navigation accuracy.",
+    "Original rendering cost has an attributable reference component and conservative whole-pair outer preparation bound; report amortization."
+  ],
+  "checks": [
+    "immutable original/expanded/context checkpoint identities",
+    "preserved algorithm source pins",
+    "independent saved analytic-translation control replay",
+    "no matcher-fitted control labels",
+    "same final PnP despite internal proposals",
+    "reference-only geometry boundary",
+    "fresh feature caches",
+    "native coordinate bounds",
+    "exact known Sun or explicit unavailable",
+    "same original full map and perturbation refusal",
+    "measured render preparation including startup/I/O bound",
+    "prepared protocol cannot construct actual library"
+  ],
+  "files_sha256": {
+    "historical_compact_adapters_v73.py": "ebdfc9bd9023822f73d334171f40402f3fc1e786a7894006e056646d37c66cf7",
+    "direct_render_adapter_v73.py": "077ef2a601478ed31101b52cbef1939a2b16dd1346acc8dd1bd1d7a9448e03b8",
+    "build_direct_render_library_v73.py": "12ac9cfe56916ab9ad5b499e12e3ae0d3a783f190b51d07c25125b73d7633390",
+    "prepare_historical_profiles_v73.py": "4a76feea617192e04d41437f7786d1fca8c9feb12fac580658492a6115dd3b6d",
+    "test_compact_render_adapters_v73.py": "c7df7b8b362428362f3b48f777b1c7d70f28c7801c80450692b39bb9ec29f220",
+    "registry_integration_v73.patch": "46cdb61e44097ddf36269265f391e9c95f8fe43657df2ca6bc0c4c08b23687bb",
+    "README.md": "a04f7c85f78c33ea65b293b8fe3a9814c49043256ef1670e1c7a45937c582533",
+    "historical_profiles_prepared_v73.json": "724432a15cc9ff2634189bf1c7ce5f617df09ed3f93b59e764e71b974a0abf28",
+    "historical_artifact_catalog_v73.json": "27846bd8ef8b83dea8b141b79b00de0f4c1a919ee801489d253bc783104017fd",
+    "historical_lineage_readonly_v73.json": "63dbd7365c473b8f0f115a190f6073c9913a78a8e59b066186ea9a1d796554f3",
+    "direct_render_profile_prepared_v73.json": "0515c81fbe4f2f5331ea56ac86cb604825b5e3c9977413463f60fc2856e4b9ee",
+    "direct_render_library_protocol_prepared_v73.json": "8bd271a8572d6ad48cd068e5dfd458085ee448decdb9e70aad2ac0d697b4c5ee"
+  }
+}

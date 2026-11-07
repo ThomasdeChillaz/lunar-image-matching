@@ -1,0 +1,8 @@
+{
+  "prepared_only": true,
+  "reference_preparation_evidence": {
+    "protocol": "reports/solar-reference-v74/reference_full.json",
+    "summary": "runs/solar-reference-v74/stages/reference_full/summary.json"
+  },
+  "instruction": "This is a future evidence reference, not a completed receipt. Build/evaluation must call completed_reference_preparation and bind every independently eligible returned reference archive and retain the generated32 inventory/exclusion metadata plus startup-inclusive outer receipts after actual source-published execution."
+}

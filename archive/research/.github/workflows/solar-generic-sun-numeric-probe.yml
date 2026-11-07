@@ -1,0 +1,36 @@
+name: Solar generic Sun catalogue numeric probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 5
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compare frozen catalogue with ARM libm
+        working-directory: reports/solar-modern-arm-v98/catalogue-probe
+        run: |
+          echo '8f02dd100cd5805ca42fbb7f1e470d6f2c7791d9b4f9c4eec8c7fcf85d412b50  fixture-41926059385.json.gz' | sha256sum -c -
+          set -o pipefail
+          python probe_generic_sun.py run fixture-41926059385.json.gz --require-linux-arm | tee "$RUNNER_TEMP/solar-generic-sun-numeric-probe.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: solar-generic-sun-numeric-probe
+          path: ${{ runner.temp }}/solar-generic-sun-numeric-probe.json
+          if-no-files-found: warn
+          retention-days: 30

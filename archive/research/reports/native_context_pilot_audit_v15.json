@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "completed_steps": 100,
+  "independently_projected_label_points": 97344,
+  "negative_pairs": 25,
+  "exact_full_retraining": true,
+  "exact_model_optimizer_rng_replay": true,
+  "context_parameters": 25664,
+  "final_weight_change_l2": 0.4780427813529968,
+  "source_sha256": "6f3ea31595b5d5e22d49d1d050c6ce301a2272906d2488a2995753fa3e3912bc",
+  "summary_sha256": "0e5e0df9a19c9e9e3e8a293f3811dd288344cc2c8a5fc2cab7f231b5db33f4eb",
+  "scope": "Train-only geometry/optimizer reproducibility and cost pilot, not localization performance, calibrated acceptance or fresh validation."
+}

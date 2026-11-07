@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "cases": 15,
+  "branches": 60,
+  "image_selected_broad_correct": 0,
+  "oracle_any_broad_correct": 0,
+  "source_sha256": "58248551526cc9a33511fe1b33e18b6488a33a6f8920d761a0295d1019f61e17",
+  "summary_sha256": "8c563ab2b78aea5fcf75bc237505afaa998e34bf4108d1e6a76a5a02ddcacf42",
+  "results_sha256": "d24e283f1ffe4650ed07ec021c5156c16705ad1939ce475ca44f88ff06460543",
+  "scope": "Independent native projection/pose-error and all12px broad-estimator replay; oracle is diagnosis only, not deployed selection."
+}

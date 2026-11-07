@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "mode": "study",
+  "variant": "fractional",
+  "replayed_updates": 2000,
+  "replayed_rows": 576,
+  "exact_optimizer_retraining": false,
+  "exact_sampler_input_replay": true,
+  "coarse_weights_unchanged": true,
+  "summary_sha256": "893d47da1377d51f5c078a71d2fc9a892d0553d34cd9582acc0f66a234ab5d20",
+  "source_sha256": "bd1508c72fdbcb61165470a2dfe97193549e59e2a3498782d73391d2c39fafc6",
+  "model_promoted": false,
+  "scope": "Exact100update pilot optimizer replay or2000sample/saved576metric study replay. Training bank is not held-out pose accuracy. No calibrated/final/SOTA result."
+}

@@ -1,0 +1,58 @@
+{
+  "scope": "Independent read-only source review and byte-hash verification. No tests, imports of model/scientific modules, NN, images, rays, rendering or data mutation were performed.",
+  "created_utc": "2026-11-04T07:39:40.532230+00:00",
+  "status": "NO_REMAINING_MATERIAL_BLOCKER_FOUND_IN_REVIEWED_BYTES",
+  "source_sha256": {
+    "solar_response_cache_v84.py": "d1ac5ec85eed494b18419f0d4a3e08714007053e2bf7ffb174eceef7fcaca97f",
+    "solar_acquisition_cache_v84.py": "71c72672bb74e40cd5d21a4d0f83ba8dc02be8eba9139057e2a5a3bc2fd2266c",
+    "solar_inference_cache_v84.py": "732627a68f9422533e0e633df78526600c6703d75e6674f603b1cfd0c102b769",
+    "localize_terrain.py": "9c8484a0e23e19454d814a5410c4e317f5ecd1003c277761efc3f25062e46f96",
+    "run_solar_evaluation_v70.py": "49679c949fb56a96a4c49655ba76f3b457840163890adf7998122ad50615865d",
+    "solar_evaluation_protocol_v74.py": "1c8281626f4e282cede59c7495b4053f23a20da985ec3dd8430c80ab27cff776",
+    "test_solar_response_cache_v84.py": "134724d26e22a162f192a9183f59e3987ca0657864cf7e871ae98ccb9463f1c8",
+    "test_solar_acquisition_cache_v84.py": "76d316f529af183a74a7d3a32fb6fe4bf5bc2673fc0736aa01e32b8b0809059e",
+    "test_solar_inference_cache_v84.py": "a595fe2700fd0ad4830729358ce7bf778480f3e0eb5cf9f2fa71bede523b062e"
+  },
+  "protected_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "contract_sha256": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "contract_sha256": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "resolved_finding": {
+    "problem": "Original array objects alone failed to notice geometry attribute replacement; a derived with_reference_sun object could differ from the original geometry consumed by common_pose.",
+    "resolution": "The final frontend binds GeometryOwnerGuardV84 before any reference-Sun/known-Sun derivation and checks the original owner in an outer finally spanning response on/off, errors and early returns. PairResponseCacheV84 additionally checks its derived live owner identities and hashes. Changed replacement geometry cannot be silently used by final PnP while response snapshots stay old.",
+    "regressions_read_not_executed": [
+      "equal/different-byte final-estimator replacements with and without reference_sun override",
+      "original-owner replacement on blank-image early return"
+    ]
+  },
+  "reviewed_invariants": [
+    "Exact cache keys include native query measurement bytes, full trial pose bytes, selected Sun tuple and immutable model identity; no rounded pose/location/lighting keys.",
+    "Response cache uses private reference/query/geometry snapshots. Canonical surfaces, pairs and feature/prediction caches remain per case and bounded. Reference features remain original two-patch batches.",
+    "Tensor parameter/buffer identity, mode, dtype/device and version signatures detect regular changes; final full state digest detects .data writes before a response-enabled result escapes.",
+    "Response finish runs before successful return and on failure; solver acquisition finish is in finally. InferenceResultCapture clears before delegate entry, so exceptions cannot export a prior successful result.",
+    "Acquisition cache memoizes only exact static world-to-camera xy/front projections. Current query positions, shared/independent Sun assignments, solar states/materialization and hypothesis weights are recomputed on every acquisition. Pose/live-state changes alter keys; world/action/intrinsics changes fail the boundary check.",
+    "Old factory defaults and initialization-specific revisions remain intact. Cached variants require explicit revision; all new cache sources enter the evaluation source closure.",
+    "The copied solver retains candidate assignments, scoring, acquisition-policy choice, sampling order, AP3P/LM scheduling, three-pixel threshold and final common estimator. Existing source-level AST guards and procedural equality cases were read; their execution is owned by the parent."
+  ],
+  "timing_and_claims": {
+    "scientific_improvement_established": false,
+    "measured_speedup_established_by_this_review": false,
+    "outer_inference_timer_includes_all_guards": true,
+    "raw_internal_elapsed_seconds_excludes_final_outer_original_owner_check": true,
+    "worker_lifetime_RSS_is_model_specific_RAM": false,
+    "note": "Use the outer evaluation inference_seconds/case calendar for speed claims. The outer original-owner finally executes after the returned internal elapsed_seconds was computed, but before the delegate returns to the evaluation timer."
+  },
+  "limits": [
+    "Static review does not replace the parent full suite and fresh procedural image smoke. No lunar inference or performance result was produced.",
+    "Concurrent external mutation is forbidden; this review does not treat arbitrary monkeypatching/private-cache tampering as supported execution.",
+    "Caching is a versioned software optimization, not a new learned contribution or proof of correct Sun/pose recovery."
+  ]
+}

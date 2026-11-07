@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Fresh public source/data/capsule installation, complete saved-study replay and actual selected-model native forward replay. Reproducibility, not new terrain validation.",
+  "source_commit": "62446cb93a2eb55b43b6127896bbb61d62f47a4d",
+  "verified_capsule_members": 256,
+  "capsule_sha256": "bd2920e2e5cdc84d6e8c7ecdaa79b6d5299afdc3d9efc7ed49f571f739c249ba",
+  "replayed_optimizer_steps": 10000,
+  "replayed_checkpoint_rows": 1800,
+  "selected_result_rows": 360,
+  "actual_primary_forward_cases": 72,
+  "actual_primary_forward_exact": true,
+  "case_success": 55,
+  "strict_success": 18,
+  "replay_sha256": "4eefb6831a8fb733bab1caf43e44163d9290b60f8e2e79ba5c7497336b0fa366",
+  "forward_replay_sha256": "be5eb3a9e7331345a98a50776bc6a9f987ba69b8dd87b35102e35dafbef3552b"
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "blind_source_preflight_v139",
+  "full_pytest": {
+    "passed": 1503,
+    "skipped": 4,
+    "subtests": 14,
+    "elapsed_seconds": 312.81
+  },
+  "full_test_log_sha256": "2623b513b6a881f7e0b674b531a76b41b2f65f9be556180b280822abf355bca7",
+  "focused_tests": {
+    "passed": 13,
+    "elapsed_seconds": 20.44
+  },
+  "small_six_arm_generated_control": {
+    "passed": true,
+    "lights": 3,
+    "camera_candidates": 3,
+    "extra_patches": 2,
+    "not_full_cost_pilot": true
+  },
+  "independent_smoke_replay": {
+    "passed": true,
+    "method_case_cells": 4,
+    "matching": false,
+    "pose_fitting": false,
+    "physical_sunlight_validation": false,
+    "lunar_accuracy_claim": false,
+    "source_sha256": "96949d7c2db7a14e2acb045d210de03aeb57e83d2fd23f77f68ae78fc8595eed"
+  },
+  "source_count": 101,
+  "input_count": 125,
+  "all_pins_unchanged": true,
+  "scientific_source_published_before_launch_required": true,
+  "no_new_lunar_inference_yet": true,
+  "supplement_charges_so_far_seconds": 1920,
+  "remaining_recovery_seconds": 480,
+  "new_total_allowance_granted": 0,
+  "calibration_or_final_access": false,
+  "original_14_targets_unchanged": true
+}
