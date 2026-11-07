@@ -1,0 +1,30 @@
+name: Tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.2.2 torchvision==0.17.2
+      - run: python -m pip install -e . --no-deps
+      - run: python -m pytest -q
+      - name: Verify all original research files
+        run: lunar-match audit
+      - name: Run the complete archived regression
+        working-directory: archive/research
+        run: python -m pytest -q
+      - name: Fresh generated native matching control
+        run: lunar-match smoke
