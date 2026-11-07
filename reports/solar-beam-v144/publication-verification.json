@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-11-07T19:03:17.303987+00:00",
+  "passed": true,
+  "source_publication_commit": "15da4e23a1ad4898abfed7910dbb9233ab341181",
+  "complete_documentation_commit": "463db2466f9422b5469dc00267d9854e190fc1c7",
+  "release_tag": "solar-beam-v144-development",
+  "release_commit": "463db2466f9422b5469dc00267d9854e190fc1c7",
+  "release_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-beam-v144-development",
+  "public_report_files_byte_verified": 20,
+  "scientific_source_freeze": "dbeb77776b330518c7d5a1c02ccf98e02ccd2bdb",
+  "public_source_ci": {
+    "run_id": 42403846728,
+    "job_id": 128497214737,
+    "conclusion": "success",
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42403846728",
+    "pytest": {
+      "passed": 1531,
+      "skipped": 8,
+      "subtests_passed": 14,
+      "warnings": 14,
+      "seconds": 220.36
+    },
+    "fresh_controlled_smoke_summaries": 20
+  },
+  "public_artifact_verification": {
+    "public_download": true,
+    "release_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/solar-beam-v144-development/",
+    "archive": "solar-beam-v144-results.zip",
+    "bytes": 4314798,
+    "sha256": "834bafd9a96cbfe02dccd1efa0ed5d59393fbc82f9363e8ac4327bcd94019e07",
+    "payload_files": 47,
+    "all_payloads_exact": true,
+    "prerequisite_checksums_verified": true,
+    "public_clean_replay": {
+      "passed": true,
+      "method_case_cells": 56,
+      "historical_control_identities": 24,
+      "sources": 115,
+      "inputs": 134,
+      "independently_recomputed_geometry": true,
+      "branch_retention_and_field_accounting": true,
+      "summary_and_component_analysis_exact": true,
+      "no_matching_or_fitting": true,
+      "saved_branch_diagnosis_exact": true,
+      "private_authority_used": false,
+      "accepted_pose_study": false,
+      "methods": {
+        "direct": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 2,
+          "raw_nonoverlap": 0
+        },
+        "legacy_no_extra": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 0,
+          "raw_nonoverlap": 0
+        },
+        "legacy_active32": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 0,
+          "raw_nonoverlap": 0
+        },
+        "single_uniform128": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 2,
+          "raw_nonoverlap": 0
+        },
+        "beam_uniform128": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 0,
+          "raw_nonoverlap": 0
+        },
+        "beam_geometry128": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 0,
+          "raw_nonoverlap": 0
+        },
+        "beam_active128": {
+          "correct": 1,
+          "strict": 1,
+          "wrong_positive": 0,
+          "raw_nonoverlap": 0
+        }
+      }
+    },
+    "private_authority_used": false
+  },
+  "source_or_inference_changes_since_public_ci": false,
+  "calibration_or_final_access": false,
+  "no_recovery_advantage": true,
+  "original_targets_unchanged": 14
+}
