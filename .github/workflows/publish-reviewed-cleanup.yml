@@ -1,0 +1,61 @@
+name: Publish reviewed repository cleanup
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish-reviewed-patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify base, frozen patch and exact tested tree
+        env:
+          EXPECTED_BASE: 3d21052ed561550fd31aa4806906279ec8ac6cf4
+          EXPECTED_TREE: 8ce963865200925b326e6bc039cbef0823c69c41
+          EXPECTED_PATCH_SHA256: 729468b3e55249c7e9094a2f70b5701f5a2c5774bc4a3a29cb6d70c55c5c5c81
+        run: |
+          set -euo pipefail
+          python - <<'PYTHON'
+          import hashlib, os, pathlib, subprocess, urllib.request
+          def git(*args):
+              return subprocess.check_output(['git', *args], text=True).strip()
+          base = os.environ['EXPECTED_BASE']
+          subprocess.run(['git', 'merge-base', '--is-ancestor', base, 'HEAD'], check=True)
+          publisher = '.github/workflows/publish-reviewed-cleanup.yml'
+          changed = git('diff', '--name-only', base, 'HEAD').splitlines()
+          if changed != [publisher]:
+              raise SystemExit('Main changed outside this publisher. Stop for review; never overwrite it.')
+          target = 'cleanup/maintained-research-package'
+          if git('ls-remote', '--heads', 'origin', 'refs/heads/' + target):
+              raise SystemExit('The review branch already exists; do not overwrite it.')
+          url = 'https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/codebase-cleanup-v145-preview/codebase-cleanup-v145.patch'
+          with urllib.request.urlopen(url, timeout=30) as response:
+              payload = response.read()
+          if hashlib.sha256(payload).hexdigest() != os.environ['EXPECTED_PATCH_SHA256']:
+              raise SystemExit('The reviewed patch checksum differs.')
+          patch = pathlib.Path(os.environ['RUNNER_TEMP']) / 'reviewed-cleanup.patch'
+          patch.write_bytes(payload)
+          subprocess.run(['git', 'apply', '--index', '--binary', '--whitespace=nowarn', str(patch)], check=True)
+          subprocess.run(['git', 'rm', publisher], check=True)
+          if git('write-tree') != os.environ['EXPECTED_TREE']:
+              raise SystemExit('The resulting tree differs from the locally tested cleanup.')
+          print('Exact tested tree verified. The temporary publisher is absent from the result.')
+          PYTHON
+      - name: Verify every archived public file
+        env:
+          PYTHONPATH: src
+        run: python -m lunar_matching audit
+      - name: Publish only the new review branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Organize maintained interfaces and preserve the complete research archive'
+          git push origin HEAD:refs/heads/cleanup/maintained-research-package
