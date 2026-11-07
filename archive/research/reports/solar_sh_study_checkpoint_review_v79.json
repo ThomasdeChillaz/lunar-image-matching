@@ -1,0 +1,110 @@
+{
+  "kind": "independent_SH2000_artifact_only_audit",
+  "created_utc": "2026-11-04T05:38:01.192000+00:00",
+  "passed": true,
+  "protocol": "reports/solar-learning-v79/sh_study.json",
+  "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+  "public_commit": "b8fa611be60c80f497877a9d938a317761b60079",
+  "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+  "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044",
+  "completed_updates": 2000,
+  "total_parameters": 95808,
+  "trainable_parameters": 67536,
+  "calendar_seconds": 261.7362995680305,
+  "charged_cap_seconds": 595,
+  "checkpoint_states": [
+    {
+      "step": 0,
+      "sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 0
+    },
+    {
+      "step": 100,
+      "sha256": "6432324710352e3871f6696397d33308605f6e401b0de221043e4c7031417ee3",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 14
+    },
+    {
+      "step": 500,
+      "sha256": "faf4f10062e4741f1f7daabf5d25bc0d23ec6020425c6c859e35ff3c685916cd",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 14
+    },
+    {
+      "step": 1000,
+      "sha256": "d1c0056b04856a80de5a507db05b2fa06a6745534b6c1952968ae38e9e3fee6e",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 14
+    },
+    {
+      "step": 1500,
+      "sha256": "dafe98e426cc7a709b610c9a1dc8cd00fec9422950e6cdada6711b38bcb6a2cd",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 14
+    },
+    {
+      "step": 2000,
+      "sha256": "5bbceb4a4c12f9c49d2d0e2c311a65eea89d1de88b9a13162e2436b2df930300",
+      "total_parameters": 95808,
+      "frozen_coarse_identical_to_initializer": true,
+      "all_tensors_finite": true,
+      "optimizer_state_count": 14
+    }
+  ],
+  "step0_and100_model_optimizer_numpyTorchRNG_bit_identical_to_SHpilot": true,
+  "first100_history_identical_to_SHpilot": true,
+  "all_checkpoint_and_history_hashes_match": true,
+  "all16training_groups_sampled": true,
+  "all64camera_records_sampled": true,
+  "group_draw_counts": {
+    "np31-r2-c1": 114,
+    "np31-r3-c4": 132,
+    "np31-r1-c4": 119,
+    "np31-r0-c1": 120,
+    "np31-r4-c3": 106,
+    "np31-r4-c4": 138,
+    "np31-r4-c2": 124,
+    "np31-r0-c2": 129,
+    "np31-r4-c6": 115,
+    "np31-r0-c0": 130,
+    "np31-r1-c6": 134,
+    "np31-r1-c1": 128,
+    "np31-r1-c5": 120,
+    "np31-r0-c6": 132,
+    "np31-r2-c6": 118,
+    "np31-r2-c2": 141
+  },
+  "camera_draw_count_range": [
+    18,
+    46
+  ],
+  "all2000_minibatches_unique_physical_rows_and_exact_even_light_labels": true,
+  "heldout_images": 0,
+  "calibration_final_closed": true,
+  "no_checkpoint_selected": true,
+  "interpretation": "Completed training and pilot-prefix reproducibility verified; no pose-accuracy result, superiority claim or loss-based checkpoint choice.",
+  "limitations": [
+    "Saved artifact/state arithmetic only; no network forward, optimizer, exact replay or data generation was rerun."
+  ],
+  "activity": {
+    "torch_threads": 2,
+    "checkpoint_load_only": true,
+    "source_or_protocol_edits": 0,
+    "neural_forwards": 0,
+    "optimizer_updates": 0,
+    "png_decodes": 0,
+    "rays": 0,
+    "scientific_jobs": 0
+  }
+}

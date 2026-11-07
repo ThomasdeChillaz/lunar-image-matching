@@ -1,0 +1,3425 @@
+{
+  "schema": "solar_raw_crossview_v110",
+  "protocol_sha256": "478d90ff7f50ff69d1f030c4875b3a7378b186bf61e4a1471c0bdf7990b5b932",
+  "rows": [
+    {
+      "case_id": "u061-l00-17-positive",
+      "purpose": "sparse_tail_primary",
+      "samples_per_pixel": 256,
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 211460,
+        "query_supported_smooth_depth_stencil": 211460,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 211460,
+        "reciprocal_cov_visible": 211460,
+        "common_support_before_unique": 177714,
+        "common_support_unique": 167234
+      },
+      "scales": {
+        "32": {
+          "blocks": 169,
+          "common_pixels_in_retained_blocks": 159208,
+          "reference_within_view": {
+            "pearson_r": 0.9861852142720741,
+            "covariance": 2.3234371303491174e-10,
+            "first_spatial_rms": 1.5260865199523438e-05,
+            "second_spatial_rms": 1.543807982910733e-05
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9870953157073614,
+                  "covariance": 2.337356968810908e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.55162510279329e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9862887473050836,
+                  "covariance": 2.3081999654362618e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.533522653139147e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9856051440059761,
+                  "covariance": 2.360929620616051e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.55162510279329e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9855874696773813,
+                  "covariance": 2.333343359796489e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.533522653139147e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.9928733554697846,
+                "covariance": 2.3349574786649286e-10,
+                "first_spatial_rms": 1.5296370006620358e-05,
+                "second_spatial_rms": 1.537434915021475e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9866960548634852,
+                "covariance": 2.347796142199572e-10,
+                "first_spatial_rms": 1.55162510279329e-05,
+                "second_spatial_rms": 1.533522653139147e-05
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7211511083071788,
+                  "covariance": 1.902340294029126e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.728553299382399e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7205244900305993,
+                  "covariance": 1.876777859991055e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.706809174343538e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7329403001617135,
+                  "covariance": 1.9558910500877883e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.728553299382399e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7312106010720735,
+                  "covariance": 1.9267294253464366e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.706809174343538e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.731031849349129,
+                "covariance": 1.915434657363601e-10,
+                "first_spatial_rms": 1.5296370006620358e-05,
+                "second_spatial_rms": 1.7129420167791308e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9889784631761018,
+                "covariance": 2.917793672480189e-10,
+                "first_spatial_rms": 1.728553299382399e-05,
+                "second_spatial_rms": 1.706809174343538e-05
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6303984673409028,
+                  "covariance": 1.3557034431038585e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.409192730741627e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6118771374961424,
+                  "covariance": 1.3072121377272931e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.399918295057952e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6290309144615355,
+                  "covariance": 1.3684712140571083e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.409192730741627e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.606000128311666,
+                  "covariance": 1.3096905311437683e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.399918295057952e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6246709518108147,
+                "covariance": 1.3352693315080072e-10,
+                "first_spatial_rms": 1.5296370006620358e-05,
+                "second_spatial_rms": 1.3974271699350236e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9797506565857688,
+                "covariance": 1.932807697938715e-10,
+                "first_spatial_rms": 1.409192730741627e-05,
+                "second_spatial_rms": 1.399918295057952e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7595860275611259,
+                  "covariance": 1.7847834446779324e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.539676230788901e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7597387042135642,
+                  "covariance": 1.7844901345071777e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.5391138397811033e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7550040441614572,
+                  "covariance": 1.794617777251348e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.539676230788901e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7567668659955048,
+                  "covariance": 1.798150899144341e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.5391138397811033e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.7635698212508492,
+                "covariance": 1.7905105638951998e-10,
+                "first_spatial_rms": 1.5296370006620358e-05,
+                "second_spatial_rms": 1.532991518420356e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9833955589603535,
+                "covariance": 2.3303888373664715e-10,
+                "first_spatial_rms": 1.539676230788901e-05,
+                "second_spatial_rms": 1.5391138397811033e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7876470304499016,
+                  "covariance": 1.8650689688648143e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.551615466981051e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7788220937978209,
+                  "covariance": 1.8538607377586023e-10,
+                  "first_spatial_rms": 1.5260865199523438e-05,
+                  "second_spatial_rms": 1.5597668550998934e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7976488775638203,
+                  "covariance": 1.9106852053777846e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.551615466981051e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7926744279790221,
+                  "covariance": 1.9087445831644002e-10,
+                  "first_spatial_rms": 1.543807982910733e-05,
+                  "second_spatial_rms": 1.5597668550998934e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.7948292207935026,
+                "covariance": 1.8845898737914007e-10,
+                "first_spatial_rms": 1.5296370006620358e-05,
+                "second_spatial_rms": 1.5500819102729804e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9856033719548036,
+                "covariance": 2.3853162572895457e-10,
+                "first_spatial_rms": 1.551615466981051e-05,
+                "second_spatial_rms": 1.5597668550998934e-05
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.19944828525745983,
+            0.2074666535072628,
+            0.1879562664421558,
+            0.1929130416983592
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        },
+        "16": {
+          "blocks": 695,
+          "common_pixels_in_retained_blocks": 164746,
+          "reference_within_view": {
+            "pearson_r": 0.9548121883800307,
+            "covariance": 2.7271339812007746e-10,
+            "first_spatial_rms": 1.687134028994848e-05,
+            "second_spatial_rms": 1.6929297445737867e-05
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9535515372545983,
+                  "covariance": 2.7723904030677025e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.7232989805128864e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9557524521019808,
+                  "covariance": 2.7394581072569834e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.6989072019936746e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9493609851776575,
+                  "covariance": 2.7696886205139356e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.7232989805128864e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9489323986627898,
+                  "covariance": 2.729253447943714e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.6989072019936746e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.9755850387666888,
+                "covariance": 2.7526976446955834e-10,
+                "first_spatial_rms": 1.6708306552622713e-05,
+                "second_spatial_rms": 1.6887328243394958e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9480448227772347,
+                "covariance": 2.775614575391935e-10,
+                "first_spatial_rms": 1.7232989805128864e-05,
+                "second_spatial_rms": 1.6989072019936746e-05
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6048909375751973,
+                  "covariance": 1.9150946418881103e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.8765648535322644e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6018608836681604,
+                  "covariance": 1.8796797523583612e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.8511352877651944e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6214741243897006,
+                  "covariance": 1.9743564587192827e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.8765648535322644e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6174363188271288,
+                  "covariance": 1.9349478620222403e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.8511352877651944e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6251947168171978,
+                "covariance": 1.9260196787469985e-10,
+                "first_spatial_rms": 1.6708306552622713e-05,
+                "second_spatial_rms": 1.843796498793947e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9571926518559043,
+                "covariance": 3.325072306368585e-10,
+                "first_spatial_rms": 1.8765648535322644e-05,
+                "second_spatial_rms": 1.8511352877651944e-05
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5118602057635849,
+                  "covariance": 1.4066765619395197e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.6288957841381494e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4899487009997255,
+                  "covariance": 1.3339736777781973e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.6137901650867902e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5155150084423502,
+                  "covariance": 1.421587344180255e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.6288957841381494e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4881901339902319,
+                  "covariance": 1.333751737930782e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.6137901650867902e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.5162452124319049,
+                "covariance": 1.3739973304571887e-10,
+                "first_spatial_rms": 1.6708306552622713e-05,
+                "second_spatial_rms": 1.5929326610655147e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9305217653458314,
+                "covariance": 2.446058839121581e-10,
+                "first_spatial_rms": 1.6288957841381494e-05,
+                "second_spatial_rms": 1.6137901650867902e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6186178210373705,
+                  "covariance": 1.7914090444565686e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.716416775624866e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6130727006428566,
+                  "covariance": 1.7828235893840162e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.7236409710111133e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6178617146919797,
+                  "covariance": 1.7953658966519797e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.716416775624866e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6156797991975347,
+                  "covariance": 1.7965555434508836e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.7236409710111133e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6312534888267752,
+                "covariance": 1.7915385184858621e-10,
+                "first_spatial_rms": 1.6708306552622713e-05,
+                "second_spatial_rms": 1.6985953225437783e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9504657122597899,
+                "covariance": 2.8119397672379085e-10,
+                "first_spatial_rms": 1.716416775624866e-05,
+                "second_spatial_rms": 1.7236409710111133e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6325965509584255,
+                  "covariance": 1.8156360991966072e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.7011883664733235e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6260266230063757,
+                  "covariance": 1.793586857775923e-10,
+                  "first_spatial_rms": 1.687134028994848e-05,
+                  "second_spatial_rms": 1.6981655454373854e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6474071306193332,
+                  "covariance": 1.8645276072955335e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.7011883664733235e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6462934258618955,
+                  "covariance": 1.8580127888144156e-10,
+                  "first_spatial_rms": 1.6929297445737867e-05,
+                  "second_spatial_rms": 1.6981655454373854e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.65463223286247,
+                "covariance": 1.832940838270619e-10,
+                "first_spatial_rms": 1.6708306552622713e-05,
+                "second_spatial_rms": 1.6757862680299855e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.9441710316898054,
+                "covariance": 2.727615193268321e-10,
+                "first_spatial_rms": 1.7011883664733235e-05,
+                "second_spatial_rms": 1.6981655454373854e-05
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.3209549862961728,
+            0.3297258290956051,
+            0.30195385455832435,
+            0.30263897280089425
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        },
+        "1": {
+          "blocks": 167234,
+          "common_pixels_in_retained_blocks": 167234,
+          "reference_within_view": {
+            "pearson_r": 0.05163565738981692,
+            "covariance": 3.2276293777102023e-10,
+            "first_spatial_rms": 7.931584986882848e-05,
+            "second_spatial_rms": 7.880866435157884e-05
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.05084532714491254,
+                  "covariance": 3.1829657797953985e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.892615417174991e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.051766199127468805,
+                  "covariance": 3.2416722250421217e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.89519460686411e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.05227537322802622,
+                  "covariance": 3.2515620853997815e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.892615417174991e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.051480562806209565,
+                  "covariance": 3.203170768945264e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.89519460686411e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.09795999821235228,
+                "covariance": 3.2198427147956065e-10,
+                "first_spatial_rms": 5.733091550995141e-05,
+                "second_spatial_rms": 5.7331989404045276e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.05497025971074031,
+                "covariance": 3.42540217867118e-10,
+                "first_spatial_rms": 7.892615417174991e-05,
+                "second_spatial_rms": 7.89519460686411e-05
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.02827456661563685,
+                  "covariance": 1.747867196556437e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.793858069246228e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.02664008783520719,
+                  "covariance": 1.6497502005079096e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.807689887932681e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.028007698268606256,
+                  "covariance": 1.7202987706156457e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.793858069246228e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.028229767419008896,
+                  "covariance": 1.7370160149150864e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.807689887932681e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.052611199754785086,
+                "covariance": 1.7137330456487564e-10,
+                "first_spatial_rms": 5.733091550995141e-05,
+                "second_spatial_rms": 5.6816710851781904e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.06097825065891105,
+                "covariance": 3.710650145461821e-10,
+                "first_spatial_rms": 7.793858069246228e-05,
+                "second_spatial_rms": 7.807689887932681e-05
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.023096914867756634,
+                  "covariance": 1.4695110446380907e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 8.021561155506831e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.0200022307191141,
+                  "covariance": 1.275225420279026e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 8.038010087291068e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.023461143465213538,
+                  "covariance": 1.483139635786531e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 8.021561155506831e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.021677145627081312,
+                  "covariance": 1.373170956515728e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 8.038010087291068e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.042006126819990476,
+                "covariance": 1.400261764304862e-10,
+                "first_spatial_rms": 5.733091550995141e-05,
+                "second_spatial_rms": 5.8144375970477696e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.04866580979133749,
+                "covariance": 3.1378443724599185e-10,
+                "first_spatial_rms": 8.021561155506831e-05,
+                "second_spatial_rms": 8.038010087291068e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.026343521511594064,
+                  "covariance": 1.618238064549807e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.7447713575172e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.03042925667647925,
+                  "covariance": 1.8665810749123504e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 7.733846225563402e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.0301235977059466,
+                  "covariance": 1.8386091080320012e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.7447713575172e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.03022583336192724,
+                  "covariance": 1.8422466839835989e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 7.733846225563402e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.055544307146837855,
+                "covariance": 1.791418732869466e-10,
+                "first_spatial_rms": 5.733091550995141e-05,
+                "second_spatial_rms": 5.625597816571429e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.05672702322681425,
+                "covariance": 3.397771177181476e-10,
+                "first_spatial_rms": 7.7447713575172e-05,
+                "second_spatial_rms": 7.733846225563402e-05
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.027679049992111605,
+                  "covariance": 1.7594787636704768e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 8.014434193981259e-05
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.028422063061663397,
+                  "covariance": 1.8068733502660098e-10,
+                  "first_spatial_rms": 7.931584986882848e-05,
+                  "second_spatial_rms": 8.015158809421353e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.026963094525124017,
+                  "covariance": 1.7030075316859576e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 8.014434193981259e-05
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.025010035131454278,
+                  "covariance": 1.5797937839284097e-10,
+                  "first_spatial_rms": 7.880866435157884e-05,
+                  "second_spatial_rms": 8.015158809421353e-05
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.051356341223535724,
+                "covariance": 1.7122883573877172e-10,
+                "first_spatial_rms": 5.733091550995141e-05,
+                "second_spatial_rms": 5.8155922744935015e-05
+              },
+              "query_within_view": {
+                "pearson_r": 0.053010973140648635,
+                "covariance": 3.4052639113460814e-10,
+                "first_spatial_rms": 8.014434193981259e-05,
+                "second_spatial_rms": 8.015158809421353e-05
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.02257076052927569,
+            0.021336942450989556,
+            0.022151775522079625,
+            0.021254729444282326
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        }
+      }
+    },
+    {
+      "case_id": "u013-l00-00-positive",
+      "purpose": "bright_control",
+      "samples_per_pixel": 64,
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 238434,
+        "query_supported_smooth_depth_stencil": 238434,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 238434,
+        "reciprocal_cov_visible": 238434,
+        "common_support_before_unique": 212409,
+        "common_support_unique": 163765
+      },
+      "scales": {
+        "32": {
+          "blocks": 205,
+          "common_pixels_in_retained_blocks": 159298,
+          "reference_within_view": {
+            "pearson_r": 0.9999999373543837,
+            "covariance": 0.0001395102003587306,
+            "first_spatial_rms": 0.011811496377164105,
+            "second_spatial_rms": 0.01181139160048826
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9999983375315553,
+                  "covariance": 0.00013949572318593895,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.0118101848097129
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9999982526218847,
+                  "covariance": 0.00013949351628165266,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.011809998968436215
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9999982613912985,
+                  "covariance": 0.00013949447513492708,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.0118101848097129
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9999981700461327,
+                  "covariance": 0.00013949226735268132,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.011809998968436215
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.9999982874888138,
+                "covariance": 0.0001394939954888,
+                "first_spatial_rms": 0.011811443803842388,
+                "second_spatial_rms": 0.011810091695043904
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999999342831012,
+                "covariance": 0.00013947826125367102,
+                "first_spatial_rms": 0.0118101848097129,
+                "second_spatial_rms": 0.011809998968436215
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6659212507573491,
+                  "covariance": 9.356111069144445e-05,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.01189508564946911
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6659372987150796,
+                  "covariance": 9.356289674862351e-05,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.01189502606671783
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6659506818584343,
+                  "covariance": 9.356441573201283e-05,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.01189508564946911
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6659667142364708,
+                  "covariance": 9.356619956373863e-05,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.01189502606671783
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6659440082406968,
+                "covariance": 9.356365568395487e-05,
+                "first_spatial_rms": 0.011811443803842388,
+                "second_spatial_rms": 0.01189505565259922
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999999308975918,
+                "covariance": 0.00014149234408881387,
+                "first_spatial_rms": 0.01189508564946911,
+                "second_spatial_rms": 0.01189502606671783
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.61039976028838,
+                  "covariance": 8.49305147261759e-05,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.011779978035468524
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6103956049289533,
+                  "covariance": 8.492976364606343e-05,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.01177995405288841
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6104088053336778,
+                  "covariance": 8.493101983884377e-05,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.011779978035468524
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6104046551675317,
+                  "covariance": 8.493026948541267e-05,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.01177995405288841
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6104022288185791,
+                "covariance": 8.493039192412393e-05,
+                "first_spatial_rms": 0.011811443803842388,
+                "second_spatial_rms": 0.011779965796245458
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999999158119792,
+                "covariance": 0.00013876758831928428,
+                "first_spatial_rms": 0.011779978035468524,
+                "second_spatial_rms": 0.01177995405288841
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7248418788011675,
+                  "covariance": 0.00010198479164397485,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.011912069386949622
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7248420894601797,
+                  "covariance": 0.00010198356255518617,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.01191192236448503
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7248558682423242,
+                  "covariance": 0.00010198585525174713,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.011912069386949622
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7248560695899827,
+                  "covariance": 0.00010198462483949437,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.01191192236448503
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.7248490105615503,
+                "covariance": 0.00010198470857260062,
+                "first_spatial_rms": 0.011811443803842388,
+                "second_spatial_rms": 0.01191199550238115
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999998746352252,
+                "covariance": 0.00014189562794898703,
+                "first_spatial_rms": 0.011912069386949622,
+                "second_spatial_rms": 0.01191192236448503
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.7438433000248014,
+                  "covariance": 0.00011020817760666852,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.01254375157434137
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7438326829312802,
+                  "covariance": 0.00011020545110174594,
+                  "first_spatial_rms": 0.011811496377164105,
+                  "second_spatial_rms": 0.012543620285864027
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.743866793349531,
+                  "covariance": 0.00011021068073023342,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.01254375157434137
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.7438561568850249,
+                  "covariance": 0.00011020795134310699,
+                  "first_spatial_rms": 0.01181139160048826,
+                  "second_spatial_rms": 0.012543620285864027
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.7438497548948564,
+                "covariance": 0.00011020806519543871,
+                "first_spatial_rms": 0.011811443803842388,
+                "second_spatial_rms": 0.012543685761947287
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999999463776716,
+                "covariance": 0.00015734404827159255,
+                "first_spatial_rms": 0.01254375157434137,
+                "second_spatial_rms": 0.012543620285864027
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.25615503750675395,
+            0.25616556969060444,
+            0.25613146804176756,
+            0.25614201316110774
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        },
+        "16": {
+          "blocks": 827,
+          "common_pixels_in_retained_blocks": 161621,
+          "reference_within_view": {
+            "pearson_r": 0.999999781072306,
+            "covariance": 0.000170497788549073,
+            "first_spatial_rms": 0.013057720770814572,
+            "second_spatial_rms": 0.013057242444397345
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9999943120519339,
+                  "covariance": 0.00017045030000274104,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.013053677017024827
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9999943267403886,
+                  "covariance": 0.00017044959945343083,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.013053623174782605
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9999942027061125,
+                  "covariance": 0.00017044403748224564,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.013053677017024827
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9999941612149406,
+                  "covariance": 0.00017044332738317617,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.013053623174782605
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.9999943710175203,
+                "covariance": 0.00017044681608039837,
+                "first_spatial_rms": 0.013057480892944852,
+                "second_spatial_rms": 0.013053649239497332
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999997375733679,
+                "covariance": 0.00017039773610864661,
+                "first_spatial_rms": 0.013053677017024827,
+                "second_spatial_rms": 0.013053623174782605
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5480238024879229,
+                  "covariance": 9.224849207858258e-05,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.012891174188271315
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.5480327823411607,
+                  "covariance": 9.224926896354881e-05,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.012891071521717794
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5480714082842522,
+                  "covariance": 9.225312601949726e-05,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.012891174188271315
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.5480803768327778,
+                  "covariance": 9.225390090935727e-05,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.012891071521717794
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.5480521561750128,
+                "covariance": 9.225119699274649e-05,
+                "first_spatial_rms": 0.013057480892944852,
+                "second_spatial_rms": 0.012891122051814526
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999997507804372,
+                "covariance": 0.00016618100704435962,
+                "first_spatial_rms": 0.012891174188271315,
+                "second_spatial_rms": 0.012891071521717794
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.48418389949265794,
+                  "covariance": 8.344630259719357e-05,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.013198645891482164
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4841730131297949,
+                  "covariance": 8.344398902579363e-05,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.013198576711477977
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.48423128022257395,
+                  "covariance": 8.3451411314274e-05,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.013198645891482164
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4842204013289395,
+                  "covariance": 8.344909907204967e-05,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.013198576711477977
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.48420220979305123,
+                "covariance": 8.344770050232771e-05,
+                "first_spatial_rms": 0.013057480892944852,
+                "second_spatial_rms": 0.013198610342856017
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999997094773079,
+                "covariance": 0.0001742032896763376,
+                "first_spatial_rms": 0.013198645891482164,
+                "second_spatial_rms": 0.013198576711477977
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6089260707255624,
+                  "covariance": 0.00010328215594479427,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.012989527364879506
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6089099180003936,
+                  "covariance": 0.00010328191060137116,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.012989841084715337
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.60894885528067,
+                  "covariance": 0.00010328223697391101,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.012989527364879506
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6089327448049937,
+                  "covariance": 0.00010328199889880795,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.012989841084715337
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.6089294926407511,
+                "covariance": 0.0001032820756047211,
+                "first_spatial_rms": 0.013057480892944852,
+                "second_spatial_rms": 0.01298968289333452
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999995899937795,
+                "covariance": 0.0001687318270542189,
+                "first_spatial_rms": 0.012989527364879506,
+                "second_spatial_rms": 0.012989841084715337
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6388206253821971,
+                  "covariance": 0.00011355532227628161,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.013613230160581465
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6388018455497454,
+                  "covariance": 0.00011355055036547866,
+                  "first_spatial_rms": 0.013057720770814572,
+                  "second_spatial_rms": 0.01361305828682652
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.6388673337210535,
+                  "covariance": 0.0001135594650180501,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.013613230160581465
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.6388485371865175,
+                  "covariance": 0.00011355469020844876,
+                  "first_spatial_rms": 0.013057242444397345,
+                  "second_spatial_rms": 0.01361305828682652
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.63883465517232,
+                "covariance": 0.00011355500696706478,
+                "first_spatial_rms": 0.013057480892944852,
+                "second_spatial_rms": 0.013613143475401561
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999997801235636,
+                "covariance": 0.0001853176549009857,
+                "first_spatial_rms": 0.013613230160581465,
+                "second_spatial_rms": 0.01361305828682652
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.3611736866697368,
+            0.3611924811906432,
+            0.36112686898505897,
+            0.3611456240284231
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        },
+        "1": {
+          "blocks": 163765,
+          "common_pixels_in_retained_blocks": 163765,
+          "reference_within_view": {
+            "pearson_r": 0.9999491462409936,
+            "covariance": 0.00021608326631658128,
+            "first_spatial_rms": 0.014700361956990149,
+            "second_spatial_rms": 0.014699927536071284
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9979593108003649,
+                  "covariance": 0.0002156014924349666,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014696397843373586
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9979615097689184,
+                  "covariance": 0.0002156015653667027,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014696370431799083
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.9979521716343414,
+                  "covariance": 0.00021559357872418173,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014696397843373586
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.9979539348047861,
+                  "covariance": 0.00021559355750874192,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014696370431799083
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.9979826182269779,
+                "covariance": 0.00021559754850865073,
+                "first_spatial_rms": 0.014699957855938134,
+                "second_spatial_rms": 0.014696189772066244
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999470987603357,
+                "covariance": 0.00021597228091347863,
+                "first_spatial_rms": 0.014696397843373586,
+                "second_spatial_rms": 0.014696370431799083
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.463131160766997,
+                  "covariance": 9.837717776534221e-05,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014449816389834913
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4631317092931753,
+                  "covariance": 9.837708687497443e-05,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014449785925566856
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.46315778349487663,
+                  "covariance": 9.837992551795221e-05,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014449816389834913
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.46315875082460045,
+                  "covariance": 9.837992357674679e-05,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014449785925566856
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.4631568521224357,
+                "covariance": 9.837852843375586e-05,
+                "first_spatial_rms": 0.014699957855938134,
+                "second_spatial_rms": 0.0144496104428118
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999472065729511,
+                "covariance": 0.00020878573040068803,
+                "first_spatial_rms": 0.014449816389834913,
+                "second_spatial_rms": 0.014449785925566856
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.4114164554775478,
+                  "covariance": 9.012493102890814e-05,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014901680886293369
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4114191873342347,
+                  "covariance": 9.012400509791096e-05,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014901428841148041
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.4114550626643759,
+                  "covariance": 9.01307247269466e-05,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014901680886293369
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.4114575361922631,
+                  "covariance": 9.012974209336692e-05,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014901428841148041
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.4114478733889136,
+                "covariance": 9.012735073678212e-05,
+                "first_spatial_rms": 0.014699957855938134,
+                "second_spatial_rms": 0.014901352684410708
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999457297065973,
+                "covariance": 0.00022204428627801712,
+                "first_spatial_rms": 0.014901680886293369,
+                "second_spatial_rms": 0.014901428841148041
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5248216740676734,
+                  "covariance": 0.0001129815866733222,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014644275112241938
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.5248205812899593,
+                  "covariance": 0.0001129809770809618,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.014644226591070285
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5248524103616063,
+                  "covariance": 0.00011298486446890519,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014644275112241938
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.524851244707048,
+                  "covariance": 0.00011298423918450594,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.014644226591070285
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.5248515950602863,
+                "covariance": 0.0001129829168519247,
+                "first_spatial_rms": 0.014699957855938134,
+                "second_spatial_rms": 0.014644015219710151
+              },
+              "query_within_view": {
+                "pearson_r": 0.9999356388926688,
+                "covariance": 0.00021444028050338822,
+                "first_spatial_rms": 0.014644275112241938,
+                "second_spatial_rms": 0.014644226591070285
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5453240763083735,
+                  "covariance": 0.0001229283089990454,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.015334485418554701
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.5453183087908453,
+                  "covariance": 0.0001229270419052412,
+                  "first_spatial_rms": 0.014700361956990149,
+                  "second_spatial_rms": 0.015334489539410976
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.5453575872723396,
+                  "covariance": 0.00012293223015816355,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.015334485418554701
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.5453516688155952,
+                  "covariance": 0.00012293092907973707,
+                  "first_spatial_rms": 0.014699927536071284,
+                  "second_spatial_rms": 0.015334489539410976
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.545351856541553,
+                "covariance": 0.00012292962753554507,
+                "first_spatial_rms": 0.014699957855938134,
+                "second_spatial_rms": 0.015334290277068088
+              },
+              "query_within_view": {
+                "pearson_r": 0.999948560224853,
+                "covariance": 0.00023513441035966946,
+                "first_spatial_rms": 0.015334485418554701,
+                "second_spatial_rms": 0.015334489539410976
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            0.4526352344919914,
+            0.4526432009780731,
+            0.45259458436200173,
+            0.45260226598919095
+          ],
+          "outcome": "all_seed_pairs_above_every_shift"
+        }
+      }
+    },
+    {
+      "case_id": "u025-l00-00-positive",
+      "purpose": "near_uniform_control",
+      "samples_per_pixel": 64,
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 212882,
+        "query_supported_smooth_depth_stencil": 212882,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 212882,
+        "reciprocal_cov_visible": 212882,
+        "common_support_before_unique": 176446,
+        "common_support_unique": 167401
+      },
+      "scales": {
+        "32": {
+          "blocks": 174,
+          "common_pixels_in_retained_blocks": 163390,
+          "reference_within_view": {
+            "pearson_r": null,
+            "covariance": 0.0,
+            "first_spatial_rms": 0.0,
+            "second_spatial_rms": 6.055020958839431e-10
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 2.55217649849294e-09
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.0057803468208092535,
+                  "covariance": -8.932648664180461e-21,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 2.55217649849294e-09
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.0057803468208092535,
+                "covariance": -2.2331621660451152e-21,
+                "first_spatial_rms": 3.0275104794197157e-10,
+                "second_spatial_rms": 1.27608824924647e-09
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 2.55217649849294e-09
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 1.714271404800423e-09
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.005780346820809252,
+                  "covariance": -5.999970685089991e-21,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 1.714271404800423e-09
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.005780346820809252,
+                "covariance": -1.4999926712724977e-21,
+                "first_spatial_rms": 3.0275104794197157e-10,
+                "second_spatial_rms": 8.571357024002116e-10
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 1.714271404800423e-09
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 3.0275104794197157e-10,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 3.0275104794197157e-10,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 1.6503193109425845e-09
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.005780346820809244,
+                  "covariance": -5.776137581812016e-21,
+                  "first_spatial_rms": 6.055020958839431e-10,
+                  "second_spatial_rms": 1.6503193109425845e-09
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.005780346820809244,
+                "covariance": -1.444034395453004e-21,
+                "first_spatial_rms": 3.0275104794197157e-10,
+                "second_spatial_rms": 8.251596554712922e-10
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 1.6503193109425845e-09
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "outcome": "indeterminate"
+        },
+        "16": {
+          "blocks": 689,
+          "common_pixels_in_retained_blocks": 164898,
+          "reference_within_view": {
+            "pearson_r": null,
+            "covariance": 0.0,
+            "first_spatial_rms": 0.0,
+            "second_spatial_rms": 1.2235945978072787e-09
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 6.117972989036394e-10,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 3.260328660163912e-09
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.0014534883720930226,
+                  "covariance": -5.7984310111232614e-21,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 3.260328660163912e-09
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.0014534883720930226,
+                "covariance": -1.4496077527808154e-21,
+                "first_spatial_rms": 6.117972989036394e-10,
+                "second_spatial_rms": 1.630164330081956e-09
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 3.260328660163912e-09
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 6.117972989036394e-10,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 6.117972989036394e-10,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 3.3142183900839773e-09
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.0014534883720930254,
+                  "covariance": -5.8942728460178735e-21,
+                  "first_spatial_rms": 1.2235945978072787e-09,
+                  "second_spatial_rms": 3.3142183900839773e-09
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.0014534883720930254,
+                "covariance": -1.4735682115044684e-21,
+                "first_spatial_rms": 6.117972989036394e-10,
+                "second_spatial_rms": 1.6571091950419886e-09
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 3.3142183900839773e-09
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "outcome": "indeterminate"
+        },
+        "1": {
+          "blocks": 167401,
+          "common_pixels_in_retained_blocks": 167401,
+          "reference_within_view": {
+            "pearson_r": null,
+            "covariance": 0.0,
+            "first_spatial_rms": 0.0,
+            "second_spatial_rms": 1.8775008118268514e-08
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 5.149216715687707e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -5.973715651134481e-06,
+                  "covariance": -5.775184327344811e-21,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 5.149216715687707e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -5.973715651134481e-06,
+                "covariance": -1.4437960818362028e-21,
+                "first_spatial_rms": 9.387504059134257e-09,
+                "second_spatial_rms": 2.5746083578438536e-08
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 5.149216715687707e-08
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 5.14921671568772e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -5.973715651134537e-06,
+                  "covariance": -5.77518432734488e-21,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 5.14921671568772e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -5.973715651134537e-06,
+                "covariance": -1.44379608183622e-21,
+                "first_spatial_rms": 9.387504059134257e-09,
+                "second_spatial_rms": 2.57460835784386e-08
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 5.14921671568772e-08
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 9.387504059134257e-09,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                }
+              ],
+              "seed_average": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 9.387504059134257e-09,
+                "second_spatial_rms": 0.0
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 0.0
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 0.0,
+                  "second_spatial_rms": 5.149216715687665e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": null,
+                  "covariance": 0.0,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 0.0
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -5.97371565113449e-06,
+                  "covariance": -5.775184327344774e-21,
+                  "first_spatial_rms": 1.8775008118268514e-08,
+                  "second_spatial_rms": 5.149216715687665e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -5.97371565113449e-06,
+                "covariance": -1.4437960818361934e-21,
+                "first_spatial_rms": 9.387504059134257e-09,
+                "second_spatial_rms": 2.5746083578438324e-08
+              },
+              "query_within_view": {
+                "pearson_r": null,
+                "covariance": 0.0,
+                "first_spatial_rms": 0.0,
+                "second_spatial_rms": 5.149216715687665e-08
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "outcome": "indeterminate"
+        }
+      }
+    },
+    {
+      "case_id": "u027-l08-01-positive",
+      "purpose": "near_uniform_control",
+      "samples_per_pixel": 64,
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 237297,
+        "query_supported_smooth_depth_stencil": 237297,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 237297,
+        "reciprocal_cov_visible": 237297,
+        "common_support_before_unique": 210189,
+        "common_support_unique": 152670
+      },
+      "scales": {
+        "32": {
+          "blocks": 202,
+          "common_pixels_in_retained_blocks": 148224,
+          "reference_within_view": {
+            "pearson_r": -0.028647365750961568,
+            "covariance": -7.067110204135567e-17,
+            "first_spatial_rms": 4.071028064704324e-08,
+            "second_spatial_rms": 6.059727217100072e-08
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.04062539850502845,
+                  "covariance": -1.0326805337400666e-16,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.244019635618523e-08
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.006687843489648654,
+                  "covariance": 1.8113613378016125e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.652959756048039e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.13077870268632968,
+                  "covariance": 4.948281061848237e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.244019635618523e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.030569022406076597,
+                  "covariance": -1.2323938465678182e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.652959756048039e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.043247706391943204,
+                "covariance": 7.160857038301277e-17,
+                "first_spatial_rms": 3.601393529192781e-08,
+                "second_spatial_rms": 4.5976016877669526e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.015672513504964805,
+                "covariance": 6.510551959228015e-17,
+                "first_spatial_rms": 6.244019635618523e-08,
+                "second_spatial_rms": 6.652959756048039e-08
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.037695450453124696,
+                  "covariance": -9.67975371535368e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.30770354597603e-08
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.0021306791147319257,
+                  "covariance": 5.26450179471871e-18,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.069251479955762e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.0388022214907798,
+                  "covariance": -1.4831358707316026e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.30770354597603e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.024555574382355862,
+                  "covariance": -9.031051204225899e-17,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.069251479955762e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.04941710175849613,
+                "covariance": -8.25392836185594e-17,
+                "first_spatial_rms": 3.601393529192781e-08,
+                "second_spatial_rms": 4.637808841872085e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.12295452620771616,
+                "covariance": 4.707072932061891e-16,
+                "first_spatial_rms": 6.30770354597603e-08,
+                "second_spatial_rms": 6.069251479955762e-08
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.004907274280904066,
+                  "covariance": -1.3818986419640382e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.917222750134876e-08
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.02648115306024189,
+                  "covariance": -6.799358662297796e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.307060003020608e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.04508409621168579,
+                  "covariance": -1.8897667508827358e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.917222750134876e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.027258662624353176,
+                  "covariance": -1.0418005485023894e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.307060003020608e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.053722355301190385,
+                "covariance": -9.374232574528275e-17,
+                "first_spatial_rms": 3.601393529192781e-08,
+                "second_spatial_rms": 4.8451820480366756e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.07192943702692094,
+                "covariance": 3.1380899288908227e-16,
+                "first_spatial_rms": 6.917222750134876e-08,
+                "second_spatial_rms": 6.307060003020608e-08
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.08587753452669128,
+                  "covariance": 2.2280285604627107e-16,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.372899791467795e-08
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.03344676866651133,
+                  "covariance": 8.106331259869804e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 5.953413997201154e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.03888376614544119,
+                  "covariance": -1.5016146154258525e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.372899791467795e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.021619415833670826,
+                  "covariance": -7.799434472779996e-17,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 5.953413997201154e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.011591589734503272,
+                "covariance": 1.892759059364596e-17,
+                "first_spatial_rms": 3.601393529192781e-08,
+                "second_spatial_rms": 4.534002466362939e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.0813342170701296,
+                "covariance": 3.08586174288997e-16,
+                "first_spatial_rms": 6.372899791467795e-08,
+                "second_spatial_rms": 5.953413997201154e-08
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.04751629903007364,
+                  "covariance": -1.4487083495992263e-16,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 7.489179849069356e-08
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.02963488807516061,
+                  "covariance": -7.795548034101364e-17,
+                  "first_spatial_rms": 4.071028064704324e-08,
+                  "second_spatial_rms": 6.461588013541014e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.03679197057020347,
+                  "covariance": 1.6697074456278624e-16,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 7.489179849069356e-08
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": 0.37448014577357097,
+                  "covariance": 1.4662942649993916e-15,
+                  "first_spatial_rms": 6.059727217100072e-08,
+                  "second_spatial_rms": 6.461588013541014e-08
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.20311664208257676,
+                "covariance": 3.526096735653101e-16,
+                "first_spatial_rms": 3.601393529192781e-08,
+                "second_spatial_rms": 4.8203451335307104e-08
+              },
+              "query_within_view": {
+                "pearson_r": -0.050597476596454916,
+                "covariance": -2.448512821515282e-16,
+                "first_spatial_rms": 7.489179849069356e-08,
+                "second_spatial_rms": 6.461588013541014e-08
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            -0.12650293303171972,
+            -0.026758925176862673,
+            0.09398673211612621,
+            -0.4050491681796476
+          ],
+          "outcome": "not_all_seed_pairs_above_every_shift"
+        },
+        "16": {
+          "blocks": 817,
+          "common_pixels_in_retained_blocks": 150659,
+          "reference_within_view": {
+            "pearson_r": -0.0069289550392778836,
+            "covariance": -6.758075096101223e-17,
+            "first_spatial_rms": 8.087848910756958e-08,
+            "second_spatial_rms": 1.2059303921386386e-07
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.010076403904613045,
+                  "covariance": -1.0761623624508558e-16,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.3205024213878944e-07
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.007120916747490423,
+                  "covariance": -7.602278841843399e-17,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.320002813810835e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": 0.15573626685782807,
+                  "covariance": 2.479997268204432e-15,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.3205024213878944e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.007353436732010778,
+                  "covariance": -1.1705432303299314e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.320002813810835e-07
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.07878610701811899,
+                "covariance": 5.448259801269792e-16,
+                "first_spatial_rms": 7.236858711699045e-08,
+                "second_spatial_rms": 9.555602455717621e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.047688203239978376,
+                "covariance": 8.312372915442615e-16,
+                "first_spatial_rms": 1.3205024213878944e-07,
+                "second_spatial_rms": 1.320002813810835e-07
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.009026331723565989,
+                  "covariance": -9.317541261251172e-17,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.276312447946155e-07
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.005768810566209156,
+                  "covariance": -5.706381983829139e-17,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.2230424534779588e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.009321069407920872,
+                  "covariance": -1.4346467781011775e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.276312447946155e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.005957180096582979,
+                  "covariance": -8.786269143514119e-17,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.2230424534779588e-07
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.01452771531632811,
+                "covariance": -9.539165042401554e-17,
+                "first_spatial_rms": 7.236858711699045e-08,
+                "second_spatial_rms": 9.073251478689798e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.05386005073733334,
+                "covariance": 8.407469401508584e-16,
+                "first_spatial_rms": 1.276312447946155e-07,
+                "second_spatial_rms": 1.2230424534779588e-07
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.02671199332137682,
+                  "covariance": 3.041557112126032e-16,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.4078508542066027e-07
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.006596982753682814,
+                  "covariance": -6.93657908443311e-17,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.3000706794831258e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.01076379824095787,
+                  "covariance": -1.8274455167757297e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.4078508542066027e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.006812394670738015,
+                  "covariance": -1.0680436560996421e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.3000706794831258e-07
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.001984450645528486,
+                "covariance": -1.3689749229816265e-17,
+                "first_spatial_rms": 7.236858711699045e-08,
+                "second_spatial_rms": 9.532462308710172e-08
+              },
+              "query_within_view": {
+                "pearson_r": -0.010248095269372808,
+                "covariance": -1.8757146331387457e-16,
+                "first_spatial_rms": 1.4078508542066027e-07,
+                "second_spatial_rms": 1.3000706794831258e-07
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": 0.09732268231344837,
+                  "covariance": 1.0604376794907644e-15,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.3472185407744542e-07
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": 0.04334000471363656,
+                  "covariance": 4.295526011249017e-16,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.225446538484938e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.00996041325500905,
+                  "covariance": -1.6182203155886275e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.3472185407744542e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.005199217856246226,
+                  "covariance": -7.683420913878903e-17,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.225446538484938e-07
+                }
+              ],
+              "seed_average": {
+                "pearson_r": 0.04631050713156486,
+                "covariance": 3.1283350997950343e-16,
+                "first_spatial_rms": 7.236858711699045e-08,
+                "second_spatial_rms": 9.334340450903374e-08
+              },
+              "query_within_view": {
+                "pearson_r": 0.05102517726115268,
+                "covariance": 8.423972542183753e-16,
+                "first_spatial_rms": 1.3472185407744542e-07,
+                "second_spatial_rms": 1.225446538484938e-07
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -0.011269386385451222,
+                  "covariance": -1.3890210980282531e-16,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.5239669311161486e-07
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -0.007121132106413189,
+                  "covariance": -7.397089178834149e-17,
+                  "first_spatial_rms": 8.087848910756958e-08,
+                  "second_spatial_rms": 1.2843363736918294e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -0.011637366751016183,
+                  "covariance": -2.1387129792363325e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.5239669311161486e-07
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -0.007353659123069315,
+                  "covariance": -1.138949628468451e-16,
+                  "first_spatial_rms": 1.2059303921386386e-07,
+                  "second_spatial_rms": 1.2843363736918294e-07
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.01885375708685918,
+                "covariance": -1.3515981559041128e-16,
+                "first_spatial_rms": 7.236858711699045e-08,
+                "second_spatial_rms": 9.906028872684e-08
+              },
+              "query_within_view": {
+                "pearson_r": -0.011960133315196587,
+                "covariance": -2.340940343274378e-16,
+                "first_spatial_rms": 1.5239669311161486e-07,
+                "second_spatial_rms": 1.2843363736918294e-07
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            -0.10739908621806142,
+            -0.05046092146112698,
+            0.16505733626574895,
+            -0.0021542188757645523
+          ],
+          "outcome": "not_all_seed_pairs_above_every_shift"
+        },
+        "1": {
+          "blocks": 152670,
+          "common_pixels_in_retained_blocks": 152670,
+          "reference_within_view": {
+            "pearson_r": -3.8269699405895574e-05,
+            "covariance": -5.991741460351738e-17,
+            "first_spatial_rms": 1.0383973360698963e-06,
+            "second_spatial_rms": 1.5077677479308945e-06
+          },
+          "comparisons": [
+            {
+              "offset_xy": [
+                0,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -5.412820534917314e-05,
+                  "covariance": -9.574641078412647e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.7034732154134529e-06
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -3.7315942211215066e-05,
+                  "covariance": -6.671153621979946e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.7216424582587203e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -5.7598670165321064e-05,
+                  "covariance": -1.4793884207987017e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.7034732154134529e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -3.970847792692007e-05,
+                  "covariance": -1.030767351057744e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.7216424582587203e-06
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -9.325521030103489e-05,
+                "covariance": -1.0336838104739014e-16,
+                "first_spatial_rms": 9.153568668050578e-07,
+                "second_spatial_rms": 1.2109442929002025e-06
+              },
+              "query_within_view": {
+                "pearson_r": -5.616319648961619e-05,
+                "covariance": -1.647138396580056e-16,
+                "first_spatial_rms": 1.7034732154134529e-06,
+                "second_spatial_rms": 1.7216424582587203e-06
+              }
+            },
+            {
+              "offset_xy": [
+                -32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -4.84102614079796e-05,
+                  "covariance": -8.224180817670254e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.6360314843213223e-06
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -3.333289114906768e-05,
+                  "covariance": -5.728838647399266e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.655122113321108e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -5.151411655840618e-05,
+                  "covariance": -1.2707273069113224e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.6360314843213223e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -3.5470050975569304e-05,
+                  "covariance": -8.851692183734249e-17,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.655122113321108e-06
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -8.335349005747648e-05,
+                "covariance": -8.877996179479499e-17,
+                "first_spatial_rms": 9.153568668050578e-07,
+                "second_spatial_rms": 1.1635919853527539e-06
+              },
+              "query_within_view": {
+                "pearson_r": -4.486877259394375e-05,
+                "covariance": -1.2149709319586888e-16,
+                "first_spatial_rms": 1.6360314843213223e-06,
+                "second_spatial_rms": 1.655122113321108e-06
+              }
+            },
+            {
+              "offset_xy": [
+                32,
+                0
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -5.583635297756511e-05,
+                  "covariance": -1.072080907963254e-16,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.8490427519052222e-06
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -3.534801902069908e-05,
+                  "covariance": -6.035514192762126e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.6443173156538411e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -5.941633678120815e-05,
+                  "covariance": -1.6564841109040987e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.8490427519052222e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -3.761438007110832e-05,
+                  "covariance": -9.32553997295014e-17,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.6443173156538411e-06
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -9.41464643790269e-05,
+                "covariance": -1.0661676088596708e-16,
+                "first_spatial_rms": 9.153568668050578e-07,
+                "second_spatial_rms": 1.2371746861112204e-06
+              },
+              "query_within_view": {
+                "pearson_r": -5.488022731527363e-05,
+                "covariance": -1.668585573594045e-16,
+                "first_spatial_rms": 1.8490427519052222e-06,
+                "second_spatial_rms": 1.6443173156538411e-06
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                -32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -5.17256106093251e-05,
+                  "covariance": -9.213038214450699e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.7152746970020603e-06
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -2.7281493148297587e-05,
+                  "covariance": -4.354418826399451e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.5370871702020393e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -5.5042031513277765e-05,
+                  "covariance": -1.423516760911729e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.7152746970020603e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -2.903066368687863e-05,
+                  "covariance": -6.728060862361594e-17,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.5370871702020393e-06
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -8.189521899911129e-05,
+                "covariance": -8.632671378082577e-17,
+                "first_spatial_rms": 9.153568668050578e-07,
+                "second_spatial_rms": 1.1515855754763978e-06
+              },
+              "query_within_view": {
+                "pearson_r": -3.923806115306355e-05,
+                "covariance": -1.0345219706868681e-16,
+                "first_spatial_rms": 1.7152746970020603e-06,
+                "second_spatial_rms": 1.5370871702020393e-06
+              }
+            },
+            {
+              "offset_xy": [
+                0,
+                32
+              ],
+              "seed_pairs": [
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 0,
+                  "pearson_r": -5.9924006575845124e-05,
+                  "covariance": -1.230030525020675e-16,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.9767487867654423e-06
+                },
+                {
+                  "reference_replicate": 0,
+                  "query_replicate": 1,
+                  "pearson_r": -3.716239599518537e-05,
+                  "covariance": -6.628650510025116e-17,
+                  "first_spatial_rms": 1.0383973360698963e-06,
+                  "second_spatial_rms": 1.7177416643727337e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 0,
+                  "pearson_r": -6.376607292780423e-05,
+                  "covariance": -1.9005338174474584e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.9767487867654423e-06
+                },
+                {
+                  "reference_replicate": 1,
+                  "query_replicate": 1,
+                  "pearson_r": -3.9545086996172346e-05,
+                  "covariance": -1.0242001480517476e-16,
+                  "first_spatial_rms": 1.5077677479308945e-06,
+                  "second_spatial_rms": 1.7177416643727337e-06
+                }
+              ],
+              "seed_average": {
+                "pearson_r": -0.0001004898236569567,
+                "covariance": -1.204407385380649e-16,
+                "first_spatial_rms": 9.153568668050578e-07,
+                "second_spatial_rms": 1.3093654646638203e-06
+              },
+              "query_within_view": {
+                "pearson_r": -6.192105216369527e-05,
+                "covariance": -2.1025564173134417e-16,
+                "first_spatial_rms": 1.9767487867654423e-06,
+                "second_spatial_rms": 1.7177416643727337e-06
+              }
+            }
+          ],
+          "aligned_minus_strongest_shift_by_seed_pair": [
+            -5.71794394119354e-06,
+            -1.003444906291748e-05,
+            -6.084553606914886e-06,
+            -1.0677814240041442e-05
+          ],
+          "outcome": "not_all_seed_pairs_above_every_shift"
+        }
+      }
+    }
+  ],
+  "renderer_calls": 0,
+  "matcher_calls": 0,
+  "calibration_or_final_access": false
+}

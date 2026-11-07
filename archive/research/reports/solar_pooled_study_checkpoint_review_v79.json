@@ -1,0 +1,108 @@
+{
+  "kind": "independent_pooled2000_and_matched_study_artifact_audit",
+  "created_utc": "2026-11-04T05:40:06.995183+00:00",
+  "passed": true,
+  "protocol": "reports/solar-learning-v79/pooled_study.json",
+  "protocol_sha256": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8",
+  "public_commit": "ecf8bd471ba0268093af037d8900bb0f12675da6",
+  "summary_sha256": "6af788275486c5e35efa18c4efddccbba4b1e1ad987043c01c683c161ac37a27",
+  "watchdog_receipt_sha256": "39c4c3ffda9cf94d403592afcb9c8801335ce17c03e6f2b09dde076306b4a374",
+  "completed_updates": 2000,
+  "total_parameters": 95808,
+  "trainable_parameters": 67536,
+  "calendar_seconds": 248.75909658503952,
+  "charged_cap_seconds": 603,
+  "checkpoint_states": [
+    {
+      "step": 0,
+      "sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    },
+    {
+      "step": 100,
+      "sha256": "723fd7a56041bbe597edd39c61e05ce32b386db55ea39d14ae9f904070b7fe2d",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    },
+    {
+      "step": 500,
+      "sha256": "49c0ea28b29b60f6127ee53ba2a0a825116fd3306dad232abc20285eece3d646",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    },
+    {
+      "step": 1000,
+      "sha256": "5d80ff13070b486ce140d15b57af62717b335703e94554f216c37947fd04e591",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    },
+    {
+      "step": 1500,
+      "sha256": "1175234b2efc85ea186fbd904d9d40927484a8a5d22cf3ffaa24e83b8c0793fe",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    },
+    {
+      "step": 2000,
+      "sha256": "9ce787b992b18efbb6a2f9d695f9381610c4c369efcdf199f5341babf17b5181",
+      "frozen_coarse_identical": true,
+      "all_model_optimizer_tensors_finite": true,
+      "correct_optimizer_step": true
+    }
+  ],
+  "step0_and100_model_optimizer_numpyTorchRNG_bit_identical_to_pooled_pilot": true,
+  "first100_history_identical_to_pooled_pilot": true,
+  "initial_full_state_bit_identical_to_SH_study": true,
+  "all2000_sampler_draws_identical_across_SH_pooled": true,
+  "shared_bank_source_initializer_seed_updates_CPU_capacity_optimizer": true,
+  "measured_caps": {
+    "SH": 595,
+    "pooled": 603
+  },
+  "all16groups_and64cameras_sampled": true,
+  "group_draw_counts": {
+    "np31-r2-c1": 114,
+    "np31-r3-c4": 132,
+    "np31-r1-c4": 119,
+    "np31-r0-c1": 120,
+    "np31-r4-c3": 106,
+    "np31-r4-c4": 138,
+    "np31-r4-c2": 124,
+    "np31-r0-c2": 129,
+    "np31-r4-c6": 115,
+    "np31-r0-c0": 130,
+    "np31-r1-c6": 134,
+    "np31-r1-c1": 128,
+    "np31-r1-c5": 120,
+    "np31-r0-c6": 132,
+    "np31-r2-c6": 118,
+    "np31-r2-c2": 141
+  },
+  "camera_draw_count_range": [
+    18,
+    46
+  ],
+  "all_batches_unique_physical_rows_exact_even_labels_and_even_available_odd_absent": true,
+  "no_seed_repeat_or_checkpoint_selection_started": true,
+  "interpretation": "Both completed2000-update studies are matched reproducible training evidence. Pose evaluation and checkpoint selection remain pending; no loss-based ranking or model superiority claim.",
+  "limitations": [
+    "Artifact/state arithmetic only; no forward, optimizer step, replay, image decode or ray was rerun.",
+    "The603/595second ceilings are separately measured cost caps; actual fixed2000-update training budgets and optimizer settings match."
+  ],
+  "activity": {
+    "torch_threads": 2,
+    "checkpoint_load_only": true,
+    "source_or_protocol_edits": 0,
+    "neural_forwards": 0,
+    "optimizer_updates": 0,
+    "png_decodes": 0,
+    "rays": 0,
+    "scientific_jobs": 0
+  }
+}

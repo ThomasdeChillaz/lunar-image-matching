@@ -1,0 +1,79 @@
+{
+  "kind": "read_only_actual_teacher_artifact_replay",
+  "pilot_completion_valid": true,
+  "pilot_rows": [
+    {
+      "unit_index": 0,
+      "samples": 64,
+      "max_ref_projection_error_px": 3.439762872562579e-05,
+      "max_query_projection_error_px": 0.0,
+      "teacher_norm_max_abs_error": 1.7881393432617188e-07,
+      "trial_support_passes": 64,
+      "even_decodes": 24,
+      "observed_blank_patch_count": 23
+    },
+    {
+      "unit_index": 4,
+      "samples": 64,
+      "max_ref_projection_error_px": 2.517566934478341e-05,
+      "max_query_projection_error_px": 0.0,
+      "teacher_norm_max_abs_error": 1.7881393432617188e-07,
+      "trial_support_passes": 64,
+      "even_decodes": 24,
+      "observed_blank_patch_count": 44
+    },
+    {
+      "unit_index": 8,
+      "samples": 64,
+      "max_ref_projection_error_px": 3.4179403380491443e-05,
+      "max_query_projection_error_px": 0.0,
+      "teacher_norm_max_abs_error": 2.384185791015625e-07,
+      "trial_support_passes": 64,
+      "even_decodes": 24,
+      "observed_blank_patch_count": 35
+    },
+    {
+      "unit_index": 16,
+      "samples": 64,
+      "max_ref_projection_error_px": 3.987344573153559e-05,
+      "max_query_projection_error_px": 0.0,
+      "teacher_norm_max_abs_error": 2.384185791015625e-07,
+      "trial_support_passes": 64,
+      "even_decodes": 24,
+      "observed_blank_patch_count": 12
+    }
+  ],
+  "failed_unit3": {
+    "original_selected_points": 64,
+    "trial_unsupported_points": [
+      {
+        "selected_index": 18,
+        "label_index": 575,
+        "reason": "incomplete_canonical_surface_or_image_support"
+      },
+      {
+        "selected_index": 41,
+        "label_index": 590,
+        "reason": "incomplete_canonical_surface_or_image_support"
+      },
+      {
+        "selected_index": 59,
+        "label_index": 415,
+        "reason": "incomplete_canonical_surface_or_image_support"
+      },
+      {
+        "selected_index": 60,
+        "label_index": 603,
+        "reason": "incomplete_canonical_surface_or_image_support"
+      }
+    ]
+  },
+  "scientific_activity": {
+    "images_decoded": 0,
+    "teacher_forwards": 0,
+    "training_updates": 0,
+    "new_jobs": 0,
+    "source_edits": 0
+  },
+  "scope": "Hash/shape/conditioning/pose/geometry arithmetic only; frozen teacher descriptor values were not recomputed by a network."
+}

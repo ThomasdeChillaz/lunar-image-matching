@@ -1,0 +1,2451 @@
+{
+  "schema_version": 1,
+  "selected_on_split": "dev",
+  "empirical_accepted_error_budget": 0.0,
+  "independent_development_components": 2,
+  "development_component_members": [
+    [
+      "M1118943218RC_Y8_01975_43459",
+      "M1118943218RC_Y8_03895_35290",
+      "M1144856403RC_Y8_04392_49270",
+      "M1164896525LC_Y8_03262_40894",
+      "M1164896525LC_Y8_03362_40203",
+      "M1164896525RC_Y8_04057_37011",
+      "M1164896525RC_Y8_04481_45556",
+      "M1164896525RC_Y8_05027_45117",
+      "M1164896525RC_Y8_05442_46160",
+      "M1164903641LC_Y8_02940_43622",
+      "M1164903641RC_Y8_04072_40900",
+      "M1164903641RC_Y8_04423_38453",
+      "M1164903641RC_Y8_04426_41135",
+      "M1164903641RC_Y8_04912_46418",
+      "M1164903641RC_Y8_05752_41872"
+    ],
+    [
+      "M1121300852LC_Y8_05257_23400",
+      "M1121300852LC_Y8_05391_06292",
+      "M1121300852LC_Y8_05417_07217",
+      "M1271923723RC_Y8_01084_25217",
+      "M1271923723RC_Y8_01820_13990",
+      "M1271923723RC_Y8_02443_09158",
+      "M1271923723RC_Y8_02489_13877",
+      "M1271923723RC_Y8_02612_09556",
+      "M1271923723RC_Y8_03011_26983",
+      "M1271930754RC_Y8_02562_30909",
+      "M1271930754RC_Y8_02633_29403",
+      "M1271930754RC_Y8_03114_26112",
+      "M1271930754RC_Y8_04143_25915",
+      "M1271930754RC_Y8_04887_34163",
+      "M1271930754RC_Y8_05267_13530",
+      "M1287257121LC_Y8_02465_21155",
+      "M1287257121LC_Y8_04227_42786",
+      "M1287257121LC_Y8_04609_42030",
+      "M1287257121RC_Y8_04281_15571",
+      "M1287257121RC_Y8_06899_41157",
+      "M1297792011LC_Y8_03183_21429",
+      "M1297792011LC_Y8_03254_38485",
+      "M1297792011LC_Y8_03822_22130",
+      "M1297792011LC_Y8_03930_43404",
+      "M1297792011LC_Y8_04151_38503",
+      "M1297792011LC_Y8_04315_27851",
+      "M1358875484RC_Y8_05443_29611",
+      "M1358875484RC_Y8_05604_22833",
+      "M1358875484RC_Y8_06047_06065",
+      "M1358875484RC_Y8_06070_10975",
+      "M1358875484RC_Y8_06916_08210",
+      "M1358875484RC_Y8_07140_07141",
+      "M1358889571RC_Y8_06226_06061",
+      "M1358889571RC_Y8_06230_21858",
+      "M1358889571RC_Y8_06906_25985",
+      "M1358889571RC_Y8_07572_08187",
+      "M1358889571RC_Y8_07714_13099",
+      "M1358889571RC_Y8_08546_12257",
+      "M1463341437LC_Y8_01450_06361",
+      "M1463341437RC_Y8_02981_19207",
+      "M1463341437RC_Y8_03405_11693",
+      "M1463341437RC_Y8_04734_06452",
+      "M1463341437RC_Y8_04993_08226",
+      "M1463341437RC_Y8_06222_19194",
+      "M188306254RC_Y8_02105_31367",
+      "M188306254RC_Y8_02288_30853",
+      "M188306254RC_Y8_02545_29284",
+      "M188306254RC_Y8_02602_06175",
+      "M188306254RC_Y8_03381_30088"
+    ]
+  ],
+  "overlapping_development_footprint_pairs": 52,
+  "policies": {
+    "ncc": {
+      "policy": {
+        "reject_all": true
+      },
+      "development_counts": {
+        "cases": 1224,
+        "returned": 721,
+        "correct_available": 242,
+        "accepted_correct": 0,
+        "accepted_incorrect": 0,
+        "accepted_nonoverlap": 0,
+        "known_nonoverlap": 72,
+        "accepted_total": 0
+      },
+      "top_feasible_candidates": [
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 24,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 721,
+            "correct_available": 242,
+            "accepted_correct": 0,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 0
+          }
+        }
+      ]
+    },
+    "orientation_ncc": {
+      "policy": {
+        "min_coverage": 0.0,
+        "max_cycle_p95_px": 2.0,
+        "min_support": 6,
+        "min_correlation_score": 0.5,
+        "min_peak_margin": 0.0
+      },
+      "development_counts": {
+        "cases": 1224,
+        "returned": 303,
+        "correct_available": 295,
+        "accepted_correct": 131,
+        "accepted_incorrect": 0,
+        "accepted_nonoverlap": 0,
+        "known_nonoverlap": 72,
+        "accepted_total": 131
+      },
+      "top_feasible_candidates": [
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 303,
+            "correct_available": 295,
+            "accepted_correct": 131,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 131
+          }
+        }
+      ]
+    },
+    "self_similarity_ncc": {
+      "policy": {
+        "min_coverage": 0.0,
+        "max_cycle_p95_px": 1.0,
+        "min_support": 6,
+        "min_correlation_score": 0.5,
+        "min_peak_margin": 0.0
+      },
+      "development_counts": {
+        "cases": 1224,
+        "returned": 425,
+        "correct_available": 373,
+        "accepted_correct": 170,
+        "accepted_incorrect": 0,
+        "accepted_nonoverlap": 0,
+        "known_nonoverlap": 72,
+        "accepted_total": 170
+      },
+      "top_feasible_candidates": [
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 24,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.05
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.1
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.5,
+            "min_peak_margin": 0.01
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 425,
+            "correct_available": 373,
+            "accepted_correct": 170,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 170
+          }
+        }
+      ]
+    },
+    "sift": {
+      "policy": {
+        "min_coverage": 0.0,
+        "max_cycle_p95_px": 2.0,
+        "min_support": 6,
+        "min_correlation_score": 0.0,
+        "min_peak_margin": 0.0
+      },
+      "development_counts": {
+        "cases": 1224,
+        "returned": 86,
+        "correct_available": 84,
+        "accepted_correct": 75,
+        "accepted_incorrect": 0,
+        "accepted_nonoverlap": 0,
+        "known_nonoverlap": 72,
+        "accepted_total": 75
+      },
+      "top_feasible_candidates": [
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 75,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 75
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 74,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 74
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 74,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 74
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 68,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 68
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 68,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 68
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 68,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 68
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 68,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 68
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 68,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 68
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 67,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 67
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 62,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 62
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.15,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 47,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 47
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.15,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 47,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 47
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.15,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 47,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 47
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.15,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 47,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 47
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.15,
+            "max_cycle_p95_px": 0.5,
+            "min_support": 6,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 43,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 43
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.0,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 4.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.01,
+            "max_cycle_p95_px": 8.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 1.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        },
+        {
+          "policy": {
+            "min_coverage": 0.05,
+            "max_cycle_p95_px": 2.0,
+            "min_support": 12,
+            "min_correlation_score": 0.0,
+            "min_peak_margin": 0.0
+          },
+          "counts": {
+            "cases": 1224,
+            "returned": 86,
+            "correct_available": 84,
+            "accepted_correct": 29,
+            "accepted_incorrect": 0,
+            "accepted_nonoverlap": 0,
+            "known_nonoverlap": 72,
+            "accepted_total": 29
+          }
+        }
+      ]
+    }
+  },
+  "excluded_features": [
+    "ground_truth_transform",
+    "reference_error",
+    "correctness_at_inference",
+    "maximum_translation_fraction"
+  ],
+  "selection": "Maximize accepted correct development alignments subject to empirical accepted-error budget and zero accepted development nonoverlap pairs. Ties retain the first declared candidate.",
+  "warning": "No held-out evaluation or safety guarantee. Small geographic component count and repeated development hypothesis selection limit generalization; report fresh-test accepted errors and rejected correct fits.",
+  "development_results_sha256": "9cb8ae54b8e1290539fbfdb2d894c56e6c97977122ce619bf77b9ec39976c5ee",
+  "development_inputs_sha256": "132e314fcd86103c285e7a67e9b9cb7f57dff6dcd94fae78fd79dabf96bd4579",
+  "gate_source_sha256": "0eb11ae0ca083528d1ba4e32122edc9ae975d6ca49109a9b507aaae3b625b4ab",
+  "frozen_before_reserve_evaluation": true
+}

@@ -1,0 +1,202 @@
+{
+  "scope": "Descriptive OLD frozen-teacher training-target signal, not new-model performance, matching accuracy or pose recovery.",
+  "manifest": "reports/solar-learning-v79/teacher_full-bank.json",
+  "manifest_sha256": "f5a4a0d4a603c984373778af587a6ea08f9a159e43e325043145e7f2a4b78428",
+  "retained_point_instances": 3933,
+  "camera_records": 64,
+  "declared_terrain_groups": 16,
+  "point_light_comparisons": 47196,
+  "hour_angle_difference_deg": 90.0,
+  "actual_sun_angle_range_deg": {
+    "minimum": 89.96073571153035,
+    "median": 89.96073904515853,
+    "maximum": 89.9607417762059
+  },
+  "terrain_balanced_mean": {
+    "same_point_same_light": 0.6680395172378533,
+    "same_point_changed_light": 0.3172026427992062,
+    "distinct_point_same_light": 0.26787523813302283,
+    "distinct_point_changed_light": 0.255926331643485,
+    "same_light_positive_margin": 0.40016427910483043,
+    "changed_light_positive_margin": 0.06127631115572126,
+    "within_reference_light_cosine_to_mean": 0.7232770271306114
+  },
+  "terrain_means": {
+    "np31-r0-c0": {
+      "same_point_same_light": 0.7642491351791512,
+      "same_point_changed_light": 0.3545258713356234,
+      "distinct_point_same_light": 0.2540933735693137,
+      "distinct_point_changed_light": 0.24618630994290616,
+      "same_light_positive_margin": 0.5101557616098376,
+      "changed_light_positive_margin": 0.10833956139271729,
+      "within_reference_light_cosine_to_mean": 0.7232070175530942
+    },
+    "np31-r0-c1": {
+      "same_point_same_light": 0.6736023035203026,
+      "same_point_changed_light": 0.28932548039568007,
+      "distinct_point_same_light": 0.2551656044750008,
+      "distinct_point_changed_light": 0.2306207830799806,
+      "same_light_positive_margin": 0.4184366990453019,
+      "changed_light_positive_margin": 0.05870469731569945,
+      "within_reference_light_cosine_to_mean": 0.6887949316824227
+    },
+    "np31-r0-c2": {
+      "same_point_same_light": 0.7878036435026424,
+      "same_point_changed_light": 0.3201783691343037,
+      "distinct_point_same_light": 0.24528133099945088,
+      "distinct_point_changed_light": 0.21930676703109478,
+      "same_light_positive_margin": 0.5425223125031915,
+      "changed_light_positive_margin": 0.10087160210320895,
+      "within_reference_light_cosine_to_mean": 0.7120230372336014
+    },
+    "np31-r0-c6": {
+      "same_point_same_light": 0.7576425413600532,
+      "same_point_changed_light": 0.3401694650045068,
+      "distinct_point_same_light": 0.2567411452115305,
+      "distinct_point_changed_light": 0.24056853184400373,
+      "same_light_positive_margin": 0.5009013961485226,
+      "changed_light_positive_margin": 0.09960093316050309,
+      "within_reference_light_cosine_to_mean": 0.7367880737415291
+    },
+    "np31-r1-c1": {
+      "same_point_same_light": 0.5954377081736845,
+      "same_point_changed_light": 0.2942653308616526,
+      "distinct_point_same_light": 0.3043206988604868,
+      "distinct_point_changed_light": 0.28596535950343877,
+      "same_light_positive_margin": 0.2911170093131976,
+      "changed_light_positive_margin": 0.008299971358213792,
+      "within_reference_light_cosine_to_mean": 0.696337633562082
+    },
+    "np31-r1-c4": {
+      "same_point_same_light": 0.8674919176614084,
+      "same_point_changed_light": 0.30676786394719985,
+      "distinct_point_same_light": 0.2161384905061018,
+      "distinct_point_changed_light": 0.2224305714845919,
+      "same_light_positive_margin": 0.6513534271553068,
+      "changed_light_positive_margin": 0.08433729246260799,
+      "within_reference_light_cosine_to_mean": 0.7173550216449477
+    },
+    "np31-r1-c5": {
+      "same_point_same_light": 0.6458611102505586,
+      "same_point_changed_light": 0.2607829503285419,
+      "distinct_point_same_light": 0.27737133022086746,
+      "distinct_point_changed_light": 0.24524397540431625,
+      "same_light_positive_margin": 0.36848978002969107,
+      "changed_light_positive_margin": 0.015538974924225592,
+      "within_reference_light_cosine_to_mean": 0.7177823261049296
+    },
+    "np31-r1-c6": {
+      "same_point_same_light": 0.4233221263354739,
+      "same_point_changed_light": 0.39452989764027785,
+      "distinct_point_same_light": 0.40191918473931854,
+      "distinct_point_changed_light": 0.4028251204637985,
+      "same_light_positive_margin": 0.021402941596155425,
+      "changed_light_positive_margin": -0.008295222823520649,
+      "within_reference_light_cosine_to_mean": 0.7539003679668901
+    },
+    "np31-r2-c1": {
+      "same_point_same_light": 0.7408175011081028,
+      "same_point_changed_light": 0.3585168804857298,
+      "distinct_point_same_light": 0.2616933491869029,
+      "distinct_point_changed_light": 0.24912428572599654,
+      "same_light_positive_margin": 0.47912415192119995,
+      "changed_light_positive_margin": 0.10939259475973331,
+      "within_reference_light_cosine_to_mean": 0.7392399827081862
+    },
+    "np31-r2-c2": {
+      "same_point_same_light": 0.3912344768464483,
+      "same_point_changed_light": 0.3255957133681276,
+      "distinct_point_same_light": 0.3281407451046148,
+      "distinct_point_changed_light": 0.32577082115916584,
+      "same_light_positive_margin": 0.0630937317418335,
+      "changed_light_positive_margin": -0.00017510779103822177,
+      "within_reference_light_cosine_to_mean": 0.7853531669263718
+    },
+    "np31-r2-c6": {
+      "same_point_same_light": 0.8704882371917348,
+      "same_point_changed_light": 0.41111078307439836,
+      "distinct_point_same_light": 0.24337626627692197,
+      "distinct_point_changed_light": 0.230733954000002,
+      "same_light_positive_margin": 0.6271119709148129,
+      "changed_light_positive_margin": 0.18037682907439634,
+      "within_reference_light_cosine_to_mean": 0.7648766316389504
+    },
+    "np31-r3-c4": {
+      "same_point_same_light": 0.8543914518821836,
+      "same_point_changed_light": 0.3282739847926472,
+      "distinct_point_same_light": 0.20831994461360834,
+      "distinct_point_changed_light": 0.20472567024293548,
+      "same_light_positive_margin": 0.6460715072685753,
+      "changed_light_positive_margin": 0.12354831454971173,
+      "within_reference_light_cosine_to_mean": 0.730923699186593
+    },
+    "np31-r4-c2": {
+      "same_point_same_light": 0.6757692762220259,
+      "same_point_changed_light": 0.2748090707701127,
+      "distinct_point_same_light": 0.23845748776793574,
+      "distinct_point_changed_light": 0.23924859345700927,
+      "same_light_positive_margin": 0.4373117884540902,
+      "changed_light_positive_margin": 0.03556047731310344,
+      "within_reference_light_cosine_to_mean": 0.7080211029433832
+    },
+    "np31-r4-c3": {
+      "same_point_same_light": 0.6402207048012758,
+      "same_point_changed_light": 0.23597866449597998,
+      "distinct_point_same_light": 0.22494282396071427,
+      "distinct_point_changed_light": 0.21472603533432136,
+      "same_light_positive_margin": 0.4152778808405616,
+      "changed_light_positive_margin": 0.02125262916165862,
+      "within_reference_light_cosine_to_mean": 0.6829322162831951
+    },
+    "np31-r4-c4": {
+      "same_point_same_light": 0.39884564834414804,
+      "same_point_changed_light": 0.26913330645437006,
+      "distinct_point_same_light": 0.28404602525110006,
+      "distinct_point_changed_light": 0.27396249327450917,
+      "same_light_positive_margin": 0.11479962309304793,
+      "changed_light_positive_margin": -0.0048291868201390436,
+      "within_reference_light_cosine_to_mean": 0.7154002555079221
+    },
+    "np31-r4-c6": {
+      "same_point_same_light": 0.6014544934264575,
+      "same_point_changed_light": 0.31127865269814753,
+      "distinct_point_same_light": 0.28599600938449665,
+      "distinct_point_changed_light": 0.26338203434768925,
+      "same_light_positive_margin": 0.31545848404196086,
+      "changed_light_positive_margin": 0.04789661835045835,
+      "within_reference_light_cosine_to_mean": 0.6994969694056845
+    }
+  },
+  "weighting": "For each metric: mean of12lights\u00d7npoint instances within each record, then mean of four records per terrain, then mean over16terrains. Pooled quantiles are sample descriptive statistics and do not share the equal-terrain weighting.",
+  "distinct_point_control": {
+    "mapping": "point i versus(i+floor(n/2)) mod n within the same saved camera record",
+    "all_indices_different": true,
+    "all_saved_world_points_unique_within_each_record": true,
+    "all_paired_world_distances_positive": true,
+    "reference_pixel_distance": {
+      "minimum": 16.0,
+      "median": 192.0,
+      "maximum": 509.24257481086556,
+      "pairs_with_distance_below33pixels": 60
+    },
+    "physical_distance_m": {
+      "minimum": 44.54001531909993,
+      "median": 656.5467484865563,
+      "maximum": 2679.3324900725943
+    },
+    "caveat": "Deterministic index permutation, not mined hard negatives, not guaranteed disjoint patch support, not certified nonoverlapping terrain, and not independent pairs; even-sized records reuse reciprocal unordered pairs."
+  },
+  "support_selection": {
+    "saved_instances": 3933,
+    "original_selected_instances": 4096,
+    "omitted_trial_support_instances": 163,
+    "omitted_unusable_teacher_instances": 0,
+    "scope": "Descriptive results condition on retained training samples. Counts are point instances across repeated views, not3933independent terrain observations or globally unique physical locations."
+  },
+  "source_report_sha256": "6bbbd5686086d5a1db7bfd008b6c4629b030b6b6e1c12a373dd93b12b68f411e",
+  "independent_review_sha256": "31fcbc9c2c1a60ed7d5bf44486213fa2e0e246dace5267b48819581e776e3678",
+  "audit_script_sha256": "e0e59b45e095540966e03c50e91c0b6c16cf72c0f1cc288e6bc00f6d60e6f414",
+  "render_script_sha256": "8eab7f82de9452ac52776595118685ff4f3bbd98bf761400f088e4fd9b6ff82a",
+  "no_checkpoint_selection_or_tuning": true,
+  "interpretation": "The saved OLD frozen teacher descriptors are less separated from this deterministic distinct-point control when hour angle changes by90degrees. This motivates an illumination-response hypothesis; it does not show that the new model learned it or improved localization."
+}

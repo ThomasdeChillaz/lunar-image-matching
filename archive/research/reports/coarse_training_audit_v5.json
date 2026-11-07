@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "scope": "Corrected axial-depth development training; no final or acceptance claim.",
+  "runs": [
+    {
+      "variant": "planar_control",
+      "seed": 20261101,
+      "selection_key": [
+        11,
+        3067,
+        0
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 10320,
+        "returned": 23240,
+        "scorable": 21339,
+        "bank_only": false
+      },
+      "selected_step": 0
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261101,
+      "selection_key": [
+        12,
+        2453,
+        -1000
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 44,
+        "strict_poses": 14,
+        "estimated_poses": 54,
+        "correct_at_two_px": 8124,
+        "returned": 21122,
+        "scorable": 19445,
+        "bank_only": false
+      },
+      "selected_step": 1000
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261102,
+      "selection_key": [
+        11,
+        3067,
+        0
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 10320,
+        "returned": 23240,
+        "scorable": 21339,
+        "bank_only": false
+      },
+      "selected_step": 0
+    },
+    {
+      "variant": "true_3d",
+      "seed": 20261103,
+      "selection_key": [
+        11,
+        3067,
+        0
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 10320,
+        "returned": 23240,
+        "scorable": 21339,
+        "bank_only": false
+      },
+      "selected_step": 0
+    }
+  ],
+  "trained_runs": 4,
+  "optimizer_steps": 16000,
+  "development_rows": 288,
+  "uniform_supported_training_points": 10297,
+  "train_components": 12,
+  "selection_components": 4,
+  "selected_variant": "true_3d",
+  "calibration_or_test_pixels_loaded": 0,
+  "source_sha256": "689a212cd75e7f133a3666360c8bca0fa1b33625b8fcf7b6649a93def9030610",
+  "protocol_sha256": "aad2e3e5d5a3789a8f984390fbe1ef119e5ebba22ea8c023659bb592221e91ff",
+  "summary_sha256": "7fd0ff9863ac27289f50f7f21b6379c1b34648fc4b6689afbdc6828b5f3a2107"
+}

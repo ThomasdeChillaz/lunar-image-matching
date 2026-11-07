@@ -1,0 +1,2911 @@
+{
+  "completed_steps": 100,
+  "fitting_seconds": 16.89632363501005,
+  "history": [
+    {
+      "step": 1,
+      "loss": 11.790145874023438,
+      "gradient_norm": 11.979015350341797,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1422",
+        "tile_b": "dynamicgood/dynamic/1422",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 598,
+          "negative": 78,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 304,
+          "negative": 372,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.309890270233154,
+        "mutual_reverse_correction": 6.124004364013672
+      }
+    },
+    {
+      "step": 2,
+      "loss": 12.16703987121582,
+      "gradient_norm": 11.349493026733398,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 6.475559711456299,
+        "mutual_reverse_correction": 6.466990947723389
+      }
+    },
+    {
+      "step": 3,
+      "loss": 12.426403045654297,
+      "gradient_norm": 18.591541290283203,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 618,
+          "negative": 58,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 429,
+          "negative": 247,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.548404216766357,
+        "mutual_reverse_correction": 6.53733491897583
+      }
+    },
+    {
+      "step": 4,
+      "loss": 0.06977184116840363,
+      "gradient_norm": 0.30691245198249817,
+      "sample": {
+        "tile_a": "oblique/oblique/7432",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0012",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 5,
+      "loss": 12.317399024963379,
+      "gradient_norm": 16.40064239501953,
+      "sample": {
+        "tile_a": "nadir/nadir/6138",
+        "tile_b": "nadir/nadir/6138",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.497125148773193,
+        "mutual_reverse_correction": 6.479898452758789
+      }
+    },
+    {
+      "step": 6,
+      "loss": 7.959461212158203,
+      "gradient_norm": 20.737659454345703,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 608,
+          "negative": 68,
+          "anchors": 77
+        },
+        "reverse": {
+          "positive": 415,
+          "negative": 261,
+          "anchors": 73
+        },
+        "mutual_forward_correction": 4.47180700302124,
+        "mutual_reverse_correction": 4.182523727416992
+      }
+    },
+    {
+      "step": 7,
+      "loss": 12.401058197021484,
+      "gradient_norm": 21.10292625427246,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 131,
+          "negative": 545,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 675,
+          "negative": 1,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.623225688934326,
+        "mutual_reverse_correction": 6.5527663230896
+      }
+    },
+    {
+      "step": 8,
+      "loss": 0.08093148469924927,
+      "gradient_norm": 0.38360467553138733,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/6297",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 9,
+      "loss": 11.942669868469238,
+      "gradient_norm": 11.360815048217773,
+      "sample": {
+        "tile_a": "oblique/oblique/7432",
+        "tile_b": "oblique/oblique/7432",
+        "component_a": "axial-v5-component-0012",
+        "component_b": "axial-v5-component-0012",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 313,
+          "negative": 363,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.405621528625488,
+        "mutual_reverse_correction": 6.404111385345459
+      }
+    },
+    {
+      "step": 10,
+      "loss": 6.158519744873047,
+      "gradient_norm": 26.623083114624023,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "nadir/nadir/6297",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 388
+        },
+        "reverse": {
+          "positive": 675,
+          "negative": 1,
+          "anchors": 388
+        },
+        "mutual_forward_correction": 3.3668394088745117,
+        "mutual_reverse_correction": 3.3498523235321045
+      }
+    },
+    {
+      "step": 11,
+      "loss": 13.413921356201172,
+      "gradient_norm": 21.5811824798584,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1437",
+        "tile_b": "dynamicgood/dynamic/1437",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 451,
+          "negative": 225,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 288,
+          "negative": 388,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.937981128692627,
+        "mutual_reverse_correction": 7.187978744506836
+      }
+    },
+    {
+      "step": 12,
+      "loss": 0.08085378259420395,
+      "gradient_norm": 0.391991525888443,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "dynamicgood/dynamic/936",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 13,
+      "loss": 11.611922264099121,
+      "gradient_norm": 9.199273109436035,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.188788890838623,
+        "mutual_reverse_correction": 6.191452980041504
+      }
+    },
+    {
+      "step": 14,
+      "loss": 11.725967407226562,
+      "gradient_norm": 9.171586036682129,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 4
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 4
+        },
+        "mutual_forward_correction": 6.258671760559082,
+        "mutual_reverse_correction": 6.279348850250244
+      }
+    },
+    {
+      "step": 15,
+      "loss": 10.430201530456543,
+      "gradient_norm": 9.402399063110352,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 657,
+          "negative": 19,
+          "anchors": 22
+        },
+        "reverse": {
+          "positive": 664,
+          "negative": 12,
+          "anchors": 22
+        },
+        "mutual_forward_correction": 5.546030044555664,
+        "mutual_reverse_correction": 5.61615514755249
+      }
+    },
+    {
+      "step": 16,
+      "loss": 0.0870705097913742,
+      "gradient_norm": 0.3114626109600067,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1227",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 17,
+      "loss": 12.24509048461914,
+      "gradient_norm": 17.827428817749023,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 639,
+          "negative": 37,
+          "anchors": 6
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 6
+        },
+        "mutual_forward_correction": 6.487353801727295,
+        "mutual_reverse_correction": 6.447566986083984
+      }
+    },
+    {
+      "step": 18,
+      "loss": 12.11882209777832,
+      "gradient_norm": 15.648567199707031,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 131,
+          "negative": 545,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 673,
+          "negative": 3,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 6.4691243171691895,
+        "mutual_reverse_correction": 6.412579536437988
+      }
+    },
+    {
+      "step": 19,
+      "loss": 11.665243148803711,
+      "gradient_norm": 9.745349884033203,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.274582386016846,
+        "mutual_reverse_correction": 6.227659702301025
+      }
+    },
+    {
+      "step": 20,
+      "loss": 0.08672656118869781,
+      "gradient_norm": 0.3263394832611084,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1227",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 21,
+      "loss": 11.90297794342041,
+      "gradient_norm": 13.472885131835938,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 625,
+          "negative": 51,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 625,
+          "negative": 51,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.3540802001953125,
+        "mutual_reverse_correction": 6.324315071105957
+      }
+    },
+    {
+      "step": 22,
+      "loss": 8.84875774383545,
+      "gradient_norm": 23.946882247924805,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 111
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 112
+        },
+        "mutual_forward_correction": 4.774967193603516,
+        "mutual_reverse_correction": 4.856907844543457
+      }
+    },
+    {
+      "step": 23,
+      "loss": 11.911592483520508,
+      "gradient_norm": 17.593063354492188,
+      "sample": {
+        "tile_a": "nadir/nadir/6381",
+        "tile_b": "nadir/nadir/6381",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 9
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 9
+        },
+        "mutual_forward_correction": 6.272300720214844,
+        "mutual_reverse_correction": 6.312992572784424
+      }
+    },
+    {
+      "step": 24,
+      "loss": 0.09022772312164307,
+      "gradient_norm": 0.34607356786727905,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/936",
+        "tile_b": "nadir/nadir/6138",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 25,
+      "loss": 11.641576766967773,
+      "gradient_norm": 9.00796890258789,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.256458282470703,
+        "mutual_reverse_correction": 6.259702205657959
+      }
+    },
+    {
+      "step": 26,
+      "loss": 11.815279006958008,
+      "gradient_norm": 9.931063652038574,
+      "sample": {
+        "tile_a": "nadir/nadir/6381",
+        "tile_b": "nadir/nadir/6381",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.297784805297852,
+        "mutual_reverse_correction": 6.2556962966918945
+      }
+    },
+    {
+      "step": 27,
+      "loss": 12.43763542175293,
+      "gradient_norm": 17.286846160888672,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1422",
+        "tile_b": "dynamicgood/dynamic/1422",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 615,
+          "negative": 61,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 319,
+          "negative": 357,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.507734775543213,
+        "mutual_reverse_correction": 6.5204176902771
+      }
+    },
+    {
+      "step": 28,
+      "loss": 0.08529160916805267,
+      "gradient_norm": 0.32708820700645447,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/6303",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 29,
+      "loss": 12.017983436584473,
+      "gradient_norm": 12.15794563293457,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 598,
+          "negative": 78,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 400,
+          "negative": 276,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.326991081237793,
+        "mutual_reverse_correction": 6.4196248054504395
+      }
+    },
+    {
+      "step": 30,
+      "loss": 9.036286354064941,
+      "gradient_norm": 20.24818992614746,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 629,
+          "negative": 47,
+          "anchors": 85
+        },
+        "reverse": {
+          "positive": 646,
+          "negative": 30,
+          "anchors": 85
+        },
+        "mutual_forward_correction": 4.8425374031066895,
+        "mutual_reverse_correction": 4.898787021636963
+      }
+    },
+    {
+      "step": 31,
+      "loss": 11.483467102050781,
+      "gradient_norm": 9.531645774841309,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 618,
+          "negative": 58,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 429,
+          "negative": 247,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.102289199829102,
+        "mutual_reverse_correction": 6.092775821685791
+      }
+    },
+    {
+      "step": 32,
+      "loss": 0.08518125116825104,
+      "gradient_norm": 0.32796600461006165,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "nadir/nadir/6303",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 33,
+      "loss": 9.019159317016602,
+      "gradient_norm": 22.201751708984375,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 88
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 88
+        },
+        "mutual_forward_correction": 4.945039749145508,
+        "mutual_reverse_correction": 4.897447109222412
+      }
+    },
+    {
+      "step": 34,
+      "loss": 11.398459434509277,
+      "gradient_norm": 10.287452697753906,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 1,
+        "light_b": 1,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 6.107332706451416,
+        "mutual_reverse_correction": 6.09312629699707
+      }
+    },
+    {
+      "step": 35,
+      "loss": 11.474470138549805,
+      "gradient_norm": 6.849720001220703,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 129,
+          "negative": 547,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 670,
+          "negative": 6,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.995129108428955,
+        "mutual_reverse_correction": 6.228117942810059
+      }
+    },
+    {
+      "step": 36,
+      "loss": 0.08991637080907822,
+      "gradient_norm": 0.2944793403148651,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1422",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 37,
+      "loss": 8.734545707702637,
+      "gradient_norm": 20.570011138916016,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1227",
+        "tile_b": "dynamicgood/dynamic/1227",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 273,
+          "negative": 403,
+          "anchors": 40
+        },
+        "reverse": {
+          "positive": 231,
+          "negative": 445,
+          "anchors": 39
+        },
+        "mutual_forward_correction": 4.671906471252441,
+        "mutual_reverse_correction": 4.728334903717041
+      }
+    },
+    {
+      "step": 38,
+      "loss": 11.717660903930664,
+      "gradient_norm": 9.515398979187012,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.243226051330566,
+        "mutual_reverse_correction": 6.253365516662598
+      }
+    },
+    {
+      "step": 39,
+      "loss": 11.552764892578125,
+      "gradient_norm": 8.03498649597168,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 654,
+          "negative": 22,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 672,
+          "negative": 4,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.155831336975098,
+        "mutual_reverse_correction": 6.218038558959961
+      }
+    },
+    {
+      "step": 40,
+      "loss": 0.09454592317342758,
+      "gradient_norm": 0.28505274653434753,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/936",
+        "tile_b": "nadir/nadir/6303",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 41,
+      "loss": 11.759904861450195,
+      "gradient_norm": 10.631521224975586,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 640,
+          "negative": 36,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 667,
+          "negative": 9,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.281776428222656,
+        "mutual_reverse_correction": 6.187363624572754
+      }
+    },
+    {
+      "step": 42,
+      "loss": 11.468609809875488,
+      "gradient_norm": 8.927495956420898,
+      "sample": {
+        "tile_a": "nadir/nadir/6507",
+        "tile_b": "nadir/nadir/6507",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.145913600921631,
+        "mutual_reverse_correction": 6.184362411499023
+      }
+    },
+    {
+      "step": 43,
+      "loss": 11.301748275756836,
+      "gradient_norm": 7.683896541595459,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "nadir/nadir/6297",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.073333740234375,
+        "mutual_reverse_correction": 6.060915470123291
+      }
+    },
+    {
+      "step": 44,
+      "loss": 0.0933537632226944,
+      "gradient_norm": 0.28929775953292847,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 45,
+      "loss": 11.423765182495117,
+      "gradient_norm": 9.328948020935059,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 618,
+          "negative": 58,
+          "anchors": 4
+        },
+        "reverse": {
+          "positive": 429,
+          "negative": 247,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.063514709472656,
+        "mutual_reverse_correction": 6.0634765625
+      }
+    },
+    {
+      "step": 46,
+      "loss": 8.803580284118652,
+      "gradient_norm": 16.819765090942383,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 608,
+          "negative": 68,
+          "anchors": 84
+        },
+        "reverse": {
+          "positive": 415,
+          "negative": 261,
+          "anchors": 81
+        },
+        "mutual_forward_correction": 4.817827224731445,
+        "mutual_reverse_correction": 4.66241979598999
+      }
+    },
+    {
+      "step": 47,
+      "loss": 11.207878112792969,
+      "gradient_norm": 10.356937408447266,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 661,
+          "negative": 15,
+          "anchors": 7
+        },
+        "reverse": {
+          "positive": 658,
+          "negative": 18,
+          "anchors": 7
+        },
+        "mutual_forward_correction": 5.97029447555542,
+        "mutual_reverse_correction": 5.949267864227295
+      }
+    },
+    {
+      "step": 48,
+      "loss": 0.08667535334825516,
+      "gradient_norm": 0.3108028471469879,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1437",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 49,
+      "loss": 11.788477897644043,
+      "gradient_norm": 10.994308471679688,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "nadir/nadir/6297",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 674,
+          "negative": 2,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.199403762817383,
+        "mutual_reverse_correction": 6.244814395904541
+      }
+    },
+    {
+      "step": 50,
+      "loss": 11.16716194152832,
+      "gradient_norm": 7.171991348266602,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 635,
+          "negative": 41,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 659,
+          "negative": 17,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 5.908045291900635,
+        "mutual_reverse_correction": 5.980458736419678
+      }
+    },
+    {
+      "step": 51,
+      "loss": 11.035690307617188,
+      "gradient_norm": 10.413320541381836,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 5.903770923614502,
+        "mutual_reverse_correction": 5.893845558166504
+      }
+    },
+    {
+      "step": 52,
+      "loss": 0.09148995578289032,
+      "gradient_norm": 0.28020212054252625,
+      "sample": {
+        "tile_a": "nadir/nadir/6381",
+        "tile_b": "nadir/nadir/6138",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 53,
+      "loss": 11.00324535369873,
+      "gradient_norm": 7.56942081451416,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 618,
+          "negative": 58,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 429,
+          "negative": 247,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.898222923278809,
+        "mutual_reverse_correction": 5.827895164489746
+      }
+    },
+    {
+      "step": 54,
+      "loss": 10.977032661437988,
+      "gradient_norm": 7.171976089477539,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 668,
+          "negative": 8,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 5.906352519989014,
+        "mutual_reverse_correction": 5.908870697021484
+      }
+    },
+    {
+      "step": 55,
+      "loss": 10.77766227722168,
+      "gradient_norm": 10.926684379577637,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 5.734821319580078,
+        "mutual_reverse_correction": 5.746654510498047
+      }
+    },
+    {
+      "step": 56,
+      "loss": 0.09132863581180573,
+      "gradient_norm": 0.26108628511428833,
+      "sample": {
+        "tile_a": "nadir/nadir/6303",
+        "tile_b": "dynamicgood/dynamic/1437",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 57,
+      "loss": 8.267900466918945,
+      "gradient_norm": 25.28582191467285,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 629,
+          "negative": 47,
+          "anchors": 304
+        },
+        "reverse": {
+          "positive": 646,
+          "negative": 30,
+          "anchors": 304
+        },
+        "mutual_forward_correction": 4.430510520935059,
+        "mutual_reverse_correction": 4.516788482666016
+      }
+    },
+    {
+      "step": 58,
+      "loss": 11.157415390014648,
+      "gradient_norm": 5.582021713256836,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 668,
+          "negative": 8,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 5.969200611114502,
+        "mutual_reverse_correction": 5.974331378936768
+      }
+    },
+    {
+      "step": 59,
+      "loss": 11.436975479125977,
+      "gradient_norm": 4.622137069702148,
+      "sample": {
+        "tile_a": "oblique/oblique/7432",
+        "tile_b": "oblique/oblique/7432",
+        "component_a": "axial-v5-component-0012",
+        "component_b": "axial-v5-component-0012",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 313,
+          "negative": 363,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.184203147888184,
+        "mutual_reverse_correction": 6.070005416870117
+      }
+    },
+    {
+      "step": 60,
+      "loss": 0.09636305272579193,
+      "gradient_norm": 0.24411417543888092,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 61,
+      "loss": 11.259228706359863,
+      "gradient_norm": 6.564130783081055,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/936",
+        "tile_b": "dynamicgood/dynamic/936",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 411,
+          "negative": 265,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.058584213256836,
+        "mutual_reverse_correction": 5.957802772521973
+      }
+    },
+    {
+      "step": 62,
+      "loss": 11.485418319702148,
+      "gradient_norm": 4.918670177459717,
+      "sample": {
+        "tile_a": "oblique/oblique/7432",
+        "tile_b": "oblique/oblique/7432",
+        "component_a": "axial-v5-component-0012",
+        "component_b": "axial-v5-component-0012",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 313,
+          "negative": 363,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.262500286102295,
+        "mutual_reverse_correction": 6.042905807495117
+      }
+    },
+    {
+      "step": 63,
+      "loss": 9.254953384399414,
+      "gradient_norm": 13.178733825683594,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 104
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 104
+        },
+        "mutual_forward_correction": 4.94798469543457,
+        "mutual_reverse_correction": 4.974001884460449
+      }
+    },
+    {
+      "step": 64,
+      "loss": 0.09286926686763763,
+      "gradient_norm": 0.2566646635532379,
+      "sample": {
+        "tile_a": "nadir/nadir/6303",
+        "tile_b": "nadir/nadir/6138",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 65,
+      "loss": 11.294611930847168,
+      "gradient_norm": 7.181613445281982,
+      "sample": {
+        "tile_a": "nadir/nadir/6303",
+        "tile_b": "nadir/nadir/6303",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0007",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 5.960055351257324,
+        "mutual_reverse_correction": 6.01723575592041
+      }
+    },
+    {
+      "step": 66,
+      "loss": 10.97652530670166,
+      "gradient_norm": 5.966690540313721,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.883260726928711,
+        "mutual_reverse_correction": 5.875875949859619
+      }
+    },
+    {
+      "step": 67,
+      "loss": 11.996660232543945,
+      "gradient_norm": 11.667452812194824,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 131,
+          "negative": 545,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 675,
+          "negative": 1,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.284661293029785,
+        "mutual_reverse_correction": 6.405671119689941
+      }
+    },
+    {
+      "step": 68,
+      "loss": 0.08819699287414551,
+      "gradient_norm": 0.2894395887851715,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "dynamicgood/dynamic/1437",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 69,
+      "loss": 10.144804954528809,
+      "gradient_norm": 8.525423049926758,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 657,
+          "negative": 19,
+          "anchors": 44
+        },
+        "reverse": {
+          "positive": 664,
+          "negative": 12,
+          "anchors": 45
+        },
+        "mutual_forward_correction": 5.333556175231934,
+        "mutual_reverse_correction": 5.326751232147217
+      }
+    },
+    {
+      "step": 70,
+      "loss": 10.697525978088379,
+      "gradient_norm": 7.8678107261657715,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 1,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 668,
+          "negative": 8,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 5.797595500946045,
+        "mutual_reverse_correction": 5.775237083435059
+      }
+    },
+    {
+      "step": 71,
+      "loss": 10.68526554107666,
+      "gradient_norm": 6.189773082733154,
+      "sample": {
+        "tile_a": "nadir/nadir/6507",
+        "tile_b": "nadir/nadir/6507",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 662,
+          "negative": 14,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 5.710742473602295,
+        "mutual_reverse_correction": 5.681227684020996
+      }
+    },
+    {
+      "step": 72,
+      "loss": 0.09446240216493607,
+      "gradient_norm": 0.22628693282604218,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 73,
+      "loss": 11.363454818725586,
+      "gradient_norm": 6.456142425537109,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/936",
+        "tile_b": "dynamicgood/dynamic/936",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 643,
+          "negative": 33,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 403,
+          "negative": 273,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 6.065354347229004,
+        "mutual_reverse_correction": 5.953398704528809
+      }
+    },
+    {
+      "step": 74,
+      "loss": 11.639175415039062,
+      "gradient_norm": 10.556314468383789,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 598,
+          "negative": 78,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 400,
+          "negative": 276,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 6.096627235412598,
+        "mutual_reverse_correction": 6.124844551086426
+      }
+    },
+    {
+      "step": 75,
+      "loss": 11.542823791503906,
+      "gradient_norm": 10.299064636230469,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1422",
+        "tile_b": "dynamicgood/dynamic/1422",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 615,
+          "negative": 61,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 319,
+          "negative": 357,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.099710941314697,
+        "mutual_reverse_correction": 6.051331043243408
+      }
+    },
+    {
+      "step": 76,
+      "loss": 0.09610377252101898,
+      "gradient_norm": 0.2427312284708023,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "nadir/nadir/6297",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0009",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 77,
+      "loss": 10.619428634643555,
+      "gradient_norm": 6.320093154907227,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 635,
+          "negative": 41,
+          "anchors": 5
+        },
+        "reverse": {
+          "positive": 659,
+          "negative": 17,
+          "anchors": 5
+        },
+        "mutual_forward_correction": 5.623513698577881,
+        "mutual_reverse_correction": 5.6409711837768555
+      }
+    },
+    {
+      "step": 78,
+      "loss": 11.867302894592285,
+      "gradient_norm": 9.622893333435059,
+      "sample": {
+        "tile_a": "oblique/oblique/7432",
+        "tile_b": "oblique/oblique/7432",
+        "component_a": "axial-v5-component-0012",
+        "component_b": "axial-v5-component-0012",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 314,
+          "negative": 362,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.242368221282959,
+        "mutual_reverse_correction": 6.270151138305664
+      }
+    },
+    {
+      "step": 79,
+      "loss": 11.09829044342041,
+      "gradient_norm": 7.703607559204102,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1227",
+        "tile_b": "dynamicgood/dynamic/1227",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0002",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 290,
+          "negative": 386,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 249,
+          "negative": 427,
+          "anchors": 2
+        },
+        "mutual_forward_correction": 5.876657962799072,
+        "mutual_reverse_correction": 5.821265697479248
+      }
+    },
+    {
+      "step": 80,
+      "loss": 0.09252175688743591,
+      "gradient_norm": 0.24198497831821442,
+      "sample": {
+        "tile_a": "nadir/nadir/6303",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0007",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 81,
+      "loss": 11.020517349243164,
+      "gradient_norm": 9.952607154846191,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 607,
+          "negative": 69,
+          "anchors": 2
+        },
+        "reverse": {
+          "positive": 414,
+          "negative": 262,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 5.819942951202393,
+        "mutual_reverse_correction": 5.865097999572754
+      }
+    },
+    {
+      "step": 82,
+      "loss": 8.167825698852539,
+      "gradient_norm": 23.121240615844727,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 2,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 657,
+          "negative": 19,
+          "anchors": 419
+        },
+        "reverse": {
+          "positive": 664,
+          "negative": 12,
+          "anchors": 419
+        },
+        "mutual_forward_correction": 4.3346405029296875,
+        "mutual_reverse_correction": 4.290777206420898
+      }
+    },
+    {
+      "step": 83,
+      "loss": 10.78707504272461,
+      "gradient_norm": 7.032251358032227,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 661,
+          "negative": 15,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 658,
+          "negative": 18,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 5.719632148742676,
+        "mutual_reverse_correction": 5.701722145080566
+      }
+    },
+    {
+      "step": 84,
+      "loss": 0.09940341114997864,
+      "gradient_norm": 0.21609869599342346,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/1227",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0002",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 0,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 85,
+      "loss": 11.062520980834961,
+      "gradient_norm": 5.316340446472168,
+      "sample": {
+        "tile_a": "nadir/nadir/336",
+        "tile_b": "nadir/nadir/336",
+        "component_a": "axial-v5-component-0004",
+        "component_b": "axial-v5-component-0004",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 624,
+          "negative": 52,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 632,
+          "negative": 44,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.882253646850586,
+        "mutual_reverse_correction": 5.8987812995910645
+      }
+    },
+    {
+      "step": 86,
+      "loss": 11.980181694030762,
+      "gradient_norm": 13.665205955505371,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 131,
+          "negative": 545,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 673,
+          "negative": 3,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 6.284315586090088,
+        "mutual_reverse_correction": 6.359742641448975
+      }
+    },
+    {
+      "step": 87,
+      "loss": 10.996682167053223,
+      "gradient_norm": 5.397680759429932,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 0,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 615,
+          "negative": 61,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 625,
+          "negative": 51,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 5.791991233825684,
+        "mutual_reverse_correction": 5.833583831787109
+      }
+    },
+    {
+      "step": 88,
+      "loss": 0.09255450963973999,
+      "gradient_norm": 0.19589179754257202,
+      "sample": {
+        "tile_a": "nadir/nadir/6297",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0009",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 89,
+      "loss": 10.390921592712402,
+      "gradient_norm": 7.951700210571289,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 0,
+        "light_b": 2,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 661,
+          "negative": 15,
+          "anchors": 8
+        },
+        "reverse": {
+          "positive": 658,
+          "negative": 18,
+          "anchors": 8
+        },
+        "mutual_forward_correction": 5.489986896514893,
+        "mutual_reverse_correction": 5.501850128173828
+      }
+    },
+    {
+      "step": 90,
+      "loss": 12.204222679138184,
+      "gradient_norm": 12.874258041381836,
+      "sample": {
+        "tile_a": "oblique/oblique/4621",
+        "tile_b": "oblique/oblique/4621",
+        "component_a": "axial-v5-component-0011",
+        "component_b": "axial-v5-component-0011",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 133,
+          "negative": 543,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 674,
+          "negative": 2,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 6.36539363861084,
+        "mutual_reverse_correction": 6.447009086608887
+      }
+    },
+    {
+      "step": 91,
+      "loss": 11.433822631835938,
+      "gradient_norm": 6.304422378540039,
+      "sample": {
+        "tile_a": "nadir/nadir/6453",
+        "tile_b": "nadir/nadir/6453",
+        "component_a": "axial-v5-component-0003",
+        "component_b": "axial-v5-component-0003",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 3
+        },
+        "reverse": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 3
+        },
+        "mutual_forward_correction": 6.027743816375732,
+        "mutual_reverse_correction": 5.999850749969482
+      }
+    },
+    {
+      "step": 92,
+      "loss": 0.0970776379108429,
+      "gradient_norm": 0.21412138640880585,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/825",
+        "tile_b": "oblique/oblique/7504",
+        "component_a": "axial-v5-component-0014",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 1,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 93,
+      "loss": 9.772247314453125,
+      "gradient_norm": 9.734731674194336,
+      "sample": {
+        "tile_a": "dynamicgood/dynamic/936",
+        "tile_b": "dynamicgood/dynamic/936",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 1,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 637,
+          "negative": 39,
+          "anchors": 18
+        },
+        "reverse": {
+          "positive": 397,
+          "negative": 279,
+          "anchors": 17
+        },
+        "mutual_forward_correction": 5.323014736175537,
+        "mutual_reverse_correction": 5.116273880004883
+      }
+    },
+    {
+      "step": 94,
+      "loss": 11.253637313842773,
+      "gradient_norm": 6.03808069229126,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.981629848480225,
+        "mutual_reverse_correction": 5.959877014160156
+      }
+    },
+    {
+      "step": 95,
+      "loss": 10.990574836730957,
+      "gradient_norm": 4.662879467010498,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "nadir/nadir/2464",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0008",
+        "light_a": 1,
+        "light_b": 2,
+        "query_quarter_turn": 3,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 654,
+          "negative": 22,
+          "anchors": 6
+        },
+        "reverse": {
+          "positive": 672,
+          "negative": 4,
+          "anchors": 6
+        },
+        "mutual_forward_correction": 5.796279430389404,
+        "mutual_reverse_correction": 5.8605217933654785
+      }
+    },
+    {
+      "step": 96,
+      "loss": 0.09030432999134064,
+      "gradient_norm": 0.29464513063430786,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "dynamicgood/dynamic/825",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0014",
+        "light_a": 1,
+        "light_b": 0,
+        "query_quarter_turn": 2,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    },
+    {
+      "step": 97,
+      "loss": 10.839994430541992,
+      "gradient_norm": 4.479520797729492,
+      "sample": {
+        "tile_a": "oblique/oblique/2770",
+        "tile_b": "oblique/oblique/2770",
+        "component_a": "axial-v5-component-0010",
+        "component_b": "axial-v5-component-0010",
+        "light_a": 2,
+        "light_b": 1,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 645,
+          "negative": 31,
+          "anchors": 1
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 1
+        },
+        "mutual_forward_correction": 5.783026218414307,
+        "mutual_reverse_correction": 5.799290180206299
+      }
+    },
+    {
+      "step": 98,
+      "loss": 8.483379364013672,
+      "gradient_norm": 18.03506851196289,
+      "sample": {
+        "tile_a": "oblique/oblique/7504",
+        "tile_b": "oblique/oblique/7504",
+        "component_a": "axial-v5-component-0013",
+        "component_b": "axial-v5-component-0013",
+        "light_a": 1,
+        "light_b": 1,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 674,
+          "negative": 2,
+          "anchors": 353
+        },
+        "reverse": {
+          "positive": 633,
+          "negative": 43,
+          "anchors": 353
+        },
+        "mutual_forward_correction": 4.548129558563232,
+        "mutual_reverse_correction": 4.515892505645752
+      }
+    },
+    {
+      "step": 99,
+      "loss": 8.952259063720703,
+      "gradient_norm": 13.574579238891602,
+      "sample": {
+        "tile_a": "nadir/nadir/6864",
+        "tile_b": "nadir/nadir/6864",
+        "component_a": "axial-v5-component-0001",
+        "component_b": "axial-v5-component-0001",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 0,
+        "verified_nonoverlap": false
+      },
+      "labels": {
+        "forward": {
+          "positive": 650,
+          "negative": 26,
+          "anchors": 187
+        },
+        "reverse": {
+          "positive": 676,
+          "negative": 0,
+          "anchors": 188
+        },
+        "mutual_forward_correction": 4.778188705444336,
+        "mutual_reverse_correction": 4.8190107345581055
+      }
+    },
+    {
+      "step": 100,
+      "loss": 0.0989048182964325,
+      "gradient_norm": 0.20889432728290558,
+      "sample": {
+        "tile_a": "nadir/nadir/2464",
+        "tile_b": "oblique/oblique/7432",
+        "component_a": "axial-v5-component-0008",
+        "component_b": "axial-v5-component-0012",
+        "light_a": 2,
+        "light_b": 0,
+        "query_quarter_turn": 1,
+        "verified_nonoverlap": true
+      },
+      "labels": {
+        "forward": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "reverse": {
+          "positive": 0,
+          "negative": 676,
+          "anchors": 0
+        },
+        "mutual_forward_correction": 0.0,
+        "mutual_reverse_correction": 0.0
+      }
+    }
+  ],
+  "fine_encoder_unchanged": true,
+  "fresh_initialization_matches_prior": true,
+  "final_weight_change_l2": 0.5837231278419495,
+  "selection_pixels_loaded": 0,
+  "calibration_or_test_pixels_loaded": 0
+}

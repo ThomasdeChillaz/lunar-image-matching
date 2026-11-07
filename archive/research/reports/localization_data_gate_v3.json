@@ -1,0 +1,92 @@
+{
+  "schema_version": 3,
+  "recorded_utc": "2026-10-31T16:19:21.802556+00:00",
+  "source_doi": "10.5281/zenodo.18415119",
+  "scope": "All NPZ files in all three released SouthPole inner archives",
+  "camera_files": 76802,
+  "archives": {
+    "nadir": {
+      "camera_files": 27066,
+      "folders": {
+        "nadir": 27066
+      },
+      "distinct_stereo_geometries": 4518,
+      "lighting_observation_counts": {
+        "3": 4498,
+        "1": 1,
+        "2": 19
+      },
+      "complete_three_light_geometries": 4498,
+      "archive_sha256": "4c14e3d642e4a32ed63dcca0c22a78e1bf9fb7c51b6ead01315636d4fc0a0839",
+      "field_shapes": {
+        "('cam2world', (4, 4), 'float32')": 27066,
+        "('intrinsics', (3, 3), 'float32')": 27066
+      }
+    },
+    "oblique": {
+      "camera_files": 25040,
+      "folders": {
+        "oblique": 25040
+      },
+      "distinct_stereo_geometries": 4340,
+      "lighting_observation_counts": {
+        "3": 3840,
+        "2": 500
+      },
+      "complete_three_light_geometries": 3840,
+      "archive_sha256": "afb84297b104e1f2071a6df9f9e742534ae0f2e870bfb701da17eda9c2d2eb96",
+      "field_shapes": {
+        "('cam2world', (4, 4), 'float32')": 25040,
+        "('intrinsics', (3, 3), 'float32')": 25040
+      }
+    },
+    "dynamicgood": {
+      "camera_files": 24696,
+      "folders": {
+        "dynamic": 24696
+      },
+      "distinct_stereo_geometries": 4116,
+      "lighting_observation_counts": {
+        "3": 4116
+      },
+      "complete_three_light_geometries": 4116,
+      "archive_sha256": "c6aebfb1b879fec4fddd766c721550587cf38cb1595444337ae89f6427e7f2fb",
+      "field_shapes": {
+        "('cam2world', (4, 4), 'float32')": 24696,
+        "('intrinsics', (3, 3), 'float32')": 24696
+      }
+    }
+  },
+  "metadata_field_counts": {
+    "cam2world": 76802,
+    "intrinsics": 76802
+  },
+  "released_folder_groups": [
+    "dynamicgood/dynamic",
+    "nadir/nadir",
+    "oblique/oblique"
+  ],
+  "previously_exposed_groups": [
+    "dynamicgood/dynamic",
+    "nadir/nadir",
+    "oblique/oblique"
+  ],
+  "gate": {
+    "passed": false,
+    "required_fresh_groups": 12,
+    "available_groups": 3,
+    "exposed_groups": 3,
+    "fresh_groups": [],
+    "fresh_group_count": 0
+  },
+  "grouping": "Entire released mode/folder retained together because verified trajectory and generation-batch identifiers are unavailable.",
+  "caveat": "Acquisition modes/folders are fallback grouping units, not verified trajectory or batch identities. No fresh footprint count is inferred from them.",
+  "consequence": "Do not train compact-v3 or run final inference unless a new independently audited data gate passes.",
+  "source_sha256": "425dfc6a5a616efb341267e70187983acb803a4d64759588acaa4d2e33973d8d",
+  "exposed_manifest": "reports/compact_dataset_v2.json",
+  "exposed_manifest_sha256": "1e841fc534e5da6bb7eb765c8ad4d42f7a6a1c36d41604a5c580e3336d235cdb",
+  "records_path": "runs/localization-v3/full_camera_inventory.jsonl.gz",
+  "records_sha256": "6269b8dc3a141fd937e76d5eecd3c486b9d5ecf9fe3a40b7fbc787701568df5f",
+  "training_started": false,
+  "final_test_started": false
+}

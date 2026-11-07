@@ -1,0 +1,772 @@
+{
+  "schema": "v113_independent_sealed_cone_replay",
+  "passed": true,
+  "track": "estimated_sun",
+  "calibration_or_final_access": false,
+  "matcher_calls": 0,
+  "renderer_calls": 0,
+  "fresh_pose_fits": 0,
+  "cone_degrees": 52.0,
+  "rotation_threshold_deg": 2.0,
+  "translation_fraction_threshold": 0.01,
+  "median_reference_range_m": 1941.2833636845344,
+  "cone_seal_sha256": "b65871d00a0c17e2a9e78b0c170c2d6387afb10f0dfba915ddc34e97e54e1310",
+  "cone_dispatch_sha256": "7bd3074cc5cc7fa2e295119a52a32e969a93573e16b753eb623f20ff931deed3",
+  "cone_publication_commit": "f9a13cca743515e4bd7944c21a5030f271ec14e5",
+  "v112_replay_sha256": "66b76e4e38ac9c1b9b13d11cea2a45d7273491d92de33e3f014d94e1f67aeeff",
+  "opaque_lineage": {
+    "prepared_sha256": "bdfd7109ed76667b9d0c1aa26f94f3d20f35b74b63a0b8a8bdf0fda8db9a46e0",
+    "request_sha256": "73c48b734923a10438d2ec7f99ce3ead3d9956f0043263cae9365e44c1f999c7",
+    "observation_sha256": {
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o00.exr": "ecda178b1ad998a5c52d414dddd410b4245b622a217a69472fcf7dbd3e9976ce",
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o01.exr": "5f429c64aa6e59f487e6592bcfc08a012fbfe465ffe6291caf1a6a504ae7ff2b",
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o02.exr": "de710379fc9242bd274849cd9f8b7cd24afafb4b8ea246fb74a4edd2ecfd392f",
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o03.exr": "236ca6d9d733dc82ac69a313115a166885d0aacc97e434bf947edc1bf3e3317f",
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o04.exr": "d423fa408eb2fc26f421115df25799232f852fe5ecae9984c1a1229d6f697911",
+      "runs/solar-secondary-acquisition-v112/blind-sentry/inputs/o05.exr": "6d48e45be2908f0fb62c72aaea4e20aefbe93fe186937ff3a43e2dfd6e8480a8"
+    },
+    "reference_table_sha256": "4bb56e6156573a32c6fe0e852cf2f1862190004a80c5a92ed96d6498c322d5f7",
+    "checkpoint_sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c"
+  },
+  "historical_truth_hashes": {
+    "publication_commit": "abfb1918b2bdddfa0a0ddb497a56c131810b127e",
+    "dispatch_sha256": "82d2a0cb780318cfa2303af9945caba1e1ff119c30b541febb5dd52b6fc267fd",
+    "rank_seal_sha256": "8e58355c7cac5cd9b8d4e965770ed3b4a05174a47030c0a87384dd33a92d526a",
+    "blind_complete_sha256": "8152d58875866ec1f8f40176aef013bba8a436cea47bae65072a2fb94194e307",
+    "watchdog_sha256": "9c029547a186a77654c9285d719abd1393e6abbaf37534dbd3a3ca80577d9160",
+    "scoring_index_sha256": "96435da6d0c81cc59c549ef2d089bd18ba8f28091aa0c1304b2f4a839a7a32a5",
+    "roster_sha256": "59ea302a5bd9f924dd03366ebe66b92b5458ea29a4abb47371ae205ae6e3826f",
+    "reference_geometry_sha256": "f7bf234659ebc520f9e5a1f0bf69e34c9aac23a6fb7aadc738876c960670fbad",
+    "query_geometry_sha256": "0ca927408c343c46e294954b57fa2fa25486091f1e331378dbc4d956d4511513"
+  },
+  "summary": {
+    "positive_renderer_replicates": 2,
+    "negative_renderer_replicates": 2,
+    "independent_positive_camera_pairs": 1,
+    "independent_negative_camera_pairs": 1,
+    "arms": {
+      "v112": {
+        "candidate_oracle_recall": 0,
+        "physical_candidate_oracle_recall": 0,
+        "positive_candidate_count": 12,
+        "positive_cone_feasible_candidates": 0,
+        "nonoverlap_candidate_count": 12,
+        "nonoverlap_cone_feasible_candidates": 1,
+        "raw_top1": {
+          "correct_top1": 0,
+          "positive_false_negatives": 2,
+          "wrong_positive_poses": 2,
+          "no_positive_pose": 0,
+          "raw_nonoverlap_outputs": 2
+        },
+        "compact_final": {
+          "correct_top1": 0,
+          "positive_false_negatives": 2,
+          "wrong_positive_poses": 0,
+          "no_positive_pose": 2,
+          "raw_nonoverlap_outputs": 0
+        }
+      },
+      "cone_v113": {
+        "candidate_oracle_recall": 0,
+        "physical_candidate_oracle_recall": 0,
+        "positive_candidate_count": 1,
+        "positive_cone_feasible_candidates": 1,
+        "nonoverlap_candidate_count": 3,
+        "nonoverlap_cone_feasible_candidates": 3,
+        "raw_top1": {
+          "correct_top1": 0,
+          "positive_false_negatives": 2,
+          "wrong_positive_poses": 1,
+          "no_positive_pose": 1,
+          "raw_nonoverlap_outputs": 2
+        },
+        "compact_final": {
+          "correct_top1": 0,
+          "positive_false_negatives": 2,
+          "wrong_positive_poses": 0,
+          "no_positive_pose": 2,
+          "raw_nonoverlap_outputs": 1
+        }
+      }
+    },
+    "paired_positive_changes": {
+      "oracle_correct": {
+        "gains": 0,
+        "losses": 0
+      },
+      "physical_oracle_correct": {
+        "gains": 0,
+        "losses": 0
+      },
+      "raw_top1": {
+        "gains": 0,
+        "losses": 0
+      },
+      "compact_final": {
+        "gains": 0,
+        "losses": 0
+      }
+    },
+    "gate": {
+      "both_positive_banks_contain_correct_pose": false,
+      "raw_nonoverlap_outputs_did_not_increase": true,
+      "compact_final_nonoverlap_outputs_did_not_increase": false,
+      "passed": false
+    }
+  },
+  "rows": [
+    {
+      "id": "r00",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 0,
+      "positive": true,
+      "v112": {
+        "candidate_count": 7,
+        "distinct_poses": 3,
+        "cone_feasible_count": 0,
+        "cone_feasible_distinct": 0,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 151.34252579635006,
+            "translation_error_m": 3642.5994293515814,
+            "off_nadir_deg": 133.8902569517709,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 151.34252579635006,
+            "translation_error_m": 3642.5994293515814,
+            "off_nadir_deg": 133.8902569517709,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 151.34252579635006,
+            "translation_error_m": 3642.5994293515814,
+            "off_nadir_deg": 133.8902569517709,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 51.63064404171461,
+            "translation_error_m": 4261.453619516169,
+            "off_nadir_deg": 60.62378437092008,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 164.26539516815728,
+            "translation_error_m": 3831.0247502164125,
+            "off_nadir_deg": 138.35065367023515,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 164.26539516815728,
+            "translation_error_m": 3831.0247502164125,
+            "off_nadir_deg": 138.35065367023515,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 164.26539516815728,
+            "translation_error_m": 3831.0247502164125,
+            "off_nadir_deg": 138.35065367023515,
+            "within_simulator_cone": false
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 151.34252579635006,
+          "translation_error_m": 3642.5994293515814,
+          "off_nadir_deg": 133.8902569517709,
+          "within_simulator_cone": false
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_v113": {
+        "candidate_count": 0,
+        "distinct_poses": 0,
+        "cone_feasible_count": 0,
+        "cone_feasible_distinct": 0,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [],
+        "empty_bank_reason": "no_post_filter_pose_candidates",
+        "raw_top1": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_bank_sha256": "b8585e590417b5e05850feec7608097b82bb5ddda43c423b68dcd6767ea5819a",
+      "v112_bank_sha256": "ed5a664b93bcd600cdb45ac6c167e3230dc8537cc044cba870ba578d5ca19b4d",
+      "cone_diagnostics": {
+        "schema": "solar_blind_cone_diagnostics_v113",
+        "cone_degrees": 52.0,
+        "initial_v73": {
+          "calls": 8,
+          "returned_poses": 0,
+          "iterations_requested": 1024,
+          "minimal_sets_executed": 1024,
+          "roots_evaluated": 1888,
+          "roots_rejected_off_nadir": 1730,
+          "lm_refits_rejected_off_nadir": 0
+        },
+        "native_v84": {
+          "native_ap3p": {
+            "calls": 24,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          },
+          "native_lm": {
+            "calls": 0,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          }
+        },
+        "pre_final_beam_poses": 0,
+        "pre_final_off_nadir_poses": 0,
+        "ordinary_final_off_nadir": null,
+        "ordinary_final_iterations_reported": 2000
+      },
+      "cone_elapsed_seconds": 8.30423712398624
+    },
+    {
+      "id": "r01",
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "replicate": 1,
+      "positive": true,
+      "v112": {
+        "candidate_count": 5,
+        "distinct_poses": 4,
+        "cone_feasible_count": 0,
+        "cone_feasible_distinct": 0,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 120.62802370528244,
+            "translation_error_m": 5184.872640725412,
+            "off_nadir_deg": 84.56041163523733,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 120.62802370528244,
+            "translation_error_m": 5184.872640725412,
+            "off_nadir_deg": 84.56041163523733,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 157.9639041774211,
+            "translation_error_m": 1846.7689071386892,
+            "off_nadir_deg": 76.41051534297351,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 128.59589398097293,
+            "translation_error_m": 1417.9637107553772,
+            "off_nadir_deg": 76.44213245234975,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 139.49426743121631,
+            "translation_error_m": 3054.786525021986,
+            "off_nadir_deg": 111.26400452188432,
+            "within_simulator_cone": false
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 120.62802370528244,
+          "translation_error_m": 5184.872640725412,
+          "off_nadir_deg": 84.56041163523733,
+          "within_simulator_cone": false
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_v113": {
+        "candidate_count": 1,
+        "distinct_poses": 1,
+        "cone_feasible_count": 1,
+        "cone_feasible_distinct": 1,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": false,
+            "rotation_error_deg": 31.599621198684876,
+            "translation_error_m": 1402.6814431872992,
+            "off_nadir_deg": 45.19691062415027,
+            "within_simulator_cone": true
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": 31.599621198684876,
+          "translation_error_m": 1402.6814431872992,
+          "off_nadir_deg": 45.19691062415027,
+          "within_simulator_cone": true
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_bank_sha256": "9f0e20d1fb8eb2557327160cfbd391f1e1ca36797e18da65e7e5d017091b6f6e",
+      "v112_bank_sha256": "bced76057d8cfd47cd2d3cd577d8d93a3857056a3264a202c4abc3d788ba8a17",
+      "cone_diagnostics": {
+        "schema": "solar_blind_cone_diagnostics_v113",
+        "cone_degrees": 52.0,
+        "initial_v73": {
+          "calls": 8,
+          "returned_poses": 1,
+          "iterations_requested": 1024,
+          "minimal_sets_executed": 1024,
+          "roots_evaluated": 1898,
+          "roots_rejected_off_nadir": 1782,
+          "lm_refits_rejected_off_nadir": 0
+        },
+        "native_v84": {
+          "native_ap3p": {
+            "calls": 24,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          },
+          "native_lm": {
+            "calls": 0,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          }
+        },
+        "pre_final_beam_poses": 1,
+        "pre_final_off_nadir_poses": 0,
+        "ordinary_final_off_nadir": null,
+        "ordinary_final_iterations_reported": 2000
+      },
+      "cone_elapsed_seconds": 12.05746782204369
+    },
+    {
+      "id": "r02",
+      "case_id": "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap",
+      "replicate": 0,
+      "positive": false,
+      "v112": {
+        "candidate_count": 8,
+        "distinct_poses": 7,
+        "cone_feasible_count": 1,
+        "cone_feasible_distinct": 1,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 76.7300870591237,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 76.73008705931062,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 86.02814914211298,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 86.02814914217915,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 86.02814914217915,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 102.88900628137748,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 106.04710787679414,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 25.584008528547976,
+            "within_simulator_cone": true
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": 76.7300870591237,
+          "within_simulator_cone": false
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_v113": {
+        "candidate_count": 1,
+        "distinct_poses": 1,
+        "cone_feasible_count": 1,
+        "cone_feasible_distinct": 1,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 25.584008528547976,
+            "within_simulator_cone": true
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": 25.584008528547976,
+          "within_simulator_cone": true
+        },
+        "compact_final": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": 101.2241798379377,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": null
+      },
+      "cone_bank_sha256": "ebdb3698d05e074f5aabbd3eb81877de2288355cabb8414184e113c63a0e87b7",
+      "v112_bank_sha256": "64141b09ba37a304ac0da2576e78444413cbeb74345112fa1c35c3a983aedfc6",
+      "cone_diagnostics": {
+        "schema": "solar_blind_cone_diagnostics_v113",
+        "cone_degrees": 52.0,
+        "initial_v73": {
+          "calls": 8,
+          "returned_poses": 1,
+          "iterations_requested": 1024,
+          "minimal_sets_executed": 1024,
+          "roots_evaluated": 1806,
+          "roots_rejected_off_nadir": 1690,
+          "lm_refits_rejected_off_nadir": 0
+        },
+        "native_v84": {
+          "native_ap3p": {
+            "calls": 24,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          },
+          "native_lm": {
+            "calls": 0,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          }
+        },
+        "pre_final_beam_poses": 1,
+        "pre_final_off_nadir_poses": 0,
+        "ordinary_final_off_nadir": true,
+        "ordinary_final_iterations_reported": 2000
+      },
+      "cone_elapsed_seconds": 12.825962648028508
+    },
+    {
+      "id": "r03",
+      "case_id": "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap",
+      "replicate": 1,
+      "positive": false,
+      "v112": {
+        "candidate_count": 4,
+        "distinct_poses": 3,
+        "cone_feasible_count": 0,
+        "cone_feasible_distinct": 0,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 62.725492331716055,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 80.19102267868575,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 80.19102269442686,
+            "within_simulator_cone": false
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 80.19102267868575,
+            "within_simulator_cone": false
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": 62.725492331716055,
+          "within_simulator_cone": false
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_v113": {
+        "candidate_count": 2,
+        "distinct_poses": 1,
+        "cone_feasible_count": 2,
+        "cone_feasible_distinct": 1,
+        "oracle_correct": false,
+        "physical_oracle_correct": false,
+        "candidate_metrics": [
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 46.35985414853401,
+            "within_simulator_cone": true
+          },
+          {
+            "pose_returned": true,
+            "correct": false,
+            "nonoverlap_output": true,
+            "rotation_error_deg": null,
+            "translation_error_m": null,
+            "off_nadir_deg": 46.35985414853401,
+            "within_simulator_cone": true
+          }
+        ],
+        "empty_bank_reason": null,
+        "raw_top1": {
+          "pose_returned": true,
+          "correct": false,
+          "nonoverlap_output": true,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": 46.35985414853401,
+          "within_simulator_cone": true
+        },
+        "compact_final": {
+          "pose_returned": false,
+          "correct": false,
+          "nonoverlap_output": false,
+          "rotation_error_deg": null,
+          "translation_error_m": null,
+          "off_nadir_deg": null,
+          "within_simulator_cone": false
+        },
+        "compact_final_reason": "ransac_failed"
+      },
+      "cone_bank_sha256": "c692747987ff9e26155ea51aff0c64bc73a10c235e687ae9fffed7b64cd87bcc",
+      "v112_bank_sha256": "39e7c40dcb3aa373bd4cfba08dfb8e4d6c7380b8ff7a9e63ebe50ebecc9b3f8c",
+      "cone_diagnostics": {
+        "schema": "solar_blind_cone_diagnostics_v113",
+        "cone_degrees": 52.0,
+        "initial_v73": {
+          "calls": 8,
+          "returned_poses": 2,
+          "iterations_requested": 1024,
+          "minimal_sets_executed": 1024,
+          "roots_evaluated": 1882,
+          "roots_rejected_off_nadir": 1738,
+          "lm_refits_rejected_off_nadir": 0
+        },
+        "native_v84": {
+          "native_ap3p": {
+            "calls": 24,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          },
+          "native_lm": {
+            "calls": 0,
+            "returned_poses": 0,
+            "off_nadir_poses": 0,
+            "invalid_poses": 0
+          }
+        },
+        "pre_final_beam_poses": 2,
+        "pre_final_off_nadir_poses": 0,
+        "ordinary_final_off_nadir": null,
+        "ordinary_final_iterations_reported": 2000
+      },
+      "cone_elapsed_seconds": 9.903466788993683
+    }
+  ],
+  "replay_source_sha256": "c5f2859f318d11dd696acd5777add5d9bebd663d39c0e2fea169c4d90fadde88"
+}

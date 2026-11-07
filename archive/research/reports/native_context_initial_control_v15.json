@@ -1,0 +1,240 @@
+{
+  "scope": "Actual initial-model software/equivalence controls; zero trained updates and no learned gain.",
+  "protocol": {
+    "scope": "Untrained context software/control gate only; no new trained result.",
+    "source_sha256": {
+      "geometry_warp_native_v11.py": "f56ff3c76cda37e07d13fc6a411853306834c8a194a9e8778dbee1cc62139543",
+      "evaluate_geometry_warp_v11.py": "4c03b185e32d2a95c30b36df3e6753c3646f139a66f700907115007157405d4f",
+      "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+      "coarse_pipeline_v5.py": "1cd5bcdfd196980b637a701f64ddb2e57cf1ddfd60cb435aaac95b48b5a49556",
+      "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+      "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+      "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+      "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+      "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+      "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+      "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+      "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+      "global_context_v15.py": "3ebbb0576f8bffde112a24f8a5f3e7d4271af8d2af1cb1e35462879bd0388b3d",
+      "control_global_context_v15.py": "cab73883935d5275843b1a9d013679014166c96ff86e31c1579afcd5c6920ec0"
+    },
+    "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+    "baseline_results_sha256": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97",
+    "case_ids": [
+      "nadir/nadir/2515/lights-0-0",
+      "nadir/nadir/2515/lights-0-1",
+      "nadir/nadir/2515/lights-0-2",
+      "nadir/nadir/2515/lights-1-0",
+      "nadir/nadir/2515/lights-1-1",
+      "nadir/nadir/2515/lights-1-2",
+      "nadir/nadir/2515/lights-2-0",
+      "nadir/nadir/2515/lights-2-1",
+      "nadir/nadir/2515/lights-2-2",
+      "nadir/nadir/2518/lights-0-0",
+      "nadir/nadir/2518/lights-0-1",
+      "nadir/nadir/2518/lights-0-2",
+      "nadir/nadir/2518/lights-1-0",
+      "nadir/nadir/2518/lights-1-1",
+      "nadir/nadir/2518/lights-1-2",
+      "nadir/nadir/2518/lights-2-0",
+      "nadir/nadir/2518/lights-2-1",
+      "nadir/nadir/2518/lights-2-2",
+      "nadir/nadir/2506/lights-0-0",
+      "nadir/nadir/2506/lights-0-1",
+      "nadir/nadir/2506/lights-0-2",
+      "nadir/nadir/2506/lights-1-0",
+      "nadir/nadir/2506/lights-1-1",
+      "nadir/nadir/2506/lights-1-2",
+      "nadir/nadir/2506/lights-2-0",
+      "nadir/nadir/2506/lights-2-1",
+      "nadir/nadir/2506/lights-2-2",
+      "oblique/oblique/2994/lights-0-0",
+      "oblique/oblique/2994/lights-0-1",
+      "oblique/oblique/2994/lights-0-2",
+      "oblique/oblique/2994/lights-1-0",
+      "oblique/oblique/2994/lights-1-1",
+      "oblique/oblique/2994/lights-1-2",
+      "oblique/oblique/2994/lights-2-0",
+      "oblique/oblique/2994/lights-2-1",
+      "oblique/oblique/2994/lights-2-2",
+      "dynamicgood/dynamic/1458/lights-0-0",
+      "dynamicgood/dynamic/1458/lights-0-1",
+      "dynamicgood/dynamic/1458/lights-0-2",
+      "dynamicgood/dynamic/1458/lights-1-0",
+      "dynamicgood/dynamic/1458/lights-1-1",
+      "dynamicgood/dynamic/1458/lights-1-2",
+      "dynamicgood/dynamic/1458/lights-2-0",
+      "dynamicgood/dynamic/1458/lights-2-1",
+      "dynamicgood/dynamic/1458/lights-2-2",
+      "dynamicgood/dynamic/1092/lights-0-0",
+      "dynamicgood/dynamic/1092/lights-0-1",
+      "dynamicgood/dynamic/1092/lights-0-2",
+      "dynamicgood/dynamic/1092/lights-1-0",
+      "dynamicgood/dynamic/1092/lights-1-1",
+      "dynamicgood/dynamic/1092/lights-1-2",
+      "dynamicgood/dynamic/1092/lights-2-0",
+      "dynamicgood/dynamic/1092/lights-2-1",
+      "dynamicgood/dynamic/1092/lights-2-2",
+      "dynamicgood/dynamic/942/lights-0-0",
+      "dynamicgood/dynamic/942/lights-0-1",
+      "dynamicgood/dynamic/942/lights-0-2",
+      "dynamicgood/dynamic/942/lights-1-0",
+      "dynamicgood/dynamic/942/lights-1-1",
+      "dynamicgood/dynamic/942/lights-1-2",
+      "dynamicgood/dynamic/942/lights-2-0",
+      "dynamicgood/dynamic/942/lights-2-1",
+      "dynamicgood/dynamic/942/lights-2-2",
+      "dynamicgood/dynamic/1407/lights-0-0",
+      "dynamicgood/dynamic/1407/lights-0-1",
+      "dynamicgood/dynamic/1407/lights-0-2",
+      "dynamicgood/dynamic/1407/lights-1-0",
+      "dynamicgood/dynamic/1407/lights-1-1",
+      "dynamicgood/dynamic/1407/lights-1-2",
+      "dynamicgood/dynamic/1407/lights-2-0",
+      "dynamicgood/dynamic/1407/lights-2-1",
+      "dynamicgood/dynamic/1407/lights-2-2"
+    ],
+    "input_sha256": {
+      "data/localization-v5-development/c1c8c67a309a9271.npz": "8240a6cc3a0152a5afa4d2a930145c68effdb5686d52e69d889af55e2431e4ba",
+      "data/localization-v5-development/565f9ab836b6755f.npz": "2aacba29076f2ab06610e2ef91784ddcab1b95114ef51354bff298a917f1520f",
+      "data/localization-v5-development/2c35800264a8b7d9.npz": "923bce0ddca39348de028e7887237e888caf9d0e2b7398e4c32b18ece99116f0",
+      "data/localization-v5-development/fe92d4ce634c1945.npz": "74c0e39b765eaaa66580a05caaa1a69c924c3d6ffa7dc1afaffb327023c0dda9",
+      "data/localization-v5-development/c4e83e24dbf8a7e8.npz": "5e6b412f4991bb9d7581ee1b5f7a3153525ab7ac330f5b1719c1d151c5e45d48",
+      "data/localization-v5-development/0123318aeb0ecade.npz": "6814b5384760d1d670ccb5ddcd971ff916702bc1206e68bbbec1baa5bc875026",
+      "data/localization-v5-development/0ba1bbc9b602cfe5.npz": "e4ae23ebb7e3309ec50b4808afb1fc58a50a8599a887e9c1ea74bd2c800914c2",
+      "data/localization-v5-development/6323e54b1609cea2.npz": "77c444ef1539c11adc6dbca2164e53289d6f7f640b3c91af6af291587ef4e7c4"
+    },
+    "variant": "cross_context",
+    "context_parameters": 25664,
+    "total_with_frozen_encoder": 53936,
+    "total_with_separate_pair_fine": 89169,
+    "completed_optimizer_steps": 0,
+    "query_truth": "Scoring/equivalence check only; no query geometry in matching.",
+    "calibration_or_test_pixels_loaded": 0,
+    "cpu_threads": 2,
+    "timing": "Concurrent local control; no isolated latency claim."
+  },
+  "summary": {
+    "passed": true,
+    "cases": 72,
+    "correct": 54,
+    "strict": 16,
+    "estimated": 57,
+    "results_sha256": "a56f3565d9031973f01eff02db84d3bf15b696c4a6f292df1024587d7da1737c",
+    "initial_checkpoint_sha256": "40d43e25189d2afd8bc52f57536d7ed7cc5d669babd2bfaa9d354905f853651c",
+    "exact_native_and_pose_equivalence": true,
+    "completed_optimizer_steps": 0,
+    "scope": "Untrained context software/control gate only; no new trained result."
+  },
+  "controls": {
+    "passed": true,
+    "rotation_matrix_error": 0.0011713706505313156,
+    "translation_error_m": 0.007883176418447732,
+    "blank_pose_null": true,
+    "estimated_cam2world": [
+      [
+        -0.00010343345662110312,
+        -0.9999998323176501,
+        0.000569794868207394,
+        -0.0050940333662419235
+      ],
+      [
+        0.9999998192883449,
+        -0.00010377086574205295,
+        -0.0005921611984675286,
+        0.006016017407111662
+      ],
+      [
+        0.0005922202272793163,
+        0.000569733515959186,
+        0.9999996623394047,
+        5.3188958570871137e-05
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "geometry_history": [
+      {
+        "iteration": 1,
+        "input_estimated_pose": [
+          [
+            4.048138365292337e-05,
+            -0.9999999934250581,
+            0.00010728998741142345,
+            -0.001003090057849626
+          ],
+          [
+            0.9999998286496898,
+            4.0418718626626764e-05,
+            -0.0005840093475770076,
+            0.005967432514206533
+          ],
+          [
+            0.0005840050072133673,
+            0.000107313610533707,
+            0.9999998237109546,
+            -0.00015916157525097674
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "supported_points": 512,
+        "estimated": true,
+        "pose_info": {
+          "inliers": 505,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 193.09387859921597
+        }
+      },
+      {
+        "iteration": 2,
+        "input_estimated_pose": [
+          [
+            2.1053765778052533e-06,
+            -0.999999957158352,
+            -0.0002927095178048879,
+            0.0026261076525790628
+          ],
+          [
+            0.9999998003748758,
+            1.9204249287220105e-06,
+            0.000631859573471863,
+            -0.006184927831062614
+          ],
+          [
+            -0.0006318589842753027,
+            -0.00029271078967506043,
+            0.9999997575372795,
+            -0.0009866313161808193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "supported_points": 512,
+        "estimated": true,
+        "pose_info": {
+          "inliers": 502,
+          "reason": null,
+          "clipped_squared_reprojection_cost": 207.3552892533051
+        }
+      }
+    ],
+    "image_seed": 733
+  },
+  "repository_tests_passed": 201,
+  "optional_skipped": 4,
+  "software_smoke": "reports/native_context_smoke_v15.json"
+}

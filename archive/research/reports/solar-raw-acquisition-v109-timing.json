@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "phase": "timing",
+  "output": "runs/solar-raw-acquisition-v109-timing",
+  "cap_seconds": 240,
+  "split": "model_selection",
+  "calibration_or_final_access": false,
+  "purpose": "same-physical-Sun scene-linear transport and renderer repeatability only",
+  "query_truth_in_inference": false,
+  "native_shape": [
+    512,
+    512
+  ],
+  "cpu_threads": 2,
+  "renderer_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "renderer_build": "8bf95cbd38d1",
+  "cpu_only": true,
+  "radiometric_units": "Blender relative scene-linear RGB",
+  "exr_float_bits": 32,
+  "fixed_black_space_spp": true,
+  "denoising": false,
+  "max_bounces": 2,
+  "extended_256_spp": false,
+  "timing_basis": null,
+  "source_sha256": {
+    "render_solar_clean_radiance_v106.py": "dd3aeceacf5f901a2092f21596b5659e75fe7b3fa4171ef53e85073b615998bc",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "control_solar_png_dither_v105.py": "9bbf931ad259a871737a5a710be41fc56f1931c7a5327563ccd400a07000f61c",
+    "render_solar_development_v67.py": "09f3522baf635420a3784def3d46462f418d756c2de9bb893e70e85fefee2eb9",
+    "render_solar_completion_v68.py": "225531c6eed146863073fbdaec65a3c72a8f1939703495a49581cbcabcdaceba",
+    "render_solar_data_v65.py": "e66d7561fd1a5d0d863fa882d532ff4e8f40a24feb3ee956419cdec6803a9ea3",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "north_camera_scene_v59.py": "169a9319d6b611d7ff40a34c5e20500e378acf990d6f7fa98fae1cb8570c3845",
+    "north_camera_correspondences_v59.py": "de5f20027b35b1cba82073b6aa665483ab4c8d2564e52a2a76770c89716ed1f8",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+    "blender_camera_control_v31.py": "5c77ed2d97aaac47c1d0b556c977def5e751cc6b2a6b4d95e3c8b00ac4fa632d",
+    "render_solar_raw_acquisition_v109.py": "9e749f9d0362601b3cf049c96314adc8871d524e8efcdfc5b2df33ca92b80fc3"
+  },
+  "metadata_sha256": {
+    "reports/solar-clean-rerender-cohort-v106.json": "7510450dfdbaf23f1e5973c5b9adae026834c92349de2d1158f95886acf5b80b",
+    "reports/solar-clean-signal-protocol-v107.json": "6cb071a43be2cc50ee5d3c70c82c111847fe03e55dd5a472c5716b04945aa3cd",
+    "reports/solar_development_admission_v67.json": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+    "reports/solar_full_geometry_audit_v70.json": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "reports/solar_reference_contract_v80.json": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98"
+  },
+  "fixtures": [
+    "black_sun_off",
+    "blocked_with_reflector",
+    "unblocked",
+    "unblocked_half"
+  ],
+  "camera_mesh_identity": [
+    {
+      "key": "u061/reference/light-17",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+      "mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+      "archive_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/light-17.png",
+      "archive_sha256": "0c6a332bcf1f490e826fc21447e8a51a065789ecc25a5eb1dfd40e3e090a60db",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+      "archive_geometry_sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+      "sun_enu": [
+        -0.6591198737567632,
+        -0.7509369789798063,
+        0.04067733545293575
+      ]
+    },
+    {
+      "key": "u061/query/light-17",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+      "mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+      "archive_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/light-17.png",
+      "archive_sha256": "9772e53178316dcee8c2cd54abc1595a4a2580857d112818732b6b60454e4c96",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/geometry.npz",
+      "archive_geometry_sha256": "78ac7e2ef00b58039ee65fb71c9692602f9e45cb1a4875ef8ca48fa95ecaf595",
+      "sun_enu": [
+        -0.6591198737567632,
+        -0.7509369789798063,
+        0.04067733545293575
+      ]
+    }
+  ],
+  "render_jobs": [
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20262707
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20262716
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20262807
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20262816
+    }
+  ]
+}

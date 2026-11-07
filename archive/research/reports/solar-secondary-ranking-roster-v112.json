@@ -1,0 +1,1626 @@
+{
+  "schema": "solar_secondary_ranking_admission_reconciled_v112",
+  "metadata_only": true,
+  "prepared_only": true,
+  "compute_admitted": false,
+  "reservations_made": 0,
+  "automatic_execution": false,
+  "archive_images_opened": 0,
+  "terrain_payloads_opened": 0,
+  "renderer_calls": 0,
+  "matcher_calls": 0,
+  "calibration_or_final_access": false,
+  "source_sha256": "c4da4886217f181f10f19c14d6c2f1a9f30b395727de6ce8c962b36549abf344",
+  "predecessor_sha256": {
+    "reports/solar_development_admission_v67.json": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+    "reports/solar_full_geometry_audit_v70.json": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+    "runs/solar-reference-v80-full/case-assets/manifest.json": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "runs/solar-raw-acquisition-v109-study/COMPLETE.json": "4ce6d2b7364722205f1b067bbb4d6fb4a29c3e3ae224350a92aca0f4c5a31067",
+    "reports/solar-preselection-compact-controls-cost-pilot-v86.json": "9e14f9c1b95eb12a796ec0533e8c9e50af292a86895e763912a91f786f6b0912",
+    "reports/solar-secondary-atlas-v111/solar_secondary_atlas_v111.py": "6d8c929b4302fa598fe3380f0c547bef74228c08f1605e2fb3b1854f8c3829d7",
+    "reports/solar-low-frequency-ranking-v111/solar_low_frequency_ranking_v111.py": "6cd99575d76011c968c587870372fd225eeb83dd47551eef9c0de7bc2b597834"
+  },
+  "reused_source_sha256": {
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "render_solar_data_v65.py": "e66d7561fd1a5d0d863fa882d532ff4e8f40a24feb3ee956419cdec6803a9ea3",
+    "north_camera_correspondences_v59.py": "de5f20027b35b1cba82073b6aa665483ab4c8d2564e52a2a76770c89716ed1f8",
+    "verify_solar_development_v68.py": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243",
+    "render_solar_raw_acquisition_v109.py": "9e749f9d0362601b3cf049c96314adc8871d524e8efcdfc5b2df33ca92b80fc3",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_eval_data_v69.py": "7ba5ccbbf65378f1a3af0ed6c3e974be73f104a245b6bf7b9c002c1851be5f15",
+    "solar_evaluation_v70.py": "ab768b2484251841914d64e54f97f10bfe15907d8def25b7726022a2041c3ad6",
+    "solar_assignment_v63.py": "ebb84f4e04a1b037f427bdba4266fa776fdb1c32f7ba0518eaa24c5dbc592861",
+    "solar_frontend_v63.py": "cdbd20fd07b3d8582e82d27e56b10295e7f2c5671b21927aa74790a72a4407c0",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54"
+  },
+  "scope": "Four existing model-selection terrains and fresh camera/lighting exposures. No new terrain generalization.",
+  "old_seed_camera_replay_passed": true,
+  "camera_seed": 20261105,
+  "camera_namespace": "solar-secondary-camera-v112",
+  "previous_acquisition_deadline_expired": true,
+  "previous_acquisition_deadline_utc": "2026-11-03T22:42:36.341288+00:00",
+  "excluded_units": [
+    13,
+    25,
+    27,
+    61
+  ],
+  "excluded_entire_terrain_groups": [
+    "np31-r0-c4",
+    "np31-r1-c0",
+    "np31-r3-c3"
+  ],
+  "endpoint_selection": "First four lexicographic historically eligible model-selection groups after removing audit terrains. No substitutions.",
+  "endpoints": [
+    {
+      "endpoint": "np31-r0-c7",
+      "split": "model_selection",
+      "site": {
+        "component": "np31-r0-c7",
+        "sector": "projected-strip-3",
+        "x": 105005.0,
+        "y": -60005.0,
+        "centre_native_row": 27640,
+        "centre_native_column": 32140,
+        "split": "model_selection",
+        "native_window": [
+          26616,
+          31116,
+          2049,
+          2049
+        ],
+        "centre_latitude_deg": 86.01324107216145,
+        "centre_longitude_deg": 60.25423727924823
+      },
+      "map_mesh": "data/north-render-v31/development-v35/np31-r0-c7/mesh.npz",
+      "map_mesh_sha256": "b652625da85ec34a0e264f836c5ed7ad3ddf7100f6c8ea4acadd3cdf01e3343c",
+      "body_fixed_xy_bounds": [
+        49671.23023640046,
+        94601.75404567375,
+        70169.59255228256,
+        115031.92702551723
+      ],
+      "historical_units": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "camera_pair": {
+        "component": "np31-r0-c7",
+        "split": "model_selection",
+        "family": "training_motion",
+        "pair_index": 0,
+        "seed_sha256": "be079f08fef3b3f93edd2428a74828ae09b8c3702c770e5ef5e43eb65e858b46",
+        "relative_roll_parameter_degrees": -11.46847733699782,
+        "reference": {
+          "position": [
+            27.760709851339726,
+            148.1053367614242,
+            1832.5537473103805
+          ],
+          "target": [
+            11.133618197003784,
+            16.53436364593736,
+            0.0
+          ],
+          "roll_degrees": 8.743643158489498,
+          "cam2world": [
+            [
+              0.9884364645614274,
+              -0.15136532560747043,
+              -0.009049515404175344,
+              27.760709851339726
+            ],
+            [
+              -0.15162347333950227,
+              -0.9858409799642863,
+              -0.0716092490920049,
+              148.1053367614242
+            ],
+            [
+              0.0019177741710636534,
+              0.07215331196002032,
+              -0.9973917092674417,
+              1832.5537473103805
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "query": {
+          "position": [
+            -203.77138729725883,
+            295.7016432404193,
+            1634.8456788701496
+          ],
+          "target": [
+            -138.3483212369305,
+            -125.21373023630167,
+            0.0
+          ],
+          "roll_degrees": -2.7248341785083223,
+          "cam2world": [
+            [
+              0.9985441163741534,
+              0.03755030381439284,
+              0.038724957559798115,
+              -203.77138729725883
+            ],
+            [
+              0.046040286236144,
+              -0.9673708172144215,
+              -0.24914653127265543,
+              295.7016432404193
+            ],
+            [
+              0.02810586589762536,
+              0.25056671104787476,
+              -0.9676912646173857,
+              1634.8456788701496
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "lighting": [
+        {
+          "index": 8,
+          "hour_angle_deg": -26.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            0.4421371289312698,
+            -0.8925758699995332,
+            0.0884481515634443
+          ],
+          "training_allowed": true
+        },
+        {
+          "index": 23,
+          "hour_angle_deg": 86.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            -0.9975169819076923,
+            -0.06340252852001572,
+            0.030659259336083107
+          ],
+          "training_allowed": false
+        }
+      ]
+    },
+    {
+      "endpoint": "np31-r3-c2",
+      "split": "model_selection",
+      "site": {
+        "component": "np31-r3-c2",
+        "sector": "projected-strip-1",
+        "x": -44995.0,
+        "y": 29995.0,
+        "centre_native_row": 18640,
+        "centre_native_column": 17140,
+        "split": "model_selection",
+        "native_window": [
+          17616,
+          16116,
+          2049,
+          2049
+        ],
+        "centre_latitude_deg": 88.21682071057447,
+        "centre_longitude_deg": 236.31140178494468
+      },
+      "map_mesh": "data/north-render-v31/development-v35/np31-r3-c2/mesh.npz",
+      "map_mesh_sha256": "bdd379dcad5fb9d0e9524ba32f1c5a78a010d25a500b2f734958a792fb1628cf",
+      "body_fixed_xy_bounds": [
+        -40233.61149263074,
+        -55241.38132584343,
+        -19739.16911491816,
+        -34736.00154893711
+      ],
+      "historical_units": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "camera_pair": {
+        "component": "np31-r3-c2",
+        "split": "model_selection",
+        "family": "unseen_roll",
+        "pair_index": 0,
+        "seed_sha256": "a8db9fe3be81673dbd4908f38bd782cb972cce47f5e123052ea822870cf034fc",
+        "relative_roll_parameter_degrees": 50.232403934861026,
+        "reference": {
+          "position": [
+            143.55762394859886,
+            94.23303312767845,
+            1829.6686272652246
+          ],
+          "target": [
+            -70.33081067827234,
+            47.23662380915158,
+            0.0
+          ],
+          "roll_degrees": 17.289840970054236,
+          "cam2world": [
+            [
+              0.9492356526309325,
+              -0.2923679949594004,
+              -0.11607166449115687,
+              143.55762394859886
+            ],
+            [
+              -0.2971089092711106,
+              -0.9545029366792697,
+              -0.02550372330427918,
+              94.23303312767845
+            ],
+            [
+              -0.10333427217558869,
+              0.05869496906950609,
+              -0.9929133541250571,
+              1829.6686272652246
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "query": {
+          "position": [
+            -174.0512757207943,
+            -207.83128804005096,
+            2248.042113860273
+          ],
+          "target": [
+            123.05055243330781,
+            -120.17214327974027,
+            0.0
+          ],
+          "roll_degrees": 67.52224490491525,
+          "cam2world": [
+            [
+              0.3837055625612615,
+              -0.9141275393699305,
+              0.13092319513753795,
+              -174.0512757207943
+            ],
+            [
+              -0.92333837974936,
+              -0.3820393578663704,
+              0.038628558384673085,
+              -207.83128804005096
+            ],
+            [
+              0.014706384374569594,
+              -0.1357084035958251,
+              -0.9906396678167598,
+              2248.042113860273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "lighting": [
+        {
+          "index": 8,
+          "hour_angle_deg": -26.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            0.4421371289312698,
+            -0.8953166771422841,
+            0.0540629896631011
+          ],
+          "training_allowed": true
+        },
+        {
+          "index": 23,
+          "hour_angle_deg": 86.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            -0.9975169819076923,
+            -0.0645344992350436,
+            0.028198744905593973
+          ],
+          "training_allowed": false
+        }
+      ]
+    },
+    {
+      "endpoint": "np31-r3-c5",
+      "split": "model_selection",
+      "site": {
+        "component": "np31-r3-c5",
+        "sector": "projected-strip-2",
+        "x": 45005.0,
+        "y": 29995.0,
+        "centre_native_row": 18640,
+        "centre_native_column": 26140,
+        "split": "model_selection",
+        "native_window": [
+          17616,
+          25116,
+          2049,
+          2049
+        ],
+        "centre_latitude_deg": 88.21654637035665,
+        "centre_longitude_deg": 123.68272210160617
+      },
+      "map_mesh": "data/north-render-v31/development-v35/np31-r3-c5/mesh.npz",
+      "map_mesh_sha256": "f4601e66df29f54727a72c31821481ab3cfa675787b98228093cba8cee13086e",
+      "body_fixed_xy_bounds": [
+        -40202.83319133232,
+        34733.45864785086,
+        -19733.562397184458,
+        55199.45513508453
+      ],
+      "historical_units": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "camera_pair": {
+        "component": "np31-r3-c5",
+        "split": "model_selection",
+        "family": "training_motion",
+        "pair_index": 0,
+        "seed_sha256": "ac154dededf5e3ddbc35f639e17423f7c4034ba7730716cc18d30e934588a7b8",
+        "relative_roll_parameter_degrees": -19.13485997349151,
+        "reference": {
+          "position": [
+            57.44152864763444,
+            56.82575059639481,
+            1361.37256230993
+          ],
+          "target": [
+            70.70033015751125,
+            5.185333674952503,
+            0.0
+          ],
+          "roll_degrees": 11.53862076172092,
+          "cam2world": [
+            [
+              0.9796697933620997,
+              -0.2003806065259153,
+              0.009731829333020534,
+              57.44152864763444
+            ],
+            [
+              -0.19988467657084788,
+              -0.9790860210024863,
+              -0.037903555897653055,
+              56.82575059639481
+            ],
+            [
+              0.017123435579003008,
+              0.03518772521526907,
+              -0.9992340126057292,
+              1361.37256230993
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "query": {
+          "position": [
+            372.31013803477447,
+            -324.93170319278335,
+            1573.8415566410513
+          ],
+          "target": [
+            18.97994753788882,
+            38.30773856052605,
+            0.0
+          ],
+          "roll_degrees": -7.5962392117705875,
+          "cam2world": [
+            [
+              0.9735125822431828,
+              0.08127998477554273,
+              -0.21369795574384381,
+              372.31013803477447
+            ],
+            [
+              0.1289618238801977,
+              -0.9670080836395036,
+              0.21969117906130767,
+              -324.93170319278335
+            ],
+            [
+              -0.18879115497210977,
+              -0.24143100515621896,
+              -0.9518765516355335,
+              1573.8415566410513
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "lighting": [
+        {
+          "index": 8,
+          "hour_angle_deg": -26.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            0.4421371289312698,
+            -0.8953164182708538,
+            0.0540672765641399
+          ],
+          "training_allowed": true
+        },
+        {
+          "index": 23,
+          "hour_angle_deg": 86.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            -0.9975169819076923,
+            -0.06453436421476338,
+            0.028199053905492506
+          ],
+          "training_allowed": false
+        }
+      ]
+    },
+    {
+      "endpoint": "np31-r4-c1",
+      "split": "model_selection",
+      "site": {
+        "component": "np31-r4-c1",
+        "sector": "projected-strip-0",
+        "x": -74995.0,
+        "y": 59995.0,
+        "centre_native_row": 15640,
+        "centre_native_column": 14140,
+        "split": "model_selection",
+        "native_window": [
+          14616,
+          13116,
+          2049,
+          2049
+        ],
+        "centre_latitude_deg": 86.8336153398115,
+        "centre_longitude_deg": 231.34065759934236
+      },
+      "map_mesh": "data/north-render-v31/development-v35/np31-r4-c1/mesh.npz",
+      "map_mesh_sha256": "8aa3aabee7337ea3b80f5b7241be97f6c661136ef91631f1e3559441b9f181d0",
+      "body_fixed_xy_bounds": [
+        -70131.83911074242,
+        -85193.45676141971,
+        -49721.95783595694,
+        -64635.109164081914
+      ],
+      "historical_units": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "camera_pair": {
+        "component": "np31-r4-c1",
+        "split": "model_selection",
+        "family": "unseen_roll",
+        "pair_index": 0,
+        "seed_sha256": "83f475e2dfbc2e659ecf5bc67088b8dbfd35de99e7aa7f68c15054b69995b45d",
+        "relative_roll_parameter_degrees": 36.32567618191525,
+        "reference": {
+          "position": [
+            -14.135264599864769,
+            80.26107039255527,
+            1195.6243046208629
+          ],
+          "target": [
+            -9.70872849585254,
+            63.258454960838435,
+            0.0
+          ],
+          "roll_degrees": -5.594504399886837,
+          "cam2world": [
+            [
+              0.9952350665004969,
+              0.09743438042478154,
+              0.003701880466795682,
+              -14.135264599864769
+            ],
+            [
+              0.09747758503303386,
+              -0.9951361393022675,
+              -0.014219165612150059,
+              80.26107039255527
+            ],
+            [
+              0.00229843944430833,
+              0.014512262601573947,
+              -0.9998920498785375,
+              1195.6243046208629
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "query": {
+          "position": [
+            260.22300606225076,
+            114.32166984557858,
+            1472.5365467461065
+          ],
+          "target": [
+            15.785696263103887,
+            103.17649728432349,
+            0.0
+          ],
+          "roll_degrees": 30.73117178202841,
+          "cam2world": [
+            [
+              0.8485955834977534,
+              -0.5030614305019663,
+              -0.16375204673353724,
+              260.22300606225076
+            ],
+            [
+              -0.5109964016121299,
+              -0.8595504242038908,
+              -0.007466310358282101,
+              114.32166984557858
+            ],
+            [
+              -0.13699712846465825,
+              0.09001258463252057,
+              -0.9864732745493977,
+              1472.5365467461065
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "fov_degrees": 60.0,
+          "intrinsics": [
+            [
+              443.4050067376327,
+              0.0,
+              255.5
+            ],
+            [
+              0.0,
+              443.4050067376327,
+              255.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "lighting": [
+        {
+          "index": 8,
+          "hour_angle_deg": -26.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            0.4421371289312698,
+            -0.8937507551720814,
+            0.07565941349064212
+          ],
+          "training_allowed": true
+        },
+        {
+          "index": 23,
+          "hour_angle_deg": 86.25,
+          "subsolar_latitude_deg": 1.5,
+          "sun_enu": [
+            -0.9975169819076923,
+            -0.0638350008895968,
+            0.029748335536526754
+          ],
+          "training_allowed": false
+        }
+      ]
+    }
+  ],
+  "render_jobs": [
+    {
+      "view_id": "v112/np31-r0-c7/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r0-c7",
+      "light": 8,
+      "replicate": 0,
+      "seed": 1398173633,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r0-c7/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r0-c7",
+      "light": 8,
+      "replicate": 1,
+      "seed": 1040155946,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r0-c7/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r0-c7",
+      "light": 8,
+      "replicate": 0,
+      "seed": 569386599,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r0-c7/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r0-c7",
+      "light": 8,
+      "replicate": 1,
+      "seed": 1609287111,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r0-c7/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r0-c7",
+      "light": 23,
+      "replicate": 0,
+      "seed": 582918574,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r0-c7/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r0-c7",
+      "light": 23,
+      "replicate": 1,
+      "seed": 1809275429,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r3-c2",
+      "light": 8,
+      "replicate": 0,
+      "seed": 1028248584,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r3-c2",
+      "light": 8,
+      "replicate": 1,
+      "seed": 861564140,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r3-c2",
+      "light": 8,
+      "replicate": 0,
+      "seed": 2134012370,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r3-c2",
+      "light": 8,
+      "replicate": 1,
+      "seed": 991489179,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r3-c2",
+      "light": 23,
+      "replicate": 0,
+      "seed": 1711114564,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c2/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r3-c2",
+      "light": 23,
+      "replicate": 1,
+      "seed": 27183308,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r3-c5",
+      "light": 8,
+      "replicate": 0,
+      "seed": 73477926,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r3-c5",
+      "light": 8,
+      "replicate": 1,
+      "seed": 1792685014,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r3-c5",
+      "light": 8,
+      "replicate": 0,
+      "seed": 1488769607,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r3-c5",
+      "light": 8,
+      "replicate": 1,
+      "seed": 1702888413,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r3-c5",
+      "light": 23,
+      "replicate": 0,
+      "seed": 829700356,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r3-c5/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r3-c5",
+      "light": 23,
+      "replicate": 1,
+      "seed": 304411351,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r4-c1",
+      "light": 8,
+      "replicate": 0,
+      "seed": 1765903078,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/reference/light-08",
+      "role": "reference",
+      "endpoint": "np31-r4-c1",
+      "light": 8,
+      "replicate": 1,
+      "seed": 671448445,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r4-c1",
+      "light": 8,
+      "replicate": 0,
+      "seed": 1309843961,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/query/light-08",
+      "role": "query",
+      "endpoint": "np31-r4-c1",
+      "light": 8,
+      "replicate": 1,
+      "seed": 987123642,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r4-c1",
+      "light": 23,
+      "replicate": 0,
+      "seed": 1766760473,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    },
+    {
+      "view_id": "v112/np31-r4-c1/query/light-23",
+      "role": "query",
+      "endpoint": "np31-r4-c1",
+      "light": 23,
+      "replicate": 1,
+      "seed": 1454842047,
+      "samples_per_pixel": 64,
+      "source": "black_space_float32_combined"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "v112-np31-r0-c7-l08-08-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r0-c7",
+      "query_endpoint": "np31-r0-c7",
+      "reference_view_id": "v112/np31-r0-c7/reference/light-08",
+      "query_view_id": "v112/np31-r0-c7/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r0-c7-l08-08-to-np31-r3-c2-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r0-c7",
+      "query_endpoint": "np31-r3-c2",
+      "reference_view_id": "v112/np31-r0-c7/reference/light-08",
+      "query_view_id": "v112/np31-r3-c2/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r0-c7-l08-08-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            49671.23023640046,
+            94601.75404567375,
+            70169.59255228256,
+            115031.92702551723
+          ],
+          [
+            -40233.61149263074,
+            -55241.38132584343,
+            -19739.16911491816,
+            -34736.00154893711
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r0-c7-l08-23-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r0-c7",
+      "query_endpoint": "np31-r0-c7",
+      "reference_view_id": "v112/np31-r0-c7/reference/light-08",
+      "query_view_id": "v112/np31-r0-c7/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r0-c7",
+      "query_endpoint": "np31-r3-c2",
+      "reference_view_id": "v112/np31-r0-c7/reference/light-08",
+      "query_view_id": "v112/np31-r3-c2/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r0-c7-l08-23-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            49671.23023640046,
+            94601.75404567375,
+            70169.59255228256,
+            115031.92702551723
+          ],
+          [
+            -40233.61149263074,
+            -55241.38132584343,
+            -19739.16911491816,
+            -34736.00154893711
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r3-c2-l08-08-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r3-c2",
+      "query_endpoint": "np31-r3-c2",
+      "reference_view_id": "v112/np31-r3-c2/reference/light-08",
+      "query_view_id": "v112/np31-r3-c2/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r3-c2-l08-08-to-np31-r3-c5-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r3-c2",
+      "query_endpoint": "np31-r3-c5",
+      "reference_view_id": "v112/np31-r3-c2/reference/light-08",
+      "query_view_id": "v112/np31-r3-c5/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r3-c2-l08-08-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -40233.61149263074,
+            -55241.38132584343,
+            -19739.16911491816,
+            -34736.00154893711
+          ],
+          [
+            -40202.83319133232,
+            34733.45864785086,
+            -19733.562397184458,
+            55199.45513508453
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r3-c2-l08-23-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r3-c2",
+      "query_endpoint": "np31-r3-c2",
+      "reference_view_id": "v112/np31-r3-c2/reference/light-08",
+      "query_view_id": "v112/np31-r3-c2/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r3-c2-l08-23-to-np31-r3-c5-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r3-c2",
+      "query_endpoint": "np31-r3-c5",
+      "reference_view_id": "v112/np31-r3-c2/reference/light-08",
+      "query_view_id": "v112/np31-r3-c5/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r3-c2-l08-23-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -40233.61149263074,
+            -55241.38132584343,
+            -19739.16911491816,
+            -34736.00154893711
+          ],
+          [
+            -40202.83319133232,
+            34733.45864785086,
+            -19733.562397184458,
+            55199.45513508453
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r3-c5-l08-08-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r3-c5",
+      "query_endpoint": "np31-r3-c5",
+      "reference_view_id": "v112/np31-r3-c5/reference/light-08",
+      "query_view_id": "v112/np31-r3-c5/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r3-c5-l08-08-to-np31-r4-c1-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r3-c5",
+      "query_endpoint": "np31-r4-c1",
+      "reference_view_id": "v112/np31-r3-c5/reference/light-08",
+      "query_view_id": "v112/np31-r4-c1/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r3-c5-l08-08-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -40202.83319133232,
+            34733.45864785086,
+            -19733.562397184458,
+            55199.45513508453
+          ],
+          [
+            -70131.83911074242,
+            -85193.45676141971,
+            -49721.95783595694,
+            -64635.109164081914
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r3-c5-l08-23-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r3-c5",
+      "query_endpoint": "np31-r3-c5",
+      "reference_view_id": "v112/np31-r3-c5/reference/light-08",
+      "query_view_id": "v112/np31-r3-c5/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r3-c5-l08-23-to-np31-r4-c1-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r3-c5",
+      "query_endpoint": "np31-r4-c1",
+      "reference_view_id": "v112/np31-r3-c5/reference/light-08",
+      "query_view_id": "v112/np31-r4-c1/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r3-c5-l08-23-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -40202.83319133232,
+            34733.45864785086,
+            -19733.562397184458,
+            55199.45513508453
+          ],
+          [
+            -70131.83911074242,
+            -85193.45676141971,
+            -49721.95783595694,
+            -64635.109164081914
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r4-c1-l08-08-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r4-c1",
+      "query_endpoint": "np31-r4-c1",
+      "reference_view_id": "v112/np31-r4-c1/reference/light-08",
+      "query_view_id": "v112/np31-r4-c1/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r4-c1-l08-08-to-np31-r0-c7-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "same_light_control",
+      "reference_endpoint": "np31-r4-c1",
+      "query_endpoint": "np31-r0-c7",
+      "reference_view_id": "v112/np31-r4-c1/reference/light-08",
+      "query_view_id": "v112/np31-r0-c7/query/light-08",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r4-c1-l08-08-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -70131.83911074242,
+            -85193.45676141971,
+            -49721.95783595694,
+            -64635.109164081914
+          ],
+          [
+            49671.23023640046,
+            94601.75404567375,
+            70169.59255228256,
+            115031.92702551723
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "v112-np31-r4-c1-l08-23-positive",
+      "split": "model_selection",
+      "positive": true,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r4-c1",
+      "query_endpoint": "np31-r4-c1",
+      "reference_view_id": "v112/np31-r4-c1/reference/light-08",
+      "query_view_id": "v112/np31-r4-c1/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ]
+    },
+    {
+      "case_id": "v112-np31-r4-c1-l08-23-to-np31-r0-c7-nonoverlap",
+      "split": "model_selection",
+      "positive": false,
+      "condition": "low_sun_changed_light",
+      "reference_endpoint": "np31-r4-c1",
+      "query_endpoint": "np31-r0-c7",
+      "reference_view_id": "v112/np31-r4-c1/reference/light-08",
+      "query_view_id": "v112/np31-r0-c7/query/light-23",
+      "renderer_replicates": [
+        0,
+        1
+      ],
+      "tracks": [
+        "estimated_sun",
+        "known_sun_rerank_only"
+      ],
+      "matched_positive_id": "v112-np31-r4-c1-l08-23-positive",
+      "nonoverlap_certificate": {
+        "frame": "lunar_body_fixed_cartesian_xy_metres",
+        "both_full_mesh_bounds": [
+          [
+            -70131.83911074242,
+            -85193.45676141971,
+            -49721.95783595694,
+            -64635.109164081914
+          ],
+          [
+            49671.23023640046,
+            94601.75404567375,
+            70169.59255228256,
+            115031.92702551723
+          ]
+        ]
+      }
+    }
+  ],
+  "proposal_profile": {
+    "name": "frozen_step0_A1B0C1_quantization_aware",
+    "backend": "solar",
+    "checkpoint": "runs/solar-learning-v79/sh_study/step_0.pt",
+    "training_step": 0,
+    "training_seed": 20261101,
+    "training_evidence": {
+      "protocol": "reports/solar-learning-v79/sh_study.json",
+      "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+      "summary": "runs/solar-learning-v79/sh_study/summary.json",
+      "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+      "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+      "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+    },
+    "configuration": {
+      "model_version": "solar-experimental-v63",
+      "checkpoint_sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+      "solar_mode": "shared",
+      "response": false,
+      "active": true,
+      "pooled": false,
+      "budget": 128,
+      "policy": "active",
+      "proposal_angles": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "pose_initialization": "quantization_aware",
+      "inference_revision": "solar-v84-quantized-init-exact-cache"
+    },
+    "scientific_role": "Predeclared frozen baseline; not checkpoint selection or a learned response gain.",
+    "checkpoint_role": "Completed SH study step0; original coarse encoder frozen; response disabled."
+  },
+  "geometry_gate": {
+    "full_native_surface_per_view": true,
+    "both_directions_exact_anchors": 676,
+    "minimum_bidirectional_visible_fraction": 0.2,
+    "minimum_camera_clearance_m": 10.0,
+    "maximum_independent_mesh_hit_error_m": 0.05,
+    "minimum_oracle_pose_success": 0.95,
+    "exact_pose_failures_remain_in_denominator": true,
+    "reseed_or_replace": false
+  },
+  "compute_design": {
+    "cpu_threads_per_job": 2,
+    "concurrent_scientific_jobs": 1,
+    "render_geometry_cap_seconds": 1200,
+    "reference_setup_and_evaluation_cap_seconds": 7200,
+    "current_read_only_journal_sha256": "20efcaae43bc214556c4de80195ca644ed157dc8eb5f8d7f5954638e1f122fca",
+    "historical_64spp_max_seconds": 14.760447175009176,
+    "rendering_projection_factor_two_plus_240s": 948.5014644004405,
+    "read_only_baseline_reserved_seconds": 38825,
+    "read_only_baseline_remaining_seconds": 28375.0,
+    "design_caps_fit_metadata_snapshot": true,
+    "no_deadlines_created": true,
+    "stage_caps_seconds": {
+      "geometry_and_sentry_renders": 500,
+      "sentry_candidate_atlas_support": 1200,
+      "remaining_renders": 700,
+      "remaining_setup_and_evaluation": 6000
+    },
+    "early_render_and_geometry_projection_seconds": 417.1253661001101,
+    "remaining_render_projection_seconds": 651.3760983003303,
+    "total_provisional_cap_seconds": 8400,
+    "gate": "Use serial immutable phase windows and a separately published cumulative reservation plan. The sentry controls access to remaining phases."
+  },
+  "original_draft_sha256": "55ab37475dfb1cb928b3307e0bb27a7a672875c1c355dd01ea8fcc2d0b8e07a3",
+  "original_draft_source_sha256": "2e004da504c3827e4a2431835cb7c88a343d932405528e6ae4712a647a6ba796",
+  "unchanged_roster_fields": [
+    "endpoints",
+    "render_jobs",
+    "cases",
+    "camera_seed",
+    "camera_namespace",
+    "excluded_units",
+    "excluded_entire_terrain_groups"
+  ],
+  "unchanged_roster_sha256": "c71daaf70d0b782dda54339c5e1cf19d3e954e483895612bc42427ea558850f2",
+  "reference_mesh_adapter": {
+    "publication_commit": "d366fdf81a166e7f82d3b9919bbaf7e1783c1338",
+    "source_path": "reports/solar-secondary-mesh-v112/solar_secondary_mesh_v112.py",
+    "publication_sha256": {
+      "reports/solar-secondary-mesh-v112/solar_secondary_mesh_v112.py": "9aa5c90a5ca792a834c4309e51734a6a88d9840714109dbacb496db4cd94c0dd",
+      "reports/solar-secondary-mesh-v112/README.md": "e1680ac2860abc72f1544dd8fb837b6fa76306e9c1b4a723f152c7b60469c34f",
+      "reports/solar-secondary-mesh-v112/test_solar_secondary_mesh_v112.py": "ed6505858d197f1e18591e60430d25314bcf38e31d9c5ecd80fd36b648ccc87c"
+    },
+    "dependency_source_sha256": {
+      "solar_map_v63.py": "bcdebe475e4764a9838bb15ee324b2302efdb1128e97454a6d27e1b1c5cf3184",
+      "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+      "north_camera_scene_v59.py": "169a9319d6b611d7ff40a34c5e20500e378acf990d6f7fa98fae1cb8570c3845"
+    },
+    "mesh_boundary": "Exact complete finite simulated reference triangles, with vacuum exterior solely under the simulator contract.",
+    "finite_scene_hash_rule": "Recheck sealed original mesh file SHA and bind FiniteScene to mesh_array_sha256 of the same full vertex/face arrays passed to the Blender BVH.",
+    "maximum_height_rule": "Derive actual maximum from the same complete mesh and match the original geometry audit, not camera core clearance or a cropped maximum.",
+    "mesh_input_policy": "No cropped or open-exterior map is admitted to this finite scene experiment.",
+    "tiles_per_axis": 16,
+    "maximum_patches": 256,
+    "diffuse_albedo": 0.5,
+    "epsilon_m": 0.001,
+    "maximum_ray_distance_m": 50000,
+    "max_directed_mutual_rays_per_mesh": 65280,
+    "max_solar_rays_per_exact_sun": 256,
+    "per_candidate_project_atlas_camera_covered": null,
+    "projection_coverage": "Use published native tangent-square depth ownership and validity. No external camera mask and no exact detector-visibility claim.",
+    "candidate_sun_below_local_horizon": "Preserve exact original order for affected scoring arm with explicit reason. Never snap, replace, or discard a candidate.",
+    "coverage_limit": "Keep unresolved nearby exchange, incidence disagreement, excessive form factor, unknown receiver support and raster gaps invalid. Never substitute zero radiance or loosen support after the sentry."
+  },
+  "early_coverage_stop": {
+    "fixed_case_ids": [
+      "v112-np31-r0-c7-l08-23-positive",
+      "v112-np31-r0-c7-l08-23-to-np31-r3-c2-nonoverlap"
+    ],
+    "positive_gate_case_id": "v112-np31-r0-c7-l08-23-positive",
+    "acquire_first_view_seed_pairs": [
+      {
+        "view_id": "v112/np31-r0-c7/reference/light-08",
+        "replicate": 0,
+        "seed": 1398173633
+      },
+      {
+        "view_id": "v112/np31-r0-c7/reference/light-08",
+        "replicate": 1,
+        "seed": 1040155946
+      },
+      {
+        "view_id": "v112/np31-r0-c7/query/light-23",
+        "replicate": 0,
+        "seed": 582918574
+      },
+      {
+        "view_id": "v112/np31-r0-c7/query/light-23",
+        "replicate": 1,
+        "seed": 1809275429
+      },
+      {
+        "view_id": "v112/np31-r3-c2/query/light-23",
+        "replicate": 0,
+        "seed": 1711114564
+      },
+      {
+        "view_id": "v112/np31-r3-c2/query/light-23",
+        "replicate": 1,
+        "seed": 27183308
+      }
+    ],
+    "renderer_replicates": [
+      0,
+      1
+    ],
+    "track": "estimated_sun",
+    "atlas_arms": [
+      "combined",
+      "direct_only"
+    ],
+    "ranker_block_size_pixels": 32,
+    "minimum_common_pixels_per_block": 512,
+    "minimum_blocks_per_quadrant": 2,
+    "minimum_qualifying_quadrants": 3,
+    "minimum_distinct_finite_blind_candidate_poses_per_seed": 2,
+    "support_policy": "Intersect original native masks across every eligible frozen beam in both compared atlas arms. Use no query image values or truth to determine supported cells.",
+    "stop_rule": "Both positive renderer-replicate banks must pass. Missing eligible candidate diversity or insufficient common blocks in either seed stops before remaining EXR acquisition or evaluation.",
+    "allowed_sentry_evidence": "Blind beam availability, reference-only atlas masks, and timing. Never candidate correctness, query brightness statistics, known-Sun rank or the negative result.",
+    "negative_policy": "Keep matched negative sentry rows with the same fallback and costs. They do not decide coverage admission.",
+    "failure_policy": "Seal explicit unsupported/candidate-starved reason and reference atlas diagnostics. No substitution, rerender, atlas resolution search, or split escalation."
+  }
+}

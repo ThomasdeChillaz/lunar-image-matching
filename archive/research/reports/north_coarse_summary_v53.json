@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "case_rows": 192,
+  "proposal_branch_rows": 768,
+  "protocol_sha256": "73344d315f1898d3dc9cda00e98770544dc0dbe87a0689263ea95370172e55c7",
+  "results_sha256": "096c8a346ef392c8e8c56c54039095370f281048f10622f562a90bf95e818704",
+  "controls": {
+    "frozen": {
+      "matches": 512,
+      "median_error_low_px": 0.0,
+      "blank_empty": true,
+      "invalid_empty": true,
+      "passed": true
+    },
+    "primary_endpoint": {
+      "matches": 512,
+      "median_error_low_px": 0.0,
+      "blank_empty": true,
+      "invalid_empty": true,
+      "passed": true
+    }
+  },
+  "scope": "All96positive development pairs; image-only coarse proposals scored afterward with exact fractional BVH labels. Separate perfect-local-refinement/rejection oracle uses ground truth and the unchanged common pose estimator. No optimizer, learned fine refinement, reserve or acceptance inference.",
+  "finer_stage_failure_attribution_established": false,
+  "calibration_or_test_pixels_loaded": 0
+}

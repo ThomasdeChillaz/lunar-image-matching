@@ -1,0 +1,103 @@
+{
+  "captured_utc": "2026-11-04T06:03:44.686195+00:00",
+  "passed": true,
+  "read_only": true,
+  "manifest": "reports/solar-learning-v79/teacher_full-bank.json",
+  "manifest_sha256": "f5a4a0d4a603c984373778af587a6ea08f9a159e43e325043145e7f2a4b78428",
+  "audited_script_sha256": "e0e59b45e095540966e03c50e91c0b6c16cf72c0f1cc288e6bc00f6d60e6f414",
+  "saved_report_sha256": "6bbbd5686086d5a1db7bfd008b6c4629b030b6b6e1c12a373dd93b12b68f411e",
+  "records": 64,
+  "terrain_groups": 16,
+  "records_per_group": {
+    "np31-r0-c0": 4,
+    "np31-r0-c1": 4,
+    "np31-r0-c2": 4,
+    "np31-r0-c6": 4,
+    "np31-r1-c1": 4,
+    "np31-r1-c4": 4,
+    "np31-r1-c5": 4,
+    "np31-r1-c6": 4,
+    "np31-r2-c1": 4,
+    "np31-r2-c2": 4,
+    "np31-r2-c6": 4,
+    "np31-r3-c4": 4,
+    "np31-r4-c2": 4,
+    "np31-r4-c3": 4,
+    "np31-r4-c4": 4,
+    "np31-r4-c6": 4
+  },
+  "saved_point_instances": 3933,
+  "point_light_comparisons": 47196,
+  "all64record_metadata_and_seal_hashes_passed": true,
+  "all_even_targets_available_finite": true,
+  "all_odd_teacher_targets_nan_and_unavailable": true,
+  "observed_input_light_indices_even": true,
+  "maximum_descriptor_norm_error": 2.563113613573975e-07,
+  "minimum_reference_mean_descriptor_norm": 0.44261878141916944,
+  "maximum_absolute_replayed_metric_error": 2.220446049250313e-16,
+  "terrain_balanced_mean": {
+    "same_point_same_light": 0.6680395172378533,
+    "same_point_changed_light": 0.3172026427992062,
+    "distinct_point_same_light": 0.26787523813302283,
+    "distinct_point_changed_light": 0.255926331643485,
+    "same_light_positive_margin": 0.40016427910483043,
+    "changed_light_positive_margin": 0.061276311155721255,
+    "within_reference_light_cosine_to_mean": 0.7232770271306114
+  },
+  "hour_angle_pairing": {
+    "even_light_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22
+    ],
+    "query_index_mapping": "(j+6) mod12 over even-light positions",
+    "absolute_hour_angle_difference_deg": 90.0,
+    "signs": "Six+90deg and six-90deg pairs per point; no cyclic Sun equivariance is assumed.",
+    "actual_sun_vector_angle_deg": {
+      "minimum": 89.96073571153035,
+      "median": 89.96073904515853,
+      "maximum": 89.9607417762059
+    }
+  },
+  "distinct_point_pairing": {
+    "mapping": "point i versus(i+floor(n/2)) mod n within the same saved camera record",
+    "all_indices_different": true,
+    "all_saved_world_points_unique_within_each_record": true,
+    "all_paired_world_distances_positive": true,
+    "reference_pixel_distance": {
+      "minimum": 16.0,
+      "median": 192.0,
+      "maximum": 509.24257481086556,
+      "pairs_with_distance_below33pixels": 60
+    },
+    "physical_distance_m": {
+      "minimum": 44.54001531909993,
+      "median": 656.5467484865563,
+      "maximum": 2679.3324900725943
+    },
+    "caveat": "Deterministic index permutation, not mined hard negatives, not guaranteed disjoint patch support, not certified nonoverlapping terrain, and not independent pairs; even-sized records reuse reciprocal unordered pairs."
+  },
+  "weighting": "For each metric: mean of12lights\u00d7npoint instances within each record, then mean of four records per terrain, then mean over16terrains. Pooled quantiles are sample descriptive statistics and do not share the equal-terrain weighting.",
+  "support_selection": {
+    "saved_instances": 3933,
+    "original_selected_instances": 4096,
+    "omitted_trial_support_instances": 163,
+    "omitted_unusable_teacher_instances": 0,
+    "scope": "Descriptive results condition on retained training samples. Counts are point instances across repeated views, not3933independent terrain observations or globally unique physical locations."
+  },
+  "interpretation": "The saved OLD frozen teacher descriptors are less separated from this deterministic distinct-point control when hour angle changes by90degrees. This motivates an illumination-response hypothesis; it does not show that the new model learned it or improved localization.",
+  "no_new_model_forward": true,
+  "no_fitting": true,
+  "no_image_or_png_or_ray_or_heldout_access": true,
+  "no_checkpoint_selection_or_tuning": true,
+  "calendar_seconds": 0.4227452320046723
+}

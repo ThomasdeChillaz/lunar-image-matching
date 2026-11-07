@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Procedural same-light planar native512 translation. No lunar result.",
+  "true_native_pixel_shift_x": -40,
+  "raw_arms": {
+    "wide_3d": {
+      "pose_returned": true,
+      "translation_error_m": 1.6488673961631864e-08,
+      "inliers": 16,
+      "measured_matches": 16
+    },
+    "narrow_3d": {
+      "pose_returned": false,
+      "translation_error_m": null,
+      "inliers": 0,
+      "measured_matches": 0
+    },
+    "wide_planar": {
+      "pose_returned": true,
+      "translation_error_m": 1.6488673961631864e-08,
+      "inliers": 16,
+      "measured_matches": 16
+    }
+  }
+}

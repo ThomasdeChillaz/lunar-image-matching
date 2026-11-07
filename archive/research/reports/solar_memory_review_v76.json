@@ -1,0 +1,34 @@
+{
+  "kind": "independent_memory_telemetry_patch_review",
+  "created_utc": "2026-11-04T04:31:57.947043+00:00",
+  "blocking_findings": [],
+  "reviewed_files_sha256": {
+    "run_solar_evaluation_v70.py": "e3b839c6f67017343d849a0f74033a8884cb70347d505a3b7cbc2e8bfc9097a1",
+    "worker_memory_telemetry_v75.patch": "bbabd81761b53b267400cc8c97d97371dd26472ad09b7b85dd0781f3c68dc5e3",
+    "test_solar_worker_memory_v75.py": "4c419167016f88ea9bae3c246e929d3f8349f010b3a2736cce99a0ea53af88b7"
+  },
+  "confirmed_semantics": [
+    "Linux native ru_maxrss KiB normalized by1024; Darwin native bytes retained.",
+    "Only RUSAGE_SELF is sampled: worker lifetime high-water, not instantaneous/model/incremental RAM; child/controller processes explicitly excluded.",
+    "Shared-profile before/after values retain process history; labels disallow per-model ranking and note deletion does not reset high-water.",
+    "Unsupported platforms and invalid/resource failures return explicit unavailable/null values without changing inference.",
+    "Cache-only/mixed rows retain historical memory fields as history; current profile snapshots cover actual fresh/cache work, not cached/control peaks relabeled as fresh memory.",
+    "Model-resident localization, incurred setup, startup, offline preparation and replay timings remain numerically unchanged, with explicit scope labels.",
+    "Only existing worker() changed at AST level plus two new telemetry helpers; admission/run/cost/loader functions unchanged.",
+    "Current learning source closure has49files and excludes run_solar_evaluation_v70.py; telemetry has no teacher/training gate dependency."
+  ],
+  "resolved_minor_finding": "Cached-row wording now correctly says current profile snapshots include all fresh and cached activity, rather than cache replay only.",
+  "focused_procedural_tests": {
+    "command": "PYTHONPATH=<repo> python -m pytest -q test_solar_worker_memory_v75.py",
+    "result": "11 passed in4.03s",
+    "scope": "Synthetic resource values and fake worker flow only; no actual memory benchmark, images, models, rays or canonical charge."
+  },
+  "activity": {
+    "source_edits": 0,
+    "scientific_jobs": 0,
+    "model_forwards": 0,
+    "images_or_rays": 0,
+    "broad_tests": 0
+  },
+  "training_priority": "Review does not delay eager teacher pilot after full96 geometry gate."
+}

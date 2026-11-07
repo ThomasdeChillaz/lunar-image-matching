@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "official_labels_replayed": 3,
+  "decoded_height_samples_replayed": 8,
+  "independent_signed_byte_and_map_offset_arithmetic": true,
+  "fixture_sha256": "4bea8871574fb9a5ce60cd558ddde6419ea0c0989696bd65d3c456128ee260fc",
+  "parser_source_sha256": "8e7f9c1343efef88c95b310433806c72e68cdefc95d8bbad1b6846b0cb6ccdc0",
+  "auditor_source_sha256": "4a7e59a65143d89b600cc47713aa3b11692632c9d18be75ec9e22b22e9ec87cb",
+  "source_optical_pixels_decoded": 0,
+  "matcher_inferences": 0,
+  "camera_ray_depth_created": false,
+  "complete_IMG_checksum_verified": false,
+  "renderer_frame_and_surface_agreement_verified": false,
+  "fresh_test_gate_passed": false,
+  "scope": "Eight official reference-map samples/three PDS labels only. Height radii are not camera depth, optical registration, terrain visibility, independent fresh localization or model improvement."
+}

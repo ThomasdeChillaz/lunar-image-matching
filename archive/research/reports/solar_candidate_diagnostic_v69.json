@@ -1,0 +1,748 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-0",
+      "component": "np31-pilot-0",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 204,
+      "top1_exact_support": 99,
+      "top8_exact_support": 132,
+      "image_only_proposal_seconds": 0.1490894120070152,
+      "truth_assisted_cam2world": [
+        [
+          0.945282166166024,
+          -0.03518649890112287,
+          0.32435094669747944,
+          -347.24698923798024
+        ],
+        [
+          -0.05218686235755404,
+          -0.997673623894708,
+          0.04386196053614588,
+          -199.45805956510725
+        ],
+        [
+          0.32205303557914744,
+          -0.058388787278740334,
+          -0.9449193572968936,
+          1292.7893427488189
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.004649086399342356,
+        "translation_m": 0.08267852636536512
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1563.0293925116111,
+      "oracle_inliers": 132,
+      "saved_arrays": "case_0.npz",
+      "saved_arrays_sha256": "7cced679abb93e94a9d6434ed74b7a0678092dd8b2280a530ad4ebfb2259475d"
+    },
+    {
+      "case_id": "np31-pilot-0/training_motion-0/lights-0-3",
+      "component": "np31-pilot-0",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 204,
+      "top1_exact_support": 3,
+      "top8_exact_support": 17,
+      "image_only_proposal_seconds": 0.12365668499842286,
+      "truth_assisted_cam2world": [
+        [
+          0.9453147888650235,
+          -0.035197515049330386,
+          0.324254660548509,
+          -347.1235506804385
+        ],
+        [
+          -0.05218056634251235,
+          -0.9976754550346556,
+          0.04382778704848722,
+          -199.41530233200376
+        ],
+        [
+          0.3219582868156235,
+          -0.05835084708678219,
+          -0.9449539884010246,
+          1292.8704508100764
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.005919237629178029,
+        "translation_m": 0.1805561494218301
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1563.0293925116111,
+      "oracle_inliers": 17,
+      "saved_arrays": "case_1.npz",
+      "saved_arrays_sha256": "0e12cbde1cf6bddaa3381c7a4965531d443f2be8414f49ddab0c78d9507bb3d3"
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-0",
+      "component": "np31-pilot-0",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 240,
+      "top1_exact_support": 20,
+      "top8_exact_support": 81,
+      "image_only_proposal_seconds": 0.11406098603038117,
+      "truth_assisted_cam2world": [
+        [
+          0.5600842063746178,
+          0.8277656822173913,
+          0.03331151622023594,
+          -57.836707430673215
+        ],
+        [
+          0.7893640022355202,
+          -0.5210341316782807,
+          -0.324696636263731,
+          357.68890725963684
+        ],
+        [
+          -0.25141629570184193,
+          0.20815236959841865,
+          -0.9452314199634538,
+          1452.3894048716838
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.0017067031286513794,
+        "translation_m": 0.06838811300017845
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1474.9327226568225,
+      "oracle_inliers": 81,
+      "saved_arrays": "case_2.npz",
+      "saved_arrays_sha256": "38a686bfa886c3160590317fa018229cbe4c75d271f0112ce3d10191c60319cd"
+    },
+    {
+      "case_id": "np31-pilot-0/unseen_roll-0/lights-0-3",
+      "component": "np31-pilot-0",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 240,
+      "top1_exact_support": 3,
+      "top8_exact_support": 15,
+      "image_only_proposal_seconds": 0.12215715803904459,
+      "truth_assisted_cam2world": [
+        [
+          0.5600887425256527,
+          0.8277609553423211,
+          0.03335268065389903,
+          -57.898148505524944
+        ],
+        [
+          0.7893751401955356,
+          -0.5210338978667608,
+          -0.32466993287806695,
+          357.6432743796304
+        ],
+        [
+          -0.2513712166046697,
+          0.20817175140863303,
+          -0.9452391408411686,
+          1452.3758177912048
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.0020761022598915248,
+        "translation_m": 0.04565325020939097
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1474.9327226568225,
+      "oracle_inliers": 15,
+      "saved_arrays": "case_3.npz",
+      "saved_arrays_sha256": "d397d2630ce8f207dec6a06755779f7e58f02e10cccf4052c6eb861c07d10915"
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-0",
+      "component": "np31-pilot-1",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 255,
+      "top1_exact_support": 31,
+      "top8_exact_support": 118,
+      "image_only_proposal_seconds": 0.12650924001354724,
+      "truth_assisted_cam2world": [
+        [
+          0.9093197391342447,
+          0.0184704998722516,
+          0.41568792700209495,
+          -639.174266310979
+        ],
+        [
+          0.08140876149570236,
+          -0.9876047559901725,
+          -0.13419932748463323,
+          314.28230266295424
+        ],
+        [
+          0.4080566450538034,
+          0.1558707367662742,
+          -0.8995521596035292,
+          1135.9942625948281
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.020964916348644422,
+        "translation_m": 0.33766028889836774
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1420.4029846910194,
+      "oracle_inliers": 118,
+      "saved_arrays": "case_4.npz",
+      "saved_arrays_sha256": "185d3ae8ef848dbd6af4f5b92c0138ebd34b7ea75c156846a09c72711ad3dacd"
+    },
+    {
+      "case_id": "np31-pilot-1/training_motion-0/lights-0-3",
+      "component": "np31-pilot-1",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 255,
+      "top1_exact_support": 5,
+      "top8_exact_support": 24,
+      "image_only_proposal_seconds": 0.12756341602653265,
+      "truth_assisted_cam2world": [
+        [
+          0.9092767403858228,
+          0.018484018448398788,
+          0.4157813733867033,
+          -639.3215201954623
+        ],
+        [
+          0.08141649950674645,
+          -0.9876114633843809,
+          -0.13414526081762904,
+          314.2249789723522
+        ],
+        [
+          0.4081509071426914,
+          0.1558266294757126,
+          -0.8995170362727085,
+          1135.9285499006644
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.021052338222833627,
+        "translation_m": 0.35893833754382776
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1420.4029846910194,
+      "oracle_inliers": 24,
+      "saved_arrays": "case_5.npz",
+      "saved_arrays_sha256": "2385a7e9e06e363e6db20050efd371261e1868a4d61099ebffcbf9711e92a6b9"
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-0",
+      "component": "np31-pilot-1",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 206,
+      "top1_exact_support": 9,
+      "top8_exact_support": 44,
+      "image_only_proposal_seconds": 0.12544153502676636,
+      "truth_assisted_cam2world": [
+        [
+          0.40108669130639296,
+          -0.8562982238700919,
+          -0.32539640110765866,
+          384.8361892938861
+        ],
+        [
+          -0.8428439403340987,
+          -0.4841083768680303,
+          0.235059932120069,
+          -216.87339962757807
+        ],
+        [
+          -0.3588085259563667,
+          0.17997897444737007,
+          -0.915895196219465,
+          1348.7826120905856
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.01655047963957042,
+        "translation_m": 0.48838186218196794
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1727.5302798555674,
+      "oracle_inliers": 44,
+      "saved_arrays": "case_6.npz",
+      "saved_arrays_sha256": "900f4fcdf3ea7dfa7e8a12a5c631144d49d9c19b9ca86cdc487577c1030cd64f"
+    },
+    {
+      "case_id": "np31-pilot-1/unseen_roll-0/lights-0-3",
+      "component": "np31-pilot-1",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 206,
+      "top1_exact_support": 1,
+      "top8_exact_support": 12,
+      "image_only_proposal_seconds": 0.13687255297554657,
+      "truth_assisted_cam2world": [
+        [
+          0.40106211128410374,
+          -0.8563079897699042,
+          -0.32540099807554757,
+          384.84757968402937
+        ],
+        [
+          -0.8428532618511222,
+          -0.48408773955315454,
+          0.23506900986995444,
+          -216.8893403701033
+        ],
+        [
+          -0.35881410490567467,
+          0.17998801924167834,
+          -0.9158912331986788,
+          1348.7660879480911
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.01679142376733912,
+        "translation_m": 0.5089663992353125
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1727.5302798555674,
+      "oracle_inliers": 12,
+      "saved_arrays": "case_7.npz",
+      "saved_arrays_sha256": "01e7ee16bb18bee0b5fd7f06239163eeed1a58c1c03fb6a5649d3cfa2edee406"
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-0",
+      "component": "np31-pilot-2",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 256,
+      "top1_exact_support": 98,
+      "top8_exact_support": 175,
+      "image_only_proposal_seconds": 0.13440006598830223,
+      "truth_assisted_cam2world": [
+        [
+          0.9446773673573725,
+          0.2885220474068259,
+          -0.15601185776381687,
+          153.48629685333663
+        ],
+        [
+          0.22433848335026924,
+          -0.9153434214352867,
+          -0.33439298097185627,
+          428.89560718577707
+        ],
+        [
+          -0.23928417517847916,
+          0.2808940173718845,
+          -0.9294308121177383,
+          1400.823511189468
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.00805078417456504,
+        "translation_m": 0.2288498574918961
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1352.6126349045674,
+      "oracle_inliers": 175,
+      "saved_arrays": "case_8.npz",
+      "saved_arrays_sha256": "34e98f07d24e2bfdedfc9503ab89b0c5c18dba1ee288337c507554c3eed86bc7"
+    },
+    {
+      "case_id": "np31-pilot-2/training_motion-0/lights-0-3",
+      "component": "np31-pilot-2",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 256,
+      "top1_exact_support": 2,
+      "top8_exact_support": 15,
+      "image_only_proposal_seconds": 0.12810449599055573,
+      "truth_assisted_cam2world": [
+        [
+          0.9446998691189791,
+          0.28853799035545874,
+          -0.15584603109549183,
+          153.25001191077752
+        ],
+        [
+          0.22444208758751,
+          -0.9153742375795112,
+          -0.33423906787670565,
+          428.7410417999869
+        ],
+        [
+          -0.23909811083725502,
+          0.2807771951162732,
+          -0.9295139913399335,
+          1401.13471824667
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.021142229077037365,
+        "translation_m": 0.6280658060450136
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1352.6126349045674,
+      "oracle_inliers": 15,
+      "saved_arrays": "case_9.npz",
+      "saved_arrays_sha256": "72a9f6dbb16d9544a34108dc9f816740d072c2788a0e5249b6a1315bdb6fee7b"
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-0",
+      "component": "np31-pilot-2",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 196,
+      "top1_exact_support": 8,
+      "top8_exact_support": 32,
+      "image_only_proposal_seconds": 0.11684793798485771,
+      "truth_assisted_cam2world": [
+        [
+          0.4142648346890201,
+          0.8793338575859085,
+          0.23485445204032862,
+          -122.28965344771093
+        ],
+        [
+          0.792035977430067,
+          -0.4754187445296759,
+          0.38295695294148246,
+          -470.8939819537794
+        ],
+        [
+          0.4484012234555971,
+          0.027367576672250288,
+          -0.8934133189910548,
+          1007.7609868404419
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.01664875459384215,
+        "translation_m": 0.3785890398564778
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1379.0544258304853,
+      "oracle_inliers": 32,
+      "saved_arrays": "case_10.npz",
+      "saved_arrays_sha256": "410d9193c985deb638f873bd2d17b33eb55cf33902334b73787c34b3d8c3a8b2"
+    },
+    {
+      "case_id": "np31-pilot-2/unseen_roll-0/lights-0-3",
+      "component": "np31-pilot-2",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 196,
+      "top1_exact_support": 1,
+      "top8_exact_support": 6,
+      "image_only_proposal_seconds": 0.22026528796413913,
+      "truth_assisted_cam2world": [
+        [
+          0.4140490112726358,
+          0.8793174740536165,
+          0.23529597550345022,
+          -122.78839522195382
+        ],
+        [
+          0.7923278698667708,
+          -0.47540560827821066,
+          0.3823690027316675,
+          -470.1899636403865
+        ],
+        [
+          0.4480847719980429,
+          0.02811205153652188,
+          -0.8935489632145907,
+          1007.910965072419
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.0565254134191328,
+        "translation_m": 1.0892772297029272
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 1379.0544258304853,
+      "oracle_inliers": 6,
+      "saved_arrays": "case_11.npz",
+      "saved_arrays_sha256": "976c81970e3a4d115b1d3cb4bd5b46c4af98e13001d1251b53e4ca039b9b939e"
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-0",
+      "component": "np31-pilot-3",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 256,
+      "top1_exact_support": 4,
+      "top8_exact_support": 30,
+      "image_only_proposal_seconds": 0.12209097895538434,
+      "truth_assisted_cam2world": [
+        [
+          0.9988545585893106,
+          0.04766804075270889,
+          0.004162772651759273,
+          87.70481828740891
+        ],
+        [
+          0.04535499711924236,
+          -0.9709158205298997,
+          0.2350859282923271,
+          -529.5466101372023
+        ],
+        [
+          0.015247787435089331,
+          -0.23462784859336228,
+          -0.971965677193791,
+          2535.689367078289
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.007354936239940341,
+        "translation_m": 0.5375598675566167
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 2582.560364310769,
+      "oracle_inliers": 30,
+      "saved_arrays": "case_12.npz",
+      "saved_arrays_sha256": "54d53ffd117757ac30b5d09fc013024af230b5eff1fc57877a7ceb537d197105"
+    },
+    {
+      "case_id": "np31-pilot-3/training_motion-0/lights-0-3",
+      "component": "np31-pilot-3",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 256,
+      "top1_exact_support": 4,
+      "top8_exact_support": 24,
+      "image_only_proposal_seconds": 0.12606379098724574,
+      "truth_assisted_cam2world": [
+        [
+          0.9988556060809893,
+          0.047646463250158345,
+          0.004158454079379765,
+          87.72142278386872
+        ],
+        [
+          0.04533410145784803,
+          -0.9709023556319276,
+          0.2351455614579693,
+          -529.7543446601749
+        ],
+        [
+          0.015241307213902,
+          -0.2346879425282121,
+          -0.9719512704792798,
+          2535.665711040267
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.0036962074902277607,
+        "translation_m": 0.3297355176435807
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 2582.560364310769,
+      "oracle_inliers": 24,
+      "saved_arrays": "case_13.npz",
+      "saved_arrays_sha256": "a209846fdc7c52f2c2434edffc682584082a0d3300c4affd4eb977dab90686a4"
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-0",
+      "component": "np31-pilot-3",
+      "light_a": 0,
+      "light_b": 0,
+      "anchors": 256,
+      "visible_anchors": 221,
+      "top1_exact_support": 2,
+      "top8_exact_support": 10,
+      "image_only_proposal_seconds": 0.12114284501876682,
+      "truth_assisted_cam2world": [
+        [
+          0.6677952219536682,
+          0.7208866863576553,
+          0.18539667464151166,
+          -336.0985825721478
+        ],
+        [
+          0.7420206738297321,
+          -0.6643981432776531,
+          -0.08933323468047731,
+          116.75336733855426
+        ],
+        [
+          0.05877806687125145,
+          0.19722447272457455,
+          -0.9785947303216956,
+          2358.0007033210513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.007345227900756088,
+        "translation_m": 0.43642066050084927
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 2785.6405161939083,
+      "oracle_inliers": 10,
+      "saved_arrays": "case_14.npz",
+      "saved_arrays_sha256": "735dd22ac2bda874a76c03af61092102888f5182e0d562b5fb0239e7f6edcc5d"
+    },
+    {
+      "case_id": "np31-pilot-3/unseen_roll-0/lights-0-3",
+      "component": "np31-pilot-3",
+      "light_a": 0,
+      "light_b": 3,
+      "anchors": 256,
+      "visible_anchors": 221,
+      "top1_exact_support": 0,
+      "top8_exact_support": 11,
+      "image_only_proposal_seconds": 0.121874459029641,
+      "truth_assisted_cam2world": [
+        [
+          0.6678148734732151,
+          0.7208645183480327,
+          0.18541208416608884,
+          -336.1283988668897
+        ],
+        [
+          0.7420113732640805,
+          -0.664386859033103,
+          -0.0894942651284488,
+          117.15675023916418
+        ],
+        [
+          0.05867211189915876,
+          0.19734347653516823,
+          -0.978577097399232,
+          2357.973469156713
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "truth_assisted_pose_error": {
+        "rotation_deg": 0.0035378336064778686,
+        "translation_m": 0.29633871543084117
+      },
+      "truth_assisted_pose_recovered": true,
+      "reference_range_m": 2785.6405161939083,
+      "oracle_inliers": 11,
+      "saved_arrays": "case_15.npz",
+      "saved_arrays_sha256": "e7e67e9a3766cdfbf97ecce1ae3afdb30abe5a2cda044e7e05c8e0f8b7ddd0d6"
+    }
+  ],
+  "protocol_sha256": "b0117ca4a0300d7efe5d45352c012d56d0f8f478068a75ece9f980334a52b1c7",
+  "source_publication_commit": "48f0622d50f187b7a8555ad6da924af1ad71f194",
+  "calendar_seconds": 3.9493855480104685,
+  "matcher_lunar_cases": 16,
+  "optimizer_updates": 0,
+  "calibration_or_final_access": false,
+  "scope": "Four OLD excluded camera pilot terrains, sixteen frozen image-only coarse proposal cases. Ground truth used only after inference for support/pose ORACLE diagnostics. Neither a new learned matcher result nor a true performance upper bound; final research reserve remains untouched."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "public_blind_recovery_result_v139",
+  "source_commit": "aaa3d02ed73667c352eaa92f4d142e4adb2c7b6c",
+  "protocol_sha256": "bfdfeb056065a6952aa3c979e883cdfeead4a836b31d3c06d29217c2db9f68eb",
+  "status": "stopped_at_full_cost_gate",
+  "error": "Full comparison cannot fit; retain timing and do not substitute a smaller lunar subset",
+  "lunar_inference_run": false,
+  "new_lunar_results": 0,
+  "calibration_or_final_access": false,
+  "private_execution_record_sha256": "ef9d1bcca30c9c93f9e4ccd2620c3f1710d926c97b9da36e5f3969a6f4d1a0b4",
+  "original_charge_seconds": 480,
+  "supplement_authorized_seconds": 2400,
+  "supplement_fixed_charges_seconds": 2400,
+  "supplement_unreserved_seconds": 0,
+  "prior_fixed_charges_seconds": 1920,
+  "actual_timing_worker_seconds": 98.05911489704158,
+  "scientific_timing_source": "Full six-arm, 24-light, 2048-camera, 32-extra-patch generated controls; two geometries; not physical sunlight simulation",
+  "protected_sources_verified": 101,
+  "protected_inputs_verified": 125,
+  "accepted_pose_result": false,
+  "superiority_claim": false,
+  "no_paid_compute": true
+}

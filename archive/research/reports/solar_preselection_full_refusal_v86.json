@@ -1,0 +1,162 @@
+{
+  "status": "EXPECTED_FULL_STAGE_REFUSAL_PRESERVED",
+  "reviewed_utc": "2026-11-04T10:15:39.799925+00:00",
+  "standard_builder_invocations": 1,
+  "error": {
+    "type": "ValueError",
+    "message": "Measured complete study does not fit predeclared or remaining baseline allowance; do not drop cases/profiles"
+  },
+  "builder_elapsed_seconds": 22.642056123993825,
+  "full_settings": "reports/solar-preselection-compact-controls-full-settings-v86.json",
+  "full_settings_sha256": "4a7e7c6456b1c85ec4dcc858f9b479c394bfb9bb7d1430ad1a17f930dfe43f0d",
+  "requested_protocol_path": "reports/solar-preselection-compact-controls-full-v86.json",
+  "requested_protocol_created": false,
+  "measured_conservative_full_seconds": 20324,
+  "original_maximum_full_calendar_seconds": 12000,
+  "remaining_baseline_seconds": 49080.0,
+  "original_profiles_unchanged": true,
+  "all384cases_retained": true,
+  "pilot_case_count": 8,
+  "complete_pilot_rows": 32,
+  "raw_pilot_results": {
+    "SIFT2048": {
+      "all_positive": {
+        "cases": 4,
+        "raw_correct": 2,
+        "raw_pose_returned": 2,
+        "correct_case_ids": [
+          "u012-l00-00-positive",
+          "u060-l16-16-positive"
+        ]
+      },
+      "same_light_positive": {
+        "cases": 2,
+        "raw_correct": 2,
+        "raw_pose_returned": 2,
+        "correct_case_ids": [
+          "u012-l00-00-positive",
+          "u060-l16-16-positive"
+        ]
+      },
+      "changed_light_positive": {
+        "cases": 2,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      },
+      "nonoverlap": {
+        "cases": 4,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      }
+    },
+    "frozen_step0_A0B0C0_strict3": {
+      "all_positive": {
+        "cases": 4,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "same_light_positive": {
+        "cases": 2,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "changed_light_positive": {
+        "cases": 2,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      },
+      "nonoverlap": {
+        "cases": 4,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      }
+    },
+    "frozen_step0_A1B0C1_strict3": {
+      "all_positive": {
+        "cases": 4,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "same_light_positive": {
+        "cases": 2,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "changed_light_positive": {
+        "cases": 2,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      },
+      "nonoverlap": {
+        "cases": 4,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      }
+    },
+    "frozen_step0_A1B0C1_quantization_aware": {
+      "all_positive": {
+        "cases": 4,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "same_light_positive": {
+        "cases": 2,
+        "raw_correct": 1,
+        "raw_pose_returned": 1,
+        "correct_case_ids": [
+          "u012-l00-00-positive"
+        ]
+      },
+      "changed_light_positive": {
+        "cases": 2,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      },
+      "nonoverlap": {
+        "cases": 4,
+        "raw_correct": 0,
+        "raw_pose_returned": 0,
+        "correct_case_ids": []
+      }
+    }
+  },
+  "input_sha256": {
+    "reports/solar-preselection-compact-controls-cost-pilot-v86.json": "9e14f9c1b95eb12a796ec0533e8c9e50af292a86895e763912a91f786f6b0912",
+    "runs/solar-preselection-compact-controls-v86/cost_pilot/summary.json": "fdb5c15e333dcf32105e44aa780a9eac451b4c1c7d1af6f427e4d1e0403d0230",
+    "reports/solar-preselection-compact-controls-cost-pilot-replay-v86.json": "448ed91f3fe5ed9ead6f26564acee1b4967f843e7740d60c6608b2224d04abad",
+    "reports/solar-preselection-compact-controls-full-settings-v86.json": "4a7e7c6456b1c85ec4dcc858f9b479c394bfb9bb7d1430ad1a17f930dfe43f0d",
+    "reports/solar_learning_contract_v79.json": "c01fe3cbe67509c7c8beedc4216cd24d7f257f9830d0da40c706c5978e736f95",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "runs/solar-compute-reservations-v67.json": "2e5bdae92dd8e452ed4ec56e2f98776f562544784be02d467d6d0d319860a010"
+  },
+  "inference_source_count": 54,
+  "source_bindings_unchanged": true,
+  "canonical_journal_unchanged_during_refusal": true,
+  "jobs_launched": 0,
+  "reservations_written": 0,
+  "model_forwards": 0,
+  "image_reads": 0,
+  "scope": "Unfiltered four-positive/four-negative development pilot only. No checkpoint selection, calibrated acceptance, fresh terrain test or modern SOTA claim. Standard measured-cost refusal does not authorize dropping profiles/cases, increasing ceilings or resetting clocks."
+}

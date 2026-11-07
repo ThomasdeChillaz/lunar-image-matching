@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "repository_tests_passed": 547,
+  "optional_skips": 4,
+  "test_log_sha256": "eff44c218a844809c6e50d5b5e0892a1b1e7f4e3d4b40d9401dcbe608137c3cd",
+  "fresh_procedural_smoke_rows": 100,
+  "independent_smoke_replay_sha256": "677df6270d3263ee361fcbcb8ba36eba8870e654f2aa12fa37a6d5fe94bf919b",
+  "source_sha256": {
+    "diagnose_solar_candidates_v69.py": "5ef3ddb62b5aef358cca4c5ebd058585597b2064a9775184a4e00909d2d02922",
+    "verify_solar_candidates_v69.py": "03caeff531fd9178931a1ff8cbf18dacb64cc9cfeb1cf5c21c29041d58f3e952",
+    "run_solar_pipeline_v69.py": "b4e890c4e98847a72bbc944ce6ef46bf36c187de85618bcda2cb3822c80b7819",
+    "solar_completion_v68.py": "d5793db1e55747392e0689759e4c3a0b36fed2a29f3a37e99b700764c40538bc",
+    "render_solar_completion_v68.py": "225531c6eed146863073fbdaec65a3c72a8f1939703495a49581cbcabcdaceba",
+    "run_solar_completion_v68.py": "8ab1650aaf7f847c9924388e8c41cb1f42d626ecb88d5ac99f048f757bf3f840",
+    "verify_solar_development_v68.py": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243",
+    "test_solar_candidate_support_v69.py": "153819cf7132729f8644d3fdf38d4d10f496f4f0c21e33b7ea823f3cc02886fd",
+    "test_solar_completion_v68.py": "d8df248d053e9923ebb86a13e6950b20b9d96ecec663f52034e4c29b0fdb4b13",
+    "test_solar_geometry_audit_v68.py": "66cbb2f3a49f73fd937dae863992648afe1e916d27c6b95be4b0620db87dd0c2"
+  },
+  "scope": "Software, geometry auditor and candidate-metric checks only. No new lunar matcher accuracy or trained response model. Child process interruption is separately verified before launch."
+}

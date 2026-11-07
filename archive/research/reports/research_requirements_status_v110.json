@@ -1,0 +1,258 @@
+{
+  "created_utc": "2026-11-04T22:51:29.692548+00:00",
+  "original_requirements": "reports/requirements_and_sota_v69.json",
+  "original_requirements_sha256": "f9aa5d7391ad88539e51541592fc9f35df7eb75ec03ba00c3c46922e05fcd3ab",
+  "original_scope_and_targets_preserved": true,
+  "broader_goal_status": "active",
+  "scientific_gain_claim": false,
+  "superiority_claim": false,
+  "outreach_ready_performance_claim": false,
+  "primary_metric": {
+    "name": "correctly accepted absolute camera poses / all eligible positive pairs",
+    "rotation_degrees_lte": 2,
+    "absolute_translation_error_lte": "1% median Euclidean reference range",
+    "failed_and_rejected_cases_in_denominator": true
+  },
+  "requirements": [
+    {
+      "id": "R01_primary_metric",
+      "original_target": "At least 70% correctly accepted camera poses / all eligible positive pairs.",
+      "status": "unmet_oracle_rejection_ceiling_measured",
+      "evidence_and_remaining_work": "The full-library saved outputs permit at most 114/192 correctly accepted, even with perfect rejection. A 192-positive cohort needs at least 135 correct poses for 70%. The 12-light ceiling is 86/192. Final and calibrated acceptance remain open."
+    },
+    {
+      "id": "R02_compact_gain",
+      "original_target": "At least 10 percentage points accepted-pose gain versus strongest matched compact control, including deterministic refinement.",
+      "status": "no_compact_gain",
+      "evidence_and_remaining_work": "The five-arm compact bootstrap recovered the same one of four poses in each arm. Direct relighting outperformed two matched full-development controls, which does not establish an accepted-pose compact gain."
+    },
+    {
+      "id": "R03_error_constraints",
+      "original_target": {
+        "empirical_accepted_pose_error_lte": 0.01,
+        "empirical_nonoverlap_acceptance_lte": 0.01
+      },
+      "status": "selected_raw_identity_failures_removed",
+      "evidence_and_remaining_work": "All three clean arms removed all three wrong dark poses without losing the one bright correct pose on four selected positives. All four matched nonoverlaps returned null in each arm. This targeted raw result does not establish calibrated or population-level error constraints."
+    },
+    {
+      "id": "R04_modern_tradeoff",
+      "original_target": "Modern pose accuracy advantage, or within 3 percentage points correct acceptance and at least 5× faster on same CPU at comparable error.",
+      "status": "arm_setup_failure_confirmed_portability_fix_pending_integration",
+      "evidence_and_remaining_work": "The frozen four-arm v98 run downloaded all official checkpoints but failed at reference validation, producing zero of 32 planned matcher rows. A separate Linux ARM probe found 3,860 of 13,134 recomputed vector rows differed by at most 1.11e-16. Exact lattice order, masks and availability passed, as did the bounded arithmetic check. A distinct relay and same-case LoMa-R/RoMa v2 evaluation remain open. The completed common development comparison is Direct versus MatchAnything–EfficientLoFTR and SIFT."
+    },
+    {
+      "id": "R05_data_gate",
+      "original_target": {
+        "complete_camera_units": 96,
+        "train_groups": 16,
+        "selection_groups": 8,
+        "camera_pairs_per_group": 4,
+        "physical_lights": 24,
+        "train_lights": "even indices only, including teacher targets",
+        "oracle_pose_recovery_lte_failure": 0.05
+      },
+      "status": "complete_audited",
+      "evidence_and_remaining_work": "All 96 camera units and 192 exact pose controls are complete, with 16 training groups, eight selection groups and even-only training lights."
+    },
+    {
+      "id": "R06_all_three_and_ablations",
+      "original_target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
+      "status": "modules_implemented_full_ablation_open",
+      "evidence_and_remaining_work": "Shared-Sun joint inference, the learned angular response and pooled control, and active patch selection are implemented. Exact eight-toggle procedural checks and bounded lunar pilots exist. Two 2,000-update studies did not establish learned localization improvement. The full paired eight-toggle lunar ablation, active policies/budgets and separate supplied-Sun analysis remain required."
+    },
+    {
+      "id": "R07_training_repetitions",
+      "original_target": "100-update exact replay/cost pilot, then 2,000 updates with seed 20261101; evaluate 0/500/1000/1500/2000.",
+      "status": "primary_studies_complete_repeats_pending",
+      "evidence_and_remaining_work": "The exact 100-update replays and 2,000-update primary studies exist. Pilot recovery did not support model selection; full cost projection did not admit the expanded study. No qualifying learned checkpoint or seed repeats."
+    },
+    {
+      "id": "R08_precision_and_robustness",
+      "original_target": "Diagnose and report native correspondence precision, pose failure and perturbation robustness.",
+      "status": "coarse_scattered_light_alignment_measured",
+      "evidence_and_remaining_work": "After removing fixed writer dither, no dark pose was recovered in the four-positive v106 diagnostic. v109 measured repeatable same-view terrain-scattered light in u061 at 256 samples and 32-pixel scale with no direct term. v110 found aligned coarse correlation 0.98559–0.98710 across all four seed pairings and beat every fixed shift. Native correlation was approximately 0.05. Camera detectability, fresh blind pose reranking and the frozen terrain perturbation experiments remain open."
+    },
+    {
+      "id": "R09_reserve_and_transfer",
+      "original_target": "Keep four calibration and twelve final terrain groups untouched during development. Preserve both consumed Tycho reserves as historical.",
+      "status": "physical_lab_baseline_completed_reference_compatibility_open",
+      "evidence_and_remaining_work": "SPICE-HL3 independently replayed 24 physical pairs across two traversals. Rotation passed 23/24 at 5 degrees. All signed translation-direction errors exceeded 15 degrees and the median was 40.928 degrees. The nominal reference and projection compatibility needs audit before comparison. LunaPolaris bounded metadata indexing succeeded. LuSNAR 7–9, true optical transfer, calibration and final groups remain open or untouched as specified."
+    },
+    {
+      "id": "R10_resources",
+      "original_target": {
+        "total_model_parameters_lt": 100000,
+        "native_image_pixels": 512,
+        "threads_per_scientific_job": 2,
+        "cumulative_training_wall_hours_lte": 48,
+        "cumulative_pretrained_comparison_wall_hours_lte": 72,
+        "paid_compute": false
+      },
+      "status": "arm_and_radiance_studies_charged_to_original_ledger",
+      "evidence_and_remaining_work": "The failed v98 ARM attempt, raw timing and raw study reserved 1,800, 240 and 900 baseline seconds respectively with no refunds. Training remaining 13,493 seconds. Baseline remaining 30,175 seconds. The separate small arithmetic-only probe used no checkpoints or scientific evaluation and did not reopen a reservation. All scientific jobs were serial and used two CPU threads."
+    },
+    {
+      "id": "R11_verification",
+      "original_target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
+      "status": "raw_scene_and_crossview_metrics_replayed",
+      "evidence_and_remaining_work": "Independent decoding verified 120 float32 EXR planes, eight exact historical RGB8 controls, eight native geometry masks and four analytic light controls. Separate geometry and arithmetic replay reproduced all 240 cross-view seed-pair cells. The native geometry, benchmark source, archive and receipt hashes stayed sealed."
+    },
+    {
+      "id": "R12_final_freeze",
+      "original_target": "Publish hashes for checkpoints, calibration rules, policies, preprocessing, cases and metrics before final inference; evaluate final reserve once.",
+      "status": "not_reached",
+      "evidence_and_remaining_work": "Final inference requires an eligible model and a published, one-time freeze."
+    },
+    {
+      "id": "R13_interfaces_and_package",
+      "original_target": "Preserve match_terrain.py; localize_terrain.py accepts reference/query images, reference-only geometry/pose, intrinsics, frozen config/checkpoint and optional known-Sun metadata.",
+      "status": "interim_brief_rendered_final_package_pending",
+      "evidence_and_remaining_work": "Existing matcher and localizer interfaces remain available. A two-page interim brief presents the matched result and original evidence gates. Final release, full paper, full demonstration and outreach preparation still depend on measured qualifying results."
+    },
+    {
+      "id": "R14_novelty",
+      "original_target": "Specific integrated shared-Sun / learned response / active selection mechanism supported by measured localization gain and targeted prior-art comparison.",
+      "status": "reproduced_scattered_signal_hypothesis_for_pose",
+      "evidence_and_remaining_work": "The study demonstrates fixed output dithering as a failure mode and measures repeatable, coarsely co-visible secondary illumination in one exposed simulated case. This motivates scoring blind pose/Sun hypotheses from coarse reference-derived irradiance after matching. It does not establish a navigation performance gain, novelty against prior photometric work or real-sensor detection."
+    }
+  ],
+  "remaining_canonical_seconds": {
+    "training": 13493,
+    "baseline": 30175
+  },
+  "historical_caps_are_conservative_envelopes_not_exact_consumed_wall_time": true,
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "current_evidence": {
+    "reports/solar_full_paired_development_v94.json": "2d95e3d4112197e81132fcbdc86b58518c37c44f685cc3cf8e2ddb2cd8920868",
+    "reports/solar_full_native_baselines_replay_v94.json": "75af1832538230553d3920bea1ee8bf9e7522232b319a30eb060cfe1616ae183",
+    "reports/solar_full_direct_render_replay_v92.json": "b11cc65d41367d82c85fc770b109a83fcd4fb65dca2a7da7c56ae039725af558",
+    "reports/solar_render_bootstrap_mechanism_replay_v94.json": "2f86e30d3eb6a5b38d93179b891bfe2e431534e8d0626003720a667d0e5060b8",
+    "reports/solar-offcatalogue-direct-dispatch-v95.json": "2eb77cccb34b602c8b355af58190890cf8ef446ec0788d3ea8949d6ce3307899",
+    "reports/solar_offcatalogue_direct_replay_v95.json": "9e441047e928e8f05ab3ec594e00ef151c0f546e88f88114fa4a330f4dccd8b6",
+    "reports/solar_direct_additive_windows_pilot_replay_v97.json": "5ec50f5ad57683c6a990a25e7a072fff698f09b519dd563fc66cdb43c09721d3",
+    "reports/solar_crosslight_mechanism_results_v98.json": "0a53ba706277ebece8122630cf309c309c3d4343cdc4c480cc0c939383a22eb8",
+    "reports/solar-full-crosslight-rescue-dispatch-v99.json": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817",
+    "reports/additive_pilot_geometry_diagnosis_v99.json": "7e7f90fb3fcd9a88da54eb91f0b231ad6c240b01f0d57afd7ba3b65c774eeba8",
+    "reports/solar_full_crosslight_rescue_replay_v99.json": "8347b60efa4d5f3721f2e118087475ec791339c595f43e2cd204b2d678312182",
+    "reports/solar_crosslight_failure_audit_v100.json": "aa01159d3b914796daf3a59b9691c9a41c278a11f854b258daef090c64ba4839",
+    "reports/solar_crosslight_query_texture_v100.json": "e58ca28e651120aff069fe8c9a867ee1e8e321fc303de5898a15ea61d49b3d4d",
+    "reports/SPICE_HL3_TRANSFER_PREPARATION_V100.md": "23d177c3986daf52f3110caa07b4b3f24ceba7f6a7a68f44b03bdbd038cd3c01",
+    "reports/solar_modern_arm_preflight_receipt_v101.json": "95a6ad35e013c586d07bd51d66b35bc7d432c842f772113a397e3b976e1dc867",
+    "reports/solar_match_scarcity_v102.json": "f7c92864ef78666e5362597f396e192290d2acfd3fe18fc1cf6988c66ff7fbec",
+    "reports/solar_supplied_sun_metadata_support_v102.json": "8bc140055dc5d14480864f05876d946f2e75811ab09243044206c696e96f331d",
+    "reports/solar_development_acceptance_limits_v102.json": "b6b5fa6e71553c1b99fb137162f8567aaf90fc2318f076a8407a51b9a334ab17",
+    "reports/SOTA_AND_ACCEPTANCE_V102.md": "ae509fe6192bb5da7e1822d09910ea9df25c9245b546b8500dc8be2fdc775c01",
+    "output/pdf/lunar-localization-research-brief.pdf": "decf54bca47a8047135105888e044a44a6416f7b6af06abf4289295fd16eecf2",
+    "reports/SUPPLIED_SUN_CONTROL_V102.md": "8649ac0bbec462d69cf1bcc012983d486b3e656d0b26cbb58436e7c8a883486d",
+    "reports/SOLAR_REFERENCE_PHOTOMETRY_V103.md": "faebe178fb161a31e9ca87a173426199f2900eb7d15608a6e5f0d6aeb46cd5a4",
+    "reports/reference_photometry_protocol_v103.json": "f5dc31b425d5d4c8a0f10b76c38bcfaf9a6d6728cffbbeff6260089f8fe2912e",
+    "reports/reference_photometry_v103.json": "a2f9174dac8337f8b900190b0e49ff5f53708fa571b1397bcb8f0fb2d0c699a3",
+    "reports/solar_recovery_opportunity_v103.json": "c51d81f736e16147fc66dd8d795153cbbfc29f20db4f7cfae8949972c12f6e60",
+    "reports/SOLAR_MATCHED_ARM_BRIDGE_V103.md": "a17eb6c462018cc7b50ff102b5dd54024d5892505f398cc31ac1724a4cad86ee",
+    "reports/solar_matched_arm_cohorts_v103.json": "3f5754829bcef72d90574975b509bf9354a108531848cb2961c5590d914aa9aa",
+    "reports/SOLAR_EXPOSURE_PILOT_V101.md": "203be549ffc0e7667e2b6a7080c4f6af43b3cb021328c50f2c79cb023765fdfc",
+    "reports/solar-radiometric-pilot-dispatch-v101.json": "b7e821211828566d7d60d5250fb230d02e1e73d6092a96418ce5435ab3306b28",
+    "reports/solar_radiometric_pilot_replay_v101.json": "4cb8d85c39cabcf84aff8f805bc9160406a268bf47a130acfe346c4f6da258f9",
+    "reports/SOLAR_SUPPLIED_SUN_POSE_PILOT_V102.md": "cd59c2a1de6124ecf6c2890516443f3e46140da8aaf377cb82905701349d29d8",
+    "reports/solar-supplied-sun-pilot-dispatch-v102.json": "f673aedc2927e15b87897eccdc63506cb409983d37d5501dd2169a3729ee51e7",
+    "reports/solar_supplied_sun_pilot_replay_v102.json": "d5ffdeaddabf40112688d46c4e65b9e285acb07cf38eda425d4e5166b8b5cf09",
+    "reports/SOLAR_IDENTITY_LOCK_V104.md": "13b93713196b80c81f25e5c422c0f88d6cac2da4228a1e6a4c60a66c364cf7b8",
+    "reports/solar_identity_lock_v104.json": "fc6c45c64c859022a08c0ddff621936dcade0940085d4a9b6520196f249d0884",
+    "reports/SPICE_HL3_GEOMETRY_RESULT_V101.md": "63f7e5551984299f35bec8424630b8b4f89ea16a14240edb0243d1a1ff343e7c",
+    "reports/spice-hl3-c-geometry-dispatch-v101.json": "1f70c87b898b5a5c187e8f615de2b96e1a94f1a36b6d081264fd0cb3a874b762",
+    "reports/spice_hl3_geometry_replay_v101.json": "bc53c9f412839dff9cf2f5c27c7591ed4d9fd1d180eac63269c9421152725155",
+    "reports/LUNAR_SOTA_AND_TRANSFER_V104.md": "49395b17fa7785fa2194d61b82148172b9f529b00a9d4c7c82e0f9e4ce6ef437",
+    "reports/LUNAPOLARIS_RANGE_PROBE_V104.md": "282b2036cca28d431cc45fd5cefbca921f245deda37cb0bb6add2b5d5e8c9fcd",
+    "reports/lunapolaris_metadata_evidence_v104.json": "7407b7df6f58fc42fa61b8bb7eb699966cc7327eabee20052479a946a8d31436",
+    "reports/SOLAR_DIRECT_ARM_PAYLOAD_V104.md": "1e7370858ab52afb1a809e59fe8c60b96fd22b37cbf96d2a93cc3ac4e8c0acb7",
+    "reports/solar_direct_arm_payload_preflight_v104.json": "cf252e2a44629a1b699d902921372abe99146ff6aaa08a36582e169eeb58ae0a",
+    "reports/solar-png-dither-control-v105.json": "dfec557dc407893db7c6030a1fb7a2156e1e0e03a521ce65f84e7ea415159841",
+    "control_solar_png_dither_v105.py": "9bbf931ad259a871737a5a710be41fc56f1931c7a5327563ccd400a07000f61c",
+    "reports/SOLAR_PNG_DITHER_CONTROL_V105.md": "15ff4a6aceb07ba867847b8c0a51de76aca8642be2502f56a902a35b7d798f97",
+    "reports/solar_png_dither_control_result_v105.json": "54d80e59e0138e0a9ca60af1ced70f0db86929a42457e6946bc896b35f0da7ab",
+    "reports/SOLAR_DITHER_FINGERPRINT_V105.md": "259c144347f8c059bcc6160be45e3f95877f621863addbd08180e69f3e6363d8",
+    "reports/solar-dither-fingerprint-protocol-v105.json": "a7602d1d74fde7c941c3939c0af4e5dae7f10c702ab6e92a12611c3ef629673c",
+    "reports/solar_dither_fingerprint_result_v105.json": "4ebbf0043283c56d2fceb42cd7aca034db5421982c9da11f8d35cf1ec5829232",
+    "audit_archived_dither_fingerprint_v105.py": "ab15105ccc63579d2b3dc53d67212054a6c93ef886dcdfee4d700f09cad0a2a6",
+    "reports/SOLAR_CLEAN_RADIANCE_PROTOCOL_V106.md": "59cb0c360cbdc8e09698379a00c58f983b81ca8b4e5debc3170513554127d823",
+    "reports/solar-clean-rerender-cohort-v106.json": "7510450dfdbaf23f1e5973c5b9adae026834c92349de2d1158f95886acf5b80b",
+    "reports/solar-clean-radiance-dispatch-v106.json": "8f65614e740cf8db7d51000deb88c73a147e0b194b12fc35d18b6870634d4e75",
+    "reports/SOLAR_CLEAN_RADIANCE_RESULTS_V106.md": "5236e0d0122d542a97c118f61d4f59fa4d016fc80cf94186e9fd9dad9fdfd2d0",
+    "reports/solar_clean_radiance_render_receipt_v106.json": "1e3e36c32e552326ba359dca96544e878905086acac9a7c1019daa66b3620beb",
+    "reports/solar_clean_radiance_pose_replay_v106.json": "40aab6a459cf733c161dfde5c0769c014f0258c95ecedaeb93d3934ae8a3e518",
+    "reports/solar_clean_radiance_watchdog_v106.json": "ab76b6ca52119c97884d70dc6b966be79d609838eb7573b6f3aed719355094e4",
+    "reports/SOLAR_CLEAN_SIGNAL_V107.md": "9adeb2e38f01eb90db43ee4947b1d6b3c5542a26582bb64e604612e0064ebd3d",
+    "reports/solar-clean-signal-protocol-v107.json": "6cb071a43be2cc50ee5d3c70c82c111847fe03e55dd5a472c5716b04945aa3cd",
+    "reports/solar_clean_signal_v107.json": "7f507f2e68a4912faa5d5679088d6adc68bb646983b3b36a8322c105b27de246",
+    "audit_clean_signal_v107.py": "4de608a0b45a28db17bfc3f1e58b27f02017891777d6489bbccc1144dc8188b9",
+    "audit_clean_covision_v108.py": "f1edab8fb0f6df2a27ac40b5387e90ccee9215e6d8dcc95b93180f1820205ade",
+    "replay_clean_covision_v108.py": "1ac7f13c438628d73b47d5bdfc374adb7e0ca490fd2ea419dc17fabf55865e8f",
+    "reports/solar-clean-covision-protocol-v108.json": "ccd1d2d4220f3ef118703b42f57109328df0671d271e0e5ae044d71ba3fc86e0",
+    "reports/solar_clean_covision_v108.json": "d92ab62049b149cc9188d1267d4add78bfca892cd1c95b7cf085099d0c57f4c5",
+    "reports/solar_clean_covision_replay_v108.json": "3c4262e6eda60233ef49f245ceb0f138d7674eaad1189b5163e8e728a28eb403",
+    "reports/SOLAR_CLEAN_COVISION_V108.md": "176af8ce3675a623425824821c9a202b1f0517ca9edaf7d1f60c75fc8105cbb7",
+    "reports/solar-modern-arm-v98/pilot-protocol.json": "9ac4fe0828069b32d26741477428ce41ccd3a06a8e16b6df64426b3c8c192a25",
+    "reports/SOLAR_MODERN_ARM_PILOT_V98_OUTCOME.md": "effcb8b933a13f975cc819cfc2f8691ddb80292c06fea16e1b7670c7dd9f13bb",
+    "reports/solar_generic_sun_arm_probe_v110.json": "c27fa7920581a94c3ac1341cdd20e8e1a115bba6368c2079c6641207870a41ac",
+    "reports/SOLAR_TAIL_MORPHOLOGY_V109.md": "7ec40803a7741027a2f1b5bc5dbf20c6b34ef611d387ed97af106b53786344f6",
+    "reports/solar_tail_morphology_v109.json": "91cc4173a5db0f5aa7fbea41c6e86647721a879fb8837344f37e9599fb745569",
+    "reports/solar_tail_morphology_replay_v109.json": "27b13f60066bf86675b29ac7bd87c4e2bb2132c1b98749e3c35c4d1c32da7506",
+    "reports/solar-raw-acquisition-v109-timing.json": "df5012143d000f4a3e68b0d85b94e4a6b664f71cd71bdfc998db2092f5245cf2",
+    "reports/solar-raw-acquisition-v109-study.json": "d711eb8429a8de80d74b16edc20bd49eae011801d32fcf2cd7410d78db28bb60",
+    "reports/solar_raw_acquisition_study_receipt_v109.json": "4ce6d2b7364722205f1b067bbb4d6fb4a29c3e3ae224350a92aca0f4c5a31067",
+    "reports/solar_raw_acquisition_replay_v109.json": "51bee959b252e962889346612a7b360422deaac974c2082e5145fae7d21e1426",
+    "reports/SOLAR_RAW_ACQUISITION_V109.md": "8f5050942094d3b2e72881d86688d7c6956e352169c045e92abde8fadc06576f",
+    "audit_raw_crossview_v110.py": "55f920a07f245bc29c69526b47672c7f539008e567ade4a5677b1edcb8abc2ae",
+    "reports/SOLAR_RAW_CROSSVIEW_V110.md": "f06cb58720902a922911feb1463cc2d15d6cb96689b4e1778835ad6ebb570be4",
+    "reports/solar-raw-crossview-protocol-v110.json": "478d90ff7f50ff69d1f030c4875b3a7378b186bf61e4a1471c0bdf7990b5b932",
+    "reports/solar_raw_crossview_v110.json": "0a04c3f90a63c566ac9db9e3dd6ca0e256d5888a276c57ce9d29d56d9ef84498",
+    "reports/solar_raw_crossview_replay_v110.json": "b032e43d0a48ce4a15b1642a4000fcfc35338740341d14762443055282b18641"
+  },
+  "all_eligible_failures_remain_in_denominators": true,
+  "calibration_or_final_access": false,
+  "previous_status": "reports/research_requirements_status_v108.json",
+  "bounded_matched_development_result": {
+    "raw_correct": [
+      114,
+      42,
+      41
+    ],
+    "positive_pairs": 192,
+    "method_order": [
+      "direct_relighting",
+      "MatchAnything–EfficientLoFTR",
+      "SIFT2048"
+    ],
+    "raw_claim_scope": "Shared-simulator development at catalogue lighting. It establishes a matched direct-control advantage, without an integrated compact superiority or state-of-the-art claim."
+  },
+  "new_primary_comparison_pilot": {
+    "exact_protocol": "reports/solar-modern-arm-v98/pilot-protocol.json",
+    "source_commit": "4cad05232bff4f21947eb04f6bb600ec84ec8e11",
+    "signed_ticket_commit": "e1a7e6075236342c377759b3743f69db0de7bafd",
+    "run_id": 41926059385,
+    "run_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41926059385",
+    "scope": "32 planned estimated-Sun development rows over four methods and eight frozen cases, no final or calibration access",
+    "status_at_snapshot": "setup_failure_zero_rows",
+    "outcome_measured": false,
+    "planned_rows": 32,
+    "completed_matcher_rows": 0,
+    "arithmetic_probe_run_id": 41928100316
+  },
+  "raw_radiance_v109_release": {
+    "tag": "solar-raw-radiance-v109",
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-raw-radiance-v109",
+    "sha256": "365f416450c8beff4a93db1ed076c6f2c8827f64203d3997a2f20b1ab83f67dc",
+    "archive_bytes": 66688971,
+    "source_commit": "f695359e78af56fadf67cadc82b866a9fa237a00"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "prepared_utc": "2026-11-02T11:00:12.510760+00:00",
+  "source_sha256": {
+    "north_modern_comparison_v49.py": "b6a228c510c749058f57eb6edfd12a77d92cb32252b7515335af0c4fe182748d",
+    "verify_north_modern_v49.py": "98b975bba4b0e2233ea2a6d233c56bedad5aaa9e94e151429460c883dd32cacc",
+    "test_north_modern_comparison_v49.py": "a92be6e776c2f9c339d777e065ce5b5fccb20eba091c5e6fde0d4813433cc515"
+  },
+  "previous_preparation_sha256": "bc93656af7153756ea27c243d860d2d08caa2e06361bc0493aa4c1a5db78d7f4",
+  "status": "PREPARED modern benchmark/replay sources amended before any new baseline inference; first preparation retained.",
+  "isolated_checks_passed": 25,
+  "isolated_check_seconds": 4.24,
+  "scope": "Independent saved known-transform control pose/error replay; missing/tampered controls rejected; rigid camera-to-world validation; original image-only/reference-only/PnP/cache/live-process controls.",
+  "full_repository_regression_pending": true,
+  "fresh_production_smoke_pending": true,
+  "public_source_verification_pending": true,
+  "actual_new_pretrained_controls_pending": true,
+  "actual_new_comparison_and_replay_pending": true,
+  "neural_forwards": 0,
+  "lunar_pixels_loaded": 0,
+  "calibration_or_final_pixels_loaded": 0,
+  "scientific_accuracy_gain_claim": false,
+  "admission_receipt_not_generated": "reports/north_modern_software_checks_v49.json"
+}

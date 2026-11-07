@@ -1,0 +1,2006 @@
+{
+  "schema": "solar_tail_morphology_v109",
+  "protocol_sha256": "0388eb9d352afb75c568b564a2fdddb04a24a77ae4ee4eeda0210dc7f0608d91",
+  "rows": [
+    {
+      "case_id": "u061-l00-17-positive",
+      "purpose": "sparse_tail_primary",
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 211460,
+        "query_supported_smooth_depth_stencil": 211460,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 211460,
+        "reciprocal_cov_visible": 211460,
+        "common_support_before_unique": 177714,
+        "common_support_unique": 167234
+      },
+      "tails": {
+        "98": {
+          "reference": {
+            "linear_cut": 0.001934541630556404,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.001934541630556404,
+            "bright_valid_pixels": 5242,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0016689732355338507,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0016689732355338507,
+            "bright_valid_pixels": 5243,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 3034,
+                "query_bright": 3421,
+                "both_bright": 76,
+                "jaccard": 0.01191409311804358,
+                "phi": 0.004410607717168663,
+                "lift": 1.224530253155459
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 3034,
+                "query_bright": 3263,
+                "both_bright": 38,
+                "jaccard": 0.006071257389359323,
+                "phi": -0.0068665081643633635,
+                "lift": 0.6419120435251034
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 3034,
+                "query_bright": 3567,
+                "both_bright": 68,
+                "jaccard": 0.010408694321138834,
+                "phi": 0.0010191711226809948,
+                "lift": 1.0507872741764719
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 3034,
+                "query_bright": 3229,
+                "both_bright": 67,
+                "jaccard": 0.010813428018076178,
+                "phi": 0.002741021296192793,
+                "lift": 1.1437095798560875
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 3034,
+                "query_bright": 3570,
+                "both_bright": 71,
+                "jaccard": 0.010867901423542017,
+                "phi": 0.0019317912001907312,
+                "lift": 1.0962235652336083
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 25594,
+                "query_bright": 28685,
+                "both_bright": 5190,
+                "jaccard": 0.10572633380187008,
+                "phi": 0.03524535386762426,
+                "lift": 1.1822216698780976
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 25594,
+                "query_bright": 27618,
+                "both_bright": 4353,
+                "jaccard": 0.08909310464806894,
+                "phi": 0.005647487224553615,
+                "lift": 1.0298710587770654
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 25594,
+                "query_bright": 30043,
+                "both_bright": 4919,
+                "jaccard": 0.09698726290468868,
+                "phi": 0.013893322645822924,
+                "lift": 1.069842722448687
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 25594,
+                "query_bright": 27314,
+                "both_bright": 4491,
+                "jaccard": 0.09275667637400087,
+                "phi": 0.013963244799439308,
+                "lift": 1.0743459771604662
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 25594,
+                "query_bright": 30015,
+                "both_bright": 4830,
+                "jaccard": 0.09511806061560882,
+                "phi": 0.010231935472712884,
+                "lift": 1.051465905712456
+              }
+            ]
+          }
+        },
+        "99": {
+          "reference": {
+            "linear_cut": 0.0027317428519395373,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0027317428519395373,
+            "bright_valid_pixels": 2620,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.002637259744220055,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.002637259744220055,
+            "bright_valid_pixels": 2619,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 1548,
+                "query_bright": 1700,
+                "both_bright": 20,
+                "jaccard": 0.006195786864931847,
+                "phi": 0.0026542498745995165,
+                "lift": 1.270968232254142,
+                "both_bright_reference_tiles_yx": [
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    4,
+                    3,
+                    1
+                  ],
+                  [
+                    0,
+                    2,
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2,
+                    3,
+                    0
+                  ]
+                ]
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 1548,
+                "query_bright": 1628,
+                "both_bright": 11,
+                "jaccard": 0.0034755134281200632,
+                "phi": -0.0025880888535923276,
+                "lift": 0.729947971227041
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 1548,
+                "query_bright": 1771,
+                "both_bright": 22,
+                "jaccard": 0.006672732787382469,
+                "phi": 0.003420172523261356,
+                "lift": 1.3420161458584108
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 1548,
+                "query_bright": 1586,
+                "both_bright": 22,
+                "jaccard": 0.007069408740359897,
+                "phi": 0.004715366344318725,
+                "lift": 1.4985564907410123
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 1548,
+                "query_bright": 1784,
+                "both_bright": 20,
+                "jaccard": 0.006038647342995169,
+                "phi": 0.0021190690787880983,
+                "lift": 1.2111244365650455
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 13419,
+                "query_bright": 14794,
+                "both_bright": 1408,
+                "jaccard": 0.052527513523596345,
+                "phi": 0.017123851648525684,
+                "lift": 1.1861004348937219
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 13419,
+                "query_bright": 14235,
+                "both_bright": 1138,
+                "jaccard": 0.04291748378337607,
+                "phi": -0.0003335363851887354,
+                "lift": 0.9962979008448171
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 13419,
+                "query_bright": 15570,
+                "both_bright": 1300,
+                "jaccard": 0.0469500523673661,
+                "phi": 0.0038366961020331737,
+                "lift": 1.040540921496533
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 13419,
+                "query_bright": 13972,
+                "both_bright": 1192,
+                "jaccard": 0.04549791976793007,
+                "phi": 0.005637802689507989,
+                "lift": 1.0632174679061208
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 13419,
+                "query_bright": 15388,
+                "both_bright": 1298,
+                "jaccard": 0.04718455778108983,
+                "phi": 0.0048167925609602855,
+                "lift": 1.051228047215409
+              }
+            ]
+          }
+        },
+        "99.5": {
+          "reference": {
+            "linear_cut": 0.0030258215247164267,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0030258215247164267,
+            "bright_valid_pixels": 1309,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.002977398932010192,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.002977398932010192,
+            "bright_valid_pixels": 1310,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 803,
+                "query_bright": 857,
+                "both_bright": 4,
+                "jaccard": 0.0024154589371980675,
+                "phi": -0.0001393414261379883,
+                "lift": 0.9720490982619145
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 803,
+                "query_bright": 831,
+                "both_bright": 3,
+                "jaccard": 0.0018393623543838135,
+                "phi": -0.0012180938686039713,
+                "lift": 0.7518466400816433
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 803,
+                "query_bright": 899,
+                "both_bright": 7,
+                "jaccard": 0.004129793510324484,
+                "phi": 0.003174308999073667,
+                "lift": 1.6216136096977825
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 803,
+                "query_bright": 821,
+                "both_bright": 15,
+                "jaccard": 0.009322560596643879,
+                "phi": 0.013685316171671697,
+                "lift": 3.8050216681354785
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 803,
+                "query_bright": 882,
+                "both_bright": 5,
+                "jaccard": 0.002976190476190476,
+                "phi": 0.0009135426775021617,
+                "lift": 1.180620857724576
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 7139,
+                "query_bright": 7544,
+                "both_bright": 362,
+                "jaccard": 0.025277564415892746,
+                "phi": 0.0056946255881915936,
+                "lift": 1.1240718874724696
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 7139,
+                "query_bright": 7340,
+                "both_bright": 314,
+                "jaccard": 0.02216731380162372,
+                "phi": 9.60274911297669e-05,
+                "lift": 1.0021224322169393
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 7139,
+                "query_bright": 7867,
+                "both_bright": 386,
+                "jaccard": 0.02640218878248974,
+                "phi": 0.007008754185600142,
+                "lift": 1.1493845369775388
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 7139,
+                "query_bright": 7315,
+                "both_bright": 386,
+                "jaccard": 0.02743815752061416,
+                "phi": 0.010663930058334976,
+                "lift": 1.2361186811212983
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167234,
+                "reference_bright": 7139,
+                "query_bright": 7650,
+                "both_bright": 337,
+                "jaccard": 0.023318571823969,
+                "phi": 0.0014768622828616998,
+                "lift": 1.0319428857596173
+              }
+            ]
+          }
+        }
+      },
+      "primary_shape_result": "does_not_exceed_every_shift_on_both_metrics"
+    },
+    {
+      "case_id": "u013-l00-00-positive",
+      "purpose": "bright_control",
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 238434,
+        "query_supported_smooth_depth_stencil": 238434,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 238434,
+        "reciprocal_cov_visible": 238434,
+        "common_support_before_unique": 212409,
+        "common_support_unique": 163765
+      },
+      "tails": {
+        "98": {
+          "reference": {
+            "linear_cut": 0.04865334071593471,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.04865334071593471,
+            "bright_valid_pixels": 5243,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.04923780023240685,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.04923780023240685,
+            "bright_valid_pixels": 5240,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 3721,
+                "query_bright": 3404,
+                "both_bright": 3353,
+                "jaccard": 0.8889183457051962,
+                "phi": 0.9408614054282947,
+                "lift": 43.35162901763453
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 3721,
+                "query_bright": 2947,
+                "both_bright": 56,
+                "jaccard": 0.008469449485783424,
+                "phi": -0.003378661629111964,
+                "lift": 0.836313891561089
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 3721,
+                "query_bright": 3663,
+                "both_bright": 56,
+                "jaccard": 0.007641921397379912,
+                "phi": -0.007545515648988644,
+                "lift": 0.6728411243326589
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 3721,
+                "query_bright": 3768,
+                "both_bright": 536,
+                "jaccard": 0.07708902631957429,
+                "phi": 0.12309606795056584,
+                "lift": 6.260590748212218
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 3721,
+                "query_bright": 3732,
+                "both_bright": 581,
+                "jaccard": 0.08454598370197905,
+                "phi": 0.13625592526945743,
+                "lift": 6.851661782882299
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 5213,
+                "query_bright": 5000,
+                "both_bright": 4836,
+                "jaccard": 0.8993862748744653,
+                "phi": 0.945543250696376,
+                "lift": 30.384329177057356
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 5213,
+                "query_bright": 4332,
+                "both_bright": 134,
+                "jaccard": 0.014238656890872383,
+                "phi": -0.0008446909184914668,
+                "lift": 0.9717391831877087
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 5213,
+                "query_bright": 5358,
+                "both_bright": 151,
+                "jaccard": 0.014491362763915548,
+                "phi": -0.003823871453682955,
+                "lift": 0.8853349369849274
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 5213,
+                "query_bright": 5483,
+                "both_bright": 941,
+                "jaccard": 0.0964633521271143,
+                "phi": 0.1482034350427707,
+                "lift": 5.391439574718838
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 5213,
+                "query_bright": 5451,
+                "both_bright": 999,
+                "jaccard": 0.1033626487325401,
+                "phi": 0.16006691733638692,
+                "lift": 5.757350516853795
+              }
+            ]
+          }
+        },
+        "99": {
+          "reference": {
+            "linear_cut": 0.05337431950831517,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.05337431950831517,
+            "bright_valid_pixels": 2620,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.05478593892576527,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.05478593892576527,
+            "bright_valid_pixels": 2621,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1754,
+                "query_bright": 1432,
+                "both_bright": 1412,
+                "jaccard": 0.7959413754227734,
+                "phi": 0.889919316338585,
+                "lift": 92.06258798723428,
+                "both_bright_reference_tiles_yx": [
+                  [
+                    0,
+                    13,
+                    18,
+                    292
+                  ],
+                  [
+                    0,
+                    367,
+                    25,
+                    23
+                  ],
+                  [
+                    0,
+                    0,
+                    68,
+                    59
+                  ],
+                  [
+                    0,
+                    0,
+                    399,
+                    148
+                  ]
+                ]
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1754,
+                "query_bright": 1175,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.008845340607684826,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1754,
+                "query_bright": 1623,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.01041007935848381,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1754,
+                "query_bright": 1681,
+                "both_bright": 18,
+                "jaccard": 0.0052677787532923615,
+                "phi": -2.530065028075126e-06,
+                "lift": 0.9997612324205674
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1754,
+                "query_bright": 1704,
+                "both_bright": 74,
+                "jaccard": 0.02186761229314421,
+                "phi": 0.03259116463953341,
+                "lift": 4.054652410854332
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 2701,
+                "query_bright": 2353,
+                "both_bright": 2292,
+                "jaccard": 0.8298334540188269,
+                "phi": 0.9077762437051844,
+                "lift": 59.05942188542658
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 2701,
+                "query_bright": 1954,
+                "both_bright": 7,
+                "jaccard": 0.0015060240963855422,
+                "phi": -0.011139592576416247,
+                "lift": 0.21720508382921977
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 2701,
+                "query_bright": 2613,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.01648978172054717,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 2701,
+                "query_bright": 2764,
+                "both_bright": 86,
+                "jaccard": 0.01598810187767243,
+                "phi": 0.015041694193103404,
+                "lift": 1.8865004706945114
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 2701,
+                "query_bright": 2645,
+                "both_bright": 190,
+                "jaccard": 0.036850271528316526,
+                "phi": 0.05567250575386343,
+                "lift": 4.3553637279198565
+              }
+            ]
+          }
+        },
+        "99.5": {
+          "reference": {
+            "linear_cut": 0.058693121425172703,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.058693121425172703,
+            "bright_valid_pixels": 1311,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.06197397058156635,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.06197397058156635,
+            "bright_valid_pixels": 1311,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 812,
+                "query_bright": 567,
+                "both_bright": 554,
+                "jaccard": 0.6715151515151515,
+                "phi": 0.8157614900671629,
+                "lift": 197.05695432706926
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 812,
+                "query_bright": 496,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.0038907722195837286,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 812,
+                "query_bright": 696,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.0046117499346721045,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 812,
+                "query_bright": 673,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.004534590118561654,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 812,
+                "query_bright": 909,
+                "both_bright": 20,
+                "jaccard": 0.011757789535567314,
+                "phi": 0.018128435058773904,
+                "lift": 4.437426501270817
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1353,
+                "query_bright": 1052,
+                "both_bright": 1021,
+                "jaccard": 0.7377167630057804,
+                "phi": 0.8547852924665239,
+                "lift": 117.47171122333415
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1353,
+                "query_bright": 932,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.006905205139482883,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1353,
+                "query_bright": 1223,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -0.007917175462231993,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1353,
+                "query_bright": 1250,
+                "both_bright": 2,
+                "jaccard": 0.0007689350249903883,
+                "phi": -0.0064545433460487835,
+                "lift": 0.19366149297856614
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 163765,
+                "reference_bright": 1353,
+                "query_bright": 1454,
+                "both_bright": 50,
+                "jaccard": 0.018135654697134566,
+                "phi": 0.02731776898758138,
+                "lift": 4.1622569845805995
+              }
+            ]
+          }
+        }
+      },
+      "primary_shape_result": "above_every_shift_on_both_metrics"
+    },
+    {
+      "case_id": "u025-l00-00-positive",
+      "purpose": "near_uniform_control",
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 212882,
+        "query_supported_smooth_depth_stencil": 212882,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 212882,
+        "reciprocal_cov_visible": 212882,
+        "common_support_before_unique": 176446,
+        "common_support_unique": 167401
+      },
+      "tails": {
+        "98": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ]
+          }
+        },
+        "99": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null,
+                "both_bright_reference_tiles_yx": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ]
+          }
+        },
+        "99.5": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 0,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 167401,
+                "reference_bright": 0,
+                "query_bright": 0,
+                "both_bright": 0,
+                "jaccard": null,
+                "phi": null,
+                "lift": null
+              }
+            ]
+          }
+        }
+      },
+      "primary_shape_result": "indeterminate"
+    },
+    {
+      "case_id": "u027-l08-01-positive",
+      "purpose": "near_uniform_control",
+      "geometry": {
+        "reference_valid": 262144,
+        "query_bilinear_footprint": 237297,
+        "query_supported_smooth_depth_stencil": 237297,
+        "inconsistent_nearer_query_surface": 0,
+        "query_depth_agreement": 237297,
+        "reciprocal_cov_visible": 237297,
+        "common_support_before_unique": 210189,
+        "common_support_unique": 152670
+      },
+      "tails": {
+        "98": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 27,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.337785960666867e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 25,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.022985721110095e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 26,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.181898950303059e-05,
+                "lift": 0.0
+              }
+            ]
+          }
+        },
+        "99": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0,
+                "both_bright_reference_tiles_yx": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 27,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.337785960666867e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 25,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.022985721110095e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 26,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.181898950303059e-05,
+                "lift": 0.0
+              }
+            ]
+          }
+        },
+        "99.5": {
+          "reference": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "query": {
+            "linear_cut": 0.0007470880055497023,
+            "p01_linear": 0.0004842259270623477,
+            "ranked_cut_linear": 0.0004995794320667635,
+            "bright_valid_pixels": 3,
+            "valid_pixels": 262144
+          },
+          "dilation_pixels": {
+            "0": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 2,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -9.263296373388614e-06,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 1,
+                "query_bright": 3,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -1.134521188203182e-05,
+                "lift": 0.0
+              }
+            ],
+            "1": [
+              {
+                "query_offset_xy": [
+                  0,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 27,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.337785960666867e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  -32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  32,
+                  0
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 25,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.022985721110095e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  -32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 17,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -6.615750151427394e-05,
+                "lift": 0.0
+              },
+              {
+                "query_offset_xy": [
+                  0,
+                  32
+                ],
+                "common_pixels": 152670,
+                "reference_bright": 6,
+                "query_bright": 26,
+                "both_bright": 0,
+                "jaccard": 0.0,
+                "phi": -8.181898950303059e-05,
+                "lift": 0.0
+              }
+            ]
+          }
+        }
+      },
+      "primary_shape_result": "does_not_exceed_every_shift_on_both_metrics"
+    }
+  ],
+  "matcher_calls": 0,
+  "optimizer_updates": 0,
+  "renderer_calls": 0,
+  "calibration_or_final_access": false
+}

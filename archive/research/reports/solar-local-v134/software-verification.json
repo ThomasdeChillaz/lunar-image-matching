@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-11-05T19:28:16.735832+00:00",
+  "public_ci": {
+    "run_id": 42093441530,
+    "job_id": 127477195301,
+    "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/42093441530",
+    "conclusion": "success",
+    "pytest_passed": 1457,
+    "pytest_skipped": 8,
+    "pytest_seconds": 101.08,
+    "end_to_end_smoke_passed": true
+  },
+  "local_pre_diagnostic_repair_full_suite": {
+    "passed": 1458,
+    "skipped": 4,
+    "seconds": 284.97,
+    "log_sha256": "3dfa5a67beac2bb310789b95b8e561f17a5cbc3a98d6bcc0ea3335ed39640e21"
+  },
+  "focused_current_native_geometry_and_serialization": {
+    "passed": 16,
+    "seconds": 14.95
+  },
+  "fresh_procedural_replay": {
+    "path": "runs/solar-controlled-eight-toggle-v133-replay.json",
+    "passed": true,
+    "rows": 8,
+    "sha256": "8cc68d5f2b5c13b33a1e427e40e3513050db3cad08ef15e5eecb2f9b8ace3ce3"
+  },
+  "source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "scientific_accuracy_established_by_tests": false
+}

@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-04T06:38:01.409579+00:00",
+  "reporting_only": true,
+  "runner_sha256": "69c4fd825d0c3042b5f7cd6cd95d5b38354ada15259d229a887eea7423b0b2ab",
+  "new_test_sha256": "12f6827c902347e61a4511c6521cf8a8046a0c3e325607aae708bed26df55c47",
+  "memory_fixture_sha256": "8cc0e0bb8d86d87af2431886a9e03f12e2b8f5f867efc107938245646c38c94d",
+  "existing_suite": {
+    "passed": 899,
+    "skipped": 4,
+    "seconds": 64.28,
+    "log_sha256": "df57560ce1b015ec87b72e6881dbd5e4dc0af547e7aaebfdaeb5a00cd2a36f4b"
+  },
+  "focused": {
+    "passed": 19,
+    "new_tests": 8,
+    "related_memory_tests": 11,
+    "seconds": 4.32,
+    "log_sha256": "0165adc80e3d97eb54bed82a53f27ff5766dec497cbfdd3fa70b4136186a7958"
+  },
+  "fresh_procedural_replay": "reports/solar_controlled_smoke_replay_v81.json",
+  "fresh_procedural_replay_sha256": "c9a4fcc9c498ce33539a4909ddcf9ccc418acc014ed71b1120cb88ce903bcb28",
+  "protected_source_closures": {
+    "reports/solar_learning_contract_v79.json": {
+      "source_count": 49,
+      "mismatches": []
+    },
+    "reports/solar_reference_contract_v80.json": {
+      "source_count": 42,
+      "mismatches": []
+    }
+  },
+  "independent_review": "reports/solar_reporter_independent_review_v82.json",
+  "model_or_scoring_or_solver_change": false,
+  "new_lunar_pose_evaluation": false,
+  "calibration_or_final_access": false,
+  "scientific_goal_complete": false,
+  "scope": "Software evidence for preservation of existing raw diagnostics; no new lunar accuracy result."
+}

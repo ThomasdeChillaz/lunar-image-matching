@@ -1,0 +1,368 @@
+{
+  "prepared_only": false,
+  "control_kind": "legacy_matchanything",
+  "method": "matchanything",
+  "original_master": "reports/solar_development_admission_v67.json",
+  "dataset_summary": "runs/solar-v70-completion/summary.json",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "compute_ledger": "reports/solar_compute_admission_v67.json",
+  "reservation_journal": "runs/solar-compute-reservations-v67.json",
+  "max_calendar_seconds": 120,
+  "publication_dispatch_lease_seconds": 1800,
+  "dependency_dir": "/Users/admin/Documents/Codex/2026-10-25/for/work/modern-matching-deps",
+  "output": "runs/matchanything-native-two-thread-control-v74",
+  "schema_version": 74,
+  "cpu_threads": 2,
+  "calibration_or_final_access": false,
+  "query_truth_used": false,
+  "original_master_sha256": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+  "dataset_summary_sha256": "9b648109a85a43d30cc387ba15a5912f4f0010efb7e17e844179ceaaf451cd0f",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "compute_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "author_profile": "native512",
+  "artifact_sha256": {
+    "data/models/matchanything_eloftr.safetensors": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+    "matchanything_model_lock.json": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5"
+  },
+  "child_output": "runs/matchanything-native-two-thread-control-v74/native",
+  "source_sha256": {
+    "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+    "control_historical_native_v74.py": "1de913d9d00b193a6b134f0c3d6e893bdfd8d05e54a2ac2c79245d03578fa3c9",
+    "control_native_matchanything_v17.py": "199663bd855557bad691db6678e6d22f179183bbb11799da793bbe31dd59ed7f",
+    "dataset.py": "45f5be8dacfb724bb88372da4d980c5495287859af50c098f8c5fb4723c25a01",
+    "eloftr_matcher.py": "8e8e8004a1354653e48749ece8716829ae1ad7eb5002900fa4e3ca2c9173e6b3",
+    "geometry.py": "d7a77e5f5824d1abbf9343e9326d770c27bf480ab26794922a39ccc4e9f5aacd",
+    "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+    "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+    "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+    "loftr_matcher.py": "f06f8032dfaa6fef6cb05e62995edee9ad5ddf780be3998e5a868c94a7dfcf03",
+    "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+    "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+    "lunargeo_dataset.py": "beb03961483ace48c63a4bae1e68b28abf5a9317c1c5ba903239e74fe1dad59b",
+    "matchanything_matcher.py": "0604256c830597a71eb91751817ea65bf579b4f31f43ebdb6f2909eb643665c8",
+    "matchanything_model_lock.json": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5",
+    "matchers.py": "f42d6481f9831a564847e6acf7c4dca2695f796f5874f4ef7bbe896a56493210",
+    "native_baseline_pose_v7.py": "1707c7e79076dc6dbf7bfee6ec9cd83631125bea5a3220ddc32c8e10c88746f1",
+    "native_crop_alignment_v57.py": "45e8396cc1c266c8ad90ebe36c40333d74b5323c6ff70f3efb1bb444ee16958d",
+    "native_matchanything_v17.py": "06337d67bbf620307eed8a4fc594f6349dae8fd7eff7f7527f4d88b71ea6449f",
+    "native_pretrained_adapters_v73.py": "8b4de69cf2159857d9cd2b9b06822ce25469268392f67e422e7643b91cbe6c5f",
+    "north_camera_contract_v59.py": "1a4bab9e63a59b5ce0ffabb23dc8ecd3c745ef9dfb1c90fc4b537cd0611b2a95",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_camera_visibility_v59.py": "f65d896283e81763f970442c6a14cff9865d5cb48555ab164bcf4e669e7720b3",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+    "remote_archive.py": "5d4cd7a286d32d86fa54993b7386b25361f996922868a36ba8d2d5c255302e73",
+    "renderer_depth_v34.py": "c977d27361e6ef95ed22d7095e888c9bfef09d389dcce6eebe338040f77b3981",
+    "solar_completion_v68.py": "d5793db1e55747392e0689759e4c3a0b36fed2a29f3a37e99b700764c40538bc",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_evaluation_v70.py": "ab768b2484251841914d64e54f97f10bfe15907d8def25b7726022a2041c3ad6",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_training_bank_v68.py": "471c716d120cebf93b5feb7801dda299cd226f47bec662b0c890a3c914f8808d",
+    "synthetic.py": "6de5947e09bb333b35ee9667671b1970770accb8e29db6626062895b0a06302a",
+    "verify_north_camera_qualified_v64.py": "73c9f067b1c8108b6bd0ec4963b4d52b5c43981787aace2984533be1bee956c6",
+    "verify_north_development_v35.py": "58941b99b5ba1cfff2930834e3c913da8e098d277d24dcc03f72d5ef63948e50",
+    "verify_solar_development_v68.py": "436ccd8bba7a866db9ed3373187d3ed2aa4dde0fef4ae6b9343933600685f243"
+  },
+  "initial_reservations": [
+    {
+      "job_id": "b0117ca4a0300d7efe5d45352c012d56d0f8f478068a75ece9f980334a52b1c7/candidate_diagnostic",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-03T23:29:58.156353+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "63bb5d6e6cbfea54ece43343d93df40468b3bceeb6e0c438385039c27e95fe47/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:00:21.115423+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "5913790675d1f900b2e429d89b05b839890d87623833a4c9f6712fca4df5f02d/teacher_bank",
+      "category": "training",
+      "seconds": 361,
+      "reserved_utc": "2026-11-04T05:09:16.946531+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "befa53cc3402bc247c73f2fcf69c6d858a76d22b7c90488563d91414d300b0d2/teacher_bank",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T05:18:25.858693+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "977b2e57aff05a0168bd88881d891935887417b7dfc2b11d6cbafaaf7fe5eb6c/teacher_bank",
+      "category": "training",
+      "seconds": 394,
+      "reserved_utc": "2026-11-04T05:20:05.180134+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2d119503b01d2e236f0a246a17f69bc569bb6dc6664a68616da1f401e0b94242/train",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:24:16.047656+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "2d119503b01d2e236f0a246a17f69bc569bb6dc6664a68616da1f401e0b94242/exact_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:24:34.952591+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "6b8f5d4155d0803d499cf4075c1688e896b906b6847a8c58b87e58e2fed6b44d/train",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:26:16.078446+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "6b8f5d4155d0803d499cf4075c1688e896b906b6847a8c58b87e58e2fed6b44d/exact_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T05:26:35.099480+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7/train",
+      "category": "training",
+      "seconds": 595,
+      "reserved_utc": "2026-11-04T05:28:20.954714+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "c0c2acd45e3a3320b194f25364465e52d811aac077d3c5da392ae26355af6ec8/train",
+      "category": "training",
+      "seconds": 603,
+      "reserved_utc": "2026-11-04T05:34:25.615436+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "7fda85eb8e526ac0d80323a8f2f0fb2ff1a1e7e26808f2e2e877a4b5602dad0d/reference_physics",
+      "category": "baseline",
+      "seconds": 1020,
+      "reserved_utc": "2026-11-04T05:38:55.730207+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "b32409aba41fd772a72b1a1103563a6bb2e2c727df2dae03521d70b116f81c5f/reference_physics",
+      "category": "baseline",
+      "seconds": 891,
+      "reserved_utc": "2026-11-04T05:44:41.094595+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "59335bc71569896d68937d565a11f1bba44af7f6418827fbf2f3fd1c690fc0f9/reference_physics",
+      "category": "baseline",
+      "seconds": 8289,
+      "reserved_utc": "2026-11-04T05:52:57.845855+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "a3068122f0c8b1e75e6fa3ae7064425ab529e85cdf203dd414867c5dfa9d30a0/reference_physics",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T06:56:53.571631+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "d597ca8cbb0f004f50ec4ad53e9c134c4adf952d4d75b925b580a58a5160fb3e/reference_physics",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T06:58:20.964451+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "0b63ea5bc8edb0492eef20c570773cb6ae611f972efae46167a831ba7cf2cc35/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:02:18.505171+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9a1644908cd71da3c92688f9ad8b809e1d0d539680ce9ffb5901fe31874f6828/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T07:10:27.764746+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9d0c53adbee895d883fa045ad1c10cd4b9ff2ede520dd57e3437da3bdd401d27/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:12:08.972706+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "d6c52e29a39e9894ebc7739db0c9192b7a75b373c5a458d159ffb1e73d79da27/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T07:20:48.689257+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "3ed2770e6bb16390e02566ee55014855b73fe8e34eec03b8041c460b9358a9c5/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T07:54:15.608707+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "24187be5c0d30286f13232989da4667e4559b26fa10c686e2c24c111e42c2023/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T08:01:34.682908+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "ed2345e8dd79999bed2c52798edc62d27b8a28ef74313e6586a3a622746004bb/evaluation",
+      "category": "baseline",
+      "seconds": 900,
+      "reserved_utc": "2026-11-04T08:04:14.135574+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "f2018e8a66979463c870b198188fd27c2efa62a4fc242a894261ad4091d7f9f1/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T08:12:16.251902+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "133b7cfb4b8ba08da21b2cb384a7fd4157aa26eb85b6ced62f87482c1556d80d/image_inventory",
+      "category": "baseline",
+      "seconds": 120,
+      "reserved_utc": "2026-11-04T08:50:49.798773+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "0162a8922eda91d9de243305115a7a9d51ec65052f4951854eccef88c31d2b18/pose_free_qualification",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T09:57:46.998714+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "9e14f9c1b95eb12a796ec0533e8c9e50af292a86895e763912a91f786f6b0912/evaluation",
+      "category": "baseline",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T10:06:03.841550+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "7227f0fd2d2ca3e5169e560b302cc248c4184edf71c04d104f61bd0d1e556931/metric_replay",
+      "category": "baseline",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T10:09:37.588067+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "37d556db5590f7ed0757258bbc30b3a985f85960386808610011e76bd1ad388d/coarse_teacher_domain_qualification",
+      "category": "training",
+      "seconds": 600,
+      "reserved_utc": "2026-11-04T11:01:41.322802+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "aa9d30a9f001c86af433bcf121525ce0ba4e03da0274b71119c2a135c0d0444f/coarse128_teacher_bank",
+      "category": "training",
+      "seconds": 72,
+      "reserved_utc": "2026-11-04T11:31:24.167904+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "552096752f7cfef4e31c21e8995b4e12764e7d3bfd2a0de00fb05cb2644fe312/coarse128_teacher_bank",
+      "category": "training",
+      "seconds": 366,
+      "reserved_utc": "2026-11-04T11:33:06.410576+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "e14a21563c7a565e73e625f579b03ad65354084fbafe2803e3f4406d8cc8acca/distributional100_pilot",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T11:45:36.587242+00:00",
+      "refund_on_failure": false
+    },
+    {
+      "job_id": "f27b038155593081eca91834d713af0ef2d431b899f08af5aff3278f9f3d205f/distributional100_replay",
+      "category": "training",
+      "seconds": 300,
+      "reserved_utc": "2026-11-04T15:29:55.520219+00:00",
+      "refund_on_failure": false
+    }
+  ],
+  "created_utc": "2026-11-04T15:33:27.080128+00:00",
+  "latest_start_utc": "2026-11-04T16:03:27.080128+00:00",
+  "absolute_deadline_utc": "2026-11-04T16:05:27.080128+00:00",
+  "queue_allowance_seconds": 1800,
+  "image_seed": 20261101,
+  "native_shape": [
+    512,
+    512
+  ],
+  "reference_to_query_affine": [
+    [
+      1.0,
+      0.0,
+      8.0
+    ],
+    [
+      0.0,
+      1.0,
+      -4.0
+    ]
+  ],
+  "reference_depth_m": 10.0,
+  "intrinsics": [
+    [
+      400.0,
+      0.0,
+      255.5
+    ],
+    [
+      0.0,
+      400.0,
+      255.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "expected_query_cam2world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.2
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.1
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scope": "Actual procedural native control only. No lunar image, calibration/final inference, model training or download."
+}

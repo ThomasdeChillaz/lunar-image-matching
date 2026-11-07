@@ -1,0 +1,142 @@
+{
+  "schema": "solar_warp_projection_completion_v125",
+  "phase": "archive",
+  "protocol_sha256": "1483a5838b9a1781e3f2a1e601ed47e0423fb0cd9656de46719588c717be85ec",
+  "source_commit": "4d5b81f9450a93e3cea3e538c47d75ea2eb89d76",
+  "projection_engine": {
+    "path": "reports/solar-warp-v125/fast_projection.py",
+    "sha256": "1c800d79701c03f2bf38d35b603d50db560dbe910a55f34b5351f031ff0a43e8",
+    "binding": "FastProjectionBank",
+    "scope": "Only projection-cache winner construction changes. v117 rank, scoring, and replay remain byte-identical."
+  },
+  "deadline_utc": "2026-11-05T04:21:28.250947+00:00",
+  "charge": {
+    "reservation": {
+      "job_id": "1483a5838b9a1781e3f2a1e601ed47e0423fb0cd9656de46719588c717be85ec/warp-v125-archive",
+      "category": "baseline",
+      "seconds": 180,
+      "reserved_utc": "2026-11-05T04:18:28.250947+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 4595.0
+  },
+  "calibration_or_final_access": false,
+  "original_v117_timing_failure_sha256": "6abbd5cfdce1bdca8cf11b3d7d479249c0a90fa44c740745be08666071dda1e9",
+  "predictions_sha256": "d72ce03e6ec00dcc4a9119f6c168b462eaa48ee159fc40ef54033345de2e1430",
+  "scores_sha256": "af8ab715c168d5ff6a85dffc368ecc00f30f466dbe1413f1a674358f61c854c7",
+  "independent_replay_sha256": "9b190892c109164801e283a0af8c9b9a5f96c298b5a1e757ff30535674f65913",
+  "advancement_gate": {
+    "primary_cell_pixels": 32,
+    "sensitivity_cell_pixels": 16,
+    "passed": false,
+    "checks": {
+      "available_coarse_bank": true,
+      "usable_common_support": true,
+      "all_tail_seed_pairs": false,
+      "bright_control_all_seed_pairs": false,
+      "beats_both_photometric_controls": false
+    },
+    "outcomes": {
+      "32": {
+        "u061-l00-17-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u013-l00-00-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u025-l00-00-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 0,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u027-l08-01-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        }
+      },
+      "16": {
+        "u061-l00-17-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u013-l00-00-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u025-l00-00-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 0,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        },
+        "u027-l08-01-positive": {
+          "pairings": 4,
+          "bank_available": 4,
+          "support_available": 4,
+          "reference_order_top_eight": 0,
+          "top_eight_counts": {
+            "geometry_3d": 0,
+            "planar": 0,
+            "gradient": 0
+          }
+        }
+      }
+    },
+    "caveat": "Primary criterion uses raw top-eight candidate basin recall, known light, and exposed development cases."
+  },
+  "steps": [
+    "predict",
+    "score",
+    "independent-replay"
+  ],
+  "complete": true,
+  "ended_utc": "2026-11-05T04:19:38.774288+00:00"
+}

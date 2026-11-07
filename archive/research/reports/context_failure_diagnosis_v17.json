@@ -1,0 +1,163 @@
+{
+  "scope": "Development failure diagnosis; no positive model, acceptance or fresh-validation claim.",
+  "proposal_summary": [
+    {
+      "step": 0,
+      "split": "train",
+      "pairs": 108,
+      "branches": 432,
+      "returned": 113861,
+      "reachable": 16685,
+      "correct_at12px": 15714,
+      "target_points": 220050,
+      "mean_target_nll": 7.061025770807559,
+      "oracle_pairs_with_at_least6_reachable": 95,
+      "oracle_median_best_reachable": 92.5
+    },
+    {
+      "step": 0,
+      "split": "model_selection",
+      "pairs": 72,
+      "branches": 288,
+      "returned": 78482,
+      "reachable": 12694,
+      "correct_at12px": 11880,
+      "target_points": 151695,
+      "mean_target_nll": 7.122864664051606,
+      "oracle_pairs_with_at_least6_reachable": 67,
+      "oracle_median_best_reachable": 97.0
+    },
+    {
+      "step": 500,
+      "split": "train",
+      "pairs": 108,
+      "branches": 432,
+      "returned": 102290,
+      "reachable": 13193,
+      "correct_at12px": 12030,
+      "target_points": 220050,
+      "mean_target_nll": 6.039147937772925,
+      "oracle_pairs_with_at_least6_reachable": 86,
+      "oracle_median_best_reachable": 47.0
+    },
+    {
+      "step": 500,
+      "split": "model_selection",
+      "pairs": 72,
+      "branches": 288,
+      "returned": 70614,
+      "reachable": 10505,
+      "correct_at12px": 9496,
+      "target_points": 151695,
+      "mean_target_nll": 5.908304167119165,
+      "oracle_pairs_with_at_least6_reachable": 69,
+      "oracle_median_best_reachable": 57.5
+    },
+    {
+      "step": 2000,
+      "split": "train",
+      "pairs": 108,
+      "branches": 432,
+      "returned": 103476,
+      "reachable": 13717,
+      "correct_at12px": 12418,
+      "target_points": 220050,
+      "mean_target_nll": 5.935003385450645,
+      "oracle_pairs_with_at_least6_reachable": 89,
+      "oracle_median_best_reachable": 43.5
+    },
+    {
+      "step": 2000,
+      "split": "model_selection",
+      "pairs": 72,
+      "branches": 288,
+      "returned": 70249,
+      "reachable": 10506,
+      "correct_at12px": 9409,
+      "target_points": 151695,
+      "mean_target_nll": 5.7827379085451875,
+      "oracle_pairs_with_at_least6_reachable": 71,
+      "oracle_median_best_reachable": 56.0
+    }
+  ],
+  "primary_runs": [
+    {
+      "variant": "pointwise",
+      "selected_step": 0,
+      "selected_correct": 54,
+      "final_trained_correct": 47,
+      "final_trained_wrong": 2
+    },
+    {
+      "variant": "self_context",
+      "selected_step": 0,
+      "selected_correct": 54,
+      "final_trained_correct": 43,
+      "final_trained_wrong": 3
+    },
+    {
+      "variant": "cross_context",
+      "selected_step": 0,
+      "selected_correct": 54,
+      "final_trained_correct": 39,
+      "final_trained_wrong": 10
+    }
+  ],
+  "oracle_probes": [
+    {
+      "oracle_threshold_native_px": 3,
+      "additional_cases_with_any_correct_oracle_fit": 2,
+      "missing_cases_recovered": 1,
+      "wrong_estimated_cases_recovered": 1,
+      "truth_preserved_plus_oracle_total": 56,
+      "recovered_pair_ids": [
+        "dynamicgood/dynamic/1458/lights-1-2",
+        "dynamicgood/dynamic/1092/lights-0-2"
+      ]
+    },
+    {
+      "oracle_threshold_native_px": 4,
+      "additional_cases_with_any_correct_oracle_fit": 1,
+      "missing_cases_recovered": 1,
+      "wrong_estimated_cases_recovered": 0,
+      "truth_preserved_plus_oracle_total": 55,
+      "recovered_pair_ids": [
+        "dynamicgood/dynamic/1092/lights-0-2"
+      ]
+    },
+    {
+      "oracle_threshold_native_px": 8,
+      "additional_cases_with_any_correct_oracle_fit": 1,
+      "missing_cases_recovered": 1,
+      "wrong_estimated_cases_recovered": 0,
+      "truth_preserved_plus_oracle_total": 55,
+      "recovered_pair_ids": [
+        "dynamicgood/dynamic/1092/lights-0-2"
+      ]
+    },
+    {
+      "oracle_threshold_native_px": 12,
+      "additional_cases_with_any_correct_oracle_fit": 1,
+      "missing_cases_recovered": 1,
+      "wrong_estimated_cases_recovered": 0,
+      "truth_preserved_plus_oracle_total": 55,
+      "recovered_pair_ids": [
+        "dynamicgood/dynamic/1092/lights-0-2"
+      ]
+    }
+  ],
+  "diagnosis": "Likelihood improves while usable proposals decrease on both training fixtures and exposed selection. This supports testing an objective change; it does not prove a unique cause or that the proposed loss will help.",
+  "sources": {
+    "proposal_audit": "c5f2ceed50f37dc427df82de4c2dc13f68ce032990687f6edec386565d9c4b1c",
+    "oracle_audit": "3de6de29acb5c3225246286d68e3bf4ccbbfb24070c9150412a43bbf570f8816",
+    "source": "75a7388fb17aa804b41e6ae81f371831817c97139ff623ded3c59baa3c9f350e"
+  },
+  "next_hypothesis": "Search-window positives, genuine frozen-proposal anchors, and a trainable coarse encoder with unchanged frozen native fine descriptors. Core/tests only; no new fitting/result.",
+  "limits": [
+    "All72 selection pairs are previously exposed, across four terrain components.",
+    "Proposal totals pool four correlated orientation branches, not independent landmarks/terrain tests.",
+    "Training fixtures are metadata-selected first geometry per component,108 light pairs, not the full training population.",
+    "Oracle filters/branch choices use query truth and are not deployable performance or a universal upper bound.",
+    "New loss/model module is untrained and must pass actual initialization/pilot/source-freeze gates."
+  ]
+}

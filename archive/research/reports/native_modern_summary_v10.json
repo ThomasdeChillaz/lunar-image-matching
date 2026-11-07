@@ -1,0 +1,49 @@
+{
+  "scope": "Complete exposed-development comparison of these exact native common profiles. No calibrated acceptance, fresh test or global SOTA claim.",
+  "modern": [
+    {
+      "method": "loma_r",
+      "cases": 72,
+      "correct": 42,
+      "strict": 14,
+      "wrong": 28,
+      "median_full_inference_ms": 54248.3889005,
+      "paired_compact_median_ms": 2639.216485999839,
+      "median_paired_compact_speedup": 20.588290169552643,
+      "compact_minus_modern_descriptive_component_interval_pp": [
+        -7.407407407407407,
+        38.888888888888886
+      ],
+      "surface_minus_modern_descriptive_component_interval_pp": [
+        5.555555555555555,
+        38.888888888888886
+      ],
+      "comparison_sha256": "3688c4dda8f46cdc82ab5f256a21381be0c04c90fac8053c582c99568730572a"
+    },
+    {
+      "method": "romav2",
+      "cases": 72,
+      "correct": 53,
+      "strict": 17,
+      "wrong": 19,
+      "median_full_inference_ms": 53295.64833350002,
+      "paired_compact_median_ms": 3174.4734339998786,
+      "median_paired_compact_speedup": 16.793731736116627,
+      "compact_minus_modern_descriptive_component_interval_pp": [
+        -26.495726495726494,
+        27.77777777777778
+      ],
+      "surface_minus_modern_descriptive_component_interval_pp": [
+        -15.384615384615385,
+        27.77777777777778
+      ],
+      "comparison_sha256": "cf43174cb9252e5de959e7a2827cb178520cde7edb8285e411888225d4dbbaed"
+    }
+  ],
+  "surface_correct": 54,
+  "surface_wrong": 3,
+  "surface_speed_note": "The new surface-control latency has not yet been measured against modern models in the same worker. Original compact speedups do not apply to it.",
+  "surface_vs_modern_hardware_note": "Modern/paired original compact inference ran on supported ARM CPU workers; surface inference ran locally. All native metrics were independently replayed; direct surface CPU validation is a separate experiment.",
+  "source_sha256": "5a1001546dd3e362c4cbe0b34ccf306594ad36be35e3849037e5a46a65e48642",
+  "calibration_or_test_pixels_loaded": 0
+}

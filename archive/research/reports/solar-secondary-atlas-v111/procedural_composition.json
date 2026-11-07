@@ -1,0 +1,92 @@
+{
+  "procedural_only": true,
+  "real_inputs": false,
+  "patch_count": 65,
+  "detector_shape": [
+    128,
+    128
+  ],
+  "candidate_world_x_m": [
+    0.75,
+    0.0
+  ],
+  "original_order": [
+    0,
+    1
+  ],
+  "supported_pixels": [
+    16384,
+    16384
+  ],
+  "ranking": {
+    "common_pixels": 16384,
+    "retained_blocks": 16,
+    "retained_pixels": 16384,
+    "quadrant_blocks": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "active_quadrants": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primary": {
+      "order": [
+        1,
+        0
+      ],
+      "reason": null,
+      "scores": [
+        0.0032429363701907622,
+        1.187735019881016e-28
+      ],
+      "quadrant_losses": [
+        [
+          0.0007088869458217233,
+          0.004541722813057446,
+          0.0007367915783578378,
+          0.006984344143526042
+        ],
+        [
+          1.2655208627370751e-28,
+          1.0953613410318171e-28,
+          1.4289629815375535e-28,
+          9.610948942176179e-29
+        ]
+      ]
+    },
+    "residual_after_plane": {
+      "order": [
+        1,
+        0
+      ],
+      "reason": null,
+      "scores": [
+        0.006944347182877701,
+        8.275672822783343e-28
+      ],
+      "quadrant_losses": [
+        [
+          0.0029184670286081485,
+          0.009441402487242364,
+          0.0033903871858126967,
+          0.01202713202984759
+        ],
+        [
+          8.128968961129534e-28,
+          1.0564176412570975e-27,
+          6.805697163080063e-28,
+          7.603848754352799e-28
+        ]
+      ]
+    }
+  },
+  "ranker_commit": "375bf6afe0d0416c6e8ea0c584e37dcddef882f3",
+  "ranker_sha256": "6cd99575d76011c968c587870372fd225eeb83dd47551eef9c0de7bc2b597834",
+  "atlas_sha256": "6d8c929b4302fa598fe3380f0c547bef74228c08f1605e2fb3b1854f8c3829d7",
+  "composition_source_sha256": "2e640753e2f990139097d46afa7c756fc1895a6c60bf5772ede61368c6808ff3"
+}

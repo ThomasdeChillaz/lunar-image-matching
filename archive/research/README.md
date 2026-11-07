@@ -1,0 +1,590 @@
+# Compact lunar image matching
+
+Latest result - **7 November 2026**: keeping multiple camera/lighting hypotheses
+through patch selection **does not improve recovery on the frozen pilot**.
+All seven methods recover the same **1/4 raw poses**. Active beam returns no wrong
+positive or nonoverlap poses, but the old no-extra control already does so and is
+2.50 times faster (21.77s versus 54.52s median). No candidate is promoted.
+[Complete results and figure](reports/solar-beam-v144/README.md) ·
+[Original research targets](reports/research_requirements_status_v144.json).
+
+All eight cases, 56 method/case metrics and 24 historical control decisions
+independently replay. The new single and beam controls share 128 actual field
+attempts; all eight camera/light branches survive to final estimation. The faint
+correct light is now retained, but useful camera geometry remains missing. Two
+near-uniform cases also expose inaccurate final AP3P despite accurate intermediate
+soft cameras in the strong single control. Saved oracle states are diagnostics.
+
+This is uncalibrated classical development evidence on three reused positive
+terrain components, with zero new trainable parameters. It establishes no learned,
+fresh-test, clean modern-model or orbital accuracy advantage. Calibration and
+final terrain remain closed. The newly approved 1,800s cap completed in 1,238.06s;
+its full charge and all prior accounting remain. No automatic outreach occurs.
+
+The dated [two-page brief and eight-page working draft](reports/solar-review-v141/README.md)
+describe earlier evidence and primary-source metric boundaries. The new report
+above supersedes their statement that the unknown-light experiment is unrun.
+Historical default-dither modern comparisons are not a clean matched ranking;
+13 broader reference catalogues still need clean acquisition.
+
+Earlier supplied-light evidence - 5 November 2026: **active patch acquisition recovers 8/16 raw
+camera poses**, versus 4/16 Direct and 7/16 uniform/geometry at the same extra-patch
+budget. Active returns zero wrong positive poses and 0/16 nonoverlap poses. The
+prespecified early signal passes; the isolated selection gain is one pose
+(6.25 points), with an interval including zero. Active is 8.33 times slower than
+Direct. These are four exposed conditions on three terrains with supplied
+matching reference illumination; no new learned or state-of-the-art result.
+
+All 832 saved method/case scores independently replay. Local 1,490 tests/four skips
+and fresh generated smoke pass. The original 70% correctly accepted/10-point gain
+and remaining research targets are unmet. Calibration/final terrain stays closed.
+
+[Measured results and limitations](reports/solar-active-v137/RESULTS.md) ·
+[Reproduction and research package](reports/solar-active-v137/REPLAY.md) ·
+[All original requirements](reports/research_requirements_status_v137.json).
+
+<details>
+<summary>Earlier development snapshots</summary>
+
+Current evidence — 5 November 2026: **joint camera/correlation fitting does not
+improve the final matcher's recovery: 1/4 poses, tying Direct**. It removes the
+hard-peak control's wrong pose. The separate camera proposal improves the faint
+case from 28.03m to 10.02m, but five surviving reliable matches cannot pass the
+unchanged six-match AP3P gate. No candidate is promoted.
+
+All 192 results replay; twenty saved controls remain unchanged and a fresh
+hard-peak control exactly repeats the earlier output. Four exposed known-light
+conditions on three terrains do not establish new-terrain, learned or final-test
+performance. Original research targets remain active and reserves stay closed.
+
+[Measured result and next experiment](reports/solar-joint-v135/RESULTS.md) ·
+[Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-joint-v135-development) ·
+[All original requirements](reports/research_requirements_status_v135.json).
+
+New software preparation: [sequential patch acquisition and its controls](reports/solar-active-v136/README.md)
+updates camera hypotheses after each selected image measurement. All 1,480 local
+tests pass, including generated-image controls and replay. It has not run a lunar
+comparison; the supplementary resource request remains pending. Current measured
+lunar performance and reserved test data are unchanged.
+
+
+
+
+Current evidence — 5 November 2026: the zero-pose failure is repaired, but
+**the new native techniques do not beat Direct**. The primary 3D variant
+recovers 4/16 raw poses and adds 4 wrong positive poses; Direct recovers 4/16
+with no wrong outputs and is about 5.7 times faster. Planar variants recover
+5/16 but add 3 wrong poses. All 640 saved results replay and all seven
+historical controls repeat exactly. No candidate is promoted.
+
+[Measured comparison and failure analysis](reports/solar-local-v134/RESULTS.md) ·
+[Development replay release](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-native-v134-development) ·
+[All original requirements](reports/research_requirements_status_v134.json).
+
+These are four exposed camera conditions on three terrain components with
+supplied matching illumination. Calibration/final groups remain reserved,
+real navigation accuracy is unverified, and the broader goal remains active.
+
+
+
+Current evidence — 5 November 2026: the shared-camera experimental pipeline
+fixes the latest zero-recovery failure, recovering **4/16 raw poses** versus
+**0/16** for the local-patch control. Direct also recovers 4/16, passes all four
+strict pose checks and runs about 6.4 times faster. The new pipeline therefore
+does not beat the strongest control. All 224 saved results replay, including
+exact repetition of five historical controls. These are four exposed camera
+conditions on three terrains with supplied matching illumination.
+
+[Measured comparison](reports/solar-local-v131/RESULTS.md) ·
+[Tagged replay bundle](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-native-v131-development) ·
+[All original requirements](reports/research_requirements_status_v131.json).
+Calibration and final terrain remain reserved. The broader research goal
+remains active. Older dated snapshots below are superseded by this entry.
+
+Current evidence — 4 November 2026: both 2,000-update response studies are complete,
+but no learned localization gain is established. In a matched development pilot,
+SIFT recovers 2/4 raw camera poses; each frozen compact control recovers 1/4.
+All methods fail both changed-light pairs. Independent replay corrects an
+anchor-order scoring bug in a separate dense diagnostic; every prediction is
+preserved. [Results, correction and limits](reports/SOLAR_DIAGNOSTICS_V86.md) ·
+[Active original requirements](reports/research_requirements_status_v86.json).
+Calibration and final terrain remain untouched. Older progress snapshots below
+are preserved history and are superseded by this entry.
+
+
+Current work — 4 November 2026: the three-technique matcher is implemented as experimental software; its response head is not yet lunar-trained. A source-frozen diagnostic identifies poor candidate coverage under changed lighting and roll. Missing-data completion continues under the unchanged deadline, followed by the full geometry gate. [Current status](STATUS.md) · [Evidence and SOTA requirements](reports/REQUIREMENTS_AND_SOTA_V69.md). No new localization gain is established.
+
+**Current research — 3 November 2026:** implementing a shared-Sun geometric matcher,
+learned lighting-response descriptors and active patch search, with independent
+ablations. No new technique has measured performance yet. The completed attention
+control gives 15/96 correct raw poses and is not promoted. See [current status](STATUS.md)
+and the [accepted research contract](SOLAR_MATCHING_RESEARCH.md). Older snapshots below
+are preserved history. Calibration/final terrain stays untouched.
+
+
+**Current training — 2 November 2026:** a compact cross-image attention model
+(82,208 parameters) passed its 100-update pilot and exact training replay.
+The 2,000-update development study is running; no accuracy gain is established.
+The previous fine-refinement studies recover 14/96 raw camera poses and do not
+improve the stronger compact control. Final test terrain remains untouched.
+See [current status and evidence](STATUS.md). The older dated snapshots below
+are preserved research history.
+
+
+**Current research status — 2 November 2026:** two expanded-data training seeds
+are complete, selecting **14/96 and 15/96 correct raw poses** versus 13/96 for
+the frozen model. Their selected checkpoints emit 4/96 and 7/96 raw nonoverlap
+proposals, versus 11/96 initially. The third seed and complete audit are running.
+These are small development gains, far below the target; no improved model
+release or state-of-the-art result is established.
+
+The changing-light cases remain the main failure. Prepared diagnostic code will
+measure whether coarse proposals reach the correct local neighborhood, then
+separately test a ground-truth-assisted ideal local refiner. That oracle is a
+control, not a usable matcher. Its execution waits for the full cohort,
+regression checks and verified public source. Camera-template dependence also
+requires an unseen-pose control before broad localization claims.
+
+[Next diagnostic and evidence](NORTH_FAILURE_DIAGNOSIS_V43.md) ·
+[Camera-design limitation](NORTH_CAMERA_DESIGN_V41.md) ·
+[Completed data/pilot controls](NORTH_DATA_AND_PILOT_V41.md)
+
+Earlier dated snapshots below are preserved history and are superseded by this
+status. Calibration and final-test supports remain unused; no email is sent.
+
+---
+
+**Current research status — 2 November 2026:** the three-seed expanded-data
+training control is running. No improved model or state-of-the-art result is
+established.
+
+The additional northern development dataset has 24 terrain groups and 576
+images. All 72 geometry oracle controls and the exact 100-update training replay
+pass. On its full 96-positive/96-nonoverlap selection set, the frozen compact
+surface pipeline and SIFT-first pipeline each recover **13/96 correct raw
+poses**, with 28 wrong positive proposals and 11/96 nonoverlap proposals.
+These are weak, uncalibrated development results and a different dataset from
+the historical 72-pair comparison.
+
+Training uses three fixed seeds, 2,000 updates each, initialization eligible,
+with all outcomes retained. Calibration/final supports stay unused. The original
+render deadline failed; a separately documented recovery completed within its
+supplemental allowance. Fixed camera templates and shared renderer/DEM dependence
+still limit generalization claims.
+
+[Current evidence](NORTH_DATA_AND_PILOT_V41.md) ·
+[Training protocol](NORTH_EXPANDED_CONTROL_V39.md) ·
+[Live research tracker](https://github.com/ThomasdeChillaz/lunar-image-matching/issues/2)
+
+The earlier status snapshots below are preserved history; their descriptions of
+what was running at the time are superseded by the dated status above.
+
+---
+
+Current research progress: a new **6,000-update, three-seed coupled-assignment study is running**, after its actual100-update train-only pilot and exact optimizer/scalar replay passed. No learned pose gain is established. The completed12,000-update window study retained initialization54/72 in all six runs; [negative results](reports/window_cohort_complete_v18.md). The **amended MOONSt3R comparison independently replays28/72 correct raw poses,21strict and44wrong**, preserving71 original cases plus one publicly frozen supplemental case. Its original clock-expired run remains incomplete. [Complete native comparison and limits](reports/native_pose_comparison_v29.md): SIFT-first+surface57/72, frozen-surface54, RoMa-v2 fast/common53, LoMa-R42 and MatchAnything39. These are dependent exposed development cases with different model profiles, not fresh-test or globalSOTA evidence. The [new hypothesis](MUTUAL_ASSIGNMENT_V23.md) must improve actual camera poses before adoption. Fresh data, calibrated acceptance and the full research targets remain unmet. Older entries below are history.
+
+**Current development finding:** using the reference terrain's3D shape improves
+the frozen small matcher from45 to54 correct raw poses out of72. The same
+SIFT-first fallback improves53→57, with wrong proposals6→2. Stricter poses
+decrease27→25 for that fallback, so the gain is not uniform precision dominance.
+This is an engineering correction; the learned native-refinement seeds give
+45/42/42 versus45 frozen. A consistent learned gain is not established.
+
+These are dependent, exposed development pairs from eight geometries/four
+terrain components. The descriptive gain intervals include zero. **Raw pose
+recovery is not calibrated acceptance, fresh validation or SOTA.** Full uniform
+positive training completed with47/45/47 across the selected model’s seeds; it
+still trails the stronger geometry control. Native LoMa-R/RoMa-v2 common comparisons
+are complete:42/72 and53/72 raw correct respectively, versus54 for the surface
+control. This does not establish a reliable advantage over RoMa-v2. See the
+[surface-normalization report](reports/SURFACE_WARP_V11.md),
+[completed learned study](reports/NATIVE_TRAINING_V7.md), and
+[native protocol](NATIVE_REFINEMENT_V7.md), and
+[completed modern comparison](reports/NATIVE_MODERN_V10.md).
+
+Direct CPU validation reproduces54/72 and measures**12.03× paired speedup**
+over RoMa-v2 fast/common512 on the fixed16-case timing bank (4.43s versus53.31s,
+both12/16 correct). This timing does not cover the57/72 SIFT variant.
+[CPU protocol and limits](reports/SURFACE_CPU_V12.md).
+
+Modern native-image comparisons and local-window diagnostics are separate
+from the historical128px registration study below. All current pose readouts
+are exposed development cases; fresh final and calibrated acceptance targets
+remain unmet.
+
+**Current corrected training:** all16000 v5 optimizer steps completed. The
+predefined primary/repeat results are **44/72, 45/72, 45/72** correct raw poses, versus
+frozen four-orientation45/72. A consistent learned gain is not established.
+A stronger SIFT-first engineering fallback gives53/72, but includes six wrong
+poses: raw recovery is not reliable acceptance. See the
+[complete corrected study](reports/COARSE_TRAINING_V5.md).
+
+**Geometry correction:** earlier LunarGeo3D pose/correspondence metrics and3D
+training labels used the wrong depth interpretation and are superseded. See the
+[evidence and reproducible correction](reports/GEOMETRY_CORRECTION_V5.md).
+Earlier2D known-warp counts are separate; depth-derived grouping needs corrected
+audit before reuse. No fresh final or orbital-navigation accuracy is claimed.
+
+The separate orientation-regime experiment completed without a learned gain.
+All research targets remain active and unmet; no SOTA claim. Reproduction and
+artifact installation: [training guide](LOCALIZATION_TRAINING.md).
+
+**Historical, before the depth correction: 20,000 development-training steps across ten runs.** The first
+cohort's descriptor seeds give 26/72, 25/72 and 26/72 correct raw poses. A
+supplemental balanced-sampling reliability model gives **27/72, 31/72 and 36/72**,
+versus deterministic native refinement + LM's **26/72**. The predefined primary
+seed gains 1.39 percentage points; its descriptive component interval is
+-11.11 to +7.78 points. The gain remains inconclusive on four selected development
+components, and the 70% pose target is unmet. No best-of-seed headline is used.
+See [balanced results](reports/LOCALIZATION_BALANCED_V3.md),
+[original training results](reports/LOCALIZATION_TRAINING_V3.md) and
+[commands/downloads](LOCALIZATION_TRAINING.md).
+Calibration/test pixels remain untouched in this phase. No fresh-test, modern
+pose ranking or verified orbital navigation claim is made.
+
+**Earlier diagnostic follow-up (31 October, before this training):** native correspondence
+and pose refinement recover 26/72 poses versus 0/72 for the coarse frontend with
+the original estimator. The requested fresh-data gate failed before training;
+no compact-v3 had been trained at that milestone. See the historical
+[diagnostic report](reports/LOCALIZATION_DIAGNOSTICS_V3.md),
+[two-page brief](reports/localization_diagnostic_brief_v3.pdf) and
+[accepted next-stage contract](LOCALIZATION_RESEARCH.md).
+
+A reproducible study of a **28,272-parameter structural CNN**, calibrated rejection,
+modern pretrained comparisons and failure under 3D/sensor transfer. Independent
+project; no NASA/JPL affiliation or flight-readiness claim.
+
+**Question:** Can a small matcher retain correct lunar alignments while rejecting
+mismatches, with a useful accuracy–CPU-speed tradeoff?
+
+[Release and downloads](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/compact-v2) · [Two-page brief](reports/compact_brief_v2.pdf) · [Measured report](reports/RESEARCH_ITERATION_6.md) · [Interpretation](reports/COMPACT_INTERPRETATION.md) · [Reproduction](COMPACT_REPRODUCTION.md)
+
+
+</details>
+
+## Historical compact-v2 findings (3D claims superseded)
+
+- **Primary frozen model:** 376/384 correct positive acceptances (97.92%), zero observed incorrect outputs and 0/288 nonoverlap acceptances. The other predefined seeds retain 351 and 380 correct positives; the latter accepts one nonoverlap pair. No best-of-test seed selection occurs.
+- **Calibration drives most of the gain.** The old checkpoint retains 100/384 with its old gate and 368/384 with newly calibrated confidence. Both old and primary checkpoints have 384/384 raw correct proposals. All 284 correct proposals rejected by the old gate fail only its global-correlation threshold. The primary retraining gain over the recalibrated old checkpoint is small and not consistent across seeds.
+- **Common comparison:** compact retains 35/36 correct positives versus MatchAnything's 32/36, with no observed incorrect acceptances for either. The paired gain interval is −2.78 to +19.44 points, so accuracy superiority remains inconclusive. The median paired CPU speedup is 101.2× for these specific profiles; the paired accuracy interval meets the declared −3-point margin. This is a conditional benchmark result, not global SOTA.
+- **3D remains weak:** only 2/288 compact poses meet the secondary criterion. NASA POLAR transfer gives 23/40 acceptances within nominal geometry and one outside it. Reference drift/calibration uncertainty is unknown; orbital navigation accuracy remains unverified.
+
+Inference uses **128px images** and a coarse-registration tolerance of **12 original 512px source pixels**. The final test contains 12 selected spatial components across three polar sectors, not 384 independent terrain tests. Trajectory IDs and Sun angles are absent; shared terrain/renderer dependence remains. Calibration has only 12 positives and 12 negatives across four components, so observed low error is not a deployment guarantee.
+
+## Historical 2D common-input comparison
+
+36 positive and 36 known-nonoverlap cases across the same 12 final components.
+Compact networks are lunar-trained; the large pretrained methods are not adapted
+to this sample. Internal resolutions and CPU allocations differ and are recorded.
+
+| Method | Raw correct positives | Correct accepted | Incorrect accepted | Nonoverlap accepted |
+|---|---:|---:|---:|---:|
+| Compact v2 / primary | 36/36 | 35/36 | 0 | 0/36 |
+| Old CNN / new confidence | 36/36 | 34/36 | 0 | 0/36 |
+| SIFT | 0/36 | 0/36 | 0 | 0/36 |
+| LoMa-B / 504 | 28/36 | 27/36 | 1 | 0/36 |
+| LoMa-R / 504 | 30/36 | 27/36 | 0 | 0/36 |
+| RoMa v2 / fast512 | 34/36 | 31/36 | 0 | 0/36 |
+| Original RoMa | 31/36 | 31/36 | 1 | 0/36 |
+| MatchAnything–EfficientLoFTR / 4× | 36/36 | 32/36 | 0 | 0/36 |
+
+LoMa-B and original RoMa exceed the declared 1% accepted-error target at their
+frozen operating points. Those thresholds were not adjusted on this test.
+
+![Accuracy and paired CPU runtime](reports/compact_accuracy_runtime_v2.png)
+
+Each baseline is compared with its compact control on identical inputs in the
+same CPU job. Absolute latency across different baseline allocations is not a
+controlled hardware ranking. Memory, all three principal figures, complete
+curves, per-region results and ablations are in the measured report. RoMa v2's
+precise author-profile control exceeded its ten-minute CPU budget; the table
+uses the explicitly declared fast512 profile. No model was silently substituted.
+
+## View or reproduce
+
+For viewing, download `compact-v2-report.zip` from the release, extract it and
+open `compact_research_v2.html`. It includes an interactive success, rejected
+mismatch and remaining failure. No landmark review or model download is needed.
+
+For saved-metric replay, install the pinned environment and download the model,
+data and experiment ZIPs plus their checksum sidecars. Follow
+[COMPACT_REPRODUCTION.md](COMPACT_REPRODUCTION.md). The experiment capsule digest is
+in [the checksum file](reports/compact_experiment_assets_v2.sha256). Saved replay
+checks source/data/model hashes, geometry, confidence fitting/calibration,
+rejection behavior, summary tables, intervals and paired CPU measurements.
+
+Select the new model explicitly after installing the released assets:
+
+```sh
+python match_terrain.py --model-version compact-v2 --model-dir runs/compact-v2-expanded-20261030 --protocol reports/compact_freeze_v2.json --reference reference128.png --query query128.png --output runs/alignment-new.json
+```
+
+Coordinates map reference pixel centers to query pixel centers. Rejection returns
+`transform: null`; raw proposals require `--include-proposal`. The default v1
+interface and all earlier results remain preserved.
+
+## Provenance and limits
+
+- [Public freeze proof](reports/compact_publication_v2.json): commit `392cdf1020c925cec61d3340a7720e26cc6cdce7` preceded all final inference. The protocol binds 29 matching/data/metric source files, analysis source, three checkpoints, ten confidence policies and every case list.
+- [Independent replay](reports/compact_replay_audit_v2.json) and [table/interval/CPU-control audit](reports/compact_table_audit_v2.json): 13 policies, 14 aggregate tables, 10 interval checks and 360 paired controls. All selected final baseline shards completed; redundant recovery jobs were stopped and retained as partial records.
+- [Old-gate diagnosis](reports/compact_gate_diagnosis_v2.json) and [development oracle geometry check](reports/compact_depth_oracle_control_v2.json) are post-study diagnostics; neither changes the frozen outcomes.
+- [Data limitations](reports/compact_data_limitations_v2.json), [execution record](reports/compact_execution_status_v2.json), [selection provenance](reports/compact_final_execution_selection_v2.json), [licenses and attribution](THIRD_PARTY.md).
+
+Validation: **128 tests passed, four optional tests skipped**, a fresh controlled
+smoke and actual public-freeze matching-command controls. No paid compute,
+human landmark review or automatic outreach. The study is complete; broader
+trajectory independence, real navigation accuracy and 3D improvement remain
+research gaps. Consumed final cases cannot become a new tuning reserve.
+
+<details>
+<summary>Earlier benchmarks and pilot documentation (preserved)</summary>
+
+A reproducible research project comparing classical and pretrained learned image matching on real lunar repeat observations and controlled image warps.
+
+**Question:** How do matching methods behave when illumination changes on the same lunar terrain?
+
+**Earlier research iterations:** [protocol and hypothesis ledger](RESEARCH_ITERATIONS.md), [validation hardening report](reports/RESEARCH_ITERATION_5.md). The development comparison completed: our standalone CNN **1,072/1,152 (93.06%)**, original RoMa **1,032 (89.58%)**, tested MatchAnything–ELoFTR4× **995 (86.37%)**, the baseline ensemble **1,083**, and the ensemble plus our CNN **1,103 (95.75%)**. These are development findings with different training/compute budgets, not current-SOTA conclusions. The [preregistered reserve protocol](reports/reserve_protocol_v1.json) fixes the standalone model, strict gate and all 10,944 cases across 12 footprint/acquisition groups before reserve access. Both reserves are now consumed by that evaluation and must never be reused as fresh data. The13-predictor ensemble remains development-only. Earlier reports preserve negative results and historical protocols.
+
+**Rejection is part of the output:** `match_terrain.py` returns `transform: null` when its frozen rule rejects a proposal. Ungated proposals are hidden unless explicitly requested. Real-photo controls retained334/336 correct known-warps and rejected84/84 different-scene pairs without real-data calibration. However, the NASA laboratory relighting test exposed a transfer failure: the strict rule rejected all 8 fixed-camera pairs, including4 nominally correct raw fits. These distinct experiments do not establish orbital navigation accuracy.
+
+**Audited reserve result:** raw CNN correct on **8,414/9,216 (91.30%)**; the unchanged strict gate correctly accepts **4,603/9,216 (49.95%)**, with **zero observed wrong outputs and 0/1,728 accepted nonoverlap pairs**. All 32,832 method outcomes were replayed. The price is lower coverage: 3,811 correct raw proposals are discarded. These are 12 grouped components within Tycho; they do not establish universal reliability or fresh performance of the full ensemble.
+
+The project includes checksummed data acquisition, masked geospatial loading, NCC and SIFT baselines, pinned DISK + LightGlue inference, frozen region splits, quantitative evaluation, plots, an interactive offline viewer, a two-page PDF report, and an independent-checkpoint review tool.
+
+**Current scope (29 October 2026):** no human landmark review is required or planned. Accuracy comparisons use known transforms and physically rendered changing-light pairs. Real repeat observations support fit rates, consistency and provisional map-agreement diagnostics only; real navigation accuracy and real-data correctness calibration are unverified. Review tools remain optional for a future validation study.
+
+**Scientific status:** repeat-observation measurements use the publisher's map coordinates. Their accuracy is unknown. These are map-reference diagnostics; independent checkpoint validation remains open. Exact-transform controls provide a separate correctness check. See [STATUS.md](STATUS.md) and [DATASET_CARD.md](DATASET_CARD.md). No NASA/JPL affiliation or endorsement is implied.
+
+**Research extension:** [measured report](reports/EXTENSION_REPORT.md). The full 321-pair real-image benchmark and original CNSFM common-grid comparison have executed, alongside 1,152 physical-render evaluations and 108 method measurements on 27 new real repeat pairs across five Tycho areas. A small lunar descriptor adapter improved held-out synthetic registration from 93/128 to 98/128 pairs; its development-selected rejection policy still accepted three incorrect held-out alignments. Independent real reference review, real-data rejection calibration and verified real-image improvements remain open.
+
+The adapter does **not** currently establish a real-image improvement: on polar S3 it returns 99/231 alignments versus 158/231 for the frozen matcher. The frozen matcher remains the default; the adapter is experimental. Map disagreement among returned fits cannot establish true accuracy.
+
+## Install and run
+
+Python **3.12** is the verified environment. From this repository:
+
+```sh
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-lock.txt
+python reproduce.py --output runs/reproduction --test
+```
+
+The command downloads 15 source images (about 26 MB) and two pretrained weight files (about 52 MB), verifies their hashes, runs the test suite including actual pretrained inference, and evaluates all three regions. Original source rasters and weights are excluded from Git. CPU execution may take several minutes. Every run requires a fresh output directory.
+
+For the small procedural software check:
+
+```sh
+python benchmark.py --config smoke.json --output runs/smoke-new
+```
+
+For individual stages:
+
+```sh
+python dataset.py fetch
+python fetch_models.py
+python evaluate.py --split test --output runs/held-out
+```
+
+Use `python reproduce.py --offline --output runs/offline` after assets and weights are cached. Missing or corrupt files produce explicit errors; learned matching never silently falls back to a classical method.
+
+## Inspect results
+
+The read-only [current validation report](reports/validation_hardening.html) distinguishes fresh physical-render evaluation, known warps of real orbital photos, repeat-observation diagnostics, and external laser-reference laboratory measurements. It requires no landmark review.
+
+For the standalone gated matcher, first extract the published training capsule so `runs/contrastive-terrain-train-v1` exists, then run from this repository:
+
+```sh
+python match_terrain.py --reference reference128.png --query query128.png --reference-mask reference_valid.png --query-mask query_valid.png --output runs/my-alignment.json
+```
+
+Images and optional validity masks must be128×128 single-channel uint8. The frozen sources and checkpoint are verified before inference. A rejected result contains no usable transform; `--include-proposal` is an explicitly ungated research diagnostic. This rule has empirical evaluation results, not a deployment safety guarantee.
+
+The published pilot artifacts use the `lunar_` prefix: [report](lunar_REPORT.md), [PDF](lunar_REPORT.pdf), [per-pair measurements](lunar_results.csv), [summary](lunar_summary.json), and [environment/source hashes](lunar_environment.json).
+
+Open `lunar_demo.html` locally for an interactive pair/method selector and overlay slider. GitHub displays HTML source, so download the file or serve this directory locally:
+
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Then visit `http://127.0.0.1:8000/lunar_demo.html`. For a new run, open `runs/reproduction/demo.html` instead.
+
+![Held-out reference agreement](lunar_agreement.png)
+
+## Optional independent checkpoint review
+
+The updated [source-bound review packet](reports/landmark_review.html) supports zoom, named landmarks, separate reference/query uncertainty and unscorable cases. This optional validation route requires human-selected landmarks; it contains no suggested coordinates. It is not required for the current project scope. Generate a fresh packet and import a completed review:
+
+```sh
+python landmark_review.py --output runs/manual-review.html
+python import_review.py review.json --output reviewed_manifest.json
+```
+
+After importing actual human review, convert only its corresponding pairs to the expanded grids using identical source image hashes and known map affines, then score saved predictions:
+
+```bash
+python rebase_review.py reviewed_manifest.json --output reviewed_expanded_manifest.json
+python score_independent.py --reviewed-manifest reviewed_expanded_manifest.json --runs runs/expanded-confidence-v1 runs/cnsfm-common512-v1 runs/cnsfm-real-transfer-v1 --output runs/independent-new
+```
+
+The conversion adds an explicit conservative interpolation allowance and retains second-review uncertainty. It never uses a matcher's estimated transform. Only reviewed pairs gain independent scores; incomplete pairs remain unknown. Development labels select policies before held-out checkpoint errors are computed; insufficient labels produce an explicit unavailable policy.
+
+Add `--second-review review-b.json` when an independent second reviewer is available. Keep a second review blind to the first reviewer’s coordinates. The importer retains disagreement and raises the uncertainty estimate. Re-evaluate on the reviewed manifest; software validation alone does not establish human expertise or navigation accuracy.
+
+The original simpler interface remains available:
+
+```sh
+python checkpoint_review.py --output runs/checkpoint_review.html
+```
+
+Open that page locally, identify at least ten distributed stable landmarks per pair, enter reviewer and picking uncertainty, and export `checkpoints.json`. Avoid using shadow edges. Import into a new manifest and rerun:
+
+```sh
+python apply_checkpoints.py checkpoints.json --output reviewed_manifest.json
+python evaluate.py --manifest reviewed_manifest.json --output runs/reviewed
+```
+
+Imported annotations are recorded as independent reviewer input; the tool does not claim they are automatically verified. A second independent review and explicit uncertainty assessment are appropriate before navigation-accuracy claims.
+
+## Data and methods
+
+The subset uses five LROC NAC observations from each published CNSFM scene: Chang'e 3 (S1 reserved), Apollo 11 (S2 development), Peak Near Shackleton (S3 held-out). All source observations remain within one split. No training or parameter search is performed. Three exact-transform controls per region are evaluated separately from the twelve real repeat pairs.
+
+- **NCC:** central template, translation-only; rotation is labeled out-of-model.
+- **SIFT:** ratio-filtered features and partial-affine RANSAC, up to 2000 features.
+- **DISK + LightGlue:** pretrained depth-supervised DISK features (512 maximum), learned matching and the same robust geometry estimator.
+- **Ablation:** each method with and without CLAHE.
+
+Transforms map reference `(x,y)` pixel centers to query `(x,y)`. Failures stay in denominators. Endpoint errors use valid evaluation points and independent targets when provided. Timings exclude downloads/model loading, use warmup, and synchronize the selected device. Different feature budgets and a single timing repeat limit speed comparisons.
+
+The shared map grid is an external reference, not guaranteed subpixel truth. Gain/gamma perturbations do not reproduce moving lunar shadows. The original pilot uses no physical rendering or additional DEM, and no reproduction of LIMA is claimed. The extension uses externally rendered MoonAnything data as a separate experiment.
+
+## Reproduce the research extension
+
+The committed manifests are frozen before matching outcomes. Entire source scenes/acquisitions stay in one split. S3 was inspected in the pilot and is therefore exploratory for new choices.
+
+```sh
+python dataset.py fetch --manifest expanded_solar_manifest.json
+python evaluate_extended.py --output runs/expanded-new
+python fetch_moonanything.py
+python moon_dataset.py --output moon_rebuilt_manifest.json
+python train_lunar_adapter.py --manifest moon_rebuilt_manifest.json --output runs/adapter-new
+python evaluate_moon.py --manifest moon_rebuilt_manifest.json --adapter runs/adapter-new/adapter.json --output runs/physical-new
+python verify_extension.py --extended-run runs/expanded-new --physical-run runs/physical-new --output runs/extension-audit-new.json
+```
+
+To reproduce the real appearance subset and frozen adapter transfer (an additional 4.68 GB source archive):
+
+```bash
+python fetch_moonanything.py --members render.zip
+python tycho_dataset.py --output tycho_rebuilt_manifest.json
+python evaluate_transfer.py --dataset tycho --manifest tycho_rebuilt_manifest.json --output runs/tycho-transfer-new
+python evaluate_transfer.py --dataset cnsfm --manifest expanded_solar_manifest.json --output runs/cnsfm-transfer-new
+python verify_transfer.py runs/tycho-transfer-new --output runs/tycho-transfer-audit.json
+```
+
+The committed `tycho_real_manifest.json` freezes selection before outcomes. The new 128 px common grids use shared metadata intersections of original 128 px real orthocrops; their errors are not directly comparable to the 512 px scene errors or independently known physical render errors. No additional model fitting uses real test observations. After downloading the ten full Windows artifacts into separate directories under one execution root, prepare the exact common-grid inputs locally and audit every original output:
+
+```bash
+python prepare_cnsfm_common.py --output data/cnsfm/common512 --fetch
+python score_cnsfm.py --executions PATH --output runs/cnsfm-common-new
+```
+
+The staging command verifies pixels and masks against the committed detector predictions and refuses to overwrite an existing staging folder. Use the matching original manifest and predictions when auditing the published artifacts.
+
+MoonAnything acquisition downloads the metadata and physical Hapke render subarchives (about 0.9 GB), not the outer 11 GB ZIP. Byte-range retries and persistent hash-checked range caches support interrupted transfers. The real-appearance `render.zip` is an additional optional 4.7 GB download for expanding real repeat-observation regions. All downloaded archives, selected source rasters and caches remain outside Git. The report publishes measurement tables and a small trained descriptor projection.
+
+The physical protocol uses 48 training, 16 development and 16 test patches from distinct acquisitions in separated Tycho longitude bands. Its 128 px rendered supervision stays separate from real 512 px map-reference measurements. All-zero physical renders remain explicit evaluation cases. The detector/backbone and LightGlue are frozen during descriptor adaptation. Threshold selection uses independently labelled development outcomes; provisional map disagreement is never a correctness label.
+
+The original highest-Sun anchor protocol covers only 21–78° of held-out Sun separation and couples light index to rotation. The report now shows correctness versus full Sun-direction change and raw shared non-dark terrain, including failures and support-threshold sensitivity. These are descriptive strata, not isolated causal effects or geometric shadow labels. Recompute them from the saved results with `python physical_lighting_analysis.py --run runs/physical-adaptation-v1 --output reports`.
+
+The all-Sun-pair follow-up holds geometry constant and retains the original model and development policies:
+
+```bash
+python evaluate_crosslighting.py --output runs/crosslighting-new
+python verify_crosslighting.py runs/crosslighting-new --output runs/crosslighting-audit.json
+python report_crosslighting.py --run runs/crosslighting-new --audit runs/crosslighting-audit.json --output reports
+```
+
+This includes NCC as an applicable translation baseline, SIFT and the unchanged learned variants. Every pair of the nine lighting renders is included. Previously inspected geographic test terrain is explicitly exploratory; no new tuning uses the follow-up outcomes. Resume an interrupted run only with `--resume` and identical frozen inputs/source.
+
+The [completed fixed-geometry report](reports/CROSS_LIGHTING_REPORT.md) covers 576 pairs and 2,880 method evaluations, including Sun separations above 90°. NCC is correct on 344/576 pairs, frozen learned matching on 303/576 and the adapter on 323/576. The original learned rejection policy performs poorly on this design (five correct fits retained, seven incorrect fits accepted); it remains experimental. Its translation limit is below the known imposed displacement. These results do not overturn the lack of independently verified real-image improvement. Physical uncertainty intervals now group overlapping footprints and shared acquisitions, rather than treating every acquisition as independent terrain.
+
+The original CNSFM Windows probe is verified in all three scenes. The [Windows workflow](.github/workflows/cnsfm-original.yml) supports a native probe, a common-grid probe, a full common-grid comparison, and an optional full native-resolution run. Common-grid inputs are verified byte-for-byte against the detector’s image/mask arrays, and forward/reverse matching are independent executions. Shared RANSAC scoring requires six inliers; that differs from the paper’s success definition. The original binary and model weights are retrieved separately from the pinned author repository.
+
+To regenerate the optional crater predictions, install [requirements-detector.txt](requirements-detector.txt) in a separate environment and obtain the documented source revisions:
+
+```sh
+mkdir -p data/cnsfm
+git clone https://github.com/Bin501/CNSFM.git data/cnsfm/upstream
+git -C data/cnsfm/upstream checkout 94cebaaa7fd3e070f8040620975554c3067651ef
+git clone https://github.com/WongKinYiu/yolov9.git data/cnsfm/yolov9
+git -C data/cnsfm/yolov9 checkout 5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff
+python cnsfm_detector.py --yolo-source data/cnsfm/yolov9 --weights data/cnsfm/upstream/CDAYOLOV9/YOLOv9Best.pt --output crater_predictions_new.json
+```
+
+The optional YOLOv9 integration retains GPL-3.0 terms. Its generated crater coordinates are method predictions and are never imported as independent reference landmarks. Native author patch tiling is not reproduced by the single whole-image common-grid detector pass; do not compare percentages directly with the paper.
+
+## Repository guide
+
+The earlier [development research report](reports/RESEARCH_ITERATION_2.md) records separate translation/rotation/scale/combined results, the image-selected hybrid and conditional confidence fallback. Its975/1,152 hybrid successes and857 strict retained-correct cascade results remain development findings. The newer reserve experiment consumes both frozen reserves; none may be described as untouched for a future iteration. Reports include measured figures, full outcome capsules, source snapshots, licenses and audit/reproduction commands. Regenerate the earlier development figures with `python report_research_development.py`.
+
+[AI_PLAN.md](AI_PLAN.md) defines the agent workflow; [MILESTONES.md](MILESTONES.md) preserves acceptance criteria; [STATUS.md](STATUS.md) distinguishes implementation from scientific validation. [THIRD_PARTY.md](THIRD_PARTY.md) records source/model notices. Original code is MIT licensed except the explicitly marked optional GPL-3.0 detector integration; third-party data and weights retain their own terms.
+
+References: [CNSFM paper](https://doi.org/10.3390/rs17132302), [source dataset](https://github.com/Bin501/CNSFM), [LightGlue](https://arxiv.org/abs/2306.13643), [DISK](https://arxiv.org/abs/2006.13566), [Adnan Ansar's public research](https://www-robotics.jpl.nasa.gov/who-we-are/people/adnan_ansar/).
+
+
+</details>
+
+
+### Native-window learning continuation
+
+The complete v18 cohort and independent audit retain every failed checkpoint
+and seed: 12,000 updates, all six selected at initialization54/72. No trained
+upgrade is adopted. [Results](reports/window_cohort_complete_v18.md) and
+[protocol](SEARCH_WINDOW_V18.md). The full v16 negative cohort remains available
+from [its prerelease](https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/global-context-development-v16).
+Actual six-model selected controls/exact72-case forward replay and a fresh
+public-checkout reproduction pass; the full negative capsule is packaged.
+MOONSt3R original study stopped incomplete; a separate recovery is prepared.
+The [shared-scale diagnostic](reports/fine_pyramid_bank_v22.md) also shows no pose gain.
+All current poses use four exposed terrain groups; no fresh/SOTA claim.
+
+
+### Experimental solar localization
+
+The work in [SOLAR_MATCHING_RESEARCH.md](SOLAR_MATCHING_RESEARCH.md) now has an
+integrated native image frontend, shared-Sun assignment, lighting-response
+network and active patch selection. `match_terrain.py` retains its behavior.
+`localize_terrain.py --help` describes the separate experimental command.
+Its geometry archive accepts reference depth/pose/intrinsics/normals, physically
+computed solar-ray tables and reference-ray intersections under height shifts.
+Extra fields such as true query pose/depth are rejected. Both image inputs are512px.
+A configuration must pin checkpoint bytes. Public pose is always null until a
+separate acceptance study; `--research-output` explicitly exposes raw hypotheses.
+
+This is development software: the response head is not yet trained, bounded
+fine Sun refinement is incomplete, and no new lunar localization gain has been
+measured. The eight-toggle smoke uses historical pretrained encoders and a
+procedural image shift. The full24-light training bank and experiments remain
+pending. Source, geometry and compute gates precede actual new lunar inference.
+
+
+### New physical-data acquisition and compute limits
+
+The24-light cost pilot completed and its independent geometry audit passed.
+The new96unit acquisition is frozen in
+[the admission protocol](reports/solar_development_admission_v67.json).
+`run_solar_development_v67.py --help` describes the serial controller. It enforces
+one original shared deadline, source bytes,900s/unit and complete-unit seals.
+It refuses expired protocols and partial-unit overwrite. Original failed renders
+are retained. A later independent replication needs a newly versioned protocol,
+not editing the original deadline.
+
+[Compute accounting](reports/solar_compute_admission_v67.json) deliberately charges
+whole historical calendar envelopes where precise job times are missing. It is
+a conservative admission bound, not an exact CPU-use claim. New fitting and
+comparison jobs reserve complete caps through `solar_compute_budget_v67.py`;
+failed and duplicate invocations do not refund time. Rendering has a separate
+fixed data allowance and does not authorize training or final evaluation.

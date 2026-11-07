@@ -1,0 +1,19 @@
+{
+  "reason": "Necessary solar geometry check fails96/144site-light combinations before any matcher/fitting. Preserve partial v35outputs as stress cases, reuse unchanged24terrain meshes.",
+  "diagnostic_sha256": "9fefe16d87fb11904575872d8549f10747862dd28e03455bdac78ecec44e317a",
+  "verified_child_pid": 55794,
+  "verified_command": "/Users/admin/Documents/Codex/2026-10-25/for/work/fresh-render-runtime-v31/Blender.app/Contents/MacOS/Blender --background --factory-startup --threads 2 --python-exit-code 1 --python render_north_development_v35.py --",
+  "stopped_utc": "2026-11-01T22:08:13.835630+00:00",
+  "original_render_cap_seconds": 21600,
+  "v35_render_calendar_seconds_before_signal": 538.135244,
+  "remaining_cumulative_render_allowance_seconds": 21056,
+  "completed_components": [
+    "np31-r0-c0",
+    "np31-r0-c1",
+    "np31-r0-c2",
+    "np31-r0-c4",
+    "np31-r0-c6"
+  ],
+  "changed_by_model_outcomes": false,
+  "calibration_or_final_pixels_decoded": 0
+}

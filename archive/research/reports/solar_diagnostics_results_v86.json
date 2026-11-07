@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-11-04T10:18:24.267174+00:00",
+  "goal_status": "active_not_achieved",
+  "calibration_or_final_access": false,
+  "accepted_results": false,
+  "scientific_gain_claim": false,
+  "source_qualification_commit": "4f0ed7bf6b1d47b30dd68e0389810359354da506",
+  "baseline_publication_commit": "74bebcaa7488d8b669ce24d5744f97447e286814",
+  "qualifier": {
+    "complete": true,
+    "external_calendar_seconds": 154.77333682100289,
+    "charged_cap_seconds": 600,
+    "generated_control": {
+      "counts": {
+        "all_retained_reference_anchors": 256,
+        "co_visible": 256,
+        "targets_inside_query_image": 256,
+        "geometric_bank_coverage_at16": 256,
+        "recalled": {
+          "1": 218,
+          "2": 218,
+          "4": 218,
+          "8": 218,
+          "12": 221,
+          "16": 223
+        },
+        "in_grid_recalled_at16": 223,
+        "in_grid_denominator": 256
+      },
+      "gate_passed": true,
+      "fraction": 0.87109375
+    },
+    "original_lunar_metrics_superseded": true,
+    "corrected_lunar": {
+      "u012-native": {
+        "all_retained_reference_anchors": 256,
+        "recalled": {
+          "1": 5,
+          "2": 13,
+          "4": 31,
+          "8": 37,
+          "12": 40,
+          "16": 43
+        },
+        "recall_at16": 0.16796875,
+        "calendar_seconds": 31.255174366000574
+      },
+      "u012-sh": {
+        "all_retained_reference_anchors": 256,
+        "recalled": {
+          "1": 0,
+          "2": 0,
+          "4": 1,
+          "8": 2,
+          "12": 5,
+          "16": 7
+        },
+        "recall_at16": 0.02734375,
+        "calendar_seconds": 38.88137353002094
+      },
+      "u012-pooled": {
+        "all_retained_reference_anchors": 256,
+        "recalled": {
+          "1": 0,
+          "2": 0,
+          "4": 1,
+          "8": 2,
+          "12": 5,
+          "16": 8
+        },
+        "recall_at16": 0.03125,
+        "calendar_seconds": 32.11275693803327
+      }
+    }
+  },
+  "matched_control_pilot": {
+    "complete": true,
+    "rows": 32,
+    "worker_seconds": 192.81384974595858,
+    "charged_cap_seconds": 600,
+    "independent_replay_passed": true,
+    "replayed_rows": 32,
+    "replay_charged_cap_seconds": 300,
+    "profiles": [
+      {
+        "name": "SIFT2048",
+        "positive_pairs": 4,
+        "raw_correct_poses": 2,
+        "strict_poses": 1,
+        "wrong_positive_poses": 0,
+        "changed_light_positive_pairs": 2,
+        "changed_light_correct_poses": 0,
+        "negative_pairs": 4,
+        "raw_nonoverlap_poses": 0
+      },
+      {
+        "name": "frozen_step0_A0B0C0_strict3",
+        "positive_pairs": 4,
+        "raw_correct_poses": 1,
+        "strict_poses": 0,
+        "wrong_positive_poses": 0,
+        "changed_light_positive_pairs": 2,
+        "changed_light_correct_poses": 0,
+        "negative_pairs": 4,
+        "raw_nonoverlap_poses": 0
+      },
+      {
+        "name": "frozen_step0_A1B0C1_strict3",
+        "positive_pairs": 4,
+        "raw_correct_poses": 1,
+        "strict_poses": 0,
+        "wrong_positive_poses": 0,
+        "changed_light_positive_pairs": 2,
+        "changed_light_correct_poses": 0,
+        "negative_pairs": 4,
+        "raw_nonoverlap_poses": 0
+      },
+      {
+        "name": "frozen_step0_A1B0C1_quantization_aware",
+        "positive_pairs": 4,
+        "raw_correct_poses": 1,
+        "strict_poses": 0,
+        "wrong_positive_poses": 0,
+        "changed_light_positive_pairs": 2,
+        "changed_light_correct_poses": 0,
+        "negative_pairs": 4,
+        "raw_nonoverlap_poses": 0
+      }
+    ],
+    "full_projection_seconds": 20324,
+    "unchanged_full_max_seconds": 12000,
+    "full_stage_started": false
+  },
+  "image_guard": {
+    "positive_pairs": 192,
+    "guard_failures": 17,
+    "nonconstant_guard_failures": 17,
+    "software_only_coverage_ceiling": 0.9114583333333334,
+    "all_cases_retained": true
+  },
+  "verification": {
+    "repository_tests_passed": 1063,
+    "repository_tests_skipped": 4,
+    "full_log_sha256": "45cb11d1d21c2b075921759ca42e881bea94a3141d85e97d91fbbc200d481b7b",
+    "learning_sources_unchanged": 49,
+    "physical_sources_unchanged": 42,
+    "fresh_join_smoke_passed": true
+  },
+  "remaining_canonical_seconds": {
+    "training": 15867,
+    "baseline": 49080
+  },
+  "next_unqualified_prototype": {
+    "total_parameters": 95116,
+    "trainable_parameters": 66844,
+    "toy_tests_passed": 31,
+    "actual_feature_extraction_or_training": false,
+    "principle": "Marginalize unknown viewing direction in a learned Sun/view-conditioned descriptor distribution; match coarse128 teacher and inference domains before deferred native extraction.",
+    "outside_repository": true
+  },
+  "limitations": [
+    "One positive lunar retrieval pair is not a pose benchmark.",
+    "The globally native retrieval diagnostic violates principal deferred native feature extraction and is not promoted.",
+    "Only four matched positive pilot pairs/two changed-light pairs; no independent terrain uncertainty interval or calibrated risk claim.",
+    "All eight learned lunar ablations, seed repetitions, modern comparisons, terrain perturbation studies, transfer, calibration/final freeze/test and research package remain pending."
+  ],
+  "artifacts": {
+    "reports/solar_diagnostics_artifacts_v86.tar.gz": "90e5be1e3ef2f4797ced9ab8dbd3749093249ee284e5f43556f014318a41cc3c",
+    "reports/solar_diagnostics_artifacts_index_v86.json": "84fde9e3747b65cd03ea245aa0adb2aa52e9b119ce6368a92280c890b7b2202d",
+    "reports/solar_pose_free_corrected_metrics_v86.json": "97923186603866c17e405edc70ee519e12fa34bdf6dc874d7af9d9dbaa99cb59",
+    "reports/solar_preselection_full_refusal_v86.json": "a1a9d3f9fb80dc7c0343f4f14dc1e609b9d7f901106402978139d262471b5c6e",
+    "reports/solar-preselection-compact-controls-cost-pilot-replay-v86.json": "448ed91f3fe5ed9ead6f26564acee1b4967f843e7740d60c6608b2224d04abad"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "final_software_verification_v137",
+  "full_pytest": {
+    "passed": 1490,
+    "skipped": 4,
+    "subtests": 14,
+    "elapsed_seconds": 280.06
+  },
+  "full_test_log_sha256": "06416d7100af934a87ca82645f2893bb0590b04ba24ba5fb9c4b827552185092",
+  "fresh_procedural_smoke": {
+    "passed": true,
+    "extra_patches_per_policy": 2,
+    "method_case_cells": 10,
+    "not_full32_timing_pilot": true
+  },
+  "scientific_independent_arithmetic": {
+    "passed": true,
+    "method_case_cells": 832,
+    "recomputed_result_equals_saved": true
+  },
+  "frozen_source_count": 86,
+  "frozen_input_count": 175,
+  "frozen_pins_unchanged": true,
+  "calibration_or_final_access": false,
+  "new_parameters": 0,
+  "pdf_layout_review": {
+    "pages_brief": 2,
+    "pages_working_draft": 6,
+    "all_pages_rendered_and_visually_checked": true,
+    "display_only_regeneration": true
+  },
+  "public_scientific_freeze_ci": {
+    "run_id": 42116446825,
+    "job_id": 127557240691,
+    "conclusion": "success",
+    "tests_and_end_to_end_smoke_pass": true,
+    "source": "48c6e9ac4f15a1787a3bfdce6a5b84de54090763"
+  }
+}

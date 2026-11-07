@@ -1,0 +1,486 @@
+{
+  "scope": "Saved-only synthesis of independently replayed common-native exposed-development results, not a new metric implementation or fresh evaluation.",
+  "cases": 72,
+  "terrain_components": 4,
+  "stereo_geometries": 8,
+  "table": [
+    {
+      "method": "SIFT-first + surface pipeline",
+      "cases": 72,
+      "correct": 57,
+      "strict": 25,
+      "wrong": 2,
+      "no_pose": 13
+    },
+    {
+      "method": "Frozen CNN + surface",
+      "cases": 72,
+      "correct": 54,
+      "strict": 16,
+      "wrong": 3,
+      "no_pose": 15
+    },
+    {
+      "method": "RoMa v2 fast/common",
+      "cases": 72,
+      "correct": 53,
+      "strict": 17,
+      "wrong": 19,
+      "no_pose": 0
+    },
+    {
+      "method": "Frozen orientation CNN",
+      "cases": 72,
+      "correct": 45,
+      "strict": 17,
+      "wrong": 12,
+      "no_pose": 15
+    },
+    {
+      "method": "LoMa-R common",
+      "cases": 72,
+      "correct": 42,
+      "strict": 14,
+      "wrong": 28,
+      "no_pose": 2
+    },
+    {
+      "method": "MatchAnything-EfficientLoFTR native512",
+      "cases": 72,
+      "correct": 39,
+      "strict": 5,
+      "wrong": 30,
+      "no_pose": 3
+    },
+    {
+      "method": "MOONSt3R common-native, amended",
+      "cases": 72,
+      "correct": 28,
+      "strict": 21,
+      "wrong": 44,
+      "no_pose": 0
+    }
+  ],
+  "per_component": {
+    "MOONSt3R common-native, amended": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 6,
+        "strict": 2,
+        "wrong": 12,
+        "no_pose": 0
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 3,
+        "strict": 3,
+        "wrong": 6,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 16,
+        "strict": 13,
+        "wrong": 20,
+        "no_pose": 0
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 3,
+        "strict": 3,
+        "wrong": 6,
+        "no_pose": 0
+      }
+    },
+    "MatchAnything-EfficientLoFTR native512": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 9,
+        "strict": 0,
+        "wrong": 9,
+        "no_pose": 0
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 8,
+        "strict": 0,
+        "wrong": 1,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 20,
+        "strict": 5,
+        "wrong": 13,
+        "no_pose": 3
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 2,
+        "strict": 0,
+        "wrong": 7,
+        "no_pose": 0
+      }
+    },
+    "SIFT-first + surface pipeline": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 15,
+        "strict": 6,
+        "wrong": 2,
+        "no_pose": 1
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 3,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 24,
+        "strict": 13,
+        "wrong": 0,
+        "no_pose": 12
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 3,
+        "wrong": 0,
+        "no_pose": 0
+      }
+    },
+    "Frozen CNN + surface": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 15,
+        "strict": 4,
+        "wrong": 2,
+        "no_pose": 1
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 3,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 21,
+        "strict": 9,
+        "wrong": 1,
+        "no_pose": 14
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 0,
+        "wrong": 0,
+        "no_pose": 0
+      }
+    },
+    "LoMa-R common": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 11,
+        "strict": 3,
+        "wrong": 7,
+        "no_pose": 0
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 6,
+        "strict": 3,
+        "wrong": 3,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 20,
+        "strict": 8,
+        "wrong": 14,
+        "no_pose": 2
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 5,
+        "strict": 0,
+        "wrong": 4,
+        "no_pose": 0
+      }
+    },
+    "Frozen orientation CNN": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 10,
+        "strict": 4,
+        "wrong": 7,
+        "no_pose": 1
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 3,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 17,
+        "strict": 10,
+        "wrong": 5,
+        "no_pose": 14
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 9,
+        "strict": 0,
+        "wrong": 0,
+        "no_pose": 0
+      }
+    },
+    "RoMa v2 fast/common": {
+      "axial-v5-component-0000": {
+        "cases": 18,
+        "correct": 12,
+        "strict": 3,
+        "wrong": 6,
+        "no_pose": 0
+      },
+      "axial-v5-component-0005": {
+        "cases": 9,
+        "correct": 7,
+        "strict": 3,
+        "wrong": 2,
+        "no_pose": 0
+      },
+      "axial-v5-component-0006": {
+        "cases": 36,
+        "correct": 28,
+        "strict": 11,
+        "wrong": 8,
+        "no_pose": 0
+      },
+      "axial-v5-component-0015": {
+        "cases": 9,
+        "correct": 6,
+        "strict": 0,
+        "wrong": 3,
+        "no_pose": 0
+      }
+    }
+  },
+  "per_light_index": {
+    "MOONSt3R common-native, amended": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 24,
+        "strict": 20,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 4,
+        "strict": 1,
+        "wrong": 44,
+        "no_pose": 0
+      }
+    },
+    "MatchAnything-EfficientLoFTR native512": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 17,
+        "strict": 4,
+        "wrong": 7,
+        "no_pose": 0
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 22,
+        "strict": 1,
+        "wrong": 23,
+        "no_pose": 3
+      }
+    },
+    "SIFT-first + surface pipeline": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 24,
+        "strict": 22,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 33,
+        "strict": 3,
+        "wrong": 2,
+        "no_pose": 13
+      }
+    },
+    "Frozen CNN + surface": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 21,
+        "strict": 13,
+        "wrong": 1,
+        "no_pose": 2
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 33,
+        "strict": 3,
+        "wrong": 2,
+        "no_pose": 13
+      }
+    },
+    "LoMa-R common": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 24,
+        "strict": 14,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 18,
+        "strict": 0,
+        "wrong": 28,
+        "no_pose": 2
+      }
+    },
+    "Frozen orientation CNN": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 16,
+        "strict": 12,
+        "wrong": 6,
+        "no_pose": 2
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 29,
+        "strict": 5,
+        "wrong": 6,
+        "no_pose": 13
+      }
+    },
+    "RoMa v2 fast/common": {
+      "same_rendered_light_index": {
+        "cases": 24,
+        "correct": 24,
+        "strict": 17,
+        "wrong": 0,
+        "no_pose": 0
+      },
+      "different_rendered_light_index": {
+        "cases": 48,
+        "correct": 29,
+        "strict": 0,
+        "wrong": 19,
+        "no_pose": 0
+      }
+    }
+  },
+  "paired_sift_surface_minus_other": {
+    "Frozen CNN + surface": {
+      "difference_pp": 4.166666666666667,
+      "descriptive_component_bootstrap_95_pp": [
+        0.0,
+        7.6923076923076925
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    },
+    "RoMa v2 fast/common": {
+      "difference_pp": 5.555555555555555,
+      "descriptive_component_bootstrap_95_pp": [
+        -7.6923076923076925,
+        27.77777777777778
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    },
+    "Frozen orientation CNN": {
+      "difference_pp": 16.666666666666668,
+      "descriptive_component_bootstrap_95_pp": [
+        0.0,
+        23.80952380952381
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    },
+    "LoMa-R common": {
+      "difference_pp": 20.833333333333332,
+      "descriptive_component_bootstrap_95_pp": [
+        12.820512820512821,
+        38.888888888888886
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    },
+    "MatchAnything-EfficientLoFTR native512": {
+      "difference_pp": 25.0,
+      "descriptive_component_bootstrap_95_pp": [
+        11.11111111111111,
+        60.0
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    },
+    "MOONSt3R common-native, amended": {
+      "difference_pp": 40.27777777777778,
+      "descriptive_component_bootstrap_95_pp": [
+        25.641025641025642,
+        66.66666666666667
+      ],
+      "resamples": 256,
+      "groups": 4,
+      "scope": "Exposed-development descriptive component bootstrap; not fresh-test confidence or proof of generalization."
+    }
+  },
+  "input_seals": {
+    "reports/localization_training_data_v5.json": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "reports/native_moonst3r_amended_audit_v28.json": "2dc5445847aee2fa0a6bf2b62b764470f5d5c3df5f91ad3d5c3ffd0ebd09d16c",
+    "runs/localization-v28-moonst3r-amended/summary.json": "35040b60bde094c8874c9883037cf72cab2b3c242a64884c472e0f0bf59a7696",
+    "reports/native_matchanything_audit_v17.json": "acb160ee5d251b3a799e5355c7ddb02bc79390243cb91de69005de17388300bb",
+    "runs/localization-v17-matchanything-native-development/summary.json": "b68b8bdbbfdeb11e3e35dcbbbadb89bffdbe5c92f74526ddbad8d9734d3c8a65",
+    "reports/native_surface_audit_v11.json": "43ad7f07403c40692a4d0ff370780940000ffc67bcd9700fc80e9a9148acde63",
+    "runs/localization-v11-surface-warp-development/results.json.gz": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97",
+    "reports/native_loma_comparison_v10.json": "3688c4dda8f46cdc82ab5f256a21381be0c04c90fac8053c582c99568730572a",
+    "reports/native_romav2_comparison_v10.json": "cf43174cb9252e5de959e7a2827cb178520cde7edb8285e411888225d4dbbaed"
+  },
+  "reporter_sha256": "f28234a7307adf2a971faeb47c073dcfb4f41cba82837f7f132014dcdce908c2",
+  "original_moon_calendar_protocol_completed": false,
+  "amended_moon_original_rows": 71,
+  "amended_moon_supplemental_rows": 1,
+  "no_new_matcher_forward": true,
+  "calibration_or_test_pixels_loaded": 0,
+  "claims": {
+    "learned_upgrade": false,
+    "fresh_generalization": false,
+    "calibrated_acceptance": false,
+    "global_sota": false,
+    "verified_orbital_accuracy": false
+  },
+  "limitations": [
+    "Only four exposed components/eight geometries;72lighting pairs are not independent terrain tests.",
+    "Compact surface pipeline uses a four-rotation bank and reference-surface rectification; dense baselines use their declared single-pair profiles.",
+    "Generic frozen pretraining versus lunar-trained compact features does not isolate architectural superiority; MOONSt3R exact training overlap is unknown.",
+    "RoMa v2 is fast/common, not the uncompleted author precise profile. Remaining required author profiles remain incomplete.",
+    "No cross-hardware latency ranking; MOON median is not paired timing.",
+    "Raw wrong proposals are not calibrated accepted errors; confidence/nonoverlap/fresh test and transfer remain incomplete.",
+    "MOONSt3R has21strict poses versus frozen-surface16; coarse-success ranking does not imply precision dominance.",
+    "MOON original calendar budget was exceeded after observed clock/suspension divergence; original71rows remain unchanged; separate public600s amendment completed only one missing case."
+  ]
+}

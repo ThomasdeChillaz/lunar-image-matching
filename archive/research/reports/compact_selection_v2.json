@@ -1,0 +1,41 @@
+{
+  "selected_variant": "expanded",
+  "primary_seed": 20261030,
+  "all_seeds": [
+    20261030,
+    20261031,
+    20261032
+  ],
+  "selection": "Maximum model-selection raw correct count; ties fewer parameters then declared variant order",
+  "candidates": [
+    {
+      "variant": "expanded",
+      "correct": 93,
+      "parameters": 28272,
+      "model_selection_results_sha256": "d47c12030f69e72703a0727aff064899d712facd223f525c2737122ce306a2d4",
+      "checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65"
+    },
+    {
+      "variant": "reliability",
+      "correct": 92,
+      "parameters": 28305,
+      "model_selection_results_sha256": "9370c548c764b1bc0020acf81f2e710f573d323a28ef54002c9535d3f5d1cb96",
+      "checkpoint_sha256": "e8301d8e09070ae17b00466d44c2212082388df9d3496a7de800f77381b9d7a4"
+    },
+    {
+      "variant": "hard_negatives",
+      "correct": 89,
+      "parameters": 28305,
+      "model_selection_results_sha256": "cb78c7cb9f4ffddc3c4a0b8ce8891f6cc996b43449175f487e9e3b82fed22113",
+      "checkpoint_sha256": "04ef8498779cc920b4d3a04ce5ef462e7cf2e745adbbc73d626b5ca4a289a8e9"
+    },
+    {
+      "variant": "multiscale",
+      "correct": 87,
+      "parameters": 28305,
+      "model_selection_results_sha256": "f741b97ec9c1f097625d38f60c35bc5d9e2e71bba8943988bb1a5c8bcc062842",
+      "checkpoint_sha256": "13ffb9fdc1fdc825eeb176ce9c2fd42c6686f1c1860daf868e03abdf2cf4a51d"
+    }
+  ],
+  "test_outcomes_consulted": false
+}

@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-10-31T11:24:43.649103+00:00",
+  "scope": "Operational resource recovery only; no change to frozen methods, weights, numerical settings, confidence rules, case lists or metrics.",
+  "protocol_sha256": "cf97903e715fbb3f2596aa06397235bb52739cae3e1f8c93aa11893499e5ab83",
+  "original_run": 41193705916,
+  "remaining_shards": [
+    {
+      "method": "roma",
+      "shard": 0
+    },
+    {
+      "method": "roma",
+      "shard": 7
+    }
+  ],
+  "reason": "Original workers remained in inference after23minutes; inspected shard0 had completed2of9 blind cases after actual known-transform control passed. No correctness labels were used to choose a recovery.",
+  "runner": "standard free ubuntu-24.04-arm",
+  "torch_cpu_threads": 2,
+  "max_recovery_runs": 1,
+  "job_timeout_minutes": 60,
+  "selection": "For each shard select the earliest completed artifact passing existing source/input/software controls, determined from artifact creation time. Retain every attempt. Selection does not use alignment errors or acceptance outcomes.",
+  "timing": "Use only the compact timing/accuracy control recorded in the selected baseline job; never combine timings across machines."
+}

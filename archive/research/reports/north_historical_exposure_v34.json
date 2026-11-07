@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "scope": "Own-project named historical pixel ledgers and known height-probe supports only; metadata check, not a model/generalization result.",
+  "historical_inputs": [
+    {
+      "ledger": "moon_manifest.json",
+      "records": 80,
+      "minimum_latitude_deg": -44.406560781109754,
+      "maximum_latitude_deg": -41.86300089640867
+    },
+    {
+      "ledger": "research_manifest_v1.json",
+      "records": 512,
+      "minimum_latitude_deg": -44.405270383597276,
+      "maximum_latitude_deg": -41.84912802624386
+    },
+    {
+      "ledger": "tycho_real_manifest.json",
+      "records": 54,
+      "minimum_latitude_deg": -44.49986469095703,
+      "maximum_latitude_deg": -42.12275162316553
+    },
+    {
+      "ledger": "reports/compact_dataset_v2.json",
+      "records": 66,
+      "maximum_latitude_deg": -87.06228948074946,
+      "bound_type": "Conservative complete body-space support boxes, not camera centres."
+    },
+    {
+      "ledger": "expanded_solar_manifest.json",
+      "records": 42,
+      "minimum_latitude_deg": -88.82248858963425,
+      "maximum_latitude_deg": 44.13788533922087,
+      "bound_type": "21samples on each crop edge;1degree conservative guard applied."
+    }
+  ],
+  "candidate_full_support_minimum_latitude_deg": 84.45044949962775,
+  "historical_pixel_maximum_latitude_deg": 44.13788533922087,
+  "latitude_guard_deg": 1.0,
+  "minimum_guarded_latitude_gap_deg": 39.31256416040688,
+  "prior_height_probe_locations": 28808,
+  "probe_guard_m": 1000.0,
+  "probe_support_intersections": [],
+  "own_project_historical_pixel_supports_disjoint": true,
+  "external_model_pretraining_overlap": "unknown; not certified by this audit",
+  "original_released_lunargeo_fresh_gate_passed": false,
+  "final_model_inference_performed": false,
+  "source_sha256": "43b723986909558d5a0c790b1ac20c4cc6de060b991a3ac57dc9d42e05d53d46",
+  "metadata_sha256": {
+    "moon_manifest.json": "64c99cea10c32f1991e06c4e847960514fa4cd3f954ebdeb9cc166891fef445d",
+    "research_manifest_v1.json": "386a68c2693e652cf0e0561c6e4bd0cf39c993f3abfb7830be6c53e7ee69ebfc",
+    "tycho_real_manifest.json": "d11c90fb130a2b0ba288a2940a9c879c5639b83a776607b874e1ad6b09c31843",
+    "reports/compact_dataset_v2.json": "1e841fc534e5da6bb7eb765c8ad4d42f7a6a1c36d41604a5c580e3336d235cdb",
+    "expanded_solar_manifest.json": "2f7c98bb865d6d7e0033ecab597df5dad9802ab801166793b8be54c77ae57180",
+    "data/cresent-metadata-v21/controls/ground_truth_selenographic_crater_coordinates-0.txt": "c35e511da01d6b8810f9e945a6ffcedbd8b673b22d169f94e4505a8a66c646bd",
+    "reports/cresent_lola_rim_probe_v30_protocol.json": "a6bf4669a7fd3fc40e33a941a7c065c07fd8a0edd15a511cd034de008eef3cf8",
+    "pds_height_fixtures_v30.json": "4bea8871574fb9a5ce60cd558ddde6419ea0c0989696bd65d3c456128ee260fc"
+  },
+  "limitations": [
+    "Named input ledgers cover recorded project inputs, not all lunar imagery ever seen by external models.",
+    "Same DEM, renderer and material cause shared dependence;44supports are not independent missions.",
+    "Known prior height probes are inspected separately; no undisclosed raster-wide exposure audit is claimed."
+  ]
+}

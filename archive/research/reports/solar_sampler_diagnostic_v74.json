@@ -1,0 +1,39 @@
+{
+  "scope": "Sampler/objective correctness control on2pureproceduralpoints. No neural forward, lunar images, optimizer updates or scientific performance result.",
+  "rows": [
+    {
+      "method": "before_replacement",
+      "physical_points": 2,
+      "sampled_ids": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "sampled_pairs": 8,
+      "perfect_teacher_correspondence_loss": 1.4179236888885498
+    },
+    {
+      "method": "after_unique_pairs",
+      "physical_points": 2,
+      "sampled_ids": [
+        0,
+        1
+      ],
+      "sampled_pairs": 2,
+      "perfect_teacher_correspondence_loss": 4.541770613286644e-05
+    }
+  ],
+  "source_sha256": {
+    "before": "d9fb0d6e1ce70a46167c13d3e6303473b72c518530bf0dc3dc7cc4770103bd39",
+    "after": "d79ce0a719a5e126de13320a48a3061c4d140d117faab98778821d78baf2a15a"
+  },
+  "tests": {
+    "passed": 10,
+    "seconds": 3.26
+  }
+}

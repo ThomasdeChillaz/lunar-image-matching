@@ -1,0 +1,1729 @@
+{
+  "schema": 1,
+  "phase": "study",
+  "complete": true,
+  "calibration_or_final_access": false,
+  "protocol_sha256": "d711eb8429a8de80d74b16edc20bd49eae011801d32fcf2cd7410d78db28bb60",
+  "renderer_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "cpu_threads": 2,
+  "publication_commit": "416233c8ce5c11841ed59d545342906c8565a6f2",
+  "deadline_utc": "2026-11-04T22:53:18.056703+00:00",
+  "fixtures": null,
+  "rows": [
+    {
+      "key": "u013/reference/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "1916e7c79d830f62babbb13d8572ce77a779ff3f4b64896d981a43dbdbdfcd69"
+        }
+      },
+      "elapsed_seconds": 3.714870276977308,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u013/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261116,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "cd8e64300ddf457781ffb62f7ffbdf81c6d2d9406bc11d1c6fe245dbae3ddccf"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "15ef2504591ffb3f3d6fd0cd01a4117a1cc2d048953990870089aab2a78066cb"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "c7c5b8e469c179ec7837705a1c321872e11a7b6a588d10352d4ececbf0b63e2c"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "7d7e7112a93ee29394c1519f94790e437ee5c3b0a803852ac2184ab80bcc4fa6"
+        }
+      },
+      "elapsed_seconds": 12.163335379969794,
+      "recon_max_abs_error": 2.2351741790771484e-08,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u013/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261117,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "46861062148e198ca876c6f853bce24e930537f425c8d4e915d9336ab60d45cb"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "10a29d8d4ad164bd1221261e8614d9e4769c18d29ddfef1dcd4c95fc5ad8e355"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "3463cf090a6715e3b89a04f1a56f0591cdc3c7a4a1b0529b0f0f2b93dfe6e681"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/reference/light-0/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "8c3c747f339667507d31f774323135d07b342a225ddc2ac5cf67fc4ce536b4df"
+        }
+      },
+      "elapsed_seconds": 12.206277752004098,
+      "recon_max_abs_error": 2.2351741790771484e-08,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "2941588437f86eea0ad1ea5179c114595d3d7da212e94e01fdc48ce1d4eda1a9"
+        }
+      },
+      "elapsed_seconds": 3.8422291179886088,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261216,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "e49a072645a5396ff04f4db80fdb7c492577d08b0592c2a3917208dca58b5880"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "03e552a8f4a5bef8cf6e310fa878d6b5f447a81bffa7144709b69d5b11b61bc5"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "cc170af7f7eb12a3e5b32f7f7a1437860946f71651e3b5daa20f4fa89fe0c9e1"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "7c407c57a7efc6cd5dfa6762324b0e9a7b1c8806c4793a25a3ea73c9c62f5549"
+        }
+      },
+      "elapsed_seconds": 14.760447175009176,
+      "recon_max_abs_error": 2.2351741790771484e-08,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261217,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "f44628cf25f2662e3e7c01b4f1c891ccc50a36d8cc29b6cdfcb9da3ee2925e7d"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "5bb6ad90cebe21d4649161daaaa2f140feadf8ee0aebf11fb14c8a03f1984245"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "6899aedb82dcb244fa22268d8da3248f250fbb915e8ade08bfeff49eb28c299f"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u013/query/light-0/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "72b922c5790d5ad461ef58a846afa96152c06eadf98411f165944426027a54c2"
+        }
+      },
+      "elapsed_seconds": 12.662211468967143,
+      "recon_max_abs_error": 1.4901161193847656e-08,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "5d5ec8e3aa03b6a906ab6027385bd6f2df44a6034fbc711f84a73235b7c77d03"
+        }
+      },
+      "elapsed_seconds": 3.187367753998842,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261316,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "661932d08eac43124c7abe42ea72bdd84f9f3e7f306aa51892244eeb2013a2b0"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "661932d08eac43124c7abe42ea72bdd84f9f3e7f306aa51892244eeb2013a2b0"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "661932d08eac43124c7abe42ea72bdd84f9f3e7f306aa51892244eeb2013a2b0"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "9671133d00f32f018ff4840c21c089c2b646e199cf665a36ad2d70efcbee8dbf"
+        }
+      },
+      "elapsed_seconds": 10.251092038000934,
+      "recon_max_abs_error": 0.0,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261317,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "4a41e6fe3ec5567be04bd810a9008b0a1e4b791443052c74998d989e73870609"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "a7d2ec1245f115d48d0dd912487b337b56eb7e9523be7e458b82ccb485123fef"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "46577e13e570851236e3fd48118987ac2366c7957e9d8bb47884096d6f95472f"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/reference/light-0/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "e34096d8c2416813fe2173d681723967976cf26d30d508d575a0fe84fa0d635c"
+        }
+      },
+      "elapsed_seconds": 10.167569477984216,
+      "recon_max_abs_error": 0.0,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "187b3079ce22148efa662d2efe1e998f2726ece571a84dbfde88946f2b55c849"
+        }
+      },
+      "elapsed_seconds": 2.8296785499551333,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261416,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "321ee3f3cf61c79a8ec3cd3423b82b3e28b66c18d50f0fafa7c21333eaae12b4"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "321ee3f3cf61c79a8ec3cd3423b82b3e28b66c18d50f0fafa7c21333eaae12b4"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "321ee3f3cf61c79a8ec3cd3423b82b3e28b66c18d50f0fafa7c21333eaae12b4"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "7d370d02149b368f3658bd081dfb13fbe9eff501db19ac936cc2c1d9de53db6c"
+        }
+      },
+      "elapsed_seconds": 10.460734164982568,
+      "recon_max_abs_error": 0.0,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261417,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "4b6ea820ea13d25a8aa515d82d57f7f41d9065e702ce02f37c278b5b836867c9"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "4ab9436b157a0626f3e1f432668b5c2fe8cd2c00430c6ff1e572ccf79069691b"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "b7a2873f22694e2c86392757991c9f061c794f1510b4c265debbaf49258e4ebb"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u025/query/light-0/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "f777d5b66f167f5590566c037fbda3ec65b0c6b7a740213a513a509901cc9499"
+        }
+      },
+      "elapsed_seconds": 10.003809879999608,
+      "recon_max_abs_error": 1.8189894035458565e-12,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "23de44724579f7c76ea107aa54bd511bd711e422bc6d6fa0834b93e3ce6cb5cd"
+        }
+      },
+      "elapsed_seconds": 3.758568777993787,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261516,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "653d079bc789e990323a478a382326d53d74b3280887e61260619255b2bd7e7d"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "e6b63b995eb968bc006749b6d0ed3e98e8925edd8c66f1364af4623f82a8c7bd"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "17103a92dca6cb9a3e9fc688fd7b1250b83afffd38a4bbcb0a4cddee635b96da"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "6a84281c6e2945e12ebc9222fa047fb77f31c0e9a4f96e51f6a50604adb74576"
+        }
+      },
+      "elapsed_seconds": 11.852243579982314,
+      "recon_max_abs_error": 1.4551915228366852e-11,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261517,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "cb344ba8109efbefb607f414d6d65e8e9205398617cdb0c554156a7d1550eb90"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "30fe0bef5fbde3b022b83b51ad9034a0f92999d58a17531fab35e14c4f6cf853"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "1736da364c219fff26334d0cdb8fd2770c097ae117c4450ecfe9b2113a4ca8ff"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/reference/light-1/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "cb0a7921fc1d32645c4b2078b480b6dd477bb41eb1d924bf4b6cd69ccf03fee2"
+        }
+      },
+      "elapsed_seconds": 11.605067439028062,
+      "recon_max_abs_error": 1.4551915228366852e-11,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "a466f7050faf89cd5727fce19a57a3c006718246ea1ca428e64de5ec54bc7e81"
+        }
+      },
+      "elapsed_seconds": 3.407128216000274,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261616,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "b6bd07bce96065bb36ebffeb760e371d58586bad535203120fe1a665513bd70e"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "38708756eb92b2cc70c1457c545e53aaf15c9b9686fb676c4984190ddc4869e3"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "578bc02ba3f48444bb4c642b8efdc40119ffb98181a19b49b69980c38e1e3e2c"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "b2b8f19fd485ac7758a4a22ca2390fb0f7db0fd82f764d509531114f7c76113c"
+        }
+      },
+      "elapsed_seconds": 13.000556287006475,
+      "recon_max_abs_error": 1.4551915228366852e-11,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261617,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "96accd0ca5c5cd233cafc41289e0e3fe44441efd0f030ad9d3cbc3e9843b78ac"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "8e1af7ac054e1f14789b554f9c0f29c431efc0c7f4df8be416c20564528b28e1"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "82634feecaeacf8f5734e310a6b35430bd327eacaf626cb77558312d063d33ff"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u027/query/light-1/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "dd4cf684dcaea7aec1ba53336e8bf9082cb529086e32a4f9f6493b9722c073ed"
+        }
+      },
+      "elapsed_seconds": 12.129203288001008,
+      "recon_max_abs_error": 7.275957614183426e-12,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "8ba64218cf7576b2fab5154086b7552b679cf9c6f73d09f0e211e53bcc3635a6"
+        }
+      },
+      "elapsed_seconds": 3.3174244349938817,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261716,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "bbd3635b8df5717a8865956c6ec49e4c136437a5e707bddc5ce2b7610397f6a8"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "0bc6e97d0d01f6259ce1ca78b3fb94901d0b50e129cbce3b568ce27f52c793e2"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "88c54127ee4a5166cbdfd33b03ffeed9df736562e13461df1b9c7de5f9d22daf"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "e9b39616cddb826b778d5c535b6541c54c1866ed9d6e82f2c7c017488424162b"
+        }
+      },
+      "elapsed_seconds": 11.753046419995371,
+      "recon_max_abs_error": 2.3283064365386963e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261717,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "e2913e874f0917eb9a35954f138cc9708a43fdf8b7c0a9a7038ce3843ffa2069"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "ead59b09b136b8de3337c6cc54078ff66a1953a1e349f562ea508fed17c13fe0"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "60d5ec92e6310b25a168859542d98024698997693e2e1c333a12adf71869d9c3"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "b8b296f6ee3c71277b8831aa90c2d6911cd54b3ec9962add0419b49713f849a1"
+        }
+      },
+      "elapsed_seconds": 11.82895900204312,
+      "recon_max_abs_error": 1.1641532182693481e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 0,
+      "seed": 20261752,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/combined_0001.exr",
+          "sha256": "e73087f94863fdb44dc39e04f16532236f8d748ad1650c0a78df465b78c9fc17"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/direct_0001.exr",
+          "sha256": "0db68d456eccbcc0910d6bed23ceda51e1ed921d720f84208a1663327681504b"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/indirect_0001.exr",
+          "sha256": "36d87fff28594db1b932014b84b123b6cd82748a48ec652a91abf5dc5a113c3a"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r0/albedo_0001.exr",
+          "sha256": "98067289510b28107bb113c1b38fa3275da4d8895c33afefccf4982bfde51938"
+        }
+      },
+      "elapsed_seconds": 46.96880258701276,
+      "recon_max_abs_error": 5.820766091346741e-11,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 1,
+      "seed": 20261753,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/combined_0001.exr",
+          "sha256": "52d14bbd47293fa34957da6340464367f268166b75b2707776bf1e6736e1a735"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/direct_0001.exr",
+          "sha256": "f5e9a3827e4e38d5638353f1da6b55d007f824934543fcb73897d8669e62e6f1"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/indirect_0001.exr",
+          "sha256": "ed6983c54e6f14b9801d7cff3d89df512179a20deb0882015cb53fd217eda8e9"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/reference/light-17/black_space/256spp-r1/albedo_0001.exr",
+          "sha256": "fa0d0bea1741843b000e30e990734c5d111ffef65cf57022fda819a303093658"
+        }
+      },
+      "elapsed_seconds": 47.83540339599131,
+      "recon_max_abs_error": 1.1641532182693481e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/legacy_white/16spp-r0/combined_0001.exr",
+          "sha256": "2f7d9f5090ca4b2a5ea586ab8df0def51455441c075e267c98ad13a4461f1ee0"
+        }
+      },
+      "elapsed_seconds": 3.3850860110251233,
+      "recon_max_abs_error": null,
+      "exact_legacy_rgb8": true,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": true
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261816,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r0/combined_0001.exr",
+          "sha256": "e39eeb9b51d9b387ac9088fb3f6f0c482c5b6ab19e1269d1889b2e360ee26159"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r0/direct_0001.exr",
+          "sha256": "e3eceaf3bcfd59ebcb969a35fe4034f4f30f464162b1309eaf41b952ef420d3f"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r0/indirect_0001.exr",
+          "sha256": "03296b41622bf51b2fd8be830ae90d452a2a4640c447da900d869e1e4584f908"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r0/albedo_0001.exr",
+          "sha256": "fcb12b4b8ab03efef89a2c9a21ad7815c1d48af34745e9f9ad522847e1ed5c81"
+        }
+      },
+      "elapsed_seconds": 11.935071411018725,
+      "recon_max_abs_error": 2.3283064365386963e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261817,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r1/combined_0001.exr",
+          "sha256": "c4e7bab9fe9a608fe224403d744fed13c3becb0754cba36a2a49178acb4c60b9"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r1/direct_0001.exr",
+          "sha256": "bf6d967284e3185845fe486e1d457dc6157ae230029e49decc5a36180221634b"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r1/indirect_0001.exr",
+          "sha256": "01e0a3dba639e52466fc4e8e63519220f5e3f8a1159033c7beafa155315f0c05"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/64spp-r1/albedo_0001.exr",
+          "sha256": "9350010ca6fe24a5419274b792d6643af11d44c3a54866a0b7dd4b48a866d67d"
+        }
+      },
+      "elapsed_seconds": 11.68867660901742,
+      "recon_max_abs_error": 2.3283064365386963e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 0,
+      "seed": 20261852,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/combined_0001.exr",
+          "sha256": "4039cafff6ea2459392b76c8c11ed8ad71f64f483f21e02f82194480f4c763c4"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/direct_0001.exr",
+          "sha256": "74dd1049e5aeb9110309b9b90091a9a454724d847f99d8117460dfbd4ac15d50"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/indirect_0001.exr",
+          "sha256": "aef83eb08bad08f6d52d3b26803aa3db69d3811c05725981819840b9afc392e3"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r0/albedo_0001.exr",
+          "sha256": "0d083e7c790f73266feb339a6c446c256ee7a9420b9e8bbc16c45d2a170bbad4"
+        }
+      },
+      "elapsed_seconds": 46.836877377005294,
+      "recon_max_abs_error": 1.1641532182693481e-10,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 1,
+      "seed": 20261853,
+      "exr": {
+        "combined": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/combined_0001.exr",
+          "sha256": "d41932651a99d5816c3bd004760c51783520cacf7d23e9466282e34b7f54e73e"
+        },
+        "direct": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/direct_0001.exr",
+          "sha256": "86fcdd2b9730eccfa5e3a95a0f5ae8094b132bc55ca34b923c6c626968b2a795"
+        },
+        "indirect": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/indirect_0001.exr",
+          "sha256": "9fe4392f5680dd2b1a3d22d2444b065be7acc51fa1c9a6e2951c18098af615bd"
+        },
+        "albedo": {
+          "path": "runs/solar-raw-acquisition-v109-study/u061/query/light-17/black_space/256spp-r1/albedo_0001.exr",
+          "sha256": "e7138108b98c9ee722782fcfc644e055ad03a0b014e8734bebbcb38518ce9093"
+        }
+      },
+      "elapsed_seconds": 44.69983451801818,
+      "recon_max_abs_error": 5.820766091346741e-11,
+      "exact_legacy_rgb8": null,
+      "geometry": {
+        "exact_camera_depth_and_rays": true,
+        "native_rays": 262144,
+        "compared_arrays": [
+          "axial_depth",
+          "body_origin",
+          "cam2world",
+          "enu_rows",
+          "geometry_source",
+          "intrinsics",
+          "normals",
+          "position",
+          "valid"
+        ]
+      },
+      "adaptive": false
+    }
+  ],
+  "same_camera_repeatability": {
+    "u013/reference/light-0": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.05820617678575218,
+            "aggregate_span": 0.05820617678575218,
+            "seed_difference_single_render_rms": 0.00010394167843971879,
+            "across_seed_spatial_covariance": 0.00020410593309777702,
+            "positive_support_fraction": 0.6003837585449219
+          },
+          "32": {
+            "aggregate_p01": 3.539369505034529e-07,
+            "aggregate_p995": 0.04622217104067657,
+            "aggregate_span": 0.04622181710372607,
+            "seed_difference_single_render_rms": 2.6273226323709e-06,
+            "across_seed_spatial_covariance": 0.0001344116069061934,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.05818636220879854,
+            "aggregate_span": 0.05818636220879854,
+            "seed_difference_single_render_rms": 5.147552679513986e-05,
+            "across_seed_spatial_covariance": 0.00020422655192172195,
+            "positive_support_fraction": 0.5241279602050781
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.046199908354242314,
+            "aggregate_span": 0.046199908354242314,
+            "seed_difference_single_render_rms": 1.7528628611827624e-06,
+            "across_seed_spatial_covariance": 0.00013448049841556357,
+            "positive_support_fraction": 0.7265625
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.00047194275444781,
+            "aggregate_span": 0.00047194275444781,
+            "seed_difference_single_render_rms": 9.026308998007973e-05,
+            "across_seed_spatial_covariance": 3.9979162221186054e-10,
+            "positive_support_fraction": 0.13796234130859375
+          },
+          "32": {
+            "aggregate_p01": 2.1475394120784583e-07,
+            "aggregate_p995": 9.063195095709839e-05,
+            "aggregate_span": 9.041719701589055e-05,
+            "seed_difference_single_render_rms": 1.9893813481948795e-06,
+            "across_seed_spatial_covariance": 2.2725193947478322e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      }
+    },
+    "u013/query/light-0": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.06150954290293163,
+            "aggregate_span": 0.06150954290293163,
+            "seed_difference_single_render_rms": 0.00011494872974875929,
+            "across_seed_spatial_covariance": 0.0002130229268303691,
+            "positive_support_fraction": 0.6186943054199219
+          },
+          "32": {
+            "aggregate_p01": 3.9742858430891205e-07,
+            "aggregate_p995": 0.04454143217287764,
+            "aggregate_span": 0.044541034744293335,
+            "seed_difference_single_render_rms": 2.7311935227481548e-06,
+            "across_seed_spatial_covariance": 0.00012872213025700408,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.061436065221205406,
+            "aggregate_span": 0.061436065221205406,
+            "seed_difference_single_render_rms": 5.9063139625102204e-05,
+            "across_seed_spatial_covariance": 0.00021318286598429517,
+            "positive_support_fraction": 0.5445899963378906
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.04452332864398158,
+            "aggregate_span": 0.04452332864398158,
+            "seed_difference_single_render_rms": 1.6514169749719404e-06,
+            "across_seed_spatial_covariance": 0.00012882234795358148,
+            "positive_support_fraction": 0.79296875
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0005113479399005886,
+            "aggregate_span": 0.0005113479399005886,
+            "seed_difference_single_render_rms": 9.858213848569742e-05,
+            "across_seed_spatial_covariance": 8.722355863064401e-10,
+            "positive_support_fraction": 0.13756942749023438
+          },
+          "32": {
+            "aggregate_p01": 3.9742856290381216e-07,
+            "aggregate_p995": 0.00017408250258097441,
+            "aggregate_span": 0.0001736850740180706,
+            "seed_difference_single_render_rms": 2.1599230894771752e-06,
+            "across_seed_spatial_covariance": 6.33607666244932e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      }
+    },
+    "u025/reference/light-0": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.0609025562074615e-08,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 3.814697265625e-06
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 3.315320488148317e-10,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.00390625
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.0609025562074615e-08,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 3.814697265625e-06
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 3.315320488148317e-10,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.00390625
+          }
+        }
+      }
+    },
+    "u025/query/light-0": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 2.909621738498309e-08,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 3.814697265625e-06
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 9.092567932807216e-10,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.00390625
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 2.909621487283515e-08,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 3.814697265625e-06
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 9.092567147760984e-10,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.00390625
+          }
+        }
+      }
+    },
+    "u027/reference/light-1": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.3104633166010267e-06,
+            "across_seed_spatial_covariance": -6.821582890532537e-17,
+            "positive_support_fraction": 0.00011444091796875
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 1.510453573771996e-07,
+            "aggregate_span": 1.510453573771996e-07,
+            "seed_difference_single_render_rms": 4.0833397397305565e-08,
+            "across_seed_spatial_covariance": 2.5637831002126904e-17,
+            "positive_support_fraction": 0.10546875
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.3104633056160193e-06,
+            "across_seed_spatial_covariance": -6.821582726667403e-17,
+            "positive_support_fraction": 0.00011444091796875
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 1.510453573771996e-07,
+            "aggregate_span": 1.510453573771996e-07,
+            "seed_difference_single_render_rms": 4.0833397053027184e-08,
+            "across_seed_spatial_covariance": 2.5637832640778248e-17,
+            "positive_support_fraction": 0.10546875
+          }
+        }
+      }
+    },
+    "u027/query/light-1": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.6402778106323096e-06,
+            "across_seed_spatial_covariance": -1.6723992928236465e-16,
+            "positive_support_fraction": 0.000164031982421875
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 2.469464213561419e-07,
+            "aggregate_span": 2.469464213561419e-07,
+            "seed_difference_single_render_rms": 4.814206760549203e-08,
+            "across_seed_spatial_covariance": 2.7214554576250734e-16,
+            "positive_support_fraction": 0.15234375
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 1.640277806398023e-06,
+            "across_seed_spatial_covariance": -1.6723992803871e-16,
+            "positive_support_fraction": 0.000164031982421875
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 2.469464213561419e-07,
+            "aggregate_span": 2.469464213561419e-07,
+            "seed_difference_single_render_rms": 4.8142067675589416e-08,
+            "across_seed_spatial_covariance": 2.7214552669164887e-16,
+            "positive_support_fraction": 0.15234375
+          }
+        }
+      }
+    },
+    "u061/reference/light-17": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0005883464220096357,
+            "aggregate_span": 0.0005883464220096357,
+            "seed_difference_single_render_rms": 0.00016807895008216778,
+            "across_seed_spatial_covariance": 5.95119595460383e-10,
+            "positive_support_fraction": 0.2027130126953125
+          },
+          "32": {
+            "aggregate_p01": 1.3227383549763162e-05,
+            "aggregate_p995": 0.00012579750134989463,
+            "aggregate_span": 0.00011257011780013147,
+            "seed_difference_single_render_rms": 3.995178576267822e-06,
+            "across_seed_spatial_covariance": 4.3121253338873176e-10,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0005883464220096357,
+            "aggregate_span": 0.0005883464220096357,
+            "seed_difference_single_render_rms": 0.00016807894795575515,
+            "across_seed_spatial_covariance": 5.951195743224268e-10,
+            "positive_support_fraction": 0.2027130126953125
+          },
+          "32": {
+            "aggregate_p01": 1.3227383270519865e-05,
+            "aggregate_p995": 0.00012579749983421815,
+            "aggregate_span": 0.00011257011656369828,
+            "seed_difference_single_render_rms": 3.995178511359053e-06,
+            "across_seed_spatial_covariance": 4.312125231628886e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      },
+      "256": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.00027375822723115585,
+            "aggregate_span": 0.00027375822723115585,
+            "seed_difference_single_render_rms": 7.953660489418817e-05,
+            "across_seed_spatial_covariance": 5.781663936940097e-10,
+            "positive_support_fraction": 0.5929985046386719
+          },
+          "32": {
+            "aggregate_p01": 1.3577222855365445e-05,
+            "aggregate_p995": 0.00013060072460288887,
+            "aggregate_span": 0.00011702350174752342,
+            "seed_difference_single_render_rms": 1.741206988681028e-06,
+            "across_seed_spatial_covariance": 4.424859525884038e-10,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.00027375822723115585,
+            "aggregate_span": 0.00027375822723115585,
+            "seed_difference_single_render_rms": 7.953660391481963e-05,
+            "across_seed_spatial_covariance": 5.781663810367113e-10,
+            "positive_support_fraction": 0.5929985046386719
+          },
+          "32": {
+            "aggregate_p01": 1.3577222728022864e-05,
+            "aggregate_p995": 0.00013060072306081964,
+            "aggregate_span": 0.00011702350033279677,
+            "seed_difference_single_render_rms": 1.7412069687364986e-06,
+            "across_seed_spatial_covariance": 4.4248594274326354e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      }
+    },
+    "u061/query/light-17": {
+      "64": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0005688535800436512,
+            "aggregate_span": 0.0005688535800436512,
+            "seed_difference_single_render_rms": 0.0001600919113797702,
+            "across_seed_spatial_covariance": 4.526142657205466e-10,
+            "positive_support_fraction": 0.18738174438476562
+          },
+          "32": {
+            "aggregate_p01": 6.856403476973583e-06,
+            "aggregate_p995": 9.029930884942306e-05,
+            "aggregate_span": 8.344290537244947e-05,
+            "seed_difference_single_render_rms": 3.284654609187348e-06,
+            "across_seed_spatial_covariance": 3.378972288295703e-10,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0005688535592344124,
+            "aggregate_span": 0.0005688535592344124,
+            "seed_difference_single_render_rms": 0.00016009190940003402,
+            "across_seed_spatial_covariance": 4.5261425140264335e-10,
+            "positive_support_fraction": 0.18738174438476562
+          },
+          "32": {
+            "aggregate_p01": 6.856403361155117e-06,
+            "aggregate_p995": 9.02993076833336e-05,
+            "aggregate_span": 8.344290432217848e-05,
+            "seed_difference_single_render_rms": 3.284654566336869e-06,
+            "across_seed_spatial_covariance": 3.378972208519559e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      },
+      "256": {
+        "combined": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.00025577327018254446,
+            "aggregate_span": 0.00025577327018254446,
+            "seed_difference_single_render_rms": 7.567406452074418e-05,
+            "across_seed_spatial_covariance": 4.3625013161456606e-10,
+            "positive_support_fraction": 0.5574684143066406
+          },
+          "32": {
+            "aggregate_p01": 6.019759545668191e-06,
+            "aggregate_p995": 8.979323274397459e-05,
+            "aggregate_span": 8.37734731983064e-05,
+            "seed_difference_single_render_rms": 1.6465041885780288e-06,
+            "across_seed_spatial_covariance": 3.3065767135274815e-10,
+            "positive_support_fraction": 1.0
+          }
+        },
+        "direct": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          },
+          "32": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.0,
+            "aggregate_span": 0.0,
+            "seed_difference_single_render_rms": 0.0,
+            "across_seed_spatial_covariance": 0.0,
+            "positive_support_fraction": 0.0
+          }
+        },
+        "indirect": {
+          "1": {
+            "aggregate_p01": 0.0,
+            "aggregate_p995": 0.00025577326810889657,
+            "aggregate_span": 0.00025577326810889657,
+            "seed_difference_single_render_rms": 7.56740635703563e-05,
+            "across_seed_spatial_covariance": 4.36250120724498e-10,
+            "positive_support_fraction": 0.5574684143066406
+          },
+          "32": {
+            "aggregate_p01": 6.0197594504221574e-06,
+            "aggregate_p995": 8.979323175345581e-05,
+            "aggregate_span": 8.377347230303365e-05,
+            "seed_difference_single_render_rms": 1.64650417167015e-06,
+            "across_seed_spatial_covariance": 3.3065766332168664e-10,
+            "positive_support_fraction": 1.0
+          }
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 420.62901268695714
+}

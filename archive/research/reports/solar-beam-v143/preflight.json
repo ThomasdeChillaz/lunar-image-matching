@@ -1,0 +1,39 @@
+{
+  "schema": "persistent_beam_preflight_v143",
+  "prepared_only": true,
+  "source_files_verified": 115,
+  "input_files_verified": 134,
+  "inference_only_inputs": 109,
+  "expected_method_case_cells": 56,
+  "positive_pairs": 4,
+  "nonoverlap_pairs": 4,
+  "maximum_branches": 8,
+  "field_cap": 128,
+  "reference_candidate_capacity_accounted": true,
+  "previous_fixed_extra_seconds": 3300,
+  "new_requested_seconds": 1800,
+  "new_user_approval_received": false,
+  "new_authority_issued": false,
+  "new_lunar_inference_run": false,
+  "final_or_calibration_access": false,
+  "full_suite": {
+    "passed": 1532,
+    "skipped": 4,
+    "subtests": 14,
+    "seconds": 415.38
+  },
+  "prior_suite_before_budget_fix": {
+    "passed": 1531,
+    "skipped": 4,
+    "subtests": 14,
+    "seconds": 413.4
+  },
+  "no_paid_compute": true,
+  "original_targets_unchanged": true,
+  "fresh_generated_replay_passed": true,
+  "fresh_procedural_smoke": {
+    "raw_evaluations": 100,
+    "summaries": 20,
+    "source_hashes_verified": 5
+  }
+}

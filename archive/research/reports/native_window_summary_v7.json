@@ -1,0 +1,26 @@
+{
+  "scope": "Corrected exact-in-window development diagnostic, not a matcher, fresh test or formal pose-performance bound.",
+  "results": {
+    "all_visible_reference_points": {
+      "cases": 72,
+      "pairs_with_any_correct_oracle_branch": 72
+    },
+    "exact_inside_local_window": {
+      "cases": 72,
+      "pairs_with_any_correct_oracle_branch": 67
+    }
+  },
+  "branches": 288,
+  "results_sha256": "5dafd63d77212fe31b5ff1dc89b23a041a90bf8709091c0852b8a58cd60bc637",
+  "limitation": "An exact-in-window control diagnoses search coverage; it is not deployable and not a formal upper bound on poses meeting a finite error threshold.",
+  "protocol": {
+    "scope": "Corrected exact-in-window development diagnostic, not a matcher, fresh test or formal pose-performance bound.",
+    "source_sha256": "ae00245ef1d55d51bf04e00f10d89868dbf2b7ca05ca136f39dc002c663cb771",
+    "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "frozen_checkpoint_sha256": "c92f6917659e075688eb55387d4dbd5c8136b717772a962f1267933e338b2c65",
+    "window_radius_native": 16,
+    "support_radius_native": 12,
+    "note": "All four branches are examined using query truth after image-only proposals. Never use oracle choices as deployed predictions.",
+    "calibration_or_test_pixels_loaded": 0
+  }
+}

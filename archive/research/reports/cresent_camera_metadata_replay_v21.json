@@ -1,0 +1,15 @@
+{
+  "replay_passed": true,
+  "pose_records": 15283,
+  "original_broad_annotation_gate_passed": false,
+  "resolved_camera_convention_validated": true,
+  "different_resolved_control_frames": 5,
+  "resolved_ellipses": 6940,
+  "reference_depth_geometry_gate_passed": false,
+  "fresh_matching_benchmark_completed": false,
+  "image_pixels_decoded": 0,
+  "matcher_inferences": 0,
+  "manifest_sha256": "dae10254619922ba056e28f8f95a1ea0727fc2ae2bd4f6640c705e5380e5df20",
+  "source_sha256": "99e8c8f33fec7409eee79c15b040a6e4d15b7d644c0045fb99dc4c1c3bd75a2a",
+  "scope": "Source annotation algebra/pose-field reproducibility only. Not image matching, optical reference precision, actual renderer-depth agreement or fresh navigation accuracy."
+}

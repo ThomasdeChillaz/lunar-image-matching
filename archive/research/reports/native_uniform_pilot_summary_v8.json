@@ -1,0 +1,154 @@
+{
+  "scope": "100-step uniform-positive data ablation pilot; no pose-recovery gain or final/acceptance claim.",
+  "summary": {
+    "scope": "Uniform-positive native refinement development data ablation; original fresh-final gate remains unmet.",
+    "pilot": true,
+    "winner": "dustbin",
+    "elapsed_seconds": 285.6713105640083,
+    "results": [
+      {
+        "variant": "dustbin",
+        "seed": 20261101,
+        "completed_steps": 100,
+        "selected_step": 100,
+        "selection_key": [
+          11,
+          3073,
+          -100
+        ],
+        "evaluation": {
+          "cases": 72,
+          "correct_poses": 45,
+          "strict_poses": 18,
+          "estimated_poses": 56,
+          "correct_at_two_px": 10360,
+          "returned": 23213,
+          "scorable": 21348,
+          "bank_only": false
+        },
+        "final_weight_change_l2": 0.8127730488777161
+      }
+    ]
+  },
+  "protocol": {
+    "scope": "Uniform-positive native refinement development data ablation; original fresh-final gate remains unmet.",
+    "variants": [
+      "dustbin"
+    ],
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "steps": 100,
+    "interval": 100,
+    "pilot": true,
+    "source_sha256": {
+      "train_native_refinement_v8.py": "fbf4416dc84ae08ddf4a812fd1aae79c668af9e40bedec30cb20e598bc7231da",
+      "native_sampling_v8.py": "9f6d11e78520d0022b5ba17d48f810f54ae1606a13f6a33060c50776fb4fce02",
+      "native_refinement_v7.py": "89f3d8773d335c923e1065fc21d60de51d68c22dcac8a7788e5fd0d363fb6ed0",
+      "native_pipeline_v7.py": "477a429c6d47271afe6f5724b9664b51211fb97ee23bc338cf8e32ed07a7ac33",
+      "train_balanced_localization_v3.py": "5a36d033efd551db8ceda9ae2da0cc5c5ea38fbf93cc0f817494784e05b17b59",
+      "localization_refiner_v3.py": "da741c1dbb9525f7a9f7e8376ff0c7c71b06acde5495d2a0d53731d07d83e2ed",
+      "compact_lunar.py": "ddbfe3d62b2e862f9824570cd01f1e207cb3fbc0923e2e6e3989c044d1811393",
+      "contrastive_terrain.py": "576ee5f3a582521ada3891b6454aa6c8c19599b9154fe83806182a8469f2e43f",
+      "localization_diagnostics_v3.py": "3b1fcf7807a5e8b68f788430e9348e8bbf1ab5aaa2d0941f617f9daceb2f98e3",
+      "lunar_geometry_v5.py": "a0f6dcbb9885de51c7615fbe01327394c9c9e2c7085f1cf892251b933b5b0185",
+      "lunar_geometry_v2.py": "8cbd30febb7a4d4748d6fb04c35d36245ec4fbd6823a4e954546fb7caf7172d1",
+      "localization_pose_refit_v3.py": "ee75a3b580e77aaed3678d7b59402bac4f05666093c3c21a7899a9514ff442c1",
+      "localization_robust_pose_v4.py": "cf967f3dada6cb30a6ffa2c1726f3a65f36163403d2366d3395b5ab6f757616c",
+      "rotation_bank_pose_v4.py": "d7c3568eafdd792c64b0e4b45fbe9af508e392e54e74724ba2ce6cc7db992892",
+      "prepare_localization_training_v3.py": "d6131d09058518203a3fdc7f9071f1a98d04c06608c076824f562f5a8e09da5b",
+      "verify_axial_results_v5.py": "514fa509a791765ab6d78a79f60211f4811b8bc8bcd9cda6e0f1c4f53e73d733"
+    },
+    "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+    "uniform_supervision": {
+      "tiles": 18,
+      "points": 10463,
+      "groups": 12,
+      "per_tile": {
+        "nadir/nadir/6864": {
+          "component": "axial-v5-component-0001",
+          "visible_supported_points": 640
+        },
+        "nadir/nadir/6138": {
+          "component": "axial-v5-component-0002",
+          "visible_supported_points": 676
+        },
+        "nadir/nadir/6507": {
+          "component": "axial-v5-component-0003",
+          "visible_supported_points": 666
+        },
+        "nadir/nadir/6453": {
+          "component": "axial-v5-component-0003",
+          "visible_supported_points": 625
+        },
+        "nadir/nadir/336": {
+          "component": "axial-v5-component-0004",
+          "visible_supported_points": 624
+        },
+        "nadir/nadir/6381": {
+          "component": "axial-v5-component-0007",
+          "visible_supported_points": 650
+        },
+        "nadir/nadir/6303": {
+          "component": "axial-v5-component-0007",
+          "visible_supported_points": 634
+        },
+        "nadir/nadir/2464": {
+          "component": "axial-v5-component-0008",
+          "visible_supported_points": 621
+        },
+        "nadir/nadir/6297": {
+          "component": "axial-v5-component-0009",
+          "visible_supported_points": 676
+        },
+        "oblique/oblique/2770": {
+          "component": "axial-v5-component-0010",
+          "visible_supported_points": 648
+        },
+        "oblique/oblique/4621": {
+          "component": "axial-v5-component-0011",
+          "visible_supported_points": 125
+        },
+        "oblique/oblique/7432": {
+          "component": "axial-v5-component-0012",
+          "visible_supported_points": 676
+        },
+        "oblique/oblique/7504": {
+          "component": "axial-v5-component-0013",
+          "visible_supported_points": 668
+        },
+        "dynamicgood/dynamic/1227": {
+          "component": "axial-v5-component-0002",
+          "visible_supported_points": 270
+        },
+        "dynamicgood/dynamic/825": {
+          "component": "axial-v5-component-0014",
+          "visible_supported_points": 601
+        },
+        "dynamicgood/dynamic/1422": {
+          "component": "axial-v5-component-0009",
+          "visible_supported_points": 595
+        },
+        "dynamicgood/dynamic/1437": {
+          "component": "axial-v5-component-0013",
+          "visible_supported_points": 430
+        },
+        "dynamicgood/dynamic/936": {
+          "component": "axial-v5-component-0013",
+          "visible_supported_points": 638
+        }
+      }
+    },
+    "label_audit": {
+      "cases": 234,
+      "proposed_points": 75310,
+      "geometrically_visible": 70537,
+      "depth_support": "All26 native depth pairs finite/positive; fixed crop bounds verified.",
+      "labels": "Independent axial projection/visibility replay; predictions choose sampling locations, never ground truth."
+    },
+    "exact_pose_gate_sha256": "580625de761f9559a64b3e552f848a6c71d260053c074e7a72e5bf416ad32fd9",
+    "calibration_or_test_pixels_loaded": 0
+  }
+}

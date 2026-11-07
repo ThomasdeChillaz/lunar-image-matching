@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "scope": "saved training and provenance only; no pose or model selection",
+  "protocol_sha256": "56a6b1f5cbab50ad6fb84f84c50625825e8461b102f7811f98ba08b4d4719f84",
+  "publication_commit": "ed45e2202f73af13d7a3d75b68d583ba590e9b19",
+  "public_paths_verified": 60,
+  "metadata_pins_verified": 23,
+  "source_pins_verified": 57,
+  "summary_sha256": "fd2157038e61cbb5bb671282d256dd6b6c408fdf6632908ef1f8d5fa9ebae0b4",
+  "trace_sha256": "2d5561f4fd89aed1c424db7f125087be11a24121df5172ee51cd24442cf7c7a3",
+  "checkpoints": {
+    "step_0.pt": {
+      "sha256": "469b7c22aa8fa617ccd23d39cd70d031cfc637bf1e48b33260ae8ab837e67c39",
+      "tensor_storage_entries": 30
+    },
+    "step_1000.pt": {
+      "sha256": "02c03ca236161ebc3d373b70063aa4a00c15e21c774a358bd8687b90655bff6d",
+      "tensor_storage_entries": 84
+    },
+    "step_1500.pt": {
+      "sha256": "b0e10116c022f4a36db273bc1a40885c06ba9198a48155ab4f6f8e37fab27e7c",
+      "tensor_storage_entries": 84
+    },
+    "step_2000.pt": {
+      "sha256": "5184111ea93be82833d53e8d3ca54bf98b3d65a059f793720af27732e82e5f06",
+      "tensor_storage_entries": 84
+    },
+    "step_500.pt": {
+      "sha256": "6bfc2006407bafba6cdb85aabdfb1debf3b7b7e77bad0669a7d022784ebfb150",
+      "tensor_storage_entries": 84
+    }
+  },
+  "finite_rows": 2000,
+  "exact_byte_prefix_rows": 100,
+  "exact_step0_tensor_storages": 30,
+  "step100_exact_state_scope": "original runner comparison and verified replay receipt",
+  "touched_training_units": 64,
+  "touched_training_groups": 16,
+  "lights": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+  ],
+  "full_covariance": true,
+  "gradients_above_clip_threshold": 2000,
+  "first100": {
+    "mean_loss": -0.21691088780760764,
+    "mean_conditional_nll": -0.31114770270884035,
+    "mean_marginal_nll": -0.31139689005911353,
+    "correct_within_batch": 351,
+    "points": 800
+  },
+  "last100": {
+    "mean_loss": -0.638200172483921,
+    "mean_conditional_nll": -0.6496663093566895,
+    "mean_marginal_nll": -0.6492174112796784,
+    "correct_within_batch": 323,
+    "points": 800
+  },
+  "elapsed_seconds": 169.21049299300648,
+  "charge_seconds": 736,
+  "remaining": {
+    "training": 13493.0,
+    "baseline": 48960.0
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "platform": "macOS-26.7.1-x86_64-i386-64bit",
+    "processor": "i386",
+    "torch_threads": 2
+  },
+  "checkpoint_selected": false,
+  "calibration_or_final_access": false
+}

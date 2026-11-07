@@ -1,0 +1,13 @@
+{
+  "full_suite_passed": 95,
+  "test_environment_flags": {
+    "RUN_LEARNED": "1",
+    "RUN_ELOFTR": "1",
+    "RUN_MATCHANYTHING": "1"
+  },
+  "test_log_sha256": "94d9d6a4ea81f69f669495baccda27aed1b2205128b24934bd5447b948ae6c90",
+  "fresh_smoke_summary_count": 20,
+  "smoke_config_sha256": "b334a0847c0301fd7a8bece340c2450027b8d1e0724b484e0b21e9d7479625fb",
+  "smoke_summary_sha256": "30864960f5e5ed861282c01a14f52cf146896e2f52f130ade0272dd2846ffb29",
+  "note": "Software controls plus measurement replay; not fresh geographic or real navigation validation."
+}

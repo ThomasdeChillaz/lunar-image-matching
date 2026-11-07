@@ -1,0 +1,47 @@
+{
+  "schema": "unknown_light_software_verification_v142",
+  "pytest": {
+    "passed": 1513,
+    "skipped": 4,
+    "subtests": 14,
+    "elapsed_seconds": 318.83
+  },
+  "fresh_procedural_smoke": {
+    "passed": true,
+    "procedural_only": true,
+    "raw_evaluations": 100,
+    "method_case_summaries": 20,
+    "source_hashes": 5,
+    "saved_config_exact": true,
+    "unique_rows": true,
+    "summary_recomputed_exact": true,
+    "legacy_verifier_applicable": false,
+    "retained_legacy_verifier_failure": "verify_artifacts.py expects evaluate.py frozen_config.json/frozen_manifest.json; benchmark.py uses config.json and results.csv",
+    "initial_csv_audit_correction": "The initial check mistook20summary rows for raw evaluations; saved config correctly requires100raw evaluations.",
+    "run": "runs/ci-smoke-v142-20261106"
+  },
+  "saved_replay": {
+    "passed": true,
+    "method_case_cells": 48,
+    "sources": 104,
+    "inputs": 130,
+    "independently_recomputed_geometry": true,
+    "summary_and_component_analysis_exact": true,
+    "no_matching_or_fitting": true,
+    "private_authority_used": false,
+    "accepted_pose_study": false
+  },
+  "protected_sources": 104,
+  "protected_inputs": 130,
+  "all_hashes_unchanged": true,
+  "original_accounting_unchanged": true,
+  "prior_supplement_fixed_charges_seconds": 2400,
+  "new_user_approved_cap_seconds": 900,
+  "new_fixed_charge_seconds": 900,
+  "new_comparison_remaining_seconds": 0,
+  "matching_scoring_sources_changed": false,
+  "original_research_targets_preserved": 14,
+  "figure_visually_checked": true,
+  "no_paid_compute": true,
+  "calibration_or_final_access": false
+}

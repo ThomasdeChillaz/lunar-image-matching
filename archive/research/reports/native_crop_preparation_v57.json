@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-11-02T18:33:32.747846+00:00",
+  "state": "PREPARED; no neural crop control performed yet",
+  "source_sha256": {
+    "native_crop_alignment_v57.py": "45e8396cc1c266c8ad90ebe36c40333d74b5323c6ff70f3efb1bb444ee16958d",
+    "probe_native_crop_v57.py": "db4b0d0aa15b2a8a03007fcbb2d73628b719e47371595be7bae078f31d61d672",
+    "verify_native_crop_v57.py": "b9a4a08694e3c105213b7cd43c1a118fa6c3f15705721ba934611dd1378072bf",
+    "test_native_crop_alignment_v57.py": "843ee09fafd3d863ef4ff4249ecf0358dcf4e219ee8df2d348ca7c987208fe41",
+    "test_native_crop_probe_v57.py": "9f78d9a4e66027c7f66e6faf5e5b0b4814184126d3f94957678d6b64b77913ce"
+  },
+  "training_terrain_groups": 1,
+  "training_image_conditions": 4,
+  "points_per_condition": 8,
+  "expected_neural_forwards": 100,
+  "optimizer_updates": 0,
+  "cap_seconds": 300,
+  "cpu_threads": 2,
+  "aligned_tolerance_max_abs": 0.0001,
+  "targeted_tests_passed": 8,
+  "full_tests_passed": 434,
+  "optional_skips": 4,
+  "fresh_smoke_rows": 100,
+  "scope": "Measure feature extraction at identical coordinates; compare integer-origin crop control with fractional pre-encoder resampling. Not a bug/causality, pose-accuracy or learned-model claim.",
+  "model_promoted": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "public_source_pending": true
+}

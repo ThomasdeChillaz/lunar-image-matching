@@ -1,0 +1,1599 @@
+{
+  "schema": "spice_hl3_trajectory_C_ros_frame_witness_v117",
+  "archive_url": "https://zenodo.org/records/13970078/files/trajectory_C.zip",
+  "archive_bytes": 12243101038,
+  "archive_published_md5": "c20a8167c3fb570880e17874aabbfcd5",
+  "archive_full_md5_verified": false,
+  "total_range_bytes": 6295552,
+  "ranges": [
+    {
+      "start": 1874494588,
+      "stop": 1874496635,
+      "bytes": 2048,
+      "sha256": "2acb890b40084f9965c499ce4cd207a8c645daed3af38545e0b13de896c7fba4"
+    },
+    {
+      "start": 1874495490,
+      "stop": 1877641217,
+      "bytes": 3145728,
+      "sha256": "08dda7751ec42151c623a5af6f28a6c237e3505f5af041b96cc593f98fc80311"
+    },
+    {
+      "start": 11491584248,
+      "stop": 11491586295,
+      "bytes": 2048,
+      "sha256": "c5bfaa2f3672ed2bbf8b550888ef9ff36fe86541776da229e38198e00d6b71ec"
+    },
+    {
+      "start": 11491585162,
+      "stop": 11494730889,
+      "bytes": 3145728,
+      "sha256": "467bcb2f3c5cce427fa54b4b8aad9559ccbdbf97641d3eb8a227801d16041915"
+    }
+  ],
+  "recordings": {
+    "fast": {
+      "metadata_member": "fast/stereo/rosbag/metadata.yaml",
+      "metadata_sha256": "efadfef072dda7400effeae07974ae8b33bd5a07a4c7bae69c5e7c2af3af0578",
+      "metadata_crc32": 1370862673,
+      "archive_topic_inventory": {
+        "/leo01/zed2/zed_node/right_gray/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 122
+        },
+        "/tf_static": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 2
+        },
+        "/leo01/zed2/zed_node/left/image_rect_color": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 143
+        },
+        "/leo01/zed2/zed_node/imu/data": {
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 1125
+        },
+        "/tf": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 656
+        },
+        "/leo01/zed2/zed_node/imu/data_raw": {
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 1126
+        },
+        "/leo01/zed2/zed_node/imu/mag": {
+          "type": "sensor_msgs/msg/MagneticField",
+          "messages": 450
+        },
+        "/leo01/zed2/zed_node/left/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 101
+        },
+        "/leo01/zed2/zed_node/right/image_rect_color": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 139
+        },
+        "/leo01/zed2/zed_node/left_cam_imu_transform": {
+          "type": "geometry_msgs/msg/TransformStamped",
+          "messages": 1162
+        },
+        "/leo01/zed2/zed_node/left_gray/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 112
+        },
+        "/vrpn_mocap/ZED2_camera_marker/pose": {
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 340
+        },
+        "/leo01/zed2/zed_node/right/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 111
+        },
+        "/leo01/zed2/zed_node/left_gray/image_rect_gray": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 152
+        },
+        "/leo01/zed2/zed_node/right_gray/image_rect_gray": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 163
+        }
+      },
+      "mcap_member": "fast/stereo/rosbag/trajectoryC_stereo_fast.mcap",
+      "mcap_payload_zip_offset": 1874495490,
+      "mcap_zip_member_compressed_bytes": 198764525,
+      "mcap_zip_member_uncompressed_bytes": 334209297,
+      "mcap_full_zip_crc32_unverified": 1448794378,
+      "bounded_inflated_bytes": 5407165,
+      "verified_chunks": [
+        {
+          "first_log_ns": 1726152136149405032,
+          "last_log_ns": 1726152136162312267,
+          "size": 944544,
+          "crc32": 0,
+          "sha256": "77092fed29a82927f7401d2f4bf835badf91b13f78ea591362f46326ea74fcb4"
+        },
+        {
+          "first_log_ns": 1726152136206518158,
+          "last_log_ns": 1726152136206518158,
+          "size": 922099,
+          "crc32": 0,
+          "sha256": "d8396271f3c6379785180a966c01fe311409b367c48b91c4e68ed1c7e7cb9dc4"
+        },
+        {
+          "first_log_ns": 1726152136226355081,
+          "last_log_ns": 1726152136228667816,
+          "size": 1156456,
+          "crc32": 0,
+          "sha256": "be9046858dc275d390da980ddf31f985674b1601bde4400490c0eefbb8071015"
+        },
+        {
+          "first_log_ns": 1726152136265850021,
+          "last_log_ns": 1726152136265850021,
+          "size": 921715,
+          "crc32": 0,
+          "sha256": "f1e69ba25d216c207bcfe5750e810ba4ca5f667ae926a2528a9a2dd931fb73fb"
+        },
+        {
+          "first_log_ns": 1726152136275398810,
+          "last_log_ns": 1726152136277587899,
+          "size": 1154126,
+          "crc32": 0,
+          "sha256": "3527362651c7f80ef727c5d93f8af5adadb3b03d44fd262708bfa1fb2cb236b1"
+        }
+      ],
+      "compressed_prefix_sha256": "08dda7751ec42151c623a5af6f28a6c237e3505f5af041b96cc593f98fc80311",
+      "decoded_topics": {
+        "/tf_static": {
+          "messages_in_verified_prefix": 1,
+          "first": {
+            "transforms": [
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_baro_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_link",
+                "child_frame_id": "leo01/zed2_camera_center",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.015
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.024997395914712332,
+                  0.0,
+                  0.9996875162757025
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_left_camera_frame",
+                "translation_m": [
+                  -0.01,
+                  0.06,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_left_camera_frame",
+                "child_frame_id": "leo01/zed2_left_camera_optical_frame",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.5,
+                  -0.4999999999999999,
+                  0.5,
+                  -0.5000000000000001
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_mag_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_right_camera_frame",
+                "translation_m": [
+                  -0.01,
+                  -0.06,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_right_camera_frame",
+                "child_frame_id": "leo01/zed2_right_camera_optical_frame",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.5,
+                  -0.4999999999999999,
+                  0.5,
+                  -0.5000000000000001
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_left_camera_frame",
+                "child_frame_id": "leo01/zed2_temp_left_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_right_camera_frame",
+                "child_frame_id": "leo01/zed2_temp_right_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ],
+            "log_time_ns": 1726152136149405032,
+            "publish_time_ns": 1726152136149405032,
+            "payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+          },
+          "distinct_header_frames": []
+        },
+        "/leo01/zed2/zed_node/imu/data": {
+          "messages_in_verified_prefix": 3,
+          "first": {
+            "header_stamp_ns": 1726152136013329583,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726152136149582993,
+            "publish_time_ns": 1726152136149582993,
+            "payload_sha256": "d551383b4d4ad1c5895d0394fa62e08be2a08803968e807bb3d40d7a9c63d03f"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/imu/data_raw": {
+          "messages_in_verified_prefix": 3,
+          "first": {
+            "header_stamp_ns": 1726152136013329583,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726152136149655529,
+            "publish_time_ns": 1726152136149655529,
+            "payload_sha256": "a85ad974a00c130eaf193e8bcbe481559d9d45c3f187c79702907a254fc48a9c"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/imu/mag": {
+          "messages_in_verified_prefix": 3,
+          "first": {
+            "header_stamp_ns": 1726152135965829583,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726152136149717825,
+            "publish_time_ns": 1726152136149717825,
+            "payload_sha256": "a47867950c50b79abb23df0b96e33784cf48ef71f51a4800a2c7c8c1e3b2b9a7"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/left/camera_info": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726152136000765590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "image_height": 360,
+            "image_width": 640,
+            "distortion_model": "rational_polynomial",
+            "D": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "K": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "R": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "P": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "log_time_ns": 1726152136149829027,
+            "publish_time_ns": 1726152136149829027,
+            "payload_sha256": "1844c93e4f25d5fcf02e7281c8e2c752e8f2c62ef682bb1385c69dc10b4e9432"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right/image_rect_color": {
+          "messages_in_verified_prefix": 3,
+          "first": {
+            "header_stamp_ns": 1726152135900569590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "log_time_ns": 1726152136162312267,
+            "publish_time_ns": 1726152136162312267,
+            "payload_sha256": "d28ed6cc70193be88d7ab67d56695a3e3d2600b3b3ceb61aed56381e5201b34c"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left/image_rect_color": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726152135900569590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "log_time_ns": 1726152136206518158,
+            "publish_time_ns": 1726152136206518158,
+            "payload_sha256": "c1ded96bb481b7dc43631c2860a1df227322d7540a0216b2e57965e35f5fb6c1"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left_cam_imu_transform": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726152136123009264,
+            "frame_id": "leo01/zed2_left_camera_frame",
+            "child_frame_id": "leo01/zed2_imu_link",
+            "translation_m": [
+              -0.0020000000949949026,
+              -0.023061001673340797,
+              0.00021700002253055573
+            ],
+            "quaternion_xyzw": [
+              -0.0005033087800256908,
+              -0.0,
+              -0.004468507133424282,
+              0.9999898672103882
+            ],
+            "log_time_ns": 1726152136226355081,
+            "publish_time_ns": 1726152136226355081,
+            "payload_sha256": "fbe4e5a5ccf41b3b273c52e20e101920e5a9206b2224f4b1f1b3fa9dbee6dd3f"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left_gray/image_rect_gray": {
+          "messages_in_verified_prefix": 1,
+          "first": {
+            "header_stamp_ns": 1726152136000765590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "log_time_ns": 1726152136226804058,
+            "publish_time_ns": 1726152136226804058,
+            "payload_sha256": "1318d80c43b1debbae8f4b0139c69e352930c126d6598d02af2e1943f037c973"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right_gray/image_rect_gray": {
+          "messages_in_verified_prefix": 1,
+          "first": {
+            "header_stamp_ns": 1726152136066348590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "log_time_ns": 1726152136275847972,
+            "publish_time_ns": 1726152136275847972,
+            "payload_sha256": "a278b50ee38d7187272f38b3cc450521960362de52c14d69d0e8fba75112e7dd"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        }
+      },
+      "static_messages_all_observed": false,
+      "observed_static_edges": [
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_baro_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_link",
+          "child_frame_id": "leo01/zed2_camera_center",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.015
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.024997395914712332,
+            0.0,
+            0.9996875162757025
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_left_camera_frame",
+          "translation_m": [
+            -0.01,
+            0.06,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_left_camera_frame",
+          "child_frame_id": "leo01/zed2_left_camera_optical_frame",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.5,
+            -0.4999999999999999,
+            0.5,
+            -0.5000000000000001
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_mag_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_right_camera_frame",
+          "translation_m": [
+            -0.01,
+            -0.06,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_right_camera_frame",
+          "child_frame_id": "leo01/zed2_right_camera_optical_frame",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.5,
+            -0.4999999999999999,
+            0.5,
+            -0.5000000000000001
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_left_camera_frame",
+          "child_frame_id": "leo01/zed2_temp_left_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_right_camera_frame",
+          "child_frame_id": "leo01/zed2_temp_right_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        }
+      ],
+      "observed_dynamic_edges": []
+    },
+    "slow": {
+      "metadata_member": "slow/stereo/rosbag/metadata.yaml",
+      "metadata_sha256": "afd96c57f2af852fba0ea09a2e3c5c2b03c16b78fd38a51f2d1877c18d456135",
+      "metadata_crc32": 3065545014,
+      "archive_topic_inventory": {
+        "/leo01/zed2/zed_node/right_gray/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 471
+        },
+        "/leo01/zed2/zed_node/right_gray/image_rect_gray": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 565
+        },
+        "/tf_static": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 2
+        },
+        "/leo01/zed2/zed_node/left/image_rect_color": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 528
+        },
+        "/leo01/zed2/zed_node/imu/data": {
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 2516
+        },
+        "/tf": {
+          "type": "tf2_msgs/msg/TFMessage",
+          "messages": 1962
+        },
+        "/leo01/zed2/zed_node/imu/data_raw": {
+          "type": "sensor_msgs/msg/Imu",
+          "messages": 2534
+        },
+        "/leo01/zed2/zed_node/imu/mag": {
+          "type": "sensor_msgs/msg/MagneticField",
+          "messages": 1167
+        },
+        "/leo01/zed2/zed_node/left/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 462
+        },
+        "/leo01/zed2/zed_node/right/image_rect_color": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 507
+        },
+        "/leo01/zed2/zed_node/left_cam_imu_transform": {
+          "type": "geometry_msgs/msg/TransformStamped",
+          "messages": 2582
+        },
+        "/leo01/zed2/zed_node/left_gray/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 480
+        },
+        "/leo01/zed2/zed_node/right/camera_info": {
+          "type": "sensor_msgs/msg/CameraInfo",
+          "messages": 442
+        },
+        "/vrpn_mocap/ZED2_camera_marker/pose": {
+          "type": "geometry_msgs/msg/PoseStamped",
+          "messages": 1068
+        },
+        "/leo01/zed2/zed_node/left_gray/image_rect_gray": {
+          "type": "sensor_msgs/msg/Image",
+          "messages": 557
+        }
+      },
+      "mcap_member": "slow/stereo/rosbag/trajectoryC_stereo_slow.mcap",
+      "mcap_payload_zip_offset": 11491585162,
+      "mcap_zip_member_compressed_bytes": 737436800,
+      "mcap_zip_member_uncompressed_bytes": 1216982887,
+      "mcap_full_zip_crc32_unverified": 1310622562,
+      "bounded_inflated_bytes": 5247132,
+      "verified_chunks": [
+        {
+          "first_log_ns": 1726151996643710098,
+          "last_log_ns": 1726151997107254004,
+          "size": 1208496,
+          "crc32": 0,
+          "sha256": "f00779d0a25348cc06ef0753b6473ba5662e02e192823e9e93739cce712cbcfc"
+        },
+        {
+          "first_log_ns": 1726151997118729999,
+          "last_log_ns": 1726151997122702200,
+          "size": 923315,
+          "crc32": 0,
+          "sha256": "4b0446b2db86f21ea63a22919f3d912d8af98c7d8ba4cc459b655a6082d6d5d3"
+        },
+        {
+          "first_log_ns": 1726151997128252125,
+          "last_log_ns": 1726151997136756132,
+          "size": 1160164,
+          "crc32": 0,
+          "sha256": "06fea377ddb65c7374154c2368234ea911943f55c68466352720a9308c87e498"
+        },
+        {
+          "first_log_ns": 1726151997145935576,
+          "last_log_ns": 1726151997170023870,
+          "size": 1387615,
+          "crc32": 0,
+          "sha256": "a99c777a3c44ede2eccff33158c999dcee97e43ffafe6af8c7a07317bd786652"
+        }
+      ],
+      "compressed_prefix_sha256": "467bcb2f3c5cce427fa54b4b8aad9559ccbdbf97641d3eb8a227801d16041915",
+      "decoded_topics": {
+        "/tf_static": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "transforms": [
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_baro_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_link",
+                "child_frame_id": "leo01/zed2_camera_center",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.015
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.024997395914712332,
+                  0.0,
+                  0.9996875162757025
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_left_camera_frame",
+                "translation_m": [
+                  -0.01,
+                  0.06,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_left_camera_frame",
+                "child_frame_id": "leo01/zed2_left_camera_optical_frame",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.5,
+                  -0.4999999999999999,
+                  0.5,
+                  -0.5000000000000001
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_mag_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_camera_center",
+                "child_frame_id": "leo01/zed2_right_camera_frame",
+                "translation_m": [
+                  -0.01,
+                  -0.06,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_right_camera_frame",
+                "child_frame_id": "leo01/zed2_right_camera_optical_frame",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.5,
+                  -0.4999999999999999,
+                  0.5,
+                  -0.5000000000000001
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_left_camera_frame",
+                "child_frame_id": "leo01/zed2_temp_left_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "header_stamp_ns": 1726151969685708630,
+                "frame_id": "leo01/zed2_right_camera_frame",
+                "child_frame_id": "leo01/zed2_temp_right_link",
+                "translation_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ],
+            "log_time_ns": 1726151996643710098,
+            "publish_time_ns": 1726151996643710098,
+            "payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+          },
+          "distinct_header_frames": []
+        },
+        "/vrpn_mocap/ZED2_camera_marker/pose": {
+          "messages_in_verified_prefix": 20,
+          "first": {
+            "header_stamp_ns": 1726151996584080460,
+            "frame_id": "world",
+            "log_time_ns": 1726151996643859152,
+            "publish_time_ns": 1726151996643859152,
+            "payload_sha256": "81efb12952b8e5a0bc436ff0312ebd930972214d2b37ec8a521cdd679b84d416"
+          },
+          "distinct_header_frames": [
+            "world"
+          ]
+        },
+        "/tf": {
+          "messages_in_verified_prefix": 31,
+          "first": {
+            "transforms": [
+              {
+                "header_stamp_ns": 1726151997024736990,
+                "frame_id": "leo01/zed2_left_camera_frame",
+                "child_frame_id": "leo01/zed2_imu_link",
+                "translation_m": [
+                  -0.0020000000949949026,
+                  -0.023061001673340797,
+                  0.00021700002253055573
+                ],
+                "quaternion_xyzw": [
+                  -0.0005033087800256908,
+                  -0.0,
+                  -0.004468507133424282,
+                  0.9999898672103882
+                ]
+              }
+            ],
+            "log_time_ns": 1726151996976564011,
+            "publish_time_ns": 1726151996976564011,
+            "payload_sha256": "aae880d302e40a13814633838f8dbe60800d099ee9fb0591630ad12158f65781"
+          },
+          "distinct_header_frames": []
+        },
+        "/leo01/zed2/zed_node/left_cam_imu_transform": {
+          "messages_in_verified_prefix": 34,
+          "first": {
+            "header_stamp_ns": 1726151996974367548,
+            "frame_id": "leo01/zed2_left_camera_frame",
+            "child_frame_id": "leo01/zed2_imu_link",
+            "translation_m": [
+              -0.0020000000949949026,
+              -0.023061001673340797,
+              0.00021700002253055573
+            ],
+            "quaternion_xyzw": [
+              -0.0005033087800256908,
+              -0.0,
+              -0.004468507133424282,
+              0.9999898672103882
+            ],
+            "log_time_ns": 1726151996976656139,
+            "publish_time_ns": 1726151996976656139,
+            "payload_sha256": "9eb31056eb307c0a729f8c21011946bf7562a392ccc7ab40366d6022b5b1846c"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/imu/data": {
+          "messages_in_verified_prefix": 33,
+          "first": {
+            "header_stamp_ns": 1726151996973403082,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726151996977286133,
+            "publish_time_ns": 1726151996977286133,
+            "payload_sha256": "d8443bac2e9530179b6e72ed478e18c19d96d8d8e2f6a2c6c93a8d16a2d1de03"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/imu/data_raw": {
+          "messages_in_verified_prefix": 32,
+          "first": {
+            "header_stamp_ns": 1726151996973403082,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726151996977376502,
+            "publish_time_ns": 1726151996977376502,
+            "payload_sha256": "8a06da359bac539e9025f5b641e92213f1841c25981363fadb330d9c254b9fe3"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/imu/mag": {
+          "messages_in_verified_prefix": 9,
+          "first": {
+            "header_stamp_ns": 1726151996975903082,
+            "frame_id": "leo01/zed2_imu_link",
+            "log_time_ns": 1726151996982460155,
+            "publish_time_ns": 1726151996982460155,
+            "payload_sha256": "6de09820e3103d02690c2ca56da4e2e38da8c586627e65f8286829701b40f63f"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_imu_link"
+          ]
+        },
+        "/leo01/zed2/zed_node/left/camera_info": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "image_height": 360,
+            "image_width": 640,
+            "distortion_model": "rational_polynomial",
+            "D": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "K": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "R": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "P": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "log_time_ns": 1726151997085764222,
+            "publish_time_ns": 1726151997085764222,
+            "payload_sha256": "12d1703cab5d50c657f385a6859b00f3613bd1c4eb71f95b692a124c6729c9f2"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left_gray/camera_info": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "image_height": 360,
+            "image_width": 640,
+            "distortion_model": "rational_polynomial",
+            "D": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "K": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "R": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "P": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "log_time_ns": 1726151997087127615,
+            "publish_time_ns": 1726151997087127615,
+            "payload_sha256": "12d1703cab5d50c657f385a6859b00f3613bd1c4eb71f95b692a124c6729c9f2"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left_gray/image_rect_gray": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "log_time_ns": 1726151997088299918,
+            "publish_time_ns": 1726151997088299918,
+            "payload_sha256": "a1c009fc8e788531dd8f6bd037e82347b83fbba04edb08e8d5be109b51ee027b"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right/camera_info": {
+          "messages_in_verified_prefix": 1,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "image_height": 360,
+            "image_width": 640,
+            "distortion_model": "rational_polynomial",
+            "D": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "K": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "R": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "P": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              -31.625268936157227,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "log_time_ns": 1726151997099692136,
+            "publish_time_ns": 1726151997099692136,
+            "payload_sha256": "9f58a702bc4962700b7a7b2a9c56ec10c25ba94c73ea3b568125418b383fa361"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/left/image_rect_color": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_left_camera_optical_frame",
+            "log_time_ns": 1726151997107254004,
+            "publish_time_ns": 1726151997107254004,
+            "payload_sha256": "0871a835dfc38556f3f551935b093e1f1c4430300c7c60107678654869133b20"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_left_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right/image_rect_color": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "log_time_ns": 1726151997122702200,
+            "publish_time_ns": 1726151997122702200,
+            "payload_sha256": "7be67661c841039b201f3c3947cd127f9e9ee9cecf9b07446c02b540204f4569"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right_gray/image_rect_gray": {
+          "messages_in_verified_prefix": 2,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "log_time_ns": 1726151997128665436,
+            "publish_time_ns": 1726151997128665436,
+            "payload_sha256": "5e99c54be5d76a85272b85374a720139f7bf1e67e8a30f7dd34fb51273820a10"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        },
+        "/leo01/zed2/zed_node/right_gray/camera_info": {
+          "messages_in_verified_prefix": 1,
+          "first": {
+            "header_stamp_ns": 1726151996893504590,
+            "frame_id": "leo01/zed2_right_camera_optical_frame",
+            "image_height": 360,
+            "image_width": 640,
+            "distortion_model": "rational_polynomial",
+            "D": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "K": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "R": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "P": [
+              263.92413330078125,
+              0.0,
+              327.28759765625,
+              -31.625268936157227,
+              0.0,
+              263.92413330078125,
+              177.83309936523438,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "log_time_ns": 1726151997128891934,
+            "publish_time_ns": 1726151997128891934,
+            "payload_sha256": "9f58a702bc4962700b7a7b2a9c56ec10c25ba94c73ea3b568125418b383fa361"
+          },
+          "distinct_header_frames": [
+            "leo01/zed2_right_camera_optical_frame"
+          ]
+        }
+      },
+      "static_messages_all_observed": true,
+      "observed_static_edges": [
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_baro_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_link",
+          "child_frame_id": "leo01/zed2_camera_center",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.015
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.024997395914712332,
+            0.0,
+            0.9996875162757025
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_left_camera_frame",
+          "translation_m": [
+            -0.01,
+            0.06,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_left_camera_frame",
+          "child_frame_id": "leo01/zed2_left_camera_optical_frame",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.5,
+            -0.4999999999999999,
+            0.5,
+            -0.5000000000000001
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_mag_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_camera_center",
+          "child_frame_id": "leo01/zed2_right_camera_frame",
+          "translation_m": [
+            -0.01,
+            -0.06,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_right_camera_frame",
+          "child_frame_id": "leo01/zed2_right_camera_optical_frame",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.5,
+            -0.4999999999999999,
+            0.5,
+            -0.5000000000000001
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_left_camera_frame",
+          "child_frame_id": "leo01/zed2_temp_left_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1726151969685708630,
+          "frame_id": "leo01/zed2_right_camera_frame",
+          "child_frame_id": "leo01/zed2_temp_right_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "0d8f8c4186db5fc3180a9528f6e0ad10bc45a0f8172edb94d23f4736265cf351"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_link",
+          "child_frame_id": "leo01/antenna_link",
+          "translation_m": [
+            -0.0052,
+            0.056,
+            -0.0065
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_footprint",
+          "child_frame_id": "leo01/base_link",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.19783
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_link",
+          "child_frame_id": "leo01/camera_frame",
+          "translation_m": [
+            0.0971,
+            0.0,
+            -0.0427
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.10450881634821062,
+            0.0,
+            0.9945239601465096
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/camera_frame",
+          "child_frame_id": "leo01/camera_optical_frame",
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.5,
+            -0.4999999999999999,
+            0.5,
+            -0.5000000000000001
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_link",
+          "child_frame_id": "leo01/imu_frame",
+          "translation_m": [
+            0.0628,
+            -0.0314,
+            -0.0393
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_link",
+          "child_frame_id": "leo01/rocker_L_link",
+          "translation_m": [
+            0.00263,
+            0.14167,
+            -0.04731
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            1.0,
+            6.123233995736766e-17
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        },
+        {
+          "header_stamp_ns": 1700600328887843044,
+          "frame_id": "leo01/base_link",
+          "child_frame_id": "leo01/rocker_R_link",
+          "translation_m": [
+            0.00263,
+            -0.14167,
+            -0.04731
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "first_payload_sha256": "3bf43ea551c31a118671b3a95dfc2dbfc358606e0f64896c3a06eb1082bec6a6"
+        }
+      ],
+      "observed_dynamic_edges": [
+        {
+          "header_stamp_ns": 1726151997024736990,
+          "frame_id": "leo01/zed2_left_camera_frame",
+          "child_frame_id": "leo01/zed2_imu_link",
+          "translation_m": [
+            -0.0020000000949949026,
+            -0.023061001673340797,
+            0.00021700002253055573
+          ],
+          "quaternion_xyzw": [
+            -0.0005033087800256908,
+            -0.0,
+            -0.004468507133424282,
+            0.9999898672103882
+          ],
+          "first_payload_sha256": "aae880d302e40a13814633838f8dbe60800d099ee9fb0591630ad12158f65781"
+        }
+      ]
+    }
+  },
+  "scope": "Original range-decoded ROS message headers and static/dynamic transform observations. No image matching, calibration fit, or replacement of the v101 nominal ground truth."
+}

@@ -1,0 +1,126 @@
+{
+  "schema": 110,
+  "scientific_goal_complete": false,
+  "split": "model_selection",
+  "track": "estimated_sun",
+  "pilot_cases": 8,
+  "positive_cases": 4,
+  "nonoverlap_cases": 4,
+  "positive_terrain_groups": 4,
+  "full_bank_cases": 384,
+  "fresh_replayed_rows": 32,
+  "accepted_results": false,
+  "calibration_or_final_access": false,
+  "table": [
+    {
+      "method": "frozen_step0_A1B0C1_quantization_aware",
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "changed_light_positives": 2,
+      "raw_correct": 1,
+      "strict_correct": 0,
+      "same_light_correct": 1,
+      "changed_light_correct": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "inference_failure_rows": 0,
+      "median_inference_seconds": 6.8225444229999965,
+      "mean_inference_and_actual_setup_seconds": 5.225252319750009,
+      "model_load_seconds": 0.07224705299998391
+    },
+    {
+      "method": "SIFT2048",
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "changed_light_positives": 2,
+      "raw_correct": 2,
+      "strict_correct": 1,
+      "same_light_correct": 2,
+      "changed_light_correct": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "inference_failure_rows": 0,
+      "median_inference_seconds": 0.057247938500012197,
+      "mean_inference_and_actual_setup_seconds": 0.0664979912500101,
+      "model_load_seconds": 4.0820999970492267e-05
+    },
+    {
+      "method": "loma_r_common",
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "changed_light_positives": 2,
+      "raw_correct": 1,
+      "strict_correct": 0,
+      "same_light_correct": 1,
+      "changed_light_correct": 0,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 1,
+      "inference_failure_rows": 0,
+      "median_inference_seconds": 53.226347566000015,
+      "mean_inference_and_actual_setup_seconds": 39.99830268350002,
+      "model_load_seconds": 14.925604262000036
+    },
+    {
+      "method": "romav2_common",
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "changed_light_positives": 2,
+      "raw_correct": 1,
+      "strict_correct": 0,
+      "same_light_correct": 1,
+      "changed_light_correct": 0,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 3,
+      "inference_failure_rows": 0,
+      "median_inference_seconds": 52.135416106499974,
+      "mean_inference_and_actual_setup_seconds": 39.23475820187497,
+      "model_load_seconds": 11.888527952000004
+    }
+  ],
+  "actual_arm_pretrained_controls": {
+    "loma_r": {
+      "sha256": "f98dd1440d3ad92b7066ef1d241fa9aab0cecd09a445913421995f4a7eceaaf8",
+      "control_wall_seconds": 106.72960809900002,
+      "passed": true
+    },
+    "romav2": {
+      "sha256": "4f2bfc4eb2aabb84cbbcfa1cc2307bfb426f4bacfb98b22c83557eee26fb58ee",
+      "control_wall_seconds": 104.03324115099997,
+      "passed": true
+    }
+  },
+  "matched_historical_direct": {
+    "scope": "Same eight cases and manifest. Historical reference-camera relighting with its 24-template library, on a different CPU. Descriptive accuracy comparison only.",
+    "raw_correct": 3,
+    "changed_light_correct": 1,
+    "strict_correct": 1,
+    "wrong_positive": 1,
+    "raw_nonoverlap": 0,
+    "record": "reports/solar_full_direct_render_replay_v92.json",
+    "record_sha256": "b11cc65d41367d82c85fc770b109a83fcd4fb65dca2a7da7c56ae039725af558"
+  },
+  "platform": {
+    "torch": "2.8.0+cpu",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4",
+    "python": "3.12.15",
+    "machine": "aarch64",
+    "platform": "Linux-7.0.0-1017-azure-aarch64-with-glibc2.39",
+    "cpu_threads": 2
+  },
+  "projected_full_cost_seconds": 65729,
+  "original_full_stage_cap_seconds": 18000,
+  "runner": {
+    "id": 41930272861,
+    "attempt": 1,
+    "complete": true,
+    "setup_seconds": 66.43347834,
+    "watchdog_wall_seconds": 1000.7598820520001,
+    "charged_baseline_seconds": 1800,
+    "result_artifact_sha256": "15e65a4912fc1bcfd709c46d00dfa4437a93959c3975612a225c34c59d9270ec"
+  },
+  "protocol_sha256": "5bb40d750744b887f0919803cb0de1184a6c94c5c7b66f2ef6fc0c842ea6a6fe",
+  "summary_sha256": "8f415b2bea94c3109313edc4d58d43b2d12d1878a33a0f318946f51a87583d4b",
+  "independent_replay_sha256": "22a0a5c40b2984b4e41b467a0509347991791ccafc68746bccb26da1a39761da",
+  "remote_watchdog_sha256": "ab589410f6c342a2662ddf23f6df0b4989d67d15d08e1482b987a1d8e3e1760d"
+}

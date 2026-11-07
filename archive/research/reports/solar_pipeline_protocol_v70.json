@@ -1,0 +1,16 @@
+{
+  "schema_version": 70,
+  "pipeline_source_sha256": "ea78f5063d766200be66fb94ef7ac08e60f6f09e4f62425fd4e6061a66a8911e",
+  "protocol_sha256": {
+    "reports/solar_completion_contract_v70.json": "6704db3d6e11a62d6dad92bf621eb83d53577875e18cd3543459aaba9656b03c"
+  },
+  "completion_contract": "reports/solar_completion_contract_v70.json",
+  "completion_summary": "runs/solar-v70-completion/summary.json",
+  "geometry_audit_output": "reports/solar_full_geometry_audit_v70.json",
+  "state_path": "runs/solar-pipeline-v70-state.json",
+  "log_prefix": "runs/solar-pipeline-v70-",
+  "cpu_threads": 2,
+  "geometry_audit_cap_seconds": 3600,
+  "training_started": false,
+  "scope": "Continue within SAME v68 absolute deadline; copy original10, repair-copy existing48imageunit10, renderonly11..95, then full96unit geometry audit. Never rerun candidate diagnostic or any completed rendering. Originalv67/v68/v69 failures preserved. No automatic teacher or optimization admission."
+}

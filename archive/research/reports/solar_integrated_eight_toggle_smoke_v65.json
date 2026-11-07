@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "solar": false,
+      "response": false,
+      "active": false,
+      "passed": true,
+      "translation_error_m": 0.11493204826877154,
+      "median_native_correspondence_error_px": 0.23032844897864546,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 2.9468012650031596
+    },
+    {
+      "solar": false,
+      "response": false,
+      "active": true,
+      "passed": true,
+      "translation_error_m": 0.11493204826877154,
+      "median_native_correspondence_error_px": 0.23032844897864546,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 2.902775485999882
+    },
+    {
+      "solar": false,
+      "response": true,
+      "active": false,
+      "passed": true,
+      "translation_error_m": 0.11493204826877154,
+      "median_native_correspondence_error_px": 0.23032844897864546,
+      "measurements": 32,
+      "response_measurements": 10,
+      "elapsed_seconds": 2.881342498003505
+    },
+    {
+      "solar": false,
+      "response": true,
+      "active": true,
+      "passed": true,
+      "translation_error_m": 0.11493204826877154,
+      "median_native_correspondence_error_px": 0.23032844897864546,
+      "measurements": 32,
+      "response_measurements": 10,
+      "elapsed_seconds": 3.0207110659976024
+    },
+    {
+      "solar": true,
+      "response": false,
+      "active": false,
+      "passed": true,
+      "translation_error_m": 0.5632181597623269,
+      "median_native_correspondence_error_px": 0.36838635282059085,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 3.656654251011787
+    },
+    {
+      "solar": true,
+      "response": false,
+      "active": true,
+      "passed": true,
+      "translation_error_m": 0.18945524764864902,
+      "median_native_correspondence_error_px": 0.31692357694296003,
+      "measurements": 32,
+      "response_measurements": 0,
+      "elapsed_seconds": 3.7323146739799995
+    },
+    {
+      "solar": true,
+      "response": true,
+      "active": false,
+      "passed": true,
+      "translation_error_m": 0.5632181594981077,
+      "median_native_correspondence_error_px": 0.30617188855328326,
+      "measurements": 32,
+      "response_measurements": 16,
+      "elapsed_seconds": 4.203120038000634
+    },
+    {
+      "solar": true,
+      "response": true,
+      "active": true,
+      "passed": true,
+      "translation_error_m": 0.18945523800750164,
+      "median_native_correspondence_error_px": 0.26270963573810513,
+      "measurements": 32,
+      "response_measurements": 16,
+      "elapsed_seconds": 4.104983724013437
+    }
+  ],
+  "blank_rejected": true,
+  "total_parameters": 95808,
+  "scope": "Historical pretrained encoders with an UNTRAINED constant-response head, procedural translation and planar map; checks wiring for all eight toggles at32searches. Not actual lunar performance or learning improvement.",
+  "source_sha256": {
+    "solar_response_v63.py": "48579696b2af540b4380e74b6df80d85fb364a9a0d35d138f48c3810bd9d3c0a",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319",
+    "solar_map_v63.py": "4841cc91abed2751fb9fb32392e109a98499ab5bb767b862137831235bf121d7",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "solar_experiments_v63.py": "7d064102f7b1232cbe611002ad7e892ffbe9eb3573269d5463d3d4e976ff4e94",
+    "solar_frontend_v63.py": "3e91d4d26c48bbaf30fdd585e37844d0e89180adba792f9b3c3259fc3a075f9a",
+    "solar_procedural_smoke_v63.py": "c24d40a761498f9f201bc3ebf270aefa8cd4589f7d729907d298167ad47f322a",
+    "solar_training_v63.py": "d9fb0d6e1ce70a46167c13d3e6303473b72c518530bf0dc3dc7cc4770103bd39",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_assignment_v63.py": "f7d664befc4b3348bab93f38e0bc48b7d51dcfc1a17a0e66f35a00cb986fd9e9",
+    "solar_metadata.py": "706e6f20ad321f44497dfc388be014384347c6693e4ff2f79fb1a971b3876538",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71"
+  }
+}

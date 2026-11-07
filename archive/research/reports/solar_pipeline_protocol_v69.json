@@ -1,0 +1,22 @@
+{
+  "schema_version": 69,
+  "pipeline_source_sha256": "b4e890c4e98847a72bbc944ce6ef46bf36c187de85618bcda2cb3822c80b7819",
+  "protocol_sha256": {
+    "reports/solar_candidate_protocol_v69.json": "b0117ca4a0300d7efe5d45352c012d56d0f8f478068a75ece9f980334a52b1c7",
+    "reports/solar_completion_contract_v68.json": "b3ba84a3ad54317f506bdc0f91517e52c5bd2eb336d04b325ecda0dffd1ff14d"
+  },
+  "candidate_protocol": "reports/solar_candidate_protocol_v69.json",
+  "completion_contract": "reports/solar_completion_contract_v68.json",
+  "candidate_replay_output": "reports/solar_candidate_replay_v69.json",
+  "completion_summary": "runs/solar-v68-completion/summary.json",
+  "geometry_audit_output": "reports/solar_full_geometry_audit_v68.json",
+  "state_path": "runs/solar-pipeline-v69-state.json",
+  "log_prefix": "runs/solar-pipeline-v69-",
+  "sequential_scientific_jobs": true,
+  "cpu_threads": 2,
+  "geometry_audit_cap_seconds": 3600,
+  "audit_requires_eligible_oracle_success": 0.95,
+  "training_started": false,
+  "final_reserve_access": false,
+  "scope": "Source-publish and verify before scientific execution. Serial old-pilot diagnostic and independent replay, missing-only completion with fixed new deadline, then full96unit geometry audit. No automatic teacher, optimizer, learned selection or final inference admission. Original failed attempt remains failed."
+}

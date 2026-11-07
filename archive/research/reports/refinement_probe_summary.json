@@ -1,0 +1,79 @@
+{
+  "summary": [
+    {
+      "geometry_family": "combined",
+      "method": "blend_global_support_v2",
+      "cases": 72,
+      "returned": 68,
+      "correct": 53
+    },
+    {
+      "geometry_family": "combined",
+      "method": "refined_global_v1",
+      "cases": 72,
+      "returned": 68,
+      "correct": 55
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "blend_global_support_v2",
+      "cases": 18,
+      "returned": 9,
+      "correct": 0
+    },
+    {
+      "geometry_family": "nonoverlap_negative",
+      "method": "refined_global_v1",
+      "cases": 18,
+      "returned": 9,
+      "correct": 0
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "blend_global_support_v2",
+      "cases": 72,
+      "returned": 69,
+      "correct": 59
+    },
+    {
+      "geometry_family": "rotation",
+      "method": "refined_global_v1",
+      "cases": 72,
+      "returned": 69,
+      "correct": 60
+    },
+    {
+      "geometry_family": "scale",
+      "method": "blend_global_support_v2",
+      "cases": 72,
+      "returned": 71,
+      "correct": 64
+    },
+    {
+      "geometry_family": "scale",
+      "method": "refined_global_v1",
+      "cases": 72,
+      "returned": 71,
+      "correct": 65
+    },
+    {
+      "geometry_family": "translation",
+      "method": "blend_global_support_v2",
+      "cases": 72,
+      "returned": 70,
+      "correct": 66
+    },
+    {
+      "geometry_family": "translation",
+      "method": "refined_global_v1",
+      "cases": 72,
+      "returned": 70,
+      "correct": 66
+    }
+  ],
+  "paired_correctness_gains": 4,
+  "paired_correctness_losses": 0,
+  "positive_cases": 288,
+  "negative_cases": 18,
+  "warning": "Development probe on two patches; no held-out or state-of-the-art claim."
+}

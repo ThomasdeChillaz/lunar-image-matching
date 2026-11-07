@@ -1,0 +1,173 @@
+{
+  "created_utc": "2026-11-07T18:52:46.938450+00:00",
+  "revision": 144,
+  "previous_status": "reports/research_requirements_status_v143.json",
+  "previous_status_sha256": "27ef5f1758c26fb5fc8665f66c0226cdf334cb7b456f4c8ad2bcdd25e8459bb4",
+  "original_requirements": "reports/requirements_and_sota_v69.json",
+  "original_requirements_sha256": "f9aa5d7391ad88539e51541592fc9f35df7eb75ec03ba00c3c46922e05fcd3ab",
+  "original_scope_and_targets_preserved": true,
+  "broader_goal_status": "in_progress",
+  "scientific_gain_claim": "Complete frozen seven-method experiment: all1/4 raw poses; no persistent-beam or active-policy recovery advantage.",
+  "superiority_claim": false,
+  "outreach_ready_performance_claim": false,
+  "primary_metric": {
+    "name": "correctly accepted absolute camera poses / all eligible positive pairs",
+    "rotation_degrees_lte": 2,
+    "absolute_translation_error_lte": "1% median Euclidean reference range",
+    "failed_and_rejected_cases_in_denominator": true
+  },
+  "requirements": [
+    {
+      "id": "R01_primary_metric",
+      "original_target": "At least 70% correctly accepted camera poses / all eligible positive pairs.",
+      "status": "unmet_25percent_raw_no_calibration",
+      "evidence_and_remaining_work": "All seven methods recover1/4 raw poses on four exposed positives, not>=70% accepted. Calibration and final terrain remain closed."
+    },
+    {
+      "id": "R02_compact_gain",
+      "original_target": "At least 10 percentage points accepted-pose gain versus strongest matched compact control, including deterministic refinement.",
+      "status": "no_recovery_gain_against_strongest_matched_control",
+      "evidence_and_remaining_work": "Beam active ties every control at1/4, including full-budget single and beam uniform/geometry. Paired recovery gain0pp; descriptive three-component interval[0,0] does not establish population equivalence."
+    },
+    {
+      "id": "R03_error_constraints",
+      "original_target": {
+        "empirical_accepted_pose_error_lte": 0.01,
+        "empirical_nonoverlap_acceptance_lte": 0.01
+      },
+      "status": "small_raw_sample_acceptance_unverified",
+      "evidence_and_remaining_work": "All three beams and old no-extra/active32 return0wrong positives and0/4 nonoverlap poses. Direct and strong single return2wrong positives. No calibrated acceptance or1% risk characterization; negative endpoint bootstrap has5070undefined draws."
+    },
+    {
+      "id": "R04_modern_tradeoff",
+      "original_target": "Modern pose accuracy advantage, or within 3 percentage points correct acceptance and at least 5\u00d7 faster on same CPU at comparable error.",
+      "status": "clean_matched_modern_ranking_open_no_efficiency_gain",
+      "evidence_and_remaining_work": "No modern model ran this clean roster. Beam active54.52s versus no-extra21.77s and Direct4.53s medians on sameCPU; historical dithered and incompatible paper metrics cannot rank it."
+    },
+    {
+      "id": "R05_data_gate",
+      "original_target": {
+        "complete_camera_units": 96,
+        "train_groups": 16,
+        "selection_groups": 8,
+        "camera_pairs_per_group": 4,
+        "physical_lights": 24,
+        "train_lights": "even indices only, including teacher targets",
+        "oracle_pose_recovery_lte_failure": 0.05
+      },
+      "status": "geometry_gate_preserved_clean_photometric_expansion_open",
+      "evidence_and_remaining_work": "Prior96camera units/192exact controls preserved. Same104completed clean16 images and three exposed positive terrain components; no new independent geography. Thirteen of16modern reference cameras still lack complete clean catalogues."
+    },
+    {
+      "id": "R06_all_three_and_ablations",
+      "original_target": "Implement and evaluate shared-Sun joint inference (A), learned lighting response (B), and active patch selection (C), all eight on/off combinations.",
+      "status": "persistent_hypotheses_measured_full_learned_abc_open",
+      "evidence_and_remaining_work": "Four lights/eight qualified camera branches persist through acquisition on all eight cases. New controls share128actual fields, including strong single; each beam gets16rounds. No recovery gain. Full learnedABC/eight-toggle outcome remains open."
+    },
+    {
+      "id": "R07_training_repetitions",
+      "original_target": "100-update exact replay/cost pilot, then 2,000 updates with seed 20261101; evaluate 0/500/1000/1500/2000.",
+      "status": "primary_studies_complete_qualifying_repeats_pending",
+      "evidence_and_remaining_work": "Historical exact100-update replays and2000-update primary studies remain unchanged. No new training, selected qualifying learned checkpoint or seed repetitions in this experiment."
+    },
+    {
+      "id": "R08_precision_and_robustness",
+      "original_target": "Diagnose and report native correspondence precision, pose failure and perturbation robustness.",
+      "status": "native_precision_and_branch_failure_diagnosed",
+      "evidence_and_remaining_work": "Faint correct light now retained but closest saved initial camera364.51m/12.11deg wrong. No correct final beam branch on three failures. Strong single visits correct soft cameras on two near-uniform cases but finalAP3P is wrong. Height-envelope selection is a proxy, not independent perturbed-terrain robustness."
+    },
+    {
+      "id": "R09_reserve_and_transfer",
+      "original_target": "Keep four calibration and twelve final terrain groups untouched during development. Preserve both consumed Tycho reserves as historical.",
+      "status": "reserves_protected_fresh_transfer_open",
+      "evidence_and_remaining_work": "Four calibration and12final terrain groups remain untouched. Three reused positive components are development only. Historical Tycho and transfer evidence preserved; no new LuSNAR7-9 or orbital accuracy claim."
+    },
+    {
+      "id": "R10_resources",
+      "original_target": {
+        "total_model_parameters_lt": 100000,
+        "native_image_pixels": 512,
+        "threads_per_scientific_job": 2,
+        "cumulative_training_wall_hours_lte": 48,
+        "cumulative_pretrained_comparison_wall_hours_lte": 72,
+        "paid_compute": false
+      },
+      "status": "approved_extra1800second_cap_completed_full_charge_retained",
+      "evidence_and_remaining_work": "Native512, zero new trainable parameters, serial two-threadCPU/OpenCV1, no paid compute. Actual1238.06s within new1800s cap; full1800 charged plus prior3300extras. Original training13493s/comparison0remaining unchanged; no refund or fresh baseline capacity."
+    },
+    {
+      "id": "R11_verification",
+      "original_target": "Depth/visibility/frame/pixel-centre/crop-boundary/split/negative construction/cache and query-truth isolation checks; blank, nonoverlap, insufficient-match and degenerate-geometry controls.",
+      "status": "1535_tests_fresh_controls_and_complete_56cell_replay_pass",
+      "evidence_and_remaining_work": "Local1535tests/four skips/14subtests pass; three new report checks included. All14fresh generated image-to-pose controls pass. Public56cell independent geometry/Sun/precision/accounting replay and24old-control identities pass; component analysis and branch diagnosis independently reconstruct. Input/source pins remain unchanged."
+    },
+    {
+      "id": "R12_final_freeze",
+      "original_target": "Publish hashes for checkpoints, calibration rules, policies, preprocessing, cases and metrics before final inference; evaluate final reserve once.",
+      "status": "not_reached_development_freeze_only",
+      "evidence_and_remaining_work": "Publishedv143source/data freeze predates all new inference. No qualifying candidate or final reserve inference; final-model freeze and original acceptance targets remain open."
+    },
+    {
+      "id": "R13_interfaces_and_package",
+      "original_target": "Preserve match_terrain.py; localize_terrain.py accepts reference/query images, reference-only geometry/pose, intrinsics, frozen config/checkpoint and optional known-Sun metadata.",
+      "status": "experimental_command_preserved_replay_package_prepared",
+      "evidence_and_remaining_work": "Original match_terrain.py/localize_terrain.py preserved. Separate localize_beam.py accepts reference-only inference manifests; public uncalibrated pose remains null and raw hypotheses require explicit research output. Prepared saved-output capsule excludes private authority."
+    },
+    {
+      "id": "R14_novelty",
+      "original_target": "Specific integrated shared-Sun / learned response / active selection mechanism supported by measured localization gain and targeted prior-art comparison.",
+      "status": "no_measured_superiority_or_learned_novelty",
+      "evidence_and_remaining_work": "Persistent camera/light inference and equal-cost policies are implemented and measured, with no recovery gain. Existing targeted prior-art review is background; integrated learned novelty and outreach-ready performance contribution remain unestablished."
+    }
+  ],
+  "latest_evidence": {
+    "reports/solar-beam-v144/README.md": "c252c96c3078ac3e10b7b6777ff5acab1f315d57146b3c73db99837e3e147c07",
+    "reports/solar-beam-v144/analyze_saved.py": "3e404c21fd1483fa2fefafaa14ab3527c777c49efcc4ddb88133abf4a662015e",
+    "reports/solar-beam-v144/branch-diagnosis.json": "8451866a4f0787a6c423e4d0726f302fcfb693ee21435ed7f244d0814c924b13",
+    "reports/solar-beam-v144/comparison.png": "a9fd7392bfce2d08d9c76bbabe7f21e326a870fcd8b3ec4b87726bc786b23d53",
+    "reports/solar-beam-v144/completion-receipt.json": "447e860b5476b50b5afe3ad8ecc4ae7a71adda8944282718772f0a74cbd5ca94",
+    "reports/solar-beam-v144/diagnose_saved.py": "6bfc216ffc76ca1cb9b3cf8f744cbebf62c0f23bf2f332afa10be8de86cd018a",
+    "reports/solar-beam-v144/independent-replay.json": "654b6d0e11f650782b090c1e3064d14cded96a0b63d3783a201b88ae1af982b6",
+    "reports/solar-beam-v144/package_results.py": "5cddce30de73f62b7dde588a67704f2414bd8eec2916ca8ea6d03b967b19d47d",
+    "reports/solar-beam-v144/render_results.py": "6d4711e71275857fb3c2b830cfb48751fede1fd903664746e40a7bdf7b732728",
+    "reports/solar-beam-v144/replay_saved.py": "4d9f2c8c793ba56bc4ec5387dc0005e01106d0ca391a575c504891305597c0ed",
+    "reports/solar-beam-v144/results.json": "cbfcb6e6337180c24f5877f8cd0b96bcea2d36b1288db565a89fac8e28fb18cd",
+    "reports/solar-beam-v144/software-verification.json": "ebe2747281cd1c85ddc12a8cc4ba6047b0a58b539599468144011604380ba332",
+    "reports/solar-beam-v144/test_analysis_v144.py": "bb1b9419a8aabdc20383fdd085df3b046bddcda2bc629102a1189b5ca909172e"
+  },
+  "original_remaining_seconds": {
+    "training": 13493,
+    "baseline": 0
+  },
+  "supplementary_resources": {
+    "prior_fixed_charges_seconds": 3300,
+    "new_user_approved_seconds": 1800,
+    "new_fixed_charge_seconds": 1800,
+    "actual_controller_elapsed_seconds": 1238.0647043819772,
+    "total_extra_fixed_charges_seconds": 5100,
+    "unreserved_comparison_seconds": 0,
+    "refunds": false,
+    "paid_compute": false
+  },
+  "completed_persistent_beam_v143": {
+    "source_commit": "dbeb77776b330518c7d5a1c02ccf98e02ccd2bdb",
+    "protocol_sha256": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+    "positive_pairs": 4,
+    "nonoverlaps": 4,
+    "positive_components": 3,
+    "methods": 7,
+    "independently_replayed_cells": 56,
+    "historical_control_identities": 24,
+    "correct_per_method": 1,
+    "beam_active_wrong_positive": 0,
+    "all_raw_nonoverlap": 0,
+    "full_roster_completed": true,
+    "new_trainable_parameters": 0
+  },
+  "calibration_or_final_access": false,
+  "all_eligible_failures_remain_in_denominators": true,
+  "goal_turn_audit": {
+    "current_goal_turn": "progress_completed_approved_comparison",
+    "reason": "Actual user approval used for unchanged full roster, independent replay and diagnosis; full original targets still unmet."
+  }
+}

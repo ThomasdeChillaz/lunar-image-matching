@@ -1,0 +1,294 @@
+{
+  "complete": true,
+  "seed": 20261101,
+  "updates_per_configuration": 2000,
+  "original_coarse_rate": 1e-05,
+  "candidate_coarse_rate": 0.001,
+  "context_rate": 0.0001,
+  "positive_case_denominator": 96,
+  "negative_case_denominator": 96,
+  "original_selected_step": 1500,
+  "candidate_selected_step": 0,
+  "original_selection": {
+    "positive_cases": 96,
+    "correct_raw_poses": 14,
+    "strict_raw_poses": 2,
+    "wrong_raw_poses": 15,
+    "negative_cases": 0,
+    "raw_nonoverlap_proposals": 0,
+    "median_measured_inference_ms": 1886.8501584947808,
+    "calibrated_acceptance_evaluated": false,
+    "cases": 96,
+    "correct_poses": 14,
+    "strict_poses": 2,
+    "correct_at_two_px": 3053,
+    "returned": 16957,
+    "scorable": 16924
+  },
+  "candidate_selection": {
+    "positive_cases": 96,
+    "correct_raw_poses": 13,
+    "strict_raw_poses": 2,
+    "wrong_raw_poses": 28,
+    "negative_cases": 0,
+    "raw_nonoverlap_proposals": 0,
+    "median_measured_inference_ms": 1960.0126810109941,
+    "calibrated_acceptance_evaluated": false,
+    "cases": 96,
+    "correct_poses": 13,
+    "strict_poses": 2,
+    "correct_at_two_px": 3394,
+    "returned": 17670,
+    "scorable": 17645
+  },
+  "original_selected_negatives": {
+    "positive_cases": 0,
+    "correct_raw_poses": 0,
+    "strict_raw_poses": 0,
+    "wrong_raw_poses": 0,
+    "negative_cases": 96,
+    "raw_nonoverlap_proposals": 4,
+    "median_measured_inference_ms": 1795.593232018291,
+    "calibrated_acceptance_evaluated": false
+  },
+  "candidate_selected_negatives": {
+    "positive_cases": 0,
+    "correct_raw_poses": 0,
+    "strict_raw_poses": 0,
+    "wrong_raw_poses": 0,
+    "negative_cases": 96,
+    "raw_nonoverlap_proposals": 11,
+    "median_measured_inference_ms": 1760.3183105093194,
+    "calibrated_acceptance_evaluated": false
+  },
+  "model_promoted": false,
+  "configuration_adopted": false,
+  "scope": "Matched full-development one-factor rate study. Every learned high-rate checkpoint scores12/96; predeclared selection retains initialization13/96. No generalization/model improvement or1%accepted-risk claim.",
+  "curves": {
+    "original": [
+      {
+        "step": 0,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 13,
+          "strict_raw_poses": 2,
+          "wrong_raw_poses": 28,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 2120.1751420012442,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 13,
+          "strict_poses": 2,
+          "correct_at_two_px": 3394,
+          "returned": 17670,
+          "scorable": 17645
+        }
+      },
+      {
+        "step": 500,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 13,
+          "strict_raw_poses": 2,
+          "wrong_raw_poses": 15,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1884.2889914812986,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 13,
+          "strict_poses": 2,
+          "correct_at_two_px": 3047,
+          "returned": 16725,
+          "scorable": 16695
+        }
+      },
+      {
+        "step": 1000,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 14,
+          "strict_raw_poses": 3,
+          "wrong_raw_poses": 8,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1913.1010965065798,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 14,
+          "strict_poses": 3,
+          "correct_at_two_px": 2838,
+          "returned": 16673,
+          "scorable": 16645
+        }
+      },
+      {
+        "step": 1500,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 14,
+          "strict_raw_poses": 2,
+          "wrong_raw_poses": 15,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1886.8501584947808,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 14,
+          "strict_poses": 2,
+          "correct_at_two_px": 3053,
+          "returned": 16957,
+          "scorable": 16924
+        }
+      },
+      {
+        "step": 2000,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 13,
+          "strict_raw_poses": 1,
+          "wrong_raw_poses": 14,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1884.435398504138,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 13,
+          "strict_poses": 1,
+          "correct_at_two_px": 2967,
+          "returned": 16765,
+          "scorable": 16730
+        }
+      }
+    ],
+    "high_rate": [
+      {
+        "step": 0,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 13,
+          "strict_raw_poses": 2,
+          "wrong_raw_poses": 28,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1960.0126810109941,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 13,
+          "strict_poses": 2,
+          "correct_at_two_px": 3394,
+          "returned": 17670,
+          "scorable": 17645
+        }
+      },
+      {
+        "step": 500,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 12,
+          "strict_raw_poses": 1,
+          "wrong_raw_poses": 7,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1753.0053070076974,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 12,
+          "strict_poses": 1,
+          "correct_at_two_px": 2318,
+          "returned": 15146,
+          "scorable": 15109
+        }
+      },
+      {
+        "step": 1000,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 12,
+          "strict_raw_poses": 5,
+          "wrong_raw_poses": 5,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1763.3737970027141,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 12,
+          "strict_poses": 5,
+          "correct_at_two_px": 2416,
+          "returned": 17677,
+          "scorable": 17647
+        }
+      },
+      {
+        "step": 1500,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 12,
+          "strict_raw_poses": 2,
+          "wrong_raw_poses": 8,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1770.4593625094276,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 12,
+          "strict_poses": 2,
+          "correct_at_two_px": 2501,
+          "returned": 16936,
+          "scorable": 16896
+        }
+      },
+      {
+        "step": 2000,
+        "selection": {
+          "positive_cases": 96,
+          "correct_raw_poses": 12,
+          "strict_raw_poses": 1,
+          "wrong_raw_poses": 6,
+          "negative_cases": 0,
+          "raw_nonoverlap_proposals": 0,
+          "median_measured_inference_ms": 1717.0250055060023,
+          "calibrated_acceptance_evaluated": false,
+          "cases": 96,
+          "correct_poses": 12,
+          "strict_poses": 1,
+          "correct_at_two_px": 2508,
+          "returned": 17746,
+          "scorable": 17697
+        }
+      }
+    ]
+  },
+  "late500_loss": {
+    "original": {
+      "changed_light_positive": {
+        "n": 319,
+        "mean": 5.300913912375519
+      },
+      "same_light_positive": {
+        "n": 56,
+        "mean": 4.977916257722037
+      },
+      "nonoverlap": {
+        "n": 125,
+        "mean": 0.11303173285722733
+      }
+    },
+    "high_rate": {
+      "changed_light_positive": {
+        "n": 319,
+        "mean": 5.312259566447578
+      },
+      "same_light_positive": {
+        "n": 56,
+        "mean": 5.066615513392857
+      },
+      "nonoverlap": {
+        "n": 125,
+        "mean": 0.12103025752305985
+      }
+    }
+  },
+  "audit_sha256": "842fd6ac4ee15898d1dc56e67bab9ff1b24201f6556ccfc77a2eaeab34a2dba8"
+}

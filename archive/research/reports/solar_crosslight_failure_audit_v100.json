@@ -1,0 +1,5443 @@
+{
+  "protocol_sha256": "5ca6a4a5de7c7dcd3987db92007d7485074485bb746ebcecf5efef8b08612817",
+  "publication_commit": "24a72a7adc2977ff0bae148810bc9d92af240caf",
+  "controller_pid": 38927,
+  "hard_deadline_utc": "2026-11-04T21:25:44.448814+00:00",
+  "within_hard_deadline": true,
+  "charged_baseline_seconds": 3182,
+  "canonical_remaining_baseline_seconds": 35879.0,
+  "calibration_or_final_cases": 0,
+  "split": "model_selection",
+  "tracks": [
+    "estimated_sun"
+  ],
+  "terrain_groups": 8,
+  "observed_pairs_per_arm": 384,
+  "physical_images_or_checkpoints_opened": false,
+  "progress": {
+    "sealed_snapshot_cells": {
+      "reference_camera_render_match": 384,
+      "reference_camera_render_match_crosslight_rescue": 384
+    },
+    "sealed_snapshot_total": 768,
+    "expected_total": 768,
+    "worker_pid": 39309,
+    "watchdog_terminal": {
+      "complete": true,
+      "failure": null,
+      "child_returncode": 0
+    },
+    "final_seal_present": true,
+    "accuracy_from_partial_prefix_reported": false
+  },
+  "mechanism": {
+    "exact_terminal_replay_sha256": "8347b60efa4d5f3721f2e118087475ec791339c595f43e2cd204b2d678312182",
+    "strata": {
+      "nonoverlap": {
+        "cases": 192,
+        "pool_evidence_cases": 190,
+        "stages": {
+          "miss_original_eighth_has_six_raw_pairs": 2,
+          "miss_pool_fewer_than_six_unique_pairs": 75,
+          "miss_pooled_solver_no_pose": 115
+        },
+        "median_pool": {
+          "distinct_pairs": 8.0,
+          "added_distinct_over_largest_template": 3.5,
+          "duplicate_pairs_removed": 1.0,
+          "conflicting_endpoint_pairs_removed": 14.0,
+          "reference_lights": 4.0
+        }
+      },
+      "nonoverlap_changed": {
+        "cases": 128,
+        "pool_evidence_cases": 126,
+        "stages": {
+          "miss_original_eighth_has_six_raw_pairs": 2,
+          "miss_pool_fewer_than_six_unique_pairs": 48,
+          "miss_pooled_solver_no_pose": 78
+        },
+        "median_pool": {
+          "distinct_pairs": 7.0,
+          "added_distinct_over_largest_template": 3.0,
+          "duplicate_pairs_removed": 1.0,
+          "conflicting_endpoint_pairs_removed": 14.0,
+          "reference_lights": 4.0
+        }
+      },
+      "nonoverlap_same": {
+        "cases": 64,
+        "pool_evidence_cases": 64,
+        "stages": {
+          "miss_pool_fewer_than_six_unique_pairs": 27,
+          "miss_pooled_solver_no_pose": 37
+        },
+        "median_pool": {
+          "distinct_pairs": 9.5,
+          "added_distinct_over_largest_template": 4.0,
+          "duplicate_pairs_removed": 1.0,
+          "conflicting_endpoint_pairs_removed": 12.5,
+          "reference_lights": 4.0
+        }
+      },
+      "positive": {
+        "cases": 192,
+        "pool_evidence_cases": 60,
+        "stages": {
+          "direct_pose_already_present": 132,
+          "miss_pool_fewer_than_six_unique_pairs": 55,
+          "miss_pooled_solver_no_pose": 5
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_changed": {
+        "cases": 128,
+        "pool_evidence_cases": 42,
+        "stages": {
+          "direct_pose_already_present": 86,
+          "miss_pool_fewer_than_six_unique_pairs": 38,
+          "miss_pooled_solver_no_pose": 4
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_same": {
+        "cases": 64,
+        "pool_evidence_cases": 18,
+        "stages": {
+          "direct_pose_already_present": 46,
+          "miss_pool_fewer_than_six_unique_pairs": 17,
+          "miss_pooled_solver_no_pose": 1
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_terrain_np31-r0-c4": {
+        "cases": 24,
+        "pool_evidence_cases": 0,
+        "stages": {
+          "direct_pose_already_present": 24
+        },
+        "median_pool": null
+      },
+      "positive_terrain_np31-r0-c7": {
+        "cases": 24,
+        "pool_evidence_cases": 12,
+        "stages": {
+          "direct_pose_already_present": 12,
+          "miss_pool_fewer_than_six_unique_pairs": 12
+        },
+        "median_pool": {
+          "distinct_pairs": 2.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 9.0,
+          "conflicting_endpoint_pairs_removed": 3.0,
+          "reference_lights": 1.0
+        }
+      },
+      "positive_terrain_np31-r1-c0": {
+        "cases": 24,
+        "pool_evidence_cases": 12,
+        "stages": {
+          "direct_pose_already_present": 12,
+          "miss_pool_fewer_than_six_unique_pairs": 12
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_terrain_np31-r3-c2": {
+        "cases": 24,
+        "pool_evidence_cases": 12,
+        "stages": {
+          "direct_pose_already_present": 12,
+          "miss_pool_fewer_than_six_unique_pairs": 12
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_terrain_np31-r3-c3": {
+        "cases": 24,
+        "pool_evidence_cases": 14,
+        "stages": {
+          "direct_pose_already_present": 10,
+          "miss_pool_fewer_than_six_unique_pairs": 12,
+          "miss_pooled_solver_no_pose": 2
+        },
+        "median_pool": {
+          "distinct_pairs": 0.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 0.0,
+          "reference_lights": 0.0
+        }
+      },
+      "positive_terrain_np31-r3-c5": {
+        "cases": 24,
+        "pool_evidence_cases": 0,
+        "stages": {
+          "direct_pose_already_present": 24
+        },
+        "median_pool": null
+      },
+      "positive_terrain_np31-r4-c1": {
+        "cases": 24,
+        "pool_evidence_cases": 10,
+        "stages": {
+          "direct_pose_already_present": 14,
+          "miss_pool_fewer_than_six_unique_pairs": 7,
+          "miss_pooled_solver_no_pose": 3
+        },
+        "median_pool": {
+          "distinct_pairs": 2.0,
+          "added_distinct_over_largest_template": 0.0,
+          "duplicate_pairs_removed": 0.0,
+          "conflicting_endpoint_pairs_removed": 22.0,
+          "reference_lights": 1.0
+        }
+      },
+      "positive_terrain_np31-r4-c7": {
+        "cases": 24,
+        "pool_evidence_cases": 0,
+        "stages": {
+          "direct_pose_already_present": 24
+        },
+        "median_pool": null
+      }
+    },
+    "cases": [
+      {
+        "case_id": "u012-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 53,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 31,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u012-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 13,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 8,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u012-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u012-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 24,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u012-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u012-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u012-to-u020-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 24,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u013-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 57,
+          "distinct_pairs": 13,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 42,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u013-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 14,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 7,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u013-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 22,
+          "distinct_pairs": 4,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u013-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 55,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u013-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 22,
+          "distinct_pairs": 4,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u013-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u013-to-u021-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 55,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u014-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 85,
+          "distinct_pairs": 11,
+          "duplicate_pairs_removed": 11,
+          "conflicting_endpoint_pairs_removed": 63,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u014-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 18,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 13,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u014-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 24,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u014-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 58,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 41,
+          "added_distinct_over_largest_template": 6,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u014-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 24,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u014-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u014-to-u022-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 58,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 41,
+          "added_distinct_over_largest_template": 6,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u015-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 66,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 54,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u015-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u015-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u015-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 26,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u015-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u015-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u015-to-u023-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 26,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u020-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u020-to-u024-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u020-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 13,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u020-to-u024-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 5,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u020-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 24,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 11,
+          "conflicting_endpoint_pairs_removed": 8,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u020-to-u024-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u020-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u020-to-u024-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u020-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 24,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 11,
+          "conflicting_endpoint_pairs_removed": 8,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u020-to-u024-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u020-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u020-to-u024-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u021-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u021-to-u025-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u021-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 13,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 8,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u021-to-u025-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u021-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 14,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 9,
+          "conflicting_endpoint_pairs_removed": 2,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u021-to-u025-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u021-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u021-to-u025-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u021-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 14,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 9,
+          "conflicting_endpoint_pairs_removed": 2,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u021-to-u025-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u021-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u021-to-u025-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u022-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u022-to-u026-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u022-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 16,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 11,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u022-to-u026-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 4,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 1,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u022-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 16,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 10,
+          "conflicting_endpoint_pairs_removed": 4,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u022-to-u026-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 5,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u022-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u022-to-u026-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u022-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 16,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 10,
+          "conflicting_endpoint_pairs_removed": 4,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u022-to-u026-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 5,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u022-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u022-to-u026-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u023-to-u027-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-to-u027-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 2,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u023-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-to-u027-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 2,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 1,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u023-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u023-to-u027-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u023-to-u027-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 2,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 1,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u023-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r0-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u023-to-u027-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r0-c7",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-to-u056-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u024-to-u056-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 9,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 3,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u024-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u024-to-u056-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 29,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 21,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u024-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-to-u056-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u024-to-u056-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 29,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 21,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u024-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u024-to-u056-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-to-u057-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u025-to-u057-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 14,
+          "distinct_pairs": 4,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 8,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u025-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u025-to-u057-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u025-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-to-u057-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u025-to-u057-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u025-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u025-to-u057-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-to-u058-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u026-to-u058-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 26,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 17,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u026-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u026-to-u058-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 32,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 24,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u026-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-to-u058-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u026-to-u058-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 32,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 24,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u026-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u026-to-u058-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-to-u059-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u027-to-u059-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 29,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 19,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u027-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u027-to-u059-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 47,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 38,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u027-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-to-u059-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u027-to-u059-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 47,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 38,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u027-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u027-to-u059-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-to-u060-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 27,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 18,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u056-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u056-to-u060-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 1,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u056-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u056-to-u060-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-to-u060-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 19,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 11,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u056-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u056-to-u060-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u056-to-u060-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 19,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 11,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u057-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u057-to-u061-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 22,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u057-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u057-to-u061-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 2,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u057-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u057-to-u061-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u057-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u057-to-u061-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 20,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u057-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u057-to-u061-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u057-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u057-to-u061-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 20,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u058-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u058-to-u062-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 25,
+          "distinct_pairs": 11,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u058-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u058-to-u062-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 8,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 7,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u058-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u058-to-u062-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u058-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u058-to-u062-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 19,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u058-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u058-to-u062-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u058-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u058-to-u062-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 19,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u059-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u059-to-u063-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 9,
+          "distinct_pairs": 4,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 5,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u059-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u059-to-u063-l16-16-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 2,
+          "distinct_pairs": 1,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 1,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u059-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u059-to-u063-l00-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 8,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 6,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u059-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u059-to-u063-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u059-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u059-to-u063-l08-17-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 8,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 6,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u059-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c2",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u059-to-u063-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c2",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u060-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u060-to-u068-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 56,
+          "distinct_pairs": 28,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 26,
+          "added_distinct_over_largest_template": 20,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u060-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u060-to-u068-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 25,
+          "distinct_pairs": 11,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 7,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u060-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u060-to-u068-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 23,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u060-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u060-to-u068-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 20,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 18,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u060-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u060-to-u068-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 23,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u060-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u060-to-u068-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 39,
+          "distinct_pairs": 20,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 18,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u061-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u061-to-u069-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 18,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 19,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u061-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u061-to-u069-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 37,
+          "distinct_pairs": 14,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 21,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u061-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u061-to-u069-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": 9,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u061-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u061-to-u069-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 50,
+          "distinct_pairs": 19,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 30,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u061-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u061-to-u069-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": 9,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u061-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u061-to-u069-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 50,
+          "distinct_pairs": 19,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 30,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u062-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u062-to-u070-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 33,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 14,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u062-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 26,
+          "added_distinct_over_largest_template": -1,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u062-to-u070-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 38,
+          "distinct_pairs": 19,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 17,
+          "added_distinct_over_largest_template": 13,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u062-l00-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u062-to-u070-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 31,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 15,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u062-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 36,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u062-to-u070-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 27,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u062-l08-17-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u062-to-u070-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 31,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 15,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u062-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 36,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u062-to-u070-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 27,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u063-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u063-to-u071-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 46,
+          "distinct_pairs": 22,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u063-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 27,
+          "distinct_pairs": 3,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 24,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u063-to-u071-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 46,
+          "distinct_pairs": 23,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 23,
+          "added_distinct_over_largest_template": 17,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u063-l00-17-positive",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 44,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u063-to-u071-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 54,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 38,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u063-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u063-to-u071-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 47,
+          "distinct_pairs": 18,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u063-l08-17-positive",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 44,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u063-to-u071-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 54,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 38,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u063-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u063-to-u071-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 47,
+          "distinct_pairs": 18,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 29,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u068-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 58,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 52,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u068-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 56,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 42,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u068-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 45,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u068-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 44,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u068-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 45,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 4,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u068-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u068-to-u072-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 44,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u069-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u069-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 55,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 46,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u069-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 62,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 53,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u069-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u069-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 62,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 53,
+          "added_distinct_over_largest_template": 2,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u069-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u069-to-u073-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u070-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 59,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 44,
+          "added_distinct_over_largest_template": 6,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u070-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 66,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 49,
+          "added_distinct_over_largest_template": 5,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u070-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 60,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 51,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u070-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 55,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 39,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u070-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 60,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 51,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u070-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u070-to-u074-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 55,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 39,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u071-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l00-00-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u071-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 59,
+          "distinct_pairs": 7,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 46,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u071-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 62,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 10,
+          "conflicting_endpoint_pairs_removed": 46,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u071-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l16-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 45,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 43,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u071-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 62,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 10,
+          "conflicting_endpoint_pairs_removed": 46,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u071-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r3-c5",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u071-to-u075-l08-01-nonoverlap",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": false,
+        "component": "np31-r3-c5",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 45,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 43,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u072-l00-00-positive",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 47,
+          "distinct_pairs": 6,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 39,
+          "added_distinct_over_largest_template": 1,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u072-to-u092-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 13,
+          "distinct_pairs": 10,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 2,
+          "added_distinct_over_largest_template": 7,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u072-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u072-to-u092-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 27,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 4,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u072-l00-17-positive",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 67,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 36,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u072-to-u092-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 25,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u072-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u072-to-u092-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 32,
+          "distinct_pairs": 17,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u072-l08-17-positive",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 67,
+          "distinct_pairs": 9,
+          "duplicate_pairs_removed": 36,
+          "conflicting_endpoint_pairs_removed": 22,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 3
+        }
+      },
+      {
+        "case_id": "u072-to-u092-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 25,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u072-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u072-to-u092-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 32,
+          "distinct_pairs": 17,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u073-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u073-to-u093-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 17,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 4,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u073-l16-16-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 50,
+          "distinct_pairs": 5,
+          "duplicate_pairs_removed": 13,
+          "conflicting_endpoint_pairs_removed": 32,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 2
+        }
+      },
+      {
+        "case_id": "u073-to-u093-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 26,
+          "distinct_pairs": 14,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 9,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u073-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u073-to-u093-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 23,
+          "distinct_pairs": 11,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 5,
+          "added_distinct_over_largest_template": 6,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u073-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u073-to-u093-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u073-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u073-to-u093-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 23,
+          "distinct_pairs": 11,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 5,
+          "added_distinct_over_largest_template": 6,
+          "reference_lights": 5
+        }
+      },
+      {
+        "case_id": "u073-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u073-to-u093-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 30,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u074-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 36,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 15,
+          "added_distinct_over_largest_template": 9,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u074-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 57,
+          "distinct_pairs": 15,
+          "duplicate_pairs_removed": 14,
+          "conflicting_endpoint_pairs_removed": 28,
+          "added_distinct_over_largest_template": 7,
+          "reference_lights": 6
+        }
+      },
+      {
+        "case_id": "u074-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 28,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u074-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 17,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 5,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u074-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 28,
+          "distinct_pairs": 8,
+          "duplicate_pairs_removed": 6,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 3,
+          "reference_lights": 4
+        }
+      },
+      {
+        "case_id": "u074-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u074-to-u094-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 17,
+          "distinct_pairs": 12,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 5,
+          "added_distinct_over_largest_template": 8,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u075-l00-00-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 0,
+          "distinct_pairs": 0,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 0,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 0
+        }
+      },
+      {
+        "case_id": "u075-to-u095-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 33,
+          "distinct_pairs": 16,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 12,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u075-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u075-to-u095-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 24,
+          "distinct_pairs": 14,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 10,
+          "added_distinct_over_largest_template": 10,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u075-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u075-to-u095-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 41,
+          "distinct_pairs": 17,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 21,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u075-l16-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 37,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u075-to-u095-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 37,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 15,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u075-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u075-to-u095-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 41,
+          "distinct_pairs": 17,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 21,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u075-l08-01-positive",
+        "stage": "miss_pool_fewer_than_six_unique_pairs",
+        "positive": true,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c1",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 37,
+          "distinct_pairs": 2,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 35,
+          "added_distinct_over_largest_template": 0,
+          "reference_lights": 1
+        }
+      },
+      {
+        "case_id": "u075-to-u095-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c1",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 37,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 14,
+          "added_distinct_over_largest_template": 15,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u092-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 79,
+          "distinct_pairs": 24,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 50,
+          "added_distinct_over_largest_template": 17,
+          "reference_lights": 13
+        }
+      },
+      {
+        "case_id": "u092-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 108,
+          "distinct_pairs": 34,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 73,
+          "added_distinct_over_largest_template": 27,
+          "reference_lights": 16
+        }
+      },
+      {
+        "case_id": "u092-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 104,
+          "distinct_pairs": 33,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 67,
+          "added_distinct_over_largest_template": 23,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u092-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l16-01-nonoverlap",
+        "stage": "miss_original_eighth_has_six_raw_pairs",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 104,
+          "distinct_pairs": 33,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 67,
+          "added_distinct_over_largest_template": 23,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u092-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u092-to-u012-l08-01-nonoverlap",
+        "stage": "miss_original_eighth_has_six_raw_pairs",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 84,
+          "distinct_pairs": 24,
+          "duplicate_pairs_removed": 2,
+          "conflicting_endpoint_pairs_removed": 58,
+          "added_distinct_over_largest_template": 15,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u093-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 92,
+          "distinct_pairs": 27,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 62,
+          "added_distinct_over_largest_template": 20,
+          "reference_lights": 13
+        }
+      },
+      {
+        "case_id": "u093-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 96,
+          "distinct_pairs": 34,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 62,
+          "added_distinct_over_largest_template": 26,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u093-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 96,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 71,
+          "added_distinct_over_largest_template": 14,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u093-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 96,
+          "distinct_pairs": 34,
+          "duplicate_pairs_removed": 0,
+          "conflicting_endpoint_pairs_removed": 62,
+          "added_distinct_over_largest_template": 26,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u093-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u093-to-u013-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 96,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 71,
+          "added_distinct_over_largest_template": 14,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u094-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 56,
+          "distinct_pairs": 17,
+          "duplicate_pairs_removed": 5,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 11,
+          "reference_lights": 7
+        }
+      },
+      {
+        "case_id": "u094-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 49,
+          "distinct_pairs": 23,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 25,
+          "added_distinct_over_largest_template": 18,
+          "reference_lights": 11
+        }
+      },
+      {
+        "case_id": "u094-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 68,
+          "distinct_pairs": 27,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 37,
+          "added_distinct_over_largest_template": 20,
+          "reference_lights": 14
+        }
+      },
+      {
+        "case_id": "u094-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 52,
+          "distinct_pairs": 20,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 31,
+          "added_distinct_over_largest_template": 15,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u094-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 68,
+          "distinct_pairs": 27,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 37,
+          "added_distinct_over_largest_template": 20,
+          "reference_lights": 14
+        }
+      },
+      {
+        "case_id": "u094-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u094-to-u014-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 52,
+          "distinct_pairs": 20,
+          "duplicate_pairs_removed": 1,
+          "conflicting_endpoint_pairs_removed": 31,
+          "added_distinct_over_largest_template": 15,
+          "reference_lights": 10
+        }
+      },
+      {
+        "case_id": "u095-l00-00-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l00-00-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 57,
+          "distinct_pairs": 22,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 31,
+          "added_distinct_over_largest_template": 16,
+          "reference_lights": 9
+        }
+      },
+      {
+        "case_id": "u095-l16-16-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": false,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l16-16-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": false,
+        "pooling": {
+          "raw_pairs": 68,
+          "distinct_pairs": 27,
+          "duplicate_pairs_removed": 7,
+          "conflicting_endpoint_pairs_removed": 34,
+          "added_distinct_over_largest_template": 18,
+          "reference_lights": 14
+        }
+      },
+      {
+        "case_id": "u095-l00-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l00-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 67,
+          "distinct_pairs": 32,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 32,
+          "added_distinct_over_largest_template": 26,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u095-l16-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l16-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 77,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 52,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 8
+        }
+      },
+      {
+        "case_id": "u095-l08-17-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l08-17-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 67,
+          "distinct_pairs": 32,
+          "duplicate_pairs_removed": 3,
+          "conflicting_endpoint_pairs_removed": 32,
+          "added_distinct_over_largest_template": 26,
+          "reference_lights": 15
+        }
+      },
+      {
+        "case_id": "u095-l08-01-positive",
+        "stage": "direct_pose_already_present",
+        "positive": true,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r4-c7",
+        "changed_light": true,
+        "pooling": null
+      },
+      {
+        "case_id": "u095-to-u015-l08-01-nonoverlap",
+        "stage": "miss_pooled_solver_no_pose",
+        "positive": false,
+        "component": "np31-r4-c7",
+        "query_component": "np31-r0-c4",
+        "changed_light": true,
+        "pooling": {
+          "raw_pairs": 77,
+          "distinct_pairs": 21,
+          "duplicate_pairs_removed": 4,
+          "conflicting_endpoint_pairs_removed": 52,
+          "added_distinct_over_largest_template": 12,
+          "reference_lights": 8
+        }
+      }
+    ],
+    "claim_scope": "Descriptive mechanism accounting on previously observed development; excludes no failed cases."
+  }
+}

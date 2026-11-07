@@ -1,0 +1,64 @@
+{
+  "schema_version": 84,
+  "created_utc": "2026-11-04T07:45:54.291870+00:00",
+  "purpose": "Predeclare separate immutable storage settings BEFORE either new cost pilot. Scientific configuration, cases, checkpoints and ceilings match between pilot/full and between SH/pooled. No prior file/result/deadline/charge is changed.",
+  "inference_revision": "solar-v84-exact-cache",
+  "new_scientific_jobs_started": false,
+  "modes": {
+    "sh": {
+      "immutable_settings": {
+        "pilot": {
+          "path": "reports/solar-sh-checkpoint-selection-pilot-settings-v84.json",
+          "sha256": "95369839988819343c4f421986a7a2a8f45c2ae4ca8182a340560f98339bd4d0",
+          "output_directory": "runs/solar-sh-checkpoint-selection-v84"
+        },
+        "full": {
+          "path": "reports/solar-sh-checkpoint-selection-full-settings-v84.json",
+          "sha256": "b016d1f36653f1d9a47b8bc5e2d1300332d438c8ba081027adfd4c18eca30989",
+          "output_directory": "runs/solar-sh-checkpoint-selection-v79"
+        }
+      },
+      "pilot_protocol": "reports/solar-sh-checkpoint-selection-cost-pilot-v84.json",
+      "pilot_evidence": {
+        "protocol": "reports/solar-sh-checkpoint-selection-cost-pilot-v84.json",
+        "summary": "runs/solar-sh-checkpoint-selection-v84/cost_pilot/summary.json",
+        "metric_replay": "reports/solar-sh-checkpoint-selection-cost-pilot-replay-v84.json"
+      },
+      "future_full_protocol": "reports/solar-sh-checkpoint-selection-v79.json",
+      "future_full_summary": "runs/solar-sh-checkpoint-selection-v79/full/summary.json",
+      "future_full_replay": "reports/solar-sh-checkpoint-selection-replay-v79.json",
+      "path_scope": "Unused full evidence slots required by original v79 learning contract; resulting new protocol states v84 implementation explicitly. Original completed v79 cost pilot stays untouched. No copying/aliasing/relabeling of results."
+    },
+    "pooled": {
+      "immutable_settings": {
+        "pilot": {
+          "path": "reports/solar-pooled-checkpoint-selection-pilot-settings-v84.json",
+          "sha256": "0f814b68adbe6d3f5cbdfb0c375069c7a0d7c26569d17d2108e049c7b68dc087",
+          "output_directory": "runs/solar-pooled-checkpoint-selection-v84"
+        },
+        "full": {
+          "path": "reports/solar-pooled-checkpoint-selection-full-settings-v84.json",
+          "sha256": "84ea8d3469b0cffa81b9295353544bfdcb7d947e73dec626f7a8345dafc7a4e2",
+          "output_directory": "runs/solar-pooled-checkpoint-selection-v79"
+        }
+      },
+      "pilot_protocol": "reports/solar-pooled-checkpoint-selection-cost-pilot-v84.json",
+      "pilot_evidence": {
+        "protocol": "reports/solar-pooled-checkpoint-selection-cost-pilot-v84.json",
+        "summary": "runs/solar-pooled-checkpoint-selection-v84/cost_pilot/summary.json",
+        "metric_replay": "reports/solar-pooled-checkpoint-selection-cost-pilot-replay-v84.json"
+      },
+      "future_full_protocol": "reports/solar-pooled-checkpoint-selection-v79.json",
+      "future_full_summary": "runs/solar-pooled-checkpoint-selection-v79/full/summary.json",
+      "future_full_replay": "reports/solar-pooled-checkpoint-selection-replay-v79.json",
+      "path_scope": "Unused full evidence slots required by original v79 learning contract; resulting new protocol states v84 implementation explicitly. Original completed v79 cost pilot stays untouched. No copying/aliasing/relabeling of results."
+    }
+  },
+  "original_remaining_caps_seconds": {
+    "training": 15867,
+    "baseline": 53100
+  },
+  "planned_two_pilots_full_maxima_and_replays_seconds": 28200,
+  "remaining_after_planning_ceiling_seconds": 24900,
+  "full_results_are_future_not_created": true
+}

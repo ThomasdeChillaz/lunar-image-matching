@@ -1,0 +1,1258 @@
+{
+  "posthoc": true,
+  "new_inference": false,
+  "accepted_pose_result": false,
+  "scope": "Diagnostic camera proposals before image-correspondence verification; primary seven-method results remain unchanged.",
+  "predictions_sha256": "77e793d52c23b6685f125aa26a3a3a985cea521ba7294b95924f7a9661d4f9f1",
+  "counts": {
+    "first_correct": 5,
+    "first_strict": 4,
+    "wrong_positive_proposals": 7,
+    "nonoverlap_proposals": 8,
+    "any_correct_hindsight": 5,
+    "positives": 16,
+    "negatives": 16
+  },
+  "rows": [
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.9283969548979062,
+          "translation_m": 28.03164859607667,
+          "reference_range_m": 1878.7619664073363
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive-to-u025-l00-00-positive",
+        "reference_index": 0,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.8314262307703134,
+          "translation_m": 27.275020460718004,
+          "reference_range_m": 1878.7619664073363
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive-to-u025-l00-00-positive",
+        "reference_index": 0,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 1.5004319653088232,
+          "translation_m": 48.325300203705396,
+          "reference_range_m": 1878.7619664073363
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive-to-u025-l00-00-positive",
+        "reference_index": 0,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive",
+        "reference_index": 0,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": true,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.23651129158280504,
+          "translation_m": 6.7061727232072155,
+          "reference_range_m": 1878.7619664073363
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u061-l00-17-positive-to-u025-l00-00-positive",
+        "reference_index": 0,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r3-c3",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.026759706864313913,
+          "translation_m": 0.8978965755785756,
+          "reference_range_m": 1591.162737137531
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive-to-u027-l08-01-positive",
+        "reference_index": 1,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.01909353331698146,
+          "translation_m": 0.7425117564979788,
+          "reference_range_m": 1591.162737137531
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive-to-u027-l08-01-positive",
+        "reference_index": 1,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.023673562937439052,
+          "translation_m": 0.8172810037905307,
+          "reference_range_m": 1591.162737137531
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive-to-u027-l08-01-positive",
+        "reference_index": 1,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive",
+        "reference_index": 1,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.017286759833792412,
+          "translation_m": 0.7010417655536785,
+          "reference_range_m": 1591.162737137531
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u013-l00-00-positive-to-u027-l08-01-positive",
+        "reference_index": 1,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r0-c4",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ],
+          "query_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive-to-u061-l00-17-positive",
+        "reference_index": 2,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive-to-u061-l00-17-positive",
+        "reference_index": 2,
+        "query_index": 0,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive-to-u061-l00-17-positive",
+        "reference_index": 2,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive",
+        "reference_index": 2,
+        "query_index": 2,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u025-l00-00-positive-to-u061-l00-17-positive",
+        "reference_index": 2,
+        "query_index": 0,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r3-c3",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            -40225.921615339925,
+            -25229.482892239674,
+            -19743.917849142177,
+            -4752.090206985636
+          ]
+        }
+      },
+      "hypotheses": 0,
+      "first": {}
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 75.91571124890727,
+          "translation_m": 1701.8769910704648,
+          "reference_range_m": 1588.2945440202834
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive-to-u013-l00-00-positive",
+        "reference_index": 3,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 20.058441853672097,
+          "translation_m": 747.3512392746858,
+          "reference_range_m": 1588.2945440202834
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive-to-u013-l00-00-positive",
+        "reference_index": 3,
+        "query_index": 1,
+        "reference_seed": 0,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 44.082186126704784,
+          "translation_m": 1279.4904828965755,
+          "reference_range_m": 1588.2945440202834
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive-to-u013-l00-00-positive",
+        "reference_index": 3,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 0,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive",
+        "reference_index": 3,
+        "query_index": 3,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": true,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r1-c0",
+        "nonoverlap": null
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": true,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "2": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "4": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "8": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          },
+          "12": {
+            "correct": 0,
+            "visible": 0,
+            "returned": 0
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 87.77195842008317,
+          "translation_m": 1533.001205658508,
+          "reference_range_m": 1588.2945440202834
+        }
+      }
+    },
+    {
+      "case": {
+        "case_id": "u027-l08-01-positive-to-u013-l00-00-positive",
+        "reference_index": 3,
+        "query_index": 1,
+        "reference_seed": 1,
+        "query_seed": 1,
+        "positive": false,
+        "component": "np31-r1-c0",
+        "query_component": "np31-r0-c4",
+        "nonoverlap": {
+          "frame": "lunar_body_fixed_cartesian_xy_metres",
+          "full_image_footprints": true,
+          "reference_bounds": [
+            19716.86717166869,
+            -115008.67975805489,
+            40208.52834333068,
+            -94558.11214537267
+          ],
+          "query_bounds": [
+            49695.485002795635,
+            4759.01222433615,
+            70178.19069790677,
+            25218.960102944602
+          ]
+        }
+      },
+      "hypotheses": 8,
+      "first": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": true,
+        "correspondence": {},
+        "pose_error": null
+      }
+    }
+  ]
+}

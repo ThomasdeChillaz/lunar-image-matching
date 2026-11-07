@@ -1,0 +1,1253 @@
+{
+  "scope": "Training-source coverage diagnosis only; exact geometry labels, no final pixels.",
+  "groups": {
+    "axial-v5-component-0001": {
+      "cases": 9,
+      "mode": [
+        "nadir"
+      ],
+      "cases_with_positive": 9,
+      "positive_proposals": 2863,
+      "total_proposals": 3588
+    },
+    "axial-v5-component-0002": {
+      "cases": 18,
+      "mode": [
+        "dynamicgood",
+        "nadir"
+      ],
+      "cases_with_positive": 18,
+      "positive_proposals": 4436,
+      "total_proposals": 6518
+    },
+    "axial-v5-component-0003": {
+      "cases": 18,
+      "mode": [
+        "nadir"
+      ],
+      "cases_with_positive": 18,
+      "positive_proposals": 4370,
+      "total_proposals": 6579
+    },
+    "axial-v5-component-0004": {
+      "cases": 9,
+      "mode": [
+        "nadir"
+      ],
+      "cases_with_positive": 9,
+      "positive_proposals": 1593,
+      "total_proposals": 2880
+    },
+    "axial-v5-component-0007": {
+      "cases": 18,
+      "mode": [
+        "nadir"
+      ],
+      "cases_with_positive": 18,
+      "positive_proposals": 5527,
+      "total_proposals": 7127
+    },
+    "axial-v5-component-0008": {
+      "cases": 9,
+      "mode": [
+        "nadir"
+      ],
+      "cases_with_positive": 9,
+      "positive_proposals": 2144,
+      "total_proposals": 3087
+    },
+    "axial-v5-component-0009": {
+      "cases": 18,
+      "mode": [
+        "dynamicgood",
+        "nadir"
+      ],
+      "cases_with_positive": 18,
+      "positive_proposals": 1962,
+      "total_proposals": 5276
+    },
+    "axial-v5-component-0010": {
+      "cases": 9,
+      "mode": [
+        "oblique"
+      ],
+      "cases_with_positive": 9,
+      "positive_proposals": 2225,
+      "total_proposals": 3113
+    },
+    "axial-v5-component-0011": {
+      "cases": 9,
+      "mode": [
+        "oblique"
+      ],
+      "cases_with_positive": 2,
+      "positive_proposals": 3,
+      "total_proposals": 1961
+    },
+    "axial-v5-component-0012": {
+      "cases": 9,
+      "mode": [
+        "oblique"
+      ],
+      "cases_with_positive": 9,
+      "positive_proposals": 172,
+      "total_proposals": 2273
+    },
+    "axial-v5-component-0013": {
+      "cases": 27,
+      "mode": [
+        "dynamicgood",
+        "oblique"
+      ],
+      "cases_with_positive": 24,
+      "positive_proposals": 2339,
+      "total_proposals": 7882
+    },
+    "axial-v5-component-0014": {
+      "cases": 9,
+      "mode": [
+        "dynamicgood"
+      ],
+      "cases_with_positive": 8,
+      "positive_proposals": 23,
+      "total_proposals": 2329
+    }
+  },
+  "cases": [
+    {
+      "pair_id": "nadir/nadir/6864/lights-0-0",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 500,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-0-1",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 150,
+      "total_proposals": 291
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-0-2",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 356,
+      "total_proposals": 420
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-1-0",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 148,
+      "total_proposals": 303
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-1-1",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 504,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-1-2",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 168,
+      "total_proposals": 313
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-2-0",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 364,
+      "total_proposals": 409
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-2-1",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 170,
+      "total_proposals": 316
+    },
+    {
+      "pair_id": "nadir/nadir/6864/lights-2-2",
+      "component": "axial-v5-component-0001",
+      "mode": "nadir",
+      "positive_proposals": 503,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-0-0",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 512,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-0-1",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 290,
+      "total_proposals": 367
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-0-2",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 500,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-1-0",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 235,
+      "total_proposals": 336
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-1-1",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 512,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-1-2",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 292,
+      "total_proposals": 374
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-2-0",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 476,
+      "total_proposals": 502
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-2-1",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 299,
+      "total_proposals": 389
+    },
+    {
+      "pair_id": "nadir/nadir/6138/lights-2-2",
+      "component": "axial-v5-component-0002",
+      "mode": "nadir",
+      "positive_proposals": 512,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-0-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 494,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-0-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 90,
+      "total_proposals": 252
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-0-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 247,
+      "total_proposals": 348
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-1-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 66,
+      "total_proposals": 265
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-1-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 490,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-1-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 57,
+      "total_proposals": 241
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-2-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 234,
+      "total_proposals": 346
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-2-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 61,
+      "total_proposals": 240
+    },
+    {
+      "pair_id": "nadir/nadir/6507/lights-2-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 503,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-0-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 505,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-0-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 147,
+      "total_proposals": 328
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-0-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 146,
+      "total_proposals": 322
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-1-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 118,
+      "total_proposals": 301
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-1-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 470,
+      "total_proposals": 502
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-1-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 33,
+      "total_proposals": 284
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-2-0",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 170,
+      "total_proposals": 320
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-2-1",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 40,
+      "total_proposals": 270
+    },
+    {
+      "pair_id": "nadir/nadir/6453/lights-2-2",
+      "component": "axial-v5-component-0003",
+      "mode": "nadir",
+      "positive_proposals": 499,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-0-0",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 289,
+      "total_proposals": 377
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-0-1",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 93,
+      "total_proposals": 265
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-0-2",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 159,
+      "total_proposals": 317
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-1-0",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 84,
+      "total_proposals": 284
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-1-1",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 339,
+      "total_proposals": 399
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-1-2",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 88,
+      "total_proposals": 262
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-2-0",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 161,
+      "total_proposals": 320
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-2-1",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 78,
+      "total_proposals": 267
+    },
+    {
+      "pair_id": "nadir/nadir/336/lights-2-2",
+      "component": "axial-v5-component-0004",
+      "mode": "nadir",
+      "positive_proposals": 302,
+      "total_proposals": 389
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-0-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 512,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-0-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 227,
+      "total_proposals": 333
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-0-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 424,
+      "total_proposals": 465
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-1-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 218,
+      "total_proposals": 353
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-1-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 512,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-1-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 169,
+      "total_proposals": 318
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-2-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 380,
+      "total_proposals": 439
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-2-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 189,
+      "total_proposals": 329
+    },
+    {
+      "pair_id": "nadir/nadir/6381/lights-2-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 510,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-0-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 495,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-0-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 133,
+      "total_proposals": 270
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-0-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 206,
+      "total_proposals": 339
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-1-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 119,
+      "total_proposals": 274
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-1-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 501,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-1-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 91,
+      "total_proposals": 288
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-2-0",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 220,
+      "total_proposals": 352
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-2-1",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 111,
+      "total_proposals": 295
+    },
+    {
+      "pair_id": "nadir/nadir/6303/lights-2-2",
+      "component": "axial-v5-component-0007",
+      "mode": "nadir",
+      "positive_proposals": 510,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-0-0",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 463,
+      "total_proposals": 478
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-0-1",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 111,
+      "total_proposals": 261
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-0-2",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 213,
+      "total_proposals": 325
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-1-0",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 118,
+      "total_proposals": 261
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-1-1",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 448,
+      "total_proposals": 467
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-1-2",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 92,
+      "total_proposals": 265
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-2-0",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 197,
+      "total_proposals": 318
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-2-1",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 95,
+      "total_proposals": 259
+    },
+    {
+      "pair_id": "nadir/nadir/2464/lights-2-2",
+      "component": "axial-v5-component-0008",
+      "mode": "nadir",
+      "positive_proposals": 407,
+      "total_proposals": 453
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-0-0",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 461,
+      "total_proposals": 496
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-0-1",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 86,
+      "total_proposals": 260
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-0-2",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 99,
+      "total_proposals": 286
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-1-0",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 113,
+      "total_proposals": 284
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-1-1",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 409,
+      "total_proposals": 458
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-1-2",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 35,
+      "total_proposals": 246
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-2-0",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 102,
+      "total_proposals": 279
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-2-1",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 24,
+      "total_proposals": 254
+    },
+    {
+      "pair_id": "nadir/nadir/6297/lights-2-2",
+      "component": "axial-v5-component-0009",
+      "mode": "nadir",
+      "positive_proposals": 491,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-0-0",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 506,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-0-1",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 20,
+      "total_proposals": 194
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-0-2",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 184,
+      "total_proposals": 308
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-1-0",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 20,
+      "total_proposals": 215
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-1-1",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 507,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-1-2",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 143,
+      "total_proposals": 258
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-2-0",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 205,
+      "total_proposals": 322
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-2-1",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 138,
+      "total_proposals": 280
+    },
+    {
+      "pair_id": "oblique/oblique/2770/lights-2-2",
+      "component": "axial-v5-component-0010",
+      "mode": "oblique",
+      "positive_proposals": 502,
+      "total_proposals": 512
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-0-0",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 219
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-0-1",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 216
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-0-2",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 230
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-1-0",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 211
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-1-1",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 1,
+      "total_proposals": 202
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-1-2",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 223
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-2-0",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 2,
+      "total_proposals": 218
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-2-1",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 215
+    },
+    {
+      "pair_id": "oblique/oblique/4621/lights-2-2",
+      "component": "axial-v5-component-0011",
+      "mode": "oblique",
+      "positive_proposals": 0,
+      "total_proposals": 227
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-0-0",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 37,
+      "total_proposals": 285
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-0-1",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 15,
+      "total_proposals": 243
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-0-2",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 7,
+      "total_proposals": 242
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-1-0",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 13,
+      "total_proposals": 242
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-1-1",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 27,
+      "total_proposals": 262
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-1-2",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 20,
+      "total_proposals": 243
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-2-0",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 15,
+      "total_proposals": 241
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-2-1",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 13,
+      "total_proposals": 233
+    },
+    {
+      "pair_id": "oblique/oblique/7432/lights-2-2",
+      "component": "axial-v5-component-0012",
+      "mode": "oblique",
+      "positive_proposals": 25,
+      "total_proposals": 282
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-0-0",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 465,
+      "total_proposals": 496
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-0-1",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 118,
+      "total_proposals": 297
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-0-2",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 195,
+      "total_proposals": 317
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-1-0",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 153,
+      "total_proposals": 299
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-1-1",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 478,
+      "total_proposals": 504
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-1-2",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 98,
+      "total_proposals": 279
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-2-0",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 170,
+      "total_proposals": 311
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-2-1",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 66,
+      "total_proposals": 278
+    },
+    {
+      "pair_id": "oblique/oblique/7504/lights-2-2",
+      "component": "axial-v5-component-0013",
+      "mode": "oblique",
+      "positive_proposals": 494,
+      "total_proposals": 506
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-0-0",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 160,
+      "total_proposals": 301
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-0-1",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 49,
+      "total_proposals": 250
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-0-2",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 77,
+      "total_proposals": 290
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-1-0",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 45,
+      "total_proposals": 226
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-1-1",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 150,
+      "total_proposals": 298
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-1-2",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 51,
+      "total_proposals": 249
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-2-0",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 86,
+      "total_proposals": 287
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-2-1",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 37,
+      "total_proposals": 268
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1227/lights-2-2",
+      "component": "axial-v5-component-0002",
+      "mode": "dynamicgood",
+      "positive_proposals": 153,
+      "total_proposals": 333
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-0-0",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 3,
+      "total_proposals": 251
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-0-1",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 3,
+      "total_proposals": 234
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-0-2",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 2,
+      "total_proposals": 254
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-1-0",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 0,
+      "total_proposals": 252
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-1-1",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 274
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-1-2",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 6,
+      "total_proposals": 275
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-2-0",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 1,
+      "total_proposals": 262
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-2-1",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 1,
+      "total_proposals": 255
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/825/lights-2-2",
+      "component": "axial-v5-component-0014",
+      "mode": "dynamicgood",
+      "positive_proposals": 3,
+      "total_proposals": 272
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-0-0",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 25,
+      "total_proposals": 245
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-0-1",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 9,
+      "total_proposals": 254
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-0-2",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 15,
+      "total_proposals": 250
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-1-0",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 10,
+      "total_proposals": 215
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-1-1",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 27,
+      "total_proposals": 239
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-1-2",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 9,
+      "total_proposals": 247
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-2-0",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 11,
+      "total_proposals": 237
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-2-1",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 248
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1422/lights-2-2",
+      "component": "axial-v5-component-0009",
+      "mode": "dynamicgood",
+      "positive_proposals": 32,
+      "total_proposals": 266
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-0-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 5,
+      "total_proposals": 239
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-0-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 0,
+      "total_proposals": 269
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-0-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 0,
+      "total_proposals": 270
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-1-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 1,
+      "total_proposals": 274
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-1-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 248
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-1-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 0,
+      "total_proposals": 246
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-2-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 250
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-2-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 1,
+      "total_proposals": 266
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/1437/lights-2-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 5,
+      "total_proposals": 244
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-0-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 10,
+      "total_proposals": 251
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-0-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 10,
+      "total_proposals": 264
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-0-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 8,
+      "total_proposals": 257
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-1-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 8,
+      "total_proposals": 240
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-1-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 247
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-1-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 4,
+      "total_proposals": 253
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-2-0",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 10,
+      "total_proposals": 268
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-2-1",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 12,
+      "total_proposals": 242
+    },
+    {
+      "pair_id": "dynamicgood/dynamic/936/lights-2-2",
+      "component": "axial-v5-component-0013",
+      "mode": "dynamicgood",
+      "positive_proposals": 16,
+      "total_proposals": 267
+    }
+  ],
+  "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb"
+}

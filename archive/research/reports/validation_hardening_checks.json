@@ -1,0 +1,96 @@
+{
+  "test_suites": {
+    "research": {
+      "passed": 112,
+      "skipped": 4,
+      "log_sha256": "6663589cc675e19093549e83689231eb6423407f0c025c2f54283d241028a908"
+    },
+    "minimal_core": {
+      "passed": 107,
+      "skipped": 5,
+      "log_sha256": "57c90a6b6818be08a06643107eb98df847c77574540119805c3e5ab20ae04fa5"
+    }
+  },
+  "fresh_smoke_summaries": 20,
+  "smoke_summary_sha256": "afad054bdfecd523d9f8d405442d2273875c440f052c13f8b9905f115ffe28dd",
+  "cli_actual_model_control": {
+    "known_shift_error_px": 0.0,
+    "disjoint_scene_public_transform": null,
+    "raw_proposal_hidden_by_default": true,
+    "files_sha256": {
+      "accepted.json": "eef6f7f989de1a082c33841a59df0d81c5ae7ada8eb72db4d3fdbe65fca57f60",
+      "reference.png": "de28b90364e1380c3100dc4e20705729c22e5017f9f49baf5da2b392b8523e2a",
+      "different_scene_b_mask.png": "9f5731e820b2b16366e5e30e03f6d1ffb4fe3dd07ec0dc8e9cb6b13cbe4afaaf",
+      "query_mask.png": "36b0aee2e24c5255a16ea256106527af4ead7aee3835d7f13cf036a7cebabb29",
+      "query.png": "32a1a879399dbdd63d4ce6c203694a795ec32726d9a254bea343467fc1038aee",
+      "different_scene_b.png": "c8400b8e3b872b592a093b537adbc55548d46783166dfa4a86c234c1890b5408",
+      "truth.json": "d9ce8b0ffda1a0f85f12be60400f671254af7c907663f210f1c432157932cf81",
+      "different_scene_a.png": "a07201aae8096e494b06fe32270b65533ec56d20c865743b84e9aa5eb567a048",
+      "different_scene_a_mask.png": "046667b34232eb42bb7c2a30df51d7ece2c1d35dcf3e916a31e9d7476d9c329c",
+      "rejected.json": "95b8c612b420f644deb8ef6d028ebf6aff349ee3fc4c21ffffa892d30ffd5f0e"
+    },
+    "actual_trained_model_cli_controls_passed": true
+  },
+  "reserve_audit": {
+    "rows": 32832,
+    "cases": 10944,
+    "native_input_reconstruction": true,
+    "analytic_geometry_recomputed": true,
+    "frozen_gate_replayed": true,
+    "public_rejection_enforced": true,
+    "calibration_or_model_selection_on_reserves": false,
+    "components": 12,
+    "results_sha256": "64cdfd5a421a20fc64a496a4e38442fb862fa4d8cc550034190026d96b98be1c",
+    "freeze_sha256": "6394d81f9714f4ef18a0eae61df761ef4b38d9c0d03e680399a1400cdbeeec20",
+    "auditor_source_sha256": "5474d8a1dc50bcba6c0c063d558e49239b2f6686738352702ad4e9d55670fcb0",
+    "warning": "Known-geometry within-Tycho experiment; does not verify real repeat-observation navigation accuracy."
+  },
+  "real_sensor_audit": {
+    "control_cases": 420,
+    "control_rows": 1260,
+    "repeat_diagnostics": 321,
+    "native_pixels_reconstructed": true,
+    "known_warp_errors_recomputed": true,
+    "public_rejection_enforced": true,
+    "repeat_image_evidence_and_gate_replayed": true,
+    "repeat_accuracy_labels_remain_unknown": true,
+    "control_gate_evidence_replayed": true,
+    "separate_reverse_inference_repeated": true,
+    "independent_gate_replay_sha256": "1777bdc73a88b287b54e193be2483b803e24af70e914bb007220852f44ea35ba",
+    "source_regions": 3,
+    "source_acquisitions": 42,
+    "calibration_on_real_data": false,
+    "results_sha256": "80f79d3bc8abd538c737fc2092a704e286b422dfa3747888c35717395206bd91",
+    "freeze_sha256": "401c64d10b2229e4e0d670e27c13010f5c3c517811b75769065df942efb7695d",
+    "warning": "Exact geometry is known only for warps of a single real photo. Repeat-observation map disagreement and cycles are unverified diagnostics. No independently verified orbital navigation accuracy or metric accuracy."
+  },
+  "polar_reference_audit": {
+    "cases": 24,
+    "rows": 72,
+    "by_terrain": {
+      "Terrain01": {
+        "sampled_external_laser_points": 573917,
+        "camera_calibration_sha256": "80f8e33e438a8d0da1b2262923af61e6d76d1e017a7ed5a3d4ccf2cab8a25246"
+      },
+      "Terrain06": {
+        "sampled_external_laser_points": 553665,
+        "camera_calibration_sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae"
+      },
+      "Terrain11": {
+        "sampled_external_laser_points": 514590,
+        "camera_calibration_sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae"
+      },
+      "Terrain12": {
+        "sampled_external_laser_points": 567894,
+        "camera_calibration_sha256": "c0427e2aa5506443e9d409d778a09bbc6a93054fde3ddd2985a332cf3a93a8ae"
+      }
+    },
+    "source_bytes_verified": true,
+    "independent_brown_conrady_projection_verified": true,
+    "reference_assignments_and_errors_replayed": true,
+    "matcher_outputs_excluded_from_reference_construction": true,
+    "unknown_calibration_uncertainty_preserved": true,
+    "results_sha256": "4d0c473b532c4e5b7ba08f3307d3824fbf1085e705af714fad0f506cbbb7d10f",
+    "warning": "NASA describes sub2mm laser accuracy. Calibration covariance, cross-light rig drift and per-point pixel uncertainty are not supplied. Laser nearest-reference tolerance and visibility filtering are explicit. Report nominal reference agreement, not uncertainty-certified navigation accuracy."
+  }
+}

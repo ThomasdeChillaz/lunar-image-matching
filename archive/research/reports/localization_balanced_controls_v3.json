@@ -1,0 +1,16 @@
+{
+  "scope": "Procedural software controls for balanced primary winner; not navigation validation",
+  "model_dir": "runs/localization-v3-balanced-development/reliability-20261101",
+  "checkpoint_sha256": "a33e68182f5851b01858029a10f311656909075d29ca100446e04d56ee3e02f6",
+  "known_translation_native_px": [
+    8,
+    -4
+  ],
+  "matches": 358,
+  "median_error_native_px": 0.35321536362289363,
+  "within_two_px": 260,
+  "default_rejects": true,
+  "blank_returns_no_matches": true,
+  "source_sha256": "b2b4c8da66990b02580e37420cb7f17f8cc071ec17b7eb985d12c515d4aabc79",
+  "passed": true
+}

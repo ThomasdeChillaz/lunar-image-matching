@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "complete_dataset": false,
+  "expected_units": 96,
+  "completed_units": 1,
+  "unit": {
+    "unit_index": 0,
+    "component": "np31-r0-c0",
+    "split": "training",
+    "family": "training_motion",
+    "pair_index": 0,
+    "eligible": true,
+    "qualification_reasons": [],
+    "source_output": "runs/solar-v67-development/np31-r0-c0/training_motion-0",
+    "source_summary_sha256": "5b5d5e6b67f0974caa558cb586b596bad494fa4533804ae8459510d07742e23d",
+    "source_seal_sha256": "ed5a195b081cb61f391b683c9f20a98213d92d40cc89552d54b1f5ea159e5f25",
+    "views": [
+      {
+        "role": "reference",
+        "complete_surface": true,
+        "pixel_qualification": {
+          "qualified": true,
+          "maximum_pixel_error": 7.104307117954573e-05,
+          "pixels_over_tolerance": 0,
+          "tolerance_native_px": 0.02
+        },
+        "maximum_independent_mesh_error_m": 0.00041261358705924067,
+        "camera_clearance_m": 1560.819643070489,
+        "free_space": true
+      },
+      {
+        "role": "query",
+        "complete_surface": true,
+        "pixel_qualification": {
+          "qualified": true,
+          "maximum_pixel_error": 6.171239056350399e-05,
+          "pixels_over_tolerance": 0,
+          "tolerance_native_px": 0.02
+        },
+        "maximum_independent_mesh_error_m": 0.0002778180160021293,
+        "camera_clearance_m": 1700.841815090152,
+        "free_space": true
+      }
+    ],
+    "minimum_bidirectional_visible_fraction": 0.9023668639053254,
+    "independent_camera_visibility": [
+      {
+        "source": "reference",
+        "kind": "visible",
+        "index": 8,
+        "visible": true,
+        "geometrically_occluded": false,
+        "visibility_uncertain": false,
+        "first_hit_m": 1740.0842986230527,
+        "target_distance_m": 1740.0844367055688
+      },
+      {
+        "source": "query",
+        "kind": "visible",
+        "index": 0,
+        "visible": true,
+        "geometrically_occluded": false,
+        "visibility_uncertain": false,
+        "first_hit_m": 1683.9834910869313,
+        "target_distance_m": 1683.9834841970953
+      }
+    ],
+    "geometric_occlusion": [
+      {
+        "source": "reference",
+        "geometrically_occluded": 0,
+        "visibility_uncertain": 0
+      },
+      {
+        "source": "query",
+        "geometrically_occluded": 0,
+        "visibility_uncertain": 0
+      }
+    ],
+    "oracle_outcomes": [
+      {
+        "source": "reference",
+        "pose_error": {
+          "rotation_deg": 0.0010708227707098964,
+          "translation_m": 0.056959494020836644
+        },
+        "correct": true,
+        "reference_range_m": 1696.914169061048,
+        "pose_returned": true
+      },
+      {
+        "source": "query",
+        "pose_error": {
+          "rotation_deg": 0.0009024593410504638,
+          "translation_m": 0.10274618764439739
+        },
+        "correct": true,
+        "reference_range_m": 1907.7621179823673,
+        "pose_returned": true
+      }
+    ]
+  },
+  "calendar_seconds": 11.124022070027422,
+  "scope": "Read-only schema/geometry replay of ONE old sealed actual lunar-render unit; not full dataset gate, training permission or matcher performance."
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Development-only, selected on these terrain groups; no fresh/final evaluation.",
+  "baseline_correct": 26,
+  "cases": 72,
+  "primary_variant": "descriptor_3d",
+  "primary_correct": 26,
+  "seeds": [
+    26,
+    25,
+    26
+  ],
+  "mean_seed_correct": 25.666666666666668,
+  "paired_gain_pp": 0.0,
+  "exploratory_component_interval_pp": [
+    0.0,
+    0.0
+  ],
+  "components": 4,
+  "note": "Post-selection descriptive bootstrap on four dependent development components, not an unbiased final-test interval.",
+  "runs": [
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261101,
+      "selected_step": 1000,
+      "total_parameters": 56544,
+      "correct_poses": 26,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "positives": 2079,
+      "sampled": 8000,
+      "final_weight_change_l2": 0.9151502251625061
+    },
+    {
+      "variant": "refinement",
+      "seed": 20261101,
+      "selected_step": 500,
+      "total_parameters": 63505,
+      "correct_poses": 26,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "positives": 2079,
+      "sampled": 8000,
+      "final_weight_change_l2": 5.3362650871276855
+    },
+    {
+      "variant": "reliability",
+      "seed": 20261101,
+      "selected_step": 0,
+      "total_parameters": 64098,
+      "correct_poses": 26,
+      "last_bank_correct": 0,
+      "last_bank_returned": 0,
+      "positives": 2079,
+      "sampled": 8000,
+      "final_weight_change_l2": 5.690932273864746
+    },
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261102,
+      "selected_step": 1500,
+      "total_parameters": 56544,
+      "correct_poses": 25,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "positives": 2161,
+      "sampled": 8000,
+      "final_weight_change_l2": 0.9323050379753113
+    },
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261103,
+      "selected_step": 1000,
+      "total_parameters": 56544,
+      "correct_poses": 26,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "positives": 2106,
+      "sampled": 8000,
+      "final_weight_change_l2": 0.9018350839614868
+    }
+  ],
+  "total_optimizer_steps": 10000,
+  "elapsed_cohort_seconds": 1047.4848334379785
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "actual_render_views_replayed": 2,
+  "independent_triangle_controls": [
+    {
+      "view": 0,
+      "analytic_triangle_rays": 870,
+      "maximum_world_error_m": 7.368901962088528e-05
+    },
+    {
+      "view": 1,
+      "analytic_triangle_rays": 15776,
+      "maximum_world_error_m": 0.00022944124543423868
+    }
+  ],
+  "common_AP3P_oracle_control_poses": [
+    {
+      "pair": 0,
+      "visible_points": 870,
+      "translation_error_m": 6.344780073489414e-08,
+      "rotation_error_deg": 1.7075472925031877e-06,
+      "pose_info": {
+        "inliers": 870,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1.0166580996331135e-10
+      }
+    },
+    {
+      "pair": 1,
+      "visible_points": 11912,
+      "translation_error_m": 1.4657625001076432e-07,
+      "rotation_error_deg": 0.0,
+      "pose_info": {
+        "inliers": 11912,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.670279154750996e-09
+      }
+    }
+  ],
+  "renderer_summary_sha256": "a345d8d917a415787b9510c6814cd11c50091dcf2df400117e6e2162ce59e306",
+  "source_sha256": "0475d4c9e7ade2a18a9a992a00e3ee42633131f22fb6679890d6750f40342a1a",
+  "source_height_pixels_decoded": 0,
+  "lunar_images_rendered": 0,
+  "matcher_inferences": 0,
+  "scope": "Analytic plane+box software camera/depth/visibility and common AP3P oracle controls only. Two constructed poses are not fresh lunar terrain or the required95%development oracle gate."
+}

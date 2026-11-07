@@ -1,0 +1,26 @@
+{
+  "integrated_utc": "2026-11-04T00:54:29.581511+00:00",
+  "files_sha256": {
+    "solar_learning_pipeline_v73.py": "90df3cf8b003e57c1a6e6cdad0c59e5b1d324b962221c2d944bea52a2e86f50e",
+    "build_solar_learning_protocol_v73.py": "27c1b7343d3b31f3d267382dd3f86d6618602a8a7c74873a848097552580fc2f",
+    "run_solar_learning_pipeline_v73.py": "12cea886b1f6b130f5dc6498c1131dab52e48bc464334a5641245b8a70cffc79",
+    "test_solar_learning_pipeline_v73.py": "efd7a7a42e3c8917fa82c141a907a090362b406d86d24466b33fea508611aff1",
+    "run_solar_job_v70.py": "80b376c95569228a66599a869b645866456ea1eb028ec1169c3c6d8638dd8fd4",
+    "reports/solar_learning_settings_template_v73.json": "b5f4ad4cc72a22326d1f98b5c71b2e01c38340632a2317dd97eaecc31bcf07d3"
+  },
+  "focused_tests": {
+    "passed": 31,
+    "elapsed_seconds": 16.0,
+    "files": [
+      "test_solar_learning_pipeline_v73.py",
+      "test_solar_training_admission_v70.py",
+      "test_solar_eval_guard_v72.py"
+    ]
+  },
+  "live_render_closure_preserved": true,
+  "protected_files_verified": 19,
+  "completion_absolute_deadline_utc": "2026-11-04T13:23:15.913367+00:00",
+  "canonical_reservation_journal_unchanged": true,
+  "scientific_jobs_started": 0,
+  "source_publication_performed": false
+}

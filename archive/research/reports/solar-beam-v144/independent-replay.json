@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "method_case_cells": 56,
+  "historical_control_identities": 24,
+  "sources": 115,
+  "inputs": 134,
+  "independently_recomputed_geometry": true,
+  "branch_retention_and_field_accounting": true,
+  "summary_and_component_analysis_exact": true,
+  "no_matching_or_fitting": true,
+  "saved_branch_diagnosis_exact": true,
+  "private_authority_used": false,
+  "accepted_pose_study": false,
+  "methods": {
+    "direct": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 0
+    },
+    "legacy_no_extra": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0
+    },
+    "legacy_active32": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0
+    },
+    "single_uniform128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 0
+    },
+    "beam_uniform128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0
+    },
+    "beam_geometry128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0
+    },
+    "beam_active128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0
+    }
+  }
+}

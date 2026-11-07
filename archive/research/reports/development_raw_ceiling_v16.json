@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "source_sha256": "f9729d70b3e2265f7ded720a6652e0f2c2c28da86b8db733ad3090242d2d23c3",
+  "surface_source_sha256": "522adb5ddd80e2a1de17ce50380aa40c802af7518e4186df2a05e542f80b7d97",
+  "sift_source_sha256": "8bb48ecdcce9cfdf6cdd6a7168ba853c4deaefc512573b6072bad9d77e8c3744",
+  "stages": {
+    "surface_raw": {
+      "components": [
+        {
+          "component": "axial-v5-component-0000",
+          "cases": 18,
+          "baseline_correct": 15
+        },
+        {
+          "component": "axial-v5-component-0005",
+          "cases": 9,
+          "baseline_correct": 9
+        },
+        {
+          "component": "axial-v5-component-0006",
+          "cases": 36,
+          "baseline_correct": 21
+        },
+        {
+          "component": "axial-v5-component-0015",
+          "cases": 9,
+          "baseline_correct": 9
+        }
+      ],
+      "saturated_components": 2,
+      "exact_bootstrap_draws": 256,
+      "zero_gain_draws_for_perfect_oracle": 16,
+      "zero_gain_probability_for_perfect_oracle": 0.0625,
+      "perfect_oracle_95_percentile_interval_pp": [
+        0.0,
+        38.46153846153846
+      ],
+      "strictly_positive_95_percentile_lower_bound_possible": false
+    },
+    "sift_surface_raw": {
+      "components": [
+        {
+          "component": "axial-v5-component-0000",
+          "cases": 18,
+          "baseline_correct": 15
+        },
+        {
+          "component": "axial-v5-component-0005",
+          "cases": 9,
+          "baseline_correct": 9
+        },
+        {
+          "component": "axial-v5-component-0006",
+          "cases": 36,
+          "baseline_correct": 24
+        },
+        {
+          "component": "axial-v5-component-0015",
+          "cases": 9,
+          "baseline_correct": 9
+        }
+      ],
+      "saturated_components": 2,
+      "exact_bootstrap_draws": 256,
+      "zero_gain_draws_for_perfect_oracle": 16,
+      "zero_gain_probability_for_perfect_oracle": 0.0625,
+      "perfect_oracle_95_percentile_interval_pp": [
+        0.0,
+        30.76923076923077
+      ],
+      "strictly_positive_95_percentile_lower_bound_possible": false
+    }
+  },
+  "scope": "Arithmetic diagnosis of the existing four-component unfiltered raw-pose percentile bootstrap only. Perfect predictions are hypothetical, not measured.",
+  "conclusion": "Two of four components already have perfect raw baselines. Sixteen of256 component resamples use only those components, forcing even a perfect raw model to have a zero lower95percentile bound. Any imperfect model cannot exceed that bound.",
+  "limits": "This is not an impossibility result for calibrated correct acceptance, different assumptions/intervals, new data, or lunar localization. Acceptance policies can change baseline component counts. Do not weaken uncertainty criteria or count lighting variants as independent terrain to evade this limit.",
+  "action": "Continue development work as declared, and obtain a broader untouched evaluation for the full research claim. The fresh-data gate remains unmet."
+}

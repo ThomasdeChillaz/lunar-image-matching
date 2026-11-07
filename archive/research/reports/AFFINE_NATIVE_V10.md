@@ -1,0 +1,13 @@
+# Viewpoint preconditioning is a useful engineering control
+
+The frozen28,272-parameter matcher gains5.56 percentage points,45→49 correct raw poses out of72, after coarse image matches estimate an affine warp before native descriptor refinement. The fixed16-case bank gave11/16 for both, with strict success5→6. Full strict success remains17/72. No query depth or true query pose is used in inference. This correction adds no learned parameters.
+
+Raw wrong poses change12→11. With the identical SIFT-first engineering fallback, frozen gives53/72 and the affine pipeline gives53/72, with9 wrong proposals. These are uncalibrated outputs, not reliable accepted poses. The raw descriptive terrain interval is[-16.666666666666668, 14.285714285714286] percentage points; four dependent, exposed selection components cannot establish a fresh-test improvement.
+
+The warp is estimated by affine RANSAC on coarse image matches, with12native-pixel support,2000 iterations,.99 confidence and at least6 inliers. Singular values outside[0.5,2] or reflection reject the warp and use standard refinement. A valid warp resamples the query into reference coordinates; a33pixel rectified search follows, then coordinates map back to original query pixels. This changes the search's physical extent and interpolation as well as appearance normalization; it does not isolate affine invariance alone. Every returned pose uses the unchanged3native-pixel AP3P estimator. No isolated runtime advantage is claimed during concurrent local experiments.
+
+Independent replay checks the frozen checkpoint, every input/source hash, all native correspondence/pose errors and branch selection, then reconstructs reference3D points independently and reruns the pose estimator. Actual frozen-model512pixel translation and blank-image controls pass. All eligible72 cases remain in the denominator. Source data: MoonAnything LunarGeo, Grethen et al., doi:10.5281/zenodo.18415119, CC BY4.0; own code/weights MIT.
+
+The corresponding learned native study gives45/42/42 across its selected model's seeds, versus45 frozen. Thus this engineering correction is a stronger control for future learning claims. Uniform-positive training remains a separate live experiment. Fresh validation, calibrated acceptance, modern comparison and verified orbital navigation are not established. No paid compute, human review or email.
+
+Reproduce: `evaluate_affine_native_v10.py --full --output runs/new-affine`, then `verify_affine_native_v10.py --run runs/new-affine --output runs/new-affine-audit.json`. Every old result is preserved. Full per-component and gained/lost case records are in native_affine_comparison_v10.json.

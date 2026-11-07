@@ -1,0 +1,14 @@
+RESPONSE TEACHER BANK UNIT 0 points 64 cached True
+RESPONSE TEACHER BANK UNIT 1 points 64 cached False
+RESPONSE TEACHER BANK UNIT 2 points 64 cached False
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/build_solar_training_bank_v68.py", line 189, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--protocol',required=True);p.add_argument('--publication-commit',required=True);a=p.parse_args();print(json.dumps(run(a.protocol,a.publication_commit),indent=2))
+                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/build_solar_training_bank_v68.py", line 165, in run
+    arrays,details=build_unit_arrays(geometry,points,reader,spec['site']['centre_latitude_deg'],teacher,unit_seed,p['teacher_batch_size'],p.get('trial_pose_jitter'),clock,lighting_records=frozen_lighting['lighting'][component])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Documents/Codex/2026-10-25/for/outputs/lunar-image-matching/solar_training_bank_v68.py", line 249, in build_unit_arrays
+    if pair is None:raise ValueError('Declared trial-pose augmentation loses canonical image support')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Declared trial-pose augmentation loses canonical image support

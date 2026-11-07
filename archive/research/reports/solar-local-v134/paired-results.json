@@ -1,0 +1,374 @@
+{
+  "schema": "paired_reference_frame_native_results_v134",
+  "passed": true,
+  "protocol_sha256": "660fdf15b129a7cc964dd95edc493f6cedee3f551eee7ee8eab51e61d13eb0b0",
+  "predictions_sha256": "b46789322e6a108202479b39247391caf3bce378b8e52d47eff3eef0b177ec1a",
+  "principal_method": "framed_native_terrain_subpixel",
+  "principal_baseline": "framed_direct",
+  "raw_not_calibrated": true,
+  "new_matcher_inference": false,
+  "reserve_access": false,
+  "comparisons": {
+    "legacy": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "halo": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "pooled_uniform": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "pooled_parallax": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "direct": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "shared_camera_pooled_uniform": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "shared_camera_pooled_parallax": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "native_plane_integer": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "difference_percentage_points": 6.25,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        19.583333333333314
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "native_plane_subpixel": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "difference_percentage_points": 6.25,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        19.583333333333314
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "native_terrain_subpixel": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_legacy": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_halo": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_pooled_uniform": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_pooled_parallax": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 4,
+      "difference_percentage_points": -25.0,
+      "descriptive_95pct_component_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_direct": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_shared_camera_pooled_uniform": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_shared_camera_pooled_parallax": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_native_plane_integer": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "difference_percentage_points": 6.25,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        19.583333333333314
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_native_plane_subpixel": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 1,
+      "losses": 0,
+      "difference_percentage_points": 6.25,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        19.583333333333314
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    },
+    "framed_native_terrain_subpixel": {
+      "comparator": "framed_direct",
+      "positive_pairs": 16,
+      "terrain_components": [
+        "np31-r0-c4",
+        "np31-r1-c0",
+        "np31-r3-c3"
+      ],
+      "wins": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "descriptive_95pct_component_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "component_draws": 27,
+      "positive_interval_lower_bound_above_zero": false
+    }
+  },
+  "limitations": "Three exposed terrain components and repeated acquisition noise: intervals are descriptive and cannot establish a population improvement or 1% risk. Negative endpoint uncertainty is retained in results.json."
+}

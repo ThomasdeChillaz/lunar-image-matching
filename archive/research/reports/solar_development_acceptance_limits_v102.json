@@ -1,0 +1,53 @@
+{
+  "scope": "Arithmetic bounds on already saved development outputs. No fitted or calibrated acceptance rule, reserve, or new matching.",
+  "sources": {
+    "reports/solar_full_crosslight_rescue_replay_v99.json": "8347b60efa4d5f3721f2e118087475ec791339c595f43e2cd204b2d678312182",
+    "reports/solar_offcatalogue_direct_replay_v95.json": "9e441047e928e8f05ab3ec594e00ef151c0f546e88f88114fa4a330f4dccd8b6"
+  },
+  "full_24": {
+    "eligible_positive_pairs": 192,
+    "raw_correct": 114,
+    "raw_wrong_positive": 18,
+    "raw_pose_outputs_on_positive_pairs": 132,
+    "raw_wrong_positive_fraction": 0.13636363636363635,
+    "best_possible_correct_acceptance_fraction_for_saved_poses": 0.59375,
+    "correct_needed_for_70_percent_on_this_development_cohort": 135,
+    "additional_correct_needed": 21,
+    "wrong_poses_rejection_required_if_retaining_every_correct": 17,
+    "raw_nonoverlap": [
+      0,
+      192
+    ]
+  },
+  "withheld_12": {
+    "eligible_positive_pairs": 192,
+    "raw_correct": 86,
+    "raw_wrong_positive": 26,
+    "raw_pose_outputs_on_positive_pairs": 112,
+    "raw_wrong_positive_fraction": 0.23214285714285715,
+    "best_possible_correct_acceptance_fraction_for_saved_poses": 0.4479166666666667,
+    "correct_needed_for_70_percent_on_this_development_cohort": 135,
+    "additional_correct_needed": 49,
+    "wrong_poses_rejection_required_if_retaining_every_correct": 26,
+    "raw_nonoverlap": [
+      0,
+      192
+    ]
+  },
+  "zero_event_bound": {
+    "raw_nonoverlap": [
+      0,
+      192
+    ],
+    "one_sided_95_percent_upper_if_independent": 0.015481679618674082,
+    "scope": "Illustrative independent-case binomial calculation only. Actual pairs reuse eight directed terrain edges."
+  },
+  "scope_gates": {
+    "main_correctly_accepted_min": 0.7,
+    "paired_accepted_gain_min": 0.1,
+    "empirical_wrong_accepted_max": 0.01,
+    "empirical_nonoverlap_accepted_max": 0.01,
+    "separate_calibration_terrain_groups": 4,
+    "frozen_final_terrain_groups": 12
+  }
+}

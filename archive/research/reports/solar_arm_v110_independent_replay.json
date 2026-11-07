@@ -1,0 +1,329 @@
+{
+  "passed": true,
+  "replayed_rows": 32,
+  "rows": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "profile": "frozen_step0_A1B0C1_quantization_aware",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "profile": "SIFT2048",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "profile": "loma_r_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": true
+    },
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": true
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": true
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "profile": "romav2_common",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": true
+    }
+  ],
+  "summary_sha256": "8f415b2bea94c3109313edc4d58d43b2d12d1878a33a0f318946f51a87583d4b",
+  "replay_source_sha256": "0ec5cbd33365cd5d3a5b6ab7541815b6e39165df083390f6095fdfd6dde42499",
+  "scope": "Independent saved-array/source-label/native-pixel arithmetic replay; no model inference or new scientific result"
+}

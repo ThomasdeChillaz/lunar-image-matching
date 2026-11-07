@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "expected_exit_code": 3,
+  "observed_exit_code": 3,
+  "calendar_seconds": 1.526180364,
+  "output": "Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:30:47)\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nRuntimeError: controlled preflight failure\n\nError: script failed, expr: 'raise RuntimeError(\"controlled preflight failure\")', exiting.\n\nBlender quit\n",
+  "rendered_images": 0,
+  "scope": "Software control: intentional exception before scene work. Verifies fail-fastprocessstatus, not camera or matcher accuracy."
+}

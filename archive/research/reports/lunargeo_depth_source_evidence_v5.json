@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/clementinegrethen/StereoLunar",
+  "revision": "ed6ea257475abb8a5235dff3a4d6167214b6f697",
+  "checked_utc": "2026-10-31T23:02:40.533444+00:00",
+  "files": {
+    "mast3r/dust3r/dust3r/datasets/LunarDataset.py": {
+      "url": "https://raw.githubusercontent.com/clementinegrethen/StereoLunar/ed6ea257475abb8a5235dff3a4d6167214b6f697/mast3r/dust3r/dust3r/datasets/LunarDataset.py",
+      "sha256": "1fcc81112f5914df199a6bde334eef26005f294ac9bb8900305386f3d59fbd6f",
+      "bytes": 3139
+    },
+    "mast3r/dust3r/dust3r/utils/geometry.py": {
+      "url": "https://raw.githubusercontent.com/clementinegrethen/StereoLunar/ed6ea257475abb8a5235dff3a4d6167214b6f697/mast3r/dust3r/dust3r/utils/geometry.py",
+      "sha256": "b4f0bb6a03db2f1c2ce2fd35eaa4955f4a30512ad09a3aa45771b88336c8b697",
+      "bytes": 13204
+    }
+  },
+  "interpretation": "Dataset loader passes EXR depth into DUSt3R axial-depth unprojection. Dataset wording about ray range conflicts with downloaded-file depth closure and this implementation.",
+  "upstream_geometry_license": "CC BY-NC-SA4.0; source linked/hashed for evidence, not copied into the MIT implementation."
+}

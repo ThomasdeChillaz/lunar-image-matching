@@ -1,0 +1,20 @@
+{
+  "integrated": true,
+  "scientific_jobs_started": false,
+  "scope": "Before first lunartraining: uniquephysicalpoint minibatches; commoncounterfactual-Sun discrimination; onecommonfinalPnP evenifallshorttrialsfail; explicitsingleOpenCVthread.",
+  "files": {
+    "solar_training_v63.py": "d79ce0a719a5e126de13320a48a3061c4d140d117faab98778821d78baf2a15a",
+    "solar_response_v63.py": "c677c17c3492006b89844c09c34848df78b20fd6c6b8c67a5afcb253963c26eb",
+    "solar_assignment_v63.py": "ebb84f4e04a1b037f427bdba4266fa776fdb1c32f7ba0518eaa24c5dbc592861",
+    "train_solar_response_v63.py": "7d46d072aeb57e51a626910b53b2fbb503bee10af44fdf5ffa231b2cc4d73f5b",
+    "test_unique_physical_pairs_v74.py": "d3f6e4832605c7e3c7acb713ac33de1543cc7e577fae2d38f24693b2550a728b",
+    "test_same_sun_discrimination_v74.py": "2b04d695a10cadd5a38e9f934230f76e3073d549bbfb6e3cfbb74e02cfa66322",
+    "test_final_only_rescue_v74.py": "0140c7294727ddd094f4c050f60d4ddd2324e316f0faeba7894c8e77b4ec0ce5"
+  },
+  "focused_checks": {
+    "new_tests_passed": 18,
+    "seconds": 1.98,
+    "existing_response_optimizer_compat_checks": 10,
+    "compat_seconds": 2.61
+  }
+}

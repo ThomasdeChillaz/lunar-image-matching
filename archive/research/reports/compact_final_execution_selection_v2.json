@@ -1,0 +1,1968 @@
+{
+  "rule": "Earliest completed valid artifact, with artifact ID breaking timestamp ties; no outcome-based choice.",
+  "recovery_protocol": "reports/compact_final_recovery_v2.json",
+  "selected": [
+    {
+      "method": "loma_b",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-0",
+      "artifact": {
+        "id": 13039419363,
+        "name": "compact-v2-test-loma_b-0",
+        "size_in_bytes": 1175952,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419363",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419363/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:06Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:06Z",
+        "digest": "sha256:61d35f4713f347875f226e95af2d1d785109d59011bfc8d70c34311b58e99ca5",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-0"
+    },
+    {
+      "method": "loma_b",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-1",
+      "artifact": {
+        "id": 13040725244,
+        "name": "compact-v2-test-loma_b-1",
+        "size_in_bytes": 804989,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040725244",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040725244/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:07Z",
+        "expires_at": "2026-11-30T10:58:07Z",
+        "updated_at": "2026-10-31T10:58:07Z",
+        "digest": "sha256:e4ba0c084cfd61a6cac3f2a2f3e3c9aed1052aea28920384264759cce06b4c16",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-1"
+    },
+    {
+      "method": "loma_b",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-2",
+      "artifact": {
+        "id": 13039184925,
+        "name": "compact-v2-test-loma_b-2",
+        "size_in_bytes": 1168446,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039184925",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039184925/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:48Z",
+        "expires_at": "2026-11-30T10:57:47Z",
+        "updated_at": "2026-10-31T10:57:48Z",
+        "digest": "sha256:941ad2dfe3f24f8dee7d6fba98be5f2c0be054d65c9c210efb5de65170fd3c72",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-2"
+    },
+    {
+      "method": "loma_b",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-3",
+      "artifact": {
+        "id": 13039419377,
+        "name": "compact-v2-test-loma_b-3",
+        "size_in_bytes": 887636,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419377",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419377/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:15Z",
+        "expires_at": "2026-11-30T10:58:14Z",
+        "updated_at": "2026-10-31T10:58:15Z",
+        "digest": "sha256:be0cfd12391aeca50d8c1b346f49888d30777009575338ef9e7eb395e15f7e73",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-3"
+    },
+    {
+      "method": "loma_b",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-4",
+      "artifact": {
+        "id": 13040375691,
+        "name": "compact-v2-test-loma_b-4",
+        "size_in_bytes": 1184686,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040375691",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040375691/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:58Z",
+        "expires_at": "2026-11-30T10:57:57Z",
+        "updated_at": "2026-10-31T10:57:58Z",
+        "digest": "sha256:29a0d0d2722f98d5b865876701bda089d193ed826a76e61c6604a679b8ef64a1",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-4"
+    },
+    {
+      "method": "loma_b",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-5",
+      "artifact": {
+        "id": 13040795164,
+        "name": "compact-v2-test-loma_b-5",
+        "size_in_bytes": 869300,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040795164",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040795164/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:07Z",
+        "expires_at": "2026-11-30T10:58:06Z",
+        "updated_at": "2026-10-31T10:58:07Z",
+        "digest": "sha256:adae926b9dbb697bee00e156c4340f2f2687e22305acbeefe4ac47026b8b817a",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-5"
+    },
+    {
+      "method": "loma_b",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-6",
+      "artifact": {
+        "id": 13040088989,
+        "name": "compact-v2-test-loma_b-6",
+        "size_in_bytes": 1154519,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040088989",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040088989/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:04Z",
+        "expires_at": "2026-11-30T10:58:03Z",
+        "updated_at": "2026-10-31T10:58:04Z",
+        "digest": "sha256:0396cb3641157350e96fb82956a426091d9987d3973de05770781bab2ade579d",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-6"
+    },
+    {
+      "method": "loma_b",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-7",
+      "artifact": {
+        "id": 13040675537,
+        "name": "compact-v2-test-loma_b-7",
+        "size_in_bytes": 806315,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040675537",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040675537/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:59:35Z",
+        "expires_at": "2026-11-30T10:59:34Z",
+        "updated_at": "2026-10-31T10:59:35Z",
+        "digest": "sha256:aa8f40c204201b8a6b30f88a23f3304462eae8ee6febee3d14e34beefef1a572",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-7"
+    },
+    {
+      "method": "loma_r",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-0",
+      "artifact": {
+        "id": 13039954751,
+        "name": "compact-v2-test-loma_r-0",
+        "size_in_bytes": 1091621,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039954751",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039954751/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:05Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:05Z",
+        "digest": "sha256:9934c254de426a8aa21653075d9463eea5c898023550f1e6a3c5adbfbe276632",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-0"
+    },
+    {
+      "method": "loma_r",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-1",
+      "artifact": {
+        "id": 13040295961,
+        "name": "compact-v2-test-loma_r-1",
+        "size_in_bytes": 816832,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040295961",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040295961/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:59Z",
+        "expires_at": "2026-11-30T10:57:58Z",
+        "updated_at": "2026-10-31T10:57:59Z",
+        "digest": "sha256:1f4563444a38ab802c4825a1f3d17bc1d071bc29ef77fadecbaa4e3136190825",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-1"
+    },
+    {
+      "method": "loma_r",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-2",
+      "artifact": {
+        "id": 13039204851,
+        "name": "compact-v2-test-loma_r-2",
+        "size_in_bytes": 1078456,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039204851",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039204851/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:58Z",
+        "expires_at": "2026-11-30T10:57:58Z",
+        "updated_at": "2026-10-31T10:57:58Z",
+        "digest": "sha256:5d586df32e467987f6ed58d04721627120c236158989928fda5ebf7ba0ba73eb",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-2"
+    },
+    {
+      "method": "loma_r",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-3",
+      "artifact": {
+        "id": 13040158683,
+        "name": "compact-v2-test-loma_r-3",
+        "size_in_bytes": 817892,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040158683",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040158683/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:05Z",
+        "expires_at": "2026-11-30T10:58:04Z",
+        "updated_at": "2026-10-31T10:58:05Z",
+        "digest": "sha256:35ba7eabd56b456484cf19e9097df0cd9a336c48e9fdc298c7b0bda52a1cbc9d",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-3"
+    },
+    {
+      "method": "loma_r",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-4",
+      "artifact": {
+        "id": 13040680289,
+        "name": "compact-v2-test-loma_r-4",
+        "size_in_bytes": 1121807,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040680289",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040680289/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:45Z",
+        "expires_at": "2026-11-30T10:57:44Z",
+        "updated_at": "2026-10-31T10:57:45Z",
+        "digest": "sha256:25367914c4da9273b33149356b6fbc2195c66c34f3874f0d6ea7c2e0f2a767b2",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-4"
+    },
+    {
+      "method": "loma_r",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-5",
+      "artifact": {
+        "id": 13039999651,
+        "name": "compact-v2-test-loma_r-5",
+        "size_in_bytes": 832867,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039999651",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039999651/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:06Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:06Z",
+        "digest": "sha256:99a1faaf960ef327e393a69e732494018f6267879a40d799c8bfc1e6f92304f9",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-5"
+    },
+    {
+      "method": "loma_r",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-6",
+      "artifact": {
+        "id": 13040365328,
+        "name": "compact-v2-test-loma_r-6",
+        "size_in_bytes": 1112364,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040365328",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040365328/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:22Z",
+        "expires_at": "2026-11-30T10:58:20Z",
+        "updated_at": "2026-10-31T10:58:22Z",
+        "digest": "sha256:98fb66d7bfda63203dca7fe98fcc3c911c16c43d4d1d3c4d3ebac8822a4cf84b",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-6"
+    },
+    {
+      "method": "loma_r",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-7",
+      "artifact": {
+        "id": 13040300915,
+        "name": "compact-v2-test-loma_r-7",
+        "size_in_bytes": 816377,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040300915",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040300915/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:13Z",
+        "expires_at": "2026-11-30T10:58:12Z",
+        "updated_at": "2026-10-31T10:58:13Z",
+        "digest": "sha256:8a7279dea78869192c704add078f387393f7f63071a3cc388f6ef15bc121f147",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-7"
+    },
+    {
+      "method": "matchanything",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-0",
+      "artifact": {
+        "id": 13039229988,
+        "name": "compact-v2-test-matchanything-0",
+        "size_in_bytes": 1332048,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039229988",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039229988/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:20Z",
+        "expires_at": "2026-11-30T11:00:19Z",
+        "updated_at": "2026-10-31T11:00:20Z",
+        "digest": "sha256:58593055105d402c13a5d71d0e774abd57bc0c7c5f8a4830b4d15726ac72197e",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-0"
+    },
+    {
+      "method": "matchanything",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-1",
+      "artifact": {
+        "id": 13039373244,
+        "name": "compact-v2-test-matchanything-1",
+        "size_in_bytes": 954028,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039373244",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039373244/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:42:50Z",
+        "expires_at": "2026-11-30T10:42:49Z",
+        "updated_at": "2026-10-31T10:42:50Z",
+        "digest": "sha256:2b487fe86f2fc19bc11df9e4a6411be53e3a6463b880ea3834dbf10bf9b87813",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-1"
+    },
+    {
+      "method": "matchanything",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-2",
+      "artifact": {
+        "id": 13041020054,
+        "name": "compact-v2-test-matchanything-2",
+        "size_in_bytes": 1339208,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041020054",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041020054/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:59:37Z",
+        "expires_at": "2026-11-30T10:59:37Z",
+        "updated_at": "2026-10-31T10:59:37Z",
+        "digest": "sha256:37f2e6abb92d2bb9ea3f7541ac064c58b31d39d800553c7b9025c0c6c30f3a2f",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-2"
+    },
+    {
+      "method": "matchanything",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-3",
+      "artifact": {
+        "id": 13039679366,
+        "name": "compact-v2-test-matchanything-3",
+        "size_in_bytes": 1055712,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039679366",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039679366/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:47:05Z",
+        "expires_at": "2026-11-30T10:47:04Z",
+        "updated_at": "2026-10-31T10:47:05Z",
+        "digest": "sha256:bca122ce4d9e73361ef5c7d17aaf8dde0b872ea3936222249ff9f64ad23a38ca",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-3"
+    },
+    {
+      "method": "matchanything",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-4",
+      "artifact": {
+        "id": 13038979700,
+        "name": "compact-v2-test-matchanything-4",
+        "size_in_bytes": 1336636,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13038979700",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13038979700/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:45:16Z",
+        "expires_at": "2026-11-30T10:45:15Z",
+        "updated_at": "2026-10-31T10:45:16Z",
+        "digest": "sha256:87076cff367e40d6a2c2efc1c719cac507881f811cd9427bb7b1838392bbc5bd",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-4"
+    },
+    {
+      "method": "matchanything",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-5",
+      "artifact": {
+        "id": 13040495380,
+        "name": "compact-v2-test-matchanything-5",
+        "size_in_bytes": 1050598,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040495380",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040495380/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:25Z",
+        "expires_at": "2026-11-30T11:00:24Z",
+        "updated_at": "2026-10-31T11:00:25Z",
+        "digest": "sha256:1348f116ffc10f60f443bcdba7d0ff597a8ed3d1b2d6cda57cdb6f14f633aadd",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-5"
+    },
+    {
+      "method": "matchanything",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-6",
+      "artifact": {
+        "id": 13039728470,
+        "name": "compact-v2-test-matchanything-6",
+        "size_in_bytes": 1374991,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039728470",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039728470/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:42:52Z",
+        "expires_at": "2026-11-30T10:42:51Z",
+        "updated_at": "2026-10-31T10:42:52Z",
+        "digest": "sha256:b6c14cb4057380820644a187357cbfd3292cae1e3c56280cfeea277e3b52b963",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-6"
+    },
+    {
+      "method": "matchanything",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-7",
+      "artifact": {
+        "id": 13040665286,
+        "name": "compact-v2-test-matchanything-7",
+        "size_in_bytes": 928106,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040665286",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040665286/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:06Z",
+        "expires_at": "2026-11-30T11:00:05Z",
+        "updated_at": "2026-10-31T11:00:06Z",
+        "digest": "sha256:a8545431e47d2396bf1c182470f85c6c8066b922087f59473f54450633ec9272",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-7"
+    },
+    {
+      "method": "roma",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-recovery-attempts/41193705916/compact-v2-test-roma-0",
+      "artifact": {
+        "id": 13041026794,
+        "name": "compact-v2-test-roma-0",
+        "size_in_bytes": 2707597,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041026794",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041026794/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:24:31Z",
+        "expires_at": "2026-11-30T11:24:30Z",
+        "updated_at": "2026-10-31T11:24:31Z",
+        "digest": "sha256:4c182e9356bbf23a20137d9dcacb9bba5de79484ad2b7492a81765c759713e2c",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/recovered/roma-0"
+    },
+    {
+      "method": "roma",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-1",
+      "artifact": {
+        "id": 13040118690,
+        "name": "compact-v2-test-roma-1",
+        "size_in_bytes": 2265912,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040118690",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040118690/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:56:44Z",
+        "expires_at": "2026-11-30T10:56:43Z",
+        "updated_at": "2026-10-31T10:56:44Z",
+        "digest": "sha256:c7bf80f107df3a01cc9615efe6ab35f0d787998eaba57cbb5429a61fbe415b7a",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-1"
+    },
+    {
+      "method": "roma",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-2",
+      "artifact": {
+        "id": 13041361177,
+        "name": "compact-v2-test-roma-2",
+        "size_in_bytes": 2626335,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041361177",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041361177/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:18:43Z",
+        "expires_at": "2026-11-30T11:18:42Z",
+        "updated_at": "2026-10-31T11:18:43Z",
+        "digest": "sha256:a476c83c91929fc5f8c6ef56da9d0a5537d40bd1d3331bf014b1ef86137a1bdc",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-2"
+    },
+    {
+      "method": "roma",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-3",
+      "artifact": {
+        "id": 13040835096,
+        "name": "compact-v2-test-roma-3",
+        "size_in_bytes": 2258949,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040835096",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040835096/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:01:41Z",
+        "expires_at": "2026-11-30T11:01:40Z",
+        "updated_at": "2026-10-31T11:01:41Z",
+        "digest": "sha256:ffdd1cd00dedf5039b35f0aafb19d31ca532c88059478b98101997add1fc73df",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-3"
+    },
+    {
+      "method": "roma",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-4",
+      "artifact": {
+        "id": 13040702179,
+        "name": "compact-v2-test-roma-4",
+        "size_in_bytes": 2487200,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040702179",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040702179/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:13:41Z",
+        "expires_at": "2026-11-30T11:13:40Z",
+        "updated_at": "2026-10-31T11:13:41Z",
+        "digest": "sha256:4d5d9cef4a43ff1c96996227e3cee25f3688bafa6917f664c6a43f1e4c520613",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-4"
+    },
+    {
+      "method": "roma",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-5",
+      "artifact": {
+        "id": 13040392599,
+        "name": "compact-v2-test-roma-5",
+        "size_in_bytes": 2265872,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040392599",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040392599/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:14:06Z",
+        "expires_at": "2026-11-30T11:14:05Z",
+        "updated_at": "2026-10-31T11:14:06Z",
+        "digest": "sha256:2ce6254dda3c479669c19a596df8d91b22e2ebfe47b3b613acc4fcdf405c2ada",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-5"
+    },
+    {
+      "method": "roma",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-6",
+      "artifact": {
+        "id": 13040651810,
+        "name": "compact-v2-test-roma-6",
+        "size_in_bytes": 2692920,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040651810",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040651810/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:52Z",
+        "expires_at": "2026-11-30T11:17:50Z",
+        "updated_at": "2026-10-31T11:17:52Z",
+        "digest": "sha256:5c663efbf75f6b66e59cd1d22b574ca85aaf96d2a3db63695e8a02a259c42814",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-6"
+    },
+    {
+      "method": "roma",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-recovery-attempts/41193705916/compact-v2-test-roma-7",
+      "artifact": {
+        "id": 13041186957,
+        "name": "compact-v2-test-roma-7",
+        "size_in_bytes": 2250106,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041186957",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041186957/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:29:07Z",
+        "expires_at": "2026-11-30T11:29:06Z",
+        "updated_at": "2026-10-31T11:29:07Z",
+        "digest": "sha256:e9e94b2c927a569473c7f9780d9ec27d31c506129d5d4f9723e22132b4993656",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/recovered/roma-7"
+    },
+    {
+      "method": "romav2",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-0",
+      "artifact": {
+        "id": 13040516798,
+        "name": "compact-v2-test-romav2-0",
+        "size_in_bytes": 1455063,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040516798",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040516798/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:03Z",
+        "expires_at": "2026-11-30T11:17:01Z",
+        "updated_at": "2026-10-31T11:17:03Z",
+        "digest": "sha256:43ec7fc1619f68611906f16eb75dd334b1409bc52f4d358c0a22405a8a3c64d9",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-0"
+    },
+    {
+      "method": "romav2",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-1",
+      "artifact": {
+        "id": 13041087125,
+        "name": "compact-v2-test-romav2-1",
+        "size_in_bytes": 1254401,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041087125",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041087125/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:13Z",
+        "expires_at": "2026-11-30T11:17:12Z",
+        "updated_at": "2026-10-31T11:17:13Z",
+        "digest": "sha256:5304d8f0bffa27ffd61dbf8dc93d95977e9fc9cf407d231b24a36ec4bd60790e",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-1"
+    },
+    {
+      "method": "romav2",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-2",
+      "artifact": {
+        "id": 13041306232,
+        "name": "compact-v2-test-romav2-2",
+        "size_in_bytes": 1459116,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041306232",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041306232/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:25Z",
+        "expires_at": "2026-11-30T11:17:24Z",
+        "updated_at": "2026-10-31T11:17:25Z",
+        "digest": "sha256:eb1b6dd8a352a4385a1eda6000ba8bee597539581aa5789c125d0f053acbe094",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-2"
+    },
+    {
+      "method": "romav2",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-3",
+      "artifact": {
+        "id": 13040597833,
+        "name": "compact-v2-test-romav2-3",
+        "size_in_bytes": 1307005,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040597833",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040597833/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:16:59Z",
+        "expires_at": "2026-11-30T11:16:58Z",
+        "updated_at": "2026-10-31T11:16:59Z",
+        "digest": "sha256:776694b7a879a4b94c122c27047a522b736cb86da18cd9f5ab3745a003dedb93",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-3"
+    },
+    {
+      "method": "romav2",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-4",
+      "artifact": {
+        "id": 13041291262,
+        "name": "compact-v2-test-romav2-4",
+        "size_in_bytes": 1457696,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041291262",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041291262/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:19Z",
+        "expires_at": "2026-11-30T11:17:18Z",
+        "updated_at": "2026-10-31T11:17:19Z",
+        "digest": "sha256:b2503a3bd71744e7b318176081b0ddb594e170c1f7aaac6fe2de921adee929e6",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-4"
+    },
+    {
+      "method": "romav2",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-5",
+      "artifact": {
+        "id": 13040288344,
+        "name": "compact-v2-test-romav2-5",
+        "size_in_bytes": 1318980,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040288344",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040288344/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:18Z",
+        "expires_at": "2026-11-30T11:17:17Z",
+        "updated_at": "2026-10-31T11:17:18Z",
+        "digest": "sha256:0e9377e01a68e930c09ca0fccab0dbd2f94b2613644d33dfd237f3aebb922b6c",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-5"
+    },
+    {
+      "method": "romav2",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-6",
+      "artifact": {
+        "id": 13040511915,
+        "name": "compact-v2-test-romav2-6",
+        "size_in_bytes": 1472575,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040511915",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040511915/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:25Z",
+        "expires_at": "2026-11-30T11:17:24Z",
+        "updated_at": "2026-10-31T11:17:25Z",
+        "digest": "sha256:ee5b0d16a95ba9082efb22f88605496baa0736cdf81b73249a51f72732ff4437",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-6"
+    },
+    {
+      "method": "romav2",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-7",
+      "artifact": {
+        "id": 13040522980,
+        "name": "compact-v2-test-romav2-7",
+        "size_in_bytes": 1318535,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040522980",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040522980/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:44Z",
+        "expires_at": "2026-11-30T11:17:43Z",
+        "updated_at": "2026-10-31T11:17:44Z",
+        "digest": "sha256:c7a1fb82c1fd253d3d09f2feab0b152eba9505f40bbe0321e3117f04dbd25328",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      },
+      "canonical_path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-7"
+    }
+  ],
+  "recovery_candidates": [
+    {
+      "method": "loma_b",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-0",
+      "artifact": {
+        "id": 13039419363,
+        "name": "compact-v2-test-loma_b-0",
+        "size_in_bytes": 1175952,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419363",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419363/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:06Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:06Z",
+        "digest": "sha256:61d35f4713f347875f226e95af2d1d785109d59011bfc8d70c34311b58e99ca5",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-1",
+      "artifact": {
+        "id": 13040725244,
+        "name": "compact-v2-test-loma_b-1",
+        "size_in_bytes": 804989,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040725244",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040725244/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:07Z",
+        "expires_at": "2026-11-30T10:58:07Z",
+        "updated_at": "2026-10-31T10:58:07Z",
+        "digest": "sha256:e4ba0c084cfd61a6cac3f2a2f3e3c9aed1052aea28920384264759cce06b4c16",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-2",
+      "artifact": {
+        "id": 13039184925,
+        "name": "compact-v2-test-loma_b-2",
+        "size_in_bytes": 1168446,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039184925",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039184925/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:48Z",
+        "expires_at": "2026-11-30T10:57:47Z",
+        "updated_at": "2026-10-31T10:57:48Z",
+        "digest": "sha256:941ad2dfe3f24f8dee7d6fba98be5f2c0be054d65c9c210efb5de65170fd3c72",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-3",
+      "artifact": {
+        "id": 13039419377,
+        "name": "compact-v2-test-loma_b-3",
+        "size_in_bytes": 887636,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419377",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039419377/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:15Z",
+        "expires_at": "2026-11-30T10:58:14Z",
+        "updated_at": "2026-10-31T10:58:15Z",
+        "digest": "sha256:be0cfd12391aeca50d8c1b346f49888d30777009575338ef9e7eb395e15f7e73",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-4",
+      "artifact": {
+        "id": 13040375691,
+        "name": "compact-v2-test-loma_b-4",
+        "size_in_bytes": 1184686,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040375691",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040375691/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:58Z",
+        "expires_at": "2026-11-30T10:57:57Z",
+        "updated_at": "2026-10-31T10:57:58Z",
+        "digest": "sha256:29a0d0d2722f98d5b865876701bda089d193ed826a76e61c6604a679b8ef64a1",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-5",
+      "artifact": {
+        "id": 13040795164,
+        "name": "compact-v2-test-loma_b-5",
+        "size_in_bytes": 869300,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040795164",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040795164/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:07Z",
+        "expires_at": "2026-11-30T10:58:06Z",
+        "updated_at": "2026-10-31T10:58:07Z",
+        "digest": "sha256:adae926b9dbb697bee00e156c4340f2f2687e22305acbeefe4ac47026b8b817a",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-6",
+      "artifact": {
+        "id": 13040088989,
+        "name": "compact-v2-test-loma_b-6",
+        "size_in_bytes": 1154519,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040088989",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040088989/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:04Z",
+        "expires_at": "2026-11-30T10:58:03Z",
+        "updated_at": "2026-10-31T10:58:04Z",
+        "digest": "sha256:0396cb3641157350e96fb82956a426091d9987d3973de05770781bab2ade579d",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_b",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_b-7",
+      "artifact": {
+        "id": 13040675537,
+        "name": "compact-v2-test-loma_b-7",
+        "size_in_bytes": 806315,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040675537",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040675537/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:59:35Z",
+        "expires_at": "2026-11-30T10:59:34Z",
+        "updated_at": "2026-10-31T10:59:35Z",
+        "digest": "sha256:aa8f40c204201b8a6b30f88a23f3304462eae8ee6febee3d14e34beefef1a572",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-0",
+      "artifact": {
+        "id": 13039954751,
+        "name": "compact-v2-test-loma_r-0",
+        "size_in_bytes": 1091621,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039954751",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039954751/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:05Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:05Z",
+        "digest": "sha256:9934c254de426a8aa21653075d9463eea5c898023550f1e6a3c5adbfbe276632",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-1",
+      "artifact": {
+        "id": 13040295961,
+        "name": "compact-v2-test-loma_r-1",
+        "size_in_bytes": 816832,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040295961",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040295961/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:59Z",
+        "expires_at": "2026-11-30T10:57:58Z",
+        "updated_at": "2026-10-31T10:57:59Z",
+        "digest": "sha256:1f4563444a38ab802c4825a1f3d17bc1d071bc29ef77fadecbaa4e3136190825",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-2",
+      "artifact": {
+        "id": 13039204851,
+        "name": "compact-v2-test-loma_r-2",
+        "size_in_bytes": 1078456,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039204851",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039204851/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:58Z",
+        "expires_at": "2026-11-30T10:57:58Z",
+        "updated_at": "2026-10-31T10:57:58Z",
+        "digest": "sha256:5d586df32e467987f6ed58d04721627120c236158989928fda5ebf7ba0ba73eb",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-3",
+      "artifact": {
+        "id": 13040158683,
+        "name": "compact-v2-test-loma_r-3",
+        "size_in_bytes": 817892,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040158683",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040158683/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:05Z",
+        "expires_at": "2026-11-30T10:58:04Z",
+        "updated_at": "2026-10-31T10:58:05Z",
+        "digest": "sha256:35ba7eabd56b456484cf19e9097df0cd9a336c48e9fdc298c7b0bda52a1cbc9d",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-4",
+      "artifact": {
+        "id": 13040680289,
+        "name": "compact-v2-test-loma_r-4",
+        "size_in_bytes": 1121807,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040680289",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040680289/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:57:45Z",
+        "expires_at": "2026-11-30T10:57:44Z",
+        "updated_at": "2026-10-31T10:57:45Z",
+        "digest": "sha256:25367914c4da9273b33149356b6fbc2195c66c34f3874f0d6ea7c2e0f2a767b2",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-5",
+      "artifact": {
+        "id": 13039999651,
+        "name": "compact-v2-test-loma_r-5",
+        "size_in_bytes": 832867,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039999651",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039999651/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:06Z",
+        "expires_at": "2026-11-30T10:58:05Z",
+        "updated_at": "2026-10-31T10:58:06Z",
+        "digest": "sha256:99a1faaf960ef327e393a69e732494018f6267879a40d799c8bfc1e6f92304f9",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-6",
+      "artifact": {
+        "id": 13040365328,
+        "name": "compact-v2-test-loma_r-6",
+        "size_in_bytes": 1112364,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040365328",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040365328/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:22Z",
+        "expires_at": "2026-11-30T10:58:20Z",
+        "updated_at": "2026-10-31T10:58:22Z",
+        "digest": "sha256:98fb66d7bfda63203dca7fe98fcc3c911c16c43d4d1d3c4d3ebac8822a4cf84b",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "loma_r",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-loma_r-7",
+      "artifact": {
+        "id": 13040300915,
+        "name": "compact-v2-test-loma_r-7",
+        "size_in_bytes": 816377,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040300915",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040300915/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:58:13Z",
+        "expires_at": "2026-11-30T10:58:12Z",
+        "updated_at": "2026-10-31T10:58:13Z",
+        "digest": "sha256:8a7279dea78869192c704add078f387393f7f63071a3cc388f6ef15bc121f147",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-0",
+      "artifact": {
+        "id": 13040516798,
+        "name": "compact-v2-test-romav2-0",
+        "size_in_bytes": 1455063,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040516798",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040516798/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:03Z",
+        "expires_at": "2026-11-30T11:17:01Z",
+        "updated_at": "2026-10-31T11:17:03Z",
+        "digest": "sha256:43ec7fc1619f68611906f16eb75dd334b1409bc52f4d358c0a22405a8a3c64d9",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-1",
+      "artifact": {
+        "id": 13041087125,
+        "name": "compact-v2-test-romav2-1",
+        "size_in_bytes": 1254401,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041087125",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041087125/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:13Z",
+        "expires_at": "2026-11-30T11:17:12Z",
+        "updated_at": "2026-10-31T11:17:13Z",
+        "digest": "sha256:5304d8f0bffa27ffd61dbf8dc93d95977e9fc9cf407d231b24a36ec4bd60790e",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-2",
+      "artifact": {
+        "id": 13041306232,
+        "name": "compact-v2-test-romav2-2",
+        "size_in_bytes": 1459116,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041306232",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041306232/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:25Z",
+        "expires_at": "2026-11-30T11:17:24Z",
+        "updated_at": "2026-10-31T11:17:25Z",
+        "digest": "sha256:eb1b6dd8a352a4385a1eda6000ba8bee597539581aa5789c125d0f053acbe094",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-3",
+      "artifact": {
+        "id": 13040597833,
+        "name": "compact-v2-test-romav2-3",
+        "size_in_bytes": 1307005,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040597833",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040597833/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:16:59Z",
+        "expires_at": "2026-11-30T11:16:58Z",
+        "updated_at": "2026-10-31T11:16:59Z",
+        "digest": "sha256:776694b7a879a4b94c122c27047a522b736cb86da18cd9f5ab3745a003dedb93",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-4",
+      "artifact": {
+        "id": 13041291262,
+        "name": "compact-v2-test-romav2-4",
+        "size_in_bytes": 1457696,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041291262",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041291262/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:19Z",
+        "expires_at": "2026-11-30T11:17:18Z",
+        "updated_at": "2026-10-31T11:17:19Z",
+        "digest": "sha256:b2503a3bd71744e7b318176081b0ddb594e170c1f7aaac6fe2de921adee929e6",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-5",
+      "artifact": {
+        "id": 13040288344,
+        "name": "compact-v2-test-romav2-5",
+        "size_in_bytes": 1318980,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040288344",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040288344/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:18Z",
+        "expires_at": "2026-11-30T11:17:17Z",
+        "updated_at": "2026-10-31T11:17:18Z",
+        "digest": "sha256:0e9377e01a68e930c09ca0fccab0dbd2f94b2613644d33dfd237f3aebb922b6c",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-6",
+      "artifact": {
+        "id": 13040511915,
+        "name": "compact-v2-test-romav2-6",
+        "size_in_bytes": 1472575,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040511915",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040511915/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:25Z",
+        "expires_at": "2026-11-30T11:17:24Z",
+        "updated_at": "2026-10-31T11:17:25Z",
+        "digest": "sha256:ee5b0d16a95ba9082efb22f88605496baa0736cdf81b73249a51f72732ff4437",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "romav2",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193605011/compact-v2-test-romav2-7",
+      "artifact": {
+        "id": 13040522980,
+        "name": "compact-v2-test-romav2-7",
+        "size_in_bytes": 1318535,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040522980",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040522980/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:44Z",
+        "expires_at": "2026-11-30T11:17:43Z",
+        "updated_at": "2026-10-31T11:17:44Z",
+        "digest": "sha256:c7a1fb82c1fd253d3d09f2feab0b152eba9505f40bbe0321e3117f04dbd25328",
+        "workflow_run": {
+          "id": 41193605011,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-0",
+      "artifact": {
+        "id": 13039229988,
+        "name": "compact-v2-test-matchanything-0",
+        "size_in_bytes": 1332048,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039229988",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039229988/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:20Z",
+        "expires_at": "2026-11-30T11:00:19Z",
+        "updated_at": "2026-10-31T11:00:20Z",
+        "digest": "sha256:58593055105d402c13a5d71d0e774abd57bc0c7c5f8a4830b4d15726ac72197e",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-1",
+      "artifact": {
+        "id": 13039373244,
+        "name": "compact-v2-test-matchanything-1",
+        "size_in_bytes": 954028,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039373244",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039373244/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:42:50Z",
+        "expires_at": "2026-11-30T10:42:49Z",
+        "updated_at": "2026-10-31T10:42:50Z",
+        "digest": "sha256:2b487fe86f2fc19bc11df9e4a6411be53e3a6463b880ea3834dbf10bf9b87813",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-2",
+      "artifact": {
+        "id": 13041020054,
+        "name": "compact-v2-test-matchanything-2",
+        "size_in_bytes": 1339208,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041020054",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041020054/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:59:37Z",
+        "expires_at": "2026-11-30T10:59:37Z",
+        "updated_at": "2026-10-31T10:59:37Z",
+        "digest": "sha256:37f2e6abb92d2bb9ea3f7541ac064c58b31d39d800553c7b9025c0c6c30f3a2f",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-3",
+      "artifact": {
+        "id": 13039679366,
+        "name": "compact-v2-test-matchanything-3",
+        "size_in_bytes": 1055712,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039679366",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039679366/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:47:05Z",
+        "expires_at": "2026-11-30T10:47:04Z",
+        "updated_at": "2026-10-31T10:47:05Z",
+        "digest": "sha256:bca122ce4d9e73361ef5c7d17aaf8dde0b872ea3936222249ff9f64ad23a38ca",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-4",
+      "artifact": {
+        "id": 13038979700,
+        "name": "compact-v2-test-matchanything-4",
+        "size_in_bytes": 1336636,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13038979700",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13038979700/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:45:16Z",
+        "expires_at": "2026-11-30T10:45:15Z",
+        "updated_at": "2026-10-31T10:45:16Z",
+        "digest": "sha256:87076cff367e40d6a2c2efc1c719cac507881f811cd9427bb7b1838392bbc5bd",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-5",
+      "artifact": {
+        "id": 13040495380,
+        "name": "compact-v2-test-matchanything-5",
+        "size_in_bytes": 1050598,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040495380",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040495380/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:25Z",
+        "expires_at": "2026-11-30T11:00:24Z",
+        "updated_at": "2026-10-31T11:00:25Z",
+        "digest": "sha256:1348f116ffc10f60f443bcdba7d0ff597a8ed3d1b2d6cda57cdb6f14f633aadd",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-6",
+      "artifact": {
+        "id": 13039728470,
+        "name": "compact-v2-test-matchanything-6",
+        "size_in_bytes": 1374991,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039728470",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13039728470/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:42:52Z",
+        "expires_at": "2026-11-30T10:42:51Z",
+        "updated_at": "2026-10-31T10:42:52Z",
+        "digest": "sha256:b6c14cb4057380820644a187357cbfd3292cae1e3c56280cfeea277e3b52b963",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "matchanything",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-matchanything-7",
+      "artifact": {
+        "id": 13040665286,
+        "name": "compact-v2-test-matchanything-7",
+        "size_in_bytes": 928106,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040665286",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040665286/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:00:06Z",
+        "expires_at": "2026-11-30T11:00:05Z",
+        "updated_at": "2026-10-31T11:00:06Z",
+        "digest": "sha256:a8545431e47d2396bf1c182470f85c6c8066b922087f59473f54450633ec9272",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 1,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-1",
+      "artifact": {
+        "id": 13040118690,
+        "name": "compact-v2-test-roma-1",
+        "size_in_bytes": 2265912,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040118690",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040118690/zip",
+        "expired": false,
+        "created_at": "2026-10-31T10:56:44Z",
+        "expires_at": "2026-11-30T10:56:43Z",
+        "updated_at": "2026-10-31T10:56:44Z",
+        "digest": "sha256:c7bf80f107df3a01cc9615efe6ab35f0d787998eaba57cbb5429a61fbe415b7a",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 2,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-2",
+      "artifact": {
+        "id": 13041361177,
+        "name": "compact-v2-test-roma-2",
+        "size_in_bytes": 2626335,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041361177",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041361177/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:18:43Z",
+        "expires_at": "2026-11-30T11:18:42Z",
+        "updated_at": "2026-10-31T11:18:43Z",
+        "digest": "sha256:a476c83c91929fc5f8c6ef56da9d0a5537d40bd1d3331bf014b1ef86137a1bdc",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 3,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-3",
+      "artifact": {
+        "id": 13040835096,
+        "name": "compact-v2-test-roma-3",
+        "size_in_bytes": 2258949,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040835096",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040835096/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:01:41Z",
+        "expires_at": "2026-11-30T11:01:40Z",
+        "updated_at": "2026-10-31T11:01:41Z",
+        "digest": "sha256:ffdd1cd00dedf5039b35f0aafb19d31ca532c88059478b98101997add1fc73df",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 4,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-4",
+      "artifact": {
+        "id": 13040702179,
+        "name": "compact-v2-test-roma-4",
+        "size_in_bytes": 2487200,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040702179",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040702179/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:13:41Z",
+        "expires_at": "2026-11-30T11:13:40Z",
+        "updated_at": "2026-10-31T11:13:41Z",
+        "digest": "sha256:4d5d9cef4a43ff1c96996227e3cee25f3688bafa6917f664c6a43f1e4c520613",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 5,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-5",
+      "artifact": {
+        "id": 13040392599,
+        "name": "compact-v2-test-roma-5",
+        "size_in_bytes": 2265872,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040392599",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040392599/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:14:06Z",
+        "expires_at": "2026-11-30T11:14:05Z",
+        "updated_at": "2026-10-31T11:14:06Z",
+        "digest": "sha256:2ce6254dda3c479669c19a596df8d91b22e2ebfe47b3b613acc4fcdf405c2ada",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 6,
+      "path": "runs/compact-v2-modern-test-executions/41193705916/compact-v2-test-roma-6",
+      "artifact": {
+        "id": 13040651810,
+        "name": "compact-v2-test-roma-6",
+        "size_in_bytes": 2692920,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040651810",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13040651810/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:17:52Z",
+        "expires_at": "2026-11-30T11:17:50Z",
+        "updated_at": "2026-10-31T11:17:52Z",
+        "digest": "sha256:5c663efbf75f6b66e59cd1d22b574ca85aaf96d2a3db63695e8a02a259c42814",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 0,
+      "path": "runs/compact-v2-modern-test-recovery-attempts/41193705916/compact-v2-test-roma-0",
+      "artifact": {
+        "id": 13041026794,
+        "name": "compact-v2-test-roma-0",
+        "size_in_bytes": 2707597,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041026794",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041026794/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:24:31Z",
+        "expires_at": "2026-11-30T11:24:30Z",
+        "updated_at": "2026-10-31T11:24:31Z",
+        "digest": "sha256:4c182e9356bbf23a20137d9dcacb9bba5de79484ad2b7492a81765c759713e2c",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    },
+    {
+      "method": "roma",
+      "shard": 7,
+      "path": "runs/compact-v2-modern-test-recovery-attempts/41193705916/compact-v2-test-roma-7",
+      "artifact": {
+        "id": 13041186957,
+        "name": "compact-v2-test-roma-7",
+        "size_in_bytes": 2250106,
+        "url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041186957",
+        "archive_download_url": "https://api.github.com/repos/ThomasdeChillaz/lunar-image-matching/actions/artifacts/13041186957/zip",
+        "expired": false,
+        "created_at": "2026-10-31T11:29:07Z",
+        "expires_at": "2026-11-30T11:29:06Z",
+        "updated_at": "2026-10-31T11:29:07Z",
+        "digest": "sha256:e9e94b2c927a569473c7f9780d9ec27d31c506129d5d4f9723e22132b4993656",
+        "workflow_run": {
+          "id": 41193705916,
+          "repository_id": 1433662384,
+          "head_repository_id": 1433662384,
+          "head_branch": "main",
+          "head_sha": "e78f8eb6bcb6e29f2bd615f3f4c3f6ed6f0831fa"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "captured_utc": "2026-11-04T05:44:52.603339+00:00",
+  "read_only": true,
+  "existing_validate_reference_passed": true,
+  "unit_index": 12,
+  "archive": "runs/solar-reference-v80-full/references/u012.npz",
+  "archive_sha256": "2bf8c63fb43336d5127f9a4285b274dc4c846da63c989d970d5841ddf1bc77a9",
+  "archive_bytes": 1931596,
+  "reference_depth_shape": [
+    512,
+    512
+  ],
+  "anchor_count": 256,
+  "height_variants_metres": [
+    0.0,
+    -5.0,
+    5.0,
+    -10.0,
+    10.0,
+    -20.0,
+    20.0
+  ],
+  "sun_columns": 1627,
+  "coarse_columns": 221,
+  "materialized_columns": 1627,
+  "all_generic_columns_materialized": true,
+  "uncomputed_columns": 0,
+  "native_anchor_extent": {
+    "minimum": [
+      49.5,
+      49.5
+    ],
+    "maximum": [
+      449.5,
+      449.5
+    ],
+    "anchors_per_quadrant": [
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "solar_state_summary": {
+    "total": 2915584,
+    "counts": {
+      "unknown": 390645,
+      "clear": 51613,
+      "shadow": 2473326
+    },
+    "ratios": {
+      "unknown": 0.133985163864255,
+      "clear": 0.017702456866274474,
+      "shadow": 0.8483123792694706
+    }
+  },
+  "nominal_states": {
+    "total": 416512,
+    "counts": {
+      "unknown": 55891,
+      "clear": 7430,
+      "shadow": 353191
+    },
+    "ratios": {
+      "unknown": 0.1341882106637984,
+      "clear": 0.017838621696373694,
+      "shadow": 0.8479731676398279
+    }
+  },
+  "per_height": [
+    {
+      "height_shift_metres": 0.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 55891,
+        "clear": 7430,
+        "shadow": 353191
+      },
+      "ratios": {
+        "unknown": 0.1341882106637984,
+        "clear": 0.017838621696373694,
+        "shadow": 0.8479731676398279
+      },
+      "potential_support": {
+        "minimum_known_anchors": 87,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": -5.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 56041,
+        "clear": 7360,
+        "shadow": 353111
+      },
+      "ratios": {
+        "unknown": 0.134548344345421,
+        "clear": 0.01767055931161647,
+        "shadow": 0.8477810963429625
+      },
+      "potential_support": {
+        "minimum_known_anchors": 87,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": 5.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 55629,
+        "clear": 7393,
+        "shadow": 353490
+      },
+      "ratios": {
+        "unknown": 0.13355917716656424,
+        "clear": 0.01774978872157345,
+        "shadow": 0.8486910341118623
+      },
+      "potential_support": {
+        "minimum_known_anchors": 86,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": -10.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 56291,
+        "clear": 7396,
+        "shadow": 352825
+      },
+      "ratios": {
+        "unknown": 0.13514856714812537,
+        "clear": 0.0177569913952059,
+        "shadow": 0.8470944414566687
+      },
+      "potential_support": {
+        "minimum_known_anchors": 85,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": 10.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 56083,
+        "clear": 7374,
+        "shadow": 353055
+      },
+      "ratios": {
+        "unknown": 0.13464918177627536,
+        "clear": 0.017704171788567917,
+        "shadow": 0.8476466464351567
+      },
+      "potential_support": {
+        "minimum_known_anchors": 83,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": -20.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 55547,
+        "clear": 7386,
+        "shadow": 353579
+      },
+      "ratios": {
+        "unknown": 0.1333623040872772,
+        "clear": 0.017732982483097726,
+        "shadow": 0.848904713429625
+      },
+      "potential_support": {
+        "minimum_known_anchors": 84,
+        "median_known_anchors": 255.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    },
+    {
+      "height_shift_metres": 20.0,
+      "total": 416512,
+      "counts": {
+        "unknown": 55163,
+        "clear": 7274,
+        "shadow": 354075
+      },
+      "ratios": {
+        "unknown": 0.1324403618623233,
+        "clear": 0.01746408266748617,
+        "shadow": 0.8500955554701906
+      },
+      "potential_support": {
+        "minimum_known_anchors": 82,
+        "median_known_anchors": 256.0,
+        "maximum_known_anchors": 256,
+        "columns_with_32_known_anchors_and_4_regions": 1627,
+        "columns": 1627
+      }
+    }
+  ],
+  "potential_support_every_height": {
+    "minimum_known_anchors": 74,
+    "median_known_anchors": 254.0,
+    "maximum_known_anchors": 256,
+    "columns_with_32_known_anchors_and_4_regions": 1627,
+    "columns": 1627
+  },
+  "stable_known_state_support_every_height": {
+    "minimum_known_anchors": 74,
+    "median_known_anchors": 252.0,
+    "maximum_known_anchors": 256,
+    "columns_with_32_known_anchors_and_4_regions": 1627,
+    "columns": 1627
+  },
+  "columns_with_both_clear_and_shadow_nominal": 116,
+  "anchors_with_both_clear_and_shadow_somewhere_in_catalogue": 184,
+  "predeclared24lighting_columns": [
+    {
+      "light_index": 0,
+      "sun_column": 1485,
+      "nominal_known": 109,
+      "nominal_clear": 0,
+      "nominal_shadow": 109,
+      "all7_known": 101,
+      "all7_same_known_state": 101
+    },
+    {
+      "light_index": 1,
+      "sun_column": 1491,
+      "nominal_known": 113,
+      "nominal_clear": 0,
+      "nominal_shadow": 113,
+      "all7_known": 103,
+      "all7_same_known_state": 103
+    },
+    {
+      "light_index": 2,
+      "sun_column": 1497,
+      "nominal_known": 113,
+      "nominal_clear": 0,
+      "nominal_shadow": 113,
+      "all7_known": 103,
+      "all7_same_known_state": 103
+    },
+    {
+      "light_index": 3,
+      "sun_column": 1503,
+      "nominal_known": 117,
+      "nominal_clear": 0,
+      "nominal_shadow": 117,
+      "all7_known": 111,
+      "all7_same_known_state": 111
+    },
+    {
+      "light_index": 4,
+      "sun_column": 1509,
+      "nominal_known": 124,
+      "nominal_clear": 0,
+      "nominal_shadow": 124,
+      "all7_known": 118,
+      "all7_same_known_state": 118
+    },
+    {
+      "light_index": 5,
+      "sun_column": 1515,
+      "nominal_known": 184,
+      "nominal_clear": 57,
+      "nominal_shadow": 127,
+      "all7_known": 181,
+      "all7_same_known_state": 171
+    },
+    {
+      "light_index": 6,
+      "sun_column": 1521,
+      "nominal_known": 256,
+      "nominal_clear": 121,
+      "nominal_shadow": 135,
+      "all7_known": 256,
+      "all7_same_known_state": 242
+    },
+    {
+      "light_index": 7,
+      "sun_column": 1527,
+      "nominal_known": 256,
+      "nominal_clear": 109,
+      "nominal_shadow": 147,
+      "all7_known": 256,
+      "all7_same_known_state": 237
+    },
+    {
+      "light_index": 8,
+      "sun_column": 1533,
+      "nominal_known": 250,
+      "nominal_clear": 100,
+      "nominal_shadow": 150,
+      "all7_known": 248,
+      "all7_same_known_state": 237
+    },
+    {
+      "light_index": 9,
+      "sun_column": 1539,
+      "nominal_known": 227,
+      "nominal_clear": 67,
+      "nominal_shadow": 160,
+      "all7_known": 221,
+      "all7_same_known_state": 217
+    },
+    {
+      "light_index": 10,
+      "sun_column": 1545,
+      "nominal_known": 213,
+      "nominal_clear": 43,
+      "nominal_shadow": 170,
+      "all7_known": 207,
+      "all7_same_known_state": 203
+    },
+    {
+      "light_index": 11,
+      "sun_column": 1551,
+      "nominal_known": 217,
+      "nominal_clear": 29,
+      "nominal_shadow": 188,
+      "all7_known": 210,
+      "all7_same_known_state": 209
+    },
+    {
+      "light_index": 12,
+      "sun_column": 1557,
+      "nominal_known": 209,
+      "nominal_clear": 29,
+      "nominal_shadow": 180,
+      "all7_known": 203,
+      "all7_same_known_state": 202
+    },
+    {
+      "light_index": 13,
+      "sun_column": 1563,
+      "nominal_known": 227,
+      "nominal_clear": 43,
+      "nominal_shadow": 184,
+      "all7_known": 220,
+      "all7_same_known_state": 217
+    },
+    {
+      "light_index": 14,
+      "sun_column": 1569,
+      "nominal_known": 244,
+      "nominal_clear": 61,
+      "nominal_shadow": 183,
+      "all7_known": 241,
+      "all7_same_known_state": 237
+    },
+    {
+      "light_index": 15,
+      "sun_column": 1575,
+      "nominal_known": 253,
+      "nominal_clear": 80,
+      "nominal_shadow": 173,
+      "all7_known": 252,
+      "all7_same_known_state": 240
+    },
+    {
+      "light_index": 16,
+      "sun_column": 1581,
+      "nominal_known": 256,
+      "nominal_clear": 98,
+      "nominal_shadow": 158,
+      "all7_known": 256,
+      "all7_same_known_state": 240
+    },
+    {
+      "light_index": 17,
+      "sun_column": 1587,
+      "nominal_known": 256,
+      "nominal_clear": 102,
+      "nominal_shadow": 154,
+      "all7_known": 256,
+      "all7_same_known_state": 241
+    },
+    {
+      "light_index": 18,
+      "sun_column": 1593,
+      "nominal_known": 206,
+      "nominal_clear": 67,
+      "nominal_shadow": 139,
+      "all7_known": 204,
+      "all7_same_known_state": 194
+    },
+    {
+      "light_index": 19,
+      "sun_column": 1599,
+      "nominal_known": 119,
+      "nominal_clear": 0,
+      "nominal_shadow": 119,
+      "all7_known": 111,
+      "all7_same_known_state": 111
+    },
+    {
+      "light_index": 20,
+      "sun_column": 1605,
+      "nominal_known": 109,
+      "nominal_clear": 0,
+      "nominal_shadow": 109,
+      "all7_known": 100,
+      "all7_same_known_state": 100
+    },
+    {
+      "light_index": 21,
+      "sun_column": 1611,
+      "nominal_known": 93,
+      "nominal_clear": 0,
+      "nominal_shadow": 93,
+      "all7_known": 83,
+      "all7_same_known_state": 83
+    },
+    {
+      "light_index": 22,
+      "sun_column": 1617,
+      "nominal_known": 90,
+      "nominal_clear": 0,
+      "nominal_shadow": 90,
+      "all7_known": 79,
+      "all7_same_known_state": 79
+    },
+    {
+      "light_index": 23,
+      "sun_column": 1623,
+      "nominal_known": 89,
+      "nominal_clear": 0,
+      "nominal_shadow": 89,
+      "all7_known": 78,
+      "all7_same_known_state": 78
+    }
+  ],
+  "support_limit": "Map-only potential support, not actual solar_supported. Solver also needs confident query shadow observations, selected native measurements/assignment support, >=32 informative anchors and four regions. Dominant shadow states can weaken Sun discriminability even when known counts are high.",
+  "timing": {
+    "internal_ray_seconds": 126.24964999197982,
+    "external_child_seconds": 128.34552355099004,
+    "whole_phase_seconds": 128.46407727099722,
+    "reserved_phase_cap_seconds": 1020,
+    "child_cap_seconds": 900,
+    "query_truth_used": false,
+    "neural_forwards": 0
+  },
+  "budget_projection": {
+    "reference_four_frozen_cap_seconds": 891,
+    "reference_four_recomputed_cap_seconds": 891,
+    "remaining28_projection_at_observed_peak_seconds": 7308,
+    "two_metadata_caps_seconds": 1200,
+    "total_fixed_cap_projection_seconds": 10419,
+    "original_ceiling_seconds": 12000,
+    "margin_seconds": 1581,
+    "fits_at_current_observed_cost": true,
+    "maximum_four_pilot_peak_to_fit_original_ceiling_seconds": 156.58928571428572,
+    "limitation": "Remaining28 admission must use actual maximum of all four pilot references. Current one-reference projection is not a promise of full cost."
+  },
+  "original_preparation_deadline_utc": "2026-11-05T00:00:00+00:00",
+  "reference_four_latest_start_utc": "2026-11-04T06:11:04.876086+00:00",
+  "reference_four_absolute_deadline_utc": "2026-11-04T06:25:55.876086+00:00",
+  "no_ceiling_or_deadline_change": true,
+  "source_or_protocol_edits": false,
+  "jobs_launched": false,
+  "rays_cast": false,
+  "images_or_nn": false
+}

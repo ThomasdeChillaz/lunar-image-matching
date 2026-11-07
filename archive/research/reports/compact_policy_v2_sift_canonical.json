@@ -1,0 +1,79 @@
+{
+  "feature_names": [
+    "estimated",
+    "support_log",
+    "support_fraction",
+    "spatial_fraction",
+    "median_residual",
+    "descriptor_margin",
+    "matchability",
+    "reverse_cycle"
+  ],
+  "mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    10.0,
+    0.0,
+    0.0,
+    10.0
+  ],
+  "scale": [
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01
+  ],
+  "weights": [
+    -3.8549185830166772,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "l2": 0.01,
+  "iterations": 1000,
+  "fitted_split": "model_selection",
+  "threshold": 1.000001,
+  "counts": {
+    "positives": 12,
+    "negatives": 12,
+    "correct_accepted": 0,
+    "wrong_accepted": 0,
+    "negative_accepted": 0,
+    "correct_acceptance": 0.0,
+    "accepted_error": 0.0,
+    "negative_acceptance": 0.0
+  },
+  "calibrated_split": "calibration",
+  "curve": [
+    {
+      "threshold": 1.000001,
+      "positives": 12,
+      "negatives": 12,
+      "correct_accepted": 0,
+      "wrong_accepted": 0,
+      "negative_accepted": 0,
+      "correct_acceptance": 0.0,
+      "accepted_error": 0.0,
+      "negative_acceptance": 0.0
+    }
+  ],
+  "warning": "Empirical operating point; no deployment risk guarantee",
+  "selection_results_sha256": "13e0d76344589206f968e0560f2f8179fe6c0c77faea592502d147858739baf3",
+  "calibration_results_sha256": "3d75d94f6ebe4dd140e252cfa0e50b6a2e46b252c81163feed7a018a366a0a5a",
+  "method": "sift",
+  "model": null,
+  "confidence_fit_cases": 24,
+  "calibration_cases": 24,
+  "budget_note": "Same metadata-selected common cases for every method. Small calibration sample gives no1percent risk guarantee."
+}

@@ -1,0 +1,589 @@
+{
+  "schema": "joint_correlation_potential_results_v135",
+  "passed": true,
+  "protocol_sha256": "cc5a343e56de503792700c6227cde5ce2ae9c54bb64f79232a6abf27b54e0a41",
+  "predictions_sha256": "1a6d30fcd24883275b194e0eccfcfe1040625fdfd7f9d62929e8ecc25ae87cc8",
+  "method_case_cells": 192,
+  "positive_pairs": 4,
+  "negative_pairs": 4,
+  "terrain_components": [
+    "np31-r0-c4",
+    "np31-r1-c0",
+    "np31-r3-c3"
+  ],
+  "hard_control_exact": true,
+  "cached20_controls_exact": true,
+  "calibration_or_final_access": false,
+  "accepted_pose_study": false,
+  "complete_inference_latency_measured": false,
+  "methods": {
+    "hard": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 27,
+      "native_one_pixel_matches": 22,
+      "native_two_pixel_matches": 25,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9,
+      "median_conditional_stage_seconds": 1.8251735804660711
+    },
+    "joint": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 24,
+      "native_one_pixel_matches": 23,
+      "native_two_pixel_matches": 23,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9,
+      "median_conditional_stage_seconds": 1.8442555829824414
+    },
+    "joint_camera_proposal": {
+      "correct": 2,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        78.33333333333326
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9,
+      "median_conditional_stage_seconds": 1.7631655259756371
+    },
+    "cached_legacy": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_halo": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_pooled_uniform": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 3,
+      "native_one_pixel_matches": 1,
+      "native_two_pixel_matches": 1,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_pooled_parallax": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 4,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 1,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_direct": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 467,
+      "native_one_pixel_matches": 445,
+      "native_two_pixel_matches": 453,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_shared_camera_pooled_uniform": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 10,
+      "native_one_pixel_matches": 8,
+      "native_two_pixel_matches": 10,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_shared_camera_pooled_parallax": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 10,
+      "native_one_pixel_matches": 8,
+      "native_two_pixel_matches": 10,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_native_plane_integer": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 27,
+      "native_one_pixel_matches": 20,
+      "native_two_pixel_matches": 24,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_native_plane_subpixel": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 26,
+      "native_one_pixel_matches": 21,
+      "native_two_pixel_matches": 24,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_native_terrain_subpixel": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 27,
+      "native_one_pixel_matches": 22,
+      "native_two_pixel_matches": 25,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_legacy": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_halo": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_pooled_uniform": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 3,
+      "native_one_pixel_matches": 1,
+      "native_two_pixel_matches": 1,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_pooled_parallax": {
+      "correct": 0,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 0,
+      "matches": 4,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 1,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": -25.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        -78.33333333333334,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_direct": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 467,
+      "native_one_pixel_matches": 445,
+      "native_two_pixel_matches": 453,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_shared_camera_pooled_uniform": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 10,
+      "native_one_pixel_matches": 8,
+      "native_two_pixel_matches": 10,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_shared_camera_pooled_parallax": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 1,
+      "matches": 10,
+      "native_one_pixel_matches": 8,
+      "native_two_pixel_matches": 10,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_native_plane_integer": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 27,
+      "native_one_pixel_matches": 20,
+      "native_two_pixel_matches": 24,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_native_plane_subpixel": {
+      "correct": 1,
+      "strict": 0,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 26,
+      "native_one_pixel_matches": 21,
+      "native_two_pixel_matches": 24,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_framed_native_terrain_subpixel": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 1,
+      "raw_nonoverlap": 0,
+      "returned_positive_poses": 2,
+      "matches": 27,
+      "native_one_pixel_matches": 22,
+      "native_two_pixel_matches": 25,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        0.0
+      ],
+      "negative_draws_without_edges": 9
+    },
+    "cached_camera_proposal": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 2,
+      "returned_positive_poses": 3,
+      "matches": 0,
+      "native_one_pixel_matches": 0,
+      "native_two_pixel_matches": 0,
+      "paired_against": "cached_framed_direct",
+      "paired_difference_pp": 0.0,
+      "descriptive_terrain_95pct_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "negative_endpoint_interval": [
+        0.0,
+        1.0
+      ],
+      "negative_draws_without_edges": 9
+    }
+  },
+  "preliminary_signal": false,
+  "strongest_completed_control_correct": 1,
+  "by_condition": {
+    "0": {
+      "hard": {
+        "correct": 0,
+        "wrong": 1
+      },
+      "joint": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "cached_framed_direct": {
+        "correct": 0,
+        "wrong": 0
+      }
+    },
+    "1": {
+      "hard": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "joint": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "cached_framed_direct": {
+        "correct": 1,
+        "wrong": 0
+      }
+    },
+    "2": {
+      "hard": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "joint": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "cached_framed_direct": {
+        "correct": 0,
+        "wrong": 0
+      }
+    },
+    "3": {
+      "hard": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "joint": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "cached_framed_direct": {
+        "correct": 0,
+        "wrong": 0
+      }
+    }
+  },
+  "interpretation_limits": "Four consumed positive conditions on three terrains, matching light supplied, cached predicted initializer. Conditional grid correspondences are not independent landmarks. No1% risk, full-runtime, learned-gain, novelty or final-test claim."
+}

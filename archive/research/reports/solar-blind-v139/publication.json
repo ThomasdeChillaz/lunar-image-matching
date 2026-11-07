@@ -1,0 +1,40 @@
+{
+  "release_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/solar-blind-v139-cost-gate",
+  "release_tag_commit": "fe2354340392949c163c14be00f7a0ff7484f745",
+  "public_parts": [
+    {
+      "name": "solar-blind-v139-clean-evidence-part1.zip",
+      "bytes": 54222487,
+      "sha256": "cdf3f8c482dfbfeaf99f49886fe1cc8ea74c42ac8753c20b1e7cc765491d7359",
+      "members": 121,
+      "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/solar-blind-v139-cost-gate/solar-blind-v139-clean-evidence-part1.zip",
+      "public_download_verified": true
+    },
+    {
+      "name": "solar-blind-v139-clean-evidence-part2.zip",
+      "bytes": 56696903,
+      "sha256": "8f7bdc78393b90ba03e67ef523caa9198a97717eedaf8dc910158bb92fa8aef3",
+      "members": 125,
+      "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/download/solar-blind-v139-cost-gate/solar-blind-v139-clean-evidence-part2.zip",
+      "public_download_verified": true
+    }
+  ],
+  "checksum_sidecar_verified": true,
+  "payload_hashes_verified": 244,
+  "read_only_replay": {
+    "passed": true,
+    "verified_sources": 101,
+    "verified_inputs": 125,
+    "independently_recomputed_forecast_seconds": 652.5137772965245,
+    "original_cap_seconds": 480,
+    "forecast_exceeds_full_original_cap": true,
+    "new_lunar_accuracy_results": 0,
+    "inference_performed": false,
+    "private_authority_used": false,
+    "scope": "Read-only hash/admission replay; generated live pose controls are not independently replayed saved poses"
+  },
+  "new_lunar_results": 0,
+  "matching_or_training_performed": false,
+  "private_authority_included": false,
+  "continuation_authorized": false
+}

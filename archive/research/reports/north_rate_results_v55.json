@@ -1,0 +1,2143 @@
+{
+  "complete": true,
+  "variants": [
+    {
+      "coarse_learning_rate": 1e-05,
+      "root": "runs/north-v54-fixed-pair-optimization",
+      "audit_sha256": "2e961c9dd36d28d0dbe44c3da8d5a096a7a6c4c5699e38a285b04867c1708d27",
+      "summary_sha256": "2e03ae41ef5769c907cf62eb6998564b699de32ce1a5ad556e63769d0ba2bb35",
+      "logical_updates": 400,
+      "diagnostic_calendar_seconds": 123.21664,
+      "fixtures": [
+        {
+          "name": "identity",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.2451051473617554,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.1719303392215489,
+                "score_standard_deviation": 0.2791314749260912,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 0.4541071057319641,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.010178409938462299,
+                "score_standard_deviation": 0.2593090696957124,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.3177160918712616,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.0004155261028365615,
+                "score_standard_deviation": 0.2368877423430805,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.28077420592308044,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 3.94648859479465e-05,
+                "score_standard_deviation": 0.22917272129315247,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.26055362820625305,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 2.8592336866659313e-05,
+                "score_standard_deviation": 0.22428789433790558,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.06564368257606698,
+            "context": 0.6421155152292777,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.0961689949035645,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 19,
+                "positive_row_top1_reachable_fraction": 0.028106508875739646,
+                "returned_mutual_matches": 189,
+                "returned_reachable": 8,
+                "returned_reachable_precision": 0.042328042328042326,
+                "returned_native_correct": {
+                  "1": 4,
+                  "2": 4,
+                  "4": 4,
+                  "8": 4,
+                  "12": 4
+                },
+                "returned_native_precision": {
+                  "1": 0.021164021164021163,
+                  "2": 0.021164021164021163,
+                  "4": 0.021164021164021163,
+                  "8": 0.021164021164021163,
+                  "12": 0.021164021164021163
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16552612251902787,
+                "score_standard_deviation": 0.23400523347031796,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 5.196228504180908,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 18,
+                "positive_row_top1_reachable_fraction": 0.026627218934911243,
+                "returned_mutual_matches": 184,
+                "returned_reachable": 8,
+                "returned_reachable_precision": 0.043478260869565216,
+                "returned_native_correct": {
+                  "1": 5,
+                  "2": 5,
+                  "4": 5,
+                  "8": 5,
+                  "12": 5
+                },
+                "returned_native_precision": {
+                  "1": 0.02717391304347826,
+                  "2": 0.02717391304347826,
+                  "4": 0.02717391304347826,
+                  "8": 0.02717391304347826,
+                  "12": 0.02717391304347826
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5852529961995654,
+                "score_standard_deviation": 0.12150179693090869,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 5.07448673248291,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 26,
+                "positive_row_top1_reachable_fraction": 0.038461538461538464,
+                "returned_mutual_matches": 176,
+                "returned_reachable": 12,
+                "returned_reachable_precision": 0.06818181818181818,
+                "returned_native_correct": {
+                  "1": 9,
+                  "2": 9,
+                  "4": 9,
+                  "8": 9,
+                  "12": 9
+                },
+                "returned_native_precision": {
+                  "1": 0.05113636363636364,
+                  "2": 0.05113636363636364,
+                  "4": 0.05113636363636364,
+                  "8": 0.05113636363636364,
+                  "12": 0.05113636363636364
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.6779037122057244,
+                "score_standard_deviation": 0.1052716607125362,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 5.000943183898926,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 29,
+                "positive_row_top1_reachable_fraction": 0.042899408284023666,
+                "returned_mutual_matches": 183,
+                "returned_reachable": 15,
+                "returned_reachable_precision": 0.08196721311475409,
+                "returned_native_correct": {
+                  "1": 12,
+                  "2": 12,
+                  "4": 12,
+                  "8": 12,
+                  "12": 12
+                },
+                "returned_native_precision": {
+                  "1": 0.06557377049180328,
+                  "2": 0.06557377049180328,
+                  "4": 0.06557377049180328,
+                  "8": 0.06557377049180328,
+                  "12": 0.06557377049180328
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.6150076150640832,
+                "score_standard_deviation": 0.1369095313700632,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 4.92362117767334,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 36,
+                "positive_row_top1_reachable_fraction": 0.05325443786982249,
+                "returned_mutual_matches": 181,
+                "returned_reachable": 16,
+                "returned_reachable_precision": 0.08839779005524862,
+                "returned_native_correct": {
+                  "1": 11,
+                  "2": 11,
+                  "4": 11,
+                  "8": 11,
+                  "12": 11
+                },
+                "returned_native_precision": {
+                  "1": 0.06077348066298342,
+                  "2": 0.06077348066298342,
+                  "4": 0.06077348066298342,
+                  "8": 0.06077348066298342,
+                  "12": 0.06077348066298342
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.571959824143338,
+                "score_standard_deviation": 0.1612377952970601,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.09129239639092138,
+            "context": 0.9050095544661454,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.8980622291564941,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 566,
+                "positive_row_top1_reachable_fraction": 0.8511278195488722,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 499,
+                "returned_reachable_precision": 0.974609375,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 273,
+                  "8": 462,
+                  "12": 495
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.533203125,
+                  "8": 0.90234375,
+                  "12": 0.966796875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16990052383369683,
+                "score_standard_deviation": 0.2774555734670061,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 1.0260956287384033,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 603,
+                "positive_row_top1_reachable_fraction": 0.9067669172932331,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 506,
+                "returned_reachable_precision": 0.98828125,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 275,
+                  "8": 480,
+                  "12": 506
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.537109375,
+                  "8": 0.9375,
+                  "12": 0.98828125
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.011707753234477205,
+                "score_standard_deviation": 0.259253240303586,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.8342500925064087,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 630,
+                "positive_row_top1_reachable_fraction": 0.9473684210526315,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 508,
+                "returned_reachable_precision": 0.9921875,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 275,
+                  "8": 474,
+                  "12": 507
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.537109375,
+                  "8": 0.92578125,
+                  "12": 0.990234375
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.0001643837714488617,
+                "score_standard_deviation": 0.24285679618816894,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.7517043352127075,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 642,
+                "positive_row_top1_reachable_fraction": 0.9654135338345865,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 509,
+                "returned_reachable_precision": 0.994140625,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 275,
+                  "8": 477,
+                  "12": 508
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.537109375,
+                  "8": 0.931640625,
+                  "12": 0.9921875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 1.1672378846280328e-05,
+                "score_standard_deviation": 0.23530460161519948,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.6845624446868896,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 652,
+                "positive_row_top1_reachable_fraction": 0.9804511278195489,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 511,
+                "returned_reachable_precision": 0.998046875,
+                "returned_native_correct": {
+                  "1": 68,
+                  "2": 144,
+                  "4": 275,
+                  "8": 483,
+                  "12": 511
+                },
+                "returned_native_precision": {
+                  "1": 0.1328125,
+                  "2": 0.28125,
+                  "4": 0.537109375,
+                  "8": 0.943359375,
+                  "12": 0.998046875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": -0.0001749797559413976,
+                "score_standard_deviation": 0.22918904202575058,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.08118793242548984,
+            "context": 0.7476176237077408,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting_and_viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.319991111755371,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 8,
+                "positive_row_top1_reachable_fraction": 0.012030075187969926,
+                "returned_mutual_matches": 187,
+                "returned_reachable": 3,
+                "returned_reachable_precision": 0.016042780748663103,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 2
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.0106951871657754,
+                  "12": 0.0106951871657754
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16350290090557845,
+                "score_standard_deviation": 0.234956030430031,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 5.30686092376709,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 16,
+                "positive_row_top1_reachable_fraction": 0.02406015037593985,
+                "returned_mutual_matches": 165,
+                "returned_reachable": 5,
+                "returned_reachable_precision": 0.030303030303030304,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 3
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.012121212121212121,
+                  "12": 0.01818181818181818
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5864077307461136,
+                "score_standard_deviation": 0.12370194209345711,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 5.166858673095703,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 19,
+                "positive_row_top1_reachable_fraction": 0.02857142857142857,
+                "returned_mutual_matches": 158,
+                "returned_reachable": 5,
+                "returned_reachable_precision": 0.03164556962025317,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 4
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.012658227848101266,
+                  "12": 0.02531645569620253
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.6885354382875579,
+                "score_standard_deviation": 0.10793766660031398,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 5.076171398162842,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 25,
+                "positive_row_top1_reachable_fraction": 0.03759398496240601,
+                "returned_mutual_matches": 169,
+                "returned_reachable": 7,
+                "returned_reachable_precision": 0.04142011834319527,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 3,
+                  "12": 5
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.01775147928994083,
+                  "12": 0.029585798816568046
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.6120017415498267,
+                "score_standard_deviation": 0.14249911362066742,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 4.971443176269531,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 31,
+                "positive_row_top1_reachable_fraction": 0.04661654135338346,
+                "returned_mutual_matches": 182,
+                "returned_reachable": 7,
+                "returned_reachable_precision": 0.038461538461538464,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 3,
+                  "12": 5
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.016483516483516484,
+                  "12": 0.027472527472527472
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5488584973521049,
+                "score_standard_deviation": 0.16949549178921425,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.08982340372387261,
+            "context": 0.9091771097715202,
+            "fine": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "coarse_learning_rate": 0.0001,
+      "root": "runs/north-v55-lr-1e-4",
+      "audit_sha256": "bd754fe1e23b5ada4b5f0ac0e181043cca381af78d87c536a0faf80d5d48e009",
+      "summary_sha256": "a690cab6b40b9652d387c3baf7356d6b4fdf5b6a1357ef3f1a37a00b080da472",
+      "logical_updates": 400,
+      "diagnostic_calendar_seconds": 97.177145,
+      "fixtures": [
+        {
+          "name": "identity",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.2451051473617554,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.1719303392215489,
+                "score_standard_deviation": 0.2791314749260912,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 0.35719409584999084,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.002739941539973642,
+                "score_standard_deviation": 0.2441459526531096,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.2825689911842346,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.0004984610827349645,
+                "score_standard_deviation": 0.22967421163107538,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.25201910734176636,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 8.718532361575556e-05,
+                "score_standard_deviation": 0.22242011065558903,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.23250217735767365,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 2.6182766072949344e-05,
+                "score_standard_deviation": 0.2170938025234907,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.5184320165303615,
+            "context": 0.5033413353072711,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.0961689949035645,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 19,
+                "positive_row_top1_reachable_fraction": 0.028106508875739646,
+                "returned_mutual_matches": 189,
+                "returned_reachable": 8,
+                "returned_reachable_precision": 0.042328042328042326,
+                "returned_native_correct": {
+                  "1": 4,
+                  "2": 4,
+                  "4": 4,
+                  "8": 4,
+                  "12": 4
+                },
+                "returned_native_precision": {
+                  "1": 0.021164021164021163,
+                  "2": 0.021164021164021163,
+                  "4": 0.021164021164021163,
+                  "8": 0.021164021164021163,
+                  "12": 0.021164021164021163
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16552612251902787,
+                "score_standard_deviation": 0.23400523347031796,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 5.113791465759277,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 23,
+                "positive_row_top1_reachable_fraction": 0.034023668639053255,
+                "returned_mutual_matches": 128,
+                "returned_reachable": 7,
+                "returned_reachable_precision": 0.0546875,
+                "returned_native_correct": {
+                  "1": 5,
+                  "2": 5,
+                  "4": 5,
+                  "8": 5,
+                  "12": 5
+                },
+                "returned_native_precision": {
+                  "1": 0.0390625,
+                  "2": 0.0390625,
+                  "4": 0.0390625,
+                  "8": 0.0390625,
+                  "12": 0.0390625
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.7411862915848869,
+                "score_standard_deviation": 0.09430493566710976,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 4.978837966918945,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 32,
+                "positive_row_top1_reachable_fraction": 0.047337278106508875,
+                "returned_mutual_matches": 163,
+                "returned_reachable": 12,
+                "returned_reachable_precision": 0.0736196319018405,
+                "returned_native_correct": {
+                  "1": 11,
+                  "2": 11,
+                  "4": 11,
+                  "8": 11,
+                  "12": 11
+                },
+                "returned_native_precision": {
+                  "1": 0.06748466257668712,
+                  "2": 0.06748466257668712,
+                  "4": 0.06748466257668712,
+                  "8": 0.06748466257668712,
+                  "12": 0.06748466257668712
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.6068842843539057,
+                "score_standard_deviation": 0.15095044072892824,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 4.830618381500244,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 33,
+                "positive_row_top1_reachable_fraction": 0.04881656804733728,
+                "returned_mutual_matches": 163,
+                "returned_reachable": 16,
+                "returned_reachable_precision": 0.09815950920245399,
+                "returned_native_correct": {
+                  "1": 14,
+                  "2": 14,
+                  "4": 14,
+                  "8": 14,
+                  "12": 14
+                },
+                "returned_native_precision": {
+                  "1": 0.08588957055214724,
+                  "2": 0.08588957055214724,
+                  "4": 0.08588957055214724,
+                  "8": 0.08588957055214724,
+                  "12": 0.08588957055214724
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5192903156734576,
+                "score_standard_deviation": 0.1785019421330815,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 4.6470842361450195,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 47,
+                "positive_row_top1_reachable_fraction": 0.0695266272189349,
+                "returned_mutual_matches": 199,
+                "returned_reachable": 25,
+                "returned_reachable_precision": 0.12562814070351758,
+                "returned_native_correct": {
+                  "1": 21,
+                  "2": 21,
+                  "4": 21,
+                  "8": 21,
+                  "12": 21
+                },
+                "returned_native_precision": {
+                  "1": 0.10552763819095477,
+                  "2": 0.10552763819095477,
+                  "4": 0.10552763819095477,
+                  "8": 0.10552763819095477,
+                  "12": 0.10552763819095477
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.43815541682312986,
+                "score_standard_deviation": 0.21206889373918217,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.8139700833729359,
+            "context": 0.8669297545458475,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.8980622291564941,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 566,
+                "positive_row_top1_reachable_fraction": 0.8511278195488722,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 499,
+                "returned_reachable_precision": 0.974609375,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 273,
+                  "8": 462,
+                  "12": 495
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.533203125,
+                  "8": 0.90234375,
+                  "12": 0.966796875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16990052383369683,
+                "score_standard_deviation": 0.2774555734670061,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 0.8760449886322021,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 630,
+                "positive_row_top1_reachable_fraction": 0.9473684210526315,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 508,
+                "returned_reachable_precision": 0.9921875,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 144,
+                  "4": 274,
+                  "8": 474,
+                  "12": 508
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.28125,
+                  "4": 0.53515625,
+                  "8": 0.92578125,
+                  "12": 0.9921875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.003223401570842626,
+                "score_standard_deviation": 0.24964278583820879,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.7207081317901611,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 649,
+                "positive_row_top1_reachable_fraction": 0.9759398496240601,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 276,
+                  "8": 482,
+                  "12": 511
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.5390625,
+                  "8": 0.94140625,
+                  "12": 0.998046875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.0002063795189034904,
+                "score_standard_deviation": 0.23562935028957,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.6275932788848877,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 656,
+                "positive_row_top1_reachable_fraction": 0.9864661654135338,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 68,
+                  "2": 144,
+                  "4": 275,
+                  "8": 484,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.1328125,
+                  "2": 0.28125,
+                  "4": 0.537109375,
+                  "8": 0.9453125,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": -8.614741445296774e-05,
+                "score_standard_deviation": 0.22821357454857544,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.5742542743682861,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 662,
+                "positive_row_top1_reachable_fraction": 0.9954887218045113,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 275,
+                  "8": 483,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.537109375,
+                  "8": 0.943359375,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": -0.0001706261279291685,
+                "score_standard_deviation": 0.22477203919142694,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.6361336206649019,
+            "context": 0.5964837436393202,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting_and_viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.319991111755371,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 8,
+                "positive_row_top1_reachable_fraction": 0.012030075187969926,
+                "returned_mutual_matches": 187,
+                "returned_reachable": 3,
+                "returned_reachable_precision": 0.016042780748663103,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 2
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.0106951871657754,
+                  "12": 0.0106951871657754
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16350290090557845,
+                "score_standard_deviation": 0.234956030430031,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 5.218255519866943,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 18,
+                "positive_row_top1_reachable_fraction": 0.02706766917293233,
+                "returned_mutual_matches": 117,
+                "returned_reachable": 3,
+                "returned_reachable_precision": 0.02564102564102564,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 2
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.017094017094017096,
+                  "12": 0.017094017094017096
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.766091858167037,
+                "score_standard_deviation": 0.09530162456534279,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 5.064671039581299,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 29,
+                "positive_row_top1_reachable_fraction": 0.04360902255639098,
+                "returned_mutual_matches": 151,
+                "returned_reachable": 7,
+                "returned_reachable_precision": 0.046357615894039736,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 5
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.013245033112582781,
+                  "12": 0.033112582781456956
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5960741523716802,
+                "score_standard_deviation": 0.1599602275746466,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 4.877481460571289,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 39,
+                "positive_row_top1_reachable_fraction": 0.058646616541353384,
+                "returned_mutual_matches": 150,
+                "returned_reachable": 11,
+                "returned_reachable_precision": 0.07333333333333333,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 1,
+                  "8": 3,
+                  "12": 7
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.006666666666666667,
+                  "8": 0.02,
+                  "12": 0.04666666666666667
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5005882062924344,
+                "score_standard_deviation": 0.18673928991336383,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 4.630805969238281,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 47,
+                "positive_row_top1_reachable_fraction": 0.07067669172932331,
+                "returned_mutual_matches": 174,
+                "returned_reachable": 15,
+                "returned_reachable_precision": 0.08620689655172414,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 1,
+                  "8": 6,
+                  "12": 8
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.005747126436781609,
+                  "8": 0.034482758620689655,
+                  "12": 0.04597701149425287
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.39636193060971514,
+                "score_standard_deviation": 0.21928750439216768,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 0.8077144868160347,
+            "context": 0.8674126154206687,
+            "fine": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "coarse_learning_rate": 0.001,
+      "root": "runs/north-v55-lr-1e-3",
+      "audit_sha256": "76fcbacf7644630d78065d9cfa0063fd3d4d84d9542082a6447d570627b4591b",
+      "summary_sha256": "825ff64e886f5a4c062c18d4683c4990867bc534fd9252d91c2495b048f682e8",
+      "logical_updates": 400,
+      "diagnostic_calendar_seconds": 100.166187,
+      "fixtures": [
+        {
+          "name": "identity",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.2451051473617554,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.1719303392215489,
+                "score_standard_deviation": 0.2791314749260912,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 0.2657220661640167,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.002745305904149724,
+                "score_standard_deviation": 0.22493416989031007,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.2128002643585205,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.0003510788902916483,
+                "score_standard_deviation": 0.21244574576446884,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.1765844076871872,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 3.2793219768621794e-05,
+                "score_standard_deviation": 0.20143581218950982,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.15444566309452057,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 676,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 512,
+                  "2": 512,
+                  "4": 512,
+                  "8": 512,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 1.0,
+                  "2": 1.0,
+                  "4": 1.0,
+                  "8": 1.0,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 1.539433399257882e-05,
+                "score_standard_deviation": 0.19377532799476613,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 2.100037408466681,
+            "context": 0.2454992418433671,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.0961689949035645,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 19,
+                "positive_row_top1_reachable_fraction": 0.028106508875739646,
+                "returned_mutual_matches": 189,
+                "returned_reachable": 8,
+                "returned_reachable_precision": 0.042328042328042326,
+                "returned_native_correct": {
+                  "1": 4,
+                  "2": 4,
+                  "4": 4,
+                  "8": 4,
+                  "12": 4
+                },
+                "returned_native_precision": {
+                  "1": 0.021164021164021163,
+                  "2": 0.021164021164021163,
+                  "4": 0.021164021164021163,
+                  "8": 0.021164021164021163,
+                  "12": 0.021164021164021163
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16552612251902787,
+                "score_standard_deviation": 0.23400523347031796,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 4.742529392242432,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 39,
+                "positive_row_top1_reachable_fraction": 0.057692307692307696,
+                "returned_mutual_matches": 172,
+                "returned_reachable": 18,
+                "returned_reachable_precision": 0.10465116279069768,
+                "returned_native_correct": {
+                  "1": 13,
+                  "2": 13,
+                  "4": 13,
+                  "8": 13,
+                  "12": 13
+                },
+                "returned_native_precision": {
+                  "1": 0.0755813953488372,
+                  "2": 0.0755813953488372,
+                  "4": 0.0755813953488372,
+                  "8": 0.0755813953488372,
+                  "12": 0.0755813953488372
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.5111190936428116,
+                "score_standard_deviation": 0.20227008333336088,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 4.236406326293945,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 98,
+                "positive_row_top1_reachable_fraction": 0.14497041420118342,
+                "returned_mutual_matches": 201,
+                "returned_reachable": 52,
+                "returned_reachable_precision": 0.25870646766169153,
+                "returned_native_correct": {
+                  "1": 43,
+                  "2": 43,
+                  "4": 43,
+                  "8": 43,
+                  "12": 43
+                },
+                "returned_native_precision": {
+                  "1": 0.21393034825870647,
+                  "2": 0.21393034825870647,
+                  "4": 0.21393034825870647,
+                  "8": 0.21393034825870647,
+                  "12": 0.21393034825870647
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.3456540539702565,
+                "score_standard_deviation": 0.2774963938678028,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 3.641305685043335,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 156,
+                "positive_row_top1_reachable_fraction": 0.23076923076923078,
+                "returned_mutual_matches": 271,
+                "returned_reachable": 94,
+                "returned_reachable_precision": 0.34686346863468637,
+                "returned_native_correct": {
+                  "1": 82,
+                  "2": 82,
+                  "4": 82,
+                  "8": 82,
+                  "12": 82
+                },
+                "returned_native_precision": {
+                  "1": 0.3025830258302583,
+                  "2": 0.3025830258302583,
+                  "4": 0.3025830258302583,
+                  "8": 0.3025830258302583,
+                  "12": 0.3025830258302583
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.1320244627628064,
+                "score_standard_deviation": 0.268775433563376,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 3.1442794799804688,
+              "metrics": {
+                "positive_rows": 676,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 211,
+                "positive_row_top1_reachable_fraction": 0.3121301775147929,
+                "returned_mutual_matches": 301,
+                "returned_reachable": 143,
+                "returned_reachable_precision": 0.4750830564784053,
+                "returned_native_correct": {
+                  "1": 125,
+                  "2": 125,
+                  "4": 125,
+                  "8": 125,
+                  "12": 125
+                },
+                "returned_native_precision": {
+                  "1": 0.4152823920265781,
+                  "2": 0.4152823920265781,
+                  "4": 0.4152823920265781,
+                  "8": 0.4152823920265781,
+                  "12": 0.4152823920265781
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.07082878156359433,
+                "score_standard_deviation": 0.2732447056713162,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 3.362192907145542,
+            "context": 0.49800480192719526,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 1.8980622291564941,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 566,
+                "positive_row_top1_reachable_fraction": 0.8511278195488722,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 499,
+                "returned_reachable_precision": 0.974609375,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 273,
+                  "8": 462,
+                  "12": 495
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.533203125,
+                  "8": 0.90234375,
+                  "12": 0.966796875
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16990052383369683,
+                "score_standard_deviation": 0.2774555734670061,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 0.6438339948654175,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 655,
+                "positive_row_top1_reachable_fraction": 0.9849624060150376,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 275,
+                  "8": 485,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.537109375,
+                  "8": 0.947265625,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.002998370248804533,
+                "score_standard_deviation": 0.2330496065573658,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 0.4927557706832886,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 664,
+                "positive_row_top1_reachable_fraction": 0.9984962406015038,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 274,
+                  "8": 484,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.53515625,
+                  "8": 0.9453125,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 3.417311722495684e-05,
+                "score_standard_deviation": 0.2214143029465622,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 0.409055233001709,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 665,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 68,
+                  "2": 144,
+                  "4": 274,
+                  "8": 481,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.1328125,
+                  "2": 0.28125,
+                  "4": 0.53515625,
+                  "8": 0.939453125,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": -0.00020509140462042982,
+                "score_standard_deviation": 0.21233893414616922,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 0.351958692073822,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 665,
+                "positive_row_top1_reachable_fraction": 1.0,
+                "returned_mutual_matches": 512,
+                "returned_reachable": 512,
+                "returned_reachable_precision": 1.0,
+                "returned_native_correct": {
+                  "1": 69,
+                  "2": 145,
+                  "4": 276,
+                  "8": 485,
+                  "12": 512
+                },
+                "returned_native_precision": {
+                  "1": 0.134765625,
+                  "2": 0.283203125,
+                  "4": 0.5390625,
+                  "8": 0.947265625,
+                  "12": 1.0
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": -0.00018692059372231416,
+                "score_standard_deviation": 0.20494832064969773,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 2.800521711230544,
+            "context": 0.35618503782628663,
+            "fine": 0.0
+          }
+        },
+        {
+          "name": "relighting_and_viewpoint",
+          "evaluation": [
+            {
+              "step": 0,
+              "objective": 6.319991111755371,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 8,
+                "positive_row_top1_reachable_fraction": 0.012030075187969926,
+                "returned_mutual_matches": 187,
+                "returned_reachable": 3,
+                "returned_reachable_precision": 0.016042780748663103,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 0,
+                  "8": 2,
+                  "12": 2
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.0,
+                  "8": 0.0106951871657754,
+                  "12": 0.0106951871657754
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16350290090557845,
+                "score_standard_deviation": 0.234956030430031,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 25,
+              "objective": 4.7713212966918945,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 42,
+                "positive_row_top1_reachable_fraction": 0.06315789473684211,
+                "returned_mutual_matches": 153,
+                "returned_reachable": 16,
+                "returned_reachable_precision": 0.10457516339869281,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 0,
+                  "4": 1,
+                  "8": 2,
+                  "12": 8
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.0,
+                  "4": 0.006535947712418301,
+                  "8": 0.013071895424836602,
+                  "12": 0.05228758169934641
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.4978519922248158,
+                "score_standard_deviation": 0.21301599211049577,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 50,
+              "objective": 3.9835238456726074,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 103,
+                "positive_row_top1_reachable_fraction": 0.1548872180451128,
+                "returned_mutual_matches": 221,
+                "returned_reachable": 52,
+                "returned_reachable_precision": 0.23529411764705882,
+                "returned_native_correct": {
+                  "1": 0,
+                  "2": 1,
+                  "4": 2,
+                  "8": 12,
+                  "12": 23
+                },
+                "returned_native_precision": {
+                  "1": 0.0,
+                  "2": 0.004524886877828055,
+                  "4": 0.00904977375565611,
+                  "8": 0.05429864253393665,
+                  "12": 0.10407239819004525
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.16641691655327057,
+                "score_standard_deviation": 0.25316305600801914,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 75,
+              "objective": 3.5601983070373535,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 157,
+                "positive_row_top1_reachable_fraction": 0.23609022556390977,
+                "returned_mutual_matches": 214,
+                "returned_reachable": 65,
+                "returned_reachable_precision": 0.3037383177570093,
+                "returned_native_correct": {
+                  "1": 2,
+                  "2": 5,
+                  "4": 7,
+                  "8": 16,
+                  "12": 33
+                },
+                "returned_native_precision": {
+                  "1": 0.009345794392523364,
+                  "2": 0.02336448598130841,
+                  "4": 0.03271028037383177,
+                  "8": 0.07476635514018691,
+                  "12": 0.1542056074766355
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.14627584354841108,
+                "score_standard_deviation": 0.29028946444236464,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            },
+            {
+              "step": 100,
+              "objective": 3.087656259536743,
+              "metrics": {
+                "positive_rows": 665,
+                "geometrically_visible_rows": 676,
+                "positive_row_top1_reachable": 218,
+                "positive_row_top1_reachable_fraction": 0.32781954887218046,
+                "returned_mutual_matches": 247,
+                "returned_reachable": 120,
+                "returned_reachable_precision": 0.48582995951417,
+                "returned_native_correct": {
+                  "1": 6,
+                  "2": 7,
+                  "4": 15,
+                  "8": 33,
+                  "12": 52
+                },
+                "returned_native_precision": {
+                  "1": 0.024291497975708502,
+                  "2": 0.02834008097165992,
+                  "4": 0.06072874493927125,
+                  "8": 0.13360323886639677,
+                  "12": 0.21052631578947367
+                },
+                "returned_decode_max_score_gap": 0.0,
+                "returned_hard_argmax_disagreements": 0,
+                "score_mean": 0.08351524208570006,
+                "score_standard_deviation": 0.2770327453085499,
+                "pose_accuracy_evaluated": false,
+                "training_fixture_only": true
+              }
+            }
+          ],
+          "parameter_group_weight_change_l2": {
+            "coarse": 3.1834944443338737,
+            "context": 0.480504332473629,
+            "fine": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "new_logical_updates": 800,
+  "original_control_updates": 400,
+  "total_actual_snapshot_forwards_replayed": 60,
+  "model_promoted": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "figure_sha256": "590235afd72dd83e50391c359415fe72cfc6b5da97bdc7df886433f24277d7a6",
+  "presentation_source_sha256": "2e1bc1ccc0571960f0d03672b982272edb8569c3f14f997516bbc24438a37b5d",
+  "scope": "One fixed TRAINING example per condition. Reachability is within the existing native33px search window; not precise correspondence, camera pose, generalization or SOTA. All three rates and all four conditions are shown."
+}

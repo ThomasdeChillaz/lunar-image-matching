@@ -1,0 +1,71 @@
+{
+  "scope": "100-step orientation software pilot, not a learned gain or final test.",
+  "public_source_commit": "62e7f846f84d05af55f6aa394396386bc8521929",
+  "summary": {
+    "scope": "Orientation-regime development tuning; original fresh-final gate still applies.",
+    "winner": "canonical_3d",
+    "pilot": true,
+    "elapsed_seconds": 137.2340206200024,
+    "results": [
+      {
+        "variant": "canonical_3d",
+        "seed": 20261101,
+        "completed_steps": 100,
+        "selected_step": 0,
+        "selection_key": [
+          11,
+          3067,
+          0
+        ],
+        "evaluation": {
+          "cases": 72,
+          "correct_poses": 45,
+          "strict_poses": 17,
+          "estimated_poses": 57,
+          "correct_at_two_px": 10320,
+          "returned": 23240,
+          "scorable": 21339,
+          "bank_only": false
+        },
+        "final_weight_change_l2": 0.28479135036468506
+      }
+    ]
+  },
+  "audit": {
+    "passed": true,
+    "scope": "Corrected axial-depth development training; no final or acceptance claim.",
+    "runs": [
+      {
+        "variant": "canonical_3d",
+        "seed": 20261101,
+        "selection_key": [
+          11,
+          3067,
+          0
+        ],
+        "evaluation": {
+          "cases": 72,
+          "correct_poses": 45,
+          "strict_poses": 17,
+          "estimated_poses": 57,
+          "correct_at_two_px": 10320,
+          "returned": 23240,
+          "scorable": 21339,
+          "bank_only": false
+        },
+        "selected_step": 0
+      }
+    ],
+    "trained_runs": 1,
+    "optimizer_steps": 100,
+    "development_rows": 72,
+    "uniform_supported_training_points": 10297,
+    "train_components": 12,
+    "selection_components": 4,
+    "selected_variant": "canonical_3d",
+    "calibration_or_test_pixels_loaded": 0,
+    "source_sha256": "689a212cd75e7f133a3666360c8bca0fa1b33625b8fcf7b6649a93def9030610",
+    "protocol_sha256": "7c4a81db01ea839d04d6a24d24a9c6083e98b2b6fc12cf3e78f62da26dc7bc52",
+    "summary_sha256": "a9f9cc57195cf2cd8b3050ba7ae94db5e501cee03f562373e0d628d951da1e25"
+  }
+}

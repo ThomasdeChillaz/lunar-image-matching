@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "independent_grid_rotation_window_replay": true,
+  "replayed_branch_rows": 768,
+  "replayed_case_rows": 192,
+  "replayed_oracle_pose_controls": 768,
+  "oracle_any_branch_correct_cases": 103,
+  "ground_truth_used_by_oracle": true,
+  "neural_forward_repeated": false,
+  "optimizer_run": false,
+  "calibration_or_test_pixels_loaded": 0,
+  "source_sha256": "9c9e532b523f86492cd49fa560a719c0623788e5fb1839ad0a2e093b628c6800",
+  "summary_sha256": "08ee07c0832780f50fb160b729df66f344d0fa342e807f498436efa805e39360",
+  "protocol_sha256": "73344d315f1898d3dc9cda00e98770544dc0dbe87a0689263ea95370172e55c7",
+  "scope": "Independent saved coarse-grid/window/aggregate replay plus common oracle-estimator replay. Oracle success is not model accuracy, a usable branch selector or a strict mathematical pose-success bound."
+}

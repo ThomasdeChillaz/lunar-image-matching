@@ -1,0 +1,241 @@
+{
+  "schema": "solar_parallax_procedural_v126",
+  "passed": true,
+  "procedural_only": true,
+  "archived_lunar_images_opened": false,
+  "native_shape": [
+    512,
+    512
+  ],
+  "row_wall_seconds": [
+    3.0949852949706838,
+    3.2829799670143984
+  ],
+  "rows": [
+    {
+      "multidepth": false,
+      "passed": true,
+      "row_wall_seconds": 3.0949852949706838,
+      "arms": {
+        "uniform": {
+          "passed": true,
+          "raw_pose": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              19.99999999999994
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -1.4210854715202004e-14
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "measured_matches": 12,
+          "inliers": 12,
+          "selected_anchors": [
+            0,
+            2,
+            3,
+            5,
+            12,
+            14,
+            15,
+            17,
+            18,
+            21,
+            30,
+            35
+          ],
+          "patch_searches": 12,
+          "evaluated_positions": 6000,
+          "maximum_native_error_px": 4.0194366942304644e-14,
+          "translation_error_m": 6.204547701064548e-14,
+          "rotation_error_deg": 0.0,
+          "reason": null
+        },
+        "parallax": {
+          "passed": true,
+          "raw_pose": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              19.99999999999994
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -1.4210854715202004e-14
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "measured_matches": 12,
+          "inliers": 12,
+          "selected_anchors": [
+            0,
+            2,
+            3,
+            5,
+            12,
+            14,
+            15,
+            17,
+            18,
+            21,
+            30,
+            35
+          ],
+          "patch_searches": 12,
+          "evaluated_positions": 6000,
+          "maximum_native_error_px": 4.0194366942304644e-14,
+          "translation_error_m": 6.204547701064548e-14,
+          "rotation_error_deg": 0.0,
+          "reason": null
+        }
+      },
+      "shared_geometry_seconds": 2.180587155977264,
+      "policy_seconds": 0.0039232129929587245,
+      "selected_set_differs": false
+    },
+    {
+      "multidepth": true,
+      "passed": true,
+      "row_wall_seconds": 3.2829799670143984,
+      "arms": {
+        "uniform": {
+          "passed": true,
+          "raw_pose": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              20.000000000000004
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.4210854715202004e-14
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "measured_matches": 12,
+          "inliers": 12,
+          "selected_anchors": [
+            0,
+            2,
+            3,
+            5,
+            12,
+            14,
+            15,
+            17,
+            18,
+            21,
+            30,
+            35
+          ],
+          "patch_searches": 12,
+          "evaluated_positions": 6000,
+          "maximum_native_error_px": 8.038873388460929e-14,
+          "translation_error_m": 1.464821375527116e-14,
+          "rotation_error_deg": 0.0,
+          "reason": null
+        },
+        "parallax": {
+          "passed": true,
+          "raw_pose": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              19.999999999999957
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.684341886080802e-14
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.2737367544323206e-13
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "measured_matches": 12,
+          "inliers": 12,
+          "selected_anchors": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            9,
+            11,
+            24,
+            27,
+            30,
+            35
+          ],
+          "patch_searches": 12,
+          "evaluated_positions": 6000,
+          "maximum_native_error_px": 8.038873388460929e-14,
+          "translation_error_m": 2.382173337059642e-13,
+          "rotation_error_deg": 0.0,
+          "reason": null
+        }
+      },
+      "shared_geometry_seconds": 2.2740050940192305,
+      "policy_seconds": 0.0037877740105614066,
+      "selected_set_differs": true
+    }
+  ],
+  "scope": "Generated known translation. Tests independent measurement and policy wiring."
+}

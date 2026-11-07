@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tag": "global-context-development-v16",
+  "target_commit": "3b0cc2dc69e5d8c4c2ec59646bdca6fc786b3f47",
+  "prerelease": true,
+  "latest_preserved": "compact-v2",
+  "assets": [
+    {
+      "name": "global-context-v16-capsule.sha256",
+      "bytes": 97,
+      "sha256": "0b816f529ffdb752121dee475d3bc662bda5610c332d380dcd6ac4e2f15500eb"
+    },
+    {
+      "name": "global-context-v16-capsule.zip",
+      "bytes": 43069765,
+      "sha256": "7892b64053bb6020a15d4d20f50c97d3afc1368edfafc37c293d085e4c45a285",
+      "members": 307
+    }
+  ],
+  "scope": "Public asset byte equality and ZIP CRC verification; not new geographic validation."
+}

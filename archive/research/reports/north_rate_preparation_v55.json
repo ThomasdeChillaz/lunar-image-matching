@@ -1,0 +1,30 @@
+{
+  "prepared_utc": "2026-11-02T17:35:23.231773+00:00",
+  "state": "PREPARED; no actual v55 fitting yet",
+  "source_sha256": {
+    "north_optimization_rate_v55.py": "5ba78c7c4d3f440c34ec3a81f346310387074eb58b762703724606f76a0f9f22",
+    "test_north_optimization_rate_v55.py": "532bf312e0e5964ae09df60c1d7e490621eff66e4a39857716c386b17fc11e4e",
+    "verify_north_optimization_rate_v55.py": "f8ac13bae532ed388f6c3d439e7ac48bd421d62f5fcd95ca22c761c5407e62f5"
+  },
+  "original_control_root": "runs/north-v54-fixed-pair-optimization",
+  "baseline_summary_sha256": "2e03ae41ef5769c907cf62eb6998564b699de32ce1a5ad556e63769d0ba2bb35",
+  "baseline_audit_sha256": "2e961c9dd36d28d0dbe44c3da8d5a096a7a6c4c5699e38a285b04867c1708d27",
+  "rates": [
+    0.0001,
+    0.001
+  ],
+  "context_rate": 0.0001,
+  "updates_per_fixture": 100,
+  "fixtures_per_rate": 4,
+  "additional_planned_logical_updates": 800,
+  "cap_seconds_per_rate": 900,
+  "cpu_threads": 2,
+  "serial_only": true,
+  "targeted_tests_passed": 10,
+  "full_tests_passed": 414,
+  "optional_skips": 4,
+  "fresh_procedural_smoke_rows": 100,
+  "model_promoted": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "public_source_pending": true
+}

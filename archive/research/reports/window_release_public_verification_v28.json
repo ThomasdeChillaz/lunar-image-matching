@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "tag": "native-window-development-v18",
+  "target_commit": "6561f02b8a5d37dea8ea08c10ac64640baf5d25a",
+  "prerelease": true,
+  "latest_preserved": "compact-v2",
+  "url": "https://github.com/ThomasdeChillaz/lunar-image-matching/releases/tag/native-window-development-v18",
+  "assets": [
+    {
+      "name": "native-window-v18-capsule.zip",
+      "bytes": 51364023,
+      "sha256": "1a68508aead95bcd86f3fcd6a372be2e18f25425d104a5464b3e64859f437ca6",
+      "byte_identical": true,
+      "zip_crc_passed": true,
+      "payload_files": 519
+    },
+    {
+      "name": "native-window-v18-capsule.sha256",
+      "bytes": 96,
+      "sha256": "931c132c1b28c322532f1f4bee6ba646bd760d5a101cfade25d858363f4cf328",
+      "byte_identical": true
+    },
+    {
+      "name": "cresent-metadata-v21-capsule.zip",
+      "bytes": 7097685,
+      "sha256": "c9b862f552e3d894d7c2cf26490c55528db2ccd1b0b19cbbaf5e53082bd4872a",
+      "byte_identical": true,
+      "zip_crc_passed": true,
+      "payload_files": 43
+    },
+    {
+      "name": "cresent-metadata-v21-capsule.sha256",
+      "bytes": 99,
+      "sha256": "1ecfefa5763b62e3adaeb0b74769e915684079d43403c82fc2e22175485a6838",
+      "byte_identical": true
+    }
+  ],
+  "recorded_utc": "2026-11-01T19:31:04.473208+00:00",
+  "scope": "Public artifact byte/SHA/CRC verification and exact clean-source tag. No additional fitting, fresh terrain evaluation or full optimizer retraining."
+}

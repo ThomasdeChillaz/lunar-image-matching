@@ -1,0 +1,5158 @@
+{
+  "scope": "Saved pilot arrays and recorded traces only; no images, original query truth projection, models, rays, fitting, selection or calibration.",
+  "summary": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/summary.json",
+  "summary_sha256": "c3e2ec236a8a5b5e516b1a8da181186193067445b166567fe193fd0779056120",
+  "summary_complete": true,
+  "profiles": [
+    {
+      "name": "step_0",
+      "backend": "solar",
+      "checkpoint": "runs/solar-learning-v79/sh_study/step_0.pt",
+      "training_step": 0,
+      "training_seed": 20261101,
+      "training_evidence": {
+        "protocol": "reports/solar-learning-v79/sh_study.json",
+        "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "summary": "runs/solar-learning-v79/sh_study/summary.json",
+        "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+        "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+      },
+      "configuration": {
+        "model_version": "solar-experimental-v63",
+        "checkpoint_sha256": "4b0aed4395390872b18c62002d6ecbd2887854aabb6ba074dcb4f628f74e033c",
+        "solar_mode": "shared",
+        "response": true,
+        "active": true,
+        "pooled": false,
+        "budget": 128,
+        "policy": "active",
+        "proposal_angles": [
+          0.0,
+          90.0,
+          180.0,
+          270.0
+        ],
+        "pose_initialization": "strict3",
+        "inference_revision": "solar-v68"
+      }
+    },
+    {
+      "name": "step_500",
+      "backend": "solar",
+      "checkpoint": "runs/solar-learning-v79/sh_study/step_500.pt",
+      "training_step": 500,
+      "training_seed": 20261101,
+      "training_evidence": {
+        "protocol": "reports/solar-learning-v79/sh_study.json",
+        "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "summary": "runs/solar-learning-v79/sh_study/summary.json",
+        "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+        "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+      },
+      "configuration": {
+        "model_version": "solar-experimental-v63",
+        "checkpoint_sha256": "faf4f10062e4741f1f7daabf5d25bc0d23ec6020425c6c859e35ff3c685916cd",
+        "solar_mode": "shared",
+        "response": true,
+        "active": true,
+        "pooled": false,
+        "budget": 128,
+        "policy": "active",
+        "proposal_angles": [
+          0.0,
+          90.0,
+          180.0,
+          270.0
+        ],
+        "pose_initialization": "strict3",
+        "inference_revision": "solar-v68"
+      }
+    },
+    {
+      "name": "step_1000",
+      "backend": "solar",
+      "checkpoint": "runs/solar-learning-v79/sh_study/step_1000.pt",
+      "training_step": 1000,
+      "training_seed": 20261101,
+      "training_evidence": {
+        "protocol": "reports/solar-learning-v79/sh_study.json",
+        "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "summary": "runs/solar-learning-v79/sh_study/summary.json",
+        "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+        "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+      },
+      "configuration": {
+        "model_version": "solar-experimental-v63",
+        "checkpoint_sha256": "d1c0056b04856a80de5a507db05b2fa06a6745534b6c1952968ae38e9e3fee6e",
+        "solar_mode": "shared",
+        "response": true,
+        "active": true,
+        "pooled": false,
+        "budget": 128,
+        "policy": "active",
+        "proposal_angles": [
+          0.0,
+          90.0,
+          180.0,
+          270.0
+        ],
+        "pose_initialization": "strict3",
+        "inference_revision": "solar-v68"
+      }
+    },
+    {
+      "name": "step_1500",
+      "backend": "solar",
+      "checkpoint": "runs/solar-learning-v79/sh_study/step_1500.pt",
+      "training_step": 1500,
+      "training_seed": 20261101,
+      "training_evidence": {
+        "protocol": "reports/solar-learning-v79/sh_study.json",
+        "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "summary": "runs/solar-learning-v79/sh_study/summary.json",
+        "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+        "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+      },
+      "configuration": {
+        "model_version": "solar-experimental-v63",
+        "checkpoint_sha256": "dafe98e426cc7a709b610c9a1dc8cd00fec9422950e6cdada6711b38bcb6a2cd",
+        "solar_mode": "shared",
+        "response": true,
+        "active": true,
+        "pooled": false,
+        "budget": 128,
+        "policy": "active",
+        "proposal_angles": [
+          0.0,
+          90.0,
+          180.0,
+          270.0
+        ],
+        "pose_initialization": "strict3",
+        "inference_revision": "solar-v68"
+      }
+    },
+    {
+      "name": "step_2000",
+      "backend": "solar",
+      "checkpoint": "runs/solar-learning-v79/sh_study/step_2000.pt",
+      "training_step": 2000,
+      "training_seed": 20261101,
+      "training_evidence": {
+        "protocol": "reports/solar-learning-v79/sh_study.json",
+        "protocol_sha256": "fdc2e1a75ae5d3ca965edad7a7b6b956117c95189adb1629edc1d69855c482e7",
+        "summary": "runs/solar-learning-v79/sh_study/summary.json",
+        "summary_sha256": "96a26e08dab2894e8a2eef4641abb0e3116dde5f32bce2041fef1eba46ff0d5b",
+        "watchdog_receipt": "runs/solar-learning-v79/sh_study-watchdog-run.json",
+        "watchdog_receipt_sha256": "372b97aa2b685dd73e3e6c7b387ca1c07abd6c2213249003da7b7e184ba38044"
+      },
+      "configuration": {
+        "model_version": "solar-experimental-v63",
+        "checkpoint_sha256": "5bbceb4a4c12f9c49d2d0e2c311a65eea89d1de88b9a13162e2436b2df930300",
+        "solar_mode": "shared",
+        "response": true,
+        "active": true,
+        "pooled": false,
+        "budget": 128,
+        "policy": "active",
+        "proposal_angles": [
+          0.0,
+          90.0,
+          180.0,
+          270.0
+        ],
+        "pose_initialization": "strict3",
+        "inference_revision": "solar-v68"
+      }
+    }
+  ],
+  "row_count": 40,
+  "unique_positive_pairs": 4,
+  "positive_checkpoint_executions": 20,
+  "unique_positive_terrain_groups": 4,
+  "unique_changed_light_positive_pairs": 2,
+  "negative_saved_array_hashes_verified": 20,
+  "cases": {
+    "u012-l00-00-positive": {
+      "checkpoint_executions": 5,
+      "saved_coarse_arrays_identical_across_checkpoints": true,
+      "saved_native_arrays_identical_across_checkpoints": false,
+      "coarse_reference": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      }
+    },
+    "u026-l00-17-positive": {
+      "checkpoint_executions": 5,
+      "saved_coarse_arrays_identical_across_checkpoints": null,
+      "saved_native_arrays_identical_across_checkpoints": true,
+      "coarse_reference": null
+    },
+    "u060-l16-16-positive": {
+      "checkpoint_executions": 5,
+      "saved_coarse_arrays_identical_across_checkpoints": true,
+      "saved_native_arrays_identical_across_checkpoints": true,
+      "coarse_reference": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      }
+    },
+    "u074-l08-01-positive": {
+      "checkpoint_executions": 5,
+      "saved_coarse_arrays_identical_across_checkpoints": true,
+      "saved_native_arrays_identical_across_checkpoints": true,
+      "coarse_reference": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      }
+    }
+  },
+  "rows": [
+    {
+      "profile": "step_0",
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "light_a": 0,
+      "light_b": 0,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/2a2b169962891a3398d00fc50f473f836ef52d7466e8936efb32c68be7e81cbd.npz",
+      "saved_arrays_sha256": "1d599bd1a117281ff695ff85ee95a5cf6caac489229f53a3332ff2c20f155e92",
+      "pose_correct": true,
+      "pose_returned": true,
+      "reason": null,
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 5,
+        "proposal_info": [
+          {
+            "inliers": 15,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2007.0000000005675
+          },
+          {
+            "inliers": 6,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2089.403780350335
+          },
+          {
+            "inliers": 14,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2042.4376725936831
+          },
+          {
+            "inliers": 7,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2058.261483579099
+          },
+          {
+            "inliers": 12,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2039.582023969006
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 3,
+            "reason": "insufficient_front_facing_inliers"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 128,
+      "response_refresh_calls": 4790,
+      "response_usage_confirmed": true,
+      "response_cost": {
+        "refresh_requests": 4790,
+        "cache_hits": 0,
+        "canonicalizations": 4790,
+        "patch_encoder_calls": 1705,
+        "patches_encoded": 3410,
+        "canonical_feature_cache_hits": 3001
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": false,
+      "live_hypothesis_count": 6,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 59,
+          "live_poses": 6,
+          "sun_indices": [
+            1526,
+            1521,
+            1518,
+            1528,
+            1532,
+            1572,
+            1536,
+            1572
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 94,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1520,
+            1517,
+            1529,
+            1531,
+            1572,
+            1535,
+            1572
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1519,
+            1517,
+            1529,
+            1530,
+            1572,
+            1534,
+            1572
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 40.113353210967034,
+      "native": {
+        "returned": 57,
+        "saved_visible": 57,
+        "correct_at_native_px": {
+          "1": 37,
+          "2": 49,
+          "4": 52,
+          "8": 53,
+          "12": 54,
+          "16": 54
+        },
+        "returned_reference_support": {
+          "count": 57,
+          "quadrants_tl_tr_bl_br": [
+            10,
+            18,
+            4,
+            25
+          ],
+          "occupied_4x4_cells": 14
+        },
+        "correct_2px_support": {
+          "count": 49,
+          "quadrants_tl_tr_bl_br": [
+            9,
+            16,
+            1,
+            23
+          ],
+          "occupied_4x4_cells": 12
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "c69415ee85c97ea71090fa65df631cfb8dea7f44ab0552fa44b0a738b0a9e0e6",
+      "coarse": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 126,
+        "visible_selected_edges": 128,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 8,
+          "8": 43,
+          "12": 57,
+          "16": 59
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 1,
+          "2": 3,
+          "4": 11,
+          "8": 55,
+          "12": 76,
+          "16": 77
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 17,
+        "response_used_searches": 128,
+        "selected_edges_16px_support": {
+          "count": 59,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            19,
+            5,
+            24
+          ],
+          "occupied_4x4_cells": 13
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 6,
+        "incremental_unique_vector_count_max": 8,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.12513950892857142,
+            "pairwise_hamming_fraction_max": 0.25390625
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.14467075892857142,
+            "pairwise_hamming_fraction_max": 0.28515625
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.15876116071428573,
+            "pairwise_hamming_fraction_max": 0.3046875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 7,
+            "pairwise_hamming_fraction_mean": 0.26450892857142855,
+            "pairwise_hamming_fraction_max": 0.51171875
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 6,
+            "pairwise_hamming_fraction_mean": 0.25516183035714285,
+            "pairwise_hamming_fraction_max": 0.56640625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 6,
+          "pairwise_hamming_fraction_mean": 0.25655691964285715,
+          "pairwise_hamming_fraction_max": 0.5703125
+        }
+      }
+    },
+    {
+      "profile": "step_0",
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "light_a": 0,
+      "light_b": 17,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/cdfb7d53dc0b0c82fbb9d06c5d9167b0657d7dce98f3ecc609bd2caa18bcad22.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "blank_or_uninformative_image",
+      "initialization": null,
+      "response_requested": true,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "final_only_rescue": null,
+      "live_hypothesis_count": null,
+      "rounds": null,
+      "solar_supported": null,
+      "inference_seconds": 0.03427649202058092,
+      "native": {
+        "returned": 0,
+        "saved_visible": 0,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "returned_reference_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "348ee7ff26ccb9d5c1cde0a0f4ed5f3c40321c4f95d926926b6ad5629feef143",
+      "coarse": null,
+      "measurements": null,
+      "assignment_diversity": null,
+      "missing_coarse_reason": "Frontend returned before proposal generation; no saved coarse truth/predictions available."
+    },
+    {
+      "profile": "step_0",
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "light_a": 16,
+      "light_b": 16,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/5ef1b622d1b1a1d7d55cd9868773831b3da88f00c13520dcb99c86db52c2a118.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            26,
+            38,
+            116,
+            41,
+            104,
+            204
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            25,
+            37,
+            116,
+            41,
+            103,
+            115
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            24,
+            36,
+            116,
+            41,
+            102,
+            114
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.642679551034234,
+      "native": {
+        "returned": 118,
+        "saved_visible": 107,
+        "correct_at_native_px": {
+          "1": 3,
+          "2": 3,
+          "4": 4,
+          "8": 6,
+          "12": 6,
+          "16": 7
+        },
+        "returned_reference_support": {
+          "count": 118,
+          "quadrants_tl_tr_bl_br": [
+            29,
+            31,
+            30,
+            28
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "bce4d604085dbc9578409276bdb599c638fd0413a9f59016bef7bfdf65ddd4fc",
+      "coarse": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 115,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 2,
+          "4": 3,
+          "8": 8,
+          "12": 11,
+          "16": 12
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 2,
+          "4": 4,
+          "8": 13,
+          "12": 20,
+          "16": 20
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 8,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 12,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            0,
+            0,
+            1
+          ],
+          "occupied_4x4_cells": 4
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 1,
+        "incremental_unique_vector_count_max": 1,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 1,
+          "pairwise_hamming_fraction_mean": 0.0,
+          "pairwise_hamming_fraction_max": 0.0
+        }
+      }
+    },
+    {
+      "profile": "step_0",
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "light_a": 8,
+      "light_b": 1,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/12c08441db3bcdc876a7a7860b64ce89c52a8c3f905380756928970a363f0baa.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1435,
+            99,
+            861,
+            583,
+            1437
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1290,
+            99,
+            715,
+            449,
+            1291
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1145,
+            99,
+            573,
+            322,
+            1145
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.848340855969582,
+      "native": {
+        "returned": 109,
+        "saved_visible": 84,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 1,
+          "16": 1
+        },
+        "returned_reference_support": {
+          "count": 109,
+          "quadrants_tl_tr_bl_br": [
+            32,
+            23,
+            28,
+            26
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "195979c06e1ebb332091522268f92cbe5d380af50781410adaae68d3f2419a31",
+      "coarse": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 102,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 1,
+          "12": 2,
+          "16": 4
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 4,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 2,
+        "incremental_unique_vector_count_max": 5,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0020926339285714285,
+            "pairwise_hamming_fraction_max": 0.00390625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0016741071428571428,
+            "pairwise_hamming_fraction_max": 0.00390625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 2,
+          "pairwise_hamming_fraction_mean": 0.0009765625,
+          "pairwise_hamming_fraction_max": 0.00390625
+        }
+      }
+    },
+    {
+      "profile": "step_500",
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "light_a": 0,
+      "light_b": 0,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a0f29b52ef9621813ebd2bb4867d7f3152e57b680cafa584171cbb9bf75b4cb8.npz",
+      "saved_arrays_sha256": "51731c520554e7a02a9b3b3db657053ecca9f301a90de3dfaa93b2dcd75ddd3d",
+      "pose_correct": true,
+      "pose_returned": true,
+      "reason": null,
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 5,
+        "proposal_info": [
+          {
+            "inliers": 15,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2007.0000000005675
+          },
+          {
+            "inliers": 6,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2089.403780350335
+          },
+          {
+            "inliers": 14,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2042.4376725936831
+          },
+          {
+            "inliers": 7,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2058.261483579099
+          },
+          {
+            "inliers": 12,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2039.582023969006
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 3,
+            "reason": "insufficient_front_facing_inliers"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 128,
+      "response_refresh_calls": 4790,
+      "response_usage_confirmed": true,
+      "response_cost": {
+        "refresh_requests": 4790,
+        "cache_hits": 0,
+        "canonicalizations": 4790,
+        "patch_encoder_calls": 2761,
+        "patches_encoded": 5522,
+        "canonical_feature_cache_hits": 1945
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": false,
+      "live_hypothesis_count": 6,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 59,
+          "live_poses": 6,
+          "sun_indices": [
+            1526,
+            1521,
+            1518,
+            1528,
+            1532,
+            1572,
+            1536,
+            1572
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 94,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1520,
+            1517,
+            1529,
+            1531,
+            1572,
+            1535,
+            1572
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 6,
+          "sun_indices": [
+            1528,
+            1519,
+            1517,
+            1530,
+            1531,
+            1572,
+            1534,
+            1572
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 44.7457159240148,
+      "native": {
+        "returned": 99,
+        "saved_visible": 99,
+        "correct_at_native_px": {
+          "1": 31,
+          "2": 40,
+          "4": 43,
+          "8": 44,
+          "12": 45,
+          "16": 48
+        },
+        "returned_reference_support": {
+          "count": 99,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            18,
+            28,
+            28
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "correct_2px_support": {
+          "count": 40,
+          "quadrants_tl_tr_bl_br": [
+            10,
+            10,
+            0,
+            20
+          ],
+          "occupied_4x4_cells": 10
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "a9a0bf244138e4b582a63aa0642e066680319517f89b4790310f99f057ce2d70",
+      "coarse": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 126,
+        "visible_selected_edges": 128,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 6,
+          "8": 34,
+          "12": 48,
+          "16": 50
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 1,
+          "2": 2,
+          "4": 7,
+          "8": 44,
+          "12": 65,
+          "16": 66
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 15,
+        "response_used_searches": 128,
+        "selected_edges_16px_support": {
+          "count": 50,
+          "quadrants_tl_tr_bl_br": [
+            12,
+            13,
+            4,
+            21
+          ],
+          "occupied_4x4_cells": 13
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 6,
+        "incremental_unique_vector_count_max": 8,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.12737165178571427,
+            "pairwise_hamming_fraction_max": 0.25390625
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 7,
+            "pairwise_hamming_fraction_mean": 0.25181361607142855,
+            "pairwise_hamming_fraction_max": 0.45703125
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 6,
+            "pairwise_hamming_fraction_mean": 0.2626953125,
+            "pairwise_hamming_fraction_max": 0.58203125
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 5,
+          "pairwise_hamming_fraction_mean": 0.2626953125,
+          "pairwise_hamming_fraction_max": 0.5859375
+        }
+      }
+    },
+    {
+      "profile": "step_500",
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "light_a": 0,
+      "light_b": 17,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/5ae47df9f2096dd6a1161e729df7444f958e9fe42074337bff25b768d8f5aee1.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "blank_or_uninformative_image",
+      "initialization": null,
+      "response_requested": true,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "final_only_rescue": null,
+      "live_hypothesis_count": null,
+      "rounds": null,
+      "solar_supported": null,
+      "inference_seconds": 0.030272824980784208,
+      "native": {
+        "returned": 0,
+        "saved_visible": 0,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "returned_reference_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "348ee7ff26ccb9d5c1cde0a0f4ed5f3c40321c4f95d926926b6ad5629feef143",
+      "coarse": null,
+      "measurements": null,
+      "assignment_diversity": null,
+      "missing_coarse_reason": "Frontend returned before proposal generation; no saved coarse truth/predictions available."
+    },
+    {
+      "profile": "step_500",
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "light_a": 16,
+      "light_b": 16,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a1a1cba568dc0734d44b32da727862af70606e3354be187ed32fb7f675c42a9a.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            26,
+            38,
+            116,
+            41,
+            104,
+            204
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            25,
+            37,
+            116,
+            41,
+            103,
+            115
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            24,
+            36,
+            116,
+            41,
+            102,
+            114
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.779966290981974,
+      "native": {
+        "returned": 118,
+        "saved_visible": 107,
+        "correct_at_native_px": {
+          "1": 3,
+          "2": 3,
+          "4": 4,
+          "8": 6,
+          "12": 6,
+          "16": 7
+        },
+        "returned_reference_support": {
+          "count": 118,
+          "quadrants_tl_tr_bl_br": [
+            29,
+            31,
+            30,
+            28
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "bce4d604085dbc9578409276bdb599c638fd0413a9f59016bef7bfdf65ddd4fc",
+      "coarse": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 115,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 2,
+          "4": 3,
+          "8": 8,
+          "12": 11,
+          "16": 12
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 2,
+          "4": 4,
+          "8": 13,
+          "12": 20,
+          "16": 20
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 8,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 12,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            0,
+            0,
+            1
+          ],
+          "occupied_4x4_cells": 4
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 1,
+        "incremental_unique_vector_count_max": 1,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 1,
+          "pairwise_hamming_fraction_mean": 0.0,
+          "pairwise_hamming_fraction_max": 0.0
+        }
+      }
+    },
+    {
+      "profile": "step_500",
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "light_a": 8,
+      "light_b": 1,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/8516e7edba0b1c377363e476d13a9357e7728b45ed2f8cc0d5c847eb1d356ec5.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1435,
+            99,
+            861,
+            583,
+            1437
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1290,
+            99,
+            715,
+            449,
+            1291
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1145,
+            99,
+            573,
+            322,
+            1145
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 9.79940183396684,
+      "native": {
+        "returned": 109,
+        "saved_visible": 84,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 1,
+          "16": 1
+        },
+        "returned_reference_support": {
+          "count": 109,
+          "quadrants_tl_tr_bl_br": [
+            32,
+            23,
+            28,
+            26
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "195979c06e1ebb332091522268f92cbe5d380af50781410adaae68d3f2419a31",
+      "coarse": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 102,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 1,
+          "12": 2,
+          "16": 4
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 4,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 2,
+        "incremental_unique_vector_count_max": 5,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0020926339285714285,
+            "pairwise_hamming_fraction_max": 0.00390625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0016741071428571428,
+            "pairwise_hamming_fraction_max": 0.00390625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 2,
+          "pairwise_hamming_fraction_mean": 0.0009765625,
+          "pairwise_hamming_fraction_max": 0.00390625
+        }
+      }
+    },
+    {
+      "profile": "step_1000",
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "light_a": 0,
+      "light_b": 0,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/bf170ff7d8ec7da1c453ba236664d58993b96b0f7d206751bfe6fadeb2a9882a.npz",
+      "saved_arrays_sha256": "792abe3866c0d86f480b74efbd9e51bbaa5fbe36c3353e30551f9f9dfc1d369a",
+      "pose_correct": true,
+      "pose_returned": true,
+      "reason": null,
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 5,
+        "proposal_info": [
+          {
+            "inliers": 15,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2007.0000000005675
+          },
+          {
+            "inliers": 6,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2089.403780350335
+          },
+          {
+            "inliers": 14,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2042.4376725936831
+          },
+          {
+            "inliers": 7,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2058.261483579099
+          },
+          {
+            "inliers": 12,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2039.582023969006
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 3,
+            "reason": "insufficient_front_facing_inliers"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 128,
+      "response_refresh_calls": 4790,
+      "response_usage_confirmed": true,
+      "response_cost": {
+        "refresh_requests": 4790,
+        "cache_hits": 0,
+        "canonicalizations": 4790,
+        "patch_encoder_calls": 2761,
+        "patches_encoded": 5522,
+        "canonical_feature_cache_hits": 1945
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": false,
+      "live_hypothesis_count": 6,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 59,
+          "live_poses": 6,
+          "sun_indices": [
+            1526,
+            1521,
+            1518,
+            1528,
+            1532,
+            1572,
+            1536,
+            1572
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 94,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1520,
+            1517,
+            1529,
+            1531,
+            1572,
+            1535,
+            1572
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 6,
+          "sun_indices": [
+            1528,
+            1519,
+            1517,
+            1530,
+            1531,
+            1572,
+            1534,
+            1572
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 48.38248917798046,
+      "native": {
+        "returned": 99,
+        "saved_visible": 99,
+        "correct_at_native_px": {
+          "1": 31,
+          "2": 40,
+          "4": 43,
+          "8": 44,
+          "12": 45,
+          "16": 48
+        },
+        "returned_reference_support": {
+          "count": 99,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            18,
+            28,
+            28
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "correct_2px_support": {
+          "count": 40,
+          "quadrants_tl_tr_bl_br": [
+            10,
+            10,
+            0,
+            20
+          ],
+          "occupied_4x4_cells": 10
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "efb4398ff2c346636dd6ee0c577293b2420170b2d551f24e84502d42224ef998",
+      "coarse": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 126,
+        "visible_selected_edges": 128,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 6,
+          "8": 34,
+          "12": 48,
+          "16": 50
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 1,
+          "2": 2,
+          "4": 7,
+          "8": 44,
+          "12": 65,
+          "16": 66
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 15,
+        "response_used_searches": 128,
+        "selected_edges_16px_support": {
+          "count": 50,
+          "quadrants_tl_tr_bl_br": [
+            12,
+            13,
+            4,
+            21
+          ],
+          "occupied_4x4_cells": 13
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 6,
+        "incremental_unique_vector_count_max": 8,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.12737165178571427,
+            "pairwise_hamming_fraction_max": 0.25390625
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 7,
+            "pairwise_hamming_fraction_mean": 0.25181361607142855,
+            "pairwise_hamming_fraction_max": 0.45703125
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 6,
+            "pairwise_hamming_fraction_mean": 0.26436941964285715,
+            "pairwise_hamming_fraction_max": 0.5859375
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 5,
+          "pairwise_hamming_fraction_mean": 0.26436941964285715,
+          "pairwise_hamming_fraction_max": 0.58984375
+        }
+      }
+    },
+    {
+      "profile": "step_1000",
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "light_a": 0,
+      "light_b": 17,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/39d2ae76079b83b83fb9cd10fb8489d35441baaab4e712fe127cde53bbb3a86a.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "blank_or_uninformative_image",
+      "initialization": null,
+      "response_requested": true,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "final_only_rescue": null,
+      "live_hypothesis_count": null,
+      "rounds": null,
+      "solar_supported": null,
+      "inference_seconds": 0.036104010010603815,
+      "native": {
+        "returned": 0,
+        "saved_visible": 0,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "returned_reference_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "348ee7ff26ccb9d5c1cde0a0f4ed5f3c40321c4f95d926926b6ad5629feef143",
+      "coarse": null,
+      "measurements": null,
+      "assignment_diversity": null,
+      "missing_coarse_reason": "Frontend returned before proposal generation; no saved coarse truth/predictions available."
+    },
+    {
+      "profile": "step_1000",
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "light_a": 16,
+      "light_b": 16,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/7c22bbc7146d687fbdb8ea1b1937f4fc935f240baa34b40113fcbdca231c2102.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            26,
+            38,
+            116,
+            41,
+            104,
+            204
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            25,
+            37,
+            116,
+            41,
+            103,
+            115
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            24,
+            36,
+            116,
+            41,
+            102,
+            114
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.830864697985817,
+      "native": {
+        "returned": 118,
+        "saved_visible": 107,
+        "correct_at_native_px": {
+          "1": 3,
+          "2": 3,
+          "4": 4,
+          "8": 6,
+          "12": 6,
+          "16": 7
+        },
+        "returned_reference_support": {
+          "count": 118,
+          "quadrants_tl_tr_bl_br": [
+            29,
+            31,
+            30,
+            28
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "bce4d604085dbc9578409276bdb599c638fd0413a9f59016bef7bfdf65ddd4fc",
+      "coarse": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 115,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 2,
+          "4": 3,
+          "8": 8,
+          "12": 11,
+          "16": 12
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 2,
+          "4": 4,
+          "8": 13,
+          "12": 20,
+          "16": 20
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 8,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 12,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            0,
+            0,
+            1
+          ],
+          "occupied_4x4_cells": 4
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 1,
+        "incremental_unique_vector_count_max": 1,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 1,
+          "pairwise_hamming_fraction_mean": 0.0,
+          "pairwise_hamming_fraction_max": 0.0
+        }
+      }
+    },
+    {
+      "profile": "step_1000",
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "light_a": 8,
+      "light_b": 1,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/a43f544c5b3e62135930804a945151ea4324d8a616b0850602bd59917ebdff23.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1435,
+            99,
+            861,
+            583,
+            1437
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1290,
+            99,
+            715,
+            449,
+            1291
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1145,
+            99,
+            573,
+            322,
+            1145
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 9.19971221499145,
+      "native": {
+        "returned": 109,
+        "saved_visible": 84,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 1,
+          "16": 1
+        },
+        "returned_reference_support": {
+          "count": 109,
+          "quadrants_tl_tr_bl_br": [
+            32,
+            23,
+            28,
+            26
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "195979c06e1ebb332091522268f92cbe5d380af50781410adaae68d3f2419a31",
+      "coarse": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 102,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 1,
+          "12": 2,
+          "16": 4
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 4,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 2,
+        "incremental_unique_vector_count_max": 5,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0020926339285714285,
+            "pairwise_hamming_fraction_max": 0.00390625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0016741071428571428,
+            "pairwise_hamming_fraction_max": 0.00390625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 2,
+          "pairwise_hamming_fraction_mean": 0.0009765625,
+          "pairwise_hamming_fraction_max": 0.00390625
+        }
+      }
+    },
+    {
+      "profile": "step_1500",
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "light_a": 0,
+      "light_b": 0,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/07d4234549d3e36978c88009492d717ab7f5da6472bd370978f1a72262b2cfc5.npz",
+      "saved_arrays_sha256": "e818d625c6556f17ee38449df0621f5e5e8bf048f867124b608925bce5254e09",
+      "pose_correct": true,
+      "pose_returned": true,
+      "reason": null,
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 5,
+        "proposal_info": [
+          {
+            "inliers": 15,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2007.0000000005675
+          },
+          {
+            "inliers": 6,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2089.403780350335
+          },
+          {
+            "inliers": 14,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2042.4376725936831
+          },
+          {
+            "inliers": 7,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2058.261483579099
+          },
+          {
+            "inliers": 12,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2039.582023969006
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 3,
+            "reason": "insufficient_front_facing_inliers"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 128,
+      "response_refresh_calls": 4790,
+      "response_usage_confirmed": true,
+      "response_cost": {
+        "refresh_requests": 4790,
+        "cache_hits": 0,
+        "canonicalizations": 4790,
+        "patch_encoder_calls": 1928,
+        "patches_encoded": 3856,
+        "canonical_feature_cache_hits": 2778
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": false,
+      "live_hypothesis_count": 6,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 59,
+          "live_poses": 6,
+          "sun_indices": [
+            1526,
+            1521,
+            1518,
+            1528,
+            1532,
+            1572,
+            1536,
+            1572
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 94,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1520,
+            1517,
+            1529,
+            1531,
+            1572,
+            1535,
+            1572
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 6,
+          "sun_indices": [
+            1528,
+            1519,
+            1517,
+            1530,
+            1531,
+            1572,
+            1534,
+            1572
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 43.577386865974404,
+      "native": {
+        "returned": 95,
+        "saved_visible": 95,
+        "correct_at_native_px": {
+          "1": 32,
+          "2": 42,
+          "4": 45,
+          "8": 46,
+          "12": 47,
+          "16": 50
+        },
+        "returned_reference_support": {
+          "count": 95,
+          "quadrants_tl_tr_bl_br": [
+            24,
+            18,
+            25,
+            28
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "correct_2px_support": {
+          "count": 42,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            11,
+            0,
+            20
+          ],
+          "occupied_4x4_cells": 10
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "407f62f75eed2952699beb45d59abd0c4992c731a37facf7538817e5140d7c5f",
+      "coarse": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 126,
+        "visible_selected_edges": 128,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 7,
+          "8": 35,
+          "12": 49,
+          "16": 51
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 1,
+          "2": 2,
+          "4": 8,
+          "8": 46,
+          "12": 67,
+          "16": 68
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 16,
+        "response_used_searches": 128,
+        "selected_edges_16px_support": {
+          "count": 51,
+          "quadrants_tl_tr_bl_br": [
+            13,
+            14,
+            3,
+            21
+          ],
+          "occupied_4x4_cells": 12
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 6,
+        "incremental_unique_vector_count_max": 8,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.12527901785714285,
+            "pairwise_hamming_fraction_max": 0.25390625
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.13155691964285715,
+            "pairwise_hamming_fraction_max": 0.2578125
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 7,
+            "pairwise_hamming_fraction_mean": 0.2523716517857143,
+            "pairwise_hamming_fraction_max": 0.47265625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 6,
+            "pairwise_hamming_fraction_mean": 0.25516183035714285,
+            "pairwise_hamming_fraction_max": 0.56640625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 5,
+          "pairwise_hamming_fraction_mean": 0.25599888392857145,
+          "pairwise_hamming_fraction_max": 0.5703125
+        }
+      }
+    },
+    {
+      "profile": "step_1500",
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "light_a": 0,
+      "light_b": 17,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/b9e45d4add5ff9aea9692a16b9d718cbd1da293404cff9d470e8f99b4064d7ce.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "blank_or_uninformative_image",
+      "initialization": null,
+      "response_requested": true,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "final_only_rescue": null,
+      "live_hypothesis_count": null,
+      "rounds": null,
+      "solar_supported": null,
+      "inference_seconds": 0.036288280971348286,
+      "native": {
+        "returned": 0,
+        "saved_visible": 0,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "returned_reference_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "348ee7ff26ccb9d5c1cde0a0f4ed5f3c40321c4f95d926926b6ad5629feef143",
+      "coarse": null,
+      "measurements": null,
+      "assignment_diversity": null,
+      "missing_coarse_reason": "Frontend returned before proposal generation; no saved coarse truth/predictions available."
+    },
+    {
+      "profile": "step_1500",
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "light_a": 16,
+      "light_b": 16,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/c2fa8cf9d607aa71fe99c98f2de9ffeab32066694478fe59b4b5936f47833c52.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            26,
+            38,
+            116,
+            41,
+            104,
+            204
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            25,
+            37,
+            116,
+            41,
+            103,
+            115
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            24,
+            36,
+            116,
+            41,
+            102,
+            114
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.845709516957868,
+      "native": {
+        "returned": 118,
+        "saved_visible": 107,
+        "correct_at_native_px": {
+          "1": 3,
+          "2": 3,
+          "4": 4,
+          "8": 6,
+          "12": 6,
+          "16": 7
+        },
+        "returned_reference_support": {
+          "count": 118,
+          "quadrants_tl_tr_bl_br": [
+            29,
+            31,
+            30,
+            28
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "bce4d604085dbc9578409276bdb599c638fd0413a9f59016bef7bfdf65ddd4fc",
+      "coarse": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 115,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 2,
+          "4": 3,
+          "8": 8,
+          "12": 11,
+          "16": 12
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 2,
+          "4": 4,
+          "8": 13,
+          "12": 20,
+          "16": 20
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 8,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 12,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            0,
+            0,
+            1
+          ],
+          "occupied_4x4_cells": 4
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 1,
+        "incremental_unique_vector_count_max": 1,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 1,
+          "pairwise_hamming_fraction_mean": 0.0,
+          "pairwise_hamming_fraction_max": 0.0
+        }
+      }
+    },
+    {
+      "profile": "step_1500",
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "light_a": 8,
+      "light_b": 1,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/ef6787bc7b8bc911bcfaa6e5feafb1a08bf3b8d474c648ba408c6ce674c2a986.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1435,
+            99,
+            861,
+            583,
+            1437
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1290,
+            99,
+            715,
+            449,
+            1291
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1145,
+            99,
+            573,
+            322,
+            1145
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 9.067768268985674,
+      "native": {
+        "returned": 109,
+        "saved_visible": 84,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 1,
+          "16": 1
+        },
+        "returned_reference_support": {
+          "count": 109,
+          "quadrants_tl_tr_bl_br": [
+            32,
+            23,
+            28,
+            26
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "195979c06e1ebb332091522268f92cbe5d380af50781410adaae68d3f2419a31",
+      "coarse": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 102,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 1,
+          "12": 2,
+          "16": 4
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 4,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 2,
+        "incremental_unique_vector_count_max": 5,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0020926339285714285,
+            "pairwise_hamming_fraction_max": 0.00390625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0016741071428571428,
+            "pairwise_hamming_fraction_max": 0.00390625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 2,
+          "pairwise_hamming_fraction_mean": 0.0009765625,
+          "pairwise_hamming_fraction_max": 0.00390625
+        }
+      }
+    },
+    {
+      "profile": "step_2000",
+      "case_id": "u012-l00-00-positive",
+      "unit_index": 12,
+      "component": "np31-r0-c4",
+      "light_a": 0,
+      "light_b": 0,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/78adc9792913f9a1055fbcc1876f307ad439001836bda670da35737e66373464.npz",
+      "saved_arrays_sha256": "51731c520554e7a02a9b3b3db657053ecca9f301a90de3dfaa93b2dcd75ddd3d",
+      "pose_correct": true,
+      "pose_returned": true,
+      "reason": null,
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 5,
+        "proposal_info": [
+          {
+            "inliers": 15,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2007.0000000005675
+          },
+          {
+            "inliers": 6,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2089.403780350335
+          },
+          {
+            "inliers": 14,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2042.4376725936831
+          },
+          {
+            "inliers": 7,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2058.261483579099
+          },
+          {
+            "inliers": 12,
+            "reason": null,
+            "clipped_squared_reprojection_cost": 2039.582023969006
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 3,
+            "reason": "insufficient_front_facing_inliers"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 128,
+      "response_refresh_calls": 4790,
+      "response_usage_confirmed": true,
+      "response_cost": {
+        "refresh_requests": 4790,
+        "cache_hits": 0,
+        "canonicalizations": 4790,
+        "patch_encoder_calls": 2761,
+        "patches_encoded": 5522,
+        "canonical_feature_cache_hits": 1945
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": false,
+      "live_hypothesis_count": 6,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 59,
+          "live_poses": 6,
+          "sun_indices": [
+            1526,
+            1521,
+            1518,
+            1528,
+            1532,
+            1572,
+            1536,
+            1572
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 94,
+          "live_poses": 6,
+          "sun_indices": [
+            1527,
+            1520,
+            1517,
+            1529,
+            1531,
+            1572,
+            1535,
+            1572
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 6,
+          "sun_indices": [
+            1528,
+            1519,
+            1517,
+            1530,
+            1531,
+            1572,
+            1534,
+            1572
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 45.65934611199191,
+      "native": {
+        "returned": 99,
+        "saved_visible": 99,
+        "correct_at_native_px": {
+          "1": 31,
+          "2": 40,
+          "4": 43,
+          "8": 44,
+          "12": 45,
+          "16": 48
+        },
+        "returned_reference_support": {
+          "count": 99,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            18,
+            28,
+            28
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "correct_2px_support": {
+          "count": 40,
+          "quadrants_tl_tr_bl_br": [
+            10,
+            10,
+            0,
+            20
+          ],
+          "occupied_4x4_cells": 10
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "a9a0bf244138e4b582a63aa0642e066680319517f89b4790310f99f057ce2d70",
+      "coarse": {
+        "anchors": 256,
+        "visible": 256,
+        "hidden_or_outside": 0,
+        "top8_min_euclidean_at_native_px": {
+          "1": 3,
+          "2": 7,
+          "4": 23,
+          "8": 106,
+          "12": 148,
+          "16": 153
+        },
+        "rank0_at_native_px": {
+          "1": 1,
+          "2": 3,
+          "4": 16,
+          "8": 59,
+          "12": 77,
+          "16": 80
+        },
+        "visible_reference_support": {
+          "count": 256,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "occupied_4x4_cells": 4
+        },
+        "top8_within_16px_support": {
+          "count": 153,
+          "quadrants_tl_tr_bl_br": [
+            30,
+            48,
+            24,
+            51
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "source_arrays_sha256": "00b5add12893e36f7a9d177bf27852e6089150aa81977e6e73782c2870d780c2"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 126,
+        "visible_selected_edges": 128,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 6,
+          "8": 34,
+          "12": 48,
+          "16": 50
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 1,
+          "2": 2,
+          "4": 7,
+          "8": 44,
+          "12": 65,
+          "16": 66
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 15,
+        "response_used_searches": 128,
+        "selected_edges_16px_support": {
+          "count": 50,
+          "quadrants_tl_tr_bl_br": [
+            12,
+            13,
+            4,
+            21
+          ],
+          "occupied_4x4_cells": 13
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 6,
+        "incremental_unique_vector_count_max": 8,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.123046875,
+            "pairwise_hamming_fraction_max": 0.25
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 8,
+            "pairwise_hamming_fraction_mean": 0.12737165178571427,
+            "pairwise_hamming_fraction_max": 0.25390625
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 7,
+            "pairwise_hamming_fraction_mean": 0.25181361607142855,
+            "pairwise_hamming_fraction_max": 0.45703125
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 6,
+            "pairwise_hamming_fraction_mean": 0.2626953125,
+            "pairwise_hamming_fraction_max": 0.58203125
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 5,
+          "pairwise_hamming_fraction_mean": 0.2626953125,
+          "pairwise_hamming_fraction_max": 0.5859375
+        }
+      }
+    },
+    {
+      "profile": "step_2000",
+      "case_id": "u026-l00-17-positive",
+      "unit_index": 26,
+      "component": "np31-r1-c0",
+      "light_a": 0,
+      "light_b": 17,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/65e089c2eed1a4be703fa39dc73bb0ac52e139f58480f287f3e221316dee47b0.npz",
+      "saved_arrays_sha256": "42e1dcfa8a6b412ee5b02b402b2d29cbe67f072f4d95826c0885c55906e63e3a",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "blank_or_uninformative_image",
+      "initialization": null,
+      "response_requested": true,
+      "response_measurements": null,
+      "response_refresh_calls": null,
+      "response_usage_confirmed": null,
+      "response_cost": null,
+      "native_encoder_forwards": null,
+      "final_only_rescue": null,
+      "live_hypothesis_count": null,
+      "rounds": null,
+      "solar_supported": null,
+      "inference_seconds": 0.03370978601742536,
+      "native": {
+        "returned": 0,
+        "saved_visible": 0,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "returned_reference_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "348ee7ff26ccb9d5c1cde0a0f4ed5f3c40321c4f95d926926b6ad5629feef143",
+      "coarse": null,
+      "measurements": null,
+      "assignment_diversity": null,
+      "missing_coarse_reason": "Frontend returned before proposal generation; no saved coarse truth/predictions available."
+    },
+    {
+      "profile": "step_2000",
+      "case_id": "u060-l16-16-positive",
+      "unit_index": 60,
+      "component": "np31-r3-c3",
+      "light_a": 16,
+      "light_b": 16,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/9e2517490648ca41b02515ee53847cee35fb94a5916f995a78076b7197282a7e.npz",
+      "saved_arrays_sha256": "e17b5b668029e9744f3061360510370524715fb77d2a3706dfe62c2ffd18da36",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 252,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            26,
+            38,
+            116,
+            41,
+            104,
+            204
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            25,
+            37,
+            116,
+            41,
+            103,
+            115
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            0,
+            15,
+            24,
+            36,
+            116,
+            41,
+            102,
+            114
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 8.952151726989541,
+      "native": {
+        "returned": 118,
+        "saved_visible": 107,
+        "correct_at_native_px": {
+          "1": 3,
+          "2": 3,
+          "4": 4,
+          "8": 6,
+          "12": 6,
+          "16": 7
+        },
+        "returned_reference_support": {
+          "count": 118,
+          "quadrants_tl_tr_bl_br": [
+            29,
+            31,
+            30,
+            28
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "bce4d604085dbc9578409276bdb599c638fd0413a9f59016bef7bfdf65ddd4fc",
+      "coarse": {
+        "anchors": 256,
+        "visible": 233,
+        "hidden_or_outside": 23,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 5,
+          "8": 18,
+          "12": 27,
+          "16": 30
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 3,
+          "4": 4,
+          "8": 11,
+          "12": 14,
+          "16": 16
+        },
+        "visible_reference_support": {
+          "count": 233,
+          "quadrants_tl_tr_bl_br": [
+            64,
+            64,
+            52,
+            53
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "top8_within_2px_support": {
+          "count": 3,
+          "quadrants_tl_tr_bl_br": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 2
+        },
+        "top8_within_16px_support": {
+          "count": 30,
+          "quadrants_tl_tr_bl_br": [
+            25,
+            1,
+            2,
+            2
+          ],
+          "occupied_4x4_cells": 7
+        },
+        "source_arrays_sha256": "f04ec8f79b397f50c81f4f314ad1eb48862c74bd8701740fb1c6307743c8bd27"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 115,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 2,
+          "4": 3,
+          "8": 8,
+          "12": 11,
+          "16": 12
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 2,
+          "4": 4,
+          "8": 13,
+          "12": 20,
+          "16": 20
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 8,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 12,
+          "quadrants_tl_tr_bl_br": [
+            11,
+            0,
+            0,
+            1
+          ],
+          "occupied_4x4_cells": 4
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 1,
+        "incremental_unique_vector_count_max": 1,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 1,
+            "pairwise_hamming_fraction_mean": 0.0,
+            "pairwise_hamming_fraction_max": 0.0
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 1,
+          "pairwise_hamming_fraction_mean": 0.0,
+          "pairwise_hamming_fraction_max": 0.0
+        }
+      }
+    },
+    {
+      "profile": "step_2000",
+      "case_id": "u074-l08-01-positive",
+      "unit_index": 74,
+      "component": "np31-r4-c1",
+      "light_a": 8,
+      "light_b": 1,
+      "saved_arrays": "runs/solar-sh-checkpoint-selection-v79/cost_pilot/12cad3c6a3b04ea0180f98ac6c67ddbed74a1215d618388c40b99fd8378bc2ff.npz",
+      "saved_arrays_sha256": "20fefb00499384165c97bb9cf76a81bf803e08cd31f29ce7ab7dd3348462795b",
+      "pose_correct": false,
+      "pose_returned": false,
+      "reason": "ransac_failed",
+      "initialization": {
+        "policy": "strict3",
+        "initial_hypothesis_count": 8,
+        "initial_live_poses": 0,
+        "proposal_info": [
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          },
+          {
+            "inliers": 0,
+            "reason": "ransac_failed"
+          }
+        ],
+        "final_reprojection_threshold_native_px": 3.0
+      },
+      "response_requested": true,
+      "response_measurements": 0,
+      "response_refresh_calls": 0,
+      "response_usage_confirmed": false,
+      "response_cost": {
+        "refresh_requests": 0,
+        "cache_hits": 0,
+        "canonicalizations": 0,
+        "patch_encoder_calls": 0,
+        "patches_encoded": 0
+      },
+      "native_encoder_forwards": 250,
+      "final_only_rescue": true,
+      "live_hypothesis_count": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "queries": 48,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1435,
+            99,
+            861,
+            583,
+            1437
+          ]
+        },
+        {
+          "round": 2,
+          "queries": 88,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1290,
+            99,
+            715,
+            449,
+            1291
+          ]
+        },
+        {
+          "round": 3,
+          "queries": 128,
+          "live_poses": 0,
+          "sun_indices": [
+            444,
+            710,
+            206,
+            1145,
+            99,
+            573,
+            322,
+            1145
+          ]
+        }
+      ],
+      "solar_supported": true,
+      "inference_seconds": 9.067144335014746,
+      "native": {
+        "returned": 109,
+        "saved_visible": 84,
+        "correct_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 1,
+          "16": 1
+        },
+        "returned_reference_support": {
+          "count": 109,
+          "quadrants_tl_tr_bl_br": [
+            32,
+            23,
+            28,
+            26
+          ],
+          "occupied_4x4_cells": 16
+        },
+        "correct_2px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "actual_C_policy": "unrecorded_in_frozen_solver",
+      "actual_C_fallback": "unrecorded_in_frozen_solver",
+      "native_arrays_sha256": "195979c06e1ebb332091522268f92cbe5d380af50781410adaae68d3f2419a31",
+      "coarse": {
+        "anchors": 256,
+        "visible": 225,
+        "hidden_or_outside": 31,
+        "top8_min_euclidean_at_native_px": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 2,
+          "12": 4,
+          "16": 7
+        },
+        "rank0_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "visible_reference_support": {
+          "count": 225,
+          "quadrants_tl_tr_bl_br": [
+            42,
+            63,
+            56,
+            64
+          ],
+          "occupied_4x4_cells": 15
+        },
+        "top8_within_2px_support": {
+          "count": 1,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 1
+        },
+        "top8_within_16px_support": {
+          "count": 7,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            6,
+            1,
+            0
+          ],
+          "occupied_4x4_cells": 3
+        },
+        "source_arrays_sha256": "38e269ef3a6889e2b5835c4c5ff3d97004c05d2036ea5a194068c16e4ccd50a8"
+      },
+      "measurements": {
+        "searches": 128,
+        "distinct_anchors": 128,
+        "visible_selected_edges": 102,
+        "selected_candidate_at_native_px": {
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "8": 0,
+          "12": 0,
+          "16": 0
+        },
+        "any_top8_candidate_at_native_px_for_selected_anchors": {
+          "1": 0,
+          "2": 1,
+          "4": 1,
+          "8": 1,
+          "12": 2,
+          "16": 4
+        },
+        "anchors_with_top8_reach_16px_but_no_searched_candidate_within_16px": 4,
+        "response_used_searches": 0,
+        "selected_edges_16px_support": {
+          "count": 0,
+          "quadrants_tl_tr_bl_br": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "occupied_4x4_cells": 0
+        }
+      },
+      "assignment_diversity": {
+        "initial_candidate_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "initial_assignment_vectors_saved": false,
+        "earliest_saved_snapshot_is_post_first_measurement": true,
+        "incremental_unique_vector_count_min": 2,
+        "incremental_unique_vector_count_max": 5,
+        "snapshots": [
+          {
+            "after_search": 1,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 16,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 32,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 5,
+            "pairwise_hamming_fraction_mean": 0.005301339285714286,
+            "pairwise_hamming_fraction_max": 0.01171875
+          },
+          {
+            "after_search": 64,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0020926339285714285,
+            "pairwise_hamming_fraction_max": 0.00390625
+          },
+          {
+            "after_search": 128,
+            "hypotheses": 8,
+            "unique_candidate_vectors": 2,
+            "pairwise_hamming_fraction_mean": 0.0016741071428571428,
+            "pairwise_hamming_fraction_max": 0.00390625
+          }
+        ],
+        "final": {
+          "hypotheses": 8,
+          "unique_candidate_vectors": 2,
+          "pairwise_hamming_fraction_mean": 0.0009765625,
+          "pairwise_hamming_fraction_max": 0.00390625
+        }
+      }
+    }
+  ],
+  "frozen_source_sha256": {
+    "solar_frontend_v63.py": "cdbd20fd07b3d8582e82d27e56b10295e7f2c5671b21927aa74790a72a4407c0",
+    "solar_assignment_v63.py": "ebb84f4e04a1b037f427bdba4266fa776fdb1c32f7ba0518eaa24c5dbc592861",
+    "solar_native_v63.py": "0b3174007e8a258d1b6d958cecb516bb9bc636f4179958f09f7b19d21279a319"
+  },
+  "definitions": {
+    "rank0_at_native_px": "Descriptor candidate index0 in saved coarse_query_candidates; distinct from the initial_candidate_rank solver field.",
+    "initial_candidate_rank": "Retained initial-beam candidate-rank tag after appearance/solar assignment; not a guarantee that every chosen descriptor index is0.",
+    "visible": "Saved exact scoring mask, additionally requiring finite saved scoring xy; no recomputation."
+  },
+  "interpretation_limits": [
+    "Five checkpoint executions of each of four positive pairs are repeated measurements, not 20 independent terrain tests.",
+    "Both changed-light positive pairs also use unseen-roll cameras; this tiny pilot cannot isolate lighting from geometry/roll.",
+    "Native-pixel Euclidean candidate distances do not prove pose recoverability or local-refinement success.",
+    "The 33x33 refinement search is centered on rounded rotated candidate coordinates; Euclidean <=16px is a conservative disk, not the exact square support certificate.",
+    "Initial candidate rank 0 does not prove identical initial assignment vectors; exact initial vectors were not recorded. Earliest diversity snapshot is after the first measurement.",
+    "Missing coarse outputs on blank-image early return cannot be replaced with ground truth recomputation.",
+    "A returned solar_supported flag describes the recorded likelihood support test, not independently verified query Sun accuracy.",
+    "Requested B/C flags do not establish execution or benefit; actual C fallback was not recorded by the frozen solver.",
+    "This is a cost-pilot diagnosis and does not select a checkpoint or establish accuracy improvement."
+  ],
+  "elapsed_seconds": 2.8110373000381514,
+  "source_sha256": "35c518e3839fc4349ed0e9c5f800047d66070675060a2c7b5e1e7b4ea240f9fd"
+}

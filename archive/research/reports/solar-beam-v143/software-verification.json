@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "pytest": {
+    "passed": 1532,
+    "skipped": 4,
+    "subtests": 14,
+    "seconds": 415.38
+  },
+  "generated_branch_switch_replay": {
+    "passed": true,
+    "generated_only": true,
+    "geometry_cells": 3,
+    "actual_native_fields_per_control": 64,
+    "source_smoke_sha256": "6fe447fbb1fed3ca50f1987aac395f3c7130df4c16beb7e2e7c288f0460227e4",
+    "independent_geometry_arithmetic": true,
+    "deliberately_injected_control_hypotheses": true,
+    "lunar_inference": false,
+    "rows": {
+      "single_uniform": {
+        "correct": false,
+        "strict": false,
+        "pose_returned": false,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 0,
+            "visible": 1,
+            "returned": 1
+          },
+          "2": {
+            "correct": 0,
+            "visible": 1,
+            "returned": 1
+          },
+          "4": {
+            "correct": 0,
+            "visible": 1,
+            "returned": 1
+          },
+          "8": {
+            "correct": 0,
+            "visible": 1,
+            "returned": 1
+          },
+          "12": {
+            "correct": 0,
+            "visible": 1,
+            "returned": 1
+          }
+        },
+        "pose_error": null
+      },
+      "beam_uniform": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "2": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "4": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "8": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "12": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.005114321643726519,
+          "translation_m": 0.1128217106798929,
+          "reference_range_m": 1212.7692999660915
+        }
+      },
+      "beam_active": {
+        "correct": true,
+        "strict": true,
+        "pose_returned": true,
+        "wrong_positive": false,
+        "raw_nonoverlap": false,
+        "correspondence": {
+          "1": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "2": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "4": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "8": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          },
+          "12": {
+            "correct": 32,
+            "visible": 32,
+            "returned": 32
+          }
+        },
+        "pose_error": {
+          "rotation_deg": 0.0011483411061329598,
+          "translation_m": 0.028657674936736877,
+          "reference_range_m": 1212.7692999660915
+        }
+      }
+    }
+  },
+  "procedural_smoke": {
+    "raw_evaluations": 100,
+    "summaries": 20,
+    "source_hashes_verified": 5
+  },
+  "source_files_verified": 115,
+  "input_files_verified": 134,
+  "inference_only_paths": 109,
+  "new_lunar_inference": 0,
+  "new_authority_issued": false,
+  "proposed_comparison_cap_seconds": 1800,
+  "prior_fixed_extra_charges_seconds": 3300,
+  "protocol_sha256": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+  "no_paid_compute": true,
+  "calibration_or_final_access": false,
+  "public_pose_null": true,
+  "original_matching_commands_unchanged": true,
+  "original_targets_preserved": 14
+}

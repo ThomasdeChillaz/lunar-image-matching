@@ -1,0 +1,252 @@
+{
+  "schema_version": 84,
+  "created_utc": "2026-11-04T08:30:00.725409+00:00",
+  "source_publication_commit": "acbd2db9a086050e6772f707006e8313d15ae13b",
+  "inference_revision": "solar-v84-exact-cache",
+  "native_pixels": 512,
+  "total_model_parameters": 95808,
+  "cpu_threads": 2,
+  "unique_positive_pairs": 4,
+  "unique_negative_pairs": 4,
+  "profiles_per_mode": [
+    0,
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "scientific_accuracy_gain": false,
+  "calibrated_acceptance_result": false,
+  "all8_lunar_ablations_completed": false,
+  "calibration_or_final_access": false,
+  "modes": {
+    "sh": {
+      "summary": "runs/solar-sh-checkpoint-selection-v84/cost_pilot/summary.json",
+      "summary_sha256": "8ea601ed8cbf7217f8b6fe4c42f6672e7c00bdc55bfd43babb54b7ca94c0960a",
+      "external_completion_sha256": "914e230edacd49b5e964710ef8ac92732a74ff7d9542f9eae04a5be45242686d",
+      "worker_calendar_seconds": 308.9555191769614,
+      "external_calendar_seconds": 309.67826436297037,
+      "old_worker_calendar_seconds": 471.2604065760388,
+      "difference_seconds": 162.30488739907742,
+      "profile_results": [
+        {
+          "profile": "step_0",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_500",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_1000",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_1500",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_2000",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        }
+      ],
+      "saved_metric_replay": "reports/solar-sh-checkpoint-selection-cost-pilot-replay-v84.json",
+      "saved_metric_replay_sha256": "e9c7f4cc143d2de1eae60685bca4fdff970f06eb19c78f77dab974015fd38b07",
+      "metric_watchdog_sha256": "d0809e8a5433a521a2531266fda8e3f6fe00b076bf4ca3c79581a520fa5bfab6",
+      "exact_saved_output_comparison": "reports/solar_cache_sh_saved_comparison_v84.json",
+      "exact_saved_output_comparison_sha256": "6b5555c35d25b19267dd49c5416bae4f1a7969a29fceddd71b2257285e0ec0d4",
+      "measured_full_cost": {
+        "conservative_total_seconds": 70009,
+        "profile_tracks": [
+          {
+            "profile": "step_0",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 11401.707243586628
+          },
+          {
+            "profile": "step_500",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 15003.923474844923
+          },
+          {
+            "profile": "step_1000",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 15014.172476574196
+          },
+          {
+            "profile": "step_1500",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 13593.7074989783
+          },
+          {
+            "profile": "step_2000",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 14995.11466213537
+          }
+        ],
+        "rule": "1.5 * (measured model load + worst measured case calendar time * all eligible cases)"
+      },
+      "full_admission": "refused before scientific reservation; unchanged12000max and remainingoriginalbudget insufficient",
+      "full_admission_log_sha256": "d327f3106b9af4ef865f719bf0db8c92cc073b0b375563d97021cdb8edb8c0c7"
+    },
+    "pooled": {
+      "summary": "runs/solar-pooled-checkpoint-selection-v84/cost_pilot/summary.json",
+      "summary_sha256": "a10aaf836b0fd4a94ecef1425120f24c1d82fd56c8920c15db023f6530b93c69",
+      "external_completion_sha256": "c78a527fd93ea7004c5741d044015abcdca8068b3399addbbe15934b980307ea",
+      "worker_calendar_seconds": 310.11316002800595,
+      "external_calendar_seconds": 310.82750085101,
+      "old_worker_calendar_seconds": 473.3302934640087,
+      "difference_seconds": 163.21713343600277,
+      "profile_results": [
+        {
+          "profile": "step_0",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_500",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_1000",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_1500",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        },
+        {
+          "profile": "step_2000",
+          "positive_cases": 4,
+          "raw_correct_poses": 1,
+          "raw_wrong_positive": 0,
+          "negative_cases": 4,
+          "raw_negative_pose_outputs": 0,
+          "changed_light_correct": 0,
+          "changed_light_total": 2
+        }
+      ],
+      "saved_metric_replay": "reports/solar-pooled-checkpoint-selection-cost-pilot-replay-v84.json",
+      "saved_metric_replay_sha256": "e5055f9950c1d78fc0d0f6f583323af0f8ae960f31d32d7bc78bf954a9c1d7f2",
+      "metric_watchdog_sha256": "bb0d1c6c5b712fbd99d2fc3f107c86e69fad91f57394ab39cb807f1950434a41",
+      "exact_saved_output_comparison": "reports/solar_cache_pooled_saved_comparison_v84.json",
+      "exact_saved_output_comparison_sha256": "4828e6fdd63d374eedbf21ada05dac7237504069a85ed8543bc11cb9d679204b",
+      "measured_full_cost": {
+        "conservative_total_seconds": 70844,
+        "profile_tracks": [
+          {
+            "profile": "step_0",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 11310.945448974031
+          },
+          {
+            "profile": "step_500",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 14804.704869677225
+          },
+          {
+            "profile": "step_1000",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 14885.0822469118
+          },
+          {
+            "profile": "step_1500",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 14797.891326946614
+          },
+          {
+            "profile": "step_2000",
+            "track": "estimated_sun",
+            "cases": 384,
+            "estimate_seconds": 15044.439288443711
+          }
+        ],
+        "rule": "1.5 * (measured model load + worst measured case calendar time * all eligible cases)"
+      },
+      "full_admission": "refused before scientific reservation; unchanged12000max and remainingoriginalbudget insufficient",
+      "full_admission_log_sha256": "d327f3106b9af4ef865f719bf0db8c92cc073b0b375563d97021cdb8edb8c0c7"
+    }
+  },
+  "predeclared_full_maximum_per_mode_seconds": 12000,
+  "full_selection_completed": false,
+  "caveats": [
+    "The same eight image pairs at five checkpoints per mode remain four unique positive/four negative pairs; no independence multiplication.",
+    "Actual40rowworker-calendar changes include setup/scoring/output and are nominal sameCPU/two-thread serial observations, not randomized/interleaved general model-speed trials.",
+    "Exactly preserved outputs establish a cache engineering correction, not a new learned contribution or measured localization gain.",
+    "All384cases/fivecheckpoints stayrequired for fullselection; budgets/deadlines/failures remain preserved."
+  ],
+  "next_research_gate": "Improve proposal coverage and no-pose/no-response bootstrap with a separately frozen controlled experiment; retain full final reserve.",
+  "prediction_archive": {
+    "path": "reports/solar_cache_pilot_predictions_v84.tar.gz",
+    "sha256": "da56457bf2cf1b3da397b8dd89cc97c63109324ceba15ad945fd04126f42c6a4",
+    "bytes": 3194953,
+    "files": 266,
+    "scope": "Both complete cached pilot prediction arrays/row JSON/summaries/execution+budget+termination receipts. Repeatedworkerlog andoriginalphysical/scoringsourceassetsnotbundled; originalsremainunchanged. Public metric replayJSON providedseparately."
+  },
+  "remaining_original_reserved_cap_seconds": {
+    "training": 15867.0,
+    "baseline": 50700.0
+  }
+}

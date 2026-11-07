@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "direction": 0,
+      "rotation": 0,
+      "points": 676,
+      "visible": 663,
+      "maximum_world_error_m": 2.1808700771235765e-06
+    },
+    {
+      "direction": 0,
+      "rotation": 1,
+      "points": 676,
+      "visible": 663,
+      "maximum_world_error_m": 2.2443681603264585e-06
+    },
+    {
+      "direction": 0,
+      "rotation": 2,
+      "points": 676,
+      "visible": 663,
+      "maximum_world_error_m": 2.2443681603264585e-06
+    },
+    {
+      "direction": 0,
+      "rotation": 3,
+      "points": 676,
+      "visible": 663,
+      "maximum_world_error_m": 2.2443681603264585e-06
+    },
+    {
+      "direction": 1,
+      "rotation": 0,
+      "points": 676,
+      "visible": 666,
+      "maximum_world_error_m": 2.316041135467133e-06
+    },
+    {
+      "direction": 1,
+      "rotation": 1,
+      "points": 676,
+      "visible": 667,
+      "maximum_world_error_m": 2.3766688868253896e-06
+    },
+    {
+      "direction": 1,
+      "rotation": 2,
+      "points": 676,
+      "visible": 670,
+      "maximum_world_error_m": 2.5222293409810178e-06
+    },
+    {
+      "direction": 1,
+      "rotation": 3,
+      "points": 676,
+      "visible": 670,
+      "maximum_world_error_m": 3.4169088752570812e-06
+    }
+  ],
+  "source_sha256": {
+    "control_north_supervision_v35.py": "599c01c9abb9b286156c351284f594c500d7d894613dc7ed9b661bbcc144eba4",
+    "north_bvh_supervision_v35.py": "6a2ecb62b271b4acd2a62c128812f732a54a6bffdc3523a4df5db0931c5c335b",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "verify_blender_camera_control_v31.py": "0475d4c9e7ade2a18a9a992a00e3ee42633131f22fb6679890d6750f40342a1a"
+  },
+  "source_height_pixels_decoded": 0,
+  "lunar_images_rendered": 0,
+  "matcher_inferences": 0,
+  "scope": "Actual BVH fractional-grid/quarter-turn visibility versus independent analytic triangles only; no learned or terrain-generalization result."
+}

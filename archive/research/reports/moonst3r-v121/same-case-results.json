@@ -1,0 +1,1482 @@
+{
+  "schema": "moonst3r_v121_same_case_results_v123",
+  "split": "model_selection",
+  "accepted_results": false,
+  "scope": "Four positives and four matched nonoverlaps across four reference terrains; raw accuracy pilot; timing separated by CPU architecture.",
+  "methods": {
+    "frozen_step0_A1B0C1_quantization_aware": {
+      "software": "Linux aarch64",
+      "median_inference_seconds": 6.6992255924999995,
+      "median_input_plus_inference_seconds": 6.720916493000004,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 120,
+              "returned": 127
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 120,
+              "returned": 127
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 120,
+              "returned": 127
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 120,
+              "returned": 127
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 120,
+              "returned": 127
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 118,
+              "returned": 124
+            },
+            "2": {
+              "correct": 1,
+              "co_visible": 118,
+              "returned": 124
+            },
+            "4": {
+              "correct": 3,
+              "co_visible": 118,
+              "returned": 124
+            },
+            "8": {
+              "correct": 6,
+              "co_visible": 118,
+              "returned": 124
+            },
+            "12": {
+              "correct": 7,
+              "co_visible": 118,
+              "returned": 124
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.3359018979052345,
+            "translation_m": 9.65643910507002
+          },
+          "correspondence": {
+            "1": {
+              "correct": 21,
+              "co_visible": 127,
+              "returned": 127
+            },
+            "2": {
+              "correct": 30,
+              "co_visible": 127,
+              "returned": 127
+            },
+            "4": {
+              "correct": 40,
+              "co_visible": 127,
+              "returned": 127
+            },
+            "8": {
+              "correct": 46,
+              "co_visible": 127,
+              "returned": 127
+            },
+            "12": {
+              "correct": 48,
+              "co_visible": 127,
+              "returned": 127
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 124,
+              "returned": 127
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 124,
+              "returned": 127
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 124,
+              "returned": 127
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 124,
+              "returned": 127
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 124,
+              "returned": 127
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    },
+    "SIFT2048": {
+      "software": "Linux aarch64",
+      "median_inference_seconds": 0.05251650949998066,
+      "median_input_plus_inference_seconds": 0.06233213899997736,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 5,
+              "returned": 5
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 5,
+              "returned": 5
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 5,
+              "returned": 5
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 5,
+              "returned": 5
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 5,
+              "returned": 5
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.3333484785317763,
+            "translation_m": 9.72584867926027
+          },
+          "correspondence": {
+            "1": {
+              "correct": 18,
+              "co_visible": 21,
+              "returned": 21
+            },
+            "2": {
+              "correct": 19,
+              "co_visible": 21,
+              "returned": 21
+            },
+            "4": {
+              "correct": 19,
+              "co_visible": 21,
+              "returned": 21
+            },
+            "8": {
+              "correct": 19,
+              "co_visible": 21,
+              "returned": 21
+            },
+            "12": {
+              "correct": 19,
+              "co_visible": 21,
+              "returned": 21
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.08913397667552982,
+            "translation_m": 2.157297854773399
+          },
+          "correspondence": {
+            "1": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "2": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "4": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "8": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "12": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 2
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 2
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 2
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 2
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 2
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    },
+    "loma_r_common": {
+      "software": "Linux aarch64",
+      "median_inference_seconds": 53.985694836500045,
+      "median_input_plus_inference_seconds": 53.99289040050007,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": true,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 121.92732504954098,
+            "translation_m": 2422.672426061121
+          },
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 115,
+              "returned": 115
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 115,
+              "returned": 115
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 115,
+              "returned": 115
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 115,
+              "returned": 115
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 115,
+              "returned": 115
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.31216782779306806,
+            "translation_m": 9.429854310308018
+          },
+          "correspondence": {
+            "1": {
+              "correct": 200,
+              "co_visible": 557,
+              "returned": 565
+            },
+            "2": {
+              "correct": 359,
+              "co_visible": 557,
+              "returned": 565
+            },
+            "4": {
+              "correct": 490,
+              "co_visible": 557,
+              "returned": 565
+            },
+            "8": {
+              "correct": 544,
+              "co_visible": 557,
+              "returned": 565
+            },
+            "12": {
+              "correct": 552,
+              "co_visible": 557,
+              "returned": 565
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.1314359949894689,
+            "translation_m": 3.9661236443562546
+          },
+          "correspondence": {
+            "1": {
+              "correct": 394,
+              "co_visible": 964,
+              "returned": 964
+            },
+            "2": {
+              "correct": 685,
+              "co_visible": 964,
+              "returned": 964
+            },
+            "4": {
+              "correct": 867,
+              "co_visible": 964,
+              "returned": 964
+            },
+            "8": {
+              "correct": 938,
+              "co_visible": 964,
+              "returned": 964
+            },
+            "12": {
+              "correct": 953,
+              "co_visible": 964,
+              "returned": 964
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 3
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 3
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 3
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 3
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 2,
+              "returned": 3
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    },
+    "romav2_common": {
+      "software": "Linux aarch64",
+      "median_inference_seconds": 51.960032769500685,
+      "median_input_plus_inference_seconds": 51.967439517500225,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": true,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 164.03292333754547,
+            "translation_m": 2125.1201278920116
+          },
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 1767,
+              "returned": 2000
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 1767,
+              "returned": 2000
+            },
+            "4": {
+              "correct": 1,
+              "co_visible": 1767,
+              "returned": 2000
+            },
+            "8": {
+              "correct": 2,
+              "co_visible": 1767,
+              "returned": 2000
+            },
+            "12": {
+              "correct": 3,
+              "co_visible": 1767,
+              "returned": 2000
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.4586598734109505,
+            "translation_m": 13.499461657507915
+          },
+          "correspondence": {
+            "1": {
+              "correct": 1283,
+              "co_visible": 1977,
+              "returned": 2000
+            },
+            "2": {
+              "correct": 1309,
+              "co_visible": 1977,
+              "returned": 2000
+            },
+            "4": {
+              "correct": 1508,
+              "co_visible": 1977,
+              "returned": 2000
+            },
+            "8": {
+              "correct": 1846,
+              "co_visible": 1977,
+              "returned": 2000
+            },
+            "12": {
+              "correct": 1923,
+              "co_visible": 1977,
+              "returned": 2000
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": true,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.04148008824448555,
+            "translation_m": 1.2545195700613412
+          },
+          "correspondence": {
+            "1": {
+              "correct": 1998,
+              "co_visible": 2000,
+              "returned": 2000
+            },
+            "2": {
+              "correct": 2000,
+              "co_visible": 2000,
+              "returned": 2000
+            },
+            "4": {
+              "correct": 2000,
+              "co_visible": 2000,
+              "returned": 2000
+            },
+            "8": {
+              "correct": 2000,
+              "co_visible": 2000,
+              "returned": 2000
+            },
+            "12": {
+              "correct": 2000,
+              "co_visible": 2000,
+              "returned": 2000
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": true,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 113.25870714206121,
+            "translation_m": 6593.020412328777
+          },
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 1652,
+              "returned": 2000
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 1652,
+              "returned": 2000
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 1652,
+              "returned": 2000
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 1652,
+              "returned": 2000
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 1652,
+              "returned": 2000
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    },
+    "reference_camera_render_match": {
+      "software": "Linux aarch64",
+      "median_inference_seconds": 0.7470898880001187,
+      "median_input_plus_inference_seconds": 0.7782127449981999,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.07539666149153464,
+            "translation_m": 2.5324113864701716
+          },
+          "correspondence": {
+            "1": {
+              "correct": 80,
+              "co_visible": 89,
+              "returned": 89
+            },
+            "2": {
+              "correct": 80,
+              "co_visible": 89,
+              "returned": 89
+            },
+            "4": {
+              "correct": 83,
+              "co_visible": 89,
+              "returned": 89
+            },
+            "8": {
+              "correct": 86,
+              "co_visible": 89,
+              "returned": 89
+            },
+            "12": {
+              "correct": 86,
+              "co_visible": 89,
+              "returned": 89
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.2593917318424062,
+            "translation_m": 7.431738384200389
+          },
+          "correspondence": {
+            "1": {
+              "correct": 18,
+              "co_visible": 20,
+              "returned": 20
+            },
+            "2": {
+              "correct": 18,
+              "co_visible": 20,
+              "returned": 20
+            },
+            "4": {
+              "correct": 18,
+              "co_visible": 20,
+              "returned": 20
+            },
+            "8": {
+              "correct": 18,
+              "co_visible": 20,
+              "returned": 20
+            },
+            "12": {
+              "correct": 18,
+              "co_visible": 20,
+              "returned": 20
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.08913394761940711,
+            "translation_m": 2.15729689926438
+          },
+          "correspondence": {
+            "1": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "2": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "4": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "8": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            },
+            "12": {
+              "correct": 15,
+              "co_visible": 15,
+              "returned": 15
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.24209742356820912,
+            "translation_m": 5.3034558973989085
+          },
+          "correspondence": {
+            "1": {
+              "correct": 7,
+              "co_visible": 7,
+              "returned": 7
+            },
+            "2": {
+              "correct": 7,
+              "co_visible": 7,
+              "returned": 7
+            },
+            "4": {
+              "correct": 7,
+              "co_visible": 7,
+              "returned": 7
+            },
+            "8": {
+              "correct": 7,
+              "co_visible": 7,
+              "returned": 7
+            },
+            "12": {
+              "correct": 7,
+              "co_visible": 7,
+              "returned": 7
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    },
+    "MOONSt3R-common-native512": {
+      "software": "macOS x86_64",
+      "median_inference_seconds": 54.40922355098883,
+      "median_input_plus_inference_seconds": 54.43940828749328,
+      "operational_failures": 0,
+      "rows": [
+        {
+          "case_id": "u013-l00-17-positive",
+          "positive": true,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c4",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": true,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 43.920964410798675,
+            "translation_m": 1457.0321733451956
+          },
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 351,
+              "returned": 496
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 351,
+              "returned": 496
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 351,
+              "returned": 496
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 351,
+              "returned": 496
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 351,
+              "returned": 496
+            }
+          }
+        },
+        {
+          "case_id": "u013-to-u021-l00-17-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c4",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 17,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u022-l00-00-positive",
+          "positive": true,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r0-c7",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.33988409027234373,
+            "translation_m": 7.630561079614912
+          },
+          "correspondence": {
+            "1": {
+              "correct": 2364,
+              "co_visible": 3695,
+              "returned": 3703
+            },
+            "2": {
+              "correct": 2806,
+              "co_visible": 3695,
+              "returned": 3703
+            },
+            "4": {
+              "correct": 3250,
+              "co_visible": 3695,
+              "returned": 3703
+            },
+            "8": {
+              "correct": 3666,
+              "co_visible": 3695,
+              "returned": 3703
+            },
+            "12": {
+              "correct": 3695,
+              "co_visible": 3695,
+              "returned": 3703
+            }
+          }
+        },
+        {
+          "case_id": "u022-to-u026-l00-00-nonoverlap",
+          "positive": false,
+          "component": "np31-r0-c7",
+          "query_component": "np31-r1-c0",
+          "light_a": 0,
+          "light_b": 0,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": false,
+          "raw_nonoverlap": false,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u024-l16-16-positive",
+          "positive": true,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r1-c0",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": true,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 0.040008379715485924,
+            "translation_m": 1.403529126779214
+          },
+          "correspondence": {
+            "1": {
+              "correct": 4039,
+              "co_visible": 4077,
+              "returned": 4077
+            },
+            "2": {
+              "correct": 4076,
+              "co_visible": 4077,
+              "returned": 4077
+            },
+            "4": {
+              "correct": 4077,
+              "co_visible": 4077,
+              "returned": 4077
+            },
+            "8": {
+              "correct": 4077,
+              "co_visible": 4077,
+              "returned": 4077
+            },
+            "12": {
+              "correct": 4077,
+              "co_visible": 4077,
+              "returned": 4077
+            }
+          }
+        },
+        {
+          "case_id": "u024-to-u056-l16-16-nonoverlap",
+          "positive": false,
+          "component": "np31-r1-c0",
+          "query_component": "np31-r3-c2",
+          "light_a": 16,
+          "light_b": 16,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        },
+        {
+          "case_id": "u072-l16-01-positive",
+          "positive": true,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c1",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": true,
+          "pose_returned": true,
+          "raw_nonoverlap": false,
+          "pose_error": {
+            "rotation_deg": 142.5379461756021,
+            "translation_m": 2044.8127577737937
+          },
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "co_visible": 48,
+              "returned": 54
+            },
+            "2": {
+              "correct": 0,
+              "co_visible": 48,
+              "returned": 54
+            },
+            "4": {
+              "correct": 0,
+              "co_visible": 48,
+              "returned": 54
+            },
+            "8": {
+              "correct": 0,
+              "co_visible": 48,
+              "returned": 54
+            },
+            "12": {
+              "correct": 0,
+              "co_visible": 48,
+              "returned": 54
+            }
+          }
+        },
+        {
+          "case_id": "u072-to-u092-l16-01-nonoverlap",
+          "positive": false,
+          "component": "np31-r4-c1",
+          "query_component": "np31-r4-c7",
+          "light_a": 16,
+          "light_b": 1,
+          "correct": false,
+          "strict": false,
+          "wrong_positive": false,
+          "pose_returned": true,
+          "raw_nonoverlap": true,
+          "pose_error": null,
+          "correspondence": {}
+        }
+      ]
+    }
+  },
+  "cohort": [
+    "u013-l00-17-positive",
+    "u013-to-u021-l00-17-nonoverlap",
+    "u022-l00-00-positive",
+    "u022-to-u026-l00-00-nonoverlap",
+    "u024-l16-16-positive",
+    "u024-to-u056-l16-16-nonoverlap",
+    "u072-l16-01-positive",
+    "u072-to-u092-l16-01-nonoverlap"
+  ],
+  "exact_arm_replay_rows": 480,
+  "local_model_free_replay_rows": 8,
+  "original_benchmark_summary_sha256": "3f65b164472e2300d6b5aeb1611a2988d0f5d0155fe850c6a5f229eb567a38bc",
+  "original_benchmark_replay_sha256": "844433a3bcfcb5180da648e446b3a05c089d2b69d5ebcdb8ee2af214f25dd2b5",
+  "local_worker_summary_sha256": "78614dc52c7d8460c912473bfed8132a175f6ad75214315e699f7d5ec20e309a",
+  "local_worker_replay_sha256": "72a1324218e259ca5b3d4279d090d0d27ac92e12ec2e3f6cd496752eebca24a0",
+  "local_control_sha256": "e048f1e3fbcb3f87720387dcd80537512b96a7cadad64e82af9c708e60457bb1",
+  "local_control_passed": true,
+  "local_wall_seconds": 486.4703123039799,
+  "local_reserved_seconds": 1800,
+  "local_cpu_threads": 2,
+  "calibration_or_final_access": false,
+  "archive": {
+    "name": "moonst3r-v121-replay-data.zip",
+    "bytes": 254096,
+    "sha256": "bfa4698a94a6088de17e643458baae0515c543466939c6f48d2fdfb3c9263a4b",
+    "members": 12
+  }
+}

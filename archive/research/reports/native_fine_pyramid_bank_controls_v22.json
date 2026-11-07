@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "scales": [
+        1
+      ],
+      "rotation_matrix_error": 0.0012265456434063205,
+      "translation_m": 0.009467934308088654,
+      "iterations": 2,
+      "passed": true
+    },
+    {
+      "scales": [
+        1,
+        2
+      ],
+      "rotation_matrix_error": 0.002046005114142588,
+      "translation_m": 0.015069155692305733,
+      "iterations": 2,
+      "passed": true
+    },
+    {
+      "scales": [
+        1,
+        2,
+        4
+      ],
+      "rotation_matrix_error": 0.0016427361333527602,
+      "translation_m": 0.011524666803110189,
+      "iterations": 2,
+      "passed": true
+    }
+  ],
+  "blank_pose_null": true,
+  "scope": "Actual shared frozen checkpoint software control, not lunar performance."
+}

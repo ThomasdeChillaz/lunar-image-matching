@@ -1,0 +1,323 @@
+{
+  "passed": true,
+  "eligible_geometry_pairs": 12,
+  "correct_oracle_poses": 12,
+  "oracle_pose_rate": 1.0,
+  "geometry_controls": [
+    {
+      "component": "np31-pilot-0",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2748516382998787e-05,
+      "maximum_native_projection_error_px": 0.0008224398318260587,
+      "maximum_raw_depth_relative_error": 1.5205620747100594e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-0",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.081311893358361e-05,
+      "maximum_native_projection_error_px": 0.0008311301244940208,
+      "maximum_raw_depth_relative_error": 3.659131060631226e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-0",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5937646114471136e-05,
+      "maximum_native_projection_error_px": 0.0008537685653397877,
+      "maximum_raw_depth_relative_error": 2.9432498133216516e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-0",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.144060817954596e-05,
+      "maximum_native_projection_error_px": 0.0008680510746788122,
+      "maximum_raw_depth_relative_error": 3.317358462391417e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-1",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2610417343239533e-05,
+      "maximum_native_projection_error_px": 0.000830415771544633,
+      "maximum_raw_depth_relative_error": 1.4508934532714743e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-1",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1088192877650727e-05,
+      "maximum_native_projection_error_px": 0.0008540728442942725,
+      "maximum_raw_depth_relative_error": 3.241761355251097e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-1",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.6817369214550126e-05,
+      "maximum_native_projection_error_px": 0.0008095987337401547,
+      "maximum_raw_depth_relative_error": 3.0059965911063204e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-1",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.636286901884887e-05,
+      "maximum_native_projection_error_px": 0.000802864956903782,
+      "maximum_raw_depth_relative_error": 2.0251088572882244e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-2",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2494664360929164e-05,
+      "maximum_native_projection_error_px": 0.0008559009824362017,
+      "maximum_raw_depth_relative_error": 2.316664324322915e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-2",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.81582037032058e-06,
+      "maximum_native_projection_error_px": 0.00082551920391105,
+      "maximum_raw_depth_relative_error": 4.143341525200068e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-2",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.715336091176141e-06,
+      "maximum_native_projection_error_px": 0.0008027134686246713,
+      "maximum_raw_depth_relative_error": 1.8015115646244163e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-2",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2986693036509678e-05,
+      "maximum_native_projection_error_px": 0.0008407595062939633,
+      "maximum_raw_depth_relative_error": 3.2454917333856494e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-3",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.3476146856846754e-05,
+      "maximum_native_projection_error_px": 0.0007974405021820919,
+      "maximum_raw_depth_relative_error": 1.6605583988607125e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-3",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5129079403996002e-05,
+      "maximum_native_projection_error_px": 0.0008116185284674658,
+      "maximum_raw_depth_relative_error": 3.877131722699142e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-3",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.3602307667024434e-05,
+      "maximum_native_projection_error_px": 0.0008076906072473106,
+      "maximum_raw_depth_relative_error": 2.6563330074334964e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-pilot-3",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.2407278265745845e-05,
+      "maximum_native_projection_error_px": 0.0008778091139977575,
+      "maximum_raw_depth_relative_error": 3.794910267705592e-07,
+      "raw_depth_convention": "axial"
+    }
+  ],
+  "oracle_poses": [
+    {
+      "component": "np31-pilot-0",
+      "query_view": 1,
+      "visible_points": 3706,
+      "correct": true,
+      "translation_error_m": 0.0016950991475593764,
+      "rotation_error_deg": 6.830189170012755e-06,
+      "pose_info": {
+        "inliers": 3706,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.2624779638931435e-06
+      }
+    },
+    {
+      "component": "np31-pilot-0",
+      "query_view": 2,
+      "visible_points": 3331,
+      "correct": true,
+      "translation_error_m": 0.001638810722739454,
+      "rotation_error_deg": 8.365239156607497e-06,
+      "pose_info": {
+        "inliers": 3331,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1.922703278372515e-06
+      }
+    },
+    {
+      "component": "np31-pilot-0",
+      "query_view": 3,
+      "visible_points": 3731,
+      "correct": true,
+      "translation_error_m": 0.0016573769408081526,
+      "rotation_error_deg": 5.533085616490783e-06,
+      "pose_info": {
+        "inliers": 3731,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1.7963038107679973e-06
+      }
+    },
+    {
+      "component": "np31-pilot-1",
+      "query_view": 1,
+      "visible_points": 3727,
+      "correct": true,
+      "translation_error_m": 0.0019053641444187412,
+      "rotation_error_deg": 4.182619578303747e-06,
+      "pose_info": {
+        "inliers": 3727,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 4.225165018377509e-06
+      }
+    },
+    {
+      "component": "np31-pilot-1",
+      "query_view": 2,
+      "visible_points": 3252,
+      "correct": true,
+      "translation_error_m": 0.001986925105087273,
+      "rotation_error_deg": 8.2776426154535e-06,
+      "pose_info": {
+        "inliers": 3252,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.747437147195797e-06
+      }
+    },
+    {
+      "component": "np31-pilot-1",
+      "query_view": 3,
+      "visible_points": 3734,
+      "correct": true,
+      "translation_error_m": 0.0017515372957347156,
+      "rotation_error_deg": 4.00455336570039e-06,
+      "pose_info": {
+        "inliers": 3734,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.7807011564768676e-06
+      }
+    },
+    {
+      "component": "np31-pilot-2",
+      "query_view": 1,
+      "visible_points": 3740,
+      "correct": true,
+      "translation_error_m": 0.0016208691483563147,
+      "rotation_error_deg": 3.4150945850063763e-06,
+      "pose_info": {
+        "inliers": 3740,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.33428057677448e-06
+      }
+    },
+    {
+      "component": "np31-pilot-2",
+      "query_view": 2,
+      "visible_points": 3361,
+      "correct": true,
+      "translation_error_m": 0.0016388577648647005,
+      "rotation_error_deg": 1.7075472925031877e-06,
+      "pose_info": {
+        "inliers": 3361,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 2.1885936332479526e-06
+      }
+    },
+    {
+      "component": "np31-pilot-2",
+      "query_view": 3,
+      "visible_points": 3782,
+      "correct": true,
+      "translation_error_m": 0.0015642907857008454,
+      "rotation_error_deg": 3.4150945850063763e-06,
+      "pose_info": {
+        "inliers": 3782,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 1.601042271827937e-06
+      }
+    },
+    {
+      "component": "np31-pilot-3",
+      "query_view": 1,
+      "visible_points": 3761,
+      "correct": true,
+      "translation_error_m": 0.002688820043691919,
+      "rotation_error_deg": 2.186727491038013e-05,
+      "pose_info": {
+        "inliers": 3761,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 7.351686058855207e-06
+      }
+    },
+    {
+      "component": "np31-pilot-3",
+      "query_view": 2,
+      "visible_points": 3537,
+      "correct": true,
+      "translation_error_m": 0.0026943602632026617,
+      "rotation_error_deg": 2.325651830698318e-05,
+      "pose_info": {
+        "inliers": 3537,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 6.3932573010635015e-06
+      }
+    },
+    {
+      "component": "np31-pilot-3",
+      "query_view": 3,
+      "visible_points": 3750,
+      "correct": true,
+      "translation_error_m": 0.002704998633834913,
+      "rotation_error_deg": 1.983990668017933e-05,
+      "pose_info": {
+        "inliers": 3750,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 6.597969621449406e-06
+      }
+    }
+  ],
+  "source_sha256": "03f0b86e174ef0c2dce31dfafc6ddbe1bbbad3eae41a07aef55378c4507dc968",
+  "depth_semantics_source_sha256": "c977d27361e6ef95ed22d7095e888c9bfef09d389dcce6eebe338040f77b3981",
+  "measured_raw_depth_convention": "axial",
+  "legacy_ray_depth_field_is_raw_pass": true,
+  "prior_audit_failure_preserved": true,
+  "renderer_summary_sha256": "04ce380f1d0a9daaa75d0193015f30ee19f82cdd05ada3436f9912878d6621fd",
+  "pilot_render_calendar_seconds": 425.321757,
+  "rendered_images": 96,
+  "full44component_render_linear_projection_seconds": 4678.5393269999995,
+  "scope": "Excluded pilots and common-estimator software oracle only. No model result or original fresh-LunarGeo gate.",
+  "fresh_test_gate_passed": false,
+  "matcher_inferences": 0,
+  "calibration_or_test_pixels_decoded": 0
+}

@@ -1,0 +1,57 @@
+{
+  "recorded_utc": "2026-11-01T04:39:42.095237+00:00",
+  "scope": "Fresh metadata availability check; no new images, depth maps, calibration/test pixels or inference.",
+  "source_urls": [
+    "https://zenodo.org/api/records/18415119",
+    "https://zenodo.org/api/records/18415119/versions/latest",
+    "https://zenodo.org/api/records/18415119/versions",
+    "https://github.com/clementinegrethen/MoonAnything",
+    "https://pan.cstcloud.cn/s/2Ie7D5PSLU",
+    "https://huggingface.co/datasets/xuboluo2001/LuSNAR"
+  ],
+  "moonanything": {
+    "latest_record": 18415119,
+    "updated": "2026-01-30T08:08:46.863250+00:00",
+    "version_count": 1,
+    "files": [
+      {
+        "name": "LunarPhoto.zip",
+        "checksum": "md5:3a9fd7200d5ab0e35343719c5133fcff",
+        "bytes": 11038186211
+      },
+      {
+        "name": "readme_geo.txt",
+        "checksum": "md5:a9ae69ffb36d045fb6fc4b48721c8c5a",
+        "bytes": 2584
+      },
+      {
+        "name": "StereoGeo.zip",
+        "checksum": "md5:d645af1a6649c0d93f8e8a454e451b64",
+        "bytes": 11399284237
+      }
+    ],
+    "new_release_established": false
+  },
+  "existing_fresh_gate": {
+    "path": "reports/localization_data_gate_v3.json",
+    "sha256": "f28cb4023ac285596c9f6dc3001c0531fb610cccb6c220ec92b8362f1cb8016e",
+    "passed": false,
+    "notes": "Missing batch/trajectory identities and consumed fallback groups are unchanged; do not relabel additional views as independent fresh groups."
+  },
+  "lusnar": {
+    "reserved_scenes": [
+      7,
+      8,
+      9
+    ],
+    "reserve_pixels_inspected": 0,
+    "transfer_inference": 0,
+    "huggingface": "Public metadata; file access is gated. No sharing-condition acceptance performed.",
+    "alternate": "Authors public CSTCloud share remains accessible and lists all nine archives. Scene1 is development-only; earlier incomplete archive prefix is preserved. A fresh range request timed out; no complete-download claim."
+  },
+  "metadata_sha256": {
+    "moonanything-current-metadata-20261101.json": "b7c3981af9783b0b7d3d0261be2c1186c065b797350f39410261673d83251b6d",
+    "moonanything-latest-20261101.json": "b7c3981af9783b0b7d3d0261be2c1186c065b797350f39410261673d83251b6d",
+    "moonanything-versions-20261101.json": "a46fed9728958d8015d172c4a47d5bc2aa92c9418607dee6c04b6b2d0a923348"
+  }
+}

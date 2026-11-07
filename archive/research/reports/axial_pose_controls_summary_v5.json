@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "scope": "Corrected development geometry controls, not matcher performance or new terrain validation.",
+  "source_sha256": "bc8bbd208118d1d5095426130ae963b51a3baa6f9e285868d1ad1c4ee24b7ed5",
+  "manifest_sha256": "209fa3c74a248224f1621549b1d208a4b91a0d7ffc308924173e6bd05941a8eb",
+  "caution": "Exact projected correspondences are a self-consistency control. Independent raw-depth/source closure audit is required separately and already passed.",
+  "timing": "Executed after v5 fitting started; must not be described as its preregistered diagnostic gate.",
+  "results": {
+    "exact": {
+      "cases": 26,
+      "correct": 26,
+      "estimated": 26
+    },
+    "rounded_2px": {
+      "cases": 26,
+      "correct": 26,
+      "estimated": 26
+    },
+    "rounded_4px": {
+      "cases": 26,
+      "correct": 23,
+      "estimated": 26
+    },
+    "rounded_8px": {
+      "cases": 26,
+      "correct": 3,
+      "estimated": 26
+    },
+    "rounded_16px": {
+      "cases": 26,
+      "correct": 1,
+      "estimated": 26
+    },
+    "rounded_32px": {
+      "cases": 26,
+      "correct": 0,
+      "estimated": 26
+    },
+    "noise_1px_outliers_0": {
+      "cases": 26,
+      "correct": 26,
+      "estimated": 26
+    },
+    "noise_1px_outliers_0.1": {
+      "cases": 26,
+      "correct": 26,
+      "estimated": 26
+    },
+    "noise_1px_outliers_0.3": {
+      "cases": 26,
+      "correct": 26,
+      "estimated": 26
+    },
+    "noise_2px_outliers_0": {
+      "cases": 26,
+      "correct": 17,
+      "estimated": 26
+    },
+    "noise_2px_outliers_0.1": {
+      "cases": 26,
+      "correct": 17,
+      "estimated": 26
+    },
+    "noise_2px_outliers_0.3": {
+      "cases": 26,
+      "correct": 20,
+      "estimated": 26
+    },
+    "noise_4px_outliers_0": {
+      "cases": 26,
+      "correct": 4,
+      "estimated": 26
+    },
+    "noise_4px_outliers_0.1": {
+      "cases": 26,
+      "correct": 4,
+      "estimated": 26
+    },
+    "noise_4px_outliers_0.3": {
+      "cases": 26,
+      "correct": 2,
+      "estimated": 26
+    },
+    "noise_8px_outliers_0": {
+      "cases": 26,
+      "correct": 1,
+      "estimated": 26
+    },
+    "noise_8px_outliers_0.1": {
+      "cases": 26,
+      "correct": 0,
+      "estimated": 26
+    },
+    "noise_8px_outliers_0.3": {
+      "cases": 26,
+      "correct": 0,
+      "estimated": 26
+    }
+  },
+  "calibration_or_test_pixels_loaded": 0,
+  "detailed_results_path": "runs/localization-v5-axial-pose-controls.json",
+  "detailed_results_sha256": "580625de761f9559a64b3e552f848a6c71d260053c074e7a72e5bf416ad32fd9"
+}

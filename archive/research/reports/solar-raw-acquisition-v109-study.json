@@ -1,0 +1,371 @@
+{
+  "schema": 1,
+  "phase": "study",
+  "output": "runs/solar-raw-acquisition-v109-study",
+  "cap_seconds": 900,
+  "split": "model_selection",
+  "calibration_or_final_access": false,
+  "purpose": "same-physical-Sun scene-linear transport and renderer repeatability only",
+  "query_truth_in_inference": false,
+  "native_shape": [
+    512,
+    512
+  ],
+  "cpu_threads": 2,
+  "renderer_sha256": "7492b7f776bbd1d27a33f1912247f325f3f6314f0305417736a6f36c15cbbed5",
+  "renderer_build": "8bf95cbd38d1",
+  "cpu_only": true,
+  "radiometric_units": "Blender relative scene-linear RGB",
+  "exr_float_bits": 32,
+  "fixed_black_space_spp": true,
+  "denoising": false,
+  "max_bounces": 2,
+  "extended_256_spp": true,
+  "timing_basis": {
+    "max_elapsed_16_seconds": 3.800417373946402,
+    "max_elapsed_64_seconds": 12.682441579992883,
+    "conservative_study_seconds": 744.3622043270152,
+    "receipt": "runs/solar-raw-acquisition-v109-timing/COMPLETE.json",
+    "receipt_sha256": "b82374cd709fef15d1dccf2392d661f224f25063f68902986202589fdb6cbae5"
+  },
+  "source_sha256": {
+    "render_solar_clean_radiance_v106.py": "dd3aeceacf5f901a2092f21596b5659e75fe7b3fa4171ef53e85073b615998bc",
+    "solar_compute_budget_v67.py": "823a8eb3de1e81f1f26bceafe655dc439f90b418055e53036ca5c7fc5469de54",
+    "control_solar_png_dither_v105.py": "9bbf931ad259a871737a5a710be41fc56f1931c7a5327563ccd400a07000f61c",
+    "render_solar_development_v67.py": "09f3522baf635420a3784def3d46462f418d756c2de9bb893e70e85fefee2eb9",
+    "render_solar_completion_v68.py": "225531c6eed146863073fbdaec65a3c72a8f1939703495a49581cbcabcdaceba",
+    "render_solar_data_v65.py": "e66d7561fd1a5d0d863fa882d532ff4e8f40a24feb3ee956419cdec6803a9ea3",
+    "solar_data_v65.py": "c92b90aa65d9917d22ead55e288ea04546953e41eee8f7cfd5c1525a549d4eb5",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "north_camera_scene_v59.py": "169a9319d6b611d7ff40a34c5e20500e378acf990d6f7fa98fae1cb8570c3845",
+    "north_camera_correspondences_v59.py": "de5f20027b35b1cba82073b6aa665483ab4c8d2564e52a2a76770c89716ed1f8",
+    "north_development_plan_v35.py": "0a3ea3e41b5a89f43d641b2e509d2f4bbd90beab3d2b36e03aaf059e9e561d96",
+    "north_camera_variation_v59.py": "747f08865317273be7841469c4d0033e772c689d59e6bab5cba2a5bc70441943",
+    "north_render_plan_v31.py": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee",
+    "blender_camera_control_v31.py": "5c77ed2d97aaac47c1d0b556c977def5e751cc6b2a6b4d95e3c8b00ac4fa632d",
+    "render_solar_raw_acquisition_v109.py": "9e749f9d0362601b3cf049c96314adc8871d524e8efcdfc5b2df33ca92b80fc3"
+  },
+  "metadata_sha256": {
+    "reports/solar-clean-rerender-cohort-v106.json": "7510450dfdbaf23f1e5973c5b9adae026834c92349de2d1158f95886acf5b80b",
+    "reports/solar-clean-signal-protocol-v107.json": "6cb071a43be2cc50ee5d3c70c82c111847fe03e55dd5a472c5716b04945aa3cd",
+    "reports/solar_development_admission_v67.json": "372f19aef665467e38204b9d4853c297bbd613c757e1f626bfb2eefe6e6fceb6",
+    "reports/solar_full_geometry_audit_v70.json": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+    "reports/solar_compute_admission_v67.json": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+    "reports/solar_reference_contract_v80.json": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+    "reports/solar-raw-acquisition-v109-timing.json": "df5012143d000f4a3e68b0d85b94e4a6b664f71cd71bdfc998db2092f5245cf2"
+  },
+  "fixtures": [],
+  "camera_mesh_identity": [
+    {
+      "key": "u013/reference/light-0",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+      "mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+      "archive_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/light-0.png",
+      "archive_sha256": "edc03b5939159403032a9a4f3e3ec9f879056449d1adab3a3a19b9e7c511e302",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/reference/geometry.npz",
+      "archive_geometry_sha256": "2be7b995ff8d9042a86bbb900bab9a2d133b293bcad1486a3033218104efd9ea",
+      "sun_enu": [
+        0.9975169819076923,
+        -0.06440767589202111,
+        0.028487226821102968
+      ]
+    },
+    {
+      "key": "u013/query/light-0",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r0-c4/mesh.npz",
+      "mesh_sha256": "9bf24a8ee73b1065d47edefc65b9486b4b9e714579b247d5bf91022d33aac241",
+      "archive_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/query/light-0.png",
+      "archive_sha256": "3becf814d56b63d6d89ddb7e0d08db059396120449f7c9f067ddedcc887923ce",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r0-c4/training_motion-1/query/geometry.npz",
+      "archive_geometry_sha256": "c0f9574e5817614da3a6bd63b0f41b8f1ceef064bbf32f0f89b06b4401a5be0e",
+      "sun_enu": [
+        0.9975169819076923,
+        -0.06440767589202111,
+        0.028487226821102968
+      ]
+    },
+    {
+      "key": "u025/reference/light-0",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+      "mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+      "archive_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/light-0.png",
+      "archive_sha256": "7e68013c1af3c1828c0e63cd8b3def8d1f2306ed89e44b2099948edbd4747917",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/reference/geometry.npz",
+      "archive_geometry_sha256": "b1f42a5a47446e904f8467a45e1a59400925552b63056ab45356b0849b6cdd39",
+      "sun_enu": [
+        0.9975169819076923,
+        -0.06360806996660356,
+        0.030230518369559464
+      ]
+    },
+    {
+      "key": "u025/query/light-0",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+      "mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+      "archive_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/query/light-0.png",
+      "archive_sha256": "8736fe1c605d16aa60ae07cc55982bb63d7aa5262ed1388b6b6f5d55af98fd64",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r1-c0/training_motion-1/query/geometry.npz",
+      "archive_geometry_sha256": "cb64e759f058dc2f94622660b176212cf516641266d2e31e13d6a599430d8a7d",
+      "sun_enu": [
+        0.9975169819076923,
+        -0.06360806996660356,
+        0.030230518369559464
+      ]
+    },
+    {
+      "key": "u027/reference/light-1",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+      "mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+      "archive_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/light-1.png",
+      "archive_sha256": "4ba081a58dbb316c5e70973c8b5f10f59f9166823588221af26f4778c45e7ae2",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/reference/geometry.npz",
+      "archive_geometry_sha256": "a1dd385e31128e89a9c78131e7b6205949e7736cb05cf286a77cf0f2e153d575",
+      "sun_enu": [
+        0.9804491897832952,
+        -0.1929950101402367,
+        0.03837072209706119
+      ]
+    },
+    {
+      "key": "u027/query/light-1",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r1-c0/mesh.npz",
+      "mesh_sha256": "f87b0b31b3284cfbb4e77ba55c82cf68b10ed8f7f2a2af0e7c1584447f765ab4",
+      "archive_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/query/light-1.png",
+      "archive_sha256": "6ab9b6b6c23707d5ccf0d7d026768b300d6d0f2a74faed18cc43f0642c0c84a2",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r1-c0/unseen_roll-1/query/geometry.npz",
+      "archive_geometry_sha256": "fdb45cf4e0b70b5ea93a338af8cf57f9403838f03f8d1d414b96cbaef621eafa",
+      "sun_enu": [
+        0.9804491897832952,
+        -0.1929950101402367,
+        0.03837072209706119
+      ]
+    },
+    {
+      "key": "u061/reference/light-17",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+      "mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+      "archive_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/light-17.png",
+      "archive_sha256": "0c6a332bcf1f490e826fc21447e8a51a065789ecc25a5eb1dfd40e3e090a60db",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+      "archive_geometry_sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+      "sun_enu": [
+        -0.6591198737567632,
+        -0.7509369789798063,
+        0.04067733545293575
+      ]
+    },
+    {
+      "key": "u061/query/light-17",
+      "mesh_path": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+      "mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+      "archive_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/light-17.png",
+      "archive_sha256": "9772e53178316dcee8c2cd54abc1595a4a2580857d112818732b6b60454e4c96",
+      "archive_geometry_path": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/query/geometry.npz",
+      "archive_geometry_sha256": "78ac7e2ef00b58039ee65fb71c9692602f9e45cb1a4875ef8ca48fa95ecaf595",
+      "sun_enu": [
+        -0.6591198737567632,
+        -0.7509369789798063,
+        0.04067733545293575
+      ]
+    }
+  ],
+  "render_jobs": [
+    {
+      "key": "u013/reference/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u013/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261116
+    },
+    {
+      "key": "u013/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261117
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261216
+    },
+    {
+      "key": "u013/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261217
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261316
+    },
+    {
+      "key": "u025/reference/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261317
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261416
+    },
+    {
+      "key": "u025/query/light-0",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261417
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261516
+    },
+    {
+      "key": "u027/reference/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261517
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261616
+    },
+    {
+      "key": "u027/query/light-1",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261617
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261716
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261717
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 0,
+      "seed": 20261752
+    },
+    {
+      "key": "u061/reference/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 1,
+      "seed": 20261753
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "legacy_white",
+      "samples": 16,
+      "replicate": 0,
+      "seed": 20261101
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 0,
+      "seed": 20261816
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 64,
+      "replicate": 1,
+      "seed": 20261817
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 0,
+      "seed": 20261852
+    },
+    {
+      "key": "u061/query/light-17",
+      "scene": "black_space",
+      "samples": 256,
+      "replicate": 1,
+      "seed": 20261853
+    }
+  ]
+}

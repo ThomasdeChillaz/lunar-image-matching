@@ -1,0 +1,33 @@
+{
+  "scope": "Original corrected render failed its fixed calendar deadline. Cause of the observed wall-clock gap is not established.",
+  "original_state": {
+    "stage": "failed; preserve all outputs",
+    "pid": 56447,
+    "public_source": "488e48bb849353c81a6f0329ad01da7f4de4e534",
+    "source_sha256": {
+      "north_solar_geometry_v37.py": "dba6fa3243600097f964a4d7067c89137fa6365d7e8bd587b986d5c75e5e85b4",
+      "render_north_development_v37.py": "f541dd92e2f17b9cbfdc9dff84b94f5be3086e2604e34f40ce5a2f46b449c862",
+      "verify_north_development_v37.py": "01c144baf5f255f980511106da95551cdebeae80ad8a8fce44b599cd6bd1a402",
+      "control_north_solar_v37.py": "d551ffe76638b6d81b7995a6c2bc6ff3b459d369f0b4c0e9ed2615792ad7777d",
+      "test_north_solar_geometry_v37.py": "5f728e60c010067d24520e41a63c4cbed546125df2371a5594f259672389394b",
+      "north_training_bundle_v38.py": "29fc2679b37f22e79ddfe4d6e6ab2a62c0c8b245b647debec52b65ff6439ec66",
+      "train_north_pilot_v38.py": "daa73527995285e58be38b98b1b4f0ba5bc6dd90b3ee0a8e912342f1852d171d",
+      "verify_north_pilot_v38.py": "abb5e33b2ff425c0736d5a1566cefb3666e4413bba17ad22e4bb8f5daec792d0",
+      "benchmark_north_control_v38.py": "175b02908d81a2a6b781528f0c433d78b1b52113905c799fa02b913990540770",
+      "test_north_training_data_v38.py": "8b55e5f41e233f8c4d3035dba152f8f01b99f0d0fedd832b2d94d2a886938e97",
+      "reports/north_solar_amendment_v37.json": "2c039cc0e2d793dfde19c176b109ec04c0a1bc9318703d684c976ea6100c9149"
+    },
+    "updated_utc": "2026-11-02T07:46:02.705028+00:00",
+    "state": "failed",
+    "error_type": "TimeoutError",
+    "error": "solar_corrected_render original calendar/monotonic cap exceeded"
+  },
+  "original_state_sha256": "2ef21c95417ed5667423f8172275854540a0203a54013c7f78f6bb7b16e490b1",
+  "observed_original_complete_components": 16,
+  "original_deadline_met": false,
+  "new_data_matching_or_fitting_updates": 0,
+  "original_partial_outputs_preserved": true,
+  "prior_actual_observation": "2026-11-01T23:02:25Z: child56462alive;14completecomponents; later16complete.",
+  "next_observation": "2026-11-02T07:47:04Z: originalparent/childbothterminal;16completecomponents.",
+  "supplemental_recovery_separate": true
+}

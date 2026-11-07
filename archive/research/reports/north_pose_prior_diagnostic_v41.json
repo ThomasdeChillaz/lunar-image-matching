@@ -1,0 +1,283 @@
+{
+  "scope": "Metadata-only camera-design bias diagnostic. Best-of-three is an oracle, not image-based localization or verified renderer accuracy.",
+  "passed": true,
+  "source_sha256": "9a9e8f8a8673cc02b297787ea3d0439aacecbcc4218b7a8c7d1951959bb49334",
+  "acquired_summary_sha256": "a295caeaea81eba5767d57fd7f8d6553b36f6415f8e234291572e0c0afaf1ae7",
+  "plan_source_sha256": "173785121c00ffd1add34bb618bb1a4f7e5670f505eeba644b67c4d336cdda48",
+  "template_training_geometries": 48,
+  "template_training_components": 16,
+  "selection_geometries": 24,
+  "selection_components": 8,
+  "learned_templates": [
+    {
+      "position_offset": [
+        -350.0,
+        300.0,
+        200.0
+      ],
+      "target": [
+        100.0,
+        150.0,
+        0.0
+      ],
+      "training_examples": 16
+    },
+    {
+      "position_offset": [
+        250.0,
+        150.0,
+        0.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_examples": 16
+    },
+    {
+      "position_offset": [
+        450.0,
+        -200.0,
+        -200.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_examples": 16
+    }
+  ],
+  "oracle_near_exact_geometries": 24,
+  "first_fixed_template_close_geometries": 8,
+  "maximum_oracle_rotation_deg": 0.0,
+  "maximum_oracle_translation_m": 0.0,
+  "outcomes": [
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r0-c4",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r0-c7",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r1-c0",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c2",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c3",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r3-c5",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r4-c1",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "oracle_template_index": 1,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "oracle_template_index": 2,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": false
+    },
+    {
+      "component": "np31-r4-c7",
+      "split": "model_selection",
+      "oracle_template_index": 0,
+      "oracle_rotation_deg": 0.0,
+      "oracle_translation_m": 0.0,
+      "oracle_near_exact": true,
+      "first_fixed_template_close": true
+    }
+  ],
+  "images_or_depth_arrays_loaded": 0,
+  "neural_forwards": 0,
+  "query_view_or_case_ids_used_in_proposals": false,
+  "query_pose_used_for_oracle_scoring": true,
+  "calibration_or_test_metadata_loaded": 0,
+  "calibration_or_test_pixels_loaded": 0,
+  "inference_claim": false,
+  "query_pose_generalization_established": false,
+  "interpretation": "The known reference pose and three training-derived templates can reconstruct intended selection camera poses. Broad unseen-pose claims need a separately frozen camera/roll transfer study and an image-selected pose-prior comparator."
+}

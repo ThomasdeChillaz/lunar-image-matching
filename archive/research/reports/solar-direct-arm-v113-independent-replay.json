@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "replayed_rows": 8,
+  "rows": [
+    {
+      "case_id": "u012-l00-00-positive",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": true,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u012-to-u020-l00-00-nonoverlap",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-l00-17-positive",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u026-to-u058-l00-17-nonoverlap",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-l16-16-positive",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": true,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u060-to-u068-l16-16-nonoverlap",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-l08-01-positive",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": true,
+      "wrong_positive": true,
+      "raw_nonoverlap": false
+    },
+    {
+      "case_id": "u074-to-u094-l08-01-nonoverlap",
+      "profile": "reference_camera_render_match",
+      "track": "estimated_sun",
+      "correct": false,
+      "strict": false,
+      "pose_returned": false,
+      "wrong_positive": false,
+      "raw_nonoverlap": false
+    }
+  ],
+  "summary_sha256": "32f5de96f3032b1c2d03cd8508c1846fe879811ca1e12abf64fc76f953a03559",
+  "replay_source_sha256": "0c1a750f95f55b1b677748e2f3874bfb82009494c931779b1804ef26904468e1",
+  "scope": "Independent saved-array/source-label/native-pixel arithmetic replay; no model inference or new scientific result"
+}

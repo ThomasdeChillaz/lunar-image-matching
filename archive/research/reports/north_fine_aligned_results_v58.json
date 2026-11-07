@@ -1,0 +1,175 @@
+{
+  "state": "ALIGNED STUDY COMPLETE AND AUDITED; fractional study running",
+  "source_commit": "6cc8a4c30a4bd5eea7811aa9dd71fac8648ac272",
+  "selected_step": 1500,
+  "selection": {
+    "positive_cases": 96,
+    "correct_raw_poses": 14,
+    "strict_raw_poses": 4,
+    "wrong_raw_poses": 26,
+    "negative_cases": 0,
+    "raw_nonoverlap_proposals": 0,
+    "median_measured_inference_ms": 2025.413914496312,
+    "calibrated_acceptance_evaluated": false,
+    "cases": 96,
+    "correct_poses": 14,
+    "strict_poses": 4,
+    "correct_at_two_px": 3533,
+    "returned": 17986,
+    "scorable": 17959
+  },
+  "nonoverlap": {
+    "positive_cases": 0,
+    "correct_raw_poses": 0,
+    "strict_raw_poses": 0,
+    "wrong_raw_poses": 0,
+    "negative_cases": 96,
+    "raw_nonoverlap_proposals": 11,
+    "median_measured_inference_ms": 2483.613416494336,
+    "calibrated_acceptance_evaluated": false
+  },
+  "checkpoints": [
+    {
+      "step": 0,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 13,
+        "strict_raw_poses": 2,
+        "wrong_raw_poses": 28,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2006.1527109937742,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 13,
+        "strict_poses": 2,
+        "correct_at_two_px": 3394,
+        "returned": 17670,
+        "scorable": 17645
+      },
+      "results_sha256": "5365398faad2d325b95ec72ffd860da0ecd83e88bd47103b877498fc5efd82fb"
+    },
+    {
+      "step": 500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 13,
+        "strict_raw_poses": 4,
+        "wrong_raw_poses": 24,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2008.6040850001154,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 13,
+        "strict_poses": 4,
+        "correct_at_two_px": 3420,
+        "returned": 17928,
+        "scorable": 17900
+      },
+      "results_sha256": "1a931a7273e31e3756512f7fa57e922e9578791c71eb1be68526fa6afec62716"
+    },
+    {
+      "step": 1000,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 3,
+        "wrong_raw_poses": 27,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2072.6720090024173,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 3,
+        "correct_at_two_px": 3453,
+        "returned": 17879,
+        "scorable": 17854
+      },
+      "results_sha256": "a29b79ae6f4021adb1a4b134c5ba65de85299ca44faa94d91f496d8cf4148e57"
+    },
+    {
+      "step": 1500,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 4,
+        "wrong_raw_poses": 26,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 2025.413914496312,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 4,
+        "correct_at_two_px": 3533,
+        "returned": 17986,
+        "scorable": 17959
+      },
+      "results_sha256": "e259a63ffc89753d6e05031a0f0ce0448efd12603ac1ea45bf947334b534ddce"
+    },
+    {
+      "step": 2000,
+      "selection": {
+        "positive_cases": 96,
+        "correct_raw_poses": 14,
+        "strict_raw_poses": 2,
+        "wrong_raw_poses": 20,
+        "negative_cases": 0,
+        "raw_nonoverlap_proposals": 0,
+        "median_measured_inference_ms": 1996.984359502676,
+        "calibrated_acceptance_evaluated": false,
+        "cases": 96,
+        "correct_poses": 14,
+        "strict_poses": 2,
+        "correct_at_two_px": 3522,
+        "returned": 18113,
+        "scorable": 18084
+      },
+      "results_sha256": "191b68ec14b82e1f904278a5c9dbc8b183f41010e12350a7e724d534ba6bab5e"
+    }
+  ],
+  "calendar_seconds": 2028.641188,
+  "fitting_seconds": 543.1363201051718,
+  "total_parameters": 56544,
+  "trainable_parameters": 28272,
+  "selected_actual_control_passed": true,
+  "coarse_weights_unchanged": true,
+  "summary_sha256": "fc911665417977b16bb360d3b934a8316b3ee2b3fd413803fe5b09ed626a80e9",
+  "audit_sha256": "e47917d122e261f6acaa325a84005209856b973b14eb449fc32bb21f285c9719",
+  "model_promoted": false,
+  "calibration_or_test_pixels_loaded": 0,
+  "scope": "One complete development sampling-control variant, exact100update pilot optimizer replay and2000sample/576savedmetric study replay. Full2000update optimizer retraining is not claimed. One-case gain over frozen baseline; targets and SOTA not established.",
+  "prior_coarse_control_same_seed": {
+    "summary_path": "runs/north-v52-completion-only/coarse_adaptation-20261101/summary.json",
+    "summary_sha256": "377131f50f52b64fcdb071667d466b9720ef07cf84770df5ec88c112a20384c7",
+    "selected_step": 1500,
+    "selection": {
+      "positive_cases": 96,
+      "correct_raw_poses": 14,
+      "strict_raw_poses": 2,
+      "wrong_raw_poses": 15,
+      "negative_cases": 0,
+      "raw_nonoverlap_proposals": 0,
+      "median_measured_inference_ms": 1886.8501584947808,
+      "calibrated_acceptance_evaluated": false,
+      "cases": 96,
+      "correct_poses": 14,
+      "strict_poses": 2,
+      "correct_at_two_px": 3053,
+      "returned": 16957,
+      "scorable": 16924
+    },
+    "negative_counts": {
+      "positive_cases": 0,
+      "correct_raw_poses": 0,
+      "strict_raw_poses": 0,
+      "wrong_raw_poses": 0,
+      "negative_cases": 96,
+      "raw_nonoverlap_proposals": 4,
+      "median_measured_inference_ms": 1795.593232018291,
+      "calibrated_acceptance_evaluated": false
+    }
+  }
+}

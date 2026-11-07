@@ -1,0 +1,97 @@
+{
+  "recorded_utc": "2026-11-02T17:28:04.562403+00:00",
+  "state": "COMPLETE; no model promoted",
+  "logical_updates": 400,
+  "actual_snapshot_forward_replays": 20,
+  "source_commit": "819f9cbe6534ca4c3ef77f413645a9dd97fd5204",
+  "summary_sha256": "2e03ae41ef5769c907cf62eb6998564b699de32ce1a5ad556e63769d0ba2bb35",
+  "audit_sha256": "2e961c9dd36d28d0dbe44c3da8d5a096a7a6c4c5699e38a285b04867c1708d27",
+  "fixtures": [
+    {
+      "name": "identity",
+      "objective_before": 1.2451051473617554,
+      "objective_after": 0.26055362820625305,
+      "row_top1_reachable_before": 1.0,
+      "row_top1_reachable_after": 1.0,
+      "returned_reachable_before": 512,
+      "returned_reachable_after": 512,
+      "returned_before": 512,
+      "returned_after": 512,
+      "weight_change_l2": {
+        "coarse": 0.06564368257606698,
+        "context": 0.6421155152292777,
+        "fine": 0.0
+      },
+      "median_unclipped_gradient_norm": {
+        "coarse": 0.32090610406884634,
+        "context": 0.5436765175606184,
+        "fine": 0.0
+      }
+    },
+    {
+      "name": "relighting",
+      "objective_before": 6.0961689949035645,
+      "objective_after": 4.92362117767334,
+      "row_top1_reachable_before": 0.028106508875739646,
+      "row_top1_reachable_after": 0.05325443786982249,
+      "returned_reachable_before": 8,
+      "returned_reachable_after": 16,
+      "returned_before": 189,
+      "returned_after": 181,
+      "weight_change_l2": {
+        "coarse": 0.09129239639092138,
+        "context": 0.9050095544661454,
+        "fine": 0.0
+      },
+      "median_unclipped_gradient_norm": {
+        "coarse": 0.5749697320307988,
+        "context": 0.5993105230890778,
+        "fine": 0.0
+      }
+    },
+    {
+      "name": "viewpoint",
+      "objective_before": 1.8980622291564941,
+      "objective_after": 0.6845624446868896,
+      "row_top1_reachable_before": 0.8511278195488722,
+      "row_top1_reachable_after": 0.9804511278195489,
+      "returned_reachable_before": 499,
+      "returned_reachable_after": 511,
+      "returned_before": 512,
+      "returned_after": 512,
+      "weight_change_l2": {
+        "coarse": 0.08118793242548984,
+        "context": 0.7476176237077408,
+        "fine": 0.0
+      },
+      "median_unclipped_gradient_norm": {
+        "coarse": 0.534447553099576,
+        "context": 0.8104432523219735,
+        "fine": 0.0
+      }
+    },
+    {
+      "name": "relighting_and_viewpoint",
+      "objective_before": 6.319991111755371,
+      "objective_after": 4.971443176269531,
+      "row_top1_reachable_before": 0.012030075187969926,
+      "row_top1_reachable_after": 0.04661654135338346,
+      "returned_reachable_before": 3,
+      "returned_reachable_after": 7,
+      "returned_before": 187,
+      "returned_after": 182,
+      "weight_change_l2": {
+        "coarse": 0.08982340372387261,
+        "context": 0.9091771097715202,
+        "fine": 0.0
+      },
+      "median_unclipped_gradient_norm": {
+        "coarse": 0.716181488572464,
+        "context": 0.7369906318837782,
+        "fine": 0.0
+      }
+    }
+  ],
+  "scope": "Training fixtures only. Reachability means the highest-scoring coarse location lies within the existing native 33-pixel refinement search. This is not pixel-accurate correspondence, camera-pose accuracy, generalization or a promoted model.",
+  "diagnostic_calendar_seconds": 123.21664
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 69,
+  "passed": true,
+  "procedural_tests_passed": 16,
+  "measured_test_seconds": 0.54,
+  "prepared_utc": "2026-11-03T23:59:01.845292+00:00",
+  "source_sha256": {
+    "solar_eval_data_v69.py": "63e64158bd3806733af30d75c82da30be217b0e93728af13b368c6d4cb970bf2",
+    "build_solar_eval_data_v69.py": "95b9a177a7c7f37b91bf8404bb5325036e72940e3f733159f6dea5541186a686",
+    "index_solar_reference_assets_v69.py": "9c1e103659091b4f009cb0ab42c46c5a9c1d2f5c5f0eb295f93ceb235a114fe5",
+    "test_solar_eval_data_v69.py": "6483805a9329350e5fc1ec6880eeb2a4b70a0241008a31ed8b6156976f0555fc"
+  },
+  "dependency_sha256": {
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_sun_search_v68.py": "c67c0e4b95253d0e595d0c030752e7da3483c18e03df937a953f41419c53de9a"
+  },
+  "independent_adapter_sha256": "1650d1b21c740c2ff8900399f63bdf8900f3758da79f05c69bdb9bccc03f5f9e",
+  "procedural_interoperability": {
+    "terrain_groups": 8,
+    "camera_units": 32,
+    "positive_cases": 192,
+    "negative_cases": 192,
+    "manifest_schema": 70
+  },
+  "gates": [
+    "complete96units and independent >=95% oracle",
+    "all eligible directions in denominator",
+    "no selection/reserve crossing",
+    "actual unchanged rendering physics",
+    "strict source publication",
+    "exact source-pinned offline and online reference protocols",
+    "full original scene ceiling and conservative body-fixed negative bounds",
+    "query truth isolated from primary inputs",
+    "actual reference Sun and exact cross-terrain secondary Sun",
+    "generic primary Sun catalogue and availability masks",
+    "measured reference-precompute receipts"
+  ],
+  "artifacts_built": false,
+  "physical_ray_queries": 0,
+  "rendering_jobs": 0,
+  "neural_forwards": 0,
+  "optimizer_updates": 0,
+  "root_files_modified": false,
+  "actual_data_or_final_reserve_access": false,
+  "scope": "Focused procedural/source-schema tests only, no actual lunar artifact construction or scientific model result. Root must publish and run repository checks before admission."
+}

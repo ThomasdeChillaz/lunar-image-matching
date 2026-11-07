@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "tests_passed": 249,
+  "optional_skips": 4,
+  "test_log_sha256": "55410f5dc280a6b9088268764cca8c7d4dd6b6a64e9ec5ee0502237db6bcb354",
+  "smoke_audit_sha256": "1a84fad7e39a936c0e6d4d05c8af103e7f433638e8eb1b830187fbd86eb8297f",
+  "source_sha256": {
+    "mutual_assignment_v23.py": "a40f963ab371d78c40c21a060b74dc96b631920e03dc4b88786dc5817b396d2a",
+    "train_mutual_pilot_v23.py": "91de0592975269fa0070e6af04b443faf0e435471ca5860a2c469f3bb725c7a5",
+    "verify_mutual_pilot_v23.py": "00ad43e822e07e87888a9a484caeb85cd25c19ecbd49b4867aac1c923261e22c",
+    "diagnose_mutual_assignment_v23.py": "3823ef29700dd54a9d600ee2495e2e607c0f9dd5a49460e51360f3f875a35003",
+    "train_mutual_cohort_v24.py": "94d62810c2340a79ce9710193dd2e0c4ce3e5251c575d049252d177917ee0322",
+    "verify_mutual_cohort_v24.py": "0d69b2202752d74642ade9ee0e2252f9a33f86152c789c7a9d5f4ac1e7f9e53a",
+    "control_mutual_cohort_v24.py": "a1432d8c9c97d5b5a0c7196579a88f953e27d672b22a7b47fae7f0084a5ecaf4",
+    "test_mutual_assignment_v23.py": "66fa5267d438d7a37299981f7ff9e886d61bfc95a0fce6e747166297933dac46",
+    "test_mutual_training_v24.py": "1f4c533e374c4e6548bf9de5a6b6f9cb079baadd9e792bd6a4e7379e61573457",
+    "recover_native_moonst3r_v28.py": "1f19287613978c65caed6e27c81793dde314e3e6414bddcf3c281ea432795dd7",
+    "verify_moonst3r_recovery_v28.py": "3ad95e443304a8041e6914068d23e3e027d8e423a76413554c4a4b921e7f870e",
+    "test_moonst3r_recovery_v28.py": "f9d75800e18d32783304941a0ca6808eb6412f7b1fde9849dd2e0c5e459f8703"
+  },
+  "scope": "Software algebra, gradient/protection/resumption and resource-controller gates only; no new fitting or localization gain. Full source must be public/byte-verified before pilot/supplemental inference."
+}

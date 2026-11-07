@@ -1,0 +1,23 @@
+{
+  "prepared_utc": "2026-11-02T17:15:36.166837+00:00",
+  "status": "PREPARED; actual coarse inference has not run",
+  "source_sha256": {
+    "north_coarse_reachability_v53.py": "c287ffff18e929e0181d033875169a06f42c062c6807e4956e2f2803411ca207",
+    "verify_north_coarse_reachability_v53.py": "9c9e532b523f86492cd49fa560a719c0623788e5fb1839ad0a2e093b628c6800",
+    "test_north_coarse_reachability_v53.py": "0d2d8ef78e0dfa33c7987542ddf5e92756f1d35c9ee905bc23a9faf1bf67a6fb",
+    "test_north_coarse_replay_v53.py": "38780001d2813b38101b29b5fb12529de78bf5158006fd471ed8cecb39660434"
+  },
+  "focused_tests_passed": 10,
+  "focused_seconds": 0.32,
+  "original_v43_executed": false,
+  "amended_cohort_replayed": true,
+  "numeric_kernel_AST_unchanged": true,
+  "expected_branch_rows": 768,
+  "expected_case_rows": 192,
+  "optimizer_updates_allowed": 0,
+  "max_calendar_seconds": 1800,
+  "calibration_or_final_pixels_loaded": 0,
+  "public_source_pending": true,
+  "full_QA_pending": true,
+  "oracle_is_model_accuracy": false
+}

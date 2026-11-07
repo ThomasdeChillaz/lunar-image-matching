@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "completed_steps": 100,
+  "exact_full_retraining": true,
+  "exact_model_optimizer_rng_replay": true,
+  "independent_assignment_scalar_matrices": 8,
+  "independent_scalar_checks": [
+    {
+      "step": 1,
+      "direction": "forward",
+      "numpy_float64": 6.309890783345081,
+      "torch_recorded": 6.309890270233154
+    },
+    {
+      "step": 1,
+      "direction": "reverse",
+      "numpy_float64": 6.124003937939917,
+      "torch_recorded": 6.124004364013672
+    },
+    {
+      "step": 4,
+      "direction": "forward",
+      "numpy_float64": 0.0,
+      "torch_recorded": 0.0
+    },
+    {
+      "step": 4,
+      "direction": "reverse",
+      "numpy_float64": 0.0,
+      "torch_recorded": 0.0
+    },
+    {
+      "step": 50,
+      "direction": "forward",
+      "numpy_float64": 5.908045425205533,
+      "torch_recorded": 5.908045291900635
+    },
+    {
+      "step": 50,
+      "direction": "reverse",
+      "numpy_float64": 5.980458210584675,
+      "torch_recorded": 5.980458736419678
+    },
+    {
+      "step": 100,
+      "direction": "forward",
+      "numpy_float64": 0.0,
+      "torch_recorded": 0.0
+    },
+    {
+      "step": 100,
+      "direction": "reverse",
+      "numpy_float64": 0.0,
+      "torch_recorded": 0.0
+    }
+  ],
+  "prior_independent_geometry_audit_reused": true,
+  "unchanged_initial_inference_graph_reused": true,
+  "fine_encoder_unchanged": true,
+  "total_parameters": 81696,
+  "pilot_summary_sha256": "273423d385e9783365ec10cdf2a5c3f62c04bbc497ad37d93c96c82ab1503798",
+  "pilot_protocol_sha256": "de3a864c5ba713e4aeb643d97b7661693ff5e57b8633ca8f4025bc2009f007b7",
+  "source_sha256": "00ad43e822e07e87888a9a484caeb85cd25c19ecbd49b4867aac1c923261e22c",
+  "scope": "Train-only pilot reproducibility/new-scalar numerical audit. Not a localization gain, selected model, fresh terrain test or independent full neural implementation."
+}

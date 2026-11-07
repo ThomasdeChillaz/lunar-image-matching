@@ -1,0 +1,2590 @@
+{
+  "schema": "sealed_persistent_beam_summary_v144",
+  "methods": {
+    "direct": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 3,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 4.527505877515068,
+      "positive_online_seconds": [
+        4.61806367803365,
+        4.436948076996487,
+        4.746377472009044,
+        3.1140537880710326
+      ],
+      "median_all_case_online_seconds": 2.624480464059161,
+      "all_case_online_seconds": [
+        4.61806367803365,
+        2.1349071400472894,
+        4.436948076996487,
+        1.641785034968052,
+        4.746377472009044,
+        2.120097212959081,
+        3.1140537880710326,
+        1.7531101679778658
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 449,
+          "visible": 558,
+          "returned": 563
+        },
+        "2": {
+          "correct": 457,
+          "visible": 558,
+          "returned": 563
+        },
+        "4": {
+          "correct": 465,
+          "visible": 558,
+          "returned": 563
+        },
+        "8": {
+          "correct": 467,
+          "visible": 558,
+          "returned": 563
+        },
+        "12": {
+          "correct": 470,
+          "visible": 558,
+          "returned": 563
+        }
+      },
+      "sun_proposals": 3,
+      "median_sun_proposal_error_deg": 7.497426263134427
+    },
+    "legacy_no_extra": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 1,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 21.77110762152006,
+      "positive_online_seconds": [
+        19.683706713025458,
+        22.653096511028707,
+        20.88911873201141,
+        25.73590038297698
+      ],
+      "median_all_case_online_seconds": 23.972516898502363,
+      "all_case_online_seconds": [
+        19.683706713025458,
+        24.095524531032424,
+        22.653096511028707,
+        25.36375500599388,
+        20.88911873201141,
+        24.352529315045103,
+        25.73590038297698,
+        23.8495092659723
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 18,
+          "visible": 18,
+          "returned": 18
+        },
+        "2": {
+          "correct": 18,
+          "visible": 18,
+          "returned": 18
+        },
+        "4": {
+          "correct": 18,
+          "visible": 18,
+          "returned": 18
+        },
+        "8": {
+          "correct": 18,
+          "visible": 18,
+          "returned": 18
+        },
+        "12": {
+          "correct": 18,
+          "visible": 18,
+          "returned": 18
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487131315672135
+    },
+    "legacy_active32": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 1,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 27.056594911497086,
+      "positive_online_seconds": [
+        22.397267909080256,
+        28.448977814987302,
+        25.66421200800687,
+        28.586076117062476
+      ],
+      "median_all_case_online_seconds": 26.73053834249731,
+      "all_case_online_seconds": [
+        22.397267909080256,
+        24.91671631799545,
+        28.448977814987302,
+        27.796864676987752,
+        25.66421200800687,
+        36.73462036601268,
+        28.586076117062476,
+        24.609386039024685
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 50,
+          "visible": 54,
+          "returned": 54
+        },
+        "2": {
+          "correct": 54,
+          "visible": 54,
+          "returned": 54
+        },
+        "4": {
+          "correct": 54,
+          "visible": 54,
+          "returned": 54
+        },
+        "8": {
+          "correct": 54,
+          "visible": 54,
+          "returned": 54
+        },
+        "12": {
+          "correct": 54,
+          "visible": 54,
+          "returned": 54
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487131315672135
+    },
+    "single_uniform128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 2,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 3,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 50.165528447483666,
+      "positive_online_seconds": [
+        41.18261368497042,
+        51.92820942698745,
+        48.40284746797988,
+        77.58516449603485
+      ],
+      "median_all_case_online_seconds": 50.165528447483666,
+      "all_case_online_seconds": [
+        41.18261368497042,
+        31.18674945202656,
+        51.92820942698745,
+        74.56169388495618,
+        48.40284746797988,
+        31.147898096998688,
+        77.58516449603485,
+        55.35265774594154
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 120,
+          "visible": 123,
+          "returned": 123
+        },
+        "2": {
+          "correct": 123,
+          "visible": 123,
+          "returned": 123
+        },
+        "4": {
+          "correct": 123,
+          "visible": 123,
+          "returned": 123
+        },
+        "8": {
+          "correct": 123,
+          "visible": 123,
+          "returned": 123
+        },
+        "12": {
+          "correct": 123,
+          "visible": 123,
+          "returned": 123
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487131315672135
+    },
+    "beam_uniform128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 1,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 50.345946023997385,
+      "positive_online_seconds": [
+        47.94171958696097,
+        51.550146840978414,
+        49.141745207016356,
+        59.1827548800502
+      ],
+      "median_all_case_online_seconds": 48.541732396988664,
+      "all_case_online_seconds": [
+        47.94171958696097,
+        38.988792168034706,
+        51.550146840978414,
+        56.08630662196083,
+        49.141745207016356,
+        43.294865047966596,
+        59.1827548800502,
+        36.06256567296805
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 13,
+          "visible": 13,
+          "returned": 13
+        },
+        "2": {
+          "correct": 13,
+          "visible": 13,
+          "returned": 13
+        },
+        "4": {
+          "correct": 13,
+          "visible": 13,
+          "returned": 13
+        },
+        "8": {
+          "correct": 13,
+          "visible": 13,
+          "returned": 13
+        },
+        "12": {
+          "correct": 13,
+          "visible": 13,
+          "returned": 13
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487131315672135
+    },
+    "beam_geometry128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 1,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 51.81687197796418,
+      "positive_online_seconds": [
+        49.59681131999241,
+        53.492192987934686,
+        50.14155096799368,
+        66.4216862890753
+      ],
+      "median_all_case_online_seconds": 50.63156221999088,
+      "all_case_online_seconds": [
+        49.59681131999241,
+        44.68199076602468,
+        53.492192987934686,
+        58.04050834500231,
+        50.14155096799368,
+        51.121573471988086,
+        66.4216862890753,
+        48.19628867396386
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 14,
+          "visible": 15,
+          "returned": 15
+        },
+        "2": {
+          "correct": 14,
+          "visible": 15,
+          "returned": 15
+        },
+        "4": {
+          "correct": 15,
+          "visible": 15,
+          "returned": 15
+        },
+        "8": {
+          "correct": 15,
+          "visible": 15,
+          "returned": 15
+        },
+        "12": {
+          "correct": 15,
+          "visible": 15,
+          "returned": 15
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487131315672135
+    },
+    "beam_active128": {
+      "correct": 1,
+      "strict": 1,
+      "wrong_positive": 0,
+      "raw_nonoverlap": 0,
+      "positive_pairs": 4,
+      "nonoverlap_pairs": 4,
+      "positive_pose_outputs": 1,
+      "raw_recovery_percent": 25.0,
+      "median_positive_online_seconds": 54.51892229999066,
+      "positive_online_seconds": [
+        53.76953162200516,
+        53.81035049399361,
+        55.22749410598772,
+        65.86218783800723
+      ],
+      "median_all_case_online_seconds": 53.789941057999386,
+      "all_case_online_seconds": [
+        53.76953162200516,
+        43.262824784033,
+        53.81035049399361,
+        60.01019251794787,
+        55.22749410598772,
+        48.294773023983,
+        65.86218783800723,
+        39.99977181194117
+      ],
+      "native_correspondences": {
+        "1": {
+          "correct": 15,
+          "visible": 16,
+          "returned": 16
+        },
+        "2": {
+          "correct": 15,
+          "visible": 16,
+          "returned": 16
+        },
+        "4": {
+          "correct": 16,
+          "visible": 16,
+          "returned": 16
+        },
+        "8": {
+          "correct": 16,
+          "visible": 16,
+          "returned": 16
+        },
+        "12": {
+          "correct": 16,
+          "visible": 16,
+          "returned": 16
+        }
+      },
+      "sun_proposals": 4,
+      "median_sun_proposal_error_deg": 3.7487135584540368
+    }
+  },
+  "strongest_nonbeam_controls_by_raw_count": [
+    "direct",
+    "legacy_no_extra",
+    "legacy_active32",
+    "single_uniform128"
+  ],
+  "strongest_nonbeam_correct": 1,
+  "active_gain_over_strongest_nonbeam_pp": 0.0,
+  "active_minus_control": {
+    "direct": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 12.041712098210128
+    },
+    "legacy_no_extra": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 2.504186890615543
+    },
+    "legacy_active32": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 2.0149956961814173
+    },
+    "single_uniform128": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 1.086780583943502
+    },
+    "beam_uniform128": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 1.0828860435754695
+    },
+    "beam_geometry128": {
+      "paired_gain_pp": 0.0,
+      "paired_component_interval": {
+        "groups": [
+          "np31-r0-c4",
+          "np31-r1-c0",
+          "np31-r3-c3"
+        ],
+        "enumerated_draws": 27,
+        "interval_pp": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "Descriptive component bootstrap; three groups cannot establish population reliability"
+      },
+      "median_positive_runtime_ratio": 1.0521461489063941
+    }
+  },
+  "negative_endpoint_intervals": {
+    "direct": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "legacy_no_extra": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "legacy_active32": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "single_uniform128": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "beam_uniform128": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "beam_geometry128": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    },
+    "beam_active128": {
+      "groups": [
+        "np31-r0-c4",
+        "np31-r0-c7",
+        "np31-r1-c0",
+        "np31-r3-c2",
+        "np31-r3-c3",
+        "np31-r3-c5"
+      ],
+      "enumerated_draws": 46656,
+      "undefined_no_edge_draws": 5070,
+      "interval_percent": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "Both terrain endpoints weighted; empirical interval is not an upper deployment-risk bound"
+    }
+  },
+  "positive_terrain_components": [
+    "np31-r0-c4",
+    "np31-r1-c0",
+    "np31-r3-c3"
+  ],
+  "case_results": [
+    {
+      "id": "blind138-00",
+      "source_case": "u013-l00-00-positive",
+      "positive": true,
+      "reference_component": "np31-r0-c4",
+      "query_component": "np31-r0-c4",
+      "methods": {
+        "direct": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 447,
+              "visible": 463,
+              "returned": 463
+            },
+            "2": {
+              "correct": 454,
+              "visible": 463,
+              "returned": 463
+            },
+            "4": {
+              "correct": 461,
+              "visible": 463,
+              "returned": 463
+            },
+            "8": {
+              "correct": 461,
+              "visible": 463,
+              "returned": 463
+            },
+            "12": {
+              "correct": 461,
+              "visible": 463,
+              "returned": 463
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.01533148291918545,
+            "translation_m": 0.5582548526850594,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "legacy_no_extra": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 18,
+              "visible": 18,
+              "returned": 18
+            },
+            "2": {
+              "correct": 18,
+              "visible": 18,
+              "returned": 18
+            },
+            "4": {
+              "correct": 18,
+              "visible": 18,
+              "returned": 18
+            },
+            "8": {
+              "correct": 18,
+              "visible": 18,
+              "returned": 18
+            },
+            "12": {
+              "correct": 18,
+              "visible": 18,
+              "returned": 18
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.012696395994083131,
+            "translation_m": 0.48171678093089226,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "legacy_active32": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 46,
+              "visible": 46,
+              "returned": 46
+            },
+            "2": {
+              "correct": 46,
+              "visible": 46,
+              "returned": 46
+            },
+            "4": {
+              "correct": 46,
+              "visible": 46,
+              "returned": 46
+            },
+            "8": {
+              "correct": 46,
+              "visible": 46,
+              "returned": 46
+            },
+            "12": {
+              "correct": 46,
+              "visible": 46,
+              "returned": 46
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.017857057433328636,
+            "translation_m": 0.6482024172975598,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "single_uniform128": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 102,
+              "visible": 102,
+              "returned": 102
+            },
+            "2": {
+              "correct": 102,
+              "visible": 102,
+              "returned": 102
+            },
+            "4": {
+              "correct": 102,
+              "visible": 102,
+              "returned": 102
+            },
+            "8": {
+              "correct": 102,
+              "visible": 102,
+              "returned": 102
+            },
+            "12": {
+              "correct": 102,
+              "visible": 102,
+              "returned": 102
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.01676090058347258,
+            "translation_m": 0.5697106303244477,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_uniform128": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 11,
+              "visible": 11,
+              "returned": 11
+            },
+            "2": {
+              "correct": 11,
+              "visible": 11,
+              "returned": 11
+            },
+            "4": {
+              "correct": 11,
+              "visible": 11,
+              "returned": 11
+            },
+            "8": {
+              "correct": 11,
+              "visible": 11,
+              "returned": 11
+            },
+            "12": {
+              "correct": 11,
+              "visible": 11,
+              "returned": 11
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.013636701108832812,
+            "translation_m": 0.4853722996289676,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_geometry128": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 12,
+              "visible": 12,
+              "returned": 12
+            },
+            "2": {
+              "correct": 12,
+              "visible": 12,
+              "returned": 12
+            },
+            "4": {
+              "correct": 12,
+              "visible": 12,
+              "returned": 12
+            },
+            "8": {
+              "correct": 12,
+              "visible": 12,
+              "returned": 12
+            },
+            "12": {
+              "correct": 12,
+              "visible": 12,
+              "returned": 12
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.010616863406681502,
+            "translation_m": 0.4362502134195755,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_active128": {
+          "correct": true,
+          "strict": true,
+          "pose_returned": true,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 13,
+              "visible": 13,
+              "returned": 13
+            },
+            "2": {
+              "correct": 13,
+              "visible": 13,
+              "returned": 13
+            },
+            "4": {
+              "correct": 13,
+              "visible": 13,
+              "returned": 13
+            },
+            "8": {
+              "correct": 13,
+              "visible": 13,
+              "returned": 13
+            },
+            "12": {
+              "correct": 13,
+              "visible": 13,
+              "returned": 13
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.021799712664818127,
+            "translation_m": 0.6817598406824634,
+            "reference_range_m": 1591.162737137531
+          },
+          "sun_proposal_error_deg": 0.0
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 212,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-01",
+      "source_case": "u013-to-u021-l00-00-nonoverlap",
+      "positive": false,
+      "reference_component": "np31-r0-c4",
+      "query_component": "np31-r0-c7",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 193,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-02",
+      "source_case": "u025-l00-00-positive",
+      "positive": true,
+      "reference_component": "np31-r1-c0",
+      "query_component": "np31-r1-c0",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": true,
+          "wrong_positive": true,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 1,
+              "visible": 67,
+              "returned": 70
+            },
+            "2": {
+              "correct": 2,
+              "visible": 67,
+              "returned": 70
+            },
+            "4": {
+              "correct": 3,
+              "visible": 67,
+              "returned": 70
+            },
+            "8": {
+              "correct": 5,
+              "visible": 67,
+              "returned": 70
+            },
+            "12": {
+              "correct": 8,
+              "visible": 67,
+              "returned": 70
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 19.714636921113666,
+            "translation_m": 191.74286339189206,
+            "reference_range_m": 1313.1969263733947
+          },
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 1,
+              "visible": 3,
+              "returned": 3
+            },
+            "2": {
+              "correct": 3,
+              "visible": 3,
+              "returned": 3
+            },
+            "4": {
+              "correct": 3,
+              "visible": 3,
+              "returned": 3
+            },
+            "8": {
+              "correct": 3,
+              "visible": 3,
+              "returned": 3
+            },
+            "12": {
+              "correct": 3,
+              "visible": 3,
+              "returned": 3
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": true,
+          "wrong_positive": true,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 6,
+              "visible": 6,
+              "returned": 6
+            },
+            "2": {
+              "correct": 6,
+              "visible": 6,
+              "returned": 6
+            },
+            "4": {
+              "correct": 6,
+              "visible": 6,
+              "returned": 6
+            },
+            "8": {
+              "correct": 6,
+              "visible": 6,
+              "returned": 6
+            },
+            "12": {
+              "correct": 6,
+              "visible": 6,
+              "returned": 6
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 0.8557825424744089,
+            "translation_m": 17.42359058365641,
+            "reference_range_m": 1313.1969263733947
+          },
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 1,
+              "returned": 1
+            },
+            "2": {
+              "correct": 0,
+              "visible": 1,
+              "returned": 1
+            },
+            "4": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "8": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "12": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 1,
+              "visible": 2,
+              "returned": 2
+            },
+            "2": {
+              "correct": 1,
+              "visible": 2,
+              "returned": 2
+            },
+            "4": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "8": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "12": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 8.537736462515939e-07
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 201,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-03",
+      "source_case": "u025-to-u057-l00-00-nonoverlap",
+      "positive": false,
+      "reference_component": "np31-r1-c0",
+      "query_component": "np31-r3-c2",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 223,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-04",
+      "source_case": "u027-l08-01-positive",
+      "positive": true,
+      "reference_component": "np31-r1-c0",
+      "query_component": "np31-r1-c0",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": true,
+          "wrong_positive": true,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 1,
+              "visible": 24,
+              "returned": 25
+            },
+            "2": {
+              "correct": 1,
+              "visible": 24,
+              "returned": 25
+            },
+            "4": {
+              "correct": 1,
+              "visible": 24,
+              "returned": 25
+            },
+            "8": {
+              "correct": 1,
+              "visible": 24,
+              "returned": 25
+            },
+            "12": {
+              "correct": 1,
+              "visible": 24,
+              "returned": 25
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 52.80765135747527,
+            "translation_m": 203.27933406416312,
+            "reference_range_m": 1588.2945440202834
+          },
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 0.0
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 3,
+              "visible": 5,
+              "returned": 5
+            },
+            "2": {
+              "correct": 5,
+              "visible": 5,
+              "returned": 5
+            },
+            "4": {
+              "correct": 5,
+              "visible": 5,
+              "returned": 5
+            },
+            "8": {
+              "correct": 5,
+              "visible": 5,
+              "returned": 5
+            },
+            "12": {
+              "correct": 5,
+              "visible": 5,
+              "returned": 5
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 0.0
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": true,
+          "wrong_positive": true,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 12,
+              "visible": 15,
+              "returned": 15
+            },
+            "2": {
+              "correct": 15,
+              "visible": 15,
+              "returned": 15
+            },
+            "4": {
+              "correct": 15,
+              "visible": 15,
+              "returned": 15
+            },
+            "8": {
+              "correct": 15,
+              "visible": 15,
+              "returned": 15
+            },
+            "12": {
+              "correct": 15,
+              "visible": 15,
+              "returned": 15
+            }
+          },
+          "pose_error": {
+            "rotation_deg": 1.0676750842466844,
+            "translation_m": 31.29084262952112,
+            "reference_range_m": 1588.2945440202834
+          },
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "2": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "4": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "8": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "12": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "2": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "4": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "8": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            },
+            "12": {
+              "correct": 2,
+              "visible": 2,
+              "returned": 2
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "2": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "4": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "8": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            },
+            "12": {
+              "correct": 1,
+              "visible": 1,
+              "returned": 1
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 7.497426263134427
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 220,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-05",
+      "source_case": "u027-to-u059-l08-01-nonoverlap",
+      "positive": false,
+      "reference_component": "np31-r1-c0",
+      "query_component": "np31-r3-c2",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 208,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-06",
+      "source_case": "u061-l00-17-positive",
+      "positive": true,
+      "reference_component": "np31-r3-c3",
+      "query_component": "np31-r3-c3",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 4,
+              "returned": 5
+            },
+            "2": {
+              "correct": 0,
+              "visible": 4,
+              "returned": 5
+            },
+            "4": {
+              "correct": 0,
+              "visible": 4,
+              "returned": 5
+            },
+            "8": {
+              "correct": 0,
+              "visible": 4,
+              "returned": 5
+            },
+            "12": {
+              "correct": 0,
+              "visible": 4,
+              "returned": 5
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 14.994830329140608
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 14.994830329140608
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 22.49218922867971
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 0.0
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {
+            "1": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "2": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "4": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "8": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            },
+            "12": {
+              "correct": 0,
+              "visible": 0,
+              "returned": 0
+            }
+          },
+          "pose_error": null,
+          "sun_proposal_error_deg": 22.49218922867971
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 211,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    },
+    {
+      "id": "blind138-07",
+      "source_case": "u061-to-u069-l00-17-nonoverlap",
+      "positive": false,
+      "reference_component": "np31-r3-c3",
+      "query_component": "np31-r3-c5",
+      "methods": {
+        "direct": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_no_extra": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "legacy_active32": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "single_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_uniform128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_geometry128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        },
+        "beam_active128": {
+          "correct": false,
+          "strict": false,
+          "pose_returned": false,
+          "wrong_positive": false,
+          "raw_nonoverlap": false,
+          "correspondence": {},
+          "pose_error": null,
+          "sun_proposal_error_deg": null
+        }
+      },
+      "retained_branches": 8,
+      "common_effective_native_fields": 128,
+      "shared_reference_candidate_capacity": 203,
+      "acquisitions": {
+        "single_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 128,
+          "retained_branch_ids": [
+            0
+          ],
+          "pruning": false
+        },
+        "beam_uniform128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_geometry128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        },
+        "beam_active128": {
+          "attempted_native_fields": 128,
+          "rounds": 16,
+          "retained_branch_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pruning": false
+        }
+      }
+    }
+  ],
+  "accepted_pose_study": false,
+  "new_trainable_parameters": 0,
+  "query_sun_input": false,
+  "continuous_sun_estimation": false,
+  "source": "Frozen v143 seven-method eight-case persistent camera/light study",
+  "claim_limits": "Exposed development terrain; no calibrated acceptance, fresh test, learned gain or modern-model ranking",
+  "saved_evidence_sha256": {
+    "runs/solar-beam-v143/predictions.json": "00f199b2e3658c54d034fb7357d720225e83fa7ebfb6266687a9f946dbb528c1",
+    "runs/solar-beam-v143/PREDICTIONS_SEALED.json": "9dd9c9779cef1b6d35975a076b53da7f9aad2230f57bf3be9674552c98dc8bb0",
+    "runs/solar-beam-v143/scores.json": "6118266a5ab27f20219c18b22071888b5aa58c4acd4e1f4b68b21941ca1b613d",
+    "runs/solar-beam-v143/replay.json": "d37fcf469cf56f729d7b90e2f142ab16e9a4f3b6d9663785d6c3134696501c45",
+    "runs/solar-beam-v143/timing.json": "767137416aa7c1ac35c1298d8e1cd93da8d80d753823a9426063d50c06710a39",
+    "runs/solar-beam-v143/timing-runtime.json": "cef75108ba86a58df189f364f1dbc40aad70df43ca6dd0952144bddcb7dce43b",
+    "runs/solar-beam-v143/predict-runtime.json": "b37d30ce16927e89c38020e717bf88e6df198cbf099ace32c2eb6b7e6879ea77",
+    "runs/solar-beam-v143/score-runtime.json": "36eee29e2a6feb7271861ee2e682f95006deddabb5ff6726d9e6a46b5aabad14",
+    "runs/solar-beam-v143/replay-runtime.json": "4610f1addbe1f5d7c53ee9d45daa2a21686b26d8874b733598f8559b6ee46a19"
+  },
+  "source_protocol_sha256": "971caea602eaf70077884d67bc6bd912be29ef25d01f06028faf634047693197",
+  "runtime": {
+    "timing": {
+      "elapsed_seconds": 197.958166351018,
+      "whole_worker_peak_rss_bytes": 876515328,
+      "memory_scope": "Whole worker, including shared caches and imports; not per-method memory"
+    },
+    "predict": {
+      "elapsed_seconds": 1006.3590977920103,
+      "whole_worker_peak_rss_bytes": 1050288128,
+      "memory_scope": "Whole worker, including shared caches and imports; not per-method memory"
+    },
+    "score": {
+      "elapsed_seconds": 1.4716549669974484,
+      "whole_worker_peak_rss_bytes": 360755200,
+      "memory_scope": "Whole worker, including shared caches and imports; not per-method memory"
+    },
+    "replay": {
+      "elapsed_seconds": 2.449122106016148,
+      "whole_worker_peak_rss_bytes": 450424832,
+      "memory_scope": "Whole worker, including shared caches and imports; not per-method memory"
+    }
+  },
+  "timing": {
+    "samples": [
+      {
+        "layered": false,
+        "elapsed_seconds": 94.63615006400505,
+        "all_seven_pose_controls_pass": true,
+        "lights": 24,
+        "cameras": 2048,
+        "maximum_branches": 8,
+        "requested_native_field_cap": 128,
+        "common_effective_native_fields": 128
+      },
+      {
+        "layered": true,
+        "elapsed_seconds": 103.21008971601259,
+        "all_seven_pose_controls_pass": true,
+        "lights": 24,
+        "cameras": 2048,
+        "maximum_branches": 8,
+        "requested_native_field_cap": 128,
+        "common_effective_native_fields": 128
+      }
+    ],
+    "comparison_forecast_seconds": 1283.521076592151,
+    "generated_only": true,
+    "physical_sunlight_simulation": false,
+    "lunar_images_opened": false
+  },
+  "actual_controller_elapsed_seconds": 1238.0647043819772,
+  "fixed_comparison_charge_seconds": 1800,
+  "report_sources_sha256": {
+    "reports/solar-beam-v144/analyze_saved.py": "3e404c21fd1483fa2fefafaa14ab3527c777c49efcc4ddb88133abf4a662015e",
+    "reports/solar-beam-v144/diagnose_saved.py": "6bfc216ffc76ca1cb9b3cf8f744cbebf62c0f23bf2f332afa10be8de86cd018a",
+    "reports/solar-beam-v144/package_results.py": "5cddce30de73f62b7dde588a67704f2414bd8eec2916ca8ea6d03b967b19d47d",
+    "reports/solar-beam-v144/render_results.py": "6d4711e71275857fb3c2b830cfb48751fede1fd903664746e40a7bdf7b732728",
+    "reports/solar-beam-v144/replay_saved.py": "4d9f2c8c793ba56bc4ec5387dc0005e01106d0ca391a575c504891305597c0ed",
+    "reports/solar-beam-v144/test_analysis_v144.py": "bb1b9419a8aabdc20383fdd085df3b046bddcda2bc629102a1189b5ca909172e"
+  }
+}

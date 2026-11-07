@@ -1,0 +1,234 @@
+{
+  "workflow_run_id": 41930272861,
+  "run_attempt": 1,
+  "workflow_source_commit": "17e1dedcf8aca1586d367334fadb6f1a5909d2bb",
+  "source_publication_commit": "375bf6afe0d0416c6e8ea0c584e37dcddef882f3",
+  "ticket_nonce": "b74e993922e9286fcb44803f73712dadb1fd522e69fcb1037c519e37f3cc4403",
+  "reviewed_branch": "solar-v110-ticket-b74e993922e9286fcb44803f73712dadb1fd522e69fcb1037c519e37f3cc4403",
+  "reviewed_ticket_commit": "17e1dedcf8aca1586d367334fadb6f1a5909d2bb",
+  "html_url": "https://github.com/ThomasdeChillaz/lunar-image-matching/actions/runs/41930272861",
+  "workflow_started_utc": "2026-11-04T23:01:20Z",
+  "ticket_sha256": "eb02abfd657927a951efabf54adcd29d12171ea1eab03460d02bf1aff9e7dc32",
+  "nonce": "b74e993922e9286fcb44803f73712dadb1fd522e69fcb1037c519e37f3cc4403",
+  "parent_pid": 2485,
+  "public_dispatch_evidence": {
+    "ticket_commit": "17e1dedcf8aca1586d367334fadb6f1a5909d2bb",
+    "branch": "solar-v110-ticket-b74e993922e9286fcb44803f73712dadb1fd522e69fcb1037c519e37f3cc4403",
+    "verified_commit": true,
+    "release_asset_id": 711170457,
+    "archive_bytes": 563675388,
+    "archive_sha256": "2d25dca8b56f86f10444289b7458aeed4ba9a6755bf1ff19fca7014afaa1dee0",
+    "previous_failed_run_id": 41926059385,
+    "verified_arithmetic_run_id": 41928100316
+  },
+  "official_checkpoint_receipts": [
+    {
+      "filename": "dad.pth",
+      "source": "https://github.com/Parskatt/dad/releases/download/v0.1.0/dad.pth",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 26075286,
+      "sha256": "7d827844649faf5213ba97e7adb43e16b936dd3d11ab2d0fc0d602c67fae781f",
+      "calendar_seconds": 0.3403220069999975
+    },
+    {
+      "filename": "dinov2_vitl14_pretrain.pth",
+      "source": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth",
+      "final_host": "dl.fbaipublicfiles.com",
+      "bytes": 1217586395,
+      "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "calendar_seconds": 3.606171393000011
+    },
+    {
+      "filename": "loma_R.pth",
+      "source": "https://github.com/davnords/storage/releases/download/loma/loma_R.pth",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 757905869,
+      "sha256": "ade1379fb52143da65c36730f24b69eaa49618bb277890c6d2a0fb1630d33d67",
+      "calendar_seconds": 5.242161548999974
+    },
+    {
+      "filename": "romav2.0.1.pt",
+      "source": "https://github.com/Parskatt/RoMaV2/releases/download/v2.0.1/romav2.0.1.pt",
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 1095883548,
+      "sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+      "calendar_seconds": 7.265977163999992
+    }
+  ],
+  "public_contract_git_blob": "76b0886d09a70379e8b7cf1e7439b7ee194c0cf7",
+  "public_contract_sha256": "918e4a77630c995c4448d9440b3d09fccaf74fc6cea0d52e245696705321be98",
+  "overlay": {
+    "manifest_sha256": "a49b1a98d8ac10491d7edda93ddb1a97df6182ab3223414ef9bdf81ce2393636",
+    "member_count": 1022
+  },
+  "portable_catalogue_archives": {
+    "runs/solar-reference-v80-full/references/u012.npz": {
+      "sun_columns": 1627,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u013.npz": {
+      "sun_columns": 1627,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u014.npz": {
+      "sun_columns": 1627,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u015.npz": {
+      "sun_columns": 1627,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u020.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u021.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u022.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u023.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u024.npz": {
+      "sun_columns": 1743,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u025.npz": {
+      "sun_columns": 1743,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u026.npz": {
+      "sun_columns": 1743,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u027.npz": {
+      "sun_columns": 1743,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u056.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u057.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u058.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u059.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u060.npz": {
+      "sun_columns": 1355,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u061.npz": {
+      "sun_columns": 1355,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u062.npz": {
+      "sun_columns": 1355,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u063.npz": {
+      "sun_columns": 1355,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u068.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u069.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u070.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u071.npz": {
+      "sun_columns": 1583,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u072.npz": {
+      "sun_columns": 1725,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u073.npz": {
+      "sun_columns": 1725,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u074.npz": {
+      "sun_columns": 1725,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u075.npz": {
+      "sun_columns": 1725,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u092.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u093.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u094.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    },
+    "runs/solar-reference-v80-full/references/u095.npz": {
+      "sun_columns": 1759,
+      "max_component_roundoff": 1.1102230246251565e-16
+    }
+  },
+  "capsule_setup_seconds": 66.43347834,
+  "controller_started_utc": "2026-11-04T23:03:08.824896+00:00",
+  "complete": true,
+  "protocol_sha256": "5bb40d750744b887f0919803cb0de1184a6c94c5c7b66f2ef6fc0c842ea6a6fe",
+  "ticket_path": "reports/solar-remote-arm-v110-ticket.json",
+  "relay_source_sha256": "efcd44f61ce67b7187ed69a2f9798c089bc84056c2b45862bf38e985753c4f0e",
+  "workflow_source_sha256": "86a4e50aacc2c606f2694f5ec849aa4a7c365fe9991dadc523897fd58aef9033",
+  "authorization_sha256": "c5aaebc6fa9d828ddd895e44ba15a0eaf549d3837872fc89f64db0e187c18445",
+  "original_reservation": {
+    "reservation": {
+      "job_id": "5bb40d750744b887f0919803cb0de1184a6c94c5c7b66f2ef6fc0c842ea6a6fe/evaluation",
+      "category": "baseline",
+      "seconds": 1800,
+      "reserved_utc": "2026-11-04T23:00:03.545491+00:00",
+      "refund_on_failure": false
+    },
+    "remaining_after_reservation": 28375.0
+  },
+  "started_utc": "2026-11-04T23:02:02.391409+00:00",
+  "absolute_deadline_utc": "2026-11-04T23:32:02.391409+00:00",
+  "cap_seconds": 1800,
+  "calendar_seconds": 1000.7598820520001,
+  "setup_seconds": 66.43347834,
+  "child_returncode": 0,
+  "phase": "evaluation",
+  "result_artifact": {
+    "path": "runs/solar-remote-v110/b74e993922e9286fcb44803f73712dadb1fd522e69fcb1037c519e37f3cc4403/scientific_results.zip",
+    "sha256": "b25f47827cadbf017f64f90ab78fb92d6380982b20e9c6b451d690427ecd0543",
+    "expanded_bytes": 4769083,
+    "file_count": 111,
+    "scientific_output": "runs/solar-modern-arm-v110/pilot",
+    "includes_failed_partial_outputs": true,
+    "input_capsule_included": false,
+    "model_weights_included": false
+  },
+  "failure": null,
+  "archive_failure": null,
+  "automatic_retry": false,
+  "reservation_refunded": false,
+  "primary_only": true
+}

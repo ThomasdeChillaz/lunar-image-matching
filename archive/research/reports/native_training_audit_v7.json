@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "scope": "Corrected native development replay; no fresh-test or calibrated-acceptance claim.",
+  "trained_runs": 5,
+  "optimizer_steps": 10000,
+  "supervision_cases": 234,
+  "development_rows": 360,
+  "selected_variant": "pair_refinement",
+  "runs": [
+    {
+      "variant": "dustbin",
+      "seed": 20261101,
+      "selected_step": 0,
+      "selection_key": [
+        11,
+        3067,
+        0
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 17,
+        "estimated_poses": 57,
+        "correct_at_two_px": 10320,
+        "returned": 23240,
+        "scorable": 21339,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "encoder_3d",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "selection_key": [
+        11,
+        3082,
+        -1500
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 44,
+        "strict_poses": 15,
+        "estimated_poses": 53,
+        "correct_at_two_px": 10344,
+        "returned": 23246,
+        "scorable": 21377,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261101,
+      "selected_step": 1500,
+      "selection_key": [
+        11,
+        3107,
+        -1500
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 45,
+        "strict_poses": 18,
+        "estimated_poses": 55,
+        "correct_at_two_px": 10385,
+        "returned": 23212,
+        "scorable": 21341,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261102,
+      "selected_step": 1000,
+      "selection_key": [
+        11,
+        3095,
+        -1000
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 42,
+        "strict_poses": 14,
+        "estimated_poses": 55,
+        "correct_at_two_px": 10401,
+        "returned": 23224,
+        "scorable": 21336,
+        "bank_only": false
+      }
+    },
+    {
+      "variant": "pair_refinement",
+      "seed": 20261103,
+      "selected_step": 500,
+      "selection_key": [
+        11,
+        3099,
+        -500
+      ],
+      "evaluation": {
+        "cases": 72,
+        "correct_poses": 42,
+        "strict_poses": 15,
+        "estimated_poses": 58,
+        "correct_at_two_px": 10441,
+        "returned": 23212,
+        "scorable": 21328,
+        "bank_only": false
+      }
+    }
+  ],
+  "source_sha256": "75520ce561e9f76bb4a53d7fa4eee06053ef3578753edf5b12cc6c9ab8d89749",
+  "summary_sha256": "cf9a5e147b1ed4cad9fb3206681c5f7a471a0568254b7da3ddd91db96ff49b14",
+  "calibration_or_test_pixels_loaded": 0
+}

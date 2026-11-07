@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "view": 0,
+      "size": 128,
+      "passed": true,
+      "depth_convention": "axial",
+      "depth_relative_error_candidates": {
+        "ray": 0.21325672297496345,
+        "axial": 1.1920928966180358e-07
+      },
+      "interior_pixels": 14928,
+      "all_pixels": 16384,
+      "all_pixel_max_world_error_m": 0.0006475959222756362,
+      "interior_max_world_error_m": 7.69869068658503e-05,
+      "interior_max_native_projection_error_px": 0.0008534094989313312,
+      "independent_blender_projection_max_native_px": 0.0,
+      "geometry_sha256": "cea50582d0e169524c2c927d3ab3ad9bfb64ea626f130809f2cca8b44519f442",
+      "image_sha256": "825b633df9aa681f7276ef9c335f1cec2550ef625c14aab8f42156c65113e9e6"
+    },
+    {
+      "view": 1,
+      "size": 512,
+      "passed": true,
+      "depth_convention": "axial",
+      "depth_relative_error_candidates": {
+        "ray": 0.2223747052053177,
+        "axial": 2.6491967337005685e-05
+      },
+      "interior_pixels": 256456,
+      "all_pixels": 262144,
+      "all_pixel_max_world_error_m": 0.0003343203925443826,
+      "interior_max_world_error_m": 0.00025883544369043206,
+      "interior_max_native_projection_error_px": 0.0014408079114148111,
+      "independent_blender_projection_max_native_px": 3.814697265625e-05,
+      "geometry_sha256": "df3b21338840fe8a5db316132d9aa0267d215a166323122ed2da67e6d21f4808",
+      "image_sha256": "5088811300989725861b3d0462fc2fd44b0e62d71eb69fa50ad63914d8280066"
+    }
+  ],
+  "protocol_sha256": "0f90219e350607e922c2222de39ccb4944799f2732f44aeaa7a8b9552caa3a6c",
+  "elapsed_seconds": 2.758020169014344,
+  "source_height_pixels_decoded": 0,
+  "lunar_images_rendered": 0,
+  "matcher_inferences": 0,
+  "scope": "Actual renderer analytic geometry controls only; no terrain freshness, learned result, optical lunar validation or pose-oracle gate yet."
+}

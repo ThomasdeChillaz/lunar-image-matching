@@ -1,0 +1,4708 @@
+{
+  "passed": true,
+  "eligible_geometry_pairs": 72,
+  "correct_oracle_poses": 72,
+  "oracle_pose_rate": 1.0,
+  "geometry_controls": [
+    {
+      "component": "np31-r0-c0",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0972236850648187e-05,
+      "maximum_native_projection_error_px": 0.000802678005508059,
+      "maximum_raw_depth_relative_error": 1.1815271604259293e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c0",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 8.127648470690474e-06,
+      "maximum_native_projection_error_px": 0.0007828987864458746,
+      "maximum_raw_depth_relative_error": 2.4223595506336195e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c0",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2222123359606485e-05,
+      "maximum_native_projection_error_px": 0.0008359171222024825,
+      "maximum_raw_depth_relative_error": 2.826617645591436e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c0",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.041953383828513e-06,
+      "maximum_native_projection_error_px": 0.0008069166533220347,
+      "maximum_raw_depth_relative_error": 3.252825303810278e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c1",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.714157840789994e-06,
+      "maximum_native_projection_error_px": 0.0008389320200878639,
+      "maximum_raw_depth_relative_error": 1.409201602433777e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c1",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3325666259333957e-05,
+      "maximum_native_projection_error_px": 0.0008287053714227745,
+      "maximum_raw_depth_relative_error": 2.09426311952302e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c1",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.3743382270331495e-06,
+      "maximum_native_projection_error_px": 0.0008699716923805447,
+      "maximum_raw_depth_relative_error": 2.560967399534367e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c1",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.438797865688684e-06,
+      "maximum_native_projection_error_px": 0.000855673999048607,
+      "maximum_raw_depth_relative_error": 3.403401264381867e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c2",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.312961580879346e-05,
+      "maximum_native_projection_error_px": 0.0008165507208462661,
+      "maximum_raw_depth_relative_error": 1.2681417533483367e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c2",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 8.687106401339406e-06,
+      "maximum_native_projection_error_px": 0.0008315633280746135,
+      "maximum_raw_depth_relative_error": 2.5065110073658573e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c2",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.5365030625107465e-06,
+      "maximum_native_projection_error_px": 0.0008283230962733258,
+      "maximum_raw_depth_relative_error": 4.337322276072688e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c2",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.541662934163469e-05,
+      "maximum_native_projection_error_px": 0.0008129071982346446,
+      "maximum_raw_depth_relative_error": 3.537887560973389e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c4",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.131679472469841e-06,
+      "maximum_native_projection_error_px": 0.0008410779713559308,
+      "maximum_raw_depth_relative_error": 2.1002520919035898e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c4",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2360370647002128e-05,
+      "maximum_native_projection_error_px": 0.0008002685709451147,
+      "maximum_raw_depth_relative_error": 2.1128271961030896e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c4",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.407794217011542e-06,
+      "maximum_native_projection_error_px": 0.0008196405539586111,
+      "maximum_raw_depth_relative_error": 3.665279639155026e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c4",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.117572067727451e-06,
+      "maximum_native_projection_error_px": 0.0008019234353987047,
+      "maximum_raw_depth_relative_error": 2.971026647989789e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c6",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1331690757288015e-05,
+      "maximum_native_projection_error_px": 0.0008333356392490188,
+      "maximum_raw_depth_relative_error": 1.8197077712736228e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c6",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.572183226831839e-06,
+      "maximum_native_projection_error_px": 0.0008228976071255907,
+      "maximum_raw_depth_relative_error": 4.1048673130440026e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c6",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.9389676253922516e-05,
+      "maximum_native_projection_error_px": 0.000882576893502051,
+      "maximum_raw_depth_relative_error": 3.3280036351268083e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c6",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.646248983888654e-05,
+      "maximum_native_projection_error_px": 0.0008134203292515388,
+      "maximum_raw_depth_relative_error": 3.4069377815222284e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c7",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.609111490732175e-05,
+      "maximum_native_projection_error_px": 0.0008047499257838182,
+      "maximum_raw_depth_relative_error": 1.739825255430995e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c7",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.886024998995708e-05,
+      "maximum_native_projection_error_px": 0.0008283274058582459,
+      "maximum_raw_depth_relative_error": 2.085016824848467e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c7",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.9126602991455e-05,
+      "maximum_native_projection_error_px": 0.0008188854525879425,
+      "maximum_raw_depth_relative_error": 2.0033620293181871e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r0-c7",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.326268390286714e-05,
+      "maximum_native_projection_error_px": 0.0008456983115366165,
+      "maximum_raw_depth_relative_error": 2.625031719533554e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c0",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.287474666853086e-06,
+      "maximum_native_projection_error_px": 0.000835905912161609,
+      "maximum_raw_depth_relative_error": 1.9742672777609365e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c0",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.414798695506761e-06,
+      "maximum_native_projection_error_px": 0.0008137478301625898,
+      "maximum_raw_depth_relative_error": 2.924525852055398e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c0",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.371039378587739e-06,
+      "maximum_native_projection_error_px": 0.0008383703089780634,
+      "maximum_raw_depth_relative_error": 3.0402285747364625e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c0",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3583686495621805e-05,
+      "maximum_native_projection_error_px": 0.0008554953990216564,
+      "maximum_raw_depth_relative_error": 2.0539493084660666e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c1",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.6313094773940975e-06,
+      "maximum_native_projection_error_px": 0.0008137741944416603,
+      "maximum_raw_depth_relative_error": 1.046426992576887e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c1",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.137751259098877e-06,
+      "maximum_native_projection_error_px": 0.0008080499025946615,
+      "maximum_raw_depth_relative_error": 2.077422881325765e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c1",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.008184350823285e-05,
+      "maximum_native_projection_error_px": 0.0008553175453296891,
+      "maximum_raw_depth_relative_error": 4.4349204780540337e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c1",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.204563270424842e-05,
+      "maximum_native_projection_error_px": 0.0007958512838741334,
+      "maximum_raw_depth_relative_error": 3.1011486065371426e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c4",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.227755541956867e-06,
+      "maximum_native_projection_error_px": 0.0008265595516619785,
+      "maximum_raw_depth_relative_error": 2.0627738189750446e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c4",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.957754415750969e-06,
+      "maximum_native_projection_error_px": 0.000815103022103768,
+      "maximum_raw_depth_relative_error": 4.2178110365068694e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c4",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.826389497087803e-06,
+      "maximum_native_projection_error_px": 0.0009121760501797425,
+      "maximum_raw_depth_relative_error": 1.8354589005356522e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c4",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.206484118185472e-05,
+      "maximum_native_projection_error_px": 0.0008562187711122849,
+      "maximum_raw_depth_relative_error": 3.6926949064317263e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c5",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.592939032794675e-06,
+      "maximum_native_projection_error_px": 0.0008395823012804171,
+      "maximum_raw_depth_relative_error": 1.5067302794656518e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c5",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.963272542430786e-06,
+      "maximum_native_projection_error_px": 0.0008119709974537859,
+      "maximum_raw_depth_relative_error": 2.0176953511642647e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c5",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.409345693711657e-06,
+      "maximum_native_projection_error_px": 0.0008265812676195993,
+      "maximum_raw_depth_relative_error": 2.0549303595865486e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c5",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.90987451687397e-06,
+      "maximum_native_projection_error_px": 0.0008614913340769778,
+      "maximum_raw_depth_relative_error": 3.2972909443819616e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c6",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.077452563753468e-05,
+      "maximum_native_projection_error_px": 0.0008233651385547422,
+      "maximum_raw_depth_relative_error": 2.0860831758911726e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c6",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.818070788634941e-05,
+      "maximum_native_projection_error_px": 0.0008408080019662543,
+      "maximum_raw_depth_relative_error": 3.7408329794548244e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c6",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.8959858809685102e-05,
+      "maximum_native_projection_error_px": 0.0008379530747528657,
+      "maximum_raw_depth_relative_error": 4.0600010953678784e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r1-c6",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.4633442485064734e-05,
+      "maximum_native_projection_error_px": 0.000827311485818126,
+      "maximum_raw_depth_relative_error": 3.1781658738152103e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c1",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.046072146797087e-06,
+      "maximum_native_projection_error_px": 0.000821090349404115,
+      "maximum_raw_depth_relative_error": 1.2010540561263092e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c1",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5530130415063468e-05,
+      "maximum_native_projection_error_px": 0.0007869146506856092,
+      "maximum_raw_depth_relative_error": 2.6092253862114957e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c1",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.053577713923005e-05,
+      "maximum_native_projection_error_px": 0.0008404646774219594,
+      "maximum_raw_depth_relative_error": 3.2954765734578427e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c1",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.022901177653694e-06,
+      "maximum_native_projection_error_px": 0.0008247306173015738,
+      "maximum_raw_depth_relative_error": 2.883214804201811e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c2",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.6172552705029375e-05,
+      "maximum_native_projection_error_px": 0.0008091066401584647,
+      "maximum_raw_depth_relative_error": 9.147228911946451e-08,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c2",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.5136231215583393e-05,
+      "maximum_native_projection_error_px": 0.0008175889891129527,
+      "maximum_raw_depth_relative_error": 1.8949103363109198e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c2",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.8119676951755537e-05,
+      "maximum_native_projection_error_px": 0.0008204865032378107,
+      "maximum_raw_depth_relative_error": 2.6354654415765725e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c2",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.715770278882701e-05,
+      "maximum_native_projection_error_px": 0.0007912006211882632,
+      "maximum_raw_depth_relative_error": 2.735680130392481e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c6",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.2189562918792944e-06,
+      "maximum_native_projection_error_px": 0.0008070085825326283,
+      "maximum_raw_depth_relative_error": 1.2135261328640044e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c6",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.761289801535895e-06,
+      "maximum_native_projection_error_px": 0.0008171624202894457,
+      "maximum_raw_depth_relative_error": 2.421824786635283e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c6",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 8.742325235289172e-06,
+      "maximum_native_projection_error_px": 0.0008031750463583403,
+      "maximum_raw_depth_relative_error": 2.2635422231000824e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r2-c6",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.63128276351199e-06,
+      "maximum_native_projection_error_px": 0.0007993588770098336,
+      "maximum_raw_depth_relative_error": 2.803651242643814e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c2",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.4501375517284032e-05,
+      "maximum_native_projection_error_px": 0.0008236114097035937,
+      "maximum_raw_depth_relative_error": 1.7662092764081357e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c2",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.5864042325119954e-05,
+      "maximum_native_projection_error_px": 0.0007847954513986699,
+      "maximum_raw_depth_relative_error": 2.058985833242346e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c2",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.020199548904202e-05,
+      "maximum_native_projection_error_px": 0.0008553867066384918,
+      "maximum_raw_depth_relative_error": 2.451341569324665e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c2",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.4363902664626949e-05,
+      "maximum_native_projection_error_px": 0.0008617328263437924,
+      "maximum_raw_depth_relative_error": 3.181787386228454e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c3",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.9396145388745936e-06,
+      "maximum_native_projection_error_px": 0.0008270387616558423,
+      "maximum_raw_depth_relative_error": 1.6050012790968527e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c3",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.63405250836513e-06,
+      "maximum_native_projection_error_px": 0.000805721918031243,
+      "maximum_raw_depth_relative_error": 2.460578879537912e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c3",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.670570077294542e-05,
+      "maximum_native_projection_error_px": 0.0008322781828326886,
+      "maximum_raw_depth_relative_error": 4.0861918329635233e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c3",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3335107723833062e-05,
+      "maximum_native_projection_error_px": 0.0008157443678985053,
+      "maximum_raw_depth_relative_error": 2.52930523667942e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c4",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.472581243433524e-05,
+      "maximum_native_projection_error_px": 0.000843029805353919,
+      "maximum_raw_depth_relative_error": 1.5146479985098748e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c4",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 8.961950925368e-06,
+      "maximum_native_projection_error_px": 0.0008269273766023143,
+      "maximum_raw_depth_relative_error": 2.859260990614199e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c4",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 7.983244586284854e-06,
+      "maximum_native_projection_error_px": 0.0008375291072033433,
+      "maximum_raw_depth_relative_error": 3.0030571856355945e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c4",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 6.742933692294173e-06,
+      "maximum_native_projection_error_px": 0.0008542705604642348,
+      "maximum_raw_depth_relative_error": 2.955377477597934e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c5",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.3853347101976397e-06,
+      "maximum_native_projection_error_px": 0.0008285053822241766,
+      "maximum_raw_depth_relative_error": 1.695713731772543e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c5",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.2538387131353375e-06,
+      "maximum_native_projection_error_px": 0.0008266333111866924,
+      "maximum_raw_depth_relative_error": 2.5037989355276484e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c5",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 5.296219114825362e-06,
+      "maximum_native_projection_error_px": 0.0008356390133590163,
+      "maximum_raw_depth_relative_error": 2.398677666960068e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r3-c5",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.0805947517364984e-06,
+      "maximum_native_projection_error_px": 0.000834770752925106,
+      "maximum_raw_depth_relative_error": 2.7516507583559956e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c1",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.9022354510743753e-05,
+      "maximum_native_projection_error_px": 0.0008108258295401831,
+      "maximum_raw_depth_relative_error": 1.5513532154909177e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c1",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.707614948529226e-05,
+      "maximum_native_projection_error_px": 0.0007769718279371053,
+      "maximum_raw_depth_relative_error": 3.5416538978297926e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c1",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 0.00041579949584047426,
+      "maximum_native_projection_error_px": 0.0009837701358534241,
+      "maximum_raw_depth_relative_error": 3.7154352115736926e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c1",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.3833920093020424e-05,
+      "maximum_native_projection_error_px": 0.0008420088086726054,
+      "maximum_raw_depth_relative_error": 4.487901867733914e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c2",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1757599622796988e-05,
+      "maximum_native_projection_error_px": 0.0008363792914381629,
+      "maximum_raw_depth_relative_error": 1.6902749642802644e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c2",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.3658906229684362e-05,
+      "maximum_native_projection_error_px": 0.0008062867455378336,
+      "maximum_raw_depth_relative_error": 2.7474070093213253e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c2",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.791714198086993e-05,
+      "maximum_native_projection_error_px": 0.0008525488117444132,
+      "maximum_raw_depth_relative_error": 2.9491409471172876e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c2",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1054185279135709e-05,
+      "maximum_native_projection_error_px": 0.0008270714625117831,
+      "maximum_raw_depth_relative_error": 3.1082305632643834e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c3",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 2.2575281491299393e-05,
+      "maximum_native_projection_error_px": 0.0008280071765919034,
+      "maximum_raw_depth_relative_error": 1.8395879425579633e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c3",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2250890449649887e-05,
+      "maximum_native_projection_error_px": 0.0008270673460268003,
+      "maximum_raw_depth_relative_error": 3.0640803883556643e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c3",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.73488628611085e-05,
+      "maximum_native_projection_error_px": 0.0008928007335550468,
+      "maximum_raw_depth_relative_error": 2.079783112503807e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c3",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 3.371389266249025e-05,
+      "maximum_native_projection_error_px": 0.000846508273814493,
+      "maximum_raw_depth_relative_error": 2.5156692065147715e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c4",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.0413484005766804e-05,
+      "maximum_native_projection_error_px": 0.0008173867017616754,
+      "maximum_raw_depth_relative_error": 1.0296528498449649e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c4",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.7172835214296356e-05,
+      "maximum_native_projection_error_px": 0.0008211691681563346,
+      "maximum_raw_depth_relative_error": 1.8184727664737216e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c4",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.7446619040129008e-05,
+      "maximum_native_projection_error_px": 0.0008312484184672711,
+      "maximum_raw_depth_relative_error": 3.0238430112859614e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c4",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.210331788570329e-05,
+      "maximum_native_projection_error_px": 0.0008465960326717415,
+      "maximum_raw_depth_relative_error": 3.4949900343515146e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c6",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.186936949845403e-06,
+      "maximum_native_projection_error_px": 0.0008171656223175933,
+      "maximum_raw_depth_relative_error": 1.27706957854109e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c6",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2135308224969776e-05,
+      "maximum_native_projection_error_px": 0.0008006508571756837,
+      "maximum_raw_depth_relative_error": 1.2931068678668694e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c6",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.4408587958314456e-05,
+      "maximum_native_projection_error_px": 0.0008391084593102329,
+      "maximum_raw_depth_relative_error": 3.140682170466994e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c6",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.6608167697995668e-05,
+      "maximum_native_projection_error_px": 0.0008363716882304772,
+      "maximum_raw_depth_relative_error": 1.6239192625240792e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c7",
+      "view": 0,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 9.520163303022855e-06,
+      "maximum_native_projection_error_px": 0.0008470381524029911,
+      "maximum_raw_depth_relative_error": 1.1848006648919554e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c7",
+      "view": 1,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.2404961580614327e-05,
+      "maximum_native_projection_error_px": 0.000811953562716942,
+      "maximum_raw_depth_relative_error": 2.5864741938652126e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c7",
+      "view": 2,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 1.1929495258300449e-05,
+      "maximum_native_projection_error_px": 0.0008154063315137733,
+      "maximum_raw_depth_relative_error": 3.518871164475115e-07,
+      "raw_depth_convention": "axial"
+    },
+    {
+      "component": "np31-r4-c7",
+      "view": 3,
+      "independent_mesh_rays": 49,
+      "maximum_mesh_error_m": 4.2700337417045375e-06,
+      "maximum_native_projection_error_px": 0.0008427935429975291,
+      "maximum_raw_depth_relative_error": 2.92764522398574e-07,
+      "raw_depth_convention": "axial"
+    }
+  ],
+  "oracle_poses": [
+    {
+      "component": "np31-r0-c0",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.11652108120944059,
+      "rotation_error_deg": 0.0036716658502899775,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0335126239318589
+      }
+    },
+    {
+      "component": "np31-r0-c0",
+      "query_view": 2,
+      "visible_points": 669,
+      "correct": true,
+      "translation_error_m": 0.07786205444401689,
+      "rotation_error_deg": 0.004022953880784252,
+      "pose_info": {
+        "inliers": 669,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.1613110205658127
+      }
+    },
+    {
+      "component": "np31-r0-c0",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1154808088579645,
+      "rotation_error_deg": 0.0022796622904213627,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.07340869169649816
+      }
+    },
+    {
+      "component": "np31-r0-c1",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.07066047891993417,
+      "rotation_error_deg": 0.003075478261228601,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.026585031517370666
+      }
+    },
+    {
+      "component": "np31-r0-c1",
+      "query_view": 2,
+      "visible_points": 663,
+      "correct": true,
+      "translation_error_m": 0.21930989515574156,
+      "rotation_error_deg": 0.0054539385318312225,
+      "pose_info": {
+        "inliers": 663,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.110711378378179
+      }
+    },
+    {
+      "component": "np31-r0-c1",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.062388651361283326,
+      "rotation_error_deg": 0.004143855632669702,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.04605011410250452
+      }
+    },
+    {
+      "component": "np31-r0-c2",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.05167848290165568,
+      "rotation_error_deg": 0.001697973986330695,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.028631900672698433
+      }
+    },
+    {
+      "component": "np31-r0-c2",
+      "query_view": 2,
+      "visible_points": 664,
+      "correct": true,
+      "translation_error_m": 0.19289481685629062,
+      "rotation_error_deg": 0.0023412768058508537,
+      "pose_info": {
+        "inliers": 664,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.11379896838337411
+      }
+    },
+    {
+      "component": "np31-r0-c2",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.0359006849132338,
+      "rotation_error_deg": 0.0034952604679942237,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.040656451801286714
+      }
+    },
+    {
+      "component": "np31-r0-c4",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.09336283637891701,
+      "rotation_error_deg": 0.004693436720802804,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.09095719799570764
+      }
+    },
+    {
+      "component": "np31-r0-c4",
+      "query_view": 2,
+      "visible_points": 672,
+      "correct": true,
+      "translation_error_m": 0.21617998571719588,
+      "rotation_error_deg": 0.01080027936341647,
+      "pose_info": {
+        "inliers": 672,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.33842890945094617
+      }
+    },
+    {
+      "component": "np31-r0-c4",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.16273844959408998,
+      "rotation_error_deg": 0.005645497782697972,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.17099286154191012
+      }
+    },
+    {
+      "component": "np31-r0-c6",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.05560598872049829,
+      "rotation_error_deg": 0.002865368151319924,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.08729658161349471
+      }
+    },
+    {
+      "component": "np31-r0-c6",
+      "query_view": 2,
+      "visible_points": 668,
+      "correct": true,
+      "translation_error_m": 0.19445203495238328,
+      "rotation_error_deg": 0.010242246018559978,
+      "pose_info": {
+        "inliers": 668,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.2440074666708078
+      }
+    },
+    {
+      "component": "np31-r0-c6",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1724505201743367,
+      "rotation_error_deg": 0.006288099883745239,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0928131036161813
+      }
+    },
+    {
+      "component": "np31-r0-c7",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08885489510737478,
+      "rotation_error_deg": 0.0033425664594400207,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.025392755227243567
+      }
+    },
+    {
+      "component": "np31-r0-c7",
+      "query_view": 2,
+      "visible_points": 658,
+      "correct": true,
+      "translation_error_m": 0.299700575419189,
+      "rotation_error_deg": 0.004470787635863572,
+      "pose_info": {
+        "inliers": 658,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.11388093117588471
+      }
+    },
+    {
+      "component": "np31-r0-c7",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1999352399079895,
+      "rotation_error_deg": 0.0042231341890592135,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.05360219257547949
+      }
+    },
+    {
+      "component": "np31-r1-c0",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.023965395000402002,
+      "rotation_error_deg": 0.0008568663891855796,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.02625915851786045
+      }
+    },
+    {
+      "component": "np31-r1-c0",
+      "query_view": 2,
+      "visible_points": 672,
+      "correct": true,
+      "translation_error_m": 0.05883898011790969,
+      "rotation_error_deg": 0.001956871919768883,
+      "pose_info": {
+        "inliers": 672,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.09904221713500053
+      }
+    },
+    {
+      "component": "np31-r1-c0",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08113318406562942,
+      "rotation_error_deg": 0.003497484966852872,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.03887165967197884
+      }
+    },
+    {
+      "component": "np31-r1-c1",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.05778117731134398,
+      "rotation_error_deg": 0.0032995907097047926,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.04651578222685109
+      }
+    },
+    {
+      "component": "np31-r1-c1",
+      "query_view": 2,
+      "visible_points": 663,
+      "correct": true,
+      "translation_error_m": 0.25017078074869065,
+      "rotation_error_deg": 0.010628781039238018,
+      "pose_info": {
+        "inliers": 663,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.1335036888096674
+      }
+    },
+    {
+      "component": "np31-r1-c1",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.09604696397241692,
+      "rotation_error_deg": 0.0023090718258402163,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.10864593615164174
+      }
+    },
+    {
+      "component": "np31-r1-c4",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.03953580301316792,
+      "rotation_error_deg": 0.0020991816518656503,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.043267546775340116
+      }
+    },
+    {
+      "component": "np31-r1-c4",
+      "query_view": 2,
+      "visible_points": 668,
+      "correct": true,
+      "translation_error_m": 0.12155414593433352,
+      "rotation_error_deg": 0.006011970790218763,
+      "pose_info": {
+        "inliers": 668,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.17552731493682575
+      }
+    },
+    {
+      "component": "np31-r1-c4",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.05653469012575598,
+      "rotation_error_deg": 0.0020242024294005005,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.06230402788300528
+      }
+    },
+    {
+      "component": "np31-r1-c5",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.00837989474324685,
+      "rotation_error_deg": 0.00029105543060889194,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.028739522370029472
+      }
+    },
+    {
+      "component": "np31-r1-c5",
+      "query_view": 2,
+      "visible_points": 672,
+      "correct": true,
+      "translation_error_m": 0.01468329848521494,
+      "rotation_error_deg": 0.001680615634611423,
+      "pose_info": {
+        "inliers": 672,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.12183114185799193
+      }
+    },
+    {
+      "component": "np31-r1-c5",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.04561485048799225,
+      "rotation_error_deg": 0.001032769012475933,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.03618649808653579
+      }
+    },
+    {
+      "component": "np31-r1-c6",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.11133430209367641,
+      "rotation_error_deg": 0.003953767221671852,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.08093760845669731
+      }
+    },
+    {
+      "component": "np31-r1-c6",
+      "query_view": 2,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.8441587114306214,
+      "rotation_error_deg": 0.01775204914530193,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.183265533013184
+      }
+    },
+    {
+      "component": "np31-r1-c6",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.6189830175234755,
+      "rotation_error_deg": 0.01103094220541068,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.2007802779600962
+      }
+    },
+    {
+      "component": "np31-r2-c1",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.0370539854880309,
+      "rotation_error_deg": 0.0018224673931957116,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0415300558825883
+      }
+    },
+    {
+      "component": "np31-r2-c1",
+      "query_view": 2,
+      "visible_points": 667,
+      "correct": true,
+      "translation_error_m": 0.16215806398158236,
+      "rotation_error_deg": 0.006273003084341152,
+      "pose_info": {
+        "inliers": 667,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.15829394791048937
+      }
+    },
+    {
+      "component": "np31-r2-c1",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08058694294623221,
+      "rotation_error_deg": 0.0034741001209874093,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.05419873592890663
+      }
+    },
+    {
+      "component": "np31-r2-c2",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1088226985673003,
+      "rotation_error_deg": 0.003398898514351087,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.029606397370494118
+      }
+    },
+    {
+      "component": "np31-r2-c2",
+      "query_view": 2,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.15556199120478054,
+      "rotation_error_deg": 0.003183153724444838,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.13249415287041866
+      }
+    },
+    {
+      "component": "np31-r2-c2",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.06496219641995592,
+      "rotation_error_deg": 0.0018879172915615208,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.051621980426754456
+      }
+    },
+    {
+      "component": "np31-r2-c6",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.04026921716716469,
+      "rotation_error_deg": 0.0010105355188066215,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.029526135439511
+      }
+    },
+    {
+      "component": "np31-r2-c6",
+      "query_view": 2,
+      "visible_points": 666,
+      "correct": true,
+      "translation_error_m": 0.06575994440161129,
+      "rotation_error_deg": 0.002762889086264816,
+      "pose_info": {
+        "inliers": 666,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.13274618752343886
+      }
+    },
+    {
+      "component": "np31-r2-c6",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.0611666878535038,
+      "rotation_error_deg": 0.0024279956545037503,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.033212510892868974
+      }
+    },
+    {
+      "component": "np31-r3-c2",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.0966179466138433,
+      "rotation_error_deg": 0.0032641790884108033,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.02196320098142781
+      }
+    },
+    {
+      "component": "np31-r3-c2",
+      "query_view": 2,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.13038378008863816,
+      "rotation_error_deg": 0.005460351791543453,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0910052760177508
+      }
+    },
+    {
+      "component": "np31-r3-c2",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.019542895674758393,
+      "rotation_error_deg": 0.0023731178724950637,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.04130567608035052
+      }
+    },
+    {
+      "component": "np31-r3-c3",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08294048989453102,
+      "rotation_error_deg": 0.0038168563663136773,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0825800455918953
+      }
+    },
+    {
+      "component": "np31-r3-c3",
+      "query_view": 2,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1499648498452164,
+      "rotation_error_deg": 0.003934706047262503,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.3631999705692291
+      }
+    },
+    {
+      "component": "np31-r3-c3",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.28461880007903867,
+      "rotation_error_deg": 0.00841644223886906,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.0745643540722766
+      }
+    },
+    {
+      "component": "np31-r3-c4",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.06820961265897604,
+      "rotation_error_deg": 0.0016142441723991372,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.07121380018115876
+      }
+    },
+    {
+      "component": "np31-r3-c4",
+      "query_view": 2,
+      "visible_points": 664,
+      "correct": true,
+      "translation_error_m": 0.12951708329513878,
+      "rotation_error_deg": 0.004499274035024533,
+      "pose_info": {
+        "inliers": 664,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.29497238297611933
+      }
+    },
+    {
+      "component": "np31-r3-c4",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.041633813288614346,
+      "rotation_error_deg": 0.001924887548591695,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.07272121464362394
+      }
+    },
+    {
+      "component": "np31-r3-c5",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.013276404867924424,
+      "rotation_error_deg": 0.0007415121192698702,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.033403531573821206
+      }
+    },
+    {
+      "component": "np31-r3-c5",
+      "query_view": 2,
+      "visible_points": 668,
+      "correct": true,
+      "translation_error_m": 0.028671222406604656,
+      "rotation_error_deg": 0.002482594957828714,
+      "pose_info": {
+        "inliers": 668,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.15499270961755213
+      }
+    },
+    {
+      "component": "np31-r3-c5",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.050473717681842424,
+      "rotation_error_deg": 0.0015229134615422637,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.037894387847863864
+      }
+    },
+    {
+      "component": "np31-r4-c1",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.1329209202251272,
+      "rotation_error_deg": 0.007473334576268354,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.09549419454118874
+      }
+    },
+    {
+      "component": "np31-r4-c1",
+      "query_view": 2,
+      "visible_points": 668,
+      "correct": true,
+      "translation_error_m": 0.2768034145381693,
+      "rotation_error_deg": 0.016688790985008587,
+      "pose_info": {
+        "inliers": 668,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.2515506835659953
+      }
+    },
+    {
+      "component": "np31-r4-c1",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.33737641949004954,
+      "rotation_error_deg": 0.012663950931146566,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.17445868175496668
+      }
+    },
+    {
+      "component": "np31-r4-c2",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.06297024777316967,
+      "rotation_error_deg": 0.0030851665653000666,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.09399109573992262
+      }
+    },
+    {
+      "component": "np31-r4-c2",
+      "query_view": 2,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08627191592576647,
+      "rotation_error_deg": 0.002728740713957285,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.38731521646227307
+      }
+    },
+    {
+      "component": "np31-r4-c2",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.4595731218285168,
+      "rotation_error_deg": 0.014633084127365255,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.1300473555570739
+      }
+    },
+    {
+      "component": "np31-r4-c3",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.08023519943199588,
+      "rotation_error_deg": 0.003173074538206992,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.12008160040883532
+      }
+    },
+    {
+      "component": "np31-r4-c3",
+      "query_view": 2,
+      "visible_points": 674,
+      "correct": true,
+      "translation_error_m": 0.04510100400422827,
+      "rotation_error_deg": 0.0030693432135464557,
+      "pose_info": {
+        "inliers": 674,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.5507949232522671
+      }
+    },
+    {
+      "component": "np31-r4-c3",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.17334313668493814,
+      "rotation_error_deg": 0.0054340337801279314,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.16859919301398568
+      }
+    },
+    {
+      "component": "np31-r4-c4",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.21922945841522457,
+      "rotation_error_deg": 0.008288310912925445,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.12280477427789613
+      }
+    },
+    {
+      "component": "np31-r4-c4",
+      "query_view": 2,
+      "visible_points": 675,
+      "correct": true,
+      "translation_error_m": 0.5517259138047688,
+      "rotation_error_deg": 0.019388698230651466,
+      "pose_info": {
+        "inliers": 675,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.36571443272493
+      }
+    },
+    {
+      "component": "np31-r4-c4",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.593786013944302,
+      "rotation_error_deg": 0.01718722587780189,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.2693096994148552
+      }
+    },
+    {
+      "component": "np31-r4-c6",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.03880259558744728,
+      "rotation_error_deg": 0.0013093614711351454,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.08739078243672228
+      }
+    },
+    {
+      "component": "np31-r4-c6",
+      "query_view": 2,
+      "visible_points": 673,
+      "correct": true,
+      "translation_error_m": 0.07985056775688276,
+      "rotation_error_deg": 0.004319089409672061,
+      "pose_info": {
+        "inliers": 673,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.34403283397166745
+      }
+    },
+    {
+      "component": "np31-r4-c6",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.25991267231646187,
+      "rotation_error_deg": 0.00846244141967535,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.09590360441740775
+      }
+    },
+    {
+      "component": "np31-r4-c7",
+      "query_view": 1,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.03874049940324016,
+      "rotation_error_deg": 0.001437002248012738,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.052696481384989786
+      }
+    },
+    {
+      "component": "np31-r4-c7",
+      "query_view": 2,
+      "visible_points": 672,
+      "correct": true,
+      "translation_error_m": 0.05775164182978099,
+      "rotation_error_deg": 0.003147894579226532,
+      "pose_info": {
+        "inliers": 672,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.21703717598515726
+      }
+    },
+    {
+      "component": "np31-r4-c7",
+      "query_view": 3,
+      "visible_points": 676,
+      "correct": true,
+      "translation_error_m": 0.06005170694211999,
+      "rotation_error_deg": 0.0022319886852040795,
+      "pose_info": {
+        "inliers": 676,
+        "reason": null,
+        "clipped_squared_reprojection_cost": 0.10288521581455395
+      }
+    }
+  ],
+  "source_sha256": "01c144baf5f255f980511106da95551cdebeae80ad8a8fce44b599cd6bd1a402",
+  "depth_semantics_source_sha256": "c977d27361e6ef95ed22d7095e888c9bfef09d389dcce6eebe338040f77b3981",
+  "measured_raw_depth_convention": "axial",
+  "legacy_ray_depth_field_is_raw_pass": false,
+  "exact_supervision_records": [
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002578897090188548
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002330000559140899
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027741106487155776
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003114251589977357
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002803708882765932
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 669,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002578897090188548
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030631185632046254
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024355795767405652
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021272984918141447
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002847199430107139
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002578897090188548
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 541,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002910765970227658
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 521,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030536846088580205
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 538,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002779587064196676
+    },
+    {
+      "component": "np31-r0-c0",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 559,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000361930840426794
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00035722511870517337
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002595497335278196
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003987525149113935
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00032180180141949677
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026994647487299517
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 663,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00035722511870517337
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 661,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002621905425712612
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023058503393258434
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003097721025824285
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 665,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030747926712137996
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00035722511870517337
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 540,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000328643752482094
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 522,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00042682668936322443
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 540,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000376932848666911
+    },
+    {
+      "component": "np31-r0-c1",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 557,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023873312920841272
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025623925625950505
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003196465872861154
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025150368651338795
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036029053330821625
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002711294494019967
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 664,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025623925625950505
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028875673433503835
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003082887003529322
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003255692813581845
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021273577317515446
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025623925625950505
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 564,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003858441100419441
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 545,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004108340665425203
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 559,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002492785556569288
+    },
+    {
+      "component": "np31-r0-c2",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 578,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003237875300783344
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027978440584774944
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002749929428773612
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000270397406666234
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025060210236915736
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022581900452678383
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027978440584774944
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 637,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00015307311696233228
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 653,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002943883710031514
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 658,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003547180049281451
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 641,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0001964556249731686
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027978440584774944
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 528,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027992582568003854
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 512,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003026710890026152
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 529,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002933586031304003
+    },
+    {
+      "component": "np31-r0-c4",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 545,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00031156327759163105
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022013405987308943
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000229080153076211
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002725906579144066
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028130400073678175
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 664,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003417795790028322
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022013405987308943
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 621,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002205472994774027
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 639,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020611331638065167
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 644,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002041852660568111
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 626,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016564653196837753
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022013405987308943
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 509,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004185302893802145
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 491,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030279116253950633
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 506,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00041318317107652547
+    },
+    {
+      "component": "np31-r0-c6",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 525,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025373060657329916
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003926816066268657
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002845804897333437
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00039146321705629816
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00031682022108725505
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00038495002900162945
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 658,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003926816066268657
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002763431787116133
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002697823681501177
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00044716044794768095
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036900333930134366
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003926816066268657
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 550,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030639562237411155
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 531,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00046638264757348225
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 550,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005000263486181211
+    },
+    {
+      "component": "np31-r0-c7",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 568,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005401202142820694
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028809402306251286
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021412222940853098
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002066619633751543
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003209407616395765
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029575384382951597
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028809402306251286
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 638,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00017366427800880047
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 656,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016352282682419172
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 661,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003013626571828354
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 643,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002988316623486753
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028809402306251286
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 526,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000373623361610953
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 506,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026610853910824517
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 523,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002557665543463372
+    },
+    {
+      "component": "np31-r1-c0",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 544,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003123159162896627
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002223643709839962
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030764844700570393
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002774891263470636
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002287051433995657
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002444644160277676
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 663,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002223643709839962
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 644,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025963784014493285
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 659,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023222958020596707
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 663,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021677120662388916
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 650,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028913274286423984
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002223643709839962
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 527,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027380230881135503
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 510,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030185667355908663
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 527,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003357915020387736
+    },
+    {
+      "component": "np31-r1-c1",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 545,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00048590287929073384
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002628906586323865
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 669,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002206809240306029
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021097240528433758
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016900364812499902
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 664,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003500140455798828
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002628906586323865
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 624,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020156186951680866
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 644,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0001887498947326094
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 649,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003635469961409399
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 630,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002453142569720512
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002628906586323865
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 502,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005459445028463961
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 485,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023228309919431922
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 501,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004397120501380414
+    },
+    {
+      "component": "np31-r1-c4",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 518,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026032917389784416
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022268776478995278
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030671002559756744
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023445199803973082
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002107308646372985
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024647644204378594
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022268776478995278
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 643,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027853802657773485
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 658,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002484637111592747
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 664,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026740424709714716
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 648,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002539492581945524
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022268776478995278
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 541,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030416604749916587
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 518,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000353635550936815
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 535,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003151590974539431
+    },
+    {
+      "component": "np31-r1-c5",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 557,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00032040867040450394
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005926919693592936
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00047556119034197764
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0006119491476965777
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00041084589383899583
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004419743490871042
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005926919693592936
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004736929654427513
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00045725566315013566
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003749667512238375
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004596147714437393
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005926919693592936
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00040390155436398345
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 645,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000557860537810484
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 650,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004896457230643136
+    },
+    {
+      "component": "np31-r1-c6",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00047729173911648104
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002435994276765996
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002806065979257255
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002267618037876673
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021772114246232377
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 671,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023081950575942756
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002435994276765996
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 655,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021466972953021468
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 669,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003055040720028046
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002510595904823276
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 660,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003452571484103828
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002435994276765996
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 543,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00031269023270397156
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 522,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003792301290559408
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 539,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027627370354821323
+    },
+    {
+      "component": "np31-r2-c1",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 559,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027326978033670457
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026253985652147094
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030675897642140626
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00034006901614702656
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026406466145090235
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002520066350371053
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026253985652147094
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 661,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002628392317092221
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003068207927299227
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022481480368696793
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 666,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028312610720604425
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026253985652147094
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 575,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003197534852006356
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 574,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0005274243869735074
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 590,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003520282516547013
+    },
+    {
+      "component": "np31-r2-c2",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 591,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00032171090788324364
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002289303054112679
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 671,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002880013382764446
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002814859074078413
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003359556569648703
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002402226302820054
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 666,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002289303054112679
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 636,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016278540761049953
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 656,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024494080275871966
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 661,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00018661964713828638
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 640,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021580600810011674
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002289303054112679
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 510,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036859099805042206
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 492,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030488384118143586
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 508,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027505248408488114
+    },
+    {
+      "component": "np31-r2-c6",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 525,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002801778330194793
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000403304215069511
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029806048314640066
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036170504586152674
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000275478692174147
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004033562372569577
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000403304215069511
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00037385445648396853
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00034066590365000593
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003555369326022628
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036617319892684463
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000403304215069511
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 607,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000355053696239338
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 593,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000492656711685413
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 608,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000349954585544765
+    },
+    {
+      "component": "np31-r3-c2",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 622,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003130324948870111
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028755599987562164
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029809411580572487
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00035846729451805004
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029978538600516913
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029276423674673424
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028755599987562164
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027488793853081006
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023565787000734417
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002093975240313739
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002853929318007431
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028755599987562164
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 547,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030928766113902384
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 533,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003247857371206919
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 551,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00033319356998617877
+    },
+    {
+      "component": "np31-r3-c3",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 565,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036437744643080805
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002261709905724274
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022144470312923659
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004110909935661766
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021136682562428177
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 661,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002672132241059444
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 664,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002261709905724274
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 619,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00013304547201187233
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 644,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00019392721560507198
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 648,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00019718922249012394
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 622,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00026108486690645805
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002261709905724274
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 503,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003711601980285195
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 490,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002934887195351621
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 505,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00043675539609466796
+    },
+    {
+      "component": "np31-r3-c4",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 520,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027952325922342425
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002154547412374086
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023034824857859348
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002929014174242184
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00019818093460344244
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 669,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021362713505368447
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002154547412374086
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 637,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016721650683848566
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 653,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016570086268075102
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 658,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000315536161451746
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 642,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00019670403503369016
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002154547412374086
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 501,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002481813191934634
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 485,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003649628658877191
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 503,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030110704233266006
+    },
+    {
+      "component": "np31-r3-c5",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 521,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00047019055978125834
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023928728569444502
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 655,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000507985974309122
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003326094627027487
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 663,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028844749203926767
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 649,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002974306544274441
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 668,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023928728569444502
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 589,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0006191154093357909
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 611,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00045024793962511467
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 613,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027270351051811303
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 593,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0006289453440331272
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023928728569444502
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 505,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024108253933263768
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 487,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002655525406680681
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 502,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021797983708893298
+    },
+    {
+      "component": "np31-r4-c1",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 522,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027706362243407057
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028466258322623617
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002452408323279087
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00035459791456560197
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00038691386203026923
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003015357181084255
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028466258322623617
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 665,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030244509957810806
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000320741938367064
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00042614618382685876
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00027246507647760154
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028466258322623617
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 572,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00031288978425436653
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 549,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002874508352306293
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 566,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00037957409131195163
+    },
+    {
+      "component": "np31-r4-c2",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 590,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002909859761075495
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025923862926902075
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0001829126340453513
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025066977718779526
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 671,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029608322915919416
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 662,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002451386396842281
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025923862926902075
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 608,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00016550479813304264
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 627,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002817323913859582
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 635,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002961786265132105
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 615,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000260924735584922
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025923862926902075
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 514,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030121867939669755
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 490,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003693556154757971
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 508,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003257756484345009
+    },
+    {
+      "component": "np31-r4-c3",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 532,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004165939617450931
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029022538546996657
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003480029097318038
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020182819957881293
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002300904407093185
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0004699916210029187
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029022538546996657
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002372853211909387
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020092430099794
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002907710845647671
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029640473030667636
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029022538546996657
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 579,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002695417804261524
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 560,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003281661017808801
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 576,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000364302133448291
+    },
+    {
+      "component": "np31-r4-c4",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 597,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002971670289753092
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025857388664007885
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000320529433338379
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00029010153025410546
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00030412673072532925
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003306269802578754
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 673,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025857388664007885
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 667,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020217150631651748
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00023323256846197182
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.000247422469101366
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 670,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00028424063839338487
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00025857388664007885
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 578,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00032448563797515817
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 559,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003181125639457605
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 576,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00034130739913962316
+    },
+    {
+      "component": "np31-r4-c6",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 595,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00036322817504697014
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-forward-0-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002599766921775881
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-1-0-rotation-0.npz",
+      "points": 676,
+      "visible": 675,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024787935194581223
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-1-0-rotation-1.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00024458483085254556
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-1-0-rotation-2.npz",
+      "points": 676,
+      "visible": 674,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002518121116281691
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-1-0-rotation-3.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002287965198775055
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-forward-0-2.npz",
+      "points": 676,
+      "visible": 672,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002599766921775881
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-2-0-rotation-0.npz",
+      "points": 676,
+      "visible": 640,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00019263523586232623
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-2-0-rotation-1.npz",
+      "points": 676,
+      "visible": 657,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00022770770442548383
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-2-0-rotation-2.npz",
+      "points": 676,
+      "visible": 662,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00020783381569344783
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-2-0-rotation-3.npz",
+      "points": 676,
+      "visible": 647,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00021696995963793597
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-forward-0-3.npz",
+      "points": 676,
+      "visible": 676,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002599766921775881
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-3-0-rotation-0.npz",
+      "points": 676,
+      "visible": 523,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0003141710938052711
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-3-0-rotation-1.npz",
+      "points": 676,
+      "visible": 509,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.0002831190863616939
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-3-0-rotation-2.npz",
+      "points": 676,
+      "visible": 524,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00038770685978306574
+    },
+    {
+      "component": "np31-r4-c7",
+      "file": "supervision-reverse-3-0-rotation-3.npz",
+      "points": 676,
+      "visible": 539,
+      "independent_source_rays": 43,
+      "maximum_mesh_error_m": 0.00033834190344350645
+    }
+  ],
+  "exact_supervision_points": 243360,
+  "prior_pilot_audit_failure_preserved": true,
+  "renderer_summary_sha256": "62aea9ba0c90c6ea2dfaeba3c1e7cbdf9f061610e70dc0a0a5644ee188783f35",
+  "development_render_calendar_seconds": 726.75241,
+  "rendered_images": 576,
+  "solar_contract_sha256": "2c039cc0e2d793dfde19c176b109ec04c0a1bc9318703d684c976ea6100c9149",
+  "solar_envelope_verified": true,
+  "dated_ephemeris_verified": false,
+  "scope": "Original16train/eightselection components and exact fractional-grid common-estimator oracle; no learned result, reserve or original fresh-LunarGeo gate.",
+  "fresh_test_gate_passed": false,
+  "matcher_inferences": 0,
+  "calibration_or_test_pixels_decoded": 0
+}

@@ -1,0 +1,145 @@
+{
+  "scope": "Supplemental development tuning after primary results, not fresh validation.",
+  "baseline_correct": 26,
+  "cases": 72,
+  "primary_variant": "reliability",
+  "primary_correct": 27,
+  "seeds": [
+    27,
+    31,
+    36
+  ],
+  "paired_gain_pp": 1.3888888888888888,
+  "exploratory_component_interval_pp": [
+    -11.11111111111111,
+    7.777777777777778
+  ],
+  "components": 4,
+  "improved_pair_ids": [
+    "nadir/nadir/2515/lights-0-1",
+    "nadir/nadir/2515/lights-1-2",
+    "nadir/nadir/2518/lights-0-1",
+    "nadir/nadir/2506/lights-1-0",
+    "nadir/nadir/2506/lights-1-2"
+  ],
+  "regressed_pair_ids": [
+    "nadir/nadir/2518/lights-0-2",
+    "nadir/nadir/2518/lights-1-0",
+    "nadir/nadir/2518/lights-1-2",
+    "oblique/oblique/2994/lights-2-1"
+  ],
+  "runs": [
+    {
+      "variant": "descriptor_3d",
+      "seed": 20261101,
+      "selected_step": 500,
+      "correct_poses": 24,
+      "total_parameters": 56544,
+      "positive_labels": 4000,
+      "sampled_examples": 8000,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "strict_correct_poses": 2,
+      "returned_matches": 22697,
+      "scorable_matches": 14938,
+      "correct_correspondences_at_native_px": {
+        "1": 4032,
+        "2": 7278,
+        "4": 8511,
+        "8": 8731,
+        "12": 8880
+      },
+      "final_weight_change_l2": 0.9829213619232178
+    },
+    {
+      "variant": "refinement",
+      "seed": 20261101,
+      "selected_step": 500,
+      "correct_poses": 25,
+      "total_parameters": 63505,
+      "positive_labels": 4000,
+      "sampled_examples": 8000,
+      "last_bank_correct": 6,
+      "last_bank_returned": 5462,
+      "strict_correct_poses": 1,
+      "returned_matches": 22697,
+      "scorable_matches": 14938,
+      "correct_correspondences_at_native_px": {
+        "1": 4025,
+        "2": 7284,
+        "4": 8519,
+        "8": 8739,
+        "12": 8888
+      },
+      "final_weight_change_l2": 5.134785175323486
+    },
+    {
+      "variant": "reliability",
+      "seed": 20261101,
+      "selected_step": 1000,
+      "correct_poses": 27,
+      "total_parameters": 64098,
+      "positive_labels": 4000,
+      "sampled_examples": 8000,
+      "last_bank_correct": 6,
+      "last_bank_returned": 3556,
+      "strict_correct_poses": 2,
+      "returned_matches": 17260,
+      "scorable_matches": 12385,
+      "correct_correspondences_at_native_px": {
+        "1": 3933,
+        "2": 7139,
+        "4": 8354,
+        "8": 8539,
+        "12": 8649
+      },
+      "final_weight_change_l2": 5.50461483001709
+    },
+    {
+      "variant": "reliability",
+      "seed": 20261102,
+      "selected_step": 1000,
+      "correct_poses": 31,
+      "total_parameters": 64098,
+      "positive_labels": 4000,
+      "sampled_examples": 8000,
+      "last_bank_correct": 6,
+      "last_bank_returned": 3527,
+      "strict_correct_poses": 3,
+      "returned_matches": 16284,
+      "scorable_matches": 11842,
+      "correct_correspondences_at_native_px": {
+        "1": 3938,
+        "2": 7044,
+        "4": 8268,
+        "8": 8434,
+        "12": 8531
+      },
+      "final_weight_change_l2": 5.367632865905762
+    },
+    {
+      "variant": "reliability",
+      "seed": 20261103,
+      "selected_step": 2000,
+      "correct_poses": 36,
+      "total_parameters": 64098,
+      "positive_labels": 4000,
+      "sampled_examples": 8000,
+      "last_bank_correct": 8,
+      "last_bank_returned": 3335,
+      "strict_correct_poses": 1,
+      "returned_matches": 11888,
+      "scorable_matches": 9711,
+      "correct_correspondences_at_native_px": {
+        "1": 3783,
+        "2": 6818,
+        "4": 7949,
+        "8": 8085,
+        "12": 8136
+      },
+      "final_weight_change_l2": 5.361966133117676
+    }
+  ],
+  "total_optimizer_steps": 10000,
+  "elapsed_cohort_seconds": 1126.978519174998
+}

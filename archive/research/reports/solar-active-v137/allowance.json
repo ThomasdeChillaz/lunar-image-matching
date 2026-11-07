@@ -1,0 +1,26 @@
+{
+  "schema": "approved_supplement_summary_v137",
+  "user_approved": true,
+  "approval_date_local": "2026-11-05",
+  "allowance_seconds": 2400,
+  "stage_caps_seconds": {
+    "timing": 120,
+    "comparison": 1800,
+    "recovery": 480
+  },
+  "private_ledger_sha256": "6e5fe3c0cef74a56acde60e48e8fadb96e13ba93964a6ba5c7227b55aa11109e",
+  "original_ledger_sha256": "51680600269e37fe745ded5181d04ef61de8713bf01b3c1792415c1a13802a5c",
+  "original_journal_sha256": "2e187031f9002969a0843f0228bedbaaa01939c89f254a58f64f00368fd2564f",
+  "original_remaining_seconds": {
+    "training": 13493.0,
+    "baseline": 0.0
+  },
+  "original_accounting_unchanged": true,
+  "threads_per_scientific_job": 2,
+  "serial_scientific_jobs": true,
+  "paid_compute": false,
+  "calibration_or_final_access": false,
+  "scope": "Extra native patch acquisition versus Direct and equal-search development controls. No automatic outreach or final evaluation.",
+  "private_ledger_and_journal_distributed": false,
+  "refunds": false
+}

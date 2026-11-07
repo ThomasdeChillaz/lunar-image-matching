@@ -1,0 +1,32 @@
+{
+  "prepared_utc": "2026-11-02T17:53:22.912899+00:00",
+  "state": "PREPARED; no v56 neural inference or fitting yet",
+  "source_sha256": {
+    "train_north_rate_v56.py": "4247936b5f58668c42e334414905b68a0e98cc660e0082cffca69e5f3547f3b0",
+    "verify_north_rate_v56.py": "4f4a226dffaa6d50cea5e4ccf2d19c51ad87ba2621bc56c85e2fc77e3c8e93af",
+    "test_north_rate_v56.py": "d7901f521ba5e289cc619cb1d459c9b4419f20a98e10b29476f854c8c5864c84"
+  },
+  "coarse_rate": 0.001,
+  "context_rate": 0.0001,
+  "seed": 20261101,
+  "updates": 2000,
+  "checkpoint_steps": [
+    0,
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "eligible_positive_cases": 96,
+  "eligible_negative_cases": 96,
+  "fresh_case_rows": 576,
+  "cap_seconds": 3600,
+  "factor2_projected_seconds": 2902.9110545625445,
+  "targeted_tests_passed": 12,
+  "targeted_seconds": 1.55,
+  "matched_original_summary_sha256": "377131f50f52b64fcdb071667d466b9720ef07cf84770df5ec88c112a20384c7",
+  "model_promoted": false,
+  "calibration_or_final_pixels_loaded": 0,
+  "public_source_pending": true,
+  "full_QA_pending": true
+}

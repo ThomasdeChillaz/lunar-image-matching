@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "summary": [
+    {
+      "method": "Initial structural CNN",
+      "correct": 334,
+      "positive_cases": 1152,
+      "success_percent": 28.993055555555557,
+      "positive_fits": 446,
+      "negative_fits": 6,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 97,
+        "rotation": 72,
+        "scale": 115,
+        "combined": 50
+      },
+      "median_forward_ms": 109.25242850134964
+    },
+    {
+      "method": "Trained, no motion augmentation",
+      "correct": 994,
+      "positive_cases": 1152,
+      "success_percent": 86.28472222222223,
+      "positive_fits": 1152,
+      "negative_fits": 70,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 260,
+        "rotation": 249,
+        "scale": 270,
+        "combined": 215
+      },
+      "median_forward_ms": 120.69116849670536
+    },
+    {
+      "method": "Trained, motion augmentation",
+      "correct": 1072,
+      "positive_cases": 1152,
+      "success_percent": 93.05555555555556,
+      "positive_fits": 1152,
+      "negative_fits": 69,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 264,
+        "rotation": 271,
+        "scale": 270,
+        "combined": 267
+      },
+      "median_forward_ms": 109.95894050211064
+    },
+    {
+      "method": "LoFTR",
+      "correct": 704,
+      "positive_cases": 1152,
+      "success_percent": 61.111111111111114,
+      "positive_fits": 857,
+      "negative_fits": 0,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 181,
+        "rotation": 178,
+        "scale": 180,
+        "combined": 165
+      },
+      "median_forward_ms": 681.7795934985043
+    },
+    {
+      "method": "Structural search",
+      "correct": 824,
+      "positive_cases": 1152,
+      "success_percent": 71.52777777777777,
+      "positive_fits": 824,
+      "negative_fits": 0,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 262,
+        "rotation": 200,
+        "scale": 231,
+        "combined": 131
+      },
+      "median_forward_ms": 556.7499910011975
+    },
+    {
+      "method": "Earlier image-selected hybrid",
+      "correct": 975,
+      "positive_cases": 1152,
+      "success_percent": 84.63541666666667,
+      "positive_fits": 1118,
+      "negative_fits": 40,
+      "negative_cases": 72,
+      "correct_by_geometry": {
+        "translation": 271,
+        "rotation": 240,
+        "scale": 253,
+        "combined": 211
+      },
+      "median_forward_ms": null
+    }
+  ],
+  "training": {
+    "augmented": {
+      "selected_step": 1000,
+      "initial_loss": 3.426881424311934,
+      "selected_loss": 1.2507348214757854
+    },
+    "no_motion": {
+      "selected_step": 400,
+      "initial_loss": 3.426881424311934,
+      "selected_loss": 2.3508581822288446
+    }
+  },
+  "common_case_input_bytes_verified": true,
+  "identical_initial_predictions_verified": true,
+  "development_geographic_components": 2,
+  "overlapping_development_pairs": [
+    [
+      "M1121300852LC_Y8_05391_06292",
+      "M1121300852LC_Y8_05417_07217"
+    ],
+    [
+      "M1164896525LC_Y8_03262_40894",
+      "M1164896525LC_Y8_03362_40203"
+    ],
+    [
+      "M1164896525RC_Y8_04481_45556",
+      "M1164896525RC_Y8_05027_45117"
+    ],
+    [
+      "M1118943218RC_Y8_01975_43459",
+      "M1164896525RC_Y8_05442_46160"
+    ],
+    [
+      "M1164896525RC_Y8_04481_45556",
+      "M1164896525RC_Y8_05442_46160"
+    ],
+    [
+      "M1144856403RC_Y8_04392_49270",
+      "M1164903641RC_Y8_04072_40900"
+    ],
+    [
+      "M1144856403RC_Y8_04392_49270",
+      "M1164903641RC_Y8_04426_41135"
+    ],
+    [
+      "M1164903641RC_Y8_04072_40900",
+      "M1164903641RC_Y8_04426_41135"
+    ],
+    [
+      "M1164896525RC_Y8_04481_45556",
+      "M1164903641RC_Y8_04912_46418"
+    ],
+    [
+      "M1164896525RC_Y8_05027_45117",
+      "M1164903641RC_Y8_04912_46418"
+    ],
+    [
+      "M1164896525RC_Y8_05442_46160",
+      "M1164903641RC_Y8_04912_46418"
+    ],
+    [
+      "M1271923723RC_Y8_01820_13990",
+      "M1271923723RC_Y8_02489_13877"
+    ],
+    [
+      "M1271923723RC_Y8_02443_09158",
+      "M1271923723RC_Y8_02612_09556"
+    ],
+    [
+      "M1271923723RC_Y8_01084_25217",
+      "M1271930754RC_Y8_03114_26112"
+    ],
+    [
+      "M1271923723RC_Y8_02489_13877",
+      "M1271930754RC_Y8_05267_13530"
+    ],
+    [
+      "M1287257121LC_Y8_04227_42786",
+      "M1287257121LC_Y8_04609_42030"
+    ],
+    [
+      "M1271930754RC_Y8_02633_29403",
+      "M1287257121RC_Y8_06899_41157"
+    ],
+    [
+      "M1271923723RC_Y8_02443_09158",
+      "M1297792011LC_Y8_03183_21429"
+    ],
+    [
+      "M1271923723RC_Y8_02612_09556",
+      "M1297792011LC_Y8_03183_21429"
+    ],
+    [
+      "M1271930754RC_Y8_03114_26112",
+      "M1297792011LC_Y8_03254_38485"
+    ],
+    [
+      "M1271930754RC_Y8_04143_25915",
+      "M1297792011LC_Y8_03254_38485"
+    ],
+    [
+      "M1271923723RC_Y8_02443_09158",
+      "M1297792011LC_Y8_03822_22130"
+    ],
+    [
+      "M1271923723RC_Y8_02612_09556",
+      "M1297792011LC_Y8_03822_22130"
+    ],
+    [
+      "M1297792011LC_Y8_03183_21429",
+      "M1297792011LC_Y8_03822_22130"
+    ],
+    [
+      "M1271923723RC_Y8_03011_26983",
+      "M1297792011LC_Y8_04151_38503"
+    ],
+    [
+      "M1271930754RC_Y8_04143_25915",
+      "M1297792011LC_Y8_04151_38503"
+    ],
+    [
+      "M1297792011LC_Y8_03254_38485",
+      "M1297792011LC_Y8_04151_38503"
+    ],
+    [
+      "M1287257121RC_Y8_04281_15571",
+      "M1358875484RC_Y8_06047_06065"
+    ],
+    [
+      "M1297792011LC_Y8_03183_21429",
+      "M1358875484RC_Y8_06916_08210"
+    ],
+    [
+      "M1297792011LC_Y8_03183_21429",
+      "M1358875484RC_Y8_07140_07141"
+    ],
+    [
+      "M1287257121RC_Y8_04281_15571",
+      "M1358889571RC_Y8_06226_06061"
+    ],
+    [
+      "M1358875484RC_Y8_06047_06065",
+      "M1358889571RC_Y8_06226_06061"
+    ],
+    [
+      "M1358875484RC_Y8_05604_22833",
+      "M1358889571RC_Y8_06230_21858"
+    ],
+    [
+      "M1358875484RC_Y8_06916_08210",
+      "M1358889571RC_Y8_07572_08187"
+    ],
+    [
+      "M1271923723RC_Y8_01820_13990",
+      "M1358889571RC_Y8_08546_12257"
+    ],
+    [
+      "M1297792011LC_Y8_04315_27851",
+      "M1358889571RC_Y8_08546_12257"
+    ],
+    [
+      "M1271923723RC_Y8_02443_09158",
+      "M1463341437LC_Y8_01450_06361"
+    ],
+    [
+      "M1121300852LC_Y8_05257_23400",
+      "M1463341437RC_Y8_02981_19207"
+    ],
+    [
+      "M1358889571RC_Y8_06230_21858",
+      "M1463341437RC_Y8_02981_19207"
+    ],
+    [
+      "M1297792011LC_Y8_03183_21429",
+      "M1463341437RC_Y8_04734_06452"
+    ],
+    [
+      "M1358875484RC_Y8_06916_08210",
+      "M1463341437RC_Y8_04734_06452"
+    ],
+    [
+      "M1358889571RC_Y8_07572_08187",
+      "M1463341437RC_Y8_04734_06452"
+    ],
+    [
+      "M1287257121LC_Y8_02465_21155",
+      "M1463341437RC_Y8_04993_08226"
+    ],
+    [
+      "M1271923723RC_Y8_03011_26983",
+      "M1463341437RC_Y8_06222_19194"
+    ],
+    [
+      "M1297792011LC_Y8_04151_38503",
+      "M1463341437RC_Y8_06222_19194"
+    ],
+    [
+      "M1297792011LC_Y8_03930_43404",
+      "M188306254RC_Y8_02105_31367"
+    ],
+    [
+      "M1297792011LC_Y8_03930_43404",
+      "M188306254RC_Y8_02288_30853"
+    ],
+    [
+      "M188306254RC_Y8_02105_31367",
+      "M188306254RC_Y8_02288_30853"
+    ],
+    [
+      "M1287257121LC_Y8_04227_42786",
+      "M188306254RC_Y8_02545_29284"
+    ],
+    [
+      "M1358875484RC_Y8_07140_07141",
+      "M188306254RC_Y8_02602_06175"
+    ],
+    [
+      "M1297792011LC_Y8_03930_43404",
+      "M188306254RC_Y8_03381_30088"
+    ],
+    [
+      "M188306254RC_Y8_02545_29284",
+      "M188306254RC_Y8_03381_30088"
+    ]
+  ],
+  "source_run_completions": {
+    "runs/contrastive-terrain-dev-v1": {
+      "rows": 2448,
+      "results_sha256": "a70a31ffab81a541ce3cb477592e90f4ba75cc7f170176c885fa2fa5f67048d9",
+      "frozen_inputs_sha256": "96d66576b97f147fe7c1503f20dd30f1e79e3c9c157d9c7ebe5d38571ac13cc2",
+      "software_controls_sha256": "62d57eaff36a764f56aaccfc6427024cfc237540694af34c27940533da60ab10"
+    },
+    "runs/contrastive-terrain-nomotion-dev-v1": {
+      "rows": 2448,
+      "results_sha256": "7247ecfb99d05fdcc45036e43e5acfd6bf98144a0f5369092023b06aa83719bc",
+      "frozen_inputs_sha256": "d400e2ea69cc8bbd1d6f4f4133452ac311b97c1c15b4ab6c3d45b0214635ae5a",
+      "software_controls_sha256": "62d57eaff36a764f56aaccfc6427024cfc237540694af34c27940533da60ab10"
+    }
+  },
+  "baseline_completions": {
+    "LoFTR": {
+      "rows": 3672,
+      "results_sha256": "6e649b0dda36c1ed73bc58b47251b9fdf18a84c70e5d8a12a68deddf37ae18d9",
+      "frozen_inputs_sha256": "4c61689d65f447a81d412251c538101eca61475200edc17d6817dafb5cbd9ad4"
+    },
+    "Structural search": {
+      "rows": 3672,
+      "results_sha256": "6e649b0dda36c1ed73bc58b47251b9fdf18a84c70e5d8a12a68deddf37ae18d9",
+      "frozen_inputs_sha256": "4c61689d65f447a81d412251c538101eca61475200edc17d6817dafb5cbd9ad4"
+    },
+    "Earlier image-selected hybrid": {
+      "rows": 3672,
+      "results_sha256": "57deb68331d0431a7c3cea100f7d79ae058b16c3dbed57f41a637f5cb22bf6d8",
+      "frozen_inputs_sha256": "9b370ebd32edbb6a149db0bd3ac2806a9ad5d10a9162cc953d4c52b22854bccf",
+      "upstream_completion_sha256": "5c38401d004af34b5f224e862a42dc4a4c2034980046b48d7872cd0c5e464861"
+    }
+  },
+  "report_source_sha256": "598804e596500f5bc8bdcfec7279a5fdec98990eb70c96066d4fe2acd4fea273",
+  "warning": "Development-only raw fit success. No calibrated rejection or current-SOTA superiority is established. Baseline timing excludes upstream candidate generation and is not directly comparable."
+}

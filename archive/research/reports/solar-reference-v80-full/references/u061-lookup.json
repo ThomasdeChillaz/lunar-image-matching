@@ -1,0 +1,24 @@
+{
+  "cpu_threads": 2,
+  "query_truth_used": false,
+  "reference_geometry": "runs/solar-v70-completion/np31-r3-c3/training_motion-1/reference/geometry.npz",
+  "reference_geometry_sha256": "5a810b6f6d66bfa1b1d51155d19dc54c9dd7ef85fffbf5dede2dda2d8de8ee1d",
+  "mesh": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+  "mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+  "scene_mesh": "data/north-render-v31/development-v35/np31-r3-c3/mesh.npz",
+  "scene_mesh_sha256": "d66b9eb0f764334f831fcf90b228bd227c07d7bdc5ac1d0c9447b41145a45bad",
+  "geometry_audit": "reports/solar_full_geometry_audit_v70.json",
+  "geometry_audit_sha256": "7d57c9347e14cc78302c5f71165656dc3b8e805652196e261e5409b019c8d876",
+  "approved_reference_key": "np31-r3-c3/training_motion-1",
+  "schema_version": 70,
+  "max_lookup_calendar_seconds": 900,
+  "max_request_seconds": 300,
+  "source_sha256": {
+    "solar_lookup_v70.py": "5e741b1d06456663aa3d1df50ffcf1a228da68818251cfa3cddb7ec0800e8bf1",
+    "solar_lookup_worker_v70.py": "89c176af5dfe902ccadfadf2e9ba109428e2e3bd34230d1412dcf700376cce86",
+    "solar_map_v63.py": "bcdebe475e4764a9838bb15ee324b2302efdb1128e97454a6d27e1b1c5cf3184",
+    "solar_physics_v63.py": "7ee63ef68f5278331280ce6ba69ca07f989fad1fbea3be84f9eb64954c340d71",
+    "solar_active_v63.py": "c969340b1cf9f646e89f914059e1f185d7cdc20ca165edf169c404dcfbe30cd2",
+    "north_terrain_pilot_v32.py": "ea0ba1a693e6712e10cad11b404c6100279c07790ef6eef66cc2a00308677eee"
+  }
+}

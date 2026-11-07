@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "analysis_role": "Secondary interpretation of frozen outcomes; no model, threshold or primary success criterion changed.",
+  "inputs_sha256": {
+    "runs/compact-v2-expanded-20261030-test/results.json": "f7625878b8120b0e2f3146c7bfa6a2bbceb4e3b92b5f5a455f8b4d9df082a0bf",
+    "runs/compact-v2-original-test/results.json": "fde39cc4cf9625ebfb6e56e9651ea1545343908ca4ab039ac220e1de7c73ddbf"
+  },
+  "primary_vs_original_with_new_confidence": {
+    "gain_pp": 2.0833333333333335,
+    "exploratory_component_bootstrap95_pp": [
+      0.2523395721925134,
+      4.310344827586207
+    ],
+    "components": 12,
+    "warning": "Spatial components share terrain model/rendering pipeline; not guaranteed independent. Negative risk has no independent-pair bound."
+  },
+  "interpretation": "The large primary gain against the old frozen gate is principally confidence recalibration. Both primary and original checkpoints have384/384 raw correct positive proposals on this coarse128px test. Retraining superiority is not established by raw success. Gains against the recalibrated old checkpoint are not consistent across the three predefined seeds.",
+  "reproduction": "report_compact_v2.paired_interval(primary_results, original_results), fixed2000 component resamples with seed20261030; 12 original-source-pixel registration tolerance.",
+  "all_predefined_seeds_vs_original_with_new_confidence": {
+    "20261030": {
+      "gain_pp": 2.0833333333333335,
+      "exploratory_component_bootstrap95_pp": [
+        0.2523395721925134,
+        4.310344827586207
+      ],
+      "components": 12,
+      "warning": "Spatial components share terrain model/rendering pipeline; not guaranteed independent. Negative risk has no independent-pair bound."
+    },
+    "20261031": {
+      "gain_pp": -4.427083333333333,
+      "exploratory_component_bootstrap95_pp": [
+        -7.6923076923076925,
+        -1.3888888888888888
+      ],
+      "components": 12,
+      "warning": "Spatial components share terrain model/rendering pipeline; not guaranteed independent. Negative risk has no independent-pair bound."
+    },
+    "20261032": {
+      "gain_pp": 3.125,
+      "exploratory_component_bootstrap95_pp": [
+        0.4629629629629629,
+        6.389423076923073
+      ],
+      "components": 12,
+      "warning": "Spatial components share terrain model/rendering pipeline; not guaranteed independent. Negative risk has no independent-pair bound."
+    }
+  },
+  "seed_mean_correct_acceptance": 0.9609375,
+  "seed_range_correct_acceptance": [
+    0.9140625,
+    0.9895833333333334
+  ]
+}

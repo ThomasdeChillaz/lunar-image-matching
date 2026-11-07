@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "records": 144,
+  "eligible_pairs": 72,
+  "native_metric_and_common_pose_replay": true,
+  "actual_pretrained_control_replayed": true,
+  "profile": "native512",
+  "source_sha256": "c8a6ce1d04839a0ea63c7e464198d5f6fd1b52f21101142180656100a698e20f",
+  "summary_sha256": "b68b8bdbbfdeb11e3e35dcbbbadb89bffdbe5c92f74526ddbad8d9734d3c8a65",
+  "scope": "Exposed development common-native comparison. Replay verifies metrics, source and poses, not independent pretrained implementation or fresh test accuracy."
+}

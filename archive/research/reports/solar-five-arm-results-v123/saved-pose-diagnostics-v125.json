@@ -1,0 +1,45 @@
+{
+  "schema": "solar_v115_saved_pose_diagnostic_v125",
+  "source_sha256": {
+    "reports/solar-five-arm-v115/comparison-protocol.json": "c43b7a0a5236b27055a7179caf1cfa1a274b18743a9fd868d0054fa96d23878c",
+    "reports/solar-full-native-baselines-dispatch-v94.json": "82e51b9a3e325e8eafc3022c7ac613dbce1a2400b71405a32eef4aca3dd8f1bc",
+    "reports/solar-five-arm-results-v123/independent_replay_v115.json": "844433a3bcfcb5180da648e446b3a05c089d2b69d5ebcdb8ee2af214f25dd2b5",
+    "reports/solar_full_native_baselines_replay_v94.json": "75af1832538230553d3920bea1ee8bf9e7522232b319a30eb060cfe1616ae183"
+  },
+  "frozen_manifest_sha256": "750919f111d69cba13b1560409955f7af2c4369ca6cc526b93bc01579993c3e2",
+  "arm_summary_sha256": "3f65b164472e2300d6b5aeb1611a2988d0f5d0155fe850c6a5f229eb567a38bc",
+  "positive_count": 48,
+  "changed_light_positive_count": 32,
+  "nonoverlap_count": 48,
+  "ideal_saved_pose_union": 32,
+  "changed_light_saved_pose_union": 20,
+  "needed_for_70_percent": 34,
+  "added_over_direct": [
+    "u021-l08-17-positive",
+    "u021-l16-16-positive"
+  ],
+  "maximum_four_pixel_correspondences_on_changed_light_misses": {
+    "u021-l16-01-positive": 89,
+    "u022-l00-17-positive": 3,
+    "u024-l16-01-positive": 0,
+    "u027-l08-01-positive": 0,
+    "u057-l08-01-positive": 0,
+    "u059-l16-01-positive": 0,
+    "u061-l00-17-positive": 0,
+    "u061-l08-01-positive": 13,
+    "u062-l16-01-positive": 0,
+    "u062-l08-17-positive": 0,
+    "u072-l08-17-positive": 1197,
+    "u075-l08-01-positive": 2
+  },
+  "historical_matchanything_same_case_counts": {
+    "correct": 9,
+    "changed_light_correct": 0,
+    "strict": 3,
+    "wrong_on_overlap": 25,
+    "raw_nonoverlap": 13,
+    "additional_hindsight_recoveries": 0
+  },
+  "sift_same_outcome_on_shared_cases_across_workers": 96,
+  "scope": "Hindsight uses scoring labels. The separate historical worker replay hashed each input against the common frozen manifest. This join supplies raw development accuracy counts. Neither cross-worker latency nor calibrated performance is compared. No new inference, training, calibration or final access."
+}

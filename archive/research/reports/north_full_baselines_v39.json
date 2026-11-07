@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "full": true,
+  "eligible_cases_per_method": 192,
+  "results": {
+    "frozen_surface": {
+      "positive_cases": 96,
+      "correct_raw_poses": 13,
+      "strict_raw_poses": 2,
+      "wrong_raw_poses": 28,
+      "negative_cases": 96,
+      "raw_nonoverlap_proposals": 11,
+      "median_measured_inference_ms": 2053.466097495402,
+      "calibrated_acceptance_evaluated": false
+    },
+    "sift_first_surface": {
+      "positive_cases": 96,
+      "correct_raw_poses": 13,
+      "strict_raw_poses": 2,
+      "wrong_raw_poses": 28,
+      "negative_cases": 96,
+      "raw_nonoverlap_proposals": 11,
+      "median_measured_inference_ms": 2120.433371004765,
+      "calibrated_acceptance_evaluated": false
+    }
+  },
+  "results_sha256": "3d4eec7180f3c6cdc03a864c7520841d7bbdc3185f1865256ccd78bb5ee8e22d",
+  "protocol_sha256": "2cedd1c80600558e88fa04924554fe6a732f4042fd80c475b87a231a55f510c6",
+  "scope": "Common new northern model-selection controls; raw proposals only, no final/calibrated/SOTA claim.",
+  "calibration_or_test_pixels_loaded": 0
+}

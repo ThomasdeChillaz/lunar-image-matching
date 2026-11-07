@@ -1,0 +1,137 @@
+{
+  "scope": "Full native512 exposed-development comparison; no fresh final, calibrated acceptance, transfer or SOTA claim.",
+  "results": {
+    "matchanything_native": {
+      "cases": 72,
+      "correct": 39,
+      "strict": 5,
+      "wrong": 30,
+      "median_full_inference_seconds": 4.396400566503871,
+      "inference_errors": 0
+    },
+    "sift_first_surface": {
+      "cases": 72,
+      "correct": 57,
+      "strict": 25,
+      "wrong": 2,
+      "median_full_inference_seconds": 2.9813668065035017,
+      "inference_errors": 0
+    }
+  },
+  "matchanything_minus_sift_surface_gain_pp": -25.0,
+  "descriptive_paired_component_interval_pp": [
+    -60.0,
+    -11.11111111111111
+  ],
+  "median_paired_matchanything_to_sift_surface_latency_ratio": 1.4755422036219905,
+  "per_component": {
+    "axial-v5-component-0000": {
+      "matchanything_native": {
+        "cases": 18,
+        "correct": 9
+      },
+      "sift_first_surface": {
+        "cases": 18,
+        "correct": 15
+      }
+    },
+    "axial-v5-component-0005": {
+      "matchanything_native": {
+        "cases": 9,
+        "correct": 8
+      },
+      "sift_first_surface": {
+        "cases": 9,
+        "correct": 9
+      }
+    },
+    "axial-v5-component-0006": {
+      "matchanything_native": {
+        "cases": 36,
+        "correct": 20
+      },
+      "sift_first_surface": {
+        "cases": 36,
+        "correct": 24
+      }
+    },
+    "axial-v5-component-0015": {
+      "matchanything_native": {
+        "cases": 9,
+        "correct": 2
+      },
+      "sift_first_surface": {
+        "cases": 9,
+        "correct": 9
+      }
+    }
+  },
+  "provenance": {
+    "method": "MatchAnything-EfficientLoFTR",
+    "profile": "native512",
+    "native_input_size": 512,
+    "internal_input_size": 512,
+    "npe": [
+      832,
+      832,
+      512,
+      512
+    ],
+    "source_repository": "LittleFrog/MatchAnything",
+    "source_revision": "6a7bcb589ec8da3a9e861e799122beaa5eba2193",
+    "source_license": "Apache-2.0, author release LICENSE",
+    "source_lock_sha256": "4e7480a8333bee0e8ec080e2d28029b47755f3fa607617c52ba66e684730d7d5",
+    "weight_sha256": "867ed7a097f2224b167efe79966cf0a2c1c77a9b0a4a103bc3ff74c302b6017b",
+    "input": "Full native512px grayscale content; optional832px bilinear resize preserves field of view.",
+    "filtering": "Unchanged author confidence0.1 and fine matching; finite/native-mask checks only. No2D affine/homography prefilter.",
+    "pose": "Separate common3-native-pixel AP3P with reference geometry; query geometry never enters this class.",
+    "profile_note": "832 is the positional-encoding training-size control, not a claimed author-recommended lunar profile.",
+    "reparameterization": false,
+    "cpu_threads": 2,
+    "trainable_parameters": 0,
+    "environment": {
+      "torch": "2.2.2",
+      "kornia": "0.7.4",
+      "numpy": "1.26.4",
+      "opencv": "4.10.0"
+    },
+    "total_parameters": 16025216
+  },
+  "gained": [
+    "dynamicgood/dynamic/1092/lights-0-1",
+    "dynamicgood/dynamic/1092/lights-2-1"
+  ],
+  "lost": [
+    "nadir/nadir/2518/lights-1-2",
+    "oblique/oblique/2994/lights-0-1",
+    "oblique/oblique/2994/lights-0-2",
+    "oblique/oblique/2994/lights-2-0",
+    "dynamicgood/dynamic/1458/lights-0-0",
+    "dynamicgood/dynamic/1458/lights-0-2",
+    "dynamicgood/dynamic/1458/lights-1-1",
+    "dynamicgood/dynamic/1458/lights-2-0",
+    "dynamicgood/dynamic/1458/lights-2-1",
+    "dynamicgood/dynamic/1458/lights-2-2",
+    "dynamicgood/dynamic/942/lights-0-0",
+    "dynamicgood/dynamic/942/lights-1-1",
+    "dynamicgood/dynamic/942/lights-2-2",
+    "dynamicgood/dynamic/1407/lights-0-1",
+    "dynamicgood/dynamic/1407/lights-0-2",
+    "dynamicgood/dynamic/1407/lights-1-0",
+    "dynamicgood/dynamic/1407/lights-1-2",
+    "dynamicgood/dynamic/1407/lights-2-0",
+    "dynamicgood/dynamic/1407/lights-2-1",
+    "dynamicgood/dynamic/1407/lights-2-2"
+  ],
+  "source_sha256": "6fecd08032107ac7fc7b614286aa0440baae79ac0ecd6b418f8cd752b7df5860",
+  "audit_sha256": "acb160ee5d251b3a799e5355c7ddb02bc79390243cb91de69005de17388300bb",
+  "summary_sha256": "b68b8bdbbfdeb11e3e35dcbbbadb89bffdbe5c92f74526ddbad8d9734d3c8a65",
+  "limits": [
+    "72 correlated lighting pairs, eight geometries/four previously exposed terrain components.",
+    "Local lunar training versus generic pretrained weights is not a matched adaptation comparison.",
+    "Native512 retains the same original field of view;832 positional-encoding profile is a separate pending comparison.",
+    "Raw correct poses and wrong estimates are not calibrated accepted poses; no1%risk claim.",
+    "Joint process memory includes both models/controls and cannot rank isolated model memory.",
+    "Uncertainty is descriptive after repeated exposed-development hypothesis/model selection."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 3,
+  "scope": "Development training only",
+  "artifacts": {
+    "models": {
+      "path": "reports/localization-v3-development-models.zip",
+      "files": 80,
+      "bytes": 8192482,
+      "sha256": "dbe3ae3225a9dc28e5a9c547544a0d6352c6bf98ba40787fcdde5aa21d6deab1"
+    },
+    "data": {
+      "path": "reports/localization-v3-development-data.zip",
+      "files": 28,
+      "bytes": 35633759,
+      "sha256": "14a0dc42ce2f06c985c4693a4a9649ad085049ba0baed937d6594d11e3a7ad72"
+    },
+    "experiments": {
+      "path": "reports/localization-v3-development-experiments.zip",
+      "files": 188,
+      "bytes": 12630166,
+      "sha256": "2547b780fd550b5897573f96adadb51e05823b05f62c79b3a37c6e1e079eede1"
+    }
+  }
+}

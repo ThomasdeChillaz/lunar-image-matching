@@ -1,0 +1,511 @@
+{
+  "kind": "independent_corrected_full_bank_artifact_replay",
+  "created_utc": "2026-11-04T05:26:32.924567+00:00",
+  "passed": true,
+  "manifest": "reports/solar-learning-v79/teacher_full-bank.json",
+  "manifest_sha256": "f5a4a0d4a603c984373778af587a6ea08f9a159e43e325043145e7f2a4b78428",
+  "protocol_sha256": "977b2e57aff05a0168bd88881d891935887417b7dfc2b11d6cbafaaf7fe5eb6c",
+  "summary_sha256": "0355c46ba80a0320812f1bf679bd26ae6def84642c196710e50f305e532b04b0",
+  "bank_seal_sha256": "fc19e97176bfaeee513496dd456ca49fc412f29728d6bbe3d645a0a7e365bd85",
+  "watchdog_receipt_sha256": "5336ab2ed24cc04ce6196e5d7555eaa42e8161fca4e855bdde85fd00bc87ba29",
+  "records": 64,
+  "terrain_groups": [
+    "np31-r0-c0",
+    "np31-r0-c1",
+    "np31-r0-c2",
+    "np31-r0-c6",
+    "np31-r1-c1",
+    "np31-r1-c4",
+    "np31-r1-c5",
+    "np31-r1-c6",
+    "np31-r2-c1",
+    "np31-r2-c2",
+    "np31-r2-c6",
+    "np31-r3-c4",
+    "np31-r4-c2",
+    "np31-r4-c3",
+    "np31-r4-c4",
+    "np31-r4-c6"
+  ],
+  "samples": 3933,
+  "min_samples": 48,
+  "max_samples": 64,
+  "original_selected_points": 4096,
+  "trial_support_omissions": 163,
+  "unusable_teacher_omissions": 0,
+  "available_even_teacher_targets": 94392,
+  "teacher_patch_count_including_reused_provenance": 94392,
+  "fresh_records": 60,
+  "reused_records": 4,
+  "heldout_image_reads": 0,
+  "max_teacher_unit_norm_error": 2.384185791015625e-07,
+  "max_normal_unit_norm_error": 2.220446049250313e-16,
+  "max_reference_projection_error_px": 4.68891048301274e-05,
+  "max_query_projection_error_px": 0.0,
+  "physical_conditions_and_suns_bit_exact": true,
+  "trial_seed_and_original_light_indices_exact": true,
+  "raw_labels_visible_for_every_saved_point": true,
+  "observed_low_variance_patches": 2003,
+  "rows": [
+    {
+      "unit_index": 0,
+      "component": "np31-r0-c0",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": true
+    },
+    {
+      "unit_index": 1,
+      "component": "np31-r0-c0",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 2,
+      "component": "np31-r0-c0",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 3,
+      "component": "np31-r0-c0",
+      "samples": 60,
+      "trial_support_omissions": 4,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 4,
+      "component": "np31-r0-c1",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": true
+    },
+    {
+      "unit_index": 5,
+      "component": "np31-r0-c1",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 6,
+      "component": "np31-r0-c1",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 7,
+      "component": "np31-r0-c1",
+      "samples": 59,
+      "trial_support_omissions": 5,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 8,
+      "component": "np31-r0-c2",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": true
+    },
+    {
+      "unit_index": 9,
+      "component": "np31-r0-c2",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 10,
+      "component": "np31-r0-c2",
+      "samples": 53,
+      "trial_support_omissions": 11,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 11,
+      "component": "np31-r0-c2",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 16,
+      "component": "np31-r0-c6",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": true
+    },
+    {
+      "unit_index": 17,
+      "component": "np31-r0-c6",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 18,
+      "component": "np31-r0-c6",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 19,
+      "component": "np31-r0-c6",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 28,
+      "component": "np31-r1-c1",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 29,
+      "component": "np31-r1-c1",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 30,
+      "component": "np31-r1-c1",
+      "samples": 60,
+      "trial_support_omissions": 4,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 31,
+      "component": "np31-r1-c1",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 32,
+      "component": "np31-r1-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 33,
+      "component": "np31-r1-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 34,
+      "component": "np31-r1-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 35,
+      "component": "np31-r1-c4",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 36,
+      "component": "np31-r1-c5",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 37,
+      "component": "np31-r1-c5",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 38,
+      "component": "np31-r1-c5",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 39,
+      "component": "np31-r1-c5",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 40,
+      "component": "np31-r1-c6",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 41,
+      "component": "np31-r1-c6",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 42,
+      "component": "np31-r1-c6",
+      "samples": 59,
+      "trial_support_omissions": 5,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 43,
+      "component": "np31-r1-c6",
+      "samples": 56,
+      "trial_support_omissions": 8,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 44,
+      "component": "np31-r2-c1",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 45,
+      "component": "np31-r2-c1",
+      "samples": 56,
+      "trial_support_omissions": 8,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 46,
+      "component": "np31-r2-c1",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 47,
+      "component": "np31-r2-c1",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 48,
+      "component": "np31-r2-c2",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 49,
+      "component": "np31-r2-c2",
+      "samples": 58,
+      "trial_support_omissions": 6,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 50,
+      "component": "np31-r2-c2",
+      "samples": 59,
+      "trial_support_omissions": 5,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 51,
+      "component": "np31-r2-c2",
+      "samples": 59,
+      "trial_support_omissions": 5,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 52,
+      "component": "np31-r2-c6",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 53,
+      "component": "np31-r2-c6",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 54,
+      "component": "np31-r2-c6",
+      "samples": 57,
+      "trial_support_omissions": 7,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 55,
+      "component": "np31-r2-c6",
+      "samples": 57,
+      "trial_support_omissions": 7,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 64,
+      "component": "np31-r3-c4",
+      "samples": 58,
+      "trial_support_omissions": 6,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 65,
+      "component": "np31-r3-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 66,
+      "component": "np31-r3-c4",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 67,
+      "component": "np31-r3-c4",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 76,
+      "component": "np31-r4-c2",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 77,
+      "component": "np31-r4-c2",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 78,
+      "component": "np31-r4-c2",
+      "samples": 60,
+      "trial_support_omissions": 4,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 79,
+      "component": "np31-r4-c2",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 80,
+      "component": "np31-r4-c3",
+      "samples": 59,
+      "trial_support_omissions": 5,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 81,
+      "component": "np31-r4-c3",
+      "samples": 56,
+      "trial_support_omissions": 8,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 82,
+      "component": "np31-r4-c3",
+      "samples": 48,
+      "trial_support_omissions": 16,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 83,
+      "component": "np31-r4-c3",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 84,
+      "component": "np31-r4-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 85,
+      "component": "np31-r4-c4",
+      "samples": 58,
+      "trial_support_omissions": 6,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 86,
+      "component": "np31-r4-c4",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 87,
+      "component": "np31-r4-c4",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 88,
+      "component": "np31-r4-c6",
+      "samples": 64,
+      "trial_support_omissions": 0,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 89,
+      "component": "np31-r4-c6",
+      "samples": 63,
+      "trial_support_omissions": 1,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 90,
+      "component": "np31-r4-c6",
+      "samples": 62,
+      "trial_support_omissions": 2,
+      "reused_complete_cache": false
+    },
+    {
+      "unit_index": 91,
+      "component": "np31-r4-c6",
+      "samples": 61,
+      "trial_support_omissions": 3,
+      "reused_complete_cache": false
+    }
+  ],
+  "limitations": [
+    "Teacher descriptors verified by hash/schema/norm, not recomputed through a network.",
+    "Saved normal unit vectors/conditioning verified; full meshes were not reread for facet-normal recomputation.",
+    "Low-variance visible observations are retained; brightness never supplies camera occlusion labels."
+  ],
+  "activity": {
+    "source_or_protocol_edits": 0,
+    "scientific_jobs": 0,
+    "neural_forwards": 0,
+    "png_decodes": 0,
+    "rays": 0
+  }
+}
