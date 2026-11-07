@@ -52,10 +52,24 @@ jobs:
         env:
           PYTHONPATH: src
         run: python -m lunar_matching audit
+      - name: Leave workflow changes for the signed-in repository owner
+        run: |
+          set -euo pipefail
+          git restore --source=HEAD --staged --worktree -- .github/workflows
+          python - <<'PYTHON'
+          import subprocess
+          paths = subprocess.check_output(['git', 'diff', '--cached', '--name-only', '8ce963865200925b326e6bc039cbef0823c69c41'], text=True).splitlines()
+          if not paths or any(not p.startswith('.github/workflows/') for p in paths):
+              raise SystemExit('Intermediate branch differs outside the owner-completed workflow migration.')
+          workflow_diff = subprocess.check_output(['git', 'diff', '--cached', '--name-only', 'HEAD', '--', '.github/workflows'], text=True)
+          if workflow_diff.strip():
+              raise SystemExit('The bot must not alter workflow definitions.')
+          print('Only workflow definitions remain for owner completion; all tested source files are exact.')
+          PYTHON
       - name: Publish only the new review branch
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Organize maintained interfaces and preserve the complete research archive'
+          git commit -m 'Publish tested cleanup source; owner workflow migration remains'
           git push origin HEAD:refs/heads/cleanup/maintained-research-package
